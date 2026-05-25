@@ -1,0 +1,7107 @@
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+Document Title POCL Infrastructure Acceptance Test.
+Document Type Acceptance Specification
+Abstract This document describes the Acceptance Test for POCL
+Infrastructure
+Status Issued
+Author Dave Cooke
+Approval By
+Distribution Pathway Management Team
+Test & Integration Manager
+Pathway Library
+POCL/DSS Tha
+Horizon Bob Booth
+Tony Houghton
+Jeff Austin
+Recommended for ICL Pathway Test Manager Authority(ies) Test Manager
+Approval
+Signature
+Name
+Date
+Approved For and behalf of ICL For and behalf of Authority(ies)
+Pathway
+Signature
+Name
+Date
+© 1999 ICL Pathway Ltd = COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 1 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+0. DOCUMENT CONTROL
+0.1 DOCUMENT HISTORY
+Version Date Reason
+1.0 23/05/1997 I Issued to PDA
+1.4 July 1997 Incorporates amendments agreed at reviews of 3
+land 9" July 1997. Not issued
+1.2 [06/04/1998 IRe-issued to reflect New Release 2.
+1.3 [05/08/1998 IIssued to reflect changes agreed during POCL
+review of 05/08/1998.
+1.4 [05/11/1998 IIssued to reflect changes agreed during POCL
+review of 29/10/1998.
+1.5 03/12/1998 _IIssued to reflect changes agreed during POCL
+review of 24/11/1998.
+1.6 18/12/1998 Ilssued to reflect comments received from POCL on
+v1.4 and subsequent reviews.
+1.7 22/12/98 Updated to reflect final changes and caveats
+lagreed with POCL on 16", 18" & 22/12/98.
+1.8 26/02/99 Updated to reflect comments / agreements reached
+lon criteria 469/2, 470/1 8467/3.
+1.9 10/03/99 Updated to reflect changes in section 5.1.2 and
+lother typographical errors.
+1.10 30/03/99 (Corrections applied following POCL review.
+2.0 31/3/99 Issued for approval
+
+0.2 ASSOCIATED DOCUMENTS
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 2 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+(03/1999
+Reference \Vers. IDate Title [Source
+1)  IAcceptance (Acceptance Criteria Pathway
+Criteria
+2) IAcceptance 0.1 13/09/1996 IStandard for Raising and IPathway
+Standard Progressing Acceptance
+Incidents.
+I3) IAcceptance 1.1. [29/5/98 Standard for documenting IPathway
+Standard [Acceptance Specification
+4) ‘Authorities’ 17.2 [22/05/1997 IAcceptance Procedures IDSS/POCL
+[Agreement Schedule (A)AO7
+5) IPOCL Agreement I7.2 (22/05/1997 IAcceptance Procedures IPOCL
+Schedule (P)A11
+6) IDSS Agreement 7.2 [22/05/1997 IAcceptance Procedures IDSS
+ISchedule (D)A11
+7)  IAuthorities’ 8.1 [08/03/1998 IRequirements Schedule IDSS/POCL
+[Agreement (A)BO4
+I8)  IAuthorities’ 8.1 I08/03/1998 ISolutions Schedule Pathway
+[Agreement (A)BOS
+9) IDSS Agreement 8.1 08/03/1998 IRequirements Schedule IDSS
+(D)A15
+10) IDSS Agreement {8.1 [08/03/1998 ISolutions Schedule Pathway
+(D)A16
+11) IPOCL Agreement I8.0 I13/11/1997 [Requirements Schedule IPOCL
+(P)A15
+12) IPOCL Agreement I8.1 {08/03/1998 ISolutions Schedule Pathway
+(P)A16
+13) IPOCL Agreement I6.2 {03/04/1997 IPOCL Infrastructure IPOCL
+Schedule G01 - Service
+Definition
+14) IPOCL Agreement I6.2 03/04/1997 /POCL Infrastructure IPOCL
+Schedule G10 - Service
+Levels and Remedies
+M5) IVI/TSC/105 2.0 [28/01/1998 ITechnical Integrity and Pathway
+INetworking - High Level
+\Test Plan
+16) IVI/PLA/O11 2.0 [21/08/1998 IPost Office Platform Pathway
+[Domain Security High
+Level Test Plan
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 3 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+17) IVI/PLA/O10 4.0 21/08/1998 IPOCL and POCL Clients [Pathway
+Domain Security High
+Level Test Plan
+18) IVI/TSC/034 1.0  I27/03/1998 [Business Thread RDSO1_ [Pathway
+19) IVI/TSC/110 1.0 I30/01/1998 IRelease 2 Systems Pathway
+Management High Level
+\Test Plan
+20) IVI/PLA/O09 3.0 06/03/1998 [Release 2 Central ServicesIPathway
+Domain Security High
+Level Test Plan
+21) INot used
+22) WI/TSC/113 3.0 05/02/1998 IPerformance Assurance [Pathway
+High Level Test Plan for
+Release 2
+23) IVI/TSC/048 1.0  I13/03/1998 [Business Thread BITO3 Pathway
+24) IPM/PLA/031 7.0  I19/01/1999 INew Release 2 High Level IPathway
+Plan
+25) IBP/DES/003 4.0 03/02/1998 ICounter Hardware Design IPathway
+Specification
+26) ICS/PRO/0024 10.3 I20/04/1998 Release 2 Operating Pathway
+Environment Processes
+land Procedures Document
+27) INot used
+28) IPOCL 8.0  I16/01/1998 IPOCL Agreement IPOCL
+[AGREEMENT Schedule BO4 - POCL
+Consumables
+29) IDSS AGREEMENTI8.0 16/01/1998 IDAA Agreement Schedule IPathway
+B04 - DSS Consumables
+30) tba tba tba OPS Architecture Pathway
+Document
+31) Itba tba tba TMS Architecture Pathway
+Document
+32) Itba tba tba Riposte 32 API Pathway
+Specification
+33) ISU/MAN/003 1.0 I01/01/1997 ICFM: ICLS Sorbus Pathway
+Pathway Project
+Operations Manual
+34) ISU/WKI/011 1.0  I04/06/1997 Horizon System Help Desk Pathway
+(Work Instructions
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24,
+
+/OL/0L
+
+Page 4 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+35) ISD/STD/001 1.5  I28/02/1999 IHorizon OPS Style Guide IPathway
+36) ITD-ARC-002 1.0  I29/10/1996 [Network Architecture Pathway
+37) ITD-ARC-0001 4.0 I16/06/1998 ITechnical Environment Pathway
+Description
+(Note: A version (or
+subsets thereof) approved
+for external publication will
+be provided)
+38) IIM-SPE-0002 1.2. I15/05/1998 IThe Network Design - Pathway
+[Campus Communications
+39) IVI/RES/002 tba tba Declaration of conformity - IPathway
+\Technical Construction File}
+40) IVI/STR/001 2.0 30/09/1996 ITesting and Integration Pathway
+Strategy
+41) ITba tba tba [Asset Register Pathway
+42) ISU/SPE/010 1.0  I26/03/1997 [Specification - Pathway [Pathway
+Keyboard
+43) IAP/IFS/0030 10.5 [01/10/1998 IPathway to Client Generic IPathway
+ITechnical Interface
+44) IBP/DES/010 1.0 11/03/99  ITP Service Design Pathway
+Specification
+45) ITD/ARC/0012 3.0 [24/09/1998 ITechnical Environment Pathway
+Implementation for
+Release 2
+M6) ITba Network Infringement Pathway
+Policy
+47) ITba Network Infringement Pathway
+Report
+48) ICR/FSP/004 4.0 [30/09/1997 IService Architecture Pathway
+Design Document
+49) IBS/DES/001 2.0 I15/10/1998 IBPS Agents High Level Pathway
+Design for Release 2
+50) IES/IFS/002 2.0 15/01/1997 IRiposte Peripheral Server IPathway
+51) ISU/SPE/012 1.0  I01/09/1997 IFirmware Specifications - IPathway
+Pathway Keyboard
+52) ICS/FSP/002 2.0  I29/10/1997 Horizon System Help Desk IPathway
+Call Enquiry Matrix
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24,
+
+/OL/0L
+Page 5 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+Specification
+
+Version:2.0
+Date:3
+
+FUJ00001463
+FUJ00001463
+
+Ref:CR/ACS/007
+
+(03/1999
+
+53)
+
+ICS/PRO/048
+
+0.4
+
+(04/12/1998
+
+Horizon System Helpdesk :
+Processes and Procedures
+Description
+
+Pathway
+
+54)
+
+tba
+
+Pathway Environmental
+Policy
+
+Pathway
+
+55)
+
+tba
+
+Performance Model
+Component Calibration for
+Release 2
+
+Pathway
+
+56)
+
+ISU/SPE/008
+
+1.0
+
+(01/11/1996
+
+Magnetic Card Reader
+Specification
+
+Pathway
+
+57)
+
+ICS/PRP/tba
+
+IAPS Benchmark Counter
+\Transaction Times for
+Release 2
+
+Pathway
+
+58)
+
+ICS/PRP/tba
+
+IBES Benchmark Counter
+[Transaction Times for
+Release 2
+
+Pathway
+
+59)
+
+ICS/PRP/tba
+
+OBCS Benchmark Counter
+\Transaction Times for
+Release 2
+
+Pathway
+
+160)
+
+ICS/PRP/tba
+
+IEPOS Benchmark Counter
+\Transaction Times for
+Release 2
+
+Pathway
+
+64)
+
+PA/STR/009
+
+2.0
+
+24/02/1998
+
+Pathway New Release 2
+Contents Description
+
+Pathway
+
+62)
+
+BP/DES/008
+
+1.0
+
+15/12/1997
+
+IOBCS Design
+Specification
+
+Pathway
+
+63)
+
+ISU/REP/003
+
+3.1
+
+16/04/1997
+
+(Oracle High Level Design
+IPMS/CMS
+
+Pathway
+
+64)
+
+ICA/DES/009
+
+1.0
+
+(08/01/1998
+
+ICAPS Access Service -
+System Design
+
+Pathway
+
+65)
+
+ICR/REP/012
+
+0.1
+
+(04/04/1998
+
+IA2A - Boundary
+Performance
+
+Pathway
+
+66)
+
+IBP/FSP/004
+
+13.8
+
+16/02/99
+
+IEPOSS Functional
+Specification
+
+Pathway
+
+67)
+
+Not used
+
+68)
+
+IVI/STR/O06
+
+12.0
+
+24/10/1997
+
+Revisions to the Testing
+land Integration Approach
+for Pathway Release 2
+
+Pathway
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 6 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+Specification Version:2.0°
+Date:31/03/1999
+
+69) ICS/PRO/0047 10.5 04/12/1998 IPayment Card Helpline: IPathway
+Processes and procedures
+Description
+
+70) ISU/PRD/004 1.0 I09/04/1997 ISMC Core Processes for IPathway
+\Service Delivery
+
+71) ICS/PRO/0025 10.4 [05/05/1998 IAccess Control and User IPathway
+[Administration - Processes
+land Procedures
+Description
+
+72) ISU/REP/016 2.0 I01/10/1997 IMaestro Job Schedule- Pathway
+IPAS/CMS
+
+173) ILF/BRD/O01 1.0  I20/05/1998 ILogistics Feeder System {Pathway
+Business Requirement
+Definition
+
+174) INot used
+
+175) ICS/PER/013 x.0  IMonthly Service Review - Pathway
+Performance Statistics
+
+176) ICS/MAN/004 1.0  I24/08/1998 ICustomer Services - Pathway
+Service Management
+(Operations Manual
+
+77) ISU/SPE/009 1.0  I12/08/1997 ISmart Card Reader Test Pathway
+Report
+
+78) IAUTHORITIES 16.0 [04/12/1996 JAUTHORITIES BA/POCL
+
+[AGREEMENT [AGREEMENT
+
+79) ITD/DES/030 1.0  I25/07/1997 ITime Services Pathway
+Specification
+
+80) Itba ICL Pathway External Pathway
+(Applications Procurement
+Policy
+
+81) ICR/ACR/??? (Audit Closure Report Pathway
+
+82) IVI/PLA/007 3.0  I20/08/98 Systems Management and IPathway
+Support Services Domain
+Security - High Level Test
+Plan
+
+83) Itba IOPS/TMS Data Pathway
+[Acknowledgement Process
+
+84) Itba ICL Pathway Performance IPathway
+land Scalability Strategy
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 7 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+85) ITD/ION/005 1.0  I04/11/98 IFTMS Configurations for IPathway
+Pathway TPS and POCL
+TIP links at Release 2
+86) IRANR2(ChB) 2.2 (09/11/98 Release Authorisation of IHorizon
+the NR2 (Child Benefit )
+Release
+87) ISD/STR/002 0.8 I15/07/98 Release 2 FTMS Pathway
+Resilience and Recovery
+strategy
+88) IVI/TSC/082 3.0 25/11/98  IBusiness Thread EP01 Pathway
+89) IPCL/TST/CLR/001 I2.0 [28/08/98 _ [DIT Closure Report - New IHorizon
+\V2_0 Release 2
+90) Itb.a IMOT Closure Report - NewHorizon
+Release 2
+191) ICR/ACR/013 IEnd to End Acceptance _—‘ [Pathway
+\Closure Report
+92) IAs_cav01.doc 10.1 (04/12/98 Acceptance Specification IDSS/POCL
+ld Consolidated Caveats
+raft
+93) IVI/TSC/040 4.0 (28/10/98 High Level Test Plan Pathway
+ITPSO101
+94) tba 4.0 07/12/98 [Planned Evaluation Matrix IPOCL
+95) ITI/IFS/008 10.3 I10/03/99 __ [Pathway to Post Office Pathway
+ITechnical Interface
+Specification
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24,
+
+/OL/OL
+
+Page 8 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+0.3. ABBREVIATIONS
+BA Benefits Agency
+BT Business Thread
+CMS Card Management System
+cs (Pathway) Customer Services
+DSS Department of Social Security
+HLTP High Level Test Plan
+MIS Management Information Service
+OPS Office Platform Service
+PAS Payment Authorisation System
+PDA Programme Development Authority
+PO Post Office
+POCL Post Office Counters Limited
+PPD Process and Procedures Document
+SADD Service Architecture Design Document
+SLA Service Level Agreement
+SLAM Service Level Administration & Management
+SMC System Management Centre
+TIP Transaction Information Processing
+TMS Transaction Management Service
+0.4 CHANGES IN THIS VERSION
+e Criterion 536/1 - reference changed from ref.(76) to ref.(74) as advised in v1.9
+e Title of ref.(61) applied correctly in document
+e Criterion 478/12 - Document title inserted against ref.(44)
+e Section 5.1.1 - Criterion 468/1 removed
+e Section 5.3 - Entries for 537/1 merged
+0.5 GENERAL CAVEAT
+
+Approval of this Acceptance Specification is subject to the relevant caveats in the
+extant version of Acceptance Specification Consolidated Caveats.
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE
+
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 9 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+
+0.6 TABLE OF CONTENT
+0. DOCUMENT CONTROL 2
+On DOCUMENT HISTORY 2
+0.2 ASSOCIATED DOCUMENTS 3
+0.3 ABBREVIATIONS 10
+0.4 CHANGES IN THIS VERSION 10
+0.5 GENERAL CAVEAT 10
+0.6 TABLE OF CONTENT il
+2. ACCEPTANCE INCIDENTS 13
+3. ACCEPTANCE PERIOD 14
+4. DELIVERABLES & SERVICE 14
+5. ACCEPTANCE CRITERIA 14
+5.1 Acceptance Criteria and test Conditions 14
+
+5.11 Description of tests conducted by Acceptance Trial 16
+
+5.1.2 Criterion Description of tests conducted by Acceptance Review 41
+3.2 Criterion for later acceptance 89
+5.3 Criterion Summary 94
+6. ACCEPTANCE INCIDENT SEVERITY 98
+6.1 High Severity Incidents 98
+6.2 Medium Severity Incidents 98
+6.3 Low Severity Incidents 98
+7. TEST DATA 100
+8. AUTHORITY RESPONSIBILITIES 101
+8.1 Appoint Test Manager 101
+8.2 Acceptance Incident Reports 101
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+
+CONTRACT CONTROLLED Page 10 of 1
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+8.3 Acceptance INCIDENT Analysis Reports 101
+8.4 Attendance At Trials And Reviews 101
+8.5 Management and CO-ORDINATION 101
+8.6 Progress Reviews 101
+9. CONTRACTOR RESPONSIBILITIES 102
+10. ACCEPTANCE TRIAL TEST CONDITIONS 102
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 11 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+1. PURPOSE & SCOPE
+
+This document describes the Acceptance Test for the POCL Infrastructure Service
+in accordance with the Acceptance Procedures that are set out in the Schedules
+referred to section 0.2, and also the Pathway document “Standard for documenting
+Acceptance Specifications”. This test will determine that the POCL Infrastructure
+Service meets all the Acceptance Criteria that are agreed in the Acceptance Test
+Specification and that are within the scope of the “Pathway New Release 2
+Contents Description” ref:(61) - document for New Release 2 if applicable.
+
+Schedule
+C3
+
+Policy & Standards
+
+POCLIDSS POCLIDSS POCLDSS
+Implementation Implementation Implementation
+Training Services Rollout
+pss
+Interface
+PAS cos
+Help Desks =
+Reference 2
+Data 8
+Pock 2
+Infrastucture
+BES oBcs ee EPOSS
+
+Figure1-1: This Acceptance Test in relation to others
+
+2. ACCEPTANCE INCIDENTS
+
+The standard and method for originating, progressing and resolving Acceptance
+Incidents shall be as described in the associated Document “Standard for Raising
+and Progressing Acceptance Incidents”.
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 12 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+Specification Versi
+Date:3 1/03/1999.
+
+'R/ACS/007
+0
+
+3. ACCEPTANCE PERIOD
+
+The Acceptance Period for the Acceptance Tests which comprise the Operational
+Trial is as determined by schedule BO7 of the AUTHORITIES’ Agreement.
+
+The Pathway programme plan details the schedule for the POCL Infrastructure
+Acceptance Test.
+
+4. DELIVERABLES & SERVICE
+
+This section details the Deliverables and Services that are the subject of this
+Acceptance Test and as defined by the related Agreements.
+
+Deliverable or Service. (Contract Method
+Reference
+
+IPOCL Infrastructure Service IPOCL Agreement Schedule Acceptance Trial
+(A15 - Requirements. Acceptance Review
+IPOCL Agreement Schedule
+(A16 - Solutions.
+
+IPOCL Agreement Schedule
+(G01 - POCL Infrastructure
+[Service Definition
+
+Table of Deliverables and Services.
+
+5. ACCEPTANCE CRITERIA
+
+This section lists the identifier of each Acceptance Criterion that will be
+demonstrated by the Acceptance Test. It also lists the Acceptance Test
+Conditions that are used to determine whether (or not) the Acceptance Criterion
+has been met together with the applicable test Phase.
+
+5.1 ACCEPTANCE CRITERIA AND TEST CONDITIONS
+
+Conformance of the POCL Infrastructure Acceptance Criteria will be demonstrated
+through Acceptance Trials and/or Acceptance Reviews.
+
+Tests conducted by Acceptance Trials comprise practical tests using prepared test
+scripts. If applicable the Test Condition(s) appropriate to a criterion are specified
+in section 5.1.1 together with a Criterion Description of the test. Detailed
+composition of the test in terms of sequences of Test Conditions is contained in
+Section 10. In the tables in section 5.1.1 the rows labelled Function Run entry will
+be populated immediately prior to the running of the Acceptance Trials in a
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 13 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+working version of the Acceptance Test Specification. These will provide
+invigilators with references to the checklists used to monitor the progress of the
+testing. The order of running of Test Conditions will not necessarily correspond to
+the order presented in HLTPs because of the “physicalisation” of the testing. The
+Function Run entry will allow the invigilator to read across from the criterion to the
+checklist.
+
+Tests conducted by Acceptance Review comprise typically document reviews, site
+visits or presentations. If applicable the Test Condition(s) are described in section
+5.1.2.
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 14 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+FUJ00001463
+FUJ00001463
+
+5.1.1 Description of tests conducted by Acceptance Trial
+
+The table below shows which acceptance criteria will be met by Acceptance Trial.
+
+All of the following tests will be performed during the Technical Test phase.
+
+Requirement ID 467
+{Criterion 2
+Derivation Requirement
+
+[Criterion Description
+
+[The transfer of data between OPS and TMS shall be
+lsecure, complete, accurate and robust.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/105 - Integrity and Networking - ref.(15)
+la) 6.1.1.1 to 6.1.1.7
+Ib) 6.1.2.1 to 6.1.2.3
+Ic) 6.1.3.1 to 6.1.3.2
+
+IHLTP VI/PLA/011 - Post Office Domain Security - ref.(16)
+OPS Multiple Counter Post Office
+
+ld) OPSO7_1
+
+le) OPSO7_2
+
+if) OPSO9_1.1
+
+Also see entry in 5.3.
+
+IScenario Description
+
+la) Failure of ISDN Link
+
+lb) Failure of ISDN Router
+
+Ic) Failure of WAN Router
+
+Id) CLI of ISDN router in PO
+
+le) Invalid IP addresses, Invalid IP port barring, Invalid IP
+protocol barring
+
+if) Incoming calls on CLI list
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 15 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+Date:3 1/03/1999.
+
+FUJ00001463
+FUJ00001463
+
+Requirement ID 467
+Criterion 4
+Derivation Schedule G01 - 4.2.2.6
+
+\Criterion Description
+
+Data and message transfers shall be resilient to either
+Inetwork or node failure.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/105 - Integrity and Networking - ref.(15)
+
+la) 4.1.1.1 to 4.1.1.8
+b) 4.1.2.1 to 4.1.2.8
+lc) 4.3.1.1 0 4.3.1.7
+ld) 4.3.2.1 t04.3.2.7
+le) 4.4.1.1 to 4.4.1.10
+I) 4.4.2.1 to 4.4.2.10
+lg) 4.5.1.1 to 4.5.1.12
+Ih) 6.1.1.1 to 6.1.1.7
+i) 6.1.2.1 t06.1.2.3
+i) 6.1.3.1 t06.1.3.2
+
+IScenario Description
+
+la) Horizon to DSS (CAPS)
+
+lb) DSS (CAPS) to Horizon
+
+ic) Horizon to DSS (ESNCS)
+
+Id) DSS (ESNCS) to Horizon
+
+le) Horizon to POCL (TIP )
+
+if) POCL (Reference Data) to Horizon
+Ig) Horizon to POCL (HAPS)
+
+lh) Failure of ISDN Link to Outlet
+
+li) Failure of ISDN Router
+
+ji) Failure of WAN Router
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 16 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+Requirement ID 467
+Criterion iS
+Derivation Schedule G01 - 4.2.3.2
+
+Criterion Description
+
+IAll messages and data shall have a cyclic redundancy
+Icheck applied when they are initially committed to the
+journal and this shall be checked every time the message o
+data is accessed.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Post Office Domain Security - ref.(16)
+OPS Multiple Counter Post Office
+
+la) OPSO6_3
+
+HLTP VI/PLA/009 - Central Services Domain Security Test
+Plan - ref. (20)
+
+lb) CSD03_3
+
+IHLTP VI/TSC/040 - High Level test Plan TPSO101
+- ref. (93)
+
+Ic) PO2, SH2 - tepo115
+
+IScenario Description
+
+Id) Audit - Riposte Message Store - Multiple tests to check
+integrity and use the message store within an outlet
+
+le) Audit - Riposte Transaction Journals - Multiple tests to
+check the integrity and use of the message store of a
+correspondence server
+
+if) As per EPOSS criterion 835/1. Print EPOSS Transaction
+
+Log containing BES, EPOSS, APS & OBCS transactions.
+
+This test shows that various counter transactions
+
+committed within a customer session can subsequently
+
+be viewed within the EPOSS Transaction Log produced
+
+in the outlet.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 17 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 467
+Criterion 6
+Derivation Schedule G01 - 4.2.3.4
+
+Criterion Description
+
+here POCL requires the origin of data to be
+authenticated, the CONTRACTOR shall apply a digital
+signature to the data prior to transmission and shall then
+Icheck it upon receipt.
+
+IHLTP / Business
+[Thread Scenario
+
+IHLTP VI/PLA/011 - Post Office Domain Security
+OPS Multiple Counter Post Office - ref.(16)
+
+la) OPSO5_4
+
+IScenario Description
+
+la) Message Protection - Tests to ensure correct operation
+of payment certifications, entropy, signature verification,
+filestore encryption.
+
+Function Run
+
+IThread Scenario
+
+Requirement ID 472
+
+{Criterion 4
+
+Derivation Requirement
+
+Criterion Description IData capture within OPS shall be accurate and robust.
+IHLTP / Business IHLTP VI/TSC/105 - Technical Integrity
+
+Failures at Outlets - ref.(15)
+
+la) 10.1.1.1 to 10.1.1.4
+Ib) 10.2.1.1 to 10.2.1.4
+Ic) 10.4.2.1 to 10.4.2.2
+Id) 10.4.3.1 to 10.4.3.2
+le) 10.4.4.1 to 10.4.4.2
+if) 10.4.5.1 to 10.4.5.3
+
+IScenario Description
+
+la) Failures on Single Counter Outlet
+
+lb) Failures on Multiple Counter Outlet
+
+ic) Failure of Keyboard / mag stripe reader
+ld) Failure of touch screen
+
+le) Failure of barcode reader
+
+if) Failure of Weigh Scales
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 18 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 472
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+IThe integrity and security of data held within the OPS shall
+be protected at all times.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Post Office Domain Security
+OPS Multiple Counter Post Office - ref.(16)
+
+la) OPSO5_4
+lb) OPSO6_1
+lc) OPS06_3
+
+IScenario Description
+
+la) Message Protection - Tests to ensure correct operation
+of payment certifications, entropy, signature verification,
+filestore encryption.
+
+lb) Riposte Identification, Authentication and Access
+Control. Checks that only authorised programs can read
+/ write using Riposte interface.
+
+ic) Audit - Riposte Message Store - Multiple tests to check
+integrity and use message store
+
+Function Run
+
+Requirement ID 472
+Criterion 3
+
+Derivation Requirement
+
+Criterion Description
+
+Full logs of Events within OPS shall be maintained and an
+audit trail of interactions with, and actions within, OPS shall
+lbe maintained.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Post Office Domain Security
+OPS Multiple Counter Post Office - ref.(16)
+
+la) OPS06_3.5
+
+Scenario Description
+
+la) Audit - Riposte Message Store - Multiple tests to check
+integrity and use of message store
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 19 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Version:2.0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 472
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+IThe integrity and security of data held within OPS shall not
+lbe compromised by any Incident nor when OPS is re-
+lestablished following any Incident.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/105 - Integrity and Networking - ref.(15)
+
+la) 10.1.1.1 to 10.1.1.4
+lb) 10.2.1.1 to 10.2.1.4
+lc) 10.3.1.1. to 10.3.1.2
+ld) 10.4.1.1 to 10.4.1.4
+le) 10.4.2.1 to 10.4.2.2
+I) 10.4.3.1 to 10.4.3.2
+jg) 10.4.4.1 to 10.4.4.2
+lh) 10.4.5.1 to 10.4.5.3
+i) 10.4.6.1 to 10.4.6.4
+j) 10.4.7.1 to 10.4.7.3
+k) 10.4.8.1 to 10.4.8.2
+I) 10.4.3
+
+IHLTP - VI/PLA/011 - Office Platform Domain Security -
+Iref.(16)
+
+Im) OPSOS_1
+
+In) OPSO5_2
+
+Scenario Description
+
+la) Single Counter Outlet PC fails
+
+lb) Multiple counter Outlet PC fails
+
+ic) LAN failure
+
+id) ISDN card failure
+
+le) Keyboard / mag stripe reader failure
+
+if) Touch sensitivity failure
+
+Ig) Barcode reader failure
+
+lh) Weigh Scales failure
+
+li) Slip Printer failure
+
+i) Tally Roll failure
+
+Ik) Back office printer failure
+
+ll) Video monitor/panel failure
+
+Im) Post Office Desktop - Identification and Authentication
+
+In) Access Control - Tests to validate correct operation of
+access control policy
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 20 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 472
+Criterion 5
+Derivation Schedule G01 - 2.6.1.2
+
+ICriterion Description
+
+All data captured at an Outlet either as part of a Counter
+Position Transaction or as an administration function shall
+form part of a unique Transaction which shall be givena
+lunique reference number by Riposte and details stored in
+ithe journal.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Post Office Domain Security
+OPS Multiple Counter Post Office - ref.(16)
+
+la) OPS06_3.5
+
+IScenario Description
+
+la) Audit - Riposte Message Store - Multiple tests to check
+lintegrity and use of message store
+
+Function Run
+
+Requirement ID 472
+Criterion 6
+Derivation Schedule G01 - 2.6.1.3
+
+Criterion Description
+
+Each Counter Position PC shall contain a journal and all
+journal entries shall be automatically replicated to all other
+Imembers of the work group.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Post Office Domain Security
+OPS Multiple Counter Post Office - ref.(16)
+
+la) OPS06_3.5
+
+IScenario Description
+
+la) Audit - Riposte Message Store - Multiple tests to check
+integrity and use of message store
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 21 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 472
+(Criterion 7
+Derivation Schedule G01 - 2.6.1.6
+
+Criterion Description
+
+[The CONTRACTOR shall provide synchronisation facilities
+hich shall automatically check the status of the journal for
+ia node when it is re-established following failure.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/105 - Integrity and Networking - ref.(15)
+
+la) 10.1.1.1 to 10.1.1.4
+b) 10.2.1.1 to 10.2.1.4
+c) 9.2.5.1
+
+IScenario Description
+
+la) Single counter Outlet PC fails
+lb) Multiple counter Outlet PC fails
+Ic) Failure of Counter Correspondence Server
+
+Function Run
+
+Requirement ID 473
+(Criterion 3
+Derivation Requirement
+
+Criterion Description
+
+It shall be possible to restrict the functionality available at
+lan Outlet, to permit (inter alia) some Services not to be
+offered at all Outlets.
+
+IHLTP / Business
+IThread Scenario
+
+BT - VI/TSC/034 - Business Thread RDS01 - ref.(18)
+
+la) 3.3.2
+
+IScenario Description
+
+la) Specific Outlets with various Class Elements present.
+
+Function Run Entry
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 22 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+P Date:3 1/03/1999
+
+Requirement ID 473
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+IThere shall be support available to Users who have
+forgotten their passwords. A large proportion of the Outlets
+lhave only a single Counter Position. The support
+Imechanism used shall not unduly reduce the effectiveness
+lof access control.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP - VI/PLA/011 - Office Platform Domain Security -
+Iref.(16)
+
+la) OPS05_1.20
+
+Scenario Description
+
+la) Forgotten Password back-up
+
+Function Run
+
+Requirement ID 473
+(Criterion 5
+Derivation Requirement
+
+Criterion Description
+
+IThere shall be a secure and reliable mechanism for Users
+ito suspend and resume access to OPS and Services
+loffered via OPS. This shall not be unduly onerous or time
+Iconsuming for Users.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP - VI/PLA/011 - Office Platform Domain Security -
+lref.(16)
+
+la) OPS05_1
+
+IScenario Description
+
+la) Post Office Desktop - Identification and Authentication
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 23 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 473
+ICriterion 6
+Derivation Schedule G01 - 2.4.1.3
+
+Criterion Description
+
+(Only Users authorised by POCL shall be able to log-on to
+
+the OPS at an Outlet in accordance with their defined role.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Post Office Domain Security
+IOPS Multiple Counter Post Office - ref.(16)
+
+la) OPSO5_02
+
+Scenario Description
+
+la) Access Control - Tests to validate correct operation of
+laccess control policy.
+
+Function Run
+
+Requirement ID 473
+
+Criterion 7
+
+Derivation Schedule G01 - 2.4.1.4
+
+{Criterion Description
+
+(Authentication of all Users logging on to the OPS in the
+Outlet shall be undertaken by the elements of the Service
+Infrastructure on which OPS is based. Full access control
+land password management facilities shall be provided.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Post Office Domain Security
+IOPS Multiple Counter Post Office - ref.(16)
+
+la) OPSO5_02
+
+Scenario Description
+
+la) Access Control - Tests to validate correct operation of
+laccess control policy.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 24 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 476
+(Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+IThe implementation of any Release shall not cause any
+significant disruption to Users, shall not disrupt the normal
+
+orking environment of Users and shall not require
+significant involvement from Users.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/110 - Systems Management - ref.(19)
+
+la) SDO1 to SD10
+lb) ACO1 to ACO3.
+
+IScenario Description
+
+Software Distribution - Counter Tests. Various tests to
+validate correct operation of software distribution
+process. Following distribution this will include counter
+tests which use previously held reference data and
+transaction data.
+
+Im) Auto configuration tests (Counter Builds) covering
+Configure new single counter system, Configure new
+multi-counter gateway system, Configure several
+counter systems simultaneously.
+
+D
+
+Function Run
+
+Requirement ID 476
+{Criterion IS
+
+Derivation Requirement
+
+\Criterion Description
+
+The implementation of any Release shall not cause any
+corruption to data held by or on behalf of the
+AUTHORITIES.
+
+IHLTP / Business
+IThread Scenario
+
+HLTP VI/TSC/110 - Systems Management - ref.(19)
+
+la) SDO1 to SD10
+lb) SD20 to SD25 & SD30
+
+Scenario Description
+
+la) Software Distribution - Counter Tests. Various tests to
+validate correct operation of software distribution process
+in an outlet. Following distribution this will include
+counter tests which use previously held reference data
+and transaction data.
+
+lb) Software Distribution - Data Centre Tests. Various tests
+to validate correct operation of software distribution
+process to the Pathway Data Centres.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 25 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID 476
+{Criterion 6
+Derivation Requirement
+
+Criterion Description
+
+IThe implementation of any Release shall not cause any
+significant disruption to Users, shall not disrupt the normal
+
+orking environment of Users and shall not require
+significant involvement from Users.
+
+IHLTP / Business
+[Thread Scenario
+
+Identical to 476/4.
+
+Scenario Description
+
+Function Run
+
+Requirement ID 478
+{Criterion 7
+Derivation Requirement
+
+ICriterion Description
+
+iThe collection or delivery of Data Files shall be retried
+lautomatically, under parameter control, in the event of any
+failure.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/105 - Integrity and Networking - ref.(15)
+
+la) 4.1.1.1 to 4.1.1.8
+b) 4.1.2.1 to 4.1.2.8
+lc) 4.3.1.1 t0 4.3.1.7
+ld) 4.3.2.1 t04.3.2.7
+le) 4.4.1.1 to 4.4.1.10
+If) 4.4.2.1 to 4.4.2.10
+lg) 4.5.1.1 to 4.5.1.12
+h) 4.4.3.1 to 4.4.3.6
+
+Scenario Description
+
+la) Horizon to DSS (CAPS)
+
+lb) DSS (CAPS) to Horizon
+
+Ic) Horizon to DSS (ESNCS)
+
+id) DSS (ESNCS) to Horizon
+
+le) Horizon to POCL (TIP )
+
+if) POCL (Reference Data) to Horizon
+Ig) Horizon to POCL (HAPS)
+
+lh) Compaq Recovery Option Tests
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 26 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance R
+
+Specification Versi
+P Date:3 1/03/1999
+
+f:CR/ACS/007
+0
+
+Requirement ID 478
+
+(Criterion 13
+
+Derivation Requirement
+
+{Criterion Description IPathway shall maintain a full audit trail of all TMS activity
+IHLTP / Business IHLTP - VI/PLA/009 - Central Services Domain Security -
+IThread Scenario iref.(20)
+
+la) CSDO3_03
+lb) CSD04_03
+lc) CSDO5_03
+
+[Scenario Description ja) Correspondence Server / riposte - Audit - various tests to
+validate that integrity and logging of transactions.
+
+lb) As above for OBCS, TPS, APS, RD & CMS/PMS Agents
+
+Ic) As above for Archive Server Agents
+
+Function Run
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 27 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+Requirement ID 478
+Criterion 14
+Derivation Requirement
+
+Criterion Description
+
+Pathway shall ensure that any transfer of Data Files or
+messages to or from TMS is, and can be shown to be,
+lsecure, complete accurate and robust.
+
+IHLTP / Business
+IThread Scenario
+
+LTP - VI/TSC/105 - Integrity and Networking - ref.(15)
+\Sequent to Correspondence servers
+la) 5.1.1.1 to 5.1.1.2
+
+lb) 5.1.2.1 to 5.1.2.3
+
+Ic) 5.1.3.1 to 5.1.3.5
+
+ld) 5.1.4.1
+
+le) 5.1.5.1 to 5.1.5.6
+
+If) 5.1.6.1 to 5.1.6.4
+
+Ig) 5.1.7.1 to 5.1.7.9
+
+Ih) 6.1.1.1 to 6.1.1.7
+
+li) 6.1.2.1 to 6.1.2.3
+
+j) 6.1.3.1 to 6.1.3.2
+
+Ik) 6.1.4.1
+
+Il) 4.4.1.1 to 4.4.1.10
+
+IHLTP - VI/TSC/110 - Systems Management High Level Test
+Definition
+
+Im) EV01 to EVO7
+
+Scenario Description
+
+la) Failure of Sequent
+
+lb) Failure of FDDI link
+
+Ic) Failure of WAN router
+
+id) Failure of inter campus link
+
+le) Failure of LAN
+
+if) Failure of Agent Server
+
+Ig) Failure of Correspondence Server
+
+lh) Failure of ISDN Link to Outlet
+
+li) Failure of ISDN Router
+
+jj) Failure of WAN Router
+
+Ik) Failure of inter campus link
+
+I!) Horizon to POCL(TIP)
+
+Im) Resilience testing - Tivoli Agent to Tivoli management
+system
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 28 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:3 1/03/1999
+
+FUJ00001463
+FUJ00001463
+
+Requirement ID 479
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+ITMS shall only allow connections to such elements of the
+Service Infrastructure to be established with computer
+Isystems which are approved by the AUTHORITIES to be
+connected.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP - Systems Management and Support Services
+Domain - Security ref.(82)
+
+ISMS09_1 to SMS09_9
+
+IScenario Description
+
+Cisco Routers and LAN switches - Identification &
+Authentication, Access Control Policy, Audit.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 29 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+Requirement ID 479
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+[TMS shall authenticate the identity of any computer system
+ith which a link is to be established.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP - VI/PLA/010 - POCL & POCL Clients Domain
+[Security - ref.(17)
+
+la) POCLO1_4
+lb) POCLO3_4
+
+IHLTP - VI/PLA/O11 - Office Platform Domain Security -
+Iref.(16)
+
+lc) OPS10_01
+
+IHLTP - VI/PLA/009 - Central Services Domain Security -
+iref.(20)
+
+ld) CSDO4_1
+
+IScenario Description
+
+la) Data Encryption and Key Management - HAPS Access
+Node
+
+lb) Data Encryption and Key Management - TIP Access
+Node
+
+ic) ISDN Routers - external interface - Identification and
+Authentication
+
+id) CMS / PAS Agent Application - Identification and
+Authentication
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 30 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+Requirement ID 536
+{Criterion 2
+Derivation Requirement
+ICriterion Description IPeripheral and input devices supplied as part of the
+lelements of the Service Infrastructure on which OPS is
+provided shall be capable of detecting contention,
+remature removal/swapping of Tokens etc. as appropriate
+IHLTP / Business IHLTP - VI/PLA/011 - Office Platform Domain Security -
+[Thread Scenario Iref.(16)
+
+IOPS05_01
+
+[Scenario Description IAuthentication - various tests including validation of correct
+loperation of POLO boot process.
+
+Function Run
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 31 of 1
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+Requirement ID 537
+Criterion 4
+Derivation Requirement
+
+[Criterion Description
+
+[The CONTRACTOR shall carry out system management of
+lall the Services in a consistent and coherent manner to
+lensure the following:
+a) activities within the Services, including PAS, CMS,
+TMS, OPS, BES, OBCS, APS and EPOSS, are co-+
+ordinated such that, for example, changes and
+faults can be tracked across Service boundaries;
+b) changes to the Services can be made speedily
+and accurately.
+
+IHLTP / Business
+[Thread Scenario
+
+IHLTP VI/TSC/110 - Systems Management - ref.(19)
+
+la) EVO1 - EVO7
+
+lb) PTO1 - PTO3
+
+Ic) SDO1 to SD10
+
+Id) SD20 to SD25 & SD30
+
+Scenario Description
+
+la) Tivoli Event Monitoring - Various tests to validate correct
+and consistent generation of events on multiple platforms!
+(TMS and OPS hosts).
+
+lb) Patrol Testing - Various tests to ensure correct operation
+of the event monitoring facilities on the Sequent (PAS /
+CMS hosts)
+
+ic) Software Distribution - Counter Tests. Various tests to
+validate correct operation of software distribution processI
+in an outlet.
+
+id) Software Distribution - Data Centre Tests. Various tests
+to validate correct operation of software distribution
+process to the Pathway Data Centres.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 32 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 537
+(Criterion 2
+Derivation Schedule G01 - 5.3.5.1
+
+\Criterion Description
+
+Software distribution facilities shall be provided by the
+ICONTRACTOR which shall enable Software files and
+installation scripts to be distributed across the Wide Area
+Networks, part of the Service Infrastructure, to a specific
+Outlet, all Outlets or a group of Outlets selected according
+ito one or more particular attributes.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/110 - Systems Management - ref.(19)
+
+la) SDO1 to SD10
+lb) SD20 to SD25 & SD30
+
+Scenario Description
+
+la) Software Distribution - Counter Tests. Various tests to
+validate correct operation of software distribution process
+in an outlet.
+
+la) Software Distribution - Data Centre Tests. Various tests
+to validate correct operation of software distribution
+process to the Pathway Data Centres.
+
+Function Run
+
+Requirement ID 538
+{Criterion 4
+
+Derivation Requirement
+
+ICriterion Description
+
+ISMS shall provide a facility for synchronising the date and
+itime across the Services and the Service Infrastructure.
+This shall cater for the handling of clock changes (e.g. at
+[the beginning and end of British Summer Time).
+
+IHLTP / Business
+[Thread Scenario
+
+IHLTP VI/TSC/110 - Systems Management - ref.(19)
+
+la) TM01 to TMO6, TM10 to TM15, TM20 to TM23
+
+IScenario Description
+
+la) Time Synchronisation - Various tests to validate correct
+and resilient time synchronisation across platforms.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 33 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 541
+{Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+TMS shall be scaleable to meet POCL’s business needs
+ifrom time to time.
+
+IHLTP / Business
+[Thread Scenario
+
+IHLTP VI/TSC/113 - Performance Assurance - ref.(22)
+
+la) 3.1 to 3.6 (Correspondence Server)
+lb) 4.1 to 4.8 (Agent Servers)
+
+IScenario Description
+
+la) & b) Validation that Replication, Harvesting, Loading
+land Archiving operations can be achieved for the required
+olumes.
+
+Function Run
+
+Requirement ID 958
+{Criterion 2
+Derivation Requirement
+
+ICriterion Description
+
+IThe OPS shall be capable of supporting the entire range of
+business transacted at Outlets for current volumes of
+business and volumes of business as projected by POCL.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/113 - Performance Assurance - ref.(22)
+
+la) 2.1 to 2.7 (Counter Systems)
+
+IScenario Description
+
+la) Various tests to validate the capacity of OPS for
+replication, transmission to TMS and some local
+ladministrative functions.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 34 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+
+FUJ00001463
+FUJ00001463
+
+FUJ00001463
+
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Version:2.0
+
+Specification
+P Date:3 1/03/1999
+
+Requirement ID i826
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+IOPS, and the elements of the Service Infrastructure on
+
+hich OPS is provided, shall be able to be connected, and
+shall support such connection, to specialist peripherals in
+lsuch a way that the specialist peripherals may be accessed
+lby one, two or more terminals.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/TSC/105 - Technical Integrity and Networking -
+Iref.(15)
+
+la) 10.4.5.1 to 10.4.5.3
+
+IScenario Description
+
+la) Weigh Scales - Tests to validate correct operation of
+eigh scale accessed by more than one counter system
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 35 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 921
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+IThe OPS and the elements of the Service Infrastructure on
+hich OPS is provided shall provide a secure time-out
+ifacility for each counter terminal and back office terminal.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Office Platform Domain Security -
+iref.(16)
+la) OPSO5_1.11
+
+Scenario Description
+
+la) Access Control - various tests including validation of
+correct operation of inactivity time-out.
+
+Function Run
+
+Requirement ID 921
+
+Criterion 2
+
+Derivation Requirement
+
+Criterion Description
+
+IThe time-out facility shall allow the User to resume work
+ith the minimum delay consistent with achieving security in
+laccordance with the provisions hereof.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/011 - Office Platform Domain Security -
+lref.(16)
+
+la) OPSO5_1.11
+
+Scenario Description
+
+la) Authentication - various tests including validation of
+correct operation of inactivity time-out.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 36 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 921
+{Criterion 3
+Derivation Requirement
+
+ICriterion Description
+
+It shall be clear that the facility is in use to remove any
+confusion between a terminal with the facility activated and
+a terminal that is available for use by any User.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/O11 - Office Platform Domain Security -
+iref.(16)
+
+la) OPSO5_1.11
+
+IScenario Description
+
+la) Authentication - various tests including validation of
+correct operation of inactivity time-out.
+
+Function Run
+
+Requirement ID 921
+(Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+Under circumstances where the facility has been activated
+land the User is no longer able to cancel it, for whatever
+reason, it shall be possible with appropriate authority:
+
+(a) to complete User and Outlet balances; and
+
+(b) to make the terminal available to another User.
+
+IHLTP / Business
+IThread Scenario
+
+IHLTP VI/PLA/O11 - Office Platform Domain Security -
+iref.(16)
+
+la) OPSO5_1.11
+
+Scenario Description
+
+la) Authentication - various tests including validation of
+correct operation of inactivity time-out.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 37 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 953
+Criterion 4
+Derivation Requirement
+
+ICriterion Description
+
+OPS shall support concurrent access to services provided
+ia it.
+
+IHLTP / Business
+IThread Scenario
+
+IBT VI/TSC/048 - Business Integration Thread BITO3 -
+Iref.(23)
+
+IScenario Description
+
+IBT ref. 1 to 4. This Thread checks the correct integration of
+
+IOBCS and BPS with the new R2 services of EPOSS and
+
+IAPS, together with various external links.
+
+The run-time environment for BIT includes multiple outlets
+ith multiple counters. Tests covering all services will be
+
+run concurrently on multiple nodes.
+
+Function Run
+
+Requirement ID 953
+Criterion 2
+
+Derivation Requirement
+
+Criterion Description
+
+IOPS shall ensure data integrity, e.g. reports printed at the
+back office whilst serving at the front office shall be
+consistent with a clearly stated policy (to be approved by
+POCL) of what front office data are included in the report
+
+IHLTP / Business
+IThread Scenario
+
+IBT VI/TSC/082 - Business Thread EP01 - ref.(88).
+
+Test 3.3.14/5
+
+IScenario Description
+
+IManager 1 performs an office balance and produces an
+office trial balance. One of the outlet counter PC's is
+disconnected from the LAN prior to this scenario. A warning)
+lis displayed to the Post Master concerning the disconnected}
+counter.
+
+Function Run
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 38 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+Requirement ID 953
+Criterion 3
+Derivation Requirement
+
+Criterion Description Performance of OPS shall not be significantly degraded by
+lother office activity, e.g. front office, back office and
+communications activities shall not unduly impact each
+lother.
+
+IHLTP / Business IHLTP VI/TSC/113 - Performance Assurance - ref.(22)
+IThread Scenario
+
+[Tests 2.2 to 2.7
+Scenario Description IVarious tests to validate counter performance.
+Function Run
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 39 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+FUJ00001463
+FUJ00001463
+
+5.1.2 Criterion Description of tests conducted by Acceptance Review
+
+The table below shows which acceptance criterion are to be met by Acceptance
+Review. Each Acceptance Test will use the latest baselined version of any
+document referred to in section 0.2 or below.
+
+Requirement ID 463
+{Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+part of the Steady State Services. Examples of these
+purposes include:
+
+la) testing by the AUTHORITIES;
+
+lb) training;
+
+ic) demonstrations and marketing.
+
+The CONTRACTOR shall supply samples of all elements of
+the Service Infrastructure used to provide OPS for purposes
+other than (i) Roll Out and (ii) live use in POCL Premises asI
+
+Statement of Fact or Obligation
+
+Requirement ID 463
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+IThe CONTRACTOR shall provide specimens of all
+lelements and proposed elements of the Service
+Infrastructure used to provide OPS from time to time to
+lundergo destructive safety testing.
+
+[Statement of Fact or Obligation
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 40 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+Requirement ID 463
+(Criterion 3
+Derivation Requirement
+
+\Criterion Description
+
+The AUTHORITIES shall notify the CONTRACTOR from
+time to time of how many samples are required for the
+purposes of testing such elements of the Service
+Infrastructure at Operational Trial, DSS Operational Trial
+land POCL Operational Trial. They shall not in total exceed
+ithe equivalent of 8 post offices with a total of 50 Counter
+Positions. Any requirements thereafter for samples of
+lequipment for testing purposes (beyond the initial 50
+(Counter Positions) shall be subject to a process approved
+lby a date consistent with the project plan agreed by the
+parties, such that the date does not adversely impact
+contractual milestones as defined in Clause 605.1 of the
+(Authorities Agreement.
+
+[Statement of Fact or Obligation
+
+Requirement ID 463
+Criterion 4
+Derivation Requirement
+
+{Criterion Description
+
+Unless testing demonstrates a breach of the relevant
+standards in Schedule A02, the number of specimens for
+destructive testing purposes shall not exceed one example
+lof each component of Hardware within the elements of the
+Service Infrastructure that are proposed for the OPS.
+
+Statement of Fact or Obligation
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 41 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID 463
+{Criterion IS
+Derivation Requirement
+
+\Criterion Description
+
+[The quantity of samples for training purposes depends on
+ithe training methodology employed
+
+Reason
+
+Statement of Fact or Obligation
+
+Requirement ID 464
+Criterion 1
+Derivation Requirement
+
+\Criterion Description
+
+Services which utilise OPS or TMS shall only be provided
+isubject to the agreement of POCL
+
+Reason [Statement of Fact or Obligation
+Requirement ID 465
+
+Criterion 4
+
+Derivation Requirement
+
+Criterion Description
+
+[The livery of the elements of the POCL Service
+
+Infrastructure to be used for OPS shall be agreed with
+
+IPOCL before Roll Out. A single livery shall be approved for
+
+lall Outlets that is consistent with the POCL Style Guide for
+ost offices.
+
+ITest Condition The agreed livery is documented in the Counter Hardware
+Design Specification.
+
+Method Document Inspection
+
+References Counter Hardware Design Specification - ref.(25)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 42 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 465
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+The effort required to maintain the appearance of the
+Equipment to a level reasonably acceptable to the
+[AUTHORITIES shall be minimal.
+
+ITest Condition ‘Acceptance of equipment cleaning and maintenance
+lprocedures as described in Operating Environment PPD.
+[Absence of any outstanding problems reported to the
+Horizon Service Review Forum.
+
+Method Document Inspection
+
+References Release 2 Operating Environment Processes and
+Procedures Document - ref.(26).
+(Customer Services - Services Management Operations
+Manual - ref.(76).
+
+Phase [Technical Testing
+
+Requirement ID 466
+
+{Criterion 4
+
+Derivation Requirement
+
+ICriterion Description
+
+Pathway shall supply detailed specifications of all the
+lconsumables used by the OPS
+
+ITest Condition
+
+Inclusion of specification in POCL and DSS Schedule B04.
+
+Method Document Inspection
+
+References IPOCL Consumables - POCL Agreement Schedule B04. -
+lref.(28)
+DSS Consumables - DSS Agreement Schedule B04 -
+Iref.(29)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 43 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 466
+{Criterion 2
+Derivation Requirement
+
+ICriterion Description
+
+[The CONTRACTOR shall supply detailed specifications of
+lall the consumables used by the OPS. The CONTRACTOR
+shall provide estimates of the likely consumption of each
+iconsumable and, as part of an impact assessment, the
+impact on consumption of any changes, including new
+Services.
+
+ITest Condition Inclusion of specification in POCL and DSS Schedule B04.
+Provision of estimates.
+
+Method Document Inspection
+
+References IPOCL Consumables - POCL Agreement Schedule B04. -
+lref.(28)
+DSS Consumables - DSS Agreement Schedule B04 -
+lref.(29)
+
+Phase [Technical Testing
+
+Requirement ID 466
+
+Criterion 3
+
+Derivation Requirement
+
+Criterion Description
+
+[The CONTRACTOR shall be capable of supplying all
+iconsumables, but the AUTHORITIES shall have the option
+ito source consumables from another supplier.
+
+ITest Condition Evidence of Agreement - POCL Agreement Schedule B04 /
+DSS Agreement Schedule B04
+
+Method Document inspection
+
+References POCL Agreement Schedule B04 - POCL Consumables -
+lref.(28)
+DSS Agreement Schedule B04 - DSS Consumables -
+lref.(29)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 44 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 467
+Criterion 4
+Derivation Requirement
+
+{Criterion Description
+
+Each instance of OPS within Outlets shall interface with
+ITMS to allow the transfer, in both directions, of authorised
+data files and messages.
+
+\Test Condition Description of Technical Architecture contained in TMS and
+OPS Architecture Documents, and the Riposte API
+specification
+
+[Method Document Inspection
+
+References IOPS Architecture Document - ref.(30)
+
+ITMS Architecture Document - ref.(31)
+Riposte 32 API Specification - ref.(32)
+
+Phase [Technical Testing
+
+Requirement ID 467
+
+Criterion 3
+
+Derivation Requirement
+
+\Criterion Description
+
+\Within OPS it shall be possible to identify whether data
+from OPS have been received by TMS or not.
+
+ITest Condition ‘Acceptance of mechanisms described in ref.(83).
+Method Document Inspection
+
+References IOPS/TMS Data Acknowledgement Process - _ref.(83)
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 45 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 468
+Criterion 4
+Derivation Requirement
+
+{Criterion Description
+
+Maintenance and repair of the elements of the Service
+Infrastructure used to provide OPS involving on-site
+lattendance at POCL Premises by the CONTRACTOR’s
+lengineers shall not interfere unduly with the ability of an
+(Outlet to serve Customers, even where Outlets have a
+single Counter Position and/or extremely limited physical
+space.
+
+\Test Condition
+
+[A maintenance call to a POCL outlet will be handled by a
+suitably trained engineer. Each engineer will be targeted to
+resolve all on site hardware failures within 20 minutes of
+arriving on site. The appropriate level of spares will be
+deployed to assist in achieving this target. The engineer will
+not interfere unduly with the post office operation. Where
+this is not possible a visit will be deferred and/or exemption
+lsought on SLA requirements.
+
+Method
+
+Document Inspection
+Ongoing review as part of Horizon Service Review Forum
+
+References
+
+CFM: ICLS Sorbus Pathway Project Operations Manual -
+ref.(33)
+
+Horizon System Helpdesk - Work Instructions. - ref.(34)
+Customer Services - Services Management Operations
+Manual - ref.(76).
+
+Phase
+
+Model Office
+
+Requirement ID
+
+469
+
+Criterion
+
+4
+
+Derivation
+
+Requirement
+
+Criterion Description
+
+[The technical documentation concerning OPS and the
+lelements of the Service Infrastructure used to provide OPS
+shall be suitable to allow POCL to procure applications
+hich utilise OPS or hardware which interfaces with OPS.
+These procurements shall not necessarily be from Pathway.
+
+ITest Condition Provision of documents as described below.
+
+Method Document Inspection
+
+References ICL Pathway External Applications Procurement Policy -
+Iref.(80)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 46 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 469
+Criterion 2
+Derivation Requirement
+
+{Criterion Description
+
+[The CONTRACTOR shall provide technical documentation
+concerning the OPS and the elements of the Service
+Infrastructure used to provide OPS.
+
+ITest Condition Provision of documents as described below.
+(Acceptance of the process by which additional information
+Imay be provided as described in ref.(80).
+
+Method Document Inspection
+
+References (Counter Hardware Design Specification - ref.(25)
+Riposte 32 API Specification - ref.(32)
+IOPS Architecture Document - ref.(30)
+ICL Pathway External Applications Procurement Policy -
+iref.(80)
+
+Phase [Technical Testing
+
+Requirement ID 469
+
+Criterion 3
+
+Derivation Requirement
+
+Criterion Description
+
+All changes to technical documentation concerning OPS
+land the elements of the POCL Infrastructure used to
+provide OPS shall be the subject of the written agreement
+lof POCL
+
+Reason
+
+Statement of Fact or Obligation
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 47 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 1470
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+[The CONTRACTOR shall provide technical documentation
+concerning TMS and the elements of the Service
+Infrastructure used to provide TMS.
+
+ITest Condition Provision of documents as described below.
+‘Acceptance of the process by which additional information
+Imay be provided as described in ref.(80).
+
+Method Document inspection
+
+References Riposte 32 API Specification - ref.(32)
+ITMS Architecture Document - ref.(31)
+[Technical Environment Description( sections Chapter 4,
+5.2.3, 5.2.4, 6.1 to 6.5, 7.1 to 7.3, 10.1 to 10.3, 10.5.5,
+10.5.6)- ref.(37)
+ICL Pathway External Applications Procurement Policy -
+iref.(80)
+
+Phase [Technical Testing
+
+Requirement ID 1470
+
+Criterion 2
+
+Derivation Requirement
+
+\Criterion Description
+
+IThis documentation shall be suitable to allow POCL to
+lprocure applications which utilise TMS. These
+lprocurements shall not necessarily be from the
+ICONTRACTOR.
+
+ITest Condition Provision of documents _as described below
+
+Method Document inspection
+
+References ICL Pathway External Applications Procurement Policy -
+iref.(80)
+
+Phase [Technical Testing
+
+Requirement ID 1470
+
+Criterion 3
+
+Derivation Requirement
+
+\Criterion Description
+
+IAll changes to technical documentation concerning TMS
+land the elements of the POCL Infrastructure used to
+provide TMS shall be the subject of the written agreement
+lof POCL
+
+Reason
+
+[Statement of Fact or Obligation
+
+Requirement ID
+
+472
+
+{Criterion
+
+3
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 48 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:3 1/03/1999.
+Derivation Requirement
+
+\Criterion Description
+
+Full logs of Events within OPS shall be maintained and an
+audit trail of interactions with, and actions within, OPS shall
+lbe maintained.
+
+ITest Condition Completion of all tests in Audit Acceptance Specification
+Method Document Inspection
+References Audit Closure Report - ref.(81)
+
+IOPS/TMS Data Acknowledgement Process - ref.(83)
+Phase Technical Testing
+
+Requirement ID 474
+{Criterion 4
+Derivation Requirement
+
+\Criterion Description
+
+[The CONTRACTOR shall ensure that all Equipment used inI
+
+ithe provision of OPS is rated for continuous operation, and
+
+capable of functioning safely and reliably for an unlimited
+eriod, attended or unattended, in Outlets.
+
+ITest Condition Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+iref.(39)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 49 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 474
+{Criterion 2
+Derivation Requirement
+
+ICriterion Description
+
+Each installation of such Equipment shall be physically and
+electrically safe and in compliance with relevant legislation
+land recognised best practice.
+
+(a) “Relevant legislation” includes all relevant UK
+Regulations and, from the due date of UK
+implementation, EC Directives. Such Equipment shall
+be maintained to be compliant with any subsequent
+legislation.
+
+(b) “Relevant legislation and recognised best practice”
+includes mandatory standards, including all relevant
+UK Regulations and, from the due date of UK
+implementation, EC Directives. Such Equipment shall
+be maintained to be compliant with any subsequent
+legislation or mandatory standards.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+Iref.(39)
+
+Phase [Technical Testing
+
+Requirement ID 474
+
+{Criterion 3
+
+Derivation Requirement
+
+Criterion Description
+
+[Such installation shall not cause interference with other
+devices.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+lref.(39)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 50 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+FUJ00001463
+FUJ00001463
+
+Requirement ID 474
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+Such Equipment may be required to be installed in
+residential premises.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+iref.(39)
+
+Phase [Technical Testing
+
+Requirement ID 474
+
+Criterion IS
+
+Derivation Requirement
+
+\Criterion Description
+
+IAll Equipment used in the provision of OPS shall comply
+ith BS EN60950 : 1992 (BS7002 :1992) and any
+subsequent amendments.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File
+Phase [Technical Testing
+
+Requirement ID 474
+
+Criterion 6
+
+Derivation Requirement
+
+\Criterion Description
+
+IAll Equipment used in the provision of OPS comprising AC
+lpower adaptors shall comply with BS EN60065 : 1993
+(BS7002 :1992).
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+lref.(39)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 51 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID 474
+Criterion 7
+Derivation Requirement
+
+Criterion Description
+
+[The workstation aspects of all Equipment used in the
+provision of OPS shall comply with the Health and Safety
+(Display Screen Equipment) Regulations 1992, which
+implement Council Directive 90/270/EEC on working with
+display screen equipment.
+
+[Test Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+iref.(39)
+
+Phase Technical Testing
+
+Requirement ID 474
+
+(Criterion 8
+
+Derivation Requirement
+
+{Criterion Description
+
+Any Equipment used in the provision of OPS containing
+laser emitters (including, without limitation, laser printers
+land laser barcode scanners) shall comply with BS EN
+160825:1992.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+Iref.(39)
+
+Phase [Technical Testing
+
+Requirement ID 474
+(Criterion 9
+Derivation Requirement
+
+ICriterion Description
+
+‘Any telecommunications Equipment used in the provision of
+OPS shall comply with Council Directive 91/263/EEC (the
+\Telecommunication Terminal Equipment Directive) and
+Ihave a current BABT certificate or equivalent for connection
+ito the public telephone network.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+iref.(39)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 52 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID 474
+Criterion 10
+Derivation Requirement
+
+{Criterion Description
+
+All Equipment used in the provision of OPS which is defined
+las machinery shall comply with the Supply of Machinery
+(Safety) Regulations 1992, which implement the Machine
+Directive 89/392/EEC as amended by 91/368/EEC.
+
+[Test Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+lref.(39)
+
+Phase [Technical Testing
+
+Requirement ID 474
+
+Criterion 11
+
+Derivation Requirement
+
+ICriterion Description
+
+IAll Equipment used in the provision of OPS shall comply
+ith the Electrical Equipment (Safety) Regulations 1994,
+hich implement the Low Voltage Directive 73/23/EEC as
+lamended by 93/68/EEC.
+
+[Test Condition (Acceptance of Declaration of Technical Conformity.
+
+[Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+Iref.(39)
+
+Phase [Technical Testing
+
+Requirement ID 474
+{Criterion 12
+Derivation Requirement
+
+Criterion Description
+
+IAll Equipment used in the provision of OPS and connected,
+lor intended for connection, to weighing devices shall meet
+ithe requirements of the Non-automatic Weighing
+Instruments (EEC Requirements) Regulations 1992
+Schedule 3 Applications.
+
+ITest Condition
+
+‘Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+Iref.(39)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 53 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+FUJ00001463
+FUJ00001463
+
+Requirement ID 474
+Criterion 13
+Derivation Requirement
+
+{Criterion Description
+
+All visual display terminal Equipment (including, without
+limitation, keyboards) used in the provision of OPS shall
+icomply with the relevant requirements of either BS
+7179:1990 or ISO 9241:1992.
+
+[Test Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+lref.(39)
+
+Phase [Technical Testing
+
+Requirement ID 474
+
+Criterion 14
+
+Derivation Requirement
+
+Criterion Description
+
+IAll Equipment used in the provision of OPS which falls
+
+ithin the scope of The Electromagnetic Compatibility
+(EMC) Regulations 1992, which implement Council
+Directive 89/336/EEC (as amended by 92/31/EEC), shall
+Icomply with such Regulations.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+Iref.(39)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 54 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 474
+Criterion 15
+Derivation Requirement
+
+Criterion Description
+
+All Equipment used in the provision of OPS shall meet the
+minimum EMC requirements of both residential and
+commercial installations, including compliance with BS EN
+50081 and BS EN 50082 with the following amended test
+severity levels and with no degradation of performance:
+
+« IEC 801 part 2 class 3, 6kV contact discharge;
+
+« 1EC 801 part 3 3V/m;
+
+« IEC 801 part 4 +/- 1kV injected onto mains AC supply;
++ IEC 801 part 5 +/- 2kV.
+
+[Test Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+iref.(39)
+
+Phase [Technical Testing
+
+Requirement ID 474
+
+Criterion 16
+
+Derivation Requirement
+
+ICriterion Description
+
+IAll Equipment used in the provision of OPS and covered by
+IEN45501:1992 shall comply with clause A4.5 (voltage
+ariations) and Annex B of that standard.
+
+ITest Condition ‘Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+lref.(39)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 55 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 474
+Criterion 17
+Derivation Requirement
+
+Criterion Description
+
+All items of Equipment used in the provision of OPS shall
+lhave an Index of Protection rating of IP3X as defined in BS
+EN 60529:1992.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+Iref.(39)
+
+Phase Technical Testing
+
+Requirement ID 474
+
+Criterion 18
+
+Derivation Requirement
+
+Criterion Description
+
+[The Equipment used in the provision of OPS and its
+installation shall not constrain the AUTHORITIES or the
+\Agents from meeting their legal safety responsibilities as
+lemployers.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+Iref.(39)
+
+Phase [Technical Testing
+
+Requirement ID 474
+
+ICriterion 19
+
+Derivation Requirement
+
+\Criterion Description
+
+It shall be possible to prove compliance with legislation or
+Imandatory standards as and when necessary.
+
+ITest Condition (Acceptance of Declaration of Technical Conformity.
+
+Method Document inspection
+
+References Declaration of Conformity - Technical Construction File-
+Iref.(39)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 56 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 475
+Criterion 4
+Derivation Requirement
+
+\Criterion Description
+
+The CONTRACTOR shall draw up the POCL Style Guide
+land agree this with the AUTHORITIES by a date consistent
+
+ith the project plan agreed by the parties, such that the
+date does not adversely impact contractual milestones as
+defined in Clause 605.1 of the Authorities Agreement. Any
+Services to be offered via the OPS shall be provided in
+laccordance with the POCL Style Guide.
+
+ITest Condition [Acceptance of Horizon OPS Style Guide _- ref.(35)
+Method Document Inspection
+
+References Horizon OPS Style Guide
+
+Phase [Technical Testing
+
+Requirement ID 475
+
+{Criterion 2
+
+Derivation Requirement
+
+ICriterion Description
+
+(The POCL Style Guide shall set out, inter alia, general
+guidelines for the Human Computer Interface, including
+iscreen layouts, system navigation routes and help and
+manual entry facilities.
+
+ITest Condition [Acceptance of Horizon OPS Style Guide
+Method Document Inspection
+
+References Horizon OPS Style Guide - ref.(35)
+Phase [Technical Testing
+
+Requirement ID 475
+
+{Criterion 3
+
+Derivation Requirement
+
+ICriterion Description
+
+{The Human Computer Interface shall be intuitive and easy
+ito use, to minimise errors and delays.
+
+\Test Condition [Acceptance of Horizon OPS Style Guide
+Absence of Usability incidents relating to the HCI at the end
+lof Operational Trial
+
+Method Document Inspection.
+Analysis of results of Outlet Satisfaction reports from Live
+Trial.
+
+References Horizon OPS Style Guide - ref.(35)
+Planned Evaluation Matrix - ref. (94)
+
+Phase (Operational Trial
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 57 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 475
+(Criterion 4
+Derivation Requirement
+
+ICriterion Description
+
+The Human Computer Interface shall provide a consistent
+look and feel across all Applications and be easy to adapt
+ito facilitate the introduction of new Applications.
+
+ITest Condition (Acceptance of conformance to Horizon OPS Style Guide
+Method Document Inspection
+
+References Horizon OPS Style Guide - ref.(35)
+
+Phase Technical Testing
+
+Requirement ID 476
+
+Criterion 4
+
+Derivation Requirement
+
+{Criterion Description
+
+[The following shall be approved by the AUTHORITIES
+before any Release, this approval not being unreasonably
+lwithheld:-
+
+a) the contents of any Release;
+
+b) the upgrade path for any Release;
+
+c) the timing of the distribution of any Release;
+
+d) the timing of the activation of any Release.
+
+ITest Condition Completion of Release Authorisation Board and production
+lof Sign-Off sheet for ref.(86)
+
+Method Document Inspection
+
+References
+
+Phase Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 58 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+Requirement ID 476
+{Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+IThe CONTRACTOR shall provide proof of sufficient and
+satisfactory pre-testing of each Release, including the
+following aspects:-
+
+(a) at individual component (unit test) level;
+
+(b) of all components of the Release, both changed and
+unchanged, working together (system test);
+
+(c) of all components in combination with different
+hardware and software combinations which may be
+encountered when the Release is in live, non-training, use
+hereunder.
+
+ITest Condition
+
+[Acceptance of Pathway Testing Strategy.
+
+[That the MOT, E2E, BIT Closure reports contains no non-
+conforming entries for the ICL Pathway specific elements.
+[That the Release Authorisation Board are satisfied with the
+status of testing for Release 2.
+
+Method
+
+Document Inspection.
+
+References
+
+iTesting and Integration Strategy - ref.(40)
+
+Revisions to the T&l approach for release 2 - ref.(68)
+Release Authorisation of the NR2 (Child Benefit) Release -
+iref.(86).
+
+DIT Closure Report - New Release 2 - ref.(89)
+
+IMOT Closure Report - New Release 2 - ref.(90)
+
+IE2E Closure Report - New Release 2 - ref.(91)
+
+Phase
+
+[Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 59 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 476
+Criterion 3
+Derivation Requirement
+
+ICriterion Description
+
+The CONTRACTOR shall provide proof of sufficient and
+satisfactory preparation for the implementation of a
+Release. This shall include testing the implementation,
+reversion and regression from the Release.
+
+\Test Condition Availability of approved High Level Test Plans.
+Testing phases are documented and completed as shown
+lin R2 programme plan.
+‘That the Release Authorisation Board are satisfied with the
+status of testing for Release 2.
+
+Method Document Inspection
+
+References HLTPs - various.
+New Release 2 High Level Plan - ref.(24).
+Release Authorisation of the NR2 (Child Benefit ) Release -
+ref.(86).
+
+Phase Model Office
+
+Requirement ID 476
+
+(Criterion 7
+
+Derivation Requirement
+
+(Criterion Description
+
+IThe CONTRACTOR shall maintain a detailed record of all
+Releases and where they are deployed.
+
+ITest Condition The asset management function of Tivoli records the
+contents, version and revision levels of all software
+installed on counter equipment and is updated as a result ofI
+lany software distribution undertaken under Tivoli control on
+lagreed supported systems.
+
+Method ICL Pathway Tivoli and Configuration Management
+Systems will be inspected as part of the site visit.
+
+References
+
+Phase IModel Office
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 60 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+FUJ00001463
+FUJ00001463
+
+Requirement ID 477
+(Criterion 4
+Derivation Requirement
+
+{Criterion Description
+
+The CONTRACTOR shall maintain a detailed list of all
+physical components installed at Premises (an asset
+register) and make it available to the AUTHORITIES on
+request.
+
+Reason
+
+Statement of Fact or Obligation
+
+Subject to request from AUTHORITIES.
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 61 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID 477
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+From the list it shall be possible to identify all elements of
+the Service Infrastructure installed at any location.
+
+ITest Condition
+
+(Asset database - Dispatch-1 will be fed information on
+iserialised whole units from the post office counter Roll Out
+database. It will be maintained (additions, deletions and
+lamendments) by information provided by Pathway Central
+Operations or by asset movements recorded by ICL
+System Service staff during maintenance operations.
+
+IMethod Site Visit
+
+Document Inspection
+References Asset Register- ref.(41)
+Phase Model Office
+Requirement ID 478
+{Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+[TMS shall link into each instance of OPS that is to be used
+ifor live work.
+
+ITest Condition (Acceptance of Pathway Technical Architecture
+
+Method Document Inspection
+
+References [Technical Environment Description (sections 4.1 to 4.5) -
+Iref.(37)
+
+Phase [Technical Testing
+
+Requirement ID 478
+
+Criterion 3
+
+Derivation Requirement
+
+Criterion Description
+
+TMS shall provide links into other POCL systems, including
+ithout limitation TIP as required to support POCL.
+
+ITest Condition
+
+Acceptance of Pathway Technical Architecture
+
+Method
+
+Document Inspection
+
+References
+
+[Technical Environment Description (sections 4.1 to 4.4) -
+Iref.(37)
+
+FTMS Configurations for Pathway TPS and POCL TIP links
+lat Release 2 - ref.(85)
+
+Pathway to Post Office Technical Interface Specification -
+ref. (95)
+
+Phase
+
+Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 62 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+P Date:3 1/03/1999
+
+Requirement ID 478
+
+Criterion 4
+
+Derivation Requirement
+
+ICriterion Description [TMS shall provide links into PAS and CMS
+
+ITest Condition (Acceptance of Pathway Technical Architecture
+
+Method Document Inspection
+
+References [Technical Environment Description (sections 4.1 to 4.4) -
+Iref.(37)
+
+Phase [Technical Testing
+
+Requirement ID 478
+
+Criterion IS
+
+Derivation Requirement
+
+Criterion Description
+
+ITMS shall provide Data File collection and Data File
+delivery Services. It shall be possible to collect Data Files
+from or deliver Data Files to any computer system attached
+to TMS.
+
+\Test Condition [Acceptance of Pathway Technical Architecture.
+[Acceptance of TMS Agent High Level Design.
+
+Method Document Inspection
+
+References [Technical Environment Description (sections 5.1 to
+5.2.1.1.1, 5.2.3, 9.4) - ref.(37)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 63 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 478
+(Criterion 6
+Derivation Requirement
+
+(Criterion Description
+
+Data File collection and Data File delivery Services
+provided by TMS shall be triggerable by any of:
+
++ User action;
++ time;
+
+le in response to a message from an attached computer
+system or generated within TMS.
+
+\Test Condition [Acceptance of Pathway Technical Architecture.
+‘Acceptance of TMS Agent design as contained in TED.
+‘Acceptance of Riposte 32 API.
+Use of Maestro job scheduling.
+
+Method Document Inspection
+
+References Riposte 32 API Specification. - ref.(32)
+[Technical Environment Description (sections 5.1 to
+5.2.1.1.1, 5.2.3, 9.4) - ref.(37)
+Maestro Job Schedule - PAS/CMS - ref.(72)
+
+Phase Technical Testing
+
+Requirement ID 478
+{Criterion 7
+Derivation Requirement
+
+Criterion Description
+
+[The collection or delivery of Data Files shall be retried
+lautomatically, under parameter control, in the event of any
+failure.
+
+ITest Condition
+
+[Acceptance of mechanisms described in FTMS Resilience
+& Recovery Strategy.
+
+Method Document Inspection
+References Release 2 FTMS Resilience and recovery strategy - ref.(87)
+Phase [Technical Testing
+
+[Requirement ID
+
+478
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 64 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Versi 0
+Date:3 1/03/1999.
+[Criterion 8
+Derivation Requirement
+
+ICriterion Description
+
+It shall be possible for POCL to specify a pre-defined list of
+computer systems to which a Data File is to be delivered or
+from which a Data File is to be collected.
+
+ITest Condition Use of Change Control to introduce new sources /
+destinations of Data Files for operation across Generic
+[Technical Interface.
+
+Method Document Inspection
+
+References Pathway to Client Generic Technical Interface Specification
+Iref.(43).
+
+Phase Technical Testing
+
+Requirement ID 478
+
+Criterion 12
+
+Derivation Requirement
+
+Criterion Description
+
+TMS shall include the following processing capabilities:
++ validation of Data Files;
+
+/ consolidation of many Data Files into one Data File;
+/ generating many Data Files from one Data File;
+
++ reformatting the contents of Data Files;
+
+l/ generating control totals through access to the contents
+lof Data Files;
+
+le reconciliation of control totals;
+
+l/ produce reports summarising financial transactions.
+
+ITest Condition ‘Acceptance of Pathway Technical Architecture.
+‘Acceptance of exemplar file handling capability as
+described in TPS Service Design Specification.
+
+Method Document inspection.
+
+References \Technical Environment Description (sections 5.1 to 5.2) -
+Iref.(37)
+ITP Service Design Specification - ref.(44)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 65 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 478
+
+Criterion 13
+
+Derivation Requirement
+
+(Criterion Description IPathway shall maintain a full audit trail of all TMS activity
+ITest Condition (Completion of all tests in Audit Acceptance Specification
+Method Document Inspection
+
+References ‘Audit Closure Report - ref.(81)
+
+Phase Technical Testing
+
+Requirement ID [479
+
+{Criterion 4
+
+Derivation Requirement
+
+{Criterion Description
+
+No computer system shall be connected to the elements of
+ithe Service Infrastructure on which TMS is provided without
+the approval of the AUTHORITIES.
+
+Statement of Fact or Obligation
+
+Requirement ID 479
+Criterion 2
+Derivation Requirement
+
+\Criterion Description
+
+ITMS shall only allow connections to such elements of the
+Service Infrastructure to be established with computer
+isystems which are approved by the AUTHORITIES to be
+connected.
+
+ITest Condition
+
+(Acceptance of measures described in Technical
+Environment Description
+
+Method Document Inspection.
+
+References (Technical Environment Description (sections 9.1 to 9.3) -
+Iref.(37)
+
+Phase [Technical Testing.
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 66 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID 479
+{Criterion 3
+Derivation Requirement
+
+\Criterion Description
+
+Pathway shall maintain a register of computer systems with
+connections to such elements of the Service Infrastructure
+ito be established with computer systems which are
+lapproved by the AUTHORITIES to be connected.
+
+ITest Condition (Acceptance of configuration details recorded in Technical
+Environment Implementation.
+
+Method Document Inspection
+
+References ‘Technical Environment Implementation for Release 2. -
+ref.(45)
+
+Phase Technical Testing
+
+Requirement ID 479
+(Criterion iS
+Derivation Requirement
+
+ICriterion Description
+
+ITMS shall produce reports detailing any attempt to
+establish a link which is rejected. The CONTRACTOR shall
+rovide these reports to the AUTHORITIES on request.
+
+ITest Condition Acceptance of Network Infringement Policy.
+Provision of Network Infringement Report.
+
+Method Document Inspection
+
+References Network Infringement Policy- ref.(46)
+Network Infringement Report- ref.(47)
+
+Phase [Technical testing
+
+Requirement ID 480
+
+Criterion 4
+
+Derivation Requirement
+
+Criterion Description
+
+ITMS shall be logically discrete from other Services such
+jthat other services can be separately procured that make
+luse of TMS and such that, in extremis, a replacement
+service for TMS could be separately procured.
+
+ITest Condition ‘Acceptance of Pathway Technical Architecture
+Method Document Inspection
+
+References Service Architecture Design Document- ref.(48)
+Phase [Technical testing
+
+Requirement ID
+
+480
+
+{Criterion
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 67 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Versi
+Date:3 1/03/1999.
+Derivation Requirement
+
+Criterion Description
+
+In particular there shall be a clear and documented
+linterface between PAS and TMS functions and CMS and
+TMS functions. These interfaces shall include:
+
+(a) specification of any programming interface that exists;
+(b) specification of any shared data and data standards;
+
+(c) specification of any other protocols that exist to allow
+communication between functions within the Services;
+
+(d) specification of any other constraint that enables
+interoperability between Services.
+
+ITest Condition Acceptance of Pathway Service architecture and TMS to
+PAS/CMS Agent Specification.
+
+Method Document Inspection
+
+References. Service Architecture Design Document. - ref.(48)
+IBPS Agents - High Level Design for Release 2. - ref.(49)
+
+Phase [Technical Testing
+
+Requirement ID 536
+
+(Criterion 1
+
+Derivation Requirement
+
+Criterion Description
+
+Peripheral and input devices supplied as part of the
+elements of the Service Infrastructure on which OPS is
+rovided shall be reliable, robust and easy to use.
+
+ITest Condition
+
+(Acceptance of Counter Hardware Design Specification,
+PPD - Operating Environment and Horizon OPS Style
+iGuide.
+
+IMethod
+
+Document Inspection
+
+On-going review as part of Horizon Service Review Forum.
+
+References
+
+(Counter Hardware Design Specification. - ref.(25)
+PPD - Operating Environment. - ref.(26)
+
+Customer Services - Service Management Operations
+Manual - ref.(76)
+
+Horizon OPS Style Guide - ref.(35)
+
+Phase
+
+[Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 68 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:3 1/03/1999
+
+Requirement ID 536
+(Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+Peripheral and input devices supplied as part of the
+
+lelements of the Service Infrastructure on which OPS is
+
+provided shall be capable of detecting contention,
+remature removal/swapping of Tokens etc. as appropriate
+
+[Test Condition Acceptance of functionality provided within Riposte
+Peripheral Broker. Acceptance of functionality provided by
+Ismart-card reader in Pathway keyboard.
+
+Method Document Inspection
+
+References Riposte Peripheral Broker overview. - ref.(50)
+Firmware Specifications - Pathway Keyboard. - ref.(51)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 69 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+Requirement ID 537
+{Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+[The CONTRACTOR shall carry out system management of
+all the Services in a consistent and coherent manner to
+lensure the following:
+a) activities within the Services, including PAS, CMS,
+TMS, OPS, BES, OBCS, APS and EPOSS, are co+
+ordinated such that, for example, changes and
+faults can be tracked across Service boundaries;
+b) changes to the Services can be made speedily
+and accurately.
+
+ITest Condition ICL Pathway will carry out system management or service
+reviews of all the Services to met the above criterion.
+(Conformance to this can be demonstrated in a site visit and
+la walk through of the procedures.
+
+Method Site Visit
+Document Inspection
+
+References ISMC Core Processes for Service Delivery - ref.(70)
+Horizon System Helpdesk Call Enquiry Matrix - ref.(52)
+Horizon System Helpdesk : Processes and Procedures
+Description - ref.(53)
+Payment Card Helpline : Processes and Procedures
+Description - ref.(69)
+ICL Pathway Customer Services - Service Management
+Operations Manual - ref. (76)
+
+Phase Model Office
+
+© 1999 ICL Pathway Ltd = COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+
+CONTRACT CONTROLLED Page 70 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 537
+(Criterion 2
+Derivation Schedule G01 - 5.3.5.1
+
+{Criterion Description
+
+Software distribution facilities shall be provided by the
+ICONTRACTOR which shall enable Software files and
+installation scripts to be distributed across the Wide Area
+Networks, part of the Service Infrastructure, to a specific
+Outlet, all Outlets or a group of Outlets selected according
+jto one or more particular attributes.
+
+ITest Condition (Acceptance of Systems Management mechanisms (Tivoli
+land Auto-Config) to control software configurations in
+outlets.
+
+Method Document Inspection
+
+References [Technical Environment Description (section 12) - ref.(37)
+
+Phase [Technical Testing.
+
+Requirement ID 538
+{Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+ISMS shall provide a facility for synchronising the date and
+time across the Services and the Service Infrastructure.
+This shall cater for the handling of clock changes (e.g. at
+ithe beginning and end of British Summer Time).
+
+ITest Condition Acceptance of mechanisms described in Time Services
+Specification and of GMT as the standard for timestamps as
+stated in TED.
+
+Method Document Inspection
+
+References [Time Services Specification - ref.(79)
+Technical Environment Description(section 12.7.10) -
+Iref.(37)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 71 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:
+Versi
+Date:3 1/03/1999
+
+R/ACS/007
+Specification 0
+
+Requirement ID 540
+\Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+IThe CONTRACTOR shall give due attention to the effects
+of the Equipment used in the provision of OPS on the
+environment during manufacture, installation and use. This
+includes:
+
+(a) use of CFCs;
+
+(b) energy consumption;
+
+(c) recyclability of components;
+
+(d
+
+recyclability of consumables;
+
+(e) waste minimisation;
+
+(£) use of sustainable resources;
+(g) disposal of displaced equipment and waste;
+
+(h
+
+making appropriate use of recycled materials.
+
+ITest Condition
+
+Acceptance of Pathway Environmental Policy
+
+Method Document Inspection
+References Pathway Environmental Policy - ref.(54)
+Phase [Technical Testing
+
+Requirement ID 540
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+[The CONTRACTOR shall adhere to relevant environmental
+legislation such as the Environmental Protection Act 1990
+land publication ‘Waste Management: The Duty of Care -A
+Code of Practice’.
+
+ITest Condition Acceptance of Pathway Environmental Policy
+Method Document Inspection
+
+References Pathway Environmental Policy - ref.(54)
+Phase [Technical Testing
+
+Requirement ID 541
+
+{Criterion 1
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 72 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:3 1/03/1999.
+Derivation Requirement
+
+\Criterion Description
+
+ITMS shall be scaleable to meet POCL’s business needs
+ifrom time to time
+
+ITest Condition (Acceptance of results detailed in Performance Model
+[Component Calibration for Release 2.
+
+Method Document Inspection
+
+References Performance Model Component Calibration for Release 2. -
+iref.(55)
+ICL Pathway Performance and Scalability Strategy - ref.(84)
+
+Phase [Technical Testing
+
+Requirement ID 541
+
+Criterion 2
+
+Derivation Requirement
+
+Criterion Description
+
+[This capability shall include the ability to support any Client
+ITransactions re-engineered by POCL, new capabilities
+developed by POCL and considerable volumes of
+\Transactions needing authorisation from a Client system or
+la central point in POCL.
+
+ITest Condition (Acceptance of results detailed in Performance Model
+(Component Calibration for Release 2.
+
+Method Document Inspection
+
+References Performance Model Component Calibration for Release 2. -
+Iref.(55)
+ICL Pathway Performance and Scalability Strategy - ref.(84)
+
+Phase Technical Testing
+
+Requirement ID 542
+Criterion 1
+Derivation Requirement
+
+Criterion Description
+
+The CONTRACTOR shall fully support the Software in the
+Service Infrastructure during the life of the elements of the
+Service Infrastructure on which such Software is utilised in
+providing the Services.
+
+Reason
+
+Statement of Fact or Obligation
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 73 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 555
+(Criterion 1
+Derivation Requirement
+
+Criterion Description
+
+In each Outlet, at each automated Counter Positions, from
+
+Roll Out at such Outlet, OPS shall support the reading of
+
+track 2 from magnetic stripe cards complying with ISO 7811
+arts 1-4
+
+ITest Condition Acceptance of Counter Hardware Design Specification.
+Acceptance of Magnetic card Reader Specification.
+
+Method Document Inspection
+
+References (Counter Hardware Design Specification. - ref.(25)
+Magnetic Card Reader Specification. - ref.(56)
+
+Phase [Technical Testing
+
+Requirement ID 995
+{Criterion 2
+Derivation Requirement
+
+ICriterion Description
+
+In each Outlet, at each automated Counter Positions, from
+Roll Out at such Outlet support the reading from and writing
+ito Smart Tokens complying with
+
+:ISO 7816 parts 1 and 2;
+
+land /or ISO 7816 parts 1, 2 and 3;
+
+ITest Condition Acceptance of Counter Hardware Design Specification.
+(Note: There is no requirement for POCL Client Smart
+[Tokens at Release 2).
+
+Method Document Inspection
+
+References (Counter Hardware Design Specification- ref.(25)
+Smart Card Reader Test report - ref.(77)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 74 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID 555
+{Criterion 3
+Derivation Requirement
+
+Criterion Description
+
+In each Outlet, at each automated Counter Positions, from
+Roll Out at such Outlet, OPS shall be capable of supporting
+future applications reading from and writing to Smart
+[Tokens which comply with
+
+:ISO 7816 part 4.
+
+\Test Condition Acceptance of Counter Hardware Design Specification.
+(Note: There is no requirement for POCL Client Smart
+[Tokens at Release 2).
+
+Method Document Inspection
+
+References Counter Hardware Design Specification- ref.(25)
+[Smart Card Reader Test report - ref.(77)
+
+Phase [Technical Testing
+
+Requirement ID 555
+
+{Criterion 4
+
+Derivation Requirement
+
+ICriterion Description
+
+In each Outlet, at each automated Counter Positions, from
+Roll Out at such Outlet, OPS shall support magnetic stripe
+cards and Smart Tokens that do not match the above
+standards in all respects (e.g. where embossing is not in
+ithe correct position, or the magnetic stripe does not adhere
+fully to the standards set out in paragraph 1.1) save to the
+lextent specified in the Solution to this Requirement;
+
+\Test Condition
+
+‘Acceptance of flexibility enabled using FLASH RAM
+Imechanism of Pathway keyboard.
+
+‘Acceptance of flexible token validation mechanism
+isupported using Riposte Peripheral Broker.
+
+(Note: There is no requirement for POCL Client Smart
+[Tokens at Release 2).
+
+Method
+
+Document Inspection
+
+References
+
+Counter Hardware Design Specification. - ref.(25)
+Specification - Pathway Keyboard. - ref.(42)
+
+Firmware Specifications - Pathway Keyboard. - ref.(51)
+Riposte Peripheral Broker overview. - ref.(50)
+
+Phase
+
+[Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 75 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 555
+Criterion 5
+Derivation Requirement
+
+Criterion Description
+
+In each Outlet, at each automated Counter Positions, from
+Roll Out at such Outlet, OPS shall support the reading of
+lone dimensional bar-codes. The maximum bar-code width
+to be read shall be 10.9 cm at a resolution of 9 mils. OPS
+ishall support, at minimum code 128, EAN 8, EAN 13, code
+39.
+
+ITest Condition (Acceptance of Counter Hardware Design Specification.
+Method Document Inspection
+
+References (Counter Hardware Design Specification- ref.(25)
+Phase Technical Testing
+
+Requirement ID S57
+
+(Criterion 4
+
+Derivation Requirement
+
+Criterion Description
+
+IOPS and the elements of the Service Infrastructure on
+
+hich OPS is provided shall have the flexibility for
+additional peripheral equipment to be added in the future,
+including input devices and printers.
+
+ITest Condition ‘Acceptance of additional connectivity described in Counter
+Hardware Design Specification.
+‘Acceptance of peripheral support mechanisms provided by
+Riposte Peripheral Broker.
+
+Method Document Inspection
+
+References Counter Hardware Design Specification- ref.(25)
+Riposte Peripheral Broker overview- ref.(50)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 76 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID S57
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+[The AUTHORITIES shall have the option to add up to three
+itypes of additional peripheral equipment during the five (5)
+ear period from execution hereof.
+
+\Test Condition (Acceptance of additional connectivity described in Counter
+Hardware Design Specification.
+[Acceptance of peripheral support mechanisms provided by
+Riposte Peripheral Broker.
+
+Method Document Inspection
+
+References (Counter Hardware Design Specification- ref.(25)
+Riposte Peripheral Broker overview- ref.(50)
+
+Phase [Technical Testing
+
+Requirement ID 557
+
+Criterion 3
+
+Derivation Requirement
+
+Criterion Description
+
+[The AUTHORITIES shall have the option to require OPS to
+support the reading of OCR to interpret code lines on bills
+letc. If such option is exercised, the Charges for such
+Service shall be as set out in the Solution to this
+Requirement.
+
+ITest Condition (Acceptance of additional connectivity described in Counter
+Hardware Design Specification.
+Acceptance of peripheral support mechanisms provided by
+Riposte Peripheral Broker.
+
+Method Document Inspection
+
+References (Counter Hardware Design Specification- ref.(25)
+Riposte Peripheral Broker overview- ref.(50)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 77 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID S57
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+IThe AUTHORITIES shall have the option to require OPS to
+isupport the reading of two dimensional bar-codes. If such
+loption is exercised, the Charges for such Service shall be
+las set out in the Solution to this Requirement.
+
+ITest Condition ‘Acceptance of additional connectivity described in Counter
+Hardware Design Specification.
+(Acceptance of peripheral support mechanisms provided by
+Riposte Peripheral Broker.
+
+Method Document Inspection
+
+References (Counter Hardware Design Specification- ref.(25)
+Riposte Peripheral Broker overview- ref.(50)
+
+Phase [Technical Testing
+
+Requirement ID S57
+Criterion iS
+Derivation Requirement
+
+Criterion Description
+
+The AUTHORITIES may, as an Additional Service, require
+IOPS and the elements of the Service Infrastructure on
+hich OPS is provided to be linked to teller cash
+dispensers. Such Additional Service shall be subject to
+lagreement with the CONTRACTOR.
+
+\Test Condition Acceptance of additional connectivity described in Counter
+Hardware Design Specification.
+[Acceptance of peripheral support mechanisms provided by
+Riposte Peripheral Broker.
+
+Method Document Inspection
+
+References Counter Hardware Design Specification- ref.(25)
+Riposte Peripheral Broker overview- ref.(50)
+
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 78 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 558
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+[The OPS shall support the POCL imperative of keeping
+[Transaction times to a minimum.
+
+\Test Condition
+
+Acceptance of benchmark counter transaction times for
+IOBCS, APS, BES and EPOS.
+
+Method Document Inspection
+References IAPS Benchmark Counter Transaction Times for Release 2-
+Iref.(57)
+IBES Benchmark Counter Transaction Times for Release 2 -
+lref.(58)
+IOBCS Benchmark Counter Transaction Times for
+Release 2 - ref.(59)
+IEPOS Benchmark Counter Transaction Times for
+Release 2 - ref.(60)
+Phase Live Trial
+Requirement ID 558
+Criterion 2
+Derivation Requirement
+
+{Criterion Description
+
+[The OPS shall be capable of supporting the entire range of
+business transacted at Outlets for current volumes of
+business and volumes of business as projected by POCL.
+
+\Test Condition ‘Acceptance of adequacy of OPS disc capacity and
+archiving policy.
+
+Method Document Inspection
+
+References ICL Pathway Performance and Scalability Strategy - ref.(84)
+Technical Environment Description (sections 15.9.2) -
+Iref.(37)
+
+Phase [Technical Test
+
+Requirement ID 559
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+IOPS shall be provided in each Outlet
+
+Reason
+
+Statement of Fact or Obligation
+
+[Requirement ID
+
+[659
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 79 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Versi 0
+Date:3 1/03/1999.
+[Criterion 2
+Derivation Requirement
+
+\Criterion Description
+
+IOPS shall have the ability to support the automation of all
+[Transactions performed at Counters Positions.
+
+ITest Condition ‘Acceptance that the applications architecture used to
+lprovide OPS provides the mechanisms to support the
+automation / re-engineering of POCL Transactions.
+
+Method Document Inspection
+
+References IOPS Architecture Document- ref.(30)
+
+Phase [Technical Test
+
+Requirement ID S59
+
+{Criterion 3
+
+Derivation Requirement
+
+Criterion Description
+
+From Roll Out in each Outlet OPS shall be capable of
+
+supporting APS, BES and OBCS and EPOSS in that Outlet.
+
+ITest Condition
+
+[Acceptance that the scope of Release 2 comprises support
+lof APS, BES, OBCS and EPOSS on OPS.
+
+IThat the MOT Closure reports contains no non-conforming
+lentries for the ICL Pathway specific elements concerning
+ithe support of APS, BES, OBCS and EPOSS on OPS.
+
+Method
+
+Document Inspection
+
+References
+
+Pathway New Release 2 Contents Description - ref. (61)
+IMOT Closure Report - New Release 2 - ref.(90)
+
+Phase
+
+[Technical Test
+
+Requirement ID 560.
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+[The AUTHORITIES wish to take advantage of the changes
+lin technology during the term of the Related Agreements.
+INo change shall be made to the specification of equipment
+ito be used within the Service Infrastructure, without the
+lapproval of the AUTHORITIES.
+
+Reason
+
+[Statement of Fact or Obligation
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 80 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 560
+(Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+The specification of the equipment being used and installed
+ithin the Service Infrastructure shall be reviewed by the
+parties at times reasonably agreed by them, to ensure that
+
+ithe most appropriate technology is being deployed.
+
+ITest Condition Equipment Specification may be raised within the regular
+Service Management review forum.
+
+Method Document Inspection
+
+References (Customer Services - Services Management Operations
+[Manual - ref.(76).
+
+Phase [Technical Test
+
+Requirement ID 561
+{Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+Pathway shall indemnify the AUTHORITIES against any
+dispute of Pathway’s or the AUTHORITIES’ right to utilise
+ithe Hardware, Software or any information used for any of
+ithe Services (e.g. third party challenges with reference to
+licensing or Intellectual Property Rights)
+
+ITest Condition IThis is contained in Clause 805 of the Authorities
+Agreement.
+
+Method Document Inspection
+
+References (Authorities Agreement - ref.(78)
+
+Phase [Technical Test
+
+Requirement ID 561
+(Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+In the event of any dispute of Pathway’s or the
+AUTHORITIES’ right to utilise the Hardware, Software or
+lany information used for any of the Services, Pathway shall
+lensure that there is no impact on the level of the Services.
+
+ITest Condition
+
+[This is contained in Clause 805 of the Authorities
+Agreement.
+
+Method Document Inspection
+References (Authorities Agreement - ref.(78)
+Phase [Technical Test
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 81 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID i826
+Criterion 4
+Derivation Requirement
+
+\Criterion Description
+
+IOPS, and the elements of the Service Infrastructure on
+
+hich OPS is provided, shall be able to be connected, and
+shall support such connection, to specialist peripherals in
+lsuch a way that the specialist peripherals may be accessed
+lby one, two or more terminals.
+
+ITest Condition ‘Acceptance of facilities provided by Riposte Peripheral
+Broker
+
+Method Document Inspection
+
+References Riposte Peripheral Broker overview. - ref.(50)
+
+Phase Technical Testing
+
+Requirement ID 826
+
+Criterion 2
+
+Derivation Requirement
+
+{Criterion Description
+
+here specialist peripherals may be accessed by one, two
+lor more terminals it shall be possible to restrict access to a
+subset of the terminals in each Outlet
+
+ITest Condition (Acceptance of facilities provided by Riposte Peripheral
+Broker
+
+Method Document Inspection
+
+References Riposte Peripheral Broker overview. - ref.(50)
+
+Phase [Technical Testing
+
+Requirement ID 827
+
+Criterion 4
+
+Derivation Requirement
+
+Criterion Description
+
+It is likely that, in due course, re-engineered POCL
+
+Products shall require specific authorisation, either through
+
+laccess to a computer system external to the Services or
+ithin the Services.
+
+{Test Condition (Acceptance of flexibility and capability described in
+Pathway Technical Architecture.
+
+Method Document Inspection.
+
+References [Technical Environment Description(Chapter 17)- ref.(37)
+IOPS Architecture Document- ref.(30)
+ITMS Architecture Document- ref.(31)
+
+Phase [Technical testing.
+
+Requirement ID 1827
+
+Criterion 2
+
+Derivation Requirement
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 82 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+[Criterion Description [The Services and the Service Infrastructure shall be able to
+be developed to support the maintenance and use of:
+
+(a) stop lists;
+(b) go lists;
+(c) other authorisation types;
+
+lin relation to such POCL Products.
+
+\Test Condition (Acceptance of exemplar functionality contained in OBCS
+land CMS.
+
+Method Document Inspection
+
+References IOBCS Design Specification - ref.(62)
+(Oracle High Level Design PMS/CMS - ref.(63)
+
+Phase Technical Testing
+
+© 1999 ICL Pathway Ltd = COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 83 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID i869
+Criterion 1
+Derivation Requirement
+
+\Criterion Description
+
+The AUTHORITIES primary concern is with the overall
+performance of the Services as they impact upon the
+AUTHORITIES’ own systems, clients, staff, agents and
+customers.
+
+Therefore, targets for the level of internal performance
+between services shall not be set by the Authorities.
+However, internal service performance shall be judged by
+ithe Authorities as it affects overall performance of the
+services.
+
+ITest Condition
+
+Production of test results as described in Boundary
+Performance.
+
+Method Document Inspection
+
+References IA2A Resolution - Boundary Performance- ref.(65)
+Phase Live Trial
+
+Requirement ID i869
+
+{Criterion 2
+
+Derivation Requirement
+
+Criterion Description
+
+la) The CONTRACTOR shall specify the internal
+performance requirements of any Service that potentially
+Imay be re-tendered. B) The CONTRACTOR shall maintain
+land report actual measured performance for TMS as it
+linterfaces to other Services.
+
+ITest Condition Production of test results as described in Boundary
+Performance.
+
+Method Document Inspection
+
+References IA2A Resolution - Boundary Performance- ref.(65)
+
+Phase Live Trial
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 84 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID i869
+Criterion 3
+Derivation Requirement
+
+Criterion Description
+
+For the TMS, the CONTRACTOR shall specify the
+lperformance requirements and tolerances for:
+
+(a) hours of operation of TMS
+\(b) response time required between TMS and :-
+PAS
+le CMS
+le OPS
+\(c) the number of outages of TMS, identifying types of
+outages monitored
+\(d) the availability of TMS
+
+ITest Condition
+
+la) TMS must be available 24hrs a day / 365 days a year
+
+lb) There is no concept of response time between TMS and
+PAS, CMS or OPS. The TMS to OPS interface is
+immediate since they are co-located on the counter PC.
+The boundary performance of TMS to PAS/CMS is
+provided via 869/2
+
+Ic) TMS must be continuously available and resilient to
+multiple system and geographic failures.
+
+ld) See above.
+
+Acceptance of above statements and of characteristics
+described in Chapter 13 - “Availability” of the Technical
+Environment Description.
+
+Method
+
+Document Inspection
+
+References
+
+\Technical Environment Description (Chapter 13) -
+iref.(37).
+
+Phase
+
+[Technical Testing
+
+Requirement ID i869
+Criterion 4
+Derivation Requirement
+
+\Criterion Description
+
+[The CONTRACTOR shall report against all performance
+requirements identified in Requirement 869 Criterion 3.
+
+ITest Condition Production of monthly Performance Statistics.
+Method Document Inspection
+
+References Service Review - Performance Statistics - ref.(75)
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 85 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+FUJ00001463
+
+'R/ACS/007
+0
+
+Specification Versi
+Date:3 1/03/1999.
+
+Requirement ID i869
+{Criterion IS
+Derivation Requirement
+
+ICriterion Description
+
+IThe CONTRACTOR shall maintain detailed technical
+\documentation of the interfaces from TMS to PAS, CMS,
+OPS and all attachable elements of the Service
+Infrastructure
+
+\Test Condition (Acceptance of interface documentation and connection
+Imechanisms as described in Technical Environment
+Implementation.
+
+Method Document inspection
+
+References Riposte 32 API Specification- ref.(32)
+Service Architecture Design Document- ref.(48)
+Oracle High Level Design PMS/CMS- ref.(63)
+[Technical Environment Implementation for Release 2 -
+Iref.(45)
+ITechnical Environment Description (Sections 4.4.7, 9.3,
+9.4) - ref.(37).
+
+Phase [Technical Testing
+
+Requirement ID 912
+
+Criterion 4
+
+Derivation Requirement
+
+Criterion Description
+
+Pathway shall carry out regular Portable appliance testing
+lof the elements of the service infrastructure installed as part}
+lof the Services in post offices and on any other DSS or
+POCL premises as required by legislation
+
+Reason
+
+Statement of Fact or Obligation
+
+© 1999 ICL Pathway Ltd
+
+COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 86 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Versi
+Date:3 1/03/1999
+
+Specification
+
+Requirement ID 921
+Criterion 4
+Derivation Requirement
+
+Criterion Description
+
+Under circumstances where the facility has been activated
+land the User is no longer able to cancel it, for whatever
+reason, it shall be possible with appropriate authority:
+
+(a) to complete User and Outlet balances; and
+
+(b) to make the terminal available to another User.
+
+ITest Condition (Acceptance of procedures
+
+Method Document Inspection
+
+References ‘Access Control and user Administration - Process and
+Procedures Description ref.(71)
+
+Phase Technical Testing
+
+Requirement ID 922
+Criterion 4
+Derivation Requirement
+
+ICriterion Description
+
+The acoustic noise emission of any element of the Service
+Infrastructure used in the provision of OPS shall not exceed
+I60dB(A) measured at a distance of one metre.
+
+ITest Condition
+
+Acceptance of equipment specifications.
+
+Method Document Inspection
+References (Counter Hardware Design Specification- ref.(25)
+Phase [Technical testing
+
+Requirement ID 953
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+OPS shall ensure data integrity, e.g. reports printed at the
+back office whilst serving at the front office shall be
+consistent with a clearly stated policy (to be approved by
+IPOCL) of what front office data are included in the report
+
+ITest Condition
+
+‘Acceptance of functional constraints due to isolated node or]
+lunavailable node.
+
+Method Document Inspection
+References EPOSS Functional Specification - ref.(66)
+Phase [Technical Testing
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 87 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Versi
+Date:3 1/03/1999.
+5.2 CRITERION FOR LATER ACCEPTANCE
+Requirement ID 463
+Criterion 6
+Derivation Schedule G01 - 2.3.1.7
+
+Criterion Description
+
+[The CONTRACTOR shall provide OPS Equipment which
+shall be required to demonstrate and market Office Platform
+Services to Clients and prospective Clients. The
+Equipment that is required shall be set out in marketing
+plans which are agreed jointly between the POCL and the
+ICONTRACTOR.
+
+Reason Subject to A2A
+Requirement ID 471
+
+Criterion 4
+
+Derivation Requirement
+
+Criterion Description
+
+Using TMS and OPS it shall be possible to broadcast short
+messages to all or a subset of Outlets. As a guide, a
+imessage length of approximately 2000 bytes is likely to be
+lacceptable.
+
+Reason Excluded from NR2
+Requirement ID 471
+
+Criterion 2
+
+Derivation Requirement
+
+Criterion Description
+
+Short messages broadcast using TMS and OPS to all or a
+isubset of outlets shall be brought to the attention of staff
+
+orking at automated Counter Positions in the Outlet at the
+earliest practical opportunity.
+
+Reason Excluded from NR2
+Requirement ID 471
+
+Criterion 3
+
+Derivation Requirement
+
+Criterion Description
+
+OPS shall enable staff at the Outlet to produce a hard copy
+lof the short messages within the Outlet.
+
+Reason Excluded from NR2
+Requirement ID 471
+
+Criterion 4
+
+Derivation Requirement
+
+Criterion Description
+
+TMS and OPS shall have the capability to be developed to
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 88 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+Specification Version:2.0
+Date:31/03/1999
+
+lallow (subject to change control) staff working Outlets to
+igain access to information held electronically on the
+Service Infrastructure such as is currently published in
+Counter News’ and the operations manuals provided
+Ihereunder by Pathway
+
+Reason Excluded from NR2
+
+Requirement ID 473
+
+Criterion 4
+
+Derivation Requirement
+
+Criterion Description
+
+‘Any remote access to OPS shall be restricted to Users
+specifically authorised by the AUTHORITIES and shall only
+itake place via TMS.
+
+Reason
+
+INo remote User access to OPS is required at Release 2.
+INon-testable.
+
+Requirement ID 478
+Criterion 2
+Derivation Requirement
+
+ICriterion Description
+
+TMS shall provide links into Client systems operated on
+behalf of Clients as required to support POCL
+
+Reason
+
+INo Client links required at Release 2.
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 89 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Version:2.0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 478
+(Criterion 9
+Derivation Requirement
+
+Criterion Description
+
+ITMS shall provide a message switching capability, where a
+imessage consists of electronic data which shall be passed
+from one computer system to another (“switched”) with
+minimal delay.
+
+Reason Excluded from NR2
+Requirement ID 478
+
+Criterion 10
+
+Derivation Requirement
+
+{Criterion Description
+
+It shall be possible to switch messages between any two
+lattached computer systems (including without limitation
+between elements of the Service Infrastructure in individual
+(Outlets).
+
+Reason Excluded from NR2
+Requirement ID 478
+
+Criterion 11
+
+Derivation Requirement
+
+ICriterion Description
+
+\Where TMS is unable to deliver a message it shall notify
+ithe originating computer system.
+
+Reason Excluded from NR2
+Requirement ID 538
+
+Criterion 2
+
+Derivation Requirement
+
+\Criterion Description
+
+ISMS shall permit Transactions to be processed using local
+time and/or GMT, and all the relevant elements of the
+Service Infrastructure shall be able to derive both local time
+land GMT.
+
+Reason
+
+Not required at Release 2
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 90 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance Ref:
+
+FUJ00001463
+
+FUJ00001463
+
+'R/ACS/007
+Versi 0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID 556
+Criterion 3
+Derivation Requirement
+
+Criterion Description
+
+In any Outlet requiring the capability of reading from and
+
+ithe writing to Schlumberger Smart Keys it shall be
+
+lacceptable to use an external peripheral device, and to
+
+share this device between Counter Positions where
+ractical.
+
+Reason
+
+Support for Schlumberger Smart Keys is not required at
+INR2.
+
+Requirement ID i822
+Criterion 1
+Derivation Requirement
+
+(Criterion Description
+
+[The Service Infrastructure shall be designed such that it
+ican interface to any POCL Inventory Management system,
+land shall have sufficient capacity not to preclude such
+interfacing.
+
+Reason
+
+Not required at NR2.
+
+Requirement ID 827
+Criterion 3
+Derivation Requirement
+
+Criterion Description
+
+[The Services and the Service Infrastructure shall support
+Isuch authorisations through access to external computer
+systems.
+
+Reason
+
+INo authorisations to external computer systems required at
+R2.
+
+Requirement ID 831
+Criterion 3
+Derivation Requirement
+
+{Criterion Description
+
+Pathway shall support the interfaces between TIP / TMS
+interface for authorisation data.
+
+IReason
+
+INo requirement for authorisation data at Release 2. Not
+testable at Release 2.
+
+© 1999 ICL Pathway Ltd
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 91 of 1
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+FUJ00001463
+
+FUJ00001463
+
+Ref:CR/ACS/007
+Version:2.0
+
+Specification
+Date:3 1/03/1999.
+
+Requirement ID i896
+(Criterion 4
+Derivation Requirement
+
+{Criterion Description
+
+[The POCL Service Infrastructure shall be able to support
+electronic communications for access to User
+\documentation. The feature shall not be essential for initial
+limplementation, and its later implementation shall be
+subject to the mutual agreement of POCL and the
+ICONTRACTOR.
+
+Reason
+
+Excluded from NR2.
+
+Requirement ID 952
+{Criterion 4
+Derivation Requirement
+
+\Criterion Description
+
+[The OPS shall support a reliable, secure means for the
+transfer of encrypted data that may subsequently be used
+ifor cryptographic applications
+
+Reason
+
+Final Key Management facilities excluded from NR2
+
+Requirement ID (952
+Criterion 2
+Derivation Requirement
+
+Criterion Description
+
+In order to use the encrypted data, a key management
+isystem shall be in place so the encrypted data can be
+deciphered without risk of the cryptographic key being
+lexposed.
+
+Reason
+
+Final Key Management facilities excluded from NR2
+
+© 1999 ICL Pathway Ltd
+
+Printed on: 24/01/01
+Page 92 of 1
+
+COMMERCIAL IN CONFIDENCE
+CONTRACT CONTROLLED
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+ICL Pathway
+
+POCL Infrastructure Acceptance
+
+Specification
+
+FUJ00001463
+FUJ00001463
+
+Ref:CR/ACS/007
+Version:2.0
+Date:3 1/03/1999
+
+5.3
+
+CRITERION SUMMARY
+
+IReq. ID
+
+\Criterion
+
+Trial
+
+Review
+
+Later Acceptance.
+
+463
+
+463
+
+463
+
+463
+
+463
+
+NINININEN
+
+463
+
+Loa
+
+465
+
+65
+
+66
+
+466
+
+466
+
+67
+
+NININININENEN
+
+167
+
+167
+
+<
+
+67
+
+467
+
+TP EPOPS =] 2] RS] =P ST] =] a] TSOP =
+
+67
+
+NINES
+
+468
+
+469
+
+469
+
+469
+
+470
+
+470
+
+470
+
+NININININENES
+
+471
+
+L71
+
+BP ST=PopR] =I mo] Sp =p=
+
+471
+
+SISA
+
+472
+
+472
+
+NININININENEN
+
+aS
+
+AVN
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDEN
+
+CONTRACT CONTROLLED
+
+ICE
+
+Printed on: 24/01/01
+Page 93 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+73
+173
+73
+174
+174
+74
+74
+
+v
+v
+v
+
+74
+174
+74
+174 9
+
+ZPaApapay SI] oP et=faypay or
+
+74 Tl
+174 12
+174 1B
+74 14
+174 15
+74 16
+174 17
+174 18
+74 19
+175 I
+75
+75
+75
+76
+176
+176
+176
+176
+L76
+176
+177
+b77
+78
+1478
+78
+78
+78
+78 6
+78 7 v
+78 is
+78 9 v
+78 10 v
+
+NINININININININESINININENININESENININENININENENINEN
+
+BPR} =Pspops
+
+NINEN
+
+ap EP =PST=[ 3] =] STS] y=
+NININEN
+
+NININENENIN
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 94 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+ICL Pathway
+
+POCL Infrastructure Acceptance
+Specification
+
+Ref:CR/ACS/007
+Version:2.0
+Date:3 1/03/1999
+
+FUJ00001463
+FUJ00001463
+
+478
+
+11
+
+v
+
+#78
+
+12
+
+478
+
+13
+
+478
+
+179
+
+479
+
+479
+
+aS a
+
+NININ
+
+479
+
+80
+
+480
+
+536
+
+536
+
+NINININININENIN
+
+NININEN
+
+S41
+
+542
+
+555
+
+NINININININININENEN
+
+BP ALEP RP] =I =I ST =P RP =I SR =T RT =P RP =pRy =I ay =
+
+S58
+
+S58
+
+559
+
+559
+
+559
+
+560
+
+560
+
+S61
+
+S61
+
+NM
+NINININININININENINININENEN
+
+[822
+
+826
+
+<
+<
+
+826
+
+BT=TEPRT HPSS RSIS OTST ORT =
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE
+
+CONTRACT CONTROLLED
+
+Printed on: 24/01/01
+Page 95 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+
+obligations between ICL Pathway and the DSS and/or POCL
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+827
+827
+827
+831
+869
+869
+869
+869
+869
+896
+912
+921
+21
+921
+921
+[922
+952
+[952
+[953
+953
+[953
+
+NEN
+
+PS
+<
+
+NINININEN
+
+NININEN
+
+SN
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 96 of 1
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+Specification Versi
+P Date:3 1/03/1999
+
+'R/ACS/007
+0
+
+6. ACCEPTANCE INCIDENT SEVERITY
+
+This section identifies the guidelines to be applied during the analysis of
+Acceptance Incidents, in order to establish the severity of such Acceptance
+Incidents.
+
+6.1 HIGH SEVERITY INCIDENTS
+
+Failure to meet an Acceptance Criterion which would have a substantive impact on
+the service received by the Customer, e.g. failure to pay benefits to the right
+person, at the right place, at the right time.
+
+Failure to meet an Acceptance Criterion which would have a major impact on the
+ability of the AUTHORITY or AUTHORITIES to perform their business, or where
+there was a major impact on the resources of the AUTHORITY or AUTHORITIES
+necessary to overcome that impact on their business, e.g. failure to support
+accurate POCL accounting.
+
+Failure to meet an Acceptance Criterion which would impact the security of the
+service where there is no procedural workaround.
+
+Consistent failure to meet Minimum Acceptable Thresholds for Service Levels, e.g.
+where particular transactions do not meet the minimum Acceptable Threshold
+under normal loading.
+
+6.2 MEDIUM SEVERITY INCIDENTS
+
+Failure to meet an Acceptance Criterion which is visible to the Customer and is
+likely to give rise to an adverse public perception of the service, but does not
+substantively impact the service received by the Customer, e.g. incorrect spelling
+on a receipt.
+
+Failure to meet an Acceptance Criterion which would have a medium impact on
+the ability of the AUTHORITY or AUTHORITIES to perform their business, or
+where there was a medium impact on the resources of the AUTHORITY or
+AUTHORITIES necessary to overcome that impact on their business, e.g. non-
+production of a weekly report, resulting in its manual transcription, which causes
+additional resource or effort at every outlet of the average duration of one hour per
+week per outlet.
+
+Occasional failure to meet Minimum Acceptable Thresholds for Service Levels,
+e.g. at peak loading, some transactions fail to meet Minimum Acceptable
+Thresholds, but on average all transactions within the service do achieve Minimum
+Acceptable Thresholds.
+
+6.3 LOW SEVERITY INCIDENTS
+
+Failure to meet an Acceptance Criterion that is neither visible to nor has
+substantive impact on the service received by the Customer e.g. presentational,
+style and other cosmetic faults that are only visible to the user.
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 97 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance __Ref.CR/ACS/007
+Specification Version:2.0
+Date:3 1/03/1999
+
+Failure to meet an Acceptance Criterion which would have a minor impact on the
+ability of the AUTHORITY or AUTHORITIES to perform their business, or where
+there was a minor impact on the resources of the AUTHORITY or AUTHORITIES
+necessary to overcome that impact on their business, e.g. non-production of a
+weekly report, resulting in its manual transcription, which causes additional
+resource or effort at ten or fewer outlets of the average duration of one hour per
+week per outlet.
+
+Failure to meet an Acceptance Criterion which would impact the security of the
+service but where the workaround is as secure as the original solution (i.e. the
+only impact on risk is in ensuring that the workaround is performed, but where
+procedures have been agreed and are in place).
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 98 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+7. TESTDATA
+
+The test data and the overall test environment used for the technical tests will be
+specified in a set of Test Reports that will be referenced within the POCL
+Infrastructure Closure Report.
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 99 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:
+
+Specification Versi
+Date:3 1/03/1999.
+
+'R/ACS/007
+0
+
+8. AUTHORITY RESPONSIBILITIES
+
+This section describes the AUTHORITIES’ Responsibilities in relation to this
+Acceptance Test. Particular Acceptance Tests may also require additional
+participation and responsibility by the Authorities.
+
+8.1 APPOINT TEST MANAGER
+
+The AUTHORITIES shall nominate a Test Manager and other representatives to
+review the tests prior to commencement of the test.
+
+8.2. ACCEPTANCE INCIDENT REPORTS
+
+The AUTHORITIES’ nominated representatives and Test Manager shall be diligent
+in raising complete, accurate and timely Acceptance Incident Reports as set out
+within this Acceptance Test specification.
+
+8.3. ACCEPTANCE INCIDENT ANALYSIS REPORTS
+
+The AUTHORITIES’ Test Manager shall be diligent in returning signed
+Acceptance Incident Analysis Reports with their decision (e.g. Accept, Reject,
+Discuss) normally within five working days, or when urgency is requested by
+Pathway, within two working days of receipt from Pathway. A copy of all
+correspondence will be faxed to reduce delay.
+
+8.4 ATTENDANCE AT TRIALS AND REVIEWS
+
+The AUTHORITIES’ nominated representatives shall attend Acceptance Test
+Trials and Reviews including repeat Tests at times and locations specified and
+with reasonable advance notice by Pathway.
+
+8.5 MANAGEMENT AND CO-ORDINATION
+
+The AUTHORITIES’ nominated Test Manager shall be the single point of
+communication and co-ordination with Pathway’s nominated Test Manager for all
+matters concerning this Acceptance Test from its initial planning through to
+Acceptance.
+
+8.6 PROGRESS REVIEWS
+
+Unless otherwise waived by both parties, Pathway’s Test Manager and the
+AUTHORITIES’ Test Manager shall meet each week to review the progress and
+actions of both parties until Acceptance of the Acceptance Test is achieved. The
+time and location of review meetings will be scheduled with at least one week
+advance notice by Pathway.
+
+9. CONTRACTOR RESPONSIBILITIES
+
+Upon receipt of a signed Acceptance Incident Analysis Report from the Authority,
+where correction is required to be re-tested within the same phase of Acceptance
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 100 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.
+FUJ00001463
+FUJ00001463
+
+ICL Pathway POCL Infrastructure Acceptance Ref:CR/ACS/007
+
+Specification Version:2.0
+P Date:3 1/03/1999
+
+Test, Pathway will return the amended component(s), on average, within 4 days.
+This will include re-testing necessary as per the agreed test strategies.
+
+10. ACCEPTANCE TRIAL TEST CONDITIONS
+
+Not required for this Acceptance Specification since the Test Conditions are
+individually included in each Criterion.
+
+© 1999 ICL Pathway Ltd COMMERCIAL IN CONFIDENCE Printed on: 24/01/01
+CONTRACT CONTROLLED Page 101 of 1
+
+Nothing contained herein shall be deemed or construed as affecting existing contractual obligations or creating new contractual
+obligations between ICL Pathway and the DSS and/or POCL.

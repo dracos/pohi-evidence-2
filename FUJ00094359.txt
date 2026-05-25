@@ -1,0 +1,607 @@
+FUJ00094359
+FUJ00094359
+
+Horizon Next Generation Joint Progress Meeting
+
+Meeting 147
+
+Notes of Horizon Next Generation Joint Progress/Release Board Meeting
+Meeting of Thursday 4" March 2010
+
+Attendees:
+
+Name Initials_I Role Comments
+Mark Burley MB Programme Manager (POL) Apologies
+Debbie Richardson DR Test Manager (Fujitsu)
+
+John Wheeler JW. PMO OManager (POL)
+
+Kevin Tallboy KT Planning Manager (POL)
+
+Ravi Chambers RC PMO Manager (Fujitsu)
+
+Geoff Butts GB Programme Manager — HNG (Fujitsu)
+
+Will Russell WR Migration Manager (POL) Chair
+Vince Cochrane Wiel Network Specialist (Fujitsu)
+
+Alan D’Alvarez AD Programme Director — HNG (Fujitsu) Apologies
+Lee Farman LF Test Manager (POL)
+
+Phil Norton PN Acceptance Manager (POL)
+
+lan Trundell IT HNG Design Authority (POL) Apologies
+Adam Martin AM Service Delivery (POL) Apologies
+Dave Hulbert DH Service Delivery (POL)
+
+Graham Welsh GW. Customer Services (Fujitsu)
+
+Graham Allen GA Development Manager (Fujitsu)
+
+Mike Wood MW. Director of Programmes (Fujitsu) Apologies
+Gaetan van Achte GvA Service Director (Fujitsu) Apologies
+Chris Dodington CD Implementation Manager (Fujitsu)
+
+Barry Evans BE Migration Team (POL)
+
+Peter Stanley PS Design Authority (POL)
+
+Andy Jacques AJ Service Delivery (POL) Apologies
+Distribution: As above, plus David Smith, and the Fujitsu & POL lead teams
+
+Ref: Joint Progress Meeting Minutes 1000304.doc Page 1 of8
+
+FUJ00094359
+FUJ00094359
+
+Horizon Next Generation Joint Progress Meeting
+Meeting 147
+
+1 Minutes from Previous Meeting
+
+The previous minutes were accepted.
+
+2 Actions and Points to Note from Previous Meeting/Current meeting
+
+No.
+
+Owner
+
+Action or point to note
+
+Status/Progress
+
+Date
+required
+
+New Actions and Points from meeting of 14” January
+
+140.08
+
+AD GB
+(GW)
+
+Provide a process for how
+releases will be implemented
+beyond the current maintenance
+release (01.08). Process will
+need to be discussed and agreed
+with POL Service Delivery.
+
+04/03 update. (transferred from
+145.11): the current pause in
+rollout means that re-opening of
+the migration package should be
+considered — or that a future
+package rolls up all changes — so
+
+Previous actions archived.
+18/02 C/fwd. Meeting to be
+arranged for next week to agree a
+joint strategy for the targeting of
+referrals beyond RO1.08.
+
+25/02 C/ifwd. No paper received to
+date. Fujitsu internal meeting
+arranged for 2" March.
+
+04/03 C/fwd. Internal meeting
+cancelled. Meeting to be
+rescheduled; LF and PS to be
+included in the invites.
+
+that there is no lag between
+
+R108.
+
+branch migrating at R107, and
+getting the fixes contained in
+
+a
+
+11/03
+
+140.12 To confirm that there will
+be additional migration
+support available from
+Fujitsu (to bring back the
+
+rollout completion date)
+
+BEB
+
+21/01 C/fwd. Currently unconfirmed.
+
+28/01 C/fwd. AD to discuss with MB on 29"
+January.
+
+04/02 C/fwd. GB has received a training
+proposal from 4G and this is now under
+review. GB to provide an update to MB by
+5" February.
+
+11/02 Cifwd. To be discussed after Joint
+Steering Board.
+
+18/02 C/fwd. Work in progress. Still
+reviewing options proposed by 4G. See
+also action 145.01
+
+25/02 C/fwd. Revised proposal expected
+next Monday,
+
+04/03 C/fwd. Revised proposal has been
+received from 4G and is being reviewed by
+Fujitsu. However; given current position this
+will probably need revisiting.
+
+11/03
+
+New Actions and
+
+Points from meeting of 4° February 2010
+
+143.04
+
+GW.
+IT
+
+Obtain statistics regarding the
+number of ‘Screen Pauses’ and
+reversals experienced at the HNG
+branches since migrating. And
+investigate and report back on the
+root cause of why this is happening.
+
+11/02 Cifwd. Statistics provided
+and monitoring continues.
+Action switched to IT to lead on
+working with Fujitsu to determine
+how we get back to the volumes
+forecast.
+
+Closed
+
+Ref: Joint Progress Meeting Minutes 1000304.doc
+
+Page 20f8
+
+FUJ00094359
+FUJ00094359
+
+Horizon Next Generation Joint Progress Meeting
+
+Meeting 147
+
+The number of ‘Screen Pauses’
+and related Recoveries are
+significantly higher than expected.
+
+18/02 C/fwd. IT has had initial
+discussions with Dave Johns,
+investigations continue.
+
+25/02 Cifwd. GW to provide
+daily statistics (issue to WR, IT
+and PS) on the number of
+recoveries being performed and
+any information on screen
+freezes.
+
+See also follow on Actions:
+146.01, 146.02, 146.03 and
+146.04
+
+04/03 Closed. See 146.02
+
+143.06 DR_ I HNG SV&I Rig -
+Propose a way
+forward for
+managing the
+contention for the
+
+for Release 1
+issues and
+Release 2
+development.
+
+use of the SV&l rig
+
+Previous actions archived.
+
+18/02 C/fwd. Current view is that an additional
+SV4&l rig will be required. DR currently working up
+the details.
+
+25/02 C/fwd. DR continuing to assess the short
+term requirements and how best the Test team can
+meet these. It was re-iterated that the long term
+proposal would be to introduce a new rig to retain
+the SV&l functionality...
+
+LF and PS to review and assure any short term
+proposals
+
+Note: Migration issues can only be tested on the
+LST rig.
+04/03 C/fwd. Fujitsu are currently looking at 3
+options, the first 2 are tactical:
+
+« Provide a CIT equivalent in BRAO1
+
+¢ Create an SV&l clone in IRE19
+The third option is more strategic and involves
+providing a new SV&I environment either by
+enhancing the SV&I clone created for the tactical
+solution of using the Vol rig once it has been
+released.
+
+A meeting has been scheduled for 10'" March to
+discuss, but it is essential to understand the current
+issues before a decision can be made. Additionally
+an agreement on how future releases will be
+implemented is a significant contributing factor to
+any decision.
+
+NOTE ; It was confirmed that the HNG SV& rig has
+now been handed over to Release 2, leaving only
+the LST rig to test defect fixes on HNG.
+
+11/03
+
+143.10 GW
+
+To provide advice to POL as
+to the correct action that
+
+11/02 C/fwd. KELs being generated.
+GW to provide update on latest position
+
+11/03
+
+Ref: Joint Progress Meeting Minutes 1000304.doc
+
+Page 3 of8
+
+FUJ00094359
+FUJ00094359
+
+Horizon Next Generation Joint Progress Meeting
+
+Meeting 147
+should be taken by Branches _ I at next Joint Steering Board.
+receiving the; 18/02 C/fwd. KELs have been
+‘Unable to contact Data generated, GW will generate the
+Centre’ message. required documentation and forward to
+Barry Evans.
+25/02 C/fwd. Not received. GW to
+check and re-send if required.
+04/03 C/fwd.
+New Actions and Points from meeting of 11 February 2010
+144.08 PAL Error message seen at Branches, 18/02 C/fwd. The message Closed
+GW I but not flagged up by FS needs to be revised. IT and GW
+IT monitoring systems: The following I to meet to review and agree the
+message; best way forward.
+¢ “Do not attempt any further 25/02 Cifwd. Revised wording
+transactions of this type until has been agreed. IT will work
+you have confirmation they with Andy Corbett (POL
+have been fixed” Reference Data Team) to
+PN/GW to investigate. PN to forward I resolve.
+information to GW 04/03 Complete. Message
+changed in live.
+New Actions and Points from meeting of 18" February 2010
+145.03 PN Trial Report / Final 25/02 C/fwd. POL have requested that this 05/03
+Balance issue: PN to I be a Hot Fix as it is required before we
+check if the proposed migrate any further branches.
+workaround is
+acceptable to the Fujitsu to ensure deliverables listed in PN
+business. email (dated 24" Feb) for current live
+Permanent fix targeted I branches are included.
+for RO1.08. However; 04/03 C/fwd. GB has received feedback
+this is dependent on the I from FS legal. Info will be forwarded to PN.
+acceptability of the
+workaround, it may need
+to be a Hot Fix.
+145.07 GA Pre-Migration checks 25/02 C/fwd. Investigations continue. Fujitsu I 11/03
+BE taking a long time at to provide a response by close of business
+large branches: 26" Feb
+Crawley took 50+ 04/03 C/fwd. Presentation sent by GA. It
+minutes to run the pre- _I includes a high level summary recommending
+migration checks. GA to I the preferred approach to migrating large
+investigate if this will be I branches. BE to review and respond to CD.
+a problem for the Crown
+Offices targeted for
+migration on 19" Feb.
+Fujitsu need to provide
+assurance that there will
+not be a problem at
+these branches.
+145.08 GW _I Forward supporting 25/02 Completed. On going. Closed
+information for the 6
+dials reports to MB and
+
+Ref: Joint Progress Meeting Minutes 1000304.doc
+
+Page 4 of8
+
+FUJ00094359
+
+FUJ00094359
+Horizon Next Generation Joint Progress Meeting
+Meeting 147
+WR
+145.09 VG Talk to Tom Lillywhite 25/02 C/fwd. VC has discussed with TL. Closed
+IT regarding the IT to confirm with Dave King if this remains
+Penetration testing an issue and update VC accordingly.
+performed on POL FS. 04/03 Closed.
+145.10 DR Review the new High 25/02 Cifwd. Being tracked at Test Closed
+Priority defects and Governance. DR to provide supporting
+report back, by evidence that the recorded increase in
+exception, to the board. I defects is not an issue..
+DR to produce a high level summary asap.
+04/03 Closed. High level summary provided
+by DR on 26" February. Re-raise by
+exception.
+145.11 GA Release 01.08 will be 25/02 C/fwd. The proposal to implement Closed
+GW I deployed post Branch RO01.08 after migration (i.e. there would be at
+(PN) I Migration (the Branch least one day of trading before the branch is
+will initially migrate onto I upgraded) is unacceptable to POL.
+01.07). The upgrade will
+be targeted for the Fujitsu to propose how the essential fixes can
+following day, but could I be included into or with the Migration
+take 2 or even 3 days to _I Package in order that no new branch can
+be deployed. open without them.
+GA/GW to provide a
+level of confidence for 04/03 Closed. Investigations have shown
+the rate of rollout. that to include all the “must have” fixes into
+the migration package would incur an
+GA/GW to coordinate additional 3 weeks minimum of testing and
+with PN. puts the programme in a worse position than
+the proposed approach of migrating the
+branches to 01.08 the day after initial
+migration.
+However; the current pause in rollout means
+that this should be re-opened with the view
+that a one-off migration package could be
+introduced at some time during full rollout.
+This should be reported under 140.08 above
+145.14 PN Ensure M C-J is actively I 25/02 C/fwd. There are now 3 High Severity I 11/03
+GB__ I pursuing the rectification I Security incidents. Fujitsu internal meeting
+(M-G-J) I of the 2 high severity later today to discuss.
+GB Security incidents. Output from this meeting to be forwarded to
+PN
+04/03 C/fwd. Security teams have met, but
+PN reported that insufficient progress has
+been made. GB to provide a proposal as to
+how these high severity incidents will be
+resolved.
+New Actions and Points from meeting of 25” February 2010
+146.01 GW Excessive number of Recoveries/ 04/03 C/fwd. Data is now being I 11/03
+PS Screen Freezes: provided, but this still needs to
+Fujitsu to provide a formal response be referred back to the contract
+on how the system is performing. Assumptions and Constraints
+
+Ref: Joint Progress Meeting Minutes 1000304.doc
+
+Page 5 of8
+
+FUJ00094359
+FUJ00094359
+
+Horizon Next Generation Joint Progress Meeting
+
+Meeting 147
+This should be measured against an I document.
+Horizon Baseline and refer back to PS to confirm that the Daily
+the levels agreed in the Assumptions I report is giving POL the required
+and Constraints documentation. level of information.
+146.02 ae Excessive number of Recoveries/ 04/03 C/fwd. Screen Pauses do I 11/03
+Ad Screen Freezes: Wider MI. not create a system event,
+IT to discuss with AJ, POL’s therefore the focus has switched
+GB requirements for MI that Fujitsu need I to monitoring and recording
+to provide regarding the on-going counter re-boots.
+monitoring of Recoveries/Screen
+Pauses. Additionally POL have provided
+IT to then forward these requirements I a list of additional MI
+to GW. requirements via email to GW.
+GB to confirm back that this MI —
+or an adequate variant — can be
+provided
+
+146.03 I Info I Excessive number of Recoveries/ _I For information
+
+Screen Freezes:
+This is to be treated as a Major
+Incident and managed accordingly.
+146.04 GW_ I Excessive number of Recoveries/ 04/03 C/fwd. 11/03
+GA, Screen Freezes:
+WR Daily update to be provided by GA on
+progress towards resolution. (Email
+to IT/WR and PS).
+
+146.05 WR POL to re-enforce the message to 04/03 Completed. Message Closed
+Branches that they must inform the has been sent to every branch.
+appropriate helpdesk when problems
+arise.
+
+146.06 Info Meeting to be scheduled for next For information
+Wednesday 3 March to review all
+actions pertaining to the Excessive
+number of Recoveries/ Screen
+Freezes.
+
+146.07 I Info I The Key Branch-impacting Issues For information
+required for action before continuing wl)
+rollout have been capture in a
+spreadsheet and were reviewed at Key Issues required
+the Board. Attached is the updated —_I Defore continuing rolk
+version.
+
+ALL please note that this
+spreadsheet contains a number of
+actions that need to be addressed in
+addition to those captured above.
+The proposal is to merge this
+spreadsheet into the current
+Migration RAG report and hence will
+be reviewed at that forum
+
+146.08 AD Fujitsu to provide assurance that the I 04/03 Closed. GB gave an Closed
+required resources (e.g. Testers) will I assurance that all the required
+
+Ref: Joint Progress Meeting Minutes 1000304.doc
+
+Page 6 of8
+
+FUJ00094359
+FUJ00094359
+
+Horizon Next Generation Joi
+
+int Progress Meeting
+
+Meeting 147
+
+remain in place to ensure that testing
+of the required fixes can be
+performed without un-necessary
+delay.
+
+Testing resources were in place.
+
+146.09
+
+ALL
+
+Please ensure that KT/JW are copied
+in on all action updates or
+deliverables required to close actions.
+
+For Information
+
+New Actions and Points from meeting of 4 March 201
+
+0
+
+147.01
+
+info
+
+The Joint Steering Board agreed that
+until a clearer understanding of the
+root cause of the current live issues
+was understood the rollout of any
+new branches will be suspended.
+
+For Information
+
+147.02
+
+GB
+
+As per Action 147.01 It was agreed
+that rollout would not be
+recommenced until a period of
+stability had been achieved. GB/WR
+to agree what is meant by ‘Stability’
+and what would be an adequate
+period.
+
+New Item
+
+11/03
+
+147.03
+
+GW
+
+Set up a ‘Tech Bridge’ to manage the
+latest Live Issue (as at morning of 4"
+March). Invitees to include DH, JW ,
+
+PS and the Duty Manager.
+
+New Item
+
+04/03
+
+147.04
+
+info
+
+It was noted that RO1.08 will improve
+the current position regarding screen
+freezes and oter stability items, but it
+will not be a complete fix.
+
+For information
+
+147.05
+
+GW
+
+Ensure that all necessary parties in
+Fujitsu and their counterparts in POL
+are aware that there will be an OCP
+raised late on Friday to enable the
+RO1.08 Data Centre and Counter
+
+New Item
+
+upgrades to take place.
+
+05/03
+
+Remote attendance numbers (when provided) are as follows:
+
+Points to note
+Incorporated into actions/points to note above
+
+AOB
+
+incorporated into actions/points to note above
+
+Next meetings:
+
+Next Interim Joint Steering Board: Thursday 11" March, 14:00 — 15:30,
+Teleconference.
+
+Next Full Joint Steering Board: Thursday 18" March, 10:00 — 13:00, London
+
+Ref: Joint Progress Meeting Minutes 1000304.doc
+
+Page 7 of8
+
+FUJ00094359
+FUJ00094359
+
+Horizon Next Generation Joint Progress Meeting
+Meeting 147
+
+Number to dial: (GRO
+Participant Password:
+
+Ref: Joint Progress Meeting Minutes 1000304.doc
+
+Page 6 of8
+

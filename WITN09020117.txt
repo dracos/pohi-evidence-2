@@ -1,0 +1,278 @@
+WITNO9020117
+WITNO9020117
+
+FUJITSU SERVICES Booz
+
+Claimant
+J Holmes
+First
+Exhibits *-”
+Dated : August 2004
+
+CLAIM NO CR101947
+IN THE BLACKPOOL COUNTY CouRT
+Se SEARKPOOL COUNTY COURT
+
+BETWEEN
+POST OFFICE COUNT! ERS LIMITED
+
+Claimant
+AND
+
+MRS JULIE WOLSTENHOLME
+Defendant
+
+WITNESS STATEMENT OF JAN ROBERT HOLMES
+
+I, JAN ROBERT HOLMES of Fujitsu Services, Forest Road, Feltham, Middlesex,
+TW137EJ STATE AS FOLLOws:
+
+I ns I am employed by Fujitisu Services Limited (“Fujitsu Services”) as Programme
+Assurance Manager. 1 have been employed by Fujitsu Services since
+January 1995. I work for Fujitsu Services and deal with the Post Office
+Account. I have been asked to provide a description of the support services
+Provided by Fujitsu to the Post Office in respect of the Horizon system.
+
+2. The facts and matters deposed to in this statement are within my own
+knowledge unless I Say So. Insofar as they are within my own knowledge,
+they are true. Insofar as they are derived from information provided to me by
+others, they are true to the best of my knowledge and belief.
+
+Paget of?
+
+WITNO9020117
+WITNO9020117
+
+FUJITSU SERVICES Zoos
+
+I set out below a glossary of terms used in describing the matters referred to
+in this statement.
+
+Fujitsu building Bracknell 01
+Runnymede Ave, Thornton Cleveleys, Lancs, FY5 1DF. The Post Office m question
+Fujitsu building Feltham 01
+
+Name associated with the HSH staff actively interfacing with Post Masters on call
+
+Horizon Incident Team (additional 1" Line). This function established in July 2000 to handie
+Specific types of calls. Now amalgamated with SMC.
+
+Horizon System Helpdesk (1 Line) (Fujitsu help desk for Post Masters with technical/system
+
+queries to call)
+ICL Pathway The name by which the current Fujitsu Services Post Office Account was known im 2000.
+Known Error Logs
+Fujitsu building Manchester 05
+National Business Support Centre (A Post Office run help desk for Post Masiere wah
+business queries to call)
+OA Operational Level Agreement
+PinICL Call management system utilised by SSC and Pathway development for capturing and
+ope incidents escalated from SMC (2 Line), (Replaced by system called PEAK in
+PM Post Master
+PowerHelp Sani management system utlised by HSH for capturing and progressing call information from
+QFP Quality Filter Process
+RMF Release Management Forum
+smc ‘System Management Centre (2 Line)
+ssc ‘System Support Centre (3 Line)
+STE0S Fujitsu building Stevenage 09
+
+Page 2 of 7 I
+
+WITNO9020117
+WITNO9020117
+
+FUJITSU SERVICES Boos
+
+Fujitsu Services Post Office Account (known as ICL Pathway in 2000)
+Provides technical support to Post Office users of the Horizon system through
+a four-tier model, with the handling of incidents escalating through the tiers
+depending on the nature of the final resolution action.
+
+i (aes =
+NESE
+
+5. Each of the domains, referred to as 1%, 2°4, 3" and 4" Line Support, has its
+own objectives and tesponsibilities, both to themselves and each other, and
+these are defined in an internal Fujitsu document reference CS/FSP/006: End
+to End Support Process, Operational Level Agreement. The content of this
+document has been in operation since 1999 and applied to calls raised by the
+Cleveleys office.
+
+6. While the following Paragraphs are written in the Present tense, they describe
+equally what happened in 2000. Whilst there have been changes to the
+Processes and tools since 2000, the basic four-tier model has remained
+unchanged.
+
+Horizon System Helpdesk HSH/HIT Team (1* Line)
+
+yi Calls are received by the Horizon System Helpdesk (HSH) direct from Post
+Masters (PM). They can also arrive via the National Business Support Cenme
+(NBSC), a Post Office organisation established for Post Masters to comtact if
+
+Page 30f7
+WITNO9020117
+WITNO9020117
+
+FUJITSU SERVICES Boos
+
+they have business related problems. The NBSC sometimes receives calls that
+are more relevant to the HSH and these calls are transferred by telephone.
+
+8. All calls are registered on PowerHelp by the HSH and all calls remain open
+until such time as a resolution has been reached to the problem and the
+originating Post Master agrees to the call being closed.
+
+Ce An initial diagnosis is conducted by the HSH Front Line while the PM is on
+the line, using the Horizon reference system co-located with the HSH
+terminals, and information available on the automated support tool HSHONE,
+Advice and Guidance information and the Weekly Counter News. If the
+problem requires further investigation, or an engineer, the call is escalated to
+the Horizon Incident Team (IT), a subset of the HSH, and the current call to
+the PM terminated. [Note: The HIT was established in July 2000 to deal with
+Specific types of calls]
+
+10. Known Exror Logs (KELs), developed by the SSC a" Line), are used by the
+HSH and HIT Team, and further attempts are made to resolve the problem
+with the PM. If resolution is still not Possible the call is escalated to 3 Line
+Support, be that hardware engineers, network specialists or the SSC in BRAOI.
+
+11. Calls that are to be escalated to SSC are transferred from the HSH and
+registered on the PinICL system.
+
+System Management Centre 2" Line)
+
+12. The SMC deal with the more technically oriented elements of Horizon support
+including:
+> Network monitoring.
+> Pa monitoring and, where Possible, identifying problems using SSC
+S.
+
+> Investigating non-polling Post Office’s and reporting back to CS
+
+Page 4 of 7
+
+WITNO9020117
+WITNO9020117
+
+FUJITSU SERVICES Boos
+
+> Providing software and POL Type A Reference Data distribution services
+to the live Horizon estate.
+
+Primary inputs to the SMC include calls that have been escalated from the HIT
+Team and a number that may also be escalated from the HSH Front Line.
+
+System Support Centre GB" Line)
+
+13. SSC receives the majority of its incidents as PinICL calls raised via
+Powerhelp. These may be calls raised by the HIT Team for counter related
+problems, or the SMC for central systems or Tivoli monitored errors,
+
+14. Problems are analysed through a process of elimination and by mimicking PM
+actions in an attempt to re-create the problem.
+
+15. Primary outputs are agreed closures of PinICLs, data fixes to enable Post
+Masters to continue working and workarounds, usually pending final
+resolution through a subsequent software release by 4" line. A workaround is
+a temporary fix to a problem that may have an alternative final resolution.
+
+16. The SSC are also involved in the closure of PinICLs that are referred to 4
+line for resolution, where they act as moderators with the customer before
+agreeing final closure. PinICL closures provide the filtration measure of errors
+transferred to 4" line.
+
+17. Workarounds are often Tequired due to the backlog of software releases and
+unless a fix is absolutely required the PinICL is linked to a KEL entry and,
+with the agreement of the customer, a workaround agreed pending final
+
+resolution.
+
+18. The Release Management Forum (RMF) controls the release of software and
+data through the normal release cycle although the SSC can, im an emergency,
+implement a change and seek Tetrospective approval from the RMF.
+
+Page Sof 7
+
+19,
+
+WITNO9020117
+WITNO9020117
+
+~ oo @oo
+
+FUJITSU SERVICES
+
+Closed PinICLs refer back to the originating PowerHelp call, which is
+automatically closed.
+
+ICL Pathway Development (4" Line)
+
+20.
+
+21;
+
+zz
+
+Faults are passed to 4" line when all other attempts to resolve the problem
+have been exhausted and it is believed that changes to the underlying code will
+be required to bring the problem to closure. PinICLs are routed to the Quality
+Filter Process (QFP) for initial scrutiny and routing to the most appropriate
+development team.
+
+PinICLs are discussed at the Release Management Forum and a target release
+for the fix arrived at. Releases can be either Major or Interim and ‘live fix’
+problems are usually targeted at the next available Interim Release if urgent, or
+Major Release if not. Counter based problems are usually targeted at Major
+Releases due to the complexity of distributing fixes to the entire estate, Once
+the Release has been identified the PinICL is returned to the QFP for transfer
+to the appropriate development team.
+
+Cleveleys office went live on Release NR2 with the next major Release, Cl4,
+occurring during the first week in August 2000 a precise date cannot be given
+since Outlets are upgraded over a period of time shortly after the Release is
+authorised. Call E-O008021149 dated 2 August 2000 was the last recorded
+call under Release NR2. Call E-0008172268 dated 17 August 2000 was the
+first recorded call under Release C14,
+
+Resourcing the Support Function
+
+23,
+
+National Rollout of the Horizon system did not complete until early to mid
+2001 and would have been in full flow during 2000. As the number of Post
+
+Offices was automated so the Support capability provided by ICL Pathway was
+enhanced to reflect the increased Population of Horizon users.
+
+Page 6 of 7
+WITNO9020117
+WITNO9020117
+
+FUJITSU SERVICES Boos
+
+It should also be noted that calls relating to National Rollout were handled by
+a dedicated Rollout Helpdesk, and not by the HSH. Rollout calls made to the
+HSH in error were transferred to the correct helpdesk. Cleveleys made 16 such
+calls,
+
+Office project.
+Number of Post Offices running Horizon System 3136 14841
+Number of ICL staff in Horizon System Helpdesk Front Line (1 Line) 65 186
+Number of ICL staff in Horizon Incident Team (Additional 1* Line) (Note 1] I 0 "1
+Number of ICL staff in System Management Centre (2™ Line) 50 73
+Number of ICL staff in System Support Centre (3 Line) (Note 2} 34 4
+
+[Note 1] : The Horizon Incident Team was introduced in July 2000 to deal with
+specific types of problems.
+
+[Note 2] : Despite the increase in Post Offices the number of employees in the
+SSC remained static as working practices improved, better problem diagnosis
+tooling was available and the general level of staff. competence increased,
+
+STATEMENT OF TRUTH
+
+ted in.this.witness.statament are true.
+
+Jan Holmes.
+
+Page 7 of 7

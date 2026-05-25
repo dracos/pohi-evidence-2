@@ -1,0 +1,186 @@
+POL00028291
+POL00028291
+
+P4048 a
+
+22 FEB '96 17:36 FROM £
+
+PRODA-14 RESTRICTED CONTRACTS
+
+Bringing Technology to Post Offices and Benefit Payments
+
+ITT HURDLE CLEARANCE CERTIFICATE
+
+Service Provider: Pathway Hurdle: (a) Service Requirements
+
+Cleared: Yes Yo {delete as req'd}
+
+Certification
+
+I confirm to the Evaluation Board that the service provider's proposal has performed against
+the above hurdle (as defined in paper PWKP4-8, Issue 2.0) as described in this document
+
+Authorised by Date:
+
+- Tony Johnson, 2v27/80
+Tony Johnson
+
+Deputy Programme Director
+
+SS
+1. SUMMARY OF SUB-HURDLES 4
+BL The clearance status of each of the Service Requirement sub-hurdles is shown in the
+
+table below, together with any issues for consideration. Issues may be relevant to
+more than one sub-hurdle. For ease of documentation, the main sub-hurdle impacted
+is annotated. Supporting text on the issues against the identified sub-hurdles is
+documented in the following section
+
+Sub-Hurdle Clearance Status I Issues
+i, Customer acceptability Cleared No major issues I
+i. Staff/agent acceptability Cleared No major issues
+iii, Fraud-free method of Cleared Card technology and
+payment authentication
+Fraud & risk management
+Stops
+iv. Robustness, security, Cleared Riposte partly unproven
+reliability and flexibility
+v. Accounting reconciliation [Cleared No major issues
+vi. Emergency payments Cleared No major issues
+vii. One-off payments Cleared No major issues
+viii.POCL product automation I Cleared Bespoke development
+ix, Automation of all post Cleared No major issues
+offices
+x. Management and technical I Cleared General concerns
+capability I
+
+21 February 1996 Page 1 of 3 Version 1.0
+
+22 FEB '96 17:36 FROM o£
+
+POL00028291
+POL00028291
+P.41748
+
+OD4-14 RESTRICTED CONTRACTS sy We an
+
+2.
+
+2.1.
+
+L
+g
+a FF
+
+7 &*
+
+—
+
+Card technology and authentication uf
+
+SPECIFIC ISSUES
+
+Fraud-free method of payment
+
+'
+
+=—
+
+The issue relates to an outstanding risk on Pathway (PWY078) which states:
+
+“The proposed card authentication_method CAM) is insecure and places an
+unrealistic reliance on the vigilance of post office counter clerks. Pathway’s proposed
+fraud and risk management does not mitigate the risk of aweak CAM. The proposed
+CAM does not allow for the identification of a counterfeit card. Potential attributable
+costs in this area are not restricted purely to financial loss through fraud. Other areas
+of impact are:
+
+—————_
+
+(a) additional administration costs caused by card compromise
+(b) loss of confidence in the BPS
+
+(c) political damage in the event of genuine customers being denied benefit, or
+being subject to allegations of transaction repudiation
+
+(d) increased exposure to widespread transaction repudiation due to publicity of
+card compromise”
+
+At this point Pathway have been unable to mitigate the risk as they would no
+prefer to introduce a protected memory integrated circuit (IC) card from Day One
+As there is insufficient time available between now and issue of ITT for Pathway t
+provide a detailed revised solution (because the change impacts many areas) and for
+the Programme to evaluate it, Pathway have decided to remain with their current card
+and bring in the IC card through Change Control. a
+
+Detailed documentation on this issue is available.
+
+Fraud & risk management
+
+The issue relates to two outstanding risks - fraud and risk management during roll-
+out (PWY079) and steady state (PWY082). Pathway’s documented approach has
+been deemed short of strong countermeasures and is based on being reactive to an
+analysis of information from the MIS.
+
+Stops
+This issue again relates to an outstanding risk (PWY076). This states that:
+
+“If the communications link to a post office has failed, the STOP messages will not
+be actioned on home office payments made at that post office”
+
+21 February 1996 Page 2 of 3 Version 1.0
+22 FEB '96 17:37 FROM £
+
+POL00028291
+
+POL00028291
+
+P.42748
+
+, 14 RESTRICTED CONTRACTS
+
+2.2,
+
+2.3.
+
+2.4.
+
+Pathway proposes that the Help Desk telephones STOPs to post offices where the
+data lines are not working. However, there remains a problem where the voice and
+data lines are down simultaneously
+
+Robustness, security, reliability and flexibility
+
+Riposte is the office middleware in the Pathway solution. The ‘unproven’ aspects of
+Riposte relate to two areas:
+
+(a) Riposte 32 is a new product, currently being developed by Escher for An Post
+in Ireland and BA/POCL. The previous version, Riposte 2, is in live use in An
+Post, and also in POCL ALPS, although the architectures are slightly different.
+There has been considerable ‘internal’ changes between Riposte 2 and 32.
+
+(b) Issues have been raised on “sealability’, as Riposte has only been seen working
+in a much smaller environment to BA/POCL. These have been addressed
+through modelling and an informal demonstration of the transaction rates that
+can be supported. As part of the development for Riposte 32, Escher are
+making a number of enhancements to improve performance to ensure it is
+suitable for the BA/POCL scale.
+
+POCL product automation
+
+Bespoke development
+The Pathway counter solution is not based on any existing package but is a bespoke
+
+development, re-using some of the applicable elements of the An Post system. A
+considerable amount of development is required.
+
+Management and technical capability
+
+General concerns
+
+A concem remains that Pathway have failed to demonstrate effective leadership and
+management during the Demonstrator phase which raises fears on their ability to
+deliver a product on-time and to quality.
+
+21 February 1996 Page 3 of 3 Version 1.0
+

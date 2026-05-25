@@ -1,0 +1,747 @@
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+Document Title: Pathway Release Policy
+Document Type: Strategy Document
+Abstract: This document defines the Pathway policy for the
+
+identification and planning of new Releases of
+Software and Data.
+
+Distribution: Pathway Management Team
+
+Document Status: APPROVED
+
+Document Predecessor: 2.3
+
+Author: Jim Morley, updated by Anne Cooper
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 1 of 1
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+Contents List
+
+1. DOCUMENT CONTROL.
+
+Ll
+1.2
+13
+
+2.
+
+2.1
+2.2
+2.3
+24
+2.5
+
+3. CLASSIFICATION OF RELEASEB.....
+
+3.1
+
+3.1.1 NEW PRODUCT RELEASES
+3.1.2 INFRASTRUCTURE RELEA:
+
+3.2
+
+4. DEFINITION OF RELEASE CONTENT...
+
+41
+4.2
+
+5. MAINTENANCE RELEASES...
+
+6. RELEASE SCHEDULE.
+
+6.1
+6.2
+
+DOCUMENT HISTORY. soon senna
+CHANGES FORECAST.....0.ssnnnnnnsnninnnninnnnsnnnnnnnnnnsinsnnnnnnnennssnnnnn
+ABBREVIATIONS USED.
+
+INTRODUCTION....
+
+PURPOSE.
+
+DEFINITION OF RELEASE
+
+IDENTIFICATION OF NEW BUSINESS OPPORTUNITIES.
+CHANGE CONTROL.
+
+CONTRACTUAL AND FUTURE RELEASES.
+
+Ub & RU &
+
+a
+
+SOFTWARE RELEASES...
+
+6
+7
+8
+
+wd
+
+9
+
+REFERENCE DATA RELEASES.
+
+RELEASE CONTROL & CONTENT. 10
+EMERGENCY PROCEDURES. ll
+
+SOFTWARE RELEASES.....:.:.e0 sesenenennen
+REFERENCE DATA DISTRIBUTION.......
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 2 of 1
+
+FUJ00232435
+FUJ00232435
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+1. DOCUMENT CONTROL
+1.4 DOCUMENT HISTORY
+Version I Date Reason
+0.1 20/10/96 First Draft for Pathway internal use only
+0.2 30/10/96 Second draft following application of Pathway comments.
+0.3 30/10/96 Draft for issue to the PDA.
+0.4 12/11/96 Updated following PDA comments through Michael
+Purchase.
+0.5 17/11/96 Updated following PDA & Sponsor comments received
+through Michael Purchase.
+0.6 18/11/96 Further comments applied from Pathway and PDA.
+0.7 24/11/96 Further comments applied from PDA.
+1.0 26/11/96 Further comments applied from POCL.
+1.1 27/11/96 Further comments applied from PDA, BA and POCL
+1.2 28/11/96 Incorporates revisions following review by Pathway, PDA,
+POCL and BA
+1.3 1/5/98 Brought up to date to recognise differences between
+infrastructure and new product releases
+2.0 29/03/99 Applied comments and approved ready for issue
+21 21/05/99 Amended to reflect the current definition for Reference
+Data changes.
+2.2 22/06/99 Amended to reflect the signed Heads of Agreement (24"
+May 1999)
+2.3 25/06/99 Amended to reflect comments from Pathway review
+3.0 28/06/99 Further comments applied and approved ready for issue
+
+1.2 CHANGES FORECAST
+
+None.
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 3 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+1.3 ABBREVIATIONS USED
+
+The terms and abbreviations used in this document are those
+defined in Schedule A01 of the Agreement.
+
+2. INTRODUCTION
+
+2.1 PURPOSE
+
+This document describes Pathway’s policy for identifying and planning the
+development of new Releases of Software and data. Pathway aims to do
+this in a manner that is responsive to the business needs of POCL, and
+which also conforms to the provisions of the Agreement. Overall, it aims
+to:
+
+a) establish the principles associated with releases of Pathway Services
+in the context of the Agreement;
+
+a) establish the principles for regular and on-going Releases of the
+Pathway systems and Services; including infrastructure releases, new
+product releases and maintenance releases:
+
+a) establish the provisions to bring in changes to functionality and new
+POCL Clients more quickly and frequently through Reference Data
+provided by POCL and/or Pathway and to explain the main qualifiers
+for doing this;
+
+a) establish indicative timescales for the different types of Release in
+order to put these into context.
+
+The Pathway Release Policy is a key element in the process of
+establishing business change, and provides a set of principles for the
+timely and efficient introduction of new or improved products and
+Services.
+
+2.2 DEFINITION OF RELEASE
+
+The Agreement defines a Release to be “a documented collection of
+Software and/or data provided by the CONTRACTOR to deliver a
+Service”, while the Requirement 476 makes it clear that the definition also
+includes Reference Data. Throughout this document releases will be
+referred to as either Software Releases or Reference Data Releases. It is
+possible that both Software Releases and Reference Data Releases
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 4 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+require the co-ordinated implementation of other Infrastructure and
+Supporting Services and it will be seen that this requirement leads to
+further subdivisions of the definition of Releases later in the document.
+
+2.3 IDENTIFICATION OF NEW BUSINESS OPPORTUNITIES
+
+Releases are required to support changes of Service delivery in order to
+implement business change. This business change will cover a wide
+range of scale and complexity. For example:
+
+i. adjustment to POCL trading variables, such as the price of a first class
+stamp;
+
+i. changes to business rules, e.g. whether or not to print a receipt for
+Automated Payment Transactions;
+
+i. amending the format or information provided for existing transaction
+types;
+
+i. franchising an existing outlet, or creating a new outlet;
+
+i. implementing a new client for an existing service;
+
+i. introducing a new client transaction or new product ;
+
+i. re-engineering services within POCL’s own operations.
+
+The time, risk and cost of implementing such business changes will vary,
+depending upon the extent of:
+
+a) systems development;
+
+a) type of reference data changes;
+
+a) changes to Infrastructure;
+
+a) changes to support Services, such as Help Desk;
+a) changes to documentation;
+
+a) training requirements;
+
+a) changes to marketing collateral;
+
+a) network changes and telecommunications;
+
+a) clients process re-engineering;
+
+a) and so on.
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 5 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+All these changes must be taken into account in the process of defining
+new business opportunities and setting priorities.
+
+New business opportunities that require Releases will require a study to
+prepare and qualify the business case for POCL. It is anticipated that
+successful studies will result in an agreed Business Requirements
+Definition document, and that this would form the basis of a formal change
+request.
+
+2.4 CHANGE CONTROL
+
+A proposed change becomes contractually committed upon the
+presentation of a Change Control Note (CCN) by Pathway and its
+approval by POCL.
+
+It is not required that Pathway should commit resources or expenditure to
+the development and implementation of a change until the CCN has been
+approved.
+
+2.5 CONTRACTUAL AND FUTURE RELEASES
+
+Release 1 was delivered in 3 phases: Release 1a (April 1997); Release
+1b (May 1997); Release 1c (November 1997).
+
+The CSR provides extended MIS functionality, introduces APS and
+EPOSS functionality, and passes information to POCL’s interim TIP
+system for accounting and reconciliation purposes. CSR forms the basis
+for contractual acceptance, and will support the mounting of the Live Trial
+and so the launching of National Rollout.
+
+The CSR¢+ will provide extended APS functionality, encompassing Smart
+Card functionality, and serves to sweep up the remaining outstanding
+contractual commitments from the original agreements and the
+introduction of LFS.
+
+Further releases may be required on an ongoing basis. A number of new
+products are already envisaged to extend the range of business
+functionality available at the counter. There will, from time to time, be a
+need to refresh or extend the supporting infrastructure and the ongoing
+maintenance of the services will necessitate fault correction.
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 6 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+3. CLASSIFICATION OF RELEASES
+
+Releases are classified as either Software Releases or Reference Data
+Releases.
+
+Software Releases fall into 3 main categories: Infrastructure Releases,
+New Product Releases, and Maintenance Releases. In this section we
+deal with Infrastructure Releases and New Product Releases.
+Maintenance Releases are dealt with separately under section 5.
+
+Similarly, Reference Data releases fall into a number of categories
+according to the impact and indicative timescales for implementation. It is
+emphasised that the classifications are not exhaustive and the timescales
+are intended to be indicative only. The classifications may also be
+reviewed in the light of experience.
+
+3.1 SOFTWARE RELEASES
+
+Software Releases result from a number of different requirements to
+change or extend the Services.
+
+This may be simply in order to maintain them in good working order,
+addressing faults, and improving service levels. Such Maintenance
+Releases are dealt with separately under section 5.
+
+It may be that one or more additional areas of business functionality are
+required, perhaps introducing an entirely new service. This would give
+rise to a New Product Release.
+
+The supporting infrastructure services will periodically need to be
+updated to take account of the infrastructure to support new products ,
+releases or workload changes. So, depending on the nature of the
+changes required, different types of release are demanded. The impact of
+such changes measured in terms of the time, effort and risk and cost of
+implementing the changes will vary widely from one change to another ,
+and these serve to characterise the different types of release.
+
+Some changes will require extensive development effort and perhaps
+involve co-ordinated changes to Infrastructure and support Services,
+while others require only minor localised software development with little
+or no need for changes to the infrastructure or support services. Some
+can be implemented in a highly segregated manner, without disrupting too
+many of the existing components, whilst others may be highly invasive. As
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 7 of 1
+FUJ00232435
+FUJ00232435
+
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+3.1.1
+
+a consequence some may require little in the way of re-integration effort,
+whilst others may require a great deal. All will require extensive and
+systematic testing of the areas concerned.
+
+Between these extremes there is a continuum of the possible scale and
+complexity of implementation of changes, but according to their essential
+characteristics, all will fall into their respective categories of either New
+Product Release or Infrastructure Release.
+
+Because of the development, integration and testing lead times involved
+with Infrastructure Releases, it is planned that a maximum of one a year
+could be implemented. Several New Product Releases may be planned
+each year, but in general releases should be spread out at least 3 months
+apart, and avoiding the busy Christmas period where POCL outlets are
+involved. Section 6 provides more information on timescales.
+
+NEW PRODUCT RELEASES
+
+The principal characteristics of the changes that form a New Product
+Release are as follows:
+
+a) Non-invasive changes, requiring little or no revision to the existing
+components of the services already operating
+
+a) May be implemented by the addition of discrete components,
+perhaps entire new services, highly segregated from the existing
+components, requiring little or no re-configuring of the existing
+services and their interfaces
+
+a) May be tested largely in isolation
+a) Imposes little or no re-integration of existing services
+a) Involves little or no migration from existing services
+
+a) Can be implemented with a backward compatible path, allowing
+gradual introduction across the network of POCL outlets, and as
+such permits the operation of a limited pilot
+
+a) Usually introduces significant new business functionality, and so
+requires significant levels of user training, which implies a
+requirement for a gradual training programme
+
+a) Several can be developed in parallel by virtue of the segregation,
+are typically of short duration, and can be implemented flexibly,
+either as separate releases or combined as one release
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 8 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+3.1.2 INFRASTRUCTURE RELEASES
+
+The principal characteristics of the changes that form an Infrastructure
+Release are as follows:
+
+a) Invasive changes, requiring significant revision to existing
+components of the services already operating
+
+a) Major infrastructure components refreshed, or significant re-
+configuring of the existing services and their interfaces
+
+a) Extensive service-wide regression testing required
+a) Imposes significant levels of re-integration of existing services
+a) May involve migration from existing service state
+
+a) May introduce major enhancements to existing business
+functionality
+
+Cannot easily be developed in parallel because of the re-integration
+aspects, are typically of long duration, and must be implemented as
+planned and separate from other releases if possible. Because of the long
+lead-times such changes are generally best grouped together as one big
+release.
+
+3.2 REFERENCE DATA RELEASES
+
+POCL Reference data releases are governed by the Operational
+Business Change processes where the required business change has
+been defined and agreed in advance. Business changes that are
+implemented through Reference Data changes that do not fall into the
+definition of Operational Business Change, are governed by the normal
+Change Control process as described in this document.
+
+The purpose of Operational Business Change (OBC) is to predefine
+common changes to the POCL business that occur often and require a
+short implementation cycle e.g. changing the price of a bus ticket. By pre-
+defining these changes the impacting cycle of the change is greatly
+reduced and the implementation actions and time scales can be defined
+in advance.
+
+Operational Business Changes are initiated through the receipt of an
+OBC request form and Reference Data files, as defined in the process
+documents.
+
+Reference Data Releases (under OBC) are broken down into more
+detailed change types according to the impact and indicative timescales
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 9 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+for implementation. The change types are documented in the "ICL
+Pathway/POCL Interface Agreement for Operation Business Change -
+Product" document. The interface agreement identifies specific types of
+business change in advance so that their characteristics (e.g. timescales,
+dependencies and responsibilities) can be understood by POCL when
+managing their business. These would be to support, for example,
+negotiation with clients and service management processes.
+
+The broad categories of change type for Operational Business Change
+are:
+
+« Outlet Advanced - requires additional activity from ICL Pathway
+e.g. relocating an outlet
+
+« Outlet Basic - Class 1 reference data change only e.g. change of
+phone number
+
+« Product Advanced - requires additional activity from ICL Pathway
+e.g. creation of new buttons on the counter menu
+
+« Product Basic - Class 1 reference data change only e.g. change to
+the price of a bus ticket.
+
+Class 1 Reference Data is reference data that has no additional impact on
+the Horzion system, although verification of the new data by POCL is
+required for High Risk changes.
+
+4. DEFINITION OF RELEASE CONTENT
+
+4.1 RELEASE CONTROL & CONTENT
+
+The Requirement and Solution 476 refers to the testing, control and
+approval of Releases while the testing of Releases is described in
+Pathway’s testing strategies and plans.
+
+The content of a Release is determined through appropriate
+documentation baselined by one or more CCNs that shall be approved
+prior to a predetermined cut-off date for each Release. The purpose of
+this cut-off date is to ensure that the changes required in each Release
+are fully defined in time for the start of detailed design, development and
+testing. After the cut-off date changes may only be introduced under
+Change Control.
+
+Requirement 476 requires POCL’s approval (such approval not being
+
+unreasonably withheld) to the:
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 10 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+e contents of any release
+
+e upgrade path for any release
+
+e timing of the distribution of any release
+e timing of the activation of any release
+
+The definition of release content for any specific Release, and the
+development of any more detailed specifications, will need to take into
+account, amongst other things, the business priorities of the business
+changes in that Release and the alignment with associated Authority and
+Client systems. Processes for release content definition are to be
+developed to address such issues.
+
+Processes will also be defined to address the co-ordinated development,
+trialing and introduction of Releases where these need to be aligned with
+POCL system releases e.g. TIP.
+
+4.2 EMERGENCY PROCEDURES
+
+Schedule A05 allows that if Pathway considers that any change is
+necessary in order for it to comply with its obligations under the
+Agreement and there is insufficient time to comply with the procedures
+then Pathway shall be entitled to proceed with such change, provided that
+it shall as soon as practicable provide POCL with a CCN for retrospective
+change. Such change shall be subject to the procedures described in
+Schedule AOS, and if POCL, acting reasonably, do not agree to such
+change, such change shall be invalid and Pathway shall at its own
+expense promptly take all steps necessary to reverse and remove the
+effects of such change.
+
+5. MAINTENANCE RELEASES
+
+From time to time there will be a need for Releases of new Software and
+data in order to remove faults or to improve Service Levels without
+changing business functionality or business data. Such Releases are
+called Maintenance Releases.
+
+Maintenance Releases will range in scope from very minor Releases
+which require little regression testing to major Releases that may require
+full Regression testing and the recalibration of SLA timings. The
+requirement for testing will be determined by reference to assessed
+technical and operational impacts for each overall Release and notified to
+POCL. Maintenance Releases shall be planned and implemented under
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 11 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+Pathway’s management control.
+
+Minor maintenance releases that are designed solely to rectify faults
+reported to ICL Pathway through the incident and problem management
+process and that result in no associated changes to designed system
+functionality, process, procedure, training or documentation (bug fixes),
+will be applied to the system as soon as they have been authorised by
+ICL Pathway Customer Service Release Management. POCL Business
+Service Management will be notified that such releases have been
+applied at the regular Horizon Service Review Forum meetings and this
+shall be documented in the Horizon Service Review Book.
+
+All other Maintenance Releases shall be subject to the Change Control
+procedure; and the Emergency Change procedure (Paragraph 4.2 above)
+shall be invoked only when immediate action is needed.
+
+6. RELEASE SCHEDULE
+
+6.1 SOFTWARE RELEASES
+
+Pathway plans to implement approved changes in one or more Software
+Releases each year, disregarding those covered under Maintenance
+Releases (section 5) and Emergency Procedures (section 4).
+
+In scheduling these releases a number of factors need to be considered.
+
+Due to the long lead-times involved in Infrastructure Releases, largely
+stemming from the need to perform extensive re-integration, it is
+impractical to plan for more than one Infrastructure Release in a twelve
+month period.
+
+Whatever the release type concerned, implementation periods need to be
+spread out to avoid conflict. The critical interval can be judged from the
+experience of other large service contracts. Experience dictates that they
+should be at least 3 months apart to achieve the optimum balance
+between the business imperative to introduce new functionality and the
+tisk of adverse impact on Service Levels resulting from excessive rates of
+change.
+
+Implementations involving the POCL outlets should be planned to avoid
+their busy Christmas period wherever possible.
+
+New Product Releases, and some Infrastructure Releases will involve a
+phased implementation period, with user training activities and possibly
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 12 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+the running of a Pilot. These post go-live activities need to be scheduled
+in and taken into consideration regarding the scheduling of subsequent
+releases.
+
+Under certain circumstances it may be advantageous to all parties to
+cluster a number of releases together into a single implementation period.
+This is particularly relevant to New Product Releases. The frequency of
+Releases will be reviewed in line with experience gained during live
+operation. The current view is that between 2 and 3 releases are likely
+each year, comprising one Infrastructure release and one or two New
+Product Releases. (These may be combined releases, depending on the
+size and the complexity of each.)
+
+The relationship between the release definition activities and the ultimate
+implementation of the release is illustrated below:
+
+Release 'n’
+
+3 months 9 months r
+oe =" ~e Time —_—
+RCD
+Release n
+baselined
+
+Construct
+Release 'n'
+Content Definition
+
+Fig 6.1 - Release Planning
+
+Changes which have been approved within the Validity Period of the
+associated CCN will be included within the Release Contents Definition
+for the Release stated. Three months are allowed for the approval of each
+Release Contents Definition which is then baselined while the Release is
+implemented. Thus in steady state, there will be at any time, one live
+Release (Release “n”) and two new Releases ( n+1 and n+2) at different
+stages of design and implementation.
+
+The table below illustrates a possible timetable for, say, a combined
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 13 of 1
+FUJ00232435
+
+FUJ00232435
+ICL Pathway PATHWAY RELEASE POLICY Ref: PA/STR/003
+Version: 3.0
+COMPANY IN CONFIDENCE Date: 28/06/99
+
+release comprising maybe 2 New Product Releases delivered in the
+Autumn, then avoiding the Christmas period, and then an Infrastructure
+Release encompassing some functional enhancements, delivered in the
+following Spring.
+
+Release I Design Developme I Test & Implement I Release
+
+Contents nt Integration
+
+Baseline
+
+d
+
+1 January I 1 Jan - 1 Feb - 1 Apr - 1 Sep - 1 October
+28 Feb 31 May 30 Sep 30 Nov
+
+1 July 4 July - 1 Aug - 1 Nov - 1 Mar - 1 April
+31 July 31 Oct 28 Feb 31 May
+
+Fig 6.2 - Release Timetable
+
+In constructing the illustrative timetable shown above, Pathway has
+assumed that the Test & Integration period will encompass a period of
+one month (not exclusive) within which POCL undertake any Joint testing
+of the Release that may be required. It is anticipated that the testing and
+acceptance processes after the initial releases will be rationalised by
+mutual agreement.
+
+For the avoidance of doubt, if an element of the Services under test fails
+its testing criteria and it is decided by POCL and Pathway to withdraw it in
+order to maintain Release timescales, then that failed element will be
+included in the next Release unless otherwise agreed.
+
+6.2 REFERENCE DATA DISTRIBUTION
+
+Indicative timescales for the implementation of the different classes
+of Reference Data Release are provided in document "ICL
+Pathway/POCL Interface Agreement for Operation Business
+Change - Product".
+
+© 1999 ICL Pathway Ltd
+
+COMPANY IN CONFIDENCE Page 14 of 1

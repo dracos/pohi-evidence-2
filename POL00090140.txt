@@ -1,0 +1,383 @@
+1 I
+To: John Meagher From: Derek Selwood
+Date: 2 October 1996
+
+ACCEPTANCE CRITERIA
+
+Copy: Pat Kelsey
+John Cook
+Colin Oudot
+John Murray
+Michael Purchase
+Gary Palmer
+
+1. You asked me to review the Acceptance Criteria
+document which accompanied the letter of 20 September
+from Jim Morley of ICL Pathway. Since I am out this
+afternoon and tomorrow on Lessons Learned work, I am
+letting you have my thoughts so far.
+
+2. Before reading the Acceptance Criteria, it is useful
+to read the following documents, which are currently
+Pathway internal rather than shared Pathway/PDA:
+
+a. Standard for documenting Acceptance
+Specifications
+b. Standard for Specifying Acceptance Criteria
+c. Standard for Raising and Progressing Acceptance
+Incidents
+3. As I mentioned at your management meeting yesterday,
+
+my first concern was the sight of a timetable (last page
+of paper 2.b) that quoted this Friday (4 October) as the
+date for BA/POCL to agree the Criteria for CMS, PAS and
+Helpdesk). As agreed, I have told Pat Kelsey that:
+
+a. the date is unachievable (119 pages, some 1200
+Criteria) ;
+
+b. in any event, I would have thought the
+timetable was constructed before agreement of the new
+approach to testing. This envisages a period of joint.
+PDA/Pathway joint testing in December and January prior
+to the PDA Final Test in February (which is’ when I would
+
+‘ expect the Criteria’ to ‘bité’)... Whilst I could
+
+understand Pathway’s keenness to get things tied down,
+before théy runout of ‘development time, ‘I could not see
+that it must.be, done by..4 October.
+
+POL00090140
+POL00090140
+
+O1
+
+POL00090140
+POL00090140
+
+4. Pat spoke briefly to Tony Oppenheim of Pathway
+yesterday. He agreed that the dates for commenting on
+the detail could move somewhat, given the new testing
+approach, but said that Pathway are very keen to get our
+reaction to the principles adopted. I fully take Pat’s
+point that we shouldn’t expose ourselves to a position of
+Pathway saying “We can’t fulfil obligation ‘x’ because
+you didn’t do ‘y’ sufficiently swiftly”.
+
+The Pathway approach to specifying criteria
+
+5. The approach Pathway have adopted (see example
+Requirement 696 and Criteria 696-1 to 696-9 attached) is
+simply to break down the total statement of Requirement
+into a number of parts and (broadly) parrot the words
+back to us in the form of a number of criteria.
+
+6. I don’t have a problem with the principle of that.
+Requirements always take precedence, and should therefore
+be our starting point, and the criterion for a
+requirement ‘Do x’ is, put simply, ‘x is done’. However,
+what this then does is expose the lack of detail in the
+Requirements which, if we simply sign up to the
+corresponding criteria, leaves the way open to Pathway to
+claim satisfaction of criteria in a (minimalist) way that
+we had not envisaged or intended.
+
+7. For example, with thanks to John Cook for the
+original thought, consider the requirement ‘I want to
+work in a room with a window’, the criterion for which
+would be: ‘The room supplied for working has a window’.
+But what about:
+
+The window size;
+
+The window glass (clear/opaque) ;
+
+The ability to open the window (or lack of it);
+The distance from the desk to the window
+
+aanrga
+
+and so on.
+
+8. .So in our random selection of Requirement and
+Criteria: 696:
+
+‘1.’ I Format of ‘report’ to be agreed ™
+
+2. Is the statement sufficient as it stands, I or -
+* does it need more detail?
+
+.3. = 9 raise thé same kind. of questions.
+
+(And why has ‘must’ in the contract been watered down to
+‘should’ in the Criteria?)
+
+9. It may be that some of the missing detail has been
+worked through in, for instance, the Functional
+Specification and the discussions between the PM team and
+Pathway. But I’m sure we still have a lot to do, and in
+any event how do we ensure that the Requirements schedule
+faithfully reflects all this detail?
+
+10. As far as I can judge, the criteria reflect the
+Requirements as specified in the 15 May contract. This
+is as per 3(c) of paper 2.b, i.e. no Changes are
+recognised unless they are contractually authorised.
+There is now a ‘legalised’ version of the Requirements
+schedule yet to formally pass through Change Control, but
+it is probably not a bad idea to start with the baseline
+contract and then change the Criteria as the Requirements
+change.
+
+11. The approach of tackling the whole Requirement
+document assures comprehensiveness, but we also need
+Pathway to address:
+
+a. the functionality included in Release 1
+(another reason for pressing them on this now that they
+have admitted it will be less than 100%); and
+
+b. the scope of each Acceptance Test.
+Untestable Criteria
+
+12. dim Morley’s letter draws attention to the fact that
+the principle of achieving complete coverage of Criteria
+against Requirements has produced some untestable
+Criteria. I think he has a valid point (although I don’t
+understand his final bullet) and agree that these will
+
+.need to be combed out.
+
+Non-functional Criteria
+
+‘13. I haven’t checked on whethier all the Requirements
+
+addressed by the Criteria are ‘ours’, but if they are not
+then’ the’ non-PM ones need to’ be clearly allocated tothe
+appropriate parts of the PDA. : ,
+
+POL00090140
+POL00090140
+
+POL00090140
+POL00090140
+
+The Way Ahead
+
+14. I think that, unless anyone can shed some blinding
+light of inspiration on a topic that has been decidedly
+murky for the past few months, the Pathway approach
+represents the best starting point.
+
+15. However, there are a number of issues raised by the
+production of the Criteria. The Morley letter details
+some, I have detailed others above and recipients of this
+note need to consider whether there are more.
+
+16. I think we need a meeting of Product Management,
+Procurement and Integrate/Test to talk the issues
+through, to ensure that we have our act together before
+then talking to Pathway. All this needs to be done as
+soon as is practical given the Pathway pressure and the
+work that has to be done in any event (in re-writing if
+we don’t accept the Pathway approach, or in enhancing if
+we do).
+
+17. You will wish to consider the stage at which you ask
+Colin Oudot and John Murray to start their teams working
+on a systematic review of the Criteria. Given the
+pressures that people are under already and the scale of
+the review task, you will obviously be seeking broad
+agreement from recipients that the Pathway approach is
+the one to be followed before embarking on this.
+
+Derek Selwood
+2 October 1996
+
+POL00090140
+POL00090140
+
+AUTHORITIES' AGREEMENT SCHEDULE BO1 RESTRICTED - CONTRACTS
+Requirement 696 Release spr 7
+
+No
+Programme POCL Subject POCL Applications (EPOSS)
+Grouping Applications Heading
+
+Systems - design
+
+Requirement Description:
+Reporting
+
+EPOSS must allow production of a daily report that will show, at
+office level the cash holdings by individual denomination of bank
+note and coin. The format of the report will be agreed by POCL and
+the Contractor.
+
+EPOSS must support the summarisation of daily and weekly
+transaction vochers at stock unit level.
+
+EPOSS must support a reporting facility to print on Client cut
+sheet stationary where the client requires it (such as Girobank
+daily summaries).
+
+Girobank is only a current example - we neeed to keep the
+flexibility to print on other cut sheets e.g. Tax Discs / cheques
+in due course.
+
+The format of all styles of receipts will be agreed by POCL and
+the Contractor. A bilingual Welsh/English version is required.
+
+EPOSS must allow production of duplicate receipts and they must be
+marked as such.
+
+EPOSS must support the summarisation of daily and weekly
+transaction vouchers at stock unit level.
+
+EPOSS must support a reporting facility to print on Client cut
+sheet stationary to support Girobank and the Postmaster’s daily
+Record (PDR) summarisation.
+
+EPOSS must support reporting by journal/tally roll and on a4
+sheets to- predefined. Client requirements at both stock unit and
+
+- office levels. -
+
+EPOSS must allow reporting to be previewed on screen.
+
+Requirements oo . _ Page 110 ‘of 421° on Version 5.0 + Pathway
+
+POL00090140
+POL00090140
+
+Acceptance Criteria 20-Sep-96
+
+(
+
+Requirement Id: 695 Criterion No: 4 Test: EPOS
+
+The CONTRACTOR shall be aware that Stock Units are individual units of accountability which contain Stock (fixed price
+Stock items, Customer and Client specific Tokens, retail Stock Items, cash and Transaction Vouchers for a POCL Outlet
+
+Accounting Period
+
+Requirement Id: 695 Criterion No:
+
+Criterion EPOSS shall allow a User or group of Users to be accountable for a Stock Unit, so that each Outlet has at least one Stock
+Description: Unit, but there can be other Stock Units, effectively operating independently
+
+} Requirement td: 695 Criterion No: 6 Test: EPOS
+I Criterion Each Stock Unit can in turn be tied to both a User or group of Users or a single Till or group of Tills.
+Description:
+
+Requirement Id: 695 Test: EPOS
+erion EPOSS shall allow each Stock Unit to be Balanced individually. The Stock Unit may be Balanced more than once within a
+scription: POCL Outlet Accounting Period. Cash and Stock Items shall be entered by denomination or Stock Item level. This applies
+whether or not multiple Tills are linked to a single Stock Unit
+
+Requirement Id: 695 Criterion No: 8 Test: EPOS
+Criterion ‘At the end of the POCL Outlet Accounting Period an Outlet Balance is struck with the details provided by the Balanced Stock
+Description: Units
+
+Requirement Id: 695 Criterion No: 9 Test: EPOS
+
+I Criterion An Outlet brings to account manual voucher Transactions including Transaction Vouchers, automated voucher Transactions
+
+Description: _ including Transaction Vouchers, reports the Suspense Account position and the Stock and cash totals within the approved
+Cash Account format
+
+Requirement Id: 695 Criterion No: 10 Test: EPOS
+
+Criterion The cycle is repeated in the new POCL Outlet Accounting Period with an Outlet Balance brought forward value that includes
+Description: the Stock and cash in hand, Suspense Account and loss and gain position from the previous POCL Outlet Accounting Period
+
+Requirement Id: 695 Criterion No: 1 Test: EPOS
+
+Criterion EPOSS shall provide a secure mechanism for controlling access to a Stock Unit
+Description:
+
+Requirement Id: 696 Criterion No: 1 Test: EPOS
+
+Criterion EPOSS shall allow production of a daily Report that shows, at Outlet level, the cash holdings by individual denomination of
+Description: bank note and coin. The format of the report shall be agreed by POCL and the CONTRACTOR by a date consistent with the
+project plan agreed by the parties, such that the date does not adversely impact contractual milestones as defined in Clause
+
+605.1 of the Authorities Agreement.
+
+Requirement Id: 696 Criterion No: 2. Test: EPOS
+Criterion EPOSS shall support the summarisation of daily and weekly Transaction Vouchers at Stock Unit level.
+Description: . . vo
+
+29
+
+POL00090140
+POL00090140
+
+Acceptance Criteria 20-Sep-96
+
+Requirement Id: 696 Criterion No: 3 Test: EPOS
+
+Criterion EPOSS shall support a reporting facility to print on Client cut sheet stationery where the Client requires it (including without
+
+Description: _ limitation Girobank daily summaries).
+
+Requirement Id: 696 Criterion No: 4 Test: EPOS
+Criterion The CONTRACTOR shail be aware that Girobank is only an example - POCL needs to keep the flexibility to print on other cut
+Description: sheets e.g. tax discs/cheques in due course
+
+Requirement Id: 696 Criterion No 5 Test: EPOS
+
+Criterion _The format of all styles of receipts shall be agreed by POCL and the CONTRACTOR by a date consistent with the project plan
+Description: agreed by the parties, such that the date does not adversely impact contractual milestones as defined in Clause 605.1 of the
+
+Authorities Agreement . A bilingual Welsh/English version is required in designated Outlets
+Requirement Id: 696 Criterion No: 6 Test: EPOS
+eo: EPOSS shall allow production of duplicate receipts and they shall be marked as such
+cription:
+Requirement Id: 696 Criterion No: 7 Test: EPOS
+Criterion EPOSS shall support a reporting facility to print on Client cut sheet stationery to support Girobank and the Postmaster's Daily
+
+Description: Record (PDR) summarisation
+
+Criterion No: 8 Test: EPOS
+
+Requirement Id: 696
+
+Criterion EPOSS shall support reporting by journal/tally roll and on A4 sheets to Client requirements at both Stock Unit and Outlet
+Description: _ levels, with the format to be agreed by a date consistent with the project plan agreed by the parties, such that the date does
+not adversely impact contractual milestones as defined in Clause 605.1 of the Authorities Agreement.
+
+Requirement Id: 696
+criterion __«EPOSS shall allow reporting to be previewed on screen
+Description:
+
+Requirement Id: 697 Criterion No: 1 Test: Audit
+
+Criterion The CONTRACTOR and his sub-contractors shall keep or cause to be kept Records {including financial records) of all
+Description: Services, covering materials and Services provided, timesheet records, contracts let to sub-contractors and Charges levied to
+the AUTHORITIES. These Records shall not be more detailed than those held by the CONTRACTOR for its own audit
+
+purposes
+
+Criterion No: 9 Test: EPOS
+
+Requirement Id: 697 Criterion No: 2 Test: Audit
+
+The CONTRACTOR shall permit the AUTHORITIES or AUTHORITIES’ representatives (including those bodies listed in
+
+cords for the purpose of
+
+Criterion
+
+Description: paragraph 2.1 of Schedule A03 of the AUTHORITIES’ Agreement) unrestricted access to the Rec
+auditing and reporting on the performance, including charging and accounting aspects, of the Services
+
+Requirement Id: 697 Criterion No: 3 Test: Audit
+
+Criterion DSS shall have the right of access to inspect the DSS Services and POCL shall have the right of access to inspect the POCL
+
+Description: Services. The AUTHORITIES may appoint an independent auditor to examine areas that are mutually commercially sensitive
+
+30
+

@@ -1,0 +1,57 @@
+FUJ00152244
+FUJ00152244
+
+Editing Customer data in message stores
+
+SSC Work Instruction: WI1640J
+
+Procedure Description:
+
+When making any alteration to customer data in message stores - WHICH WILL ALTER THE VALUE OF STOCK
+HELD AT A PO, OR WHICH WILL ALTER RECEIPTS AND PAYMENTS - (See note at bottom) SSC staff must -
+
+who should be informed via email
+2) Obtain authorization from Peter Burden
+
+3) Raise an OCR and get this authorized as documented in the OCR process in CS/MAN/002 (The process is also
+documented on the back of the OCR form)
+
+4) Inform the Post master for the Post Office concerned that the change will be made, and that it has been authorized by
+POCL management.
+
+5) Ensure that the name of the POCL authorizer is included in the update text on the PinICL
+
+NOTE - messages inserted in the message store by SSC staff are NOT harvested by the TIP harvester because TIP
+harvester expects a <user> attribute which cannot be inserted from the SSC.
+
+However, the TPS Harvester will search for the attributeEPOSSTransaction.AdditionalData.POClerkID and will use
+the value of this in preference to the value of the User attribute. NB this will only work for EPOSS (or BES)
+Transactions - it doesn't work for APS or OBCS Transactions
+
+Therefore SSC insertions into the message store should set this attribute. The setting should be
+3 Alpha - initial and first two characters of surname, followed by 3 numeric starting at 001. e.g. John Simpkins =
+JSI001, any other J Simpkins, JS1002 ete.</TD>
+
+NOTE:
+This authorisation is NOT required when altering the quantity of stock at a post office provided that the value of stock
+or of cash is not altered.
+
+Authorisation is NOT required for alterations to the message store where there are no financial implications - e.g.
+unlocking users,
+
+Title: Editing Customer data in message stores
+Reference: WI16401 him
+
+Created on: 10 November 1999
+
+Created by:
+
+Status: Active
+
+Category: Manual action
+
+Applies to: AILSSC staff, Live system
+
+FUJ00152244
+FUJO01 52244
+

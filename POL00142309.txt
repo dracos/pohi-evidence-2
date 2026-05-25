@@ -1,0 +1,341 @@
+Horizon Programme
+Approach to Target Testing Prior to NR2 Release Authorisation Board (RAB)
+Draft Paper @ 17" March 1999
+Contents
+
+. Purpose of Paper
+
+. Status at end of MOT/E2E Run
+. Target Testing Approach
+Adequacy of Target Testing
+
+. Stability of the System
+
+. Agreement of the KPR
+
+. Next Steps
+
+NAW WN
+
+1. Purpose of Paper
+
+This paper explains the Horizon rationale and approach to the ‘target testing period’
+that is planned to take place between the end of MOT and the NR2 RAB. This period
+starts on 15" March and is planned to end at the RAB on 7" April 1999. The intent of
+this period is to clear the faults arising from MOT/E2E which are considered by the
+sponsors as essential to be resolved before entry into the period of live running. Live
+running is planned to commence on 12" April with the period of migration of the
+existing 200 POCL offices that are running Release 1c. Following the data centre
+migration weekend (scheduled for 8/9" May), the Programme enters the formal period
+of live trial from 10" May.
+
+There are a number of questions that need to be addressed in setting out the approach
+
+to target testing. These are as follows:
+
+1. Can the required incidents be corrected and retested in the available time ?
+
+2. Is the target testing phase adequate before entry to live running (rather than a
+Surther full cycle) ?
+
+3. Can the sponsors be confident that the correction of these incidents will not
+destabilise the system (given the restricted regression testing that can be
+undertaken) ?
+
+4. Will the sponsors find acceptable (at least for entry to live trial) the business
+impact of those outstanding incidents that are not cleared by target testing, and
+agree to them being placed on the KPR ?
+
+Ss tanpaeh of prtig ad inlet duets bute Tor
+
+With regard to the last question the sponsors will also need to considered whether any
+
+necessary user guide changes or procedural workarounds be implemented in time as a
+
+result of placing items on the KPR. They will also need to be confident that
+
+acceptance can be achieved on the basis of the solution that is delivered for live trial.
+
+For a successful RAB, the answer to each of the above questions must be ‘Yes’. If the
+answer to any of them is ‘No’ then the current plan for the delivery of the POCL and
+
+POL00142309
+POL00142309
+
+POL-0143563
+POL00142309
+POL00142309
+
+Child Benefit Programme stream into national rollout will meet with delay and this
+will have a knock-on effect onto the multi-benefit stream as well.
+
+Although a good understanding is already available of the results of the MOT/E2E
+testing the full analysis and draft closure reports will not be available until about the
+19" March. As more information becomes available the details of this assessment will
+be updated accordingly.
+
+It is important to both POCL and CAPS, however, to establish as soon as possible
+whether the current planning assumptions are still valid following completion of
+MOT/E2E. This paper therefore sets out an assessment of the adequacy of the target
+testing approach and whether this will support the current planning assumptions.
+
+2. Status at End of MOT/E2E Run
+
+The status may be summarised as follows:
+
+® Both of these cycles ran day-for-day without serious operational delays
+
+e All planned test conditions were covered by both CAPS and Horizon with a few
+minor exceptions
+
+e In parallel to MOT/E2E two other parallel POCL test streams, Live Reference Data
+Proving and Migration Pre-proving, have completed successfully with no
+outstanding faults that require to be fixed before the RAB
+
+¢ The witnessing of outstanding incidents from previous cycles showed a high
+success rate (187 passes out of 198 test incidents)
+
+¢ There are currently 8 high priority incidents which are essential to be fixed by the
+RAB and for entry to live trial
+
+« There are approximately 130 medium priority incidents which are defined as not
+necessary to be fixed for the start of live trial but need to be addressed prior to
+national rollout
+
+® The Technical & Security Testing (TS&T) phase is now in regression testing and
+there are currently 22 incidents outstanding which are due to be witnessed before
+the RAB
+
+¢ There are currently 94 items on the KPR but these are largely low priority
+problems and to date there is a provisionally agreed position with the sponsors on
+about 60 of them with no major issues outstanding. The current KPR excludes
+those incidents from MOT, E2E and (TS&T) which will not be resolved in target
+testing.
+
+Pathway have informed us that all high priority incidents are or will be available for
+
+target testing. The position on medium incidents may be summarised as follows:
+
+® the review and rating of these incidents has involved the CAPS and Horizon tests
+teams, Horizon Product Assurance, the POCL (end-to-end) Co-ordination team,
+and BA validators and auditors. They are still to be confirmed with the POCL
+Business Assurance team
+
+e the review to date has determined that each of these incidents in isolation is not
+critical for the RAB (which it is why it is medium)
+
+POL-0143563
+POL00142309
+
+POL00142309
+
+© the cumulative number of these incidents does however raise a concern and the
+
+assessment teams would prefer to see a significant number (approximately 60) of
+
+them cleared before the RAB
+e Pathway have been progressively fixing these more important medium incidents
+
+during MOT execution and currently 57 of these 60 incidents will be available for
+
+target testing (the other 3 are still in investigation)
+It must be stressed that the review process classed medium incidents as not essential ar
+for live trial. Clearly it is desirable that a number of these should be fixed and it is also grnnades
+clear that fixes will be available in time for target testing. But the existence of from
+numbers of incidents in this category is not in itself an argument for not entering the ges
+live trial. hun +
+
+The following sections address the key questions raised in section 1 above.
+
+3. Target Testing Approach
+
+The target testing phase will be adequate to retest the current list of high and
+medium priority incidents for the following reasons:
+
+The target testing scope and content have been specifically developed during the
+execution of MOT/E2E to test these incidents
+
+As noted above nearly all the incidents already have a Pathway fix
+
+There is only one significant area of functionality where there is a ‘cluster’ of
+related incidents, which is BES fallback, and this will be a major area of focus in
+the target test
+
+Given the way that reference data is used to apply generic processing to individual
+products it is unnecessary, given the evidence of previous runs, to run a wide range
+of products in the target test
+
+Using four offices and a logical 12 day cycle will provide the required test
+coverage from the counter through to the POCL systems
+
+Test resources will be allocated to each office and each ‘office team’ will have to
+clear on average 4 or less incidents per day
+
+As limited counter transaction volumes are required to prove these incidents the 12
+day cycle can actually be run within 7 days (i.e. 2 or more ‘end-of-day runs can be
+compressed into a one actual day)
+
+The 12 day cycle will be sufficient to identify any end-to-end financial integrity
+errors with TIP
+
+All mandatory reports will be run in each office
+
+A cash account will be produced for each office
+
+A3 week cash account will be run
+
+Given the evidence of the MOT run the current success rate of Pathway fixes is
+187 out of 198 retests (around 95%). This suggest that there may be around half a
+dozen incidents in target testing that may need a refix and retest. Depending on
+when they are found during the target test there will be 1 to 2 weeks in which to
+resolve them. Experience indicates this should be achievable. There is of course
+some risk that target testing may not resolve all the faults
+
+POL-0143563
+POL00142309
+POL00142309
+
+e The only ‘module’ which is excluded from the target test is OBCS as there are no
+incidents here requiring retest and no known regression issues.
+
+4, Adequacy of Target Testing (versus A Further Cycle)
+
+The view of the Horizon and POCL test teams is that a further full cycle is not
+
+necessary for the following reasons:
+
+¢ while there have been up to 200 incidents raised this should not obscure the fact
+that the overall system is running well enough in their view to start a live trial
+phase, given resolution of the specified target test incidents. (This is evidenced by
+the low number of high priority incidents that have occurred and the number of test
+conditions that were proved)
+
+e all the key transactions and reports are now working and the interface files are
+stable
+
+« the counter system is performing satisfactorily in the Usability Trial in
+Twickenham
+
+¢ the incidents are spread through this large system and are typically localised issues
+with only BES fallback still showing a cluster of problems
+
+* the time and effort and delay of a further MOT and E2E run is not worth the
+limited additional value that will be obtained from it
+
+e the number and severity of CAPS related incidents clearly does not require a
+further full cycle from their side
+
+5. System Stability
+
+There is always a risk that the fixing of errors test will introduce new errors. From the
+Horizon perspective the following factors have been taken into account in deciding
+that only a limited amount of regression testing will be necessary:
+
+1. The majority of faults that have emerged in MOT have not been due to regression
+
+type failures but to the uncovering of generally more detailed errors that had been
+
+obscured in earlier runs. There are particular examples of this in the areas of:
+
+e TIP file contents - complete checks now undertaken in MOT of all field contents
+
+e Counter reports - significant problems have been removed which have revealed
+some less important discrepancies
+
+e Stock unit and cash account balancing - now these are working in terms of
+financial integrity a number of lower level faults have become clear
+
+2. In addition a number of the more significant incidents (about 20) in MOT arose in
+
+the ‘newer’ areas of the system, specifically:
+
+e BES fallback which was only introduced in MOR3 and which appeared still had
+some outstanding problems at the end of pre-proving which were not cleared fully
+for MOT
+
+e Training mode which has been integrated for the first time in the MOT run
+although it had been successfully run in ‘standalone’ mode
+
+3. Horizon should take account of Pathway’s own regression runs which are being
+conducted in parallel e.g.
+
+POL-0143563
+POL00142309
+POL00142309
+
+« Pathway have been regression testing fixes in the BIT environment as they have
+been produced during MOT (and will continue to do so throughout the period of
+live trial)
+
+« Pathway will be running a specific regression test including all target test fixes
+between 16" and 23% March. (There will be 7 different environments running tests
+during this period)
+
+Given the above considerations the Horizon team do not believe that the issue of
+
+regression would be best addressed by another full cycle of MOT and E2E. A
+
+preferred approach would be as follows:
+
+e to complete the target testing as discussed above
+
+@ to seek RAB approval on 7" April to proceed to 1c to NR2 counter migration on
+the target date of 12" April
+
+® to continue with BIT regression runs in April
+
+© to undertake the CAPS 3.5/NR2 regression test in April as planned which will
+enable CAPS to continue testing with Pathway and a te oe my roy,
+ito use the start of multi-benefit testing in April to continue the wider proving of the
+
+system
+
+to recognise that the live experience of 1c to NR2 migration between 12" April and
+7" May will provide a better end-user view of system quality and performance and
+that this will be evaluated before undertaking the datacentre migration and the start
+of the live trial
+
+6. Agreement of Known Problem Register
+
+It should be noted that the current KPR and the incidents from MOT and E2E have
+already been widely reviewed, as noted above, and it is not expected that major
+differences in assessment will arise in the next week from those already made on
+these incidents. Therefore although there is a risk that additional incidents could be
+re-prioritised for fixing before RAB approval it is believed this risk is manageable.
+
+All incidents that are not cleared in target testing will be proposed for inclusion in the
+KPR. It will be necessary for the sponsors to agree the business impact of these items
+and confirm the decision to exclude them from target testing. They will also need to
+agree any procedural workarounds that can be delivered in time for the live trial.
+
+BA have already reviewed the incidents that have arisen in the POCL domain for any
+knock-on effects on BA. This has not raised any significant issues.
+
+A full review is planned from Friday 19 March to Tuesday 23" March of all
+proposed KPR items. Any significant issues that arise from this review will be
+escalated to the Horizon Programme Director.
+
+= dled K comne date SO
+ast doa 5 nes ve ST
+
+POL-0143563
+POL00142309
+POL00142309
+
+7. Next Steps
+
+Over the next few days the following steps are planned:
+
+« Complete the analysis of MOT/E2E and draft the closure reports
+
+« Complete the analysis of the incidents by functional area to highlight any potential
+priorities for regression testing
+
+e Confirm the list of faults for target testing
+
+e Perform the full review of the proposed KPR
+
+* Confirm and agree the detailed test plans prior to RAB and prior to data centre
+migration and live trial
+
+POL-0143563

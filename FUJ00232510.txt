@@ -1,0 +1,4885 @@
+FUJ00232510
+FUJ00232510
+
+Fe)
+FUJITSU
+
+THE POSSIBILITIES ARE INFINITE
+
+Proposal to Post Office Limited
+For
+
+Extension of
+the Horizon Contract
+
+18 September 2002
+Prepared By Liam Foley Tony Oppenheim Martin Riddell
+Clive Underhill Tony Drahota
+
+Version: 1
+Document Reference: BD/PRP/008
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 2
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Table of Contents
+
+1 MANAGEMENT SUMMARY...
+
+1.1 Post OFFICE REQUIREMENTS.
+1.2 Fusirsu RESPON'
+1.3. THE PROPOSAL...
+1.4. REVENUE UPSIDE
+1.5 NEXT STEPS.
+
+2 THE NEW WAY.
+
+2.1 GOVERNANCE.
+
+2.2 END TO END SOLUTION...
+2.3 FUJITSU SERVICES DOMAIN CHANGES..... .
+2.4 CHANGES OUTSIDE THE FUJITSU SERVICES DOMAIN......... . 13
+2.5 NEW OPPORTUNITIES..........
+
+2.6 THE WAY WE WORK TOGETHER R (LANDSCAPE)...
+2.7 OPERATIONAL SERVICE
+
+3. THE PROGRAMME...
+3.1 INTRODUCTION...
+
+3.2. TACTICAL STREAMLINING OF CURRENT HORIZON........ - . 22
+3.3. TARGET ARCHITECTURE..........0.0-- . ane co nen sesetetetssssssereeees 20
+3.4 MIGRATION TO TARGET ARCHITECTUE JRE. 34
+
+3.5 NEW CAPABILITIES.
+3.6 HORIZON MAINTENANCE........
+3.7 ROADMAP PLAN...
+3.8 GOVERNANCE / PRO
+
+4 CONTRACT APPROACH
+
+4.1 PRINCIPLES.
+4.2. APPROACH TO SERVICE DELIVERY.
+
+4.3. CHANGES TO TERMS AND CONDITIONS.
+4.4 KEY ASSUMPTIONG.........
+4.5 SPECIAL DISCOUNTS AND BI
+
+5 OPERATIONAL SERVICE
+
+5.1 INTRODUCTION. 52
+5.2. KEY ASSUMPTIONS. 52
+5.3. ACHIEVING COST REDUCTIONS.......0:c00c000
+5.4 SERVICE VOLUMES...
+
+6 SIAND APPLICATIONS SERVICE.
+
+6.1 INTRODUCTION...
+6.2. KEY ASSUMPTIONS.
+6.3. ACHIEVING CosT REDUCTION.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 3
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+6.4 CHARGING FOR SI SERVICES.
+6.5 SI SERVICE MANAGEMENT.
+6.6 RESOURCE FORECASTS.......
+
+7 FINANCIAL SUMMARY...
+
+7.1 INTRODUCTION...
+7.2. OPERATIONS CHARGES
+7.3 INFRASTRUCTURE CHARC
+7.4 SI CHARGES...
+7.5 SPECIAL DISCOUNT AND OTHER CHARGES/ CREDITS
+
+APPENDIX 1 — LIFECYCLE PROCESS.
+8.1 INTRODUCTION...
+
+AVAILABILITY
+
+8.6 WORK PACKAGE REQUIREMENT SPECIFICATION RELATIONSHIPS. sess 89
+
+8.7. PROCESS MODEL CONSTRUCTION..... . ssussnese sssstnesstntces 91
+APPENDIX 2 - GOVERNANCE.
+
+9.1 INTRODUCTION. 94
+
+9.2 PROPOSED GROUPS.......:ccsssssstssistnniststiststieisisiiststisisiieisintisistiiistsistsietseseieeneses 94
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 4
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Accuracy: Fujitsu Services endeavours to ensure that the information contained in this
+document is correct but, whilst every effort is made to ensure the accuracy of such
+information, it accepts no liability for any loss (however caused) sustained as a result
+of any error or omission in the same.
+
+Prices: Fujitsu Services reserves the right to vary these prices dependent on further
+analysis and impacts, in the event that Fujitsu Services undertakes this work under a
+contract with Post Office.
+
+Copyright: © Fujitsu Services Limited 2002. All rights reserved. No part of this
+
+document may be reproduced, stored or transmitted in any form without the prior
+written permission of Fujitsu Services.
+
+'™ indicates registered trademark.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 5
+FUJ00232510
+FUJ00232510
+
+1 Management Summary
+
+Post Office is experiencing a major change in its operating and commercial environment.
+It must transform its cost base, processes and behaviours to meet the challenge. It
+requires its strategic partners to recognise this customer need and has invited Fujitsu
+Services to engage in effecting this turnaround.
+
+Fujitsu Services thanks Post Office for the opportunity to submit a proposal for the on-
+going operation of the counter automation across the UK network.
+
+Following many discussions with Post Office over the past months, it has been readily
+agreed that if we are to have a mutually beneficial longer-term relationship, then change
+is a must. Post Office business plans demand radical action to turn the business round
+and see a return to profitability.
+
+Currently Post Office spend on IS exceeds 23% of revenue. This is against industry
+yardsticks of 3-7% for retail and 10-16% for banking. While Post Office does not
+naturally fit neatly into either sector, rather it is more unique, the key point is that
+current IS costs are too high and more than the business can afford. Hence Post Office
+has spent a considerable time reviewing its overall cost base and not only taking internal
+steps to enable cost reduction but exercising each of its suppliers to do likewise.
+
+Fujitsu Services has clearly recognised the need to respond to Post Office requirements.
+However, there are clearly two ways to address cost imbalance — either take cost out or
+increase revenue. This proposal aims to address both.
+
+Horizon is now installed across all 17,500 UK post offices. The current service runs very
+effectively and serves the need of the customer, the postmaster and Post Office and their
+clients. Many aspects of the service were defined when there was a different purpose for
+automation: that of securely paying benefit to 19 million benefit customers. The decision
+in 1999 to move to benefit payment via ACT has changed that and accordingly, many of
+the stringent aspects of the current service could be deemed to be no longer necessary.
+The clear challenge has been, therefore, to identify the possible changes to be made, to
+assess the savings arising from these changes and to estimate the costs and timescales of
+moving to a new regime for the future.
+
+Equally important, when making these changes is the need to arrive at a service that is
+more responsive to change. Currently, changes to the existing service are lengthy and
+expensive due to the need to embed complex processes and to undertake full regression
+testing. We are aiming through this proposal to arrive at a more flexible platform,
+capable of change, with reduced operating charges and with clearly defined operational
+boundaries.
+
+1.1 Post Office requirements
+
+We have identified the following as the key drivers governing change:
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Qa Lower operational charges year on year
+
+Post Office wish to see a reduction in operating charges year on year from 2002/03
+towards a level of spend more commensurate with similar industry types.
+
+a Flexibility of contract — unbundling
+
+A clear requirement has been expressed to see the separate parts of the contract
+charged for on an individual basis. Currently, there is a single operational service
+charge for Horizon. Unbundling allows Post Office to see clearly the price paid for
+individual components of the overall service.
+
+Q Minimum System Integration (STI) commitment
+
+Post Office has expressed a clear requirement that they do not wish to contract for a
+significant Systems Integration element in advance of clear requirements being
+known. Post Office also wishes to have the flexibility to have other suppliers bid for
+development business. Fujitsu Services understand this wish and support it.
+
+a Speedy Implementation of new services
+
+Post Office needs to respond to market pressures in a way not seen in the past. This
+will necessitate a faster response to new market opportunities and the requirement to
+achieve faster product automation on Horizon.
+
+a Changed terms and conditions
+
+Post Office has signaled an intent to implement changes to levels of liability and to
+Service Level Agreements if this helps to reduce the overall operational and
+development cost of Horizon.
+
+1.2 Fujitsu Response
+
+This proposal is our detailed response to the above requirements. Our financial proposal
+can be summarized as follows:
+
+a A 30% reduction in operating charges over the life of the revised contract
+
+a A clear split between operate and systems support with a breakdown showing the
+cost for major service elements
+
+a A commitment to a level of investment in re-architecture within the Fujitsu Services
+domain
+
+a Acommitment to a fixed level of support
+a No change to the availability fees.
+
+If the current contract were to be extended as is, the expected charges (exc. VAT) over
+the period to 2010 would amount to £840million.
+
+This revised approach requires an overall investment of £750million but provides the
+following additional benefits:
+
+a Re-architecture of internal systems to allow lower operational support charges
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 7
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a A reduction in the Customer Service headcount while maintaining a high service
+level
+
+a_ A reducing core support team from the current level of 150 staff ending up with a
+core team of 90
+
+Up front discount of £30million in the first two years
+
+An allocation of spare Systems Integration capacity of £40million from the fixed
+support level over the contract term
+
+The summary financial picture is as follows:
+
+FROM JANUARY 2003
+
+TOTAL 02/03 03/04 04/05 05/06 06/07 07/08 08/09 ‘09/10
+
+TOTAL OPERATE 531 117 74 65 60 57 54 53 52
+TOTAL SI Commit 141 6 25 24 16 16 16 #16 = «21
+NWB to go 6 4 1 0 0 0 0 0 0
+Impl. SI & Architecture 13 1 3 7 2 0 0 0 0
+Availability fee 88 38131 27siOO 0 0 0 0
+DISCOUNT -30 Gs" 10 0 OO 0
+
+TOTAL REV (new pricing) 750 145 #119 113 87 73 71 70 73
+TOTAL REV (old pricing) 840 159 128 119 90 88 86 85 84
+DIFFERENCE 90 14«10—~Ct—i*d 30 15 15 0 160 11
+Spare SI capacity available Foc -40 2 7 7 5 -5 5 5 5
+
+Note: 2002/03 Operate figure is for full year
+
+1.3. The Proposal
+
+The structure of this proposal is as follows:
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 8
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Section 2: The New Way outlines, at a summary level our approach to a new way of
+working, proposing new governance structures, outlining the changes to operational
+service, proposing a fresh approach to end to end systems design and detailing a number
+of new business opportunities
+
+Section 3: Programme Plan details our approach to re-architecture and proposes
+timescales in which change may be affected.
+
+Section 4: Contract Terms details the key assumptions regarding changes to terms and
+conditions
+
+Section 5: Operational Services details the principal areas within the current services
+operation within which changes can be effected. Some of these changes over time will
+come about as a result of re-architecture. Many others arise because of proposed
+changes to liabilities and SLAs.
+
+Section 6: Systems Integration Services details our approach to development and
+integration projects in the future. This encompasses the proposal of core services
+reducing over time and the new concept of spare core resource being available to Post
+Office for new projects.
+
+Section 7: Financial Summary details the revised financial proposal taking the contract
+term up to March 2010. It also breaks down the operational costs into work package
+breakdowns so that a clear price of the constituent services can be seen.
+
+Appendices:
+
+Appendix 1 contains detailed descriptions of the new Landscape processes that are
+proposed in order to make our on-going relationship more effective.
+
+Appendix 2 contains jointly agreed proposals for new governance groups between Post
+Office and Fujitsu Services.
+
+1.4 Revenue upside
+
+We have in section 2.5 outlined a number of new opportunities that will create new
+revenue streams for Post Office. These proposals are not simply related to new products
+on the Horizon platform but span other areas such as expanded use of the
+communications network.
+
+In its last proposal, Fujitsu Services proposed a revenue/cost saving sharing approach to
+new opportunities. Fujitsu Services is supportive of a risk/reward approach being put
+into place. This provides encouragement to both companies to accelerate process within
+each company to achieve faster time to market from idea creation to product
+deployment.
+
+We propose that should we undertake development in pursuit of clear cost savings, then
+Fujitsu Services are prepared to undertake development at cost in return for a 10% share
+of the cost savings.
+
+For new product development we propose a similar approach of development at cost, in
+return for a 5% share of the new business revenues.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 9
+FUJ00232510
+FUJ00232510
+
+FUIITSU New Fujitsu Proposal 18" September 2002
+J Ref: BD/PRP/008 Version 1
+
+1.5 Next steps
+a We propose that we move towards signature of a formal heads of agreement by end
+October
+We work together to agree a new contract by 31 December
+
+Post Office grant an Authority to Proceed covering the immediate costs of the
+agreed steps in this proposal
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 10
+FUJ00232510
+FUJ00232510
+
+2 The New Way
+
+It has been widely recognised by both Post Office and Fujitsu Services that the current
+way of doing business is ineffective and draws out behaviours from both parties that are
+not in line with best practice and do not help to get the best out of each other. Rather,
+they get in the way of speedy, smooth progress. This is in neither company’s best
+interests.
+
+We have both agreed that this must change if we are to have a mutually beneficial future
+relationship. Fujitsu Services is fully committed to helping Post Office achieve marked
+reductions in operating expenditure. This proposal focuses on a new approach to
+delivering IS/IT services with significantly lower cost, higher productivity and speed of
+delivery.
+
+We are proposing that key changes must be made in the following areas:
+Governance
+
+End to End Solution
+
+The Approach to New Opportunities and to Risk and Reward
+
+The Working Processes between our two companies
+
+Operational Service
+
+o oo O Oo O
+
+Commercial Terms and Conditions
+
+2.1 Governance
+
+The joint work previously undertaken highlighted the need for better governance.
+Governance is defined as the direction, control and measurement of activity towards
+business goals. Both Post Office and Fujitsu Services support this. Governance starts at
+the top and works its way down through both organisations.
+
+Key working relationships must also be examined. The best working practices are where
+there is clear joint working where respective positions are understood and there is a
+clear goal to work towards. The "Your Guide" programme was a clear example of what
+can be achieved through this way of working. More recently, there have been more
+examples of this type of approach with the evaluation of the 16 requirements and
+separately with the architecture work.
+
+We are proposing that the following groups meet on a regular basis to ensure maximum
+return from our future relationship. A full description of each group is given in Appendix
+2.
+
+a Board to Board
+
+An annual meeting between the boards of both companies to share ideas on future
+direction and enable direct relationships to be built at board level.
+
+a Executive Forum
+
+This group is principally responsible for defining strategic direction and vision and
+aligning business objectives and direction. This group must meet regularly to
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+maintain momentum and ensure that direction is being given and is consistent with
+the direction of Post Office business.
+
+a New Business Forum
+
+Responsible for generating and scoping ideas and opportunities to achieve joint
+business objectives and ensure continuous business improvement. Fujitsu Services
+proposes that there be significantly greater involvement at the business level than
+heretofore. Joint scooping of business opportunities can lead to earlier engagement
+and faster initialisation of an automated solution.
+
+a Joint Architecture Forum
+Responsible for requirements analysis, solutions visualisation and migration planning
+Qa Release Planning Forum
+
+Responsible for agreeing high level planning assumptions for future developments of
+services
+
+a Projects Board(s)
+Responsible for individual management of larger projects or specific releases
+a Service Management Forum
+
+Responsible for reviewing performance against contracted service levels, resolution
+of operational issues, release authorisation and ensuring continuous service
+improvement.
+
+a Commercial Forum
+
+Responsible for the commercial and contractual governance of the business.
+
+2.2 End to End Solution
+
+The principal aims for evolving the Horizon Architecture are:
+
+a Reduction in cost of ownership of the solution (lower operational development and
+support costs)
+
+a Greater potential for change (supporting rapid introduction of new or changed
+products)
+
+a Reduction in complexity to reduce development & testing costs
+a Minimal disruption in the outlets.
+
+We have examined each area of potential re-engineering of the current architecture. Our
+proposal is that areas clearly within the Fujitsu Services domain should be tackled
+straightaway in order to release costs. Fujitsu Services is proposing that the following be
+addressed within the overall operational costs of the Horizon service:
+
+a Elimination of Dynix systems
+a Introduction of ADSL
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 12
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Refocusing of existing data warehouse onto business information reporting
+Relocation of the current data centres
+
+Updating of counter software platforms to Windows 2000 and, subsequently, to
+Web Riposte Essential
+
+Areas that lie outside the Fujitsu Services domain (OPTIP, Cash Account) must be
+reviewed, planned and actioned accordingly following detailed discussions with Post
+Office. Fujitsu Services continues to believe that major savings are available through end
+to end re-engineering but this work is clearly dependent on business decisions within
+Post Office.
+
+2.3 Fujitsu Services Domain changes
+
+Our proposal will necessitate changes in the following areas:
+
+2.3.1 Host Platforms
+
+We propose that the content of the existing Sequent servers will be migrated to more
+powerful but less expensive servers running under Solaris. These have substantially
+lower running and support costs, and avoid potential problems caused by the increasing
+lack of support for Dynix-based third party products.
+
+The Data Warehouse, which at present is used primarily to process SLA calculations,
+will be re-oriented towards a business support MIS. It will retain the current transaction
+feed from the Host, but a wide variety of analyses will be provided to support Post
+Office's business processes. The model for this will be the MIS reports introduced for
+NBS and DCS.
+
+2.3.2. Counter Hardware enhancements
+
+We have given close attention to the need to undertake a complete technology refresh.
+On balance, we deem this not to be necessary but cannot rule out the need to
+increasingly review this over time. However, in order to take advantage of new
+technologies, e.g. ADSL, there are hardware upgrades envisaged in support of the
+various initiatives and new business opportunities.
+
+To enable introduction of ADSL, we will need to install a DSL card in the Gateway PC
+at selected Outlets.
+
+Synchronizing upgrade activities and hence eliminating unnecessary engineering visits
+can achieve significant savings. The schedule of upgrades will be refined once the Post
+Office business plan is finalized and understanding of approved new developments is
+gained.
+
+2.3.3, Data Centre Changes
+
+We are proposing to move from the current dual Data Centre configuration to a single
+new Data Centre. This will be enabled by modifications to the recently enhanced fail-
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 13
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+over mechanisms, to ensure a smooth migration with minimal risk. It should be noted
+that the new Data Centre will retain systems resilience, but disaster standby capability
+will rely on redeployment of Fujitsu Services test rig configurations to provide the on-
+line services should a total disaster strike the Data Centre.
+
+2.3.4 Counter Changes
+There are two key enhancements to the software environment of the Counters proposed:
+
+a The introduction of new counter applications (based on WebRiposte Essential ™,
+together with new application components)
+
+a An upgrade to Windows 2000 (or later) to exploit the latest Microsoft workstation
+technology
+
+These two approaches ensure that we are taking full advantage of the latest technology
+and overall improving our ability to intercept standard application packages and
+minimise the cost and time needed to introduce new products.
+
+2.4 Changes outside the Fujitsu Services Domain
+
+There are a number of significant areas of possible change that either exists outside the
+current Horizon domain or span domains creating unnecessary boundaries. Re-
+engineering of these systems will lead to significant savings in Post Office's end-to-end
+processes. For example, the potential saving through eliminating current back end
+systems on the Post Office side has been estimated at some £40million per annum.
+
+2.4.1 Removal of OpTIP
+
+OpTIP currently receives a full detail of transactions carried out on Horizon, acting as a
+router of the required information to other internal Post Office systems (e.g. CBDB). By
+customising the Horizon feeds for the consuming systems and routing these new feeds
+directly, the majority of OpTIP functionality would no longer be required. The remaining
+functionality can be provided by other means, facilitating a significant saving by
+elimination of the whole OpTIP system.
+
+To realise maximum savings, it is suggested that Post Office should immediately initiate
+a design study to assess the work required within Horizon to enable OpTIP to be
+eliminated as soon as possible.
+
+2.4.2 Improved processing of Reference Data
+
+There are several systems within Post Office and Fujitsu Services that act as master
+sources for various items of reference data. The process for changing and evolving
+reference data is cumbersome and contributes to delays in introduction of new products
+as well as adding to costs.
+
+It is proposed that a new facility is developed which straddles the Post Office — Fujitsu
+Services boundary and provides a more efficient, user-friendly and accurate support for
+creating, validating and approving change to reference data.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 14
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+2.4.3, External Links
+
+Current client links from Horizon are top heavy, both in terms of security and SLAs. We
+are proposing a simpler web based service where the client will ‘pull’ his data down
+rather than we ‘push’ it down as now. This will enable a more cost effective approach to
+new clients, taking away the need for expensive up front investment in new hardware
+and network links. Options exist on the precise implementation of this service, mainly
+around whether use can be made of existing Consignia links or whether it makes more
+operational and control sense to deliver the service from within the Horizon domain.
+
+2.4.4 Network Banking Engine
+
+Consideration should be given to elimination of the current NBE. Basically, the NBE
+operates as a switch between the Horizon domain and Link, CAPO and potentially the
+banks. It is worth considering whether this additional link needs to be in place and
+whether the current costs can be saved. Again, the decision to have an NBE was made
+for requirements that no longer exist.
+
+2.4.5 MIS
+
+Currently, there are two MIS developments, one on the Post Office side and one within
+Fujitsu Services. Each is dependent on the same single source of data. We propose that
+consideration be given to at least placing the running of these systems within the same
+domain. Separately, we should examine the true purpose of having two separate MIS
+systems.
+
+2.4.6 Switching Streamline interface to IP from X25
+
+Streamline, the Merchant Acquirer adopted for the Debit Card service, currently only
+support X25 communications. However, it is their stated intention to support TCP/IP,
+which would facilitate the adoption of a cheaper network solution for the Debit Card
+Service.
+
+2.4.7 Security & Risk Management rationalisation
+
+An urgent review of threats for which Post Office needs to develop counter-measures is
+required. Based on the outcome, a re-appraisal of Horizon security arrangements should
+be conducted to determine the levels of security features and associated operational
+processes that need to be retained. In particular, the amounts of audit, encryption and
+digital signing of messages needs to be assessed.
+
+2.5 New Opportunities
+
+Post Office is committed to the expansion of its business through the introduction of
+new products, either with clients or through innovation with suppliers. Fujitsu Services
+can play a major part in this through working closely with Post Office in formulating
+future client strategies or by developing and taking to Post Office innovative ideas that
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 15
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+will generate new revenue streams or cause cost saving through better use of
+technology.
+
+Fujitsu Services is keen to explore ways of joint risk/reward sharing in relation to the
+products identified below. This could take the form of Fujitsu Services bearing a
+proportion of the development cost in exchange for a share of the down stream revenues
+based, for example, on a charge per transaction.
+
+2.5.1 New Revenue Streams
+Examples of new revenue streams are:
+aE Top-ups
+
+The on line charging of mobile phones through all post office outlets. Not only does
+this bring additional revenues to Post Office, it also potentially draws in a much
+younger customer than is the norm, thus giving the opportunity for other product
+sales to a new customer base.
+
+A further approach to this could be to follow the An Post example and offer a top up
+service through other retail channels outside of the Post Office network.
+Consideration must also be given to enabling out of hours activity where many of the
+current Post Office transactions are restricted by only being offered within the post
+office opening hours.
+
+a Talexus
+
+With British Gas aiming to be the supplier of choice for pre-paid metering, Post
+Office is in a unique position to take the lion’s share of this market as a service
+provider to British Gas. Fujitsu Services can work with Post Office to maximise the
+service offered and bring the product to market at a speedy pace.
+
+a Entitlement Card
+
+The Home Office has started the consultation process for entitlement cards in the
+UK, due for completion 10" January 2003. The scope of the document is wide
+ranging and covers many aspects of identity and authentication based on a plastic
+card. The document does not propose any specific solutions but does demonstrate a
+Government intention to introduce measures to reduce fraud and increase certainty
+of identity as a service for Government and for industry, probably based on a smart
+card. Government’s own figures suggest a cost of £3Bn for the service; this breaks
+down into £136m for IT set-up costs, IT infrastructure costs of £363m, additional
+staff costs of £62m, costs of processing applications of £608m, and the significant
+additional costs for card production and maintenance. This represents a significant
+sales opportunity for both Post Office and Fujitsu Services.
+
+A joint approach to this opportunity brings a combination of technical skills,
+government contacts and retail reach to this major opportunity.
+
+a Loyalty Card
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 16
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+28 million people per week come into a post office. This gives Post Office a massive
+opportunity to develop a loyalty programme that will help ensure customer loyalty
+but also help to increase product sales through better understanding of the customer
+base, their needs and wants.
+
+Escher already has a loyalty product deployed in other postal authorities, which
+could be adapted to suit the specific needs of the UK.
+
+2.5.2 Other Revenue Generating Proposals
+
+In addition to the above revenue streams, there are further opportunities for synergistic
+approaches to exploitation of the nationwide network. Some ideas that have arisen from
+discussions between Fujitsu Services and Energis that should be explored further are:
+
+a Home Highway Deployment
+
+Currently, whenever a Post Office location changes, a new set of lines is installed.
+This churn rate has been up to 10% per annum but under the Network Re-invention
+project beginning next year this churn could rise to 15%.
+
+It is proposed that instead of deploying the current infrastructure, a Home Highway
+or Business Highway connection is implemented, still providing access to ISDN, but
+also providing twin analogue lines at the same price. This would represent cost
+reductions for Post Office Limited, and (potentially) increased revenues for Fujitsu
+from the calls traversing the Energis Network.
+
+a Lottery
+
+The ISDN lines installed at UK Post Offices currently have an unused B-channel. As
+a result, Camelot terminals could be deployed in these locations (possibly by Fujitsu)
+without any network installation overhead. This could be established in such a way
+as to utilise the existing well proven Pathway support arrangement.
+
+Alternatively the ISDN D-channel could be used, although this may be financially
+less viable as it would require a terminal equipment change or the addition of a
+router per site.
+
+a CCTV over IP
+
+Traditional PAL/VHS CCTV systems are often proprietary, expensive and difficult
+to network. CCTV systems are installed in some post offices but could be deployed
+at more sites if the cost and technology were not prohibitive
+
+There are a number of inexpensive CCTV cameras available today which output
+video streams using standard IP and LAN technology. Many of the currently
+available CCTV via IP systems are wireless compatible and the hardware often
+retails at prices of the order of £50.
+
+The cost of networking has previously prevented a centralised storage model, as
+have bandwidth requirements. However, the bandwidth to serve CCTV is now of the
+order of 32-64Kbits/s. In addition, the wider deployment of DSL makes higher speed
+video more attractive as a security solution.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 17
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Those post offices defined as being at risk of theft or vandalism (or requiring CCTV
+monitoring for other reasons) could be equipped with CCTV IP devices allowing the
+stored video to be centrally held in either Fujitsu Services or Energis data centres.
+
+This will reduce the cost base of existing CCTV schemes and permit a wider take up
+of CCTV solutions.
+
+Q Wireless Post Office
+
+In addition to the current estate of circa/about 17,500 post offices, there are
+approximately 3,500 delivery offices around the UK. Often these are co-resident in
+the same building, or literally next-door to a post office. Typically, a delivery office
+is equipped with an ISDN line and one or more analogue phone lines, similar to the
+post offices themselves. In the future, some post offices may be equipped with a
+“Your Guide” terminal.
+
+There may be some opportunity to rationalise the number of phone lines serving
+these sites and services, generating cost reductions for Post Office and potentially
+increasing services and revenues for Fujitsu Services and Energis.
+
+In terms of an enabling technology, today’s Wireless LAN solutions can provide a
+IMbit/sdata rate across a range of approximately 100 metres.
+
+In addition to the above, BT have announced they will deploy a 4000-site radio ‘Hot
+Spot’ network, allowing mobile users to log on to the internet using wireless
+PCMCIA cards in laptops. BT judge that the time is now right to introduce this
+facility and capability, and that there is a latent market that can be nurtured and
+tapped.
+
+These PCMCIA cards are becoming more prevalent as hot-desking workers are
+equipped with these devices by their employers - the retail price for a private
+purchase has dropped below the £99 barrier.
+
+In addition, there has been a growth in the number of wireless devices appearing in
+the market to take advantage of the ‘802.11b’ wireless standards, such as wireless
+CCTV cameras.
+
+By implementing a wireless network where the post office is near the delivery office,
+the delivery office can share the post office’s Horizon communications links, using
+either the spare ‘B’-channel of the ISDN line or a portion of a DSL or IP Select
+service.
+
+2.6 The Way we work together (Landscape)
+
+Significant impact on costs currently incurred by Post Office and Fujitsu Services can be
+achieved by streamlining the process of change, new developments, service monitoring
+and management. At the same time, a more agile process will speed up the introduction
+of new capabilities and improve Post Office’s position with its clients and with Post
+Masters.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 18
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Post Office introduced the Landscape model as a new approach to managing the
+development and on-going operation of Horizon. Fujitsu Services supports that
+approach, albeit with modifications. The proposed process incorporates the new Post
+Office processes, as documented in the “Landscape Model”, and introduces clearly
+delineated set of roles and responsibilities, which are reflected in the Governance
+structure.
+
+Appendix 2 contains the more detailed presentation of the process and the
+responsibilities of the parties.
+
+2.6.1 Agile Process and organisation
+
+In conjunction with Post Office, Fujitsu Services will adopt significantly improved
+process for planning, defining, designing, delivering and operating the solution. This
+process blends the requirements of both organisations to conform to their respective
+corporate policies, whilst maximising co-operation and overall agility to respond to new
+needs and reduce overall running costs.
+
+The new process combines the clear definition and delineation of roles and
+responsibilities, which provide the backbone of an clear accountable management
+structure, with a number of new working practices, which will improve trust, and
+productivity, across the interface between Post Office and Fujitsu Services.
+
+The principal innovations being proposed are:
+
+a Co-operative working in areas of Planning (incl. New releases), Requirements
+Analysis, Design and Testing
+
+a Architecture Lab, to facilitate early understanding of requirements and proposed
+solutions, and joint visibility of technology evaluations
+
+a Common requirements and technical documentation, to eliminate duplication and
+inconsistencies.
+
+2.6.1.1 Co-operative working
+
+Much closer co-operation is envisaged between the Post Office teams and Fujitsu
+Services. In particular, requirements analysis and design activities will be bound closer
+together by both parties being closely involved in each other’s activities, by exploitation
+of the Architecture Lab and by sharing of early documents and joint reviews. This style
+of working, whilst not changing in any way the responsibilities and ownership of outputs
+by Post Office or Fujitsu Services, will ensure that any issues are identified early, that the
+combined knowledge and experience of both organisations is brought to bear early and
+that a common understanding exists through all stages of development and service
+delivery.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 19
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+2.6.1.2 The Architecture Lab
+
+The Architecture Lab provides an environment for shared exploration of new processes,
+new application and infrastructure architectures and new technologies and uses of that
+technology.
+
+The early exploration of the implications of change ensures that dead ends are
+discovered as early as possible, while the potential available can be visualised before
+committing to a complete analysis and design. The knowledge obtained in the
+exploration phase is expected to reduce time to market and visualisation of possible new
+solutions will help to identify benefits and further opportunities.
+
+The independent nature of the research capability ensures that new opportunities can be
+explored without impacting committed programmes
+
+2.6.1.3. Shared Design Document Set
+
+There are many outputs (documents) identified in the end-to-end process that pass
+between the organisations and either form the basis of subsequent developments or
+confirm that the developments meet requirements. It is proposed that such documents
+are visible to both organisations during development, not just on completion, to short-
+circuit any modification and enhancements that otherwise tend to occur late in the
+production process incurring rework effort.
+
+2.7 Operational Service
+
+Operational service has been identified as a key area for potential savings. Fujitsu
+Services is justifiably proud of the service quality of the Horizon service. Care must
+therefore be given to any unilateral approach to simply reduce the service quality by
+taking costs out. Fujitsu Services, in discussions with Post Office have, however
+identified a number of areas where alleviation of limited liability and/or some reduction
+in SLAs will allow costs to be taken out without a major impact on service quality. The
+following areas have been identified and Section 5 provides the detailed approach in
+each area:
+
+2.7.1 Help Desk
+
+We are assuming the implementation of SPOC 2 (Single Point of Contact). In addition,
+we are proposing that the Help Desk service levels is reduced in areas, which we believe
+will not adversely affect the business of Post Office.
+
+We are also proposing the introduction of the Technical Service Desk (TSD) which will
+be responsible for the monitoring and control of all calls relating to Network Banking,
+whatever domain the calls come from.
+
+2.7.2: System Service (Outlets)
+
+Fujitsu Services have identified a number of service changes, which if implemented will
+allow a reduction in headcount for system service. We have assumed no technical
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 20
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+refresh. However, we do reserve the right to monitor MTBF figures and if an increase
+can be shown to be related to the age of the equipment, then we may need to revisit
+technical refresh.
+
+2.7.3 Service Management
+
+A robust audit of the existing service is proposed to eliminate activities that are either
+duplicated or of marginal benefit.
+
+2.7.4 Problem Management/Field Service Management
+
+Currently seven field service managers are employed to handle problems arising in post
+office outlets. This resource is geographically based and we are proposing to replace
+these resources with a single problem manager who will then liaise with Post Office staff
+to handle problem situations.
+
+2.7.5 Management Information Service
+
+This service is run from the data warehouse. One of our proposals is the elimination of
+excessive periodic SLA monitoring and reporting. Some staff is currently employed to
+monitor SLA performance and report on exceptions. It is proposed that we re-engineer
+this service finding a more cost- effective way of providing the necessary level of
+reporting.
+
+2.7.6 Reconciliation Services
+
+A number of reductions in the scope of the reconciliation service are proposed, none of
+which should have a detrimental effect on Post Office business. The reduction in scope
+will allow a reduction in the staffing level associated with this service.
+
+2.7.7 Non-Polled Outlet Management
+
+This service proactively monitors the outlet network and manages the restoration of
+communications. It is an important service that underpins the successful operation of
+Horizon but our analysis has revealed that detailed changes to the current service and
+associated SLAs would yield significant savings.
+
+2.7.8 Transaction Benchmarking
+
+This service provides a post-release analysis of transaction response times against
+defined benchmarks using the PADS methodology. This involves use of specialised
+video equipment and analysis of video film to provide highly precise measurement.
+
+It is proposed to cease provision of this service and to agree a less resource and time-
+intensive mode of working.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 21
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+2.7.9 Data Centre Operations and Network Management
+
+The current Horizon data centre sites are sited within facilities owned and used by
+Alliance & Leicester. There is no commitment to provide the facilities beyond the end of
+2006. We are recommending that the current twin data centres should be consolidated
+onto a single secure site with appropriate physical resilience (dual power,
+communications, fire and flood separation).
+
+In addition to this site move, Fujitsu Services proposes significant further changes
+through the re-architecting programme to make data centre operations more cost
+effective.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 22
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+3 The Programme
+
+3.1 Introduction
+
+The proposals described in this document are based on a three-pronged approach to
+evolving the Horizon solution and reducing the associated costs to the business:
+
+a A number of “tactical” developments will be carried out on the existing Horizon (and
+Post Office) systems to deliver quick cost reductions (i.e. projects that deliver return
+on investment within a very short time).
+
+a The more strategic changes, involving business process re-engineering and dramatic
+streamlining of back-office systems and processes, will be tackled by a new
+development project, which will deliver a counter-to-corporate resource
+management systems (i.e. including the replacements for the existing CBDB suite).
+
+a Both parties will adopt a streamlined cooperative development process to deliver
+new capabilities and manage the deployed solution will be adopted to reduce costs
+and reduce delivery timescales.
+
+The proposed timetable and the individual elements of the programme are described in
+this section. It is important to note that the timescales, and therefore the financial profile
+of the proposal, are dependent on achievement of all the key milestones, including the
+definition and deployment by Post Office of new business processes.
+
+The following sections describe the tactical changes, the target architecture and the
+approach to evolution of the systems. Technical descriptions are provided at an
+overview level to impart understanding of the direction adopted and the essence of the
+changes being proposed. Detailed definitions are expected to emerge from an on-going
+co-operative process of requirement refinement and solution design, which will run in
+parallel with commercial negotiations for contract extension.
+
+3.2 Tactical Streamlining of Current Horizon
+
+A number of developments are proposed, which improve the characteristics of Horizon,
+in terms of cost of ownership and potential for change, with little or no impact on Post
+Office — these are described below as “Internal Re-Architecting”.
+
+There are also tactical opportunities to realise cost savings which do require some
+change to Post Office Ltd ’s operational processes and systems, but which do not alter
+fundamental business processes — these are described below as “Joint Re-Architecting”.
+
+It is proposed that all of these developments be undertaken if full cost-benefit analysis
+confirms positive return within the currently envisaged lifetime of the components being
+affected.
+
+The proposed tactical i
+follows:
+
+atives, which are outlined in the following subsections, are as
+
+a Simplification of central platforms (Internal Re-architecting project)
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 23
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Transmission of AP client data via a central hub (Joint Re-architecting project)
+Exploitation of ADSL (Internal Re-architecting project)
+
+Switching Streamline interface from X.25 to IP (Internal re-architecting project)
+Removal of OpTIP (Joint Re-architecting project)
+
+Improved processing of reference data (Joint Re-architecting project)
+
+Security and risk management rationalisation (Joint study)
+
+ooooocdo oO
+
+Elimination of the Network Banking Engine (NBE) — (Joint study)
+
+3.2.1 Simplification of Central Platforms
+
+The Host Central Servers form a key part of the current Horizon architecture. There are
+two servers in each Campus. Each is a Sequent NUMA-Q server with its own local disks
+and access to a number of Oracle databases stored on the Campus’s EMC Disk Array.
+At any one time, one server (that in Bootle) is running the live service, with the other (in
+Wigan) acting as a warm standby.
+
+As well as the Host Central Servers, the same platform type is used for the Data
+Warehouse. Again, there is one Data Warehouse server per Campus, with the principal
+Oracle database stored on EMC disks. The Wigan server acts as a warm standby in case
+of failure of the Bootle server or site.
+
+Both servers run under Dynix 4.4.10. Dynix is Sequent’s tweaked version of UNIX, and
+was produced in the days when such tweaks were necessary to produce the maximum
+throughput in database applications such as Oracle. The choice of Sequent/Dynix and
+Oracle provided the maximum available performance for RDBMS applications at the
+time when it was made.
+
+EMC’s SRDF facilities are used to replicate data between the two Campuses, so that in
+the event of server or site fail-over, it is possible to restart the service on the other site
+with minimal delays
+
+The deployed environment demands that Fujitsu maintain a body of skills for the various
+technologies. The Dynix equipment and software are increasingly becoming exotic and
+carry high maintenance and support costs. This is particularly significant when
+considering the full estate, with testing rigs adding significant numbers of platforms
+(Note that there are 31 Host servers spread throughout the live and test estates, and 12
+Data Warehouse servers, including Sequent SE30 servers that are used in the test rigs).
+
+Three options have been considered:
+
+a Migrate the Host servers to Solaris platforms supplied by Fujitsu Siemens
+a Migrate the Host databases to NT platforms
+
+a Migrate the Host databases to SQL Server applications running on NT
+
+The first option is relatively straightforward and over an extended Horizon contract
+period delivers significant financial benefit.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 24
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Early migration of all the applications to SQL Server carries significant conversion costs
+and is also judged to carry too high a risk associated with performance, although this
+may reduce as Microsoft evolve their RDBMS in the next 2-3 years.
+
+It is possible to move all the Host applications to NT servers. Fujitsu Services normal
+approach to NT (one task per box) would indicate that each application would be moved
+to a separate server; however Oracle licensing is per box rather than per database, and
+this would increase license costs. It would also increase the number of servers in the test
+rigs quite considerably. Further analysis of this option will be carried out, but initial
+assessment suggests that benefits would be marginal and risks would rise.
+
+Therefore, it is proposed to adopt the first option immediately, and track the evolution
+of Microsoft software, to determine when conversion from Unix, and perhaps Oracle,
+will present a clearly beneficial case.
+
+3.2.2. Transmission of AP Client Data via Hub
+
+Currently, APS supports a large number (about 500) of clients. A few of these are
+supported by direct FTMS links to their sites, but the majority are supported by sending
+their data to a single client (Girobank) that acts as a “proxy”. Consignia already have a
+mechanism where clients can connect in to pick up information from a Web Service, and
+initial assessment suggests that this could be exploited. Alternatively it may make sense
+for Fujitsu Services to operate a web service from which clients pick up their data
+directly.
+
+3.2.3 Exploitation of ADSL
+
+Currently almost every Post Office outlet has a 64K dial-up ISDN line provided under
+the Horizon contract and a separate telephone line supplied by the Post Master. For cost
+reasons, the ISDN service is not permanently connected.
+
+ADSL is a new “broadband internet” technology, which could provide low cost high
+performance permanently connected communications to a large number of outlets via
+the existing BT telephone wiring. The standard bandwidth is 288Kbits/s upstream (outlet
+to data centre) and 576Kbits/s downstream (data centre to outlets).
+
+To use ADSL, the following changes would need to be made at the outlet:
+
+a Install the ADSL line
+
+a Convert the gateway PC to support ADSL
+
+There are two ADSL migration options that could be followed:
+
+a Fujitsu Services to provide a PSTN line in place of the existing ISDN Line.
+
+a The outlet's existing PSTN line to be converted to ADSL and the existing ISDN line
+discontinued,
+
+Due to BT’s technical constraints, the ADSL upgrade could not be affected universally.
+Outlets that are too far from BT exchanges (or outside BT’s target segments for ADSL)
+will have to remain on ISDN; nevertheless, 50-80% of outlets should benefit. Clearly the
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 25
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+minority of Post Offices, which are satellite connected (around 250) or mobile outlets
+(around 200) are not included in the consideration of this opportunity.
+
+The deployment of ADSL, requiring a hardware upgrade at the outlet, should be, as far
+as possible, coordinated with any other initiatives to deploy new devices to the outlets
+(i.e. engineering visits), thus minimising deployment costs.
+
+In order to cost this change, the following assumptions were made:
+a ADSL tariffs will decline by 6%
+a ADSL coverage is 80% of outlet network
+
+a Published domestic tariffs apply
+
+3.2.4 Switching Streamline interface to IP from X25
+
+Streamline, the Merchant Acquirer adopted for the Debit Card system, currently only
+supports X25 communications. However, it is their stated intention to support TCP/IP,
+which would facilitate adoption of a cheaper network solution for the Debit Card
+System. For the purposes of this proposal, it is assumed that this change can be effected
+during 2005.
+
+3.2.5 Removal of OpTIP
+
+OpTIP currently receives full details of transactions carried out on Horizon, routing the
+required information to other internal Post Office systems (e.g. CBDB). By customising
+the Horizon feeds for the consuming systems and routing these new feeds directly to the
+systems, the majority of OpTIP functionality would no longer be required. The
+remaining functionality can be provided by other means, facilitating a significant saving
+by elimination of the whole OpTIP system.
+
+To realise maximum savings, it is suggested that Post Office should immediately initiate
+a design study to assess the work required within Horizon to enable OpTIP to be
+eliminated as soon as possible.
+
+3.2.6 Improved Processing of Reference Data
+
+There are several systems within Post Office and Fujitsu Services that act as master
+sources for various items of reference data. The process for changing and evolving
+reference data is cumbersome and contributes to delays in introduction of new products
+as well as adding to costs.
+
+It is proposed that a new facility is developed which straddles the Post Office — Fujitsu
+Services boundary and provides a more efficient, user-friendly and accurate support for
+creating, validating and approving change to reference data.
+
+3.2.7 Security and Risk Management Rationalisation
+
+An urgent review of threats for which Post Office needs to develop counter-measures is
+required. Based on the outcome, a reappraisal of Horizon security arrangements will be
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 26
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+conducted to determine the levels of security features and associated operational
+processes that need to be retained. In particular, the amounts of audit, encryption and
+digital signing of messages will be assessed.
+
+3.2.8 Elimination of the Network Banking Engine (NBE) — study
+
+It is proposed that a review of the case for retention of the NBE is carried out. The
+possibility of interfacing Horizon directly to Link and to the various banks, which are
+required to be supported by the NBE, should be seriously evaluated, as significant
+savings could be realised by such a development. Once Debit Card (and e-Top-Ups)
+development is completed, Horizon will have the capability to support the interactions
+required to interface directly with financial institutions. Extending the range of
+supported end-points is technically straightforward, and the cost of the overall service
+should be lower than that associated with an independent NBE. Major savings would
+accrue from:
+
+a Fewer reconciliation points
+Reduced communication costs
+Simpler security
+
+Reduction in Data Centre requirements
+
+ooo oa
+
+Simpler process to manage future changes, with fewer parties involved (e.g.
+developments envisaged for National Savings enhancements would be simplified)
+
+3.3 Target Architecture
+
+3.3.1 Key Concepts and Principles
+The principal aims for evolving the Horizon Architecture are:
+
+a Reduction in cost of ownership of the solution (lower operational, development and
+support costs)
+
+a Greater potential for change (supporting rapid introduction of new or changed
+products)
+
+a Reduction in complexity to reduce development & testing costs
+a = Minimal disruption in the outlets
+
+The project will re-use existing Horizon assets to minimise cost and timescales where
+appropriate. In particular, the project will aim to maximise re-use of expensive items
+such as:
+
+a Counter hardware
+a Data communications network
+
+a Central hardware and data storage
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 27
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a Software components (3" party gateways/interfaces — e.g. NBE link, Streamline link,
+Client interface, and relevant elements of the application suite — e.g. DRS)
+
+a System management and operational support systems
+
+3.3.2. Architecture
+The key principles embodied within the model are:
+
+Q Minimisation of reconciliation requirements by optimised data flows and creation of
+the logical “Single Data Source”
+
+a Auditing implemented at external boundaries
+a Elimination of artificial boundaries (e.g. TMS/OpTIP)
+a Consolidation of Data Centre facilities
+
+The re-architected solution is based on a “thick client” approach. The “thin client”
+option was considered and rejected, because it could not deliver autonomous operation
+of the counter (in case of network disconnection) and would require complete redesign
+of central systems for on-line working, thus destroying any possibility of reusing past
+investment in the new solution.
+
+The re-engineered solution will target the conceptual model shown in Figure 1.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 28
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Business Objects
+Reports
+Consignia
+Clients
+(via EDG) AES,
+Reports e.9.
+mis Postmaster
+Remuneration
+Accounts Mecalnts
+Adraniaton
+\Werksaon
+Ese
+Management
+Workstations Estate
+Manageet
+fat
+ite ' and Revival
+oe systems
+4 Manegement
+‘Support
+Nee PRR Wonslatons
+Daa
+Reference Data
+Supoiy Chain ‘amnion
+Management
+Counters
+Suppiy Shan
+Administration
+Gistomers
+
+Figure 1 — New Campus Architecture
+
+3.3.3, Components of Solution
+a Accounts
+
+The new accounts system will support re-engineered business processes, which
+incorporate the simplifications in Cash Account and other beneficial practices that
+have been identified by various past studies.
+
+Most of the data required for management accounts will be obtained by aggregating
+the transactions by product and outlet. Mechanisms are required to make any
+necessary adjustments to transactions (or introduce compensating transactions) as a
+result of manual processes. Specifically any discrepancy or suspense transactions that
+are received from the outlets and any reconciliation adjustments identified from the
+Reconciliation subsystem must be accounted for.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 29
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Settlement with external Clients is also handled via the accounts processes. This will
+result in further data feeds from the Clients to indicate the details of settlement,
+which will need to be reconciled with the underlying transactions.
+
+The appropriate summaries will be fed to Consignia’s accounting systems when the
+accounts for a given period are completed.
+
+a Estate Management
+
+Horizon has comprehensive tools and processes to manage the outlet estate and to
+manage changes to the estate such as opening and closing outlets and changes in the
+number of counters. Similar facilities exist within the current Back-End systems. The
+aim will be to produce an integrated system to reduce administrative overhead and
+delay.
+
+a Single Data Source
+
+The main use of transaction data is as the raw data which is aggregated as required
+for the other functions being carried out centrally. This includes all remaining
+reconciliation processing and reversal handling (see below, AP Client handling)
+
+All transactions will need to be retained at the Data Centre for a period that is
+sufficient to complete all of the processes associated with the transaction — say 3
+months. During this time, the transactions are available for analysis and, in rare
+cases, for amendment as a result of any central processes, which handle manual input
+from the outlets.
+
+Although the intention is to eliminate as much paper as possible from the overall
+system, it is recognised that it will not be possible to do this completely. Therefore a
+mechanism is required to capture data from paper and to feed it into the Single Data
+Store in an appropriate way such that it is fed into the accounts.
+
+The simplification of the data flows is illustrated in Figure 2. This proposal re-uses
+already developed capabilities (DRS) to reconcile information from separate data
+flows. However the reconciliation process is now considerably simplified by
+eliminating some independent flows that would otherwise require reconciliation. Any
+errors found by reconciliation will require compensating transactions to be generated
+within the Accounts process, thus enabling settlement to complete.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 30
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+‘Accounts
+
+MActke \
+
+Service Cas,
+
+b> Enhanced DRS
+R ~ Reconaliation om ~
+Various other
+, transaction types
+
+ke
+@ Reconciliation point
+
+Counters
+
+Figure 2 — New Reconciliation Model
+
+Note: the C2 flow is optional (i.e. it is not required for Network Banking and won't exist in E-top ups
+
+a AP Client Handling
+
+For each AP Client, an aggregate is required of those transactions carried out on
+their behalf.
+
+Transactions for AP Clients will all be sent via Consignia’s EDG, which will be
+responsible for the transmission of the data to the Clients. A number of service
+levels could be provided, depending upon the requirements of the Client, for
+instance:
+
+a A daily or weekly transmission of transactions delimited by End of Day
+boundaries with any Reversals “netted out” with the transactions being reversed.
+This is the only service currently offered.
+
+a More frequent transmission (e.g. hourly batches of transactions), however in this
+case the Client would need to accept that transactions would no longer be
+delimited by End of Day boundaries and there would be some Reversals that
+could not be “netted out”
+
+a Periodic (e.g. daily) delivery of transactions with no “netting out” of reversals
+and no attempt to delineate with business days at the counter.
+
+The preferred service for adoption would be the last since that requires the least
+processing by Horizon, but the viability of this solution needs further analysis of
+Clients’ capabilities.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 31
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a Management Information System (MIS)
+
+Horizon transactions are available for analysis by a MIS. Various aggregates will be
+produced as required to support business and operational analyses, for example
+volumes of transactions, basket analysis or performance against key SLAs.
+
+The current Horizon Data Warehouse has, in BI3, been enhanced to provide new
+functionality and business reports specified by Post Office, and these will be carried
+forward and re-used with other relevant capabilities. It is proposed that the excessive
+SLA monitoring, carried forward from the past, will be reviewed against the new
+contract and significantly simplified. This will reduce costs currently incurred in
+periodic reporting, as well as reduce future development and testing costs.
+
+The Horizon Data Warehouse should evolve into the shared repository of
+transactional information from which variety of MIS reports can be produced. It is
+proposed that arrangements are made as part of the improved joined-up working to
+enable Post Office to commission (from Fujitsu Services or specialist companies)
+new reports based on the warehouse-held data and to jointly plan any evolutionary
+changes the warehouse needs to undergo.
+
+a System Management
+
+There is a significant investment in System Management facilities and skills, which
+are fundamental to the successful operation and development of the Horizon service.
+
+This provides a proven foundation that Fujitsu Services believe will best support the
+proposed improvements to the Horizon business service. Fujitsu therefore proposes
+to leverage the existing Post Office investment in Systems Management
+functionality, skills and process to support the proposed new Horizon service.
+
+Horizon System Management is responsible for managing the Horizon estate
+encompassing Post Office outlets, networks and data centres. The System
+Management Architecture is summarised in the following diagram - Figure 3.
+
+Figure 3. System Management Architecture
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 32
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Support Communities
+
+Tivoli Core Product
+
+Oracle Database
+
+Release Management
+
+Central to the architecture is an inventory database containing details of the managed
+estate, boundary network and the campus data centres. In addition, the database
+holds an archive of all Horizon system events. This central database is based on
+Oracle technology.
+
+This is surrounded by the generic system management capabilities that support
+software distribution, event management, distributed monitoring, etc. This layer is
+implemented using Tivoli technology
+
+Surrounding the Tivoli core architecture layer, a System Management layer has been
+constructed to accommodate Horizon specific service requirements. In particular,
+these requirements relate to the unique scale and distribution of the Horizon estate.
+
+Significant investment has been directed towards optimising network
+communications and outlet monitoring and support costs, principally in the areas of
+software distribution and close integration with support processes. The flexibility of
+this Horizon specific layer in the System Management Architecture provides the
+essential operational support required to introduce the business changes required to
+deliver Fujitsu Services proposed cost savings.
+
+In summary, the combination of Horizon System Management technology, process
+and support skills has created a key enabler required to facilitate the business change
+presented in this proposal
+
+a Reference Data
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 33
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+A re-engineered system for management of reference data will be introduced, which
+will provide improved validation of changes, workflow for change approvals and
+centralised management to avoid inconsistencies in data and assure synchronisation
+of changes across the estate. The resulting system will replace the functionality
+currently provided by RDMC and RDS, and as a consequence reduce the combined
+support costs.
+
+a Counters
+
+The existing counter hardware will be updated and reused. The next generation
+counter application will be built based on Escher’s WebRiposte Essential (WRE), to
+maintain continuity of user interface and to provide autonomous operation in the
+event of outlet network failure. The data driven nature of Web Riposte Essential will
+simplify the introduction and change of new functionality. It will use Escher’s Asset
+Manager as the accounting model, thus removing the current tie-in to Cash
+Accounting, which is a fundamental aspect of the existing EPOSS application. No
+attempt will be made to aggregate transactions at the counter — all transactions will
+be passed through to the Data Centre and any summarisation / aggregation will be
+done there, since this eliminates any need to perform reconciliation of the aggregated
+data with the raw data and ensures that the raw data is available for other purposes
+(e.g. Management Information).
+
+Each counter will maintain details of the business day under which it is trading and
+include this in every transaction. An End-of-day trailer will be written at each
+counter to mark the end of counter transactions for that business day.
+
+Detailed rules for how this is to operate will need to be defined. However to allow for
+disconnected counters and to keep processes simple, it is probably necessary to have an
+EOD marker for each counter rather than each outlet.
+
+Declarations of Stock Levels will be forced at appropriate intervals, with accounting for
+any discrepancies arising.
+
+Some transactions will require an on-line interface to a Client (e.g. NBS or DCS). The
+key principle is that the final transaction written to the message store needs to reflect the
+outcome as seen by the counter.
+
+Intermediate messages (i.e. the [R] and [A] and any [CO] that represent Reversals)
+could also be sent through Riposte to agents as at present or could be sent directly. The
+pros and cons of these approaches need further evaluation, however the costs of either
+are likely to be similar. The benefit of using Riposte is the reuse of existing technology
+and the fact that these intermediate messages will all be audited.
+
+a Supply Chain Management
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 34
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Supply Chain Management is currently provided by the SAPADS and LFS systems.
+At this stage there is no immediate benefit perceived in substantially changing the
+way in which this part of the solution operates. However consideration should be
+given to an “order request” system to replace the current manual process, although
+this is not included in the current proposal costings.
+
+a Audit
+
+A now, System Activity in the Outlets will be recorded in the message store and so
+by auditing all messages as they arrive at the Data Centre thus a complete audit trail
+of what has occurred on the counters will be maintained. In addition all data that is
+transferred across the system boundary defined in Figure 1 (including manually
+entered data) is audited.
+
+3.4 Migration To Target Architecture
+
+3.4.1 Overview
+
+Fujitsu Services approach to evolving to the new Horizon architecture is based on
+simplification of business process and on exploitation of technological advances that
+have occurred since the original Horizon architecture was implemented. It builds upon
+Fujitsu’s long experience of successful migration through a number of complex business
+and infrastructure enhancements, including CSR+ and the current BI1, BI2 and BI3
+enhancements.
+
+The migration option that is proposed here is, on currently available information, judged
+to be the best in terms of:
+
+a Resources needed (and hence cost)
+a Time to achieve the transformation
+
+a Risk and complexity (ie. alternative schemes would require more complex
+transitional arrangements, which introduce further risks)
+
+It is recognised that significant amount of further analysis will need to be carried out
+with Post Office. Fujitsu Services propose to do this in two stages:
+
+Q Qualification — taking place once this proposal is accepted. This will confirm the
+feasibility of the proposed process from the viewpoint of all stakeholders, and
+validate all fundamental assumptions made
+
+a Detailed process and programme design
+The migration plan is based on the following principles:
+
+a_ A new suite of central system services will be established, implementing the new
+business process and simplified data flows
+
+a Parallel running of current and new services (and the associated business processes)
+during transition
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 35
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a Fujitsu Services existing Estate Management processes will be used to migrate
+outlets to the new services
+
+a When all outlets have been migrated to new services, old services will be
+decommissioned
+
+The chosen approach recognises the need to maintain business continuity whilst
+implementing business change. In essence, this approach can be viewed as creation of a
+new set of central systems, which operate in parallel with the existing systems and over
+time acquire connection from all the outlets. An enhanced Reference Data service will be
+developed prior to migration to feed both estates. The main advantage of the proposed
+migration approach is simplicity and minimisation of links between the old and the new.
+The main implications, which need to be further analysed, are:
+
+a Multiple Feeds to external systems (e.g. Clients) — ideally during migration the
+external parties should be able to view Post Office as 2 organisations, linked at the
+highest levels (e.g. corporate accounts, contracts)
+
+Management of historical transactions — it is proposed that transaction history is not
+migrated to the evolved outlets or the central systems that support them and therefore,
+any adjustments to such will be handled on the old systems. This will require processes
+to be designed, which will operate during the transitional period.
+
+3.4.2. Migration Activities
+
+3.4.2.1 Business Process Analysis and Design
+
+The first step in the migration roadmap is the definition and approval of the business
+process enhancements that will facilitate significant operational and system streamlining.
+This activity is on the programme’s critical path and its resolution is therefore
+fundamental to further progress being made towards the realisation of major cost-
+reductions that Post Office seeks. The output from this work is required to quantify the
+full impact of the implied Post Office business change and the associated Fujitsu Services
+development plans.
+
+Whilst the definition and approval of the business process enhancements are clearly the
+responsibility of Post Office, Fujitsu Services propose to provide support in a number of
+important areas to assist with early completion of this urgent activity:
+
+a Business process capture workshop facilitation
+
+a Formal business process and information modelling
+
+a Business process design, analysis and performance measurement
+a
+
+Support for negotiations with third party IT suppliers to establish optimal process
+and technical integration options, e.g. DVLA, National Savings
+
+a Architecture Lab to investigate process automation options and the feasibility of
+making greater use of standard product facilities, e.g. reductions in bespoke Post
+Office requirements, user interface visualisation
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 36
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a Business migration planning and support.
+
+3.4.2.2. Evolution of systems in the Data Centre
+The complement of systems will evolve, as described in the Target Architecture.
+
+As Counters are migrated to operate within the new business processes, accounting
+information, management information and aggregate data will be built up in the new
+system. History will not be migrated from the old systems. The stock management
+system SAPADS is expected to be retained and hence this will be shared by both new
+and old Counters. SAPADS may need some enhancements to recognise the existence of
+two segments of Counters and their association to Accounts Systems.
+
+Other changes will occur as part of the normal maintenance. For example, at BI3, the
+new DRS database was implemented using Oracle V8i, and the Reference Data RDMC
+and RDDS databases were upgraded to the same version of Oracle. The migration of
+the other Host Oracle databases to V8i or later will be carried out in the near future. The
+Host hardware will be migrated from Sequent to Fujitsu Siemens technology.
+
+3.4.2.3, Reference Data
+
+The Reference Data Systems will be enhanced to generate Reference Data in the forms
+required by the new and old systems (both for Counter and Data Centre Systems)
+
+3.4.2.4 External Links
+
+For each external link, analysis will be carried out to determine whether it can accept
+separate feeds to and from the old and new systems. External clients include all AP
+Clients, the NBE and other on-line clients that will be in place by the time of migration,
+SAPADS (for stock control) and Consignia’s Accounting systems. Where the temporary
+existence of dual feeds is not possible to arrange, tools will be designed and
+implemented to merge and split the feeds.
+
+3.4.2.5 Move Outlets to the new simpler counter application
+
+As each outlet is migrated to the new counter application it is switched over to interface
+to the new Data Centre systems. The minimum of historical data is moved across at the
+Outlet to support this (the minimum includes at least the starting position in terms of
+stock levels and opening balance data). Specifically, each Counter at a migrated outlet
+will start off with a new message store and will no longer have access to reports or data
+produced prior to the date of migration.
+
+3.4.2.6 Counter Changes
+
+There are two key enhancements to the software environment of the Counters proposed.
+
+a Introduction of New Counter application (based on WebRiposte Essential ™ (WRE),
+together with Fujitsu-supplied application components)
+
+a Upgrade to Windows 2000 (or later) to exploit latest Microsoft workstation
+technology
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 37
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Investigation of the strengths of WebRiposte Essential is well under way in Fujitsu
+Services Architecture Lab. Fujitsu's expectation at present is that WebRiposte Essential
+provides an advantageous future direction for the Horizon Counters, but "out of the
+box", only caters for a part of the full Post Office requirement. Some applications (such
+as Network Banking or Debit Card) require additions to the generic WRE, and other
+new business opportunities that follow the same model (for example e-Top Ups) are also
+likely to require extensions to the WRE structure. However, through a close
+cooperation with Escher, extension to the WRE will be implemented to minimise the
+amount of Post Office specific code that Fujitsu will need to integrate with the standard
+application.
+
+The WRE assessment is taking place on the standard Counter hardware platform, but
+using Windows 2000 as the base operating system. Fujitsu Services will explore the
+options for upgrading the Counter operating system to a more up-to-date software level
+to gain the functionality and productivity advantages it brings, and implement the
+findings of this study. The recent introduction of BI2 across the Horizon Outlet estate
+has demonstrated the ability of the systems management infrastructure to manage a
+complex Counter upgrade - in this case from NT 4.0 Service Pack 3 to 6a, Internet
+Explorer 4 to 5.5, and Riposte to WebRiposte. It is expected that the same mechanisms
+can be used to upgrade the Counters further, to Windows 2000 or Windows XP. The
+increasing availability of "always on" network access to the Outlets will minimise the
+cost of distributing a large upgrade such as a major operating system enhancement.
+
+WRE is substantially different from the existing counter application, and requires a
+substantially different set of message store data. Tools will be developed to migrate
+relevant information from the current message store (stock levels, closing balances)
+across to a new message store partition, and these tools will be employed immediately
+prior to the switch to WRE. This migration can be done on an outlet-by-outlet basis.
+
+3.4.2.7 Counter Hardware enhancements
+
+While Fujitsu Services strategy is to avoid a Counter technical refresh, some hardware
+upgrades are envisaged in support of the various initiatives and new business
+opportunities:
+
+a Installation of a ADSL (high speed communications) card in the Gateway PC at
+outlets where ADSL service is available
+
+a If contactless card support is required, the PIN Pad installation will need to be
+enhanced
+
+a Peripheral enhancements (e.g. currency exchange boards)
+
+Synchronizing upgrade activities to eliminate unnecessary engineering visits will
+minimize labour costs. The schedule of upgrades will be refined once the migration plan
+is finalized. It is anticipated that Network Reinvention will make spare counter PC stock
+available to facilitate upgrading.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 38
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+3.4.1.8 Data Centre Changes
+
+Transition from the current dual-site Data Centre configuration to a single new Data
+Centre will be enabled by modifications to the recently enhanced fail-over mechanisms,
+to ensure a smooth migration with minimal risk. The new Data Centre will retain
+systems resilience, but disaster standby capability. will rely on redeployment of Fujitsu
+Services test rig configurations to provide the on-line services should a total disaster
+strike the Data Centre. Working with Energis, Fujitsu will identify economic options for
+re-establishing communications following disasters. With Post Office, Fujitsu Services
+will ensure that processes catering for the eventuality of disasters are defined and ready
+to be invoked.
+
+New and retained Data Centre systems will be deployed on the latest reliable software
+baselines. Fujitsu Services will seek to simplify the security domain structure used at BI3
+by a removal of internal security barriers within the Horizon architecture, and by
+adoption of more sophisticated domain support made possible by the use of a later
+operating system version.
+
+3.4.1.9 Host Platforms
+
+Following the tactical refresh of the host platforms, Fujitsu Services will continue to
+monitor the delivered capabilities of Microsoft enterprise level software (operating
+systems and RBDMS) and if appropriate and cost effective will migrate the host
+platforms to the lower cost base.
+
+3.5 New Capabilities
+
+A range of developments to introduce new products or enhancements at the outlets have
+been identified and are being studied separately. Below are the key items that may form
+a basis for a programme of enhancement/development that needs to be melded with the
+developments identified in the preceding sections.
+
+a London Congestion Charges (LCC)
+
+This requirement will be satisfied by a two-part solution. The purchase of travel
+permits will be supported by a online dialogue to the LCC host, while the payment of
+Fixed Penalty Notices will be supported by exploitation of the Enhanced AP Service
+described below.
+
+a E-Top-Ups (ETU)
+
+The Electronic Top-Ups solution will follow the RAC model introduced for
+Network Banking and will have similar characteristics to the Debit Card system.
+The counter application will support the ETU customer token and will allow the
+selection of ETU products from a pick-list. These products will be introduced using
+the existing Reference Data processes. The counter application will support the
+Request / Response to the E-Pay Host system. ETU Refunds will be supported
+within a 10-minute window, and will be another on-line dialogue based on the
+existing EPOSS reversal process.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 39
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+A daily Reconciliation file will be received from E-Pay, the contents of which will be
+reconciled with the records from the counter.
+
+a Mails
+Mails functionality will be provided at the counter by the Escher Mails product
+a MoT Authentication
+
+The solution for MOT Validation will be provided as an incremental development on
+top of the generalised data capture facilities provided by the APS Enhancement
+solution. The APS counter facility will be enhanced to initiate a look up to the
+Vehicle Inspectorate web service to check that the identified vehicle has a valid
+certificate.
+
+a Automated Payment Service enhancements
+
+A generalised enhancement will be made to the AP service to enable reference data
+driven data capture to take place in addition to the standard data items of token,
+amount and method of payment. This will enable the AP counter system to capture
+additional data keyed by the clerk or from a barcode. Support will be provided for
+address validation using the Post Office preferred PAF facility.
+
+The additional data will be added to the Client records in a single variable length
+XML field
+
+a BFPO automation
+
+This requirement will be supported by the implementation of an enhanced version of
+the current Horizon system, extended to provide network connectivity to BFPO
+locations and to support multiple time zones where this is needed to resolve business
+inconsistencies.
+
+a Bureau de Change
+
+New application functionality will be introduced into the Horizon system to support
+the sale of foreign currency, both on-demand and pre-order. Where present the
+counter will also drive existing currency rate boards.
+
+a EMV compliance
+
+Fujitsu Services is already working with Post Office to identify the requirements for
+EMV (“chip & PIN” support) for Debit Card in line with general retail industry
+timescales. Once the business rules and standards are agreed, Fujitsu Services will
+work with Post Office to implement the necessary enhancements to the PIN Pad
+firmware, to the Counter software, and to the Agent processes within the data
+centres that communicate with Post Office’s chosen Merchant Acquirer
+
+Q Facilities to support National Savings & Investments products
+
+While the opening of new accounts will be managed by an APS transaction, the
+operation of the accounts will be performed by exploitation and extension of the
+existing network banking infrastructure.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 40
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+3.6 Horizon Maintenance
+
+The deployed system will be updated, from time to time, to fix identified deficiencies, to
+modify applications by either code or reference data changes in accordance with change
+requests raised by Post Office, or to enhance the system for new workload patterns and
+trends. The maintenance activity will also ensure that deployed technologies (esp.
+software) are at the optimal product versions, balancing the value of supportability,
+performance and features with costs of upgrades.
+
+Additionally, there will be requirements to add functionality, to timetables specified by
+Post Office in Change Control Notes, which will achieve compliance with various
+regulatory requirements. These are expected to include:
+
+a Welsh Language receipts
+
+a Euro currency
+
+3.7 Roadmap Plan
+
+Earlier this year, a joint “roadmap plan” for Horizon was constructed to summarise the
+work that was then envisaged. The joint plan grouped activities into Technical Changes,
+Incremental Business Changes, Transformational Business Changes and
+Transformational Technical Change, supported by a new Lifecycle Process.
+
+For this proposal Fujitsu Services has used a different structure because it is believed
+that it will be easier to understand and also because there are different dependencies in
+different areas.
+
+The enclosed plan (see foldout sheet) has six main groups of activity, which are
+summarised in Table 1.
+
+Table 1. Summary of Roadmap Plan
+
+Task Group Contents Programme Dependencies
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 41
+Fre)
+FUJITSU
+
+New Fujitsu Proposal
+
+Ref: BD/PRP/008
+
+FUJ00232510
+
+FUJ00232510
+
+18" September 2002
+
+Version 1
+
+1. Agreement
+
+Pre-contract essentials
+
+Agreement to move forward
+on the basis of this proposal
+
+2. Horizon Internal
+Re-Architecting
+
+Dynix elimination
+
+Data warehouse
+
+elimination
+Data Centre relocation
+
+Physical counter upgrades
+
+a) New contract.
+
+b) Re-architecting would be
+resourced from within the
+committed core team.
+
+c) Post Office agreement to
+funding costs of additional
+
+Counter software I hardware.
+upgrades
+3. End to End OpTIP removal a) Commitment from business
+Change Reference dataIb) Agreed definition of
+rationalisation responsibilities, scope and
+BPR related work: work to be carried out.
+Automation of key client ©) Agreement to extended
+scope for Fujitsu Services and
+products . .
+to funding for incremental
+New accounting system resources and charges for
+New stock processes external expenditure.
+Rollout of new E2E
+processes
+4. New Horizon New counter product I a) Commitment and funding
+Capabilities developments driven by I for incremental resources.
+business need. b) Impact = analysis_~—of
+individual products.
+5. Horizon Operational service cost I a) Agreement to SLA changes
+Operational Service reductions. via new contract
+Changes
+
+b) Delivery of internal system
+changes by SI work.
+
+6. Horizon Releases
+
+Planned and foreseen
+Horizon releases over the
+next 18 months.
+
+Release Plan to be agreed
+during detailed planning (pre-
+contract)
+
+3.8
+
+Governance / Process
+
+Significant reductions in costs currently incurred by Post Office and Fujitsu Services can
+be achieved by streamlining the processes of change, new developments, and service
+monitoring and management. At the same time, a more agile process will speed up
+
+© 2002 Fujitsu Services Ltd
+
+Commercial in Confidence
+
+Page: 42
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+introduction of new capabilities and improve Post Office’s position with its clients and
+with Post Masters.
+
+The proposed process incorporates the new Post Office processes, as documented in the
+“Landscape Model”, and introduces clearly delineated set of roles and responsibilities,
+which are reflected in the Governance structure.
+
+The process will be strengthened by a set of new working arrangements, which will
+ensure that potentially protracted activities are executed rapidly whilst improving the
+understanding between the parties. The key principles being adopted are:
+
+a Elimination of duplication — same documents used by Fujitsu Services and Post
+Office wherever commercially possible
+
+a Joint working, where this improves understanding and reduces coordination effort
+e.g. requirements analysis, testing/acceptance
+
+a Architecture laboratory to prototype key elements of new capabilities, evaluate new
+technologies and visualise requirements
+
+a Improved tooling within Fujitsu (e.g. better modelling within PVCS) to reduce need
+for paper documents
+
+Appendix 1 contains the more detailed presentation of the process and the
+responsibilities of the parties.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 43
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+4 Contract Approach
+4.1 Principles
+
+A number of principles set out in the draft Heads of Agreement and discussed over the
+past weeks are embedded in this proposal and are reflected in the financial numbers.
+
+In summary, they are:
+
+a Reduced annual charges in return for a simplified and less onerous (more standard)
+service with commensurate liabilities and risks;
+
+Improved value for money for extension of term and expansion of scope;
+
+Reduced absolute fixed cost commitment, with greater flexibility to vary resource
+levels according to business requirements including affordability;
+
+a Increased transparency through unbundling of charges into separate Operations and
+SI services and within each service, giving Post Office more control over service
+quality/price trade offs;
+
+a Smoothing of charges to dilute the effect of availability fees near term (to and
+beyond March 2005);
+
+New ways of working together including new governance arrangements;
+
+A greater degree of risk and reward sharing to incentivise both parties to achieve
+common goals.
+
+Together, these amount to a significant re-profiling of services which were originally
+designed to meet different business priorities.
+
+Re-profiling requires a change programme facilitated by a more benign and industry
+standard contractual environment. This needs to encourage the achievement of successful
+outcomes rather than militate against all change because even minor failure to achieve
+onerous contractual criteria can have severe contractual consequences.
+
+4.2 Approach to service delivery
+
+The means by which a significantly cost reduced operational service is to be achieved are
+addressed in sections 2, 3 and 7.
+
+This section focuses on the contractual and commercial drivers which set the contractual
+context for many of the things we do today and which need to be adjusted to enable the
+necessary changes in behaviour and costs.
+
+A number of business, technical and financial assumptions have been made which are
+dealt with in more detail elsewhere but are summarised here for their commercial
+implications.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 44
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+4.2.1 Structure of services and payments
+a Operational and SI services will be treated as separate but linked.
+
+a The Operational service relies on SI for fourth line support (bug fixing), architectural
+advice on sizing, performance etc. and implementation of service change requirements
+including simplification and cost reduction. Each service element will be itemised, may
+be subject to specified workload volume assumptions (eg. maximum number help desk
+calls, number of terminals) and priced accordingly.
+
+a The SI service comprises three logical activities, the common denominator being a core
+competence unit of Horizon technical experts unit resourced to cover all the skills
+requirements of the Horizon solution:
+
+Support to Operations (including internal re-architecting);
+Spare capacity available for new work sponsored by Post Office;
+
+Additions to the core competence unit to meet increased demand for additional SI
+work;
+
+The first two will be subject to a committed fixed fee. The spare capacity will be
+specified for each time period, by number of staff by category, and be available to
+Post Office for as yet uncommitted work at no charge.
+
+a Implementation of new infrastructure is an additional, occasional SI activity,
+resourcing of which depends on the task and skills required: typically this will
+involve project management of SI work, procurement of industry standard
+components, and their physical installation either by Fujitsu Services or by
+subcontractors;
+
+a The original infrastructure investment (the retention of £120m) remains subject to
+the availability fees: there is a remote possibility that a viable off-balance sheet
+financing arrangement could be put in place to stretch payments economically
+beyond 2005, but this is not assumed;
+
+a Special discounts over the period to March 2005 offset an element of the availability
+fees and are intended to pump prime the necessary investments into re-architecting
+and new products;
+
+a_ A benefit sharing arrangement is included as a component of reward to recognise the
+risk and investment involved in the discounted re-architecting work and to
+incentivise Fujitsu Services to be innovative and pro-active in delivering new added
+value services (end-to-end re-engineering and new client products).
+
+4.2.2 Outline description of services — key changes
+
+a Fujitsu Services will simplify and update the operational services to reduce costs.
+The Horizon platform and processes will, with Post Office’s agreement, be
+transitioned over a two year period to meet the simplified service requirements and
+take advantage of new technology. Cost reductions fall into two categories:
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 45
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a Those which can be delivered as soon as new processes and reporting
+requirements are defined and agreed with Post Office (a time dependency).
+These have been assumed to be fully in place by July 2003;
+
+a Those which depend on technical or infrastructure change, eg. single data centre,
+rationalisation of system platforms, implementation of ADSL: these are assumed
+to become effective progressively according to the draft Roadmap Plan. A pre-
+estimate of the costs and resources required to achieve this are included in the
+proposal. The assumption is made that the definition of work and its cost
+estimates will be completed prior to contract and undertaken on a fixed price
+basis.
+
+a The intention is that Post Office get best value from the pre-paid SI capacity and that
+time to market for new services be minimised. A new joint planning process is
+proposed to manage supply/ demand as part of the new governance arrangements.
+
+a It is assumed that the contract will specify the basis on which Post Office will extend
+the scope of Horizon with Fujitsu Services into its back office. An outline of the
+work contemplated is included in the draft Roadmap Plan. It includes replacement
+of existing back office processes, notably OpTIP and CBDB, the design goal being
+to feed the main SAP stock management system and a new accounting system
+directly. There may be linkage (and therefore dependencies) between this activity
+and the internal re-architecting of platforms to be carried out as part of the Fujitsu
+Services commitment, for example removal of the cash account and replacement of
+EPOSS by standard product. Pre-paid spare capacity exists to carry out the essential
+design work but no incremental cost provisions have been made for completing
+delivery.
+
+4.2.3 Transition
+
+Planning detailed transition plan requires more work prior to contract. Some of this
+work can be done by Fujitsu Services alone (in relation to its internal domain) as soon as
+there is agreement in principle to the approach.
+
+Specifying the BPR activity is a key activity which will require “new style” joint working
+including the active involvement of the client facing teams. Much will depend on the
+preparedness of key clients to update the way they do business, the common theme
+being that to drive out cost they will need to move to token based transactions.
+
+The Roadmap will need to be validated to a reasonable level of detail, with all key
+dependencies understood. Competing demands for resources and release slots, and any
+client constraints, could alter the pace and shape of the plan and its related cost
+estimates.
+
+4.3 Changes to terms and conditions
+
+4.3.1 Summary
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 46
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+A reduction of certain risks currently transferred to Fujitsu Services, and a dilution of
+the ultra secure/ resilient service requirements, lie at the heart of the proposal. These
+drive the technical and service changes which are proposed to reduce cost and time to
+market.
+
+Proposed changes fall under the following principal headings:
+a Pricing, including:
+a Unbundling of services, with individual cost driver based pricing;
+a Risk / reward sharing where Fujitsu Services takes investment risk
+a SLAs:
+a Number of SLA measures
+
+a Severity and absolute nature of certain SLAs (in particular in relation to 100%
+targets, response times and transaction times)
+
+a Complexity of SLA and LD measures (eg. transaction times and fallback LDs)
+
+a Consequences of breaching SLAs (in particular, removing the right to terminate for
+three successive quarters of a missed SLA)
+
+a Easing certain requirements such as:
+
+a Resilience to catastrophic disaster at a single site (redefine force majeure to
+include such eventualities);
+
+a Security within the Horizon domain (accept some degree of risk for certain low
+impact events);
+
+a Reconciliation
+a Reporting
+a Documentation
+a Enhancing certain Governance arrangements, in particular with respect to:
+a Supply/ demand planning of SI activity (rolling 12 month forecast)
+a End-to-end joint working under Landscape model (as attached)
+a New product initiatives with access to client facing units
+
+a Scaling back certain absolute obligations (implying breach of contract if not
+achieved) to reasonable endeavours backed by reasonable LDs, and reducing the
+current high levels of liability to single figures of £ millions
+
+a The notion of “material dependencies” will be written into the contract, whereby
+Fujitsu Services will more readily receive relief and compensation for costs.
+
+Pricing and SLAs are considered specifically.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 47
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+4.3.2 Pricing
+Unbundling and individual pricing metrics are envisaged on the following basis:
+a Operations:
+
+Help desk: fixed price for capped number of calls based on staffing levels, variable
+with notice up or down, with relief on SLAs if cap exceeded
+
+System service (outlets): fixed price per counter position subject to cap on number
+of site visits per month, variable with notice up or down, with relief on SLAs if cap
+exceeded
+
+OBC: no change
+
+Data centre operations: fixed price, declining assuming single data centre and
+internal re-architecting, with adjustments for change
+
+Network: price per outlet, declining assuming progressive ADSL implementation
+
+Software distribution/ systems mgt.: fixed price, declining assuming SLA change and
+internal re-architecting, with adjustments for change: caps on distribution and
+monitoring volumes, variable with notice up or down, with relief on SLAs if cap
+exceeded
+
+Product support: fixed price, declining assuming internal re-architecting, with
+adjustments for change
+
+Reference data mgt.: fixed price, declining assuming internal re-architecting, with
+adjustments for change: cap on number of changes per month, variable with notice
+up or down, with relief on SLAs if cap exceeded
+
+3rd line support service: fixed price, declining assuming SLA change and internal re
+architecting
+
+SLA management/ measurement: ditto
+
+Service (problem) management: ditto (significant reduction planned reflecting lesser
+SLAs)
+
+Client interface mgt./ reconciliation: fixed price, declining assuming SLA change and
+internal re-architecting, with adjustments for change: caps on numbers of
+transactions per client per month and exceptions per day, variable with notice up or
+down, with relief on SLAs if cap exceeded
+
+Security/ Audit: fixed price, with adjustments for change
+
+a SI (development related): commitment price, for a defined skill set of which a
+specified proportion of man-hours will be identified by skill type by month as
+available for Post Office use at no charge (normal manrates to apply above that)
+
+a_ SI (implementation related): priced at direct cost, open book.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 48
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+4.3.3, SLAs and easing of requirements
+
+The proposed changes are set out in the Operational Services section but key themes are
+as follows:
+
+a_ Replace absolute 100% achievement obligations with 99.X % targets subject to LDs
+but not termination;
+
+Replace Day D with Day J;
+
+Conform help desk SLAs to the industry norm, reflecting the advent of SPOC 2 and
+consequent removal of urgent/critical advice and guidance calls;
+
+a Accept a slightly higher degree of variation from target visiting response times for
+low impact outlets Post Office to designate);
+
+a Accept a slightly higher degree of variation from target transaction times (as the
+incidence of on-line transactions increases, this reduces the likelihood that a costly
+memory upgrade will be required);
+
+a Do away with the highly complex measurements which generated the need for a
+costly data warehouse, notably the recording of transactions by transaction type by
+outlet by hour by day by month to enable the calculation of fallback LDs and also of
+transaction volume price adjustments.
+
+4.4 Key assumptions
+A number of key assumptions are set out in the various sections.
+The following is a non-exhaustive list of commercially significant examples:
+1. Contract extended to March 2010;
+
+2. Post Office back office is in scope, firm plans to be included in the extended contract
+(N.B. the draft Roadmap assumes this but the indicative financial numbers exclude any
+firm financial commitment);
+
+3. Relaxation and amendment of terms and conditions as set out above will be broadly
+acceptable;
+
+4. SPOC 2, single data centre, and relaxation of contract requirements will happen as
+envisaged;
+
+5. No universal technology refresh of counter equipment is assumed but central systems
+are partially refreshed to support the updating of software platforms: Windows 2000
+is downloaded to replace NT in the outlets and ADSL cards are installed selectively
+(but additional memory is not);
+
+6. ADSL coverage will enable 50% of outlets rising to 80% by mid-2006 of (by then the
+re-invented number of outlets) to be implemented, at single machine tariff;
+
+7. Network re-invention down to 13,500 outlets is completed by March 2007, with
+37,500 counter positions installed (the surplus to be available for spares at no cost to
+Fujitsu Services);
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 49
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+8. If the Mean Time Between Failures (MTBF) increases by more than 20%, Fujitsu
+Services may call upon the Post Office to reduce the associated SLAs reasonably and
+if the MTBF increases by more than 30% to call upon the Post Office to finance a full
+technology refresh (Fujitsu Services to use all reasonable endeavours to maintain the
+equipment within such limits for the duration of the extended contract);
+
+9. Data warehouse can be dropped if there is no requirement for a “new” MIS system
+(to be confirmed within six months);
+
+10. No resilience for single data centre and single help desk is acceptable (Fujitsu
+Services to use all reasonable endeavours to mitigate impacts on that basis);
+
+11. Extended contract signed in December 2002 and agreed “new SLA regime” changes
+implemented by July 2003: progressive implementation of internal re-architecting
+(both platform and infrastructure) completed by March 2005;
+
+12. Core SI headcount (committed, pre-paid) starts at 150 and comes down to 90 after
+completion of re-architecting work. This critically assumes simplification of processes
+and systems boundaries and replacement of bespoke software by standard products.
+This in turn depends on internal re-architecting (which is under Fujitsu Services
+control) and also the adoption by Post Office of standard accounting methods and
+logical system boundaries (which is not under Fujitsu Services control);
+
+13. 50% of each skill group is available to Post Office for SI work at no charge
+(otherwise payable at current man rates);
+
+14. Previously agreed future Network Banking discount arrangements for the period
+April 2005 to March 2007 are replaced by this proposal and will fall away;
+
+15. Fujitsu Services funds the development SI work for internal re-architecting out of its
+SI Support allocation, and Post Office funds the physical implementation (eg. roll out
+of ADSL or single data centre) at cost (a pre-estimate of which is included within the
+financial forecast);
+
+16. Post Office funds end-to-end re-engineering changes and new products (over and
+above the use of pre-paid SI capacity) at standard manrates for SI (reflecting the need
+to augment the core SI team with high cost freelancers) but at cost for the physical
+implementation;
+
+17. The Landscape model is agreed in the form attached to this proposal;
+18. Otherwise, no material change is required to the management of subcontractors;
+
+19. Where programme dependencies are declared as “material dependencies”, Fujitsu
+Services will get relief and compensation if those dependencies are not met;
+
+20. Rights of termination for breach will be limited to material and repeated events (as
+opposed to the trivial or one-off) but LDs will be retained against the simplified SLA
+regime to keep Fujitsu Services incentivised to maintain standards of service;
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 50
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+21. “Open book” will be as required for a particular purpose such as agreement to a
+change request or to cost recovery of re-architecting but Post Office will not have a
+general right of access;
+
+22. Exit arrangements will be more demanding and costly than under the current contract
+(in line with the draft Heads of Agreement);
+
+23. Special discounts and benefit share arrangements will be acceptable as below.
+4.5 Special discounts and benefit share
+
+4.5.1 Special discounts are proposed as follows:
+a 2002/03: £15m
+a 2003/04: £15m
+a 2004/05: £10m
+a 2005/06: negative £10m (being a clawback of £10m)
+In each case, the discount (or clawback) will be effected by a credit note (or invoice)
+raised on 31 March payable with 30 day payment terms.
+4.5.2 Benefit share arrangements are proposed as follows:
+a Share of business benefit from back office re-engineering: 10%
+
+a Commission on new products as a percentage of the client fee: 5%
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 51
+FUJ00232510
+FUJ00232510
+
+5 Operational Service
+
+5.1 Introduction
+
+Post Office has requested that the Operational Service provided under the Horizon
+contract should be unbundled from the Systems Integration (SI) Service and that the
+associated cost levels should be reduced. This section describes specific proposals for
+achieving these aims.
+
+The current Operational Service has been designed to meet rigorous SLA requirements
+with associated thresholds set for remedy payments and / or contract termination review.
+
+Each service component has been reviewed and price reduction opportunities have been
+identified that result from:
+
+a Reductions in level of service and / or elimination of the service
+
+a Re-architecture initiatives resulting in simpler and cheaper to deliver services
+a Year-on year efficiency savings through the life of the contract
+
+Each service component is looked at in the following section.
+
+The collective impact of these changes is to provide a significant reduction in the
+ongoing total Operational Service costs with a small reduction in some SLAs.
+
+5.2 Key Assumptions
+It is assumed in this proposal that:
+a Fujitsu Services will continue to be the prime Service Manager (SM) for Horizon.
+
+a Operational Service will continue to be charged for as a fixed fee with some
+optional, separately chargeable catalogue elements. It is not necessary to unbundle
+charging for individual operational service elements.
+
+a A limited set of SLAs will continue to be monitored in the new contract and
+remedies continue to be paid. However, as there will be a reduction in proactive
+management of some aspects of the operational service, there will need to be a
+reduction in some SLAs. Termination Review Thresholds will, accordingly, be
+moderated and may only be applied where significant material damage to Post Office
+business results through Fujitsu Services persistent neglect of remedial action.
+
+a 24x7 support will continue to be provided in areas where there remains an
+operational requirement.
+
+a Operational Services will need to retain the capacity to implement and support new
+Horizon capabilities provided by the SI Service e.g. management and implementation
+of new releases.
+
+a The data centres will move from the current sites at Bootle and Wigan into single
+Fujitsu Services Data Centre but with similar system resilience features within the
+one location.
+
+a The current counter estate will be supported to 2010 without a full technical refresh.
+However if the reliability of any part of the solution decreases significantly, or spares
+Fre)
+FUJITSU
+
+New Fujitsu Proposal
+
+Ref: BD/PRP/008
+
+FUJ00232510
+FUJ00232510
+
+18" September 2002
+
+Version 1
+
+are unavailable, a separately chargeable replacement programme will be undertaken.
+There is an assumption that there will be release of counter equipment from the
+Network Reinvention Programme to increase the current stock of spares to a
+sufficient level to last until the end of the extended contract period.
+
+a Initially, 8,000 counter gateway systems will be upgraded to support ADSL. This
+number is expected to rise to 80% of outlets by 2006, based on assumed BT ADSL
+
+coverage.
+
+a There will be a complete assessment of Service Management activities Fujitsu
+Services and Post Office. Duplicated functions or activities with marginal benefit will
+
+be eliminated.
+
+a Single Point of Contact Phase 2 (SPOC-2) and the Fujitsu Services Technical
+Support Desk for Network Banking Domains will be implemented.
+
+a The requirement for operating an ISO17799 compliant service remains.
+
+5.3 Achieving Cost Reductions
+
+The Operational Service comprises the following component services:
+
+Table 2. Operational Service Components
+
+Problem Management
+
+Field Service
+Management
+
+Management
+Information Service
+
+Reconciliation Services
+
+Transaction
+Benchmarking
+
+Non-polled Outlet
+Management
+
+Infrastructure Operations & Service
+Management Support Management Introduction
+Help Desk Data Centre 20 different Support for
+System Service Operations services, supplied introduction of new
+(outlets) Systems from a common releases and
+Outlet Business Change Management resource base. * ongoing fixes*
+* 3" Line Software
+Service Management _I Support
+
+Reference Data
+Service
+
+Note: * = no immediate change proposed.
+
+© 2002 Fujitsu Services Ltd
+
+Commercial in Confidence
+
+Page: 53
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Specific proposals for changes to individual service components are described in the
+following sub-sections.
+
+Note that the “service descriptions” given here are at a summary level designed to
+convey the essence of the service and the proposed changes. Comprehensive service
+descriptions would be produced and agreed as part of the contract renegotiation
+activities.
+
+The Operational Service is comprised of the following component services:
+
+5.3.1 Help Desk
+
+The Horizon Help Desk takes calls from Post Office users in outlets and back office
+departments regarding problems with the Horizon service, logs them and routes them to
+the appropriate unit if required. It is currently a premium service that provides:
+
+a Advice and guidance about system use and technical support
+
+a 24hour x 7days cover (except Xmas day), with a skeleton service between 20:00 and
+08:00.
+
+a Rapid telephone response (95% calls answered within 20 seconds).
+a Less than 1% calls abandoned.
+
+a_ Resilience by operation from two sites.
+
+It is proposed to reduce the Help Desk service levels:
+
+a No advice and guidance calls (these calls will be taken by the Post Office Help Desk) -
+only a technical support (fault reporting and resource coordination) service will be
+provided.
+
+Monday-Friday cover 08.00-18.30 only and no Saturday cover
+Answerphone outside service hours.
+Longer telephone response (80% of calls answered within 30 seconds)
+
+Less than 5% calls abandoned
+
+oooddao
+
+Operation from a single site.
+
+The effect of these changes, combined with the implementation of SPOC2 and the
+implementation of the Technical Service Desk, will reduce help Desk calls This will be
+dependent upon the effectiveness of the NBSC with regard to resolution of calls. In
+addition there will be further annual reductions through ongoing efficiency savings.
+
+5.3.2. System Service (Outlets)
+
+Fujitsu Services will maintain the estate until 2010. The service will contain the
+following key elements:
+
+a Hours of cover reduced from 08.30-20.00 to 09.00-18.30.
+
+a No Saturday cover
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 54
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a Call to fix SLAs as agreed in CCN85le (Rectification Plan) will remain. However
+there will be no data retrieval activity in support of the data delivery SLAs
+
+Upgrade of nominated counter gateways systems to ADSL communications
+Increase of existing spares holding
+Increase engineer visits
+
+One portable appliance testing (PAT) exercise
+
+o ooo 8
+
+Ongoing efficiency savings
+Any significant increase in MTBF for any part of the counter configuration or inability to
+source appropriate spares may result in an additional replacement programme that will
+be priced separately.
+
+5.3.3, Outlet Business Change
+This is a separately chargeable service for engineer visits to perform outlet moves and
+modifications. No service changes are proposed in this area.
+
+5.3.4 Service Management
+
+The Service Management service includes they day-to day activities associated with the
+management of the service. These include the following activities
+
+24 hour duty management
+
+Resolving day-to-day service issues
+
+Attendance at operational forums with Post Office
+SLA management
+
+Problem management (see below)
+
+Business Continuity
+
+Supplier management
+
+Service Introduction
+
+ooo O oO OO oO 0
+
+Impacting and planning of change requests
+
+Cost reductions will be achieved in this area by a robust audit of the current Service
+Management joint framework agreed between Post Office and Fujitsu Services and the
+elimination of activities that are either duplicated or bring only marginal benefit. Areas
+that will contribute to savings are:
+
+a Problem management (see below)
+
+a Analysis of individual incidents confined to those that materially affect business
+performance
+
+a Avoidance of protracted SLA conformance negotiations
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 55
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Reduced frequency of operational forums and reporting
+Reduced customer complaint and SVR processes
+
+Elimination of duplicated effort between Post Office and Fujitsu Services
+
+o oo Oo
+
+Elimination of ‘micro-management’ by Post Office
+
+5.3.5 Problem Management/Field Service Management
+
+Fujitsu Services currently provides a team of seven field service managers with
+geographical responsibility for approximately 2,500 outlets each. The Fujitsu Services
+staff are responsible for handling situations such as:
+
+a Investigating and managing resolution of exceptional volumes of incidents
+experienced by individual post office branches.
+
+a Investigating and gathering information on problems that occur across more than
+Post Office outlets.
+
+a Acting as an on-site Project Manager for complex OBC changes to marshal
+resources and reduce risk. (e.g. recently at Henley and Trafalgar Square outlets)
+
+a Following up issues of counter non-compliance. Most importantly, equipment and
+electrical supply Health and Safety issues that expose Fujitsu Services to a risk of
+negligence claims and litigation.
+
+Investigating Post Office outlet complaints.
+Investigating “environmental” issues
+
+a To investigate issues where the financial integrity of the Horizon system has been put
+in doubt by end-user claims of lost transactions, lost stock or cash account
+misbalance.
+
+Q Monitoring post office branches that have recently experienced multiple incidents
+and problems.
+
+It is proposed to withdraw this service and replace it with a single Fujitsu Services
+Problem Manager who will liase with Post Office central staff following ITIL service
+management processes. Now that Horizon is well established, responsibility for field
+liaison should become a Post Office responsibility.
+
+The shared problem management database will continue to be updated by the Fujitsu
+Services Problem Manager but pro-active problem management by Fujitsu Services at
+postmaster level will cease.
+
+There will be a reduction in scope and frequency of joint problem management forums
+and a more practical definition of what constitutes a problem.
+5.3.6 Management Information Service
+
+This service monitors service levels achieved by the Horizon system and supporting
+operational services and checks whether SLAs have been met. Exceptions are reported
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 56
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+on and managed. The service partially depends on a costly data warehouse system,
+which is updated daily with details of every single Horizon counter transaction.
+
+As part of the re-architecting it is proposed to replace this data warehouse with a more
+cost-effective solution.
+
+Fujitsu Services proposes to reduce the level of resources applied to the management
+and operation of this service. The only impact anticipated on the service to Post Office is
+with respect to ad hoc queries. These can be extremely time-consuming to process.
+
+It is proposed to limit such queries to five per week, and where queries are repeated,
+they would be subject to the change request process. The Operational Level Agreement
+(OLA) for ad-hoc query response within 5 working days will be withdrawn.
+
+5.3.7 Reconciliation Services
+
+This service monitors the financial integrity of Horizon and manages any incidents
+arising. It covers EPOSS, APS, Network Banking and Debit Card functions.
+
+It is envisaged that new business developments will expand the workload of the service.
+
+It is proposed to reduce the size of the reconciliation team by making the following
+reductions in the scope of service provided:
+
+a Monthly reconciliation review book withdrawn
+a Fujitsu representation at monthly reconciliation reviews withdrawn
+
+a Resolution of reconciliation ‘ad-hoc’ requests for transaction data in excess of 35
+days old withdrawn
+
+a 5 day reconciliation exception handling SLA withdrawn.
+Service levels would be as follows:
+
+a NWB ‘Customer Critical’ exceptions resolved within an average time of 8 hours or
+less
+
+a All other exceptions resolved as soon as possible using ‘Reasonable Endeavours’.
+
+5.3.8 Non-Polled Outlet Management
+
+This service is concerned with handling outlet-polling failures, which are generally
+caused by ISDN line failures. The service proactively monitors the outlet network and
+manages the restoration of communications. It is an important service that underpins the
+successful operation of Horizon but analysis has revealed that detailed changes to the
+current service and associated SLAs would yield significant savings. Note that Fujitsu
+Services is dependent on telecommunication suppliers for the rectification of ISDN line
+faults and cannot pass on service penalties incurred as a result of their shortcomings.
+
+The following service changes are proposed:
+a Current DFD and LFS SLAs withdrawn and replaced with SLAs below
+
+a Laptop data retrieval facility withdrawn
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 57
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a No remedies to apply in respect of SLA non-conformance
+
+a Fujitsu daily “Non polled’ report to PO withdrawn.
+
+New SLAs are proposed as follows:
+
+Table 3. Non-Polling SLAs
+
+SLA Level
+
+DFD Inbound Day B: 95%, Day C: 96%, Day D: 97%,
+Day J: 100%
+
+DFD Outbound Day B: 95%, Day C: 96%, Day D: 97%,
+Day J: 100%
+
+LFS Inbound P/Orders Day A: 94%, Day B: 96%
+Advice Notes Day C: 96%
+
+LFS Outbound Pouch Rec’d Day A: 95%, Day B: 96%
+Pouch Delivered Day A: 95%, Day B:
+96%
+Cash on hand Day A: 96%
+Stamps Day C: 95%, Day C 23.59: 96%
+Inventory Day C: 95%, Day C 23.59:
+96%
+
+5.3.9 Transaction Benchmarking
+
+This service provides a post-release analysis of transaction response times against
+defined benchmarks using the PADS methodology. This involves use of specialised
+video equipment and laborious analysis of video film to provide highly accurate
+measurement.
+
+The service is normally carried out following changes to system menus.
+
+It is proposed to cease provision of this service. It is felt that it adds no real value and
+should be replaced by a simpler approach to transaction times, e.g. measurements using
+transaction generation tools that form part of counter testing. It is proposed that any
+targets will be based on system times (as with NWB) and not on end-to-end times.
+
+5.3.10 Data Centre Operations and Network Management
+
+The service covers the provision of the twin Horizon data centres and runs the
+operational schedule to ensure that stringent SLA's are achieved.
+
+The service runs servers at two data centres - 150 servers in total, as well as a further 60
+platforms on AP Client sites and other remote locations across the UK. It also covers
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 58
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+test rigs within Fujitsu Services development units. The Horizon data communications
+network is also part of this service.
+
+The current Horizon data centre sites are within facilities owned and used by Alliance &
+Leicester (A&L). There is no commitment to provide the facilities beyond the end of
+2006. Various options for data centres have been discussed in a joint working group and
+the outcome was a recommendation that the current twin data centres should be
+consolidated onto a single secure site with appropriate physical resilience (dual power,
+communications, fire and flood separation) so that the likelihood of a problem affecting
+both systems is extremely remote.
+
+Overall these changes will reduce running costs for data communications and 3" party
+support and maintenance charges. They will also enable Fujitsu Services to reduce the
+manpower required to run the service. However there will also a substantial one-off cost
+for relocation from A&L to the Fujitsu Services site with a period of parallel running.
+Initial plans suggest a 12-month implementation timetable, a study is required to look
+into the move programme in more detail and determine whether this timetable can be
+improved.
+
+5.3.11 Software Distribution and Systems Management
+
+The operation of the Systems Management Centre (SMC) is integral to the operation of
+the entire operational service. It is involved in the monitoring and management of all
+aspects of the system i.e. event management of the data centre and counter estate,
+software distribution, Outlet Business Change, Network Management etc.
+
+Cost reductions have been factored into this service through the reduction of pro-active
+management of non-polled activities and by ongoing efficiency savings
+5.3.12 3" Line Software Support
+
+This service comprises the initial investigation of incidents from the outlets and the
+operational estate and the production of workarounds in a timely manner.
+
+Although the number of incidents resulting from a major release will normally cause a
+temporary rise in the number of incidents handled, ongoing cost savings are assumed in
+this area to reflect the increased stability of the solution and overall efficiency savings.
+
+5.3.13 Reference Data Service
+
+In joint working earlier this year, the desirability of rationalising Reference Data systems
+was agreed. Targeted improvements would reduce manpower costs of running the
+Reference Data Service:
+
+a Automate the Message Broadcast service so no manual effort required by Fujitsu
+Services
+
+a Automate the end-to-end process (including activities in Post Office) for outlet data,
+such that validation and verification is not required.
+
+a Design, develop and implement a front-end validation process for incoming data.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 59
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a Improve the usability of the AP Workstation
+
+a Combine testing, which is currently undertaken separately by Post Office and Fujitsu
+Services
+
+It is believed a reduction can be made in the costs of running this service. However this
+will only be possible in close collaboration with the Post Office in the above areas.
+5.3.14 Security Management
+
+The Security Management Service ensures that the integrity, availability and
+confidentiality of information used within the various Horizon Services and the support
+environment is maintained and compliant with legal and contractual obligations. This
+service currently covers more than 20 difference services from a dedicated team.
+
+To illustrate the breadth of this service, examples of the activities undertaken are as
+follows:
+
+Compliance management
+Cryptographic key management
+DPA compliance
+
+Security event management
+System access management
+Horizon Pass system
+
+Anti-virus
+
+Security Audits
+
+Risk Assessment
+
+ooo oo oo odo oOo
+
+Prosecution support
+
+Changes to these services will be driven by changes to the Horizon security architecture
+and these in turn must be driven by changes in the security requirement, derived from the
+threat analysis, Post Office security policies and Fujitsu Services contractual liabilities.
+
+Potential savings will be identified following further studies within the re-architecture
+programme.
+5.3.15 Release Introduction
+
+This service comprises all elements of planning and managing all changes to the live
+estate. It includes:
+
+a Definition of Major Release strategy
+
+a Production and management of project plans
+a Management of all software release activity
+2 Liaison with Post Office
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 60
+Fre)
+FUJITSU
+
+New Fujitsu Proposal
+
+Ref: BD/PRP/008
+
+FUJ00232510
+FUJ00232510
+
+18" September 2002
+
+Version 1
+
+Release Introduction is driven by changes to Horizon and by the ongoing maintenance of
+the service. This change management function will continue with the evolution of the
+system. However ongoing efficiency savings are assumed.
+
+5.4 Service Volumes
+
+The following volumetric assumptions have been made in the preparation of this
+
+proposal.
+
+Table 4. Service Volumetrics
+
+Infrastructure Management
+
+Volumetrics
+
+Help Desk
+
+Up to 13,000 calls per month
+
+System Service (outlets)
+
+Up to 4,000 calls per month requiring
+engineer visit
+
+Reconciliation Services
+
+100 exceptions per day
+
+Management Information Services
+
+Up to 5 queries per week
+
+Operations Service
+
+250,000,000 transactions to TIP per
+month
+
+32,000,000 transactions to AP clients
+per month
+
+56,000,000 transactions to DWP per
+month
+
+800,000 Stops received from DWP
+per month
+
+260,000 Planned Orders per month
+96,000 Pouch Receipt Confirmations
+per month
+
+Systems Management and Software
+Distribution
+
+Monitoring 50,000 events a week
+from 200 servers and 39,400 counter
+systems on 17,400 sites (reducing to
+37,500 counters on 13,500 sites)
+
+Distributing 40 software packages to
+200 servers per month
+
+Distributing 18 software packages
+per month
+
+Reference Data Service
+
+200 reference data changes per
+month
+
+© 2002 Fujitsu Services Ltd
+
+Commercial in Confidence
+
+Page: 61
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+6 Sl and Applications Service
+
+6.1 Introduction
+
+Post Office have requested that the SI capability provided under the Horizon contract
+should be unbundled from the Operational Service and that SI cost levels should be
+reduced. Post Office also envisage that future Horizon applications might be procured
+directly from other suppliers and integrated with Horizon by Fujitsu Services. This
+section describes the basis on which Fujitsu Services proposes to approach these
+requirements.
+
+The primary cost driver for the Horizon SI Service is the core team of skilled human
+resources. The secondary drivers are the costs for the infrastructure (space, hardware,
+software, and communications) that is needed to create and test software before it can
+be used in the live environment.
+
+Fujitsu Services believes that it is essential to retain a capable and motivated expert
+Horizon core team to provide the capability to respond to business requirements.
+Horizon consists of a range of platforms and applications and so a wide range of
+technical skills is now required for support and development. As with any large IT
+system, new staff typically need several months of training and supervisory support
+before they can be fully effective. A reasonable balance therefore needs to be struck
+between the cost of maintaining a given level of capability to respond to business
+requirements and the additional costs and reduced responsiveness associated with
+scaling SI capability to meet each individual business change requirement.
+
+However, there is scope to reduce these core team costs progressively through re-
+architecting to reduce the variety of technical platforms and associated skills used in
+Horizon. Further reductions in SI costs should flow from improved governance and
+reduced process overhead.
+
+6.2 Key Assumptions
+It is assumed in this proposal that:
+
+a Fujitsu Services will continue to be the prime System Integrator (SI) for Horizon.
+There will be a substantial programme of Horizon SI and implementation activity
+over the next few years driven by Post Office business change and this means that
+Fujitsu Services must retain a substantial SI capability. This capability is expected to
+be below today’s peak caused by the Network Banking programme, but at a level
+that is dependent on the volume of SI work required.
+
+a The SI capability already spans Horizon infrastructure, Horizon applications,
+integration/testing and 4" line support for the live operational service. This proposal
+extends the Service boundaries into Post Office Back Office systems to support
+radical business change and also to deliver IS cost reductions. This change will
+create new projects with new skill requirements.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 62
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a. The scale and therefore cost of the current SI operation can be reduced by:
+
+Re-architecting Horizon and Back Office systems to remove internal system
+boundaries and unnecessary complexity
+
+Reducing the complexity of requirements by improving dialogue at the
+commissioning stage
+
+— Reducing service demands
+
+Reducing contract liabilities
+
+Simplifying processes for commissioning and carrying out work.
+
+a Post Office prefers transparency of pricing and is willing to share some SI risk.
+Therefore, SI work will be carried out predominantly on a T&M basis at agreed man-
+rates with delivery milestones against prior estimates.
+
+a Post Office wish to have some degree of commercial separation of SI from
+Operational Services but in practice there is a critical dependency on Operational
+Services for implementation of new system releases. Therefore SI and Operational
+Services should continue to operate in a seamless fashion in the same way that they
+do now, co-ordinated by Fujitsu Services project managers.
+
+6.3 Achieving Cost Reduction
+
+The minimum resource level that is currently required to sustain the SI Service is in the
+region of 150 heads. This is a subset of the current team, which is larger because of
+peak demands caused by Network Banking. The SI Service core team comprises:
+
+Programme and project management
+Architecture & design
+
+SI, development, testing and support
+Quality Assurance
+
+Configuration Management.
+
+o ooo oO Co
+
+The approximate constitution of this team is shown in Table 5
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 63
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Table 5. Unit Resourcing for SI
+
+Unit Headcount
+Prog. Dir./Dev. Dir. 10
+Programme Office 12
+
+Business
+
+Consultants 3
+ASD 12
+APDU 39
+IPDU 45
+PTU 29
+Total 150
+
+Our long-term goal is to reduce the level of resource to a core team of approximately 90
+heads.
+
+a Managing the Skills Base
+
+Fujitsu Services proposes to reduce the size of the core team from its present level
+by reducing the range of technical skills required.
+
+As an example of this process, through the re-architecting programme, Fujitsu
+Services will replace central Sequent Dynix servers with the latest generation of high
+performance standard Unix servers. Thus specialist Dynix skills will no longer be
+required in the core team, expensive test servers can be retired and greater potential
+for sharing development and testing resources across different activities will then
+exist.
+
+Another example is security: the current solution has an extremely high level of
+security which was originally built in to enable electronic DSS payment
+authorisations to be stored safely at branch level. These measures require highly
+specialised skills to maintain. A re-appraisal of the security threats that Post Office
+require to protect against is expected to result in a significant reduction in the
+complexity of the Horizon requirement which provides the potential for further
+reductions in costs of maintaining the service and introducing new business changes.
+
+Current architecture work aims to identify similar technology/skills dependencies to
+be identified and tackled. In time, it will be possible to simplify teams and reduce
+infrastructure requirements.
+
+a Managing Utilisation
+
+Where staff needs to be redeployed or assigned to specific projects, Fujitsu Services
+has a resource management system that operates across the company. However,
+where practical, the preferred and most cost-effective approach will usually be to
+maintain workflow for a skilled core team.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 64
+FUJ00232510
+
+FUJ00232510
+FUJITSU New Fujitsu Proposal 18" September 2002
+Ref: BD/PRP/008 Version 1
+Consequences of Under-Utilisation Consequences of Over-Utilisation
+la Staff lose motivation la Costs rise due to overtime and / or use
+
+la Best people and key skills may be lost of temporary contract staff
+
+la Insufficient financial recoveries are made {7 Staff become overstretched
+
+in the long term man-rates may have t
+rise to compensate
+
+IT infrastructure causes bottlenecks
+
+o
+
+lQ Quality may suffer
+
+a Use of Third Party Applications
+
+Fujitsu Services has no objection to the use of third party applications in principal.
+Our current responsibilities for the operational service and SLAs mean that we need
+to control application providers through sub-contracts. It is hoped that re-
+architecting can reduce the level of bespoke programming in Horizon and increase
+the use of standard product.
+
+If significant parts of the current architecture can be replaced by third party
+applications then this would enable us to reduce the size of the core team.
+
+6.4 Charging for SI Services
+
+In principal there are a number of approaches that could be combined to provide
+incentives to maximise utilisation of the core SI team:
+
+a Unbundling the commitment to funding SI and application development work makes
+the expenditure highly visible
+
+Lower effective man-rates for larger scale/longer term commitments
+
+Rebates or lower man-rates where normal utilisation levels are exceeded through
+additional work over long periods.
+
+a SI Core Team
+
+Under the current contractual arrangements, the core team is funded through the
+ongoing service charges.
+
+It is proposed that there should be an explicit monthly charge for the services of the
+SI core team and associated infrastructure, including an agreed level of out-of-hours
+cover and overtime working.
+
+In future, the charge for this team will reduce in line with reductions in headcount
+and infrastructure costs.
+
+Fujitsu Services and Post Office will work jointly to maintain a prioritised flow of
+work for this team.
+
+Actual effort will be monitored by Fujitsu Services through timesheet reporting.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 65
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+a Additional Resources outside SI Core Team
+
+By agreement, it is likely to be necessary to deploy additional resources to meet
+particular business requirements. These might be:
+
+a Urgent enhancements when all core resources are already working on committed
+projects
+
+a Large-scale projects exceeding the capability of the core team
+a Projects requiring specialised skills and/or facilities.
+
+Under the current contractual arrangements, any such additional resources are
+incrementally chargeable via agreed work packages. Agreed man-rates may be
+discounted for large work packages in negotiation.
+
+It is proposed to replace this by an agreed scale of discounts according to the scale
+and period of commitment.
+
+By definition, resources in this category are likely to be sourced from elsewhere in
+the company or outside and therefore the degree of commitment and the lead time
+given will be important in determining both price and delivery dates.
+
+a Risk
+
+Under T&M arrangements, there must be prior agreement on how to handle cost
+overruns. Fujitsu Services proposes that projects could be categorised according to
+the level of risk so that little or no overrun would be chargeable on low risk projects
+(so called “capped” T&M). Permissible overrun would be agreed in advance as a
+declared project contingency.
+
+Our detailed knowledge of Horizon should mean that most Horizon work should be
+in the low risk category. Work on client interfaces and in the Back Office may be in a
+higher risk category. Work on such projects is best managed by progressive
+commitment of funding to project stages to minimise exposure to risk.
+
+The increased emphasis on joint working to establish work package requirement
+specification, as detailed in the lifecycle process described in this proposal, has been
+designed to improve estimating accuracy and directly contribute to a reduction in
+business risk.
+
+6.5 SI Service Management
+
+A new Service Management regime and process is proposed to manage the SI Service
+and associated charges. The purpose of this is to manage:
+
+a Size of the core team
+a Additional resource commitment to projects
+a Financial commitment and ongoing service charges
+
+It is envisaged that a rolling resource forecast would be created and reviewed monthly.
+This would detail resource allocation to major areas of work. The scope of the forecast
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 66
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+would be at least 12 months ahead. Confidence in the forecast would improve over time.
+There would be significant benefits for both organisations:
+
+a Eases budget setting
+
+a Ensures the right skills are available when needed
+
+a Improved planning process should shorten lead times
+a Aclear method of prioritising work would exist
+
+Work priorities need to be kept under review. Naturally there will be a desire to cover
+work packages from the pre-paid core team but the need to maintain progress on cost-
+saving work must also be kept at the forefront.
+
+6.6 Resource Forecasts
+
+The measures described in this proposal will enable a reduction in the size of the Core
+Team once re-architecting has been completed and migration to the new solution has
+completed. However, it is believed that the greatest demand for SI resources will be
+during the next two financial years. In this period there is a need to re-engineer business
+processes, replace Back Office systems, reduce Horizon’s internal complexity, and
+launch new retail products.
+
+Therefore two illustrative forecasts are presented here: a minimum commitment and an
+initial recommendation of the investment required to achieve additional savings as
+outlined in Section 3.
+
+6.6.1 Minimum Commitment
+The minimum commitment is only sufficient for internal Horizon changes.
+
+Figure 3 illustrates the declining minimum commitment over time and shows spare
+capacity in this team over and above basic support which is available for SI work.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 67
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Figure 3. SI Resource Allocation — no Projects
+
+SI Resource Allocation (Heads)
+
+60 @ New Products
+140 End-to-End Change
+O Network Banking
+120 @ Spare Capacity (Bench)
+100 @ Support/int Re-Architect
+
+80
+60
+40
+20
+
+03/04 04/05 05/06 06/07 07/08 08/09 09/10
+Financial Year
+
+6.6.2. Proposed Resource Forecast
+
+This forecast is indicative of the level of commitment that will be needed to deliver the
+programme of work outlined in this proposal.
+
+Figure 4 illustrates how the workload could be divided over four main areas of activity:
+a New product development through the lifetime of the contract
+
+a End-to-End change, mainly over the first two years
+
+a Network Banking (declining rapidly after April)
+
+a Horizon support and internal re-architecting activities.
+
+This focus is based on assumptions in our pricing model and is aligned with timescales in
+the Roadmap Plan. It assumes that after a two-year period of significant changes to
+Horizon, the focus is on new product and support work.
+
+In the intervening period, there is a need for further investment, which is above the level
+of minimum commitment
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 68
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Figure 4. SI Resource Allocation - with Projects
+
+SI Resource Allocation (Heads)
+
+250
+
+@ New Products
+End-to-End Change
+
+200 O Network Banking
+. @ Spare Capacity (Bench)
+150 Pa : —I & Support/Int Re-Architect
+
+100
+
+50
+
+03/04 04/05 05/06 06/07 07/08 08/09 09/10
+Financial Year
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 69
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+7 Financial Summary
+
+7.1 Introduction
+A few key points should be noted:
+
+a Notwithstanding much detailed assessment work, the figures remain indicative at this
+stage: they will require more joint working and feedback to validate the assumptions
+before they can be firmed up as hard contractual commitments;
+
+a All numbers are expressed in £ millions in 2002/03 money before inflation: efficiency
+savings are however assumed year on year, and are identified separately;
+
+All numbers exclude VAT;
+
+Network Banking operating charges are embedded in Core Operations charges,
+principally network charges.
+
+a The tables which follow identify by element of service the estimated commitment
+required from Post Office for the Core service: this includes Network Banking.
+Maintenance of the current estate is assumed to 2010.
+
+a The charges include provision for internal re-architecting of the Horizon software
+platforms and selective upgrades to produce cost savings. They also include an
+element of pre-paid SI resources available for Post Office sponsored work, free of
+charge. This allowance is identified.
+
+a Provision is not made for the incremental work which will be required over and
+above this allowance to complete delivery of, in particular, end-to-end BPR of Post
+Office back office systems and new products. Estimates have been made separately
+of probable ranges of incremental cost based on the draft Roadmap. These are
+available for discussion but are not included here.
+
+7.2 Operations charges
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 70
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Total 2002/ 2003/ 2004/ 2005 2006/ 2007/ 2008/ 2009/
+3) 4 5 &© TF 8 9 Ww
+Help desk 26 1 4 4 4 4 3 3 3
+System service - counters 96 3 13 13 13 13 13 13 13
+OBC il 0 2 2 2 2 1 1 1
+Data centre operations 66 3 IL 10 8 8 8 9 9
+Network 143 7 29 23 21 18 16 15 14
+Software distribution/ 58 2 & 7 8g 8 8 8 9
+systems mgt.
+Product support 21 1 3 3 3 3 3 3 3
+Reference data mgt. 4 0 1 1 1 1 1 1 1
+3rd line support service 11 0 2 2 1 1 1 1 2
+SLA management/ 4 0 1 1 0 0 0 0 1
+measurement
+Service (problem) 4 0 1 0 0 0 0 0 1
+management
+Client interface mgt./ 4 0 1 1 1 1 1 1 1
+reconciliation
+Security/ Audit 3 0 0 1 0 0 0 0 0
+Inflation 0 0 0 0 0 0 0 0 0
+Efficiency -20 0 0 “1 2 3 4 5 6
+CCNs 5 3 0 0 0 0 0 0 0
+Current pricing to Dec 62 62
+2002
+Total Operate 497 83 74 65 60 57 54 53 52
+7.3 Infrastructure charges (availability fee)
+Total 2002/ 2003/ 2004/ 2005 2006/ 2007/ 2008/ 2009/
+3 4 5 6 7 gs 9 WwW
+First Availability fee 41 15 15 Il 0 0 0 0 0
+Second Availability fee 48 16 16 16 0 0 0 0 0
+Third availabi fee - tech 0 0 0 0 0 0 0 0 0
+refresh lease
+89 31 31 27 0 0 0 0 0
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 71
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+7.4 SI charges
+
+Total 2002/ 2003/ 2004/ 2005 2006/ 2007/ 2008/ 2009/
+
+3 4 3 6 z 8 2 10
+SI - Minimum Commitment
+Support 94 4 16 15 ll 11 11 1 14
+Committed capacity 47 2 9 8 5 5 5 5 7
+Inflation 0 0 0 0 0 0 0 0 0
+Total SI Commitment 141 6 25 24 16 16 16 16 21
+SI - Implementation of 13 1 3 7 2 0 0 0 0
+infrastructure & architecture
+changes
+Pre-paid SI capacity available ~40 -2 7 7 -5 -5 <5 -5 <5
+to Post Office
+
+7.5 Special discount and other charges/ credits
+
+Total 2002/3 2003/4 2004/5 2005/6 2006/7 2007/8 2008/9 2009/
+
+10
+
+Additional work
+Network Banking 40 38 2 0 0 0 0 0 0
+Add scope (back office) 1 1 0 0 0 0 0 0 0
+New Products 1 1 0 0 0 0 0 0 0
+Utilisat’n of pre-paid 2 “1 “1
+
+Total Additions 40 39 1 0 0 0 0 0 0
+Discount/profit share for scope -30 -15 -15 -10 10 0 0 0
+extension
+
+Benefit share
+
+Net Total Core Commitment 750 145 119 113 87 73 7 70 73
+after discount
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 72
+FUJ00232510
+FUJ00232510
+
+Appendix 1 — Lifecycle Process
+
+8.1 Introduction
+
+Post Office and Fujitsu Services have jointly concluded that significant reductions in the
+current level of Horizon costs are dependent upon a major streamlining of existing
+lifecycle processes governing the procurement, implementation and operation of
+Horizon and associated business change.
+
+This section presents Fujitsu Services’ proposal for the new streamlined lifecycle process
+that is specifically focused on the areas of inter-working between Post Office and Fujitsu
+Services. This Lifecycle Process proposal is directly derived from work conducted with
+Post Office in the Working Together Initiative. In particular, the Lifecycle Process
+incorporates the new Post Office processes and terminology described in the “Landscape
+Model” documents, the contents of which have been shared with Fujitsu Services.
+
+The results of this joint initiative have been the identification of a more agile process that
+
+will:
+
+a Reduce procurement costs through the rapid identification of opportunities that
+cannot be supported by viable business cases
+
+a Improve value for money and time to market for Horizon business solutions through
+reduced use of bespoke developments, and improved exploitation of existing
+Horizon assets
+
+a Reduce rework and hence business risk associated with Horizon implementation
+costs and timescale estimates through introduction of improved requirements
+definition and qualification techniques
+
+a Remove duplicated documentation, activities and system components through the
+joint adoption, by Post Office and Fujitsu Services, of a policy to single source
+information and functionality wherever commercially practical
+
+a Remove implementation and operational service costs that are not supported by
+business related objectives through improved joint analysis and qualification of
+Horizon requirements
+
+a Increase the number of opportunities identified by Fujitsu Services that will result in
+cost reductions and service performance improvement as a result of service
+performance analysis and exploitation of new technology developments.
+
+The “Landscape Model” identifies the process steps associated with managing the
+impact of business change within the Post Office IS environment. This proposal
+develops the Landscape work further to present the sequencing of these process steps
+through identification of their relationship with the main process inputs and outputs. In
+addition, the proposal makes a clear distinction between the responsibility for
+performing a process step and the practise of joint working by Post Office and Fujitsu
+Services on activities associated with the process.
+
+To assist with the analysis and definition of the Lifecycle Process, a formal process
+model has been developed. Output produced from this model is used to help describe
+the process in the remainder of this appendix. Responsibility for each process step is
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+attributed to either Post Office or Fujitsu Services, following the practise adopted in the
+Landscape documentation.
+
+For clarity of presentation in the process diagrams, process steps together with the
+information/business objects that are the responsibility of Post Office are shown without
+shading whilst those which are Fujitsu Services' responsibility are shaded grey. A brief
+description of the construction of the process model and its components is provided in
+the final section of this appendix.
+
+In the first instance, the top-level Lifecycle Process is introduced. Subsequently, further
+levels of detail are shown for the Post Office Opportunity Qualification and Fujitsu
+Services Work Package Delivery processes. Finally, to underline its relationship to the
+contract and central role in defining the scope of supplier obligations governing
+acceptance, performance monitoring, functionality, etc., an expansion of the Work
+Package Requirement Specification business object is also presented. In each case, a
+diagram produced as output from the process model is presented first followed by a
+narrative description of the workings of the associated parts of the Lifecycle process.
+
+In line with the terminology used in the Post Office Landscape Process documentation,
+the term Work Package has been used to represent the individual items of work that
+Post Office will contract with a supplier to meet business requirements.
+
+Following Post Office review and feedback on this proposal, work will proceed on the
+detailed definition of the process steps and business objects associated with joint
+working that are described in summary form below.
+
+8.2 Process Principles
+
+Prior to describing the proposed process, it is important to recognise that a number of
+key principles have been adopted in the design of the Lifecycle and Landscape
+processes, namely:
+
+a Elimination of duplication — the same documents are to be used by Fujitsu Services
+and Post Office wherever commercially possible providing a single source of
+information
+
+a Clear responsibilities - one and only one party has responsibility for each step in the
+lifecycle process, i.e. Post Office or Fujitsu Services
+
+a Joint working, where this improves understanding and reduces co-ordination effort,
+e.g. requirements analysis, testing/acceptance
+
+a The cost of performing the activities and creating the outputs associated with
+individual process steps are the responsibility of the process owner (as defined by
+Landscape), unless prevailing contract terms determine otherwise
+
+a Architecture laboratory to prototype key elements of new capabilities, evaluate new
+technologies and visualise requirements
+
+a Clear scope for systems integration responsibilities
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 74
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Post Office is responsible for the integration of individual Work Package outputs and the
+performance of the resulting integrated business system in situations where the Post
+Office Conceptual Design activity has determined that a business requirement is to be
+addressed by more than one Work Package
+
+Fujitsu Services has responsibility for integration activities within a Work Package and
+the contracted level of performance of the resulting integrated Work Package in
+situations where the Fujitsu Work Package Design activity has determined that the Work
+Package solution will involve more than one component supplier
+
+a Clear scope for design responsibilities
+
+Products and environment constraints identified by Post Office Architectures are defined
+in the Work Package Requirement Specification
+
+Selection of products used in the construction of a Work Package, other than those pre-
+defined by Post Office in the Requirement Specification, are the responsibility of the
+Supplier.
+
+© 2002 Fujitsu Services Ltd Commercial in Confidence Page: 75
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+8.3. Top-Level Process
+
+(acceptance (acceptance (acceptance
+Tests Teste Teste
+
+laren Defines) \completed)
+at 470 470
+
+‘acceptance’
+Piannes &
+Seriptes
+
+‘work
+Package
+Accepted
+
+‘acceptance
+Plans
+Finalise
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 76
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+The top-level process provides an end-to-end view of the activities that take place in the
+contracting lifecycle. The lifecycle starts when the Post Office business first identifies a
+new business opportunity and ends on completion of the business solution Work
+Package supply contracts. The process focuses on the key lifecycle activities at which
+Post Office and Fujitsu Services processes interact. The process highlights the respective
+responsibilities of the two organisations for each step in the lifecycle process together
+with the associated information flows.
+
+During the execution of a process step, it may be beneficial to consider feedback to
+previous process steps to review decisions that have previously been made. In cases
+where this feedback results in changes to previously established process outputs, it is
+imperative that the process is re-started at the point of revision to ensure that outcomes
+that were previously established are re-validated to take into account the new
+circumstances. The main areas where feedback is to be encouraged have been explicitly
+represented in the process model.
+
+Similarly, at each process step it may be necessary to halt the process. The main areas
+where the process may halt have been explicitly represented in the process model, e.g. a
+rejected business case.
+
+The process model presented is generic in that it has been designed to accommodate
+Post Office business requirements and work packages of varying levels of complexity.
+However, the amount of work involved in each process step will depend upon a number
+of factors including the complexity of the work package and the extent to which existing
+information can be re-used. A change control on an existing contract will therefore need
+to go through the same process steps as for a work package requiring a new contract.
+However, in this instance the process steps should not be onerous.
+
+8.3.1 Post Office Opportunity Qualification
+
+Following identification of a new Post Office business opportunity, the opportunity is
+first assessed and qualified by an internal Post Office business qualification review
+process. Significant opportunities for improved working practices used during this
+process step have been identified which will help the Post Office complete the
+qualification more rapidly and cost effectively. This process step has therefore been
+expanded in the process model to define the improved qualification process. The
+expanded process step is separately described in a subsequent section within this
+appendix.
+
+On completion of the qualification process, the Post Office business case will have been
+approved or rejected. If approved, the Post Office Architectures Team will have made
+any necessary changes to the overarching architecture to accommodate the new business
+requirement. They will also have identified the requirements for the work packages that
+need to be procured to provide a business solution that meets the Post Office business
+requirement.
+
+An opportunity that might result in a Change Request (CR) to an existing contract
+would also be the subject of the qualification review process.
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 77
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+The Post Office is responsible for the execution of this process and the production of the
+resulting outputs.
+
+8.3.2. Work Package ITT Preparation
+
+Subject to Post Office business case approval being granted, preparations will proceed
+for the procurement of the Work Packages that Post Office Architectures have identified
+as being required to build the business solution. Fundamental to this procurement
+activity will be the Work Package Requirement Specification that Post Office
+Architectures have been responsible for producing during the qualification process step.
+Because of its importance throughout the lifecycle process, an expansion of the Work
+Package Requirement Specification business object has been separately described in a
+subsequent section within this appendix. In particular, it should be noted, that the
+requirement specification defines the scope of the work package acceptance and
+performance/SLA measurement obligations. The Work Package Requirement
+Specification is carried forward into the procurement documentation (e.g. ITT, CR) and
+subsequently into any resulting contract.
+
+The Post Office is responsible for the execution of this process and the production of the
+resulting outputs.
+
+8.3.3 Fujitsu Services Business Approval Review
+
+On receipt of details of a new Post Office requirement, Fujitsu Services business
+governance processes mandate certain activities that need to take place to help ensure
+corporate conformance and quality of proposals and contracting activities conducted
+with customers
+
+Initially, a qualification of the Post Office opportunity will be completed which will take
+into account any existing contractual obligations. Checks will be made at this stage that:
+
+a The Work Package Requirement Specification provides sufficient information to
+prepare a solution proposal
+
+a Fujitsu Services has the capability and available resources to deliver a realistically
+priced solution on the required timescales
+
+a The estimated Fujitsu Services investment required to complete the procurement is
+compatible with the value of the business opportunity.
+
+The process improvements proposed for Fujitsu Services participation in the initial Post
+Office qualification activity have been designed to minimise the chances of procurement
+halting at this stage.
+
+Following successful qualification of the opportunity, Fujitsu Services will prepare a
+document detailing how it proposes to meet the Post Office Requirement. Prior to
+submission to the Post Office, the proposal is subjected to a formal Fujitsu Services
+Business Approval Review to ensure conformance with corporate business policies and
+procedures. If the Fujitsu Services proposal is accepted by Post Office procurement
+process (see below), the next step is to establish the contract terms. Prior to final
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 78
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+agreement of contract terms, they will be presented to a formal Fujitsu Services Contract
+Approval Review to ensure conformance with corporate business policies and
+procedures
+
+Dependent upon the level of business risk involved, Fujitsu Services directors will
+participate in these review processes.
+
+Fujitsu Services is responsible for the execution of this process and the production of the
+resulting outputs.
+
+8.3.4 Post Office Work Package Procurement
+
+On receipt and review of Fujitsu Services’ proposal to meet the Post Office Work
+Package requirement, Post Office will decide whether to accept the proposed solution.
+The process has been designed so that the steps taken in the preparation of the business
+case during the qualification processes will seek to remove nugatory procurement
+activity and costs at the earliest possible stage in the lifecycle process. If the decision is
+taken to proceed to contract, the terms will either be negotiated or derived from an
+existing contract in situations where the requirement represents a contract change
+control.
+
+The contract includes the final form of the Work Package Requirement Specification,
+which provides the definitive baseline for the solution design and the scope of Post
+Office acceptance activity. From this point on in the lifecycle process, the Work Package
+Requirement Specification is managed under contract change control procedures.
+
+Post Office is responsible for the execution of this process and the production of the
+resulting outputs.
+
+8.3.5 Fujitsu Services Work Package Design
+
+The Fujitsu Services Work Package Design process will commence once the contract is
+signed with the Post Office. The objective of the design process is to define in detail how
+Fujitsu will satisfy the requirements detailed in the Work Package Requirement
+Specification embodied in the contract. The design will identify the main solution
+components in sufficient detail to enable the high level design of those components to
+proceed during the following Work Package Development process step.
+
+With a consistently derived requirement baseline, the design work will be able to re-use
+and build on the outputs produced by the opportunity qualification and proposal
+preparation activities. The Work Package Design output from this process will be
+provided to Post Office to help with the preparation and planning of the Work Package
+acceptance activities. Feed back from Post Office regarding the design support of the
+requirement will be constructive during this process step.
+
+The Work Package Requirement Specification will be subjected to considerable scrutiny
+during this process. The process will therefore require effective joint working to address
+areas of the requirement that need clarification, subject to the disciplines of the change
+control process.
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 79
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Fujitsu Services is responsible for the execution of this process and the production of the
+resulting outputs.
+
+8.3.6 Fujitsu Services Work Package Development
+
+The availability of the Work Package Design will enable the development of the work
+package components to proceed. This will include any work package components that
+are concerned with satisfying deployment and operational aspects of the requirement.
+The development process covers high level design, low level design, build and
+integration through to system test of the complete work package solution. On
+completion of the development process, the work package will be ready to commence
+the acceptance activities that have been defined in the requirement specification.
+
+The output from the development process will be used by Post Office to help finalise
+their preparations for work package acceptance.
+
+Fujitsu Services is responsible for the execution of this process and the production of the
+resulting outputs.
+
+8.3.7 Acceptance of Work Package by Post Office
+
+The initial step in this process commence with the definition of the scope of the
+acceptance requirement as contained in the Work Package Requirement Specification.
+This scooping information will be used by Fujitsu Services to make appropriate
+provisions for acceptance activities and their associated costs in their solution proposal.
+It will also be used to inform the work package design activity to ensure that appropriate
+measures are provided for in the solution to support the acceptance requirements.
+
+Further steps in the acceptance process will use outputs from the work package design
+and build processes to refine the detail of any preparations required to conduct work
+package acceptance.
+
+The output from the work package build process is a work package solution that is
+ready to use as input to remaining acceptance activities. It is recognised that in some
+situations, acceptance will largely be based on observation and verification of the results
+produced from Fujitsu Services system tests. Wherever practical, the process encourages
+avoidance of separate acceptance tests that largely duplicate the results produced by the
+system testing processes. The opportunity to avoid duplicating testing activities thus
+reducing costs and implementation timescales, occurs when the scoping of the
+acceptance tests is determined for inclusion in the Work Package Requirement
+Specification.
+
+On completion of the acceptance process, a formal record of the outcome is produced
+and the work package solution is accepted by Post Office as being ready for delivery
+into live operation.
+
+Post Office is responsible for the execution of this process and the production of the
+resulting outputs.
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 80
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+8.3.8 Work Package Delivery
+
+On completion of the work package acceptance, the delivery process fulfils the
+deployment and operational obligations detailed in the requirement specification. An
+expansion of this process is described in a subsequent section to this appendix.
+
+On completion of the delivery process, Fujitsu Services will have discharged its
+obligations under the contract and the contract will have been completed.
+
+Fujitsu Services is responsible for the execution of this process and the production of the
+resulting outputs.
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 81
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+8.4 Post Office Qualification Process
+
+(Overarching (overarching (work Package Po Business (Po Business
+‘Architecture Architecture Requirement Requirement ‘Change
+Specification PlaniCosts
+current) updated) (updated)
+200 of} I 200 1 400 1
+
+(New PO
+
+Business Feasbilty PO olution 0
+Opportunity! ‘Assessed Conceptual Options
+
+CRs byPo
+
+Business Business
+Reviewed
+
+100 ° 4100
+
+4300
+
+PO Business
+
+Solution Cost (Po Business (PO Business.
+Requirement Requirement case case
+Specification
+(Current) ancicative) Submited) \Rejected)
+2000 ° 1900 ° 1900 2
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 82
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+This section explains in more detail the activities that take place within Post Office
+Opportunity Qualification process, which was described above in the context of the top-
+level lifecycle process. The process has been designed to include important
+improvements to the way in which Fujitsu Services supports the Post Office in the
+identification of effective solutions to their business requirements and for which the
+supporting business cases demonstrate that value for money can be achieved.
+
+8.4.1 Post Office Feasibility, Conceptual Design and Solution Review
+Processes
+
+The Landscape Process identifies an initial process step during which the feasibility of
+new business opportunities are qualified and a supporting Post Office Business
+Requirement specification is produced. The resulting business requirement is used by the
+Post Office Architecture Team to produce a Conceptual Design. This design will take
+into account the existing Post Office Business Architecture together with the associated
+policies and principles. The output from this design activity will be the initial
+specification of the Work Package Requirements from which the proposed business
+solution will be constructed. In situations where the need for more than one work
+package is identified, Post Office will be assuming responsibility for the integration of
+the individual work packages.
+
+The Work Package Requirement Specifications produced by this process will be
+supplied to Fujitsu Services so that indicative costs can be obtained, thus assisting with
+the construction of the Post Office business case for the requirement. The process has
+been designed to accommodate improved feed-back from Fujitsu Services that will:
+
+a Be effective in identifying solutions that provide Post Office with optimum value for
+money
+
+a Help eliminate nugatory procurement costs through rapid identification of
+requirements that are unlikely to result in a viable supporting business case
+
+The Conceptual Design process will therefore also take as input proposed revisions to
+Work Package Requirement Specifications resulting from Fujitsu Services feedback on
+solution options and outstanding requirement definition issues. As a result of this
+feedback, the Conceptual Design process may find it beneficial to revise the design and
+re-draft the Work Package Requirement Specifications.
+
+To make effective use of the feedback that has been designed into the process and avoid
+introducing unnecessarily extended timescales, it is important that close inter-working
+between Post Office and Fujitsu Services takes place at the earliest stage in the process.
+The relationship must be such that working level information can be readily exchanged
+between the parties prior to a detailed specification being finalised. This will minimise
+the need for significant rework and increase the opportunities to identify optimal
+solutions.
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 83
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+In order to remove cost and business risk from the later stages in the end-to-end process
+and increase the level of certainty associated with implementation cost and timescale
+estimates, it is expected that a greater proportion of work will be performed on activities
+concerned with establishing a more complete understanding of requirements than has
+previously been the case. In particular, a greater level of detail will be required in the
+final version of the Work Package Requirement Specification upon which Post Office
+business case is constructed.
+
+When the review of the work package solution options has been completed and any
+resulting changes to the design and work package requirements have been finalised, an
+indicative cost for the overall business solution will have been determined for use in
+constructing the business case. These costs will include any provision for system
+integration activities for which Post Office has responsibility.
+
+Post Office is responsible for the execution of this process and the production of the
+resulting outputs.
+
+8.4.2 Indicative Work Package Cost Estimates
+
+The Work Package Requirement Specification will be used by Fujitsu Services to
+establish an outline solution approach and derive indicative implementation costs.
+Where there is sufficient detail specified in the requirement, it will be possible to provide
+an indicative cost estimate to help construct the business case.
+
+Tt may be the case that a number of different approaches exist that meet the requirement
+or variations of the requirement that Fujitsu Services have identified as being beneficial
+for Post Office to consider. It is therefore possible that this process provides, as an
+output, feedback on these options and issues. Fujitsu Services propose the use of an
+Architecture Lab to support this feedback activity which is an important innovation to
+help inform Post Office decision making in identifying solutions that deliver optimal
+value for money and to quantify and mitigate the business risk associated with complex
+technical and business change. The Architecture Lab concept is described in more detail
+elsewhere in this document.
+
+In extreme situations, it may not be possible for Fujitsu Services to propose a practical
+solution that meets Post Office requirements. In such cases a no bid response will be
+provided.
+
+Fujitsu Services is responsible for the execution of this process and the production of the
+resulting outputs.
+
+8.4.3 Post Office Business Case Preparation and Review
+
+Using the indicative cost of the business solution (designed by Post Office Architectures)
+as input together with the estimated costs of the implied business change required to
+implement the solution (prepared by the sponsoring Post Office business), the process
+will establish the overall cost of meeting the business requirement. This overall cost,
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 84
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+combined with the benefits identified by the Post Office business, will be used to
+construct the Post Office Business Case.
+
+The results of the Business Case review process will determine whether the requirement
+is to be progressed further. If there isn’t a positive outcome to this process, it is possible
+that the proposed solution design may need to be re-visited to determine whether a more
+cost effective option exists. To help reduce the costs and resource wastage associated
+with the preparation of unsuccessful business cases, the proposed Work Package
+Requirement Specification includes information regarding the business benefits that the
+proposed Post Office investment is expected to deliver. This information will assist the
+Fujitsu designer in identifying solutions that represent value for money relative to the
+expected level of benefit to the Post Office. It will also help Fujitsu Services identify, at
+the earliest opportunity, situations where a value for money solution may not be
+practical which will help to reduce Post Office and Fujitsu Services procurement costs.
+
+Post Office is responsible for the execution of this process and for the production of the
+resulting outputs.
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 85
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+8.5 Work Package Delivered Process
+
+PO Change
+Requests.
+
+—
+(Werk Package
+‘Work Work
+Package Package
+(Accepted ) Decloved Cpatsies
+2
+
+‘Work Package I ‘SLA Reports I
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 86
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Following Post Office acceptance of the work package solution, Fujitsu will proceed to
+deploy the resulting solution within the Post Office estate and operate the live service as
+detailed by the contract. The Work Package Requirement Specification will have
+identified the SLA reports that are required to be produced to monitor live service
+performance.
+
+The process of monitoring live service performance may identify areas in which the work
+package is non-conformant to the requirement specification. In such cases, Fujitsu
+Services will investigate the problems to identify and apply the necessary corrective
+action. The service monitoring process may also identify potential changes to the Work
+Package Requirement Specification that Post Office might elect to consider under
+contract change control. In this case, the opportunity associated with the change will be
+input to the very beginning of the lifecycle process to assess its feasibility, etc.
+
+Fujitsu Services is responsible for the execution of this process and the production of the
+resulting outputs (with the exception of Change Requests).
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 87
+pe)
+FUJITSU
+
+New Fujitsu Proposal
+
+Ref: BD/PRP/008
+
+18" September 2002
+
+Version 1
+
+FUJ00232510
+FUJ00232510
+
+8.6 Work Package Requirement Specification Relationships
+
+‘Business
+Context
+
+410 °
+—<$_f
+Release!
+Migration
+Strategy
+
+420 °
+—$_—
+(Business
+
+Benefits
+
+430 0
+ae
+(Performance!
+Volumes
+
+440 °
+—$__f
+(Business
+Processes
+
+450 °
+—<$____
+
+‘Work Package (Work Package
+TT Contract
+Signed )
+500 0 600 2
+Ls 4
+contained in contained in
+contained in " contained in
+\
+‘contained in
+(Work Package contained in—
+Requirement ~
+contained in Specification
+(Current) —
+‘based on
+
+contained in
+
+(Catisties
+
+contained in
+
+‘metrics defined by,
+
+Environment
+Constraints
+
+(Acceptance
+Tests
+
+\Scoped)
+470 0
+————
+
+CE
+(Work Package
+Costs
+
+(SLA Reports,
+
+© 2002 Fujitsu Services
+
+Commercial in Confidence
+
+Page: 88
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+The Work Package Requirement Specification is of fundamental importance to all stages
+of the lifecycle process. The scope of the specification has deliberately been broadened
+from that used in the current contract. The purpose of the change is to improve Fujitsu
+Services’ understanding of the business change that the work package is required to
+support. This improved understanding will enable Fujitsu Services to support Post
+Office with improved qualification of business opportunities, reductions in unsuccessful
+procurement activities, improved cost and implementation planning estimates, reduced
+business risk and an increased probability that the target business benefits will be
+realised
+
+The Work Package Requirement Specification has a dual role. Firstly, it has to clearly
+convey to Fujitsu Services what Post Office requires the work package to contribute to
+the construction of its overall business solution. Secondly, it has to provide sufficient
+level of detail to enable a solution design to be produced that can demonstrably support
+the requirement and to scope the method by which acceptance of the solution will be
+established. To reflect its importance to the lifecycle process, the Work Package
+Requirement Specification is embodied in the contract and maintained under contract
+change control throughout the contract lifecycle.
+
+In summary, key components of the proposed Work Package Requirement Specification
+that haven’t been described elsewhere in this appendix include:
+
+8.6.1 Business Processes
+
+The business processes definition establishes the scope of the business activities that the
+work package is required to support in combination with the business objects (e.g.
+information and resources) that these activities use and produce/change. It is important
+that the business process definitions characterise the work that the business is required
+to perform and do not attempt to anticipate the solution. This approach will provide the
+Fujitsu designer with the scope to propose optimal solutions.
+
+8.6.2. Environment Constraints
+
+This aspect of the requirement defines the constraints within which the Fujitsu designer
+is required to work when producing the solution design. These constraints may for
+example be regulatory, third party interfaces, security requirements or elements dictated
+by the Post Office Ltd IS/IT environment/strategy. The requirement constraints
+imposed on the solution scope the level of business risk that Fujitsu can assume.
+Conversely, with respect to IS/IT constraints, it also determines the level of business risk
+associated with the solution that Post Office Ltd has implicitly elected to assume.
+
+8.6.3, Business Context
+
+The business context explains the business rationale behind the requirement. For
+example, it will inform the designer whether the requirement is for a pilot or a fully-
+fledged operational solution. It will also indicate whether further related requirements
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 89
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+are anticipated, in which case it might be necessary to cater for their future inclusion in
+the proposed solution design,
+
+8.6.4 Release/Migration Strategy
+
+This section provides information regarding the proposed intention for the introduction
+of the business change that will include the work package solution. This will help inform
+the designer regarding facilities that will be required to support service introduction and
+migration.
+
+8.7 Process Model Construction
+
+Process steps are represented as circular symbols on the model. Each process has a
+unique numeric identifier and a short text description. The completion of a process
+requires certain input conditions and results in the creation or change to a measurable
+output.
+
+Inputs and outputs to a process are referred to as business objects and are represented
+by square symbols on the model. Each business object has a unique numeric identifier
+(left hand bottom corner), a numeric state (right hand bottom corner) and a short text
+description. Where appropriate, an optional short text description of the business object
+state is shown encased in parenthesis, e.g. (Draft).
+
+The relationships between business objects and processes are illustrated on the model by
+connecting arrows. An arrow pointing from a business object to a process indicates that
+it is used as an input to that process. Conversely, an arrow pointing from a process to a
+business object indicates that the business object is created or its state is changed by the
+process. The information flow and inter-dependencies between individual processes
+within the model are explicitly shown through their relationship with the business objects
+that are inputs to a process or are created/changed by a process.
+
+The example illustrated below shows a process that, on completion, changes the state of
+a business object from “draft” to “approved” and also creates a new business object. By
+inference, the process cannot complete until the draft business object is available.
+
+Business
+Object
+
+created by
+process
+
+Business 2
+Object used
+
+by process
+Oraft )
+
+1 0
+
+Example
+process
+
+Business
+Object used
+by process
+
+Approved )
+4
+
+1
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 90
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+The process model can be viewed at various levels of complexity. At the highest level,
+the lifecycle process is represented as a number of individual processes that are inter-
+linked through their relationships with key business objects. Where appropriate, each
+process can be expanded further to show a greater level of detail. Thus, a process shown
+in the top-level of the model can be expanded to show the internal process steps
+together with more detail of the related business objects. This sequence can be repeated
+several times until sufficient definition has been captured for the purpose in hand. When
+a process has been expanded in the model, the text description is italicised in the circular
+process symbol.
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 91
+FUJ00232510
+FUJ00232510
+
+FUJITSU New Fujitsu Proposal 18" September 2002
+
+Ref: BD/PRP/008 Version 1
+
+Appendix 2 - Governance
+
+9.1 Introduction
+
+It has been jointly proposed that a new level of governance be implemented to ensure the
+success of a new contract. The following structure has been proposed. While some of
+the detail needs to be discussed and agreed, Fujitsu Services is supportive of these
+groups being set up and equipped with the necessary authority to act to achieve the roles
+as set out below.
+
+9.2 Proposed Groups
+There are 7 proposed groups
+
+Executive Forum
+
+New Business Forum
+
+Joint Architecture Forum
+
+Release Planning Forum
+
+Projects Board(s)
+
+Service Management Forum
+
+ooo oo od DO
+
+Commercial Forum
+
+Executive
+Forum New
+Business
+Forum
+Release
+Planni
+Joint janning
+Forum
+Architecture
+Forum /
+Commereial
+/ Forum
+Service
+Management
+Project Forum
+Boards
+
+© 2002 Fujitsu Services Commercial in Confidence Page: 92
+Fre)
+FUJITSU
+
+FUJ00232510
+FUJ00232510
+
+New Fujitsu Proposal 18" September 2002
+Ref: BD/PRP/008 Version 1
+
+Executive Forum
+
+Responsibilities
+
+a Defining strategic direction and vision
+a Aligning business objectives and direction
+
+a Scorecards — agreeing what components will be measured,
+and setting targets
+
+a Agree key messages for joint Post Office and Fujitsu
+Services communications plan
+
+a Define Relationship Development direction — ensuring ability
+to deliver scorecard action plan and to address any issues
+arising
+
+a Recognition — agreeing recommendations for Recognition.
+[this is key to encourage the behaviours recognised as vital
+to ensuring a more effective working relationship, as
+recommended by the Relationships strand]
+
+a Agree joint incentivisation targets for projects & services.
+
+Membership — Post To be agreed
+Office
+
+Membership — Fujitsu To be agreed
+Services
+
+Frequency Quarterly
+
+Other Comments
+
+Chairmanship of this forum should alternate between Post Office
+and Fujitsu Services e.g. Post Office chair one meeting, then
+Fujitsu Services chair the next.
+
+New Business Forum
+
+Responsibilities
+
+a Generating and scoping ideas and opportunities to achieve
+joint business objectives and ensure continuous business
+improvement
+
+a Activity will focus in four key areas: products, processes,
+architecture, projects
+
+a Activity will address the end to end business process
+
+Membership — Post To be agreed
+Office
+Membership — Fujitsu To be agreed
+
+Services
+
+© 2002 Fujitsu Services
+
+Commercial in Confidence Page: 93
+FUJ00232510
+
+FUJ00232510
+FUJITSU New Fujitsu Proposal 18" September 2002
+Ref: BD/PRP/008 Version 1
+Frequency Monthly
+Other Comments The purpose of this group is to ensure that objectives set by the
+Executive Forum are addressed and implemented as appropriate
+across both businesses; and to ensure continuous improvement is
+a conscious activity in both businesses
+Joint Architecture Forum
+Responsibilities a Requirements Analysis
+a Solutions Visualisation
+a Migration Planning
+a Acceptance
+a Benefits Realisation Monitoring (ensuring what was done
+achieved the benefits forecast, and if not, why)
+Membership — Post Chief Architect
+Office Nominees from other functional roles as required
+Membership — Fujitsu Chief Architect
+Services Nominees from other functional roles as required
+Frequency Monthly
+Other Comments None
+Release Planning Forum
+Responsibilities a Communication of service development plans — PO Ltd and
+Fujitsu Services
+a Agree high level planning assumptions for future
+developments of services
+Q Initiate, monitor and ensure progress on development of
+service definitions and terms and conditions for additions to
+the contracted services
+a Approve additions to contracted services (that will then be
+formally introduced by CCN)
+Q Prioritise releases in terms of schedule and contents, in
+© 2002 Fujitsu Services Commercial in Confidence Page: 94
+FUJ00232510
+
+FUJ00232510
+FUJITSU New Fujitsu Proposal 18" September 2002
+Ref: BD/PRP/008 Version 1
+Q accordance with strategic direction and objectives set by
+Executive Forum, and in accordance with any operational
+constraints (Note — final decision for Releases to go live will
+be made by Service Management Board)
+Membership — Post Programme Integration Director
+Office Technical Architecture
+Business Architecture
+IS Services Manager
+Business Sponsors (as appropriate)
+Commercial Manager
+Membership — Fujitsu Programme Director
+Services Director Business Development
+Director Commercial and Finance
+Development Director
+Frequency Monthly
+Other Comments None
+Project Board(s)
+Responsibilities a Project Management and Governance as per PRINCE 2
+standard practice, For example:
+a Review and resolution of operational issues arising in
+design, development and testing
+a Review progress and performance against plan
+Membership — Post Project Manager
+Office Nominees from Design Authority, Business Change and
+Commercial Manager to attend as required
+Membership — Fujitsu Programme Manager
+Services . : :
+Nominees from relevant functional areas, as required
+Frequency
+Other Comments These will take place as required, for specific projects initiated
+through the life of the contract. There will be one board for
+each major project
+© 2002 Fujitsu Services Commercial in Confidence Page: 95
+FUJ00232510
+
+FUJ00232510
+FUIITSU New Fujitsu Proposal 18" September 2002
+J Ref: BD/PRP/008 Version 1
+Service Management Forum
+Responsibilities a Review performance against contracted service levels
+a Resolve operational issues arising from non-conformance to
+contracted service levels
+a Release Authorisation — review readiness and agree Releases
+into live operation
+a Ensure continuous improvement in the ongoing/steady
+state/business as usual Service Management environment
+Membership — Post Head of Business Service Management
+Office Service Operations Manager
+Programme Integration Director
+Other nominees as required
+Membership — Fujitsu Customer Services Director
+Services Release Manager
+Other nominees as required
+Frequency Monthly
+Other Comments None
+Commercial Forum
+Responsibilities Membership — Fujitsu Services
+Membership — Post Office I Frequency
+Membership — Fujitsu Other Comments
+Services
+Frequency Monthly
+Other Comments This board is concerned with contract management and
+administration rather than fundamental contract renegotiation
+© 2002 Fujitsu Services Commercial in Confidence Page: 96

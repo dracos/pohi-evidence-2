@@ -1,0 +1,176 @@
+FUJ00046403
+FUJ00046403
+
+PinICL Expor PC0048718
+Ref Summary Opened Last update Customer Product Group
+Logged By Status Product At Fault
+Pc0048718 FAD 358136 on non polling report 27/06/2000 05:48:45 28/06/2000 13:56:29 Sharon Towes/01328 87 General/Other/Misc
+EDSC for 3 days. Plea Closed ISDN
+
+References Products
+
+Name Value Product Group Product Name Product Version
+
+PROVIDER PINICL General/Other/Misc ISDN
+
+ORIGINATOR Phelp General/Other/Misc ISDN
+
+REQUEST_KEY 62084925
+
+ORIGREF £-0006240906
+
+CONSUMER 16953 A1GATE
+
+CONSUMERREF £-0006240906
+
+PowerHelp £-0006240906
+
+Aci ies
+
+Date
+27/06/2000 05:48:45
+
+27/06/2000 05:48:47
+27/06/2000 05:48:47
+27/06/2000 05:48:47
+27/06/2000 05:48:47
+27/06/2000 05:48:47
+27/06/2000 05:48:48
+27/06/2000 05:48:48
+27/06/2000 05:48:48
+27/06/2000 05:48:48
+27/06/2000 05:48:48
+27/06/2000 05:48:48
+27/06/2000 05:48:48
+27/06/2000 05:48:48
+
+User
+Customer Call
+
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+Customer Call
+
+Customer Call
+
+Comment
+CALL PC0048718 opened
+
+CALL PC0048718:Priority A:CallType L - Target 27/06/00 20:00:00
+24/06/00 16:23 FAD 358136 on non polling report for 3 days. Please
+investigate
+
+24/06/00 16:24 UK052512
+
+Information: Unable to Health Check site
+
+24/06/00 16:26 uk058838
+
+Information: Comms test to site shows ISDN lineé’ GRO
+
+error code of destination out of order. Please can energis
+investigate
+
+25/06/00 23:14 eng0o4
+
+Information: Energis Update - BT to investigate
+
+26/06/00 17:27 engooa
+
+Information: Energis Update: BT have advised jumpers and modules have
+
+11 September 2021
+
+Page 1 of 3
+FUJ00046403
+
+FUJ00046403
+
+Ref Summary Opened Last update Customer Product Group
+Logged By Status Product At Fault
+Pc0048718 FAD 358136 on non polling report 27/06/2000 05:48:45 28/06/2000 13:56:29 Sharon Towes/01328 87 General/Other/Misc
+EDSC for 3 days. Plea Closed ISDN
+
+27/06/2000 05:48:48 — Customer Call been reterminated at site. Paul at Wigan has retested line
+
+27/06/2000 05:48:48 — Customer Call and confirmed normal call clearing.
+
+27/06/2000 05:48:48 — Customer Call 26/06/00 17:11 uk058838
+
+27/06/2000 05:48:48 — Customer Call Information: Re-tested comm's to site, passing large and small packets
+
+27/06/2000 05:48:48 — Customer Call with "Normal Call Clearing" obtained. Passing to SMC as
+
+27/06/2000 05:48:48 — Customer Call comm's to site are working OK. CFM3. PAH.
+
+27/06/2000 05:48:48 — Customer Call 26/06/00 17:12 uk058837
+
+27/06/2000 05:48:48 — Customer Call Information: Checked ISDN line get 0x8090 Normal call cl;earing, checked
+
+27/06/2000 05:48:48 Customer Call ping large small, medium, large packets ok, checked ppp/chap
+
+27/06/2000 05:48:48 — Customer Call auth neg -ok.
+
+27/06/2000 05:48:48 — Customer Call Comms ok
+
+27/06/2000 05:48:48 — Customer Call WM
+
+27/06/2000 05:48:48 Customer Call F} Call details
+
+27/06/2000 05:48:48 — Customer Call Diagnostician name:
+
+27/06/2000 05:48:49 — Customer Call Customer opened date 24/06/2000 16:23:29
+
+27/06/2000 08:16:47 Barbara Longley Target Release updated to CSR-CI3_2R
+
+27/06/2000 08:16:47 Barbara Longley Product General/Other/Misc ISDN added
+
+27/06/2000 08:16:47 _ Barbara Longley Product General/Other/Misc ISDN added
+
+27/06/2000 14:31:55 — Paul Steed The Call record has been assigned to the Team Member: Gary Maxwell
+
+27/06/2000 14:31:56 Paul Steed Defect cause updated to 99:General - Unknown
+
+27/06/2000 14:31:56 Paul Steed Hours spent since call received: 0 hours
+
+27/06/2000 15:14:30 Gary Maxwell F} Response :
+
+27/06/2000 15:14:30 Gary Maxwell Comms to outlet now re-established. However, have checked POStatus object on
+
+27/06/2000 15:14:30 — Gary Maxwell correspondence server and this has not yet been updated with missing EOD's.
+
+27/06/2000 15:14:30 Gary Maxwell [END OF REFERENCE 19524955]
+
+27/06/2000 15:14:30 Gary Maxwell Responded to call type Las Category 40 -Incident Under Investigation
+
+11 September 2021 Page 2 of 3
+FUJ00046403
+
+FUJ00046403
+Ref Summary Opened Last update Customer Product Group
+Logged By Status Product At Fault
+Pc0048718 FAD 358136 on non polling report 27/06/2000 05:48:45 28/06/2000 13:56:29 Sharon Towes/01328 87 General/Other/Misc
+EDSC for 3 days. Plea Closed ISDN
+27/06/2000 15:14:32 Gary Maxwell The response was delivered to: PowerHelp
+28/06/2000 13:53:02 Gary Maxwell F} Response :
+28/06/2000 13:53:02 Gary Maxwell POStatus object now updated at the correspondence server. FAD is not on
+28/06/2000 13:53:02 — Gary Maxwell today's non-polled report. Closing as administrative response (passing back
+28/06/2000 13:53:02 Gary Maxwell to call raisers - SMC).
+28/06/2000 13:53:02 Gary Maxwell [END OF REFERENCE 19560110]
+28/06/2000 13:53:02 Gary Maxwell Responded to call type L as Category 68 -Administrative Response
+28/06/2000 13:53:03 Gary Maxwell Hours spent since call received: 0 hours
+28/06/2000 13:53:03 Gary Maxwell Defect cause updated to 42:Gen - Outside Pathway Control
+28/06/2000 13:53:52 Gary Maxwell CALL PC0048718 closed: Category 68, Type L
+28/06/2000 13:53:52 Gary Maxwell The response was delivered to: PowerHelp
+28/06/2000 13:56:29 — Customer Call Date and time complete: 28/06/2000 14:56:15
+28/06/2000 13:56:29 Customer Call Service Complete (Confirmation) Received
+11 September 2021 Page 3 of 3

@@ -1,0 +1,691 @@
+Outstanding Peaks from S60
+
+POL00394502
+POL00394502
+
+[Reference I” Priority
+
+PC010219
+9
+
+PC010239
+2
+
+PC010239
+7
+
+B
+
+D
+
+c
+
+Description T
+S60B APADC - reopened as S60 E2E Screen flicker
+
+Target Release
+Future Unspecified
+
+S60 Cycle 2, BTC1, 069130
+When transacting a Rod Licence (Item 5664) or a Royal Mail Social Redirection(Item 5688), having
+captured data within the transaction, stepping back through the screens of data produces varying
+degrees of consistency
+
+For a Salmon Full 03/04 Rod Licence, having reached the stage of selecting a Gender, having
+already captured a Licence Type, Date of Birth and Address, the right hand panel on the screen
+prompting you to select a Gender, displays ‘Page 2 of 2’. Clicking the arrow to return to Page 1
+displays the following data
+
+Tab Name: 03/04 SF
+
+Post Office Ltd
+
+The Pan used to initiate the transaction
+
+Enter Date of Birth:
+
+nn/nn/nnnn
+
+Enter Date of Birth:
+
+nn/nn/nnnn
+
+Licencee_Name:
+
+‘Surname: nnnnnn
+
+Forename: nnnnn
+
+As you can see, the Date of Birth is displayed twice.
+
+For a Social Redirection the results are even stranger. By the time you've captured alll the data
+required, and have reached the MOP screen, the right hand panel displays ‘page 9 of 9'. Navigating
+back to page 1 shows
+
+Address Captured
+
+Address Captured
+
+Date of Move: dd/mmiyy
+
+Old Daytime Tel:
+
+nnnnnnnnnn
+
+New Daytime Tel:
+
+nnnnnnnnnn
+
+Page 2 the shows:
+
+Deceased/Power of Attorney:
+
+No
+
+(And then all the same data as page 1)
+
+Page 3 shows:
+
+Deceased/Power of Attorney:
+
+No
+
+(Followed by all the Applicants name details)
+Page 4 shows:
+
+The same as Page 1, but with
+Deceased/Power of Attorney:
+
+No
+
+at the bottom of the page
+
+Pages 6 -9 look OK
+
+S60B-LFS-Training Mode-IN ADC-cash still available Future Unspecified
+
+At S60 the ‘cash’ button has been removed from the IN ADC menu - it is no
+longer possible to Rem In Cash. However the button is still available in IN
+
+ADC in Training Mode.
+
+‘S60B DVLA txn for a zero amount shows £100 VED KEL
+
+I performed a DVLA transaction type 6 (licence with New MOT / Exempt) Product No 5624 that
+Page 1 of 1
+
+i Business Impact
+No serious business impact at S60, but could
+become an issue with the introduction of further
+ADC clients.
+
+This will require a fix from Escher and we are
+currently pursuing forecast dates.
+
+No business impact. This is specific to Training
+Mode.
+
+Possible to use the ‘Cash’ button in IN ADC in
+training mode on the counter.
+
+In POL Test Reference Data document S60-E2E-
+RDS-V2.0 section .2.1.1.3.20
+
+Item 5632 (? V11/V5 Licence With Changes of
+
+28" June 2004
+PC010281
+9
+
+PC010296
+9
+
+PC010301
+9
+
+PC010359
+6
+
+PC010364
+3
+
+Outstanding Peaks from S60
+
+returned a Response Code of 1 (Unconditional Accept) together with a VED of £100 returned from
+the DVLA emulator.
+
+Product number 5624 has a price of Zero attached to it and this was the amount that was placed on
+the stack.
+
+On the receipt it shows an amount of Zero for the APS transaction but with a VED Payable amount
+of £100. This also happens with transaction type 7 (product no 5625)
+
+S60C-Mails PAF- Flicker on recently used screen.
+
+S60C BTC1
+
+FAD 249418 23/03/2005
+
+When performing a mails PAF transaction and an address is selected on the ‘Most Recently Used’
+screen there is a brief flicker before the ‘Confirm Address’ screen is displayed.
+
+S60C - Performance - Cash-on-hand
+
+Its been noticed that if a clerk does not declare there cash in the evening. When signing on in the
+morning the "Cash on hand” declaration appears when entering through this, it can take up to 1
+minute 20 seconds for the following screen to appear.
+
+This has happened on a number of counters, and when viewing the balance snapshot there seems
+to be no real excess amounts i.e stock / cash.
+‘S60C - PER Performance refresh
+
+When signing on to the counter first thing in the morning, and navigate through the screens, the
+screen seem to refresh very slowly this happen every day, this can be recreated . This also happens
+periodically throughout the day.
+
+I have also tested this on other outlets, and appear to be the same.
+S60B APADC - Rod Licence not printed on stationery
+
+BTC1, 069130, S60 Cycle 2, Rig Date 25/03/05, CLK001, approx 16:10.
+When transacting a Rod Licence APADC product for a Salmon Full Licence 03/04, having
+completed all relevant ADC fields, the normal AP Customer and Office receipts print automatically,
+However, POL have supplied an example of new stationery provided by the Environmental Agency
+with a new design of licence containing a blank area on the side of the licence, where the captured
+data will be printed. At no stage am I prompted to insert the stationery into the printer (as with
+Girobank daily summaries and Mails labels), so I checked the Event Log to see if any errors were
+being generated. The following 2 ‘Yellow’ events were recorded for each completed Rod Licence:
+1. The description for event ID (3) in source (XSLT Receipt Pre Processor) could not be found. It
+contains the following insertion string(s): Failed to get Template: CUSTROD default
+CLASSIC_CUSTOMER used
+
+2. As above except: ....Failed to get Template Attributes: CUSTROD default
+CLASSIC_CUSTOMER used.
+
+$60 E2E Smartpost incorrect val on Airsure button
+
+Page 2 of 1
+
+Future Unspecified
+
+KEL and Closed
+
+KEL and Closed
+
+Future Unspecified
+
+Future Unspecified
+
+POL00394502
+POL00394502
+
+Details and Tax Class: New MOT or MOT Not
+Required) is defined. It states the product is zero
+and fixed priced. APS uses this price spec to
+determine the price and overrides any other price.
+The DVLA Emulator is set up to return 100 GPB
+for this product; this is clearly wrong and is
+overwritten by the product price. The receipt
+states both what the DVLA Emulator returned
+and the fixed cost of the product
+
+No business impact. Data is driven by the data
+returned by DVLA.
+
+Not always noticeable, the flicker is brief and this
+was therefore declared not required for this
+Release.
+
+It is not known why this delay should be
+happening since this area of code has not been
+changed in S60. The delay only occurs on
+individual stock units. The delay also only occurs
+when the declaration has been neglected to be
+made the previous day.
+
+Business impact considered low.
+
+The problem has been reproduced but only
+occasionally, intermittently and unreliably. It
+seems to most often ocour after the counter has
+been inactive for a number of hours. The
+slowdown disappears after a couple of minutes
+use for no apparent reason.
+
+Business impact considered low.
+This problem is caused by the advertising text
+that is being printed on the rod license (ClientAd
+bj "35"). The fishing license template is set up to
+centre the advertising text that is printed on it
+There is a bug in the XSLTPreProcessor that
+does not cater for lines longer that the print width
+when it is centring. There is a work around which
+is to ensure that the advertising text that is going
+to be centered is made up of a number of lines of
+advertising text, where each line is less than the
+maximum print width,
+
+Given that the fishing license only displays
+advertisements for the EA client and its
+associated products and that the rod license will
+not go live until 2005, agreed that the work round
+is sufficient in the short term.
+
+This is to do with variables not being reset.
+Although the button is displaying £13.30 once the
+
+28" June 2004
+PC010365
+1
+
+PC010371
+2
+
+PC010379
+8
+
+PC010383
+5
+
+Outstanding Peaks from S60
+
+The following has been raised by POL on BTC7 during Cycle 1 of E2E testing,
+Performed an Airsure+ letter and entered a compensation value of £250.00
+which added £1.00 to the total cost of the transaction. Selected Prev and on
+display of the previous screen the Airsure button now displays the a value
+that includes the £1.00 fee for the compensation
+
+Eg
+
+At the beginning of the transaction the Airsure button displayed £12.30 with
+the text inc comp £30"
+
+After selecting prev the button displayed £13.30 with the text ‘inc comp
+
+£30",
+
+POL expected to see either:
+
+a) the inclusive compensation fee should display £250, or
+
+b) the transaction price should revert to the original cost (£12.30)
+Messagestore attached.
+
+S60E2E - DVLA Min & Max parameters not recognised
+
+BTC7 506880 End to End Cycle 1
+
+During End to End Cycle 1, POL have raised an incident #956. At FAD 506880, attempted a DVLA
+transaction (Product ID5614 - V11/V5 with New MOT), whilst the LAN was disconnected at an
+Outlet. The system rightly went into Local Processing Mode, and I was presented with an option list
+to input the transaction value. I selected the ‘Other’ option, and entered an amount of £12000.00.
+This value was accepted and I completed the transaction. I expected that once the transaction
+amount was entered, it would be validated against the Product Min / Max parameters to check that
+the amount was within the acceptable range, as APS does currently. For the Item in question the
+Maximum Value parameter is set as £11000.00
+
+‘S60D-LFS-Cash Stat does not include latest ONCH
+
+At 2 counter office 176327 on test date 27/5/04, an ONCH declaration was performed for individual
+‘stock unit 11, at counter 1 at 18:15 (17:15 GMT). This was the last ONCH for this SU on this day. A
+cash declaration had been performed for the same SU at counter 2 at 17:29 (16:29 GMT), as part of
+a stock unit rollover. The Cash statement produced for this office at 19:00 should have been derived
+from the 18:15 ONCH. Instead it is derived from the 17:29 cash declaration.
+
+Note that the office has a second SU - shared stock unit S1.
+‘$60 E2E Unable to Transfer session during Rem
+
+BTC7, Post Office E2E Test Rig
+
+The following has been raised by POL during Cycle 1 of E2E testing. When part way through a
+remittance out transaction with items on the stack, the clerk is unable to either transfer the session
+to another node within the office or suspend the session in order to start another one. This is a
+change to the current (S50) functionality which allows both of the above to happen. Horizon
+functionality is such that Session Transfer is prohibited once the Suspend Button is locked. It is
+perfectly valid to lock prohibited products when a particular entry appears on the stack (to prevent
+the mixing of notes/coins/stock in the same pouch), but to prohibit Suspend as well is questionable
+NOTE: AR 070 states "The overall user interface shall have the same look and feel as the current
+remittance functionality, subject to the User Interface Definition requirements detailed in Appendix B*
+There are no requirements relating to Suspend/session transfer in the CD Version 3.0
+
+‘S60D PAF - SmartPost button description is missing
+
+Page 3 of 1
+
+Future Unspecified
+
+KEL and Closed
+
+Future Unspecified
+
+BI3S70_TRD
+
+POL00394502
+POL00394502
+
+button is pressed again and a value of
+compensation is entered, the correct tariff will be
+applied. What is described by the call logger is.
+also the case if the ‘Services’ button is pressed
+instead of ‘PREV’
+
+As for what is expected to be seen:-
+
+a) This is not configurable at run time. The button
+is displaying the minimum inclusive
+compensation, this is configured in POL Mails
+Ref Data.
+
+b) This is not possible as there is no way of:
+
+1. Intercepting the ‘PREV’ button press or
+
+2. Resetting variables on the 'PREV' button
+press.
+
+The observed functionality is not new. This has
+been the case since the deployment of
+‘Smartpost, and is currently in the Live estate.
+Aworkaround for the short term is for AMOUNT
+field to be keyed in POL Ref Data.
+
+A paper is currently being written to evaluate a
+potential fix and at what release this could be
+intercepted.
+
+No business impact at S60, but potential impact
+beyond
+
+This is an existing problem at S50 and
+
+there have been no Live calls.
+
+If this does happen in live then the impact is that
+
+the cash statement is derived from the wrong
+ONCH declaration
+
+Agreed with POL (Karen Hillsden) that this not be
+fixed at S60.
+
+No serious business impact.
+
+No business impact
+
+28" June 2004
+PC010385
+7
+
+PC010386
+2
+
+Pco10401
+7
+
+PC010405,
+0
+
+Outstanding Peaks from S60
+
+BTC5 Rig
+
+Steps to follow:
+
+‘Smart Post/Continue/Set Quantity to 3 / 12 a.m. Special Delivery &#8211;
+compulsory PAF1 search /PAF Menu Screen displays icons (Required &#8211;
+Perform Postcode Lookup) and (Cancel 8#8211; Cancel this transaction). /
+Select Required and Complete PAF search/ Back to Mails - Select End/ Sell
+Stamps/ Select Next!
+
+Back to Mails/ Optional PAF2 search &#8211; 9 a.m. Special Delivery/ PAF
+Menu Screen is displays 2 icons &#8211; (Required + description) and 2nd icon
+(NotRequred without description.)
+
+This is the only sequence of events when description is not displayed for Not
+Required icon otherwise is displayed as &#8216;Continue without Postcode
+lookups#8217;
+
+The error can be re-created
+
+S60D-LFS-CAP/BP not shown on tlog for all CIP trans
+At office 176327, I produced a Transaction Log and selected product 5610 as the selection criteria.
+
+When the report was produced I found that for all of the transactions performed in individual stock
+unit 11 the CAP and BP was not shown (was blank). For all of the transactions performed in shared
+SU S11 and individual stock unit 12 the CAP and BP is shown.
+
+An example of a transaction for which the CAP/BP is not shown is trans id
+2-973-3.
+S60D DVLA Manual VRM Screen V5 tab name error
+
+From the Main Menu, I performed a manual VRM transaction, product number
+5637. When I arrived at screen V5 (VRM validation error screen) the tab on
+the left hand side read ?VRM Error?. According to AS/DPR/006 it should show
+‘Validation Error?.
+
+$60 E2E Incomplete Rod Licence address
+
+BTC7, 07/06/2004, FAD 505038, APS No 030001, Session ID: 3-756-1, Node 03,
+The following has been raised by POL during Cycle 2 of E2E testing
+
+Salmon and Sea Trout Rod Licence transaction performed with customer receipt produced on pre-
+printed stationery. Address printed shows:-
+
+Ann Summers,
+
+[space] Bullring,
+
+Birmingham,
+
+West Midlands,
+
+BS 4BA,
+
+On the office copy of the receipt the address is shown as:-
+
+Ann Summers,
+
+Lower Mall,
+
+Bultring,
+
+Birmingham,
+
+West Midlands,
+
+BS 4BA.
+
+The entry of "Lower Mall” is missing from the customer receipt.
+
+‘S60E2E PAF - Manual address not printed on Licence
+
+$60 End to End Cycle 2, BTC7
+During End to End Cycle 2, a Rod Licence 03/04 Coarse Full was carried out.
+
+Page 4 of 1
+
+KEL and Closed
+
+KEL and Closed
+
+Future Unspecified
+
+Future Unspecified
+
+POL00394502
+POL00394502
+
+This is an existing problem that Live have not
+reported
+
+No business impact,
+
+No business impact
+
+There are several issues to do with the printing of
+addresses on the Rod Licence. These issues
+need to be corrected in the XSLT CUSTROD
+template (i.e. in ref data). It is proposed that
+these address format issues are addressed at a
+later date when the CUSTROD template is
+required for trials by EA
+
+There are several issues to do with the printing of
+addresses on the Rod Licence. These issues
+need to be corrected in the XSLT CUSTROD
+template (i. in ref data). It is proposed that
+
+28" June 2004
+PC010405
+1
+
+PC010409
+1
+
+PC010415
+1
+CLONE of
+
+PC010409
+1
+
+PC010426
+7
+
+Outstanding Peaks from S60
+
+At the PAF search stage of the transaction, a postcode was entered LA28QL, followed by a house
+number 7. The PAF search returned several options for addresses, but rather than selecting one of
+the suggested addresses, the clerk scrolled to the bottom of the list and selected ‘Manual entry’. The
+clerk then added the following address info, Moon Crescent for address line 1, nothing for address
+line 2, Liverpool for town, and no further entries for county or country. When the licence was printed
+at the end of the transaction, there was no address printed on the licence itself, with the lines Home
+address and Postcode both empty. However, on the Branch copy of the receipt, the address was
+printed.
+
+This was replicated on BTCS at office 334511, messagestore attached.
+
+‘S60E2E PAF - Missing space on PAF address
+
+$60 End to End Cycle 2, BTC7
+
+During End to End Cycle 2 a Rod Licence transaction was carried out which included an address of
+24-28 Rectory Grove, This was printed on the Licence stationery as 24-28Rectory Grove.
+
+The space was missing between 28 and Rectory
+
+S60E2E APADC - Welsh licence printing
+
+End to End Cycle 2, BTC7, 501680
+Transaction performed for Junior Concession rod licence at Welsh office (501680). When the
+licence was printed on the pre-printed stationery, the printer behaved as though needing to print on
+more than 1 page. A print error message was produced and when we tried to re-print the licence, it
+was printed on the tally roll
+
+"NO" was answered to the message about did the item print correctly and the transaction was
+abandoned, forcing re-entry of all of the details. When attempting to perform the transaction again,
+all subsequent prints of the licence came on the tally roll, with the licence taken in by the printer
+after the output to the tally roll. It would appear that this is another problem with advertising
+messages. In this case, being a Welsh office, the messages are printed in both English and
+Welsh, taking the print across more than one page. As shown to Guy Standen.
+
+S60E2E APADC - Welsh licence printing
+
+End to End Cycle 2, BTC7, 501680
+Transaction performed for Junior Concession rod licence at Welsh office (501680). When the
+licence was printed on the pre-printed stationery, the printer behaved as though needing to print on
+more than 1 page. A print error message was produced and when we tried to re-print the licence, it
+was printed on the tally roll
+
+"NO" was answered to the message about did the item print correctly and the transaction was
+abandoned, forcing re-entry of all of the details. When attempting to perform the transaction again,
+all subsequent prints of the licence came on the tally roll, with the licence taken in by the printer
+after the output to the tally roll. It would appear that this is another problem with advertising
+messages. In this case, being a Welsh office, the messages are printed in both English and
+Welsh, taking the print across more than one page. As shown to Guy Standen.
+
+‘$60 E2E <CURR_CD> not populated in Client file
+
+BTC7, POL E2E Test Rig
+Do not receive a <CURR_CD> in the PO file when the on-line enquiry has sent response codes of 2
+or 4.
+
+Ifa response code of 2 oF 4 is sent from the DVLA to the PO, no values are contained in the XML
+tags <PAYABLE_AMT> and <CURR_CD> contained in the DVLA's XML response. If local
+processing is permitted, then the PO clerk can enter an amount in Horizon and complete the
+transaction. In the DVLA APS Client File that is subsequently sent to the DVLA the XML tag
+
+Page 5 of 1
+
+Future Unspecified
+
+Future Unspecified
+
+Future Unspecified
+
+Future Unspecified
+
+POL00394502
+POL00394502
+
+these address format issues are addressed at a
+later date when the CUSTROD template is
+required for trials by EA.
+
+There are several issues to do with the printing of
+addresses on the Rod Licence. These issues
+need to be corrected in the XSLT CUSTROD
+template (i.e. in ref data). It is proposed that
+these address format issues are addressed at a
+later date when the CUSTROD template is,
+required for trials by EA
+
+If the wrong stationery is used then itis possible
+to have to go to a second sheet of stationery from
+which it may be possible to get the printing only
+on the tally roll problem.
+
+Agreed that this will be fixed at a later release.
+
+A cloned call has been raised against Ithaca to
+look into why the printing extended over the single
+page when it shouldn't.
+
+If the wrong stationery is used then it is possible
+to have to go to a second sheet of stationery from
+which it may be possible to get the printing only
+on the tally roll problem.
+
+Agreed that this will be fixed at a later release.
+
+This call was cloned from PCO104091 to
+investigate a fix to stop further printing on the tally
+roll when it shouldn't.
+
+Further discussions have taken place with POL /
+DVLA and it has been agreed that the inclusion
+of a ‘Currency’ in the APS client file for locally
+processed transactions will be addressed in a
+future release and is not required for S60.
+
+No business impact at S60
+
+28" June 2004
+POL00394502
+
+POL00394502
+Outstanding Peaks from S60
+<CURR_CD> is left null. If in the future Horizon allows multiple currencies to be accepted
+(e.g. GBP and EUROs), it will not be possible in the scenario above for the DVLA to determine the
+currency to apply to the record. An example APS Client File has been added to the evidence.
+This has been discussed with Gerald Barnes, please route to Gerald.
+PC010453 c S60D-LFS-No response to LFS barcode scan in SC Future Unspecified — No serious business impact, the barcodes are
+3 not accepted however there is no error message
+
+When an LFS delivery or collection bar-code is scanned in Serve Customer mode the ‘Invalid Mode" displayed.
+error is not displayed - instead there is no response (other than a 'beep’). This appears to have
+
+occurred as a result of a recent fix (perhaps APADC related?) - i.e. The invalid mode error WAS
+
+displayed when the test was performed some time ago.
+
+Page 6 of 1 28" June 2004

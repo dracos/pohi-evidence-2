@@ -1,0 +1,3156 @@
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+FUJ00098224
+FUJ00098224
+
+Version: 4.00.3 (Formatted
+
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Document Title:
+Document Type:
+Release
+
+Abstract:
+
+Document Status:
+Originator & Department.
+
+Contributors:
+
+Approval Authorities
+
+End to End Release 1 - High Level Design
+High Level design
+BB S60
+
+This document describes the High Level Design for End to End
+Release 1 Projects 1 and 3 excluding all LFS impacts. In
+summary, this includes the summarisation of cash and near-cash
+daily movements and the delivery of such data to the Horizon
+‘System boundary (for onward delivery to a new POL Financial
+System).
+
+DRAEFAPPROVED
+
+Pete Jobson (Tef - Development Unit
+
+Name Position ‘Signature Date
+Gareth Jenkins E2E Design Authority
+Dave Johns ‘APDU Si Design Authority
+
+© 2022 Fujitsu Services
+File; EAHLD002.docEA_HLD-002.doe
+
+COMMERCIAL IN CONFIDENCE age 1 of 54
+
+P
+Printed on 17/10/2003 3:50:00 by PWJPW
+Fujitsu Services
+
+COMMERCIAL IN CONFIDENCE
+
+End to End Release 1 - High Level Design
+
+Ref: EA/HLD/002
+Version: 1.00.3
+Date:
+
+9/01/2004
+
+Chapter 0 -
+
+Document Control
+
+FUJ00098224
+FUJ00098224
+
+0.1 DocuMENT HISTORY
+rion] Date Reason for Issue ‘Associated CP7
+PinICL Nos.
+‘O1 21/10/2003 I First Draft issued for comment None
+02 4111/2003 Rework following comments None
+03 422/11/200_I Rework following comments None
+3
+70 1910772004 I Rework folowing comments None
+0.2 Review DETAILS
+[Review Comments by: I 2ist November: 200329" January 2004 I (Formatted
+[Review Comments to: [Originator & Document Management I
+Mandatory Review Authority Name
+RASD Gareth Jenkins(")
+Customer Services Mik Peach(")
+Development Unit - Design Team David Johns
+Rex Dixon(")
+Sud Agrawal
+Roger Barnes
+Trevor Leah)
+Chris Baie}
+Development Unit - Development Team Matt Arris
+Martin McConnel(*)
+Waiter Wright
+Integration & Test Janusz Holender
+Post Office Lid
+‘Optional Review/lssued for Information
+Dave Witcoxt)
+Pete Ambrose
+Tony Heaton
+Nick Lawman
+Roger York(*)
+James Stincheombe
+‘Simon Fawkes
+Neil Gormley)
+Bob Gurney
+Phil Boardman
+Colin Mills)
+‘Asad Sheikh
+(@ Reviewers who retumed comments
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 2 of 54
+
+File; EAHLD002.docEA_HLD-002.doe
+
+Printed on 17/10/2008 3:
+
+by PWJPW
+FUJ00098224
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAJHLD/002
+I Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+0.3 ASSOCIATED DOCUMENTS
+Reference Doc Vers- [ Date le ‘Source
+jon
+(CDOOTT POLIEZEIDE ‘Automated Remittances POL
+$/001 Conceptual Design
+(e000 POLIEZEIDE ‘Overnight Cash Holding POL
+s/002 Conceptual Design
+[DPRO2] EADPRIOO2 E2E Re-Architecting Release I Fujisu
+Design Proposal Services
+(LFSHLD] EA/HLD/001 LFS Release 1 Delta HLD Fujitsu
+Services
+(AGHLD] ADIDESIO4T I 3.0 I 04/07/03 I TPS Agents for BIS - HLD Fujtsu
+Services
+[EEOD] EP/DES/025 I 1.0 11/07/00 I EPOSS End of Day Service HLD I Fujitsu
+Services
+FSA] EATFSIOOT POLFSAIS Prism
+Xansa
+[TPSHLD] TVDES/002 TPS High Level Design Fujitsu
+Services
+LFSAIS] BPIDES/O23 LFS to SAPADS and SAPADS I Prism
+to LFS Application Interface
+I Specification
+[SFTLNCH] NB/LLD/O56 ‘SoftLaunch Low Level Design Fujitsu
+Services
+TTPSMAP] I ADIDESIO47 [4.1 I 02106103 I TPS Tables and Mapping Fujtsu
+Services
+DIALOGUE] I LEMFSIO01 Fuitsu
+jogue Detta— ActWvity & Services
+Screen Flows
+
+Unless a specific version is referred to above, reference should be made to the current
+approved versions of the documents. In particular later versions of some of these
+documents do exist; however, it is the versions indicated that have been used for the
+development of this interface.
+
+0.4 ABBREVIATIONS & DEFINITIONS
+0.4.1 Abbreviations
+
+‘Abbreviation I Definition
+
+"ACC ‘Authorised Collectors Card
+
+‘ADC ‘Advanced Distribution Centre: Used as an abbreviation on the Horizon desktop for
+Remittances to and from SAP ADS
+
+AS ‘Application interface Spectfication
+
+‘CBB Counters Business DataBase. Post Office Limited's current Accounting Systems
+
+cD Conceptual Design
+
+oI Direct Interface Test
+
+OP ‘Design Proposal
+
+DWh Data Warehouse
+
+E2E End to End: Used in wo contex’s:
+. The End to End Programme (of which this is the first release)
+. End to End testing where testing is carried out by POL of the full business
+
+EDS ‘The company which Post Office Ltd's cheque processing is outsourced to
+
+EOD End of Day
+
+FAD Financial Accounts Division (FAD Code)
+
+FTMS File Transfer Management Service
+
+© 2022 Fujitsu Services
+File; EAHLD002.docEA_HLD-002.doe
+
+COMMERCIAL IN CONFIDENCE Page 3 of 54
+Printed on 17/10/2003 3:50:00 by PWJPW.
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAJHLD/002
+I Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+‘Abbreviation I Definition
+HLD High Level Design
+LFS Logistics Feeder Service
+wis ‘Management information System
+OLA ‘Operational Level Agreement
+‘OMDB: Operational Management Database
+‘ONCH ‘Overnight Cash Holding
+POA Post Office Account
+POL. Post Office Lid
+POLFS Post Office Lids Financial System
+RDMC Reference Data Management Centre
+RDS Reference Data System
+‘SAP ADS ‘SAP Advanced Distribution System
+SLA Service Level Agreement
+TIP ‘Transactional Information Processing
+TMS Transaction Management System
+TPS Transaction Processing System
+0.4.2 Definitions
+
+‘The following terms, when capitalised as here, have specifie meanings as indicated.
+
+Term Definition
+
+‘Branch Post Office location with one or more Counter PCs installed as part of the Horizon
+programme
+
+Counter Counter PC installed in a Post Office Branch
+
+‘Counter An application resident within the Counter that contains the business logic controlling
+
+Application the dialogue with the Clerk, or other business specific functions on the Counter (such
+as End of Day processing)
+
+I Counter Gierk I Person working n a Branch and operaiing @ Counter
+
+Horizon Name that encompasses the otaiy ofthe systems provided by Fujitsu Services Post
+Office Account to Support the automation requirements of Post Orfice Branches
+
+Near-Cash I Transactions performed al branches are settled with a promise to pay. This promise
+comes in the form of Sterling cash, cheques, debit-card transactions and foreign
+currency, Sterling currency payment deemed to be ‘cash’, Cheques, debit-card and
+foreign-currency can easily be converted to Sterling Cash and is called ‘near-cash”
+
+‘Operational Anon-contractual agreement between Fujitsu Services and Post Office Ltd on the
+
+Level nature and quality of specific elements of a service (e.g, Interface Agreement for
+
+Agreement _I Problem Management (CS/IFS/009))
+
+Receipt {printed record of the Transaction atthe Branch
+
+Reconciliation I Ensuring the financial integrity of Transactions across service boundaries
+
+Reference ‘Data that controls the system functionality and the business operations, that is
+
+Data present al System Start-up and does not change during normal operation (but may
+be changed off-jine). On rare occasions the dala may represent an intial start-up
+state that does change during operation but is not preserved between
+sessions: :
+Post Office (including the Horizon Programme)
+
+Settlement ‘Settling a Session where the balance of the session is reduced to zero and the
+
+appropriate cash (and other tems such as cheques, debit cards, tokens, stamps etc)
+Js exchanged between the Customer and the Clerk or between differing Products (for
+example; during stock re-valuation)
+
+‘recorded and auditable instance of business activity, involving service provision or
+‘Stock movement across organisational or service boundaries
+
+© 2022 Fujitsu Services
+File: EAHLDO02 doc
+
+EA_HLD_002.doo
+
+COMMERCIAL IN CONFIDENCE Page 4 of 54
+Printed on 17/10/2008 3:50:00 by PWJPW.
+
+FUJ00098224
+FUJ00098224
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAJHLD/002
+Version: 4.00.3 )
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+0.5 CHANGES IN THIS VERSION
+0.5.1 Changes in Version 0.2
+@_ Inclusion of DeskTopApps in Reference Data descriptions.
+Various minor amendments following comments
+Removal of POL FS Balancing transaction detais from the Summary Trailer Record
+Reduction of generic abilly to store multiple daily balance figures. Only a single balance
+figure will be held for Cash
+Addition of new reference data items (including mapping for Cheques in ROAD Mode)
+._Allother changes can be located by using the Highlight Changes option in Word™
+0.5.2 Changes in Version 0.3
+@_ Removal of Transfer-In/Out transactions from Summarisation process and from Chart of
+‘Account Mapping
+Addition of Summarisation trailer record persistent object
+Clarification that the mechanisms of converting Type C to Type A reference data will be re-
+considered at later releases
+Various clarifications following comments
+0.5.3 Changes in Version 1.0 + (Formatted: Bullets and Numbering 5}
+‘Minor clarifications and corrections following comment.
+{2 —Aaaition of various new reference data sections in Chapter 4 following the introduction of three
+new transaction modes.
+0.6 CHANGES EXPECTED
+(Updates following Tata id following baseline of Design Proposal
+0.7 CONTENTS
+CHAPTER 0 - DOCUMENT CONTROL.
+0.1_DocumenT History. 2
+[Oe RECT ee ee ee ee
+0.3__AssoctateD DocumENTs a Ss B
+0.4__ABBREVIATIONS & DEFINITIONS. 5
+0.4.1 _Abbreviations.
+0.4.2 Definitions
+0.5 __ CHANGES IN Tiils VERSION
+0.5.1 Changes in Version 0.2.
+05.2 Changes in Version 0.3... = — —
+05.3 Changes in Version 1.0..n..neon ze
+0.6 _ CHANGES EXPECTED 5
+© 2022 Fujtsu Services COMMERCIAL IN CONFIDENCE Page 5 of 54
+
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+End to End Release 1 - High Level Design Ref: EAJHLD/002
+
+FUJ00098224
+FUJ00098224
+
+COMMERCIAL IN CONFIDENCE
+
+0.7 CONTENTS .stsstsetsens
+
+Q.8 TABLE OF FIGURES 10
+
+0.9 TABLE OF TABLES...
+
+CHAPTER 1 - INTRODUCTION.
+
+DA PURPOSE feet lleeen arcs deere tees cece deeedl I
+1.2 Scope aif
+1.3 READERSHIP busin ieee eee cee re temo dee
+1.4__ RELATED DOCUMENT: 1
+CHAPTER 2 - ARCHITECTURE. 13
+
+241 COMPONENTS ss
+
+22 SAP ADS...
+2.3 LFS Host... 14
+2.4 LPS LOADER ws 14
+2.5 LPS HARVESTER 14
+2.6 TPS HARVESTER 14
+2.7_IPS Host... 14
+2.9 RDMC.
+
+2.10 _ CASH CENTRE. - sci ” snc meee
+QU BRANCH ssn 16
+
+CHAPTER 3 - CHANGED COMPONENTS...
+
+3.1__ GENERAL. 17
+3.2_ FINANCIAL DATA TO POLFSS ws 7
+3.2.1 Transaction Summarisation Overview. 1z
+3.2.2 EPOSS ChangeS...sssssssssssisssaaiiieiiis TIER)
+3.2.3 End of Day Branch Summarisation 23
+3.2.4 TPS Harvester, 29
+3.25 TPS HOSt sess 30
+3.3__POUCH COLLECTION AND DELIVERY. 31
+
+3.3.1__Cash Pouch Delivery...
+3.3.2 Cash Pouch Collection
+
+3.4__ GENERATED CASH BALANCE, ..s:sssusssstunsisi i 31
+
+© 2022 Fujitsu Services ‘COMMERCIAL IN CONFIDENCE. Page 6 of 54
+File: EAHLD002 docEA-HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW.
+
+End to End Release 1 - High Level Design
+COMMERCIAL IN CONFIDENCE
+
+CHAPTER 4 - REFERENCE DATA.
+
+4.1.4 Item Transaction Mode...
+4.1.5 Item Transaction Mode Code...
+4.1.6 Cash Account Table Line.
+
+a
+
+4.2.1 Product Mapping ..u..u:sssnsonssnn
+4.3 TYPEC REFERENCE DATA REQUIREMENTS. 37
+
+43.1 _ Chart of Accounts Collection.
+43.2 — Chart of Accounts Products Collection
+43.3 Settlement Product Modes Collection.
+43.4 Mode Parameters.
+
+44 _ OTHER REFERENCE DATA REQUIREMENTS ccc A
+441 Type D Reference Data. 46
+
+44.2 — RDDS Meta Data: 46
+
+443 Global Objects. 47
+
+4.5 _ OTHER REFERENCE DATA ISSUES, 48
+CHAPTER 5 - SYSTEM QUALITY ATTRIBUTES. 49
+SLT Seourity sss _— aaa ” 9
+
+S12 Scalability 9
+
+51.3 Resilience... = Sees eee
+(CHAPTER 6 - SPECIFICALLY EXCLUDED... 50
+6.1_ SERVICE LEVEL MEASUREMENT. 50
+6.2_ BRANCH REPORTING REQUIREMENTS... socsenascsastis son 5O
+(CHAPTER 7- MIGRATION... 51
+21_ Overview 51
+7.2__FINANCIAL DATA TOPOL FS 0 " _— pitricrenlS
+7.3__ GENERATED CASH BALANCE 10 SAP ADS ..c.csssststsstsnnnsnnSD
+7.4_ REMITTANCE IN/OUT. 52
+
+24.1 Remittance-Out
+74.2 Remittance-In.
+
+[EA I 10): eee
+
+CHAPTER 6—pOCcUME: Es
+
+(0 DOCUMENT HISTORY srrrnrrmsrmeree ————
+
+© 2022 Fujitsu Services ‘COMMERCIAL IN CONFIDENCE. Page 7 of 54
+File: EAHLD002 doef r
+
+Printed on 17/10/2003 3
+
+by PWJPW
+
+FUJ00098224
+FUJ00098224
+
+I
+
+Fujitsu Services End to End Release 1 - High Level Design
+COMMERCIAL IN CONFIDENCE
+
+Version:
+
+Date:
+
+EAJHLD/002
+
+FUJ00098224
+FUJ00098224
+
+‘(Formatted
+
+1.00.3
+49/01/2004
+
+0:9 —Eapbb OF FABLES.
+
+CHAPTER 1 INTRODUCTION nn
+
+22
+
+2c} BRANCH,
+
+CHAPTER 3— CHANGED COMPONENT:
+
+34-—Gi
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE
+File: EAHLD002 doct
+
+Page 8 of 54
+
+Printed on 17/10/2008 3:50:00 by PWJPW
+FUJ00098224
+FUJ00098224
+
+—(Formatted
+
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+Version: 1.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+(6:1 SERVICE LEVEE MEASUREMENT rrr
+
+© 2022 Fujitsu Services ‘COMMERCIAL IN CONFIDENCE. Page 9 of 54
+File: EAHLD002 docEA-HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW.
+Fujitsu Services End to End Release 1 - High Level Design Ref: EA/HLD/002
+Version: 1.00.3
+COMMERCIAL IN CONFIDENCE Date:
+
+19/01/2004
+
+0.8 TABLE OF FIGURES
+
+Figure 1 ~ End to End Release 1 tenastod Components
+Figure 2 — Entity Relationship. "
+
+0.9 TABLE OF TABLES
+
+Table 1 — Example Products... .
+Table — Example Product Transactions...
+
+Table 7 — Item Transaction Mode Code...
+Table 8 — Product Mapping
+Table 9 — Chart of Accounts Dat
+Table 10 — Chart of Accounts Products Collection .
+Table 11 — Settlement Product Modes Collection
+
+O92 fuss Soe COMMERCIAL IN CONFIDENCE Page 10 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+
+FUJ00098224
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 1.00-3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Chapter 1 -
+Introduction
+
+aa
+
+1.2
+
+PURPOSE
+
+As part of the Horizon End-to-End Re-Architecting, seventeen individual system
+enhancement projects have been identified. Project 1 and Project 3 requirements are
+now mature and delivery of functionality to satisfy the requirements therein is
+expected within the BI3 $60 timescales
+
+This is referred to as E2E Release 1
+This document details the high level design of the requirements stated in the
+following documents:
+
+a [CDO001] Project 1 Conceptual Design
+
+a [CD002] Project 3 Conceptual Design
+
+a [DPR02] Release 1 End-to-End Design Proposal
+
+Many of the impacts of the changes proposed are incurred within the LFS product.
+‘The High Level Design that documents these changes are included within the
+following document.
+
+a
+a [LFSHLD] LFS
+
+This document describes the High Level Design for Release 1 of those Horizon
+subsystems that are not a part of the Horizon Logistics Feeder System,
+
+Release I Delta HLD
+
+SCOPE
+
+This document describes the High Level Design for the End to End Release 1 Projects
+1 and 3 and is constrained to the boundaries of the Horizon automated system.
+
+Since much of the LFS High Level Design is documented in a separate document
+((LFSHLD)), it is not proposed to repeat such designs within this document. Where
+this is the case, the reader will be directed to the document as appropriate
+
+In addition, separate interface specifications exist that detail the nature and content of
+the data that flows across the Horizon system boundaries. Again, in order to prevent
+repetition within this document, references are made to [FSAIS] & [LFSAIS] as
+appropriate.
+
+‘This document therefore delivers the High Level design for all parts of End to End
+Release 1 that are not considered within the scope of LFS. In essence, this reduces
+the scope of this document to Release 1, Project 1. However, an overview of the
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 11 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+
+FUJ00098224
+FUJ00098224
+
+_— (Formatted
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAHLD/002
+Version: .00-3 _-(Formatted )
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+entire Release 1 project is provided to give continuity with the Design Proposal
+((DPRO2]) and to cross-refer to the LES designs.
+
+13 READERSHIP
+
+This document is intended for application developers concemed with development of
+EE Release 1. It is also intended to provide a detailed understanding of the software
+impacts incurred by EE Release I as an aid to devising testing strategies and scripts
+
+It is suggested that readers have already read and understood [DPRO2] before
+continuing.
+
+1.4 RELATED DOCUMENTS
+
+See section 0.3 for a full list of referenced documents
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 12 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+Fujitsu Services
+
+End to End Release 1 - High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+Ref, EA/HLD/002
+Version: 1.00-3
+Date: 19/01/2004
+
+FUJ00098224
+FUJ00098224
+
+Chapter 2 -
+Architecture
+
+21
+
+COMPONENTS
+
+The following diagram illustrates the main components of the end-to-end Release 1
+
+2.2
+
+o
+
+we Franca
+ron
+TPS Host 5!
+rf 8
+
+POL FS ecsies
+‘sDesptcnes
+ranch cath Replnenret
+Nese
+
+Figure 1 — End to End Release 1 Impacted Components
+
+Lines in Red represent new information flows
+Lines in Blue represent modified information flows
+Boxes represent subsystems or institutions and are
+boxes are new sub-systems at End-to-End Release 1
+‘The Direct flow of data from SAP ADS to POL FS.
+of the Horizon System
+
+SAP ADS
+
+described below. The red
+
+is not within the boundary
+
+External to the Horizon system, this is a SAP system that is responsible for the control
+of cash distribution to/from the Branches. SAP ADS will be responsible for providing
+details of intended deliveries of cash to Branches. The details will include the branch
+information, the number of cash pouches and the value of each cash denomination in
+each pouch. Each set of information regarding a delivery of Cash to a Branch is
+known as a Replenishment Delivery Notice. Replenishment Delivery Notices will be
+
+© 2022 Fujitsu Services
+
+File; EAHLD002.docEA_HLD-002.doe
+
+COMMERCIAL IN CONFIDENCE
+
+Page 13 of 54
+
+Printed on 17/10/2003 3:50:00 by PWJPW
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: .00-3 _-(Formatted )
+COMMERCIAL IN CONFIDENCE Date: “19/01/2004
+
+automatically matched with deliveries of cash to Branches and will allow automated
+remittance-in of the cash at the point of delivery.
+
+In addition, the total Cash balance at each Branch is calculated and sent back to SAP
+ADS to enable a better understanding of both the Branch and the overall Cash
+Holding. This information will piggy-back on the existing Cash Statement
+information flow,
+
+2.3 LFS Host
+
+‘The LES Host acts as a deliverer and receptor of information to/from SAP ADS.
+Changes will be needed to LES to receive the new Replenishment Delivery Notices
+and to pass this information to a new LFS Loader process in order to deliver such
+information to the correct Branches.
+
+‘The LFS Host also needs minor changes to enable it to accept the additional Cash
+Statement attribute that reflects the Branch Cash Balance.
+
+Full details of the changes required to the LFS Host are contained within [LFSHLD]
+‘Additionally, the changes and specifications of the interface between SAP ADS and
+the LFS Host are documented in [LFSAIS]
+
+2.4 LFS LOADER
+
+‘A new Agent loader process is required to deliver the Replenishment Delivery
+Notices from the LFS Host to the target Branches.
+
+Full details of the new Loader process are described in [LFSHLD]
+
+2.5 LFS HARVESTER
+
+The existing LFS Harvester will be modified to additionally harvest the generated
+cash balance attribute each day.
+
+Full details of the changes required are described in [LFSHLD]
+
+2.6 TPS HARVESTER
+
+‘The existing TPS Harvester Agent will be modified to harvest end of day cash (and
+‘Near-Cash) movement summaries to the TPS Host system. Full details of the changes
+required to this Harvester are described in Section 3.2.4 within this document.
+
+‘An overview of the accounting process and the mechanisms of transaction
+summarisation are described in section 3.2 of this document.
+
+2.7 TPS Host
+
+‘The TPS Host process is responsible for delivery of transactional data and summaries
+to both the POL TIP system and the Data Warehouse. This functionality will be
+extended to pass the new Cash Movement Summaries to the POL Financial System
+(POL FS).
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 14 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: ,00.3 (Formatted }
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Details of the changes required are summarised in Section 3.2.5 of this document and
+will be further clarified during the update of [TPSHLD].
+
+‘The output format of the cash movement summaries generated by TPS Host is fully
+described in [FSAIS).
+
+2.8 POL FS
+
+The POL Financial System is a new SAP system that will eventually replace the
+existing set of CBDB financial systems. This system is out of scope of this document
+however a brief description is in order.
+
+‘The financial system will receive cash movement data from the Branches via the TPS
+sub-system, from the Cash Centres (probably via SAP ADS) and from the Financial
+Institutions (probably manually entered from statements).
+
+The POL FS implements a double-entry bookkeeping system such that each posting to
+an account must have an equal and opposite posting to another (or same) account.
+‘The net result of this mechanism is that the balance of the accounts is always zero.
+
+The aim at Release I is to account for Cash Holdings at both the Branches and at the
+Cash Centres. At Release 2, this accounting will be extended to account for all
+transactions.
+
+The following Branch transactions therefore need to be identified:
+
+a Cash/Cheques Received during payment for goods during Serve Customer
+Cash Paid as benefits, banking transactions, reversals during Serve Customer
+Debit Card payments for services (Bureaux & Non-Bureaux)
+
+Foreign exchange Transactions
+
+Cash Received in Pouches from Cash Centres
+
+Cash Returned in Pouches to Cash Centres
+
+Cheques returmed to the Cheque clearance centre.
+
+Cash movement between stock units (although these movements do not affect
+the balance, they should be included for completeness)
+
+Discrepancies in cash position arising from the difference between the
+Horizon calculated cash position and the manually declared cash position
+
+eoocooee
+
+[)
+
+‘These transactions will be identified by Product reference data (as described in section
+3.2), summarised, mapped to the relevant Chart of Accounts code and sent to the POL
+FS on a daily basis.
+
+In order to compile balancing double-entry accounts, both the cash movements and
+the product movements require capture such that they net to zero. Since the product
+movements will not be captured at Release I then a dummy ‘net-out” balancing
+movement needs to be generated and sent to PO LFS. This balancing figure will
+simply be equivalent and opposite to the sum of all the transactions sent to POL FS.
+
+29 RDMC
+
+‘The RDMC/RDDS system is responsible for delivering reference data updates to the
+Horizon estate. At Release 1, the reference data updates will be constrained to Type-
+C Data, this means that there is no impact on the RDMC/RDDS software deliverables,
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 15 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2008 3:50:00 by PWJPW.
+Fujitsu Services
+
+FUJ00098224
+FUJ00098224
+
+End to End Release 1 - High Level Design Ref: EAHLD/002
+Version: 1.00.3 _-{Formatted
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+‘The new requirements for reference data are described in Chapter 4
+
+2.10
+
+CASH CENTRE
+
+‘The POL Cash Centres are not a part of the Horizon system and are therefore out of
+scope of this document. A brief description follows.
+
+The cash centre is
+
+sponsible for delivering cash to the Branches and receiving cash
+
+‘back from the Branches. Cash is packed in Pouches for delivery (either way) and
+contains a known (and recorded) amount for each denomination.
+
+‘The despatch and receipt of each pouch is recorded in SAP ADS and the Pouch Id and
+Total Value passed from SAP ADS to POL FS. POL FS will match these data to the
+despatch and receipt of Pouches at the Branches to ensure that no Pouch is ‘lost’ in
+transit. Matching will be by Pouch Id that is recorded on the transaction detail that is
+sent to POL FS.
+
+2.11
+
+BRANCH
+
+‘The branch counter systems require changes in the following areas:
+
+1
+2.
+3
+
+4,
+
+L
+
+6.
+
+End of Day Summarisation of Cash for POL F
+
+Generation of the daily total Cash Balance for return to SAP ADS
+Automated Remittance-in of cash at the point of delivery via reference to the
+Replenishment Delivery Notices
+
+Deferral of remittance-out of cash until the actual point of collection by the
+courier
+
+Reversal of remittance-out prior to collection
+
+Electronic preparation of a group of pouches awaiting collection by courier
+
+Item I is fully described in Section 3.2. All of the other changes to the counter
+systems are detailed in [LFSHLD].
+
+© 2022 Fujitsu Services
+
+COMMERCIAL IN CONFIDENCE Page 16 of 54
+
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 1.00-3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Chapter 3 -
+Changed Components
+
+341 GENERAL
+This section describes all the Horizon subsystem components that require change as a
+result of both the new Requirements defined for E2E Release 1 Projects 1 and 3 and
+as a result of guidance provided in the End-to-End Release 1 Design Proposal.
+3.2 FINANCIAL DATA TO POL FS
+At E2E Release 1, all Cash and Near Cash movements are to be posted to the new
+POL Financial system on a daily basis. Most of the movements of cash will be
+summarised at a Branch level by mapping each transacted Product to a POL FS Chart
+of Accounts reference.
+Summarisation will be performed at each branch at the end of each trading day and
+these resulting summaries will be harvested by the TPS Agent and routed to POL FS
+via the TPS Host System Database.
+3.2.41 Transaction Summarisation Overview
+
+The POL FS will present Cash and Near Cash movements against a number of
+different Chart of Accounts Accounting Codes. Each C-of-A Account will consist of
+the summarisation of transactions of differing Products transacted in each Branch.
+The summarisation process is to be performed daily and is to only summarise
+transactions performed on each trading day. The data summarised is therefore a daily
+movement figure rather than a balance figure.
+Not all transactions are to be summarised. At Release 1, only Cash and Near-
+Cash Products require summarisation to one of the following accounts:
+
+a Summary: Cash on Hand movement
+
+a Summary: Cheques on Hand movement
+
+Q Transactions: Cash Rem In Value
+
+a Summary: Bureau Card transactions Value
+
+Q Summary: Non-Bureau Card transactions Value
+
+a Summary: Cheque Rem Out Value
+
+a Transactions: Cash Rem Out Value
+
+a Summary: Forex on Hand movement (in £)
+
+a Balance (sum of all transactions posted to the above accounts)
+For each Product that will be summarised, the C-of-A Account to which it will be
+mapped will be recorded within the Product definition.
+
+© 2022 Fujtsu Services COMMERCIAL IN CONFIDENCE Page 17 of 54
+
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+
+FUJ00098224
+FUJ00098224
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: ,00.3 (Formatted }
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Some C-of-A accounts need individual transactional detail rather than summaries.
+Products that are mapped to these accounts will not be summarised but will instead be
+transferred to POL FS as individual transactions. Examples of these transactions are:
+
+a Remit Out Cash to Automated Distribution Centre
+a Remit In Cash from Automated Distribution Centre
+
+Where individual transactional detail is passed to POL FS, an agreed Transaction
+Identifier must accompany it. In the case of cash remittances, this will be the cash
+Pouch Id. Future requirements for individual transactional details are unknown and it
+should therefore be possible to use Reference Data to specify which transaction
+attribute should be passed to POLS FS as the Transaction Identifier.
+
+‘The volume of these individual non-summarised transactions on any trading date is
+expected to be low.
+
+‘At Release 2, the mapping of cash transactions to the POL FS Chart of Accounts is to
+be extended to all Products
+
+The logical reference data required to support this is as follows
+
+‘Chart of Accounts
+
+‘Account Number
+‘Account Description
+‘Summarisation Mode
+Transaction ldentiier
+Balance Account?
+Retain Balance?
+
+(C-0F-A Mapping
+
+Product
+
+Figure 2 ~ Entity Relationship
+
+Where:
+
+Account Number: Chart of Accounts Account number. It is assumed that
+this is numeric
+
+Account Description: The description of the POL FS Account
+(Not really needed, other than as documentary info).
+
+Summarisation Mode:Currently, the two modes that are required are either
+summarisation of all daily transactions to a single figure
+or no summarisation at all.
+
+Transaction Identifier:If the Summarisation Mode indicates that the
+transactions are not to be summarised, then this
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 18 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2003 3:50:00 by PWJPW
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: ,00.3 (Formatted }
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+indicates which piece of attribute grammar is stored as
+the transaction identifier.
+
+Balancing Account A Boolean indicator to highlight which CofA Account
+the Cash Balancing Figure should be posted to. This
+attribute is only required for Release 1 whilst the
+dummy balancing figure is required. Only one CofA
+Account should have this Boolean set to TRUE.
+
+Retain Balance A Boolean flag that determines whether a balance figure
+should be maintained for the CofA account within each
+branch. This should always be set to TRUE if Cash
+Indicator is set to TRUE (see section 3.2.3.5).
+
+Product: A POL Product code
+
+The above assumes that the mechanism for transaction summarisation is consistent for
+any C-of-A account. If a C-of-A account requires both summarised and individual
+transaction details to be posted to it, then the Summarisation Mode will need to be
+stated within the C-of-A Mapping.
+
+Since there is already a definition of each Product, a modification to this definition to
+include the C-of-A mapping would be ideal. The Product definition is delivered as
+Type-A Reference Data as ‘Item’ and this is transformed into the ‘EPOSSProducts’
+collection that is then made available to the counter.
+
+However, changes to Type A reference data are likely to be difficult to implement
+within Release 1 timescales. It is therefore proposed that the reference data be
+delivered as Type-C.
+
+If the Reference data is delivered as Type-C data, then the EPOSSProducts collection
+cannot initially be used to store the new Chart of Accounts Product Mapping. A new
+collection will need to be devised that has a similar structure to the EPOSSProduets
+collection so that, when the data is eventually delivered as Type-A, the code changes
+required at the counter to use the EPOSSProducts collection (rather than the new
+collection defined below) will be minimal.
+
+Refer to section 4.3.24-2.2 for details of the CofAProducts Collection.
+
+In addition to the CofAProducts collection, a ChartOfAccounts collection also
+requires definition.
+
+Refer to section 4.3.14-2-4 for details of the ChartOfAccounts Collection.
+
+There are two ways in which the transactions can be summarised at the end of each
+day
+
+1. The new End-of-day summarisation process can read all transactions
+performed during the day and perform a lookup on the CofAProducts
+collection to determine the C-OA mapping and the ChartOfAccounts
+collection is used to determine whether summarisation is required or
+individual transaction detail is required
+
+i
+
+‘The EPOSS Retail Broker is modified to de-normalise the mapping onto the
+transaction itself at the time that the transaction is written to the message store.
+The End-of-Day summarisation process therefore only needs to sean those
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 19 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2003 3:50:00 by PWJPW
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: ,00.3 (Formatted }
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+transactions that have a mapping attribute and referral to reference data is
+required only for the ChartOfAccounts Collection.
+
+There are a number of benefits to option 2:
+
+a The EPOSS Code already reads the EPOSSProducts collection at the time
+of performing a transaction. The data is therefore already available.
+
+a The End of Day summarisation process is simplified and more efficient.
+
+a Ifa reference data change is made during a period when a gateway
+machine is faulty, then summarisation of prior-days transactions will use
+the most recent reference data if option 1 above is chosen. However,
+Option 2 guarantees that the correct reference data is used as long as the
+reference data is available at the Branch
+
+The downside to option 2 is that the Transaction itself is increased in size. However,
+this increase is only due to the addition of a single Chart of Accounts Code.
+
+Overall, Option 2 is the better proposal and is the chosen option
+
+3.2.4.1 Settlement Products
+
+Sessions that are performed in various modes settle automatically to a default
+Settlement Product that is defined in the Collection “ModeParameters’. These Modes
+are:
+
+Parcel Traffic
+
+Revaluation Down
+Revaluation Up
+
+Remit-in Auto Distribution
+Remit-in Client
+
+Remit-out Auto Distribution
+Remit-out Client
+
+Remit Out Data Centre
+‘Transfer In
+
+a Transfer Out
+
+eocoeceeLce
+
+Additional
+
+In many of these modes, the Session may consist of both Cash and Stock transactions
+and the total value of the Session is settled as a single balancing transaction to the
+Settlement product.
+
+Due to the need to report al! Cash transactions to POL FS in order to ultimately
+provide balancing double-entry accounts, the Cash portion of all Settlement
+transactions requires separate identification from any Stock portion. It is therefore
+necessary to have a separate Settlement Produet for Cash than for Stock for those
+Product/Mode combinations that allow Cash and Stock to be mixed within the same
+Session (and which auto-settle).
+
+‘The Product/Mode combinations that require Settlement to a non-default Product are
+the exception to the rule. It is therefore proposed that the default Settlement Product
+is retained within the ‘ModeParameters’ Collection and that, exceptionally/optionally,
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 20 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2008 3:50:00 by PWJPW.
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+3.2.1.3
+
+3.2.2
+
+a different Settlement Product is defined within the ProductModes Collection.
+However, since we are not changing Type-A reference data at Release 1, the
+Exceptional Optional Settlement Product will be defined in a CofAProduetModes
+collection.
+
+Refer to Section 4.3.34.23 for full details of the CofAProductModes Collection.
+Transfer Out/In
+
+Due to various complexities within the generic EPOSS core code, the use of multiple
+settlement products during Transfer Ou/In is not desirable. However, the settlement
+of cash during transfers out/in needs to be differentiated from the settlement of stock
+otherwise an imbalance would be posted to POL FS.
+
+However transfers of stock between stock units do not affect the overall stock holding
+or cash balance of the branch. These transfers are therefore of no accounting use.
+
+It is therefore proposed that Transfer Out/In transactions are ignored during the
+summarisation process (Section 3.2.3) and are therefore not reported to POL FS.
+
+The use of transfer in (TI) and transfer out (TO) modes within the
+CofAProductModes collection is therefore expressly prohibited.
+Discrepancies
+
+Discrepancies between roll-over declarations and the values deduced within the
+Horizon Branch System are posted to a Discrepancy Surplus or a Discrepancy
+Shortage Product.
+
+For Release 1, it is proposed that Discrepancy Surplus and Discrepancy Shortage
+Products are ignored and not posted to POL FS.:
+
+EPOSS Changes
+
+Each transaction is to be written with the C-of-A mapping account as an additional
+attribute EPOSSTransaction. CofA.
+
+In addition, where the transaction Mode causes a Session to be settled to a default
+Settlement Product, then each Product on the transaction stack will need individual
+inspection to determine whether the value for the Product Transaction should settle to
+an exceptional Settlement Product. An example follows:
+
+Consider the following example Products:
+
+Product I Description
+Number
+
+GashCheques
+First Class Stamps
+
+£10 Postal Orders
+Second Class Stamps
+‘TFxiROAD Dummy
+Product
+
+‘Fei —ROAD __ Cash
+Cheque Product
+
+walalwfo)—
+
+a
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 21 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2003 3:50:00 by PWJPW
+
+FUJ00098224
+FUJ00098224
+
+(Formatted
+
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+FUJ00098224
+FUJ00098224
+
+Table 1 — Example Products.
+
+And assume that the Default Settlement Product for Transaction Mode “Fransfer
+ROADOwt’ is Product number $. However, we wish to account for Cash-Cheques
+separately to the way in which we account for Stock and we wish to post the eash
+Cheques to the Chart of Accounts account code “09004200009°. We would therefore
+make the following entries in the CofAProductModes Collection:
+
+<Collection:CofAProductModes>
+<ObjectName:1>
+
+<Data:
+<Modes:
+<Mode:
+<M:TOROAD>
+<Vi1l>
+<S:6>
+>
+
+‘As can be seen, the ObjectName ‘1’ (Product 1), when transacting in Transfer-out
+mode (‘ROADZO”), has an entry in this mode indicating that the product is settled to
+Product 6 (‘S:6").
+
+When performing the following Transaction in Transfer-Out Mode:
+
+Product I Value
+Code
+
+Table 2 oduct Transactions
+
+The EPOSS system should determine the total values by each Settlement Product.
+
+Since Cash Settles to Product 6 and the other Products Settle to the Default Settlement
+Product (Product 5), then the Settlement Transactions are as follows:
+
+Product I Value
+
+Code
+
+5 £71
+
+L_6__I
+
+Table 3 ~ Settlement Transactions
+
+Initially, this will require access to the new CofAProductModes collection. In the
+fullness of time, the CofAProductModes collection will be replaced by the
+ProductModes collection.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 22 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+Fujitsu Services End to End Release 1 - High Level Design Ref.:
+
+Versi
+
+3.2.3
+
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+Nests — Tee aml ea oe ed-within ERO:
+i mi Jr
+ip “f
+L " EROSS,NBS-and-DCS_but-is-sep: APS-OBCS
+d Mails—Need- Renneke Devel " in
+op
+
+End of Day Branch Summarisation
+
+A new End of Day Branch Summarisation process is required. ‘The existing End-of-
+Day Reconciliation module will be cloned and modified to meet the requirement since
+it contains existing infrastructure that scans all messages for each outstanding Trading
+Date. This caters for scenarios where catch-up is required if previous end-of-day
+processes have failed to run. It should be noted that catch-up should be attempted for
+all days in arrears up to the point where transactions are archived (the existing Daily
+Reconciliation only attempts catch-up for a limited period in arrears). The most
+recent EOD Branch Summarisation Trailer will be located via reference to a new
+Persistent Object that is updated at the end of every daily summarisation to point to
+the most recent trailer record
+
+The End of Day Reconciliation is documented in [EEOD]. An extract from this
+document is as follows:
+
+‘Single Day's Reconciliation
+
+A further sub-process within Daily Reconciliation acts to perform the reconciliation for a
+single day between two end of day markers, processing all messages between these markers,
+At system installation there will be only a single marker however to delineate the first day’s
+processing, This is taken into account.
+
+‘The process to perform daily reconciliation reads all messages for a day and uses selection
+criteria to determine whether a message constitutes an EPOSS Transaction for reconciliation
+Selection of a transaction has that message submitted to two aggregation processes as a result.
+‘The process is ended with the writing of the day’s reconciliation details
+
+Read and Cache ModeParaneters Reference Data
+End of Day Marker for yesterday
+Found then
+2222Find a first message
+Locate End of Day Marker for Day of Reconciliation
+If not Found then
+
+Record System Error to Event Log
+
+Abandon EPOSS End of Day
+
+If no’
+
+EndIf
+‘TxnSelected = Select_Transactions (Messages)
+For each Message written between the two Markers
+Read Message
+TxnValidated = Validate (Transaction)
+Perform Transaction Accumulation
+Perform Mini Cash Account Accumulation
+Loop
+Write Daily Reconciliation Details
+
+The above pseudo-code logic will be modified as follows:
+
+Locate End of Day Marker for Day_of_Summarisal
+If not Found then
+
+2272Find a first message
+Locate End of Day Marker for Day_of_Sunmarisation
+If not Found then
+
+Record System Error to Event Log
+
+Abandon EPOSS End of Day
+
+tion = 1
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 23 of 54
+EAHLDO02 docks.
+
+File: EA\
+
+EA_HLD_002.doo Printed on 17/10/2008 3:50:00 by PWJPW
+
+FUJ00098224
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+Enate
+
+‘TxnSelected = Select_?
+
+ed = Validate (Transact ion)
+Perform Chart of Accounts Accumulation
+
+Loop
+Write Chart of Accounts Summaries
+Write Chart of Accounts Trailer
+
+Update Cash Statement Persistent Object
+
+‘The new functions (Shown in bold) are described in more detail below.
+
+FUJ00098224
+FUJ00098224
+
+3.2.3.1 Perform Chart of Accounts Accumulation
+
+This function initially processes only those transactions that have attribute
+
+EPOSSTransaction.CofA present on the Riposte Message.
+
+Note: In future releases, all transactions (other than those in Tl or TO mode) should
+be mapped to a Chart of Accounts code and an error would then be raised if
+the EPOSSTransaction.CofA attribute did not exist on any one transaction. In
+Release 1, the transaction scan will simply pick-up the transactions that have
+the CofA attribute present and are not in modes Tl or TO.
+
+If the Summarisation Mode as found by lookup of the ChartOfAccounts Collection
+
+indicates that transaction detail is to be sent to POL FS, then each non-zero value
+
+transaction (EPOSSTransaction.ValueCount != 0) will be reproduced (duplicated)
+in the message store within the end-of-day Branch Summarisation. The following
+message will be written for each of these transactions:
+Where:
+dd-mmm-yyyy:Trading Date associated with the transaction
+hh:mm:ss: End of Day Time
+Node_Id:  Message.Id (From the original transaction within the message
+store)
+
+‘Txn Num: Message.Num (From the original transaction within the
+message store)
+
+CofACode: Chart of accounts code recorded in EPOSSTransaction.CofA
+
+‘Transactionld: The value taken from an attribute within the transaction. ‘The
+specific attribute itself is determined by which chart of
+accounts code the transaction is mapped-to. The attribute is
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 24 of 54
+
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+determined by the value held in Collection ChartOfecounts
+Attribute DenAttribute
+
+Messages: This will always be set to ‘1’. This value is documentary only
+and is not passed to POL FS.
+
+Quantity: This is set to the EPOSSTransaction. Qty attribute. ‘This value
+is documentary only and is not passed to POL FS
+
+his is set to the EPOSSTransaction.SaleValue attribute
+
+his is the unique identifier associated with the current CofA
+
+Summary
+
+Value:
+Identifier:
+
+If the Summarisation Mode indicates that the transaction is to be summarised before
+sending to POL FS, then the transaction will not be duplicated within the CofA
+Summary.
+
+Regardless of Summarisation Mode each transaction will be added to an internal (in
+memory) summary for the correct C-of-A account. Against each Chart of Accounts
+code, the values for Transaction Quantity, Transaction Value and the count of the
+contributing records will be accumulated.
+
+3.2.3.2 Write Chart of Accounts Summaries
+On completion of the message store scan, all the non-zero value
+(EPOSSTransaction.ValueCount != 0) internal C-of-A summaries with a
+Summarisation Mode of ‘S? will be written to the message store. The following
+message will be written for each summary:
+Where:
+dd-mmm-yyyy:Trading Date associated with the transaction
+hh:mm:ss: End of Day Time
+CofACode: Chart of accounts code recorded in EPOSSTransaction.CofA
+Messages: ‘The count of the number of messages that were used to create
+this summary accumulation. This value is documentary only
+and is not passed to POL FS.
+Quantity: The sum of the EPOSSTransaction. Qty attributes. This value is
+documentary only and is not passed to POL FS.
+Value: The sum of the EPOSSTransaction SaleValue attributes
+Identifier: ‘This is the unique identifier associated with the current CofA
+Summary
+Having written all the CofA summary records to the message store, a balancing
+transaction needs to be written with a value that is equal to and opposite to the sum of
+all Summarised and non-Summarised transactions. The Chart of Account code to
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 25 of 54
+
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW
+
+FUJ00098224
+FUJ00098224
+
+(Formatted
+
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+FUJ00098224
+FUJ00098224
+
+Version: 4.00.3 (Formatted
+
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+3.2.3.3
+
+which this “Balancing Transaction’ is written is the code within the ChartOfAccounts
+Collection that has attribute Data.BalanceF lag = “Y’.
+
+Write Chart of Accounts Trailer
+
+The Attribute Grammar of the Chart of Accounts Trailer Message, written last is as
+follows:
+
+ller:Previrailertd>
+<CofASummary?rai lerld: Tdentd#ie
+
+Where:
+
+dd-mmm-yyyy: Trading Date associated with the transaction
+
+hh:mm:ss: Time of transaction
+
+PrevTrailerld: The Id of the previous CofA Summary Trailer record.
+This will be used by the Agent during catch-up
+following EOD failure for one or more days,
+
+Identifier: This is the unique identifier associated with the current
+CofA Summary
+
+‘The total messages, total quantity and total value attributes are recorded for audit
+purposes. In Release 1, they are additionally used in conjunetion with the CofACode
+by the TPS Harvester to generate the balaneing transaction for the Summarised Cash
+transactions.
+
+Write Trailer Persistent Object
+
+A Trailer object is required to point to the most recent Chart of Accounts trailer
+record. This prevents processor-binding searches for the latest trailer record.
+
+<Collection:CofABSP>
+<ObjectName:Trailer>
+
+<CofASunmaryTrailerid: Identifier>
+<PreviousTrailer:PrevTrailerld>
+
+Where:
+
+dd-mmm-yyyy:Trading Date associated with the transaction
+
+hh:mm:ss: Time of transaction
+
+PrevTrailerld: The Id of the previous CofA Summary Trailer record. ‘This will
+be used by the Agent during catch-up following EOD failure
+for one or more days.
+
+Identifier: This is the unique identifier associated with the current CofA
+Summary
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 26 of 54
+
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: ,00.3 (Formatted }
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Update Cash Statement Persistent Objects
+
+‘The balance of Cash on Hand at each Branch needs to be recorded at the point in time
+when the cash movement figures are compiled for POL FS. This Cash on Hand figure
+will be used within the LFS Cash Statement message as the Data.GeneratedCash
+figure.
+
+The balance figure will be derived from the previous days’ balance plus the
+movement for today.
+
+Since there is a requirement to store a balance figure for cash, then the mechanism
+should be extended to store a balance figure for each chart of accounts code. This
+makes the process more generic and aids the testing of the product. Each balance
+figure is stored in a local persistent object as follows:
+
+<Collect ion: CofABalance>
+<ObjectNane:€efacede>
+<Roatat
+
+<bODDate :dd-mmm-ceyy>
+<Balance :Balanceamt>
+
+Where:
+
+CofACode: Chart of accounts code which this balance figure represents
+dd-mmm-ceyy: Trading Date when the balance figure was last calculated.
+BalanceAmt: The value of the balance for this Chart of Accounts Code.
+
+Following the calculation of the End of Day Branch Summarisation, the CofABalance
+persistent objects will be updated with the total movement figures. If the persistent
+object did not exist prior to execution (due to the introduction of a new CofA Code)
+then the value of the persistent object is assumed zero and a new persistent object
+created with a value equivalent to the current days’ movement figure.
+
+Note: The balance consists of the previous days’ balance figure plus the value of the
+transactions performed today. Therefore in cases where the End of Day
+Branch Summarisation process has failed to run for one or more days, then
+catch-up must be performed starting with the last successful run and must
+always operate in chronological order. This will be performed on a day-by-
+day basis such that a set of CofABalance messages and a trailer record will be
+written for each Trading Date
+
+Note: Balance persistent objects will only be created/maintained for those Chart of
+Account codes where Collection ChartOfAccounts Data.BalanceFlag = ‘Y’.
+There is only ever expected to be one such persistent object required.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 27 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+3.2.3.6
+
+3.2.4
+
+Migration Processing
+
+‘The migration to the End of Day Branch Summarisation process will be controlled by
+a Soft-launch Product. ‘The presence of the Product will be checked during start-up of
+the process and if the Product does not exist, then the Summarisation process will
+remove all persistent objects referred to in section 3.2.3.5 and then exit without
+further action.
+
+If the Soft-launch Product does exist, then the process needs to check whether this is
+the first time that the process has been executed (1* run after migration). This is done
+by checking for the presence of one or more persistent objects that are described in
+Section 3.2.3.5. If one or more of these objects exists, then this process must have
+previously executed and no further migration issues need to be considered. If there
+are no Summarisation Persistent objects, then this must be the first execution of the
+process following Migration and the following migration activities must be
+performed:
+
+For each row in CofAProduets Collection, check the Summarisation Mode as found
+by lookup of the ChartOfAccounts Collection indicates that transaction Summary is to
+be sent to POL FS. For each Product that requires summarisation, read the associated
+Container #1 record from the most recent Cash Account Rollover balance figure.
+‘Where this message exists, summarise all transactions for the Product that lie between
+the Cash Account Rollover Trailer and the start of the current day and add both the
+Rollover Balance and the Transaction Total to the in-memory Summary totals (See
+Section 3.2.3.1).
+
+FUJ00098224
+FUJ00098224
+
+(Formatted
+
+Note: At the point of Migration, ALL the products that are present in the
+
+CofAProducts collection will be migrated/Bforward from the previous Cash
+Account rollover balances. However, if products are subsequently added to
+the CofAProducts collection, it will be assumed that they are new produets
+and no further migration activity will take place.
+At Release 2, the migration of stock Products will need to be considered. It is
+assumed that the CofA mapping will be available via Type A Reference Data
+and the migration will provide Balance figures for all produets that do NOT
+exist in the CofAProduets collection.
+
+TPS Harvester
+
+The existing TPS harvester will be enhanced to process the new end-of-day summary
+records. This harvester uses a secondary scan to identify all summaries that exist
+between the end-of-day marker and the end-of-day trailer record. The trailer record
+for the C-of-A summaries will be identified by:
+
+<Application:CofASunmary> and
+
+<EpOSSTransacti CofATrailer> and
+
+<Ep0sSTransacti ‘Mon-yyyy>
+
+A tertiary scan of the Gateway Counter (node 1) is initiated to find the Summary
+message(s) associated with the C-of-A Trailer. The low marker for this scan is the
+EOD Marker message itself and the high marker is the Summary Trailer.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 28 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+FUJ00098224
+FUJ00098224
+
+Versi
+COMMERCIAL IN CONFIDENCE Date:
+
+Fujitsu Services End to End Release 1 - High Level Design Ref: EA/HLD/002
+100-3
+
+19/01/2004
+
+‘The Summary messages are recognised by having the same values for:
+
+<Applicat io!
+<EPOSSTrans:
+<EPOSSTrans:
+
+-CofASummaryTrailerId:> and
+-ODDat
+
+as the Summary Trailer.
+
+The Summary messages to be harvested are further recognised by the value of
+<EP0SSTransaction.TranType:>. Depending on the value of,
+EPOSSTransaction. TranType, the harvested record will be placed in either a TPS C-
+of-A Summary table or a TPS C-of-A Transaction Detail table.
+
+‘TranType Harvested as ‘TPS Table
+
+CofATransaction I Individual Transaction I TMS_RX_COFA_ TRANSACTIONS
+detail record
+
+CofASummary I Chart of Accounts ‘TMS_RX_COFA_ SUMMARIES
+‘Summary record
+
+‘The transactions that are harvested will be inserted into one of two TPS interface
+tables. ‘The attribute mapping for these tables is as follows:
+
+[Coun Type sae (= EI [e = jeer oem
+TMS_RX_COFA_TRANSACTIONS —__TranType-GotATransaction
+[TRADING DATE DATE INOT NUL) Food date
+INSERT_OATE DATE INOTNULLI 'SYSOATE
+IGROUP_O NUWERR 6 INOTNULI (Groupld
+COUNTER FOSTION “NUMBER 2 INOTNULLI POSS Transaction I
+ld
+IRPOSTE_MESSAGE_NUMBENUNBER _I10 NOTNULL) EPOSSTransaction
+Num
+[GO A_CODE NOE 6 NOTNULL) EPOSS Transaction
+\GotaMapping
+ITRANSACTION QUANTITY NUMBER 8 INOTNULLI Rp, IEPOSSTransaction.
+Num_{atyCount
+ITRANSACTION.AMOUNT NUEER [12 [2 NOTNULLI Rp, I EPOSSTransaction
+Num_IVakieCount
+‘TRANSACTION \VARCHARZ) 32 INOTNULLI EPOSSTransaction
+Tenia
+‘TMS_RX_COFA_SUMMARIES ‘TranType-CotASummrary
+[TRAONG_DATE DATE INOT NUL] Food date
+INSERT_OATE DATE INOTNULLI ‘SYSCATE
+IGROUP_O NUWVERR 6 INOTNULLI (Groups
+\c_OF_A_CODE NUWEER 6 INOTNULLI POSS Transaction
+\CotAMapping
+[TOTAL_TRANSACTONS NUMBER 6 NOTNULLI Rp. IEPOSSTransaction
+Num_IMessageCount
+[TOTAL_TRAN_GUANTITES NUMBER 8 INOTNULLI Rp, IEPOSSTransaction
+Num_IatyCount
+OTALTRAN AMOUNTS (NUMBER [122 INOTNULLI Rp, _IEPOSSTransaction.
+Num_IValieCount
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 29 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 1.00-3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+3.2.5
+
+3.3.1
+
+3.3.2
+
+3.3
+
+Note: The above table will eventually be used to update document [TPSMAP]. A
+full description of the meanings of the columns and contents can be found
+within that document
+
+TPS Host
+The TPS Host system will present two new views to the TPS Harvester into which the
+
+C-of-A transaction summaries and the C-of-A individual transactions will be written
+during the harvesting process. These tables are defined in the previous section.
+
+‘A new TPS process will extract and transform the data and write it to one or more flat
+files on the TPS Host operating system. The format of these files and the associated
+error processing is defined in the POL FS Application Interface Spec [FSAIS]. The
+two TPS tables (defined in the previous section) will be joined using a UNION ALL,
+sorted and written to the Branch Ledger Entry Contents Record and the Branch
+Ledger Entry Detail Record as defined in [FSAIS].
+
+Scheduling and housekeeping of the data is similar to the existing TPS TIP schedules
+and housekeeping tasks as defined in the TPS HLD [TPSHLD]
+
+PoucH COLLECTION AND DELIVERY
+
+‘The new POL Financial System will provide a tighter and more timely mechanism of
+cash management. To better facilitate this, the liability for cash needs to be precisely
+aligned with the delivery and collection of cash to/from each Branch.
+
+Cash therefore needs to become part of the overall Branch balance at the point of
+delivery and will only reduce the branch balance at the point of collection.
+
+This document only outlines the changes that are required, full design details are
+documented in:
+
+{LFSHLD] _ LFS High Level Design
+
+Cash Pouch Delivery
+
+Each pouch must be recorded onto the system at the point of receipt by scanning or
+manually entering the barcode. The process will be changed such that the receipt of
+each cash pouch is matched with the associated Replenishment Delivery Notice that
+advises the Pouch Contents. The remittance-in of the Pouch contents will then be
+automated from the details of the Replenishment Delivery Notice
+
+Cash Pouch Collection
+
+The original LES process remitted-out the cash at the point of packing each Cash
+Pouch. However, collection of the pouches may be some time thereafter and
+therefore the liability of the Branch is reduced artificially early.
+
+‘The process will change such that the cash value of the pouch being packed is
+transferred to a suspense account until the point of Pouch collection.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 30 of 54
+
+File; EAHLD002.docEA_HLD-002.doe
+
+Printed on 17/10/2003 3:50:00 by PWJPW
+
+FUJ00098224
+FUJ00098224
+
+_— (Formatted
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: .00-3 _-(Formatted )
+COMMERCIAL IN CONFIDENCE Date: “19/01/2004
+
+‘An additional process will be implemented that will enable pouches to be grouped
+together before collection and all associated receipts pre-printed. The collection
+process will therefore change such that a group of pouches is identified and collected
+as a single transaction. The cash balance of the branch will be reduced at the point of
+collection by transferring each Pouch value from the suspense account to a cash
+Remittance-out account.
+
+3.4 GENERATED CASH BALANCE
+
+A better understanding of the accuracy of LFS declared Overnight Cash Holdings that
+are sent to SAP ADS is required to ensure that Branches report their cash holdings
+accurately. Appending an automatically calculated Branch Cash Balance to the
+manually declared figures will do this.
+
+‘The End of Day Branch Summarisation process defined in Section 3.2.3 maintains the
+Branch Cash Balance as values in a local Persistent object CofABalance. These
+values give the overall Branch balance that is appended to the existing CashStatement
+message for harvesting to the LFS host and onward transmission to SAP ADS
+
+This document only outlines the changes that are required, full design details are
+documented in:
+
+[LFSHLD] _ LFS High Level Design Delta
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 31 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+FUJ00098224
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAHLD/002
+I Version: 1.00.3 _-{Formatted
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Chapter 4 -
+Reference Data
+
+All new reference data structures will be delivered via Type-C reference data in order
+to prevent impact to the RDMC/RDDS delivery mechanisms. There will however be
+additional items of Type-A reference data and this will need to be agreed with POL.
+
+41 TyPE A REFERENCE DATA REQUIREMENTS
+
+411 Item
+
+New product definitions are required to achieve the Accounting requirements and also
+to implement the Softlaunch eapability.
+item Rem Description 1
+
+code_I Type
+cP 1
+
+Cashin Pouches. This product willbe defined as @
+Cash product that is used to retain cash within the
+Branch until Pouch collection. It will be mapped to the
+Cash Account as a Suspense item in Table 2. This is
+a Cote Product
+ACE I 1 I Authorised Collectors Card non-Core Product. Ths
+dummy product willbe distributed only to those
+branches that do not require to validate the ACC Card
+‘of Cash Collection Couriers. These are the Branches
+Where collection of cash is managed by Royal Mail
+Special Delivery.
+
+SOFT] 1 I Soft Launch Product 7. This non-Core Product wil be
+Used to invoke the Summaristion of data to POL FS
+
+(See Section 7.2)
+
+‘SOFZ I 1 I Soft Launch Product 2. This non-Core Product wil be
+Used to invoke the changes to the remittance Ouvin
+
+functionality (See Section 7.4)
+
+Table 4 — Products
+
+Note: The Item Code to be replaced by the actual Product Code once POL have told
+us the codes to assign,
+
+I Note that al-both softlaunch products and the ACC product must be registered in the
+RDDS table sve_control_ products.
+
+4.1.2 Htem-Historyltem Version
+
+This defines the Product attributes.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 32 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ret: EAHLD/002
+Version: 1.00.3 __— {Formatted )
+COMMERCIAL IN CONFIDENCE Date: “19/01/2004
+az yy 3 39 gegg geesgqug
+BPP a gs fees Seesese:
+EE eee CEE EEE
+a2 8) sz ee sI¥)s) elalzlg a
+g 4 aq la S 3 8/5 5/5) 5/8
+EB 3I = § £8 seg) Ig 3
+2 3 q a
+r.
+gle Bs 3 a2 2
+Te bE G25
+3s I 3 35 Bal
+lew - 3
+lo Lon Name
+Jcip [cash inPouches INN [e000] o,00)z0.0reeosg0qoI 1) cogs oN NN NW NN WV VIN
+[acc _WNonACC Courier NN [£0.00] €0.00I¢0,00] 000) 10] oooeoI ON NN NNN IN Wy IN
+JsoF1 [E2e sottaunch Producti NWN [0.00] ¢o.00)¢0.00) £0.00] 10) 0090 oN NN NWN Ny IV IV
+lsoF2 [E2€ sottaunch Prodvct2IN IN [0.00] ¢o.00]z0.00) £0.00] 10) so000I oN NN NWN NYY NIN
+Table 5 — Product Histories
+41.3 «Formatted: Blets ard Numbering 7)
+‘Three new transaction_modes are required to implement _the_new_remit-out
+functionality described in [LFSHLD]. The
+Timrsscion I Daseinton
+Mode
+Code
+25__I Remitout Cash fom stock unt
+27 I Reverse Remi-out Cash from sfock uni
+28 TRemiou= D
+Item Transaction Mode +—— (Formatted: Bullets and Numbering )
+
+A definition of which Items (products) may be transacted in which modes is required
+for each valid product/mode combination. For modes 26 (ROSP) and 27 (RISP). all
+
+Cash denomination products need to be mapped to the new modes.
+
+Mode 28 (RODP) is only used to transact against the new Cash in Pouches product
+(product 5610).
+Mappings for Cash (product 1) and Cash in Pouches (product 5610) for modes 26 &
+
+27 are only required to maintain referential integrity with the ‘Item Transaction Mode
+Code’ entries that provide the cash account mappings.
+
+Tem Made] Accounting
+a ftom Description I Hoge I Acgounte
+4 Sash Fa >
+S610 I “Cash n Pouches Stosk I 26
+
+356 HOD Banincle 2
+
+37 #2. Con Fa
+
+55 Wo saninat 28
+
+656 #20 Banknote ra
+
+57 #0 Banknote Pa
+
+8 #5 Banknote 20
+
+659 Hi Banknole 28
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 33 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref: EA/HLD/002
+Version: 1.00.3 __—(Formatted }
+COMMERCIAL IN CONFIDENCE Dat "19/01/2004
+[0d Hoon 2
+S51 3p Coin 2 a
+[082 I “1p Cov 28 :
+22Coin 2 A
+2189 Sp Coin 23
+2190 {0p Coin ra a
+2st 209 Coin 28
+2343 Con 26 3
+3320 Thusable Note 28
+3221 ‘Unusable Coin 36 -
+3922” I Uhusable Note #100 —I 20
+3323 Unusable Note #50. 26 2.
+3924 —Unusable Note #20 —I 26 E
+3295 —Unusabie Note #10 —I 26 :
+3326 ‘Unusable Note #: 28 =
+3327 I —Unusabie Note #1 28
+3328 I #2 Con-Ful ra 2
+3399 I #1 Con FullRes) 2
+3930 I 50p Coin-FuliYellow] I 26
+3931_I 209 Con-FultGreen) I 26
+395210 Con-FuliGrey) —I 20
+3953 I — 59 ConFuNPny 28
+3334 I 29 Con-Fulilue) 2 =
+3938 ip Con FullOrangs) I 26
+#2 Partai Con Bag I 20 :
+3957 I #1 Portal Con Bag I 26 a
+3238 I 0p Partial Con Baq I 26
+3939 I 20p Partial Con Bag I 26
+3240 [0p Partial Con Bag I 26 :
+Soa I — 59 Partial Con Bag —I 20
+3342 I 2p Partial Gon Bag I 26 é
+3943 I —1p Paria Con Bag —I 26
+FET ‘Unusable Coin # 26
+3943 —Unvsable Coin #2 2
+3346 —Unvsable Coin #1 28 a
+3u47 I “Unusable Coin S09 I 26 A
+3348 —Unusabie Coin 209 I 28
+3a40_ I —Unusable Coin 109 —I 26
+3950 I Unusable Coin 5p 2 :
+3951 I Unusable Coin 2p 20 a
+3952" I Unusabie Coin 1p 28 :
+7 ‘Cash 2 +
+S6i0_ I Cash in Pouches Steak I 27 +
+Fo #100 Banknote zr z
+Fd #2. Con 2 +
+Wo saninote 2 3
+656 #20 Banknote 2 +
+[ad #0 Banknote 2 +
+58 #5 Banknote 2 +
+359 EBaninole 2 +
+650 con 2 +
+[on 30p.Coin 2 =
+oz “pon 2 =
+Ex 2p Goin 2 +
+2169 5p Coin 27 =
+2190 iGo Comn 2 +
+Zig 2op Coin rd D
+243 Con 2 +
+3920 Unusable Note 2 +
+3321 ‘Unusable Coin 2 +
+3322 I Unusable Note #100 —[ 27 +
+3923 [ —-Unusable Note #50 [27 +
+3924 —Unusable Note #20 [27 +
+3903 I —Unusable Note #10 I 27 +
+3328 I— Unusable Note #5 [27 +
+3927 I —Unusable Note #1 2 +
+3008 I #2 Con-Fullerown) I 27 3
+3399 I — #1 Con FullRed) 2 +
+3330 I S0p Con FullYelion) I 27 3
+3931 I 20p Con-Ful(Green) I 27 +
+© 2022 Fujtsu Services COMMERCIAL IN CONFIDENCE Page 34 of 54
+File: EAHLDO02.docEA-HLD_002-doo Printed on 17/10/2008 3:50:00 by PWIA
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAJHLD/002
+Version: 4.00.3 __- (Formatted )
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+32 I “Wp Con Fuca) [37 z
+3333 I Sp Con-FuliPink) zr +
+‘3334 I 2p Coin-Ful(Siue) or *
+3335 I Ip Coin-FuliOrange) I 27 .3
+3336 I #2 Partial Con Bag 27 3
+3337 I #1 Partial Com Bag 27 +
+3338 I 0p Pantal Com Baq I 27 53
+3339 I 20p Panial ComBag I 27 +
+3340 I 0p Pantalcom Baa I 27 +
+3341 I 5p Partial Com Bag +
+3342 I 2p Parlal Com Bag +
+3343 I ‘tp Partial Con Bag +
+3344 I Unusable Coin #5 +
+3345 I Unusable Goin #2 +
+3346 I — Unusable Con #t .3
+'3347_I — Unusable Coin 505 +
+3348 I Unusable Coin 20p =
+3349_I Unusable Com 10p r
+3350 I Unusable Coin 5p
+3351 I Unusable Goin 2p
+3352 I —_Unusable Goin 1p +
+5610 I Cash In Pouches Stock :
++-( Formatted: Bullets and Numbering )
+Tp detnertnesad Bieta tsscasriy iad
+Tom I Wransadion I Haron I Assourting
+Gode I ModeGode I Mode I Sense
+cle 25. ROAD
+[oT 3 HK
+Table 6 — Item Transaction Mode
+44.44.15 Item Transaction Mode Code + ——(Formatted: Bullets and Numbering )
+A definition of which Items (products), when transacted in certain Modes, map to
+lines on the Cash Account.
+Gash
+‘ Transaction
+‘Accounting I tem id
+sen ‘Mode Code
+2050 i Pa
+2050 7 zr
+5037 3810 28
+5037 5610 2
+S037 3610. 28
+8007 S610 28
+New Cash-Account Mappings will be as follows.
+Fon I Hraneacton I Cash -
+Table 7 — Item Transaction Mode
+Code Code
+or 35 5034
+44.54.16 Cash Account —& 38 Sos Table Line — -——-{ Formatted: Bullets and Numbering )
+
+It is proposed that the unused Cash Account Table Line 8 16 2 X_0 9 is used to
+present the Cash in Pouches product on the Cash Account. This line maps to Cash
+‘Account Code 5034. The description of this line (line name) should be updated to
+“Cash in Pouches’ (or agreeable similar name).
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 35 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAJHLD/002
+Version: 4.00.3 )
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
++——(Formatted: Bullets and Numbering )
+Th ree ene Ned fell
+PP Pi
+Ce
+cote I Type. Node
+ie I Primary 740
+Mapping
+_ Produet hd
+This-wilHead heresdaskes
+Pi PE Pi
+4.2 <PM:<L4:><L2:740><L3:3005><L4:3046><L5:3047>>T- (Formatted: Bullets and Numbering )
+YPE B REFERENCE DATA REQUIREMENTS
+4.2.1 Product Mapping
+‘The mapping of the products to Accounting Nodes is as follows:
+= I = I
+Code I — Type ‘Node
+ce} Brimary 740
+Mapping
+‘able 9 — Product Mapping
+This will lead to a primary mapping on the product of:
+<PM:<L1:><L2:740><L 3:3005><L4:3016><L5:3017>>
+24.3 Type C REFERENCE DATA REQUIREMENTS + (Formatted: Bullets and Numbering )
+The following sections define data that will be delivered to the Counters as Type C
+reference data. It should be noted that this should all be defined as temporal reference
+data.
+4.2-14.3.1__Chart of Accounts Collection + (Formatted: Bullets and Numbering )
+
+The Chart of Accounts collection is a new collection that defines the Chart of Account
+Codes and additional parameters that are used during the transaction summarisation
+process.
+
+<Collection:ChartOfAccounts>
+
+<ObjectName:CofCode>
+
+<Data:
+<Description:Description>
+<SummaryMode:SummarisationMode>
+<TxnAttribute: Transaction Identifier
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 36 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2008 3:50:00 by PWJPW
+
+FUJ00098224
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: 1.00.3 __-{ Formatted )
+COMMERCIAL IN CONFIDENCE Date: “19/01/2004
+<BalanceAccount:BalancingAccount>
+<RetainBalance:Balancingindicator>
+<OpeningBal;OpeningIndicator> __—(Formatted )
+
+>
+>
+
+Where:
+
+CoftCode C-of-A Account Code
+SummarisationMode Method of transaction summarisation required by this
+Account (Either ‘Summary’ or ‘Individual’)
+Transactionidentifier:If the Summarisation Mode indicates that the
+transactions are not to be summarised, then this
+indicates which piece of attribute grammar is stored as
+the transaction identifier.
+BalancingAccount: This will either be ‘Y’ or °N’ and will define which
+CofACode will be used to post the Release I balancing
+
+transaction to.
+
+The balancing transaction is simply the
+
+sum of all transactions posted on a single accounting
+day. Only one of the CofACode records will have this
+attribute set to “Y’.
+
+BalancingIndicator. This will either be “Y’ or ‘N’ and will define whether a
+daily balance will be held within a local persistent
+object for this CofACode (see section 3.2.3.5).
+
+OpeningIndicator, _Y_or_N_defining_whether_an_opening _balance_is _
+
+_-(Fermatted
+
+generated on migration.
+
+‘The full set of data that should be delivered for testing purpos:
+
+is as follows.
+
+1c
+
+actual Chart of Accounts codes to be used in Live will be advised by POL at a later
+stage.
+C of AI Description ‘Summary Txn Balance I Retain I Opening
+Code Mode I Atiibute I Account I Balance I Balance _I
+(000015 I Cash on Hand movement $ N Y Y
+51000,
+‘00005 Cheques on Hand movement s N N Y
+52001
+000035 I Cash Rem In Value T Note T N N N
+2001
+00045] Bureau Card vansadions Value 53 w W T
+55086
+‘000085 I Non-Bureau Card transactions IS N N w
+55060 I Valve
+
+Cheque Rem Out Value s W W T
+$3040
+‘00075 I Cash Rem Oi Value N Ww
+53002
+‘000085 I Forex on Hand movement in £) s N N Y
+52100,
+353010 I Norham [land Cheque Ren-Ot IS T T 7
+{00009--I Balance s y N w
+99009
+
+Table 109 — Chart of Accounts Data
+Notes:
+Page 37 of 54
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE
+File: EAHLD002 dock.
+
+HL.D-002.doo
+
+Printed on 17/10/2003 3:50:00 by PWJPW
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAJHLD/002
+Version: 1.00-3 __- (Formatted )
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+1. The transaction attribute for these transactions will be
+“EPOSSTransaction.BlackBoxData.PouchId”
+4.2:24.3.2 Chart of Accounts Products Collection +— (Formatted: Bullets and Numbering }
+
+This is delivered as a new Type C collection that provides the mapping between the
+product and a Chart of Accounts Code. This will eventually be replaced once the
+Type A Product data is enhanced with the additional Chart of Accounts Code at some
+point beyond Release 1.
+<Collection:CofAProduets>
+<ObjectName:ProductCode>
+<Data:
+
+<CofA:Mapping>
+
+>
+Where:
+ProductCode
+
+Horizon unique Product Identifier, This_is
+
+otherwise known as ‘Item’ within RDT, ‘Prod id”
+
+within RDMC_& RDDS and ‘ObjectName’_within
+
+lection EPOSSProducts
+
+Mapping The C-ofA Account to which this Product/Mode
+combination is mapped
+
+‘The mappings required at Release 1 are-as-follows:will be defined by POL.
+
+Product I Product Deeorplion THR
+
+Code, Code,
+
++ I Gash ‘00001
+
+2 hed ‘00002
+
+€ (00008.
+2568_I Debi Card OOO
+cry ‘00008
+4704 I Pre-Pack 150. US Noles ‘00006.
+4205 I Bro-Rack 350US Notes. (00008
+4700 I Pre-Pack 50-EU Noles (00008
+‘4740 I Pro-Pack 150-EU Notes ‘00008.
+AZ I Bre-Pack 350-EU-Noles: (00008.
+Ta6 ‘0004
+4818 I BdeC Pre-Order Buy-back (00008
+3045 _I Debi Card O00.
+5046 I Debit Card (00005
+S042 I Debi. Card (oo005.
+5048 I Debit Card ‘00005.
+5049 I Debit Card (00005:
+5050 I Debit Card ‘00005.
+5051 I Debit Card (00005.
+5052_I Debit Card (00005.
+T1205 _I Re i De (00006.
+
+© 2022 Fujitsu Services IMMERCIAL IN CONFIDENCE. Page 38 of 54
+
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAHLD/002
+Version: 1.00.3 _— (Formatted )
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+GP _I Cashin Pouches ‘0067
+‘cL a ‘00008.
+cro ‘0007
+“Fable 10- me: is Products Gelleet
+4.2.34.3.3 Settlement Product Modes Collection +—— (Formatted: Bullets and Numbering }
+
+This collection defines which settlement product should be used for each
+Product/Mode combination. An entry for this collection is only required when the
+settlement product for this Product/Mode combination differs from that which is
+defined in the ModeParameters Collection.
+
+<Collection:CofAProductModes>
+
+<ObjectName:ProductCode>
+
+<Data:
+<Modes:
+<Mode:
+<M:Mode>
+‘ersion>
+<S:SettlementProduct>
+>
+<Mode:
+>
+>
+Where:
+
+ProductCode Horizon unique Product IMdentifier__This_is
+otherwise known as ‘Item’ within RDT, ‘Prod id?
+within RDMC_& RDDS and ‘ObjectName’ within
+Riposte Collection EPOSSProdi
+
+Mode Transaction Mode allowed for the Product
+
+Version Version of the Product/Mode
+
+SettlementProduct_ The product code to which this Product/Mode
+combination Settles. This is optional and only present if
+the Produet/Mode combination does not Settle to the
+default Product as specified in the ‘ModeParameters’
+Collection.
+
+Product I Product Description Mode I Setlement I Setlement Product Deserition
+Code Product
+
++ [Gash RIAD I 11216 I Cashin Transit (in
+
+2 I Chequer ROAD I 11205 —I Rem Out Cheques OC
+
+Table 1244 ~ Settlement Product Modes Collection
+
+© 2022 Fujitsu Services
+
+COMMERCIAL IN CONFIDENCE Page 39 of 54
+
+File: EAHLD002 docEA-HLD-002.doe
+
+Printed on 17/10/2003 3:50:00 by PWJPW
+
+FUJ00098224
+
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref: EA/HLD/002
+
+Version: 4.00.3
+
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Following Release 1, it is expected that this data will be made available in the
+ProductModes Collection via Type-A reference data (Item_Transaction Mode).
+
+4.3.4 Mode Parameters +——(Formatted: Bullets and Numbering
+
+The reference data Collection ‘ModeParameters’ defines how the modes are used
+within the context of the Counter desktop. A new instance of the collection is
+required for each new Transaction Mode.
+
+43.4.1 Mode ROSP (Mode 26) + (Formatted: Bullets and Numbering
+
+This mode will be set-up in a similar manner to the existing ROAD Mode (Mode 25)
+except that the settlement product will be different and there is no secondary mapping.
+
+<Collection:ModeParameters>
+<ObjectName:ROSP>
+<Modelnfo:
+
+<Cmd:ChangeMode>
+
+<DASS:True>
+
+<MaxStackTotal:9999999.99>
+
+<Mode:ROSP>
+
+<MC:True>
+
+<LINVZero:True>
+
+<SettlementProduct:5610>
+
+<PostSettleTxn:True>
+
+‘<ShowNoRed:True>
+
+<SessionReceipt: 08>
+
+<AlwaysPrintReceipt;True>
+
+‘<ReceiptTitleRemittance Out Slip (Auto Distribution)>
+
+<CallApp:
+
+<interfaceName:
+<LFSConfirm
+<CmdStr
+<Cmd:ReadBarcode>
+‘<Type:LFSCollection>
+
+‘<ReceiptHotKey:Disabled>
+‘<ModeTitle:Rem Out to Pouches>
+<ReverseSense:True>
+‘<PermanentSense:Out>
+‘<PrimaryMappings:>
+<SecondaryMappings:>
+
+4.3.4.2 Mode RISP (Mode 27) + (Formatted: Bullets and Numbering
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 40 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW
+FUJ00098224
+
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref: EA/HLD/002
+
+Version __— (Formatted
+
+00-3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+This mode will be set-up in a similar manner to the existing RIAD Mode (Mode 24)
+except that the settlement product will be different and there is no secondary mapping.
+Also, the receipt will be similar in format to the existing Remit-Out receipt.
+
+<Collection:ModeParameters>
+
+<ObjectName:RISP>
+
+<Modeinfo:
+<litem:>
+‘<Cmd:ChangeMode>
+<DASS:True>
+<MaxStackTotal:9999999, 99>
+<Mode:RISP>
+‘<LINVZero:True>
+‘<MC:True>
+<SessionReceipt:108>
+
+___<SetttlementProduct:5610>
+<AlwaysPrintReceipt:True>
+<ReceiptTitle:Reverse Remittance-Out Slip>
+<CallApp:>
+<ReceiptHotKey-Disabled>
+<ModeTitle:Reverse ROSP>
+<ReverseSense:True>
+<PermanentSense:in>
+‘<PrimaryMappings:>
+‘<SecondaryMappings:>
+
+Fa
+
+43.4.3 Mode RODP (Mode 28) + (Formatted: Bullets and Numbering
+
+This new mode ‘Remit Out Despatch Pouches’ will be set-up in a similar manner to
+the existing ROAD Mode (Mode 25) in terms of the accounting requirements.
+However, the difference between the RODP and ROAD will be that the RODP mode
+will not cause the LFS Pouch packing functionality to be invoked and will not cause
+an EPOSS receipt to be printed.
+
+Collection: ModeParameters>
+
+‘<ObjectName:RODP>
+
+<Modelnfo:
+<Cmd:ChangeMode>
+‘<DASS:True>
+‘<MaxStackTotal:9999999.99>
+<M IP>
+<MC:True>
+<LINVZero‘True>
+‘<SettlementProduct:C/T> (Horizon ‘Cash in Transit (Out)' product)
+<PostSettleTxn:True>
+‘<ShowNoRed:True>
+<SessionReceipt:>
+<AlwaysPrintReceipt:>
+<ReceiptTitle:>
+<CallApp>
+
+S
+
+<ReceiptotKey:Disabled>
+<ModeTitle:Rem Out Desp Pouch>
+
+© 2022 Fujitsu Services ‘COMMERCIAL IN CONFIDENCE. Page 41 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2008 3:50:00 by PWJPW
+
+Fujitsu Services End to End Release 1 - High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00098224
+FUJ00098224
+
+Ref: EA/HLD/002
+Version: 4.00.3
+Date: 19/01/2004
+
+(Formatted )
+
+4:2,44.3.5
+
+<ReverseSense:False>
+<PermanentSense:Out>
+<PrimaryMappings:>
+<SecondaryMappings:
+<li>
+<12:3048>
+<L3:3029>
+<L4:3027>
+<L5:3017>
+
+Iv
+
+EPOSSProducts Collection
+
++ —(Formatted: Bulets and Numbering )
+
+Products in the range 10000 to 19999 are not used by POL and may therefore be used
+by Fujitsu for the delivery of Type C Product Reference Data. FeurTwo new
+products will be defined by the development Team. These will take product numbers
+in the range 1 12xx that will be allocated closer to the time of code delivery and test.
+
+Cash in Transit (Return Cash to ADC)
+
+This has also been named ‘Cash Transfer Out’ in some other documents,
+
+<Collection-EPOSSProducte>
+<ObjectName:CTO>
+Data:
+
+<PN:CTO>
+<LN:Cash tn Transit (Out)>
+
+<a>
+
+——<Nxv:4000000>
+
+<n
+<MxQ:4>
+
+Cash in Transit (Receive Cash from ADC)
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE
+File: EAHLD002 docEA-HLD-002.doe
+
+Page 42 of 54
+Printed on 17/10/2008 3:50:00 by PWJPW.
+FUJ00098224
+
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref: EA/HLD/002
+
+Version:
+
+190-3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+This has also been named ‘Cash Transfer In’ in some other documents
+‘Cheques in Transit (Return Cheques to ADC)
+This is for Northern Ireland cheques that are despatched in ROAD Mode
+
+Buttons +——(Formatted: Bullets and Numbering
+
+New_menu_ buttons are described in [DIALOGUE]. These are also defined_in
+SD/DES/005.
+
+ay Pastieene-aned e Lee ee Ts ”
+
+have boon agreed
+
+4.2,6DeskTopApps + (Formatted: Bullets and Numbering
+
+© 2022 Fujitsu Services ‘COMMERCIAL IN CONFIDENCE. Page 43 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2008 3:50:00 by PWJPW
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAJHLD/002
+Version: 4.00.3 __- (Formatted }
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+lfc
+4.2,74.3.7_Token Definitions + (Formatted: Bullets and Numbering B}
+Two token definitions exist for the LFS counter application although both definitions
+are identical and relate to the same barcode. These definitions will not change at E2E
+Release 1.
+A new token is required to define the LFS ACC Barcode. This will be defined in
+[LFSHLD]}. The collection name is LFSPouchInputEvents.
+4.3.7.1 AppConfig Collection + (Formatted: Bullets and Numbering )
+The AppConfig collection is used by the Softlaunch function to determine what
+affect the presence of the SoftLaunch Migration product will have on the menu
+hierarchy (which buttons will be enable/visible and which will be disabled/invisible).
+‘Two soft-launch enabling non-core products (SOF1_& SOF? defined in 4.1.1) will be
+used to dictate the date which branches migrate. Two AppConfig objects are
+therefore needed to control how these soft-launch products operate.
+4.3.7.2 CofABSP Collection + (Formatted: Bullets and Numbering )
+A_new collection is required that_will contain search criteria_and_application
+parameters for the new EOD Branch Summarisation process that is described in
+section 3.2.3. Two new objects will be defined; Parameters and RetreivalData.
+4.3.7.3 ButtonList Collection +—( Formatted: Bullets and Numbering a)
+This is a new Collection that will contain data that identifies buttons that are to be
+disabled_dependent_on_where within the menu hierarchy transactions are_being
+performed. Please refer to EP/LLD/012 for further details.
+4.3.7.4 MessageDefs Collection + (Formatted: Bullets and Numbering )
+‘New messages will be defined as a result to application changes. Many of these new
+messages are defined in [DIALOGUE]. However, this should not be treated as an
+exhaustive list since new messages and prompts come to light during the Low Level
+design and Development phases.
+43.7.5 SchedulerTimeEvents Collection + (Formatted: Bullets and Numbering )
+The new daily summarisation process needs to be scheduled to be run after the Daily
+Reconciliation process but before the LFS EOD process. This requires a new object
+in the SchedulerTimeE vents collection
+4.3.7.6 ‘SchedulerBusinessEvents Collection + (Formatted: Bullets and Numbering 3)
+
+In order to make the LFS EOD process dependent _on the completion of the new
+Summarisation process, _a__new__object _requires_creation _in _the
+SchedulerBusinessE vents Collection.
+
+© 2022 Fujitsu Services ‘COMMERCIAL IN CONFIDENCE. Page 44 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2008 3:50:00 by PWJPW
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ret: EAHLD/002
+Version: 1.00.3 __—-(Formatted )
+COMMERCIAL IN CONFIDENCE Date: “19/01/2004
+4.34, OTHER REFERENCE DATA REQUIREMENTS + (Formatted: Bullets and Numbering a)
+
+43.44.4.1__Type D Reference Data
+
+The following Type-D reference data requires delivery to all counters.
+
+4.4.4.1 DeskTopApps +——(Formatted: Bullets and Numbering
+
+There is possibly a requirement for new DeskTopApps objects to support invocation
+of new LFS DLLs. The requirement for this will depend on whether the low level
+strategy for migration is to update the existing DLLs with new functionality or to
+teplace the existing DLLs with new ones. The latter is probably the simpler migration
+mechanism but will require the new DLLs to be described in the DeskTopApps
+Collection.
+
+fote: At the time of writing, there has been no requirement for new DeskTopApps I (Formatted
+
+RDDS Meta Data +—(Formatted: Bullets and Numbering
+
+SVC Control Products
+
+The Product Ids of both the SOF] and SOF2 soft-launch products need to_be
+registered in the RDDS table ‘sve_control_products’,
+
+POCL Trans Mode Conversions + (Formatted: Bullets and Numbering
+
+Three_new transaction _modes_will_be_introdu to support the new _remitt:
+
+functionality that is described in [LFSHLD]. These will require new rows in the
+RDDS table that converts the POL Mode number to the internal Horizon mnemonic
+code. The table is ‘pocl_trans mode conversions” and the data required is as shown
+
+in the following SQL Script:
+
+insert into Poct TRAN:
+insert into POCI TRAN
+insert into POCL TRAN:
+
+POCL Trans Mode Exclusions + (Formatted: Bullets and Numbering
+
+The new transaction modes need to be recorded in the POCL_trans_mode_exclusions
+table so that the Cash Account Table 5 node information is withheld from the counter
+application. The script needed to populate the data is as follows:
+
+insert into POCL TRANS Ho
+Insert into POCL TRANS MDI
+
+TXT, SYSDATE)
+775, °K", SYSOATE) 7
+
+Insert into POI TRANS Mi
+4. Stage Modes + (Formatted: Bullets and Numbering )
+
+In order to allow graceful termination of non-core products, the table _stage_modes
+Tequires additional data for the three new transaction modes.
+
+insert 4
+
+Insert
+
+© 2022 Fujitsu Services ‘COMMERCIAL IN CONFIDENCE. Page 45 of 54
+File: EAHLD002.docEA-HLD-002.doo Printed on 17/10/2008 3:50:00 by PWJPW
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: 4.00.3 __—(Formatted )
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+4.4.3 Global Objects + (Formatted: Bullets and Numbering )
+
+New receipt definitions for Remittance-in and Remittance-out will require that the
+
+GlobalObjects.dat file is redistributed to all Branches
+4,3:4-4AppConfig Collection +-—(Formatted: Bulets and Numbering )
+
+‘tem01194~.
+
+tem04494=MenuButtonDof.
+invisible: TrueFalse>
+
+© 2022 Fujitsu Services ‘COMMERCIAL IN CONFIDENCE. Page 46 of 54
+File: EAHLD002 docEA-HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW.
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: 4,00-3 {Formatted )
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+TrueBalse-—__—Indicating-whether_the-menu-item-should_be displayed.
+orhidden.
+44.5 OTHER REFERENCE DATA ISSUES + (Formatted: Bullets and Numbering J)
+
+Various seettinssections within this document highlight that the Chart of Account
+information and settlement information is directly related to the existing Riposte
+collections EPOSSProducts and ProduetModes. It is suggested in this document that
+the additional data that is necessitated by Release 1 is merged with the existing
+reference data structures at future releases. However, doing so, would necessitate a
+massive redelivery of type A reference data. It may therefore be preferable to keep
+the new CofA reference data physically separate from the existing ProuetProduct and
+ProductMode data even though the two entities are logically the same. This will be
+considered further at the next release.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 47 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 1.00-3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Chapter 5 -
+System Quality Attributes
+
+Security
+
+‘This document recommends changes to a product that already exists and introduces
+no new components. The existing security measures are therefore adequate as long as
+the development and delivery of the changed products adheres to the security
+standards that are already in-force.
+
+Scalability
+
+‘The end-of-day summarisation process, the harvesting and the TPS transformation
+processes are all based on well-tried and tested existing functionality. The new
+summarisation process is not expected add any significant additional volumes (in
+percentage terms) to the existing volume of transactions harvested through the
+correspondence layers and TPS.
+
+‘The EoD Summarisation process will perform an additional sean of the Message Store
+(from the previous EoD Marker). ‘This is expected to take approximately 2 minutes
+and will therefore add this time to the overall EoD process.
+
+The initial sean following Migration will possibly take longer than 2 minutes
+depending on how many days have passed since the last Cash Account Rollover.
+However, this is a one-off activity.
+
+Resilience
+
+The changes described in this document either modify existing processes or
+implement new processes that are cloned from existing and proven technologies and
+techniques. The resilience of the system is therefore not impacted by the
+implementation of these changes and there is no requirement or need to increase the
+resilience.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 48 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+
+FUJ00098224
+FUJ00098224
+
+_—-(Formatted
+
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 1.00-3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+Chapter 6 -
+Specifically Excluded
+
+The following systems, sub-systems or processes are specifically excluded from
+change or impact at End to End Release 1 due to inadequately defined or lack of
+requirement.
+
+6.1 SERVICE LEVEL MEASUREMENT
+It is assumed that there is no requirement to report on the timeliness of delivery of
+information to POL FS within projects 1 and 3. This will be considered as part of
+project 2.
+6.2 BRANCH REPORTING REQUIREMENTS
+POL have been offered the opportunity to have the following view and report
+capability:
+a View/Report Replenishment Delivery Notices (Received & Pending)
+a View/Report Packed Cash Pouches (Pending and Collected)
+No reply has been received from POL and these functions are therefore not
+considered to be within the scope of End-to-End Release 1
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 49 of 54
+
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2008 3:50:00 by PWJPW
+
+FUJ00098224
+FUJ00098224
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: .00-3 _-(Formatted )
+COMMERCIAL IN CONFIDENCE Date: “19/01/2004
+
+Chapter 7 -
+Migration
+
+wa OVERVIEW
+
+‘There are three external interfaces that will require change at Releasel
+
+SAPADS: New Inbound Replenishment Delivery Notices File
+Modified Outbound Cash Statement File
+POL FS: New Financial Summary File
+
+‘As usual, the data centres will be migrated first followed by the Counters/Branches.
+Data centre migration can be performed as two separate activities; LFS & TPS:
+
+LFS: LFS Host, LFS FTMS, LFS Harvester and LFS Replenishment
+Delivery Notice Loader.
+
+TPS
+
+S Host, TPS Harvester (plus interface to POL FS)
+
+Immediately following Migration of the Data Centres and before migration of the
+Counters:
+
+New Inbound Replenishment Delivery Notices Files will be processed fully
+and transferred to Branches. This data is benign and will be ignored by
+counter software.
+
+The new attribute ‘Generated Cash Balance’ will not be available to the
+migrated LFS Cash Statement harvester. This agent will therefore not
+populate the LFS Host with this data and the LFS Host will pass this NULL
+value back to SAPADS. This new attribute must therefore be optional at all
+times.
+
+‘The migrated TPS Harvester will not find any Financial Summaries and will
+therefore not populate the new TPS Chart of Accounts Tables. TPS will
+therefore generate no transactions for POL FS and consequently will generate
+no data transmission files. An End of Transmission file will still be generated
+indicating that there are no files to process. The POL FS system must accept
+these files or a mechanism must be in place to automatically assume
+acknowledgement of receipt of these files
+
+The counter software will be delivered and then invoked separately using ‘Soft-
+launch’ products. This will be considered in more detail below.
+
+7.2 FINANCIAL DATA TO POL FS
+
+The financial summaries are generated by the process described in Section 3.2.3. This
+process will be invoked via changes to the Counter Scheduler reference data and will
+therefore execute each night following delivery of new Release 1 executables and the
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 50 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+Fujitsu Services End to End Release 1 - High Level Design Ref. EAJHLD/002
+
+Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+7.41
+
+7.3
+
+74
+
+associated reference data. Before performing any processing, the presence of the
+Soft-launch product will be checked and, if present, the summarisation process will
+continue. If the Soft-launch product is not available, then the summarisation process
+will remove the local persistent objects that are described in Section 3.2.3.5 and then
+exit. This will enable the Summarisation process to be switched on and off by the
+Soft-launch product. ‘The absence of the Soft-launch Product removes the Persistent
+objects and the absence of the persistent objects will cause the Summarisation process
+to generate opening balances on initial execution following Soft-launch product
+availability.
+
+The desktop Softlaunch application therefore does not need to be aware of this
+Softlaunch product nor does it need to perform any new migration processing
+
+This functionality cannot be softlaunched before the new remittance functionality
+described in 7.4
+
+GENERATED CASH BALANCE To SAP ADS
+
+This functionality will be invoked immediately following delivery of the software
+‘The Generated Cash Balance attribute will be derived from the values in the local
+Persistent objects that are created by the POL Financial Summarisation process. If the
+Persistent Objects do not exist, then the process will simply not create the new
+attribute within the Cash Statement message. The absence of the Generated Cash
+Balance attribute will not be an issue to the LFS Harvester since the attribute is
+optional. This process does not therefore need to consider any soft-launch product.
+
+REMITTANCE IN/OUT
+
+A single new Soft-launch non-core produet will implement the revised processes for
+delivery and collection of cash pouches. In order to fully understand this section of
+the document, the reader should be familiar with the new requirements for Pouch
+Collection/Delivery and Remittance Out/In as described in [LFSHLD].
+
+‘The existing SoftLaunch desktop start-up function will test the presence of the
+SoftLaunch product and also test the availability of the Release 1 code. If both are
+available to the Desktop then a new SoftLaunch Property will be set to TRUE to
+indicate that the Branch/Counter is now fully migrated. SoftLaunch will use the new
+Reference Data defined in section 0.1.1.143-4-1._ This function must be softlaunced
+
+‘The new LES DLLs (or modified LFS DLLs) will test the value of the SoftLaunch
+Property to determine the migration status. Low Level design will determine whether
+completely new DLLs are required or whether the existing DLLs will be updated
+
+The following exceptional conditions may be present at the point of migration that
+require consideration.
+
+Remittance-Out
+
+At the point of migration, there may exist a situation whereby Cash Pouches have
+been packed but not yet despatched. In these instances, the cash will have been
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 51 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+
+FUJ00098224
+FUJ00098224
+
+FUJ00098224
+
+FUJ00098224
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: ,00.3 (Formatted }
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+remitted-out of the office since the ROAD transaction that was performed at the point
+of packing the Pouch will have been settled to the normal ROAD settlement Product
+(11216). Since the ROAD Settlement Product is not mapped to the normal root node
+of the Cash Account Hierarchy, then the liability of the Branch is reduced.
+
+Following migration, the packing of a Cash Pouch would settle the ROAD transaetion
+to a new Cash-in-Pouches product that is mapped to table 2 of the Cash Account
+thereby retaining the value of the pouch as a suspense item.
+
+Following migration, there may well be both types of Cash Pouch that have been
+prepared and are ready for collection.
+
+The new collection process requires that the Cash Pouches are placed into a
+Collection Group. The fact that the Group may contain Cash Pouches that were
+prepared both before and after migration will not cause any problems since the
+structure of the messages in the message store does not differ (it is only the settlement
+product that differs).
+
+‘At the point of collection, the system should also not functionally distinguish between
+Cash Pouches that were packed before migration and Cash Pouches that were packed
+post-migration. However, the net affect of collecting the Cash Pouches will be the
+same as shown below:
+
+7.4411 Pre-Migration Cash Pouch
+
+At the point of packing the Cash Pouch containing £100, the following net
+transactions are made:
+
+Product Value
+Product 1 (cash): - £100
+Product 11216 (ROAD Settlement Product) + £100
+
+Since Product 11216 is not mapped to the Cash Account, then the liability of the
+Branch is reduced.
+
+Note: It is assumed here that the EPOSS functionality described in section 3.2.2
+migrates at the same time as the LFS Remittance functionality:
+
+‘At the point of Pouch Collection, a separate transaction is performed against the
+Settlement Product that was used in the original transaction (in this case, Product
+11216). This new transaction will be settled to the new Cash ROAD Settlement
+Product (See section 4.3.54-2-4):
+
+Product Value
+Product 11216 (ROAD Settlement Product) - £100
+Product CTO (Cash ROAD Settlement Product) + £100
+
+Since both the Original ROAD Settlement Product and the Cash ROAD Settlement
+Product are not mapped to the Cash Account, the transaction has no affect on the
+branch balance. However, this transaction will be available for harvesting to the new
+POL FS as a Cash In Transit (Out) transaction.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 52 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+FUJ00098224
+FUJ00098224
+
+Fujitsu Services End to End Release 1 - High Level Design Ref. EA/HLD/002
+Version: 4.00.3 }
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+
+To ensure that this transaction can legally be performed, and that it follows all of the
+generic EPOSS transaction rules, Reference Data needs to be available to allow
+Product 11216 to be transacted in Housekeeping mode. This is done by providing a
+Product Mode mapping to the Counter in the CofAProductModes Collection (See
+section 4.3.34-2:3).
+
+Note: It must be ensured that the presence of CofAProductModes for a
+Product/Mode combination causes EPOSS to accept that Product/Mode
+combination as a valid transaction.
+
+TAZ Post-Migration Cash Pouch
+
+‘At the point of packing the Cash Pouch containing £100, the following net
+transactions are made:
+
+Product Value
+Product 1 (cash): - £100
+Product CIP (Cash In Pouches) + £100
+
+Since the ‘Cash in Pouches’ Product is mapped to Cash Account table 2, then the
+liability of the Branch is retained and the value of the Pouch will be shown as a
+suspense item.
+
+At the point of Pouch Collection, a separate transaction is performed against the
+Settlement Product that was used in the original transaction (in this case, Product
+“Cash in Pouches’). This new transaction will be settled to the new Cash ROAD
+Settlement Product (See section 4.3.54-2-4):
+
+Product Value
+Product CIP (Cash In Pouches) - £100
+Product CTO (Cash ROAD Settlement Product) + £100
+
+Since the Cash ROAD Settlement Product is not mapped to the Cash Account, the
+transaction has the affect of reducing the branch balance. The transaction will be
+available for harvesting to the new POL FS as a Cash In Transit (Out) transaction.
+
+741.3 Summary
+‘The net affect of performing Collection of Cash Pouches that were packed either
+before or after migration is the same.
+
+a The value of Cash is reduced
+
+a The liability of the Branch is reduced
+
+a The value of the Pouch is settled to the Cash ROAD Settlement
+product and reported to POL FS as Cash in Transit.
+
+There are no other migration considerations.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 53 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+Fujitsu Services End to End Release 1 - High Level Design Ref: EAHLD/002
+Version: 4.00.3
+COMMERCIAL IN CONFIDENCE Date: 19/01/2004
+742 Remittance-In
+
+75
+
+At the point of migration, there may exist a situation whereby Cash Pouches have
+been received into the Branch but not yet remitted-in. In these instances, the cash
+cannot be remitted-in using the original mechanisms since the manual Remittance-in
+function will be disabled following migration.
+
+A mechanism must therefore be provided to remit-in the cash manually.
+
+Attempting to process the Cash Pouch through the Pouch Delivery function a second
+time will perform this. The Pouch Delivery function will recognise the attempt to
+process a duplicate Pouch Id from the presence of the Pouch Id in an existing
+PouchDelivery message. If this message does not contain the attribute Data. Manual
+then the original delivery was pre-migration. Processing will then continue as normal
+(cither allowing manual entry of the Cash Pouch value or retrieving the value from an
+existing Replenishment Delivery Notice) until final transaction. The final transaction
+will then commit the Remittance In of the Pouch value but will refrain from writing a
+duplicate Pouch Delivery message.
+
+Full details of the process are described in [LFSHLD].
+
+EPOSS
+
+Changes to EPOSS settlement functionality are described in section 3.2.1.1. There-is
+her tiwne-ah 1? located. diately the code-ch
+
+5 dalicacel tothe Gotan Theassobecs peeved teytie lalivary-ce
+
+the-new—ColleetionsCofA ProduetModes—and_CofAProduetsThe EPOSS multiple
+
+settlement function must not be invoked until the point of softlaunch of the functions
+described in 7.4. The reason for this is that the new EPOSS settlement function will
+
+begin transferring cash to a new Cash-in-Pouches suspense product before there is the
+functionality available to subsequently move this value to the Cash-in-transit product
+‘The launch of the EPOSS functionality must therefore coincide with the launch of the
+Remittance functionality via product SOF2.
+
+It should be noted that the softlaunch of the POL FS feed can only be done once it is,
+guaranteed that all cash & near cash transactions between the last Cash Account
+Rollover and the current date have the CofA mapping written as part of the
+transaction content. It is advised therefore that the softlaunch of the POL FS feed is
+not performed until after a week of code and reference data availability at the
+counters.
+
+© 2022 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 54 of 54
+File; EAHLD002.docEA_HLD-002.doe Printed on 17/10/2003 3:50:00 by PWJPW.
+
+FUJ00098224
+FUJ00098224
+

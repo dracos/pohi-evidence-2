@@ -1,0 +1,1661 @@
+FUJ00002067
+FUJ00002067
+
+EMV — Banking and Retail
+
+NBX - FI Reconciliation and Settlement File Format AIS
+
+ROLE NaME AREA OF I SIGNATURE DaTE
+RESPONSIBILITY
+Authors Chris Bailey Business 30 June 2008
+on behalf of Post Arenieccure
+Office Ltd
+Product
+Deployment
+Technical
+Architecture
+DA Sign-off Richard Cowan Design
+(Peer Reviewer) Authority
+Project James Keenan Project
+Manager
+
+Delivery
+
+FUJ00002067
+
+FUJ00002067
+FI Reconciliation and Project: EMV - Banking and Retail
+Settlement File Format AlS Doc Ref: NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+1 Document Control
+1.1 Document Information
+Horizon Release No: T86
+Document Title: EMV Banking and Retail: NBX - Fl Reconciliation and Settlement File
+Format AIS
+Document Type: Application Interface Specification
+Abstract: This document details the application interface for Fl reconciliation and
+
+settlement between the Horizon domain and Post Office Card Account or
+Alliance and Leicester.
+
+Document Status: Approved
+Originator & Richard Cowan
+Department:
+
+Design Authority
+
+Contributors:
+
+Post Office Design Authority — Richard Cowan
+
+Distribution: POL Document Control — Post Office Programme Office
+Supplier Distribution: I EDS: Mark Geldart
+
+Fujitsu Services: John Burton
+
+Client Distribution: N/A
+
+Table 1: Document Information
+
+1.2 Document History
+
+Version Date Reason for Issue I Associated
+I wp /cT
+
+0.1 5 Nov 2003 I First working draft. Based on document
+produced by IBM entitled “NBE - FI
+Reconciliation and Settlement File Format
+
+AIS” version 2.0
+
+0.2 27 Jul 2004 I Updated to reflect the planned
+implementation of the NBX application.
+
+0.3 25 Aug 2004 I Updated to reflect the comments received
+
+from version 0.2. Also includes changes in
+the format for the Summary Detail Record
+and Sub-total Record.
+
+2.1 28 Apr 2008 I Updated to include Withdrawal Corrections,
+implemented as Deposits.
+
+Created on 30/062008 Version 3.0 Page 2 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+
+FUJ00002067
+‘ FI Reconciliation and Project: EMV - Banking and Retail
+Settlement File Format AlS Doc Ref: NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+2.2 19 May Names of approvers and reviewers amended
+2008 to reflect changes of personnel in external
+organisations.
+2.3 9 June 2008 I Further corrections to approvers and
+reviewers as a result of comments.
+3.0 30 Jun 2008 I Issued for approval
+Minor corrections from review
+Table 2: Document History
+1.3 Change Process
+Any changes to this issued version of this document will be made, controlled and distributed by: -
+1.4 Review Details
+Review
+Comments by :
+Review Chris.Bailey/ "GRO I
+Comments to : .
+Mandatory Review Authority Name
+Post Office Ltd James Keenan, Richard Cowen
+Fujitsu Services Ltd John Burton, David Johns
+JPMorgan Europe Limited Mary McMichael, Susan Stewart
+EDS Mark Geldart
+Alliance and Leicester lan Antrobus
+Optional Review / Issued for Information
+Post Office Ltd Bob Booth
+Fujitsu Services Ltd Gareth Jenkins, Andy Williams
+JPMorgan Europe Limited Derek Smallworth
+EDS Keith Peers
+Alliance and Leicester
+Created on 30/062008 Version 3.0 Page 3 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/FS/030
+
+COMMERCIAL IN CONFIDENCE
+
+1.5 Changes in this Version
+
+Version Changes
+
+3.0 Issued for Approval
+
+Clarification of description of RECON_CUM_TOTAL to remove irrelevant and
+confusing reference to sign, in 3 places.
+
+Table 3: Changes in this Version
+
+1.6 Key Contacts
+
+Name Position
+Bob Booth Solutions Architect
+
+Table 4: Key Contacts
+
+Created on 30/062008 Version 3.0 Page 4 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+1.7 Associated Documents
+Reference Version I Date Title Source
+1. I RS/POL/007 Community Information Security I Post Office
+Policy — Network Banking
+Automation
+
+2. I 1SO8583 1987 Bank Card Originated Messages
+
+3. I NB/IFS/027 NBX — POCA Technical Interface I Post Office
+Specification (TIS)
+
+4. I NB/IFS/025 Horizon to CAPO AIS Post Office
+NB/IFS/031 Horizon - Card Account Mapping I Post Office
+NB/IFS/029 NBX - A&L Technical Interface Post Office
+
+Specification (TIS)
+NB/IFS/026 Horizon to A&L AIS Post Office
+NB/IFS/034 Horizon - A&L Mapping Post Office
+CS/OLA/051 Operating Level Agreement for Fujitsu
+Network Banking between Fujitsu I Services
+Services and CAPO (EDS)
+10. I CS/OLA/052 Operating Level Agreement for Fujitsu
+Network Banking between Fujitsu I Services
+Services and Alliance & Leicester
+Table 5: Associated Documents
+Unless a specific version is referred to above, reference should be made to the current approved versions
+of the documents.
+Created on 30/062008 Version 3.0 Page 5 of 38
+
+© Post Office™ 2004-2008
+FI Reconciliation and
+Settlement File Format AlS
+
+COMMERCIAL IN CONFIDENCE
+
+EMV - Banking and Retail
+
+FUJ00002067
+FUJ00002067
+
+Table of Contents
+
+1 DOCUMENT CONTROL
+1.1. Document Information
+
+1.2 Document History
+
+1.3. Change Process
+
+1.4 Review Details
+
+1.5 Changes in this Version
+
+1.6 Key Contacts
+
+1.7 Associated Documents
+
+2 INTRODUCTION
+2.1. Purpose
+
+2.2 Scope
+
+2.3 Structure
+
+2.4 Terms and Abbreviations
+
+3 OVERVIEW OF RECONCILIATION INTERFACE
+
+3.1 Data Description
+
+3.2 Derivation and Use of Data
+3.2.1 File Description
+3.2.2 Selection of Data
+
+3.3. Assumptions
+
+4 RECONCILIATION FILE FORMAT
+4 Data Item List
+
+General Record Element Definitions
+File Record Format Types
+Reconciliation File Data Elements
+File Elements
+
+A
+44
+4.1.
+4.1.
+41.
+4.1. Relationship of Totals
+
+obnonrs
+
+4.2 Record Specification
+4.2.1 Header-Record
+4.2.2 Detail Record
+4.2.3 Transaction Sub-total Record
+4.2.4 Summary Detail Record
+
+Created on 30/062008
+© Post Office™ 2004-2008
+
+OWHWWWO Ww www
+
+OW Ww
+
+Page 6 of 38
+FUJ00002067
+
+FUJ00002067
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+4.2.5 Summary Trailer Record 3
+4.2.6 File Trailer Record 3
+5 TRANSFER STRUCTURE 3
+5.1. Transfer Grouping 3
+
+5.2 File Structure 3
+5.2.1 File Attributes 3
+5.2.2 Record Summary 3
+
+6 SECURITY OF TRANSMITTED DATA 3
+6.1 Overview 3
+7 OPERATIONAL PROCEDURES 3
+7.1 Overview 3
+7.2 Processing Cycles 3
+7.3. Transfer Initiation and Protocol 3
+8 APPENDIX A: A&L MAPPING 3
+9 APPENDIX B: CAPO MAPPING 3
+10 APPENDIX C - END OF DAY EVENTS 3
+11. APPENDIX D - VOLUMETRICS 3
+11.1 Settlement & Reconciliation Files 3
+Created on 30/062008 Version 3.0 Page 7 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/FS/030
+
+COMMERCIAL IN CONFIDENCE
+
+2 Introduction
+
+2.1 Purpose
+The purpose of this document is:
+e To specify the End of Day Reconciliation and Settlement file format between NBX and the Settlement
+Slave Financial Institutions (A&L and CAPO), reflecting the role of NBX as Settlement Master (see
+section 2.4).
+
+e To agree the NBX — Reconciliation File format with the interested parties.
+
+e To provide a consistent communications vehicle amongst the development teams which have
+responsibility for developing the various components comprising the application.
+
+2.2 Scope
+
+This document applies to the interfaces between the NBX and Financial Institutions where the NBX is acting
+as the Master for reconciliation and settlement. It contains the detail of the Reconciliation and Settlement file
+records sufficient to support the financial services being delivered by the NBX.
+
+The Reconciliation (REC) File contains only Financial Transactions e.g. those transactions that change a
+financial position - such as Withdrawal, Withdrawal Reversal, Deposit and Deposit Reversal. The purpose of
+the file is to allow the reconciliation of all Financial Transactions between the NBX and each of the connected
+Financial Institutions. The REC file does not include certain transactions with no financial impact, such as
+Balance Enquiry and Pin Change, and thus does not provide a vehicle for calculating total transaction volume.
+
+This AIS will be used for both magnetic cards and for EMV cards; no EMV fields are included because they
+play no part in Fl reconciliation or settlement.
+
+2.3 Structure
+
+Section 2 This section contains the Introduction
+
+Section 3 contains a high level overview of the Reconciliation Interface.
+
+Section 4 contains a detailed description of the reconciliation file format
+
+Section 5 contains details of the transfer structure relating to the files created for this interface.
+Section 6 contains details of security of transmitted data relating to this interface.
+
+Section 7 contains details of Operational Procedures relating to this interface.
+
+Section 8 Appendix A contains the mapping of A&L data to the Reconciliation file
+
+Section 9 Appendix B contains the mapping of CA data to the Reconciliation file
+
+Section 10 Appendix C contains a table of the events and timings related to End of Day processing
+
+Section 11 Appendix D contains volumetrics for each of the Reconciliation Files
+
+Created on 30/062008 Version 3.0 Page 8 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/FS/030
+
+COMMERCIAL IN CONFIDENCE
+
+2.4 Terms and Abbreviations
+
+The terms Master and Slave are used within this document to define the relationship between the NBX and the
+Financial Institution for Reconciliation and Settlement. For this document the NBX is the Master i.e. the NBX
+will provide the Slave Financial Institution with details of Reconciliation and Settlement based on transactions
+processed by the NBX for a settlement day. The Financial Institution will settle with Post Office on the basis of
+these totals. Procedures for investigation and reconciliation of differences between Post Office and the
+Financial Institution are outside the scope of this document.
+
+Created on 30/062008 Version 3.0 Page 9 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/FS/030
+
+COMMERCIAL IN CONFIDENCE
+
+3 Overview of Reconciliation Interface
+
+3.1 Data Description
+
+This interface describes the issue of reconciliation and settlement data at the end of each business day from
+the NBX for each of the slave Financial Institutions.
+
+3.2 Derivation and Use of Data
+The NBX logs details of all transactions during the business day.
+
+At the end of the business day timed events at 20:00 trigger end of day messages to slave Financial
+Institutions to notify the Fl that the NBX has started its End of Day processing for the current business day,
+and has changed to the next business day. ‘End of day’ messages to slave Financial Institution’s are as
+specified within each of the NBX Financial Institution AIS documents. After the Agents have sent the End Of
+Day message to the FI all new transactions for that Fl will have the new Settlement Date (incremented by 1
+day). Within the NBX all messages have a Settlement Date as day, month and year only. The Settlement
+Date is equivalent to the business day and spans from 20:00 the previous day to 19:59:59 current day
+(Settlement Date) and is also the same as NBX_DATE on the Reconciliation File. All messages within a
+unique transaction (i.e. R3, A1, E1) have the same Receipt Date (including time) and Settlement Date.
+
+Eg. Business Day from 24/08/2004 20.00.00 to 25/08/2004 19:59:59 Settlement Date = 25/08/2004
+
+There are configurable cut off times (eg.20.10) used to specify the time until a reversal can be included in the
+file for the Settlement Date being settled.
+
+The Agents store transaction information in a database. The Reconciliation and Settlement file generation
+process is triggered off by the change over to the new business day and after the End of Day messages have
+been sent to the Financial Institutions (CAPO and A&L) from the NBX.
+
+In the unlikely situation of when a transaction is missed from the previous reconciliation the NBX will include
+the transaction on the next days reconciliation file. These transactions plus late reversals will relate to a
+different business day(Settlement Date) to the date of the file.
+
+The NBX stores the transactions records and extracts the records needed for today’s settlement into the
+Reconciliation File. NBX determines record selection for inclusion in the REC file.
+
+Records included in the REC file:
+
+e Every Financial Transaction for the Settlement Date (from 20:00 the previous day to 19:59:59 of the
+current day — local time) known at the time of file generation.
+
+e Suspended Financial Transactions from the previous Settlement Day that where not included in the
+previous days Reconciliation File.
+
+e Reversal messages received up to 20.10 with a Settlement Date equal to the one being reconciled. These
+Reversals do have a corresponding authorisation record on the reconciliation File.
+
+e Late Reversals (as configured - currently up to 5 days old). These Reversals do not have a corresponding
+Authorisation record on todays Reconciliation File, the Authorisation record will have been on a previous
+Reconciliation File.
+
+Created on 30/062008 Version 3.0 Page 10 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/FS/030
+
+COMMERCIAL IN CONFIDENCE
+
+These time periods are defined by parameters.
+
+The amount requested for settlement by Post Office Ltd will be in line with the contents of the Reconciliation
+file, plus any manual adjustments that are necessary.
+
+Appendix C (section 10) contains a table of the events and timings related to End of Day processing.
+3.2.1 File Description
+
+The Reconciliation and Settlement File will contain a file header at the start of each file, followed by a detail
+record for every financial transaction that has been acquired by the NBX for the settlement day including
+
+failed and declined transactions. Non-financial i.e. Balance enquiry and PIN Change Transactions are NOT
+included in this file.
+
+A transaction sub-total record will be written every forty transactions and a file summary is written at the end
+of the file, following the last sub-total record. This will consist of a single line for the interface. A summary
+trailer detailing the net position of the Client follows the summary line records. The file is terminated with a
+trailer containing a count of all records in the file with the exception on the header and trailer records.
+
+A detailed description of these records can be found in Section 4.
+
+Created on 30/062008 Version 3.0 Page 11 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NBAFS/D30
+
+COMMERCIAL IN CONFIDENCE
+
+3.2.2 Selection of Data
+
+Withdrawal and deposit transactions are selected where an [R3] and an [A1] exists for a transaction for the current Settlement_Date or current
+Settlement_Date — 1 in the case of suspended transactions.
+
+Reversals are selected from 20:00 on settlement day A to 20:10 on settlement day B, or where Reversals are received late by the NBX (where the [R3]
+transaction was conducted up to 5 days earlier). Selection between 20:00 Day B and 20:10 Day B is based on the presence of a corresponding [R3/A1]
+approved transaction having taken place in Settlement Day A or earlier (up to 5 days)
+
+Late reversals will appear at the beginning of the reconciliation file because the file is written in Receipt_Date, Recon_Trace_Number sequence.
+
+If a transaction is reversed then two records will be written to the reconciliation file, one for the authorisation and one for the reversal. If the reversal is late
+then the reversal record would be on a different Reconciliation file then the authorisation record. All Recon_Amt_Acquired fields are spaces as all the values
+go into the Recon_Amt_Issued field. Those authorisations that have failed will also be written to the reconciliation file but the amount will be entered into the
+Recon_Amt_Failed field file (see section 4.2.2). All negative amounts (deposits and withdrawal reversals) will have a minus sign in front of the value,
+positive values will not have a sign.
+
+The following table gives an example of Financial Transactions and how the dates are used to build up the Reconciliation File. The reconciliation process
+will consider each entry in the table below and build the Reconciliation file for each of the Slave Fis from these entries —- see Table 6
+
+Description of table elements
+
+Receipt Date: The local date/time on the customer receipt The time element is entered on the detail record in the file = RECON-TIME
+R1 Created: The time the transaction was requested. Always the same as Receipt Date. Local Date/Time
+
+R3 Settlement Date: The day (no time) that the transaction will be reconciled, taken from the R3 message. Normally the same as the File Settlement
+Date.
+
+E1 Sent: The transmission time of the reversal request message E1. Local Date/Time.
+File Settlement NBX_Date: The date on the Settlement File Header record, the date of the Reconciliation with no time element
+Created on 30/062008 Version 3.0 Page 12 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+[Number ]Receipt_Date  ]R1 RS EOD sent Jet [File [Slave FT [comments
+Created —_ISettlement_Date IToFI’s _ISent lSettlement [Reconciliation
+INBX Date [File
+1. I20:07:2004 120:07:2004 I20:07:2004 [20:07:2004 [Day 4 [Approved Withdrawal Transaction
+19:31:30 19:3 100:00:00
+2. [20:07:2004 120:07:2004 I20:07:2004 j20:07:2004 [Day [Approved Withdrawal Transaction
+19:32:00 19:32:00 __I00:00:00
+3. [20:07:2004 [20:07:2004 _I20:07:2004 [20:07:2004 I20:07:2004 [Day 1 IReversal of Approved Transaction Row 2
+19:32:00 19:32:00 __I00:00:00 19:31:52
+4 [20:07:2004 [20:07:2004 _I20:07:2004 [20:07:2004 [Day [Approved Withdrawal Transaction
+19:59:30 19:59:30 __I00:00:00
+5. I20:07:2004 120:07:2004 I20:07:2004 )20:07:2004 [Day 1 [Declined Withdrawal Transaction
+19:59:59 19:59:59 _I00:00:00
+6. [20:07:2004
+[20:00:00
+7. I20:07:2004 [20:07:2004 [20:07:2004 I20:072004 [Day 1* IReversal of Approved Transaction — for Row 4
+19:59:30 100:00:00 20:06:13
+8 [20:07:2004 120:07:2004 I21:07:2004 j21:07:2008 [Day2 IApproved Withdrawal Transaction
+120:00:15 20:00:15 _I00:00:00
+9. [20:07:2004 [20:07:2004 [20:07:2004 I21:07:2004 [Day 2" IReversal of Approved Transaction - Row 1
+19:30:30 [00:00:00 20:11:04 [This will be shown as a 'D' type record as the reversal record
+io ill be on the Reconciliation File the day after the
+lauthorisation record.
+10. _I20:07:2004 [20-07-2004 _I21:07:2004 j21:07:2008  [Day2* [Approved Withdrawal Transaction
+[20:01:01 20:01:51 __I00:00:00
+11. I20:07:2004 120:07:2004 I21:07:2004 j21:07:2008 [Day 2" IApproved Withdrawal Transaction
+120:05:02 20:05:09 _I00:00:00
+12, I20:07:2004 [21:07:2004 \20:07:2004 [21072004 [Day2" [Although the reversal is between 20:00:00 and 20:10:00 the
+120:01:01 [00:00:00 20:05:32 IR1 was sent after 19:59:59 - see Row 10
+
+* Late reversal
+
+Table 6: Transac
+
+Created on 30/062008
+© Post Office™ 2004-2008
+
+ns to be considered for Current Days Reconciliation Files for slave Fls
+
+Version 3.0
+
+Page 13 of 38
+FUJ00002067
+
+FUJ00002067
+‘ Fl Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+3.3 Assumptions
+e None
+Created on 30/062008 Version 3.0 Page 14 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+Fl Reconciliation and Project: EMV - Banking and Retail
+Settlement File Format AlS 1... por. NBAFS/030
+
+COMMERCIAL IN CONFIDENCE
+
+4 Reconciliation File Format
+
+4.1 Data Item List
+
+4.1.1. General Record Element Definitions
+
+The following sections define the list of reconciliation file data elements as they relate to each record format, together with which record they are present in.
+
+4.1.2 File Record Format Types
+
+The following records will be passed from the NBX to the Financial Institution Interface for Reconciliation and Settlement:
+
+Message Type
+Header Record (HR)
+
+Description
+
+Each file will contain 1 of these.
+
+Transaction Detail Record
+(TDR)
+
+Each file will consist of 0 or more detail records, one for each financial transaction, which took place
+during the business day. The Financial Transactions are Deposit, Deposit Reversal, Withdrawal (all
+types), and Withdrawal Reversal as appropriate to the Fl.
+
+Transaction Sub-Total
+Record (TSR)
+
+Each file will contain 1 of these for every 40 records or less e.g. if the file contains 45 Transaction
+Detail Records then there would be a Transaction Sub-Total Record after 40 of the Transaction
+Detail Records followed by a further 5 TDR records and the another Transaction Sub-Total Record.
+The Transaction Sub-Total Record contains the Acquired Total, Issued Total and Failed Total
+
+Summary Detail Record
+(SDR)
+
+Each file will consist of a minimum of 1 of these. This record contains the Settlement Total for the FI
+Counterpart — currently n/a for Post Office Direct Interfaces CAPO and A&L as each direct interface
+currently does not connect to member banks, therefore there will only be 1 of these record types per
+file.
+
+Summary Trailer Record
+(STR)
+
+Each file will contain 1 of these. This record contains the Net Settlement Total for the Fl.
+
+File Trailer Record (FTR)
+
+Each file will contain 1 of these. This record contains the total number of records on the file for the
+settlement date, excluding the header and trailer
+
+Created on 30/062008
+© Post Office™ 2004-2008
+
+Version 3.0 Page 15 of 38
+FUJ00002067
+FUJ00002067
+
+Fl Reconciliation and Project: EMV - Banking and Retail
+Settlement File Format AlS 1... por. NBAFS/030
+
+COMMERCIAL IN CONFIDENCE
+
+Note: Where there are no transaction detail records for a business day a file containing no detail records will be produced. This file will contain a HR, TSR,
+SDR, STR and FTR record and totals must be zero.
+
+4.1.3. Reconciliation File Data Elements
+
+The reconciliation data elements used in the NBX — FI records are listed below.
+
+The information presented here is also included in different contexts in other sections, mainly section 4.2. However, the information in this section 4.1 takes
+precedence over any other section, where the information is included.
+
+The table in section 4.1.4 includes Reconciliation file element names, descriptions and the length (fixed) of each element. It should be noted that the
+acquirer fields would not be populated by this interface as the NBX is creating this file for an Issuer.
+
+The entry in the format column corresponds to any of the abbreviations shown in the following table:
+
+Abbreviation IDescription te ae i
+X(n) Alpha Numeric characters with a length of n e.g. X(3) = alpha numeric with a length of 3
++(n)9.99 Signed Numeric characters only with 2 decimal places - the n in the brackets refers to the number of
+positions before the decimal place e.g. +6731678.50 = +(7)9.99. This type of field, represent a monetary
+value. Leading zeroes are suppressed, fields are aligned on the decimal point, signs are floating and
+currency fields do not have a currency symbol associated with them. This type of field is not packed.
+
+9(n) Unsigned numeric characters only with a length of n e.g. 345 = 9(3). This type of field represents a count of
+transactions. Leading zeroes are suppressed (except for RECOUNT-COUNT) and the field is not packed.
+-(7).99 Signed numeric characters only with 2 decimal places. This amount is suppressed if the value is zero in
+
+addition leading zeroes are suppressed, fields are aligned on the decimal point, signs are floating and
+currency fields do not have a currency symbol associated with them. This type of field is not packed.
+
+In the field Recon-Amt-Issued, type -(7).99 for example, in the case of a negative value the sign takes one
+of the 10 characters, therefore -999999.99 being the maximum deposit while a withdrawal can exceed a
+million pounds.,
+
+-(n)9.99 Signed Numeric characters only with 2 decimal places — the n in brackets refers to the number of positions
+before the decimal place e.g. -6731678.50 = -(7) 9.99. This type of field, represent a monetary value.
+Leading zeroes are suppressed, fields are aligned on the decimal point, signs are floating and currency fields
+do not have a currency symbol associated with them. This type of field is not packed.
+
+Created on 30/062008 Version 3.0 Page 16 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+Doc Ref: NB/IFS/030
+
+Fl Reconciliation and Project: EMV - Banking and Retail
+Settlement File Format AlS
+
+COMMERCIAL IN CONFIDENCE
+
+4.1.4
+4.1.41
+
+File Elements
+
+Definitions
+
+The following definitions are included here to provide clarity on the use of the terms Declined and Failed Transactions within the File Element Table:
+
+A Declined Transaction is a transaction which has not been approved by the Issuer for a reason which is indicated in the response code returned by
+the issuer e.g. Insufficient Funds; Stolen Card; expired Card etc
+
+A Failed Transaction is a transaction which has been declined e.g. this may be due to the Late Response to a withdrawal request; a format error in
+the response from the issuer; a key encryption error etc
+
+The Failed totals include both Declined and Failed Transactions as described above.
+
+Acquired Totals are currently not applicable for the purpose of the Reconciliation File — this file is always produced from the view of the recipient i.e.
+the Issuer.
+
+Issuer Totals are applicable to the Reconciliation File — this file is always produced from the view of the recipient i.e. the Issuer.
+
+4.1.4.2 Abbreviations used within the Description field of the File Element Table.
+Withdrawal Positive i.e. the value that the FI will owe the Post
+Office
+REV Withdrawal Reversal Negative i.e. the value Post Office Limited owes the Fl
+DEP. Deposit Negative i.e. the value Post Office Limited owes the Fl
+DRV Deposit Reversal Positive i.e. the value the Fl owes Post Office Limited
+M Mandatory
+HR Header Record
+TDR Transaction Detail Record
+TSR Transaction Sub Total Record
+SDR Summary Detail Record
+STR Summary Trailer Record
+FIR. File Trailer Record
+Created on 30/062008 Version 3.0 Page 17 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+‘ Fl Reconciliation and Project: EMV - Banking and Retail
+Settlement File Format AlS 1... por. NBNFS/030
+COMMERCIAL IN CONFIDENCE
+Created on 30/062008 Version 3.0 Page 18 of 38
+
+© Post Office™ 2004-2008
+Fl Reconciliation and Project:
+
+Settlement File Format AlS 1... por. NBNFS/030
+
+COMMERCIAL IN CONFIDENCE
+
+EMV ~ Banking and Retail
+
+FUJ00002067
+FUJ00002067
+
+JACQUIRED-TOTAL
+
+Acquired sub-total. N/a for the NBX, as the recipient, slave Fl, is an Issuer
+jonly.
+
++(7)9.99
+
+ASTERISK Indicates an NBX generated reversal due to the inability to deliver 0210 X(1) 1
+lapproval messages to the acquirer i.e. Post Office Counters via Horizon.
+ICARDHOLDER: (Cardholders Primary Account Number from the Request Message whether
+ISO PREFIX Imanual entry or card swipe i.e. from the PAN or Track 2 Data xX(6) i
+FILLER x(1) H
+INUMBER (13) 43
+IFAILED-TOTAL Failed sub total. This field contains the value of all transactions, which have}(7)9.99 4
+failed and is accumulated from RECON-AMT-FAILED. The FAILED-TOTAL
+includes both declined and failed transactions.
+INSTITUTION-NAME_ICONSIGNIA POST OFFICE’ X(24) [24
+ISO-NUMBER (Client ISO Number/ISO number of the destination FI i.e. this is the Client [9(6) 6
+ISO Number agreed between the Master i.e. Post Office and the Fl The
+A&L ISO Number 560372, the CAPO ISO number is 633641. On Summary
+[Detail Record the ISO-NUMBER is 200040
+IISSUED-TOTAL llssued sub-total. This is applicable to Slave Fls. This field contains the +(7)9.99 4
+alue of all issued transactions and is calculated as WDL minus REV minus
+IDEP plus DRV. ISSUED-TOTAL does NOT include failed transactions
+INBX-DATE INBX Business Date i.e. Settlement Date [9(6) 6
+INET-TOTAL INet sub-total this is the SUM of ISSUED-TOTAL (and ACQUIRED-TOTAL) }(9)9.99 13
+it does NOT include the FAILED-TOTAL
+IRECON-ACQ-ID lldentifying IIN from NBX - Positions 2-7 of Acquiring Institution IdentificationI9(6) 6
+(Code (2200040000 for PO) which is set by the NBX from Reference Data
+IRECON-AMT- \Transaction Amount if acquirer. Not applicable for the NBX, totals are +(7).99 10
+ACQUIRED roduced from the perspective of the recipient not the NBX.
+IRECON-AMT-ISSUED ITransaction Amount if issuer. This includes withdrawals and reversal and if }(7).99 10
+lapplicable to the interface deposits and deposit reversals. RECON-AMT-
+ISSUED is applicable.
+IRECON-AMT-FAILED ITransaction Amount for the failed transaction — this is the transaction +(7).99 10
+
+lamount for a declined or failed transactions
+
+Created on 30/062008 Version 3.0
+
+© Post Office™ 2004-2008
+
+Page 19 of 38
+Fl Reconciliation and Project:
+
+Settlement File Format AlS 1... por. NBNFS/030
+
+COMMERCIAL IN CONFIDENCE
+
+EMV ~ Banking and Retail
+
+FUJ00002067
+FUJ00002067
+
+for the settlement date — it excludes failed transactions
+Note:
+
+je The convention for this is Acquired total minus Issued total. For the
+slave Fls this should give a minus total (unless deposits value exceeds
+withdrawal) representing a debit to them in Settlement. Where the
+Interface is to a single bank then this value should equal the RECON-
+CUM-TOTAL on the final Detail Record. The SETTLEMENT-VALUE fo!
+the SDR and SDT records where there is an interface to a single bank
+from the NBX must be the same.
+
+IRECORD-COUNT INumber of Records in File. (padded with zeros) 9(7) 7,
+IRECON-CUM-TOTAL [Cumulative Value of Acquired and Issued Transactions calculated as WDL- }(9)9.99 13 IM
+IREV-DEP+DRV
+For each detail record the RECON-CUM_TOTAL will be the accumulated
+from RECON-AMT-ISSUED (and RECON-AMT-ACQUIRED) value(s) for a
+slave Fl. The RECON-AMT Failed is NOT included in this total.
+IRECON-DATE INBX Settlement Date [9(6) 6
+IRECON-FWD-ID. Identifying IIN from Forwarder [9(6) 6 M
+IRECON-RESP-CODE Response Code or Reversal Reason Code — see Mapping documents )X(2) 2 IM
+relevant to Fl: A&L [Ref. 8], or CAPO [Ref.5]
+IRECON-TERM-ID {Outlet/Counter Identifier (11) 41 IM
+IRECON-TERM- [Bytes 7 to 12 of ISO field 37 Retrieval Reference Number (6) 6 IM
+ISEQUENCE-NO
+IRECON-TIME [Time of the Transaction from the Request Message [9(6) 6 M
+IRECON-TRACE- System Trace Audit Number (STAN) from the Request Message (6) 6 M
+INUMBER
+IRECON-TXN-TYPE [Description of the transaction type i.e. WOL=Withdrawal, REV=Reversal, (3) 3 M
+IDEP=Deposit, DRV=Deposit Reversal
+ISETTLEMENT-TOTAL Net Position Against NBX the total of all issued (and acquired) transactions }+(9)9.99 13
+
+Created on 30/062008
+
+Version 3.0
+
+© Post Office™ 2004-2008
+
+Page 20 of 38
+FI Reconciliation and
+Settlement File Format AlS
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00002067
+
+FUJ00002067
+
+Project: EMV - Banking and Retail
+
+Doc Ref: NB/IFS/030
+
+4.1.5 Relationship of Totals
+
+This section describes in tabular form the relationship of each of the amount/total fields in the Transaction detail record (section 4.2.2); Transaction Sub-Total
+Record (section 4.2.3); the Summary Detail record (section 4.2.4); the Summary Trailer record (section 4.2.5) and the File Trailer record (section 4.2.6):
+
+Record Type
+
+Totals
+
+Description
+
+Transaction Detail Record
+(TDR)
+
+RECON-AMT-ACQUIRED
+
+The value of the successful Financial transaction if an acquirer
+N/a to NBX
+
+RECON-AMT-ISSUED
+
+The value of the successful Financial transaction if an issuer
+
+RECON-AMT-FAILED
+
+The value of all Failed and declined Transactions
+
+RECON-CUM-TOTAL
+
+Accumulated Value of RECON-AMT-ACQUIRED — RECON-AMT-ISSUED
+
+Transaction Sub-Total record
+(TSR)
+
+ACQUIRED-TOTAL
+
+Accumulated from RECON-AMT-ACQUIRED
+N/a to NBX. Always 0.00.
+
+ISSUED-TOTAL
+
+Sum of successful financial Transactions i.e. RECON-AMT-ISSUED from the detail records
+
+Summary Detail record
+(SDR)
+
+Summary Trailer record
+(STR)
+
+File Trailer record (FTR)
+
+SETTLEMENT-TOTAL
+
+SETTLEMENT-TOTAL
+
+RECORD-COUNT
+
+This must equal the sum of the ISSUED-TOTALs from all of the TSRs
+This must equal the SETTLEMENT-TOTAL from the SDR
+
+Number of Records on the file, excluding the header and trailer
+
+Created on 30/062008
+© Post Office™ 2004-2008
+
+Version 3.0
+
+Page 21 of 38
+Fl Reconciliation and
+Settlement File Format AlS
+
+COMMERCIAL IN CONFIDENCE
+
+Project:
+
+Doc Ref:
+
+EMV ~ Banking and Retail
+
+NB/FS/030
+
+FUJ00002067
+FUJ00002067
+
+4.2 Record Specification
+
+This section contains the definition of each record type to be sent over this interface. The Field column lists those fields required for the record type by
+
+Reconciliation name, and relates to list in Section 4.1.4.
+
+Records can be identified as follows:
+
+Record Type Record Identifier Value(s) Position I Format I Length
+Header Record I ISO-NUMBER e¢ A&L ISO Number is 1-6 9(6) 6
+560372
+
+¢ CAPO ISO number is
+633641
+Detail Record RECON-TXN-TYPE I WDL 41-43 X(3) 3
+REV
+DEP.
+DRV.
+Transaction TSR-RECORD- TOTALS 39-45 X(7) 7
+Sub-Total IDENTIFIER
+Record
+Summary Detail I INSTITUTION- CONSIGNIA POST OFFICE’ I 29-52 X(14) 14
+NAME
+Summary STR-RECORD- NET SETTLEMENT 63-76 X(14) 14
+Trailer Record IDENTIFIER
+File Trailer FTR-RECORD- RECORDS 22-28 X(7) 7
+IDENTIFIER
+4.2.1 Header-Record
+File Name: File Ref: Notes:
+Reconciliation File RECONCILIATION
+Record Name: Record Size:
+Header-Record 132 Bytes
+
+Created on 30/062008
+© Post Office™ 2004-2008
+
+Version 3.0
+
+Page 22 of 38
+FUJ00002067
+
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+Field Position Length Format I Value Description
+From I To
+ISO-NUMBER 1 6 6 9(6) This is the Client ISO
+Number agreed between the
+Master i.e. Post Office and
+the Fl:
+« For A&l the ISO
+Number is 560372
+« For CAPO the ISO
+number to use is
+633641
+FILLER 7 7 4 X(1)
+NBX-DATE 8 13 6 9(6) DDMMYY NBX Business Date i.e.
+Settlement Date
+FILLER 14 132 119 X(119)
+
+4.2.2 Detail Record
+
+The Reconciliation and Settlement file contains details of the amount issued, and failed for each withdrawal/deposit interaction.
+
+provided for each financial transaction, including reversals and failed transactions.
+
+Detail records will be
+
+If an issuer's transaction response is timed out by the NBX and a late approval received and reversed by NBX, the initial withdrawal will be shown with the
+transaction amount in the RECON-AMT-FAILED field.
+
+Details of the fields described below can be found in section 4.1.4, and the relationship to the online messages is shown in Appendices A (section 8) and B
+
+(section 9).
+
+Further information regarding the mapping relationship is contained in NBX Mapping documents [Ref. 5] and [Ref.8]
+
+Created on 30/062008
+© Post Office™ 2004-2008
+
+Version 3.0
+
+Page 23 of 38
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+& Settlement File Format AlS 1. por. NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+File Name: File Ref: Notes:
+Reconciliation File RECONCILATION
+Record Name: Record Size:
+Detail-Record (1) 132 Bytes
+Field Position Length Format I Value Description
+From I To
+RECON-TIME 1 6 6 9(6) hhmmss. Time of the Transaction from
+the Request [R1] Message
+FILLER 9 3 X(3)
+RECON-TRACE- 10 15 [6 9(6) STAN from the request [R3]
+NUMBER message to the issuer NB this
+field will not be populated if
+the message is declined by
+the NBX.
+Filler 16 18 13 X(3)
+CARDHOLDER: Cardholder's Primary Account
+ISO PREFIX 19 24 16 X(6) Number from the request [R1]
+FILLER 25 25 1 X(1) message — this will be from
+NUMBER 26 38 I 13 X(13) either the Pan field or the
+Track 2 data field depending
+on whether the card was
+swiped or manually entered.
+FILLER 39 40 [2 X(2)
+RECON-TXN-TYPE 41 43° /3 X(3) Description of transaction type
+"WDL", WDL Withdrawal
+"REV", REV Withdrawal Reversal
+“DEP” or I DEP Deposit
+“DRV” DRV Deposit Reversal
+FILLER 44 46/3 X(3)
+RECON-AMT- 47 56 10 -(7).99 Always spaces for CAPO and
+ACQUIRED A&L.
+FILLER 57 57 I 1 X(1)
+Created on 30/062008 Version 3.0 Page 24 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+RECON-AMT-ISSUED I 58 67 I 10 -(7).99 © =Txn amount if
+
+issuer.Withdrawal will be
+shown as positive
+
+« Withdrawal Reversal as
+negative;
+
+e Deposit as negative
+
+« Deposit Reversal positive
+
+FILLER 68 68 I 1 X(1)
+
+RECON-AMT-FAILED I 69 78 10 -(7).99 Transaction amount for the
+failed transaction
+
+FILLER 79 83 15 X(5)
+
+RECON-RESP-CODE I 84 85 I 2 X(2) Response Code or Reversal
+
+Reason Code - this is the
+response code provided by
+the Issuer, or the reversal
+reason code sent to the Issuer.
+
+ASTERISK 86 86 I 1 X(1) “OR "I Not applicable
+FILLER 87 87 I 1 X(1)
+RECON-ACQ-ID 88 93 I6 9(6) Identifying lIN of the acquirer
+ice. PO - 200040
+FILLER 94 94 I 1 X(1)
+RECON-TERM-ID 95 10 I 11 X(11) Outlet and Counter Identifier
+5 received in the [R1] message
+RECON-FWD-ID 106 11 6 9(6) Identifying IIN from Forwarder
+1 not applicable to NBX as
+Master
+FILLER 112 11 1 X(1)
+2
+RECON-TERM- 113 11/6 9(6) Positions 7 — 12 of Retrieval
+SEQUENCE-NO 8 Reference Number, populated
+by the NBX.
+FILLER 119 11 1 X(1)
+9
+Created on 30/062008 Version 3.0 Page 25 of 38
+
+© Post Office™ 2004-2008
+Fl Reconciliation and
+Settlement File Format AlS
+
+COMMERCIAL IN CONFIDENCE
+
+Project:
+
+Doc Ref:
+
+EMV ~ Banking and Retail
+
+NB/FS/030
+
+FUJ00002067
+FUJ00002067
+
+RECON-CUM-TOTAL I 120 13. I 13 -(9)9.99 Cumulative value of
+2 transaction. Excludes failed
+transactions.
+Created on 30/062008 Version 3.0
+
+© Post Office™ 2004-2008
+
+Page 26 of 38
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+& Settlement File Format AlS 1. por. NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+4.2.3 Transaction Sub-total Record
+
+File Name: File Ref: Notes:
+
+Reconciliation File _I RECONCILIATION
+
+Record Name: Record Size:
+
+Transaction 132 Bytes
+
+Subtotal
+
+Field Position Lengt I Format Value Description
+
+h
+From I To
+
+FILLER 1 38 38 X(38)
+
+TSR-RECORD- 39 45 7 X(7) "TOTALS"
+
+IDENTIFIER
+
+ACQUIRED-TOTAL I 46 56 11 -(7)9.99 Always 0.00
+
+ISSUED-TOTAL 57 67 11 -(7)9.99 Issued sub-total
+WDL minus REV
+minus DEP plus
+DRV for all
+transactions
+acquired by the
+NBX
+
+FAILED-TOTAL 68 78 11 -(7)9.99 The total of
+failed
+transactions
+declined by the
+issuer.
+
+FILLER 79 107__I 29 X(29)
+
+FILLER 108 118 11 X(11) "BATCH
+
+TOTAL"
+
+FILLER 119 119 1 X(1)
+
+NET-TOTAL 120 132__I 13 -(9)9.99 Net sub-total
+
+Created on 30/062008 Version 3.0 Page 27 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+4.2.4 Summary Detail Record
+File Name: File Ref: Notes:
+Reconciliation File I RECONCILIATION
+Record Name: Record Size:
+Summary Detail 132 Bytes
+Field Position Lengt I Format Value Description
+h
+From I To
+FILLER 1 28 28 X(28)
+INSTITUTION- 29 52 24 X(24) CONSIGNIA
+NAME POST OFFICE'
+FILLER 53 66 14 X(14)
+ISO-NUMBER 67 72 6 9(6) 200040
+FILLER 73 81 9 X(9)
+SETTLEMENT- 82 94 13 +(9)9.99 Net Position
+TOTAL Against
+Counterpart
+(NBX)
+FILLER 95 132__I 35 X(35)
+Created on 30/062008 Version 3.0 Page 28 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+Fl Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+4.2.5 Summary Trailer Record
+File Name: File Ref: Notes:
+Reconciliation File I RECONCILIATION
+Record Name: Record Size:
+Summary Trailer 132 Bytes
+Field Position Length Format I Value Description
+From I To
+
+FILLER 1 62 62 X(62)
+-STR-RECORD- 63 76 14 X(14) "NET
+IDENTIFIER SETTLEMENT"
+FILLER 7 81 5 X(5)
+SETTLEMENT- 82 94 13 +(9)9.99 Net Position
+TOTAL Against NBX
+FILLER 95 132__I 38 X(38)
+Created on 30/062008 Version 3.0 Page 29 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+Fl Reconciliation and Project: EMV ~ Banking and Retail
+& Settlement File Format AlS 1. por. NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+4.1.6 File Trailer Record
+
+File Name: File Ref: Notes:
+
+Reconciliation File I RECONCILIATION
+
+Record Name: Record Size:
+
+File Trailer 132 Bytes
+
+Field Position Length I Format I Value Description
+
+From I To
+
+ISO-NUMBER 1 6 6 9(6) Client’s ISO
+Number e.g.
+A&L ISO
+Number is
+560372
+CAPO ISO
+number is
+633641
+
+FILLER 7 7 4 X(1)
+
+RECON-DATE 8 13 6 9(6) DDMMYY NBX
+Settlement
+Date
+
+RECORD-COUNT 14 20 7 9(7) No. Of
+Records In
+File. With
+Leading Zeros.
+
+FILLER 21 21 1 X(1).
+
+FTR-RECORD- 22 28 7 X(7) "RECORDS"
+
+IDENTIFIER
+
+FILLER 29 132_I 104 X(104)
+
+Created on 30/062008 Version 3.0 Page 30 of 38
+
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NBAFS/D30
+
+COMMERCIAL IN CONFIDENCE
+
+5 Transfer Structure
+
+5.1 Transfer Grouping
+
+This transfer supports the file transfer of a batch file containing the Reconciliation and Settlement data for a single business day.
+
+A file header is written at the start, followed by a detail record for every transaction that has been acquired by the NBX on behalf of the Financial Institution
+including failed (declined) transactions for the business day. A transaction sub-total record occurs approximately every forty transactions.
+
+A file summary is written at the end of the file, following the last sub-total record. This is comprised of a sequence of summary line records. A summary
+trailer detailing the net position of the institution follows the summary line records.
+
+The file is terminated with a trailer containing a count of all records in the file with the exception of the header and trailer records.
+
+The file is sorted by reconciliation time, RECON-TIME, sequence, then by the reconciliation trace number, RECON-TRACE-NUMBER. This is to ensure that
+when more than 1 transaction has the same time they are sequenced by the trace number. See File Attributes in section 5.2.1
+
+5.2 File Structure
+5.2.1 File Attributes
+
+File Organisation: Sequential Storage Medium: Electronic
+Key: None Sort Sequence:
+Detail records are written in RECON-
+TIME/RECON-TRACE-NUMBER order.
+
+Record Length: 132 Bytes Retention Period:
+10 Days
+Format of File: ASCII
+Created on 30/062008 Version 3.0 Page 31 of 38
+
+© Post Office™ 2004-2008
+Fl Reconciliation and
+Settlement File Format AlS
+
+COMMERCIAL IN CONFIDENCE
+
+Project: EMV ~ Banking and Retail
+
+Doc Ref: NB/FS/030
+
+FUJ00002067
+FUJ00002067
+
+5.1.2 Record Summary
+
+The file will contain records as listed in the table below; these records will be formatted as described in section 4.2.
+
+RECORD OCCURRENCE
+RECORD NAME LENGTH
+MIN MAX AVE
+Header 132 1 1 4
+Transaction Details 132 See Appendix D -
+Volumetrics, Appendix D —
+Section 11 Volumetrics,
+Section 11
+Transaction Sub-Total 132 1 See Appendix D -
+Volumetrics, Appendix D —
+Section 11 Volumetrics,
+Section 11
+Summary Detail 132 1 1 1
+Summary Trailer 132 1 1 1
+File Trailer 132 1 i 1
+
+Files will be generated for CAPO and A&L every day even if there are no transactions (weekends and bank holidays included).
+
+Created on 30/062008
+© Post Office™ 2004-2008
+
+Version 3.0
+
+Page 32 of 38
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NBAFS/D30
+
+COMMERCIAL IN CONFIDENCE
+
+6 Security of Transmitted Data
+
+6.1 Overview
+
+This section details security aspects of this interface. CONNECT:Direct keeps a record that the file has been sent and received by the FI. The Fujitsu
+Connect Direct platform will also maintain audit logs of outgoing reconciliation files. See the TIS specific to the Interface i.e. NBX - A&L TIS [Ref. 6] and
+
+NBX - CAPO TIS [Ref. 3].
+
+Created on 30/062008 Version 3.0 Page 33 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS 1. por. NBAFS/D30
+
+COMMERCIAL IN CONFIDENCE
+
+7 Operational Procedures
+
+7.1 Overview
+
+The operational procedures are covered in the following documents: Operating Level Agreement for Network Banking between Fujitsu Services and CAPO.
+(EDS) [Ref 9] and Operating Level Agreement for Network Banking between Fujitsu Services and Alliance & Leicester [Ref 10]
+
+7.2 Processing Cycles
+This file will be produced as part of the End of Day Processing for Reconciliation and Settlement and will be transmitted to the Financial Institution at the
+latest by the time specified by the Service Level Agreement for this activity. There will be at least one file created each and every calendar day i.e. 7 days a
+
+week 52 weeks a year. If there are no occurrences of the detail data records defined in this document on any given day, a file will still be created and
+transferred to the Financial Institution.
+
+7.3 Transfer Initiation and Protocol
+The file will be transferred as described in the TIS relevant to the particular Financial Institution:
+NBX - CAPO TIS [Ref. 3]
+
+NBX - A&L TIS [Ref.6]
+
+Created on 30/062008 Version 3.0 Page 34 of 38
+© Post Office™ 2004-2008
+FUJ00002067
+FUJ00002067
+
+Fl Reconciliation and Project: EMV ~ Banking and Retail
+
+Settlement File Format AlS 1. por. NB/IFS/030
+
+COMMERCIAL IN CONFIDENCE
+
+8 Appendix A: A&L Mapping
+
+This Appendix contains the mapping of the A&L Message fields to the Reconciliation File detail record. Post Office readers may also view this mapping in
+the NBX Mapping documents [Ref. 5] and [Ref.8]. Note: The mapping to the REC file is from the Fl's perspective. This is different from how the fields are
+actually populated in the NBX.
+
+REC Field Size [Source field sent to / received from A&L. Bitmap Ref INotes
+
+ECON-TIME 6 [Transaction Time from the RT message P-T Time of the Transaction from the RT message. FIN-TIME-LOCAL in settlement record
+IRECON-TRACE-NUMBER 6 __ [System Trace Audit Number P-11 __ IGenerated by the NBX - STAN from request message to issuer (R3)
+ICARDHOLDER-ISO-PREFIX,I 6,13 ITrack 2 Data P-35 _ IPANis not passed separately to A&L (Positions 1-18 of Track 2 Data hold the PAN). Positions 0-5
+ICARDHOLDER-NUMBER lof PAN=CARDHOLDER-ISO-PREFIX, Positions 6-18 of PAN=CARDHOLDER-NUMBER
+IRECON-TXN-TYPE 3 [Processing Code P-3___ [Processing Code is translated to NBX internal Message Identifier. RECON-TXN-TYPE derived from
+
+Ithis Internal Message Identifier, and will be ‘WDL’, 'REV’, ‘DEP’ or 'DRV’
+
+IRECON-AMT-ACQUIRED 10 \Na Na INot populated
+IRECON-AMT-ISSUED 70 [Transaction Amount P-4 IFor approved transactions RECON-AMT-ISSUED will be populated with the transaction amount
+
+(Withdrawal "WDL" will be shown as positive, Withdrawal Reversal "REV" as negative, Deposit
+"DEP" as negative and Deposit Reversal "DPR" as positive). This field will not be populated if the
+ltransaction has been failed or declined.
+
+IRECON-AMT-FAILED 70 [Transaction Amount P-4__ IFor approved transactions RECON-AMT-FAILED will not be populated. For declined or failed
+transactions RECON-AMT-FAILED will be populated with the transaction amount.
+
+IRECON-RESP-CODE 2 __ [Response Code or Reversal Reason Code P-39 [See the NBX - A&L AIS [Ref. 7] for Response Codes and Reversal Reason Codes relevant to A&L.
+
+IRECON-ACG-ID @ [Acquiring Institution Identification Code P-32 [Positions 2-7 of Acquiring Institution Identification Code (200040 for PO) which is set by the NBX
+Ifrom Reference Data
+
+IRECON-TERM-ID 11 [Card Acceptor Terminal Identification P-41 _ ICard Acceptor Terminal Identification field (which includes Group ID (FAD) & Node ID) is used to
+populate this field
+
+IRECON-FWD-ID 6 (Na Na INot populated
+
+[RECON TERH-SEQUENCE: 6 [Retrieval Reference Number P-37 [Positions 7-12 of Retrieval Reference Number, which contains the STAN and is populated by the
+
+Ino INBX. The STAN is also provided in RECON-TRACE-NUMBER
+
+IRECON-CUM-TOTAL 73 INa N/a [Cumulative value of transactions, calculated within NBX Reconollation. Excludes failed (including
+\declined) transactions
+
+Created on 30/062008 Version 3.0 Page 35 of 38
+© Post Office™ 2004-2008
+Fl Reconciliation and
+Settlement File Format AlS
+
+Doc Ref:
+
+COMMERCIAL IN CONFIDENCE
+
+Project:
+
+FUJ00002067
+
+FUJ00002067
+
+EMV ~ Banking and Retail
+
+NB/FS/030
+
+9 Appendix B: CAPO Mapping
+
+This Appendix contains the mapping of the CAPO Message fields to the Reconciliation File detail record. Post Office readers may also view this mapping in
+the NBX Mapping Document [Ref. 5] and [Ref. 8]. Note: The mapping to the REC file is from the F's perspective. This is different from how the fields are
+actually populated in the NBX.
+
+Note: The mapping to the REC file is from the Fl's perspective.
+
+[REC Fiela Size Source field sent to / received from CAPO Bitmap Ref Notes
+ECON- TIME 6 [Transaction Time — from the RT message OT: [Time of the Transaction from the RT message. FIN-TIME-LOCAL in settlement record
+
+IRECON-TRACE-NUMBER 6 __ ISystem Trace Audit Number O11 _IGenerated by the NBX — STAN from request message fo issuer (R3)
+
+ICARDHOLDER-ISO-PREFIX, I 6,13 _ [Primary Account Number (PAN) 002 Positions 0-5 of PAN=CARDHOLDER-ISO-PREFIX, Positions 6-18 of PAN=CARDHOLDER-
+
+ICARDHOLDER-NUMBER INUMBER
+
+IRECON-TXN-TYPE 3 [Processing Code 003 [Processing Code is translated to NBX Internal Message Identifier. RECON-TXN-TYPE derived
+from this Internal Message Identifier, and will be 'WDL, 'REV’, 'DEP' or ‘DRV'
+
+IRECON-AMT-ACQUIRED 10 INa Na INot populated
+
+IRECON-AMT-ISSUED 10 [Transaction Amount (004 IFor approved transactions RECON-AMT-ISSUED will be populated with the transaction amount
+I(Withdrawal "WDL" will be shown as positive, Withdrawal Reversal "REV" as negative negative,
+[Deposit "DEP" as negative and Deposit Reversal "DPR" as positive). This field will not be
+lpopulated if the transaction has been failed or declined.
+
+IRECON-AMT-FAILED 10 [Transaction Amount 004 IFor approved transactions RECON-AMT-FAILED will not be populated. For declined or failed
+Iransactions RECON-AMT-FAILED will be populated with the transaction amount.
+
+IRECON-RESP-CODE 2 Response Code or Reversal Reason Code 039 ISee CAPO AIS [Ref. 4] for the Response and Reversal Reason Codes relevant to CAPO.
+
+IRECON-ACQID 6 [Acquiring Institution Identification Code 032 [Positions 2-7 of Acquiring Institution Identification Code (200040 for PO) which is set by the NBX
+Irom Reference Data
+
+IRECON-TERM-ID 11 ICard Acceptor Terminal Identification 041 ICard Acceptor Terminal Identification field (which includes Group ID (FAD) & Node ID) is used to
+lpopulate this field
+
+IRECON-FWD-ID 6 Nia Nia INot populated
+
+IRECON-TERM-SEQUENCE- @ _ IRetrieval Reference Number 037 __ Positions 7-12 of Retrieval Reference Number, which contains the STAN and is populated by the
+INBX. The STAN is also provided in RECON-TRACE-NUMBER.
+
+3 (Na Nia [Cumulative value of transactions, calculated within NBX Reconciliation. Excludes failed (including
+
+fRECON-CUM-TOTAL
+
+\declined) transactions
+
+Created on 30/062008
+
+© Post Office™ 2004-2008
+
+Version 3.0
+
+Page 36 of 38
+FUJ00002067
+
+FUJ00002067
+FI Reconciliation and Project: EMV ~ Banking and Retail
+Settlement File Format AlS Doc Ref: NB/IFS/030
+COMMERCIAL IN CONFIDENCE
+Description [Time [How triggered/Dependency [impact
+Online System
+NBX System’ 20.00 Update Settlement Date DD/MMIYYYY
+Business Day increment by 1
+A&L EOD 20:00 Timed Event Message sent to A&l to indicate new Settlement
+
+Date and that after this all request messages
+issued by the NBX will have the new Settlement
+Date.
+
+Notification of the messages are saved to indicate
+EOD to the reconciliation.
+
+CAEOD 20:00 Timed Event Message sent to CAPO to indicate new Settlement
+Date and that after all request messages issued by
+the NBX will have the new Settlement Date
+Notification of the messages are saved to indicate
+EOD to the reconciliation.
+
+Reconciliation 20:30 Timed event — looks for existence of the I Prepares the A&L REC file for the Settlement Date
+Check for A&L messages for A&L that has just ended. The process does not look at
+Messages Sent any transactions with the new Settlement Date.
+Reconciliation 20:30 Timed event — looks for existence of the I Prepares the CAPO REC file for the Settlement
+Check for CAPO messages for CAPO Date that has just ended. The process does not
+Messages Sent look at any transactions with the new Settlement
+Date.
+Connect Direct job I After above After successful completion of above I Picks the file up from set directory and sends it as
+for A&L per A&L TIS [Ref.6]
+Returns acknowledgement file to directory
+Connect Direct job I After above ‘Affer successful completion of above] Picks the file up from set directory and sends tas
+for CAPO per CAPO TIS [Ref.3]
+
+Retums acknowledgement file to directory
+
+Reconciliation Selection Criterea
+
+‘Authorisations or Selects all financial transactions with a Settlement
+Declines Date equal to the Settlement Date being reconciled
+plus any suspended financial transactions that can
+now be reconciled
+
+Reversals ‘Selects reversals processed by the NBX for the
+Settlement Date equal to the Settlement Date being
+reconciled, plus any that may arrive in the extended
+window from 20.00 to 20. 10.
+
+Also any late reversals where the original
+transaction was included in an earlier reconciliation
+file going back up to 5 days (parameterised)
+
+Created on 30/062008 Version 3.0 Page 37 of 38
+© Post Office™ 2004-2008
+FI Reconciliation and
+Settlement File Format AlS
+
+Project:
+
+Doc Ref:
+
+COMMERCIAL IN CONFIDENCE
+
+NB/FS/030
+
+FUJ00002067
+FUJ00002067
+
+EMV - Banking and Retail
+
+11 Appendix D — Volumetrics
+
+11.1 Settlement & Reconciliation Files
+
+The Settlement & Reconciliation file structures are summarised in Table 7: Settlement & Reconciliation Files
+and Sizes. The sizings are based on the values for the fields within records, headers and footers. The
+aggregate file sizes for each interface are detailed in Table 8: REC File Sizes.
+
+The REC file uses the human readable report format and the file is uncompressed. The structure around the
+body records comprises several entities and the average number of this is shown in the comment column.
+
+File Direction of flow Body Record Size Header, Footer, Size Comment
+(Bytes) (Bytes)
+REC NBX -> CAPO. 132 Header = 132 Frequency
+Tx Sub-total = 132 1 per file
+Summary Detail = 132 1 per 40 records
+Summary Trailer = 132 20 per file
+File Trailer = 132 1 per file
+1 per file
+REC NBX -> Alliance & 132 Header = 132 Frequency
+Leicester Tx Sub-total = 132 1 per file
+Summary Detail = 132 1 per 40 records
+Summary Trailer = 132 20 per file
+File Trailer = 132 1 per file
+1 per file
+Table 7: Settlement & Reconciliation Files and Sizes
+Tx/day NBX -> CAPO A&L -> CAPO
+% Tx! Day 90% % Tx! Day 5%
+REC (Bytes) REC (Bytes)
+33,333 4,061,995 228,534
+333,330 40,592,630 2,258,013
+666,660 81,182,224 4,512,991
+999,990 121,771,818 6,767,968
+1,333,320 162,361,412 9,022,946
+1,666,650 202,951,007 11,277,923
+Table 8: REC File Sizes
+End of Document
+Created on 30/062008 Version 3.0 Page 38 of 38
+
+© Post Office™ 2004-2008

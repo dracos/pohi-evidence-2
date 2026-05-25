@@ -1,0 +1,1047 @@
+POL00029487
+POL00029487
+
+IT Architecture — E2E Risk/Resilience Review
+Project Initiation Document
+
+Project Aim:
+
+To complete an end to end review of the IT Landscape from a risk/resilience perspective identifying gaps between
+both the current and future states and the business requirements of the service, producing a set of
+recommendations to address these.
+
+Version I 1.0 Author Graham Bevan
+Status I Draft Classification Internal
+
+Date 25/04/2012 I Source of Funds Budgeted
+
+Role I Name Title Date Agreed
+Project Sponsor Lesley Sewell
+Sponsoring Director Lesley Sewell
+
+Programme/Portfolio Manager
+
+Chris Taylor
+
+Project Manager
+
+Graham Bevan
+
+Project Assurance
+
+l Chris Furmanski
+
+Project Assurance
+
+Dave Hulbert
+
+Benefit Owner
+
+Neil Lecky-Thompson
+
+PID E2E Architecture Review v0.8 without FS spend.doc
+
+INTERNAL USE ONLY
+POL00029487
+POL00029487
+
+1 Investment Committee Business Case
+
+Sponsor / Lesley Sewell
+Source of Budgeted 3
+Funds Project Manager Graham Bevan
+U ate . - .
+Authority Chief Financial Officer
+1. REQUEST
+
+This paper seeks funding of £141k to engage an external consultancy, KPMG, to complete an architecture review
+of the key IT systems supporting the Post Office frontline, customers and clients to ensure the correct resilience
+model is in place to support the business now and in the future. This is particularly relevant in light of the service
+outages experienced across Horizon Online in recent months. This is a budgeted activity under IT Strategy.
+
+Approval Total CapEx OpEx VR Lease
+Request (£m) Obligation Proceeds
+BAU 10k 10k : : :
+New 141k 141 oO - - -
+Total Request 151k 141 0 0.0 0.0 0.0
+
+NPV @
+12%
+
+[Economics I c0.0m I 0.0% I oor I 00 I
+
+Green Green
+
+IRR Payback PVil Recurring Steady
+
+PBITDA State — Yr
+
+Resource Requirement Heads Duration (Months) Cost
+
+Skills Group (BAU budget) 1 2I £10k
+External Consultant (KPMG) 3 1 97k
+Supplier Resource Costs (Fujitsu Services) 5 1 (as required) 44K
+
+Contractor (outside Skills Group) - - -
+Fixed Term (outside Skills Group) - - -
+Total Request 151k
+
+2 BACKGROUND
+
+As POL begins a journey of major transformation over the coming years it is vital that we understand the
+risk/resilience model for the IT Landscape and how it will evolve. This will ensure we are building on a resilient
+
+INTERNAL USE ONLY Page 2 of 18
+
+POL00029487
+POL00029487
+
+platform which will be capable of supporting future business requirements. Therefore IT & Change propose to
+undertake an external evaluation of the key IT systems and components.
+
+The evaluation will take the form of an end to end review of the key systems (e.g. Horizon Online, Credence, Web
+Platforms..etc.) aligned with business priorities and measured on risk, resilience and business impact.
+
+The review will consider the current architecture and its evolution over the next 12 months as a result of the
+delivery of major programmes and projects.
+
+It will be POL led with the support of an external consultancy, KPMG. KPMG will map the risk/resilience profile of
+the key systems and will provide an impartial view of the architecture and external benchmarking to inform future
+decision making. Support from a consultancy is required to provide access to industry knowledge and
+benchmarking data and the expertise to undertake a review of this nature.
+
+The review will deliver the following outputs:
+- End to end architectural heat maps showing areas/components of concern for the current and future states
+
+- A set of recommendations, informed by comparisons with comparable external systems, for the future
+enhancements/developments of the IT Landscape to inform the IT roadmap and future architectural decisions.
+
+These outputs will also inform the requirements for the future supplier procurements through the IT Transformation
+programme, ensuring that we clearly define our platform requirements for the future.
+
+The review will be time-boxed to four weeks, preceded by a period of pre-work to agree scope and to allow POL to
+gather the required inputs before formal engagement of consultancy support begins. Therefore the review will
+have a broad scope, however given the importance of Horizon Online this application will be analysed in more
+depth. This is reflected in the business case itself with £44k specifically requested for Fujitsu Services technical
+resources to provide subject matter expertise and input into the review.
+
+Adoptions of any recommendations will be delivered either through future projects or through the procurement
+work streams of the IT Transformation programme, and are not in the scope of this project.
+
+3. OPTIONS
+
+Do nothing — due to the significant level of transformation being undertaken over the next 3 years the
+systems and interfaces of our key suppliers will change significantly. It is therefore important that we
+understand the risk/resilience profile of the platforms we are building on to ensure a robust IT service in the
+future. Rejected.
+
+Focus solely on Horizon Online - due to service outages of Horizon Online over the last 9 months, and the
+importance of this one application the review could focus solely on this system. However, reviewing the
+resilience model of Horizon Online only may not expose areas of risk with associated systems and those of
+other suppliers/channels that could also have major impacts on customers and clients. Rejected.
+
+End to End Architecture Review — This will provide a broad overview of all key systems and components
+(e.g. Horizon Online, Credence, Web Platforms..etc) which can be aligned to the key business processes,
+across suppliers and channels. By taking this approach a much more robust view of potential points of
+failure/risk will be exposed. Preferred option.
+
+4 .CUSTOMER JOURNEY/MARKETING CONSIDERATION
+
+N/A - this is a technical review of the systems architecture only and will not directly impact on any customer facing
+processes or transactions. Should the recommendations of this review be adopted, they will be subject to
+separate business cases and specific impact on customer journey and marketing considerations will assessed
+within these.
+
+INTERNAL USE ONLY Page 3 of 18
+POL00029487
+POL00029487
+
+5. BENEFITS
+
+- The purpose of the reviews is to identify potential options for system improvements to either reduce the
+likelihood of or mitigate the impacts of service affecting incidents.
+
+- Asecondary benefit will be to rebuild confidence in the Horizon Online system, which has been adversely
+impacted by resent service outages.
+
+- There are no direct financial benefits to this review as delivery of the recommendations is out of scope. Adopted
+recommendations will be delivered through future projects and be subject to their own cost/benefit analysis and
+associated business cases.
+
+6. KEY RISKS AND DEPENDENCIES
+
+- Controlling the scope and timescales of the project will be challenging due to the scale and complexity of the IT
+landscape — this will be mitigated through working with Fujitsu Services, and where appropriate other key partners,
+to clearly agree the scope before engaging a third party consultancy.
+
+- Resource availability, i.e. the ability for our IT partners to free up resources from the day to day running of the
+service — this will be mitigated by advanced scheduling of timeslots for workshops and engagements prior to a 3
+party being engaged.
+
+- Additional funding may be required to engage supplier resources. If required, this will be mitigated through the
+use of existing service management budgets where possible.
+
+7. SUMMARY FINANCIALS
+
+Incremental Profit & Loss (£m)
+
+16/17
+
+Recurring Income [Describe]
+Recurring Cost Savings — Staff [Describe] : - : - : -
+Recurring Cost Savings — Non Staff
+[Describe]
+
+Recurring Costs - Staff [Describe] : - - - : -
+Recurring Costs — Non Staff [Describe]
+
+INTERNAL USE ONLY Page 4 of 18
+POL00029487
+POL00029487
+
+One-off costs (Opex) - Operating : - - - - -
+Depreciation : - - - - -
+Gains/(losses) on disposal : - - - - -
+One-off costs (Opex) - Exceptional - - - - - -
+Total Incremental PBIT 0.0 0.0 0.0 0.0 0.0 0.0
+Variance from Plan 0.0 0.0 0.0 0.0 0.0 0.0
+
+Incremental Cashflow (£m)
+
+11/1 12/1 15/1
+3 6
+
+One-off Costs (Opex): VR : - - - - -
+Other Non-VR : - = : - -
+Capital Expenditure (Capex) - - - - - -
+Cash Proceeds from Assets Disposed - - - - - -
+Total Incremental Cashflow 0.0 0.0 0.0 0.0 0.0 0.0
+Variance from Plan 0.0 0.0 0.0 0.0 0.0 0.0
+
+8. KEY PERFORMANCE INDICATORS
+
+KPI Current Ee
+Rsik/Resilience profiles for the IT fe wi .
+End to End Architecture Landscape, key systems, will be ris wil be achieved
+Review - A set of in place for the current and workeno s with ke
+service/system No risk/resilience future (12 months) states. su Tiere to identify
+improvement baseline exists A set of recommendations, Sree of the systems
+recommendations are in defined by risk, impact and scale that pose a ek to
+place (size and complexity to deliver) serine
+signed of by the Project Board. °
+9. SENSITIVITIES/TOLERENCES
+Sensi ty rate Sensi IRR (%) Payback (yrs)
+
+Project Costs 20% Growth Worst Case
+
+INVESTMENT APPRAISAL (1A) COMMENTARY
+0]
+
+Key Considerations
+0]
+
+Conclusion and Recommendation
+C]
+
+[Name]
+[Head of Investment Appraisal]
+[Month/Year]
+
+INTERNAL USE ONLY Page 5 of 18
+POL00029487
+
+POL00029487
+ANNEX 1. ALTERNATIVE OPTIONS CONSIDERED
+Option 1
+Complete the end to end risk resilience review This option would reduce costs. However has been
+using internal and supplier resources only. rejected as the bandwidth and expertise to complete
+
+the review is not available within POL. The review
+also requires complete impartiality to ensure a
+balanced view of the systems and architecture is
+achieved. In addition external knowledge of
+comparable systems is required for benchmarki
+
+This option provides the skills to complete the review
+to the required quality and provides access to
+industry knowledge and experience for benchmarking
+and recommendations for improvements. It also
+ensures the impartiality of the review.
+
+Engage an external consultancy to complete the
+end to end risk/resilience review
+
+ANNEX 2. KEY RISKS AND MITIGATIONS
+
+Risk Factor Impact I Mitigation Mitigated Impact I Financial Impact
+Supplier resource M Advanced scheduling of May prolong Increased 3" party
+availability timeslots for workshops and I project timescales I spend
+engagements prior to a 3rd
+party being engaged.
+Scope definition and creep IH Working with Fujitsu May prolong Increased 3” party
+Services, and were project timescales I spend
+
+appropriate other key
+partners, to clearly agree the
+scope before engaging a
+third party consultancy.
+
+Additional supplier funding IM Existing budgets will be Increased costs, Increased supplier
+may be required for utilised. which may in turn I spends.
+resources to support the prolong the project
+review. timescales due to
+additional
+governance
+
+requirements
+
+ANNEX 3. PROJECT MILESTONES
+
+Milestone Date
+Engage KPMG 30/04/2012
+Detail Scope and Plan signed off 07/05/2012
+Interim Report 11/05/2012
+Final Report and Recommendations 25/05/2012
+Review Complete 25/05/2012
+
+INTERNAL USE ONLY Page 6 of 18
+ANNEX 4. BENEFITS MANAGEMENT PLAN
+
+There are no direct financial benefits to this review as adoption of the recommendations is out of scope, these will
+be delivered through future projects and be subject to their own cost/benefit analysis and associated business
+
+cases.
+
+ANNEX 5. CONCURRENCES
+
+POL00029487
+POL00029487
+
+Directorate/Area of Name, Title Version Date
+Responsibility Reviewe Agreed
+d
+
+Project Sponsor Chris Furmanski
+
+Sponsoring Director Lesley Sewell, COO
+
+Programme?/Portfolio Chris Taylor
+
+Manager
+
+Benefit Owner Neil Lecky-Thompson
+
+Role - Concurrence
+
+Project Manager Graham Bevan
+
+Test Manager N/A
+
+Finance N/A
+
+P&BA N/A
+
+Operations N/A
+
+Marketing NIA
+
+Network Kevin Gilliland
+
+Compliance N/A
+
+Agents Policy & Contracts N/A
+
+Procurement N/A
+
+Legal N/A
+
+HR N/A
+
+Strategy N/A
+
+Group Finance NIA
+
+(Capex>£500k)
+ANNEX 6. FINANCIAL DETAIL
+Summary of one-off costs — CapEx
+
+201 I 204
+Costs 112 I 2/13
+(ek) P41 P2 IP3 IP4 IP5 IP6 I P7 I P8 P10 I P11 I P12 fotarI Aone
+1 1
+
+Consulta I 44 53 97
+ney
+Fujitsu 20 24 44
+Skills 23 I64 I 1.3 10
+Group
+(BAU)
+Total 66.3 I 83.4 I 1.3 151
+
+INTERNAL USE ONLY
+
+Page 7 of 18
+3 Change Description
+
+3.1 Scope and Exclusions
+
+POL00029487
+POL00029487
+
+Sections 1 & 2 of this PID cover the request for funding for the E2E Architecture review to be undertaken
+by KPMG. Section 3 and beyond cover the full scope of work of the project, which includes the tactical
+review of Horizon Online being undertaken by Fujitsu Services. This review is in response to the number
+of service outages that have been experienced in the last 9 month period, it is being completed by Fujitsu
+at there expense and therefore was not included in the business case section of this document.
+
+3.1.1 In Scope
+
+FS Tactical Review
+
+‘Agree Actions >
+
+4
+End to End Architecture Review (4 Week Activity)
+
+Current
+Architecture
+
+Recommendations.
+
+Future
+
+© Risks & Issues
+© Mitigations
+
+Technology
+Improvement Plan
+
+{ \
+i \
+i \
+pete arentectre
+1 ter inert ! (Today's fizonthe
+1 I cakes ' sates + etended ‘mt
+© Critical Components: ‘Opening
+1b Sargenatoocmene ! fore
+1 Preventative ' + Channel oo
+1 I anteronce \ RaRestenve ineoraton I paueenoe
+2 NUS rotor ' wea . beer wes
+] Testing \ Managed
++ Nenteis Scr
+1 \ nr I
+\ 8
+i \
+\ econmensetons a Heatmaps . Hetareny Heatmap:
+I feral «Resilience «Resilience.
+j 1! + imped + Impact
+t \
+{ \
+j \
+
+Scale
+
+c--
+
+Architecture
+Roadmap
+
+Service
+Improvement Pian
+
+‘Agree Recs
+
+3.1.1.1 Fujitsu Tactical Review
+
+AICID/E/AA — Service Resilience and Recovery Catalogue (SRRC) Reviews
+A review of the existing SRRC documents in light of the recent major incidents to identify any areas of
+weakness or opportunities for improvement. This will cover the following areas:
+
+¢ Branch & Central Networks
+¢ Platforms Virtualised and Platforms Discreet Storage
+
+In addition a review of the Reference Data and LST environments will be undertaken, again
+highlighting areas of weakness or opportunities for improvement.
+
+The feasibility of using the SRRC document structure for applications will also be looked at, to
+establish if this provides any benefit by formally documenting application resilience in this format.
+
+A separate review will look at how the SRRC documents are used on an ongoing basis to identify how
+these can be more effectively leveraged to support BAU incidents/developments. This will be
+delivered through the Joint Service Review Forum.
+
+INTERNAL USE ONLY
+
+Page 8 of 18
+POL00029487
+POL00029487
+
+Deliverable POL Review Recipient
+
+Updated SRRC document for the. lan Trundell Joint Service Review
+Branch & Central Networks Antonio Jamasb Forum
+
+Updated SRRC document for the lan Trundell Joint Service Review
+
+Platforms Virtualised and Platforms.
+Discreet Storage
+
+Antonio Jamasb
+
+Forum
+
+Actions resulting from the SRRC
+reviews
+
+lan Trundell
+Antonio Jamasb
+
+Joint Service Review
+Forum
+
+Review of the Resilience of the Ref
+Data Environment
+
+Andy Corbett
+
+Joint Service Review
+Forum
+
+Review of the Resilience of the LST
+Environment
+
+James Brett
+
+Joint Service Review
+Forum
+
+Report on the viability of using the
+SRRC document structure for
+applications
+
+lan Trundell
+Peter Stanley
+Gary Balckburn
+
+Joint Service Review
+Forum
+
+Report on how the SRRC documents.
+can be better leveraged in the future
+
+Adam Parker
+Tony Jammasb
+
+Business Continuity
+Service Review
+
+Strategic recommendations resulting
+from the SRRC reviews
+
+Project Board
+
+Summary reports on SRRC Reviews
+
+Project Board
+
+F - Audit of the Network Design
+
+An audit of the current Network Design by a Fujitsu independent subject matter expert (Vince
+Cochrane) and Cisco Systems will be undertaken to establish the root cause of the recent outage
+caused by the ACE Blade failure. This will include establishing opportunities for improved monitoring
+
+of the service.
+
+Deliverable
+
+POL Review
+
+Rei
+
+Actions for improvements to the
+Network Design
+
+lan Trundell
+Antonio Jamasb
+
+Joint Service Review
+Forum
+
+Summary report for the Network
+Audit Design
+
+Project Board
+
+G - Audit of the Storage Area Network Design (SAN)
+
+Two independent audits of the current SAN design will be undertaken. An audit will be completed by
+a Fujitsu SME, and a second external audit will be completed by EMC. The audits will look at the
+physical configuration, active standby, potential issues not covered by business continuity testing etc.
+The audits will run in parallel but independent of each other to ensure impartiality. The results will
+then be considered together and a combined set of recommendations produced.
+
+Deliverable POL Review Recipient
+
+Actions for improvements to the lan Trundell Joint Service Review
+SAN Design Peter Stanle. Forum
+
+Summary report for the SAN Design Project Board
+
+H - Audit of the Bladeframe Configuration
+An audit of the Bladeframe configuration will be completed by an independent Fujitsu SME external to
+the Post Office account to identify any areas of weakness or opportunities for improvement
+
+Deliverable POL Review Recipient
+Actions for improvements to the lan Trundell Joint Service Review
+Bladeframe Configuration Peter Stanle: Forum
+
+Summary report for the Bladeframe Project Board
+
+INTERNAL USE ONLY Page 9 of 18
+POL00029487
+POL00029487
+
+{Configuration [ I ]
+
+K - Review of Change Processes and Procedures
+A review of the change processes and procedures for OBC Reference Data, Operational Change and
+
+release Notes will be undertaken to identify any areas of weakness or opportunities for improvement
+
+Deliverable POL Review Recipient
+Actions for improvements to the Andy Corbett Joint Service Review
+Change Processes and Procedures Andy Jacques Forum
+Antonio Jamasb
+Summary report for the Change Project Board
+
+Processes and Procedures
+
+L - Review of Use of the Model Office in Future Testing Activities
+A review of the use of the Model Office in future testing activities will be undertaken to identify any
+areas of weakness or opportunities for improvement
+
+Deliverable POL Review Rei
+
+Actions for improvements to the use I Andy Jacques Joint Service Review
+of the Model Office in future testing Tony Atkinson Forum
+
+activities Phil Jeary
+
+Summary report for the use of the Project Board
+
+Model Office in future testing
+
+activities
+
+M - Review the Action Plan resulting from the Recent Audit of Release Processes
+An audit of the Fujitsu release management processes has recently by completed by a Fujitsu SME.
+
+The findings from this audit will be available shortly and will be reviewed in light of the recent major
+incidents to identify any areas of weakness or opportunities for improvement. The resulting
+improvement plan will be shared with POL.
+
+Deliverable POL Review Recipient
+
+Release processes improvement Graham Bevan Joint Service Review
+plan Forum
+
+Summary report on the process Project Board
+improvement plan for Horizon
+
+releases
+
+N - Review of the Change Request Documentation
+
+A joint POL/Fujitsu review of the change request documentation supplied to Fujitsu will be undertaken
+to provide provision in the document for POL to specify information to enable Fujitsu to understand the
+desired business solution and the criticality of the service and impacts of any incidents of
+unavailability. This will allow assessment of the required resilience levels to be included in the service
+
+designs.
+Deliverable POL Review Recipient
+Revised Change Request form lan Trundell Joint Service Review
+Forum
+
+P - Review Opportunities to Reduce the Time Required to Regress Reference Data
+
+Reducing timescales for regressing reference data will improve the response times to deliver
+reference data related fixes to the network in the event of an incident. A review of the architecture will
+be undertaken to establish if an ‘on demand’ TWS schedule that produces a new reference data feed
+after a correction has been made in RDMC can be introduced.
+
+Deliverable POL Review Recipient
+Actions for improvements to lan Trundell Joint Service Review
+reference data regression timescales Forum
+
+INTERNAL USE ONLY Page 10 of 18
+POL00029487
+POL00029487
+
+Summary report for improvements to Project Board
+reference data regression timescales
+
+R - Provide Fujitsu with Visibility of the POL 18 Month Forward Schedule of Change
+Ensure that the Joint Service Review Forum has visibility of the POL 18 month forward schedule of
+
+change and that this is refreshed on a regular basis.
+
+Deliverable POL Review Recipient
+POL 18 Month Forward Schedule of I Andy Jacques Joint Service Review
+Change Forum
+
+T- Review of the End of Service Life (ESOL) Roadmaps
+
+A review of the existing ESOL documents in light of the recent major incidents to identify any potential
+issues or opportunities as kit nears the end of its service life.
+
+Deliverable POL Review Recipient
+
+Actions to manage issues identified Peter Stanley Joint Service Review
+by the ESOL review Andy Jacques Forum
+Recommendations for Peter Stanley Project Board
+
+improvements/mitigations for issues I Andy Jacques
+identified as a result of the ESOL
+review
+
+U - Revisit the 2012 Business Continuity Test Plan
+The existing business continuity test plan for 2012/13 will be revisited in light of the recent major
+incidents to indentify any areas of weakness or opportunities for improvement.
+
+Deliverable POL Review Recipient
+Revised Business continuity test plan I Tony Jamasb Joint Service Review
+for 2012/13 Peter Stanle Forum
+
+V—Raise POL awareness of the Level of Resilience and Disaster Recovery that is built into the
+Horizon Online System
+
+This action will be delivered in two streams. Firstly through Fujitsu engagement with key business
+users through the Joint Review Forum, and secondly through the delivery of the End to End Strategic
+review, which will engage senior business stakeholders.
+
+Deliverable POL Review Recipient
+A series of presentations to Joint Service Review TBC
+stakeholders Forum
+
+Project Board
+
+W _- Understand the number of incidents that have resulted in system failovers in the last 6
+months that have not impacted service
+
+Fujitsu will report the number and nature of successful failover incidents in the last 6 months to
+provide visibility of successful failover incidents to demonstrate where the system is operating to
+
+design.
+Deliverable POL Review Recipient
+Report of successful failover Dave Hulbert Project Board
+incidents
+
+X— Review the Monitoring Design
+A review of the current monitoring design will be undertaken to identify any opportunities for
+improvements to the existing toolset.
+
+INTERNAL USE ONLY Page 11 of 18
+POL00029487
+POL00029487
+
+Deliverable POL Review Recipient
+Actions to manage issues identified Peter Stanley Joint Service Review
+by the monitoring design review lan Trundell Forum
+Dave Hulbert
+Gary Balckburn
+Recommendations for Peter Stanley Project Board
+improvements/mitigations for issues I lan Trundell
+identified as a result of the Dave Hulbert
+monitoring design review Gary Balckburn
+
+Z-—POL Access to Fujitsu Transaction Stats
+Establish if it feasible for the POL Service Management Team to directly access the Fujitsu system
+that reports on transaction statistics, and if this would provide a useful tool for the POL Service
+Management Team.
+
+Deliverable POL Review Recipient
+
+A decision on the viability of POL Joint Service Review
+access to access transaction stats Forum
+
+reporting.
+
+3.1.1.2 End to End Architecture Review
+
+A four week review will be undertaken by an external consultancy of the key components of the IT
+architecture affecting frontline users, customers and clients. It will deliver architectural heat maps,
+indicating areas/components of concern leading to a set of recommendations, informed by
+comparisons with comparable external systems, for consideration by POL.
+
+The review will be aligned to the key business drivers as outlined in the IT strategy, the scope of
+which will be derived from the business processes and transactions supporting the strategy. The
+review will be limited to the current architecture and how that will evolve over the next 12 months,
+taking into account the roadmaps for known business requirements for major change initiatives, e.g.
+extended Opening Hours and Channel Integrations.
+
+Attached is an initial scoping document for reference:#
+
+wl)
+
+POL Resilience
+v5.doc
+
+3.1.2 Out of Scope
+
+3.1.2.1 Fujitsu Tactical Review
+e The delivery of any actions through the Joint Service Review Forum — any actions that are
+agreed through this forum are classed as BAU and will be delivered as such.
+e The delivery of any agreed recommendations put to POL as a result of the various Fujitsu
+reviews — any recommendations that POL decide to take forward will be delivered through the
+creation of new projects.
+
+3.1.2.2 End to End Architecture Review
+
+e It is not proposed that a review of Service Levels is in scope for this work. Though the end to
+end review recommendations may affect supplier SLAs, should they be adopted, it is not
+proposed that this project undertakes a mapping of current SLAs against business
+expectations of the service. Defining the future business requirements for service levels is
+being completed by the IT&C Transformation programme. It is proposed that the outputs of
+
+INTERNAL USE ONLY Page 12 of 18
+POL00029487
+POL00029487
+
+the end to end reviews are provided to the IT&C Transformation programme to facilitate the
+discussions with the business areas in defining the future requirements.
+
+e The delivery of any agreed recommendations put to POL as a result of this review — any
+recommendations that POL decide to take forward will be delivered through the creation of
+new projects.
+
+3.2 Constraints
+e Availability of supplier resources to support the review activities(Note that if Horizon development
+is required there will be constraints re the Release schedule/roadmap)
+3.3. Acceptance Criteria
+e The proposed actions and recommendations from the reviews will be subject to acceptance by
+the POL subject matter experts review and sign-off by the relevant governance body, e.g. Project
+Board, Joint Service Review Forum etc.
+3.4 Impact Analysis
+e N/A-the reviews will produce actions for delivery through BAU channels or recommendations for
+
+acceptance only. Should the recommendations be accepted then separate projects will be
+commissioned to deliver them which will subject to their own impact analysis.
+
+3.5 Resource Profile
+
+Skills Group Resource
+
+T T
+Z I ] ] ] T T
+
+eee eal Mt) M2) M3 I M4 I MS I M6 I M7 I Me M9 M10 M11 I m2 Full Year
+Business Analyst 410 [0.00
+Business Change 290 0.00 I
+Programme ManagerI 620 0.00
+Project Manager 430 6 15 3 10,320.00)
+PMO 310 0.00
+Project Architect oO 0.00
+Tester 310 0.00
+Total EEC ECD I I OE
+
+INTERNAL USE ONLY Page 13 of 18
+4 High Level Plan
+
+POL00029487
+POL00029487
+
+I June
+
+i March I April
+
+sing & Prep
+
+Strategic
+
+Sa ~ Engage KPMG
+Review j
+
+pe & Initial Findings Interim Find gs & Delivery
+
+Tactical
+
+27104 - Review of Use of Model Office comnplete
+
+19/08 - Improvefnent plan for Release Managemen!
+
+29108 - Updates CR Documentation
+
+$15/04 - Review pf Ref Oata Regression complete I
+
+$2008 - Endl Serice Life Issues Report complete
+
+23105 -Review of Monitoring Design complete
+
+Review $2303 ~Network Design dusitcomplete I 922105 {Finding for SRRC reviews -
+Bids -Spni audit complete Branchié Central Networks, ett
+rs 27104- Bladeffame Config 18/05 - Review of Change Processes
+
+Auditjcomplete & Procedyres complete
+
+4.1 Planning Assumptions
+
+e Supplier resources can be made available to support the reviews
+e Aproject manager will be available 3 days per week to manage the activities
+
+« Budget will be made available to engage an external consultant
+
+4.2 Test Requirements
+
+N/A
+
+4.3 Implementation Requirements
+
+N/A
+
+4.4 Lessons Learned
+
+N/A
+
+5 Project Management Strategy
+
+INTERNAL USE ONLY
+
+Page 14 of 18
+POL00029487
+POL00029487
+
+5.1 Project Organisation
+
+5.1.1. Project Management Team Structure
+
+Project Sponsor
+Lesley Sewell/Neil Lecky-
+
+‘Thompson Project Assurance
+Senior User Chris Furmanski —
+Kevin Gilliland Architecture
+
+Dave Hulbert - Service
+
+Graham Bevan
+POL Assurance
+Lead
+
+Fujitsu Project External Other Key
+
+Manager eer oe Consultant Suppliers
+
++
+H 1
+fi lan TrundeWPeter I
+' Stanley 1
+
+Vince Cochrane S ‘ Hm brehtecture I
+
+External Technical apitab tot 1
+
+Consultant Bipeet t i
+
+! Andy Corbett 1
+
+\ Reference Data 1
+
+1 1
+
+Peter Thompson : 1 indy Jacques: 1
+
+Amit Apte
+
+Tactical fi) Gary Blackburn 1
+
+Improvements Stratege Calon: ! Service i
+
+fe Management }
+
+Tim Jones Dave Cooke I 1
+
+Customer Requirements 1 James Brett 1
+
+ISolutions Architect Analyst 1 Testing 1
+
+1 1
+
+1
+
+‘Graham Walsh Pete Newsome ' Revues)
+
+‘Operational Business Seo eas
+Process Review Consultant
+
+5.2 Quality Management Strategy
+
+« Quality reviews of the outputs will be undertaken by POL SMEs and recommendations reviewed
+by the Project Board.
+
+5.3 Configuration Management Strategy
+
+The project will follow the POL standards for configuration management.
+
+5.4 Risk Management Strategy
+
+«Due to the short nature of this project there will not be a requirement for a separate quality
+management strategy. Communication Strategy
+
+ot
+INTERNAL USE ONLY Page 15 of 18
+POL00029487
+
+POL00029487
+5.5 Project Controls
+e The project will follow the POL standards for project controls.
+6 Document Control
+6.1 Version History
+Version Date Change Details Author
+0.2 12/04/2012 I First Draft Graham Bevan
+0.3 16/04/2012 I Updated financials Graham Bevan
+0.4 16/04/2012 I Updated Financials (inc FS Costs) and E2E Scope doc Graham Bevan
+attachment
+0.5 16/04/2012 I Minor change to the Request Section following feedback from I Graham Bevan
+
+Neil Lecky-Thompson
+
+0.6 17/04/2012 I Removed reference to the FS Tactical review from business
+case (sections 1&2) to simplify the request — feedback from
+Neil Lecky-Thompson
+
+Graham Bevan
+
+0.7 17/04/2012 I Updated following comments from Varun
+
+Graham Bevan
+
+1.0 25/04/2012 I Updated to reflect revised project milestone plan and
+milestone date
+
+Graham Bevan
+
+6.2 Change Control
+
+Changes to this Project Initiation Document shall be requested in writing to the Project Sponsor. Any significant
+change will require this document to be modified by the Project Sponsor, re-reviewed/approved, and if the change
+causes the project to exceed the approved tolerances, re-approved by the Post Office Executive Team.
+
+6.3 Referenced Documents
+
+Nr. Title Version Date Document Ref.
+
+Location
+
+1. vo
+
+2. Your text here
+
+7 Appendix D Terms & Abbreviations
+
+Term Meaning
+
+Your text here
+
+INTERNAL USE ONLY
+
+Page 16 of 18

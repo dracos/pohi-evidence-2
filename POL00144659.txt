@@ -1,0 +1,360 @@
+POL00144659
+POL00144659
+
+This DRAFT document contains information relating to Post Office Limited. It is intended for discussion
+purposes only for the named recipients only and should not be disseminated further.
+
+Follow Up Review of Key System
+
+POLSAP Controls in POLSAP
+
+System
+
+Controls ‘eam Post Office Limited
+
+Assurance Review
+
+Draft Report: AR 12/037b May 2013
+
+A REE A EE AT EAE Internal Audit & Risk Management ERNST EU NASSAU EOS EON US RESETS
+POL00144659
+POL00144659
+
+Context and Objectives
+
+Post Office Limited (POL) customer transactions are captured through the Horizon Electronic Point of Sale equipment in branches, with daily summaries transmitted
+to the central accounting system, POLSAP. The translation process between the two systems is enabled by SAP Middleware. The POLSAP system was implemented in
+2005/06 and contains functionality to calculate branch balances (cash, stocks, suspense, debtors and creditors) and to settle client balances.
+
+The objective of our review was to assess the degree to which the eleven recommended actions raised in our September 2012 ‘Review of Key System Controls in
+POLSAP’ (report reference AR12/037) have been implemented.
+
+Key Findings and Conclusion
+
+Eight of the eleven recommended actions have been implemented. Three areas remain that require further input from management to ensure that the
+recommended actions have been fully implemented, or the current risk accepted, specifically:
+
+Transaction Data — As Wincor are being replaced with NCR for the Post & Go contract, consider whether the original action to draft and agree Service Level
+Agreements (‘SLAs’) between POL and Wincor should be completed for the remaining duration of the current Wincor contract.. Furthermore management should
+ensure the new NCR service contract includes appropriate SLAs for the Post & Go replacement service .
+
+Access to software - Complete the review of POLSAP user access in POL FSC. Remove any user accounts and access assignments that are no longer required in the
+
+application with immediate effect.
+
+Change Management — POL management should consider whether, under the current structure of POLSAP and the current change process, an end-to-end ‘overseer’
+of all or some critical types of changes is required to mitigate the risk of changes not following the established processes .
+
+Control Environment Rating: Recommended Actions Partially Implemented
+
+Management Response
+
+RH AR EES RR YE REAR Internal Audit & Risk Management ERNST NAO ROSEN SRDS E
+Confidential Page 2 of 7
+ummary
+
+POL00144659
+
+POL00144659
+
+The summary findings from our review are noted below, showing the status of implementation of recommended actions as at 1 May 2013.
+
+Recommended Action
+
+Remediation
+
+Work Performed
+
+Findings
+
+date
+
+the accuracy and completeness of the
+interfaces between Paystation,
+Post&Go and POLSAP to appropriate
+members of staff.
+
+Priority 2
+
+Steve Beddoe
+
+with the Service Support team.
+
+We reviewed personnel roles for Paystation,
+Post&Go and POLSAP interface monitoring.
+
+1 Perform a review of master data Jan 13 We obtained evidence of the FSC user access Evidence was obtained showing that master
+profiles that provide access to create, review and confirmed that user access had data user reviews were performed in Dec
+modify and remove master data in been approved. 2012 for Supply Chain and in April 2013 for
+the Supply Chain and FSC teams and FSC.
+include this within the annual review We obtained evidence of the Supply Chain
+of user access scheduled for Q3 user access review and confirmed that user
+
+Complete
+2012/13. access had been approved.
+Priority 2
+Mark Wardle
+2 Assign responsibility for monitoring Sept 12 We obtained an update through discussion Since September 2012 these duties have been
+
+split between three staff members who are
+now responsible for monitoring interfaces and
+exceptions on each system.
+
+These staff are based in Cortonwood, Dearne
+in the Service Management team and were all
+identified while on site to be performing the
+roles required.
+
+Complete
+
+Rating:
+
+Confidential
+
+Internal Audit & Risk Management
+
+Page 3 of 7
+Recommended Action
+
+Remediation
+date
+
+ummary Fin
+
+Work Performed
+
+POL00144659
+
+POL00144659
+
+Findings
+
+Draft and agree service level agreements
+between POL and Wincor for the timely
+resolution of transaction data errors during
+the interfaces between Paystation,
+Post&Go and POLSAP.
+
+Priority 2
+
+Steve Beddoe
+
+We discussed with Helen Love and Sharon
+Brearley the current status of Wincor SLA
+development.
+
+We reviewed the Paystation and Post&Go
+Application Interface Specifications.
+
+Note: Wincor are the application vendor for
+Post&Go only. Ingenico are the vendor for
+Paystation.
+
+Change Implemented:
+
+A fix had been implemented that resolved legacy
+transactional data transfer failures for around 780 of
+the approximately 800 data issues, thereby clearing
+the backlog.
+
+SLA
+
+No contractual SLA is in place between POL and
+Wincor. The Wincor contract is being terminated in
+December 2013 to be replaced by NCR. SLAs have
+therefore not been implemented within the Wincor
+contract, but will be introduced for the new NCR
+service.
+
+On-going — Actions #1 and #2 Raised.
+
+to software is re-circulated to key
+personnel who are responsible for
+managing this process.
+
+Priority 2
+
+Mark Wardle
+
+of access management process to the
+relevant team members.
+
+We reviewed the distribution list
+containing those responsible for managing
+the process.
+
+4 Review, define and prioritise which POLSAP Feb 13 I We reviewed confirmations that batch job _I The review has been performed by Service
+batch jobs should be reported to POL by listings have been reviewed and obtained Management. Service Management confirmed with
+Fujitsu on a regular basis. listings of batch jobs required to be Supply Chain and FSC that the batch jobs reported on
+reported out of hours. are effective.
+Priority 2
+Complete
+Steve Beddoe
+5 I Ensure that the process to manage access Dec-12 I We reviewed evidence of the recirculation
+
+The process has been recirculated and reinforced to
+all those stakeholders required.
+
+Complete
+
+Confidential
+
+Internal Audit & Risk Management
+
+Page 4 of 7
+ummary Fin
+
+POL00144659
+
+POL00144659
+
+Remediation
+
+Recommended Action Ls Work Performed Findings
+Include a review of POLSAP user access in Jan-13 We obtained evidence of the Supply Chain The Supply Chain , Steria and Fujitsu user
+POL FSC, Supply Chain, Steria and Fujitsu user access review. access reviews have all been completed. In
+within the review scheduled for Q3 2012/13. addition, a Supply Chain review is now
+We requested the FSC user access review. :
+Remove any user accounts and access 4 " . scheduled every quarter and ISMF meetings
+nena that are ie toneer required in We obtained the Steria and Fujitsu monthly record Steria and Fujitsu user changes each
+}e application immediately. privileged and semi-annual full user access month.
+Priority 2 review documentation. However, the FSC review has not yet been
+completed due to issues with user licensing
+Mark Pearce - ae
+costs taking priority.
+Partially complete — Action #3 Raised.
+Review the process for identifying and taking Mar-13 We reviewed Risk & Compliance Committee The evidence reviewed confirmed that the risk
+action on POLSAP user accounts where the (‘R&CC’) meeting minutes from 26 November I associated with this action has been formally
+user has left the business. Consider disabling, 2012 to confirm the status of the action to accepted within the R&CC meeting on 26
+accounts automatically for user accounts review risks to be accepted and endorsed by November 2012.
+that have not logged in for a defined numberI the R&CC.
+of days. Complete
+We reviewed Paper Fourteen - EY
+Priority 2 Management Letter Update RCC Nov 12 v2
+Appendix B and observed reference to
+Mark Pearce acceptance of the risk of leavers accounts
+remaining open.
+Assign an owner to be responsible for the Jan 13 We obtained an update through discussion The role of end-to-end change management
+end-to-end POLSAP change management with Mark Pearce and Andy Jones. has not yet been implemented as per the
+process for all functional and role changes . action. There has been work to introduce a
+within the system. We reviewed the POL Change management formalised Change Management Policy
+Priority 2 policy. encompassing all processes for change within
+riori
+y POLSAP, however, no single owner has been
+Andy Jones identified for the entire process.
+Internal Audit & Risk Management) °®°!"Gssastion ted Raised
+
+Confidential
+
+POL00144659
+
+POL00144659
+
+ummary Findings (continued)
+
+Recommended Action
+
+For POLSAP changes that require user
+acceptance testing ensure that these are
+routed to the POLSAP testing team.
+
+Remediation
+date
+
+Work Performed
+
+We obtained an update through discussion
+with Zoe Caddick and Andy Jones.
+
+We reviewed on screen the “CC Audience List”
+
+Findings
+
+All changes made via supplier generated
+channels for POLSAP are routed via Zoe
+Caddick, and these are all now distributed to
+the POLSAP testing team through the
+
+ensure that the scope includes all areas of
+the application that POL determines as
+priority for review. Document the results of
+the third party user access reviews within the
+minutes of the Information Security
+Management Forum.
+
+Priority 2
+
+Dave King
+
+privileged and semi-annual full user access
+review documentation.
+
+Priority 2 the distribution list for all vendor initiated epee ge
+distribution listing.
+POLSAP changes.
+Zoe Caddick
+Complete.
+
+10 I Complete the review of transactions to Jan 13 We reviewed confirmations that transaction Evidence was obtained that transactions were
+monitor for processing capacity to ensure monitoring has been reviewed and confirmedI reviewed by Service Management. Sid Hadadi
+that the list of monitored transactions is up with relevant stakeholders. (Supply Chain) and Mark Wardle (FSC) were
+to date and relevant. consulted and an updated list of the top 7
+
+woe transactions is now monitored by Service
+Priority 2 . A
+Management on a daily basis.
+Steve Beddoe
+Complete.
+11 I Review third party user access reviews to Jan 13 We obtained the Steria and Fujitsu monthly ISMF meetings record Steria and Fujitsu user
+
+changes each month, as well as a bi-annual full
+user access review of these users
+
+Complete
+
+RAP RATED RE TEN EINECS
+Confidential
+
+Internal Audit & Risk Management
+
+Page 6 of 7
+POL00144659
+POL00144659
+
+eed Ac
+
+ns
+
+The following actions have been agreed with management to address the remaining open recommendations from the original report:
+Transaction Data
+
+1.Consider whether the original action should be completed for the current Wincor contract, to draft and agree SLAs between POL and Wincor. (Rod Ismay? —
+Finance — Date and owner TBC).
+
+2.Ensure the NCR service contract includes SLAs for the Post&Go replacement service (Rod Ismay? — Finance — Date and owner TBC).
+Access to software
+
+3.Complete the review of POLSAP user access in POL FSC. Remove any user accounts and access assignments that are no longer required in the application with
+immediate effect. (July 2013 - Mark Wardle).
+
+Change Management
+
+4.POL management to consider whether, under the current structure of POLSAP and the current change process, an end-to-end ‘overseer’ of all or some critical
+types of changes is required to mitigate the risk of changes not following the established processes. (Andy Jones — Date and owner TBC).
+
+esate 22 SSO 55 5 al
+
+Susan Barton, Strategy Director Derek K Foster, Internal Audit & Risk Management Director, RMG
+Susan Crichton, Legal and Compliance Director Justin Thornton, Head of Risk and Assurance, RMG
+Christopher Day, Chief Financial Officer Ernst & Young, External Auditors.
+
+Kevin Gilliand, Network and Sales Director
+Andy J Jones, Quality and Standards Manager
+Mark R Pearce, Head of Information Security
+Lesley J Sewell, Chief Information Officer
+Paula Vennells, Chief Executive
+
+Malcolm Zack, Head of Internal Audit
+
+RH AR EES RR YE REAR Internal Audit & Risk Management ERNST UA AOS EOS EON USES
+Confidential Page 7 of 7

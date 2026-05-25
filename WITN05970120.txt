@@ -1,0 +1,435 @@
+WITNO5970120
+WITN05970120
+
+AL298 ~ System Stability DRAFT. Commercial in Confidence
+
+AI 298 - System stability
+
+1. Dispute
+
+Severity Assessment: Pathway: MEDIUM = POCL: HIGH
+
+«...Pathway have been extremely reluctant to acknowledge that they have a system stability
+problem and to take appropriate action
+
+© Pathway’s ability. to identify cuttet-alfecting fiults reported te. the Helpdesk as problems
+has been broug! 2 the use of wboots as a
+
+universal panacea, wit
+
++ unless the system stability problem is “handed effectively, the current level of incidents is
+likely to increase
+
+© a large number of different causes of instability have been ident
+
+her of areas. suggesting a widespread s
+
+fied, fixes ina
+
+gui
+
+emic problem in Pathvay’s approach to
+development a to release, {fir
+this is damning, but J think it’s probably the biggest point - even if Pathway address
+cach of the visible causes of instability, we have lithe confidence thar more are.
+lurking - either ax instability ov integrity problems -.as a result of their anprogeht.
+
+‘* most incidents are visible to the customer and directly impact the service they get
+
++ the public’s perception of the Post Office service and brand will be adversely affected
+
+nw:
+
+nd ia the effectiveness of their testing of the service pi
+
+Rectification Plan: Not agreed
+
+© Pathway’s current approach is to fix individual symptoms rath root
+causes
+
+»._.t0 enable roll-out to start Pathway must evidence a professional approach to rectification
+
+and demonstrate a consistent reduction in incident rates
+
+2. Description of Deficiency
+
+Evidence from the live trial shows that the counter system is unstable and lacking the
+‘industrial strength’ necessary for a production environment. This is evidenced by:
+
+system-level error messages such as Out of Virtual Memory being displayed to end-users
+back and front office printing problems such as printer hanging
+
+general system faults such as frozen screens and menu icons rendered unusable (in
+circumstances when this should not be the case) by having barred symbols.
+
+All of these incidents result in disruption to the service in the outlet, and the more severe of
+them result in loss of service for significant periods, requiring users to call the helpdesk and
+then to reboot the system:
+
+This Acceptance Incident was originally raised on 1/7/99 as a result of mis-directed calls to
+POCL’s Live Trail Support Centre. As these calls should have been made to the Horizon
+
+System Helpdesk (HSH), POCL was eoncemed that Pathway's Problem Management function
+was not iduntifviagrapexteng this as a problem.
+
+Mavagemest Database (once this was made available te POCL) coufianed that a number of
+
+therefore asked to see the HSH log to determine the position. Access was refused (see John
+Bennett letter of xxx attached (DN I hope someone’s got a copy). It was not until Peter
+Copping, the Dispute Resolution Expert, directed Pathway that access to the HSH Log
+was given to POCL on the 15" July. (Zhis is when Pathway announced to us that we could
+
+huge gocess, we fiest looked at it au the 26" OS-—bevempcde-yow
+
+Despite mounting evidence to the contrary, Pathway continued to report that the System
+Stability incidents were under control, and were in fact falling as a result of the LT? release.
+As late as the MR session on 12/8/99, Pathway reported that there were 6 System Stability
+
+Version 0.6d Page J T/27/202208/20/9908:20/99
+AL298 ~ System Stability DRAFT. Commercial in Confidence
+
+incidents in the key Wednesday/Thursday period of week 18/19 (see attached). POCL’s
+analysis indicated there were about 90.
+
+To resolve such differences, and directed by Peter Coping, ICL Pathway and POCL Business
+Service Management carried out a joint analysis of calls made to the Horizon System
+Helpdesk of system stability incidents. This analysis covered week 19, the period from 29
+July 1999 until 4 August 1999. Comparison with recent weeks indicates a similar rate of calls.
+The size of the network is 323 offices with 821 counter positions. ‘The number of incidents
+per week in this population is shown below.
+
+Incident Reboot Required I Other Recovery I Total for Week
+“Error Messag 14 4 18
+Back Office Printer 19 18 37
+Counter Printer 13 25 38
+General System Faults I 34 46 80
+Others Reboot Classifications 40 0 40].
+Total 120 93 213
+
+‘The detail of the analysis is attached. POCL believe Pathway agree these numbers except for
+the “other reboot classifications” which they wish to exclude. Pathway have not analysed
+these incidents and so cannot confirm the classification or give an explanation of their cause.
+POCL consider that these should be included as part of this Acceptance Incident.
+
+‘These numbers of reported incidents are the lower limit to the true incidence, since users with
+recurring problems may learn the re-boot fix and apply it themselves rather than reporting the
+problem to the HSH, as evidenced from a POCL telephone survey of offices. Poor help desk
+performance against service levels (AI 408) may have increased this effect. POCL requested
+that Pathway undertake an analysis of the system event logs to assess the extent of under-
+reporting of events requiring a system re-boot, but Pathway have not done this.
+
+Pathway say they have undertaken analysis of the causes of these incidents, but this analysis
+has not been shared with POCL. No explanation has been given on why these incidents are
+ovcurring._ {Mis - is the frctwally correct? Agreed the landscape table of 8 “problem areus”
+which thes have supplied under the Al doesn’t give the analysis, bur could ther say thar the
+Leoblem Management Darabase, available to Dave Mel, in BSM, gives this, for each of the
+PinlCLS? 1 don’s kuow what analysis, if any, is happening with that, but we don't want ro
+shoot outself in the foot if they cam suy we do.f
+
+Although these problems with system instability have been repeatedly raised with Pathway,
+there does not seem to have been significant effort deployed to analyse, establish the root
+cause and fix them until after completion of the core observation period. It appears that this
+‘was partly because Pathway’s help desk and service management MIS systems did not provide
+the diagnostic data that would have enabled an earlier understanding of the extent of the
+problem and prompted deployment of appropriate Pathway resources to rectify it. Instead,
+early efforts in this area seem to have been focused on a failed attempt to collect evidence that
+the problem was less prevalent than POCL users were perceiving.
+
+The sheer sumber and type of instability problems eauses concum about the underlying causes
+belund these faults and potential weak:
+
+es in Pathway’s development and test approach,
+
+ses have been
+ner sinilag
+
+In particolar, there is litle evidence o demoastrate tha’ the undedying ©
+
+1 is being perforued to detect o
+operation,
+
+addressed and we are unaware of ay analysis 1
+
+bility
+
+system z to liv
+
+nesses prior to rk
+
+Business Impact
+
+Version 0.64 Page 2. T/2T/202208/20/9908/20/99
+
+Commented [POCL1]:
+
+WITNO5970120
+WITN05970120
+
+‘Commented [POCL2]:
+
+WITNO5970120
+WITN05970120
+
+AL298 ~ System Stability DRAFT. Commercial in Confidence
+
+The impact on POCL’s business varies with the different circumstances of the failure. POCL
+has undertaken an analysis of the incidents to determine, for each incident type, the impact in
+terms of:
+
+1. Customer Service. Many of these incidents occur whilst serving customers. This will
+impact the customers in a number of ways:
+
+* for the customer being served, there will be the inconvenience of having to go to
+another counter fo be served. The impact of this will be worse on peak days. In single
+position (currently 42% of the network) there will be a delay conservatively estimated
+at 10 to 25 minutes before the customer can be served. (This is estimated as follows:
+
+10 minutes, whilst the user realises he/she has a problem, contacts Pathway’s Horizon
+System Helpdesk (see also Al 408 for Acceptance Incident on poor HSH response
+times), explain the problem, discuss the activity leading up to the freeze, consider the
+solution proposed by the HSH and then implement the solution. Where a re-boot of the
+system is required, as in 56% of occurrences, there will be an additional 15 minute
+delay while the system recovers. During this time the customer may be served in
+manual fall-back mode, if available. althous!
+automated processing feg AP fallback - takes longer 10 get dunough, more rish of
+e17Gran. and once we ger to AP Smart, there is uo fallbgek]
+
+© for other customers waiting to be served, there will be a knock-on effect resulting in
+
+delays to their being served. This will result in loss of business as some customers will
+
+vote with their feet. For those intending to pay bills this could result in non-payment
+and even disconnection
+
+general public’s perception of the service will be affected. A failure of service will be
+
+visible to anyone in the post office. Incidents at the frequency we are currently
+
+observing is likely to be a matter of discussion within the community, and the poor
+perception of the automated service could well be reported in local and national press.
+
+This will damage the Post Office brand.
+
+s.taay be slower and fess reliable
+
+Users. For the users, there will be considerable inconvenience resulting from each
+
+cident:
+
+* users will have to spend additional time: recovering the service (see above); recovering
+transactions undertaken in manual fall-back mode; on back office activity disrupted by
+the incidents
+
+* users will be unable to provide a good service to their customers. As has been
+evidenced in the Live Trial, the lack of system stability is considerably undermining
+their confidence in the automated service.
+
+when combined with the poor response from the HSH (AI 408) there is a danger that
+sub-postmasters will refuse to use the system. POCL believe that at the current level of
+incidents there is a significant danger that resistance to accepting the new system will
+spread throughout the office network. Without sub-postmaster co-operation, the roll-
+out cannot take place.
+
+© delays in the production of the Cask Account
+
+Other significant impacts are:
+
+3. increase in Horizon System Helpdesk and Network Business Service Ccentre Helpdesk:
+calls resulting in general degradation of support to other outlets and the consequential cost
+to help recover the service.
+
+4, the risk of data corruption during a re-boot incident, Until a detailed analysis of a sample
+of representative incidents is undertaken (including the consequence on POCL’s back-end
+processing) POCL cannot be sure that data is not being lost or corrupted.
+
+5. the risk of errors generated in fall-back impacting POCL Transaction Processing (see AI
+390 for an example of shortfall in service in fall-back mode)
+
+6. the business will be exposed to fraudulent activities as losses can be attributed to the
+system
+
+Version 0.6d Page 3. 7/27/202208/20 9908:
+
+AL298 ~ System Stability DRAFT. Commercial in Confidence
+
+7._client SLA/confidence. POCL may not be meeting clients’ service level requirements
+because we cannot serve the customers. The clients will also be affected through errors
+occurring as a result of a system failure
+ae amines the eredibil
+
+system: for management of one busi
+nof staff or
+iMin. ie uve of evidence front dhe service in
+court would be laughable if jt comes out that it crashed regularly during the Cash
+
+decousn ete}
+
+outlets
+subnostioasiens of the recovery of fun
+
+the use.
+
+{it for investigation and any subsequent pro
+
+As these problems have yet to be resolved there is evidence that users are rebooting the system
+themselves without calling the Horizon System Helpdesk (as shown in the joint week 19
+analysis attached (10), and from POCL’s week 19 telephone survey (46). This further
+increases the risk that transactions would be lost impacting customers and clients and that
+unknown problems would not be identified by ICL Pathway.
+
+Severity Rating
+Pathway’s Severity Rating MEDIUM
+POCL’s Severity Rating: HIGH
+
+‘The frequency of the instability. problems. end subsequent-reboots is end-unacceptable,
+
+Each system stability incident has a significant impact on the POCL business. POCL estimate
+that over 80% (DN Dave Mac’s and Min B’s back of envelope calculation - anyone got
+anything better?) of these incidents will have a substantive impact on customer servic!
+on eritical business activities suel
+
+There are many manifestations of the problem. We do not know if these represent separate
+root causes, or whether some are related to more fundamental problems. There is no agreed
+root cause analysis, nor has Pathway been in a position to participate in a joint Pathway/POCL
+analysis of the consequence of these incidents.
+
+The POCL vision is to be “the UK’s number one choice for the important business of
+everyday life”. We act as an agent providing value chain between our customers and clients,
+with integrity and trust being key to the way we gain and retain business in a highly
+competitive marketplace which offers alternative channels.
+
+POCL’s strategy is predicated on growing extremely competitive and high quality service
+which builds on the major trust and integrity attributes of the brand. Aggressive plans to gain
+competitive advantage by emphasising the unique selling point of our extensive network of
+post offices depend on POCL and Pathway’s ability to offer a credible service whieh is fit for
+purpose against an increasingly competitive environment. Persuading existing and potential
+clients to rely on using POCL as the sole ‘outlet’ provider of finaneial services on their behalf,
+is key to achieving this overall strategic aim
+
+Severe system instability problems which may occur if the current problems are not properly
+addressed will totally undermine this strategy.
+
+Version 0.6d Page 4. 7/27/202208/20 9908:
+
+WITNO5970120
+WITN05970120
+WITNO5970120
+WITN05970120
+
+AL298 ~ System Stability DRAFT. Commercial in Confidence
+
+POCL assess this Acceptance Incident as High because it clearly comes under the contractual
+definition of High as "Failure to meet an Acceptance Criterion which would have a substantive
+impact on the service received by the customer". This results from (a) the current level of
+occurrence, (b) the associated impact on business costs, income and service levels to
+customers; (¢) the associated impact on customer, client and user perception, (d) the absence
+of any rigorous analysis of the cause and therefore the risk of increased future occurrence as
+the system loading increases (e) (DN rumours that Keith Baines has an (¢
+(fin we could also justify it on Security, frou whet {remember of the high level criteria,
+although this might he red rag to the bull. heirh may he able ro advive on interpretations
+
+Rectification Plan
+
+Rectification is required before the start of roll-out.
+
+POCL’s requirements for reducing the severity to Medium are:
+‘* Pathway to produce a rectification plan for this Acceptance Incident
+
++ Pathway to develop an open approach to managing the problem aimed at restoring POCL’s
+confidence that it is being effectively addressed
+
+simi
+
+fralts (ie faults caus
+
+od by similar design or coding
+defensive measures where applicable
+
+vay feg with new re
+of the od
+
+ace data, or new software drop)
+
+ign. develgnmen id integration metiods and controls to
+y fazlts of this nature were intro
+aux! to determine
+
+dand were net detested at the
+{corrective actions cam be laien to avoid suck,
+through the nel en future refeases
+
+DNawhaie ightwards-ve% yo odeneribethe-holistie.
+review).as well as root cause analysis of individual categories of incident
+
+POCL to agree Pathway’s approach to monitoring and reporting incidents
+
+Pathway and POCL to agree objective criteria for measuring System Stability and the
+targets for key milestones in the rectification plan
+
+Version 0.64 Page 5. T/2T/202208/20/9908/20/99
+WITNO5970120
+WITN05970120
+
+AL298 ~ System Stability DRAFT. Commercial in Confidence
+
+Analysis of System Stability Issues Version 4
+
+[Out of Virtual Memory. 4] 4 4
+[Unable to Contact HQ 0
+[Critical Event 3
+Stock Declaration ¢ 9] 10] 4 4
+[Total Error Messages 1s
+
+Spurious Printing 4
+
+[Printer Hung 26] 19] 14] 33
+[Out of Paper 2 2 2
+[Printing Paper Jam 2 2 2
+
+otal Back Office Printer Probs
+
+[Printing NO receipts 38 13 38
+Lock Out 1 1 1
+Frozen Screen 4 14 I
+
+fo Entry 3 I
+
+[No Icon’
+
+[Blue Screen
+Dr Watson Message
+
+Sum of general system faults
+
+Jser initiated reboot
+[Application problems
+
+incorrect reboot advice 8 3 8
+[Others(balancing figure) 10 10] 10
+[Total Other reboots 40 40] 40
+
+[Overall Total
+
+ion-live outlets 7
+Hardware faults 6
+Power failures etc 8]
+Wrongly classifed codes io)
+
+POCL consider that these should be included as part of this Acceptance Incident and proper
+
+root cause analysis and rectification undertaken:
+
+‘© user initiated reboots (10): POCL’s analysis of these calls, discussed with Pathway,
+indicated that this was probably the right course of action
+
+* application problems (12): these are clearly destabilising the system
+
+* incorrect re-boot advice (8): the wrong advice from Pathway is destabilising the system
+
+others (10): Pathway authorised these reboots presumably because there was no other
+
+course of action, Until the incidents are analysed and an alternative cause given, these
+
+should be part of this Al
+
+Version 0.6d Page 6. T/27/202208/20/9908:20/99

@@ -1,0 +1,491 @@
+FUJ00121987
+FUJ00121987
+
+I OMY.
+
+\
+Witness Statement I \ I
+(CJ Act 1967, s9; MC Act-1980, ss 5A(3)(a)” \\ \ . I
+and 5B, MC Rules 1981, r 70) ‘
+
+Statement of Penelope Anne Thomas
+
+Age if under 18 Over 18 (If over 18 insert ‘over 18’)
+
+This statement (consisting of eight pages each signed by me) is true to the best of my knowledge and
+belief and I make it knowing that, if it is tendered in evidence, I shall be liable to prosecution if I have
+wilfully stated in it anything which I know to be false or do not believe true.
+
+2004
+
+Dated the 17th._..dav.of. June.
+
+I have been employed by Fujitsu Services, Post Office Account, formally ICL Pathway Ltd.,
+since 20 January 2004 as an Information Technology (IT) Security Analyst responsible for audit
+data extractions and IT Security. I have working knowledge of the computer system known as
+Horizon, which is a computerised accounting system used by Post Office Ltd. I am authorised
+by Fujitsu Services to undertake extractions of audit data held on the Horizon system and to
+obtain information regarding system transaction information processed on the Horizon system.
+
+Horizon’s documented processes relate to each Post Office outlet. They state that at each Post
+Office, there are counter positions which each have a computer terminal, a visual display unit
+and a keyboard and printer. This individual system records all transactions input by the counter
+clerk working at that counter position. Each clerk logs on to the system by using their own
+unique password. The transactions performed by each clerk, and the associated cash and
+stock level information are recorded by the computer system in a stock unit. Once logged on,
+any transactions performed by the clerk must be recorded and entered on the computer and
+are accounted for within the user's allocated stock unit.
+
+The Horizon system provides a number of daily and weekly records of all transactions input into
+it. It enables Post Office users to obtain computer summaries for individual clients of Post
+Office Limited e.g. National Savings Bank, Girobank, Driving Vehicle Licence Agency and the.
+
+Signature H
+
+€S011A (Side A}
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act'1980, ss SA(3)(a) and 5B, MC Rules 1981, r 70)
+
+Continuation of statement of Penelope Anne Thomas
+
+Department of Working Pensions (DWP). The Horizon system also enables the clerk to
+produce a weekly balance of cash and stock on hand combined with the other transactions
+
+performed in that accounting period. ,
+
+Where local reports are required these are accessed from an icon on the desktop menu. The
+user is presented with a parameter driven menu, which enables the report to be customised to
+requirements. The report is then populated from transaction data that is held in the local
+database and is printed out on the tally roll printer. The system also allows for information to be
+transferred to the main accounting department at Chesterfield in order for the office accounts to
+be balanced.
+
+The Post Office counter processing functions are provided through a series of counter
+applications: the Order Book Control Service (OBCS) that ascertains the validity of DWP order
+books before payment is made; the Electronic Point of Sale Service (EPOSS) that enables
+Postmasters to conduct general retail trade at the counter and sell products on behalf of their
+clients; the Automated Payments Service (APS) provides support for utility companies and
+others who provide incremental in-payment mechanisms based on the use of cards and other
+tokens and the Logistics Feeder Service (LFS) which supports the management of cash and
+value stock movements to and from the outlet, principally to minimise cash held overnight in
+outlets. The counter desktop service and the office platform service on which it runs provides
+various: common functions for transaction recording and settiement as well as user access
+
+control and session management.
+
+Information from counter transactions is written into a local database and then replicated
+automatically to databases on all other counters within a Post Office outlet. The information is
+then forwarded over ISDN (or other communication service) to databases on a set of central
+
+Correspondence Servers at the Fujitsu Services data centres. This is undertaken by a
+
+messaging transport system within the Transaction Management Service (TMS). Various
+
+Signature
+
+csotia b
+
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act 1980, ss 5A(3)(a) and 5B, MC Rules 1981, r 70)
+
+Continuation of statement of Penelope Anne Thomas
+
+various support services. Details of outlet transactions are normally sent at least daily via the
+system. Details relating to the outlet's stock holding and cash account are sent weekly. Details
+are then forwarded daily via a file transfer service to the Post Office accounting departntent at
+Chesterfield and also, where appropriate, to other Post Office Clients.
+
+An audit of all information handled by the TMS is taken daily by copying all new messages to
+archive media. This creates a record of all original outlet transaction details including its origin -
+outlet and counter, when it happened, who caused it to happen and the outcome. The TMS
+journal is maintained at each of the Fujitsu Services Data Centre sites and is created by
+securely replicating all transaction records that occurred in every Outlet. They therefore provide
+the ability to compare the audit track record of the same transaction recorded in two places to
+verify that systems were operating correctly. All exceptions are investigated and reconciled.
+
+Records of all transactions are written to audit archive media.
+
+The Horizon system consistently records time in GMT and therefore takes no account of Civil
+Time Displacements. The clock incorporated into the desktop application on the counter visual
+display units is however configured to indicate local time. Fhis has been the situation at Forest
+Gate (FAD 100002) since 31 January 2001 when the Horizon system was introduced at that
+particular Post Office.
+
+The Order Book Control System (OBCS) software, linked to the Horizon system was developed
+in conjunction with the DWP. OBCS provides details of DWP order books on the national stop
+payment list, and, enables data regarding the movement of order books, and, encashments to
+be captured on their behalf. Each Horizon terminal at a Post Office counter has access to the
+national stop list through OBCS, when a barcoded DWP order book is scanned at the Post
+Office counter, or the order book details are manually keyed into Horizon at the Post Office
+counter. Each night, the national stop payment list is updated from information supplied
+electronically from. the DWP computer centre. National stop payment list data is held centrally
+
+Signature i G RO ; Signature witnessed by : i
+csot1A i i i i
+
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act 1980, ss 5A(3)(a) and 5B, MC Rules 1981, r 70)
+
+Continuation of statement of Penelope Anne Thomas
+
+within the Horizon system, and is available to all Post Offices. However, certain information from
+the national stop payment list is also downloaded to individual Post Offices for faster access; this
+download process is called polling. The polling of individual Post Offices also involves receiving
+details of order book movements and encashments at Post Offices, centrally within Horizon, for
+onward transmission to the DWP. .
+
+I have access to reports that monitor faults, polling failures, equipment failures and calls for
+advice and guidance logged by the Horizon System Helpdesk. During 1 October 2002 and 31
+January 2003, there were 13 calls from Forest Gate (FAD 100002) to the Helpdesk. They
+consisted of:-
+
+Printer Problems - 8 calls were received as a result of the printer not printing for various
+reasons. : These calls were logged on 2 October 2002, 4 October 2002, 18 October 2002, 29
+October 2002, 28 November 2002, 14 December 2002, 09:13 17 January 2003 and 16:53 17
+January 2003, when the printer was replaced.
+
+Other Hardware Problems — 4 other hardware related calls were received. They were:-
+21 January 2003 when a Bar Code Reader was not scanning;
+
+13:03 23 January 2003 when an engineer installing a pinpad had the incorrect One Shot
+Password, and 14.03 23 January 2003 when the engineer again called for the correct One Shot
+Password to install the pinpad;
+
+10:19 30 January 2003 when an auditor required a One Shot Password.
+
+Software Problem — 09.16 30 January 2003 when Riposte error 1726 was experienced on
+counter'6. This is a known error - Known Error Log (KEL) title - KMRX (Key Management
+Distribution Receiver Service) Riposte Error 1726. This error message occurs when the KMRX
+Service attempts to connect before the Riposte Service is ready for connection. The counter
+was re-booted at 09:32 and the error was cleared. Counter 6 subsequently logged on at
+10:23:13.
+
+Signature I G RO i Signature witnessed by I
+
+csotia i i
+
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act 1980, ss 5A(3)(a) and 5B, MC Rules 1981, r 70)
+
+Continuation of statement of Penelope Anne Thomas
+
+None of these calls. relate to faults which would have had an effect on the integrity of the
+information held on the system.
+
+When information relating to individual transactions is requested, the data is extracted from the
+audit archive media via the Audit Workstations (AW’s). Information is presented in exactly the
+same way as the data held in the archive although it can be filtered depending upon the type of
+information requested. The integrity of audit data is guaranteed at all times from its origination,
+storage and retrieval to subsequent despatch to the requester. Controls have been established
+that provide assurances to Post Office Internal Audit (POIA) that this integrity is maintained.
+
+During audit data extractions the following controls apply :
+
+1. Extractions can only be made through the AWs, which exist at Fujitsu Services, Forest Road,
+Feltham, Middlesex, Fujitsu Services, Lovelace Lane, Bracknell, Berkshire and the two
+Fujitsu Services Data Centres. These are all subject to rigorous physical security controls
+appropriate to that location. Specifically, the Feltham and Bracknell AWs — where most
+extractions take place ~ are located in a secure room subject to proximity pass access within
+a secured Fujitsu Services site.
+
+2. Logical access to the AW and its functionality is managed in accordance with the Fujitsu
+Services, Post Office Account Security Policy and the principles of ISO 17799. This includes
+dedicated Logins, password control and the use of Microsoft Windows NT security features.
+
+3. All extraction’s are logged on the AW and supported by documented Audit Record Queries
+(ARQ’s), authorised by nominated persons within Post Office Ltd. This log can be scrutinised
+on the AW.
+
+4. Extractions are only made by authorised individuals.
+
+5. Upon receipt of an ARQ from Post Office Ltd they are interpreted by CS Security. The details
+
+~~ GRO
+
+CSO11A
+
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act 1980, ss 5A(3)(a) and 58, MC Rules 1981, r 70)
+
+Continuation of statement of Penelope Anne Thomas
+
+are checked and the printed request filed.
+
+6. The required files are identified and marked using the dedicated audit tools. 5
+
+7. Checksum seals are calculated for audit data files when they are written to audit archive
+
+media and re-calculated when the files are retrieved.
+
+8. To assure the integrity of the audit data while on the audit archive media the checksum seal
+for the file is re-calculated by the Audit Track Sealer and compared to the original value
+calculated when the file was originally written to the audit archive media. The result is
+maintained in a Check Seal Table.
+
+9. The specific ARQ details are used to obtain the specific data.
+
+10.The files are copied to the AW where they are checked and converted into the file type
+required by Post Office Ltd.
+
+11.The requested information is copied onto removal CD media, sealed to prevent modification
+and virus checked using the latest software. It is then despatched to the Post Office Ltd
+Casework Manager using Royal Mail Special Delivery. This ensures that a receipt is provided
+to Fujitsu Services confirming delivery.
+
+ARQs 198, 199 and 200 were received on 23 July 2003 and asked for information in connection
+with the Post Office at Forest Gate (FAD 100002). The data was originally supplied to Post
+Office Ltd on 29 August 2003 by Neneh Lowther who is currently o1 [
+produce a copy of ARQs 198, 199 and 200 as Exhibits PT/01, PT/02 and PT/03 respectively. On
+various dates and at various times between 13 May 2004 and 27 May 2004, I undertook
+
+extractions of data held on the Horizon system in accordance with the requirements of ARQs
+198, 199 and 200 and followed the procedure outlined above. I produce the resultant CD as
+Exhibit PT/04. This CD contains additional transactional data to that which was originally
+supplied in August 2003. panned
+
+Signature i GRO ! Signature witnessed by i ;
+
+Cso11A
+
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act 1980, ss 5A(3)(a) and 5B, MC Rules 1981, r 70)
+
+Continuation of statement of Penelope Anne Thomas
+
+The report is formatted with the following headings:
+ID — relates to counter position ’
+User — Person Logged on to System
+SU — Stock Unit
+Date — Date of transaction
+Time — Time of transaction
+Sessionld — A unique string relating to current customer session
+Txnid — A unique string relating to current transaction
+Mode — e.g. SC which translates to Serve Customer
+* ProductNo — Product Item Sold
+Qty — Quantity of items sold
+SaleValue — Value of items sold
+Entry method - Method of data capture for OBCS Transactions (0 = barcode, 1 = manually
+keyed)
+State — Method of manual keyed Entry Method.
+IOP - Order Book Number
+Result — Order Book Transaction Result
+Foreign Indicator — Indicates whether OBCS payment was made at a local or foreign outlet
+(0- Local, 1- Foreign). The foreign indicator defaults to a ‘0’ for all manually entered
+transactions.
+
+The Event report is formatted with the following headings:
+Groupid — FAD code
+ID — relates to counter position
+Date — Date of transaction
+Time — Time of transaction
+User — Person Logged on to System
+SU — Stock Unit
+
+Signature I G RO Signature witnessed by i
+
+CSO11A
+
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act 1980, ss 5A(3)(a) and 5B, MC Rules 1981, r 70)
+
+Continuation of statement of Penelope Anne Thomas
+
+EPOSSTransaction.T — Event Description
+EPOSSTransaction.Ti — Event Result
+’
+The CD (Exhibit PT/02) was sent to the Post Office Investigation section by Special Delivery on
+27 May 2004. .
+
+There is no reason to believe that the information in this statement is inaccurate because of the
+improper use of the computer. To the best of my knowledge and belief at all material times the
+computer was operating properly, or if not, any respect in which it was not operating properly, or
+was out of operation was not such as to effect the information held on it. I hold a responsible
+position in relation to the working of the computer.
+
+Any records to which I refer in my statement form part of the records relating to the business of
+Fujitsu Services. These were compiled during the ordinary course of business from information
+supplied by persons who have or may reasonably be supposed to have personal knowledge of
+the matter dealt with in the information supplied, but are unlikely to have any recollection of the
+
+information or cannot be traced. As part of my duties, I have access to these records
+
+Signature I G RO I Signature witnessed by
+
+CSO11A
+
+FUJ00121987
+FUJ00121987
+
+NOTE: This side B to be completed only when the original statement is overleaf. When this form is used to
+make a copy of a statement side B is to be left blank.
+
+Address GRO
+
+Mobile Tel No: “epee Business telephone No:
+
+Occupation:.
+
+Analyst... Date and place of birth:
+
+Maiden name.: Langley
+
+Dates to be avoided. Delete dates of non availability of witness
+
+Month of: July 2004 Month of: August 2004 Month of: September 2004
+
+1 xX I 3 4 5 6 7 1 2) 3 4 5 I xX I 7 1 2/,x/4-)5)6 7
+8 I X I 410] 11/12) 13 I) 14) 8 I X I 10) 11) 12) X I 147 8 X I 111 12 I 13 I 14
+15 I X I 17 I 18 I 19 I 20 I 21915 I 16] 17 I 18) 19) X I 21) 15 I 16) X I 18 I 19 I 20 I 21
+22 I X I 24 I 25 I 26 I 27 I 28 I 22 I 23 I 24 I 25] 26 I X I 28 I 22 I 23 I X I 25 I 26 I 27 I 28
+29 I X I 31 29 I 30 I 31 29 I 30
+Month of: October 2004 Month of: November 2004 Month of: December 2004
+
+xX} 2/3 /4/5/]6},7 41 2/3 )4;)xX)]6]771 2);,xX/4)5)6/7
+X I 9 I 10] 11 I 12] 13 I 147 8 9 I 10) 11) X I 13) 14) 8 9 I X I 11} 12 I 13 I 14
+X I 16 I 17 I 18 I 19 I 20 I 214} 15 I 16 I 17 I 18 I X I 20] 21715/16) X IXI xX] x {x
+X I 23 I 24 I 25 I 26 I 27 I 28 I 22 I 23 I 24 I 25I X I 27 I 27 X IXI xX] xX) xt x x
+X I 30 I 31 29 I 30 xX IXI xX
+
+Office Account, Fujitsu
+
+Contact point, if different from above: — Security Manager, P.
+
+Mobile No:
+
+STATEMENT TAKEN BY (print name)
+
+Office _
+
+C8011 Side B Version 3.0 11/02
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+
+(CJ Act 1967, s9; MC Act 1980, ss 5A(3)(a)
+and 5B, MC Rules 1981, r 70)
+
+Statement of William Leslie Mitchell
+
+Age if under 18 Over 18 (If over 18 insert ‘over 18')
+
+This statement (consisting of I pages each signed by me) is true to the best of my knowledge and belief
+and I make it knowing that, if it is tendered in evidence, I shall be liable to prosecution if I have wilfully
+stated in it anything which I know to be false or do not believe true.
+
+Dated tho A 2 df nel ener ne QOS,
+
+GRO
+
+Signat
+I have been employed by Fujitsu Services, Post Office Account, formally ICL Pathway Ltd.,
+
+since the 22" September 2003 as Security Manager where I am responsible for IT Security
+and the Audit Retrieval Query service. I have working knowledge of the computer system
+known as Horizon, which is a computerised accounting system used by Post Office Ltd. I am
+authorised by Fujitsu Services to undertake and supervise extractions of audit data held on the
+Horizon system and to obtain information regarding system transaction information processed
+on the Horizon system.
+
+Further to the statements submitted by Beatrice Neneh Lowther and Penelope Anne Thomas
+regarding extraction of data for ARQ’s 198, 199 and 200 relating to Forest Gate Post Office,
+FAD Code 100002. I confirmed that at Fujitsu Services, Forest Road, Feltham, TW13 7EJ
+between the 25" and the 28" May 2004 I carried out a comparison of the Forest Gate ARQ
+data as extracted by Beatrice Neneh Lowther and forwarded to Post Office Limited as Exhibits
+NL/1B, NL/2B and NL/3B and the Forest Gate ARQ as extracted by Penelope Anne Thomas
+and submitted to Post Office Limited on the 27" May 2004 as Exhibit PT/02. The recreation of
+the data and the check was due to Beatrice Neneh Lowther’s absence on;
+
+the possibility of a witness being required to attend a planned court date.
+
+These comparison checks revealed the following omissions in the data provide by Beatrice
+Neneh Lowther.as Exhibits NL/1B, NL/2B and NL/3B. This request is split over 3 ARQ, No's
+198, 199 & 200 as follows.
+
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act 1980, ss 5A(3)(a) and 5B, MC Rules 1981, r 70)
+
+Continuation of statement of William Leslie Mitchell
+
+ARQ 198 — The ARQ covers the period 14/10/02 to 13/11/2002, totalling 31 query days. The
+root cause for the omission of data from this ARQ is that the retrieval was executed as a single
+task with the resultant data retrieval exceeding the available 100Gb limit of the Messagé Store
+area on the Audit Server. This forced the Audit Server to randomly drop 11,135 data entries. A
+total of 10 days were affected these dates are: 7
+
+16/10 — Partial, no end of day
+17/10 — Partial, no end of day
+19/10 — No data retrieved.
+
+21/10 — Partial, no end of day
+22/10 — Partial, no end of day
+23/10 — Partial, no end of day
+25/10 — Partial, no end of day
+26/10 — No data retrieved
+
+29/10 — No data retrieved
+
+30/10 — Partial, no end of day
+
+ARQ 199: The ARQ covers the period 14/11/02 to 11/12/2002, totalling 28 query days. The
+root cause for the omission of data from this ARQ is when an ARQ is retrieved it is necessary to
+add additional days to the end of the requested date span to ensure a full and complete capture
+of the data which may have been harvested at different times. The operator should then
+confirm that an end of day log off is present and extract only the required data files. In this
+case the operator added two additional days to each ARQ, which is normally sufficient, but it
+appears did not confirm that an end of day log off was present, consequently an additional 235
+data entries were not included in the data extraction. The affected date was 27/11/2002 —
+Partial, no end of day.
+
+ARQ 200: The ARQ covers the period 12/12/2002 to 08/01/2003, totalling 28 query days. The
+root cause for the omission of data from this ARQ was the same as ARQ 199 above and 679
+
+FUJ00121987
+FUJ00121987
+
+Witness Statement
+(CJ Act 1967, s9; MC Act'1980, ss 5A(3)(a) and 5B, MC Rules 1981, r 70)
+
+Continuation of statement of William Leslie Mitchell
+
+additional data entries were not included in the data extraction. The affected date was
+03/01/2003 — Partial, no end of day.
+
+All records to which I refer in my statement form part of the records relating to the business of
+Fujitsu Services. These were compiled during the ordinary course of business from information
+supplied by persons who have or may reasonably be supposed to have personal knowledge of
+the matter dealt with in the information supplied, but are unlikely to have any recollection of the
+information or cannot be traced. As part of my duties, I have access to these records. Having
+reviewed both sets of data I have confirmed that the omissions made within the data provided
+by Beatrice Neneh Lowther have not been repeated in the ARQ data provided by Penelope
+Anne Thomas as Exhibit PT/02 and that the data is complete in accordance with the original
+ARQ.
+
+Sign G RO Signature witnessed tt G RO
+
+CS01 he Version 3.0 11/02
+

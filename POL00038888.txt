@@ -1,0 +1,575 @@
+POL00038888
+POL00038888
+
+Impact Programme: Horizon to MI AIS <Sxansa
+
+IMPACT PROGRAMME
+HORIZON TO MI (S70)
+APPLICATION INTERFACE SPECIFICATION
+
+Print date [ DATE \@ "dd/MM/yyyy" } 4 of 10 Version: 4
+mS
+
+Document Control
+
+Authorisations
+
+bc » impact Programme: Horizon to MI AIS
+
+.
+
+!
+
+Role Name
+
+‘Signed Date
+
+Programme Manager Tony Brain
+
+Reviewers
+
+Name Reviewer(s)
+
+Role & Review Responsibilities
+
+Torstein Godeseth
+
+PO Ltd Design Authority
+
+Peter Jones
+
+PO Ltd Test Manager
+
+Jacqui Cave
+
+PO Ltd Test Team
+
+Neil Fagan
+
+PO Ltd MI Design Authority
+
+Distribution List
+
+Name
+
+Organisation
+
+Jill Hollindale (for Prism distribution)
+
+Prism IMPACT Programme Office
+
+Debbie Shirley (for PO Ltd distribution)
+
+Post Office Ltd IMPACT Programme Office
+
+Print date [ DATE \@ "dd/MM/yyyy" }
+
+2 of 10
+
+Version: 4
+
+POL00038888
+POL00038888
+
+<Q>xansa
+
+POL00038888
+POL00038888
+
+y
+iC p Impact Programme: Horizon to MI AIS <eoxansa
+
+mS
+
+Table of Contents
+
+Document Control
+
+Authorisations
+Reviewers
+Distribution List
+Table of Contents........
+
+List of Figures
+List of Tables.
+
+Change Control
+Introduction
+
+Interface Details ....
+
+3
+3
+5
+0
+
+I> [2 IS
+
+Appendix A File structure extract - overview...
+
+List of Figures.
+
+Figure 1 Horizon to MI data transfer ......
+
+List of Tables
+
+Table 1 Change History.
+Table 2 Terms and abbreviations.
+
+Table 3 Field formats....
+
+Table 4 Reference documentation
+
+Table 5 Contacts and contributors ...
+
+Print date [ DATE \@ "dd/MM/yyyy" } 3 of 10 Version: 4
+POL00038888
+POL00038888
+
+y
+) Impact Programme: Horizon to Mi AIS <xansa
+
+14. Change Control
+1.1 Change Process
+
+Any changes to the draft version of this document will be made, controlled and distributed by:
+
+Rob Bradshaw
+Senior Consultant
+Xansa
+
+Rowland Hill House
+Chesterfield
+
+S49 1HQ
+
+1.2 Change history
+
+This original document, ‘Various to MI Final version 3.0’ includes several interfaces of which this (CBDB) has not
+been baselined.
+
+Issue Author Date History
+
+0.1 (draft) Rob Bradshaw 13" October 2003 Baseline release for PO Ltd and
+supplier review
+
+0.2 (draft) William Eyre 27/01/04 CBDB interface enhanced, Branch
+
+Sales Targets interface enhanced; ES
+FS interface enhanced
+
+0.3 (draft) William Eyre 28/01/04 Incorporates corrections arising from
+review comments
+
+0.4 (draft) William Eyre 03/02/04 Incorporates corrections arising from
+review comments
+
+0.5 (draft) William Eyre 06/02/04 Incorporates corrections to ESFS to MI
+
+interface and CBDB to MI interface,
+arising from review comments
+
+1 William Eyre 06/02/04 First internally approved version;
+incorporates correction to Branch Sales
+Targets interface and clarification of
+delivery mechanism for the ESFS,
+CBDB and Branch Sales Targets
+
+interfaces.
+
+2 William Eyre 15/04/04, Slight change to layout of ESFS to MI
+interface file
+
+3 William Eyre 27/04/04 More meaningful wording incorporated
+
+into ESFS interface; cost centres
+representing amalgamations of agent
+owned branches excluded
+
+4 Rob Bradshaw 09/06/04 Split out from ‘Various to MI AIS’ for
+review and baseline with no change to
+the data formats or structure from
+original version.
+
+Table 1 Change History
+
+Print date [ DATE \@ "dd/MM/yyyy" } 4 of 10 Version: 4
+POL00038888
+POL00038888
+
+.
+
+r4
+» Impact Programme: Horizon to MI AIS <xansa
+
+!
+
+2. Introduction
+2.1 Purpose
+
+The seminal purpose of this interface is to capture Horizon sales transactions, for sales and performance
+reporting. Horizon data is currently extracted from the FTMS interface, operated by Fujitsu Services Ltd (FSL),
+The extract occurs once data attribute validation has completed by the OpTIP system when file extensions are
+renamed to ‘TPB.’ During R1, the data attribute validation will continue however once Op TIP is decommissioned
+under E2E, the integrity of file attributes is no longer checked and the working assumption is source data
+accuracy transfers to Fujitsu Services Ltd
+
+itis assumed there is no change to the interface, Mi will extract from FTMS as per existing arrangements until
+OpTIP de-commission.
+
+2.2 Scope
+
+The scope of this document is restricted to electronic data, which is both computer-generated and computer-
+consumed and relates specifically to the transfer of data from a gateway server to the POL central MI system.
+
+It excludes data directly created from personal computers, transferred to the central MI system.
+
+2.3 Terms & Abbreviations
+
+Als Application Interface Specification
+
+CTT Commercial Transaction Type (a product grouping number)
+
+FAD. Financial Accounting Description — a code which identifies the PO branch
+
+FTP. File Transfer Protocol
+
+IMPACT Improved Accounting programme, a PO Ltd initiative to rationalise back-end
+systems and processes.
+
+iP Internet Protocol, a mechanism for identifying a networked computer
+
+Mi(S) Management Information (Systems)
+
+POL Post Office Limited
+
+Table 2 Terms and abbreviations
+2.4 Field Formats
+
+MBO!
+
+Numeric digit
+Alphanumeric character
+Floating minus sign
+Digit of year
+
+Digit of month
+
+Digit of day
+
+Explicit decimal point
+
+O]e}<}' Ix/}
+
+Table 3 Field formats
+2.5 Reference Documentation
+
+Title si
+Network Banking FI/MI Delivery Technical Design I Final 2.0 30/1/2003
+Document
+B IMPACT Project Conceptual Design — Final 1.1 16/10/2003
+Management Information
+Cc IMPACT Technical Interface Matrix v14 06/05/04
+Print date [ DATE \@ "dd/MM/yyyy" ] 5 of 10 Version: 4
+2
+
+2.6 Contacts
+
+bc » impact Programme: Horizon to MI AIS
+
+Table 4 Reference documentation
+
+€
+
+p>
+‘
+
+NM
+
+)
+
+e
+
+POL00038888
+POL00038888
+
+KoXansa
+
+PO Ltd PO Ltd Design Authority
+
+Torstein Godeseth
+Alan Holbrook
+Neil Fagan
+
+Programme Supplier Management
+
+Mark Lodge
+Debbie Shirley (PCO)
+
+Operations
+
+Services Ltd
+
+Fujitsu IMPACT Programme
+
+Nial Finnegan FSL Design Authority
+
+Alliance
+
+Prism IMPACT Programme
+
+Denise Wilkinson (MI/NRDS Project Manager)
+Martin Cox (Test Manager)
+Dave Adams (Test Leader NRDS/MI)
+
+GRO
+
+Parity
+
+Nick Jones (Ml & NRDS Project Manager)
+
+2.7 Audience
+
+Table 5 Contacts and contributors
+
+* PO Ltd IMPACT Programme Design Authority and Test Team
+
+« Prism Alliance
+
+«Parity systems
+
+Print date [ DATE \@ "dd/MM/yyyy" } 6 of 10
+
+Version: 4
+POL00038888
+POL00038888
+
+.
+
+é
+: Horizon to MI AIS <xansa
+
+!
+
+3. Interface Details
+
+3.1. Interface diagram
+
+vatidation « if OK
+
+:
+
+54. file attribute
+I rename to TPB
+:
+
+Figure 1 Horizon to MI data transfer
+
+3.2 Data Overview
+
+Data is passed as ASCII in fixed length format. The Horizon extract from Fujitsu appears as 129 files each day
+corresponding to:
+
+64 Cash Account files
+64 Transactional files
+1 Client transmission file
+
+Cash Account file
+
+The attributes within the Cash Account file are shown below and include a line of sample data. Refer to
+Reference B, section 3.5.2.2 for further information. It includes a header and the trailer file includes the trailer file
+identifier, date, time, total number of sub files and a total value figure.
+
+Cash Account file
+
+Record Org unit I Version of I Cash Cash Amount
+type org unit jaccount account
+
+identifier week no. _Iline no.
+
+CAC 756 9 24 0297 +101104.75I
+
+The cash account file can also includes stock holding detail (i.e. stock liability). This appears as additional data on
+the cash account file and is detailed below (refer to Reference B section 3.5.2.4):
+
+Cash Account file (including stock detail)
+
+Record Org unit I Version of ICash Item ID Version Holdings IQuantity I Value
+type org unit [account number of Idate
+
+identifier week no. item
+
+STX 756 9 24 19 41 20030910 I2913 815.64
+
+Client Transmission file
+There is one client transmission file for all outlets each day.
+Client Transmission file
+
+Record Client ID I Version no} Item ID Version Client Total no. of I Total value
+type code of client ID no. of ItemI trading _I transactionsI of
+
+identifier code date transactionsI
+CLT 22348 5 2574 241 20030910 I 155 +1920.56
+
+Print date [ DATE \@ "dd/MM/yyyy" } 7 of 10 Version: 4
+POL00038888
+POL00038888
+
+.
+
+ré
+lp Impact Programme: Horizon to MI AIS <xansa
+
+Transaction file
+The attributes within the Horizon transactional file are shown below and include a line of sample data. Refer to
+Reference B, section 3.5.1.2 for further information.
+Horizon Transaction file
+
+Record [Orgunit [Version of [stock unit [Session I Transaction] Till ID Employee [Date of
+type org unit IID seq.no. Iseq. no. iD transaction
+identifier
+OTX 723 9 AA 718391 24 41 DWo001 I 20020403
+Date of End time ICash Cash Stock unit IMethod of [Reversal IRefund Fall back
+transaction) of account jaccount jbalance data indicator Iflag mode flag
+transactionIweekno Idayno. period —_Icapture
+0950595 [0950596 [1 00 1 41 0 N N
+Item ID Version IAmount Quantity
+no. of item
+transaction
+code
+1 15 1 +14.50
+
+The trailer file includes the trailer file identifier, date, time, total number of sub files and a total value figure.
+Sales transactions from outlets are in the form of files according to the transaction type. Low level sales
+transactions, extracted from FSL, to support performance actuals and sales reporting
+
+3.3. File Structure Overview
+
+See Appendix A.
+
+3.4 File Format
+
+The format of the Horizon files are all fixed width. There may be changes to the data fields relating to the Cash
+Account, as a result of de-commissioning of CBDB. It is assumed there will still be a requirement for an
+‘accounting period’ and minor changes may occur. In the event this manifests as change to the data file format,
+this will need to be addressed within MI.
+
+3.6 Delivery Details
+
+Access to the FTMS interface is already provided by FSL, where data is extracted from Op TIP, post file attribute
+validation. Migration to FTMS will fall within the scope of the E2E migration plan.
+
+3.7 Volumes anticipated
+
+15 million customer transactions, corresponds to 2 Gigabytes (peak), daily (except Sunday where large
+percentage of outlets are closed).
+
+64 Cash Account files: 25 Megabytes/day
+
+64 Transactional files: 2 Gigabytes/day
+4 Client file: 85-100 Kilobytes/day
+
+Print date [ DATE \@ "dd/MM/yyyy" } 8 of 10 Version: 4
+POL00038888
+POL00038888
+
+A
+lp Impact Programme: Horizon to MI AIS <eoxansa
+
+3.8 Interface availability
+
+Overnight, available for extraction from the FTMS server by 0300 (latest time).
+The data is put onto the FTMS interface under SLA by FSL. The FTMS interface is used to support data transfer
+from the FSL to the PO Ltd domains and is available on a 24x7 basis.
+
+From To Type I Frequ- I Day Time Description of Data
+
+System _I System ency Window
+
+Pathway OPTIP FTP Daily MTWTF I 20:00— Transaction data, Cash Accounts,
+(IN) ss 03:00. Client Transmission Summary
+
+3.9 Fallback & Exception processing
+
+It is assumed there will be no change to the current arrangement for data extraction.
+
+3.10 Interface Security
+
+There is no change to the current FTP security arrangements. FSL provide the FTP account and access detail.
+3.11 Extract Rules:
+
+The current processes require no planned change to the mechanism for extracting the transactional data,
+Itis assumed the current ETL processes require no planned change.
+
+3.13 Issues
+
+1. The key issue is the file attribute-level I POL Design Authority POL Design Authority
+validation, currently performed by Op
+TIP, which is moving into the FSL
+domain. There is no detail at present
+as to what is proposed as a
+replacement and hence the impact on
+data support cannot be assessed. At
+tisk is the quality and accuracy of
+data and the detailed business
+processes surrounding the validation.
+
+Print date [ DATE \@ "dd/MM/yyyy" } 9 of 10 Version: 4
+POL00038888
+POL00038888
+
+-
+pape
+Impact Programme: Horizon to MI AIS <yexa nsa
+
+eo
+
+4. Appendix A File structure extract - overview
+
+The start of the Horizon file looks like this:
+
+TFHTMSTX 50W_09309520020403205438NOR
+
+SFH 599 A9OTRAN 120020403205438
+
+OTX 599 19AA 772081 2 1SIN001 2002040214380041438006 200 1 10NN 1 11 19 +3.56 1
+
+OTX 599 19AA 772081 3 1SINO01 2002040214380091438011 200 1 10NN 222 41 19 +356 1
+OTX 599 19 4SINO01 20020402 1439490 931 20
+
+OTX 599 19 1 20020403 1900400 923 20
+
+SFT 599 1920020403205438 4 47.12
+
+SFH 723 QOTRAN 220020403205438
+
+OTX 723 9 1DWO001 20020403 0847450 930 20
+
+OTX 723 9AA 718091 2 1DWO001 2002040309005420900545 100 1 10NN 19 12 1 +2.70 10
+OTX 723 9AA 718091 3 1DWO001 2002040309005590900560 100 1 10NN 41 15 41 +2.70 1
+OTX 723 9AA 718131 2 1DWO001 2002040309062590906364 100 1 10NN 255 12 1 +250.00 1
+OTX 723 9AA 718131 3 1DWO001 2002040309064020906403 100 1 10NN 1 15 41 +250.00 1
+OTX 723 9AA 718171 7 1DWO001 2002040309153790915379 100 100NN 2947 14 1° +71.05 1 1264
+501704556186605517005
+
+OTX 723 9AA 718171 8 1DWOO001 2002040309160300916032 100 1 10NN 2 10 1 +7105 1
+OTX 723 9AA 718271 2 1DWO001 2002040309303910930495 100 1 00NN 184 7 1 +85.48 141Y
+
+And the end of the file looks like this:
+
+OTX 23364 2106 482061 3 2DBI002 2002040318271281827129 200 1 10NN 145, 1 17 +43.03 1
+OTX 23364 2106 482141 4 2DB1002 2002040318284071828423 200 1 10NN 223 7 15 +5.00 1
+OTX 23364 2106 482141 5 2DBI002 2002040318284351828436 200 1 10NN 4 6 15 -5.00 1
+OTX 23364 21 4MSM001 20020403 1828490 1 1 919 20 02
+
+OTX 23364 2106 482381 2 2DBI002 2002040318293791829380 200 1 10NN 1 1 17 -+5.00 1
+OTX 23364 2106 482381 3 2DBI002 2002040318293811829382 200 1 10NN 145 1 17. -+5.00 1
+OTX 23364 21 1MSMO001 20020403 1829420 931 20
+
+OTX 23364 21 1 20020403 1830510 923 20
+
+SFT 23364 2120020403205736 1059 +136353.04
+
+TFT20020403205737 224 +7613561.17
+
+Print date [ DATE \@ "dd/MM/yyyy" ] 10 of 10 Version: 4

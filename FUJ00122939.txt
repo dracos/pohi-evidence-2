@@ -1,0 +1,201 @@
+Ref:
+
+FUJ00122939
+
+FUJ00122939
+
+Comments on Rinkfield Report
+
+g:\gij documents\poa\horizon\other\rinkfield\rinkfieldreport.doc
+
+Author: Gareth I Jenkins
+
+Date:
+
+1.
+
+2.
+
+11/08/2010 12:03:00
+Introduction
+I’ve been asked to comment on the Expert Witness report produced by Charles
+
+McLachlan in the case against Mrs Katherine McQue associated with Rinkfield.
+
+I only have a paper copy of the report and started reading through it. I then realised
+that some of it was familiar and so opened up an earlier report produced by Prof
+McLachlan for the West Byfleet case (2"¢ Interim Report).
+
+T have carried out a quick comparison of the two reports and to a large extent they are
+identical (I would need a Word version of the Rinkfield report to do this more
+thoroughly). I produced a Witness statement on 2° Feb 2010 which addresses the
+West Byfleet report and most of the comments in that still apply.
+
+This document shows where there are differences in the report and comments on the
+new sections.
+
+Detailed comments
+
+Throughout, the details of Solicitors and Clients have been changed.
+
+1) Section 1: Contextual rewording in 1.1.3 and the introduction of a further Post
+Office in “South of England”. Also additional items in CV in section 1.2.22.
+
+2) List of docs in 1.5.1 changed to reflect the case.
+
+3) Section 1.6 on “Scope of Work” in Misra report has been removed (and
+subsequent sections renumbered).
+
+4) Section 1.7 updated. (NB 1.7.4 should refer to section 6 and not 5)
+
+5) Section 2.1 is identical
+
+6) Section 2.2 is new. See detailed response in section 3.1 below
+
+7) Section 2.3 is identical to section 2.2 of original report
+
+8) Section 3 is nearly the same as for the original report. The exception is:
+a. 3.2.1 has additional text regarding misaligned touch screens
+
+9) Section 4 is nearly the same as for the original report. The exception is:
+a. 4.2.5 has additional text based on a conversation with me.
+
+b. 4.2.6 is new
+c. 4.4 is new
+10) Section 5 is new
+
+11) Section 6 is identical to section 5 of the original report.
+
+w:\prosecution support\witness statements\gareth jenkins\gareth - rinkfield report.doc Printed at { TIME I on [
+DATE \@ "d/M/yyyy" \* MERGEFORMAT I __ Page I of 3
+3.
+
+3.1
+
+12)
+
+FUJ00122939
+
+FUJ00122939
+
+Section 7 is new. See detailed response in section 0 below
+
+Comments on new text
+
+Section 2.2
+
+))
+
+2.2.2 describes issues with Travellers Cheques.
+
+I don’t believe that this issue is described accurately. There are anomalies in
+the way in which the system stores details of Travellers Cheques and Currency
+and reports on them. However although this may cause confusion, it does not
+result in any losses.
+
+I have conducted some experiments on a Horizon terminal and have some
+detailed responses:
+
+a.
+
+2.2.2.1: When TC Stock is remitted in, then the “Volume” represents
+the Currency Value of the Travellers Cheques (ie $500 in the example)
+and the value is zero. Horizon doesn’t assign any value to a TC until it
+is sold. This should be clear in the Remittance Receipt. If a Balance
+Snapshot is done at this point than it will show a Balance of 500 US
+dollar TCs. Nowhere in Horizon will the value 41 appear.
+
+2.2.2.3: Selling $50 of TC will change the Stock Quantity to $450 on
+the Balance Snapshot (or Stock on Hand Report) and also appear on
+the TC Sales report correctly. However, I accept that on the Balance
+Snapshot under the Receipts section it does show a Volume of 1
+against the TC sales rather than 50. This actually represents the fact
+that there has been one Sale, but does not affect the actual Stock
+Levels. It should also be noted that on this report there is a further
+entry with zero value and a Volume of I that represents the change to
+the change in the level of TC Stock. Again the Volume of one
+represents a single sale and does not represent any value associated
+with the Dollars TCs sold.
+
+2.2.2.4: I don’t understand where this observation has come from.
+
+2.2.2.5: I agree that this would be nonsense if this was the case, but it
+is not the case.
+
+2.2.2.6: The system does allow negative stock values to be held on a
+temporary basis. This is to allow stock to be sold before it has been
+recorded on the system as having been remitted in. Also, as the system
+does not keep running totals of the stock levels (but rather calculates
+the level when requested by taking an Opening Figure and all
+movements due to sales, Remittances etc), and so would be unable to
+easily enforce preventing Stock levels from going negative. However I
+agree that it makes no sense in the real world and any negative stock
+levels need to be resolved before a Stock Unit can e balanced.
+
+2.2.2.7: As before this is not an issue.
+
+w:\prosecution support\witness statements\gareth jenkins\gareth - rinkfield report.doc Printed at { TIME I on [
+DATE \@ "d/M/yyyy" \* MERGEFORMAT I Page 2 of 3
+2)
+
+FUJ00122939
+
+FUJ00122939
+
+2.2.3 describes issues with A&L Credits.
+
+I don’t believe that this issue is described accurately. The system does not
+allow the scenario as described to occur. However I can think of slight
+variants on the scenario that could occur and can explain the behaviour of such
+cases. Again, this would not result in any losses to either the sub-postmaster
+or the customer (or Post Office Ltd!)
+
+3.2 Section 7
+
+Section 7 consists of a number of bulleted items for possible further investigation.
+
+In general I see no problem with such investigations other than that they will require
+significant resource and time to carryout and are unlikely to result in any further
+clarity. I will comment on those that I see as potentially affecting Fujitsu:
+
+1)
+
+2)
+
+3)
+4)
+5)
+6)
+
+2)
+
+8)
+
+Bullet 1: This may require co-operation from Fujitsu in providing logs for
+comparison. Note that given HNG-X is in mid roll-out then this is unlikely to
+be of any benefit unless done in the next week or two as rollout is due to
+complete in August 2010.
+
+Bullet 2: I’m not sure that we are in a position to do this for the Horizon
+system. The UI was based on Escher’s Riposte and an agreed style Guide
+with POL.
+
+Bullet 3: I don’t know if such logs exist
+Bullet 4: This is a normal ARQ I believe.
+Bullets 5, 6, 8 to 11: these are for POL and not Fujitsu
+
+Bullet 7: Not sure exactly what is required here. It sounds like details of
+Banking Reconciliation reports relating to the Branches. Not sure if these are
+easy / possible to provide or for how long they are retained.
+
+Bullet 12: Not sure about scope of this. Is it just counter fixes for that
+Branch?
+
+Bullet 13: I thought I’d covered this in a Witness statement for West Byfleet.
+
+The rest of section 7 is various press cuttings. Finally there are 2 almost legible pages
+that describe how Charles thinks a Card Payment system works, but is nothing like
+Horizon.
+
+w:\prosecution support\witness statements\gareth jenkins\gareth - rinkfield report.doc Printed at { TIME I on [
+DATE \@ "d/M/yyyy" \* MERGEFORMAT I __ Page 3 of 3

@@ -1,0 +1,111 @@
+FUJ00062228
+FUJ00062228
+
+Peak Incident Management System
+
+Call Reference PC0049308 Call Logger _Customer Call_ -- EDSC
+Release Targeted At -- CSR-CI3_2R Top Ref _ E-0007031533
+
+Call Type Live Incidents Priority D -- Internal
+
+Contact EDSC Call Status Closed -- User error
+Target Date 17/07/2000 Effort (Man Days) 0
+
+Summary fad 3912 has not polled for two days since 30/6/00
+
+Progress Narrative
+
+bat
+
+4-Jul-2000 01:35:00 User: Customer Call_
+CALL PC0049308:Priority A:CallType L - Target 04/07/00 20:00:00
+
+03/07/00 15:19 fad 3912 has not polled for two days since 30/6/00
+04/07/00 02:42 uk082135
+information: This 10 counter site health checks fine..large pkts. & 0.D.
+
+alive.
+
+If} Call details
+
+IDiagnostician name:
+
+customer opened date 03/07/2000 15:19:00
+CALL PC0049308 opened
+
+Date :04-gul-2000 07:15:00 User:Richard Coleman
+
+ffarget Release updated to CSR-CI3_2R
+
+CALL PC0049308:Priority D:CallType L - Target 17/07/00 20:00:00
+Product General/other/Misc ISDN added
+
+rhe Call record has been assigned to the Team Member: Richard Coleman
+Defect cause updated to 42:Gen - Outside Pathway Control
+
+fours spent since call received: 0 hours
+
+Date:04-dul-2000 12:15:00 User:Richard Coleman
+lr} Response :
+
+counter 6 was rebooted 1/7/2000 and POLO was not done until 3/7/2000.
+Request closure.
+
+{END OF REFERENCE 19721521]
+
+Responded to call type L as Category 40 -Incident Under Investigation
+ihe response was delivered to: PowerHelp
+
+the Call record has been transferred to the Team: MSU-NPOs
+
+fours spent since call received: 0 hours
+
+jDatc:04-Jul-2000 15:48:00 User:Ilka Koehler-Wain
+IF) Response
+Please close this call.
+
+{END OF REFERENCE
+Responded to call
+tours spent since
+
+19738928]
+type L as Category 68 -Administrative Response
+call received: 0 hours
+
+[the Call record has been transferred to the Team: EDSC
+[the response has been routed to the gateway team for validation
+
+[Date:04-Jul-2000 15:53:00 Uscr:Barbara Longley
+lr} Response :
+
+[7/4/2000 16:48:49 - By Tlka Koehler-Wain -MSU
+Please close this call.
+
+counter rebooted
+
+closing as user error
+
+{END OF REFERENCE 19739151]
+
+lkesponded to call type l. as Category 98 -User error
+
+Date:04-Jul-2000 15:54:00 Uscr:Barbara Longley
+Hours spent since call received: 0 hours
+
+lcaL1. Pc0049308 closed: Category 98, Type L
+the response was delivered to: Powerltelp
+
+lOate:04-gul-2000 15:57:00 User: Customer Call_
+bate and time complete: 04/07/2000 16:56:55
+service Complete (Confirmation) Received
+
+Root Cause
+Logger
+
+Gen - Outside Program Control
+_Customer Call_ -- EDSC
+FUJ00062228
+FUJ00062228
+Subject Product General/Other/Misc -- ISDN (version unspecified)
+Assignee _Unassigned_ -- EDSC
+Last Progress 04-Jul-2000 15:57 -- Customer Call_

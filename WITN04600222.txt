@@ -1,0 +1,77 @@
+Hilary Stewart
+
+Audit Manager
+
+National Audit Team
+Post Office Counters Ltd
+Soresby Street
+CHESTERFIELD
+
+S49 IPF
+
+234 June 1998
+
+Dear Hilary,
+AUDIT DATA RETRIEVAL SCENARIOS
+
+You will recall that the subject of audit data retrieval scenarios has been raised at
+the last two Panel meetings and on both occasions we have struggled to
+understand exactly what it was that we were trying to define. It is becoming
+clear, as the design for the audit solution emerges, that there is a need for POCL
+(and BA) to provide some guidance to Pathway as to the nature of the retrieval
+requests that they might want in the future.
+
+This is not easy.
+
+Para 9.1 of the Audit Data Retrieval Requirements document establishes a format
+framework of likely TMS based requests and 11.4 the potential date spread.
+What is needed now is more detail of the <events> that might be of interest. By
+<event> I have in mind ‘a NINO’, ‘a beneficiary’, ‘a PUN’ or something similar.
+Thus the frame example given in Para 9.1 could be expanded to :
+
+Between <this date> and <that date>
+and for <all outlets>
+show all instances of <this NINO>, or
+
+Between <this date> and <that date>
+and for <this outlet>
+show all instances of <payment authorisations>, or
+
+a2
+
+WITN04600222
+WITN04600222
+Between <this date> and <that date>
+and for <this group of outlets>
+show all instances of <unencashed payments>.
+
+The above are examples only and show the type of requests that I believe will
+form the basis of audit data retrievals. Do they accord with your current
+thinking?
+
+The date spread issue is to do with the volume of, particularly, TMS data that has
+to be retrieved from the audit archives and made available for the
+extraction/selection tool. Clearly the bigger the date spread the larger the
+volume and this will be exacerbated if there is a broad outlet selection associated
+with it. Current thinking (Para 11.4) has identified anything from 3 days to 3
+months or even longer. Can we get greater precision into this?
+
+Finally, my initial feeling is that BA’s primary search key is going to be NINO
+whereas POCL’s will be Outlet. Can you confirm that?
+
+Ihave asked Frank Womack, the audit archive designer, to give us a short
+presentation on the emerging design at our next meeting on the 9" July. I want to
+make best use of his time on the day and would like to progress this matter
+during that session.
+
+Yours sincerely,
+
+Jan Holmes
+Pathway Audit Manager
+
+HSb-23 doc
+
+2/2
+
+WITN04600222
+WITNO04600222

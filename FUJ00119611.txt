@@ -1,0 +1,2139 @@
+Reference:
+Author:
+Classification:
+Version:
+Date:
+
+Status:
+
+RESTRICTED COMMERCIAL
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+BA/ACC/020
+Karen Rogers
+Working
+0.2
+15 September 1999
+Draft
+John Meagher
+
+Authority:
+
+Distribution
+
+Tim Bentley
+
+Min Burdett
+
+John Coakes
+
+John Dicks
+
+Ruth Holleran
+Kevin Corrigan
+David McLaughlin
+John Meagher
+Stephen Muchow
+
+Paul Wootton
+
+Benefits Distribution Team, POCL.
+
+Acceptance Manager, POCL
+
+Customer Requirements, ICL Pathway
+Customer Requirements Director, ICL Pathway
+POCL
+
+POCL Commercial
+
+Business Service Management, POCL
+Acceptance Manager, Horizon
+
+Customer Service Director, ICL Pathway
+
+COBAP
+
+V0.2 15/09/99
+
+Page 1 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+Approval
+Stephen Muchow _ I Customer Service
+Director, ICL Pathway
+John Meagher Acceptance Manager,
+Horizon
+Paul Wootton COBAP
+V0.2 15/09/99 Page 2 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+Table of Content
+0. Document COMtOL .....cecssessseesseesssseesssesssscsssesssecssscsssnsssnesssussssneessessssnesssseesaneesses 5
+0.1 Version HIStory .......cccscesseccsesssesseesseesssssessecssessssssecsessesseasecsssesssenseaneeseesneesees 5
+0.2 Abbreviations ......cccccseecsseecssesssseeesseesssesssseesssesssneesseesssnsesseesssneesseeesseessecsseeeess 5
+DT. Introduction ....scecsseesssesssesssseesssesssssesssesssneesssssssseesssessuesesseessusessneesssetseessnesssaneesses 6
+2. Background ....escecssecssseessesssseesssesssssesseesssnessssessseesssssseseessssssuseesseessessnsessnesssseessses 6
+
+3. Tests, analyses and observations performed to date ..
+
+3.1 Tests conducted in a controlled environment uu... 7
+
+3.1.1 Tests using current paper stock
+
+3.1.2 Tests using paper stock available from mid October 1999 ...........0+ 8
+
+3.2 Tests conducted at live offices
+
+3.2.1 — Tests of sample book COVEPS .......csescsesssecseesseeseesseeseesseesneesneesesseeseeseeesees 8
+3.2.2 Tests at live Horizon Offi COS .......cesceessseessseeesseessseeesstessseeesseessseesseeesseees 8
+3.3 Analysis of data provided by BA ......sceesscecseessseessseessseeesseesseeeesneesseesesneess 11
+3.4.3. Information provided by CAPS.....ccsssssssssessssesssesssneessessseessnsesenes 13
+3.4 Analysis of data from recent transactiONns.......scecsssssecrseesseeseessnesssneess 13
+3.4.1 Software problem at Sedbury SPSO.......ccscssecsssesseessseeesseessseeesseesssess 14
+3.5 Observations at ‘live’ Horizon OfffC€S ........ceecseeecsseesseecesseesseerseeesseeesneess 15
+3.6 Analysis of support materials ..........csccssessseessseeessessseeeesseesseeseseeessesesseeess 16
+
+3.6.1 Analysis of training workbooks
+
+3.6.2 Analysis of Horizon System User Guide....esscsccsssssscscessseneeeseeeee 16
+
+3.7 Feedback on Human Computer Interface.......cscseecsecssseesseesessessseesesneess 16
+4 Remedial actions already implemented ...........ccscceecseessseeesseessseeesseeeseesseeeesee 17
+4.1 Issue of ‘emergency cascades’ to all Horizon OfficeS.........cseeeseeeeseeess 17
+4.1.1 Cascade for 323 LT Offi COS.....sssssccesssescesneesessneecesnnecsesnnessnsnensesnneeeesse 17
+
+V0.2 15/09/99 Page 3 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+4.1.2 Cascade for ‘new’ offices. 17
+4.1.3. Amendment to training WOrkDbOOK ........ccccseecsseesseesssesesseessseeesseessees 17
+
+4.14 Changes to button names ..
+4.1.5 Telephone calls to Off1CS........cceccessecsssseessesseesseeseesseesseeseesseesnseaneeseeseesses 17
+
+5 Rectification plan ...ceceeecsesseesseecseesseesessecseesseesuecsseesesseeseeesseeseessecseesseesnecseeesees 17
+
+V0.2 15/09/99 Page 4 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+0. Document control
+
+0.1 Version History
+
+Version Date Reason for change
+
+0.1 3/9/99 Draft for review
+
+0.2 15/9/99 Revised following review of v0.1, tests,
+analyses and observations in w/c 6/9/99.
+Also includes proposed rectification plan.
+
+0.2 Abbreviations
+
+Al
+ALPS
+BA
+BSM
+CPP
+DsS
+FAD
+HSHD
+LT
+NBSC
+
+OBCS
+PIRA
+POCL
+PPD
+PRCS
+Ric
+
+Acceptance incident
+
+Automation of London post offices
+Benefits Agency
+
+Business Service Management
+Common Payment Package
+Department of Social Security
+
+Finance Accounting Division
+
+Horizon System Helpdesk
+
+Live Trial
+
+Network Business Support Centre
+New Release 2
+
+Order Book Control Service
+
+Printing Industry Research Association
+Post Office Counters Ltd
+
+Process and Procedures Description
+Payment Repository Computer System
+
+Release 1c
+
+V0.2 15/09/99
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+1. Introduction
+
+This paper outlines the issues surrounding Acceptance Incident 369, which
+was originally raised by Business Service Management on 20 July 1999. The
+Al text is as follows:
+
+“The scanner reliability is questionable in relation to OBCS transactions where
+there has been a high number of rejections of pension and allowance books.”
+
+The aim of this paper is to:
+
+¢ identify each potential or perceived cause for the manual input of barcode
+information into OBCS;
+
+¢ develop and implement appropriate tests and/or analyses, which
+complement the tests and analyses performed to date, and which will
+either confirm or disprove that each potential or perceived cause has
+affected the level of manual inputs into OBCS;
+
+¢ provide a summary of the findings of the tests and analyses, thus
+confirming the cause(s) of the problem;
+
+¢ propose a rectification plan, which, when implemented, will deliver a
+reduction in the number of manually input barcoded details into OBCS.
+
+It is hoped that the agreement of the rectification plan will enable the
+Acceptance Incident to be closed.
+
+2. Background
+
+NB It has not been possible to address the comments on this paragraph
+provided by BA and POCL during the review of v0.1. This will be addressed
+at v0.3.
+
+Below is a summary of the main events and issues leading up to the
+Acceptance Incident being raised, and the work subsequently completed by
+ICL Pathway prior to the Acceptance Disputes Workshop on 25 August.
+
+An issue regarding the number of ‘unreadable barcodes’ was initially
+identified in July 1998, The issue related to the introduction of barcodes on
+war pension books, and specifically that the background colour of the order
+book appeared to be refracting the colour of the barcode, thus causing
+‘unreadable barcode’ messages to be shown. When this message appears, the
+clerk is instructed to impound the book, unless the clerk selects the ‘system.
+failure’ option (i.e. the barcode reader has failed).
+
+V0.2 15/09/99 Page 6 of 46
+
+FUJ00119611
+FUJ00119611
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+In August 1998 the printing process for order book covers changed from
+impact printing to laser printing. By the end of August/early September 1998
+an increase in the number of ‘unreadable barcode’ messages was apparent.
+Calls to the Horizon System Helpdesk continued and in November 1998 the
+problem was attributed to the new method of printing adopted by BA.
+
+An ‘Authorised Temporary Procedure’ was introduced by POCL in December
+1998, which has continued to date. The procedure involves treating any book
+that fails on scanning as a ‘non barcoded book’.
+
+In January 1999 the Printing Industry Research Association (PIRA) examined
+the paper and concluded that the necessary ink-hardening agent was absent.
+
+In March 1999 BA received new supplies of paper. In mid April it was
+confirmed that these provided little improvement in paper quality. Further
+improved paper was available in mid May.
+
+In early June, BA indicated that the ALPS scanner had greater tolerance than
+the Horizon scanner. BA also provided evidence that some barcodes could be
+read with the ALPS scanner but not with the Horizon scanner.
+
+In early July, BA advised POCL that a new paper stock would be introduced
+in the autumn, which would conform to the revised paper specification
+recommended by PIRA.
+
+Acceptance Incident 369 was raised by BSM on 20 July.
+
+ICL Pathway performed tests in August on 90 book covers printed using the
+current specification and 100 covers printed on new specification paper. All
+covers scanned successfully.
+
+3. Tests, analyses and observations performed to date
+
+Asummary of the tests, analyses and observations performed to date appears
+below:
+
+3.1 Tests conducted in a controlled environment
+3.1.1 Tests using current paper stock
+
+ICL Pathway have conducted tests at their site in Bracknell of 90 sample book
+covers. The covers are produced on the paper stock which is currently being
+used in the live environment. Each book cover was scanned a minimum of 5
+times. All 450+ scans were successful. A summary of the results appears at
+Appendix A.
+
+V0.2 15/09/99 Page 7 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+3.1.2 Tests using paper stock available from mid October 1999
+
+ICL Pathway have also conducted tests at Bracknell on 100 sample book
+covers which will be introduced into the live environment from mid October
+1999. These new covers conform to the revised paper specification
+recommended by the Printing Industry Research Association. All scans were
+successful. A summary of the results appears at Appendix B.
+
+3.2 Tests conducted at live offices
+3.2.1 Tests of sample book covers
+
+To complement the tests performed at Bracknell, 190 of the 190 sample book
+covers were tested in a ‘live’ environment i.e. at Borough High Street (OBCS)
+and Elephant and Castle (ALPS) post offices. Prior to the tests, the ‘customer
+details’ of each of the covers were entered by PRCS onto their system; thus
+enabling the books to be recognised as ‘live’ books.
+
+On Tuesday 7 September each of the 190 covers were scanned at both
+Borough High Street and Elephant and Castle. All of the covers contained
+customer details that were not known to the offices, i.e. the OBCS and ALPS
+systems had to contact the host system to enable validation against the central
+stoplist. None of the covers required manual input; either because they failed
+to scan, because they required validation via the central stoplist, or because of
+‘system busy’ messages (which appeared on two occasions in the OBCS
+office).
+
+Asummary of the tests appears at Appendix C.
+3.2.2. Tests at live Horizon offices
+
+The third element of tests related to books which belong to real customers,
+and which were either being introduced into the live environment, or which
+were already in the live environment.
+
+The tests consisted of the following:
+
+* scanning of the barcode into OBCS using the equipment already installed
+in live Horizon offices, and;
+
+¢ assessing the quality of the barcode using specialist software i.e. the
+‘mobile laboratory’.
+
+The process used for the tests, and a summary of the results obtained, is
+described below. It should be noted that although the tests provide an
+indication of the quality of the barcodes that are on books presently being
+delivered into post offices, they do not provide an assessment of the barcodes
+
+V0.2 15/09/99 Page 8 of 46
+
+FUJ00119611
+FUJ00119611
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+which have hitherto been in the live environment. They also do not provide
+an indication of the quality of the printing or paper used.
+
+ICL Pathway’s and POCL’s preferred option is to remove the covers of books
+which have failed to scan in the live environment, enabling tests and analyses
+to be performed. This is consistent with the objectives of this paper, which is
+to either confirm or disprove each potential or perceived cause of the
+problem.
+
+It has not been possible to secure agreement on the above approach to date.
+BA have expressed a reluctance to agree to a process where there is currently
+a reasonably high level of order book fraud involving the swapping of book
+covers. There is also a concern regarding the potential delay in replacing an
+order book for a customer, as a consequence of removing the original book
+from circulation. In addition, the Authorised Temporary Procedure,
+introduced in February, prevents books that fail to scan from being
+impounded. This ATP would need to be temporarily suspended if tests were
+to proceed on books that fail to scan in the near future.
+
+A potential way forward is to perform tests on exhausted books i.e. books
+where the ATP has been applied and which have been replaced when the last
+foil has been encashed. However, most books are valid for an average of 20
+weeks, and the tests would therefore only provide feedback on books
+introduced into the live environment some time ago. The tests would not
+provide an analysis of the books recently introduced into the live
+environment, and which have failed to scan. In addition, books that are
+subject to the ATP have had their barcode ‘invalidated’ by a datestamp,
+therefore preventing any testing of the quality of the barcode.
+
+This issue will be discussed at a meeting with BA on Thursday 16 September,
+where it is hoped a way forward can be achieved, which satisfies the needs of
+all parties concerned.
+
+3.2.2.1 Identification of live ‘test’ offices
+
+According to data provided by ICL Pathway, a high proportion of manual
+inputs of barcodes have recently occurred in the Gateshead area (see ‘Data
+provided by ICL Pathway’). A series of tests were therefore planned in 26
+offices in this area on Friday 10 September. The offices involved in the trial
+were a mixture of those where the data showed that manual inputs had
+occurred in the previous week, and those where no manual inputs had
+occurred during the same period.
+
+POCL BSM contacted 26 offices on 9 September, requesting the offices to hold
+any books delivered on Friday 10 September until a representative from
+Horizon and ICL Pathway called i.e. not to enter the details of books onto
+
+V0.2 15/09/99 Page 9 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Horizon, unless a book was required by a customer. In total, 24 offices agreed
+to take part in the survey.
+
+Although the majority of the 24 offices received a delivery of books that day,
+it was only possible to visit eight of the offices. This was primarily due to the
+time taken to travel between offices and the availability of the subpostmaster
+to demonstrate the procedures followed (see ‘Observations at live offices’).
+All offices which received books but which were not visited were advised to
+continue with the receipt transaction if they did not receive a visit by late
+afternoon.
+
+3.2.2.2. Tests using the Horizon equipment
+
+There was a total of 142 barcoded and eight non barcoded books delivered to
+the eight offices on the day of the visits.
+
+All barcoded books scanned successfully via the ‘Receive In’ screen i.e. none
+of the books required manual input of book details.
+
+An additional test had also been planned, which would be implemented if
+any of the books failed to scan. This would involve substituting the existing
+barcode scanner with a second scanner, and performing the tests again to
+establish whether the original scanner was faulty. However, it was not
+necessary to perform this test, as all books scanned successfully on the first
+attempt.
+
+3.2.2.3 Tests using specialist software
+
+The ‘PSC Quick Check’ specialist software was supplied and installed ona
+laptop by ICL Pathway. This software uses the ANSI/CEN (American
+National Standards Institute/ Commission for European Normalisation)
+standard as the measure of barcode symbol quality. The software assesses the
+quality and produces diagnostic files for each barcode scanned.
+
+An ICL Pathway tester performed the analyses.
+
+Two barcoded books were selected at random from each of the eight offices.
+Out of the 16 barcodes analysed, six (37.5%) did not reach the ANSI/CEN
+standard, although they had already scanned successfully on the Horizon
+system.
+
+A visual inspection was also made to see whether there were any visible
+problems with the barcode, such as a fold in the book cover/barcode.
+However, no visible problems were identified.
+
+The report produced by ICL Pathway appears at Appendix D, with the
+corresponding report from POCL at Appendix E. (NB Details of the
+
+V0.2 15/09/99 Page 10 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+observations made during the ‘Receive In’ procedure, highlighted in
+‘Observations at live Horizon offices’ are also included in the report produced
+by POCL).
+
+DN Clarification is required on the content of the reports produced by ICL
+Pathway and POCL, as there appears to be a difference in the total number of
+barcodes analysed.
+
+3.3. Analysis of data provided by BA
+
+The historical data provided by BA in August is attached at Appendix F
+(available in hard copy only). The calculation of the failure rates is based on a
+mixture of actual and assumed numbers of order books received in ALPS and
+OBCS offices for the period March to June 1999, and the number of books
+manually input for that period.
+
+The data included in Appendix G (also available in hard copy only) was
+supplied by BA on 7 September. This includes the actual number of receipts,
+issues, encashments and redirections for both OBCS and ALPS offices for the
+period March to June. However, the data returned to PRCS does not
+differentiate between those transactions that have been manually input due to
+a failure during scanning, and those that have been manually input due to the
+barcode reader being faulty. (The latter is indicated by the clerk selecting an
+option on the screen during the transaction).
+
+The data indicates that the number of manual inputs in OBCS offices is almost
+twenty five times higher than the number of manual inputs in ALPS offices.
+However, this figure cannot be validated without knowing the level of
+‘scanner failures’, either those reported to the HSHD, or those where the clerk
+has indicated ‘System failure - yes’ during the transaction.
+
+Even with the above information, the number of occasions where the scanner
+has been reported as faulty, or when the clerk indicates that system failure has
+occurred, should be treated as an indication only of the level of failure, and
+not as an accurate reflection. ICL Pathway have suggested that in the majority
+of instances, no problems are found with scanners that have been replaced in
+live offices. In addition, feedback from the visits to Gateshead indicates that
+users are using the ‘system failure’ option to prevent an impound message
+appearing.
+
+DN ICL Pathway to provide details on the levels of scanner failures reported
+to the HSHD, and on the number, type and date of transactions where the
+‘system failure - yes’ option has been selected by the user.
+
+Following information received during telephone calls to Horizon offices,
+feedback from the visits to Gateshead, and evidence provided by CAPS
+
+V0.2 15/09/99 Page 11 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+(detailed in ‘Information provided by CAPS’), it is apparent that a number of
+manual inputs can be attributed to non barcoded book details being entered
+into OBCS as ‘barcoded books’. In addition, the Authorised Temporary
+Procedure introduced in February should prevent books being manually
+input when they have failed to scan. The data provided by BA therefore
+indicates those occasions where procedures are not being followed, rather
+than the number of books which have failed to scan. The Horizon system
+cannot record those instances where a book fails to scan, only those instances
+where book details have been input manually.
+
+Although the introduction of the ATP prevents customers from being
+inconvenienced, and reduces the number of replacement books issued, it does
+not provide an accurate indication of the current level of books that may fail
+to scan if the ATP had not been introduced.
+
+Ata meeting with BA on 14 September, it was agreed that an alternative
+approach is required to obtain an accurate view of the level of barcoded books
+that have failed to scan in recent months. It is possible to calculate the
+potential increase of books recorded onto OBCS as ‘non barcoded’ i.e.
+barcoded books which have failed to scan and which are subject to the ATP.
+However, the data available at PRCS will require a certain amount of
+manipulation to achieve the end result. This is primarily due to the way in
+which data is captured for non barcoded books (i.e. number of foils), against
+the number of transactions recorded for barcoded books. In addition, new
+Horizon offices, with potentially higher levels of order book transactions,
+have been introduced during the period that is being analysed.
+
+BA have agreed to circulate the proposed formula, and to produce
+calculations of barcode read failures, based on this formula. This information
+should be available for circulation by Thursday 16 September.
+
+DN A similar exercise has been conducted by POCL, and the results are
+attached at Appendix H. The calculations suggest that an average 60,000
+additional ‘non barcoded’ encashments are being performed, i.e. encashments
+of barcoded books which are being treated as non barcoded books following
+the introduction of the ATP.
+
+3.4.3 Information provided by CAPS
+
+As highlighted previously, information provided by CAPS on 8 September
+indicates that a number of non barcoded books are being recorded as
+barcoded books i.e. the book details are being input via the ‘Manual Input’
+option. This option should only be used when barcoded books fail to scan,
+either because the barcode cannot be read, or because the scanner is faulty.
+Non barcoded books should be input via the ‘OBCS Foils’ option.
+
+V0.2 15/09/99 Page 12 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+The information indicates that 23 offices have incorrectly recorded Invalid
+Care Allowance books as barcoded books. However, information provided
+from POCL BSM on 15 September indicates that five of the offices highlighted
+appear to have incorrect FAD codes i.e. there is no such office recorded
+against the FAD code provided. Confirmation of the correct FAD codes is
+required, before further analysis can be made.
+
+Suggested source: CAPS
+3.4 Analysis of data from recent transactions
+3.4.1 Data provided by ICL Pathway
+
+Following the action agreed at the Acceptance Disputes Workshop on 25
+August, ICL Pathway is providing a daily report of failures in OBCS offices.
+The report includes the following information:
+
+e FAD code;
+
+e node ID;
+
+e date of transaction;
+
+e time of transaction;
+
+e User ID;
+
+* product code (identifying the benefit group number)*;
+
+e Customer Reference Number*;
+
+¢ type of transaction i.e. receipt, issue or encashment;
+
+¢ whether the transaction required a connection to the central stoplist.
+(* derived from manual keying).
+
+The most recent data also shows the results of telephone calls to the outlets by
+ICL Pathway Customer Services staff, to identify the cause of the problems.
+
+ICL Pathway provided a summary of the manual inputs from 11 August to 11
+September on 15 September. This is attached at Appendix I.
+
+The analysis of data and the feedback from the telephone calls from 25
+August to present indicates a number of contributing factors:
+
+3.4.1 Software problem at Sedbury SPSO
+
+A total of 40 of manual inputs were recorded at Sedbury SPSO (FAD code
+269632) from 25 to 28 August.
+
+V0.2 15/09/99 Page 13 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+The subpostmistress reported a problem to the HSHD on 24 August. The
+problem appeared to be a software ‘bug’ which prevented the scanning of the
+first book following book receipt. When a book was scanned for encashment,
+the ‘Receive In’ screen appeared, which the clerk had to exit. Any attempt to
+scan the book would result in the ‘Receive In’ screen appearing again.
+Therefore, the clerk used the ‘Manual Input’ option to enter the book details
+onto OBCS,
+
+Evidence from the PinICL text (28907) suggests that the subpostmistress
+reported that the problem was occurring at all three counter positions and as
+a consequence advised the HSHD that all book details would be input
+manually.
+
+A fix was implemented on 29 August, and, although there has been an overall
+reduction in the level of manual inputs at Sedbury, a total of 20 have been
+recorded for the period 31 August to 11 September. However, there is a lack
+of clarity regarding the actual implementation date of the fix, which, in one
+case has been reported as being introduced on 1 September. If correct, this
+could explain the number of manual inputs made on 30 August and 1
+September (5 and 3 respectively).
+
+DN ICL Pathway to provide clarification on the date when the software fix
+was implemented.
+
+3.4.2. Books not scanned at the time of the transaction
+
+The data indicates that there are a number of manual inputs when offices
+appear to be closed e.g. before 8.30 in the morning. In a number of instances
+this could be attributed to offices ‘Receiving In’ books following delivery, and
+prior to the office opening. However, during a discussion regarding PinICL
+28907, the subpostmaster at Sedbury SPSO indicated that on occasions
+barcodes are not scanned during an encashment, and that the encashment
+details are entered later. As the barcode details would no longer be available,
+when the details are entered, an impound message is displayed.
+
+3.4.3 Non barcoded books entered as ‘barcoded’ books
+
+As highlighted in ‘Analysis of data provided by BA’ (para 5), a number of non
+barcoded books appear to have been entered as ‘barcoded’ books.
+
+3.4.4 A lack of knowledge of the ATP/procedure for ‘new’ offices
+
+It appears that barcoded books that fail to scan are being entered manually
+onto the system, rather than being treated as non barcoded books i.e. offices
+are not following the ATP introduced in February 1999.
+
+V0.2 15/09/99 Page 14 of 46
+
+FUJ00119611
+FUJ00119611
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+In addition, evidence suggests that the procedure agreed for ‘new’ Horizon
+offices, ie. those which have gone live since 31 August, is not being followed.
+This procedure instructs users to ‘Receive In’ books onto the Horizon system,
+but not to use OBCS for issue, encash or redirect transactions. The data
+provided by ICL Pathway suggests that some of these offices are using OBCS
+for all transaction types, and manually entering order book details.
+
+3.4.5 Books scanned more than once
+
+In some instances, the data indicates that a book has been scanned a second or
+third time, even though an impound message was displayed on the first
+attempt. This would artificially inflate the number of books which have been
+manually input due to barcode or barcode reader failure.
+
+3.5 Observations at ‘live’ Horizon offices
+
+As part of the visits to Gateshead, the procedures which users followed were
+observed, to ascertain whether they are consistent with those documented in
+the User Guide. The detail of these observations appears in Appendix E.
+
+In summary, the observations in three of the eight offices confirms the
+procedural issues identified previously i.e. that the correct procedures are not
+always followed. Additionally, one user attempted to enter a non barcoded
+book as a barcoded book, by ‘creating’ a CPP number to enter into the system
+(where a CPP number was not available).
+
+Two offices advised that they would select the ‘System failure - yes’ option to
+prevent the non barcoded book from being impounded.
+
+In addition to the procedural issues, the Human Computer Interface appears
+to cause some confusion; one user thought that the ‘Manual Input’ option is
+used for the input of both barcoded and non barcoded books. The correct
+option for non barcoded books is ‘OBCS Foils’. However, this does not appear
+to be an accurate description of this feature.
+
+3.6 Analysis of support materials
+3.6.1 Analysis of training workbooks
+
+The LT1 and LT2 versions of the training workbooks were analysed, to
+identify whether the information is comprehensive and accurate, and whether
+the instructions are open to interpretation. The detail of the analysis appears
+in Appendix J.
+
+It should be noted that the analysis has been performed on the content of the
+workbooks, and not on the delivery of the information at a training event.
+
+V0.2 15/09/99 Page 15 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Asummary of the findings appears below:
+
+e the workbook for LT1 did not appear to include the correct button names
+for some OBCS functions, as documented in the Horizon OPS Menu
+Hierarchy document and the PPDs;
+
+¢ anote was added to the LT2 version, indicating that there was “no
+requirement to Receive, Redirect or Issue non barcoded order books
+through the Horizon system”. This is potentially misleading as this could
+be taken to mean that the details could be included if possible (e.g. if the
+office was not too busy);
+
+¢ both workbooks document the correct procedure for dealing with
+impounded books. However, they do not make it explicit that a second
+scan should not be made.
+
+3.6.2. Analysis of Horizon System User Guide
+
+To complement the analysis of the training workbooks, a similar exercise was
+performed on the Horizon System User Guides. The detailed analysis appears
+in Appendix L (available on hard copy).
+
+DN A summary of the analysis will appear in v0.3.
+3.7 Feedback on Human Computer Interface
+
+During the visits to Gateshead, a user indicated that some of the button
+names for OBCS were confusing. Specifically, there appears to be an issue
+with the ‘Manual Input’ button, as it could be interpreted that the button is
+for the manual entry of both barcoded and non barcoded books. (NB the
+‘Manual Input’ button should only be used for the manual entry of barcoded
+books. Non barcoded books should be entered via the ‘OBCS Foils’ button.
+
+4 Remedial actions already implemented
+
+A number of remedial actions have been implemented, or are in the process of
+being implemented. These are:
+
+4.1 Issue of ‘emergency cascades’ to all Horizon offices
+
+POCL have produced ‘emergency cascades’ which were issued on Friday 10
+September, for delivery on Saturday 11 September. Two versions of the
+cascade were produced: one for the original 323 Live Trial offices, and one for
+the offices which have gone live from 31 August.
+
+V0.2 15/09/99 Page 16 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+41.1 Cascade for 323 LT offices
+
+The version for the 323 LT offices included a reminder regarding the
+Authorised Temporary Procedure, and emphasised the correct procedure for
+dealing with non barcoded books.
+
+4.1.2 Cascade for ‘new’ offices
+
+The version for ‘new’ offices included a reminder regarding the temporary
+procedure which has been implemented in new offices only i.e. to use OBCS
+only for the purpose of receiving barcoded books, and not for anything else.
+
+4.1.3 Amendment to training workbook
+
+ICL Pathway are progressing the amendment of the training workbook, to
+emphasise that non barcoded books should not be entered into OBCS.
+
+4.1.4 Changes to button names
+
+POCL are considering changes to button names, to eliminate the potential
+confusion when dealing with non barcoded books.
+
+4.1.5 Telephone calls to offices
+
+Following production of the daily report of manual inputs from ICL Pathway,
+POCL BSM will telephone offices who have manually input book details, to
+identify the causes of the problem. Where the reason for the manual input can
+be attributed to a procedural error i.e. those where there is no system failure,
+a reminder of the correct procedure will be provided.
+
+5 Rectification plan
+
+A matrix of perceived or potential failures appears in Appendix M. This
+matrix has been used to identify areas of further analyses or tests, to enable
+the objectives of this paper to be progressed.
+
+The proposed rectification plan has two elements:
+
+¢ further actions required to enable the completion of comprehensive
+analysis on each potential or perceived cause of the problem;
+
+* proposed solutions, which when implemented, should deliver a reduction
+in the level of manual inputs.
+
+NB. These proposed solutions are based on the tests, analyses and
+observations already completed. They will need to be revised/expanded
+
+V0.2 15/09/99 Page 17 of 46
+
+FUJ00119611
+FUJ00119611
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+following the completion of any outstanding analyses highlighted in the first
+part of the rectification plan.
+
+V0.2 15/09/99 Page 18 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+
+5.1 Further analyses required
+
+FUJ00119611
+FUJ00119611
+
+* These could be process papers already produced for other purposes
+
+Topic area Sub topic Proposed action Lead Outputs Proposed
+target date
+System issues Human Computer I Workshop to identify POCL Paper outlining 8 October
+Interface potential areas of improvement
+
+confusion/improvement opportunities on system
+
+opportunities. design.
+Training Communication of I Confirmation of the ICL Pathway I Paper outlining the 24 September
+materials/delivery I revised procedures I process for communicating process, focusing on the
+(ICL Pathway) (D) revisions to procedures initial training i.e. the
+
+during the lifetime of a training performed by ICL
+
+release. To include revision Pathway (ICL Training
+
+to training material and Services) personnel*.
+
+communication to trainers.
+Training Configuration Confirmation of the ICL Pathway I Paper outlining the 24 September
+materials/delivery I management process for ensuring that process*.
+
+changes to system design
+
+/ procedures are reflected
+
+in draft/ final versions of
+
+the training workbook (i.e.
+
+during the development of
+
+the workbook for a
+
+particular release).
+
+V0.2 15/09/99
+
+Page 19 of 46
+FUJ00119611
+
+FUJ00119611
+RESTRICTED COMMERCIAL
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+Training Communication of I Confirmation of the POCL Paper outlining the 24 September
+materials/delivery I revised procedures I process for communicating process, focusing on the
+(POCL) (ii) revisions to procedures on-going training i.e. the
+during the lifetime of a training performed by
+release. To include revision POCL personnel*.
+to training material and
+communication to trainers.
+Procedures Communication of I Confirmation of the POCL Paper outlining the process I 24 September
+revised procedures I process for communicating for communication both
+revisions to procedures urgent and non-urgent
+during the lifetime of a changes to the User Guide
+release. To include the *,
+communication of urgent
+information.
+Order books Analysis of Analyse barcodes of books I ICL Pathway I Report on the quality of 1 October
+barcodes which are currently barcodes
+failing/have recently
+failed to read in the live
+environment
+Order books Analysis of Analyse the paper of books I ICL Pathway I Report on the quality of 1 October
+printing/ paper which are currently (PIRA) the printing/ paper
+failing/have recently
+failed to read in the live
+environment
+V0.2 15/09/99 Page 20 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+
+5.2 Proposed solutions
+
+FUJ00119611
+
+FUJ00119611
+
+Topic area
+
+Sub topic
+
+Proposed action
+
+Lead
+
+Outputs
+
+Proposed
+target date
+
+Training
+materials/delivery
+
+Training
+workbook
+revisions
+
+Reword paragraph(s)
+relating to non barcoded
+books. Emphasise that
+books should only be
+scanned once, where an
+impound message is
+displayed. Emphasise
+correct procedure for
+‘system failure’ i.e. to use
+this option only when the
+barcode reader is faulty
+and when the failure has
+been reported to the
+HSHD.
+
+ICL Pathway
+
+Draft of the changes, for
+review
+
+24 September
+
+Training
+materials/ delivery
+
+Communication of
+revised procedures
+
+Confirmation of the
+communication of the
+revised procedure for new
+Horizon offices during
+
+ICL Pathway
+
+Copy of the trainers’
+‘addendum’ documenting
+the amendment
+
+20 September
+
+V0.2 15/09/99
+
+Page 21 of 46
+FUJ00119611
+
+FUJ00119611
+RESTRICTED COMMERCIAL
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+training events
+Procedures Communication of I Confirmation of the POCL Copy of the 20 September
+
+revised procedures
+
+communication of the
+revised procedure for new
+Horizon offices
+
+communication issued to
+new Horizon offices
+
+V0.2 15/09/99
+
+Page 22 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Appendix A
+
+(NB text copied from ICL Pathway’s document Testing of ‘Current
+Specification’ Book Covers with ALPS and OBCS Scanners v1.0 ref:
+OTT/TST2/0064)
+
+Testing ‘Current Specification’ Barcodes with ALPS and OBCS Scanners
+Release Note : N/A PinICL/ChangeProposal : N/A
+Pre Fix Test Completed Date: N/A Tested By: N/A
+
+Post Fix Test Completed Date: August 211999 Tested By: K
+Saunders
+
+Result of Testing : Use of ALPS scanners: PASS Tested By: K
+Saunders
+
+Use of OBCS scanners: PASS
+Problem description
+
+Outlets have reported problems with scanning benefit books using the OBCS
+scanner, but a similar problem has not been seen with the ALPS scanner. POCL
+believe that the scanners used on the ALPS counters are more tolerant and
+require comparative testing using both types of scanner against a batch of book
+covers as part of Acceptance Incident Al369.
+
+100 ‘current specification’ book covers have been supplied by POCL for these
+tests. All are ‘live’ cases and have been treated accordingly.
+
+Test
+1. Scan the ‘current specification’ book covers using the ALPS scanner
+
+All 100 book covers were scanned a maximum of 5 times each using the
+ALPS scanner.
+
+All scans were completed successfully.
+2. Scan the ‘current specification’ book covers using the OBCS scanner
+
+All 100 book covers were scanned a maximum of 5 times each using the
+OBCS scanner.
+
+All scans were completed successfully.
+
+V0.2 15/09/99 Page 23 of 46
+
+FUJ00119611
+FUJ00119611
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Conclusions
+
+The tests carried out on the 100 book covers indicate that both the ALPS and
+OBCS scanners can successfully read the ‘current specification’ paper and ink
+combination.
+
+V0.2 15/09/99 Page 24 of 46
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Appendix B
+
+(NB text copied from ICL Pathway’s document Testing of ‘New Specification’
+Book Covers with ALPS and OBCS Scanners v2.0 ref: OTT/TST2/0063)
+
+Testing of ‘New Specification’ Book Covers with ALPS and OBCS Scanners
+
+Release Note N/A PinICL/Change
+
+Proposal: N/A
+
+Pre Fix Test Completed Date: N/A Tested By:
+N/A
+
+Post Fix Test Completed Date: 30/7/99 Tested By:
+KSAU
+
+Result of Testing: Use of OBCS scanners: PASS _ Tested By:
+KSAU
+
+Use of ALPS scanners: PASS
+Problem description
+
+Outlets have reported problems with scanning benefit books using the OBCS
+scanners, but a similar problem has not been seen with the ALPS scanner.
+POCL believe that the scanners used on the ALPS counters are more tolerant
+and require comparative testing using both types of scanner against a batch of
+book covers as part of Acceptance Incident AI369.
+
+go ‘new specification’ book covers have been supplied by POCL for these tests.
+All are in the name of Rita Riggins although the serial and National Insurance
+numbers are different.
+
+Test script
+1. Scan the ‘new specification’ book covers using both OBCS scanners
+Two OBCS scanners were tested:
+One off Serial No. M-50, with S/W rev level 5.1.1=*=D=1.2
+One off Serial No. N-15 with S/W rev. level 5.1.1=*=F=1.2.
+11, Using the first scanner (Serial no M-50, software rev level 5.1.1=*=D=1.2)
+Each of the book covers was scanned a minimum of five times.
+
+This resulted in 450+ successful scans, with no fails.
+
+V0.2 15/09/99 Page 25 of 46
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+1.2. Using the second scanner (Serial no N-15, software rev level
+5.1.1=*=F=1,2)
+
+Each of the book covers was scanned a minimum of five times.
+This resulted in 450+ successful scans with no fails.
+2. Scan the ‘new specification’ book covers using the ALPS scanner
+Each of the book covers was scanned a minimum of five times.
+This resulted in 450+ successful scans with no failures.
+
+3. Scan mutilated ‘new specification’ book covers using the OBCS
+scanner.
+
+In an attempt to recreate reasonable environmental damage likely to be
+suffered by a benefit book during usage by a beneficiary, five ‘new
+specification’ book covers were damaged in various ways: folded, screwed
+up, rolled into a tube, soaked in coffee and soft drink (and allowed to dry).
+
+Each of these book covers was rescanned using the OBCS scanner.
+
+Whilst it was necessary to flatten out the worst of the creases in some of the
+foils, all could be read without significant difficulty.
+
+Conclusion
+
+Based on the tests carried out, there is no evidence to suggest that:
+
+e The OBCS scanners cannot read the ‘new specification’ book covers.
+e The ALPS scanner cannot read the ‘new specification’ book covers
+
+¢ The condition of the book cover appears to have no significant effect.
+
+a)
+
+V0.2 15/09/99 Page 26 of 46
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Appendix C
+
+OBCS Failure Testing at Borough High Street and Elephant and Castle post
+offices.
+
+Purpose of test
+
+To establish whether there is a problem with the ability of Horizon System to
+read the barcode on bar-code order books.
+
+Method
+
+Receipt a batch of ninety ‘dummy’ order books and a batch of one hundred
+‘dummy’ order books, both supplied by the Benefits Agency, into a post office
+operating the Horizon system and a post office operating the ALPS system.
+
+Five of the order book covers in the batch of ninety covers have been
+deliberately damaged, three are crumpled, one has a coffee stain over the bar-
+code and one has been torn across the top of the bar-code.
+
+Offices included in trial
+
+¢ Borough High Street BO (Horizon)
+e Elephant & Castle (ALPS)
+Personnel involved.
+
+e Steve Austin (Horizon Programme)
+e Mark Barber (ICL Pathway)
+
+Test
+
+Borough High Street
+
+The Gateway PC was used to receipt the order books. In order to receipt
+books the user has to be logged onto the system and the receipt order book
+function must be selected. For the test, an existing user within the office
+logged onto the system. The batch of one hundred covers was scanned first
+followed by the batch of ninety covers. All books in both batches read
+successfully and there was no need enter any information manually. All of the
+covers used were not known to the office and therefore the system has to
+contact the ‘host system’ in order to validate them against the stop list. There
+was no significant time delay for the Horizon system to contact the host, the
+longest pause being approximately 2 seconds, the majority of covers were
+validate immediately. However, on two occasions a line busy message was
+
+V0.2 15/09/99 Page 27 of 46
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+displayed. Following the acknowledgement of this message the covers were
+re-scanned and were accepted. There was no need or no system prompt to
+input the details manually.
+
+Elephant & Castle
+
+The back office processor was used to receipt the order books. In order to
+receipt books the user has to be logged onto the system and the receipt order
+book function must be selected. For the test, an existing user within the office
+logged onto the system. The batch of one hundred covers was scanned first
+followed by the batch of ninety covers. All books in both batches read
+successfully and there was no need enter any information manually. All of the
+covers used were not known to the office and therefore the system has to
+contact the ‘host system’ in order to validate them against the stop list. There
+was no time delay.
+
+Result
+
+Both batches were scanned successfully at both offices, there were no system
+prompts or no need to enter any of the book information correctly.
+
+Conclusion
+
+There was no apparent problem with the ability of Horizon System to read
+the barcode on bar-code order books.
+
+V0.2 15/09/99 Page 28 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Appendix D
+
+(NB text copied from ICL Pathway’s document OBCS Scan Issues v0.1
+08/09/1999).
+
+OBCS Scan Issues.
+PinICL/Ref: Acceptance Incident 369
+
+Date of Test: 10'» September 1999
+
+Locations: Several Post Offices, Gateshead, Tyne & Wear Area
+
+Testers: Mark Barber ICL PATHWAY)
+Tim Vause (POCL)
+
+Brief Overview
+
+Tasked by ICL PATHWAY and POCL to accompany Tim Vause (POCL) ona
+trip to a number of Post Offices in the Newcastle and Gateshead Districts,
+with the intention of looking into OBCS scan issues. If required I was to use
+the verification equipment (highlighted below) on any failed OBCS readings.
+
+Equipment
+
+QuickCheck PC Version 1.06
+
+PSC Quickcheck PC Verifier Interface Module (with attached Scanner)
+Fujitsu Pentium 32MB Laptop
+
+PO Branches
+The following Post Office Branches were visited.
+
+Coldwell Road Prince Consult Road
+Coats Rd Low Fell
+
+High Street Saltwell Road
+
+West Street Westgate
+
+Test Script.
+
+POCL
+
+V0.2 15/09/99 Page 29 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+The following tasks were to be undertaken by POCL staff on site
+
+1. POCL Staff to scan in new OBCS foils
+
+2. Process viewed by POCL representative (Tim Vause)
+
+3. Provide ICL Pathway staff with suspect foil for testing
+
+ICL PATHWAY
+
+The following tasks were to be undertaken by ICL PATHWAY staff on site
+1. Take test scans of several OBCS foils at each branch.
+
+2. In the case of failures, OBCS foils were to be scanned 10 times using PSC
+equipment
+
+3. Analyse results at a later date.
+
+Results
+
+Example Reading
+
+See Attachment 1 for scan reading of an OBCS foil at Coats Rd, Gateshead.
+The Scan Report included a Scan Grade that is the most important field. This
+is graded from A-D + F. The example shows a PASS grade of B. See below for
+a quick ratification of the grade system.
+
+A, Band C PASS
+
+DandF FAIL
+
+Actual Results on day
+
+After visiting the Post Office branches and viewing in the region of 300 new
+OBCS scans. The outcome was ZERO barcode reader failure, with the ICL
+equipment.
+
+Test Results on day
+
+V0.2 15/09/99 Page 30 of 46
+
+FUJ00119611
+FUJ00119611
+FUJ00119611
+
+FUJ00119611
+RESTRICTED COMMERCIAL
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+As there were no failures of OBCS foils when on site, I decided to take some test
+readings at various Post Offices, below is a quick highlight of the pass and failure
+rates of OBCS foils. Please bear in mind that all these barcodes scanned in with no
+problems on PATHWAY counters.
+POST NUMBER
+OFFICE I OF TEST I GRADE
+SCANS
+B Cc D F
+A
+
+Coldwell 5 - - - 1 4
+Road
+Coats Road 2 - 1 - - 1
+High Street 2 - 2 - - -
+West Street 2 - - - 1 1
+Prince 2 - - - 2 -
+Consult Road
+Low Fell 20 - 6 10 2 2
+Saltwell Road 6 - - 5 - 1
+Westgate 6 - - - 6 -
+Total 45 - 9 15 12 9
+Conclusion
+On the equipment
+
+The PSC Quickcheck equipment is a valid tool to use in the verification of the
+barcode on Infra Red light.
+
+V0.2 15/09/99 Page 31 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+However, due to no problems with the PATHWAY equipment on scans, there
+seems to be a conflict in results when comparing with the results taken using
+the PSC equipment. Unfortunately not being an expert in this product I can
+only put this down to:
+
+1. The technique required to pick up a valid scan on the equipment was
+difficult.
+
+2. The attribute of ambient light in certain Post Offices could have been a
+factor in failures on the PSC equipment.
+
+On the Acceptance Issue
+
+With regards to the Acceptance Issue, I saw nothing to suggest there was an
+problem with the PATHWAY equipment with the OBCS scans.
+
+Recommendations.
+
+Possibly undertake this test again in another Region to clarify results taken so
+far or to gather extra information.
+
+Contact PSC and obtain a Scan Wand, which may prove easier to use.
+
+V0.2 15/09/99 Page 32 of 46
+
+FUJ00119611
+FUJ00119611
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Appendix E
+OBCS Failure Test 2
+Purpose of test
+
+To identify the reasons or possible causes for higher than expected levels of
+manual input of barcodes on pension and allowance order books
+
+Method
+
+Observe the procedures followed at a selection of post offices in the
+Newcastle area for the receipt of bar-coded order books onto the Horizon
+system. Gather data in respect of failed scans during the book receipt process
+and failed scans following the issue and encashment of bar-coded order
+books.
+
+Using the software package ‘PSC Quick Check’, test a random selection of
+bar-coded order books for bar-code quality at each post office. The ‘PSC
+Quick Check’ software uses the ANSI/CEN (American National Standards
+Institute/ Commission for European Normalisation) standard as the measure
+of bar-code symbol quality. The results of the tests have been saved on floppy
+disc and include the following methods of verification:
+
+e Scan profile;
+
+e Minimum Reflectance;
+
+e Minimum Edge Contrast;
+
+¢ Symbol Contrast;
+
+¢ Modulation;
+
+e Defects;
+
+¢ Decodability;
+
+¢ Decode;
+
+e Scan Grade;
+
+¢ Symbol Grade .
+
+Offices included in trial
+
+e Gateshead MSPO;
+¢ High Street SPO;
+e Prince Consort Road SPO;
+
+V0.2 15/09/99 Page 33 of 46
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+¢ Coatsworth Road SPO;
+e Low Fell SPO;
+
+e Saltwell Road SPO;
+
+e Felling SPO;
+
+e Westgate Hill SPO.
+
+Personnel involved
+
+e Tim Vause (Horizon Programme);
+
+e Mark Barber (ICL Pathway.
+
+Test
+Gateshead MSPO
+
+FAD code: 152 3295
+
+The office had 12 order books to receive onto the system. All the barcodes
+were read and there was no need or no system prompt to input the details
+manually. The NR2 Order Book Control Service PPD (vers2.0) and the
+Horizon System User Guide (version 8.0) procedures were correctly followed.
+
+Two barcodes were selected at random and tested for quality. They both
+failed the test.
+
+Observations: The user had previous experience of other automated systems
+(ECCO+, Capture and Richard Jackson). They had been ICL Pathway trained.
+(approx. end April’99).
+
+V0.2 15/09/99 Page 34 of 46
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+High Street SPO
+FAD code: 261 3295
+
+The office had 14 order books to receive onto the system. All the barcodes
+were read and there was no need or no system prompt to input the details
+manually. The NR2 Order Book Control Service PPD (vers2.0) and the
+Horizon System User Guide (version 8.0) procedures were correctly followed.
+
+Two barcodes were selected at random and tested for quality. They both
+passed the test.
+
+Observations: The user had previous experience of an automated system
+
+(Richard Jackson). They had been ICL Pathway trained. (approx. end
+April’99).
+
+Prince Consort Road SPO
+
+FAD code:314 329 5
+
+The office had 3 order books to receive onto the system. All the barcodes were
+read and there was no need or no system prompt to input the details
+manually. The NR2 Order Book Control Service PPD (vers2.0) and the
+Horizon System User Guide (version 8.0) procedures were correctly followed.
+
+Two barcodes were selected at random and tested for quality. One passed and
+one failed the test.
+
+Observations: The user had previous experience of an automated system
+(Richard Jackson). They had been ICL Pathway trained (approx. end
+
+April’99). The postmaster stated that he had not encountered any problems
+with unreadable barcodes for a long time.
+
+Coatsworth Road SPO
+
+V0.2 15/09/99 Page 35 of 46
+FUJ00119611
+FUJ00119611
+
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+FAD code: 205 3295
+
+User ID:
+
+The office had 19 order books to receive onto the system. All the barcodes
+were read and there was no need or no system prompt to input the details
+manually. The NR2 Order Book Control Service PPD (vers2.0) and the
+Horizon System User Guide (version 8.0) procedures were correctly followed.
+
+Two barcodes were selected at random and tested for quality. One passed and
+one failed the test.
+
+Observations: The user had previous experience of an automated system
+
+(Richard Jackson). They had been ICL Pathway trained but unable to say
+when or where.
+
+Low Fell SPO
+
+FAD code: 284 329 3
+
+The office had 17 order books to receive onto the system. All the barcodes
+were read and there was no need or no system prompt to input the details
+manually. The office had also received 4 non bar-coded order books. The user
+attempted to ‘receive’ these onto the Horizon system but was unable to do so
+only because there was no CPP number printed on the front of the order
+book. The user stated that had a CPP number been on the order book then
+they would have ‘received’ them onto the system despite them being non bar-
+coded. They stated that they would have selected the ‘system failure - yes’
+option so that they would not be impounded. The NR2 Order Book Control
+Service PPD (vers2.0) and the Horizon System User Guide (version 8.0)
+procedures were correctly followed for bar-coded order books but not for non
+bar-coded order books.
+
+Two barcodes were selected at random and tested for quality. They both
+passed the test.
+
+Observations: The user had previous experience of an automated system
+(Richard Jackson). They had been ICL Pathway trained at the end of May’99.
+The postmaster stated that he had not encountered any problems with
+unreadable barcodes for a long time. They also stated that they have problems
+contacting the central system early in the morning (between 815am and
+900am) but a way round this is to receive books on to the system later in the
+day.
+
+V0.2 15/09/99 Page 36 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Saltwell Road SPO
+FAD code: 327 329 6
+
+User ID:
+
+The office had 33 order books to receive onto the system. All the barcodes
+were read and there was no need or no system prompt to input the details
+manually. The office had also received 4 non bar-coded order books. The user
+‘received’ these onto the Horizon system entering the details manually.
+Where there were books with no CPP number printed on the front he took a
+number from the foils and entered two zeros in front of it so it would be
+accepted on the system as a CPP number. He stated that he selected the
+‘system failure - yes’ option so that they would not be impounded however,
+whilst I was present he did not select this for one of the order books. This
+resulted in a non bar-coded order book being impounded on the system. At
+this stage the user looked at the impound message and, not sure if he had
+selected the ‘system failure - yes’ option proceeded to receive the book on to
+the system again, this time, selecting the ‘system failure - yes’ option. The
+NR2 Order Book Control Service PPD (vers2.0) and the Horizon System User
+Guide (version 8.0) procedures were correctly followed for bar-coded order
+books but not for non bar-coded order books.
+
+Two barcodes were selected at random and tested for quality. They both
+passed the test.
+
+The user had details of 2 bar-coded order books from the previous day
+(09/9/99) where they had failed to scan on encashment. The book details
+were as follows:
+
+Group 11 Ref. ZR 782786B 02 151
+Group 11 Ref. NW836101D 26 151
+
+Observations: The user had previous experience of an automated system
+(Richard Jackson). They had been ICL Pathway trained mid May’99. The
+postmaster stated that he had not encountered any problems with unreadable
+barcodes for a long time and that child benefit books were particularly good.
+They also stated that books could not scan one week but then scan the next.
+The user felt that the button wording was confusing - mistaking ‘manual
+input’ for implying books without bar-codes that need to be manually entered
+on to the system.
+
+V0.2 15/09/99 Page 37 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+Felling SPO
+FAD code: 237 239 7
+
+The office had 32 order books to receive onto the system. All the barcodes
+were read and there was no need or no system prompt to input the details
+manually. The NR2 Order Book Control Service PPD (vers2.0) and the
+Horizon System User Guide (version 8.0) procedures were correctly followed.
+
+Two barcodes were selected at random and tested for quality. They both
+failed the test.
+
+Observations: The user had no previous experience of an automated system.
+They had been ICL Pathway trained mid May’99. The user stated that they
+did not follow the authorised temporary procedure for foreign encashment.
+They would scan the book even if the barcode had been cancelled with a
+datestamp. He stated that he would always put this through as system failure.
+Also, sometimes a bar-code will read even after its been cancelled with a
+datestamp. The postmaster also stated that they had come across several
+occasions when a barcode had become unreadable after the book had been
+kept in a plastic wallet. The barcode sticks to the plastic and rubs off.
+
+Westgate Hill SPO
+FAD code: 313 329 0
+
+The office had 12 order books to receive onto the system. All the barcodes
+were read and there was no need or no system prompt to input the details
+manually. The NR2 Order Book Control Service PPD (vers2.0) and the
+Horizon System User Guide (version 8.0) procedures were correctly followed
+for the receipt of bar-coded order books. However, the user stated that had
+there been non bar-coded order books present then they would have
+attempted to receive these on to the system if they had a CPP number present.
+They had no knowledge of the authorised temporary procedure.
+
+Two barcodes were selected at random and tested for quality. They both
+passed the test.
+
+Observations: The user had no previous experience of automated systems.
+They had been POCL trained (sub post office agency trainer) in August’99.
+
+V0.2 15/09/99 Page 38 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification
+plan
+
+They stated that they thought ‘manual input’ and ‘OBCS manual’ referred to
+non bar-coded order books.
+
+Result
+
+Users who have received their training in May for LT2 are not following the
+correct procedures.
+
+Out of 16 barcodes analysed, six (37.5%) did not reach the ANSI/CEN
+standard. A visual inspection of the order books gave no evidence to suggest
+any problem with the order books.
+
+Out of 142 bar-coded books received at the post offices, 142 (100%) were read
+by the Horizon system.
+
+Conclusion
+
+There was no apparent problem with the ability of the Horizon System to
+read the barcode on bar-code order books.
+
+In the main users were not experiencing problems with unreadable barcodes
+on new order books.
+
+There was no reason to conclude that any of the books analysed were
+damaged in any way which might have affected the results of the analysis.
+
+User error due to incorrect training or lack of knowledge on the authorised
+temporary procedure may be causing the figures of manual input of barcodes
+on pension and allowance order books to be falsely inflated.
+
+Some users have indicated that they find the button names confusing i.e.
+‘manual input’ and ‘OBCS manual’ could be taken for non bar-coded order
+books.
+
+Barcodes may become unreadable if the book is kept ina plastic wallet.
+Author
+Tim Vause, Horizon Product Management Team
+
+15 September, 1999.
+
+V0.2 15/09/99 Page 39 of 46
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+
+Appendix H - calculation of books subject to the Authorised Temporary Procedure
+
+Jun-98
+Jul-98
+Aug-98
+Sep-98
+Oct-98
+Nov-98
+Dec-98
+Jan-99
+Feb-99
+Mar-99
+Apr-99
+May-99
+Jun-99
+
+V0.2 15/09/99
+
+Non Barcoded
+
+Foils
+
+20938
+21316
+19356
+19392
+18267
+17535
+19155
+17883
+22099
+42070
+45570
+110651
+228342
+
+Non Barcode
+Encashments
+
+17448
+17763
+16130
+16160
+15223
+14613
+15963
+14903
+18416
+35058
+37975
+92209
+190285
+
+Scanned
+Encashmentsencashments
+
+300385
+294573
+268799
+281652
+278793
+279534
+267295
+254702
+243818
+269864
+227481
+332860
+854001
+
+Page 40 of 46
+
+Total
+barcode
+
+317833
+312336
+284929
+297812
+294016
+294147
+283258
+269605
+262234
+304922
+265456
+425069
+1044286
+
+% non
+
+5.49%
+5.69%
+5.66%
+5.43%
+5.18%
+4.97%
+5.64%
+5.53%
+7.02%
+11.50%
+14.31%
+21.69%
+18.22%
+
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+
+Jul-99 191872 159893
+Mar-99 42070 35058
+Apr-99 45570 37975
+May-99 110651 92209
+Jun-99 228342 190285
+
+Jul-99 191872 159893
+
+April98 - Feb99 ave non barcode encashments 5.75%
+
+V0.2 15/09/99
+
+914706
+
+1074599 14.88%
+
+Non barcode
+with
+
+5.75%
+underlying
+
+non barcode
+
+encashments removed
+
+REAL TREND
+269864 17538 5.75%
+227481 15268 8.55%
+332860 24448 15.94%
+854001 60063, 12.47%
+914706 61806 9.13%
+Page 41 of 46
+
+FUJ00119611
+FUJ00119611
+FUJ00119611
+FUJ00119611
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+
+Appendix J - Analysis of training workbooks
+
+FUJ00119611
+FUJ00119611
+
+Changes
+
+Further areas for concern
+
+System related
+
+Non system related.
+
+Book Issue Manual input for bar- OBCS serve customer Book receipt Encashment of foils from
+coded order book menu hierarchy non bar-coded order books
+encashment
+
+LT LT2 LT1 LT2 LT LT2 LT1 LT2 LT1 LT2
+
+Button name I Button name I Button name I Button Button name I Button name I Text Text added on LT1 page 42 & LT2 page 37
+
+-‘OBCS -‘OBCS -‘OBCS name - -‘Benefit+ I-‘Pand A’ I not page 7 - ‘Note:
+
+Book Issu’ Booklet’ Book Man’ I ‘OBCS DSS’ include I There is no
+
+M I d i tt
+ana complete th e ° ‘Note: There is no
+receive in requirement to Receive,
+procedure for non Redirect or Issue non bar-
+bar-coded order coded order books through
+books.’ the Horizon system.’
+
+Dean Felix supplied training workbooks. Dean advised that workbook dated 15/3/99 relates to LT1 training and workbook
+dated25/7/99 relates to LT2 training. It appears that the LT1 workbook did not reflect the current functionality as the button name
+changes were documented in the ‘Horizon OPS Menu Hierarchy for Release 2: Changes Supplement Issue 1’ document, dated
+13/10/98.
+
+V0.2 15/09/99
+
+Page 43 of 46
+
+RESTRICTED COMMERCIAL
+
+Appendix M - Matrix of potential or perceived causes of failure
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+
+FUJ00119611
+FUJ00119611
+
+Category
+
+Actions completed to date
+
+Actions required to complete tests/analyses
+
+System issues
+
+Quality of barcode
+scanner
+
+Tests on sample of 90 order book covers
+(current stock) conducted by ICL Pathway;
+
+Tests on sample of 100 order book covers
+(future stock) conducted by ICL Pathway;
+
+Tests on sample of 190 order book covers
+(current and future stock) scanned through
+‘live’ Horizon and ALPS systems, conducted by
+ICL Pathway and Horizon
+
+e None.
+
+Communications line
+failure/ Foreign
+transactions
+
+Tests on sample of 190 order book covers
+(current and future stock) scanned through
+‘live’ Horizon and ALPS systems, conducted by
+ICL Pathway and Horizon.
+
+e« None.
+
+Human Computer
+Interface
+
+Observation/ information gathered during test
+on ‘live’ order book barcodes at selected
+Horizon post offices, conducted by ICL
+Pathway and Horizon.
+
+¢ Specific exercise to identify potential areas of
+confusion/improvement opportunities.
+
+V0.2 15/09/99
+
+Page 44 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+
+FUJ00119611
+FUJ00119611
+
+Support
+
+Training
+materials/ delivery
+
+Review of training workbooks to confirm
+accuracy and comprehensiveness;
+
+Observation/ information gathered during test
+on ‘live’ order book barcodes at selected
+Horizon post offices, conducted by ICL
+Pathway and Horizon.
+
+Review description of process for
+communicating revised procedures, by both
+ICL Pathway and POCL trainers.
+
+Procedures Review of User Guides to confirm accuracy and Review description of process for
+comprehensiveness; communicating revised procedures;
+Observation/ information gathered during test Obtain confirmation regarding awareness of
+on ‘live’ order book barcodes at selected correct OBCS procedures at the HSHD;
+Horizon post offices, conducted by ICL.
+Pathway and Horizon.
+
+Order books
+
+Quality of Tests on paper conducted by PIRA, for the Tests on the printing/ paper of orders books
+
+printing/ paper Benefits Agency. that fail to read in the ‘live environment’ (on
+
+both exhausted books and new books).
+
+Quality of barcodes
+
+Tests on sample of 90 order book covers
+(current stock) conducted by ICL Pathway;
+
+Tests on barcodes of orders books that fail to
+read in the ‘live environment’ (on both
+
+V0.2 15/09/99
+
+Page 45 of 46
+RESTRICTED COMMERCIAL
+
+Acceptance Incident 369 - OBCS failures testing approach and rectification plan
+
+FUJ00119611
+FUJ00119611
+
+Tests on sample of 100 order book covers
+(future stock) conducted by ICL Pathway;
+
+Tests on sample of 190 order book covers
+(current and future stock), scanned through
+‘live’ Horizon and ALPS systems, conducted by
+ICL Pathway and Horizon.
+
+Tests on ‘live’ order book barcodes at selected
+Horizon automated post offices, conducted by
+ICL Pathway and Horizon.
+
+exhausted books and new books).
+
+V0.2 15/09/99
+
+Page 46 of 46

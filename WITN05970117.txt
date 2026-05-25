@@ -1,0 +1,375 @@
+WITNO5970117
+WITNO5970117
+
+HORIZON PROGRAMME RESTRICTED COMMERCIAL PRODUCT ASSURANCE
+
+Bringing Technology to Post Offices and Benefit Payments
+
+ESCHER DEPENDENCY - AN ANALYSIS
+
+Author: Jeremy Folkes Version: Issue 1.0
+Authority: John Meagher 7th April 1998
+Reference: _ jf/23escdep.doc
+
+Contents Page
+
+. PURPOSE...
+
+N
+
+. BACKGROUND.......
+
+we
+
+ESCHER APPLICATION SOFTWARE..
+
+4, ACCESS TO ESCHER DESIGN DOCUMENTATION...
+
+wn
+
+. PATHWAY’S KNOWLEDGE AND EXPERIENCE.
+
+6. FUTURE RELEASES OF CORE RIPOSTE.....
+
+~™
+
+PATHWAY’S ARRANGEMENTS WITH ESCHER...
+
+Ea
+
+- CONCLUSION
+
+1. PURPOSE
+
+1.1. This paper seeks to provide an analysis of the Escher Dependency risk in the
+light of ICL Pathway’s recent responses on the “Strategic Risk - Escher
+Dependency”. It is based on the original risk documentation from the
+evaluation phase but draws heavily upon Product Assurance Group’s
+knowledge and experience of the subsequent ICL Pathway development
+activity; it should therefore should considered as our view on the risk rather
+than being definitive.
+
+1.2. The report is structured around five key areas where ICL Pathway’s response
+appears to fall short of providing an adequate mitigation of the overall
+Escher risk.
+
+1.3. Nothing contained within this document shall be deemed or construed as
+affecting existing contractual obligations between ICL Pathway, the DSS
+and/or POCL.
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ I of 7
+documents\initial submission\23escdep.doc
+7th April 1998 Issue 1.0
+HORIZON PROGRAMME RESTRICTED COMMERCIAL PRODUCT ASSURANCE
+
+21.
+
+2.2.
+
+2.3.
+
+2.4.
+
+BACKGROUND
+
+One of ICL Pathway’s key subcontractors is Escher Group Ltd, a small
+software house based in Cambridge, Mass., USA. Escher’s products form the
+basis of the ICL Pathway office and TMS solution, providing both underlying
+Riposte middleware and various software applications for use in the office
+(including the office Desktop and the Benefit Encashment Service
+applications).
+
+During the evaluation stage prior to award of contract, a number of Risks
+were raised regarding Pathway’s dependency on Escher, the relationship
+between the two companies and the Riposte product itself; as part of the risk
+process, Pathway responded to these risks and their responses were taking
+into account in the evaluation.
+
+The risks raised were as follows:
+
+(a) _ size of Escher - that Pathway were totally dependent on a very small US
+based company, and that only a very small number of people had in
+depth knowledge of Riposte (Risk PWY002).
+
+(b) contractual relationships - that the contractual relationship between
+Pathway and Escher was unclear, that Pathway had little direct
+influence over the development of Escher products, and that
+communication between Escher and Pathway appeared poor (Risk
+PWY057).
+
+(c) Riposte is unproven - that its reliability and scaleability to support the
+POCL network in unproven (Risk PWY009).
+
+(d) future development path for Riposte - that Pathway might not be able to
+maintain a development path for Riposte in line with POCL’s needs
+(Risk PWY059).
+
+As a result of the Strategic Review of the programme led by PA Consulting,
+further correspondence on the “Escher Dependency” risk has been taken
+forward in correspondence between PDA (Peter Crahan) and ICL Pathway
+(John Bennett). It is as a result of this correspondence that this paper has
+been produced to re-examine the dependency on Escher in the light of the
+recent Pathway responses.
+
+WITNO5970117
+WITNO5970117
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 2 of 7
+documents\initial submission\23escdep.doc
+7th April 1998 Issue 1.0
+HORIZON PROGRAMME RESTRICTED COMMERCIAL PRODUCT ASSURANCE
+
+3.1,
+
+3.2.
+
+3.3.
+
+3.4.
+
+Al.
+
+ESCHER APPLICATION SOFTWARE
+
+ICL Pathway’s response concentrates purely on “core Riposte” (which I take
+to mean the Messaging Middleware and the Desktop/GUI), and fails to take
+account of Escher’s involvement in other aspects of the system.
+
+In particular, in John Bennett’s letter to PA Consulting dated 5th December,
+he states that “The development of RIPOSTE based applications is entirely the
+responsibility of ICL Pathway, including maintenance and support”. This
+statement is at odds with the contract, where in POCL Agreement, Schedule
+B1 the status of BES Counter Application and OBCS Counter Application are
+clearly stated as “Third party (An Post/Escher)” rather than “CONTRACTOR”.
+Note this is the same status as afforded to “Riposte” in the very same
+schedule.
+
+Perhaps more pertinently, whatever the exact interpretation of
+“responsibility”, \CL Pathway’s assertion does not fit with our experience to
+date on a number of counts, for instance:
+
+* we know that the BES application has been developed by Escher, in
+Boston, based originally on the An Post benefits payments
+application; experience to date has shown that changes to BES
+appear to need Escher involvement, suggesting that it is still
+managed by Escher.
+
+e the access control functionality in EPOSS has been developed by
+Escher; you will recollect the problems that existed in Release 1c
+with non-compliance with requirements in this area (leading to the
+infamous 19 issues), where it became apparent that the necessary
+modifications were to Escher code.
+
+Recommendation: We should request that ICL Pathway clarify the ownership and
+support arrangements for each of these applications, including stating which
+organisation is deemed to hold the “master” version.
+
+ACCESS TO ESCHER DESIGN DOCUMENTATION
+
+ICL Pathway’s response majors on “access to source code” as the fallback
+arrangement in case of loss of support from Escher; although in a worst case
+scenario access to ‘C’ source may be better than nothing as a means of
+effecting simple bug fixes etc, it is no replacement for a proper set of design
+documentation for the products - both core Riposte and any Escher written
+applications. I note that ICL Pathway have made no comment regarding
+possession of or access to such documentation for the Escher products.
+
+WITNO5970117
+WITNO5970117
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 3 of 7
+documents\initial submission\23escdep.doc
+7th April 1998 Issue 1.0
+WITNO5970117
+WITNO5970117
+
+HORIZON PROGRAMME RESTRICTED COMMERCIAL PRODUCT ASSURANCE
+
+4.2. Based on experience, I would suggest that our greatest exposure relates to
+the Escher-written applications rather than to core Riposte!. We have found
+it very difficult to get any design documentation from ICL Pathway relating
+to the BES application, primarily we believe as little has been provided to
+ICL Pathway by Escher; it would appear that ICL Pathway have had to
+resort “reverse engineering” in an attempt retrofit design documentation (eg
+message specifications) to the delivered product. One can only surmise that
+ICL Pathway’s contract with Escher does not support the provision of full
+design documentation.
+
+4.3. Although ICL Pathway may by now have gained an adequate understanding
+of the Escher applications to perform development activities, and this may be
+documented internally, it may be no substitute for the “real thing” when
+major problems arise.
+
+44, Recommendation: We should request that ICL Pathway describe what level of
+Escher documentation, other that source code, they possess on the Escher-written
+products, and ask them to demonstrate that this is sufficient to enable them to
+support the product if required.
+
+45. Although ICL Pathway may take the line that this is “confidential between ICL
+Pathway and Escher’ or that this cannot be revealed for IPR reasonsld
+recommend that we seek visibility of such documentation to confirm its
+suitability. We would expect ICL Pathway to demand that this be performed
+under NDA and probably would not want to involve individuals from
+outwith the sponsor organisations, but we would not see this as a problem2.
+
+5. PATHWAY’S KNOWLEDGE AND EXPERIENCE
+
+5.1. Although ICL Pathway claim to be responsible for the development of
+applications, it is still clear that they are heavily dependent on Escher for
+support and advice, and that at times they require significant Escher
+involvement to assist with the development of applications.
+
+5.2. For example, we know that the original EPOSS application was shipped out
+to Boston last year following the emergence of fundamental problems with
+the product as developed in Feltham, and that a significant amount of work
+was performed by Escher on that application before it was returned to the
+
+! Note that applications are far generally more susceptible to ongoing change (due to evolution of
+business rules, experience from live running, etc) than the core product which is largely application
+independent and would not expect to subject to the same instability over time.
+
+2 Suggest this be performed by someone internal to the programme and known to both Pathway and
+Escher.
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 4 of 7
+documents\initial submission\23escdep.doc
+7th April 1998 Issue 1.0
+HORIZON PROGRAMME RESTRICTED COMMERCIAL PRODUCT ASSURANCE
+
+5.4,
+
+6.1.
+
+6.2.
+
+6.3.
+
+6.4,
+
+UK. This suggests that ICL Pathway were not in a position to manage
+without Escher support, and recent indications are that ICL Pathway are still
+in learning mode regarding the underlying functionality of EPOSS,
+suggesting that they are still not in a position to fully support the application
+in-house.
+
+From our limited visibility, it appears that ICL Pathway still do not have the
+necessary skills or experience in sufficient quantities to be able to fully “go it
+alone” with the development of application software, despite their stated
+intention when the risk was first raised to set up a “European Support and
+Development Centre”. Although their ability will grow over time, it would
+appear they still have some way to go, and we should note that ICL Pathway
+is also heavily dependent on contract staff who may suffer a high rate of
+churn.
+
+This situation is probably inevitable given the nature of the ICL Pathway
+solution. We would have more confidence, however, if there was an
+admission of their dependency on Escher and better visibility of the
+mitigations.
+
+FUTURE RELEASES OF CORE RIPOSTE
+
+Although we would not argue with the position taken by ICL Pathway in
+their letter regarding core Riposte, we should be aware that the current
+version of Riposte (5.3) does not provide the solution required for full rollout
+of the contracted Pathway service nationwide.
+
+To provide the solution originally proposed, Pathway are still dependent on
+Escher to provide version 6 of Riposte (also sometimes known as Riposte 5.4)
+which introduces the “Wholesale Broker” and adds full scalability? through a
+level of indirection above the correspondence server level.
+
+Although Pathway have contingency arrangements (and indeed, we
+understand that these will be used to support New Release 2) using multiple
+discrete clusters of correspondence servers, the ability of this to scale
+(manageably) to full national rollout volumes remains unproven.
+
+The point here is that Pathway are dependent on a further, major release of
+core Riposte from Escher - in other words, they are not yet into just a “support
+
+3 We understand that earlier versions of Riposte had a limit of some 5400 terminals per cluster;
+although this hard limit has apparently been removed in Riposte 5.3 it is not practical or desirable to
+host the full POCL network on a single cluster. Riposte 6/5.4 will, we understand, introduce the
+ability for Riposte to split the office population across multiple clusters.
+
+WITNO5970117
+WITNO5970117
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 5 of 7
+documents\initial submission\23escdep.doc
+7th April 1998 Issue 1.0
+HORIZON PROGRAMME RESTRICTED COMMERCIAL PRODUCT ASSURANCE
+
+7.1.
+
+7.2.
+
+7.3.
+
+74,
+
+8.1.
+
+8.2.
+
+services” phase. We have insufficient visibility to know when this release will
+be made or how it fits in with Pathway’s plans, but it demonstrates
+Pathway’s ongoing dependency on Escher for development as well as
+support.
+
+Recommendation: Seek greater visibility of Escher’s development plans for core
+Riposte and Pathway’s requirements for future releases of Riposte. Seek full
+information on scaleability constraints of each Riposte release.
+
+PATHWAY’S ARRANGEMENTS WITH ESCHER
+
+ICL Pathway’s response contains a number of assertions regarding support
+capability, contractual arrangements and access to source code, but provides
+few details as to exact nature of these arrangements
+
+Given the nature of the risk, we may wish to verify ourselves that the
+arrangements are valid and that they do indeed adequately mitigate the risk.
+
+For example, ICL Pathway states that they have copies of the source code for
+core Riposte, but we have no details of their legal rights with respect to this;
+there is little point in ICL Pathway having a copy of the source code if they
+would be subject to an injunction from Escher if ever they tried to use it.
+Escrow arrangements usually have strict conditions attached, and although
+these may cover, for instance, the case where Escher ceases to trade, they
+may not mitigate risks relating to a contractual dispute or other breakdown
+of relationship between Escher and ICL Pathway.
+
+Recommendation: Seek further detail of the contractual relationship with Escher,
+and in particular the precise arrangements which are in place to mitigate their
+dependency. This should include their rights regarding access to and use of the
+source code, and should seek evidence of the completeness and currency of any
+escrowed source code.
+
+CONCLUSION
+
+We believe that ICL Pathway are still highly dependent on Escher Group Ltd
+and we have little evidence that this dependency has been significantly
+reduced since the award of contract - indeed, the dependency still appears to
+greater than would have been expected based on Pathway’s original risk
+responses.
+
+Use of third party software in a project of this nature is not unusual, however
+the risks need to be appropriately managed by the integrator of the system.
+Although this risk was identified by BA/POCL at an early stage in the
+
+WITNO5970117
+WITNO5970117
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 6 of 7
+documents\initial submission\23escdep.doc
+7th April 1998 Issue 1.0
+WITNO5970117
+WITNO5970117
+
+HORIZON PROGRAMME RESTRICTED COMMERCIAL PRODUCT ASSURANCE
+
+programme, there is still no evidence available to us to show that it has been
+adequately managed or mitigated.
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~7 of 7
+documents\initial submission\23escdep.doc
+7th April 1998 Issue 1.0

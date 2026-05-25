@@ -1,0 +1,2962 @@
+Fe)
+FUJITSU
+
+FUJ00096658
+FUJ00096658
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+Document Title:
+Release:
+
+Abstract:
+
+Document Status:
+Author & Dept:
+External Distribution:
+
+Security Risk
+Assessment Confirmed
+
+Approval Authorities:
+
+Ni Role
+
+Matthew Lenton
+
+RMGA Document Management
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+N/A
+
+This is a guide to who should author, review and approve RMGA
+Programme lifecycle documents. Primarily those of HNG-X.
+APPROVED
+
+Matthew Lenton, RMGA Document Management
+
+None
+
+Yes — No Risk
+
+Approval Method Date
+
+See
+
+mensions for record of Approval
+
+@Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED OR LOCALLY
+
+COMMERCIAL IN CONFIDENCE Ref:
+Version:
+Date:
+
+Page No:
+
+PGM/DCM/ION/0001
+56.0
+19-Jan-2010
+
+STORED 1 of 57
+FUJ00096658
+FUJ00096658
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0 Document Control
+0.1 Table of Contents
+
+0 DOCUMENT CONTROL.
+
+0.1 Table of Contents.
+0.2 Document History.
+0.3 Review Detail:
+0.4 Associated Documents (Internal & External)
+0.5 Abbreviations.
+0.6 Glossary.....
+0.7 Changes Expecte:
+0.8 Accuracy...
+0.9 Security Risk Assessment!
+
+1 INTRODUCTION
+
+3 USE OF THE MATRIX...
+
+4 HNG-X REVIEWER & APPROVER ROLE MATRIX.
+
+Acceptance Specification (EXTERNAL)..
+Application Interface Specification (EXTI
+Solution / Topic Architecture..
+Business Acceptance Test Report.
+Business Requirements Definiti
+Component Integration Test Plan.
+Component Test Plan...
+Component Integration Test Report.
+Component Test Report.
+Design Proposal.....
+Feasibility Study Report.
+High Level Design...
+High Level Test Pla
+Increment Definition Document.
+Interface Specification (Internal
+Low Level Design.
+Low Level Test Pla
+Operational Test Report.
+Operational Level Agreement.
+Physical Platform Design.
+Platform Set Definitio:
+Requirements Traceability Matri
+Release Note..
+Service Description/Definition:
+Service Introduction Plan.....
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date’ 19-Jan-2010
+
+STORED PageNo: 2 of 57
+FUJ00096658
+FUJ00096658
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Support Guide..
+System Requirement Specification
+System Support Documents.
+Migration Strategy.
+Testing Strategy.
+System Test Report.
+Technical Interface Specification (External)..
+Transition State Design......
+Unit Acceptance Test Report.
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date’ 19-Jan-2010
+
+STORED Page No: 3 of 57
+FUJ00096658
+FUJ00096658
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0.2 Document History
+
+Version No. Date Summary of Changes and Reason for Issue Associated Change -
+CP/PEAK/PPRR
+
+Reference
+
+For history details prior to 2008 please refer to version prior to I Not applicable to this
+
+v31.2 document.
+22.0 04-Jan-08 Issued for approval and immediate programme publication and
+
+use
+22.4 11-Jan-08 Revised following changes to organisation. Geoff Slocombe to
+
+represent Infrastructure Design, added Jason Clark and Dave
+Chapman as formal reviewers. Revised Estate Management role
+description. Added TSD as new lifecycle document, reviewers to
+be defined. Added Michael Welsh as an optional reviewer.
+
+23.0 11-Jan-08 Issued for approval and immediate programme publication and
+use
+
+23.4 18-Jan-08 Removal of Security Architect as optional review of LLD
+Revised representative for CTO.
+
+24.0 18-Jan-08 Issued for approval and immediate programme publication and
+use.
+
+24.4 31-Jan-08 Revisions as a result of changes in programme staff. Replaced
+
+Matt Abdy with David Johns. Replaced Jeremy Worrell with
+Brian Ridley. Replaced Martin Brett with Caroline Montgomery
+and added Jim Sweeting as approval authority for Security HLD
+and Topic Architectures,
+
+25.0 31-Jan-08 Issued for approval and immediate programme publication and
+use.
+
+25.4 06-Feb-08 Removed David Hinde as optional reviewer on design
+documents. Added David Cooke for Acceptance role:
+
+26.0 06-Feb-08 Issued for approval and immediate programme publication and
+use
+
+26.1 02-Apr-08 Removed Harjinder Hothi as Mandatory Reviewer for System test
+
+and replaced with John Rogers and applied further programme
+staff changes as a result of feedback and announcements.
+
+27.0 03-Apr-08 Issued for approval and immediate programme publication and
+use
+2A 03-Jun-08 Replace Janet Mason with Caroline Montgomery. Remove Steve
+
+Godson and add Graham Welsh as a temporary replacement.
+Add Chris Crediand as an Optional Reviewer of all TIS
+documents. Remove David Johns as a Mandatory Reviewer of
+PPD. Add Lee Walton as an Optional Reviewer for ARC
+documents. Add TSD Approvers and Reviewers.
+
+28.0 03-Jul-08 Issued for approval and immediate programme publication and
+use.
+
+28.1 15-Sep-2008 I Replace Peter Rickson with Mark Ascott. Stopped cells from
+breaking across pages to improve printing.
+
+29.0 15-Sep-2008 _I Issued for use.
+
+29.41 09-Oct-2008 —_I Addition of CSPOA mailbox as optional reviewers on ACS, AIS,
+
+ARC, BRD, DPR, FSR, HLD, IFS, PPD, RTM, SRS, STG, TIS,
+TSD. Amanda Ballard replaced by Jim Scott for TSD. Peter
+Okely added with identical roles to Caroline Montgomery,
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE. Ref: PGM/DCM/ION/0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date’ 19-Jan-2010
+
+STORED Page No: 4 of 57
+FUJ00096658
+
+FUJ00096658
+oO RMGA Document Reviewers/Approvers Role Matrix
+FUJITSU COMMERCIAL IN CONFIDENCE
+Configuration Management changed from M to O for PSD.
+
+30.0 13-Oct-2008 Issued for use.
+
+30.1 14-Oct-2008 Mark Walsh removed from ARC, HLD, HTP, IFS and replaced
+by Ed Ashford on IDD, PSD, STG, TSD.
+
+31.0 14-Oct-2008 Issued for use.
+
+31.2 23-Oct-2008 —_I Addition of Steven Philip as optional reviewer for ARC. Mike
+Efstathiou replaces Robert Baulk on OLA, SD, SIP, STG.
+
+32.0 23-Oct-2008 Removed need for Jan Holmes and David Cooper to Approve
+each version. This and subsequent versions Approved via
+author's publication on Dimensions.
+
+32.4 24-Oct-2008 Temporary arrangement to prevent sending of attachments to
+Peter Thompson between 07-Nov-2008 to 09-Dec-2008.
+
+33.0 24-Oct-2008 Issued for use.
+
+34.0 31-Oct-2008 Reminder to remove Pat Lywood from optionals HLD, HTP and
+IFS.
+
+35.0 03-Nov-2008 I Moved Brian Ridley from mandatory to optional reviewer for
+HLDs, re: his email of 30-Oct-2008.
+
+35.1 06-Nov-2008 —_I Removed David Hinde as an approver for PPDs re. his email of
+03-Nov-2008, Removed Adrian West as reviewer/approver for all
+documents re. his email of 05-Nov-2008 — temporarily replaced
+by Graham Allen. Added approvers as optional reviewers for all
+documents. Replaced ‘Dave Johns’ with ‘David Johns’
+
+35.2 13-Nov-2008 I Added Steven Philip as optional reviewer for all documents that
+David Johns sees in any capacity: AIS, ARC, BATR, BRD, DPR,
+
+FSR, HLD, IDD, IFS, OLA, PPD, PSD, STG, TIS, TSD.
+
+36.0 17-Nov-2008 _I Issued for use.
+
+370 20-Nov-2008 I Adrian West replaced by pick list for types: ACS, AIS, ARC,
+BATR, BRD, DPR, FSR, HLD, HLTP, IDD, IFS, OATR, PPD,
+
+PSD, RTM, REN, SRS, STG, STG, STR, TIS.
+4-Nov- Mark Ascott temporarily substituted by Michael Welch until 08-
+
+380 2ANov-2008 I 1560-2008, Addition of Poupak Coleman and Karen Morley to
+pick lists for Solution Design and Development roles.
+
+Nov: Correction: removal of optional duplication of mandatory picklist
+
+390 26-Nov-2008 I for Design/Development. Tuan Ngo removed from TSD Gautam
+Das removed from HLD and IFS.
+
+7 ‘Added new type SPG, R+As as per Mik Peach emails. Added
+
+40.0 09-Dec-2008
+David Cooper as mandatory to ACS, BATR, HTP, STG. Bradley
+Kean replaced by picklist for SSD. Brian Ridley replaced by
+Peter Okely on TSD and removed from HLD. Graham Jennings
+added as mandatory for Migration HLDs only. Mark Ascott
+reinstated.
+
+4“ 7 Addition of details for Network LLDs, approver Terry Jack, per
+
+° 10-Dec-2008 I ‘Martin Thorpe email of 20-JUL-2008
+
+42.0 24-Dec-2008 I Removal of Steven Philip.
+
+43.0 49-Jan-2009 Replacement of Phil Day by Graham Murray.
+
+440 12-Feb-2009 I Replacement of Alex Kemp by lan Mills; replacement of Peter
+‘Thompson by Kirsty Gallacher; replacement of Poupak Coleman
+by Gavin Scruby
+
+4 Fi Replaced Mike Efstathiou with Jim Sweeting.
+
+Srehew Lenton 13-Feb-2009 I Replaced Peter Dreweatt with Richard Wombwell
+
+45.1 first by 26-Mar-2009 I TeMy Jack replaced by Mark Jarosz, NWA
+
+Nigel Hatcher Peter Ambrose replaced by David Harrison and
+Lee Walton replaced by
+Andrew Thomas for BAL and Ben Holland for Counter
+
+4 : ‘Annex A. removed m
+
+Nigel Hatcher 08-May-2009 I CTO entries changed from David Johns to John Wright: NA
+
+©Copyright Fujitsu Services Ltd 2010 ‘COMMERCIAL IN CONFIDENCE Ref: PGM/DCMIONI0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED PageNo: 5 of 57
+fee)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+FOR REVIEW
+
+Replace Richard Wombwell by Stephen Gilbert:
+
+Remove Peter Robinson:
+
+Replace Caroline Montgomery by Geoff Butts:
+
+Replace David Hinde by Peter Okely to manage Integration;
+Geof Slocombe by TSC(1) for Infrastructure.
+
+45.3
+Nigel Hatcher
+
+11-May-2009
+For Review
+
+TBC(1) replaced by Pat Lywood;
+Correction of John Wright to Roger Wright as HNG-X CTO.
+
+NIA
+
+45.4/5 Matthew
+Lenton
+
+27 May 2009
+
+Tony Wicks replaced by Adam Parker. David Cooper replaced
+by Debbie Richardson. Graham Murray replaced by Alan
+D’Alvarez.
+
+NIA
+
+45.6
+
+15-Jun-2009
+
+‘Andrew W Thompson (POL) replaced by Lee Farman (POL)
+
+NIA
+
+46.0
+
+15-Jun-2009
+
+‘Approved version.
+
+NIA
+
+46.1
+
+14-Aug-2009
+
+Addition of CSPOA security
+
+reviewer for LLDs.
+
+“GRO _ [as optional
+
+NIA
+
+47.0
+
+14-Aug-2009
+
+Approved version.
+
+NIA
+
+48.0
+
+17-Aug-2009
+
+Removed Wayne Roberts (POL) from ACS, BATR, HLD, HLTP,
+LTP, RTM, STG, STR. Addition of Phil Norton (POL) as optional
+reviewer to ACS and BATR. Addition of lan Trundell as optional
+reviewer to HLD. Lee Farman changed to mandatory and James
+Brett to optional for STG. Added notes to show which POL staff
+are in JTT, and which must be issued to via Document Control.
+
+NIA
+
+49.0
+
+20-Aug-2009
+
+‘Addition of Gaetan van Achte alongside all Steve Denham roles
+for handover period.
+
+NIA
+
+50.0
+
+22-Sep-2009
+
+Steve Denham replaced by Gaetan van Achte.
+‘Added lan Bowen as an optional for ARC.
+‘Added lan Trundell (POL) as optional for ARC.
+
+NIA
+
+51.0
+
+22-Oct-2009
+
+‘Wendy Warham replaced by David Keeling,
+
+Replaced lan Cooley with Karen Harrod, John Bradley & Wayne
+Bragg
+
+Added Sarah Selwyn / Stuart Honey as Optionals for HLDs
+‘Added Claire Drake as Optional Reviewer for HLD/SPG
+Mukesh Mehta replaced Gavin Scruby (Estate Management)
+Jerry Acton replaced Gavin Scruby (Systems Management)
+Debbie Richardson replaced Stephen Gilbert
+
+Added Reviewer / Approver Emails addresses
+
+Replaced System Test unit with SV&I
+
+Amended Peter Okely's title to Integration Team Manager
+
+NIA
+
+52.0
+
+27-Oct-2009
+
+‘Added Howard Pritchard as a mandatory reviewer for HLDs /
+LLDs
+
+53.0
+
+02-Dec-2009
+
+‘Adam Cousins roles replaced by Steve Evans.
+Alan D’Alvarez roles replaced by Geoff Butts
+
+AIS and TIS annotated to show that POL approve first baseline
+version, subsequent versions to be approved by all parties.
+
+Tom Lillywhite added as optional reviewer to HLD and LLD.
+Howard Pritchard's description changed to Principal Security
+Consultant, moved from mandatory to optional for HLD LLD.
+
+Data Centre Migration role Vince Cochrane replaces Geoff Butts
+Removal of Alan Child from all types, no replacement.
+
+David Harrison's reviewer roles split into choice of reviewers from
+Host Development team:
+
+10-Dec-2009
+
+Mik Peach replaced by Tony Little for all roles: AIS, ARC, CTP,
+DPR, HLD, IFS, LLD, OLA, PPD, REN, SIP, SPG, SRS, SSD,
+TIS, TSD.
+
+55.0
+
+23-Dec-2009
+
+Howard Pritchard replaced for all roles by Tom Lillywhite.
+Roger Wright replaced for all roles by Graham Allen
+
+56.0
+
+19-Jan-2010
+
+Sheila Bamber's title changed to LST Manager, John Rogers’ title
+changed to LST. Chris Maving added as SV&I Manager to roles
+matching those of Sheila Bamber and or John Rogers.
+
+0.3 Review Details
+
+Comments b'
+
+N/A
+
+@Copyright Fujitsu Services Ltd 2010
+
+‘COMMERCIAL IN CONFIDENCE Ref.
+Version:
+
+UNCONTROLLED IF PRINTED OR LOCALLY Date:
+STORED Page No:
+
+PGM/DCM/ION/0001
+
+V56.0
+19-Jan-2010
+6 of S7
+FUJ00096658
+FUJ00096658
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Review Comments to Report any amendments to RMGA Document Management
+
+Mandatory Review
+
+Role Name
+
+None None
+
+Optional Review
+
+Role Name
+None None
+Issued for Information Please restrict this
+
+istribution list to a minimum
+
+Position/Role Name
+
+0.4 Associated Documents (Internal & External)
+
+Reference Version Date Title Source
+PGM/DCM/TEM/0001 I 4.9 21-NOV-2008 Fujitsu Services RMGA HNG-X I Dimensions
+(DO NOT REMOVE) Document Template (Portrait)
+PGM/DCM/TEM/0002 I 4 9 25-NOV-2008 Fujitsu Services RMGA HNG-X I Dimensions
+(DO NOT REMOVE) Document Template (Landscape)
+PGM/DCM/STD/0001 Fujitsu Services RMGA HNG-X I Dimensions
+Document Standard
+CM/ON/078 Horizon Reviewer & Approver role I PVCS
+matrix
+
+Unless a specific version is referred to above, reference should be made to the current approved
+versions of the documents.
+
+0.5 Abbreviations
+
+Abbreviation Definition
+ACS Acceptance Specification
+ADBM Application Design & Build Methodology
+AIS Application Interface Specification
+ARC Architecture
+BATR Business Acceptance Test Report
+BRS Business Requirements Specification
+cITP Component Integration Test Plan
+CITR Component Integration Test Report
+CTP Component Test Plan
+CIR Component Test Report
+DPR Design Proposal
+FSR Feasibility Study Report
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCMION/000T
+Version 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+
+STORED PageNo: 7 of 57
+FUJ00096658
+
+FUJ00096658
+oO RMGA Document Reviewers/Approvers Role Matrix *
+
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+HLD High Level Design
+
+HNG-X Horizon Next Generation
+
+HNGxDBM Horizon Next Generation Design & Build Methodology
+
+HTP. High Level Test Plan
+
+IDBM Infrastructure Design & Build Methodology
+
+IDD Increment Definition Document
+
+IFS Interface Specification
+
+ION Information Notice
+
+LLD Low Level Design
+
+LTP Low Level Test Plan
+
+OATR Operational Test Report
+
+OLA Operational Level Agreement
+
+PPD Platform Design
+
+PSD Platform Set Definition
+
+REN Release Note
+
+RMGA Royal Mail Group Account
+
+RTM Requirements Traceability Matrix
+
+RV Release and Validation
+
+SA Solution Architecture (previously ARC)
+
+sD Service Definition / Description
+
+SDBM Service Design & Build Methodology
+
+SIP Service Introduction Plan
+
+SRS System Requirements Specification
+
+ssD System Support Document
+
+STG Strategy
+
+STR System Test Report
+
+S&VI Solution Validation and Integration
+
+TA Topic Architecture (previously ARC)
+
+TBD To be defined.
+
+TE Test Environment
+
+TIS Technical Interface Specification
+
+TSD Transition State Design
+
+UATR User Acceptance Test Report
+
+UIs User Interface Specification
+
+vl Volume & integrity
+0.6 Glossary
+©Copyright Fujitsu Services Ltd 2010 ‘COMMERCIAL IN CONFIDENCE Ref: PGM/DCMION/000T
+
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED PageNo: 8 of 57
+FUJ00096658
+
+FUJ00096658
+(oe) RMGA Document Reviewers/Approvers Role Matrix
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Term Definition
+
+‘AP’ Approver Those individuals nominated to authorise/approve documents and who are
+considered to be a stakeholder or responsible for the content.
+
+Lifecycle The stages of a programme.
+
+‘M’ Mandatory Reviewer _I Individual/team who is obliged to respond to document review. Compulsory
+response to be provided.
+
+‘O' Optional Reviewer Individual/team who is not obliged to respond to document reviews but is given the
+opportunity to volunteer comments.
+
+0.7 Changes Expected
+
+Changes
+
+Other ongoing changes expected with organisation changes within HNG-X programme
+Await Corporate direction on changing the Copyright statement from Fujitsu Services to Fujitsu (UK & Ireland),
+
+0.8 Accuracy
+
+This is not a Contract Controlled Document (CCD).
+
+Fujitsu (UK & Ireland) endeavours to ensure that the information contained in this document is correct but, whilst
+every effort is made to ensure the accuracy of such information, it accepts no liability for any loss (however
+caused) sustained as a result of any error or omission in the same.
+
+0.9 Security Risk Assessment
+
+Security risks have been assessed and it is considered that there are no security risks relating specifically to this
+document.
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date’ 19-Jan-2010
+
+STORED Page No: 9 of 57
+FUJ00096658
+FUJ00096658
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+fee)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+1 Introduction
+
+This Reviewer and Approver Role Matrix has been produced in agreement with Programme
+Directors and Senior Managers. Its purpose is to provide document reviewers and document
+control staff with a referral matrix (based on document type) on which documents need to be
+reviewed and approved by key individuals/roles primarily within the HNG-X programme.
+
+This matrix applies primarily to HNG-X documents. There is a separate reviewer and approver
+role matrix for Horizon (ref. CM/ION/078).
+
+The matrix is restricted to a subset of the document types that are defined in the HNG-X
+Document Standard. These key document types reflect outputs from the HNG-X programme
+lifecycle stages and are therefore categorized as Lifecycle Documents.
+
+2 Scope
+
+This matrix is applicable to all HNG-X lifecycle documents regardless of their origin, i.e.
+internally produced by Fujitsu RMGA HNG-X Programme or those documents being submitted
+by the customer or suppliers.
+
+The document types have been derived as the Programme Lifecycle documents which will
+eventually map onto the HNGxDBM, which in turn is derived from ADBM and IDBM. Where
+Service Management (RMGA Customer Service) is using SDBM then the appropriate artefacts
+will be explicitly described here. There are also some document types which have been
+commonly used in Horizon and will be adopted in HNG-X.
+
+Not all document types used by the HNG-X Programme are specified here, only those
+considered lifecycle documents. It remains the responsibility of the author of all other types of
+documents to determine the reviewers and approvers for their document.
+
+3 Use of the Matrix
+
+Authors should refer to the matrix to ascertain which roles and individuals should review and
+approve their documents.
+
+The reviewers and approvers shown are a mandatory minimum requirement, but it may be
+appropriate or necessary to include additional reviewers and approvers.
+
+If you are in any doubt, refer to the owner and / or approver of the document you are authoring.
+
+If you feel there are inaccuracies or know of changes that should be made please contact RMGA
+Document Management.
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date’ 19-Jan-2010
+
+STORED Page No: 10 of 57
+FUJ00096658
+FUJ00096658
+
+RMGA Document Reviewers/Approvers Role Matrix "
+
+Pee)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4 HNG-X Reviewer & Approver Role Matrix
+
+Description Owning Unit ‘Mandatory Assigned/Representative Email
+Reference
+Optional
+‘APprover
+ACS Acceptance Specification I Post Office Ltd M Post Office Ltd Security Manager Sue Lowther (POL, via Doc Control) RMGA Document Management
+(EXTERNAL)
+M Acceptance Manager David Cooke Cooke David
+M Post Office Ul Assurance Manager Phil Norton (POL, via Doo Control) RMGA Document Management
+M Applications Engineering Manager Graham Allen Allen Graham (BRAO?)
+Pick appropriate reviewer from: Pick from:
+4. Steve Evans Counter, BAL/OSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+8. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+Andy Beardmore Host Online Systems Beardmore Andy
+M Solution Design / Development
+olution Design /Development Roger Barnes Host Batch Systems Bares Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell Fle transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+M Testing Manager Debbie Richardson Richardson Debbie DB
+M Security Architect Jim Sweeting ‘Sweeting Jim
+M Head of Service Change & Transition I Graham Welsh Welsh Graham
+° Security & Risk Team CSPOA Security
+° infrastructure Design Pat Lywood Lywood Pat
+° Integration Team Manager Peter Okely Okely Peter
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+
+STORED Page No: 11 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° ust John Rogers Rogers John
+° SV&I Manager Chris Maving Maving Chris
+° Service Network fan Mills Mills fan
+° Service Support Kirsty Gallacher Gallacher Kirsty
+° Service Director David Keeling Keeling David
+° Business Continuity ‘Adam Parker Parker Adam
+‘AP Post Office Limited Mark Burley (POL, via Document Control) RMGA Document Management
+AP Acceptance Manager David Cooke Cooke David
+Als Application Interface I Post Office Ltd M Post Office Security Manager Sue Lowther RMGA Document Management
+Specification
+(EXTERNAL) M Security Architect Jim Sweeting ‘Sweeting Jim
+Pick appropriate reviewer from: Pick from:
+41, Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+5. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+Andy Beardmore Host Online Systems Beardmore Andy
+M Solution Design / Development
+olution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, soe 1 & 2 above.
+M ssc Tony Little Little Tony
+° Security & Risk Team CSPOA Security
+° Security Architect Jim Sweeting ‘Sweeting Jim
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+
+‘SCopyright Fujitsu Services Ltd 2010
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED OR LOCALLY
+
+STORED
+
+Ref. PGM/DCMIION/0001
+Version: 56.0
+
+Date: 19-Jan-2010
+PageNo: 12 0f 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° Applications Architecture David Johns Johns David DL
+° Testing Manager Debbie Richardson Richardson Debbie DB
+° ust John Rogers Rogers John
+° SV8I Manager Chris Maving Maving Chris
+° Test Design George Zolkiewka Zolkiewka George GJ
+° Programme Manager Geoff Butts Butts Geoff
+° UST Manager Sheila Bamber ‘Bamber Sheila
+° Tester Hamish Munro Munro Hamish
+° RV Manager James Brett (POL, JTT) &
+RMGA Document Management
+° VI Manager Mark Ascott Ascott Mark MA
+AP Fe ON EY non On Pest Office I Bost office Limited (via Document Control) RMGA Document Management
+‘Subsequent revisions must be ;
+; Lead Architect or Programme Manager or
+AP approved by all parties prior to equivalent. For Fujitsu: Jim Sweeting
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date:
+
+STORED
+
+Ref. PGM/DCMIION/0001
+Version: 56.0
+
+19-Jan-2010
+Page No: 13 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+ARC Solution / Topic I Architecture Pick appropriate reviewer from: Pick from:
+Architecture 1. Steve Evans Counter, BAL/OSR, Audit Evans Steve (BRAO1)
+2, Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+5. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+Andy Beardmore Host Online Systems Beardmore Andy
+i 1
+
+M Solution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark.
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+
+M Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+
+M HNG-X Service Transition Graham Welsh Welsh Graham
+
+M Security Architect vim Sweeting ‘Sweeting Jim
+
+M Information Governance Brian Pinder Pinder Brian
+
+M System Qualities Architecture Dave Chapman Chapman David (BRAO1)
+
+° Security & Risk Team im CSPOA Security
+
+° Architect Jason Clark Clark Jason
+
+° Architect - Counter Ben Holland Holland Ben
+
+° Architect - BAL Andy Thomas Thomas Andrew
+
+° Test Design George Zolkiewka Zolkiewka George GJ
+
+° Service Network fan Mills Mills tan
+
+° Service Support Kirsty Gallacher Gallacher Kirsty
+
+° LsT John Rogers Rogers John
+
+° LST Manager Sheila Bamber Bamber Sheila
+
+° SV&I Manager Chris Maving Maving Chris
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED PageNo: 14 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° Tester Hamish Munro ‘Munro Hamish
+° RV Manager James Brett (POL, JTT) i
+RMGA Document Management
+° Vi & TE Manager Mark Ascott Ascott Mark MA
+° Testing Manager Debbie Richardson Richardson Debbie DB
+° Head of Service Management Gaetan van Achte Van Achte Gaetan
+° ssc Tony Little Little Tony
+° Business Continuity ‘Adam Parker Parker Adam
+° Head of Service Change & Transition I Graham Welsh Welsh Graham
+° Data Centre Migration Vince Cochrane Cochrane Vince
+° Integration Team Manager Peter Okely Okely Peter
+° Programme Manager Geoff Butts Butts Geoff
+° Integrity Testing Michael Welch Welch Michael J
+° Security Peter Sewell Sewell Peter (FELO1)
+° Core Services Ed Ashford Ashford Edward
+° Core Services ‘Andrew Gibson Gibson Andrew
+° Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+° Lead Architect Systems / Estate I 1... gwen Bowen lan
+Management
+° POL Design Authority an Trundell (POL, via Document Control) RMGA Document Management
+Ap Security Architect zim Sweeting (approval authority for Security topic I Sweeting Jim
+AP Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+AP Programme Manager Geoff Butts Butts Geoff
+ee eg eee eu a ec ae eeu en cue
+BATR Business Acceptance I Testing M Testing Manager Debbie Richardson Richardson Debbie DB
+Test Report M Programme Manager Geoff Butts Butts Geoff
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED PageNo: 15 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+M Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+M Post Office U! Assurance Manager Phil Norton (POL, via Doe Control) BMGAPecumentManagement
+Pick appropriate reviewer from: Pick from:
+4. Pat Lywood Infrastructure Design Lywood Pat
+2. Steve Evans Counter, BAL/OSR, Audit Evans Steve (BRA01)
+3. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+4, Jerry Acton Systems Management Jerry Acton
+5. Karen Morley Counter Infr. and Packaging Morley Karen V
+6. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+° ‘Solution Design / Development ‘Andy Beardmore Host Online Systems Beardmore Andy
+Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+° HNG-X Service Transition Graham Welsh Welsh Graham
+° Acceptance Manager David Cooke Cooke David
+AP Acceptance Manager David Cooke Cooke David
+BRD Business Requirements I Requirements M Requirements David Cooke ‘Cooke David
+Definition -
+M Applications Architecture. David Johns Johns David DL
+‘SCopyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCMIION/0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED PageNo: 16 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+Pick appropriate reviewer from:
+
+1. Steve Evans Counter, BAL/OSR, Audit
+
+2, Mukesh Mehta Estate Management, Audit
+3. Jerry Acton Systems Management
+
+4, Karen Morley Counter Infr. and Packaging
+5. For Host Development, from:
+
+David Harrison Host Dev Management
+
+Pick from:
+Evans Steve (BRAO1)
+Mehta Mukesh
+
+Jerry Acton
+
+Morley Karen V
+
+Harrison David P
+
+M Solution Design / Development Andy Beardmore Host Online Systems. Beardmore Andy
+s i Roger Barnes Host Batch Systems Bares Roger
+
+Duncan MacDonald Host Reference Data Macdonald Duncan
+
+Andy Williams Agent and Web Services Williams Andy
+
+Sarah Selwyn Cryptography Selwyn Sarah
+
+Mark Wright Scheduling Wright Mark
+
+Gary Maxwell File transfer Maxwell Gary
+
+Mike Croshaw Time Sync Croshaw Mike
+
+For Audit, see 1 & 2 above.
+M ‘Security Architect ‘Sweeting ‘Sweeting Jim
+° Security & Risk Team CSPOA Security
+° Test Design George Zolkiewka Zolkiewka George GJ
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+° Testing Manager Debbie Richardson Richardson Debbie OB
+3° LST Manager Sheila Bamber Bamber Sheila
+° SV&l Manager ‘Chris Maving Maving Chris
+° Tester Hamish Munro Munro Hamish
+
+GRO 7
+° RV Manager James Brett (POL.JTT)
+RMGA Document Management
+
+° VI & TE Manager Mark Ascott Ascott Mark MA
+° Information Governance Brian Pinder Pinder Brian
+° Head of Service Change & Transition Graham Welsh Welsh Graham
+° Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+AP Post Office Ltd (Design Authority) David Gray (POL, via Document Control) RMGA Document Management
+
+©Copyright Fujitsu Services Ltd 2010
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date:
+
+STORED
+
+Ref: PGM/DCM/ION/0001
+Version: 56.0
+
+19-Jan-2010
+Page No: 17 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+AP Applications Engineering Manager Graham Allen Allen Graham (BRA01)
+cre Component Integration I Development M To be advised by Author To be advised by Author
+Test Plan
+M UsT John Rogers Rogers John
+M SV&l Manager Chris Maving Maving Chris
+Pick appropriate reviewer from: Pick from:
+41. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+8. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+‘Andy Beardmore Host Online Systems Beardmore Andy
+° Solution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+° ust John Rogers Rogers John
+° Testing Manager Debbie Richardson Richardson Debbie DB
+° Test Design George Zolkiewka Zolkiewka George GJ
+f GRO
+° Testing Lee Farman (POL, JT) ~
+RMGA Document Management
+° Security Peter Sewell Sewell Peter (FELO1)
+AP To be advised by Author To be advised by Author; and included as
+TP Component Test Plan Development M Solution/Infrastructure Design Author(s) of HLD(s)
+M Development Peer Developer
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED Page No: 18 of 57,
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+
+FUJ00096658
+
+M ust John Rogers Rogers John
+M SV&I Manager Chris Maving Maving Chris
+M ssc Tony Little Little Tony
+° Security Peter Sewell ‘Sewell Peter (FELO1)
+° Business Continuity Adam Parker Parker Adam
+° Service Support Kirsty Gallacher Gallacher Kirsty
+° HNG-X Service Transition Graham Welsh Welsh Graham
+° LST Manager Sheila Bamber Bamber Sheila
+° Tester Hamish Munro Munro Hamish
+° RV Manager James Brett (POL, JTT) ‘hun Document Management
+° Vi & TE Manager Mark Ascott Ascott Mark MA
+° Programme Manager Geoff Butts Butts Geoff
+° Testing Manager Debbie Richardson Richardson Debbie DB.
+° Test Design George Zolkiewka Zolkiewka George GJ
+° Testing Lee Farman (POL, JTT)
+RMGA Document Management
+‘SCopyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCMIION/0001
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date:
+
+STORED
+
+Version: V56.0
+19-Jan-2010
+Page No: 19 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+Pick appropriate reviewer from:
+
+Steve Evans Counter, BAL/OSR, Audit
+
+. Mukesh Mehta Estate Management, Audit
+. Jerry Acton Systems Management
+
+. Karen Morley Counter Infr. and Packaging
+. For Host Development, from:
+
+David Harrison Host Dev Management
+
+eo Pepe
+
+Pick from:
+Evans Steve (BRAO1)
+Mehta Mukesh
+
+Jerry Acton
+
+Morley Karen V
+
+Harrison David P
+
+° solution Design / Development ‘Andy Beardmore Host Online Systems Beardmore Andy
+e ps Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+° HNG-X Development Graham Allen Allen Graham (BRA01)
+AP HNG-X Development Graham Allen Allen Graham (BRAO1)
+cITR Component Integration I Development M Development Team Leader
+Test Report
+M Development LD Author
+Programme Manager Geoff Butts Butts Geott
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+Page No: 20 of 57
+
+Version: V56.0
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+FUJ00096658
+
+FUJ00096658
+
+Pick appropriate reviewer from:
+4. Steve Evans Counter, BALIOSR, Audit
+
+2, Mukesh Mehta Estate Management, Audit
+3. Jerry Acton Systems Management
+
+4, Karen Morley Counter Infr. and Packaging
+5. For Host Development, from:
+
+David Harrison Host Dev Management
+
+Pick from:
+Evans Steve (BRAO1)
+Mehta Mukesh
+
+Jerry Acton
+
+Morley Karen V
+
+Harrison David P
+
+° solution Design / Development ‘Andy Beardmore Host Online Systems Beardmore Andy
+s i Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+° ust John Rogers Rogers John
+° LST Manager Sheila Bamber Bamber Sheila
+° SV&I Manager Chris Maving Maving Chris
+° Tester Hamish Munco Munro Hamish
+° Testing Manager Debbie Richardson Richardson Debbie DB
+° RV Manager James Brett (POL, JTT)
+MGA Document Management
+° Vig TE Manager Mark Ascott Ascott Mark MA
+° Test Design George Zolkiewka Zolkiewka George GJ
+° Testing Lee Farman (POL, JTT)
+RMGA Document Management
+° Security Peter Sewell Sewell Peter (FELO1)
+AP Development Team Leader; also to be included as a reviewer.
+
+cTR Component Test Report I Development M Development Team Leader
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED PageNo: 21 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+
+FUJ00096658
+
+M Development LL Author
+Programme Manager Geoff Butts Butts Geoff
+Pick appropriate reviewer from: Pick from:
+4. Steve Evans Counter, BAL/OSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4. Karen Morley Counter Infr. and Packaging Morley Karen V
+8. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+Andy Beardmore Host Online Systems Beardmore Andy
+° Solution Design / Development Roger Barnes Host Batch Systems. Bames Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+° ust John Rogers Rogers John
+° LST Manager Sheila Bamber Bamber Sheila
+° $V&I Manager Chris Maving Maving Chris
+° Tester Hamish Munro Munro Hamish
+° Testing Manager Debbie Richardson Richardson Debbie DB
+GRO. }
+° RV Manager James Brett (POL, JTT) d
+RMGA Document Management
+° Vi8 TE Manager Mark Ascott Ascott Mark MA
+° Test Design George Zoikiewka Zolkiewka George GJ
+° Testing Lee Farman (POL, JT) ‘
+RMGA Document Management
+° Security Peter Sewell Sewell Peter (FELO1)
+AP Development Team Leader
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED Page No: 22 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+DPR Design Proposal
+
+Architecture Pick appropriate reviewer from: Pick from:
+41. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4. Karen Morley Counter Infr. and Packaging Morley Karen V
+5, For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+‘Andy Beardmore Host Online Systems Beardmore Andy
+M Solution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Wiliams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+M Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+M ust John Rogers Rogers John
+M ‘SV&l Manager Chris Maving Maving Chris
+M HNG-X Service Transition Graham Welsh Welsh Graham
+M Security Architect, Jim Sweeting ‘Sweeting Jim
+° Security & Risk Team CSPOA Security
+° Data Centre Migration Vince Cochrane Cochrane Vince
+° Integration Team Manager Peter Okely Okely Peter
+° Test Design George Zolkiewka Zolkiewka George GJ
+° Programme Manager Geoff Butts Butts Geoff
+° Applications Engineering Manager Graham Allen Allen Graham (BRAQ1)
+° Head of Service Change & Transition I Graham Welsh Welsh Graham
+° Testing Manager Debbie Richardson Richardson Debbie DB
+° LST Manager Sheila Bamber Bamber Sheila
+
+‘SCopyright Fujitsu Services Ltd 2010
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date:
+
+STORED
+
+Ref. PGM/DCMIION/0001
+Version: 56.0
+
+19-Jan-2010
+Page No: 23 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° Tester Hamish Munro Munro Hamish
+° RV Manager James Brett (POL, JTT) i
+RMGA Document Management
+oO VI Manager Mark Ascott Ascott Mark MA
+° Business Continuity ‘Adam Parker Parker Adam
+° Service Director David Keeling Keeling David
+° Head of Service Management Gaetan van Achte Van Achte Gaetan
+° ssc Tony Little Little Tony
+° Service Support Kirsty Gallacher Gallacher Kirsty
+° Service Network Jan Mills Mills tan
+AP Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+AP Programme Manager Geoff Butts Butts Geoff
+FSR Feasibility Study Report I Business Development M Programme Manager Geoff Butts Butts Geoff
+M Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+Pick appropriate reviewer from: Pick from:
+1. Steve Evans Counter, BAL/OSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4. Karen Morley Counter Infr. and Packaging Morley Karen V
+5. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+. Andy Beardmore Host Online Systems Beardmore Andy
+M ‘Solution De / Devel it
+olution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync ‘Croshaw Mike
+For Audit, see 1 & 2 above.
+
+‘SCopyright Fujitsu Services Ltd 2010
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED OR LOCALLY
+
+STORED
+
+Ref,
+Version:
+Date:
+
+Page No:
+
+PGM/DCM/ION/0001
+
+V56.0
+19-Jan-2010
+24 of S7
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+M Service Director David Keeling Keeling David
+M Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+M Information Governance Brian Pinder Pinder Brian
+° Security & Risk Team CSPOA Security
+° Service Network fan Mills Mills tan
+° Business Development Director Mike Nardin Nardin Mike
+AP Programme Manager Geoff Butts Butts Geoff
+AP Business Development Director Mike Nardin Nardin Mike
+HLD igh Level Design ‘Solution Design / M ‘Solution Design / infrastructure Design I Peer Reviewer
+Infrastructure Design
+M Development Author(s) of Child LLDs
+M Architecture Author(s) of Parent Architecture
+Pick appropriate reviewer from: Pick from:
+4, Pat Lywood Infrastructure Lywood Pat
+2. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAQ1)
+3. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+4, Jerry Acton Systems Management Jerry Acton
+5. Karen Morley Counter Infr. and Packaging Morley Karen V
+6. For Host Development, from:
+- David Harrison Host Dev Management Harrison David P
+M aie Design / Solution Design / I pndy Beardmore Host Online Systems Beardmore Andy
+Roger Bames Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+M ssc Tony Little Little Tony
+M Business Continuity ‘Adam Parker Parker Adam
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date 19-Jan-2010
+STORED PageNo: 25 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+LsT
+
+John Rogers
+
+Rogers John
+
+SV&l Manager
+
+Chris Maving
+
+Maving Chris
+
+RV Mig Test Manager
+
+Graham Jennings (for Migration HLDs only)
+
+Jennings Graham
+
+Chief Information Security Officer Tom Lillywhite Lillywhite Tom,
+Security & Risk Team CSPOA Security
+Programme Manager Geoff Butts Butts Geoff
+
+Applications Architecture David Johns Johns David DL
+
+System Qualities Architecture
+
+Dave Chapman
+
+‘Chapman David (BRAQ1)
+
+Architect Jason Clark Clark Jason
+Security Architect jim Sweeting ‘Sweeting Jim
+Test Design George Zolkiewka Zolkiewka George GJ
+
+Head of Service Management
+
+Gaetan van Achte
+
+Van Achte Gaetan
+
+Head of Service Change & Transition
+
+Graham Welsh
+
+Welsh Graham
+
+Service Support
+
+Kirsty Gallacher
+
+Gallacher Kirsty
+
+Service Network
+
+fan Mills
+
+Mills tan
+
+Data Centre Migration
+
+Vinee Cochrane
+
+Cochrane Vince
+
+Integration Team Manager
+
+Peter Okely
+
+Okely Peter
+
+Testing Manager
+
+Debbie Richardson
+
+Richardson Debbie DB
+
+LST Manager
+
+Sheila Bamber
+
+Bamber Sheila
+
+Tester
+
+Hamish Munro
+
+‘Munro Hamish
+
+RV Manager
+
+James Brett (POL, JTT)
+
+GRO j
+
+POL Design Authority
+
+fan Trundell (POL, via Document Control)
+
+RMGA Document Management
+
+olololojolololololololoso}ojoj/ojololololololo}jz}z}z
+
+VI & TE Manager Mark Ascott Ascott Mark MA
+Integrity Testing Michael Welch Welch Michael J
+Core Services Ed Ashford Ashford Edward
+Core Services Andrew Gibson Gibson Andrew
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED Page No: 26 of S7
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+HTP igh Level Test Plan
+
+FUJ00096658
+FUJ00096658
+
+Testing
+
+° Business Architect Gareth Jenkins Jenkins Gareth GI
+° Development Graham Allen Allen Graham (BRA01)
+° Solution Design Architect Sarah Selwyn Selwyn Sarah
+° Software & Solution Design Developer I Stuart Honey Honey Stuart
+° Service Manager - Retail andRMGA —_I Claire Drake Drake Claire
+AP Security Architect ‘Sweeting (for Security HLDs only) ‘Sweeting Jim
+Pick appropriate approver from: Pick from:
+1, Pat Lywood Infrastructure Lywood Pat
+2. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRA01)
+AP Infrastructure Design / Solution DesignI 3. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+4, Jerry Acton Systems Management Jerry Acton
+5. Karen Morley Counter Infr. and Packaging Morley Karen V
+6. David Harrison Host Dev Management Harrison David P
+AP Development Graham Allen Allen Graham (BRA01)
+AP Architecture Author(s) of Parent Architecture(s)
+Pick appropriate reviewer from: Pick from:
+1. Pat Lywood Infrastructure Lywood Pat
+2. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAQ1)
+3. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+4, Jerry Acton Systems Management Jerry Acton
+8. Karen Morley Counter Infr. and Packaging Morley Karen V
+6. For Host Development, from:
+wf besign / Solution Design » I 224 Harrison Host Dev Management Harrison David P
+M Development resign / Solution Design! I andy Beardmore Host Online Systems Beardmore Andy
+Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+
+Mike Croshaw Time Syne
+For Audit, see 1 & 2 above.
+
+Croshaw Mike
+
+‘SCopyright Fujitsu Services Ltd 2010
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date:
+
+STORED
+
+Ref. PGM/DCMIION/0001
+Version: 56.0
+
+19-Jan-2010
+Page No: 27 of 57
+FUJ00096658
+FUJ00096658
+
+co RMGA Document Reviewers/Approvers Role Matrix "
+FUJITSU COMMERCIAL IN CONFIDENCE
+M Testing Manager Debbie Richardson Richardson Debbie DB
+° Test Design George Zolkiewka Zolkiewka George GJ
+° ust John Rogers Rogers John
+° SV&I Manager Chris Maving Maving Chris
+° RV Manager James Brett (POL, JTT) PINGA Document thanagonent
+° Vi & TE Manager Mark Ascott Ascott Mark MA
+° LST Manager Sheila Bamber Bamber Sheila
+° Tester Hamish Munro Munro Hamish
+° Programme Manager Geoff Butts Butts Geoff
+° Test Manager Lee Farman (POL, JTT) Raica Document Management
+° Test Manager Chris Young (POL, JTT) C
+° HNG-X Service Tran Graham Welsh Welsh Graham
+° Security Architect Jim Sweeting ‘Sweeting Jim
+° Core Services Ed Ashford Ashford Edward
+° Core Services Andrew Gibson Gibson Andrew
+AP Testing Manager Debbie Richardson Richardson Debbie DB
+AP Test Manager Lee Farman (POL, JTT)
+RMGA Document Management
+
+DD Increment Definition I Integration M Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+‘Document
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+
+STORED Page No: 28 of S7
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix "
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+Pick appropriate reviewer from: Pick from:
+
+1. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAQ1)
+2, Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerty Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging I Morley Karen V
+8, For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+‘Andy Beardmore Host Online Systems Beardmore Andy
+
+™ Solution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+
+M Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+
+M Test Design George Zolkiewka Zolkiewka George GJ
+
+° Programme Manager Geoff Butts Butts Geoff
+
+° Configuration Management Tariq Arain / Dave Pooler Arain Tariq / Pooler Dave
+
+° Core Services Ed Ashford Ashford Edward
+
+AP Integration Team Manager Peter Okely Okely Peter
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED Page No: 29 of 57
+
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+FS Interface
+(internal)
+
+Specification
+
+‘Solution Design /
+Infrastructure Design
+
+Infrastructure Design / Solution Design /
+
+Pick appropriate reviewer from:
+4. Pat Lywood Infrastructure
+
+2, Steve Evans Counter, BALIOSR, Audit
+
+3. Mukesh Mehta Estate Management, Audit
+4, Jerry Acton Systems Management
+
+5. Karen Morley Counter Infr. and Packaging
+6. For Host Development, from:
+
+David Harrison Host Dev Management
+
+Pick from:
+Lywood Pat
+
+Evans Steve (BRA01)
+Mehta Mukesh
+
+Jerry Acton
+
+Morley Karen V
+
+Harrison David P
+
+M Development Andy Beardmore Host Online Systems Beardmore Andy
+Roger Barnes Host Batch Systems Bames Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark.
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+
+M ssc Tony Little Little Tony
+
+M Security Architect Jim Sweeting ‘Sweeting Jim
+
+M LsT John Rogers Rogers John
+
+M SV&I Manager Chris Maving Maving Chris
+
+° Security & Risk Team ‘GRO I CSPOA Security
+
+° Applications Architecture David Johns Johns David DL
+Gaetan van Achte Van Achte Gaetan
+
+° Head of Service Management
+
+° Service Support Kirsty Gallacher Gallacher Kirsty
+
+° Service Network fan Mills Mills tan
+
+° Business Continuity Adam Parker Parker Adam
+
+° CS Reference Data Introduction Kevin McKeown McKeown Kevin
+
+° LST Manager Sheila Bamber Bamber Sheila
+
+° Tester Hamish Munro ‘Munro Hamish
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED PageNo: 30 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° RV Manager James Brett (POL, JTT) te
+MGA Document Management
+
+° VI Manager Mark Ascott Ascott Mark MA
+
+° Core Services Ed Ashford Ashford Edward
+
+° Core Services Andrew Gibson Gibson Andrew
+
+° Development Graham Allen Allen Graham (BRAQt)
+
+AP Development Graham Allen Allen Graham (BRAQ1)
+fit) Low Level Design Development M Solution Design / Infrastructure Design I Author(s) of parent HLD(s)
+
+M LsT John Rogers Rogers John
+
+M ‘SV&l Manager Chris Maving Maving Chris
+
+M ssc Tony Little Little Tony
+
+° Chief Information Security Officer Tom Lillywhite Lillywhite Tom
+
+° ‘Security and Risk Team CSPOA Security
+
+° ‘System Qualities Architecture Dave Chapman ‘Chapman David (BRAQ1)
+
+° Architect Jason Clark Clark Jason
+
+° Business Continuity Adam Parker Parker Adam
+
+° Service Support Kirsty Gallacher Gallacher Kirsty
+
+° HNG-X Service Transition Graham Welsh Welsh Graham
+
+° Service Network fan Mills Mills fan
+
+° Data Centre Migration Vince Cochrane Cochrane Vince
+
+° Integration Team Manager Peter Okely Okely Peter
+
+° LST Manager Sheila Bamber Bamber Sheila
+
+° Tester Hamish Munro ‘Munro Hamish
+
+° RV Manager James Brett (POL, JTT)
+
+RMGA Document Management
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED PageNo: 31 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+utp Low Level Test Plan
+
+Testing
+
+FUJ00096658
+FUJ00096658
+
+° VI& TE Manager Mark Ascott Ascott Mark MA
+° integrity Testing Michael Wetch Welch Michael J
+° Development Graham Allen Allen Graham (BRA01)
+° Networks Architect (Data Centre) Mark Jarosz Jarosz Mark
+AP Solution Design / Infrastructure Design I Authors of parent HLD(s); and include as reviewer
+M Individual Test Team Managers
+Programme Manager Geoff Butts Butts Geoff
+Pick appropriate reviewer from: Pick from:
+1. Pat Lywood Infrastructure Lywood Pat
+2. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+3. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+4, Jerry Acton Systems Management Jerry Acton
+8. Karen Morley Counter Infr. and Packaging Morley Karen V
+6. For Host Development, from:
+wn Design / Solution Design » I 88 Harrison Host Dev Management Harrison David P
+° Developmen resign / Solution Design! I andy Beardmore Host Online Systems Beardmore Andy
+Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+° Security Peter Sewell Sewell Peter (FELO1)
+° Testing Manager Debbie Richardson Richardson Debbie DB
+AP Testing Manager Debbie Richardson Richardson Debbie DB
+AP Test Manager Lee Farman(POL, JTT)
+
+‘SCopyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED OR LOCALLY
+
+COMMERCIAL IN CONFIDENCE
+
+STORED
+
+Ref: PGM/DCM/ION/0001
+Version: 56.0
+
+Date: 19-Jan-2010
+
+Page No: 32 of 57
+
+RMGA Document Management
+
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+ATR Operational Test Report I Testing ° Programme Manager Geoff Butts Butts Geoff
+
+° Infrastructure Design Pat Lywood Lywood Pat
+Pick appropriate reviewer from: Pick from:
+1. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4. Karen Morley Counter Infr. and Packaging Morley Karen V
+8. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+Andy Beardmore Host Online Systems Beardmore Andy
+
+° Solution Design/Development Roger Barnes Host Batch Systems. Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+
+° Security Peter Sewell Sewell Peter (FELO1)
+
+AP Programme Manager Geoff Butts Butts Geoff
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED Page No: 33 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+OLA
+
+Operational
+Agreement
+
+Level
+
+Service Management
+
+Pick appropriate reviewer from:
+1. Steve Evans Counter, BAL/OSR, Audit
+
+2, Mukesh Mehta Estate Management, Audit
+3. Jerry Acton Systems Management
+
+4, Karen Morley Counter Infr. and Packaging
+5. For Host Development, from:
+
+David Harrison Host Dev Management
+
+Pick from:
+
+Evans Steve (BRAO1)
+Mehta Mukesh
+
+Jerry Acton
+
+Morley Karen V
+
+Harrison David P
+
+©Copyright Fujitsu Services Ltd 2010
+
+M Solution DesigiDevelopment Andy Beardmore Host Online Systems. Beardmore Andy
+9 ° Roger Barnes Host Batch Systems Bares Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+M Service Support Kirsty Gallacher Gallacher Kirsty
+M Head of Service Management Gaetan van Achte Van Achte Gaetan
+M ssc Tony Little Little Tony
+M Head of Service Change & Transition Graham Welsh Welsh Graham
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+° Testing Manger Debbie Richardson Richardson Debbie DB
+° Programme Manager Geoff Butts Butts Geoff
+° Service Architect Jim Sweeting ‘Sweeting Jim
+° ‘Service Network Jan Mills. Mills tan
+° Business Continuity Adam Parker Parker Adam
+° Information Governance Brian Pinder Pinder Brian
+° Security Peter Sewell ‘Sewell Peter (FELO1)
+° Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+° Service Director David Keeling Keeling David
+AP Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+CONIMERCIAL IN CONFIDENCE Ref, PGM/DCMIONT0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+
+STORED
+
+Page No: 34 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+AP Service Director David Keeling Keeling David
+AP Head of Service Management Gaetan van Achte Van Achte Gaetan
+PPD Physical Platform Design I Infrastructure Vijesh Pandya (Windows NT) Pandya Vijesh
+Architecture/Design M Integration Y
+‘Akee! Bhandari (Unix) Bhandari Akee! (BRAO1)
+M integration Architect ‘Alan Holmes Holmes Alan
+Pick appropriate reviewer from: Pick from:
+1. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+8. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+; Andy Beardmore Host Online Systems Beardmore Andy
+M Solution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+M Security Architect Jim Sweeting ‘Sweeting Jim
+M ssc Tony Little Little Tony
+° Security & Risk Team CSPOA Security
+° Data Centre Migration Vince Cochrane Cochrane Vince
+° integration Team Manager Peter Okely Okely Peter
+° Test Design George Zolkiewka Zolkiewka George GJ
+° ust John Rogers Rogers John
+° SV&I Manager Chris Maving Maving Chris
+° Integration Architects David Johns Johns David DL
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED PageNo: 35 of 57
+FUJ00096658
+FUJ00096658
+
+co RMGA Document Reviewers/Approvers Role Matrix "
+FUJITSU COMMERCIAL IN CONFIDENCE
+° LST Manager Sheila Bamber Bamber Sheila
+° Software CM Tariq Arain / Dave Pooler Arain Tariq / Pooler Dave
+° Tester Hamish Munro Munro Hamish
+° RV Manager James Brett (POL, JTT)
+RMGA Document Management
+° Vi & TE Manager Mark Ascott Ascott Mark MA
+° Testing Manager Debbie Richardson Richardson Debbie DB
+° Integrity Testing Michael Welch Welch Michael J
+° Core Services ‘Andrew Gibson Gibson Andrew
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+AP Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+PsD Platform Set Definition I Testing M Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+Pick appropriate reviewer from: Pick from:
+4. Pat Lywood Infrastructure Lywood Pat
+2. Steve Evans Counter, BAL/OSR, Audit Evans Steve (BRAQ1)
+3. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+4, Jerry Acton Systems Management Jerry Acton
+5. Karen Morley Counter Infr. and Packaging Morley Karen V
+6. For Host Development, from:
+, David Harrison Host Dev Management Harrison David P
+M Gecsijpenent an! Solution Design’ I andy Beardmore Host Online Systems Beardmore Andy
+Roger Barnes Host Batch Systems Bares Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+M Test Design George Zolkiewka Zolkiewka George GJ
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+
+STORED Page No: 36 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° Configuration Management Tariq Arain / Dave Pooler Arain Tariq / Pooler Dave
+° Security Architect Jim Sweeting ‘Sweeting Jim
+° Programme Manager Geoff Butts Butts Geoff
+° Core Services Ed Ashford Ashford Edward
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+AP Test Design George Zolkiewka Zolkiewka George GJ
+RTM Requirements Requirements Pick appropriate reviewer from: Pick from:
+Traceability Matrix 4. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3, Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+5. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+M Infrastructure Design / Solution Design / I Andy Beardmore Host Online Systems Beardmore Andy
+Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark.
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above,
+M Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+M Head of Service Change & Transition I Graham Welsh Welsh Graham
+M Information Governance Brian Pinder Pinder Brian
+° Security & Risk Team CSPOA Security
+° Data Centre Migration Vince Cochrane Cochrane Vince
+° Integration Team Manager Peter Okely Okely Peter
+° Test Design George Zolkiewka Zolkiewka George GJ
+° Testing Manager Debbie Richardson Richardson Debbie DB
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED PageNo: 37 of 57
+FUJ00096658
+FUJ00096658
+
+(oe) RMGA Document Reviewers/Approvers Role Matrix ”
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+° Programme Manager Geoff Butts Butts Geoff
+
+° Security Peter Sewell Sewell Peter (FELO1)
+
+AP Programme Manager Geoff Butts Butts Geoff
+
+REN Release Note Service Management M Head of Service Management Gaetan van Achte Van Achte Gaetan
+M RV Manager James Brett (POL) t
+RMGA Document Management
+
+Pick appropriate reviewer from: Pick from:
+1. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+5. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+
+° Design / Development Andy Beardmore Host Online Systems Beardmore Andy
+
+st pt Roger Barnes Host Batch Systems Barnes Roger
+
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+
+° Programme Manager Geoff Butts Butts Geoff
+
+° Service Director David Keeling Keeling David
+
+° ssc Tony Little Little Tony
+
+° Head of Service Change & Transition I Graham Welsh Welsh Graham
+
+AP Head of Service Management Gaetan van Achte Van Achte Gaetan
+
+AP Head of Service Change & Transition I Graham Welsh Welsh Graham
+
+sD Service . Service Management ° Programme Manager Geoff Butts Butts Geoff
+ip
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+
+STORED Page No: 38 of ST
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° Service Architect Jim Sweeting ‘Sweeting Jim
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+° Testing Manager Debbie Richardson Richardson Debbie DB
+° Information Governance Brian Pinder Pinder Brian
+° Security Peter Sewell ‘Sewell Peter (FELO1)
+° HNG-X Service Transit Graham Welsh Welsh Graham
+° Data Centre Migration Vince Cochrane Cochrane Vince
+° Integration Team Manager Peter Okely Okely Peter
+° Head of Service Management Gaetan van Achte Van Achte Gaetan
+AP Head of Service Management Gaetan van Achte Van Achte Gaetan
+AP Post Office Ltd Post Office Ltd (via Document Control) RMGA Document Management
+SIP Service Introduction Plan I Service Management M Head of Service Management Gaetan van Achte Van Achte Gaetan
+M Security Peter Sewell ‘Sewell Peter (FELO1)
+M POL Release Management Team POL Release Management Team MGA Document Management
+M Data Centre Migration Vince Cochrane Cochrane Vince
+M Integration Team Manager Peter Okely Okely Peter
+° Programme Manager Geoff Butts Butts Geoff
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date:
+
+Version: 56.0
+
+Page No: 39 of 57
+
+19-Jan-2010
+RMGA Document Reviewers/Approvers Role Matrix
+
+Pee)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+Pick appropriate reviewer from: Pick from:
+1. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAQ1)
+2, Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerty Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging I Morley Karen V
+8, For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+‘Andy Beardmore Host Online Systems Beardmore Andy
+° Solution Design / Development
+olution Design / Developmen Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+° RV Manager James Brett (POL, JTT) 3
+RMGA Document Management
+° Service Architect Jim Sweeting Sweeting Jim
+° Service Support Kirsty Gallacher Gallacher Kirsty
+° Service Network fan Mills Mills tan
+° Business Continuiy Adam Parker Parker Adam
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+° ‘ssc Tony Little Little Tony
+° Head of Service Change & Transition I Graham Welsh Welsh Graham
+° Service Director David Keeling Keeling D
+AP Service Director David Keeling Keeling Da
+AP Head of Service Management Gaetan van Achte Van Achte Gaetan
+AP Head of Service Change & Transition I Graham Welsh Welsh Graham
+
+SPG ‘Support Guide Service Management M ssc Tony Little Little Tony
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED PageNo: 40 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+Pick appropriate reviewer from: Pick from:
+41, Pat Lywood Infrastructure Lywood Pat
+2. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+3. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+4, Jerty Acton Systems Management Jerry Acton
+8, Karen Morley Counter Infr. and Packaging I Morley Karen V
+. For Host Development, from:
+; David Harrison Host Dev Management Harrison David P
+M Ceestperent Design / Solution Design’ I andy Beardmore Host Online Systems. Beardmore Andy
+Roger Barnes Host Batch Systems Bames Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+M Service Network lan Mills (for Network guides) Mills tan
+M Core Services ‘Andrew Gibson Gibson Andrew
+° Service Support Kirsty Gallacher Gallacher Kirsty
+° HING-X Service Trani Graham Welsh Welsh Graham
+° Architecture David Johns Johns David DL
+° Head of Service Management Gaetan van Achte Van Achte Gaetan
+° Infrastructure Design Dave Haywood (for Network guides) Haywood Dave
+° Service Manager - Retail and RMGA I Claire Drake Drake Claire
+AP ssc Tony Little (except for Network guides) Little Tony
+AP Service Network lan Mills (for Network guides) Mills tan
+
+SRS System
+
+Requirement
+
+Requirements M
+
+Infrastructure Design
+
+Pat Lywood (or nominees)
+
+Lywood Pat
+
+pevificatior
+
+‘SCopyright Fujitsu Services Ltd 2010
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date:
+
+STORED
+
+Ref. PGM/DCMIION/0001
+Version: 56.0
+
+19-Jan-2010
+Page No: 41 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+Pick appropriate reviewer from: Pick from:
+1. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2, Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerty Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging I Morley Karen V
+5, For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+Andy Beardmore Host Online Systems Beardmore Andy
+i 1
+
+™ Solution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+
+M Head of Service Change & Transition I Graham Welsh Welsh Graham
+
+M Security Architect Jim Sweeting ‘Sweeting Jim
+
+° Security & Risk Team CSPOA Security
+
+° Data Centre Migration Vinee Cochrane Cochrane Vince
+
+° Integration Team Manager Peter Okely Okely Peter
+
+° Test Design George Zolkiewka Zolkiewka George GJ
+
+° Testing Manager Debbie Richardson Richardson Debbie DB
+
+° Programme Manager Geoff Butts Butts Geoff
+
+° LST Manager Sheila Bamber Bamber Sheila
+
+° Tester Hamish Munro Munro Hamish
+
+° RV Manager James Brett (POL, JTT) t :
+
+RMGA Document Management
+
+° Vi& TE Manager Mark Ascott Ascott Mark MA
+
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+
+° ust John Rogers Rogers John
+
+‘SCopyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref PGM/DCMONT0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED Page No: 42 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° ssc Tony Little Little Tony
+AP Programme Manager Geoff Butts Butts Geoff
+ssD System ‘Support I Service Management M SMC Duty Manager ‘SMC Duty Manager
+Documents
+
+M ssc Tony Little Little Tony
+
+M Service Transition Graham Welsh Welsh Graham
+
+M Service Transition Sarah Bull Bull Sarah
+Pick appropriate reviewer from: Pick from:
+41, Pat Lywood Infrastructure Lywood Pat
+2. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+3. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+4, Jerry Acton Systems Management Jerry Acton
+8. Karen Morley Counter Infr. and Packaging Morley Karen V
+6. For Host Development, from:
+
+nt Design / Solution Design / I D2vié Harrison Host Dev Management Harrison David P
+
+M Development esign / Solution Design! I andy Beardmore Host Online Systems Beardmore Andy
+Roger Bames Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+
+° Operations Manager Jerry Acton Acton Jerry A
+
+° Service Delivery Manager Karen Harrod (for SMC) Harrod Karen
+John Bradley (for SMG) Bradley John
+Wayne Bragg (for MSS) Bragg Wayne
+
+° Service Delivery Manager fan Mills Mil tan
+
+° Service Support Kirsty Gallacher Gallacher Kirsty
+
+° Service Delivery Liz Melrose Melrose Liz
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date 19-Jan-2010
+STORED PageNo: 43 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+STG Migration Strategy
+
+FUJ00096658
+FUJ00096658
+
+° LST Manager Sheila Bamber Bamber Sheila
+° Head of Service Management Gaetan van Achte Van Achte Gaetan
+~0
+AP ssc Tony Little Little Tony
+AP Head of Service Management Gaetan van Achte Van Achte Gaetan
+‘AP Service Delivery Manager Karen Harrod (for SMC) Harrod Karen
+John Bradley (for SMG) Bradley John
+Wayne Bragg (for MSS) Bragg Wayne
+‘AP Head of Service Change & Transition I Graham Welsh Welsh Graham
+Requirements & Architecture Pick appropriate reviewer from: Pick from:
+41. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+8. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+Andy Beardmore Host Online Systems Beardmore Andy
+M Solution Design / Development
+olution Design /Devetopment Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Wiliams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+M Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+M Data Centre Migration Vince Cochrane Cochrane Vince
+M integration Team Manager Peter Okely Okely Peter
+M Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+
+‘SCopyright Fujitsu Services Ltd 2010
+
+COMMERCIAL IN CONFIDENCE
+
+Ref:
+Version:
+
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date:
+
+STORED
+
+Page No:
+
+PGM/DCM/ION/0001
+
+V56.0
+19-Jan-2010
+44 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+M RV Manager James Brett (POL. JTT) -
+MGA Document Management
+
+M Head of Service Change & Transition I Graham Welsh Welsh Graham
+
+M Head of Service Management Gaetan van Achte Van Achte Gaetan
+
+M Core Services Ed Ashford Ashford Edward
+
+° Security & Risk Team CSPOA Security
+
+° Test Design George Zolkiewka Zolkiewka George GJ
+
+° Integration Team Manager Peter Okely Okely Peter
+
+° Security Architect ‘Sweeting (also covers Service Architecture) I Sweeting Jim
+
+° Testing Manager Debbie Richardson Richardson Debbie DB
+
+° Programme Manager Geoff Butts Butts Geoff
+
+° LST Manager Sheila Bamber Bamber Sheila
+
+° ‘SV&l Manager Chris Maving Maving Chris
+
+° Tester Hamish Munro ‘Munro Hamish
+
+° Vi & TE Manager Mark Ascott Ascott Mark MA
+
+° Integrity Testing Michael Welch Welch Michael J
+
+° Applications Architecture David Johns Johns David DL
+
+° LsT John Rogers Rogers John
+
+° Information Governance Brian Pinder Pinder Brian
+
+AP Programme Manager Geoff Butts Butts Geoff
+
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED OR LOCALLY
+
+STORED
+
+Ref. PGM/DCMIION/0001
+Version: 56.0
+
+Date: 19-Jan-2010
+
+Page No: 45 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+sTG Testing Strategy
+
+Testing
+
+Pick appropriate reviewer from:
+1. Steve Evans Counter, BAL/OSR, Audit
+
+2, Mukesh Mehta Estate Management, Audit
+3. Jerry Acton Systems Management
+
+4, Karen Morley Counter Infr. and Packaging
+5. For Host Development, from:
+
+David Harrison Host Dev Management
+
+Andy Beardmore Host Online Systems
+
+Pick from:
+Evans Steve (BRAO1)
+Mehta Mukesh
+
+Jerry Acton
+
+Morley Karen V
+
+Harrison David P
+Beardmore Andy
+
+i 1
+M Solution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark.
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+M Testing Manager Debbie Richardson Richardson Debbie DB
+M ust John Rogers Rogers John
+M LST Manager Sheila Bamber Bamber Sheila
+M Vai Manager Chris Maving Maving Chris
+M RV Manager James Brett (POL, JTT) .
+RMGA Document Management
+M Vi & TE Manager Mark Ascott Ascott Mark MA
+M Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+° Programme Manager Geoff Butts Butts Geoff
+° Information Governance Brian Pinder Pinder Brian
+° Security Architect Jim Sweeting ‘Sweeting Jim
+° Head of Service Change & Transition I Graham Welsh Welsh Graham
+° Data Centre Migration Vince Cochrane Cochrane Vince
+° Integration Team Manager Peter Okely Okely Peter
+° Core Services Ed Ashford Ashford Edward
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED PageNo: 46 of 57
+FUJ00096658
+FUJ00096658
+
+co RMGA Document Reviewers/Approvers Role Matrix "
+FUJITSU COMMERCIAL IN CONFIDENCE
+° Test Manager Lee Farman (POL, JTT)
+RMGA Document Management
+° Tester Hamish Munro ‘Munro Hamish
+° Integrity Testing Michael Welch Welch Michael J
+AP Programme Manager Geoff Butts Butts Geoff
+STR ‘System Test Report ‘sV8l Pick appropriate reviewer from: Pick from:
+4. Steve Evans Counter, BAL/OSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4. Karen Morley Counter Infr. and Packaging Morley Karen V
+5. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+‘i ‘Andy Beardmore Host Online Systems Beardmore Andy
+M Solution Design / Development Roger Barnes Host Batch Systems Barnes Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above.
+M LST Manager Sheila Bamber Bamber Sheila
+M ‘SV&I Manager Chris Maving Maving Chris
+° Tester Hamish Munro Munro Hamish
+° Testing Manager Debbie Richardson Richardson Debbie DB
+° Test Manager Chris Young (POL, JTT)
+° Test Manager Lee Farman (POL, JTT)
+° RV Manager James Brett (POL, JTT)
+RMGA Document Management
+° Vi & TE Manager Mark Ascott Ascott Mark MA
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref. PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+
+STORED Page No: 47 of S7
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+°° SV&l Peer Peer Reviewer
+° Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+° Programme Manager Geoff Butts Butts Geoff
+° Security Peter Sewell ‘Sewell Peter (FELO1)
+AP Programme Manager Geoff Butts Butts Geoff
+AP Testing Manager Debbie Richardson Richardson Debbie DB
+AP Testing Lee Farman (POL, JTT)
+RMGA Document Management
+Tis Technical Interface I Post Office Limited Pick appropriate reviewer from: Pick from:
+Specification (External) 4. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh:
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+5. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+Andy Beardmore Host Online Systems Beardmore Andy
+M Solution Design / Development Roger Barnes Host Batch Systems Bames Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography ‘Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Sync Croshaw Mike
+For Audit, see 1 & 2 above,
+M Infrastructure Design Pat Lywood (or nominees) Lywood Pat
+M ssc Tony Little Little Tony
+° Security & Risk Team CSPOA Security
+° ‘Applications Engineering Manager Graham Allen Allen Graham (BRAO1)
+° Security Architect Jim Sweeting ‘Sweeting Jim
+° Programme Manager Geoff Butts Butts Geoff
+‘SCopyright Fujisu Services Ltd 2010 CONIMERCIAL IN CONFIDENCE Ref, PGMIDCMONIO001
+Version; V5.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 49-Jan-2010
+STORED Page No: 48 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° ust John Rogers Rogers John
+
+° SV&I Manager Chris Maving Maving Chris
+
+° TE Manager Mark Ascott Ascott Mark MA
+
+° Service Network fan Mills Mills tan
+
+° Migration Chris Crediand Gredland Chris
+
+° Service Support Kirsty Gallacher Gallacher Kirsty
+
+AP Freese version only: Post Offe® I post Office Limited (via Document Control) RMGA Document Management
+Tsp Transition State Design I implementation 7 oldion Design infasicture Design I Mi*totetlated HLDG) plus
+
+Designer Authors expected to provide solution
+
+M RV Test Graham Jennings Jennings Graham
+
+M Integration Chet Patel Patel Chet
+
+M ‘ssc Tony Little Little Tony
+
+M Integration Team Manager Peter Okely Okely Peter
+
+M Solution Integration Manager Ed Ashford Ashford Edward
+
+M Service Support Kirsty Gallacher Gallacher Kirsty
+
+M Infrastructure Services ‘Andrew Gibson Gibson Andrew
+
+° ‘Security & Risk Team ia GRO_ CSPOA Security
+
+° POL Architect Ghulam Hussain (POL, JTT) RMGA Document Management
+
+° Architect David Johns Johns David DL
+
+° ‘System Qualities Architecture Dave Chapman ‘Chapman David (BRAO1)
+
+° Architect Jason Clark Clark Jason
+
+° Business Continuity Adam Parker Parker Adam
+
+° HING-X Service Transition Graham Welsh Welsh Graham
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY _ Date: 19-Jan-2010
+STORED Page No: 49 of 57
+Fe)
+FUJITSU
+
+RMGA Document Reviewers/Approvers Role Matrix
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00096658
+FUJ00096658
+
+° Service Network fan Mills Mills fan
+° Data Centre Migration Vince Cochrane Cochrane Vince
+° LST Manager Sheila Bamber Bamber Sheila
+° Tester Hamish Munro Munro Hamish
+° ust John Rogers Rogers John
+° ‘SV&l Manager Chris Maving Maving Chris
+° RV Manager James Brett (POL, JTT) i
+RMGA Document Management
+° Vi8 TE Manager Mark Ascott Ascott Mark MA
+° integrity Testing Michael Welch Welch Michael J
+° Development Graham Allen Allen Graham (BRAO1)
+AP Integration Team Manager Peter Okely Okely Peter
+AP Development Graham Allen Allen Graham (BRAO1)
+UATR Unit Acceptance Test I Development Pick appropriate reviewer from: Pick from:
+Report 4. Steve Evans Counter, BALIOSR, Audit Evans Steve (BRAO1)
+2. Mukesh Mehta Estate Management, Audit Mehta Mukesh
+3. Jerry Acton Systems Management Jerry Acton
+4, Karen Morley Counter Infr. and Packaging Morley Karen V
+5. For Host Development, from:
+David Harrison Host Dev Management Harrison David P
+‘Andy Beardmore Host Online Systems Beardmore Andy
+° Solution Design / Development Roger Bames Host Batch Systems Bares Roger
+Duncan MacDonald Host Reference Data Macdonald Duncan
+‘Andy Williams Agent and Web Services Williams Andy
+Sarah Selwyn Cryptography Selwyn Sarah
+Mark Wright Scheduling Wright Mark
+Gary Maxwell File transfer Maxwell Gary
+Mike Croshaw Time Syne Croshaw Mike
+For Audit, see 1 & 2 above.
+° ust John Rogers Rogers John
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: V56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+STORED Page No: 50 of 57
+FUJ00096658
+FUJ00096658
+
+co RMGA Document Reviewers/Approvers Role Matrix
+FUJITSU COMMERCIAL IN CONFIDENCE
+° vai Manager Chris Maving Maving Chris
+AP To be advised by Author To be advised by Author
+©Copyright Fujitsu Services Ltd 2010 COMMERCIAL IN CONFIDENCE Ref: PGM/DCM/ION/0001
+Version: 56.0
+UNCONTROLLED IF PRINTED OR LOCALLY Date: 19-Jan-2010
+
+STORED Page No: 51 of 57

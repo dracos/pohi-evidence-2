@@ -1,0 +1,1280 @@
+QQ
+
+FUJ00078182
+FUJ00078182
+
+t
+
+COPY
+
+STAGE 2 MANAGEMENT PLAN
+
+Bel Peal od iy
+
+0.0 Document Control
+
+Author Rod Stocker
+Date 7th April 1997
+Issue Version 2.0
+
+0.4 Associated Documents
+
+This is not a comprehensive list but it does include all salient documents which it is felt are
+pertinent to those wishing to obtain further details concerning this phase of the programme
+and the associated plan.
+
+Pathway Release Contents PA/STR/0004 1.0 19/2/97 I Steve Warwick
+Description Release 1a
+
+Pathway Release Contents PAJSTR/O005 1.0 19/2/97 I Steve Warwick
+Description Release ib
+
+Pathway Release Contents PA/STR/O006 1.0 19/2/97 I Steve Warwick
+Description Release 1c .
+
+Service Architecture Design CRIFSP/0004 21 20/3/87 I John Dicks
+Documentation (SADD)
+
+Security Functional Specification RS/SSP/0001 2.0 12/11/96 I Peter Harrison
+(SFS) ‘Tom Parker
+Technical Implementation for TD/ARC/006 14 19/2/97 I Harvey Potts
+Pathway Release 1b
+
+Technical Implementation for TDIARC/007 1.0 19/2/97 I Harvey Potts
+Pathway Release ic. .
+
+Technical Implementation for TDIARC/008 1.0 49/2/97 I Harvey Potts
+Pathway Release 1e
+
+Step1 Management Plan ADM.DOC 3.0 15/8/96 _I Rod Stocker
+Release Overview (Confirmed HLFD\SD\0001.01 01 14/4/97 I K Graham
+Scope) CAPS Release 2
+
+CAPS Release 2.2 Technical Scope I TS&P/SD/0002.01 01 13/2/97 _I J Lundy
+
+CAPS High Level Technical Design I TS&P\HLD\0002.01 01 24/2/97 I W Stewart
+(Summary)
+
+List of Offices for Stage 2 Rollout 22 1.0 22 Douglas Craik
+Summary of Operational-Migration 2? 0.1 26/2/97 I Martin Riddell
+Exercises
+
+implementation Strategy IM/STR/0003 41.0 26/2/97_[{ Mark Fisk
+Migration Strategy (Rel 1b onty) IM/STR/0013 2.0 20/3/97 _I Sue Downham
+PDA Joint Test Strategy OVST0O301 2.0 29/1/97 I Gary Palmer
+PDA Model Office Test Strategy CY213.D0C 1.0 22/1/97 _I Chris Young
+
+Ref: AIX.DOC 10 March 1997 Page 1 of 25
+0.2 Document History
+
+Date Version Title
+10 March 1997 4.0 This is the first draft issue
+7 April 1997 2.0 Incorporated comments and corrections
+
+Nothing contained herein shall be deemed or construed as affecting existing
+contractual obligations between ICL Pathway , the DSS and/or POCL.
+
+0.3 Circulation List
+
+Name Organisation Location
+Peter Crahan PDA TH, London
+George McCorkell BA QH 4E12
+Alec Wylie SSA NI
+John Bennett ICL Pathway Feltham
+Terry Austin ICL Pathway Feltham
+Bruce McNiven PDA TH, London
+Paul Rich POCL King Edward Building
+Jane Rintoul CAPS LBTN
+Paul McAnea POU Lisahally, NI
+Gael Stewart PDA TH, London
+Steve Muchow ICL Pathway Feltham
+Peter Jeram ICL Pathway Feltham
+John Cook PDA TH, London
+Graham Katon PDA TH, London
+Phil Grattage PDA TH, London
+Dave McLaughiin PDA TH, London
+Phil Preece PDA TH, London
+Douglas Craik PDA TH, London
+Janis Hatchell PDA TH, London
+John Bruce PDA TH, London
+Karen Rogers PDA TH, London
+Gareth Lewis PDA TH, London
+Robin O'Connor PDA TH, London
+John Meagher PDA TH, London
+Martin Renwick PDA SELDO, London
+Dominic Fagioti CAPS B1605, LBTN
+Bob Burkin PDA TH, London
+Graham Patterson CAPS B1605, LBTN
+Robin Niblock CAPS B1605, LBTN
+Margaret Chaplin BA Euston Rd DO
+Min Burdett POCL Greville St
+Peter Jones TIP Chesterfield
+Dave Jackson POCL (iT) Farnborough
+Dave Parnell POCL (TIP) Chesterfield
+Bob Worsley CAPS B2507, LBTN
+Paul Santilli POCL Farnborough
+Dave White CAPS B1605, LBTN
+Rob Langford PAG 209C NX
+Keith Downer PDA TH, London
+Tim O'Leary POCL Greville St
+Barrie Vaughan ICL Pathway Feltham
+John Hunt ICL Pathway Feltham
+Ref: AIX.DOC 10 March 1997 Page 2 of 25
+
+FUJ00078182
+FUJ00078182
+
+FUJ00078182
+FUJ00078182
+
+Peter Hull CAPS 6 HH (Preston)
+Stuart Riley PDA TH, London
+Pat Kelsey PDA TH, London
+
+Debra Channon PDA TH, London
+
+Mena Rego POCL Greville St
+
+Bill Kerr POCL Greville St
+Wayne Stephens POGAB NX 502K
+John Wright Pathway Feltham
+
+Craig Lewis PDA TH, London
+Martin Croft BAPAG NX 502
+
+Michael Purchase PDA TH, London
+
+‘
+Ref: AIX.DOC 10 March 1997 Page 3 of 25
+0.4 Contents
+
+1.0 Purpose
+2.0 Introduction
+3.0 Plans
+
+3.1 Systems
+3.2 Dates
+3.3 Implementation Profile
+3.4 Constraints
+3.5 Functionality
+3.6 Business Implementation
+3.7 Other Events
+4.0 Architectural Overview
+
+5.0 Acceptance Criteria
+
+6.0 National Rollout
+
+7.0 Service Management
+
+8.0 Nile Release
+
+Appendix A - Definitions
+
+Appendix B - Summary of post offices
+Appendix C - Baselined Plan
+Appendix D - Stage 2 Roll out Profile
+Appendix E - Architectural Overview
+Appendix F - Live Trial
+
+COCMAARA HSA A
+
+=
+=}
+
+YN MR 2 ee an ow a a
+BE onaaen nn se
+
+Ref: AIX.DOC 10 March 1997
+
+Page 4 of 25
+
+FUJ00078182
+FUJ00078182
+FUJ00078182
+FUJ00078182
+
+1.0 Purpose
+
+This document is intended to summarise all aspects of the Stage 2 proposals, giving an
+‘overview of the phased implementation plan to co-ordinate all the detailed plans that exist or
+are being prepared. Whereas it is intended to be the definitive statement of the plan it does not
+Present the detail nor should it be treated as the authoritative document. It cross refers to
+authoritative documents and does not attempt to replace or supersede them, merely to
+present an overview of the total plan and enlarge on the PDA Master plan for this phase of the
+programme
+
+This document covers the period referred to as Stage 2 which encompasses the phased
+release of CAPS Release 2 and Pathway Release 1 in conjunction with other DSS and PO
+Projects which interface to them culminating in Contractual acceptance at the end of the Live
+Trial.
+
+2.0 Introduction
+
+Currently there are ten post offices in the Stroud Area offering a service to pay Child Benefit to
+customers using the benefit Payment Card. This is referred to as the IGL system and has
+been operational since 23rd September 1996. There are now some 1400 customers using the
+service, and management reports are published weekly by PDA Service Management.
+
+It was originally intended that the next stage of the Programme would be a combined release
+of software from Pathway (Version 1.0) and CAPS (Version 2.0) which would be implemented
+over the Easter Weekend, 28th-31st March 1997. This would culminate in a new System
+being available from 1st April and would signify the start of the three month Live Trial period.
+On successfully concluding the Live Trial, National Rollout was then scheduled to start on 1st
+July 1997. The service offered would be Child Benefit only with other Benefits and functionality
+being added tater during National Rollout.
+
+Due to delays with all the Projects and a realisation that the “Big Bang” Easter weekend
+presented significant and unacceptable risk, a replanning exercise was undertaken. After
+much discussion a proposed replan has now been assembied and the purpose of this paper is
+to document that plan. The plan covers the period that takes the Project from the IGL system
+through to formal acceptance of the Live Trial and the start of the National Rollout and is
+referred to as Stage 2. During this period it is now proposed to introduce, in a phased
+approach, a number of software and system releases referred to as “Congo Releases”. These
+releases also include the relevant software release from other POCL and DSS Projects.
+
+Although the replan has reduced the risk in a number of areas, it should be recognised that
+timescales are still very tight and that delays in one release could well impact later releases.
+Every effort must be made to meet timescales dictated by the detailed plans.
+
+Following completion of Stage 2 and during the early weeks of National Rollout, it is proposed
+to introduce further software and system releases and these are referred to as “Nile
+Releases". This is outside of the scope of Stage 2 but due to certain events during the Live
+Trial, is included here for completeness.
+
+Ref: AIX.00C 10 March 1997 Page 5 of 25
+3.0
+
+FUJ00078182
+FUJ00078182
+
+Plans
+
+3.1 Systems
+
+The Pathway Release 1 software has been sub-divided into component elements
+offering differing business functionality. These business functions, and the Pathway
+software release versions which include them, are:
+
+Order Book Control Service
+
+Benefit Payment Service (including BES,
+CMS and PAS) :
+AP. Automated Payments Service
+
+EPOSS Electronic Point of Sale Service
+
+POCt Infrastructure _[ v I v_I v I Relevant aspects from HAPS, TIP, ROS
+
+Table 1
+
+Full functionality for Stage 2 is that offered by Version 1e, which aligns to Pathway’s
+original Release 1 specification, and CAPS Release 2.2. The following table
+summarises all of the systems and software to be introduced during Stage 2. These
+are detailed in the relevant CAPS and Pathway documents (q.v.).
+
+Congo Release 1 fersit Ver .
+Congo Release 2 Version 1b not applicable
+Congo Release 3 Version 1a Version 2.1
+Congo Release 4 Version 1c Version 2.1
+Congo Release 4.1 Version id Version 2.2
+Congo Release 5 Version 1e Version 2.2
+Table 2
+
+The Versions of software from Pathway include the various components such as BES,
+CMS, PAS, Riposte etc and also the CAS interface to CAPS. CAPS Release 2.1 is a
+functionality upgrade and, in conjunction with Pathway 1c, adds:
+
+PAS exceptions
+post office Closures
+Appointees (Permanent Agents/Standing Agents)
+
+CAPS Release 2.2 provides multiple services on a single ACC which is needed to
+cater for the PDR load of Child Benefit customers for the National Rollout.
+
+CAPS have yet to decide when they will implement multiple ACCs but this will not be
+before September 1997 and may be as late as December 1997. Discussion as to
+when this is to be done has yet to be undertaken.
+
+Ref. AIX.DOC 40 March 1997 Page 6 of 25
+FUJ00078182
+FUJ00078182
+
+3.2 Dates
+
+The dates included in the joint Baselined plan (Version 4.02, See Appendix C) have
+been established as:
+
+Congo Release 1 go live 1 April 1997
+Congo Release 2 go live 28 April 1997
+Congo Release 3 go live 2 June 1997
+Congo Release 4 go live 30 June 1997
+Congo Release 4.1 go live 21 July 1997
+Congo Release 5 go live 8 September 1997
+Start of Live triat 8 September 1997
+End of Live Trial 21 November 1997
+Start of Nationai Roll Out : 24 November 1997
+Table 3
+
+A copy of the baselined plan is available and updates against this plan are submitted
+each Tuesday lunchtime-to the PDA Planning Department who publish the latest
+‘status each Wednesday. This pian is used as the basis for the weekly Stage 2 Review
+on Thursday.
+
+For each Go Live event a detailed weekend take-on plan will be produced, either by
+CAPS for Congo Release 1, 3 and 4.1 or Pathway for Congo Release 2, 4 and 5.
+These wilt be available in initial draft form approximately eight weeks before the
+Go-Live date. Prior to each Congo Release there will be a Release Authorisation
+Board (See Section 4.0) and there may need to be Seals of Approval granted
+‘ I PUNs will only be sent out once the system has been installed at the post office and,
+[ in the case of Stream B outlets, once the outlet is able to offer BPS functionality.
+
+3.3 Implementation Profile
+
+Throughout Stage 2, for the purposes of rolling out to the planned number of post
+offices, it is planned to split post offices into a number of streams and these are
+detailed in Appendix D. In summary:
+
+Stream A will include some 200 post offices, including the 10 IGL Offices, and
+will be the first to receive new upgrades of the software as they
+become available, They will form the core of the Live Trial evaluation
+(Congo 5). In the first two weeks of the Live Trial the number of post
+Offices in this stream will be increased to 300. Initially customers at
+these post offices will have the bar code on their order books read
+and subsequently will be able to use their benefit Payment Card at
+these post offices to claim their Child Benefit payments. »
+
+Stream B _ will include 450 post offices and will offer OBCS functionality only
+throughout the period of Stage 2. All customers with order books will
+have the bar-code on their order books read and this will run in
+parallel with the current ESNS system. This stream will start to rollout
+from 28th July 1997.
+
+Stream C will be introduced during the period of the Live Trial evaluation and
+will involve some 1000 post offices who will offer full functionality from
+the outset. Customers will be able to use their benefit Payment Card
+at these post offices to receive their Child Benefit payments. This
+Stream will start to rollout from 22nd September 1997.
+
+Ref: AIX.DOC 10 March 1997 Page 7 of 25
+\,
+
+By the conclusion of Live Trial and forma! acceptance of the Contract, there will be
+some 1750 live post offices offering a service to customers. Of these Offices, all but
+450 will offer full functionality, including the payment of Benefit, by the use of the
+benefit Payment Card, to Child Benefit customers. The 450 Offices will offer OBCS
+functionality for all customers using an order book
+
+Although it is proposed to introduce Congo Release 2 to 190 post offices (200 less the
+10 IGL Offices), they should be manual Offices (ie. those not able to offer AP or
+operate ECCO+) since there will be insufficient space on the counter to accommodate
+their existing system and the new system. It has proved to be difficult to find this
+number in North East Region and therefore some APTs will be removed from the
+counter and positioned elsewhere. Early indications have shown that 9 of these
+offices cannot be connected by ISDN to the Data Centres and may have to rely on
+PSTN. These offices will be deferred until Congo 4 to allow development of alternative
+solutions
+
+it should be noted that Pathway Releases 1a and 1d do not offer increased
+functionality to the customer but are necessary to provide the required CAS interface
+to CAPS.
+
+PACS Release 4.0 will be introduced on 23 March and upgraded to PACS Release
+
+5.0 on 30 September. Child Benefit System will be upgraded to Release 13 on 6th '
+April and Release 13.1 on 27th April. TIP and HAPS are planned to be available from (ii. us
+27th March to enable Direct Interface Testing to be undertaken. Reference Data is 4h)
+available now though an electronic gateway is due to be provided on 19th March for Ww r
+updating information. -
+
+3.4 Constraints
+
+It should also be noted that the ten IGL offices will remain on the IGL System until
+Pathway Release 1c is available on 30th June. To accommodate this it is necessary
+for Pathway to provide a new version of their IGL software, Release 1a, which will
+provide the necessary CAS interface to CAPS Release 2 and 2.1. This necessitates a
+manual intervention by CBC to ensure that Alternative Payees, which are processed
+differently in CAPS Release 2, are catered for whilst the Pathway IGL system is in
+use. The alternative payee facility will be fully implemented with the release of
+Pathway 1c (Congo 4). At the same time other facilities such as “Dead letter office”,
+undead and “end of interest” will be activated.
+
+During Congo Release 4, Stream B post offices will not be card activated, limiting the
+counter use to OBCS only. These post offices will operate a system referred to as
+“Congo Release 4 minus” during this period. The restriction on functionality will be
+provided by CAPS who will mark the post office Codes file to show that Cards should
+not be issued. In addition Pathway propose to disable the Card reader in a suitable
+mannér yet to be decided. This release will need testing (including security aspects).
+
+Foreign Encashments from Stream A (200/300) post offices and Stream C (1000) post
+Offices is not applicable at Stream B (450) post offices (since none of them are one of
+the 1500 nominated post offices able to offer Foreign Encashment through the Help
+Desk as instituted during IGL). The Help Desk FAD Code is now 8888884. There is a
+need to remind the 1500 post offices of the procedure and to supply additional blank
+receipts to them.
+
+With the availability of Congo Release § there will aiso be a “Congo Release 5 minus”
+So that the 450 Stream B post offices continue to restrict the functionality available at
+; the counter to OBCS and BPS (cards not activated). However, this restriction will be
+i Provided by the use of Pathway’s Reference Data system. This release will need
+testing (including security aspects).
+
+Ref: AIX.DOC 10 March 1997 Page 8 of 25
+
+FUJ00078182
+FUJ00078182
+ot ee
+Ue we
+3.5 Functionality
+
+Contents Description (Version 1.1) against the/SADD (Version 2.1)\and other relevant
+Pathway documents. This remains the baselin€ for Pathway Release 1e. With the
+phased release of this system, subsequent documents have been produced which
+detail the functionality that will be available for the interim releases 1b and 1c. This
+aspect has been managed by the Product Management Team within the PDA and
+these documents detail the Management Information Systems available, Security (and
+Access Control), Accounting and Reconciliation as well as the specific Customer and
+User facilities to be offered. It should be remembered that, with limited availability prior
+to the full Release 1¢ there have been some compromises on what has been made
+available but these aspects have been verified by BA and POCL.
+
+The functionality of Pathway Release 1 was rsSADD ve in the Rathway Release 1
+
+3.6 Business Implementation
+
+The Implementation Team within the PDA will be responsible for all business aspects
+concerned with the rollout during Stage 2. This team will be responsible for ensuring
+BA and POCL readiness including training. They have selected the rollout Offices for
+each of the implementation streams and will be responsible for the contro! of this list
+and liaising with all Departments on all aspects concerning this list.
+
+A summary of the list of post offices is included in Appendix B though this is for
+guidance only and the up to date list is maintained by the PDA Implementation Team.
+
+3.7 Other Events
+
+3.7.1. Card swap out
+
+During the Live Trial period it is proposed to withdraw existing IGL benefit
+Payment Cards and replace them with the latest version which has a different
+design and amended magnetic stripe cading. Details of this are being finalised
+by Pathway. The software allows for both Cards to co-exist until the
+replacement is completed.
+
+3.7.2 Data Centre Moves
+
+’ The only Data Centre in use with IGL is Feltham. An identical Data Centre
+has been built in Wigan which will be used for Congo 4 testing. Bootle will
+also be built and this will be used in conjunction with Wigan for Congo 5
+testing.
+
+3.7.3 PDR Load
+
+CAPS will undertake the transfer of the Child Benefit customer details from
+DCI and the ChB system for the customers at the 300 post offices Starting on
+28th April. This will be a selective load. CAPS have said that they will not be
+able to accommodate all 300 post offices since there is a physical limit of
+80-90,000 records which equates to about 280 post offices. The list of the 300
+Offices is held by PDA Service Management together with the 20 which have
+been excluded from the PDR load. The physical limit on the PDR load will
+only be resolved with the introduction of CAPS 2.2 (see below).
+
+The load of the PDR for all Child Benefit customers cannot proceed untit
+CAPS Release 2.2 (Congo Release 4.1), scheduled for 21st July, is installed.
+Following rehearsals, it is planned that this load will start on 8th August. This
+will be simply done by “data slicing” so the order of customer or post office
+take-on is random. This is simply due to timing considerations but does mean
+that, with Congo Release 5 scheduled for 8th September, there will be some
+
+Ref: AIX.DOC 10 March 1997 Page 9 of 25
+
+FUJ00078182
+FUJ00078182
+FUJ00078182
+FUJ00078182
+
+customers who will collect Order Books from their post offices even though
+that post office has the new system installed. The PDR load will be completed
+in late November.
+
+3.7.4 Testing
+
+Product Acceptance Tests will be done by each individual Project. In some
+cases they will also undertake their own Model Office Testing. On completion
+of this joint Integration and Systems Tests will be conducted. Joint testing is a
+collaborative undertaking between Pathway, PDA and external systems.
+Once these tests have been concluded then a Model Office Rehearsal will be
+undertaken and then the Model Office Tests themselves based on prepared
+Test scripts. Full details of the process to be undertaken is contained in the
+PDA Model Office Test Strategy and Joint Test Strategy (q.v.). New releases
+of software will not be introduced unless the Model Office Test is satisfactorily
+concluded and the Release Authorisation Board approves the release.
+
+3.7.6 Migration
+
+There is a need to define in detail the migration of post offices from one
+release to another, including procedures, accounting, reconciliation, reporting
+etc. Documents on In-Office migration are being developed to cater for the
+transition from one Congo Release to another. In addition, there is a need to
+document the technical migration from one release to another and any special
+software needed to migrate data (specifically ECCO+ and ALPS). This is
+being prepared by Pathway.
+
+The migration from ABED to TIP and ensuring that reconciliation is preserved
+needs to be documented
+
+nw
+
+There is also a need to agree how new BES software is loaded on the ———
+Counter Systems. This can be achieved either by software downloadlor by
+physically exchanging the hardware] Irrespective of the mechanism adopted
+to achieve this a process and procedure need to be agreed. It will be
+necessary to ensure that data migrated from one system to another is “ring-
+fenced" to ensure that, from a security standpoint, no “Trojan horse” exists as
+the result of reduced security features in earlier releases. A plan to undertake
+this will be produced by Pathway.
+
+3.7.6 Procedures
+
+For each Congo release there is a need for comprehensive PPDs covering
+operational issues, post office procedures, exception conditions etc. These
+are being developed by POCL and Pathway and are being reviewed by
+relevant departments prior to the release of the system.
+
+There is also a need to agree how the relevant BA and POCL offices are
+appraised of outlets now live and all records appertaining to reference data
+are maintained.
+
+3.7.7 Contingency
+There is a need for contingency plans, regression plans for the actual
+implementation window and dress rehearsals where possible.
+
+Currently, for Congo Release 1, the proposal is to revert to CAPS Release 1
+and a detailed plan exists for this.
+
+Ref: AIX.D0C
+
+10 March 1997 Page 10 of 25
+FUJ00078182
+FUJ00078182
+
+For Congo Release 2 it is proposed that the existing hard copy print outs of
+Stop lists will be used if problems are encountered.
+
+For Congo Release 4, for the 10 IGL outlets which will be migrated first, then,
+if problems are encountered, it is proposed to simply revert to the IGL system
+but the detailed plans have yet to be prepared. For the remaining 190 outlets
+then a contingency plan is required.
+
+Accontingency plan is required in particular for Congo 5.
+
+DQ Need to expand on this section for other releases.
+
+4.0 Architectural Overview
+
+Although this plan concentrates on the CAPS and Pathway releases there are a
+number of other associated Projects within the DSS and POCL which need to provide
+systems and associated procedures for the end-to-end business of the two Sponsors
+to operate effectively. This is a very important aspect and must be taken into
+consideration for the purposes of Project Reviews, testing and implementation. An
+overview of the total system is presented in Appendix E as an illustration though the
+accurate and latest illustration should be obtained from PDA Design Assurance Team.
+
+5.0 Acceptance Criteria
+
+From a Contractua! standpoint there is only one acceptance and this is the principle
+purpose of the Live Trial. However, there will be an approval process for each of the
+Congo Releases and this will be achieved through Model Office Testing and the
+Release Authorisation Board.
+
+The Live Trial will operate for a period of eleven weeks and details are summarised in
+Appendix F. This Appendix also summarises the purposes of the Live Trial though
+there is the need to expand this considerably to ensure that Pathway clearly
+understand what is expected of them and to ensure that the BA and POCL have the
+opportunity to assess what has been offered. it is important that the Service Providers
+clearly identify now what is expected and that the important issues such as. security
+and reconciliation are adequately validated.
+
+Originally, the Live Trial was intended to include multiple benefits and the on-line
+functionality needed for urgent stops and payments. With the rescheduling of these
+two functions last year (they are now in the Nile Release), it is important that they can
+be assessed before the Contract is finally approved. Therefore it is proposed that in
+addition, parallel to the Live Trial activity, a suitable environment is created to permit
+the demonstration of the capability to support payment of multiple benefits and the
+on-line functionality needed for subsequent benefits. Both of these functions will be
+introduced in conjunction with the release of CAPS version 3 and Pathway Release 2
+(See Section 8.0 Nile Release). During Live Trial the right exists to cease increasing
+the number of operational post offices shouid the service levels or performance
+measurements fail below the agreed level of acceptance.
+
+Apart from assessing multiple benefits and on-line functionality, the Live Trial at POCL
+outlets offering an operational Congo § service will be assessed on functionality for
+that release only. AP Smart for example will not be assessed. Although satisfactory
+completion of the Live Trial is needed from a Contractual aspect before National Roll
+Out can proceed, there is a need also to consider other aspects such as field
+readiness, support capability, etc.
+
+Ref: AIX.DOC 10 March 1997 Page 11 of 25
+6.0
+
+7.0
+
+8.0
+
+FUJ00078182
+FUJ00078182
+
+National Rollout
+
+Once acceptance of the Live Trial is given, National Roll Out will commence. The
+current plan has this scheduled for week beginning 24 November with the delivery of
+systems to 150 post offices per week supporting Congo 5 software. This will continue
+for three weeks before postponing further installation until after the Christmas period.
+By that time there will be systems installed at some 2200 Post offices. Rol! Out will re-
+commence in the new year with 100 post offices being installed in the first week, rising
+to 175, then 250 and finally 300 when it will continue at this rate throughout 1998/1999
+with a reduced rate of 150 from 24/11/98 to 13/12/98 and no installation from 14/12/98
+to 3/1/99. Completion of National Roll Out is currently scheduled for March 1999 but
+this is outside of the scope of Stage 2.
+
+Service Management
+
+Service Management will continue to report the service levels during Stage 2 and
+these will serve as a useful guide as to how the Live Trial evaluation is progressing.
+Work is in hand in this area to develop further the framework, problem management,
+change management, configuration management etc. Various reference documents
+exist covering this area.
+
+Nile Release
+
+There will be at least one Nile Release of software which will include Pathway
+Release 2 and CAPS Release 3. It is currently scheduled for 26th January 1998 as
+the Go-Live date but is outside of the scope of Stage 2. Nevertheless it is included
+here for completeness and because the ability to demonstrate some functionality in
+these releases is needed during the Live Trial (See Acceptance Criteria Section 4.0).
+
+Ref. AIX.0OC 10 March 1997 Page 12 of 25
+FUJ00078182
+FUJ00078182
+
+Appendix A - Definitions
+
+ABED
+ACC
+
+ALPS
+Apachi
+
+AP
+APS
+APT
+ATAS
+BA
+BES
+BPS
+CAPS
+CARS
+CAS
+CBC
+CBDB
+ChB
+CMS
+CPCS
+DC
+Domain
+
+EPOSS
+FCP
+
+FCP customers
+
+Automated Benefit Encashment Data
+
+Area Computer Centre. A computer centre on the DSS wide area
+network which routes network traffic.
+
+Automated London post offices
+
+Automated Payments Chesterfield Interface (POCL interface between
+HAPS and CBDB)
+
+As APS
+
+Automated Payments Service
+
+Automated Payments Terminal
+
+Audit Trail Analysis System
+
+Benefits Agency
+
+Benefit Encashment Service
+
+Benefit Payment System encompassing BES, CMS, PAS.
+Customer Accounting and Payments Strategy
+
+Contracting Authorities Responsibilities
+
+CAPS Access System
+
+Child Benefit Centre
+
+Counter Business Database
+
+Child Benefit
+
+Card Management System
+
+Customer Payment Computer System
+
+Departmenta! Central index
+
+Those principal areas responsible for delivering a solution which forms
+a key element in the end-to-end solution. Domains currently are
+envisaged as CAPS, Pathway, BA and POCL.
+
+Electronic Point of Sate Service which includes Stock Sales Counter
+Application
+
+First Card Payment of Child Benefit to selected BA employees or their
+partners achieved week commencing 23rd September 1996.
+
+Those 14 customers who are BA employees or their spouses who
+were paid by Card on 23rd September 1996.
+
+FTF File Transfer Facility
+
+HAPS Host Automated Payment System
+
+IGL Initial Go Live. Payment of Child Benefit by Card to those Child Benefit
+customers whose Order Book expires; the first such payment was
+21st October 1996.
+
+IGL Pilot The period between 23rd September and IGL (q.v.).
+
+LGL Limited Go-Live. Now renamed to iGL (q.v.).
+
+MIS Management Information System
+
+MOR Model Office Rehearsal
+
+MOT Model Office Testing’
+
+OBCS Order Book Control Service
+
+PACS Programme Accounting Computer System
+
+PAFP. Programme Accounting Financial Package
+
+PAS Payment Authorisation Service
+
+PDA Programme Delivery Authority (The BA/POCL Programme responsible
+for delivering Card payment to BA customers at post offices)
+
+PDCS Personal Details Computer System
+
+PDD Personal Details Dialogue. The On-line system to update PDCS.
+
+PDR Personal Details Repository
+
+POCL Post Offices Counters Ltd
+
+PPDs Process and Procedures Documents
+
+PUN Pick Up Notice
+
+ROP Reference Data Project
+
+Ref: AIX.DOC 10 March 1997 Page 13 of 25
+FUJ00078182
+FUJ00078182
+
+RDS Reference Data System
+
+SPCT Service Provider Contact Team
+
+SLA Service Level Agreement
+
+Stage 2 The phased release of CAPS Release 2 and Pathway Release 1 in
+Conjunction with other DSS and PO Projects which interface to them
+culminating in Contractual acceptance at the end of the Live Trial,
+
+Step That part of the Project which ensures that an end-to-end solution for
+Child Benefit is delivered. It will encompass IGL Pilot, IGL (q.v.) and
+an early assessment of increased loading on the system
+
+TIP Transaction Information Processing (Strictly speaking, for Stage 2 all
+references to TIP in this Document actually refer to Interim TIP which
+will replace ABED).
+
+UAT User Acceptance Testing
+
+WBS Work Breakdown Structures. A top-down structured approach to
+Planning which enables outline activities to be identified and then
+sub-divided into their component elements and tasks.
+
+Ref: AIX.DOC. 10 March 1997 . Page 14 of 25
+FUJ00078182
+FUJ00078182
+
+Appendix B - Summary of post offices
+
+The following tables summarise the numbers of post offices in each stream and their
+respective locations. it is indicative only and the up to date position should be obtained from
+the PDA Implementation Team.
+
+Stream A Congo 5.0 Live Triat Outlets
+
+POCL REGION Outlet Number Counter
+Type Positions
+North East Standard 136
+ECCO'+:. I 14... Bee
+South Wales Standard 137
+“2ECCO+ es ESC ees
+Totat 300 783
+
+Stream B Congo 5.0 (only OBCS working)
+
+{ L \
+POCL REGION Outiet__I Number I Counter qe
+Type Positions ats .
+North East Standard 146 228
+NCA _ 37 7
+South Wales Standard 161 213
+NCA 12 12
+Miclands Standard 111 227
+NCA 4 4
+Total 468 718
+
+Stream C Congo 5.0 (full functionality, not offices with APPU)
+
+POCL REGION Outlet Number Positions
+Type
+Scotland NI Standard 300 691
+NCA 1 1
+North East Standard 351 854
+PECCO +S: Ue 1b 2 e
+South Wales Standard 180 402
+SECCOM Sue oT ees se
+Midlands Standard 170 544
+Total 992 2492
+Excluding ECCO +
+‘Total Including: ©
+
+ECCO+ =
+
+Ref: AIX.DOC 40 March 1997 Page 15 of 25
+National Roll Out (after Live Trial and prior to end Dec 1997)
+
+POCL REGION Outlet Number Counter
+Type Positions
+Scotland NI Standard 93 197
+NCA 3 3
+South East Standard 95 202
+North West Standard 17 341
+Midlands Standard 173 294
+NCA 2 2
+Total 483 1039
+
+Cumulative Aspect
+
+POCL REGION Outlet Number Counter
+Type Positions
+Scotland NI Standard 393
+NCA 4
+South East Standard 95
+North West Standard 117,
+South Wales Standard 478
+NCA 12
+PS ECCO +8 I 208 8
+Midlands Standard 454
+NCA 3
+
+North East Standard
+
+NCA
+
+ECCO::
+
+~I Total 2275 5215
+
+By Outlet Type
+
+Outlet Type Number Counter
+Positions
+
+Standard 2170 4892
+
+ECCO 4 PE AO ee 267.
+
+NCA 56 56
+
+Total 2275 $215
+
+Outlet Key
+
+Standard ¢ An outiet with no or limited automation (APT's , electronic scales, Capture
+etc.)
+
+ECCO + « Outlets with the ECCO + system
+
+NCA * Outlets which do not prepare Cash Accounts (very small outlets whose
+accounting is processed through a parent outlet)
+
+There will be no ALPs offices.
+
+Ref: AIX.DOC 10 March 1997 Page 16 of 25
+
+FUJ00078182
+FUJ00078182
+Appendix C - Baselined Plan
+
+Enclosed in this Appendix is an overview of key dates for the original plan as baselined
+following the replan. It was agreed to baseline this plan at the Stage 2 Project Review on 18th
+February. Although the Go-Live dates for each phase are those presented to the PDA Board
+on 22nd January, interim dates were amended as a result of the delay unti! end February to
+reach commercial agreement. It is against this baselined plan that all reports by each Project
+have subsequently been made. These reports are held by the PDA Planning Department.
+
+Each week, the nominated manager from each project reports progress against this plan by
+Tuesday lunchtime. PDA Planning include all reports into the master Stage 2 Plan which is
+sent out by close of play each Tuesday. It is this plan that is then used as the basis of the
+weekly Stage 2 Project Review on Thursday of each week.
+
+The latest copy of the plan should be obtained from PDA Planning or a nominated Project
+Manager.
+
+Ref: AIX.DOC 10 March 1997 Page 17 of 25
+
+FUJ00078182
+FUJ00078182
+FUJ00078182
+
+FUJ00078182
+
+BA/POCL Programme
+‘Summary Stage 2 Plan
+
+ANS Sian Tet
+MS ragrion Tet
+
+“CONGO R41 Live
+
+‘= implementation
+Tomcat
+Tine Gite ee nate
+
+aay BPS 1 CAPS 22 sien: Reeds Tsk
+
+: if
+
+z i
+
+Gyzds ‘g Ii
+Shtng?
+
+CeiWI ERAS EERE
+
+FUJ00078182
+
+FUJ00078182
+
+BA/POCL Programme.
+
+Da (ers
+
+Cong
+
+Summary Stage 2 Plan
+
+* fPaay 1Gt 02+, CPSZ05
+Aes ab jie el
+
+‘uat (G0cs)
+
+on €2E Tent wt" Panay
+
+Pay OBCS / O3GS 30 Deee'
+re grove Mol stew
+
++ CAPS 24)
+
+ed
+
+CONGO fat? Lite
+
+* ol Otic Te
+
+Sat ert ve
+
+# GONG 0 Le Funny 290 Pe
+
+gona nea
+(Pe GL 02
+GAPS 25 Sysiam (en
+ca
+
+13L02=/ CAPS 2 Hane Rares Test
+
+§
+I
+i
+5
+
+- Fd sh
+hie ae
+eH
+eeeeteers?
+‘t
+
+FUJ00078182
+FUJ00078182
+
+Ref. AIX.DOC 10 March 1997 + Page 18 of 25
+FUJ00078182
+FUJ00078182
+
+Ref: AIX.DOC 10 March 1997 Page 19 of 25
+FUJ00078182
+FUJ00078182
+
+Appendix D - Stage 2 Roll out Profile
+
+This Appendix details the rollout streams during Stage 2. It is summarised in Table 4. The
+precise migration from one software release to another has yet to be agreed and therefore
+numbers of post offices involved each week.
+
+Stream A
+
+From 28 April to deliver and install systems at up to 190 post offices using Congo 2 in a
+phased approach to manual post offices only. To leave the 10 iGL post offices
+running IGL (Pathway Release 1a) but to ensure they interface with CAPS 2.1
+(Congo Release 3.0) by 2nd June 1997.
+
+On 30 June to upgrade the 10 IGL offices to Congo 4 and migrate the “up to” 190 systems
+from Congo 2 to Congo 4 making a total of up to 200 systems running Congo 4.
+The precise migration process has yet to be discussed and agreed in detail
+
+From 8 September to migrate the “up to” 200 systems to Congo 5 and to deliver and install
+systems to some of the additional 100 larger offices (io POCL outlets with more
+than one counter and with some operating ECCO+ to ensure the Live Trial
+teflects the range of outlets in the POCL network) and install Congo 5 by 13
+September. The precise migration process has yet to be discussed and agreed.
+
+From 15 September to deliver further systems to the balance of the additional 100 post offices
+{matching the criteria set for the first additional 50) making a total of 300 systems
+operating Congo 5 by 19 September. The ability to achieve this in one week is
+being assessed.
+
+Stream B
+
+From 28 July to deliver systems to 75 manual post offices where benefit Payment Cards will
+not be issued. These post offices will operate OBCS only.
+
+Over the forthcoming weeks to install systems at 75 post offices per week up to a maximum of
+450 post offices in total.
+
+Thus, by 8 September there will be 450 post offices in this stream operating OBCS only.
+
+On 8 September, the 450 post offices will be upgraded to “Congo 5 minus” and continue to run.
+. OBCS only.
+
+The 450 post offices will be migrated to full Congo Release 5 between the period November
+1997 to the end of January 1998, with training balanced against new post offices
+Rollout and completion achieved before Pathway Release 2 goes live.
+
+Ref: AIX.DOC 10 March 1997 Page 20 of 25
+FUJ00078182
+FUJ00078182
+
+Stream C
+
+On 22 September systems will be delivered and installed to 50 Post offices. These systems
+will support Congo 5 functionality. The POCL outlets will include multi position
+APT and ECCO+ outlets. Where. SMART functionality exists this will be provided
+
+by retain’ id Relocating SMART AP Terminals
+y retaining and Felocating a mt ?
+
+The following week further systems supporting Congo 5 will be delivered to 50 post offices.
+The installation programme will then adopt the following schedule, installing
+systems supporting full Congo 5 functionality
+
+Week commencing 6th October 1997 - additional 75 post offices
+
+Week commencing 13th October 1997 - additional 75 post offices
+
+Week commencing 20th October 1997 through to Week commencing 17th
+November - additional 150 post offices per. week
+
+By 22 November there will be 1000 post offices supporting Congo 5 full
+functionality.
+
+Ref: AIX.DOC. 10 March 1997 Page 21 of 25
+Stream I Stream I Stream I Stream I Stream I Stream [National[ Weekly I Accum
+A A B A B Cc Rollout I Rollout I Rollout
+wic 1A 1B 1c 4c 4E 4E 1E
+
+114
+
+10
+
+40
+
+Ref: AIX.DOC
+
+10 March 1997
+
+Page 22 of 25
+
+FUJ00078182
+FUJ00078182
+FUJ00078182
+FUJ00078182
+
+Appendix E - Architectural Overview
+
+This diagram illustrates the overall system showing the key components and their interfaces. It
+is included here as an illustration only and the accurate picture should be obtained from the
+PDA Design Assurance Team.
+
+ea
+
+Data
+Admin... lf
+Unit
+
+Pathway
+
+H TIP Central Systems
+
+: transaction ‘De Le Rus, Help
+
+: desks etc.
+
+: Royal Mail Pathway I. e
+MIS Outlets Processing
+
+Centra
+
+I I Manual feeds into ROS,
+‘-) HAPS, ECCO+, manual
+offices, BA
+
+ee vat Nea Computing Cente - DSS sites managed by EDS: Livingston, Norcross, Swindoa, Washington (ine, CAPS test 2.
+
+APACHI Automated Payments Chesterfield Interface - POCL interface between HAPS and CBDB. e
+
+HAPS Host Automated Payments System - POCL Tandem at Famborough Hants.
+
+RDS Reference Data System - POCL an SQL database machine.
+
+‘TIP Transaction Information Processing - Enitially ADED, then Interim TIP and full TIP.
+”
+
+Ref: AIX.DOC 10 March 1997 Page 23 of 25
+
+14
+he ead
+
+Appendix F - Live Trial
+
+The Live Trial is an eleven week period when a number of aspects will be formally assessed
+by BA and POCL for the purposes of Contractual acceptance. This will be done in a live
+Operational environment whilst volumes are reasonably low and a controlled environment
+exists. The following is an early suggested list of the main objectives to be included in the Live
+
+Trial.
+
+ensuring that the overall business solutions delivered meets the requirements
+of BA and POCL.
+
+ensuring that during the Live Trial period the,impact on BA and POCL
+services is as expected and that support measures are having the desired
+effect
+
+ensuring that the Pathway solution meets contractual requirements
+
+providing the information necessary to make the decision as to whether to
+process with National Rollout.
+
+The following is a more detailed list of the Live Trial Objectives though there is a need to
+expand this to much more detail.
+
+To identify any operational problems before National Rollout
+
+To enable business case validation to be carried out by the sponsor
+organisations.
+
+To provide a period in which Pathway's ability to carry out site preparation,
+installation, training and deployment of the service may be demonstrated.
+
+To provide a period in which the operational services of training, installation,
+documentation, migration and Help facilities may be measured against
+Service Level Agreements. .
+
+To enable the financial processes and controls to be operated in a live but
+limited environment.
+
+To enable details of Public response to be collected and analysed.
+
+To provide a limited and controlled period during which all involved
+organisations may adjust working processes and Procedures in response to
+the experiences of Live operation.
+
+To enable Live system maintenance (fault resolution / test / implementation)
+to be proved.
+
+To carry out testing that is not possible in any other test stage of environment
+
+To carry out additional and/or repeat tests of business or technically critical
+areas of the service (e.g. contingency / fallback / recovery)
+
+To enabie completion of all security-related aspects of the service.
+To demonstrate conformance with contractual requirements
+
+To demonstrate the viability of migration practices and procedures.
+
+Ref: AIX.DOC
+
+10 March 1997 Page 24 of 25
+
+FUJ00078182
+FUJ00078182
+FUJ00078182
+
+FUJ00078182
+
+Shown in the attached diagram is an overview of the plan for the eleven week period.
+
+Dp LPAI sBuLMeIP\OISIa\OISa\'s
+
+sonpomay,
+2500)
+siapno omne ut pasiroynne sasvaas uso
+Aomtied Sde/SaV/SO4 JO
+©) 29ti0u vontenyoas yo ums
+syam 9 SO. UEN
+SOdF/SdB/SIAO JO pouae
+saosddy ne ore ‘wonenyead jo eg
+poundacoy
+remoenuoy (s221130 002)
+reuuoy unouy srinis SIN GIST jem aa jours
+uonepuawusosay I uonestoqne
+luonenywag, I I I I ‘aswajas Jo uoEaIpul
+6/8 syaam 7 xoude
+pou I Tan om 95 Ua HE ‘es
+[sou I [me sguow jo pug ‘ou Sunreis uonsaifoo wep yuo 3UD
+sourida2oy Issosuods I sts<eue os I os ‘Sururen Se
+wet 01 39) sang vonriuawa)dust
+SMO g EW 'SY29N_9 UI omny 001 top uotuedang
+9) NO [1OY
+(aaino GucweaI asuajaduros) sHumuty uonsesuusy
+(sx20M ¢ 4 amo [J02 aut sut}) “219 Hoddng 1904
+Tee
+coma fomnroa] soar I me
+{QUOI Jo Puy
+
+410 March 1997 Page 25 of 25
+
+Ref: AIX.DOC

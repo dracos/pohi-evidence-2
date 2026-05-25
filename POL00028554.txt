@@ -1,0 +1,272 @@
+18 NOV 1999
+-2224.
+Electronic memo
+‘
+To David X Smith/POCL/POSTOFFICE@POSTOFFICE
+cc John Meagher/POCL/POSTOFFICE, Keith K
+
+Baines/POCL/POSTOFFICE@POSTOFFICE, Min
+Burdett/POCL/POSTOFFICE@POSTOFFICE, Keith
+Falconer/POCL/POSTOFFICE@POSTOFFICE
+Hard Copy To
+Hard Copy cc
+
+From Graeme Seedall/POCL/POSTOFFICE
+
+Date 18/11/99 17:22
+
+Subject Brief on Reference Data issues relating to Al 376
+Dave,
+
+I was asked to:
+
+1, Describe the 3 root causes that Pathway concede will not be detected by the current design
+
+for the EPOSS/TIP reconciliation feature.
+
+Taking this into account, describe the predicted risk to POCL of going live with this feature.
+
+Discuss this predicted state with Keith Falconer and gather his views on the acceptability of
+
+this state. .
+
+Describe the additional criteria that might be stipulated to allow Keith's ruling to be upheld
+
+and yet support roll out .
+
+5. Provide a brief to defend against Pathway's assertion that "Reference data issues are all
+POCL's fault".
+
+P 9p
+
+Points 1 -3 were addressed in my previous e- mail to Keith (copied to you). Points 4 & 5 are
+incorporated into the attached briefing paper which Keith has approved and which I hope will be
+suitable for Dave Miller. However you may wish to compare it first to Keith's own words
+contained in an e-mail which I have separately forwarded to you.
+
+Regards, .
+
+Graeme
+
+Business Integrity Manager -
+TMT
+
+Post Office Network
+
+Post Line:
+
+Refdatabrief.
+
+POL00028554
+POL00028554
+
+Summary Brief on Reference Data Issues in relation to Acceptance Incident 376
+
+Pathway assert that the end-to-end reference data process is broken and constitutes significant threat to
+the roll out programme and to POCL and Pathway business aspirations .
+
+The reference data issues that Pathway allude to fall into two broad families:
+
+(i) Issues relating to
+
+=> original data quality (such as incorrect outlet-product profiles, incorrect cash account types etc.)
+
+=> transfer protocols (such as empty or incomplete files, invalid headers, ‘no change” changes etc.)
+
+=> higher volumes than design assumptions which were based on POCL forecasts (such as correction
+files, standard changes, bespoke outlet-product relationships etc.)
+
+=> an operational need for tighter processing time scales than anticipated (for example as driven by the
+roll out schedule, or aggressive future dating of changes)
+
+(ii) Issues relating initial or changed data where the downstream impact of that data corrupts the
+
+integrity of the core processes (such as accounting) supported by the application software..
+
+The first family does not directly impact on downstream data integrity. The risks are mainly on
+Pathway and generally relate to the sizing of their system infrastructure or data maintenance processes
+and the cost of increase. These should be considered as outside of the scope of Acceptance Incident
+376 or Contractual Acceptance as a whole.
+
+The second family however places risk mainly on POCL core processes such as outlet accounting and
+downstream central accounting and client reconciliation and settlement.
+
+A case study is provided by PinICL 990930051 which relates to a change made to product 196/197
+(Giro change giving) in September 1999
+
+TIP personnel requested the Reference data team to make a change to the accounting sense of product
+196 which was duly carried out.
+
+The change is wholly allowable according to the rules expressed at the interface and the business
+intention was to correct an erroncous accounting sense.
+
+Pathway identified that the change would Iead to a clearly unintended effect of “netting out” two
+products intended to aggregate on to a line on the outlet cash account. They suppressed the change and
+raised a PinICL querying the POCL intention. (This is not a formal process).
+
+Queries of this type do not currently pass through formal incident & problem management processes
+and in the ensuing delay in resolving the issue, further sets of changes were issued which led to
+Pathway accidentally lifting the suppression of the change to product 196.
+
+The effect was as Pathway had predicted resulting in c. 1050 errors produced by the TIP Cash Account
+compare process over a period of 3 weeks. Under the clauses of CCN 560 this equates to c. £245k
+penalties against Pathway. .
+
+Pathway’s analysis of this problem has led them to conclude that it and others like it would not be
+detected by the proposed EPOSS/TIP reconciliation feature.
+
+The position maintained by Keith Falconer is that all errors on the outlet account data or the daily
+transactional data streams must be detected within the Pathway domain. (i.e. it is not acceptable to have
+an ongoing safety net within our domain that detects errors undetected at the point of transmission
+over the interface.) Thus to accept the Pathway provided EPOSS/TIP reconciliation feature it must be
+proven that the feature is capable of tracking all known (or potential?) errors.
+
+Refdatabrief.doc 1 18/11/9919:43
+
+POL00028554
+POL00028554
+
+However, it is true that the reconciliation feature provides POCL with a significant amount of
+protection which it does not currently have. Additionally there already exists a criteria stipulating a
+stability level of less than or equal to 0.6% of outlet accounts processed by TIP to contain errors as a
+prerequisite to roll out. If it can be shown that the risk of “catastrophic exception” to the expected TIP
+interface stability norm can be reduced, through a package of measures, to a level whereby local
+corruption may be encountered at an acceptably Jow level and that global or near global corruption is
+rendered virtually non-existent, then our accounting process would be deemed acceptable.
+
+On this basis the following steps are proposed prior to re-commencement of roll out:
+
+=> The Reference Data interface agreement must be re-introduced, agreed and brought under contract
+control.
+
+=> Pathway must analyse all possible reference data changes in relation their impact on the target
+application(s) and derive a set of rules which protects the applications from all unintended effects.
+
+=> A robust management process is defined, agreed and brought under contract control to enforce this
+set of rules.
+
+=> A “reference data proving” test environment is created and maintained within the Pathway domain,
+on which all reference data releases are subject to formal (jointly agreed) test.
+
+=> All recommendations emerging from the joint end-to-end reference data process review Tactical
+stage which relate directly to accounting integrity are implemented.
+
+=> In principle agreement is reached on the deliverables and costs for the joint end-to-end reference
+data process review: Strategic stage. To include as a minimum that...
+
+=> The Pathway owned target applications are reviewed such that they are more resilient to reference
+data changes and less reliant on protection mechanisms expressed in the above rule set.
+
+=> The different approaches taken by the two organisations to accounting principles is reviewed and
+harmonised where deemed appropriate.
+
+Proposed Criteria for continuing roll out which relate to reference data:
+
+Refdatabrief.doc 2 18/11/9919:43
+
+POL00028554
+POL00028554
+
+Version 0.5
+
+Roll-out 2000 Criteria - Monitoring Report
+
+POL00028554
+
+POL00028554
+
+Update for 17 Nov Checkpoint Meeting
+
+ee
+
+Week Commencing 2110 -[ 28/10 I 4/it I 11/1 I Total I Red/Amber/
+Green
+‘Al 298/1 I The number of system stability incidents for the four week period 119 201.5 I 1125 433 Amber @
+21/10 to 17/11 shall be less than 547.
+24/9- 2i/0- I 28/10- I 4/ii- I 11/11- I Total’ I Red/Amber/
+210 2710 __I 3/1 1o/i1__I 14/11 _I Average I Green
+‘AI376/1 I The percentage of cash accounts containing discrepancies shall not 2.24% I 0.90% I 0.40% 16.05% I Red @
+exceed 0.6%
+‘A1376/2_I No cash account discrepancy will be as a result of a cause 0 0 0 0 Green [ )
+previously reported to POCL as having been remedied
+‘AI376/3_ I All new causes of cash account will be analysed and have a 4 1 20 rl @
+rectification plan, submitted to POCL, within 10 days (Number
+without analysis/rectification plan)
+‘A1376/4 I The Accounting Integrity Control Release would have identified all 3 rt @
+new Cash Account Discrepancies reported prior to 24" November
+(number not identified) _
+‘AI376/5 I Those elements of the Rectification Plan for AT376 which are On Green @
+scheduled to be complete by 24/11 shall be complete Track
+Week Commencing Total) I Red/Amber/
+Average I Green
+‘AI408/1 _ I Service Levels for answering Level 1&2 calls to the Help Desk is
+met in at least four of the six weeks as follows:
+a) 95% of first level calls to be resolved in $ minutes 97% I 95% I 96% I 96% _I 96% Green
+b) 100% of first level calls to be resolved in 10 minutes 100% I 100% I 100% I 100% I 100% Green
+©) 95% of second level calls to be resolved in 30 minutes 96% I 100% [99% I 99% I 100% Green
+d) 100% of second level calls to be resolved in 45 minutes 98% I 100% I 100% I 100% I 100% Green
+‘AI 408/2_ I Service Levels for answering 80% of calls to the Help Desk within 69% I 82% [82% I 66% I 72% Red
+20 seconds is met in at least four of the six weeks
+‘A1408/3_I Service Levels for cash account calls (no ring backs required) is 3% 1% 0% 0% 0% Aube @
+met in at least four of the six weeks
+‘A1408/4 I Service Levels for Cash Account repeat calls is met in at least four 0% 0% 0% 0% 0% Gren @
+of the six weeks
+‘1408/5 _I Service Levels for 95% compliance on Cash Account call scripts is NA I 36% ‘I 70% Amber
+met in at least four of the six weeks 24% { J
+‘A1408/6 I The Contractor’s Horizon System Helpdesk Service shall provide No Data
+
+first, second and third level Services as described in Schedule GO1
+
+Anbe@®
+
+Page I of 2
+
+15/11/99
+
+POL00028554
+
+POL00028554
+
+Version 0.5 Roll-out 2000 Criteria - Monitoring Report Update for 17 Nov Checkpoint Meeting
+
+Issues:
+
+Criteria Tssuc Actions Responsibility
+
+lL AIL 298/1 Pathway dispute whether the Blue Screens (possibly Energis Pathway to respond to POCL’s clarification of position Pathway (John
+switch fail) should be included (78 failures counted: 65 in CAP Dicks)
+
+32 and 13 in CAP 33)
+
+2. A1L376/4 Three out of the cight new causes would not have been See issue below.
+identified by the Integrity Control release. This is Pathway’s
+analysis - POCL unable to corroborate.
+
+3. A1376/4 POCL have not had access to Pathway’s design documentation, I Pathway to consider whether POCL can have access to the Pathway (John
+and so POCL will not be in a position to concur with Pathway’s I documents Dicks)
+analysis.
+
+4 AI 408/3 The method of reporting is in dispute. POCL believe that these I Pathway have agreed that their next report will show numbers I Pathway (Paul
+should be reported as integers not percentages, and that if there Westfield)
+are any incidents in the week, this is a failed week.
+
+5. Al 408/3 During the week of the 18" October, Pathway report'a ring back I ATMs have discussed reason and agreed that the ring back on I Pathway (Paul
+in the text of the report, but not in the Service Level table, the 18" October should not be included. Westield an
+
+POCL (Dave
+McLaughlin)
+
+6 AI 408/5 The agreed method of measurement has not been followed and. I POCL and Pathway have discussed an alternative means of (to be determined)
+may not be workable. monitoring based on a newly introduced HSH report showing
+
+the sequence scripts were used for each call. As only two
+weeks is left of the original monitoring period POCL and
+Pathway now need to agree the duration of the new monitoring
+process, Pathway’s initial view is 2 weeks, POCL’s initial
+view is 6 weeks.
+
+7. AI 408/6 POCL and Pathway have not agreed how this should be Provide documentary evidence to support position Pathway (Paul
+measured. Westfield)
+
+Page 2 of 2 15/11/99
+

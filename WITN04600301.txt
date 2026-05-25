@@ -1,0 +1,73 @@
+WITN04600301
+WITN04600301
+
+From: Holmes Jan R[/O=ICL/OU=UKSOUTH FEL01/CN=RECIPIENTS/CN=HOLMESJ]
+Sent: Wed 20/08/2003 4:09:33 PM (UTC)
+
+To: Peach Mik; __-....GRO
+
+Subject: RE: Cleverleys - Horizon Equipment
+
+Mik,
+
+Thanks. I agree with all comments.
+
+Jan
+coe Original Message-----
+From: Peach Mik
+Sent: 20 August 2003 17:08
+To: Holmes Jan R
+Subject: RE: Cleverleys - Horizon Equipment
+Jan,
+
+suggested amendments in red
+
+Regards
+Mik
+Jim,
+
+For clarification I am not part of Fujitsu's legal department. My role in Post Office Account is restricted to assisting Post Office with
+litigation support as and when it is required.
+
+Thanks for the papers. I've done some preliminary work and, perhaps inevitably, the picture is not as clear as we might wish
+
+Let me start with the easy stuff :
+
+1. We will have no record of any transaction data from Cleverleys dated before November 2000 in the central audit archive since this
+is automatically deleted 18 months from the date that it is written. So, if 30th November 2000 was the last active day for the Counter
+that data would have been deleted on or about 30th May 2002.
+
+2. Similarly, there will be nor Help Desk logs since these are also deleted after 18 months.
+
+Now the hard stuff
+
+1. Transactions exist on the Counter for no more than 34 (not 90 as quoted) days after which they are automatically deleted by a
+Riposte routine (Riposte is the messaging software that passes information around the whole system and generates the transaction
+information). In the case of this particular system transactions MAY still exist, provided that the counter has not been powered up at
+any time since the last "active day".
+
+2. If a Counter has been switched off for more than 35 consecutive days and then switched on Riposte will not start-up. This is a
+security device to deter a Counter being stolen and subsequently being attached back onto the network in order to conduct
+transactions illegally.
+
+3. If Riposte were made to work after 35 days it would immediately check for transactions >34 (not 90 as quoted) days old and delete
+them immediately.
+
+4. Under any circumstances we could not allow a 3rd party direct access to a Counter since the filestore is encrypted and for them to
+be able to do anything would require our releasing the crypto key. This we would not do.
+
+I don't know if you phrased the above for some legal reason, I would have said "Under no circumstances would we allow a 3rd party
+direct access to a counter. The filestore is encrypted and for a 3rd party to make sense of the data we would have to release to them
+details of the encryption key. This we would not do."
+
+How we can help :
+
+1. If this is to be pursued then the work would have to be undertaken by our technical specialists in Bracknell, possibly with the 3rd
+party in attendance as an observer. Do you need to add that the 3rd party should be security cleared before being allowed access ?
+
+2. We could make no guarantees about recovering any data since there are a number of activities that, quite frankly, we have had no
+cause to attempt before and therefore could not be certain of the outcome.
+WITN04600301
+WITN04600301
+
+3. There would be a charge associated with this work.

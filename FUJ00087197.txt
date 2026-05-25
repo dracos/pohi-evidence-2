@@ -1,0 +1,54 @@
+FUJ00087197
+FUJ00087197
+
+OCR 20834 Completed
+
+Import missing txns and attachments for FAD225208
+
+A counter (ctr1) at this Branch had been swapped out when it had not been
+replicating to any of the other 2 counters. Work Instruction WI2940R needs to be
+followed to identify the stranded transaction messages and to modify them so
+that they can be imported without issue.
+
+There were a total of 119 financial transactions (of which 9 were APS) that were
+stranded on the swapped out counter. These transactions and their attachments
+were recovered from one of the other counters and now needs to be reinserted
+into the core server using RiposteImport. In order to do this the transaction
+messages have had to be amended so that they appear to have been done on
+counter 11 rather counter 1 to allow them to be imported. After the marooned
+transactions have been imported and replicated across to all the counters then
+the mstores on counters 2 and 3 need to be deleted (in turn) and forced to
+replicate from counter 1.
+
+Checks and test have already been done (and witnessed) to ensure the
+transaction messages import ok and that the figures add up. This OCR is to
+authorise the import onto the live messagestore.
+
+When: Planned for 21/10/2008 11:00
+Comments
+
+Lina Kiang (POA SSC Support) wrote at 21/10/2008 11:00: Following the
+messages being imported, the mstores on all the counters were rebuilt from the
+data centre.
+
+Other details
+
+Raised by: Lina Kiang 20/10/2008 17:28
+Peak: PC0166925
+
+Change at location: FAD225208
+
+Change type: Messagestore
+
+Approval
+
+Approved by Mik Peach (21/10/2008 06:46) for POA SSC Support
+Action
+
+Actioned by Lina Kiang (21/10/2008 11:00) for POA SSC Support
+Witness
+
+Witnessed by Dave Seddon
+
+Ww
+

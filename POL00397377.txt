@@ -1,0 +1,1693 @@
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+HNG X Programme
+PCI Incident Response Plan
+
+Author(s) Richard Barber
+(POL Head of Information Security)
+Reviewer(s) Head of POL Security ((John Scott)
+
+Legal & Compliance (Paul Meadows)
+Commercial Security Manager
+
+(Sally Smith)
+
+PCI Project Manager (Connie Penn)
+Live Service and Business Continuity
+Manager (Gary Blackburn)
+
+Head of Product & Branch
+
+Accounting
+(Rod Ismay)
+Sign off authority
+Reference configuration
+Operational Baseline
+
+Number
+
+Version 0.6
+
+Status
+
+Classification Working Document
+Date November 2011
+Circulation HNGxX Joint Test Team, Operations
+
+Control, POL Security teams
+
+1 Document Control
+
+1.1 Version History
+
+VERSION DaTeD. CHANGE DETAILS
+
+0.1 18/02/2008 First version of PCI Incident Response Plan
+
+0.2 22/02/2008 Updated following informal review
+
+0.3 29/02/2008 Including comments from informal review
+
+0.4 13/05/2008 Including comments from formal HNGX review
+Expanded forensic process
+
+Date of issue: Draft Version 0.6 Page 1 of 36
+Information Security
+
+POL00397377
+POL00397377
+
+PCI Incident Response Plan
+
+Added appendix for approved PFls
+Added appendix for Streamline incident helpdesk
+
+0.5 27/05/2008 Revised to include Major Incident Alert and further
+comments from review team
+Added reference to ACPO Guidelines for computer
+evidence.
+
+0.6 04/08/2011 Updated following lessons learnt from Pin Pad failure
+
+across the network
+
+1.2 Change Co-ordinator
+
+All changes to this document are to be sent to the Change Controller below:
+
+Name
+Business Address
+
+Business Telephone Number(s)
+
+Email Address
+
+1.3 Related Documents
+
+HNG Project Support Office
+148 Old Street
+London
+
+EC1V 9HQ
+
+[GRO
+
+REF: I DOCUMENT REEF. TITLE VERSION DATE
+1 CON/MGM/006 CMT high level procedures 0.53
+2 $15 RMG Information Security Incident
+Response Policy (S15)
+3 PCI DSS Payment Card Industry Data 4.1
+Security Standard
+4 ACPO Guidelines Good Practice Guide for Computer- I 4
+based Electronic Evidence
+(Association of Chief Police
+Officers)
+5 1SO27001 Information technology. Security 2005
+techniques. Information security
+management systems.
+Requirements
+Date of issue: Draft Version 0.6 Page 2 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+1.4 Abbreviations
+
+ABBREVIATION DESCRIPTION
+
+Card Schemes I Means those companies that produce payment
+cards (credit or debit) e.g. Mastercard, VISA,
+American Express, Discover, JCB etc
+
+CPP. Common Point of Purchase. A term used by the
+Card Schemes to refer to merchants suspected of
+being used to compromise payment cards
+
+PFI Qualified Forensic Investigator. An investigator who
+has expertise examining computer systems for
+evidence of malicious activity. For this PCI Incident
+Response Plan such investigators must be
+approved by the Card Schemes otherwise they must
+not be engaged to investigate a PCI Incident. Refer
+
+to Appendix A.
+FS Fujitsu Services Ltd
+HNGX Horizon Next Generation
+HNGX Data Fujitsu Services Data Centre(s) used for provision
+Centre of services for HNGX
+
+IRE11/1IRE19 I Fujitsu Data Centres for HNGX. IRE11 is Primary.
+IRE19 is Secondary
+
+Merchant An organisation, usually a bank, that contracts with
+Acquirer one or more Card Schemes to engage and contract
+with merchants who will accept payment for goods
+or services by a payment card (credit or debit)
+
+PAN Primary Account Number. This is the number
+embossed on the face side of a credit or debit card.
+Usually 16 digits in 4 groups of 4 but may vary by
+Card Scheme
+
+PCI-DSS Payment Card Industry — Data Security Standard
+POA Fujitsu Services Post Office Account (= RMGA)
+POL Post Office Ltd
+
+RMG Royal Mail Group
+
+RMGA Fujitsu Services RMG Account (= POA)
+
+SAN Storage Area Network
+
+User An employee of Royal Mail Group, a contractor or a
+
+third party employee, authorised to access Royal
+Mail Group information systems for resources or for
+the purpose of providing IT support or maintenance.
+
+Date of Issue: Draft Version 0.6 Page 3 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+This page intentionally left Blank
+
+Date of Issue: Draft Version 0.6 Page 4 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Contents
+
+1 Document Control
+1.1. Version History...
+1.2 Change Co-ordinator.
+1.3. Related Documents.
+1.4. Abbreviations.
+
+2 Introduction
+2.1 Purpose.....
+2.2 Scope.....
+
+3 PCI Incident Definition
+3.1 Minor PCI Incident Definition.
+3.2 Major PCI Incident Alert Definitior
+
+4 PCI Incident Management
+4.1 Initial Reportin:
+4.2 Escalation Path
+4.3 Severity Analysi
+4.4 Initial PCI Incident Report.
+4.5 PCI Minor Incident Declaratiot
+4.6 PCI Major Incident Alert...
+4.7 PCI Major Incident Declarat
+
+5 PCI Minor Incident Management Process
+
+S 2SS0C©C0©MMM NNN DOM WYHNNN
+
+6 PCI Major Incident Management Process 12
+6.1 Introduction...
+
+6.2 Differences from Operations Control Procedure CON/MGM/006..
+7 Reporting
+7.1 Initial Reports......
+
+7.2 PCl Incident Reports.
+7.3. PCI Major Incident Reports...
+
+8 Testing
+
+9 Awareness and Training 21
+Appendix A Payment Card Industry 23
+Appendix B Excerpt from PCI DSS v1.1 24
+Appendix C Content of Initial Report 25
+Appendix D Forensic Investigation of PCI Major Incident 26
+AppendixE Elective Disconnect of HNGX Data Centre 30
+
+Appendix F POL Approved PFlIs
+F.1 Requirements for POL Approved PFI....................
+F.2 Responsi ‘ies of POL Head of Information Security.
+F.3 List of POL Approved PFls..
+
+Appendix G How to Contact Streamline 34
+
+Date of issue: Draft Version 0.6 Page 5 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+2 Introduction
+
+While the POL Major Incident Management process is owned and managed by the
+Business Continuity Team within Operations Control the PCI aspect is owned by
+Information Security which manages and escalates a PCI incident as far as possible
+using processes already established within POL.
+
+A PCI Incident may impact POL in a number of ways. Minor incidents will be handled
+using established processes within and across POL Security teams.
+
+A Major PCI Incident will require escalation to and management by the Operation
+
+Control Major Incident Management Process as defined in document
+
+CON/MGM/006.
+
+This document derives from RMG Information Security Incident Response Policy
+
+(S45)-22
+
+2.1 Purpose
+
+The purpose of this document is as follows:
+
+« To define a PCI Incident
+
+e To specify how a PCI Incident should be categorised
+
+e To define the roles and responsibilities in managing a PCI Incident at its
+various stages and the methods by which management will be notified and
+informed of an incident
+
+e To outline the forensic response to a Major PCI Incident, if one is required
+
+¢ To define why and when a Major PCI Incident may necessitate the elective
+invocation of a Major Business Continuity Incident at the HNGX Data Centres
+
+¢ To identify reporting requirements
+
+e To identify test requirements and propose test scenarios
+
+2.2 Scope
+
+This document applies to POL HNGX programme after it goes live.
+
+This document only applies in respect of the contract between POL and its
+acquirer (WorldPay / HSBC Merchant Services). It does not apply to any other
+payment card service used by or for POL.
+
+This document does not apply to suppliers other than Fujitsu Services Ltd Post
+Office Account. Documents need to be put in place to cover;
+
+Date of Issue: Draft Version 0.6 Page 6 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+> CAP Gemini for the web
+> BT/Logica for the Telephony Call Centre
+> RMG for Call Centre Rod Fishing Licences
+
+This document does not apply to any Web Portal.
+
+3 PCI Incident Definition
+
+A PCI Incident is one where information is received that indicates that cardholder
+data may have been compromised. It is not necessary to demonstrate that
+cardholder data has been compromised to declare an incident. Part of the PCI
+Incident Response Plan will be an investigation to confirm whether a compromise
+has or has not taken place.
+
+PCI Incidents are defined as Minor or Major.
+
+3.1. Minor PCI Incident Definition
+
+The definition of a Minor PCI Incident is not an exact science and will involve the
+judgement of the POL Security Incident Manager. Such an incident will typically
+appear to be the work of opportunist theft not organised crime.
+
+Such an incident is one where, for example:
+
+a) Up to 1,000 cardholder details are suspected of being compromised
+over a period of 12 months or more in four or more locations, AND
+
+b) It can be shown conclusively that a HNGX Data Centre cannot have
+been involved in the compromise
+
+c) One or more Pin Pads or points of payment are compromised
+
+3.2. Major PCI Incident Alert Definition
+
+The definition of a Major PCI Incident Alert is not an exact science and should
+involve the judgement of the POL Security Incident Manager and the POL Head
+of Information Security. The evidence giving rise to an Alert will appear to be an
+organised activity to obtain credit or debit card details and will necessarily imply
+large scale compromise of data. Regardless of the volumes of data involved an
+Major Incident Alert will be raised if any HNGX Data Centre appears to be
+involved. The suspicion that an HNGX Data Centre is involved will depend on an
+interpretation of the circumstances surrounding the allegation and the evidence
+obtained.
+
+Thus a Major PCI Incident Alert is one where, for example:
+a) asingle large volume compromise appears to have occurred e.g. more
+
+than 1,000 cardholder details over a period of no more than one week
+in four or less locations, OR
+
+Date of Issue: Draft Version 0.6 Page 7 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+b) the evidence indicates that payment card data compromised may have
+come from POL systems.
+
+c) Where a Merchant Acquirer has indicated POL to may be a Common
+Point of Purchase (CPP).
+
+4 PCI Incident Management
+
+This section describes the entry points to the PCI Incident Management Process
+and the decision points leading to a Minor Incident declaration or a Major Incident
+declaration.
+
+The process is shown in Figure 1 on page 14. and described in Table 1 on page
+15.
+
+4.1 Initial Reporting
+
+An Initial Report is one made by any POL team receiving an allegation from any
+source that payment card data may have been compromised while in the
+possession of POL.
+
+Sources include (but are not limited to): Business Partners, Suppliers or External
+Agencies, Customers or Users.
+
+It is also possible that the Merchant Acquirer may be the source. This may occur
+if POL has been identified as a Common Point of Purchase (CPP).
+
+An Initial Report is the first indication received of the possible compromise of
+cardholder data whilst in the POL environment (counters, business processes,
+data centre networks, systems, suppliers etc).
+
+Each POL team that may be expected to make an Initial Report must ensure they
+know what information must be obtained from the source. See Section 7.1 and
+Appendix C.
+
+4.2 Escalation Path
+
+The Initial Report must be passed to the first person in the list below. That person
+must respond with a positive written confirmation that the Initial Report has been
+received and that they are dealing with it.
+
+If no such response is received within 24 hours then the Initial Report must be
+passed to the next person on the list in exactly the same manner and each time
+allowing 24 hours for a response.
+
+ESCALATION ROLE
+
+1 POL Security Incident Manager
+
+Date of Issue: Draft Version 0.6 Page 8 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+2 POL Head of Information Security
+
+3 POL Operations Live Service Manager
+
+4.3 Severity Analysis
+
+The person receiving the Initial Report (as defined in the Escalation Path section
+4.2) will obtain, confirm and review the evidence of the incident if it is not
+provided with the Initial Report. It is presumed that such evidence will be a copy
+of the cardholder data that is alleged to have been compromised. The content
+and format of the cardholder data may point to how the incident may have taken
+place.
+
+The POL Security Incident Manager or the POL Head of Information Security
+must review the evidence and classify the severity of the incident as Minor or
+raise a Major Incident Alert. See Section 3.
+
+If the Initial Report has found its way to the POL Operations Live Service
+Manager their responsibility will be to acquire the evidence as above and ensure
+that it is reviewed by the POL Security Incident Manager or the POL Head of
+Information Security. If that is not possible the evidence is reviewed and the
+incident severity determined as Minor or a Major Incident Alert is issued by the
+POL Operations Live Service Manager in conjunction with a senior manager
+within POL who will take responsibility for the incident in the place of the POL
+Head of Information Security and fulfil all the relevant duties in respect of the
+incident process.
+
+If no evidence exists then the incident is closed.
+
+The Severity Analysis will be entered into the Incident Report.
+
+4.4 Initial PCI Incident Report
+
+The POL Security Incident Manager is responsible for completing a PCI Incident
+Report. These reports will use the general incident report format used for all
+Information Security incidents.
+
+PCI Minor Incident Reports are passed to the POL Head of Information Security
+and reviewed on a monthly basis.
+
+PCI Major Incident Alerts must be passed to the POL Head of Information
+Security within one hour of the Major Incident Alert being determined.
+
+4.5 PCI Minor Incident Declaration
+
+Based on the evidence received the POL Security Incident Manager may declare
+an incident a PCI Minor Incident.
+
+Date of Issue: Draft Version 0.6 Page 9 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+The POL Security Incident Manager will also pass a copy of the PCI Incident
+Report to the Head of Product and Branch Accounting in the Finance Department
+so that the Merchant Acquirer can be informed of the incident. The PCI Incident
+Report remains open until the incident is resolved. The PCI Incident Report must
+be updated with any progress made and this must also be communicated to the
+Merchant Acquirer through the normal channels. See Section 5.
+
+If the Initial Report and the evidence shows that a HNGX Data Centre may be
+implicated then the incident is automatically a PCI Major Incident.
+
+NB In addition to the PCI Incident Response process all PCI Minor Incidents
+should be passed to the POL Security (Fraud) Team for investigation of the
+possible fraud.
+
+4.6 PCI Major Incident Alert
+
+If the person reviewing the evidence decides it justifies a PCI Major Incident Alert
+the PCI Incident Report must be passed to the POL Head of Information Security
+within 1 hour of the Alert being issued.
+
+The POL Head of Information Security will review the allegation and the evidence
+and must confirm or downgrade the Severity Analysis.
+
+If the Severity Analysis is confirmed this is entered into the PCI Incident Report
+and a PCI Major Incident Alert is issued. This is described in Section 6.
+
+Once a PCI Major Incident Alert is raised it will necessitate the same process as
+used by POL Operations for a Major Incident using CON/MGM/006. The
+circumstances and the evidence will be reviewed by the Working Group which
+will direct an investigation to confirm whether the Alert merits being escalated to a
+Major Incident Declaration.
+
+It is required that the Working Group will confer with POL senior management,
+POL Legal & Compliance, POL Operations, POL Head of Information Security
+and the Supplier before electing to declare a Major Incident.
+
+Both the investigation and any subsequent activities must be achieved in a
+forensically sound manner in accordance with both ACPO Guidelines and the PFI
+requirements of the Card Schemes. The latter may be found in Appendix D.
+
+4.7 PCI Major Incident Declaration
+
+If the Major Incident Alert is confirmed then the Working Group must issue a PCI
+Major Incident Declaration. POL then has 72 hours in which to engage a PFI.
+The decision to initiate and complete a mirror image of the card holder
+environment will be made by the Working Group as part of the POL Operations
+Major Incident Management Process.
+
+Date of Issue: Draft Version 0.6 Page 10 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+The Imaging must be achieved in a forensically sound manner in accordance with
+both ACPO Guidelines and the PFI requirements of the Card Schemes. The
+former may be downloaded from the Internet’? and the latter may be found in
+Appendix D.
+
+The POL Head of Information Security must pass a copy of the PCI Incident
+Report to the Head of Product and Branch Accounting in the Finance Department
+so that the Merchant Acquirer can be informed of the Major Incident. The PCI
+Incident Report must be updated by the POL Head of Information Security as part
+of the Working Group (see Section 6.2) with any progress made and this must
+also be communicated to the Merchant Acquirer through the normal channels.
+
+The POL Operations Major Incident Management Process (CON/MGM/006) must
+be used to manage the incident. See Section 6.
+
+5 PCI Minor Incident Management Process
+
+A PCI Minor Incident will not have occurred within the HNGX Data Centres.
+However applications hosted within the HNGX Data Centres may have been used
+to compromise cardholder data.
+
+PCI Minor Incidents could be a result of abuse of Horizon systems, Post Office
+processes or Supplier systems or processes by POL, RMG or Supplier staff using
+privileges to obtain cardholder data from Audit, Transaction Enquiry or other
+systems. Or they could be the result of PO Counter staff falsely obtaining
+cardholder data at the Counter e.g. through techniques such as “skimming”.
+
+The POL Security Incident Manager will obtain, confirm and review the evidence
+of the incident. It is presumed that such evidence will be a copy of the cardholder
+data that is purported to have been compromised. The content and format of the
+cardholder data can point to how and/or where the incident may have taken
+place.
+
+Minor Incidents will be passed to and investigated by the POL Security Team.
+The POL Security Team will become responsible for the incident and will report
+progress back to the POL Security Incident Manager who will update the Incident
+Report and distribute according to Section 7.2.
+
+Whichever team receives a PCI Minor Incident Declaration will investigate the
+incident following their normal processes and with due regard to safeguarding
+evidence that may be needed for a prosecution.
+
+* httpy/www.acpo.police.uk/asp/policies/Data/ACPO%20Guidelines%20v18.pdf
+2 ttp:yAwww. safe, com/electronic_evidence/ACPO_guidelines_computer_evidence pdf
+
+Date of Issue: Draft Version 0.6 Page 11 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+6 PCI Major Incident Management Process
+
+6.1 Introduction
+
+In the event of a major incident, activities must be co-ordinated within POL and
+Supplier businesses in order to minimise adverse impact and protect service to
+both customers and clients. Due to the large number of teams and activities
+involved this cannot effectively be managed by POL Information Security.
+
+Consequently a PCI Major Incident requires the invocation of the Operations
+Control Major Incident Management Process.
+
+This process is identified in Operations Control Procedure CON/MGM/006. The
+highest incident level in that process is Level 3 and is applicable to a PCI Major
+Incident.
+
+The reason that a Major PCI Incident is automatically a Level 3 Major Incident is
+because the requirements of the forensic investigation process may necessitate
+the decision to image the card holder environment and logs in order to preserve
+and analyse the data within for evidence.
+
+6.2 Differences from Operations Control Procedure CON/MGM/006
+
+This description and the Operations Control Process refers to the ‘Working
+Group’. This is made up of all or specified members of the POL Business
+Protection Team, as selected by the POL Live Service Team for the specific
+incident.
+
+The key difference is that a Major PCI Incident Alert invokes the POL Major
+Incident Management Process and convenes a Working Group from the Business
+Protection Team.
+
+Under this change the Alert is managed as though it were an actual incident to
+ensure proper management and investigation can take place and to meet the
+requirements of the Merchant Acquirer and the Card Schemes.
+
+The investigation of a PCI Major Incident Alert and any subsequent Declaration
+requires the formal engagement of an external company approved by MasterCard
+and VISA to provide a Qualified Forensic Investigator (PFI). The PFI must be
+from the Card Schemes approved list and is usually appointed via the Merchant
+Acquirer — note this must be a different company from the QSA used to certify
+
+PCI Compliance. The POL Head of Information Security will maintain a list of POL
+approved PFI companies in Appendix F of this document using the process
+defined there.
+
+The POL Live Service Team within Operations Control retains the co-ordination
+point for this incident process.
+
+Date of Issue: Draft Version 0.6 Page 12 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+The POL Head of Information Security and Head of Legal & Compliance must be
+active participants in the Working Group. If the POL Head of Information Security
+or Head of Risk & Compliance are not available they will appoint a substitute and
+will communicate this to the Live Service Team. If the POL Head of Information
+Security or Head of Legal & Compliance cannot be contacted, then the POL
+Operations Manager will assume that role supported by members of the Working
+Group.
+
+The POL Head of Information Security will report the progress and findings of the
+forensic investigation to the Working Group established to manage the incident.
+
+The Working Group must ensure that the PCI Incident Report reflects any
+progress made during the incident investigation and is formally communicated to
+the Merchant Acquirer via the Head of Product and Branch Accounting.
+
+The POL Security Incident Manager must re-locate to the HNGX Data Centre
+where the investigation is taking place and act as coordinator and liaison
+between the POL Head of Information Security, the HNGX Data Centre Incident
+Response Team and the PFI.
+
+Date of Issue: Draft Version 0.6 Page 13 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Figure 1: PCI Incident Management Flowchart
+
+START
+y
+Incident
+é Reported
+——v¥
+62) PCI Incident
+S Report
+x
+(Incident Closed \¢ No Incident Keys, Major
+Analysis
+_ _ Verify Major (@
+Ga) Ga) Minor Incident /
+v EN
+; : Confirm EN
+PY a jen le Mngt eet Downgrade Severity Severity (8)
+ig Analysis /
+13)
++ ¥ ¥ ¥ ¥v
+ee Establish local Escalate to POL
+Inform Merchant Acquirer i liaison at POA Live Service
+investigation oo. .
+es ata Centre ‘eam
+7) 8) 6)
+——¥ __
+Transfer incident] <<
+managementtoI I 9
+POL Live -
+Service Team
+pe _- __
+‘Appoint working group
+I and hold conference call =
+See CON/MGMIPLA/001 (10)
+cf Box 5 Figure 1 and /
+Table
+First formal advisory to
+Merchant Acquirer
+
+Note: If minor incident results in POL making a public apology, inform merchant
+acquirer, before a public announcement to assure them of the fact that data has
+not been compromised. The same actions should apply if for any reason cards
+cannot be handled at the counter & a public apology is being made.
+
+Date of Issue: Draft Version 0.6 Page 14 of 36
+Information Security
+
+POL00397377
+POL00397377
+
+PCI Incident Response Plan
+
+Table 1: PCI Incid
+
+lent Management Process
+
+Description I Key I Action
+: : S a : ONE [timescales I owner _
+1. I Incident reported Incident identified (clause 4.1)
+The Initial Report is passed to the POL Security Incident Manager or another
+member of the Escalation path (clause 4.2). A minimum of 24 hours and a
+maximum of 72 hours is allowed.
+2. I PCI Incident Report ¢ The Initial Report is reviewed Within one POL Security
+© Copy of Evidence is obtained business day of I Incident
+Incident Report opened Initial Report. Manager or
+alternative
+3. I Severity Analysis Evidence reviewed and incident is: Within 2 hours POL Security
+e closed, or of Incident Incident
+¢ classified as Minor, or Report being Manager or
+¢ _ assessed as Major opened alternative
+If the incident is Minor impact go to box 11. If the incident is Major proceed to box 4:
+4. I Verify Major incident Incident Report with Severity Analysis and Within 1 day of I POL Security
+evidence is passed to Head of Information raising a Major I Incident
+Security if a Major Incident Alert is issued Incident Alert Manager or
+alternative
+5. I Confirm Severity Analysis Incident Report with Severity Analysis and Within 1 day of I POL Head of
+evidence is assessed. If downgraded incident I raising a Major I Information
+passes back to POL Security Incident Incident Alert. Security or
+Manager. If confirmed the Alert is escalated to alternative
+the POL Live Service Team who will initiate
+an investigation to determine if a Major
+Incident Declaration is warranted
+If Severity Analysis is downgraded go to box 11. If the incident is confirmed as Major proceed to box 6
+6. I Escalate to POL Live Service Team ¢ Email Incident Report to POL Live Service I Within 1 day of I POL Head of
+Team raising a Major I Information
+¢ — follow up with phone call. Incident Alert. Security or
+¢ Set out PCI Major Incident Management alternative
+Process requirements should these be
+
+Date of Issue
+
+Draft Version 0.6
+
+Page 15 of 36
+Information Security
+
+POL00397377
+POL00397377
+
+PCI Incident Response Plan
+
+° needed.
+7. I Engage Forensic Investigation Team e Select and engage PFI from list of POL Within 3 days of I POL Head of
+approved companies. raising a Major Information
+¢ Authorise PFI to investigate Alert Incident Alert. Security or
+¢ PFI will report whether Alert is justified alternative
+8. I Establish local liaison at HNGX Data Centre POL Security Incident Manager relocated to Within 3 days of I POL Head of
+POA to effect local liaison and incident raising a Major Information
+management with Supplier teams. Incident Alert. Security or
+alternative
+9. I Transfer incident management to POL Live Service Team I Control of Incident is passed to POL Live Within 1 day of I POL Head of
+Service Team in conjunction with POL Head I raising a Major I Information
+of Information Security because of specialist Incident Alert. Security or
+security assessments and skills required. alternative
+10. I Appoint working group and hold conference call The POL Live Service Team appoints a Within 1 day of I POL Live
+working group to participate in the raising a Major I Service
+management of the incident. Incident Alert. Team and
+appointed
+The working group will be made up of working
+appropriate representatives from the Business group.
+Protection Team, relevant POL
+business/technical managers and appropriate
+representation from supplier domains [if
+appropriate].
+If Alert is confirmed then a conference call is
+held and will decide next steps; initiate the
+Elective Disconnect and compose the first
+formal (contractually required) communication
+with the Merchant Acquirer.
+On direction from the Working Group and
+MIEG the Head of Product and Branch
+Accounting will formally communicate the
+existence of the Major Incident to the
+Merchant Acquirer through the established
+channels.
+Date of Issue Draft Version 0.6 Page 16 of 36
+Information Security
+
+POL00397377
+POL00397377
+
+PCI Incident Response Plan
+
+Further communication with Merchant
+Acquirer will be via Head of Product & Branch
+Accounting at intervals to be agreed with
+Merchant Acquirer or as directed by Working
+Group.
+
+Low impact incident [continued from box 3]:
+
+11. I Minor Incident Declared
+
+¢ Incident confirmed as Minor on Incident
+Report.
+
+* Copy of PCI Incident Report sent to Head
+of Product and Branch Accounting for
+formal communication to Merchant
+Acquirer.
+
+Within 4 hours
+of incident being
+confirmed as
+Minor
+
+POL Security
+Incident
+Manager or
+alternative
+
+12. I POL Security Team Investigation
+
+POL Security Incident Manager passes control
+of incident to POL Security Team for
+investigation (PCI Minor Incidents are
+managed using existing business as usual
+processes by the POL Security Team.)
+
+Within 4 hours
+of incident being
+confirmed as
+Minor
+
+POL Security
+Incident
+Manager or
+alternative
+
+13. I Inform Merchant Acquirer
+
+Head of Product and Branch Accounting
+formally communicates PCI Incident Report to
+Merchant Acquirer and acts as liaison for
+future updates to this report.
+
+Within 4 hours
+of receiving
+Minor PCI
+Incident report
+
+Head of
+Product and
+Branch
+Accounting or
+alternative
+
+If a PCI Minor Incident escalates to a PCI Major Incident, i.e. the initial impact worsens, then the incident would be reassessed and the
+
+process would proceed to box 4.
+
+Date of Issue
+
+Draft Version 0.6
+
+Page 17 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+7 Reporting
+
+7.1 Initial Reports
+
+An Initial Report is the first indication received of the possible compromise of
+cardholder data whilst in the POL environment (counters, business processes,
+data centre networks, systems, suppliers etc).
+
+An Initial Report is a term that describes the details that must be taken when it
+becomes apparent that cardholder data may have been compromised.
+
+An Initial Report may arise from any Supplier or External Agency or from within
+POL or RMG.
+
+An Initial Report may be taken by any of the channels that normally receive calls
+from any party external or internal to POL. Examples of external parties could be
+Law Enforcement Agencies, Suppliers, Merchant Acquirer, UK Cards Association
+(formerly APACS), members of the public, the media — this is not an exhaustive
+list.
+
+The channels that might receive calls from external parties could be Business
+Service Centres, RMG Corporate Security Centre, POL Security Team, RMG
+Portal Webmaster(s), eBusiness team, Horizon Service Desk or National
+Business Support Centre.
+
+Whichever channel receives a call from an external or internal (POL or RMG)
+party should log the call using their local procedure and in addition ensure they
+obtain the details for an Initial Report and then pass the details to the POL
+Security Incident Manager in POL Information Security.
+
+The details that must be taken for a Initial Report are defined in Appendix C.
+
+7.2 PCl Incident Reports
+
+PCI Incident reports must be completed and logged by the POL Security Incident
+Manager using the normal Incident Report format or as otherwise determined.
+Within any Incident Reports PCI Incidents must be clearly marked as such.
+
+PCI Incident Reports will include all the details of the Initial Report plus the
+Severity Analysis. Additionally the PCI Incident Report will include a unique
+Incident number; a summary of the incident, status of incident, issues arising from
+incident and chase/resolution dates.
+
+The PCI Incident Report must be updated until closed. Updates for Minor
+incidents must be copied directly to the Head of Product & Branch Accounting for
+onward communication to the Merchant Acquirer in accordance with the
+requirements of the contract between POL and the Merchant Acquirer. Updates
+for Major incidents must be passed to the Working Group and then
+
+Date of Issue Draft Version 0.6 Page 18 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+communicated to the Merchant Acquirer via the Head of Product & Branch
+Accounting.
+
+PCI Minor Incident Reports are passed to the POL Head of Information Security
+and reviewed on a monthly basis.
+
+7.3. PCI Major Incident Reports
+It is presumed that PCI Major Incidents will only occur within HNGX Data Centres.
+
+The POL Security Incident Manager will complete a PCI Major Incident Report as
+soon as the incident is declared. This report will be made available to all
+management involved in deciding how to manage the Incident.
+
+The PCI Major Incident Report must include a unique incident reference (which
+clearly shows the incident as Major) and will describe the incident, the reason for
+the severity (which will also describe the evidence), the status and the likelihood
+that the Data Centres are at risk.
+
+PCI Major Incident Reports will be updated following the process for reporting
+defined in the Operations Control Major Incident Management Process.
+
+The POL Security Incident Manager will liaise with external organisations
+involved in the incident e.g. Third Parties, Forensic experts etc in preparing a
+Post Incident Report. All such liaison will be communicated to the POL Head of
+Information Security and be communicated via the channels implemented within
+the Operations Control Major Incident Management Process.
+
+The POL Security Incident Manager will complete and distribute a post-incident
+report, initially within one week of the incident. Such report will include a root-
+cause analysis and will be passed to the POL Head of Information Security to
+approve and distribute to senior management.
+
+8 Testing
+
+PCI DSS requires the plan be tested at least annually. The POL Security Incident
+Manager is responsible for ensuring that test plans are provided and appropriate
+(is this happening for PinPad incidents and should test plans be scheduled?)
+
+Test scenarios may be worked into the existing Business Continuity tests and this
+is preferable for a Major Incident.
+
+Testing must include a scenario where a Merchant Acquirer declares POL is a
+Common Point of Purchase.
+
+Minor incidents should be tested more frequently and should cover likely
+scenarios involving low numbers of cardholder details e.g. 100 PANs over 6
+months (see Connie’s comments on hard copy)
+
+Tests should at least focus on:
+
+Date of Issue Draft Version 0.6 Page 19 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+a. ensuring that channels of communication work as expected and are timely
+b. ensuring that Initial Reports are accurate and reliable
+c. ensuring that evidence is gathered
+
+d. ensuring that severity analyses are conducted; are effective and are
+appropriate
+
+e. confirming that staff, third parties and especially key suppliers are aware
+of their responsibilities and have effective incident processes in place
+
+f. confirming that all third party forensic response and capability is
+appropriate and effective.
+
+g. ensuring that lessons learned are adopted back into the incident process
+
+9 Awareness and Training
+
+PCI DSS requires that appropriate training be given to those with security breach
+responsibilities. The POL Security Incident Manager is responsible for ensuring
+that Awareness & Training is planned; that content is appropriate; that relevant
+staff are trained or made aware and that the POL Head of Information Security
+received a report on its effectiveness.
+
+The Awareness & Training content needs to ensure, at the least, that the
+following teams, in POL, RMG and Third Parties, are aware of their roles and
+responsibilities in the event of a suspected and a declared breach:
+
+a. Security teams
+
+b. Helpdesk teams
+
+c. Operations teams, particularly P&BA
+As a minimum training needs to focus on:
+
+a. Awareness of the importance of and need for Payment Card Industry
+cardholder data security
+
+b. Appreciation of the potential impact of a Major incident
+c. Awareness of the PCI Incident Response Plan
+d. How to complete an Initial Report;
+
+e. Ensuring that Initial Reports are passed to correct contact with positive
+confirmation of receipt
+
+f. Ensuring that incident information is not disclosed to unauthorised parties
+and especially that POL liability is not admitted
+
+Date of Issue Draft Version 0.6 Page 20 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Staff with specialist roles must receive training appropriate to their
+responsibilities.
+
+Date of Issue Draft Version 0.6 Page 21 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Appendix A Payment Card Industry
+
+Card Schemes set the business rules that govern the issue of the payment cards
+that carry their logo. Typically, these rules apply throughout the world to ensure
+global interoperability of cards and in some countries, domestic rules may
+operate. The Card Schemes provide authorisation, clearing and settlement
+platforms for payment card transactions, and licence the use of their logo.
+Financial Institutions must be members of the appropriate Card Scheme to issue
+their cards and acquire their card transactions.
+
+Acquirers have a business relationship with merchants, retailers and other
+service providers to process their card transactions. Acquirers obtain financial
+settlement from card issuers, typically via the card schemes and pay the
+proceeds to the merchant, less their processing fees.
+
+For the purposes of this document the Acquirer for POL is currently Worldpay,
+but moving to HSBC Merchant Services from Autumn 2011 (due to complete April
+2012).
+
+The PCI Security Standards Council is a global forum responsible for the
+development, management, education, and awareness of the PCI Security
+Standards, including the Data Security Standard (PCI DSS), Payment Application
+Data Security Standard (PA-DSS), and PIN Transaction Security (PTS)
+requirements.
+
+The Council's five founding global payment brands (American Express, Discover
+Financial Services, JCB International, MasterCard Worldwide, and Visa Inc.) have
+agreed to incorporate the PCI DSS as the technical requirements of each of their
+data security compliance programmes which is legally binding on Acquirers (and the
+merchants they acquire) by virtue of the Acquirer’s contract with the Schemes.
+
+The enforcement of compliance with the PCI DSS and determination of any non-
+compliance penalties on Acquirers are carried out by the individual payment brands
+and not by the Council.
+
+PCI DSS requirements are applicable if a Primary Account Number (PAN) is
+stored, processed, or transmitted. If a PAN is not stored, processed, or
+transmitted, PCI DSS requirements do not apply. At present Horizon On-Line,
+CAP Gemini for our web applications and BT/Logica & call centres for our
+telephony & Rod Fishing Licence products are in scope for PCI DSS.
+
+The PCI DSS security standard requires a documented incident process for any
+incident that affects or may affect the security of cardholder data. This
+documented process is required to be audited and tested annually and must be
+invoked should it be suspected that cardholder data may have been
+compromised.
+
+Cardholder data includes all data on the card or on its magnetic stripe or
+contained within the chip. This data includes but is not limited to the: Primary
+Account Number (PAN), Cardholder name, Service code, Expiration date,
+
+> tp. apacs.org.uk/resources_publications/glossary_7.htm
+
+Date of Issue Draft Version 0.6 Page 22 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Security codes (e.g. CVV2 etc), magnetic stripe data, PIN code etc., and also
+applies to customer not present card data (e.g. e-Commerce, mail order and
+telephone order/call centres).
+
+Appendix B PFI — all this is covered in Appendix F/Excerpt from PCI DSS v2
+[October 2010]
+
+12.9 Implement an incident response plan. Be prepared to respond
+immediately to a system breach.
+
+12.9.1 Create the incident response plan to be implemented in the event of
+system breach. Ensure the plan addresses the following, at a minimum:
+> Roles, responsibilities, and communication and contact strategies in
+
+the event of a compromise including
+> notification of the payment brands, at a minimum
+> Specific incident response procedures
+> Business recovery and continuity procedures
+> Data back-up processes
+> Analysis of legal requirements for reporting compromises
+» Coverage and responses of all critical system components
+> Reference or inclusion of incident response procedures from the
+payment
+brands
+
+12.9.2 Test the plan at least annually
+
+12.9.3 Designate specific personnel to be available on a 24/7 basis to respond to
+alerts
+
+12.9.4 — Provide appropriate training to staff with security breach response
+responsibilities
+
+12.9.5 Include alerts from intrusion detection, intrusion prevention, and file
+integrity monitoring systems
+
+12.9.6 Develop process to modify and evolve the incident response plan
+according to lessons learned and to incorporate industry developments.
+
+Date of Issue Draft Version 0.6 Page 23 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Appendix C Content of Initial Report
+
+Anyone receiving an initial report must NOT under any circumstances admit
+any liability for or on behalf of POL and must not pass any personal opinion
+regarding the incident. At this stage the incident is not confirmed.
+
+An Initial Report must include:
+a) Date and time
+
+b) Agent name, contact details and network identifier. An Agent is any person
+representing Post Office Ltd in receiving an allegation of a compromise of
+cardholder data or an incident around Pin Pads or card data in any form in
+the context of this PCI Incident Response Process.
+
+Cc) contact details of the person making the report e.g. name, organisation
+(e.g. Police, member of public, RMG, Supplier etc), landline telephone
+number, mobile telephone number, address etc
+
+d) Complete description of the cardholder data and format in which it may
+have been compromised e.g. PANs (Primary Account Numbers — the 16
+numbers normal found on the front of the card), cardholder name etc
+
+e) Caller’s description of events that indicate a compromise or incident of
+cardholder data may have taken place.
+
+f) How many card details are thought to be involved
+9g) How the compromise or incident happened
+h) Why the caller believes POL is involved.
+
+i) Agent must ask and record what is the evidence that cardholder data may
+have been compromised.
+
+j) Agent must also ask for copies of the evidence that cardholder data may
+have been compromised.
+
+Date of Issue Draft Version 0.6 Page 24 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Appendix D_ Forensic Investigation of PCI Major Incident
+
+Purpose and Background
+
+It is assumed that this Major Incident involves the HNGX Data Centres. It is a
+contractual requirement on POL that an external and fully qualified forensic team
+must investigate a PCI Major Incident.
+
+The POL Head of Information Security will maintain a list of approved forensic
+investigators. See Appendix F. No other forensic team may be involved without
+the explicit written approval of the POL Head of Information Security or the
+Working Group otherwise POL risks a breach of contractual obligations which
+may result in a cessation of payment card processing by the Merchant Acquirer.
+
+The forensic investigators may decide that the incident may only be resolved by
+an elective disconnect of the Data Centres. The decision to image all or some of
+the systems that comprise HNGX will necessarily involve the correct level of
+management via the Working Group.
+
+All parties involved in the PCI Major Incident must support the forensic
+investigation performed by the Qualified Forensic Investigator. There are
+mandatory actions performed by the PFI during a forensic investigation which are
+required by the Card Schemes and which will include the following:
+
+a) Determine the cardholder information at risk
+
+a. Number of accounts at risk. Identify those stored and compromised
+on all test, development and production systems
+
+b. Type of account information at risk:
+
+i. Full magnetic-stripe data (e.g. track 1 and 2) and its
+equivalent on the chip
+
+ii. PIN blocks
+iii. Cvwv2
+iv. Account Number (PAN)
+
+v. Expiration date
+vi. Cardholder name
+vii. I Cardholder address
+
+c. All data exported by intruder
+
+d. The timeframe of account numbers stored and compromised
+
+Date of Issue Draft Version 0.6 Page 25 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+NOTE: If applicable the PFI must run a packet sniffer on the
+compromised entity’s network
+
+b) Perform incident validation and assessment:
+a. Establish how the compromise or incident occurred
+b. Identify the source of the compromise or incident
+c. Determine the timeframe of the compromise or incident
+
+d. Compromised entity must provide a diagram of the network that
+includes:
+
+i. Cardholder data sent to data centre
+
+ii. Upstream connection(s) to third party payment
+processor(s)
+
+iii. Connection to Merchant Acquirer
+
+iv. Remote access connections
+v. Specifics on firewall, infrastructure, host and personnel
+findings
+
+e. Review the entire network to identify all compromised or affected
+systems, considering the e-commerce, corporate, test, development
+and production systems as well as VPN, modem, DSL and cable
+modem connections and any third party connections
+
+f. Determine if compromise has been contained
+
+Cc) Check for Track 1 and Track 2 data, CVV2 and/or PIN block storage or
+CNP card data
+
+a. Examine all potential locations — including payment application — to
+determine if CVV2 Track 1 and Track 2 data and/or PIN blocks are
+stored, whether encrypted or unencrypted (e.g. in production or
+backup databases or tables used in development, application logs,
+transaction logs, trouble-shooting or exception files, stage or testing
+environment data on software engineers’ machines etc.).
+
+d) If full track data, CVV2 and/or PIN blocks are stored by a payment
+application, identify the vendor name, product name and version number.
+Or CNP, PAN, expiry date, CVV2
+
+e) Preserve all potential electronic evidence on a platform suitable for review
+and analysis by a court of law if needed
+
+f) Perform external and internal vulnerability scan
+
+Date of Issue Draft Version 0.6 Page 26 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+9)
+
+h)
+
+Based on their findings the PFI will report to Merchant Acquirer the
+compliance status for each of the twelve basic requirements under the PCI
+Data Security Standard.
+
+Report findings to the Merchant Acquirer
+
+Process Assumptions
+
+a)
+
+There will be a phased approach to forensic investigation of data in HNGX.
+This would utilise a principle of "least invasive to most invasive", the same
+applies for the web and call centres.
+
+Once a Major Incident is declared POL has 72 hours in which a PFI must
+be involved in this process.
+
+The Working Group convened under the POL Operations Major Incident
+Management Process will decide whether the Alert justifies declaration of
+an Major PCI Incident and will take advice on when an elective disconnect
+of IRE11 and/or IRE 19 might need to happen, CAP Gemini or Logica and
+RMG Call Centres.
+
+The parallel steps i.e. A1, A2 etc, can only take place if there are sufficient
+PFls to carry out those steps in parallel. Fewer resources will increase the
+number of steps needed.
+
+Live service from IRE11 and IRE19 will be maintained as long as possible
+with minimal interruption to service
+
+Provision (process and equipment) will be made during an Incident to
+obtain a forensic copy of data in the SAN in IRE11.
+
+The Elective Disconnect will be utilised in order to ensure containment of
+an incident, but only as a very last resort, because currently logs are
+deemed sufficient for the most part.
+
+Forensic Investigation Process
+
+Al.
+
+A2.
+
+A3.
+
+Forensic experts (PFI) briefed on design of data centre, network diagram,
+PCI data flows, storage locations, data formats, audit and logging points,
+approved memory processes, sockets and protocols etc. Web platform,
+call centre environment & transaction status.
+
+Immediately suspend all planned changes to data centre servers,
+applications, storage etc. i.e. no code releases, no servers deployed or
+removed from service, web platform & call centres.
+
+All admin access to data centre hosts restricted to "four-eyes" access e.g.
+administrators must be effectively escorted during any access to any host
+by another administrator.
+
+Date of Issue Draft Version 0.6 Page 27 of 36
+POL00397377
+
+POL00397377
+Information Security PCI Incident Response Plan
+A4. Initiate an immediate physical security escalation of data centre access.
+Secure data centre CCTV and access control records, work records etc.
+B. Initial Report reviewed by PFls to determine which systems, transport
+networks or processes may be out of scope. This is based on a
+comparison of the evidence against the data in the systems and
+processes.
+Cc. Based on the Initial Report PFI assess what external links, servers,
+applications, processes and storage might be compromised. All others
+placed out of scope.
+D. PFI decides what SAN data must be secured and begins activities to
+identify and secure that data
+E. Any external links implicated are physically checked for monitoring tools by
+
+external team from POL, assisted by external FS staff and escorted by FS
+data centre operations manager.
+
+F1. PFI review all SYSMAN3 logs & all log data held for 12 months as per the
+PCI requirement.
+
+F2. PFl review IRE11 bladeframe server processes in live memory for rogue
+processes.
+
+F3. PFI copy selected areas of SAN in IRE11 for systems and applications in
+scope of forensic investigation.
+
+F4. PFl review SAN data for evidence of security breach.
+
+G. If none of the above yields sufficient information to exclude the possibility
+that data has been compromised (and arriving at this stage this is
+exceedingly unlikely) then elective disconnect of IRE11 is invoked if that is
+the only remaining option for forensic investigation.
+
+Date of Issue Draft Version 0.6 Page 28 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Appendix E Elective Disconnect of HNGX Data Centre
+
+This is a major Business Continuity Event in which a Data Centre is disconnected
+from its connecting networks in a planned and organised manner.
+
+It is similar to a major Business Continuity Incident but is different in that it is
+planned and is forced by the requirement to comply with an obligation under
+contract with the Merchant Acquirer.
+
+The purpose of the Elective Disconnect is to ensure that no network based
+process or traffic may deliberately or unintentionally change the state of the
+processes or data in the affected environment.
+
+The consequences of not complying may be the withdrawal of the facility to
+process card transactions under that contract. This in itself may not have the
+same overall effect on POL operations at the Counters as disconnecting the Data
+Centre(s) but which may endure for a good deal longer. Whether this would be
+the case and how much longer it would last depends almost entirely on
+negotiation with the Merchant Acquirer.
+
+The worst case scenario is one where the Merchant Acquirer is not influenced by
+outside pressures or negotiation and denies POL the facility to process any
+relevant payment card transactions until satisfied that the security breach has
+been completely identified; that the breach did not compromise or no longer
+compromises cardholder data.
+
+Relevant payment cards are those falling under the contract with that Merchant
+Acquirer. In the scope of this PCI Incident Plan that would be Worldpay (moving
+to HSBC end of 2011).
+
+Planning the Elective Disconnect
+
+This ideally would have already been completed by the Data Centre supplier. It
+should form part of the annual test of this plan.
+
+The disconnect must identify two scenarios:
+
+a). I The Primary Data Centre must be disconnected from all external networks
+e.g. Fujitsu corporate network, the internet, the POL Counters environment
+and any other Data Centres.
+
+b) Specific systems within the Data Centre must be disconnected from
+internal networks as advised by the PFI.
+
+Any disconnection must be achieved in a forensically sound fashion and with due
+regard for the need to contain an incident.
+
+It should also include a planned re-connection. It might be assumed that would be
+the same as bringing the Data Centre(s) back online after a major BC incident.
+
+Date of Issue Draft Version 0.6 Page 29 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+However a test would demonstrate whether this would be the case or not and a
+test should therefore be undertaken.
+
+Date of Issue Draft Version 0.6 Page 30 of 36
+POL00397377
+
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Appendix F POL Approved PFis
+(being sourced)
+
+F.1 Requirements for POL Approved PFI
+
+The key considerations for the formal approval by POL of a company capable of
+the forensic investigation of HNGX data centres are threefold:
+
+1. The Payment Card Industry Security Standards Council will maintain a list of
+approved PCI Forensic Investigators to replace the individual payment card
+brand lists as of March 1, 2011 — the current list is available via the PCI
+SSC website. PFI
+
+2. The company offering PFI services must appear on the POL Preferred
+Suppliers List
+
+3. The PFI must have a separate commercial contract for the provision of
+services as a PFI quite apart from any other commercial contract for any
+other services which the company may provide.
+
+4. The PFI must satisfy the POL Head of Information Security that they are
+capable and experienced in the forensic investigation of virtualised
+bladeframe and SAN environments when the data centres for Horizon are
+involved
+
+5. The PFI must satisfy the POL Head of Information Security that they are
+familiar with and fully support the process described in Appendix D
+“Forensic Investigation of PCI Major Incident”.
+
+6. The PFI must have full security clearance to be able to go on-site in Belfast.
+
+F.2.__ Responsibilities of POL Head of Information Security
+It is the responsibility of the POL Head of Information Security to:
+
+a) Correctly assess a candidate PFI for inclusion on the list according to the
+criteria set out above in F.1
+
+b) Ensure that the list is kept current and that the details are accurate and
+complete.
+
+c) Ensure that all key parties are informed of the latest list when it has been
+updated
+
+from any other VISA organisation
+5 Itis also very important that this search be performed from the www. visaeurope.com website as other search engines may return an out-of-
+date PFI lst
+
+Date of Issue Draft Version 0.6 Page 31 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+d) In the event of a PCI Major Incident to select a PFI from the list; confirm this
+selection with senior management (if need be) and communicate this
+selection to the Working Group and other key parties e.g. Merchant
+Acquirer, Fujitsu RMGA, IRE 11 and 19 Data Centre Operations Manager
+etc.
+
+This is important because in the event of a PCI Major Incident affecting HNGX
+data centre other parties in POL or Fujitsu may refer to this list and select a PFI
+from it in the absence of the POL Head of Information Security.
+
+Selecting a PFI that does not meet the necessary criteria given above may cause
+unnecessary delays to the incident management process or at worst compromise
+the effectiveness of the investigation and potentially bring harm to POL and/or
+RMG brand.
+
+F.3 List of POL Approved PFis
+
+List of POL Approved PFls
+
+Company Contact
+
+Name:
+Email:
+
+Phone:
+
+Name:
+Email:
+
+Phone:
+
+Name:
+
+Email:
+
+Phone:
+
+Date of Issue Draft Version 0.6 Page 32 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Appendix G How to Contact Acquirer
+
+The text in this section has been reproduced from the Streamline Merchant
+Operating Instructions which may be found online6.
+
+What to do if data is compromised (update for HSBC
+
+Merchant Services)
+
+If you believe that cardholder information has been obtained by an unauthorised
+person or company, this fact must be reported to HSBC Merchant Services as soon
+as possible together with details of all the account numbers involved and all the
+circumstances of the compromise.
+
+Acting promptly to notify us and limit the possible consequences after a
+compromise incident has occurred is vital.
+
+Have a business continuity plan in place should a data compromise be identified,
+whether the problem is in your own systems, or as a result of a support failure, or a
+failure by another organisation with which you share information.
+
+Should you encounter or suspect a cardholder information compromise, please
+notify the updated details.......
+
+* Max call charge from BT landline is 3p per minute. Calls from other networks may vary. Telephone calls may
+be monitored and recorded to improve our service.
+
+The opening hours are — needs updating:
+0. 8 a.m. to 8 p.m. Monday to Friday
+1. 9 a.m. to 6 p.m. Saturday
+
+2. 10 a.m. to 4 p.m. on Sundays
+
+3. 9 a.m. to 5 p.m. on Bank Holidays
+
+An answer phone message is in place outside of these hours. Calls may be
+recorded.
+
+© http:/Awww.streamiine.worldpay.com/support/kb/moi/moi.htmi#moi5 100.htmi
+
+Date of Issue Draft Version 0.6 Page 33 of 36
+POL00397377
+POL00397377
+
+Information Security PCI Incident Response Plan
+
+Appendix H_ Information Flows
+
+This diagram illustrates where an allegation may enter POL and once inside POL
+where it may be routed until it reaches the POL Security Incident Manager
+(Information Security).
+
+The routes from Compliance and Product & Branch Accounting are different in
+that one tracks movements of large transactions and so is internally generated
+and the other relates to a Common Point of Purchase (CPP) declaration coming
+from a Merchant Acquirer via their contact in P&BA.
+
+All these flows describe what are current information or escalation processes
+within POL.
+
+Date of Issue Draft Version 0.6 Page 34 of 36
+Information Security
+
+POL00397377
+POL00397377
+
+PCI Incident Response Plan
+
+‘Post Office Post Master or\
+‘Sub Post Master
+
+Figure 2: PCI Information Flowchart
+
+(POL Product & Branch \,
+
+Accounting =
+(RFI from MA)
+al
+National Business Support
+Centre
+7
+a
+Grapevine
+™ (POL public service )
+
+ED
+3
+2
+°
+&
+3
+3
+8
+ry
+8
+3
+
+—
+
+POL Security
+(Casework Management
+Team)
+
+POL Security Incident
+Manager
+(Information Security)
+
+Page 35 of 36
+
+Date of Issue
+
+Draft Version 0.6

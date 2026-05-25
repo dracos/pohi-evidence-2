@@ -1,0 +1,4687 @@
+6 Consignia
+
+Commercial in Confidence
+
+Reference Data System
+
+FUJ00001623
+FUJ00001623
+
+APPLICATION INTERFACE SPECIFICATION REFERENCE DATA
+
+TO PATHWAY
+
+DRN RDP/AIS/014
+Issue 5.2
+Issue Date 4" April 2002
+NAME SIGNATURE
+PREPARED BY Paula Fearn, Senior Business Analyst
+
+Consignia PLC
+
+REVIEWED BY Bob Booth
+Horizon Technical Consultant,
+Consignia PLC
+
+Duncan McDonald
+Fujitsu Services (Pathway)
+
+Paul O’Gorman
+Project Manager,
+
+Jan Senior
+Senior Business Analyst,
+Network Banking Project,
+Consignia PLC
+AUTHORISED BY David Johns,
+
+David Wilcox,
+Fujitsu Services (Pathway)
+
+Torstein Godeseth,
+Clive Read,
+
+Consignia PLC
+
+© Consignia2002
+
+Date
+
+All rights reserved. The contents of this document may not be reproduced (wholly or in part) without the
+
+written prior permission of Consignia ple.
+
+This copyright applies to all forms of storage retrieval, and reproduction in which this information may be
+
+embodied.
+
+Typing Reference: AITMS5.2_NB-baseline 2002 04 03.doc
+
+UNCONTROLLED COPY
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+UNCONTROLLED COPY
+0. CONTROL
+0.1 Version History
+Version Dated Change Details
+
+3.3 11.2.98 Formal issue. For Release 2.
+
+4.0a 26.2.99 Initial Draft for Release 2+.
+
+4.0b 5.3.99 Initial Draft with Additional Items.
+
+4.0c 24.3.99 Updated initial draft.
+
+4.04 31-3-99 Updated draft for review.
+
+4.0e 23-4-99 Updated following review meeting.
+
+4.0 30-4-99 — Draft for Approval.
+
+4.1 25-6-99 Updated draft for formal review.
+
+42 13-8-99 Formal Issue for CSR+ (DRN updated from RDP/AIS/001 to
+
+RDP/AIS/014). Updated with review comments.
+
+43 26-8-99 Formal Issue for CSR+. Updated with additional, late review comments.
+
+43a 1-10-99 Document presentation revised (material content unchanged).
+
+44 21-1-00 Version control rules reintroduced and volumetrics revised.
+
+45 12-6-00 Volumetrics revised further, review comments incorporated, plus an
+
+additional sentence inserted into the version control rules section.
+46 19-7-00 I Amendments to fomatting/descriptive content made in light of review
+
+comments (sections 1.6.8; 4.3; 4.4.17; 4.5.1; 4.5.6; 4.5.7; 4.5.9 &
+4.7.3). Note that there are no substantive changes to either the data
+structures or data content in this revised version.
+5.0 Draft 29-8-01 Amendments to existing records and new records to support the
+1.0 requirements of Network Banking Automation. Details of changes can
+be found in new section 0.1.1
+5.0 Draft 07-9-01 Amendments to draft 1.0, issue 5 incorporating comments from review.
+
+5.0 Draft 24-9-01 Amendments to drafi 2.0, issue 5 incorporating comments from review.
+
+Issue 5.0 20-11-01 Agreed issue.
+
+Issue 5.1 03-12-01 Issue for formal signature
+
+Issue 5.2. 04-04-02 Amendment following the addition of values for Network Banking to the
+Business Rules and Values document ref: 1.6.8 RDP/TEC/977
+modification of section 4.5.48 Bank Card Element following change of
+requirement since version 5.1. Changed ICL Pathway to Frujitsu
+Services (Pathway)
+
+0.1.1 Changes for Issue 5.0
+
+Page ge [Description
+[Title Page Style (Consignia logo replaces Post Office logo.
+[Title Page IData ersion updated to 5.0. Date of issue and author amended. New
+[Pathway, Consignia authorisors.
+All Style Reference to CSR+ removed from document title and introduction,
+section 1.1. Headers & Footers amended with new logo.
+DRN: RDP/AIS/O14 Page: 1
+Version: 32 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+UNCONTROLLED COPY
+General [All references to OU structure have been amended to reflect the new OU
+structure as a result of the Retail Line Review.
+1. ew section ew section 0.1.1 to summarise amendments for issue 5.0.
+12 [Amendment to _ISection 4.3 “Transfer Structure” amended to incorporate new entities
+ersion 4.6 jand amend the load order.
+13 [Amendment to ‘DN. at end of Section 4.3 removed.
+ersion 4.6
+29 [Amendment to —_ {Examples of valid item types sent to Pathway updated.
+version 4.6
+0 IAmendment to Second paragraph in description amended.
+ersion 4.6
+B3 IAmendment to New attribute of “Org Unit (Routing Gateway ID)” added to entity Item
+ersion 4.6 History.
+59 [Amendment to —_ {Look Up Values updated.
+version 4.6
+3 IAmendment to [Look up Types applicable to Network Banking Automation added.
+ersion 4.6
+66 IAmendment to [Look up Type values applicable to Network Banking Automation added.
+version 4.6
+73 IAddition to versionINew entity table of Issuer Scheme added as section 4.5.41
+4.6
+IAddition to versionINew entity table of Banking Operation Type added as section 4.5.42
+4.6
+74 IAddition to versionINew entity table of Banking Operation added as section 4.5.43
+4.6
+(76 IAddition to versionINew entity table of Permitted Method of Entry added as section 4.5.44
+4.6
+(17 IAddition to versionINew entity table of Bank Card Type added as section 4.5.45
+4.6
+78 IAddition to versionINew entity table of Bank Card added as section 4.5.46
+4.6
+81 IAddition to versionINew entity table Bank Card Element Type added as section 4.5.47
+4.6
+83 IAddition to versionINew entity table of Bank Card Element added as section 4.5.48
+4.6
+84 IAddition to versionINew entity table IIN Range added as section 4.5.49
+4.6
+89 Deletion from [Remove section 4.6.
+ersion 4.6
+92 Deletion from [Remove section 4.8.
+version 4.6
+IGeneral IAll references to POL replaced by Post Office Limited
+0.1.2 Changes for Issue 5.1
+BO IAmendment to [Additional comment for the “Org unit code (client)” to explain that when
+4.5.10 ransactions are carried out on behalf of a third party, the details of the
+intermediary will be passed in this field.
+42 IAmendment to [Additional comment for the “Org unit code (client)” to explain that whenI
+4.5.17 ransactions are carried out on behalf of a third party, the details of the
+DRN: RDP/AIS/O14 Page: 2
+Version: 32 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+UNCONTROLLED COPY
+intermediary will be passed in this field.
+80 IAmendment to [Removal of “Accounting sense” from Banking operation type
+4.5.42
+0.1.3. Changes for Issue 5.2
+Page ge [Description
+r Sub-sections IAmendment to remove values from document (values can be found in
+ithin 4.5 [Network Banking / RDS Rules & Values ref:1.6.8 RDP/TEC/977)
+86 IAmendment to (Change the comments column of ELEMENT FORMAT AUTO to read
+4.5.48 I optional’. [This is to allow for elements to be defined that are not on the
+rack of a card]
+21 IAmendment to (Change the field names in the Organisational Unit History table from a
+4.5.5 descriptive to the Org unit type number for legacy codes that are subject
+Ito change over time.
+k IGeneral (Change ICL Pathway to Fujitsu Services (Pathway)
+
+0.1.4 Expected Changes
+
+¢ ref 1.6.8 now relates to two Business Rules documents, these documents are expected to be combined
+post go live at which time the reference document number will relate to a single document.
+
+DRN: RDP/AIS/014 Page: 3
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+UNCONTROLLED COPY
+
+0.2 Distribution Controller
+
+Terry Anderson, Automation Programme Document Manager, Calthorpe House, 15-20 Phoenix Place,
+London WC1X ODG.
+
+Telephon I
+
+0.3 Change Coordinator
+
+Terry Anderson, Automation Programme Document Manager, Calthorpe House, 15-20 Phoenix Place,
+London WC1X ODG.
+
+Telephone: STD!
+
+DRN: RDP/AIS/O14 Page: 4
+Version: 32 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+UNCONTROLLED COPY
+
+0.4 Contents
+
+0. CONTROL..
+
+0.1 VERSION HISTORY .....c0.0000
+0.1.1 Changes for Issue 5.0.
+0.1.2 Changes for Issue 5.1.
+0.1.3 Changes for Issue 5.
+0.1.4 Expected Change:
+
+0.2 DISTRIBUTION CONTROLLER.
+
+0.3 CHANGE COORDINATOR.
+
+0.4 CONTENTS.
+
+1, INTRODUCTION.
+
+1
+
+I
+
+3
+
+3
+
+3
+
+4
+
+4
+
+5
+
+7
+
+1.1 OBJECTIVE. 7
+
+1.2 PURPOSE, 7
+
+1.4 STRUCTURE. 7
+
+1.5 TERMS AND ABBREVIATIONS, 8
+
+1.6 REFERENCES. 9
+
+1.6.1 Pathway to Post Office TIS, TI/IFS/008... 9
+
+1.6.2 Technical Interface Specification Standard, DQS/STD/012. 9
+
+1.6.3 POCL Token Technology Specification APS Bar Code Version 1. 9
+
+1.6.4 POCL Token Technology Specification APS Magnetic Card Version 1 9
+
+1.6.5 Reference Data Project Logical Data Model RDP/TEC/019 Issue 1.0 draft a. 27/05/99. 9
+
+1.6.6 Data Transfer File Protocol: POCL to Pathway RDP/TEC/903 Issue 2.0 draft 30/12/98. 9
+
+1.6.7 FTP Logging Requirements - LAN Infrastructure Services, PSGckbk.doc, Version 1.0... 9
+
+1.6.8 Reference Data Values and Business Rules RDP/TEC/951 Network Banking / RDS Rul
+Values RDP/TEC/977...... . .
+
+1.6.9 Version Control Rules RDP/TEC/009.
+
+1.6.10 Network Banking Automation Physical Data Model RDP/TE' 967.
+
+2. OVERVIEW OF THE INTERFACE. a
+2.1 DATA DESCRIPTION. 10
+2.2 DERIVATION AND USE OF DATA. 10
+2.3 NON-COMPUTER DATA. ....:s:innennnnnnnnnnnnnainnnsnnninnnnnnnnaninnnnnininnnnnsnnnneninnnnninnnnnsnnninsennni vow LO
+3. DATA STRUCTURE...
+
+3.1 DATA MODEL. 11
+4, TRANSFER STRUCTURE.
+
+4.1 TRANSFER GROUPING. 12
+4.2 TRANSFER FILE NAME AND LOCATION. 12
+4.3 TRANSFER STRUCTURE. 13
+4.4 DELIMITERS. 15
+4.5 RECORD STRUCTURE AND DEFINITION OF DATA TYPES. 15
+
+4.5.1 File Header.
+4.5.2 File Trailer... vee
+4.5.3 Change Request Headei
+4.5.4 Organisational Unit Type.
+4.5.5 Organisational Unit History.
+4.5.6 Organisational Structure
+4.5.7 Organisational Structure.
+4.5.8 Org Unit Calendar.
+4.5.9 Outlet Default Opening Times.
+4.5.10 Client Account.
+4.5.11 Item Typ.
+4.5.12 Item History.
+
+DRN: RDP/AIS/(O14 Page: 5
+
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+UNCONTROLLED COPY
+
+4.5.13 Item Structure
+4.5.14 Item Structure.
+4.5.15 Outlet and Non-core Items.
+4.5.16 AP Token Type...
+4.5.17 Automated Payment Token.
+4.5.18 AP Token Element Type.
+4.5.19 AP Token Element.
+4.5.20 Check Digit Method.
+4.5.21 Item Additional Fiel .
+4.5.22 Organisation Financial Year..
+4.5.23 Accounting Day.
+4.5.24 Accounting Period.
+4.5.25 Accounting Weel
+4.5.26 Accounting Node
+4.5.27 Organisational Unit.
+4.5.28 Item...
+4.5.29 VAT Code...
+4.5.30 Look up Typ
+4.5.31 Look up Value...
+4.5.32 Transaction Mode.
+4.5.33 Item Transaction Mode
+4.5.34 Cash Account...
+4.5.35 Cash Account Table.
+4.5.36 Cash Account Sub Table.
+4.5.37 Cash Account Table Line.
+4.5.38 Cash Account Code.
+4.5.39 Cash Account Line Code.
+4.5.40 Item Transaction Mode Code.
+4.5.41 Issuer Scheme...
+4.5.42 Banking Operation Type.
+4.5.43 Banking Operation...
+4.5.44 Permitted Method of Entry.
+4.5.45 Bank Card Type.
+4.5.46 Bank Card.
+4.5.47 Bank Card Element
+4.5.48 Bank Card Element.
+4.5.49 IIN Range...... seeseeee
+4.6 VERSION CONTROL RULES...
+4.6.1 Introductio}
+4.6.2 Rules Description.
+4.6.3 Example illustratio1
+4.7 DATA AUTHENTICATION......
+4.8 EXAMPLE TRANSFER FILE,
+
+5. SECURITY OF TRANSMITTED DATA...
+
+5.2 PROTECTED DATA. ooonnnnmnnninnninnnnnninnnnnnnnnininnnnnnninnninnnnnnnnnmnnnnnnnnnnnmnnninnnnnnnnnnnnee OT
+5.3 ENCRYPTION AND DECRYPTION METHODS. 97
+
+5.4 SESSION ESTABLISHMENT... 97
+
+5.5 KEY MANAGEMENT 97
+DRN: RDP/AIS/O14 Page: 6
+Version: 32 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+INTRODUCTION
+
+UNCONTROLLED COPY
+
+1. INTRODUCTION
+
+1.1 Objective
+
+The purpose of this version of this document is to provide details of the data specification
+for Horizon Core System incorporating the requirements for Network Banking
+Automation, including EFTPoS and Post Office Card Account (POCA).
+
+This document is intended to be the definitive Reference Data to Pathway AIS. Following
+approval, any further amendments required will be subject to Change Requests.
+
+1.2 Purpose
+
+The purpose of this specification is to describe the data passing between Post Office
+Limited’s Reference Data system and Pathway.
+
+In accordance with Post Office Limited’s data interface strategy, Pathway’s system, as
+the “receiving” system, will be deemed to be the Target system.
+
+The data passed from the Reference Data system will consist of updates to Post Office
+Limited’s Reference Data system.
+
+1.3 Scope
+
+This specification describes only the data to be passed across the interface. It does not
+contain information as to how the physical transfer will take place. That information can
+be found in the Technical Interface Specification (see 1.6.1).
+
+The data items to be interfaced will be described, as will the structure of the interface in
+terms of record and file layouts. This document does not contain details of the values of
+the data to be passed nor does it contain business rules governing the use of the data.
+These items will be documented separately. The examples of Data Values, Data Type
+Values and ‘Business Rules’ in this document are for illustration purposes only and must
+not be taken as being exhaustive. Comprehensive “Business Rules’ can be found in the
+document ‘Reference Data Values and Business Rules, RDP/TEC/951’. [Ref: 1.6.8].
+
+The scope of this document is restricted to data which is both computer-generated and
+
+computer-consumed.
+
+1.4 Structure
+
+Section 2 of the Specification gives an overview of the interface.
+
+Section 3 gives a description of the data which may be interfaced. This takes the form of
+an entity relationship diagram supported by entity and attribute descriptions.
+
+DRN: RDP/AIS/014 Page: 7
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+INTRODUCTION
+
+UNCONTROLLED COPY
+Section 4 describes the physical structure of the data across the interface. Record layouts
+and groupings are described here.
+
+Section 5 details any security measures which will be applied to the interface.
+
+1.5 Terms and Abbreviations
+
+This section shall contain an explanation of all abbreviations and special terms used in
+this specification.
+
+AIS - Application Interface Specification.
+EFTPoS  - Electronic Funds Transfer at Point of Sale
+TIN - Issuer Identification Number.
+
+PAN - Primary Account Number
+
+POCA - Post Office Card Account
+
+PDL - Process Description Language.
+
+TARGET - The recipient of the reference data.
+
+TIP - Transaction Information Processing project.
+
+TIS - Technical Interface Specification.
+
+TMS - Transaction Management System. The heart of the Pathway system suite.
+DRN: RDP/AIS/O14 Page: §
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+INTRODUCTION
+
+UNCONTROLLED COPY
+
+1.6 References
+
+This section identifies documents referenced within the AIS, including non-Post Office Limited
+documents.
+
+1.6.1 Pathway to Post Office TIS, TI/IFS/008
+
+1.6.2. Technical Interface Specification Standard, DQS/STD/012
+
+1.6.3. POCL Token Technology Specification APS Bar Code Version 1.0
+
+1.6.4 POCL Token Technology Specification APS Magnetic Card Version 1.4
+
+1.6.5 Reference Data Project Logical Data Model RDP/TEC/019 Issue 1.0 draft a. 27/05/99
+1.6.6 Data Transfer File Protocol: POCL to Pathway RDP/TEC/903 Issue 2.0 draft 30/12/98
+1.6.7 FTP Logging Requirements - LAN Infrastructure Services, PSGckbk.doc, Version 1.0
+
+1.6.8 Reference Data Values and Business Rules RDP/TEC/951
+Network Banking / RDS Rules & Values RDP/TEC/977
+
+1.6.9 Version Control Rules RDP/TEC/009
+
+1.6.10 Network Banking Automation Physical Data Model RDP/TEC/967
+
+DRN. RDPYAIS/014 Page: 9
+Version $2 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+DATA STRUCTURE
+
+UNCONTROLLED COPY
+
+2. OVERVIEW OF THE INTERFACE
+
+2.1 Data Description
+
+This interface comprises the issue of reference data from Post Office Limited’s Reference
+Data system to Pathway.
+
+2.2 Derivation and Use of Data
+
+The data will all emanate from Post Office Limited’s Reference Data system. Each file
+will incorporate a set of changes to Post Office Limited Reference Data, reference by
+Change Control number(s).
+
+The data passed to the Target will be used by the Target’s application software (except
+where the data is explicitly noted as not being used by the Target).
+
+2.3 Non-Computer Data
+
+There is no non-computer data in this interface.
+
+DRN: RDP/AIS/O14 Page: 10
+Version: 32 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+DATA STRUCTURE
+
+UNCONTROLLED COPY
+
+3. DATA STRUCTURE
+
+3.1 Data Model
+
+See RDP/TEC/019.
+
+This document sets out a diagrammatic representation of the Logical Data Model for the
+Post Office Limited Reference Data System. This model does not exclusively consider the
+data passed across this interface, but rather considers the contents of the Reference Data
+System as a whole. References to other, more detailed sources that contain information
+concerning Reference Data entities and attributes are also provided.
+
+This model will be updated to incorporate the changes required to support Network
+Banking Automation and EFTPoS, which have been defined in the working document
+Network Banking Automation Physical Data Model [ref:-1.6.10].
+
+DRN: RDP/AIS/014 Page: nny
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4. TRANSFER STRUCTURE
+
+4.1 Transfer Grouping
+
+Files containing the data in this interface specification will be passed to Pathway one or
+more times per day (up to a maximum of 999 times per day).
+
+4.2 Transfer File Name and Location
+
+It is envisaged that the transfer file will conform to the following naming convention.
+
+The target location for the transfer file on the Pathway system will be:
+
+C:\REFDATA
+File transfer will take place as specified in the Technical Interface Specification (ref.
+1.6.1).
+DRN: RDP/AIS/O14 Page: 12
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.3 Transfer Structure
+
+The file will consist of a File Header record, a group of Change Request record(s) and
+Data Content Amendment record(s) and a File Trailer record.
+
+The load order is as follows: (the names correspond to the TABLE/ENTITY ID in each
+record structure.
+
+ORG-UNIT-TYPE
+ORG-UNIT
+
+ORG-UNIT-HIST
+DEFAULT-OPEN
+
+ORG-STRU-TY PE
+ORG-STRUCTURE
+
+OU-CALENDAR
+ACC-NODE
+
+ITEM-TYPE
+ITEM
+
+VAT
+ITEM-VERSION
+ADD-FIELD
+
+ITEM-STRU-TYPE
+ITEM-STRUCTURE
+
+TRANS-MODE
+ITEM-TRAN-MODE
+
+NON-CORE
+
+CLIENT-ACC
+CD-TYPE
+TOKEN-TYPE
+AP-TOKEN
+ELEMENT-TYPE
+TOKEN-ELEMENT
+
+FINANCIAL-YEAR
+ACC-PERIOD
+ACC-WEEK
+ACCOUNTING-DAY
+
+LOOKUP-TYPE
+LOOKUP-VALUE
+
+CASH-ACCT
+
+C-A-TABLE
+DRN: RDP/AIS/014 Page: 13
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+DRN:
+Version
+
+Issue Date:
+
+UNCONTROLLED COPY
+C-A-SUB-TABLE
+C-A-TABLE-LINE
+C-A-CODE
+C-A-LINE-CODE
+ITEM-MODE-CODE
+
+ISSUER-SCHEME
+BANK-OP-TYPE
+BANK-OPERATION
+PERMITTED-MOE
+BANK-CARD-TYPE
+BANK-CARD
+BC-ELEMENT-TYPE
+BC-ELEMENT
+IIN-RANGE
+
+RDPYAIS/014
+
+$2
+
+20th November, 2001
+
+Page: 14
+@Consignia 2001
+
+‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.4 Delimiters
+
+The Comma Separated Value (CSV) approach will be used to delimit fields. Fields will
+be variable length.
+
+The following delimiters will be used within the transfer file:
+
+Each field on a line in the file will be separated by a comma (,).
+
+Strings will start and end with double quote marks (“).
+
+Date Time and Date fields will start and end with double quote marks (“).
+
+Blank strings and blank dates/date times will be shown as repeated double quotes (“”).
+A comma within a pair of double quote marks will be interpreted as a string character.
+Double quotes can not appear as a string character.
+
+Each line will be ended with a carriage return and linefeed.
+
+A backslash (\) will be used to identify control codes within a string.
+
+Also see example in section 4.8.
+
+4.5 Record Structure And Definition of Data Types
+
+The format field shows the maximum length of the field. Note that in the transfer file the
+field may be shorter than the maximum length unless a specific format is defined e.g.
+Transmission Date and Time.
+
+The following table defines the data types used within this section.
+
+Data Description
+
+Type
+
+Date The “Date Time” data type is a fixed length string with a length of 19
+
+Time characters. It has the format “dd/mm/yyyy<space>99:99:99” where the
+
+time uses the 24 hour clock (local time) and includes seconds. Leading
+
+zeroes will be used, e.g. “05/06/1996 05:06:01”. The field may also be
+
+blank.
+
+[Date IThe “Date” data type is a fixed length string with a length of 10 characters. It
+
+has the format “dd/mm/yyyy”.
+
+[Leading zeroes will be used, e.g. “05/06/1996”. The date may also be blank.
+
+Str() IThis data type denotes a character string. For example - Str(20) is a variable
+
+jength string with a maximum length of 20 characters. All strings are variable
+
+length unless otherwise stated. It is also possible for a character string to haveI
+fixed format e.g. Outlet FAD Code with the format 999999X.
+
+DRN: RDP/AIS/014 Page: 15
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+9() [This data type denotes a number. The data type definition can include a “v”
+
+‘hich shows the position of the decimal point. For example : 9(5v2) is a
+
+ariable length number with the picture 99999.99. This definition will always
+
+ave a 2 decimal place number even if they are zeros (zero = 0.00).
+
+le Ifno decimal point is defined then the number is an integer.
+
+je All numbers are variable length unless otherwise stated.
+
+© The field length also includes a leading sign which is only shown for
+negative numbers e.g. -10.50 for the picture 9(3v2).
+
+je Leading zeros will not be included unless otherwise stated.
+
+fe A number less than one with a decimal portion will have a leading zero
+e.g. -0.32.
+
+© For money values (with 3 decimal places) Pathway will only use the first
+two decimal places - the third decimal place is insignificant and will be
+truncated.
+
+The default End Date is null (“”).
+
+The following table defines the actions used within this section.
+
+Action [ Description
+
+Create I The Create action is used when a new record (or row ) is created according
+to the key fields.
+
+ipdate _ IThe Update action is used when an existing record is updated.
+
+DRN: RDP/AIS/014 Page: 16
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.1 File Header
+
+Each file will consist of a single File Header record.
+
+Record Description Format IComments
+FILE HEADER - 1 Record per transmission
+Field Name Description Format IComments
+HEADER IDENTIFIER Code used to identify the 91) The record will always
+header record in the start with the number 0
+transmission. (zero).
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count always
+starts at 0 and
+increments by 1. The
+line count should be in
+ascending order.
+TRANSMISSION NAME _I Name of the target system. I Str(15) This field will always
+contain “TMS”.
+
+VERSION NUMBER The version number of the I 9(10) The version number will
+transfer file sent to Fujitsu start at 1 and increment
+Services (Pathway). each time a transfer file
+
+is created for Fujitsu
+Services (Pathway).
+
+TRANSMISSION DATE Date Time
+AND TIME
+NOT USED Not used by Pathway. 9(10)
+TRANSMISSION The source of the transfer I Str(2) Will always be “RD”.
+SOURCE file - The Reference Data
+system.
+INTERFACE FILE \To identify different versionsIStr(5) For this version of the AIS
+ERSION lof the interface file structure Ithe value will be “5.0”.
+DRN: RDP/AIS/ON4 Page: 17
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.2. File Trailer
+
+Each file will end with a single File Trailer record.
+
+Record [Description Format IComments
+FILE TRAILER - 1 Record per transmission
+Field Name Description Format IComments
+TRAILER IDENTIFIER Code used to identify the I 9(1) This record will always
+file trailer record in the start with the number 2.
+transmission.
+TOTAL NUMBER OF [The total number of lines in I9(10) (This value should be equal
+[TRANSACTIONS Ithe transfer file NOT to the maximum LINE.
+including the Header or COUNT value found
+[Trailer record. Iwithin the transfer file.
+DRN: RDP/AIS/ON4 Page: 18
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+DRN:
+
+Version
+
+Issue Date:
+
+Change Request Header
+
+UNCONTROLLED COPY
+
+A Data Change Request record.
+
+Record Description Format IComments
+CHANGE REQUEST RECORD - Multiple Records
+Field Name Description Format IComments
+CHANGE IDENTIFIER Code used to identify a 91) This record will always
+change request record in start with the number 3.
+the transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+DATA CHANGE A number to uniquely Str(20)
+REQUEST NUMBER identify a change request.
+CHANGE TYPE The type of a change Str) “1” = Class 1. Optional.
+request.
+\CHANGE REFERENCE [The reference for a change IStr(10) \Optional.
+request.
+RDP/AIS/ON4 Page: 19
+52 @Consignia 2001
+
+20th November, 2001
+
+‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.4 Organisational Unit Type
+
+The types of Organisational Unit that can be created/used.
+
+For a full definitive list, refer to the Business Rules documents [ref 1.6.8].
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format [Comments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “ORG-UNIT-TYPE”
+ACTION Str(1) “C” - Create
+(“U” - Update
+IORGANISATIONAL UNIT IA code to identify a type of — I9(10) Key field.
+ITYPE CODE [Organisational Unit.
+DATE CREATED Date instance created. Date
+Time
+IORG UNIT TYPE CODE IThe description of the Str(30)
+IDESCRIPTION corresponding Organisational
+
+IUnit Type Code. E.g., Post
+[Office Outlet.
+
+DRN: RDP/AIS/O14 Page: 20
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.5 Organisational Unit History
+
+A unit of operation for Post Office Limited or within which Post Office Limited perform a
+function (could also be a grouping of other groups).
+
+The FAD CODE and CLIENT CODE are Post Office Limited legacy system identifiers.
+The PLANT CODE is used for SAP Automated Distribution System.
+
+Record Description Format IComments
+
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name Description Format IComments
+
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+
+[LINE COUNT IThe unique line number (10) Used to identify any errors
+vithin the transfer file. between Post Office
+
+Limited and Fujitsu
+Services (Pathway).
+
+IThe line count increments
+lby 1 from the previous
+lline. The line count should
+lbe in ascending order.
+
+TABLE/ENTITY ID Str(1S) I “ORG-UNIT-HIST”
+ACTION IStr(1) “C” - Create
+[‘U” - Update
+ORG UNIT CODE IA unique system generated 9(10) Key field.
+
+code to identify the generic
+rganisational unit.
+
+ISTART DATE IThe date when this instance IDate Time IKey field.
+ecomes effective.
+END DATE [The date when this instance IDate Time IOptional
+ceases to be effective.
+DATE CREATED Date instance created. Date
+Time
+iVERSION NUMBER IThe version number of the I9(10) Alternative key field.
+currence of a reference
+data entity.
+CLIENT CODE A unique code by which 9(4) Only used by Clients.
+
+an individual client of Post
+Office Limited is
+identified. Valid values
+
+are: 1-9999.
+iF AD CODE IA structured code to identify IStr(7) Six numbers followed by a]
+lan outlet or a satellite asa IFixed. check digit. The check
+Icash accounting unit. Itis [Length digit can be 0 to 9 or X.
+lunique at a point in time (Contains leading zeros.
+nly. (Only used by Outlet and
+\Satellite.
+DRN: RDP/AIS/ON4 Page: 21
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+DRN:
+
+Version
+
+Issue Date:
+
+UNCONTROLLED COPY
+
+PLANT CODE
+
+A code used by the SAP
+Automated Distribution
+
+IStr(4)
+
+IAlpha Numeric field.
+(Optional. Only used by
+
+System (SAPADS) to Outlet and Satellite.
+lidentify an Outlet or
+[Satellite.
+[ADDRESS 1 (Location IThe location address for this IStr(40) (Only used by Outlet and
+address) rganisational unit. Satellite.
+(ADDRESS 2 (Location [The location address for this IStr(40) [Used by all. Optional.
+laddress) lorganisational unit.
+ADDRESS 3 (Location [The location address for this IStr(40) [Used by all. Optional.
+address) rganisational unit.
+ADDRESS 4 (Location \The location address for this IStr(40) [Used by all. Optional.
+laddress) rganisational unit.
+ADDRESS 5 (Location [The location address for this IStr(40) [Used by all. Optional.
+laddress) rganisational unit.
+IPOST CODE (Location IThe post code for the Str(8) [Only used by Outlet and
+address) jorganisational unit location Satellite.
+laddress.
+CASH ACCOUNT TYPE — IThe Cash Account Type —_IStr(1) Only used by Outlet and
+ICODE perated by the Outlet Satellite
+LANGUAGE CODE IThe language in which all I9(4) Only used by Outlet and
+receipts will be printed. (Satellite.
+(CONTRACT TYPE CODE IThe type of contract which IStr(7) (Only used by Outlet and
+ithe outlet operates under. (Satellite.
+(ORGANISATIONAL UNIT IThe organisational unit IStr(30) [Used by all.
+INAME jname.
+(OFFICE TELEPHONE \Telephone number including IStr(25) [Only used by Outlet and
+INUMBER () ISTD code. [Satellite.
+I TELEPHONE NUMBER [Pathway helpdesk contact IStr(25) (Only used by Outlet and
+Pathway helpdesk contact _Ipoint telephone number \Satellite. Optional.
+oint) lincluding STD code.
+ITELEPHONE NUMBER Pathway out of hours. Str(25) Only used by Outlet and
+Pathway out of hours elpdesk contact point \Satellite. Optional.
+elpdesk contact) telephone number including
+ISTD code.
+JORG UNIT TYPE 4 IThe unique legacy code. Str(3) (Only used by Org type 4.
+LEGACY CODE
+ADDRESS I (Pathway [The visit address required byIStr(40) _ [May be the same as the
+Engineers) [Pathway Engineers. (Organisational Unit
+\Address. Optional.
+ADDRESS 2 (Pathway IThe visit address required byIStr(40) IMay be the same as the
+Engineers) [Pathway Engineers. (Organisational Unit
+\Address. Optional.
+ADDRESS 3 (Pathway IThe visit address required byIStr(40) [May be the same as the
+Engineers) Pathway Engineers. Organisational Unit
+\Address. Optional.
+ADDRESS 4 (Pathway (The visit address required byIStr(40) May be the same as the
+Engineers) [Pathway Engineers. (Organisational Unit
+\Address. Optional.
+ADDRESS 5 (Pathway The visit address required I Str(40) I May be the same as the
+
+Engineers)
+
+by Pathway Engineers.
+
+Organisational Unit
+Address. Optional.
+
+RDPYAIS/014
+$2
+
+20th November, 2001
+
+Page: 22
+@Consignia 2001
+
+‘Commercial in Confidence
+
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+IPOST CODE (Pathway
+Engineers)
+
+\The visit post code required
+lby Pathway Engineers.
+
+Str(8)
+
+IMay be the same as the
+(Organisational Unit
+Postcode. Optional.
+
+OUTLET TYPE CODE
+
+A code to identify a type of
+
+utlet. Examples are ‘BO’ -
+[Branch Office, ‘CFPO’ -
+(Company Franchise Post
+(Office, ‘CRU’ - Counters
+[Remittance Unit, ‘CSO’ -
+\Credit Stock Office, ‘IFPO”
+Independent Franchise Post
+
+ffice, ‘ISPO’ - In Store
+Post Office, ‘MSPO’ -
+[Modified Sub Post Office,
+SAT? - Satellite Office,
+‘SPSO’ - Scale Payments
+Sub Office.
+
+IStr(4)
+
+(Only used by Outlet and
+\Satellite.
+
+JOPEN STATUS TYPE
+CODE
+
+Identifies whether or not an
+Outlet is open. E.g. ‘O’ -
+Open, *C’ - Closed, *T” -
+{Temporarily closed.
+
+IStr(1)
+
+(Only used by Outlet and
+\Satellite.
+
+JORG UNIT TYPE 5
+LEGACY CODE
+
+IA unique code for
+[Organisational Unit type 5.
+I[t is unique at a point in timeI
+lonly.
+
+Str(3)
+
+[Only used by OU Type 5
+
+JORG UNIT TYPE 8
+LEGACY CODE
+
+IA unique code for
+Organisational Unit type 8.
+IIt is unique at a point in timeI
+nly.
+
+Str(3)
+
+(Only used by OU Type 8
+
+ORG UNIT TYPE 7
+
+IA unique code for
+
+Str(3)
+
+\Only used by OU Type 7
+
+LEGACY CODE (Organisational Unit type 7.
+I[t is unique at a point in timeI
+jonly.
+DRN: RDP/AIS/ON4 Page: 23
+Version: 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+Application Interface Specification Reference Data To Pathway
+
+UNCONTROLLED COPY
+
+4.5.6 Organisational Structure Type
+
+The types of relationships that can exist between Organisational Units. Examples are. Satellite
+Outlet within Outlet, and Outlet within Organisational Unit type 4.
+
+For a full definitive list, refer to the Business Rules document [ref 1.6.8].
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format [Comments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “ORG-STRU-TYPE”
+ACTION Str) “C” - Create
+(“U” - Update
+ORG STRUCTURE TYPE I A unique system generated I 9(10) Key field.
+CODE code to identify the type of
+organisational unit
+structure
+IDATE CREATED Date instance created. Date Time
+ORGANISATIONAL, [The description of the Str(30)
+STRUCTURE DESC corresponding
+Organisational Structure
+[Type Code.
+DRN: RDP/AIS/ON4 Page: 24
+Version: 52 @Consignia 2001
+
+Issue Date:
+
+20th November, 2001
+
+‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.7 Organisational Structure
+
+The relationships that exist between Organisational Units. Examples are Satellite Outlet within
+Outlet, and Outlet within Org Unit type 4.
+
+For a full definitive list, refer to the Business Rules document [ref 1.6.8].
+
+Record [Description [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name Description [Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “ORG-STRUCTURE”
+ACTION Str(1) IC” - Create
+[‘U” - Update
+
+ORG UNIT CODE {PARENTIA unique, system generated I9(10) Key field.
+(ORGANISATIONAL UNIT} Icode to identify the Parent
+(Organisational Unit.
+
+ORG UNIT CODE{CHILD I A unique, system 910) Key field.
+ORGANISATIONAL generated code to identify
+UNIT} the Child Organisational
+Unit.
+ORG STRUCTURE TYPE A unique code to identify a I9(10) Key field.
+(CODE Itype of Organisational
+Structure.
+START DATE The date when this Date Key field.
+instance becomes Time
+effective.
+IEND DATE (The date when this instance [Date Time IOptional.
+Iceases to be effective.
+DATE CREATED Date instance created. Date
+Time
+)VERSION NUMBER IThe version number of the [9(10) Alternative key field.
+
+loccurrence of the
+lorganisational structure.
+
+DRN: RDP/AIS/O14 Page: 25
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+4.5.8 Org Unit Calendar
+Defines statutory Non-working days for a Bank Holiday Area. The Bank Holiday Area is defined
+as an Organisational Unit.
+
+The Outlets for each of the Bank Holiday areas are defined in the Organisational Unit Structure
+record where the Structure type is Outlet within Bank Holiday Area.
+
+[Record Description Format IComments
+DATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name [Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type
+data record in the always start with the
+transmission. number 1.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from
+the previous line. The
+line count should be in
+ascending order.
+
+TABLE/ENTITY ID Sw5) “QU-CALENDAR”
+ACTION Str(1) “C” - Create
+(“U” - Update
+IORG UNIT CODE IA unique system generated I9(10) Key field.
+
+code to identify the generic
+organisational unit. (In this
+lcase, the Bank Holiday
+IArea)
+
+(CALENDAR DAY IA date on which a Statutory IDate Time IKey field.
+Holiday falls within a Bank
+[Holiday Area
+
+START DATE IThe date when this instance IDate Time IKey field.
+becomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+IDATE CREATED IDate instance created. Date Time
+VERSION NUMBER The version number of the I 9(10) Alternative key field.
+
+occurrence of a reference
+data entity.
+
+DRN: RDP/AIS/O14 Page: 26
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.9 Outlet Default Opening Times
+
+The opening times refer to Post Office Limited outlet opening times only.
+
+Record Description [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+[Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 9) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “DEFAULT-OPEN”
+ACTION Str(1) MC” - Create
+U” - Update
+ORG UNIT CODE (outlet) I A unique system generated I 9(10) In this case outlet is
+code to identify the generic identified. Key field.
+organisational unit.
+WEEKDAY [The name of a day of the —IStr(9) Key field.
+week.
+ISTART DATE IThe date when this instance IDate Time IKey field.
+becomes effective.
+IEND DATE IThe date when this instance IDate Time IOptional.
+ceases to be effective.
+DATE CREATED Date instance created. Date
+Time
+ERSION NUMBER IThe version number of the [9(10) Alternative key field.
+loccurrence of a reference
+ldata entity.
+[TIME FROM IThe time that an outlet is IStr(5) [Time in the format
+lopen from. “99:99” 24 hour.
+TIME TO The time that an outlet is Str(5) Time in the format
+open to. “99:99” 24 hour.
+ILUNCH TIME FROM IThe time that an outlet is IStr(5) IBlank if no lunch time. 24
+\closed from for lunch. hour.
+LUNCH TIME TO. The time that an outlet is Str(5) Blank if no lunch time.
+closed to for lunch. 24 hour.
+DRN: RDP/AIS/ON4 Page: 27
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.10 Client Account
+
+A Client Account is a subdivision of a client, i.c. it is used to identify the part of a Client's
+organisation which is responsible for a specific subset of the Client's Items
+
+The Client Account is also used when the relationship between Post Office Limited and the
+Client involves a third party, e.g. Girobank, who process the monies for transactions of the
+Client's Items. For example Post Office Limited remit monies into the Client's account with
+Girobank when payment for a transaction has been made by Transcash
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “CLIENT-ACC”
+ACTION Str(1) “C” - Create
+(“U” - Update
+ORG UNIT CODE (Client) A unique system generated I9(10) Key Field.
+lcode to identify the generic IThe Organisational unit
+lorganisational unit. code of the party that
+factually receives and
+lprocesses the transactional
+data from the Horizon
+System.
+CLIENT ACCOUNT CODE IA unique code to identify the}9(4) Key field.
+subdivision of an account Valid values are 1-9999.
+lwithin client (e.g. British
+IGas Region).
+ISTART DATE IThe date when this instance IDate Time IKey field.
+becomes effective.
+IEND DATE IThe date when this instance IDate Time IOptional.
+ceases to be effective.
+IDATE CREATED Date instance created. Date Time
+VERSION NUMBER The version number of the I 9(10) Alternative key field.
+occurrence of a reference
+data entity.
+DRN: RDP/AIS/ON4 Page: 28
+Version: 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+
+Application Interface Specification Reference Data To Pathway
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+CLIENT ACCOUNT NAME IThe actual name of a Str(30)
+lspecific client account e.g.
+
+British Gas Region,
+
+DRN: RDP/AIS/014 Page: 29
+@Consignia 2001
+
+Version $2
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.11 Item Type
+
+The types of item that can be created/used.
+
+For a full definitive list, refer to the Business Rules document [ref 1.6.8].
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format [Comments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “TTEM-TYPE”
+ACTION Str) “C” - Create
+(“U” - Update
+ITEM TYPE CODE IA code to identify atype of — I9(10) Key field.
+lItem.
+DATE CREATED Date instance created. Date
+Time
+ITEM TYPE CODE IThe description of the Str(30)
+IDESCRIPTION corresponding Item Type
+(Code. E.g. Item.
+ISEQUENCE NO Defines the order in which I9() Optional.
+banking item types are to be IOnly applicable to
+resented. Banking Item Types.
+DRN: RDP/AIS/ON4 Page: 30
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+4.5.12 Item History
+A version(s) of an Item.
+Record IDescription Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a I 9(1) The record type
+data record in the always start with the
+transmission. number I
+LINE COUNT The unique line number I 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from
+the previous line. The
+line count should be in
+ascending order.
+TABLE/ENTITY ID Str(5)_ I “ITEM-VERSION”
+ACTION Str(1) IC” - Create
+[‘U” - Update
+ITEM ID Primary, system-unique —_I9(10) Key field.
+identifier for the item.
+ISTART DATE (The date when this \Date TimeIKey field.
+linstance becomes effective.
+END DATE IThe date when this [Date TimeIOptional.
+linstance ceases to be
+leffective.
+IDATE CREATED Date instance created. Date TimeI
+VERSION NUMBER The version number of I 9(10) Alternative key field.
+the occurrence of a
+reference data entity.
+SHORT NAME A short name for the Str(10)
+Item.
+IMEDIUM NAME IA medium length name for IStr(16)
+jan Item.
+ILONG NAME A long name for an Item = IStr(24)
+LOGISTICS ACCOUNTING Indicates that the Item is IStr(1) Has the value of “Y” or
+ITEM jan ‘Accounting Item’ for (“N”
+[Logistics Purposes
+LOGISTICS INVENTORY ITEMIIndicates that the items is IStr(1) as the value of “Y” or
+jan Inventory Item within \N”
+ithe Logistics System
+
+DRN: RDP/AIS/O14 Page: 31
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+DRN:
+
+Version
+
+Issue Date:
+
+UNCONTROLLED COPY
+IRETAIL PRICE [The price of a single Item I9(8v3) __ IIf Override Price
+(including VAT, if [Allowed = ‘Y’, then this
+appropriate). lis the suggested price.
+Last decimal place will
+ot be used by Pathway.
+(Optional - not used for
+tems which are
+[Logistics Inventory only.
+MULTIPLE VALUE ALLOWED IThe value that multiple I9(8v3) _—_IOptional - not used for
+lsales of the Item must be Items which are
+idivisible by. E.g. sales of [Logistics Inventory only.
+National Lottery Instants
+(must be divisible by £1.
+IMINIMUM VALUE Minimum value that can I9(8v3) [Optional - not used for
+be assigned to an Item. Items which are
+[Logistics Inventory only.
+IMAXIMUM VALUE {Maximum value that can I9(8v3) [Optional - not used for
+be assigned to an Item. tems which are
+[Logistics Inventory only.
+MINIMUM QUANTITY The minimum quantity I 9(7) Optional.
+of a non-fixed price Item
+that can be transacted by
+a customer.
+MAXIMUM QUANTITY The maximum quantity I 9(7) Optional.
+of a non-fixed price Item
+that can be transacted by
+a customer.
+CLERK INSTRUCTIONS Instructions to the clerk I Str(30) I Optional. not used for
+when transacting an Items which are
+Item. Logistics Inventory
+only.
+INUMBER OF RECEIPTS IThe number of receipts to I9(2)
+Ibe produced when
+transacting this Item.
+JOVERRIDE PRICE ALLOWED [Can an operator override IStr(1) [Has the value of “Y” or
+lan Items price. I*N”. Same as Pathway
+IIsFixedPrice but in the
+lopposite sense.
+ISTAFF DISCOUNT ALLOWED Is staff discount allowed [Str(1) \Valid values are: ‘Y’ or
+against the Item? (N’.
+(CUSTOMER DISCOUNT IIs Customer discount Str(1) \Valid values are: “Y’ or
+IALLOWED allowed against the item? IN”
+IEXISTING REVERSAL \Defines whether or not Str(1) \Has the value of “Y” or
+ALLOWED Reversals of Transactions N”
+within the Current Cash
+\Account Period are
+lallowed for this Item.
+INEW REVERSAL ALLOWED _ [Defines whether or not Str(1) Has the value of “Y” or
+Reversals of Sell “NN”.
+[Transactions are allowed
+for this Item (without
+Ireference to the original
+[Sell Transaction)
+
+RDPYAIS/014
+$2
+
+20th November, 2001
+
+Page: 32
+@Consignia 2001
+
+‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+Application Interface Specification Reference Data To Pathway
+
+UNCONTROLLED COPY
+
+VALUE STOCK Is the Item a Value Str) I Has the value of “Y”
+Stock Item? or “N”.
+
+REFUND ALLOWED Is a refund allowed Str(1) I Has the value of “Y”
+against an Item ? or “N”. Not used by
+
+Pathway.
+
+VOIDABLE Can the Item be voided I Str(1) I Has the value of “Y”
+whilst serving the or “N”. Typically only
+customer ? smart products will be
+
+non-voidable.
+
+IS A CORE ITEM IIs the Item a core item? IStr(1) [Has the value of “Y” or
+["N”. A value of “Y”
+jindicates that this
+jproduct should be
+lavailable at every retail
+loutlet.
+
+ICAN CHANGE SIGN (Can the Item change sign, IStr(1) [Has the value of “Y” or
+
+i.c. is it cash or a cash "N”.
+
+lequivalent (Mondex etc.).
+IMAX NUMBER OF [The number of multiple —_I9(2) ot used by Pathway.
+ISUCCESSIVE ITEMS loccurrences of the same
+
+tem that are allowed to be
+
+jtransacted in a single
+
+customer session.
+
+/AT CODE ICode to identify VAT code. IStr(1) ‘ot used by Pathway.
+
+ORG UNIT CODE (Client) IA unique system generatedI9(10)
+
+code to identify the Client
+lowning the Item.
+IMANUAL MIGRATION ITEM Indicates that this item is IStr(1) Has the value of “Y” or
+Ito be used on the Manual “N”
+Migration screen.
+JORG UNIT CODE (Routing IA unique code to identify I9(10) (Optional - Only used by
+Gateway) the route by which a INetwork Banking
+banking transaction is [Automation items.
+authorised.
+DRN: RDP/AIS/ON4 Page: 33
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001
+
+‘Commercial in Confidence
+
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+
+TRANSFER STRUCTURE
+
+4.5.13 Item Structure Type
+
+DRN:
+
+Version
+
+Issue Date:
+
+The types of relationships that
+
+UNCONTROLLED COPY
+
+it can exist between Items.
+
+Record IDescription Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 9) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “TTEM-STRU-TYPE”
+ACTION Sur)
+ITEM STRUCTURE TYPE IA code to identify a type of I9(10) Key field.
+(CODE Irelationship that can exist
+between two items.
+DATE CREATED Date instance created. Date
+Time
+ITEM STRUCTURE TYPE IThe description of the Str(30)
+IDESCRIPTION corresponding Item
+Structure Type Code.
+RDP/AIS/ON4 Page: 34
+52 @Consignia 2001
+
+20th November, 2001
+
+‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.14 Item Structure
+
+The allocation of an Item to another Item. A particular Item can be allocated to more than one
+other Item; e.g. a sellable Item can exist within a non-sellable hierarchy, an Item can have a
+substitute Item, a sellable Item can be linked to a corresponding fee.
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format [Comments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “TTEM-STRUCTURE”
+ACTION Str) “C” - Create
+(“U” - Update
+ITEM ID (Parent Item) Primary, system-unique 9(10) Key field.
+identifier for the parent item.
+ITEM ID (Child Item) Primary, system-unique 910) Key field.
+
+lidentifier for the child item.
+ITEM STRUCTURE TYPE IA code to identify a type of I9(10) Key field.
+
+ICODE Irclationship that can exist
+between two items.
+START DATE IThe date when this instance IDate Time IKey field.
+becomes effective.
+IEND DATE IThe date when this instance IDate Time IOptional.
+Iceases to be effective.
+IDATE CREATED Date instance created. Date Time
+VERSION NUMBER The version number of the I 9(10) Alternative key field.
+
+occurrence of a reference
+data entity.
+
+IMESSAGE IAn optional message to be IStr(90) (Optional.
+ldisplayed if required.
+
+DRN: RDP/AIS/O14 Page: 35
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.15 Outlet and Non-core Items
+
+Non-core items are related to Outlets via this table. By combining this structure with the “Is a
+Core” item an individual outlets product line can be ascertained.
+
+The table only shows the relationship “Allowed to be Sold at an Outlet”.
+
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name [Description Format [Comments
+DATA IDENTIFIER Code used to identify a 9(1) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT IThe unique line number 910) Used to identify any errors
+Iwithin the transfer file. between Post Office
+
+Limited and Fujitsu
+Services (Pathway).
+
+IThe line count increments
+by I from the previous
+line. The line count should
+be in ascending order.
+
+TABLE/ENTITY ID Sw(5) “NON-CORE”
+ACTION Str(1) “C” - Create
+(“U” - Update
+IORG UNIT CODE (outlet) [A unique system generated I9(10) In this case outlet is
+code to identify the generic identified. Key field.
+organisational unit.
+ITEM ID Primary, system-unique I 9(10) Key field.
+identifier for the item.
+ISTART DATE IThe date when this instance IDate Time IKey field.
+becomes effective.
+IEND DATE IThe date when this instance IDate Time IOptional.
+ceases to be effective.
+DATE CREATED Date instance created. Date
+Time
+ERSION NUMBER [The version number of the 9(10) [Alternative key field.
+loccurrence of a reference
+data entity.
+DRN: RDP/AIS/ON4 Page: 36
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+
+TRANSFER STRUCTURE
+
+4.5.16 AP Token Type
+
+UNCONTROLLED COPY
+
+A description of a token type which can be used for an automated payments service.
+
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 9) The record type always
+data record in the starts with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “TOKEN-TYPE”
+ACTION Str) “C” - Create
+“U” - Update
+TOKEN TYPE CODE A unique code to identify I Str(5) Key field.
+a Token Type.
+DATE CREATED Date instance created. Date
+Time
+TOKEN TYPE IThe description of the Str(30)
+IDESCRIPTION corresponding Token Type
+Code.
+DRN: RDP/AIS/ON4 Page: 37
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001
+
+‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.17 Automated Payment Token
+
+The information required to identify a valid Automated Payment product. The Token Type is
+translated to provide information about the Client Account and the Item.
+
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Su(5) I “AP-TOKEN”
+ACTION IStr(1) “C” - Create
+[‘U” - Update
+[TOKEN ID [A unique system generated I9(10) [Key field.
+ode to identify a token
+ISTART DATE IThe date when this instance IDate Time IKey field.
+ecomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+DATE CREATED Date instance created. Date
+Time
+(VERSION NUMBER IThe version number of the I9(10) Alternative key field.
+occurrence of a reference
+(data entity.
+(TOKEN NAME [The name of an Automated IStr(30)
+[Payment Token.
+[TOKEN TYPE CODE [A unique code to identify a IStr(5)
+IToken Type.
+ORG UNIT CODE (Client) I The Organisational Unit 9(10) The Organisational unit
+Code of the Client. code of the party that
+
+actually receives and
+processes the
+transactional data from
+the Horizon System.
+
+DRN: RDP/AIS/O14 Page: 38
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+DRN:
+
+Version
+
+Issue Date:
+
+UNCONTROLLED COPY
+CLIENT ACCOUNT A unique code to identify I 9(4) Valid values are: 1-
+CODE a the subdivision of an 9999.
+account within a client
+(e.g. British Gas region).
+ITEM ID A unique code to identify I 9(10)
+an Item
+(CHECK DIGIT METHOD _IA code to uniquely identify aj9(10) Optional.
+CODE particular check digit
+lalgorithm. Check digit
+Imethods are client specific
+IMAXIMUM CREDIT ON {The maximum amount of —_[9(6) IOptional
+ICARD {credit allowed to be stored
+lon a card.
+IMETERED CHARGE Indicates whether metered IStr(1) (Optional
+AVAILABLE (Charging is available for the
+ard
+PROPERTY BANDING __ Indicates whether property IStr(1) [Optional
+AVAILABLE anding charging is
+lavailable for the card
+IRATEABLE VALUE Indicates whether Rateable IStr(1) (Optional
+AVAILABLE IValue Charging is available
+for the card
+ICARD REBUILD Indicates whether the card IStr(1) (Optional
+AVAILABLE imay be set back to a useable
+Istate if certain fields become
+corrupted whilst the card is
+lin a meter.
+RDP/AIS/ON4 Page: 39
+52 @Consignia 2001
+
+20th November, 2001
+
+‘Commercial in Confidence
+
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+
+TRANSFER STRUCTURE
+
+4.5.18 AP Token Element Type
+
+UNCONTROLLED COPY
+
+This identifies the types of elements (i.e. parts of the data present) that may exist on an Automated
+Payment Token.
+
+DRN:
+
+Version
+
+Issue Date:
+
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(5) I “ELEMENT-TYPE”
+ACTION IStr(1) “C” - Create
+[‘U” - Update
+IELEMENT TYPE CODE [A code to identify a type of I9(10) [Key field.
+[Token Element.
+IDATE CREATED Date instance created. [Date Time
+IELEMENT TYPE IThe description of the IStr(30)
+IDESCRIPTION [Element Type Code.
+RDP/AIS/ON4 Page: 40
+52 @Consignia 2001
+
+20th November, 2001
+
+‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+
+Application Interface Specification Reference Data To Pathway
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.19 AP Token Element
+
+This describes how token elements are contained within the token data. In general, where an
+expected value is not given, then this element is for data capture.
+Where the expected value is specified, then the element data is used for matching/identifying the
+
+token and/or validation.
+
+Record [Description [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name IDescription [Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “TOKEN-ELEMENT”
+ACTION Str(1) "C” - Create
+[‘U” - Update
+TOKEN ID IA unique system generated I9(10) Key field.
+Icode to identify a token
+[ELEMENT ID A code to identify an element}9(10) Key field.
+vithin a token.
+ISTART DATE [The date when this instance IDate Time IKey field.
+ecomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+DATE CREATED Date instance created. Date
+Time
+ERSION NUMBER. IThe version number of the I9(10) Alternative key field.
+currence of a reference
+\data entity.
+IELEMENT TYPE CODE {A code to identify a type of I9(10)
+[Token Element.
+IELEMENT START \The start position within a I9(2)
+POSITION token where the element can
+¢ found.
+ELEMENT LENGTH The length of the element I 9(2)
+within a token.
+ELEMENT VALUE \The expected value for an IStr(99) (Optional.
+lclement.
+DRN: RDPATSOTT Page 47
+Version: 52 @Consignia 2001
+
+Issue Date:
+
+20th November, 2001
+
+‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.20 Check Digit Method
+
+There are two types of check digit algorithms. For each type there are many methods of using the
+parameters. Check Digit Methods can apply to AP Tokens.
+
+Record IDescription [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Su(5) I “CD-TYPE”
+ACTION Str(1) - Create
+“U” - Update
+CHECK DIGIT METHOD I A code to uniquely 9(10) Key field.
+CODE identify a particular check
+digit algorithm.
+ISTART DATE [The date when this instance IDate Time IKey field.
+ecomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+DATE CREATED Date instance created. Date
+Time
+VERSION NUMBER The version number of the I 9(10) Alternative key field.
+occurrence of a reference
+data entity.
+CHECK DIGIT TYPE There are two types of 9(10)
+CODE check digit: 1 - Weighted,
+2 - Non-Weighted.
+TYPE OF ADDITION 0 - Sum of digits of Sur)
+products, 1 - Sum of
+products.
+MODULUS The divisor. 9(5)
+WEIGHTS ARRAY Up to 22 weights. Str(220) I Weights delimited by a
+CHECK DIGITS ARRAY __ 22 check digits IStr(44) [Up to 2 characters per
+orresponding to result. check digit.
+DRN: RDP/AIS/ON4 Page: 42
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.21 Item Additional Field
+
+The definition of additional areas of information that are required to be captured when transacting
+
+Ttems.
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(5) I “ADD-FIELD”
+ACTION IStr(1) “C” - Create
+[‘U” - Update
+ITEM ID [A unique code to identify an I9(10) [Key field.
+item.
+ERSION NUMBER FOR IThe version number of the _I9(10) Key field.
+ITEM ID currence of a reference
+idata entity.
+FIELD SEQUENCE A sequence number that 9(2) Key field.
+NUMBER identifies the order in
+which the fields occur.
+FIELD NAME IThe name of an additional IStr(30)
+field of information. The
+ame must be unique
+FIELD DESCRIPTION IThe description of an IStr(1500)
+ladditional field of
+information.
+FIELD PROMPT The message that is to Str(30)
+appear on the screen when
+requesting input of an
+additional field of
+information.
+FORMAT TYPE CODE A code that identifies the 9(10)
+format of the additional
+field.
+DRN: RDP/AIS/ON4 Page: 43
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+FORMAT TYPE CODE
+DESCRIPTION
+
+The description of the
+Format Type Code e.g.
+Boolean, Date, Integer.
+
+Str(30)
+
+FIELD LENGTH
+
+The length of an additional
+field of information within
+the Field Format.
+
+4)
+
+FIELD DECIMAL PLACES
+
+[The number of decimal place
+for an additional field of
+information.
+
+(2)
+
+lOptional.
+
+IFIELD JUSTIFICATION
+
+IThe positioning of the
+content of an additional field
+f information.
+
+Str(1)
+
+[Default = left for character]
+fields, right for numeric
+fields
+
+FIELD LEADING FIGURE
+
+Identifies any leading figure
+required for a numeric
+ladditional field of
+information, e.g. zeros.
+
+Str(1)
+
+(Optional.
+
+FIELD SIGNED
+
+Identifies whether a numeric
+ladditional field of
+information is required to
+lallow negative values.
+
+Str(1)
+
+[Default = “N”
+
+FIELD PICTURE
+
+[The presentation of an
+ladditional field of
+linformation.
+
+IStr(1500)
+
+FIELD VALUE IF NULL
+
+IThe value to store for an
+ladditional field of
+information if no data is
+entered.
+
+IStr(1500)
+
+FIELD DEFAULT VALUE
+
+Identifies the default value
+for an additional field of
+information.
+
+IStr(1500)
+
+lOptional.
+
+FIELD MAXIMUM VALUE
+
+IThe maximum permitted
+value of an additional field
+f information.
+
+9(10v2)
+
+(Optional.
+
+FIELD MINIMUM
+VALUE
+
+The minimum permitted
+value of an additional field
+of information.
+
+9(10v2)
+
+Optional.
+
+FIELD VALIDATION
+
+ISir(1500)
+
+lOptional.
+
+FIELD OPTIONAL OR
+IMANDATORY
+
+identifies whether data must
+be captured into the field, or
+lit is allowed to remain
+lempty.
+
+IStr(1)
+
+(Values “O” or “M”.
+
+[FIELD ERROR MESSAGE
+
+[Identifies the default value
+for the field when used for
+lan Item.
+
+IStr(120)
+
+If present, this value will
+loverride the normal Field
+[Default Value for the
+Additional Field.
+
+FIELD OVERRIDE
+ALLOWED
+
+Identifies whether the
+operator is allowed to
+override the default value
+
+Str)
+
+for the field.
+
+Values “Y” or “N”.
+
+DRN:
+Version
+
+Issue Date:
+
+RDPYAIS/014
+$2
+
+20th November, 2001
+
+Page: 44
+@Consignia 2001
+
+‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+IFIELD BEFORE CORE Identifies whether the Str(1) Valid values are “Y’, ‘N’,
+ATTRIBUTES ladditional fields are to lor blank - default = blank
+
+lappear before the standard
+[tem attributes, or after
+them.
+
+DRN: RDP/AIS/O14 Page: 45
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.22. Organisation Financial Year
+
+The financial year for Post Office Limited.
+
+The Financial Year Identifier is not meaningful in relating to an accounting year, which may span
+more than one calendar year.
+
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name [Description Format IComments
+DATA IDENTIFIER Code used to identify a 9(1) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “FINANCIAL-YEAR”
+ACTION Str) “C” - Create
+(“U” - Update
+FINANCIAL YEAR A unique code to identify I 9(10) Key field.
+IDENTIFIER a Financial Year.
+FINANCIAL YEAR START IDate when the Financial Date Time
+IDATE [Year starts
+IFINANCIAL YEAR END __IDate when the Financial Date Time
+IDATE Year ends.
+IDATE CREATED Date instance created. Date Time
+iVERSION NUMBER [The version number of the I9(10)
+loccurrence of a reference
+ldata entity.
+START DATE [Date on which this instance IDate Time INot used by Pathway
+becomes effective
+IEND DATE Date on which this instance IDate Time INot used by Pathway
+Iceases to be effective
+FINANCIAL YEAR IThe description for an Str(30)
+DESCRIPTION lorganisation’s financial year,
+DRN: RDP/AIS/ON4 Page: 46
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.23 Accounting Day
+
+A day within an Accounting Week for Post Office Limited.
+
+The Accounting Day Id is used to identify the day as the Accounting Day Date may not
+necessarily be unique within an Accounting Week.
+
+This record is not used by Pathway.
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number I
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “ACCOUNTING-
+DAY”
+IACTION Str(1) Create
+- Update
+
+FINANCIAL YEAR IA unique code to identify a I9(10) Key field.
+[IDENTIFIER [Financial Year.
+ACCOUNTING PERIOD ID 910) Key field.
+
+ACCOUNTING WEEK ID I A code to identify an 9(10) Key field.
+
+accounting week within an
+organisation’s accounting
+period.
+
+ACCOUNTING DAY ID _ IThe identifier of a day withinI9(10) Key field.
+lan Accounting Week.
+
+DATE ACCOUNTING The date/time when an Date
+DAY COMMENCES, Accounting Day Time
+commences.
+IDATE ACCOUNTING DAY IThe date/time when an Date Time
+IFINISHES IAccounting Day finishes.
+DATE CREATED Date instance created. Date
+Time
+ERSION NUMBER FOR __ IThe version number of the /9(10)
+FINANCIAL YEAR loccurrence of a reference
+ldata entity.
+DRN: RDP/AIS/ON4 Page: 47
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+CASH ACCOUNT DAY The number of the day 9(2) Optional.
+NUMBER within a Cash Account
+Week.
+DRN: RDP/AIS/014 Page: 48
+Version 52 @Consignia 2001
+
+Issue Date:
+
+20th November, 2001
+
+‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.24 Accounting Period
+
+A time period within a Financial Year when financial transactions can be updated.
+Accounting Period Id is meaningful in relation to the number of periods in a year.
+
+This record is not used by Pathway
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “ACC-PERIOD”
+ACTION Str(1) “C” - Create
+(“U” - Update
+FINANCIAL YEAR A unique code to identify I 9(10) Key field.
+IDENTIFIER a Financial Year.
+
+IACCOUNTING PERIOD ID IA unique code to identify an I9(10) Key field.
+[Accounting Period.
+DATE ACCOUNTING The date/time when an Date
+
+PERIOD COMMENCES. Accounting period Time
+commences.
+DATE ACCOUNTING The date/time when an Date
+PERIOD FINISHES Accounting period Time
+finishes.
+DATE CREATED Date instance created. Date
+Time
+ERSION NUMBER FOR IThe version number of the /9(10)
+FINANCIAL YEAR loccurrence of a reference
+data entity.
+DRN: RDP/AIS/ON4 Page: 49
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.25 Accounting Week
+
+Accounting Week Id is meaningful in relation to the 52-53 week year.
+
+Record [Description [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name [Description [Format IComments
+DATA IDENTIFIER Code used to identify a 9) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “ACC-WEEK”
+
+ACTION Str(1) [*C” - Create
+[‘U” - Update
+FINANCIAL YEAR [A unique code to identify a I9(10) [Key field.
+[IDENTIFIER Financial Year.
+IVERSION NUMBER FOR IThe version number of the I9(10)
+FINANCIAL YEAR currence of a reference
+data entity.
+
+ACCOUNTING PERIOD A unique code to identify I 9(10) Key field.
+
+ID an Accounting Period.
+ACCOUNTING WEEK ID __IA code to identify an (10) Key field.
+
+laccounting week within an
+jorganisation’s accounting
+
+eriod.
+ACCOUNTING WEEK The date/time when an Date
+START DATE Accounting week Time
+commences.
+ACCOUNTING WEEK END]The date/time when an Date Time
+DATE [Accounting week finishes.
+DATE CREATED Date created. Date
+Time
+(CASH ACCOUNT WEEK _ IThe number of the week 19(2) Optional.
+INUMBER vithin a financial year.
+DRN: RDP/AIS/ON4 Page: 50
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+Application Interface Specification Reference Data To Pathway
+
+UNCONTROLLED COPY
+
+4.5.26 Accounting Node
+
+The hierarchy of levels of Item required for Pathway reporting, in descending ‘Level’ order.
+
+This table is not used by Pathway.
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format [Comments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “ACC-NODE”
+ACTION Str) “C” - Create
+(“U” - Update
+IACCOUNTING NODE ID IThe identifier of an 9(10) Key field.
+[Accounting Node, required
+for Pathway reporting
+Istructures.
+START DATE Date when effective. Date Time IKey field.
+IEND DATE Date when ceases to be Date Time IOptional.
+leffective.
+IDATE CREATED [Date created. Date Time
+ERSION NUMBER [The version number of the I9(10) Alternative key field.
+loccurrence of a reference
+ldata entity.
+ACCOUNTING NODE ID IThe identifier of an 9(10) (Optional if the top of the
+(PARENT) IAccounting Nodes parent. tree.
+LEVEL [The position of a accounting I9(2) Descending order.
+hierarchy node within the
+laccounting hierarchy
+lstructure.
+IACCOUNTING NODE IThe description of the node IStr(30)
+IDESCRIPTION le.g. Balance, Total Receipts
+letc.
+DRN: RDP/AIS/ON4 Page: $1
+Version: 52 @Consignia 2001
+
+Issue Date:
+
+20th November, 2001
+
+‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.27 Organisational Unit
+
+A unit of operation for Post Office Limited or within which Post Office Limited perform a
+function (could also be a grouping of other groups).
+
+Also includes external organisations that Post Office Limited has contact with while conducting
+its business. These include Clients. The valid types of Organisational Unit that can be created are
+controlled by Organisational Unit Type.
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+ILINE COUNT IThe unique line number 9(10) IUsed to identify any errors
+Iwithin the transfer file. between Post Office
+Limited and Fujitsu
+Services (Pathway).
+
+IThe line count increments
+Iby 1 from the previous
+lline. The line count should
+be in ascending order.
+
+TABLE/ENTITY ID Str(15) “ORG-UNIT”
+ACTION Str) “C” - Create
+ORG UNIT CODE A unique system generated I 9(10) Key field.
+
+code to identify the generic
+organisational unit.
+IORGANISATIONAL UNIT IA code to identify a type of I9(10)
+
+[TYPE CODE IOrganisational Unit.
+DRN: RDP/AIS/014 Page: $2
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.28 Item
+
+An identifiable object or event which can occur as a line item in a retail transaction. It is a super-
+
+type.
+Record IDescription Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER. Code used to identify a 9) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Sw(15) I “ITEM”
+ACTION Str) “C” - Create
+ITEM ID Primary, system-unique 9(10) Key field.
+lidentifier for the item.
+ITEM TYPE CODE IA code to identify a type of I9(10)
+litem.
+DRN: RDP/AIS/ON4 Page: $3
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.29 VAT Code
+
+A VAT code look up table.
+
+This table is not used by Pathway.
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format [Comments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “VAT”
+ACTION Str) “C” - Create
+“U” - Update
+VAT CODE Str) Key field.
+ISTART DATE IThe date when this instance IDate Time IKey field.
+becomes effective.
+IEND DATE IThe date when this instance IDate Time IOptional.
+lceases to be effective.
+DATE CREATED Date instance created. Date
+Time
+VERSION NUMBER IThe version number of the 9(10). IAlternative key.
+occurrence of a reference
+ldata entity.
+AT RATE IThe percentage rate of VAT I9(2v2)
+Ithat corresponds to a VAT
+\Code.
+DRN: RDP/AIS/ON4 Page: $4
+Version: 52 @Consignia 2001
+
+Issue Date:
+
+20th November, 2001
+
+‘Commercial in Confidence
+
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+
+TRANSFER STRUCTURE
+
+4.5.30 Look up Type
+
+UNCONTROLLED COPY
+
+The types of code that validation values exist for, e.g. Permitted Method Of Data Entry codes.
+
+For a full definitive list, refer to the Business Rules document [ref 1.6.8].
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format [Comments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “LOOKUP-TYPE”
+ACTION Str) “C” - Create
+(“U” - Update
+LOOK UP TYPE CODE A unique, system 9(10) Key field.
+generated code to identify
+E.g. Permitted Method of
+Entry.
+START DATE IThe date when this instance IDate Time IKey field.
+becomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+IDATE CREATED [Date instance created. Date Time
+/ERSION NUMBER [The version number of the I9(10) Alternative key.
+loccurrence of a reference
+ldata entity.
+ILOOK UP TYPE NAME IThe name of a Look Up Str(30)
+\Type, e.g. Permitted Method
+lof Entry.
+ILOOK UP TYPE IThe description for the Look IStr(1500)
+IDESCRIPTION lup Type Code.
+IFORMAT TYPE CODE IA code to uniquely identify a/9(10) IThe format types currently
+Format lheld by RDS are as
+follows:
+(Type I Character
+DRN: RDP/AIS/ON4 Page: $5
+Version: 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+(Type 2 Integer
+
+[Type 3 Boolean
+[Type 4 Date & Time
+(Type 5 Exact numeric
+[Type 6 Approximate
+jnumeric
+
+[Type 7 Monetary
+(Type 8 Special
+
+[Type 9 Text & Image
+[Type 10 Synonyms
+
+MAXIMUM LENGTH The maximum length ofa I 9(2)
+look up code. This will be
+used as an input mask for
+the look up values.
+INUMBER OF DECIMAL __ IThe number of decimal 9(4) (Optional.
+PLACES, Iplaces for a numeric look up
+code. This will be used as anI
+input mask for the look up
+values.
+
+DRN: RDP/AIS/014 Page: 56
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.31 Look up Value
+
+The instances of look up data for a particular Look Up Type. E.g. the valid values that exist for
+Method Of Data Capture codes will contain codes for swiping, keying, and barcode reading.
+
+For a full definitive list, refer to the Business Rules document [ref 1.6.8].
+
+Record [Description Format IComments
+
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name [Description Format IComments
+DATA IDENTIFIER Code used to identify a 9(1) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Sus) “LOOKUP-VALUE”
+ACTION Str) “C” - Create
+(“U” - Update
+LOOK UP TYPE CODE A unique, system 9(10) Key field.
+
+generated code to identify
+the Look up Type
+VERSION OF LOOK UP I The version number of the I 9(10) Key field.
+TYPE occurrence of a reference
+data entity.
+
+LOOK UP CODE IThe maximum size of a Str(30) Key field.
+Look Up Code is C(30).
+However, for a particular
+Look Up Type the
+Maximum Length and
+[Number Of Decimal Places
+lattributes will control the
+proportion of the field that is
+lused, i.c. they will provide
+lan input mask for this data
+
+litem.
+START DATE The date when this Date Key field.
+instance becomes Time
+effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+DRN: RDP/AIS/O14 Page: $7
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+IDATE CREATED [Date instance created. Date Time
+
+1VERSION NUMBER IThe version number of the 9(10). Alternative key.
+loccurrence of a reference
+ldata entity.
+
+LOOK UP VALUE The description of the Str(60)
+corresponding Look Up
+Code i.e. the description
+that correspond to the
+codes for Method Of Data
+Capture.
+
+DRN: RDP/AIS/014 Page: 58
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.32 Transaction Mode
+
+The types of operation that can be performed with Items. E.g. Remit In, Remit Out, Transfer In,
+Transfer Out, Sell (normal transaction).
+
+Record IDescription Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 9(1) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) I “TRANS-MODE”
+ACTION Str) “C” - Create
+“U” - Update
+[TRANSACTION MODE IA unique code to identify a I9(10) Key field.
+CODE ltype of Transaction Mode.
+IDATE CREATED [Date instance created. IDate Time
+jVERSION NUMBER [The version number of the I9(10) IAlternative key.
+loccurrence of a reference
+ldata entity.
+TRANSACTION MODE The name of a Transaction I Str(30)
+NAME Mode.
+(TRANSACTION MODE [The description of a Str(90)
+DESCRIPTION [Transaction Mode.
+DRN: RDP/AIS/ON4 Page: 59
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.33 Item Transaction Mode
+
+DRN:
+
+Version
+
+Issue Date:
+
+The linking of an Item to a Transaction Mode. It identifies the Transaction Modes that can be
+performed on an Item, and the accounting sense that the operation has.
+
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(5) I “ITEM-TRAN-MODE”
+ACTION Str(1) - Create
+“U” - Update
+TRANSACTION MODE A unique code to identify I 9(10) Key field.
+CODE a type of Transaction
+Mode.
+ITEM ID Primary, system-unique _I9(10) IKey field.
+lidentifier for the item.
+ACCOUNTING NODE ID _ IThe identifier of an (10) [This field is mandatory for}
+IAccounting Node, required Default’ mode and
+for Pathway reporting optional for all other
+Istructures. imodes.
+INot used by Pathway.
+START DATE The date when this Date Key field.
+instance becomes Time
+effective.
+END DATE Date when ceases to be Date Optional.
+effective. Time
+IDATE CREATED [Date instance created. [Date Time
+jVERSION NUMBER IThe version number of the I9(10) Alternative key.
+occurrence of a reference
+data entity.
+
+RDPYAIS/014
+$2
+
+20th November, 2001
+
+Page: 60
+@Consignia 2001
+
+‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+ACCOUNTING SENSE
+
+(dentifies whether an Item
+lincreases or decreases an
+
+utlet’s balance when it is
+transacted.
+
+Str(1)
+
+(Only used by Pathway for
+Ithe ‘Default’ Transaction
+IMode.
+
+\Valid values are:
+
++” - positive (increases
+loutlet’s balance),
+
+‘~” - negative (decreases
+loutlet’s balance).
+
+DRN:
+Version
+
+Issue Date:
+
+RDPYAIS/014
+$2
+
+20th November, 2001
+
+Page: 61
+@Consignia 2001
+
+‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.34 Cash Account
+
+The structure of a Cash Account for a particular year.
+
+Record [Description [Format (Comments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name Description Format IComments
+DATA IDENTIFIER I Code used to identify a data I 9(1) The record type always
+record in the transmission. start with the number 1.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count is in ascending
+
+order.
+TABLE/ENTITY ID Str(15) “CASH-ACCT”
+ACTION Str(1) “C” - Create
+“U” - Update
+FINANCIAL YEAR The Financial Year 9(10) Key field.
+IDENTIFIER Identifier for Post Office
+Limited’s financial year.
+ISTART DATE [Date when effective. [Date Time
+END DATE Date when ceases to be Date Optional.
+effective. Time
+DATE CREATED Date created. Date
+Time
+/ERSION NUMBER _ IThe version number of the 9(10) [Key field.
+occurrence of a reference data
+lentity.
+DRN: RDP/AIS/ON4 Page: 62
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.35 Cash Account Table
+
+An overall grouping of lines within a cash account.
+
+Record [Description [Format (Comments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description Format IComments
+DATA IDENTIFIER I Code used to identify a data I 9(1) The record type always
+record in the transmission. start with the number 1.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count is in ascending
+order.
+TABLE/ENTITY ID Str(15) “C-A-TABLE”
+ACTION Str(1) “C” - Create
+“U” - Update
+FINANCIAL YEAR The Financial Year 9(10) Key Field.
+IDENTIFIER Identifier for Post Office
+Limited’s financial year.
+VERSION NUMBER I The version number of the I 9(10) Key Field.
+OF CASH Cash Account record.
+ACCOUNT
+TABLE NUMBER A number defining a table I 9(2) Key Field.
+in a cash account or other
+report.
+TABLE LETTER A qualifying letter added to I Str(1) Key Field.
+a Table Number to produce
+a table identifier.
+DATE CREATED Date created. Date
+Time
+ITABLE NAME. IThe name of a table in a Cash IStr(60) IThe description of the
+IAccount. itable, to be printed on the
+cash account.
+DRN: RDP/AIS/ON4 Page: 63
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001
+
+‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.36 Cash Account Sub Table
+
+A subdivision of a cash account or other report table with a separate description. All tables will have at
+least one of these (with sequence number 0 and no description, if no subdivisions exist for a table).
+
+Record [Description [Format (Comments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name Description [Format (Comments
+DATA IDENTIFIER — I Code used to identify a data I 9(1) The record type always
+record in the transmission. start with the number 1.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count is in ascending
+
+order.
+TABLE/ENTITY ID Str(15) “C-A-SUB-TABLE”
+ACTION Str(1) “C” ~ Create
+“U” - Update
+FINANCIAL YEAR __ IThe Financial Year Identifier I9(10) Key Field.
+IDENTIFIER for Post Office Limited’s
+financial year.
+(VERSION NUMBER _ IThe version number of the 19(10) IKey Field.
+OF CASH ACCOUNT _ICash Account record.
+TABLE NUMBER A number defining a table 9(2) Key Field.
+in a cash account or other
+report.
+TABLE LETTER A qualifying letter added to I Str(1) Key Field.
+a Table Number to produce
+a table identifier.
+SUB-TABLE A sequence number for a 9(1) Key Field.
+SEQUENCE sub-table within a table.
+NUMBER
+IDATE CREATED [Date created. [Date Time
+SUB TABLE The description of a sub- Str(60) Optional.
+DESCRIPTION table on a Cash Account.
+DRN: RDP/AIS/ON4 Page: 64
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.37 Cash Account Table Line
+
+Each line on a Cash Account Table at the value level.
+Total lines (which are referenced by other Cash Account Table Lines) will appear on the interface before
+
+the lines that reference them.
+
+Record Description [Format (Comments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description [Format IComments
+DATA IDENTIFIER I Code used to identify a data I 9(1) The record type always
+record in the transmission. start with the number 1.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count is in ascending
+order.
+TABLE/ENTITY ID Str(15) “C-A-TABLE-LINE”
+ACTION Str) “C” ~ Create
+“U” - Update
+FINANCIAL YEAR [The Financial Year Identifier I9(10) Key Field.
+IDENTIFIER for Post Office Limited’s
+financial year.
+[VERSION NUMBER _ IThe version number of the (10) Key Field.
+JOF CASH ACCOUNT [Cash Account record.
+TABLE NUMBER A number defining a table 9(2) Key Field.
+in a cash account or other
+report.
+TABLE LETTER A qualifying letter added to I Str(1) Key Field.
+a Table Number to produce
+a table identifier.
+SUB-TABLE A sequence number for a 91) Key Field.
+SEQUENCE sub-table within a table.
+NUMBER
+LINE SEQUENCE The sequence number of a 9(3) Key Field.
+NUMBER line within a Cash Account
+table or sub-table.
+IDATE CREATED Date created. Date Time
+LINE NAME The name of a Cash Str(60) Optional.
+Account Table Line
+[ACCOUNTING SENSE IIdentifies whether values IStr(1)
+lagainst this cash account line
+lincrease (‘+’) or decrease (‘-”)
+ltotals.
+
+DRN: RDPYAIS/014
+Version $2
+Issue Date: 20th November, 2001
+
+Page: 65
+@Consignia 2001
+
+‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+PARENT TABLE Parent Table Number for 9(2) Optional.
+UMBER ltotalling.
+IPARENT TABLE \Parent Table Letter for IStr(1) IOptional.
+LETTER ltotalling.
+PARENT TABLE Parent Sequence Number for I9(1) Optional.
+ISEQUENCE NUMBER totalling.
+PARENT LINE. [Parent Line Sequence NumberI9(3). \Optional.
+SEQUENCE NUMBER [for totalling.
+
+DRN: RDP/AIS/014 Page: 66
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.38 Cash Account Code
+
+A cash account code relating to cither a quantity, value or count of one or more Item Transaction Modes.
+
+Record IDescription Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description [Format IComments
+DATA IDENTIFIER I Code used to identify a data I 9(1) The record type always
+record in the transmission. start with the number 1.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count is in ascending
+order.
+TABLE/ENTITY ID Str(15) “C-A-CODE”
+ACTION Str) “C” - Create
+“U” - Update
+CASH ACCOUNT A ledger code within each Str(4) Key Field, right justified,
+LINE CODE line in a Cash Account. leading zero filled.
+IDATE CREATED Date created. [Date Time
+CODE TYPE A flag to identify whether a I Str(1)
+INDICATOR Cash Account Line Code
+corresponds to a quantity, a
+value, or a count.
+DRN: RDP/AIS/ON4 Page: 67
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001
+
+‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.39 Cash Account Line Code
+The Cash Account Codes that apply to a Cash Account Table Line.
+
+Record [Description [Format (Comments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name Description [Format IComments
+DATA IDENTIFIER I Code used to identify a data I 9(1) The record type always
+record in the transmission. start with the number 1.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count is in ascending
+
+order.
+TABLE/ENTITY ID Str(15) “C-A-LINE-CODE”
+ACTION Str) “C” - Create
+“U” - Update
+FINANCIAL YEAR IThe Financial Year Identifier I9(10) [Key Field.
+[IDENTIFIER for Post Office Limited’s
+financial year.
+ERSION NUMBER IThe version number of the —_‘[9(10) Key Field.
+OF CASH ACCOUNT _ICash Account record.
+TABLE NUMBER A number defining a table I 9(2) Key Field.
+in a cash account or other
+report.
+TABLE LETTER A qualifying letter added to I Str(1) Key Field.
+a Table Number to produce
+a table identifier.
+SUB TABLE A sequence number for a 91) Key Field.
+SEQUENCE sub-table within a table.
+NUMBER
+LINE SEQUENCE The sequence number of a 9(3) Key Field.
+NUMBER line within a Cash Account
+
+table or sub-table.
+CASH ACCOUNT A ledger code within each Str(4) Key Field.
+
+LINE CODE line in a Cash Account.
+IDATE CREATED [Date created. [Date Time
+DRN: RDP/AIS/ON4 Page: 68
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+Application Interface Specification Reference Data To Pathway
+
+UNCONTROLLED COPY
+
+4.5.40 Item Transaction Mode Code
+
+Resolution of the many to many relationship between Item Transaction Mode and Cash Account Code.
+
+Record [Description [Format (Comments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description [Format IComments
+DATA IDENTIFIER I Code used to identify a data I 9(1) The record type always
+record in the transmission. start with the number 1.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count is in ascending
+order.
+TABLE/ENTITY ID Str(15) “ITEM-MODE-CODE”
+ACTION Str) “C” - Create
+“U” - Update
+CASH ACCOUNT IA ledger code within each line IStr(4) Key Field.
+ILINE CODE lin a Cash Account.
+ITEM ID Primary, system-unique 9(10) Key Field.
+identifier for the item.
+TRANSACTION A unique code to identify a I 9(10) Key Field.
+MODE CODE type of Transaction Mode.
+VERSION NUMBER I The version number of the 9(10) Key Field.
+OF ITEM Item Transaction Mode
+TRANSACTION record.
+MODE
+IDATE CREATED Date created. Date Time
+DRN: RDP/AIS/ON4 Page: 69
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001
+
+‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+
+TRANSFER STRUCTURE
+
+4.5.41 Issuer Scheme
+
+DRN:
+
+Version
+
+Issue Date:
+
+UNCONTROLLED COPY
+
+Defines each issuer scheme supported by the Horizon system.
+
+Record [Description [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name [Description Format IComments
+DATA IDENTIFIER Code used to identify a 9) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by 1 from
+the previous line. The
+line count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “ISSUER-SCHEME”
+(ACTION Str(1) \ Create
+- Update
+ISSUER SCHEME ID IA unique system generated I9(10) Key field.
+code to identify the Issuer
+Scheme.
+ISTART DATE IThe date when this instance IDate Time IKey field.
+becomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+DATE CREATED Date instance created. Date
+Time
+VERSION NUMBER [The version number of the I9(10) [Alternative key field.
+occurrence of a reference
+data entity.
+ISSUER SCHEME NAME [The name of the Issuer Str(30)
+Scheme.
+ORG UNIT CODE (Client) I The Organisational Unit I 9(10) Alternative key field.
+Code of the Client.
+BANKING SERVICE ID A value representing a 9(2) Alternative Key Field.
+
+(Network Banking Look Up
+Code)
+
+Look Up Code of type 13
+(NETBANK Banking
+Service)
+
+The meaning of this
+numeric code shall be
+determined from its
+respective Look Up
+
+Value record.
+
+RDPYAIS/014
+$2
+
+20th November, 2001
+
+Page: 70
+@Consignia 2001
+
+‘Commercial in Confidence
+
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+
+TRANSFER STRUCTURE
+
+4.5.42 Banking Operation Type
+
+DRN:
+
+Version
+
+Issue Date:
+
+UNCONTROLLED COPY
+
+Identifies cach different banking operation type.
+
+For a full definitive list, refer to the Business Rules document [ref 1.6.8].
+
+Record
+
+[Description
+
+[Format
+
+IComments
+
+DATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name [Description [Format [Comments
+DATA IDENTIFIER Code used to identify a 9(1) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) I “BANK-OP-TYPE ”
+ACTION IStr(1) “C” - Create
+[‘U” - Update
+IBANKING OPERATION IA unique system generated I9(10) Key field.
+TYPE CODE code to identify the type of
+[Banking Operation.
+DATE CREATED Date instance created. Date
+Time
+IBANKING OPERATION [The name of the Banking —_IStr(200)
+[TYPE NAME IOperation Type
+ITEM TYPE CODE IThe unique code that (10) IAlternative key field.
+lidentifies the type of
+[Banking item
+[CUSTOMER IA value representing the —_I9(2) IThe meaning of this
+
+VERIFICATION METHOD
+(Network Banking Look Up
+(Code)
+
+[Look up Code of type 10
+that identifies a NETBANK
+(Customer Verification
+[Method allowed for a
+specific Banking Operation.
+
+jnumeric code shall be
+determined from its
+respective Look Up Value
+record.
+
+RDPYAIS/014
+$2
+
+20th November, 2001
+
+Page: 7
+@Consignia 2001
+
+‘Commercial in Confidence
+
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.43 Banking Operation
+Defines the operations for each Issuer Scheme in which a banking product can be transacted.
+
+Record [Description [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name Description [Format IComments
+DATA IDENTIFIER Code used to identify a 9(1) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any errors
+within the transfer file. between Post Office
+
+Limited and Fujitsu
+Services (Pathway).
+
+The line count increments
+by I from the previous
+line. The line count should
+be in ascending order.
+
+TABLE/ENTITY ID Str(15) I “BANK-OPERATION”
+ACTION Str(1) °C” - Create
+“U” - Update
+
+IBANKING OPERATION ID IA unique system generated I9(10) Key field.
+code to identify a particular
+type of Banking Operation.
+
+ISTART DATE IThe date when this instance IDate TimeIKey field.
+ecomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+DATE CREATED Date instance created. Date
+Time
+1VERSION NUMBER IThe version number of the I9(10) Alternative key field.
+occurrence of a reference
+data entity.
+BANKING OPERATION The unique code that 9(10) Alternative key field.
+TYPE CODE identifies the Banking
+Operation type.
+ITEM ID A unique code to identify I 9(10) Alternative key field.
+an Item
+ISSUER SCHEME ID [A unique code to identify an I9(10) Alternative key field.
+[Issuer Scheme.
+ISEQUENCE NO IIf present, overrides the ItemI9(2) Optional. Defaults to the
+OVERRIDE IType Sequence No. which value of the Item Type
+\defines how Banking Item Sequence No.
+[Types are presented.
+ITEM TYPE CODE If present, overrides the ItemIStr(30) — IOptional. Defaults to the
+IDESCRIPTION OVERRIDE [Type Code Description. value of the Item Type Code
+Description.
+DRN: RDP/AIS/ON4 Page: 72
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+DRN: RDP/AIS/014 Page: 73
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.44 Permitted Method of Entry
+Defines the permitted methods of card entry for each banking operation.
+
+Record [Description [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name Description [Format IComments
+DATA IDENTIFIER Code used to identify a 9(1) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “PERMITTED-MOE
+ACTION Str(1) "C” - Create
+[‘U” - Update
+IMETHOD OF ENTRY IA value representing a 9(2) Key field
+(Network Banking Look Up [LOOK up Code of type 11 (The meaning of this
+Code) Ito identify a NETBANK inumeric code shall be
+[Permitted Method of Entry. determined from its
+lrespective Look Up Value
+Irecord.
+
+IBANKING OPERATION ID IA unique code to identify a I9(10) Key field.
+[Banking Operation.
+
+ISTART DATE [The date when this instance IDate Time IKey field.
+ecomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+DATE CREATED Date instance created. Date
+Time
+ERSION NUMBER. IThe version number of the I9(10) Alternative key field.
+currence of a reference
+data entity.
+DRN: RDP/AIS/ON4 Page: 74
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.45 Bank Card Type
+Identifies each different bank card type.
+
+For a full definitive list, refer to the Business Rules document [ref 1.6.8].
+
+Record [Description [Format {Comments
+DATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name IDescription [Format IComments
+DATA IDENTIFIER Code used to identify a 9) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(5) I “BANK-CARD-TYPE
+ACTION IStr(1) I“C” - Create
+[‘U” - Update
+
+IBANK CARD TYPE CODE A unique system generated I9(10) [Key field.
+code to identify the type of
+
+[Bank Card
+DATE CREATED Date instance created. Date
+Time
+IBANK CARD TYPE NAME IThe name of the Bank Card IStr(30)
+[Type
+DRN: RDP/AIS/ON4 Page: 75
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.46 Bank Card
+
+Each Issuer Scheme has a specific set of Issuer Identification Numbers (IIN), a range of IINs or a
+number of ranges of IINs allocated to it. All Bank cards issued under the Issuer Scheme must
+then have an IIN which is within these ranges. This entity and its child entity, IIN Range, enables
+definition of the full set of IIN values which are allocated to each Issuer Scheme.
+
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name [Description Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “BANK-CARD”
+ACTION Str(1) ["C” - Create
+[‘U” - Update
+IBANK CARD ID IA unique system generated 9(10) Key field.
+\code to identify a Bank Card)
+ISTART DATE [The date when this instance IDate Time IKey field.
+ecomes effective.
+END DATE The date when this Date Optional.
+instance ceases to be Time
+effective.
+DATE CREATED Date instance created. Date
+Time
+iVERSION NUMBER IThe version number of the I9(10) Alternative key field.
+
+currence of a reference
+data entity.
+
+IBANK CARD NAME IThe name of the Bank Card IStr(30)
+ISSUER SCHEME ID [A unique code to identify an I9(10) Alternative key field.
+lissuer scheme.
+BANK CARD TYPE A unique code to identify I 9(10) Alternative key field.
+CODE the type of Bank Card.
+DRN: RDP/AIS/ON4 Page: 76
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.47 Bank Card Element Type
+
+Identifies data clement types within a specific bank card type.
+
+For a full definitive list, refer to the Business Rules document [ref 1.6.8].
+
+Record [Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name [Description [Format IComments
+DATA IDENTIFIER Code used to identify a 91) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(15) “BC-ELEMENT-
+TYPE”
+ACTION Str(1) IC” - Create
+[‘U” - Update
+IBANK CARD ELEMENT __IA unique system generated I9(10) Key field.
+[TYPE CODE Icode to identify a data
+clement type within a bank
+card.
+DATE CREATED Date instance created. Date
+Time
+BANK CARD TYPE A unique code to identify I 9(10) Alternative key field.
+CODE the type of bank card.
+BANK CARD ELEMENT I The description of the Str(30)
+TYPE NAME bank card element type.
+DRN: RDP/AIS/ON4 Page: 77
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.48 Bank Card Element
+
+Identifies cach data element within a specific bank card that enables processing of the card either
+in automated or manual entry modes. This entity is versioned at the Bank Card entity level.
+
+Record [Description [Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+
+Field Name [Description Format IComments
+DATA IDENTIFIER Code used to identify a 9) The record type always
+data record in the start with the number 1.
+transmission.
+LINE COUNT The unique line number 9(10) Used to identify any
+within the transfer file. errors between Post
+
+Office Limited and
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from the
+previous line. The line
+count should be in
+ascending order.
+TABLE/ENTITY ID Str(15) “BC-ELEMENT”
+
+ACTION Str(1) "C” - Create
+[‘U” - Update
+IBANK CARD ELEMENT IDIA unique system generated I9(10) Key field.
+Icode to identify a data
+lelement within a bank card.
+
+DATE CREATED Date instance created. Date
+Time
+BANK CARD ELEMENT I A unique code to identify I 9(10) Key field.
+TYPE CODE the data element type
+within a bank card.
+BANK CARD ID A unique code to identify I 9(10) Alternative key field.
+
+the bank card.
+BANK CARD VERSION The version number of the I 9(10) Key field.
+latest occurrence of the
+
+Bank Card
+ELEMENT START The start position of the 9(2)
+POSITION element within the bank
+card.
+ELEMENT LENGTH The length of the element I 9(2)
+within the bank card.
+ELEMENT FORMAT A value representing a 9(2) Optional.
+AUTO Look Up Code of Type 12 The meaning of this
+(Network Banking Look Up I (NETBANK Bank Card numeric code shall be
+Code) Element format) determined from its
+respective Look Up
+Value record.
+DRN: RDP/AIS/ON4 Page: 78
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+Application Interface Specification Reference Data To Pathway
+
+FUJ00001623
+FUJ00001623
+
+Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+ELEMENT FORMAT A value representing a 9(2) Optional.
+MANUAL Look Up Code of Type 12 The meaning of this
+(Network Banking Look Up I ( NETBANK Bank Card numeric code shall be
+Code) Element format) determined from its
+respective Look Up
+Value record.
+MANUAL INPUT A flag of ‘Y’ or ‘N’ to Str)
+indicate whether the
+specific Bank Card
+Element is capable of
+being captured during
+manual entry of data.
+DRN: RDP/AIS/ON4 Page: 79
+Version: 52 @Consignia 2001
+
+Issue Date:
+
+20th November, 2001
+
+‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.5.49 TIN Range
+
+Defines the range of IINs which are included or excluded for a specific Bank Card.
+
+Record Description Format IComments
+IDATA CONTENT AMENDMENT RECORD - Multiple Records
+Field Name [Description Format IComments
+
+DATA IDENTIFIER Code used to identify I 9(1) The record type always
+a data record in the start with the number
+transmission. L.
+
+LINE COUNT The unique line 9(10) I Used to identify any
+number within the errors between Post
+transfer file. Office Limited and
+
+Fujitsu Services
+(Pathway).
+
+The line count
+increments by I from
+the previous line. The
+line count should be in
+ascending order.
+
+TABLE/ENTITY ID Str(1S) I “IIN-RANGE ”
+(ACTION Str(1) IC” - Create
+
+IU” - Update
+IN RANGE ID IA unique system 9(10) Key field.
+
+Igenerated code to
+lidentify the IIN Range.
+
+START DATE The date when this Date Key field.
+instance becomes Time
+effective.
+END DATE The date when this Date Optional.
+instance ceases to be I Time
+effective.
+DATE CREATED Date instance Date
+created. Time
+IBANK CARD ID [A unique code that 9(10) Alternative key field.
+identifies the Bank
+Card.
+VERSION [The version number of I9(10) Alternative key field.
+
+ithe latest occurrence of
+ithe reference data
+
+lentity.
+IN LENGTH [The length of the IN I9(2)
+[Range to be matched.
+IN START VALUE [The lowest value in the IStr(12) IThe length of the string
+ITN Range. Imust match the IIN
+length
+IIN END VALUE The highest value in I Str(12)
+the IIN Range.
+DRN: RDP/AIS/ON4 Page: 80
+Version: 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+TIN RANGE TYPE A value representing I Str(3) I Key Field. Valid values
+(Network Banking Look Up Code) I a Look up Code of are “INC” and “EXC”
+type 9 that defines representing inclusive
+whether the IIN or exclusive range
+Range is ‘Included’ types. Within this
+or ‘Excluded’ from a version of the interface
+specific Bank Card the value will always
+be “INC”.
+DRN: RDP/AIS/014 Page: 81
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.6 Version Control Rules
+4.6.1 Introduction
+
+All non-static information within the Reference Data System is subject to version control.
+This definition is for the version control rules that apply to that data.
+
+All relevant data held in the system and passed across any interfaces will conform to
+these rules.
+
+4.6.2. Rules Description
+
+All changes for a change request will be consolidated for transmission.
+The following rules will be applied:
+
+e — The transfer file will contain a full set of amendments which when processed by the
+recipient system will be logically correct with all related data present.
+
+« — At most one version of a reference data record is valid for a specific date/time at any
+point in time.
+
+¢ To create a new record for a given period, any existing record(s) overlapping that
+period must be superseded.
+
+¢ — The default start time is 00:00:00 i.e. start of a day.
+e — The default end time is 23:59:59 i.e. end of a day.
+« Where a record does not have an end-date specified, the default end-date/time is null.
+
+« — Ifa record has been created for future activation it may be cancelled by setting its
+end-date/time to the same as its start-date/time.
+
+« Where the end-date/time is null, the record is valid when current-date/time >= start-
+date/time unless it has been superseded.
+
+« — A new record cannot be created with a start-date/time < current-date/time.
+
+N.B. You can set/amend the end-date/time on an existing record where its start-
+date/time < current-date/time.
+
+¢ — End-date/time must be >= start-date/time.
+
+« — An end-date/time cannot be set < current-date/time.
+
+¢ — The default expiry of a prior record is ‘start-date/time (of succeeding record) - I
+second’.
+
+¢ — Fora specific date/time the valid reference data record is:
+
+The highest version number where current-date/time >= start-date/time and (current-
+date/time <= end-date time or the end-date/time is null).
+
+DRN: RDP/AIS/014 Page: 82
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+DRN: RDP/AIS/014 Page: 83
+Version 52 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+4.6.3 Example illustration
+. Create new record V1 - start date set, no end-date.
+. To change the data a new record is created - V3. An intermediate version - V2 - is
+
+also created, which supersedes V1 by setting an end-date for it. (V2 & V3 have the
+same Date Created).
+
+. This process is repeated - creating V5 (a time-limited version, as it is created with
+both start and end dates specified) causes the intermediate V4 to be created.
+
+. A record to be activated in the future is created - V6.
+. V6 is amended and a new record V7 is created.
+. V5 is amended - creating V8 and V9.
+
+. V10 is a record created to commence after V9 has expired. However, this record
+has been created as a future version, and was not based on V9 even though they
+run contiguously.
+
+. There is a period between V10 and V7 when there are no valid reference data
+records.
+
+. A future activated record is created - V11.
+
+. The future record is cancelled (by setting the end-date/time to be the same as the
+
+start date/time). This creates V12.
+
+DRN: RDP/AIS/014 Page: 84
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+. V13 is created as a future record which overwrites the period where V11
+
+previously applied.
+
+DRN: RDP/AIS/014 Page: 85
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+UNCONTROLLED COPY
+DRN: RDPIAIS/O14 Page: 86
+Version $2 @Consignia 2001
+
+Issue Date: 20th November, 2001 Commercial in Confidence
+FUJ00001623
+FUJ00001623
+
+Application Interface Specification Reference Data To Pathway Reference Data System
+TRANSFER STRUCTURE
+
+UNCONTROLLED COPY
+
+4.7 Data Authentication
+
+A transfer file for Fujitsu Services (Pathway) can be identified by the “TMS” label found
+in field 3 (Transmission Name) of the header record.
+
+The following information is included to aid in authenticating the data:
+
+Each record in the interface file has a unique record number.
+
+The Trailer Record contains the total number of transactions within the interface file.
+The File Header contains the name of the target system.
+
+The File Header contains the name of the source system.
+
+The interface file version number is included in the File Header.
+
+4.8 Example Transfer File
+
+The following example is for a single new Item Structure Type. Note the data is for
+illustration purposes only.
+
+0,0,"TMS”, 25, °01/01/1997 18:05:30”,,”"RD”,”5.2”
+3,1,”00000000000000000027”, ”1”,
+1,2, "ITEM-STRU-TYPE”, ”C”,1,”05/02/1996 00:00:00”,”Mandatory Associated”
+
+DRN: RDP/AIS/014 Page: 87
+Version 52 @Consignia 2001
+Issue Date: 20th November, 2001 ‘Commercial in Confidence
+FUJ00001623
+
+FUJ00001623
+Application Interface Specification Reference Data To Pathway Reference Data System
+SECURITY OF TRANSMITTED DATA
+
+UNCONTROLLED COPY
+
+5. SECURITY OF TRANSMITTED DATA
+
+5.1 Need to Know
+
+No special need to know status has been identified for the security aspects of this
+interface with the current scope. If the scope changes then this section will be revised.
+
+5.2 Protected Data
+
+With the present scope of the reference data system this section is not applicable.
+However, if information of a security nature (e.g. security fittings at outlets) is passed
+over the interface in future then this section will be revised.
+
+5.3 Encryption and Decryption Methods
+
+No encryption or decryption methods are used between the Reference Data System and
+the gateway PC.
+
+5.4 Session Establishment
+
+Refer to the Technical Interface Specification (ref. 1.6.1).
+
+5.5 Key Management
+
+This section is not applicable in this specification.
+
+DRN: RDP/AIS/O14 Page: 88
+Version: 32 @Consignia 2001
+
+Issue Date: 20th November, 2001 ‘Commercial in Confidence

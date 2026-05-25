@@ -1,0 +1,2753 @@
+oO
+FUJITSU
+
+Peak Administration Guide
+
+FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDEN
+
+FUJ00080231
+FUJ00080231
+
+CE
+
+Document Title:
+
+Peak Administration Guide
+
+Document Reference: DEV/APP/SPG/2144
+
+Release:
+
+Abstract:
+
+Document Status:
+
+Author & Dept:
+
+Release Independent
+
+A guide for new administrators of the Peak system (Phase 8+) and
+
+a reference point for existing Pe:
+
+APPROVED
+
+Lina Kiang, SSC
+
+External Distribution: None. Internal use only.
+
+Security Risk
+
+ak administrators.
+
+YES security risk has been considered, see §0.9 for details.
+
+Assessment Confirmed
+
+Approval Authorities:
+
+Name
+
+John Simpkins
+
+Role Signature
+
+Peak Designer and Developer
+
+Date
+See Dimensions for record
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED
+2013
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED WHEN PRINTED OR
+STORED OUTSIDE DIMENSIONS
+
+Ref: DEV/APP/SPG/2144
+Version: 1.0
+Date: 03-Apr-2013
+
+PageNo: 1 of 49
+FUJ00080231
+
+FUJ00080231
+oO Peak Administration Guide
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+0 Document Control
+0.1 Table of Contents
+0 DOCUMENT CONTROL. 2
+
+0.1 Table of Contents.
+0.2 Document History.
+0.3 Review Details.
+0.4 Associated Documents (Internal & External
+0.5 Abbreviations.
+0.6 Glossary..
+0.7 Changes Expected..
+0.8 Accuracy...
+0.9 Security Risk Assessment
+
+BN
+
+1 INTRODUCTION.
+
+2
+3 OUTLINE OF THIS DOCUMENT.
+4 PEAK SUPPORT.
+
+5 MAIN MENU - ADMINISTRATION
+
+5.1 Manage Products......
+5.2 Manage Product Groups.
+5.3. Manage Users (and their Passwords)..
+
+5.3.1. Restore Deleted Use
+5.4 Manage Teams.
+5.5 Manage Evidence Type:
+5.6 Manage Companies.
+5.7 Manage Users Alerts..
+5.8 Manage Call Types.
+5.9 Manage Target Release:
+
+5.9.1 List of Releases.
+5.10 Manage Divisions.
+5.11 Manage Closure Types.
+
+5.11.1 List of Categories.....
+5.12 Managing User Message:
+5.13 Update Call Logger.
+5.14
+5.15
+5.16 New Password (all users).
+
+5.16.1 Password rule:
+5.17 Manage Roles...
+5.18 Update Progress..
+5.19 Stats (all users).
+5.20 Monitors (all uss
+5.21 Reports (all users
+5.22 View Locked Users.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo:  20f49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.23 View Error Log.....
+5.24 Templates (all users).
+
+5.25 Manage Reference Types. 42
+5.26 Manage Service Level Targets (SLT] 44
+5.27 Manage Reporting Hierarchy. 46
+5.28 Manage Contact Points. 47
+
+5.29 Manage Root Causes.
+5.30 Manage Target Types.
+5.31 Branch Note (OTI Admin role only)..
+5.32 OTI (OTI Admin role only)...
+5.33 Procedures (OTI Admin role only)
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref. DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo:  30f49
+oO
+FUJITSU
+
+Peak Administration Guide
+
+FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+FUJ00080231
+FUJ00080231
+
+0.2 Document History
+
+Version No. Date
+
+‘Summary of Changes and Reason for Issue
+
+Associated Change -
+
+CP/PEAKIPPRR
+Reference
+
+0.4 02/01/2013 First informal draft
+
+02 17/01/2013 First draft
+
+1.0 03/04/2013 Approvedt
+
+0.3 Review Details
+
+Review Comments by :
+
+Review Comments to :
+
+(*) = Reviewers that returned comments
+
+Mandatory Review
+
+Role
+
+Name
+
+Peak Designer and Developer
+
+John Simpkins (*)
+
+Peak Administrator
+
+Lionel Higman (*)
+
+Peak Support
+
+Dave Seddon (*)
+
+Role
+
+Name
+
+‘SSC Manager
+
+‘Steve Parker
+
+Issued for Information
+
+(*) = Reviewers that returned comments
+
+Position/Role Name
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+STORED OUTSIDE DIMENSIONS PageNo: 4 of 49
+FUJ00080231
+
+FUJ00080231
+oO Peak Administration Guide
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+0.4 Associated Documents (Internal & External)
+Reference Version Date Title Source
+PGM/DCM/TEM/0001 RMG BU Generic Document Template I Dimensions
+CS/MAN/011 2.0 29/06/2011 Peak User Guide
+SVM/SDMWKI0009 II 0.1 15/03/2010 Peak Disaster Recovery Dimensions
+CSIREQ/I012 0.1 09/06/2003 New PinlCL System Outline PVCS
+Requirements
+PK/TSD/001 0.4 11/11/2003 Peak Call Management System
+Support Document
+DE/PRO/O15 24 25/04/2004 Post Office Account Systems Pvcs
+Integration Directorate
+Incident/Defect Management
+
+0.5 Abbreviations
+
+Abbreviation Definition
+
+cP Change Proposal
+DHTML Dynamic Hyper Text Markup Language
+EDSC SSC stack on Peak
+Gpc Global Delivery Centre (POA 4" Line Support)
+GUI Graphical User Interface
+HNG-X Horizon Next Generation
+HSD Horizon Service Desk (POA 1* and 2" Line Support)
+KEL Known Error Log
+Msc Manage Service Change
+ocp Operational Change Procedure
+oTl Open-Systems Teleservice Interface
+The standard method for transferring incidents between call management systems.
+PHIL Platform Hardware Instance List
+POA Post Office Account
+ac Quality Centre
+QFP Quality Filter Process
+RMF Release Management Forum
+SDA Self-Decrypting Archive
+sl Systems Integration
+SLA Service Level Agreement
+SLT Service Level Target
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTEDOR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 5 0f49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+SMC ‘System Management Centre (POA 2" Line Support)
+ssc Software Support Centre (POA 3" Line Support)
+URL Uniform Resource Locator
+
+0.6 Glossary
+
+Term Definition
+Call or Incident Aterm used to reference the Incident/Defect record held in Peak
+
+Peak A Fujitsu Services call management system used by the Post Office Account
+PinICL Incident management system which was replaced by Peak
+
+0.7 Changes Expected
+
+Peak is ongoing in its design and therefore features, which may be missing at this release, might be included at a
+future release.
+
+0.8 Accuracy
+
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but, whilst every effort
+is made to ensure the accuracy of such information, it accepts no liability for any loss (however caused) sustained as a
+result of any error or omission in the same.
+
+0.9 Security Risk Assessment
+
+Security risks have been assessed and it is considered that there are no security risks relating specifically to this
+document.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 6 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+1 Introduction
+
+Peak is a browser-based software incident and defect management system. It is the system used by
+Post Office Account (POA) Third and Fourth Line Support Units. It enables diagnostic details to be
+captured in a searchable format and allows the tracking of problems from detection through to resolution.
+
+Peak was written in-house by the Software Support Centre (SSC) and is now supported by the Peak
+Administrator and Development Staff.
+
+2 Scope
+
+The purpose of this document, along with its parent document: “Peak User Guide” (CS/MAN./011), is to
+serve as reference to accompany the Peak client interface. To get a thorough understanding of the
+interface, Peak Support are advised to read the “Peak User Guide’ first before reading this document.
+
+The “Peak User Guide” covers standard user functionality whereas this document is targeted at Peak
+Administrators using the Peak client interface to:
+
+« manage companies, divisions, teams, roles and user
+
+manage call types, target releases, closure types, target types, references, root causes
+manage products and product groups
+
+« manage evidence types, alerts, broadcast messages and templates
+
+e view the Peak error log, admin events and list of locked users
+
+* and much more
+
+The client application actually interfaces with an SQL database via several underlying tables and a
+limited number of views. Technical details about related tables and files are considered out of the scope
+of this Administration Guide.
+
+The specialist functionalities incorporated into the Peak Incident Management System for Release
+Management, Change Management and Request Management are also beyond the scope of this
+document.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 7 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide i.
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+3 Outline of this Document
+
+All the screen shots shown in this document are just examples. Peak is highly configurable so the same
+screen may look slightly different or have different de/activated buttons for each user depending on their
+role, browser and user configuration as defined in Preferences, etc.
+
+Throughout this document, the same convention has been used to refer to buttons and screens/pages.
+The page name is shown on the top left hand side of the screen and is referred to in this document in
+italics whilst the buttons are shown in bold. So “Top Ref in References” means the Top Ref button on
+the References page. Recently tabs were introduced to the Call Details page so, for example the Impact
+tab, is referred to “Cal! Details - Impact”
+
+Usually, there is more than one way to get to the same function but the main methods are shown below.
+
+1. Using menu driven commands under the main headings: File, Call, Options, Conference, Admin
+and Help
+
+2. Using shortcut keys
+Shortcut keys only work on the Main Menu screen using lower case letters and only exist for a
+limited number of functions — currently none of which are administrative functions. If they are
+mentioned in this document, then they will be shown within square brackets: “[ ]”.
+
+3. Using the buttons in the Main Menu
+So, for example, to go to the Messages screen, you can use one of the following methods:
+1. Via menu, Admin/Administration/User Messages
+2. There is no shortcut key for this administrative function.
+3. Via Main Menu: Messages button
+
+Note that on many of the pages within Peak, if you hover over the buttons you can get tool-tips with
+more help.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 8 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+
+COMMERCIAL IN CONFIDENCE
+
+4 Peak Support
+
+The Peak Administrator is responsible for all administrative functions that need to be done within the
+Peak system, including:
+
+« creating/updating/deleting users, teams, products, product groups, releases, companies, etc.
+
+e restricting functionality so that only selected users/teams can raise new calls (for a limited set of
+releases) or clone calls, etc.
+
+e producing reports to analyse Peak calls.
+
+Peak Development staff is responsible for supporting the live system and keeping track of any
+enhancement requests raised verbally/by Peak/e-mail.
+
+Peak users should be contacting Peak Support using one of the following methods:
+1. Sending an e-mail to the appropriate group mailbox:
+
+for administration support (e.g. users, Peak routing, etc.)
+
+for system support (e.g. bugs, enhancements, etc.)
+2. Raising a new Peak call with the details which should get routed to the ‘Peak HelpDsk’ stack.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 9 0f49
+FUJ00080231
+
+FUJ00080231
+oO Peak Administration Guide 4
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+5 Main Menu - Administration
+The Main Menu page is the first screen displayed immediately after successful log on.
+ee Ee)
+
+Peak Incident Management System - RMG Account
+
+-_Ineident mgmt I (eatnst J] [tea eat [out query]
+[new cat] [preferences] [ute print]
+Cte] [tegeut ] [Ccotetons
+Li treetet_]
+
+I administration I L products] [breductoroupa Lil
+[_evicenee 4] [companies J {__aers 4]
+[target reiease I Lavisions [etosuretypes I
+[Lupeate logger I [contacts] [ecm evens]
+Lead [boaate progress] [state]
+[reports] [_exerleg J
+[_ reterences] [_manage siti] Lotverarcrya]
+Lircot cause] Loepettypes]
+
+[release mont] k= ysearcn J maintain I
+ka kim
+
+[change mant J listopen J K=m Im
+
+pinks] J searchie I J ise Ket I Gocuments I
+
+[userintrnston Welcome toPEAK* Phe 6 Io
+
+‘You have 10 messages.
+
+Delete se Sepia 2012-4.20 1035:
+
+=
+
+t0 anewer version. The old version wil ran in paral withthe new
+
+trator role (with 10 broadcasts)
+
+This page is split off into sections which are visible only if your role permits.
+
+e Incident Management
+These functions mainly deal with standard user access to the Peak system and managing a
+problem or call when it was first logged through to its resolution and closure.
+
+« Administration
+These functions are related to the administration side of Peak such as managing the list of
+products that Peak calls can be raised against, etc.
+Some administrative functions like changing your own password, managing templates, etc. have
+already been described in the “Peak User Guide” because they are available to all users. The
+remaining administrative functions will be the subject of the subsequent sections of this
+document.
+
+e Release Management, Change Management and Request Management
+These functions are beyond the scope of this document.
+
+«Links
+These functions interface to systems outside Peak e.g. SSC Website for KELs and Support
+documents and TRIOLE for Services (TfS).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 10 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.1 Manage Products
+From the Products screen, you can manage the list of products that incidents can be raised against.
+
+This product list is shown when the User views Call Details - Products. Also a superset of this list can be
+seen in the ‘Select Product’ drop-down list.
+
+Peak Call Management System
+
+‘New Product E
+Select Product
+
+‘Show Disabled Products
+Prodbct Name] Prodbet Gow] APOP 5 Protbet Type reanare =
+‘iso Rowing Team) Aras 5 ‘io Rowing Member] Unassigned = Hardsre
+Disable ProdoaI
+[Restor ] Ada Product
+
+[main window]
+Fig.5.1: Default Products form
+
+To create a new product:
+
+> Choose ‘Select Product=New Product’ from the drop-down list.
+Ticking ‘Show Disabled Products’ will display all products including those set as disabled.
+
+> Check and/or complete the fields:
+
+Product Name (mandatory)
+This must be a unique product name (e.g. Marooned Transactions)
+
+Product Group If none of the existing product groups are appropriate, you can create a new one
+(see §5.2) and then come back here to create the product.
+
+Product Type Select either: Hardware, Service or Software.
+Auto Routing Team This field is no longer used but must be changed from the default.
+Auto Routing Member This field is no longer used but may be left as the default ‘_Unassigned_’.
+
+Disable Product Ticking this field will temporarily remove the product from the displayed
+products
+list whereas Delete Product will remove the product permanently.
+Unticking this field will make the product visible again without you having to re-
+enter all the details.
+
+> Press Restore (to discard your edits) or Add Product:
+
+To edit or delete an existing product, choose the product name from the ‘Select Product’ drop-down list
+which will automatically populate the fields in this page with details of that product, allowing you edit
+those details then Save Changes, Restore (the previous saved version) or Delete Product.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 11 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.2 Manage Product Groups
+
+From the Prod.Groups screen, you can manage the list of product groups; which is a collection of related
+products. For example, the MoneyGram product group consists of the products: MoneyGram RefData
+and MoneyGram Web Server. Product groups should make it easier for the User to select the correct
+affected product.
+
+The Product Group and Products set up here are shown in the Cail Details — Products tab when selection
+can be made using the drop-down lists or the Find Product button. Also a superset of this list can be
+seen in the ‘Select Product Group’ drop-down list.
+
+Peak Call Management System
+
+Tarai Grae New Grom Stow Dsbled Growpe
+‘Groep Nexba [BD Prodbct Grow Descptoe
+FaniyI Bui = Predict Team) aia 5 ‘Alow NULL Prot Disbied
+‘Contact Pon] No ConaciPont ‘Contact Nae Coa Phone
+[Resi] Aaa sowp I]
+
+Fig.5.2a: Default Prod.Group form
+
+To create a new product group:
+
+» Choose ‘Select Product Group=New Group’ from the drop-down list.
+Ticking ‘Show Disabled Groups’ will display all groups including those set as disabled.
+
+> Check and/or complete the fields:
+
+Group Number This number is automatically generated once the Product Group has been
+created.
+Product Group (mandatory)
+This must be a unique product group (e.g. General/Other/Misc).
+Description Type in a meaningful description for the product group.
+Family Choose a product family and owning product team (currently unused).
+
+Product Team
+Allow NULL Products __ Tick this field to allow this product group to have no products associated with it.
+
+Disabled Ticking this field will temporarily remove the group (and any associated
+products) from the displayed product groups list whereas the Delete Group will
+remove the group permanently.
+
+Unticking this field will make the product group visible again without you having
+to re-enter all the details.
+
+Contact Point Selecting a contact point may automatically fill in the contact name and contact
+Contact Name phone (§5.14).
+Contact Phone
+
+> Press Restore (to discard your edits) or Add Group (which will allocate a unique ‘Group Number’ for
+the product group and expand the Prod. Groups form and then use >>Add Product>> to add
+products, not already in a product group, to this group or <<Remove Product<< to remove products
+from this group).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 12 0f 49
+oO
+FUJITSU
+
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide i"
+
+FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+Peak Call Management System
+
+BEEING Gx comm, I Siow Deatied Gone ]
+‘Group Nabe i01 Product Group] NG Counter DesrpoaI
+Fan 6010 5 Prodoct Team] 8 Appe_Des = ‘Alow NULL Predict Dissbied
+‘Contact Pon) No ConaciPomt = Consact Nae Contact PoneI
+[Seve changes _)[ Restore ][ Dee Govp_] Tone Go)
+Prods Notina Groop Prodan Gro
+Tappicaton Ser
+(onda Producp>—] IBUCBanking
+J BUC BrnchAccouning
+I <cRemove Produce] ers
+BUCBranchSuppon >
+
+Fig.5.2b: Expanded Prod.Groups form - ‘HNG-X Counter’ product group
+
+To edit, delete or clone a product group, choose the existing product group from the ‘Select Product
+Group’ drop-down list which will automatically populate the fields in this page with details of that product
+group, allowing you edit those details then Save Changes, Restore (the previous saved version), Delete
+Group or Clone Group (which creates a product group with the same name and details but not products
+— remember to change the name of the cloned product group to avoid confusion).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS
+
+Page No: 13 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.3 Manage Users (and their Passwords)
+
+Each Peak User should have a Role and belong to at least one Team; where each Team belongs to a
+Division and each Division belongs to a Company.
+
+From the Users screen, you can manage the accounts of the users who have access to the Peak
+service:
+
+¢ Create or retire user accounts
+« Restore a retired user account
+
+« Change users details including full name (which may be updated automatically from the
+Fujitsu Personnel database), alert email and SMS, etc.
+
+e Reset the locked account flag, retry count and password to its default known value
+e View a user's queries and alerts
+
+Peak Incident Management System
+ete See + lace
+
+Taam 517 Conga] ANGAccount > Bak] No soninaranvercie
+Used nate LongNameI Vike Stewar Rese Password
+
+Logging Team Cust Sevices = Deni CallypeI Nove : ‘Automated User
+
+‘Alt Ema ike Stevan you com ‘Alert Phooe Nol ‘Chnage Password [Account Locked 1
+[Save Changes. ][ Rese ][_DeiteUser_] [[EsiGonact_][_ Vw Searches ][ Viewers )[ Restore DeliedUser
+‘Avan Teams Ties Teams
+Taras = OF
+
+APOPHostDey © Cust Services
+‘APOP Host Rel
+‘APSHostDev
+
+‘APS HostRel
+
+‘Copy Teams From User
+‘Adam Bowe = [2>00py Users Teams>> J]
+ast Logon by ths wer: 2011-08-09 154502 377
+
+Your Peak user is configured with the following parameters:
+
+—
+
+Paved e517
+
+‘Logging Team Cust. Services
+
+[AlTesut 7 IF Car Sones
+
+[ie me Py ni
+Fer tame ci oP cw rl aa fi coed oo.
+faathegiehnaappepeeatenehen
+
+(ere)
+
+Fig.5.3: Expanded Users form
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 14 of 49
+oO
+FUJITSU
+
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+To create a new user:
+
+>» Choose ‘Select User=New User’ from the drop-down list.
+Ticking ‘Include automated users’ will display all users including those defined as automated users.
+
+> Check and/or complete the fields:
+
+Search Name
+
+UserNumber
+
+Company
+Role
+Userld
+
+LongName
+Reset Password
+
+Logging Team
+
+Default CallType
+Automated User
+Alert Email
+
+Alert Phone No.
+Change Password
+
+Account Locked
+
+To get Peak to automatically complete some of the fields for you using a copy
+taken daily at 06:15 of the Fujitsu Personnel database, type in a minimum of 4
+characters from the first name or surname then press Search. Then Select the
+correct name to populate the following fields: Userld, LongName, Alert Email
+and Alert Phone No.
+
+Once the User has been created this number is automatically generated and
+should appear on the Users form in the place of ‘Search Name’ field.
+
+For more details see §5.6.
+For more details see §5.17.
+
+(mandatory)
+
+This is the username used to log into Peak. If this field has not been
+automatically populated by the HR database then it must be manually entered.
+Note that the convention is to use:
+
+“<surname><first letter of forename>” e.g. “Worrall-ThompsonA”.
+
+This is usually displayed in Peak rather than the Userld e.g. in ‘Select User’.
+
+Ticking this field will reset the User's password to the known default Peak
+password for that User: “<first 2 letters of the surname>_<usernumber>”.
+
+For new Peak users, on entry this field is disabled. When the user has been
+created, this field will be set by default to ‘Default team’ and should be changed
+to reflect the team that calls created by this user should be logged against.
+When the User creates a new call, this is shown in the ‘Team’ field of the New
+Call (§5.4).
+
+When the User creates a new call, this is shown in ‘Call Type’ field of New Call.
+(§5.8)
+
+Signifies if this account is used by Peak to automatically raise or update calls for
+the OTI and QC links, e-mail reader, etc.
+
+The FJ HR database usually populates both of these fields (§5.7).
+
+This forces the User to change their password when they next logon - this field
+is automatically ticked for new users, after the Add User button has been
+pressed.
+
+If a Peak user fails to log in after 3 attempts, the account is locked. Peak will
+then
+
+automatically reset the password to the known default and send an e-mail
+containing the new password to the mailbox registered to the user in ‘Alert
+Email’.
+
+> Press Restore (to discard your edits), Restore Deleted User (§5.3.1) or Add User (which will
+allocate a unique ‘User Number’ for the user and expand the Users form).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 15 0f49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+The expanded Users form allows you to change the account details, configure the user's teams, shows
+you when the user last logged in and displays a summary of the account.
+
+> Use >>Add Team>> and <<Remove Team<< to individually fine tune the ‘Users Teams’. Or you
+can copy the teams from another Peak user by selecting that user from the drop-down list then
+>>Copy User’s Teams>>.
+
+Note that when a new user is created, its default team is set to ‘Default Team’. As part of fine tuning
+their team membership, ‘Default Team’ should be removed unless their role is some level of
+administrator.
+
+> Pressing the Notify New User button, underneath the summary of the Peak User parameters will
+send the parameter summary (including ‘User Id’ and default ‘Password’) to the User's email
+address. This button is usually used in conjunction with the creation of a new user to send out
+forgotten passwords.
+Note that the Notify New User button will be disabled if the User only belongs to the ‘Default team’.
+
+>» Press Save Changes, Restore (the previous saved version), Delete User, Edit Contact (§5.14),
+View Searches (to delete queries created by the User), View Alerts (to manage alerts created by
+the User, see §5.7) or Restore Deleted User (§5.3.1).
+
+To edit an existing user, choose the full name of the user from the ‘Select User’ drop-down list. If you
+start typing in the forename, Peak will automatically home in on the long name. Once a user name has
+been selected, all the information about that account is retrieved from the database and displayed on the
+expanded Users form, allowing you to edit those details.
+
+Auser’s default query is created when they log in for the first time (or the first time they log in after their
+account has been restored). When users ask to have their team memberships changed, the Peak
+Administrator must remember to delete their default query as part of the process otherwise the user
+could be confused because their default query no longer matches their team membership.
+
+Note that a user's Peak login credentials can also be used to log onto the SSC Website. If you want
+more access on the SSC Website, like the ability to create (rather than just search KELs) then you will
+need to contact SSC Website Support (not Peak Support).
+
+5.3.1 Restore Deleted User
+
+Peak User accounts can never be deleted; they are just disabled or retired which means that you can
+restore them at a later date with minimal effort. This usually applies to people who have left and rejoined
+the Company.
+
+If Delete User was used to retire a User, then you can restore them using Restore Deleted User which
+will display the De/Users page.
+
+Choose the relevant user from the ‘Select Deleted User’ drop-down list. Check the details before
+pressing Restore User or Return to Users (to return to the Users form).
+
+Note that the ‘Alert Email’ field in the Users form will not be populated automatically by Peak when a
+deleted user is restored. Similarly their user ID will not be restored in the associated Contacts page, refer
+to §5.14 to correct this.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 16 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide i"
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.4 Manage Teams
+
+Each User can be a member of one or more Teams within the same Company. Each Team is directly
+related to a Division and possibly sub-divided by the type of incidents that division handles.
+
+From the Teams screen, you can manage the teams who have access to the Peak service:
+* Create or delete teams
+« Add or remove users from the team
+« Manage the teams default release, target releases
+e Manage the team's restrictions
+
+<a
+Peak Call Management System
+
+[ ‘Select Team EOC ]
+Team Nee]. 25 Tema] cose ToedNane] DSC sport
+Dil 05-Syown Seppononre Team ead Stove Pane S Dead Reese Nove S
+Contact Poa] Work Wage S Contact Nane Contact Phone!
+ean TipeI Hovzon rNGx > ‘OTT Prod Nota Powder > (OT Racte Tea] Ooo OT Toor
+Toca Ada Jobe Spine o Second Adi _Unassored_ c
+[save Chenges _][ Resore [Deis Team]
+Braise Uae Taran
+[costar Cat ; SDB Asmat Tikes =
+-hteorage : Ada Usen> ‘Adam Woodey =
+2AAgens ‘oak
+Every <Remove Ure ove Crambers
+aaaaLus : Bay Merove :
+Bakase pe ‘alate Rew able Team
+Repotedin > Revorget FNGXO7OTONSD -
+Frere 0 : Tivexcovor 9040 ©
+TNGxos Fvexcovenot eo
+ete co I Hvexoe7?
+HNexoe : HNGXRSSO >
+ir a aa — o
+cal may be assed to tis ean. 6
+[Cal st have the Target Release set blr oui 0 a 6 J
+
+Fig.5.4: Expanded Teams form
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 17 of 49
+FUJ00080231
+
+FUJ00080231
+oO Peak Administration Guide ‘a
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+To create a new team:
+>» Choose ‘Select Team=New Team’ from the drop-down list.
+> Check and/or complete the fields:
+Team Number This number is automatically generated once the new Team has been created.
+Teamid (mandatory)
+This must be a unique team id (e.g. BDB-Host-Rel)
+LongName Type in a meaningful long name for the team (e.g. Branch Database
+Development).
+Division Define which division this team belongs to — which affects the ‘Available Users’
+shown in the expanded Teams form.
+Team Leader Signifies which user is responsible for this team.
+Default Release Used when a new call is created.
+Contact Point Selecting a contact point may automatically fill in the contact name and contact
+Contact Name phone (§5.14).
+Contact Phone
+Team Type This field was used in reports produced by the Peak Administrator during the
+
+migration of Horizon to HNG-X. It may now be used to filter out teams such as
+SSCWebsite teams.
+
+OTI Provider Signifies that calls transferred to this team will be transferred over the OTI to the
+selected external helpdesk e.g. TfS2.06 is the current TfS helpdesk.
+
+OTI Remote Team Identifies the team on the external helpdesk that the call should be routed to.
+
+Local Admin These fields are used in reports produced by the Peak Administrator.
+
+Second Admin
+
+> Press Restore (to discard your edits), Add Team (which will allocate a unique ‘Team Number for
+the team and expand the Teams form).
+
+The expanded Teams form allows you to change the team details, configure the users and releases
+available to the team and the restrictions.
+
+>» Use >>Add User>> and <<Remove User<< to individually fine tune the ‘Users in Team’.
+
+> Use >>Add Release>> and <<Remove Release<< to define for each ‘Release Type’, the ‘Releases
+usable by Team’. The greyed out entries under ‘Releases usable by Team; are the releases added to
+the Default team which are available to all teams.
+
+> To define what the team is allowed/not allowed to do, configure the ‘Team Restrictions’. This
+includes restrictions like “The Team may not Clone any Calls” and “No calls may be assigned to this
+team” — use the scroll bar to see ail the restrictions.
+
+If team restrictions exist then the “Team Restrictions” heading will have an orange background as.
+show in Fig.5.4.
+
+> Press Save Changes, Restore (the previous saved version) or Delete Team (which unlike Delete
+User really does delete the team.
+
+To edit an existing team, choose the team name from the ‘Select Team’ drop-down list. If you start
+typing in the team name, Peak will automatically home in on the team name. Once a team name has
+been selected, all the information about that team is retrieved from the database and displayed on the
+expanded Teams form, allowing you to edit those details.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 18 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.5 Manage Evidence Types
+
+Files such as MS Word documents, UNIX dumps, executables, etc. can be attached to calls as
+evidence. These files can originate from various operating systems and be compressed.
+
+When a user adds evidence to a call, they can optionally specify the following properties for the source
+file being attached:
+
+Group Item
+File Type Release Note, Log file, CSV file, etc.
+
+Compression Type None, CPIO format, ZIP file, TAR file, etc.
+Operating System Secure Solaris UNIX, Linux, Windows 2000, etc.
+
+The Evidence page enables the Peak Support to update, delete or create a new item under these
+existing evidence groups.
+
+Peak Call Management System
+
+[eae = T ScectheeI NewFieTpe id
+
+Tae] as I DescipsonI I Ordering
+
+Fig.5.5: Default Evidence form
+
+To create a new evidence type:
+
+> Choose the appropriate evidence group from the drop-down list (e.g. ‘Select Group=Compression
+Types’).
+
+Choose the new item for that group (e.g. ‘Select Item=New Compression’).
+
+> Check and/or complete the fields:
+
+Identity (visible and mandatory if you are adding a new File Type or Compression Type)
+Choose a letter (from ‘A’ to ‘Z’) from the ‘Identity’ drop-down list of unused
+letters. The Identity will be used to represent this new item internally on Peak
+and will not be displayed to the user.
+
+Description (mandatory)
+Type in a meaningful description for the new item.
+Ordering (mandatory)
+
+Type in a number between ‘0’ and ‘99’. This number determines where this
+evidence item will appear in the list to the user (also shown in the ‘Select item’
+drop-down list) where ‘0’ is the top of the list. Determine where you want your
+new item to be positioned and choose an ordering between the items on either
+side of the list.
+
+> Then press Restore (to discard your edits) or Add New item.
+
+To edit or delete an existing evidence item, choose the evidence group and item from the drop-down
+lists which will automatically populate the fields in this page with the evidence details, allowing you edit
+those details then Save Changes, Restore (the previous saved version) or Delete item.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 19 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.6 Manage Companies
+
+Companies are an enhanced security feature of the Peak system. It restricts people from different
+Companies searching for and viewing each other's incidents. The rules for viewing incidents are:
+
+e Any incident a team in a user’s company has raised
+e Any incident assigned to a team in a user’s company
+e System administrators may view any incident
+
+« Members of the Provider company can view all calls
+
+Company administrators may only manage users and teams belonging to their company but System
+administrators may manage all users and teams.
+
+Incidents raised by users in one company are not visible by users in another company unless the
+incident is routed to a team (or actioned on a team) in that company. Users in the company that raised
+the incident may always view the incident.
+
+To make a call visible to you even though it has been routed it back to the originating company; place an
+Action on your team/yourself. Correspondingly, if you add sensitive information or evidence to a call
+which has an action on a different company, these details will a/so be visible to that company.
+
+Currently the Peak system has 4 Companies: Infinite, RMG Account, SSC Website users and POA Joint
+Testing. The Companies page enables the Administrator to create a new Company or update, delete an
+existing Company.
+
+To create a new Company:
+
+» Choose ‘Select Company=New Company’ from the drop-down list.
+
+» Check and/or complete the fields:
+
+Company Id This number is automatically generated once the Company has been created.
+
+Company Name (mandatory)
+Type in a meaningful description of the company.
+
+Company Type Select either:
+Provider Company - teams in this Company can see all calls
+Supplier Company } teams in these Companies can only see calls raised or
+Customer Company } assigned to their own Company
+
+Region Select either: Fujitsu Systems, POA Suppliers or Post Office Account (not
+used).
+
+Users in Company Displays a count of how many Users are currently members of this Company.
+Contact Point Selecting a contact point may automatically fill in the contact name and contact
+Contact Name phone (§5.14).
+
+Contact Phone
+> Press Add button to create the company.
+
+To edit or delete an existing Company, choose the company name from the ‘Select Company’ drop-
+down list which will automatically populate the fields in this page with details of that company, allowing
+you edit those details then Save Changes or Restore (the previous saved version).
+
+Note that the Delete company button only becomes enabled if there are no users in that company. So if
+you want to delete a company, remove all of its users first.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 20 of 49.
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.7 Manage Users Alerts
+
+Alerts are activated when a specified action or trigger takes place. On the Main Menu there are two
+Alerts buttons:
+
+1. “Incident Mgmt” Alerts button which enables standard users to create and update their own
+alerts (via the User Alerts screen). They can configure what types of alerts are generated and
+what action will trigger those alerts from the User Alerts screen. For more details see the “Peak
+User Guide”.
+
+2. “Administration” Alerts button which is only visible to administrative roles and enables
+Administrators to update, delete or clone existing alerts belonging to Peak users (via the Alert
+List screen). On entry, it will display all the alerts that users have set up on the Peak system
+(‘Alert Type=All Alerts’):
+
+Peak Call Management System
+[ cn I ss] ]
+Contact Tile Delivery Header Emit I Event I Anined Team I Assign User I LoneerTeam I LogaerUser I Pocty I Reuse I £9
+5 [cae
+ba poDG- Pity Poy PEAK
+Jems AREYPEAK time fot ba Pope
+[eatasines
+b admin crt foNIM-A Pry nies oat Posi FEAK lime foteam ba came
+fssoned ome
+[eaasion
+am oxc foxc-APierinite fun farininreax [tae baoxe
+eel a
+fpAduin Esme fE-Meme:A Privcty I ProtyPEAK fat ba Esate
+a fosedto me Hassett
+b [caso
+BAdnin ——[TimesnchA Print Prioty PEAK
+iS Jems fAREYPEAK deme fot pa Tins
+fimesinch fice soe
+[eased
+a Area Piety Pity PEAK
+Pa Ages Jot few pote Ba Ages
+fos json ome
+[eaassond
+Oe re ec Laan
+mee Ine
+bi i [eaassond
+baparats PABALSS-AMty Lay Pin PEAK Tine foe banat ats
+jssonedo me
+faces oud faces zeata — I, PooeyPEAK I (Calas ba cons Bad
+fades [Pryce fssoredtome fim fotems fa Tee
+fee
+[eassond
+ba cans Dec Pity Pty PEAK
+ba con Des Joa fine fovea ba canes Des
+faces jsscredo me
+acme  facmadw arin I,  armnrax I Caasomd oy
+[Devdopment fens psionedtome fA [Devdopmet
+[eaessond
+Ba cant Tig Paty Prey PEAK.
+ba cans ise low hme poten ba cant Tege
+foes jsscredo me .
+- Sisson a Am
+
+Fig.5.7: Alert List page showing all user alerts on Peak
+
+You can filter this list by selecting a specific ‘Alert Type’ and ‘Subset’ from the drop-down lists.
+Alert Type Subset
+
+All Alerts <none>
+
+Event Type Call arrived on team (default), Call responded to, Call closed, etc.
+
+Delivery Type e-mail (default), Mobile phone SMS or PEAK user message.
+The other Delivery Types (Pager, Rota, etc.) are not implemented in Peak.
+
+Contact EDSC (default), Peak users and teams.
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 21 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+For example, selecting ‘Alert Type=Contact’ will display all the possible contacts in the ‘Subset’ drop-
+down list then choosing the relevant ‘Subset’ will display any related alerts.
+
+If you click on any of the alerts in the Alert List screen, you will be taken to the Alert Update form which
+will enable you to change the details of an alert belonging to another user. This form is similar to the
+User Alerts screen which is already described in the “Peak User Guide”. Then select either Save
+Changes, Restore (the last saved version), Delete Alert or Clone Alert (to create a copy of an alert for
+the owner which can then be edited and saved). Pressing Alerts List or Alerts will take you back to Alert
+List.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 22 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.8 Manage Call Types
+
+A call type identifies the type of incident raised on Peak (e.g. “L — Live Incidents/Defects”, etc.). The Call
+Type screen enables an Administrator to manage the different Call Types available to Peak Users. Each
+Call Type has its own list of possible Priorities and Response types.
+
+SS SC a Peak Search
+Peak Call Management System
+I BARA CAT ype] F-Oociment Review Design Walvougn a ]
+a [Ean I
+Ts I
+
+Update Pres Pi Pry De TagaDa Tepe Hows
+Seve changes_] = fo pe
+
+Seve changer] B esr a Fe
+
+See
+
+naet_] low 0 fas
+
+Swe changer _] Pp Detenea a o
+
+rar T
+
+pe
+Bs eng [Potent Prblen Teed
+eng
+
+faz PPendag [Docaentatoa Emer Dasnoied
+fs ening IQFP RAG Ste Red
+
+s [Pendag QF RAG Suns Great
+
+ise
+
+Fal
+ia aa [Fc Released to CallLogser
+aa
+al
+
+be
+
+EarPesponses_J
+
+Fig.5.8: Expanded Call Type form
+
+To create a new Call Type:
+» Choose ‘Select Call Type=New Call Type’ from the drop-down list.
+> Check and/or complete the fields:
+
+Id By default the next available ‘Id’ letter is shown but you can change it using the
+drop-down list. Currently on live, all the Ids appear to have been used but some
+Ids have been retired so can be reused - failing that we will use numbers.
+
+Description Type in a meaningful description for the new call type which will appear in the
+menu (e.g. “Document Review/Design Walkthrough”).
+
+hidden Ticking this field will hide this Call Type. It could be used as an alternative to
+deletion so the history of this Call Type is not lost.
+
+> Press Add Call Type (which will display an expanded Call Type form).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 23 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+The expanded Call Type form allows you to change the call type details, create the Priorities and
+Response types associated with this call type.
+
+> To create a priority, enter the ‘Priority’, ‘Description’, ‘Target Days’ and ‘Target Hours’ then press
+Add Priority. You can continue to add more priorities using the same method or edit an existing
+priority and then press Delete or Save Changes button adjacent to the relevant priority.
+
+> Tocreate or change the response categories, press Edit Responses to go to the Categories screen
+(§5.11) then select a category and use >>Add Type>> to add this Call Type and Save Changes.
+
+> Press Save Changes or Delete Call Type.
+
+To edit an existing Call Type; including ‘hidden’ Call Types, choose the call type from the ‘Select Call
+Type’ drop-down list. Once a call type has been selected, all the information about that call type is
+retrieved from the database and displayed on the expanded Cail Type form, allowing you to edit those
+details then Save Changes or Delete Call Type.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 24 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.9 Manage Target Releases
+
+Incidents are grouped into releases. The Releases screen enables you to create, change, list and delete
+releases.
+
+Once a release has been created, it needs to be added to the teams who may refer to that release. For
+example, the Test teams will be working with a different release set to the Live Support teams. If a
+release is added to the “Default team’, it will be available to all teams.
+
+Releases can be broken down into:
+e Reported In
+e Requested For
+e Proposed For
+e =©Targeted At
+« Released At
+
+Any User may set the ‘Reported In’ and ‘Requested For’ release, but only Administrators may set the
+‘Proposed For’, ‘Targeted At’ and ‘Released At’ options.
+
+To create a new release:
+
+» Choose ‘Select Release=New Release’ from the drop-down list.
+Ticking ‘Show invisible’ will display all releases including those set as invisible.
+
+> Check and/or complete the fields:
+
+Release Number This will be automatically filled in with the next available release number but it
+can be changed.
+
+Release Id (mandatory)
+A short description for the release (e.g. “HNG-X 02.13.01”).
+
+Invisible Ticking this field will hide this Release. It is mainly used by Release
+
+Management who wish to ‘delete’ a release — only Peak Support can properly
+delete a release.
+
+Sort Number This determines the order in which the releases are displayed (e.g.in the ‘Select
+Release’ field and in the Release List).
+
+Description Type in a meaningful description for the release.
+
+Collection Used by Release Management to drive some of the Release reports.
+
+Plan Out Dev These dates should have the format: “dd/mm/yyyy.”
+
+Plan Out Integration Select Reset Dates to reset all these dates for this release.
+Plan Into Test
+Plan Out Test
+Plan Out Live
+
+Reset Dates This button is disabled until the New Release has been created.
+Selecting the Reset Dates button will discard any updates to all the release
+dates and restore the previous saved dates.
+
+> Press Restore (to discard your edits), Add Release (which will create the release and expand the
+Releases form) or List Releases (see §5.9.1).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 25 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+The expanded Releases form allows you to change the release details, manage the teams who need to
+refer to that Release and to define which release type the release is available to.
+
+>» Use >>Add Group>> and <<Remove Group<< to fine tune the ‘Assigned Deployment Groups’.
+All platforms are related to a Deployment Group (which begins with “DC_”) and by associating a
+Release with these groups it limits which Peaks may be targeted to them.
+
+» Use >>Activate Type>> and <<Remove Type<< to fine tune the ‘Active Release Types’ .
+
+> Press Save Changes, Restore (to discard your edits), Delete Release or List Releases (see
+§5.9.1)..
+
+To edit an existing Release; including ‘invisible’ Releases, choose the release from the ‘Select Release
+drop-down list or press List Releases (§5.9.1). Once a release has been selected, all the information
+about that release is retrieved from the database and displayed on the expanded Releases form,
+allowing you to edit those details.
+
+5.9.1 List of Releases
+Pressing List Releases will display the Release List page.
+
+Peak Call Management System
+
+[Show levis Releases 1) q
+[Note Rekase Types wih a against dem ae chided’ the Dela Team and therfore are walle all tas
+Reese Nise ‘Onder I _ Reported ln ‘Requested For Proposed For Targeted Ar Raessed ar
+oo [Revarsee o pe co
+hae JaNG-XoT fo b= Be b=
+haus JuNG-Xo714 [soo b= 7 b
+has luNG-xXo71s [oo j= 7 bo
+fizz0 HHNG-X 0716 [oo b= Br im bo
+fase juNG-Xo717 foo fo jor ie jon
+hiss }aNG-X 07 000,00 so or b= b= be b=
+her JaNG-X 0701.00.00 0 7 b> b= 7 b=
+hes JaNG-X 07 01.0050 fo fir b> j= 7 b>
+hase JaNG-X 0699 fs bo 7 bo
+hase JaNG-X 0696 fo bo 7 lo
+han JuNG-X 06 8 bso " b= 7 lo
+haus JuNG-X 06 86 bss 7 b= o b=
+hiss JaNG-X.06.77 bss or 7 b= ia b=
+his0 JaNG-X 06 80 ss b= b= 7 b=
+hist JaNG-X 06.1 fs b> b= 7 b>
+hist JaNG-X 06 76 bss jer b=
+haos JaNG-X 06 82 sp lo 7 bo
+hoe JHNG-X 06 83 hsp a b= 7 b=
+haor JHNG-X 06 84 rs b= * r= b=
+har JHNG-X 06-70 bss b= ol hae b=
+hare JaNG-X 06.72 bss * b= i b=
+ins JaNG-X 06 55 fs7__ j= 7 b=
+20, JaNG-X 06 56 fs7___p b= Is lo
+far JaNG-X 06 57 bsp b= I b=
+fas JHNG-X 0659 hs’ ol ne oo
+hzs JHNG-X 06 60 hs7___p ol = fad =
+has JHNG-X 06 51 hsb. j= Ist b=
+inne IHNG-X 06 62 hs7_b be he i bo ay
+Fig.5.9.1: Release List page
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 26 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+This page shows how many Peak incidents exist for each release type (e.g. Reported In, Requested For,
+etc.) and release (e.g. HNG-X R4).
+
+By default, the state of the ‘Show Invisible’ releases tick box from the previous page (Releases) is
+carried forward to this page and vice versa.
+
+The default order of the list is as set in the ‘Sort Number’ and ‘Release Id’ fields in Releases but you can
+sort each column by clicking on the title heading.
+
+Note that release types shown with an asterix (*) against them are included in the “Default team” and
+therefore available to all teams.
+
+You can select a release to be edited by clicking the relevant entry in Release List, and you will be taken
+back to Releases with the chosen release details filled in.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 27 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.10 Manage Divisions
+
+Divisions are a grouping of Teams within a Company. They are used to construct a hierarchy of incident
+ownership for management reports.
+
+The Divisions form enables Administrator to create, change and delete divisions.
+
+To create a new division:
+
+> Choose ‘Select Division=New Division’ from the drop-down list.
+> Check and/or complete the fields:
+
+Divisionld This number is automatically generated once the new Division has been
+created.
+
+Division Name (mandatory)
+
+Company Define the company that this is a division of.
+
+Support Manager Choose the Support Manager for the division from the drop-down list.
+Description Type in a meaningful description of the new division.
+
+Contact Point Selecting a Contact Point from the drop-down list will automatically fill in the
+Contact Name Contact Name and/or Contact Phone (§5.14) or you could type in a new
+Contact.
+
+Contact Phone Name and Phone.
+
+> Press Restore (to discard your edits) or Add Division (which will create the division and expand the
+Divisions form).
+
+The expanded Divisions form allows you to change the division details and configure which teams are in
+this division.
+
+> Use >>Add Team>> and <<Remove Team<< to individually fine tune the ‘Teams in this Division’.
+Note that you can only add teams to this division if it appears in the ‘Teams Not in a Division’ list
+(that is, if the team is currently not a member of any division). This means that if you want to change
+the team’s division then you must remove the team from its original division first.
+
+Vv
+
+Press Save Changes, Restore (the previous saved version) or Delete Di
+
+To edit an existing division, choose the division name from the ‘Select Division’ drop-down list. If you
+start typing in the team name, Peak will automatically home in on the team name. Once a division name
+has been selected, all the information about that division is retrieved from the database and displayed on
+the expanded Divisions form, allowing you to edit those details.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 28 of 49.
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.11 Manage Closure Types
+
+The Categories form is used to create new response categories (e.g. ‘62 — No fault in product’) and
+assign them to Call Types (e.g. ‘A — Administrative use’, 'C — Cloned call’, ‘L — Live Incidents/Defects’,
+etc.).
+
+You can get to the Categories page by pressing Main Menu: Closure Types or by pressing Call Type:
+Edit Responses (§5.8).
+
+To create a new response category:
+> Choose ‘Select Category=New Category’ from the drop-down list.
+> Check and/or complete the fields:
+
+Category Number (mandatory)
+Choose a previously unused category number (greater than zero).
+
+Description Type in a meaningful description for the new category (e.g.’ No fault in product’).
+Response Type Define whether this category is for a Pending (default) or Final response.
+Note that a response type of ‘Pending’ will not close the call whereas ‘Final’ will.
+Report Pivot This field is used in reports produced by the Peak Administrator. Select one of
+the following:
+
+Raised Awaiting Resolution (default)
+Fixed Awaiting Test
+
+Resolved Awaiting Closure
+Resolved Awaiting Fix
+
+> Press Display List (see §5.11.1), Restore (to discard your edits) or Add Category (which will create
+the release and expand the Releases form).
+
+The expanded Categories form allows you to change the category details and associate this particular
+Response category with one or more Call Types.
+
+> Use >>Add Type>> and <<Remove Type<< to edit the ‘Categories Call Types’ — which will be
+added in ascending id order.
+
+> Press Save Changes, Restore (the previous saved version) or Delete Category (to delete this
+category).
+
+To edit an existing response category for this call type, choose the category name from the ‘Select
+Category’ drop-down list or press Display List (§5.11.1). Once a category name has been selected, all
+the information about that category is retrieved from the database and displayed on the expanded
+Categories form, allowing you to edit those details.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 29 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.11.1 List of Categories
+
+Pressing Display List will display the Category List page. This page shows all Call Types (e.g. ‘A —
+Administrative use’, ‘C — Cloned call’, etc.) are associated with all or a particular Category (e.g. ‘62’).
+
+By default, the ‘Category’ will be pre-filled with the category chosen in the previous page (Categories)
+and the ‘Call Type=All Call Types’ (by default) but both fields can be altered using the drop-down lists.
+
+You can select a category to be edited by clicking the relevant entry in Category List, and you will be
+taken back to Categories with the chosen category filled in.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 30 of 49.
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.12 Managing User Messages
+
+Peak Administrators can broadcast messages to all Peak users, a particular company, specific team or
+user. These Information messages are shown in the Main Menu and can be used to advise users of new
+developments in Peak, any planned outages, etc. (see the “Peak User Guide” for more details).
+
+Peak Call Management System
+Peak User Messages *
+Thseae Fase
+
+ote Spins 202.630
+
+(Onthe evening ofthe Monday 30th Ape we are migrating he exisng TS epdesk to a newer
+
+Messe ade 88 Crem te Shs aT 2013-04-20 105
+Message Test
+EF] I
+. zl Eee
+30 Uses hve ead esape
+[LtentossogeJ[_ Seve Cronos JL Revere [Crow ssage—]
+
+Fig.5.12: Messages screen- viewing existing memo
+
+The top of the Messages screen shows a sorted list (with the latest broadcast at the top) of all the Peak
+User Messages that have been sent and either have not been read and then deleted by all its intended
+recipients or have not been deleted by the Administrator. Note that if a memo is intended for one user
+and that user reads/deletes it then it will no longer appear in this list.
+
+To send a new broadcast:
+> Check and/or complete the fields:
+
+Message Index These will be automatically generated once the broadcast has been created.
+Creator
+
+DateTime
+
+Message Text Type in the message as HTML; which can contain hyperlinks or pictures. To
+Message Preview check the HTML is correct, you can Preview Message which will render the
+
+HTML in the ‘HTML Message Preview’ field.
+
+To check the spellings, you can use Hho run the spell checker.
+
+Readership Define the Users you wish to see the broadcast:
+
+Global (default is all Peak users)
+
+Company } If you select any of these 3 options, you will also need
+
+Team } to define the specific Company, Team or User.
+
+User }
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+
+UNCONTROLLED WHEN PRINTEDOR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 31 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+Style Define the type of broadcast:
+¥ Information (default)
+A Warning
+
+% Enhancement
+® Administration
+
+Another type of broadcast is:
+
+™ Alert sent when a user configures an alert to send a “PEAK
+user message” when a specific event has been
+triggered (see the “Peak User Guide” for more details).
+
+> Press New Message (to clear the whole form), Restore (to discard your edits) or Add Message (to
+generate the ‘Message Index’, ‘Creator’ and ‘Date Time’ then actually send the broadcast).
+
+To edit a broadcast that has already been sent so that any Users, who have not read/deleted the
+broadcast, will see the updated version however those Users who have read/deleted the previous
+version will not see the new version:
+
+> Use the scroll bar in the ‘** Peak User Messages ***’ field to find your broadcast. Then press the Edit
+button next to the message. This will populate the rest of the fields in the Messages form with its
+details for you to change.
+
+> You can see a count of how many users have read the message:”X Users have read this message”.
+
+> Press New Message, Save Changes (to send out your changes to the existing message), Restore
+(the previous saved version) or Delete Message (to remove the message from the Peak System).
+
+Note that new users will automatically receive all undeleted broadcasts targeted at them.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo:  320f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.13 Update Call Logger
+
+Once a Final Response is added to an incident, it is routed back to the incident Call Logger. Normally
+this is what is required but sometimes the logger is not the correct person to return the incident to or
+maybe the logger has left the company. The Call Logger form allows the Administrator to change the
+Call Logger of a Peak incident to another user in the same logging team.
+
+To change the Call Logger of an incident:
+> Type in the Peak incident reference in ‘Select Call’ (with the format: “PCOnnnnnn”) then click Find.
+
+>» The Call Logger form will be expanded to display some of the properties from the original Peak call,
+including ‘Summary’, ‘Status’ and ‘Current Call Logger’. Use this information to verify that this is the
+relevant incident.
+
+Peak Call Management System
+
+[ Taatalronms ]
+SETS appicadcalas 7 maoched operaioa capil) I er
+Gare Cal Lope]. Coven Cal EDSC
+Tee CalLogse Concreco_ z [am z [Lox]
+
+(Cain indoor]
+Fig.5.13: Expanded Call Logger screen
+
+> Select the ‘New Call Logger’ from the drop-down list of users and teams then click Change.
+» The Call Logger form will be re-displayed with an updated ‘Current Call Logger’.
+Any changes made here will be recorded and seen via Admin Events (§5.15).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref. DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 33 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.14 Manage Contacts
+
+When a new user is created, Peak automatically creates a contact for the user using much of the same
+details. The Contacts page enables the Administrator to create, change, and delete a User's Contact
+details. It can also be used to store additional information on Peak users like personnel id, contact desk
+phone and address/job description.
+
+Note that Peak Alerts are sent to the ‘Alert Email’ and ‘Alert Phone’ entries set up in the Contacts page;
+which could differ from that defined in the Users page.
+
+To create a new contact:
+> Choose ‘Select Contact=New Contact’ from the drop-down list.
+> Check and/or complete the fields:
+
+Contact Id This number is automatically generated once the new Contact has been created.
+
+User (mandatory)
+Select the user from the drop-down list from which the contact details will be based.
+
+Company This will be automatically generated from the Company of the User once the new
+Contact has been created.
+
+Forename When a new user is created, these fields are copied from the Users page but
+
+Initials they can be changed here in the Contacts form.
+
+Surname
+
+Alert Email Alerts are sent to the email and phone entries defined in these fields.
+
+Alert Phone
+
+UK Id If this field is populated, then it will be used to match on the User in the Personnel
+database each night and extract their ‘Alert Email’, ‘Contact Phone’ and ‘Address/Job
+Description’.
+
+Contact Phone Unless the ‘UK Id’ field is empty, these fields will be automatically updated each night
+Address/Job _ with information from the Personnel database.
+Description
+
+> Press Restore (to discard your edits) or Add Contact (which will allocate a unique ‘Contact Id’ for
+the new Contact.
+
+To edit, delete or view alerts for a contact, choose the existing contact name from the ‘Select Contact’
+drop-down list which will automatically populate the fields in this page with details of that contact,
+allowing you edit those details then Save Changes, Restore (the previous saved version), Delete
+Contact or View Alerts (to manage alerts created by the User, see §5.7).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 34 0f49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.15 View Admin Events
+
+Whenever an administrative change is made to Peak, an event is recorded for audit purposes. The
+Admin Events page will display a read-only list of these events which can be filtered by Event Type.
+
+To view all the administrative events of a selected type, choose the relevant ‘Event Type’ from the drop-
+down list.
+
+Peak Call Management System
+TERGETIP TTT] Urdetng Evidence ~ ]
+
+rest Tipe De Dael
+[Updating Evidence IAdded new Evidence Item - Windows 7 [fobn Simpkins [2011-08-25 10:46:59 313
+[Updating Evidence [Added new Evidence Item B - Obscated Fie) [John Simpkins [2010-07-06 09:30:38.723
+(Cpaating Evidence [Added new Evidence tem - Windows 2003" [Yehn Simpkins [2009-11-25 1724:57.750
+(Cpdating Evidence [Updated Evidence lem Tix - Lint [fob Simpkins [2009-11-28 172417 343
+(Cpdating Evidence [Added new Evidence tem’ - Lyi [Joba Simpkins [2009-10-22 17.07.17 647
+(Cpdating Evidence [Cpdated Evidence Item Z XML fle [Joba Simpkins [2008-10-22 160828 290
+(Cpdating Evidence [Updated Evidence Item 'O - Other [John Simpkins [2008-10-22 1608.23 040
+(Updating Evidence [Added new Evidence lem Z - XML Be [Zohn Simpkins 2008-10-22 160408 913
+[Updating Evidence [Added new Evidence tem 'V - CSV fe" [Yohn Simpkins [2008-10-22 1603:48.163
+[Updating Evidence [Updated Evidence Item K - Sel Decnptng Archive [John Simpkins [2006-08-11 13:29:34 540
+(Cpdating Evidence [Added new Evidence Item K - Self Decrypting Archive [Jebn Simpkins [2006-08-11 13:29:18 527
+[Updating Evidence [Added new Evidence Item Image / Picture’ [John Simpkins [2008-09-22 11:27:02 600
+(Cpdating Evidence [Updated Evidence Item Secure Solaris (UNDX - Secure Solaris UNDO [John Simpkins [2008-07-01 105231 380
+[Updating Evidence [Updated Evidence Item Windows 95 - Windows 95 [Joba Simpkins [2008-07-01 1052.02 990
+
+[sin window]
+
+Fig.5.15: Admin Events page
+
+For each event, the ‘Event Type’, ‘Description’, which Administrator did the update and when they did it
+is shown. The default order of the event list is ascending date order (with the latest change at the top)
+but you can sort each column by clicking on the title heading.
+
+5.16 New Password (all users)
+Refer to the “Peak User Guide” for details of this function.
+
+Note the secure Password page enables users to change their own password whilst Administrators need
+to use the Users screen (§5.3) to change the password for any user.
+
+5.16.1 Password rules
+Peak passwords adhere to the following rules:
+e minimum length of 7 characters
+
+e MUST contain at least one capital letter, lowercase letter and non-alphabetic character (digit or
+special character such as *, %, #, etc.)
+
+e last 6 passwords cannot be reused
+e Passwords will automatically expire after 50 days
+e Failure to logon 3 times locks the account
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 35 0f49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.17 Manage Roles
+
+A role is assigned to each Peak user. Their role determines what buttons are dis/enabled for that user
+and what the user is allowed to do on Peak; which is usually dependent on the status of the call and
+which team the call is assigned to). For example, the task of routing an incident has the following
+possible permissions:
+
+Route Call, Status Open, Assigned to user's Team
+Route Call, Status Open, Assigned to any Team
+
+Route Call, Status Pending, Assigned to user's Team
+Route Call, Status Pending, Assigned to any Team
+
+Route Call, Status Final, Assigned to user's Team
+Route Call, Status Final, Assigned to any Team
+
+Route Call, Status Closed, Assigned to any Team
+
+Most Peak users belong to the ‘No administrative role’ (the default role) which is not allowed to change
+the Target Release, Priority, Contact, Close calls, Send over OTI, Reopen calls or Enter SQL in Query
+
+Builder.
+To give an up-to-date and instant view of which user belongs to which role and what each role can do, a
+spreadsheet is maintained by the Peak Administrator.
+
+Note the Company Administrator role may only update the users in their own company whereas the
+System Administrator role may manage all users and teams.
+
+Cc CC F038 = Seach,
+
+Peak Call Management System
+[ SEERA G- OC Locaradmmavaor ~ ]
+
+[ Desaription] GOC Local Administrator [change ) ]
+Roe Pema Tabet
+[Ek Cal Type, Stats Open, Assigned towers Team.
+[Et Cal Type, Sams Open, Assigned to Any Team.
+[Edt Cal Type. Sams Pending. Asined to wes Team.
+[Ei Cal Type Stns Pending. Asiped to Any Team.
+[Es Cal Type Stns Fan Assigned towers Team
+IB Cal Type Stns Final Assigned to Any Team
+[Ek Cal Type, Stns Closed, Assigned wo Any Teams 4
+
+There wer tire
+[Losier Rote] I [_ Restore Saved I [Seve chenges
+
+(Cesin window]
+Fig.5.17: Expanded Roles form
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref. DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 36 0f 49
+FUJ00080231
+
+FUJ00080231
+oO Peak Administration Guide ‘a
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+To create a new role (e.g. “G — GDC Local Administrator):
+> Choose ‘Select Role=New Role’ from the drop-down list.
+> Check and/or complete the fields:
+Id By default the next available ‘Id’ letter is shown but you can change it using the
+drop-down list.
+
+Description Type in a meaningful description for the new role which will appear in the menu
+
+(e.g. GDC Local Administrator’).
+> Press Add New Role (which will display an expanded Roles form).
+
+The expanded Roles form allows you to change the role description, set permissions for the role and
+delete the role.
+
+> To change the description, type in a new ‘Description’ and then press Change.
+
+>» To enable permissions for this role, tick the box adjacent to the relevant permission and disable by
+unticking the box. Use the scroll bar to see all the available permissions.
+
+> You can see a count of how many users associated with this role:"There are X users in this role”.
+
+> Then press Delete Role (even if there are users associated with the role — these users will
+automatically have their role changed to ‘No administrative role’ in the Users page), Restore to
+Saved or Save Changes.
+
+To edit an existing role, choose the role from the ‘Select Role’ drop-down list. Once a role has been
+selected, all the information about that role is retrieved from the database and displayed on the
+expanded Role form, allowing you to edit those details then Save Changes or Delete Role.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 37 of 49.
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.18 Update Progress
+
+Normally once progress has been added to a Peak incident, it cannot be altered. But if the progress
+contained an unprintable character which meant that it could not be displayed or if the progress
+contained secure information which should have been obfuscated then the Progress Text page will
+enable an Administrator to alter historical progress.
+
+Peak Call Management
+
+yystem
+[ ‘Cal Reference] PCO135935 (Progess_) ]
+Dae Tor Props Le
+eee ee [ALL #0033595 opened :
+2006.08.24 1406 [Mark Hig mearyis.2-29 New - missing version no - og sanue
+[2006-05-24 14.06 [Mark Higsnbortom Cain eves colar cera saia: im
+lo06.0s-28 1406 [Mack Higotomn fee call Peiceity econ
+~ (range
+es (cme Te the Team Heaber) WIEN Pilot Ralibow *
+pe eee ~ (Grane)
+o06.06-08 08:10 I Mat Manager_ originator t Anvp Sans. (masie —
+_ — erigned to Mark Wigginbotcon for vesting zi _
+coats octane fine Cail record han been assigned co the Team Weber Wark Rigginportom > =
+= 2006-06-06 10: 008 ERROR con. fujiteu.ukpo.ves.repository.service.ServiceRegieery — > (.Ghange,)
+006.06-06 1100 Mark Hiesebotom fine call pricrity tenovB J
+i]
+7 =e fine Cail record han been ansigned co the Team Weber RNG-X.Pilot-Malibon
+
+Fig.5.18: Progress Text page — ‘PC0135935’ progress
+
+To update the progress of an incident:
+
+> Type in the ‘Call Reference’ (e.g. PC0135935) then click Progress. This will display all the progress
+related to this call along with ‘Date’, ‘User’ who added the progress and the ‘Progress Line’.
+
+» Change the relevant ‘Progress Line’ (if necessary use the scroll bars to see more text) and then click
+Change.
+
+> A pop-up box will be shown for you to type in the Update Progress Administrator password before
+the progress is updated and logging an event that can be seen via Admin Events (§5.15).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 38 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.19 Stats (all users)
+
+Refer to the “Peak User Guide” for details of this function.
+
+5.20 Monitors (all users)
+Refer to the “Peak User Guide” for details of this function.
+
+5.21 Reports (all users)
+
+Refer to the “Peak User Guide” for details of this function.
+
+5.22 View Locked Users
+
+Users can get locked out of Peak in one of two ways:
+
+e after 3 or more failed logon attempts
+In this case, Peak will automatically reset the User's password to the known default, unlock them
+and then email the password to the User using the address set in the Users page.
+
+or
+
+e if Peak Administrator decides to intentionally set the user account to locked (via the Users
+screen).
+The Locks page lists old defunct Peak user accounts that were locked by Peak Administrator —
+sorted with most recent at the top.
+
+rok seach
+Peak Call Management System
+
+Locked User Accounts
+Tai TaN Da Lat Log
+[Gaexi IGet Accom booror-o+ 0754
+[scram [SMC Skt Team? oor.02-28 1545
+
+ISMC Power Back Us oos.08-071732 006.0731 141
+IMCDESE —[SwICDeae os.07-19 1649 006.07. 17 ae 1
+[Dsnoi —[Peak Deno Uo oos-of-36 1501 poe 04 260938 1
+
+[aan window]
+Fig.5.22: List of users locked out of Peak
+
+If you click on the ‘User Id’ link, you will be taken to the Users page from where you can unlock the
+account (§5.3).
+
+If there is an ‘Email’ link, then clicking on it will generate an email to that user with the “Subject: Locked
+Peak Account”.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 39 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.23 View Error Log
+
+If a user experiences an error whilst using Peak they will be taken to the standard Error page, details of
+the error are logged and an e-mail is automatically sent to the Peak Administrator's mailbox — to be dealt
+with by Peak Development.
+
+On entry, the Errors page lists all the user generated errors that have not been acknowledged — sorted
+with most recent at the top (but you can sort each column by clicking on the title heading).
+
+User I CatReernce I Module
+
+ho12.0s fees The Tenn Dev Int Rel hs arestsion
+hs 7218022 f\lamaRowe _feqing te Rot Conse to beset before rout Nowe woe [CA
+hisir30
+
+bor2-0s. fearon The Team Dev Int Rel hea restcion
+faay Maye IPC0218226 farce fearing te Root Cameo best bfee routing [Nose one
+lisieso fasta Use the bowser Back buon to ret
+
+he cide
+
+12-08. Fegan the Tart lense tobe set btore
+hs fany Maye IPC0218226 fvtMammaioue _foutng cals tot The Team Devlat Relhasa [None woe [aa
+hieans2 festicton reqtig the Root Case tobe st
+
+12-08.
+7218253 famine feqaing te TaetRelese tobe set before [None Nove
+herei9
+
+hizo.
+
+CU
+
+5 IseLECT * FROM fCompansCalDets(-2875) WHERE [CALL a
+Joconi2s7s  IcaDeadsjap _ICompany Acces Vision es pes one noniedge
+
+linasss
+
+[was SOL reap [Microsa[ODBC SQL Sener Divr]Comecion
+fos wth ess or ther ha
+
+fm bc ode Jdbc Ode creteSQLEcepion cb j6879 at
+
+[rn ine HapSPSart ee pISPSenet ja) at
+
+Fig.5.23: Errors page
+
+This will display all the errors along with ‘Timestamp, ‘User’ who caused the error, “Module’, ‘Error
+Reason’, ‘Last SQL command’ and ‘Roll-Back Status’.
+
+Once an error has been investigated, it can be Acknowledged which removes the error from this
+particular list but its details will not be deleted.
+
+Ticking the ‘Display All Alerts” box will list a// user-generated errors; whether they have been
+acknowledged or not.
+
+The types of errors that Peak Support should be worried about are Timeouts and SQL Exceptions.
+Although an e-mail is also sent to the Peak mailbox, the Errors page displays more detail and can be
+used in the trend analysis of errors.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 40 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.24 Templates (all users)
+Refer to the “Peak User Guide” for details of this function.
+
+In the Template screen, only templates which are categorised as ‘visible’ are shown in the ‘Select
+Template’ drop-down list. If the User selects a template, owned by a team they are not a member of,
+then the details of the template are displayed but it cannot be edited and the Add Template, Save
+Changes, Restore and Delete Template buttons will be disabled
+
+Note that as long as the User is a member of the team who owns the template then they can create and
+manage their incident progress templates.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 41 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide i"
+
+eo
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.25 Manage Reference Types
+
+References to Work Instructions, MSCs, OCPs, Peaks, etc. may be associated with a Peak incident.
+Some references (like KELs and TfS calls) will appear as hyperlinks; which enables the User to click on
+the link to be taken directly to the reference which could be on an external system. Refer to the “Peak
+User Guide” for details on how to create and use references.
+
+The References page enables Administrators to create, change or delete the reference types available to
+the User and their associated templates.
+
+Peak
+
+Peak Call Management System
+I Seka Raaeace Type] WSC 5
+
+Refeee Trp]use Gimmes - [oe [Loman
+Templates
+Telok: [Delt
+Isleakwp [Delo]
+TriodowE (oA Tompi
+[seve chonges =)[__ Dette Retronce —)
+
+[Templates wre used to lp the user cafe the correct formation a Reference They use the folowing special characters to coal apa
+x Any single character
+Any single dst
+Any mumber of characters
+
+[This allows templates such as "PCannaann for PEAK references or ‘PWY_WP_*' fora Work Package Sometimes a singe template cannot describe all combinations
+favadable, rather than jus use’ mutiple templates may be added for a singe reference type
+
+lttyou which to enter a closed list of options to selec frm, check tick box Ts look-p ths wil ot reat the vale as a format mack but rather as an absolute vale.
+
+Fig.5.25: Expanded References page — ‘MSC’ reference type with two templates
+
+To create a new reference type:
+
+> Choose ‘Select Reference Type=New Reference Type’ from the drop-down list.
+> Check and/or complete the fields:
+
+Reference Type (mandatory)
+This must be a unique reference type.
+
+OTI Reference Selecting Yes’ used to hide this reference in the References form so that users
+could not see or delete them. However, this has now been superseded by the
+‘Hidden’ flag on this form.
+
+Ordering Specify where this reference type will appear in the drop-down list.
+
+Hidden If ticked, Users will not be able to select this reference type since it will not
+appear in the ‘Add Reference Type’ drop-down list in the References form. This
+hides references used just by the system such as OTI, etc. so Users cannot see
+them moreover delete them.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 42 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+> One or more templates can be set up for each reference type. Templates help users to enter the
+correct format for the reference. To define the format of your new reference type, use the following
+special characters in the ‘Template’ field:
+
+ba to mean any single character (including digits)
+n to mean any single digit
+* to mean any number of characters (including digits)
+
+For example, defining the template “AlnnnnH” means that the expected format for the reference is the
+characters “Al” followed by 4 digits ending with the “H” character.
+
+Sometimes it is not possible for a single template to describe all the combinations available so rather
+than use “*”, you should create multiple templates for the single reference type.
+
+Is look-up If ticked, the value in the ‘Template’ field will be treated as an absolute value
+(like ‘High’, ‘Medium’, ‘Low’) rather than a format mask (e.g. ‘n’ representing any
+digit or ‘x'representing any character).
+
+Use this to generate a fixed list of options for the User to select from. For
+example, the ‘MSC’ reference type can only be one of two possible values so it
+has two templates: ‘043Jnnnnnnn’ and ‘043Jnnnnnnn-nn’.
+
+> Press Add Reference to create the reference type and any associated templates.
+
+To edit, delete or view reference types or their templates, choose the existing reference type from the
+‘Select Reference Type’ drop-down list. This will automatically populate the fields in this page with
+details of that reference, allowing you edit those details then use Delete (to delete the template), Add
+Template (to add another template) or Save Changes, Delete Reference (which deletes the reference
+as well as its templates).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 43 of 49
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+FUJ00080231
+FUJ00080231
+
+5.26 Manage Service Level Targets (SLT)
+
+Service Level Targets (SLTs) are calculated from the time an incident is routed to a selected team
+
+and/or user. Incidents with different priorities may have different SLTs.
+
+The report “SLT Summary” (in the Reports page) shows a list of all the open incidents with active SLTs.
+The SLTs page enables Peak Support to create, change or delete the SLTs for incidents.
+
+Peak Call Management System
+
+TEASE ines ~
+
+SLT Name] inerstage
+
+StartwhenroutedtoITeam WierstageDev + User AnyUser s
+
+Emad alert when SUT remaining tine equals[Days. Nove Hows 1Houw ~ Email Address. parker
+
+[Save Changes _J[_ Delo SUL
+
+Fist Sakeled Taps
+
+a 1 ay bos Dette
+
+B 7 days 0 hours: [Delete
+
+c 14 ps Oboes =
+
+D 28 days 0 hours Delete I
+
+AL Deore > Hows Nore > 7A Prony
+[ain window]
+
+Fig.5.26: Expanded SLTs form — ‘interstage’ SLT with 4 Priorities
+
+To create a new SLT:
+
+> Choose ‘Select SLT=New SLT’ from the drop-down list.
+>» Check and/or complete the fields:
+
+SLT Name Name the Service Level Target.
+
+Start when routed to
+
+Team At which point do you want to start measuring from: when the call is routed from the
+User specified team and/or user.
+
+Email alert when SLT remaining time equals
+
+Days You may set up an email alert when the SLT remaining time equals the Days/Hours
+Hours specified.
+
+Email Address
+> Press Add SLT to create the SLT and expand the SLTs form.
+
+The expanded SLTs form allows you to change the SLT details, associate different SLTs with different
+
+priorities or delete the SLT.
+
+> Choose a Priority from the drop-down list (‘default=ALL’), a Service Level Target in Days/Hours then
+
+press Add Priority. You can add more priorities for this SLT in the same manner or Delete an
+
+existing priority.
+> Then press Save Changes or Delete SLT.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref.
+2013 COMMERCIAL IN CONFIDENCE Version:
+
+UNCONTROLLED WHEN PRINTED OR _Date:
+STORED OUTSIDE DIMENSIONS Page No:
+
+DEV/APP/SPG/2144
+
+1.0
+
+03-Apr-2013
+44 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+To edit or delete an existing SLT, choose the SLT name from the ‘Select SLT’ drop-down list. Once an
+SLT has been selected, all the information about that SLT is retrieved from the database and displayed
+on the expanded SLTs form, allowing you to edit those details and priorities then Save Changes or
+Delete SLT.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 45 0f 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.27 Manage Reporting Hierarchy
+
+The Hierarchy page was intended to be used in reports created by the Peak Administrators but in reality
+they use a different mechanism external to Peak. However its functionality will be described in this
+document for completeness.
+
+This page enables the creation, update or deletion of the reporting hierarchy used to break down
+incidents, by 5 levels of management. Any hierarchies containing a selected user at a specified reporting
+level can also be modified.
+
+To create a new reporting hierarchy for a selected manager (e.g. ‘Level 4— Analysts -David Cooke’):
+» Choose ‘Select Manager=New Manager’ from the drop-down list.
+> Check and/or complete the fields:
+
+Level Define which hierarchy level is being defined: between ‘Level 1’ and ‘Level 5’.
+Title (mandatory)
+Give the hierarchy a meaningful name (e.g. ‘Analysts’).
+Manager Choose a manager for this reporting level (e.g. ‘David Cooke’).
+Previous Hierarchy If you are defining a Level 1 hierarchy then you can select a division otherwise
+
+select a previous level from the hierarchy.
+
+> Press Add New to create the hierarchy and expand the Hierarchy form to display the ‘Company’,
+‘Division’ and the hierarchy of each report containing the specified manager at the current reporting
+level.
+
+Teal [eae [ER oorctoae 7
+
+Previous Hierarchy] Level Analyste David Cooke ~
+
+Seve Changes I Restore J[ Dele
+
+‘The seted Manager wedi he alowing oper
+(Coapasy ison [Gove Tie [level 1 Manager [level2 Tee Flevel 2 Manager [Level 3 Tle [Level 3 Manager [eve 4 Tie [Levels Manager [Level Tie [Level 5 Manager
+JPM Accoust FING-XArctectare [Arctecre fol [Ascites & Anas ful [eats [Dad Cooke [Anais [David Cooke foul il
+
+Fig.5.27: Expanded ‘Hierarchy’ page - all reports where ‘Manager=David Cooke’ is at ‘Level 4’
+
+To edit or delete an existing hierarchy, choose the hierarchy title from the ‘Select Manager’ drop-down
+list. Once a hierarchy has been selected, all the information about that hierarchy is retrieved from the
+database and displayed on the expanded Hierarchy form, allowing you to edit those details then Save
+Changes, Restore (the previous saved version) or Delete (the manager).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref. DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR _Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 46 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.28 Manage Contact Points
+
+Contact points are used in the Hierarchy reports (§5.27) and they represent external contacts, not users,
+e.g. Company, Division, External Alerts (which is not supported in Peak), Product or Team.
+
+To create a new contact point:
+
+> Define what type of contact point you wish to create from the ‘Contact Type’ drop-down list:
+Company, Division, External, Product or Team — this selection affects the entries displayed in the
+‘Contact Name’ field.
+
+> Choose ‘Contact Name=New Contact’ from the drop-down lists.
+
+> Check and/or complete the fields:
+
+Contactid This number is automatically generated once the Contact has been created.
+Contact Type Type of contact point: Company, Division, External, Product or Team.
+Name Type in the name of the Contact.
+
+Address (not used)
+
+Contact Phone
+Mobile Number
+Email
+
+> Press Restore (to discard your edits) or Add Contact (to create the contact point and display a
+count of how many times a Contact Type has referred to this Contact Point).
+
+To edit or delete an existing contact point, choose the ‘Contact Type’ and the contact name from the
+‘Contact Name’ drop-down lists. Once a contact has been selected, all the information about that contact
+is retrieved from the database and displayed on the Contacts form, allowing you to edit those details
+then Save Changes, Restore (the previous saved version) or Delete Contact.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 47 of 49.
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.29 Manage Root Causes
+
+Before closing a problem or incident, the user should identify the root cause. For reporting reasons,
+users are only allowed to select from a finite list of possible root causes. The RootCause page allows the
+administrator to manage this list.
+
+To create a new root cause:
+>» Choose ‘Select Root Cause=New Root Cause’ from the drop-down list.
+
+> Check and/or complete the fields:
+
+Cause Code (mandatory)
+Type in a Cause Code which has not already been used and can be a numeric
+of any value.
+
+Description (mandatory)
+Give the root cause a meaningful name.
+
+Sort Number (default is 0 which is the top of the list)
+
+This value determines the order in which the root causes are displayed (e..g in
+the ‘Select Root Cause’ field and in the Peak Root Cause pop-up box).
+
+> Press Restore (to discard your edits) or Add New (root cause).
+
+To edit or delete an existing root cause, choose the root cause from the ‘Select Root Cause’ drop-down
+list. Once a root cause has been selected, all the information about that root cause is retrieved from the
+database and displayed on the RootCause form, allowing you to edit those details then Save Changes,
+Restore (the previous saved version) or Delete (the root cause).
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS Page No: 48 of 49
+FUJ00080231
+FUJ00080231
+
+Peak Administration Guide
+
+oO
+FUJITSU FUJITSU RESTRICTED
+COMMERCIAL IN CONFIDENCE
+
+5.30 Manage Target Types
+
+The Target Type page allows the administrator to manage the list of Release Types that incidents can be
+reported against. This should show the release life of an incident or defect e.g. Reported In, Requested
+For, Proposed For, Targeted At, and Released At.
+
+To create a new target type:
+>» Choose ‘Select Type=New Release Type’ from the drop-down list.
+> Check and/or complete the fields:
+
+Identity This number is automatically generated once the type has been created.
+
+Description Give the target type a meaningful name.
+
+Ordering This determines the order in which the types are displayed.
+
+Admin Level ald Users with Admin Level roles (as defined in §5.27) can set these Target
+ypes.
+
+> Press Add New (release target).
+
+To edit or delete an existing target type, choose the target type name from the ‘Select Type’ drop-down
+list. Once a type has been selected, all the information about that target type is retrieved from the
+database and displayed on the Target Type form, allowing you to edit those details then Save Changes,
+Restore (the previous saved version) or Delete (the target type).
+
+5.31 Branch Note (OTI Admin role only)
+
+Refer to the “Peak User Guide” for details of this function.
+
+5.32 OTI (OTI Admin role only)
+
+Refer to the “Peak User Guide” for details of this function.
+
+5.33 Procedures (OTI Admin role only)
+
+Refer to the “Peak User Guide” for details of this function.
+
+© Copyright Fujitsu Services Limited FUJITSU RESTRICTED Ref: DEV/APP/SPG/2144
+2013 COMMERCIAL IN CONFIDENCE Version: 1.0
+UNCONTROLLED WHEN PRINTED OR Date: 03-Apr-2013
+
+STORED OUTSIDE DIMENSIONS PageNo: 49 of 49

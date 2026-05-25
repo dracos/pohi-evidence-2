@@ -1,0 +1,36 @@
+WITNO5970116
+WITNO5970116
+
+Assuring Integrity, Accuracy and Robustness of the Service
+
+To enable the assurance of key “technical” characteristics, and in particular the
+integrity/robustness of the service (and therefore to support contractual acceptance of
+number of criteria owned by Technical Assurance), we need access to “high level”
+service design information relating to the business applications, in addition to the
+infrastructural information currently available from the TED. This information could
+be seen as sitting “beneath the SADD and above the TED”.
+
+This information needs to show the key data/message flows between the components
+of the service (that is, data/messages passing over the technical infrastructure) during
+the execution of the business applications. “Component” in this context could be “APS
+Counter Application”, “Message Store’, “APS TMS Agent’ etc.
+
+Take, for instance, a “BES foreign” transaction performed at the counter. We believe
+that this operates by checking through TMS to the home office to check for available
+payments, but we currently have little detail beyond this to assure the integrity of the
+transaction - eg how the check made, what messages are written, which components are
+used (is an agent used at TMS, etc), and therefore what happens if certain components
+fail.
+
+Note that for this purpose we are not seeking highly detailed design documentation or
+access to source code - we need to understand what data/messages pass between the
+building blocks rather than the inner workings of each individual building blocks.
+
+Access to this information will also allow a more informed view to be taken of testing
+activities, and in particular the relevance and applicability of much of the technical
+testing to the contracted-for services, as well as the impact (or not) of faults which may
+emerge from testing.
+
+Jeremy Folkes
+Horizon Technical Assurance
+21/5/98

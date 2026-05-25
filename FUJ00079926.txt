@@ -1,0 +1,3896 @@
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+User Guide Date: 08-Oct-2004
+Document Title: Peak User Guide
+Document Type:
+Release: Phase 6.0
+Abstract: A user guide to those new to using the system and as a reference
+
+Document Status:
+
+Originator & Dept:
+
+Contributors:
+
+Internal Distribution:
+
+External Distribution:
+
+Approval Authorities:
+
+point for existing users
+
+APPROVED
+
+Catherine Obeng
+
+John Simpkins
+
+Mik Peach
+
+Lionel Higman
+
+(See PA/PRO/010 for Approval roles)
+
+Name
+
+Position
+
+Signature
+
+Date
+
+John Simpkins
+
+Peak Front End Development
+
+© 2003 Fujitsu Services
+
+Page: 1 of 69
+FUJ00079926
+
+FUJ00079926
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+User Guide Date: 08-Oct-2004
+0.0 Document Control
+0.1 Document History
+Version No. I Date Reason for Issue Associated
+CP/PinICL
+0.1 09-Dec-2003 I First Draft
+0.2 01-Oct-2004 First Formal Review
+
+0.2 Review Details
+
+Review Comments:
+
+08-Oct-2004
+
+Review Comments to: I Catherine Obeng
+Mandatory Review Authority Name
+Peak Front End Development John Simpkins
+
+Peak Design Authority
+
+Lionel Higman
+
+Optional Review / Issued for Information
+
+(*) = Reviewers that returned comments.
+
+0.3 Associated Documents
+
+Reference Version I Date Title Source
+PA/TEM/001 8.0 19/12/02 Fujitsu Services Document PVCS
+Template
+
+Unless a specific version is referred to above, reference should be made to the current
+approved versions of the documents.
+
+© 2003 Fujitsu Services
+
+Page: 2 of 69
+FUJ00079926
+
+FUJ00079926
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+0.4 Abbreviations/Definitions
+Abbreviation Definition
+Call A term used to reference the Incident/Defect record held in Peak
+cP Change Proposal
+DDL Drop Down List
+GUI Graphical User Interface
+LoV List of Values
+Peak A Fujitsu Services call management system used within Post Office
+
+Account.
+
+SMC System Management Centre (2™ Line Support)
+UTC Universal Time Coordinates
+
+0.5 Changes in this Version
+Version Changes
+0.1 Any comments or feedback received, as a result of the review process will
+
+be incorporated in future release of the document.
+
+0.2 Comments received from Reviewers.
+
+0.6 Changes Expected
+Changes
+Peak is ongoing in its design and therefore features, which might be missing at this release, may be
+included at a future release.
+The HTML Call List grid will be included at next release of this document.
+
+© 2003 Fujitsu Services Page: 3 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+0.7 Table of Contents
+
+1.0 INTRODUCTION..
+Ll CALL HANDLING
+2.0 SCOPE..
+2.1 NOTATION USED...
+3.0 GETTING STARTED WITH PEAK....
+
+3.1
+3.2
+
+4.0
+
+Response Text
+4.7 Target Release
+
+48 Target Date.
+49
+4.10
+4.10.1 New Call Form.
+
+4.11 Manual Routing.
+4.12 Auto Route......
+4.13 Call Logger.
+4.14 Team
+
+5.0 VIEWING EXISTING CALLB........
+
+5.1 Call Reference.
+5.2 Call Logger.
+5.3 Target Release
+
+5.5 Priority.
+5.6 Progress Narrative.
+5.8 Top Reference...
+5.9 Status...
+5.10 Save Summary.
+5.11 Root Cause...
+5.12 Route.
+
+5.13. Assignee.
+5.14 Last Progres:
+5.15 Products Button.
+5.16 Show Audit / Hide Audit.
+
+Auto Route...
+
+6.1 Details button.
+6.2 Full List button
+63 Subset button...
+
+© 2003 Fujitsu Services Page: 4 of 69
+
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+64
+6.5
+6.6
+6.7
+6.8
+6.9
+6.10
+
+7.0 UPDATING EXISTING CALLS...
+
+713
+714
+
+8.0 CLOSING AND REOPENING CALL!
+
+8.1
+
+8.2
+8.2.1
+8.2.2
+
+9.0 SAVING A CALL AS A FILE...
+
+9.1
+
+10.0 QUERIES AND SEARCHES...
+
+10.1
+
+10.1.1
+10.1.2
+10.1.3
+10.1.4
+
+Bulk Update...
+Save Layout button.
+Pri
+Refresh.
+MultiPrint
+Help...
+Personalised Query Buttons.
+
+Update Existing Call Detail
+Call Reference.
+Target Release.
+Call Type....
+
+‘Add Reference
+Delete Existing
+Mark Reference as Top Reference.
+
+Add Response button...
+Progress Narrative box.
+Text box..
+Response Category.
+Close window BUttOR.......eccocsesseeeetinsseennennnetnnnnnstinnttssnisnntisnntinntinentnsnsinsnenseneneeneenee
+Effort.
+Target Date / Time.
+No Forecast Date...
+Close Window.
+Save.
+Clone Call button.
+Action button / Remove Action.
+Close window button.
+Main Menu button.
+Find Call button.
+Print.
+
+To Close a Peak Call (Internally raised
+To Close Customer Raised Calls (OTT)
+Reopening Peak Call (Internal).........
+Re-Opening Peak Closed Call (OTD).....
+
+Expand Call Details page...
+
+Build and Store Query..
+To Create new Query...
+Customise Searches form.
+Search Title...
+Field to be compared.
+Operator.
+Value.. .
+Add (AND) button...
+Add (OR) button...
+Parse Query button.
+Clear Query button
+Peak Query Code..
+
+© 2003 Fujitsu Services Page: 5 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+10.1.12
+10.1.13
+10.1.14
+10.1.15
+10.1.16
+10.1.17
+10.1.18
+10.1.19
+10.1.20
+10.1.21
+10.1.22
+10.1.23
+10.1.24
+10.1.25
+10.1.26
+10.1.27
+10.1.28
+
+12.0 SEA
+
+12.1
+12.1.1
+12.1.2
+12.1.3
+12.1.4
+12.1.5
+
+13.0 EVIDENCE HANDLING, CLONING AND PRINTIN
+
+13.3. PRINTING
+
+SQL Query Code...
+Set as Default Query Check Box.
+Shared Query.
+Sort Fields.
+Order Ordering.
+Add Direction.
+Remove Ordering.
+Available Display Fields.
+
+<Remove Field<.
+Removing a Field.
+Display Fields.
+
+Retrieve Query Button.
+Execute Query.
+
+Add Queries.........
+Editing Existing Query.
+Run.
+
+Deleti 6
+Default. . 6
+Show Shared Searches..... .6
+Query Build button.
+
+Main Menu button. .
+.RCH FOR A SINGLE CALL..........0005
+Find Call Option...
+
+Call Reference (other Reference) radio button.
+Search All Calls radio butION........ccccsstssiststssistsuisinuisiniseinisiinistssistsiistsiseistseisesese
+Search Open Calls radio button.......
+Full Search Query Builder.
+
+Search button.....
+
+Managing Evidence.
+Already Attached Evidence
+Retrieving Attached Evidence........
+‘Add New Evidence.
+Removing Attached Evidence.
+Update button..
+
+Clone a Call.
+Call Reference.
+
+Call Type... scsscseneeen
+Contact.
+
+Call Logger.
+Reference
+Status.
+Progress Narrative...
+Routing.....
+Assignee.
+
+Printing from Call Display pags
+Print from the Expanded Call Details page.
+Multiple Print.
+Print from Call List page. 6
+
+© 2003 Fujitsu Services Page: 6 of 69
+Fujitsu Services
+
+FUJ00079926
+
+FUJ00079926
+
+PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+14.0. EXTERNAL INTERFACES..
+14.1 KEL.
+
+14.1.1
+
+14.2 PowerHelp...
+143 Preferences and Change of Password.
+
+15.0 USER PREFERENCES...
+
+15.1 User Preferences page.
+15.1.1
+15.1.2
+15.1.3
+
+15.2 Customising Call List Grid
+
+15.3 Changing Password
+
+None UK and SSC domain users
+
+Default Logging Team.........
+Current Background DDL...
+Size Call List to Fullscreen Tick box.
+Automatically Fullscreen Call Details Tick box.
+Automatically Refresh Call List each 10 minutes Tick and Combo boxes.
+Display Horizontal lines in the Call List Tick box.
+Display Queries in HTML grid Tick box...
+Open Call List in a new page Tick bo:
+Open Add Response/Progress in a new page.
+Initial Audit View ON Tick box.... oe
+Use Evidence Applet (requires Java) Tick box
+Evidence Default Directory (use double backslahes) Text box
+Call Progress Narrative Colour One Combo box.
+Call Progress Narrative Colour Two Combo box.
+Data Field Colour Combo box
+Open Default Call List when Logon Tick box... oe
+Main menu Call List button always opens Default list Tick box.
+Hide logon page installation message (uses cookies) Tick box...
+Use my background picture on the logon page (uses cookies) Tick box.
+Fix (Java) Call List size to Tick box and Text boxes
+Default Logging Call Type
+Call List Font..
+Main Menu...
+
+Changing Column Width.
+Moving the Columns...
+Pointing at a column heading
+Resizing the Window...
+Save Layout button.
+
+Display button.
+
+Change User Password form page.
+Old password. .
+
+New Password...
+Re-enter New Pz
+Change button
+
+© 2003 Fujitsu Services Page: 7 of 69
+Fujitsu Services PEAK User Guide
+
+User Guide
+
+FUJ00079926
+FUJ00079926
+
+Ref: CS/MAN/011
+Version: 1.0
+
+Date: 08-Oct-2004
+
+1.0 Introduction
+
+11
+
+Peak is the replacement Call Management System for Pinicl. Peak has a completely
+different design. Newer technologies have been employed to minimise upgrade
+requirements and future maintenance costs. Albeit, every effort has been made to
+minimise any huge differences in the GUI between Pinicl and the new PEAK.
+
+What can you do in PEAK? You can use PEAK to:
+
+Log New Calls
+
+Respond to Calls
+
+Update existing Calls
+
+Create Personalised Queries (for reporting purposes)
+Search for particular Calls
+
+Link Calls with Other Calls
+
+Print Calls, KELs
+
+Reopen Calls
+
+Change user password
+
+Access the KEL and PowerHelp Database interfaces
+Manage Evidence files
+
+Handle Contacts
+
+You can also customise your PEAK interface
+
+Call Handling
+
+e Logging into Peak
+
+e Logging New Call
+
+e Viewing Call List
+
+e Updating Existing Calls
+
+© Call Cloning
+
+¢ Closing and Re Opening Calls
+
+© Copying a File from your PC
+
+© 2003 Fujitsu Services
+
+Page: 8 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+2.0
+
+2.1
+
+3.0
+
+3.1
+
+Scope
+
+This document is targeted at people trying to use Peak Call Management System to
+log calls, update calls, route calls, manage evidence, and close calls. The purpose of
+this documentation is to serve as a user reference to accompany the Peak client
+interface.
+
+The client application interfaces with a limited number of views based on several
+underlying tables. Technical details about related tables and files are not included in
+this User Guide.
+
+Use of Comments in this document (For on-line copy only)
+
+Throughout the document, comments have been used in the form of Note: to minimise
+the volume of text in the document and also to provide extra information where it is
+thought helpful to the user. Hold mouse over the sign Note: to view hidden text.
+
+Notation Used
+
+The following notation is used to add more information where it is thought to be
+necessary. For online readers point to the word NOTE:.
+
+Getting Started with Peak
+
+With an Intranet connection and Internet Explorer, you can find and view information
+on the PEAK main server.
+
+If it is your first time of attempting to connect to the Peak client, just click the topics
+below to get started, or click on Index and type in a keyword. You'll find more
+information to help you use Peak efficiently.
+
+Initial Connection to Peak Server and the Client
+Application (Java)
+
+For how to configure your PC to connect to Peak server using ODBC and how to set
+up your Client environment, click this lin! 3 and follow the link
+“configure your system’ see Fig 1 below.
+
+© 2003 Fujitsu Services Page: 9 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+3.2 Logging into Peak
+
+The URL for accessing the Peak Client i:
+
+As soon as the page is located, the logging screen is displayed.
+
+Peak Call Management System
+
+User Logon
+
+Fig 1 Peak Login page
+
+Type in your username and initial password, which would have been assigned to you
+by the Administrator
+> Click on the Logon button underneath, this displays the Peak Main menu page
+or
+
+> Press Enter
+
+© 2003 Fujitsu Services Page: 10 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+** Welcome to Peak **-Phase 6
+‘You have mo meseages
+
+Fig.2 Peak Main Menu page
+
+See section on Preferences for how to customise the background wallpaper.
+
+At any point in using Peak, users can access the same commands both via the Menu
+driven commands under the main headings File, Call, Options and Help or by using the
+web based approach of event driven, icon based. Both will invoke the same code to
+run.
+
+4.0 Logging New Call
+
+Where a new incident is reported there must be a formal way of tracking and fixing the
+problem. A call must be raised, this is done within Powerhelp or from within Peak
+depending on who the incident is being reported by, e.g. Post Master via HSH, Events
+via SMC or Future Release problems via Testing.
+
+e Logging New Call
+
+© Call Type
+¢ Priority
+e¢ Summary
+
+© 2003 Fujitsu Services Page: 11 of 69
+Fujitsu Services PEAK User Guide
+
+User Guide
+
+FUJ00079926
+FUJ00079926
+
+Ref: CS/MAN/O11
+Version: 1.0
+
+Date: 08-Oct-2004
+
+¢ Subject Product
+¢ Product Groups
+e Progress
+
+© Response Text
+e Target Release
+e Target Date
+
+© Route
+
+¢ Manual Routing
+¢ Call Logger
+
+e Team
+
+To log a call, from Peak Main Menu page;
+Point mouse on Call
+>» Click New.
+
+The Main Menu page is displayed immediately after successful validation of your user
+
+account.
+
+To Enter New Call Details:
+
+> Click New Call button, or choose New from the Call menu on the Main Menu bar
+
+both will display the New Call form.
+
+> Choose from the DDLs or input text in the appropriate fields.
+
+© 2003 Fujitsu Services
+
+Page: 12 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+Peak Call Management System _
+[EaltLoaser [Catherine Oberg ffewn [esc a]
+fieiSeeced a] [Bee frome ai
+RoSelecied Dlksieay rerSarecea a]
+(Samenay
+[Response Tess
+al
+i)
+[Response Cateaoy [Emaet Date [Target Time
+[- Progress Only B] I i
+[SibjectBreaaae frucne r 5 7
+Manual Rowing EDSC a catherine Obeng =] Fane]
+‘ [cesquenioe) [en nema
+Note Belds Barked in are" mandatoey j a
+favor aw ” RE NNCEE SAT: [cara I
+
+41
+
+42
+
+Fig 3 Peak New Call form
+
+Mandatory fields are Call Type, Summary, Priority, Release and Subject Product.
+These appear in a different colour for high visibility. For a new call to be generated
+the five fields must be completed. It is not important in what order the mandatory
+fields are filled in, in any case, the last one to be completed, activates the Auto Route
+and Route buttons. Click on either Auto Route or Route for the for a call number to
+be generated and call assigned to a team or individual depending on which of the
+buttons was selected.
+
+Call Type
+
+From the New Call form, a default value is selected from the Call Type DDL, (a
+preference exist to default this value)
+
+> Click the down arrow to select from the DDL. (“NOT SELECTED?’ is considered
+an invalid value for this field, therefore as long as ‘NOT SELECTED’ is showing;
+the colour will remain orange until changed to a valid value.)
+
+Select a valid value from the list the new value overwrites the default. Once a
+value is selected from the list, the colour reverts to normal colour in keeping with
+the rest of the page.
+
+Priority
+
+Vv
+
+Each Call Type has a list of level of priorities associated with it. The priority levels
+start from A — D, with ‘A’ priority being the top most level and D the least. Priority
+must be explicitly selected from the DDL; the default is ‘Not Selected’. If a default
+call type is selected from Preferences option, the lowest priority available will be the
+default.
+
+© 2003 Fujitsu Services Page: 13 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+> Click on down arrow to select from the DDL. The list of values that is displayed in
+this field is dependent on the Call Type selected.
+
+> Select from the DDL
+Choosing a valid priority from the DDL activates and populates the Target Date and
+Target Time fields at the bottom of the page.
+
+4.35 Summary
+
+This is used as the title field for the call. When page is displayed, the field is empty; a
+short text (a summary of the problem to be described in the Progress box) must be
+typed into the Summary input box, there is a 50-character limit.
+
+4.4 Subject Product
+A product can be a Hardware or Software. Every product has an associated owner.
+Choose from the DDL. This event also causes another DDL (a subset of products)
+Product Groups to be displayed.
+
+Many Teams can own a Product, however, only one Team can own a Product of a
+specific version. For example
+
+Product Version Team Owners
+ACDB Server Ll UKSS
+
+ACDB Server 1.8 Auto Config
+ACDB Server 21 PIT
+
+Option to use popup to select a product by Name rather than Group.
+
+Note for Inline readers ONLY::
+
+4.5 Product Groups
+
+This DDL displays the subset of the associated Subject Product chosen. Field defaults
+to a white space,
+
+> Click on the down arrow (to the right)
+
+> Select from the DDL, the most appropriate Product associated with your chosen
+
+4.6 Response Text
+
+Progress text will be displayed in the call history. To add new update to a call you
+click Response Category. Typing in new text will cause the call Status to change.
+
+© 2003 Fujitsu Services Page: 14 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+47
+
+48
+
+49
+
+4.10
+
+4.10.1
+
+4.11
+
+Target Release
+
+Target Release is the scheduled POA, Horizon Programme release identifier for which
+a resolution to the problem is required. During the life of a call, its Target Release can
+be changed more than once to reflect the time frame that a fix is to be provided for the
+fault. When the New Call form is displayed, the field defaults to ‘Not Selected’.
+
+Target Date
+
+Field is blank when New Call form is loaded. Target Date is the timescale within
+which a faulty Peak call must be resolved. It is dependent on the Priority functionality
+where once input is received in the Priority field the system will automatically populate
+the Target Date and Time fields.
+
+Target Time
+
+Field is blank when New Call form is loaded. It is associated with the Target Date
+field. Time is displayed in Local Time.
+
+Route
+
+Calls can be routed automatically (in which case PEAK transfers the call according to
+the subject product, product version and platform) or manually (in which case the user
+routing the call must specify to which team or user the call is to be transferred).
+
+At the point where a New Call form is loaded, the Route button is grayed out. All the
+mandatory fields (appearing with an orange background) on the form must be
+completed before the Route button becomes visible. Once default values have
+received valid input, you can transfer the call between teams and within teams to
+individual users using the Route button on both the New Call form page and Call
+Details page.
+
+The Route button has two main functionalities on:
+
+New Call Form
+Having completed all the default fields in creating a New Call form, user must
+click on Route for the details to be committed.
+
+> Click Route button to transmit the call details to the PEAK database server, a
+unique call number is allocated
+
+» Call is automatically routed to the Logger (by default but can be changed)
+
+Manual Routing
+
+This option enables the user to select a Team or another user to transfer the call to.
+The team displayed is the current user’s default Team.
+
+> Click on down arrow
+
+> Select a Team from the DDL this triggers another DDL containing a subset of
+usernames associated with that team. DDL
+
+© 2003 Fujitsu Services Page: 15 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+> Click on the down arrow (to the right), field has a default value as ‘Team Only’.
+
+> Select a username from the DDL, the team member you wish to route the call to.
+
+Note for Inline readers ONLY::
+
+4.12 Auto Route
+
+When a New Call form is loaded, the Auto Route button is greyed out. The five
+mandatory fields must be filled in before Auto Route the button becomes activated.
+Auto Route causes details to be committed the PEAK database and for a unique
+number to be assigned to the call. Other functionality is to allocate the call to a team
+based on the Subject Product selected.
+
+Default Populated Fields
+
+When the New Call form is loaded, the system will automatically populate the following two
+fields with information based on your user account details.
+
+413 Call Logger
+Full name of the user is displayed in this field.
+
+414 Team
+
+Default Call logging team will be displayed, user can select any of their other teams at
+this point.
+
+© 2003 Fujitsu Services Page: 16 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+5.0 Viewing Existing Calls
+
+To view a list of existing calls, choose the option Call List from PEAK Main Menu.
+System default query is generated automatically at first logon Peak. The Call List
+page appears in columns with headings reflecting the core information on each call.
+
+To End of
+
+ection 5
+
+e Call Reference
+
+¢ Call Logger
+
+e Reported In Release
+¢ Top Reference
+
+© Call Type
+e Priority
+
+© Contact
+e Status
+
+¢ Summary
+
+e Save Summary
+
+¢ Progress Narrative
+¢ Root Cause
+
+¢ Collections Button
+¢ Show Audit / Hide Audit
+e Add Response
+
+e Route
+
+e Action
+
+¢ Subject Product
+
+e Products Button
+
+¢ Auto Route
+
+e Expand
+
+e Assignee
+
+© Clone Call
+
+e Evidence
+
+¢ Close Call Button
+
+© 2003 Fujitsu Services Page: 17 of 69
+Fujitsu Services
+
+PEAK User Guide
+
+User Guide
+
+Ref:
+Version:
+Date:
+
+CS/MAN/O11
+
+1.0
+
+08-Oct-2004
+
+FUJ00079926
+FUJ00079926
+
+e Last Progress
+
+To view the details of an existing call, from the main menu,
+
+> Click on Call List, which displays the default query that would have been set up by
+the Peak Administrator or the last query loaded, depending upon the Preferences
+
+set.
+
+> Identify the appropriate entry in the Call List and double click or highlight and click
+the Details button at the bottom of the page to display the Call Details page. The
+Call Details page is similar to the page you access when you select New Call, the
+difference is that information relating to the particular call is retrieved and
+displayed.
+
+Details of a call can also be accessed via Find Call option from Peak Main page. See
+Searches for more details.
+
+Customer.
+
+[Bava vex
+
+‘pcoi0s747
+
+(Barbara Longley
+
+lrcoinesas
+
+is
+
+(FST 2 0_WPia36e
+
+—fecaazaisae iB
+ie
+
+[Catherine Obeng
+is
+
+010592
+
+{FADOBIT16- Poor on Voie, OK on Siver
+
+ie0407260406
+
+(chris Haves
+
+iecoio7st
+
+'FAD002046- Fails due to DLE unsetwrong ST
+
+[cris Hawkes
+
+jecoi07516
+
+Congestion at exchange(1)??
+
+faa
+
+iE-0409010652
+ie-na00010466
+
+Ichi Hawkes
+
+[chs Hawke:
+(cris Hawkes
+
+COL OTS
+coinr76'
+
+ie-0400010270
+070%
+
+ome Hanes
+
+“pci natoe.
+
+0409080272
+0409000320
+
+ipootesi.
+ipc0106923
+
+E
+
+00108195
+
+\GiN:ACOB ARNE Re.
+
+6
+
+[Darren Avenel,
+
+(B01 08580
+
+‘Problem Management Database - Enhancement requests
+
+(Darren Avenel
+
+ironiosa7a
+
+{LFS ty senpt causes exceptions
+
+(FST 3 6 WPI9830.
+
+(Garret Simpson
+
+ipco107063
+
+(OVLA tokens absent om APS database
+
+(Garret Simpson
+
+{atte si,
+
+[Pcovo2tet
+
+FAD191955- 191556152054 rejected. Crp oul
+
+iBcoioeri2
+
+Faozoo'= Tr6C 25,
+
+(ans DaASE_Se0R
+31
+
+Customer.
+
+eustomer.
+
+ipcotoeser
+
+issue naa
+
+Toustome.
+
+0087248
+
+(aL 3875R.
+
+I
+I
+f
+I
+
+‘Teustomer.
+
+aenliae om lena : Taal clei aeleelanloulecion a Peay RUMORS ms
+
+Fig 4a Peak Call List Grid [Java version] page
+
+© 2003 Fujitsu Services
+
+Page: 18 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+23 ames sore a eee
+IRRELEVANT
+
+Peak Call Management System @ sew)
+“aul Event Sis I Chongetaeu I Renn I Mai Mens I Sel _Edtquey I FtCat I ConyI He]
+‘_Geentats [Recenicate ]sstontine [oo Te tm
+Pray TewtoT Cally Sunny ‘espe Top Rela
+WERE wor s002- Reapcoora 16042376: 210wa pone Unassigned €-0408110086
+FA0257500- Rem autpouches remain in suspednne Chambers €-0409070826
+FAD315227-TmProducthas no CAC Mapping Anne Chambers €-0301240600
+‘Unable to commit RNBABOS Common Install 19ARne Chambers €-0210070677
+FADIGE709 pm has 2F7 keys on smarpstscreAnne Chambers €-0404190612
+FADME34D-eheckfot maroonedvansaebons Cathenne beng €-0408250700
+FaD204642 &ohers-n992004051700000242:Camerne Oveng 0409121008
+‘Pouley_bomc nas abended. one row aataueCamneine beng €-0409tS0805
+FaD2G4410-nerntentonine sence atures Civ Hawes €-0409080272
+FAD890010- ADL Spate- Plot ADSL ComechChns Hawkes €-0409100400
+FAD082040-Fals duets DLE unsebwrong ST Chis Hanes €-0409010482
+'a0272247-Congestonalechanget)?? ChrieHames 0409010404
+FAD100041 incoming cals cuning working vs. Cis Havaws _ €-0409010465
+FADISIA06- Incoming cals dung wading howsChns Haves €-0409010469
+FAD244427- Incoming calle during Wading hes Chis Haves €.0409010470
+FAD237247 Congestion atexenange7@) Chis Hawkes _-E-0400010220
+fa0228247-Congestonalexcrange?() Chis Hawkes _€-0408080370
+FA0053041- CMM Stuckin state Chis Henkes €-0400120071
+FAD061116-PooranVoee,OKon iver Chis Hawes ——_-E-0407200448
+
+"aus Assgped Team TaygetFeese Ty, Tage lave
+Repotedin 81 2860R-Provsi
+Repotedin 8] a860R- Prov
+Tatgetedat 81 3875 Prove
+Targeted at —_81.3570-ProposeI
+Targeted At 81 3878R Prova
+Repotedin BI S560R-Provsh
+Reportedin 81 2860R-Provsh
+Fepatedin 81 S860R.-Frovi
+Reportedin 81 3860 Frovsin
+Reportedin 81 3860R-Frovsi
+Reporiedin BI 3860R-Provsi
+Reporiedin 81 3860R¢-Provai
+Repatesin 81 2860R-Provi
+Repotedin 81 3860R-rovsh
+Repotedin BI 3860 Frovsi
+EDs Reporiedin 8 a860R¢-Frovsi
+EDsC Reportedin 81 2860R-Frovsi
+EDsc Reportedin 81 3860R-Provsi
+psc Reportedin. 81 3852R-Provsi
+
+Ghbbbahabbabsaaaaaraababinl
+
+‘Abnormatyhigh sth ilforap clentnséi —ChisHayaes 0407030186 EpeC Tapetedat 81 3875R-Prowsi
+Wien Pages for CS Sane no Daren Avenel! EDs Repotedin Peak Futures
+Newveision of call enquiry matic Daren Avenel! -E-o409010056 EDsc Repotesin —_8I_3850R-Provsi
+ARMS cease isd result feed Daren Averell CM-ACOBARMS Resi. DSC Reporiedin 1 3560F-Auton
+Nn FADOG6NG7- cneckfor maroonedvansactons Oamenavenell €0408200509«P=—=«EOSC Repattedin 81 3860R-Prowsi
+" ‘5RE rewrite & redeloyn or Sept 04 - BRAOI 7 - Darren Avenel P epee Reportedin Peak Futuos
+DVLAtokens absentfom APS database Garret Simpson P epee Fepotedin 81 3860
+NW authonsaton agent servers Work Tread téGayMamwell 0409060750 «PCED Reporiedin 83860. Provsi
+FADIOTGON- TPEC 254 Honest Exepton Ream Anacomb —EOMNNISTOM FEDS Reporiedin 81 3860R¢-Frovsi
+
+Fig 4b Peak Call List Grid [HTML version] page
+
+© 2003 Fujitsu Services Page: 19 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+Fields on the Call Details page;
+
+5.1
+
+5.2
+
+5.3
+
+5.4
+
+Call Reference
+
+Reference is a unique number identifying each call. Once a call number has been
+assigned, after creating a new call, it is treated as an existing call. To view it, you can
+do a Find Call or load the Call List page; both options are available from the Peak
+Main page.
+
+Call Logger
+
+Customer raised calls will display the default Gateway Team else the user who
+generated the call’s name appears in the field.
+
+When a final response is placed on a call, it is automatically routed to the call logger.
+
+Target Release
+
+Once a call has gone beyond the Target date, the Target Date column in the Call List
+page gets displayed in colour red.
+
+Real-time countdown, does not take core hours, weekends or Bank Holidays into
+account.
+
+Te Tet I Aided i Ba Aied 1
+Fisponedla [Bt 3560R-Promscaal [ewsome Cal ooot-08 35 0055 I
+[-trefieearyee a (eS eee I ]
+so ia)
+src} Copia
+
+Fig 5 Target Release form
+
+Contact
+
+If call is a Customer raised one, then the Gateway Team’s name is displayed. All calls
+raised within Peak will display the name of the user who logged the call. This is the
+same detail that appears in the Call Logger field.
+
+© 2003 Fujitsu Services Page: 20 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+5.8
+
+The field is defaulted to the default Gateway Team, if a customer raised call; else the
+text ‘None’ is displayed.
+
+Team members can change the Contact to another team member.
+
+Priority
+
+Calls logged as ‘A’ priorities will appear in colour red in the Call List page. Priority is
+directly linked to the Target Date and Time of the call. Alerts may trigger on Priority
+changes, e.g. if current priority is a ‘B’ and it is changed to a ‘A’
+
+Progress Narrative
+
+Information previously added to the call appears in this box. The field shows what
+details of text has already occurred in relation to this call. The text displayed is read
+only, not editable.
+
+Note:
+
+Top Reference
+
+References button is visible only from Call Details page. PowerHelp raised calls will
+display the appropriate PowerHelp Reference as the Top Reference, e.g. E-
+0311140001. To add a new reference;
+
+» Click Reference button
+
+Choose reference type in the DDL
+Choose from the list and type in the reference in the text box next to the DDL and
+
+> Click on Add button.
+
+Vv
+
+Some typical / other references include FastTrack numbers, Cloned Call reference,
+KEL references etc.
+
+A mask of the expected Reference value is automatically populated into the text box in
+a ‘regular expression’ format.
+
+Set a new reference as the top reference by choosing the Top Ref button next to the
+reference item.
+
+Status
+
+Field is visible in the Call List and also in Call Details page. It defines the stage in the
+lifecycle of the call, i.e. Open, Pending, Final or Closed. This is a system-generated
+field on creating a new call.
+
+Note:
+
+Peak enforces the lifecycle, this means that final response cannot be entered until the
+status is Pending and the call cannot be closed until the status is Final.
+
+© 2003 Fujitsu Services Page: 21 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+5.1
+
+5.1
+
+5.1
+
+5.1
+
+0
+
+1
+
+2
+
+4
+
+nr
+
+Save Summary
+
+The Summary field can be amended as long as the call has not reached the end of its
+lifecycle, ie. closed. The field has a limit of fifty characters length and its content is
+editable during the life of the call. Once amended, click on the Save Summary button
+to commit the changes to the database.
+
+Root Cause
+
+This field is visibly only from Call Details page. Root Cause can be changed only if
+the call is on your Team’s stack. Once routed, field becomes grayed out. A Route
+Cause must be specified before a call can be closed.
+
+To change the Root Cause;
+» Click the downward arrow to select from the DDL
+Route
+
+Calls on Peak are transferred between teams and within teams to individual users using
+the Route button on the Call Details page. Calls can only be routed by the call
+assignee or by a member of his team or the central administrator. The default value is
+the default team of the Call Logger, unless call is a Customer raised one in which case
+it will always be EDSC.
+
+To change the currently displayed value (Team);
+» Click on the downward arrow
+> Select from the DDL /This will refresh the list of users in the team]
+
+Calls can be routed directly to members of a team. However, teams may prevent this
+and the call will be routed to the ‘Unassignee’ user. You may also search for a user by
+name using the popup.
+
+Assignee
+
+The user name and user team are concatenated and displayed in this field. Field is read
+only. The only way you can get another name to be displayed is by explicitly routing
+the call to another user. A call can be assigned to only one user at any one time and an
+action may be applied to one other user.
+
+Last Progress
+Displays the user, date and time of when the call last received an update in the
+Products Button
+
+The Product button is and available from the Call Details page. Choosing this option
+allows you to amend product related to call. The AutoRoute button ‘s functionality is
+based on the Products button. See section on U; ng calls.
+
+© 2003 Fujitsu Services Page: 22 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+5.16
+
+5.17
+
+5.18
+
+5.19
+
+5.20
+
+Show Audit / Hide Audit
+If you wish to view more than just the narrative text, then click the Show Audit button
+on the Call Details page. This displays audit information, which includes;
+
+Call Type, Root Cause, and References etc. Effectively all other call attributes except
+Progress Text.
+
+This button is a toggle, click to see audit information and click again to hide audit
+information.
+
+Auto Route
+
+Calls can be routed automatically (in which case Peak transfers the call according to
+the call type, subject product, product version and platform) based on the Product
+
+type.
+
+Evidence
+
+The area around the Evidence button appears in a different colour if at any stage
+evidence has been attached to the call. See handling evidence for more details.
+
+Expand
+
+To view the full page of Call Details, click Expand button to display the Expanded
+Call Details page. Call details can be printed and saved to a file using this option.
+Close Call button
+
+Close Call button available from the Call Details page and is grayed out if call is with
+another team that you are not a member of. You can only close a call if;
+
+- you are a member of the assigned team
+
+- you are a member of the call logger’s team
+- have Administrator privileges
+
+- Root Cause must be set and Status must be ‘Final’.
+
+Note: This button’s functionality is applicable only to call raised within Peak.
+
+Back to Top of Section 5
+
+© 2003 Fujitsu Services Page: 23 of 69
+Fujitsu Services
+
+PEAK User Guide
+
+User Guide
+
+FUJ00079926
+FUJ00079926
+
+Ref: CS/MAN/O11
+Version: 1.0
+Date: 08-Oct-2004
+
+6.0 Call List Page Options
+
+Existing calls are displayed in the Call List grid by choosing Call List from PEAK
+Main Menu. The Call List grid (See Fig. 4) has several buttons, which you can click
+for more options.
+
+Two versions, the default is HTML, however this should only be used if the call kists
+For more than that the Java version should be used. Can
+switch between versions using the Preferences page. See figures 4a and 4b above.
+
+have less than 200 rows.
+
+See Call List figures in Section 5 above.
+
+Beorosea2
+
+customer
+
+icoaozaaene
+
+oororste
+
+HOBO
+
+0
+
+‘Peorost22
+oF
+
+Pevio0ss0
+
+coisa
+
+Fig 6a Call List page (Java version)
+
+© 2003 Fujitsu Services
+
+Page: 24 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+Takeo coe
+een ca couse
+foto TC couse
+is ‘Penoes2 10 © ML Fa0115727- Tn Frowuctnas no CAC Mapping Anne Chambers E-0201240500 e
+F  poometet ANN lsoanameuenscoron sm aiechenone EovTNTNT? —F——«ESBE. Tamas
+Tr rewne 8 Taoisrongmsn2FTaascnsmetentsvne hana covets > ERE Teme
+Twn Eonar fF fo80 amen
+fF peownm —¢ Fonte > eoee omen
+Ex peomm Eons: F —ESBE_fapomaln
+penne Eowotenrs tease eyomaln
+r pomne Eovsienin > EDR eran
+Frown Eowmous —F —eOBC —_vomeln
+peor Eowmow — F eDee
+fF penwntr — Eowmnows > ease
+pees Eovmmas + eee
+£ pews MINN 03107 omen car arptden er Shir haeis EMIT? FSB
+T pcowrsc: 5 ML froseae-congeourtectiegeh) chistes own FDR
+Treomnor 6 RNR. FCEDT cungenatetange?O)—Shchawter—EuotenD FEB
+Tr entamon—€—RE—_ronsps cnn ae Shisomiee oun Foe
+TF ccnome ‘RNB ponrie-Pewrnvace coroner Chnvaue —Eownzenes «EDR Romina
+£eomron RMN rman pana eats Chih EQIDONOG FEB BOSTON
+row oxen seat o ee Pore
+tener Shermer tuntions Poe esse roe
+come Surnncrat —SaCACONarMORend 8 sss amen
+Sf cstranredvoexten torment E00 PF —_EDNE sossemrone
+Fh cows 4 rt: Baer at Pies peatenee
+cs coeasorn + ees pee
+TN Pcow7e7e, . -e-o4os060250 ia s60R-Pronsh
+f © ,
+
+To End of Section 6
+
+© Details
+e Full List
+© Subset
+¢ Bulk Update
+e Save Layout
+e Print
+e Refresh
+©) MultiPrint
+° Help
+Imagine
+6.1 Details button
+
+To view details of a call, highlight the call from the Call List grid and click this button.
+The Call Details page appear, (see Fig 6) double click call row.
+
+6.2 Full List button
+
+To display all calls matching your query, click on this button; click again to return from
+a Subset operation.
+
+© 2003 Fujitsu Services Page: 25 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+6.3
+
+6.4
+
+If you have already displaying a subset of calls, you can use the Full List button to
+return to the complete query Call List. You can toggle between these lists by using the
+Subset and Full List buttons.
+
+Subset button
+
+You can arrange for a subset of the calls to be displayed;
+
+> Highlight the relevant calls by holding down Ctrl and clicking on the
+appropriate entry (use the tick boxes in the HTML version)
+
+» Click the Subset button
+Note: The Subset Call List grid is similar to the Full List grid except all the Buttons
+are activated.
+
+Bulk Update
+
+Displays a list of calls, which needs to be updated with similar information. This
+button is grayed out by default.
+
+For example where more than one call needs updating with the same type of detail e.g.
+Call Type, Priority, you can do so by choosing the Bulk Update option from the Call
+Details page.
+
+Vv
+
+Identify the appropriate calls that you wish to update
+
+Vv
+
+For multiple selection, hold down the Ctrl + click on the individual calls use the
+tick boxes in the HTML version (immediately upon the a second call being
+selected, the Bulk Update button becomes activated)
+
+Click Bulk Update button this opens up the Multiple Call Update form page.
+
+© 2003 Fujitsu Services Page: 26 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+6.5
+
+6.6
+
+6.7
+
+6.8
+
+a ie roca a
+Eaiipe Proctor Fl By [Nowa
+ep Caen Roche a aera
+Feweay
+5 Roger to
+a
+spa Coes
+Frys ony
+[BiraPomer Jeo
+awsome feos
+
+Fig 7 Multiple Call Update form
+
+Save Layout button
+
+Following manipulation of the Call List grid (see Customising Call List grid), click this
+
+button if you wish for the system to remember the new settings for future.
+
+Print
+
+Print the Call List grid as a landscape table.
+
+Note: A pop up Printer information window will enable user to select to which
+Printer to print to.
+
+Refresh
+
+A Preference can define an automatic refresh period; the time of the last refresh is
+
+displayed at the bottom of the page.
+
+MultiPrint
+
+This allows printing in the Expanded call Details for each of the call selected. By
+default, button is greyed out, to print more than one call,
+
+>» Hold down Ctrl + click on the individual calls you wish to print (HMTL uses tick
+boxes)
+
+> Click on Multiprint button
+
+© 2003 Fujitsu Services Page: 27 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+User Guide Date: 08-Oct-2004
+6.9 Help
+
+Click this button to access the Help document online.
+
+6.10 Personalised Query Buttons
+
+Rows of buttons representing the user-defined queries are displayed. Only the first
+nine queries are displayed in alphabetical order. Press the appropriate query button to
+display that call list.
+
+Back to Top of Section 6
+
+© 2003 Fujitsu Services Page: 28 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+7.0 Updating Existing Calls
+To add more details to an already open call, while in Peak Main Menu page, click Call
+List.
+
+This will display the Call List page, if the call is visible from the list, and then double
+click to open or give focus to the call in the list and press the Open button at the
+bottom of the page or use Find Call from main menu page.
+
+To End of Section 7
+e Action Button
+e Add
+e Add Response Button
+¢ Call Reference
+© Clone Call
+© Close
+
+© Close Window
+
+e Contact
+
+e Evidence
+
+e Expand
+
+¢ Hide/Show Audit
+e Inline Link
+
+e Main Menu Button
+
+e Print
+e Priority
+e Products
+
+e References Button
+© Root Cause
+¢ Route
+
+e Search KEL
+
+e Site
+e Status
+¢ Summary
+
+© 2003 Fujitsu Services Page: 29 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+e Updating Exiting Call Details
+
+7.1 Update Existing Call Details
+
+Details of existing calls can be viewed by choosing Call List from the Peak Main
+Menu page. This triggers the Calls grid to be displayed. The content of the list is
+dependent on the users choice of default Query. On first logon, the list will default to
+all calls currently opened in the user’s Default Team.
+
+> Identify the appropriate entry in the list and double click on it to display the call
+details. You can also access the Call Details page by clicking once on the
+appropriate call in the list and clicking on Details button at the bottom of the page.
+
+> Click Call List to display the Call Details page.
+
+Peak Call Mana,
+
+Galieirace od
+Paar Rete Hagens 6s Fonee Uagected
+(caine
+
+[ide oF
+Poot se Tae
+
+Fig 8 Peak Call Details page
+7.2 Call Reference
+
+A unique system generated number that gets assigned to each call within Peak.
+
+7.3 Target Release
+
+This tracks the software releases over the course of the Project. It indicates at what
+phase in the Release a fault became apparent. All faults reported must have a target
+release associated with it, to select a valid target release,
+
+© 2003 Fujitsu Services Page: 30 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+74
+
+15
+
+Peak Call Management System
+pe I Terese f Added By. f ‘Dae Added
+Reporte in [pr 3se0r Customer Call, [po64-o8
+
+[ore [Soe oee St I
+
+Fig 9 Target Release page
+
+Click icon
+
+Select Type from DDL
+Select release
+
+Click Add
+
+VVVV
+
+The Target Release of a call can be changed throughout the lifecycle of a call. If call is
+closed, the text in the field becomes greyed-out.
+
+All roles may be set the “Reported In” release but the ‘Target At’ option is only
+available to roles with Administrative privileges.
+Call Type
+
+The Call Type can be changed many times during the lifecycle of a call. Ability to do
+this is role dependent. Call Type can be changed even if the call is outside the user’s
+default team. Field is greyed out if call is closed.
+
+> Click the downward arrow
+
+> Select from the DDL, the new value will overwrite the previous. (The Call Type
+chosen might cause only a subset of the Priority list to be displayed)
+
+Note: If your current priority becomes invalid, it will change to lowest possible
+priority.
+
+Note:
+
+References button
+
+If a Customer raised call, the PowerHelp reference is displayed in the field. This
+reference can never be overwritten. However, the option remains for the user to
+
+© 2003 Fujitsu Services Page: 31 of 69
+Fujitsu Services PEAK User Guide
+
+User Guide
+
+Ref:
+
+FUJ00079926
+FUJ00079926
+
+CS/MAN/O11
+
+Version: 1.0
+
+Date:
+
+08-Oct-2004
+
+choose whether that reference gets displayed as the ‘Top Ref’ or not. For Peak raised
+calls, the default is the Peak unique number. In this case, the field is blank, i.e. no
+
+value is displayed, however more references can be added.
+
+\soeofe IRRELEVANT oe
+[3 Peak Call Management System
+zoey Vat Tek 4
+kate EF fro [yews eee}
+Listes Te
+caper roses Faia]
+ipa Foal
+~ 4
+
+Fig 10 References page
+
+» Click on References button, the References form page appears;
+
+751 Add References
+
+> Select the Reference type from the DDL.
+
+> Enter a value for Reference value. The expected format for the chosen
+Reference type will be displayed in the cell below. This format is mandatory.
+
+> Click on Add button. The Reference is now added to the list in the above box.
+
+Note:
+
+7.5.2 Delete Existing References
+
+Only a reference generated with Peak can be deleted. For example, PowerHelp
+
+reference is static and can never be removed.
+
+> Click on the Delete button, this removes it from the list.
+
+7.5.3 Mark Reference as Top Reference
+
+The first reference to be added to the list is considered to be the Top Reference
+and is the one displayed on the Call List and the Call Details pages. To nominate
+
+an alternative:
+
+© 2003 Fujitsu Services
+
+Page: 32 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+> Click on the Top Ref button, the word ‘TOP’ appears in the column title ‘Top
+Ref
+
+» Click on the Top Reference button.
+
+7.6 Search KEL
+Highlight any text or phrase in the Progress Narrative and click on this button to
+access any KELs that contain that keyword.
+
+7.7 Summary
+
+The text in the Summary box can be changed as many times as is required throughout
+the life of the call.
+
+> Click in the box
+> Delete part or all of existing text
+> Type in new text
+
+> Click on Save Summary button to the right of input box to commit the change to
+Peak database
+
+Text in Summary box appears in greyed mode if the user’s role does not allow changes
+or if the call is closed.
+
+7.8 Products
+
+Choosing this option from the Call Details page can amend details of the product. See
+Updating existing calls.
+
+> Click on Products button, this displays the Product Details page
+
+TOSS & DedkTop
+
+Product Crop Frode i}
+
+pes a i Ag eaepeea] J
+roe eat
+
+F
+
+igawtoeereran : : sc eee od
+
+Fig 11 Products page
+
+© 2003 Fujitsu Services Page: 33 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+> Click the down arrow of the Product Group field to display the DDL
+
+v
+
+Click on your choice of Product Group, this will cause a subset of related
+products to be available in the Products field
+
+v
+
+Click on the down arrow of the Product to display the DDL
+
+Vv
+
+Click on your choice of Product name
+
+> Click Add Prod button, this will place the chosen product in the List box above
+Search can be by a Product name using the pop-up.
+
+To make a particular product appear as the Subject Product in the Call Details page,
+> Click on the Subject Product button next to the product
+
+To remove a particular product from the list, simply click the Delete button next to the
+product.
+
+> Click Back to Details to leave this page.
+
+7.9 Add Response button
+
+This button is visible only from the Call Details page. To add new information to the
+call;
+
+> Click on Add Response button, this opens the ‘Add Response’ form with three
+input box
+
+> Type in text
+
+» Click Save button.
+
+7.9.1 Progress Narrative box
+
+Information that has already been added to the call is displayed in this box. The
+content might have been transferred to Peak via the OTI this could be text input into
+Progress box of the New Call form within Peak when the call was first being
+generated. The text is not editable.
+
+© 2003 Fujitsu Services Page: 34 of 69
+Fujitsu Services PEAK User Guide Ref:
+Version:
+User Guide Date:
+
+CS/MAN/O11
+
+1.0
+08-Oct-2004
+
+__ Peak Call Management System ¢ 0 4)
+
+FUJ00079926
+FUJ00079926
+
+Rees __[PCOIOESD Fealizepe Conover Cal DSC Otte
+[Target Rekease —Frwgeted Ar —BI_3S7SR-Provnonal SI FRop Ret -De04190813 =
+tre ven ore ee I
+s I = alg en ate ven
+[Sanna roe pts 27a on erpowacen = Se Samy
+
+promise Hoes FATICLaa¢s/4008
+Peesauct sitet 100703
+
+19/04/08 15145 pu ao 2 cxcae oue bepa on screen) 25Pe and 2x 113, in smace
+
+feten F7 ist by Sam and alae 47 Bepo world
+
+fe Oren Uae F] “Gonecions J Sane]
+rose a [ave Craton 3 a] ow
+[cemsalOthee Male i Peace I pea
+[ss Chaban DSC ‘ion cos_[ Tees
+007-95 160550-00 = Ate Chamber
+
+Figl2 Progress Narrative page
+
+Note: Must select a Response Category
+
+7.9.2 Text box
+
+Text input into this box is only visible to Peak users.
+transferred across the OTI to interface with other CMSs.
+
+know about.
+CMSs then, use the Response Categories.
+
+The content does not get
+
+This is for the benefit of
+Development Teams to add update, which they do not wish for the Customer to see or
+If you require the text update to be readable from within and other
+
+© 2003 Fujitsu Services
+
+Page: 35 of 69
+
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+Peak Call it System
+
+an pe
+
+Fig 13 Progress Text Input window
+
+7.9.3 Inline Link
+
+Text highlighted in blue in the Progress Narrative window indicates a link to files such
+as: Evidence, OCPs, OCRs, CSPCs and SSCKEL that is attached to the call.
+
+> Click once to access details of that item.
+
+7.9.4 Response Category
+>» Click on the down arrow
+
+> Select the appropriate response code from the DDL
+> Click Save button to commit changes, which will go across the OTI link.
+
+If you do not wish to save the update, click on Back to Details button.
+Note:
+
+7.9.5 Close window button
+
+> Click on this button to abandon all changes on the form and return to the Call
+Details page.
+
+7.9.6 Effort
+
+Time record of the amount of time the current user has spent working on the call.
+
+7.9.7 Target Date / Time
+
+See section 4.8 and 4.9.
+
+© 2003 Fujitsu Services Page: 36 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+7.9.8 No Forecast Date
+
+Tick this box to overwrite the Target Date and Time functionalities.
+
+7.9.9 Close Window
+
+Click to close the Add Response form window. Automatically returns to the Call
+Details page of the call.
+
+7.9.10 Save
+
+For OTI users, click this button to send the new text across to PowerHelp.
+
+7.9.11 Site
+
+Provides a direct link to all current logged calls from that office.
+
+7.10 Clone Call button
+
+Customer raised calls are governed by SLA’s which must be met within a specified
+timeframe depending on the priority of the call. As a result, if a workaround is found
+to a fault while a proper fix is being developed in the interim, then the original can be
+duplicated to help keep track of the problem and a final resolution. Button is activated
+only from the Call Details page.
+
+» Click Clone
+
+> Confirm ‘Yes’
+
+7.11 Action button / Remove Action
+Places an Action on a team to ensure that they carry out certain task(s) on the call.
+> Select the name of the User you wish to place an action on,
+> Click on the Action button to place action a particular team or user
+
+The button is a toggle, click once to place an Action, click again to Remove Action.
+
+Note: The User placing the action will not see any change except in the Audit Trail
+of the call that an action has been placed.
+
+7.12 Close window button
+Click to close the Call Details page window.
+
+7.13 Main Menu button
+
+> Click on this button to return to the Peak home page.
+
+© 2003 Fujitsu Services Page: 37 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+7.14 Find Call button
+» Click to invoke the Quick Search form.
+
+715 Print
+Printing from this page will only print the current page, WYSIWYG.
+Click will caused the Printer menu to appear:
+
+Fig 14 Print Menu
+
+Back to Top of Section 7
+
+© 2003 Fujitsu Services Page: 38 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+8.0
+
+8.1
+
+8.2.1
+
+Closing and Reopening Calls
+
+There are two classifications of calls within Peak, Customer Calls and Peak (Internal)
+Calls. Internally raised calls do not have PowerHelp call reference assigned. Only
+Customer raised calls which are logged via HSH (Horizon Helpdesk) and assigned to
+EDSC will have PowerHelp call references. Such calls come across the OTI interface
+before being opened in Peak.
+
+To close and reopen calls in Peak, first locate the call either from the Call List page or
+by doing a search, Find Call.
+Access the Call Details page.
+
+To End of Section 8
+e Close Peak Call
+
+¢ Close OTI Calls
+
+To Close a Peak Call (Internally raised)
+Calls can be closed in two ways.
+Calls raised within Peak, can only be closed via the Call Details page.
+
+If you do not wish to add any further update to the call before you close it, then from
+the Call Details page:
+
+> Click Close Call button
+
+Note: that the Close Call button is only activated from the Call Details page where
+the call was raised in Peak only.
+
+Also, you must have a Root Cause selected and the Status must be ‘Final’
+before call will close.
+
+Vv
+
+Click in the Response Text
+
+v
+
+Type in text update
+
+Vv
+
+Click down arrow on Response Category
+
+Vv
+
+Select a Final category from the DDL, only one Final code exist for Internal calls,
+you are returned to the Call Details page
+
+> Click Save button at the bottom of the page, call is now closed.
+
+Reopening Peak Call (Internal)
+
+This button toggles between Close Call and Reopen Call functionalities. To re-open a
+closed call,
+
+© 2003 Fujitsu Services Page: 39 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+> Locate the call either from the Call List page or by doing a search
+
+> Ifcall is located in the Call List, double click on it or
+
+> Click on the call in the list and click Details button on Call Details page
+> Click Reopen Call button, call is immediately opened.
+
+Full functionality is returned, all text now appear in normal mode.
+
+8.2.2 Re-Opening Peak Closed Call (OTI)
+
+OTI calls may not be reopened in Peak. If the call has not yet been closed on
+PowerHelp, then the call may be resent across the OTI into Peak and the call will
+automatically reopen in Peak. If the call was closed on PowerHelp, a new call must be
+raised.
+
+Back to Top of Section 8
+
+© 2003 Fujitsu Services Page: 40 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+9.0 Saving a Call as a File
+Copy the contents of a call and save it to your local PC.
+To save the details of a call to file, you must be in the Expanded Call Details page.
+>» Click Expand, this displays the Expanded Call Details Page
+
+To End of Section 9
+
+e Expand Call Details
+
+91
+
+Peak Call Management System
+(eecsanatoem) [coal
+
+(eaioaeer Poser Gooden = Reltngrt ors,
+[iop Ret
+
+Fess 5 Sees
+[ea Saba foal
+
+Fig 15 Peak Call Details Expanded page
+
+> Click Save As from the Explorer File menu, information box appears
+
+> Accept or Decline, if you accepted, a standard Microsoft Save As window is
+displayed and defaulted to your local Drive
+
+> Type in the filename and Click OK to save.
+
+Note:
+
+© 2003 Fujitsu Services Page: 41 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+10.0 Queries and Searches
+
+10.1
+
+10.1.1
+
+To End of Section 10
+
+© Build and Stored Query
+
+© Query List
+e Finda Call
+
+Build and Store Query
+
+To view a list of existing calls, choose the option Call List from PEAK Main Menu.
+
+Create a query or several queries that can be saved in the Query List for future use.
+Option is accessible from Peak Main page, which gets displayed immediately after
+successful login.
+
+The Administrator will create a default query to enable new users to be able to load up
+the Call List on first logon. This query can be edited after first logon using the Query
+List option from Peak Main Menu page.
+
+To Create new Query
+
+> Click Query Builder option, the Customise Searches form is displayed
+OR
+> From the Call menu, click Build Query button.
+
+ment System.
+
+ison [ses [pee Seng I Sisesoieo [sere Dems Gum Tsar
+
+a
+
+a
+
+otacd
+
+© 2003 Fujitsu Services Page: 42 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+Fig 16 Peak Customise Searches form
+
+10.1.2 Customise Searches form
+
+The form has several parts and functionalities. Search can be based on just one
+criterion of any particular column or several.
+
+10.1.3 Search Title
+
+For queries that are to be stored and retrieved in future, it is recommended that the
+user type in some descriptive text to distinguish the query from others. The query
+search will be successful however, with no title, it will be difficult to identify the type
+of query it is.
+
+> Click in the box
+
+> Input text
+
+The text in this field will be displayed as the page title in the Call List if and when the
+query is successful.
+
+10.1.4 Field to be compared
+
+The DDL contains columns in the Peak Database that are most likely/most frequently
+searched on. List appears in alphabetical ascending order with the first in the list
+displayed when form loads up. If the column you wish to search is not listed, then
+email the Administrator to ask if it is possible to add it to the list,
+peaki i
+
+> Click down arrow, the DDL displays several columns
+
+> Select the column you wish to search on.
+
+10.1.5 Operator
+
+This is the operator such as Greater Than or Less Than, and a value. For example:
+
+Status ‘Not Equal To’ C (Closed)
+Such query will display all calls, which have a Status of Open, Pending OR Final.
+
+10.1.6 Value
+
+The query will return a value/values only if the value that appears in this field is true.
+Click on the down arrow, the LoV allowed are displayed
+
+» Select the appropriate value from the DDL or type text directly
+
+> Click Add (and) button, this causes the SQL statement to be displayed in the Peak
+Query Code box blow.
+
+© 2003 Fujitsu Services Page: 43 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+User Guide Date: 08-Oct-2004
+10.1.7 Add (AND) button
+
+10.1.8
+
+10.1.9
+
+10.1.10
+
+10.1.11
+
+To enter a search where more than one criterion applies, enter the first criterion in the
+Field to be compared, Operator, Value fields and click the Add (and) button. The
+other functionality of the Add (and) button produces results where all conditions are
+true. Equivalent to the Logical AND operator where all conditions have to be True
+for the query to be fulfilled.
+
+> Click button, the SQL statement appears in the Peak Query Code window below.
+
+The content of the Peak Query Code field can be edited. You can also type in your
+own SQL statements if you do not wish to use the DDLs provided.
+
+Add (OR) button
+
+To enter a search where more than one criterion applies, enter the first criterion in the
+Field to be compared, Operator, Value fields and click the Add (or) button. The other
+functionality of the Add (or) button is it produces result where a condition is true, this
+is equivalent to the Logical OR operator, where any one condition has to be True for
+the query to be fulfilled.
+
+> Click button, the SQL statement appears in the Peak Query Code window below.
+Example
+If you make the following entries:
+Call Reference GREATER THAN PQ00976
+OR Priority EQUAL TO ‘A’
+This will select all 'A' priority calls and all calls with a Call Reference more than
+PQ00976
+Parse Query button
+
+Parse the Query text into SQL again is useful for converting Pinicl queries. However
+its primary functionality is to check the validity of any raw Peak Queries that users
+might input into the Peak Query Code window. This is how brackets should be
+entered or existing queries edited.
+
+> Click Parse Query button
+Clear Query button
+
+If you wish to delete all entries from the Customise Searches form,
+
+> Click on Clear Query button, this removes all the contents from the form
+> Click Main Menu button at the bottom of page to exit from the form completely.
+
+Peak Query Code
+
+When you click on Add (and) and Add (or), the selected SQL statement is displayed in
+this box. The content of the Peak Query Code box can be edited. For instance, you
+
+© 2003 Fujitsu Services Page: 44 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+can add parentheses to ensure that the correct search is performed. You can also type
+in your own text if you do not wish to use the DDLs provided, assuming that you are
+conversant with the exact format of the search strings.
+
+Note: Only type in your own queries if you have extensive knowledge of the
+underlying views and tables in the Peak Database. If you type in a column
+name that is not in the views used in Peak, your query will not be successful.
+
+Email the Administrator to verify that you can search on the particular column,
+
+10.1.12 SQL Query Code
+The system uses this box to display the underlying views and tables it will be using
+based on your criteria in sections 4.1.4. Field is editable depending upon the role of
+the user.
+
+10.1.13 Set as Default Query Check Box
+
+Checking this box will load the query automatically upon logon. If you wish to define
+a different format then leave this box unchecked.
+
+10.1.14 Shared Query
+
+All shared Queries can be listed and executed from the Query List page.
+
+10.1.15 Sort Fields
+
+Select from this field the column on which you wish for your query to ordered. If you
+make a selection from this field, you must also choose from the Order Direction DDL.
+The result will be sorted on the basis of the fields you choose in the Call List page.
+
+Click down arrow to display DDL
+
+>
+> Select column/s from list.
+
+10.1.16 Order Ordering
+Default value is Descending Order unless you explicitly choose the alternative from the
+DDL. DDL contains only two options, i.e. Ascending or Descending order.
+
+Click down arrow to display DDL
+
+Select the alternative sort order.
+Click Add Ordering to include the Sort order in your SQL query
+
+VV WV
+
+10.1.17 Add Direction
+
+> Click this button to confirm the selections made in Section 10.1.4 only one column
+can be sorted on at a time.
+
+© 2003 Fujitsu Services Page: 45 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+10.1.18 Remove Ordering
+
+A list of columns displayed in the ‘Ordered Fields’ can be removed by
+
+> Click on the column name in the Ordered Fields
+> Click Remove Ordering button
+
+10.1.19 Available Display Fields
+
+This selects the fields to be displayed in the call list. The default is to show all fields
+but it is best to customise this to just those fields you are interested in appearing in the
+Call List page.
+
+The DDL does not contain the column, Call Reference because it is a mandatory
+column it defaults in Display Fields display list box.
+
+> Click down arrow to display DDL
+> Select from list
+
+> Click >Add Field> button to select additional fields.
+
+Multiple rows can be selected from the DDL. The selected rows are displayed in the
+Displayed Fields box.
+
+10.1.20 All Fields
+
+This box is linked to Available Display Fields functionality. Default is checked, click
+in box to uncheck box. Unchecking this box causes the >Add Field> and <Remove
+Field< buttons to be activated.
+
+10.1.21 >Add Field>
+
+The All Fields box must be unchecked for this button to become activated.
+
+Vv
+
+Click down arrow on Available Display Fields
+Select from DDL
+
+Vv
+
+Vv
+
+Click this button to include column in Call List display page
+
+10.1.22 <Remove Field<
+All Fields box must be unchecked for this button to become activated.
+10.1.23 Removing a Field
+
+If you wish to remove a field, highlight it in the Displayed Fields box and press the
+Remove Fields button.
+
+© 2003 Fujitsu Services Page: 46 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+10.1.24 Display Fields
+
+Functionality is linked with Available Fields and >Add Field>. Each entry you select
+from ‘Available Display Fields’ will appear in the Display Fields DDL. Default is
+“Call Reference’, appears in the field which a mandatory value which cannot be
+removed using the <Remove Field< button. A warning message appears if an attempt
+to remove it.
+
+10.1.25 Retrieve Query Button
+
+> Click this button to display the Query List page
+Functions as a toggle between Customise Searches form and Query List page.
+
+10.1.26 Execute Query
+
+> Click this button for the selected criteria to be searched against the Peak Database.
+
+If query is successfully, the system will automatically open the Call List page
+displaying all calls that matched your criteria.
+
+10.1.27 Save Query
+
+> Click to store the SQL statement displayed in the Peak Query Code window for
+future use. The query will then appear in the Query List the next time you run this
+option from Peak Main page.
+
+10.1.28 Main Menu
+
+Vv
+
+Click this button exit the Customise Searches form completely.
+
+Related Topics:
+
+Find Call, Full Search
+
+© 2003 Fujitsu Services Page: 47 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+11.0 Query List
+
+The initial call list is set as your Default query, but can be amended by clicking the
+Query List from the Peak Main page.
+
+New users will access the Call List on first logon using a default query set up by the
+Administrator. After the query has successfully loaded, the user can choose to amend
+the query or delete it altogether and create a new one more which might be preferable.
+
+Once a query has been generated and saved using the Query Builder options, the query
+is added to the existing list of queries. Query List option is accessible from Peak Main
+
+menu page, to display the list,
+> Click Query List, the Custom Searches page is displayed
+
+Peak Call Management System :
+Query Tite Peak Query Text SQL Query Text [Default ~ [Shared
+sagne - Equal To Caberne Obey OR Araoeee- BELECT “ FROM doo V_CALL, DETAILS WHERE
+
+[Equal To - ‘Cathenne Obeng’) AND (Assignee - Equal [Assignee] = ‘Catherine Obeng’ OR [Actionee] =
+. fe -‘Auoe Chanbes OR Actonte aga To ‘Arne [Cate Chena) AND (Acneee]= Ae Chabert
+EB I ial I (Ba ference Face) AND (Aone = Eg T Too epi [Acne] Ame Chanerr) AND Cave] =
+Ashe - Esl To - Soh Saepins) AND Sta [eb Sepa’ OF [Aches] = Toba Sens) AND
+i EgulTe Suma
+[Bal fscentne Pores Tome Fel To SSCARAND Sime (LECT “EON ds V-CALL DETAILS WHEE
+Ld] Bgl ToC Assgeed Tem] = "530-4 AND [Sat] tC
+ELECT = FROM aso V_ CALL DETAILS WHERE
+rt Tats Open [Ausped Tews IN (EDSC'SSC-48) OR [Actoned
+ma) Bt ee anes ee nee Resa} Bt CEDSC-SSC-40)) AND [Sans] =e
+[ORDER BY [ory] ASC, (Ca Reteen] ASC
+
+a 4]
+TT itor
+
+Fig 17 Peak Query List page
+
+Three options existing on this page, Edit, Run or Delete
+
+© 2003 Fujitsu Services Page: 48 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+Add Queries
+
+> Click Query Builder to access the Customise Searches form page to create a new
+query.
+
+Editing Existing Query
+
+If you wish to amend any of the existing queries in this list,
+
+> Click the Edit button next to the Query you wish to amend the Custom Searches
+form is displayed
+
+Details of the current SQL statements are displayed.
+
+Run
+
+Click this button next to the query you wish to load the Call List page is displayed with
+the result of the query.
+
+Delete
+
+> Click on this button next to the Query you wish to remove from the list.
+
+Once a query is deleted, it is completely removed from the Peak Database.
+
+Note: At lease one query must remain in the list for the system to load automatically
+upon logon.
+
+Default
+
+This column displays a query in the list stored as your Default query, which appears in
+the Call List upon logon. The default query in the list will have a setting of True and
+False for all other Queries.
+
+You can change the default query in the list. This option can be set via Customise
+Searches form.
+
+v
+
+Click on Query Builder button, Customise Searches form is displayed
+Check the Set as Default box
+> Click Save Query.
+
+See section 2.1 on how to build a query.
+The next time you login into Peak, it is this query that will load into the Call List page.
+
+Vv
+
+© 2003 Fujitsu Services Page: 49 of 69
+Fujitsu Services PEAK User Guide
+
+User Guide
+
+Ref:
+
+Version:
+
+Date:
+
+CS/MAN/011
+1.0
+08-Oct-2004
+
+FUJ00079926
+FUJ00079926
+
+11.6 Show Shared Searches
+Tick this option to show all the shared queries.
+
+These queries may only be run.
+
+Note:
+
+11.6 Query Build button
+
+Clicking this button will load up a blank Customise Searches form page ready to
+
+receive new input.
+
+(To build a new Query, exit page and choose Query Builder from Peak Main page.)
+
+11.7 Main Menu button
+
+> Click to exit from the Query List page and return to Peak Main page.
+
+© 2003 Fujitsu Services
+
+Page: 50 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+12.0 Search for a Single Call
+
+12.1
+
+Searching for individual calls in Peak. Search is based on Peak unique number.
+Queries can be saved in the Query List for future use. This option is accessible from
+Peak Main page, which gets displayed immediately after successful login.
+
+The Administrator will create a default query to enable new users to be able to load up
+
+the Call List on first logon. This query can be edited after first logon using the Query
+List option from Peak Main Menu page.
+
+Peak Client offers two methods of searching for calls: Find Call which provides a
+facility for searching based on only one field or Query Search which allows you to
+construct complex search criteria and define a specific layout for the resulting Call List
+
+page.
+Find Call Option
+
+Simple searches based on Peak call reference number, one of the other reference
+numbers (¢.g. PowerHelp or Customer reference).
+
+Select Find Call option from Peak Main menu page, the Quick Search page is
+displayed.
+
+Peak Call Management System
+
+4
+Tarra I
+
+Fig 18 Peak Quick Search form
+
+© 2003 Fujitsu Services Page: 51 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+12.1.1
+
+12.1.2
+
+12.1.3
+
+12.1.4
+
+12.1.5
+
+Call Reference (other Reference) radio button
+
+Select one of these and select the match criteria cither EQUAL TO or LIKE. Enter
+the value in the Value field for 'Like’ searches where appropriate. No wild cards
+accepted in this field. Click on the Radio button Search All Calls or Search Open
+Calls Only.
+
+The full Peak number with prefix of ‘PC’ is not mandatory for searching Call
+References. Example, keying in just the actual number [seven digits] is sufficient,
+Peak will insert the ‘PC’ before starting the searching.
+
+Note:
+
+Search All Calls radio button
+
+If the status of the call is unknown to the user, then check this Radio button. The
+search will encompass all calls on currently on the Live Database Server, Peak1.
+Search Open Calls radio button
+
+If you require a search to include only open, select this option. This and Search
+Open Calls Only Radio buttons are mutually exclusive. Unchecking one will
+automatically cause the other to be selected.
+
+If more than on result is returned, they will be displayed in the call list grid.
+
+Full Search Query Builder
+
+A full search allows complex searches based on several different fields. The search
+statement is built up as you specify the elements and you are then able to alter it or
+add parentheses. Select Query Builder from Peak Main page. The Customise
+Searches form page is displayed. See section 4.1.1 above.
+
+Search button
+
+» Click on this button to start search on Peak Database.
+
+Successful query will display the Call Details page of the call specified in the search
+query.
+
+Back to Top of Section
+
+© 2003 Fujitsu Services Page: 52 of 69
+Fujitsu Services PEAK User Guide
+
+User Guide
+
+FUJ00079926
+
+FUJ00079926
+Ref: CS/MAN/O11
+Version: 1.0
+Date: 08-Oct-2004
+
+13.0 Evidence Handling, Cloning and Printing
+
+e Manage Evidence
+e Clone Call
+
+e Print
+
+13.1. Managing Evidence
+
+Aside from the text input which can be directly input onto a Peak call directly using the
+Add Response Text button, extra information such as log file, messagestore extracts
+
+ete can added.
+
+13.1.1 Already Attached Evidence
+
+On opening a call in the Call Details page, if the call already has other evidence
+
+attached, the Evidence button appears in a different background colour (see Fig 11
+below).
+
+Peak Call Management System (sew
+
+I [lia Reeence —jpcoroesns ol Logaee I Consme: Cal_- EDSC Cite
+Parget Release [Reported In -- BI 3S60R-Provonal FPop Ret fe-canei20247 [References
+Type __fi-tveweero a ae el
+Contac fee Fiat [edie Poet Probie
+[sunary 5 EAPADS coiies si SS cel See
+
+J te
+
+Fig 19 Call with Evidence attached
+
+© 2003 Fujitsu Services
+
+Page: 53 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+13.1.2 Retrieving Attached Evidence
+
+Copies of attached files can be downloaded. From the Call Details page
+
+> Click Evidence button Call Evidence page is displayed
+
+Note: There are two evidence pages, HTML and Java, the main difference is only in
+the way the Update functionality works, see Section 13.1.5.
+
+s Peak Call Management System
+histo Caren Evidence ls On] pis cnet ine roe [Domne wil iro yo be a)
+
+ie pba Fine fous [eae os] SI
+
+I love corpey (sm
+
+ep OCP OCP eee js ees
+tas ffl be abloVamended
+
+cre Fe Nae Leone
+
+re a [ezeenone i a
+
+=a
+
+owes OF z] ees T
+
+lig oe
+
+Fig 20 Call Evidence page (for download)
+
+> Locate the particular evidence file from the list
+
+> Click Download button next to the file, this opens up. This functionality
+depends on the user’s level of privilege.
+
+Note: Peak will remember the last directory used and so will point to that.
+
+13.1.3 Add New Evidence
+
+To add extra information from a different source, you must be in the Call Details
+page:
+
+> Click Evidence button, the Call Evidence form appears
+
+© 2003 Fujitsu Services Page: 54 of 69
+FUJ00079926
+
+FUJ00079926
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+Peak Call Management System
+
+Call: PQ0099537 — Call Evidence
+
+‘List of Current Evidence Files Evidence contents will be displayed in the browser, right-click and choose 'Save Target ac! to Download)
+
+(FileName [Description Sze [yee [Date ___[CompressIOs. pos
+Details of file to he added/amended
+[Source File Name Browse.._I
+IFile Type Configuration file =] [Compression Type [Rone =a
+[Description
+[Source OS Secure Solos (UN I Ea I
+Gack to Details
+Fig 21 Call Evidence form page (blank form)
+> Click on Browse button, the standard Microsoft Windows Choose File
+
+va
+For Clarity,
+
+>
+
+>
+
+13.1.4
+
+Note:
+
+>
+>
+
+windows is displayed
+Select the appropriate file from the right source
+
+Click Open, the full path of the file is now placed in the Source File Name field
+box on the Call Evidence page
+
+Click on File Type down arrow to select from the DDL appropriate File Type
+
+Type in some summary text describing the type of file or evidence gathered in
+the Description box
+
+Choose from the DDL, the appropriate Source OS (Operating System)
+
+If file is other than plain ASCI text, then make sure to select the appropriate
+Compression Type
+
+Click down arrow next to Compression Type to select from DDL, field has
+default of ‘NONE’
+
+Click on Add Evidence to include the chosen file to the call, the new evidence
+is added to the top of the page.
+
+Removing Attached Evidence
+
+From the Call Evidences page
+
+Click the Delete button next to the file you wish to remove from the call.
+Click on Back to Details button to exit Call Evidence form page.
+
+© 2003 Fujitsu Services
+
+Page: 55 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+13.1.5
+
+13.2
+
+Update button
+
+Clicking the Update button next to the particular evidence file will cause the
+evidence details to be copied to the second part of the form ‘Derails of File to be
+Added / Amended’. To enable user to make any necessary changes required.
+
+Users running the Java versions of the Peak client will noted that Peak will try to
+load the Updated version of the Evidence file from their default directly. In the
+HTML version users must Browse to the Updated file.
+
+Note: Update and Delete buttons are activated or deactivated depending where
+the call is i.e. call is currently with your Default team, unless you have
+Administrator privileges.
+
+Clone a Call
+
+For the purposes of meeting SLA, if a call is to be fixed at future Release date that is
+well beyond the Target Date of the call, then the call can be duplicated for
+progression to allow the original call to be closed. Call cloning takes place only at the
+Peak end of the OTI link.
+
+To clone a call user must be in the Call Details page
+
+> Click Clone, a copy of the master call is taken. The new cloned copy is displayed
+in the Call Details page.
+
+catcane ‘Prove a 7 Tessas II _AaaReaponee
+oy ese a [Coreme Over laf “Foes I radon]
+Eeieciedact PEAR = Peak Pot nd Pot J SI Eeant I
+lence [eaten Oban EDS one] Goes cat I
+[cerBrogess 04-00-73 1610 16057 Cater Oba
+
+(commited Laman) (fete
+
+senmenoneen — I
+Dn paren 4]
+
+© 2003 Fujitsu Services Page: 56 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+13.2.1
+
+13.2.2
+
+13.2.3
+
+13.2.4
+
+13.2.5
+
+13.2.6
+
+13.2.7
+
+13.2.8
+
+Fig 22 Newly created Cloned call page
+
+When the new clone call is generated, some of default values are changed to reflect the
+fact that this is a copy of a call rather than an original. Some of the values that are
+changed including the following;
+
+Call Reference
+
+A new call reference now appears in the Call Reference field.
+
+Call Type
+The newly created cloned call will have call type Call Type ‘C - - Cloned call’.
+
+Contact
+
+The field is defaulted to the current user who is cloning the call.
+
+Call Logger
+The user’s name and default Team name is displayed in this field.
+
+References
+
+Cloned calls will automatically displayed the reference number of the Master call
+under the references menu.
+
+> Click References button, the References page is displayed
+
+The listing includes the original call that the cloned call was copied from.
+
+Note: The master call reference now has the focus in the Top Ref button.
+
+Status
+
+The current Response Category of the original call is copied, however the key
+word ‘Open’ now appears in front of the Response Category.
+
+Progress Narrative
+
+A detail of creation date, time, user and the Summary line is displayed in the top
+part of the Progress Narrative box.
+
+Routing
+
+The cloned call is automatically routed to the call ‘Cloner’s’ default team and
+username.
+
+© 2003 Fujitsu Services Page: 57 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+13.2.9 Assignee
+
+The value in the field is defaulted to the cloned call’s originator username and
+default team concatenated together.
+
+13.3 Printing
+
+Several options in Peak on what type of print output you can have. Print per page of
+what is currently displayed or printing detailed information on a particular call.
+
+13.3.1 Printing from Call Display page
+
+v
+
+Click Print button
+
+Standard Microsoft Printer options window is displayed
+
+vw
+
+Select the appropriate printer
+Click Print
+
+Vv
+
+Note:
+
+13.3.2 Print from the Expanded Call Details page
+
+From the Call Details page
+>» Click Expand button, the Expanded Call Details page is displayed
+
+Vv
+
+Either click on the Print button the page (print job will go straight to your defined
+default local printer) or
+
+Vv
+
+Select Print from the Explorer File menu, the standard Microsoft Printer options
+window is displayed
+
+> Select the appropriate printer
+Click Print
+
+Vv
+
+13.3.3 Multiple Print
+
+More than one call details can be printed using this option. Select the option from the
+Call Details page
+
+> Click Multiple Print button the Multi-Print form page is displayed;
+> Enter a comma delimited list of call reference number to be printed
+
+> Click on Print calls button to start printing.
+
+© 2003 Fujitsu Services Page: 58 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+Fig 23 Multi-Print form page
+
+13.3.4 Print from Call List page
+To print from the Call List page,
+> Click Print button, this will print the grid in a table.
+
+To print several individual calls, select the list of calls and choose multi-print.
+
+© 2003 Fujitsu Services Page: 59 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+14.0 External Interfaces
+
+e SSC KEL Database
+
+e¢ PowerHelp Database
+
+14.1. KEL
+
+KELs resources can be accessed directly from the Peak Main page.
+> Click KEL, the SSC KEL Search form is displayed (this is only true if you are
+currently connected to the UK domain or SSC domain else see 14.1.1);
+
+SSC KEL database
+Search Form
+
+Listigh Visibility KELs
+
+If this isthe first ime you have used this system, please take time to read the in
+
+fore you stat to use it
+
+Query: I
+© Query is literal text CTs Query Language
+© Word beginning with
+
+T Return the titles only
+
+Release: [ALL Releases =] Product [AlL products =]
+Execute Query Clear For
+
+‘The following properties can be added to the Query above:
+
+Fig 24 SSC KEL Query Search Form
+
+> Enter into are available for Query
+> Click Execute Query to begin search on the SSC Database
+
+© 2003 Fujitsu Services Page: 60 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+14.1.1 None UK and SSC domain users
+
+On clicking the KEL button, users who are not currently connected to the UK or SSC
+domains will be presented with the NT domain login window below;
+
+xl
+
+ee eee
+Sie Wens660
+
+Ueernane [Pb
+
+ee
+Domn [KO
+Banat paeawbidin vou pair at
+
+Ee Ss
+
+Fig 25 Logon screen for accessing KEL database
+
+Note: If y ady have a UK or,
+3 r lionel. higman@)
+
+14.2 PowerHelp
+
+Select option from Peak Main menu page, a standard Windows Network Login
+appears.
+
+FP Reman
+
+Fig 26 Logon on screen for accessing PowerHelp database
+
+© 2003 Fujitsu Services Page: 61 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/O11
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+> Input your Co-operate Domain account details (what you use to login into
+Outlook mail)
+
+> Click OK, the PowerHelp Main Menu page is displayed
+
+Main Menu (Maer Futsu Servions
+
+Displays ost of calls matching specitied search parameters I
+INE. Opens new browser window for eearch parameters,
+
+[seerch resuts are csplayed inthis window
+
+Displays ful deta ofa specited cal, inctucng callog
+
+Dipiaye courts of cle logged, heed and oustanding fra pects period I
+
+Displays ist of open cals for te
+
+tows analysis of curertty open cals
+Breskdown of tine of day cals are logged over a period
+
+New features inthis and eater versions
+
+Fig 27 PowerHelp Main Menu page
+
+14.3. Preferences and Change of Password
+
+e User Preferences
+© Customising Call List Grid
+
+e Password Change
+
+© 2003 Fujitsu Services Page: 62 of 69
+Fujitsu Services
+
+PEAK User Guide
+
+User Guide
+
+FUJ00079926
+FUJ00079926
+
+Ref: CS/MAN/O11
+Version: 1.0
+Date: 08-Oct-2004
+
+15.0 User Preferences
+
+15.1
+
+eak Call Management System
+
+‘Curent Default Logging TeamI
+
+FEDSC supporteem =]
+
+‘Current Background
+
+oun’ 3]
+
+Sie Call List for FullscreenI
+
+a
+
+‘Autornatically Fullscreen Call Details:
+
+ca
+
+‘Automatically Refresh Call ListI
+
+F [omnes 1
+
+‘Display Horicontal ines in the Call ListI
+
+=
+
+Display Queries in HTML Grid I
+
+‘Open Cal ist in a new pageI
+
+‘Open Add Response/Progress in anew page
+
+Trital Avait View ONI
+
+‘Wee Evidence Applet (Requires Tava)
+
+afalafaya
+
+Evidence Default Directory (use doubleI
+bbackslashes)
+
+[ENrinicLs
+
+Call Progress Narrative Colour OneI
+
+a
+
+Cal Progress Narrative Colour Two
+
+I
+
+Data Field ColourI
+
+a
+
+‘Open Defait Call List when LogonI
+
+‘Mam menu Call List button always opens
+Defautt is
+
+aa
+
+“Hide logon page installation message (usesI
+cookies)
+
+a
+
+- I Use my background picture on the logon pageI =
+
+(uses coolaes)
+
+Fix lava) Call Lst sie to
+
+Default Logging Call Type:
+
+‘Call Lit Font]
+
+Tone Saeed
+Ee os
+
+Fig 28 User Preferences page
+
+User Preferences page
+
+These options relate specifically to individual user in terms of how you wish to view
+your call list grid, which team is used as the default when logging new calls and
+whether the call list grid is displayed in HTML or Java.
+
+From Peak Main page,
+
+>
+
+>
+
+>
+
+Make necessary changes or
+
+Select Preferences, the User Preferences page is displayed with default
+
+Click in the appropriate DDL and make a choice
+
+© 2003 Fujitsu Services
+
+Page: 63 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+15.1.1
+
+15.1.3
+
+15.1.4
+
+15.1.5
+
+Or from the Main Menu page
+
+> Point mouse on Options, choose Preferences
+
+Default Logging Team
+
+The Administrator sets up the value, which appears in this box. Some users may
+belong to more than one team and therefore this option is to allow them to choose
+another team in the DDL as the default.
+
+> Click Preferences button, the User Preferences page is displayed
+
+> Click in the Default Logging Team field to change the currently displayed value
+(you might not have any other options available if you belong to only one team)
+
+From New Call page you can also change the default team
+
+Current Background DDL
+The background picture in that appears as the wallpaper when you log into Peak client.
+
+> Click the down arrow to select from the DDL of Teams, which you might belong.
+
+Size Call List to Fullscreen Tick box
+There are two modes to display the Call List page, Full page which displays wider and
+bigger view of the page and Standard (default), half of the web browser and.
+> Click to check the box next to the field to activate the Full page
+> Click in the box again to uncheck to reset the page size to the default, Standard.
+
+To size Internet Explorer (IE) to full-page mode, select View menu -> full screen or
+FIL.
+
+Automatically Fullscreen Call Details Tick box
+
+> Check box to display the Call Details page to full screen size when opening the
+details of a call.
+
+Automatically Refresh Call List each 10 minutes Tick and Combo boxes
+
+Every time Peak is updated (currently set to 10 intervals) the changes will be reflected
+automatically in your Call List page with.
+
+Use the dropdown to Select Refresh time period.
+
+Note: if this option is not ticked, you can use the Refresh button in Call List page to
+refresh as and when you choose to.
+
+© 2003 Fujitsu Services Page: 64 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+15.1.6
+
+15.1.7
+
+15.1.8
+
+Display Horizontal lines in the Call List Tick box
+
+This option allows users to have horizontal lines are drawn between each call in the
+Call List grid page.
+
+Display Queries in HTML grid Tick box
+
+Two choices to view the Call List page either use the Java grid or HTML pages.
+There is greater flexibility to using the Java pages since you can resize the columns,
+drag and drop columns and narrow columns. Also you can load as many as 15000
+rows in the Java grid without losing speed. Limitation with the HTML page is that any
+more than 100 rows will cause the query to slow down.
+
+Tick box to load Call List page in HTML.
+Main differences between the Java and the HTML Interface are as follows;
+Call List grid
+Once the box is ticked in the Preference page,
+> Click Main Menu to return to Home page
+
+> Click Call List, the Default Query will run to display the calls in the HTML
+interface, see figure below:
+
+Open a Call
+
+A single click on a call in the list will open the Call Details page.
+Select Multiple Calls
+
+In the HTML Call List grid;
+
+> Click in the empty boxes in the first column against the calls you wish to select
+and
+
+> Click on Subset button on top of the page
+
+Open Call List in a new page Tick box
+
+When the user opens a Call List page from the drop-down menu or Main Menu
+page it will be opened in a separate window preserving the page the user is on.
+
+Open Add Response/Progress in a new page
+
+Will leave the Call Details page open and display the Add Progress page in a new
+window.
+
+© 2003 Fujitsu Services Page: 65 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+User Guide Date: 08-Oct-2004
+
+15.1.10 Initial Audit View ON Tick box
+The ‘Show/Hide Audit’ test on the Call Details page initial settings.
+
+15.1.11 I Use Evidence Applet (requires Java) Tick box
+Uses the evidence applet rather than the HTML evidence page, see Section 13.0.
+
+15.1.12 Evidence Default Directory (use double backslahes) Text box
+The directory used by the evidence applet by default.
+
+15.1.13 Call Progress Narrative Colour One Combo box
+
+Background colour used to highlight a single progress updates to a call.
+
+15.1.14 Call Progress Narrative Colour Two Combo box
+
+Background colour to highlight alternating progress updates to a call
+
+15.1.15 I Data Field Colour Combo box
+
+The colour used to highlight data items on pages.
+
+15.1.16 Open Default Call List when Logon Tick box
+Displays the Default Query in a Call List page when the user first log on.
+
+15.1.17 I Main menu Call List button always opens Default list Tick box
+
+The Main Menu Call List button will always open the default query rather than the
+one last loaded.
+
+15.1.18 I Hide logon page installation message (uses cookies) Tick box
+
+Hide the link to the logon instructions on the logon page.
+
+15.1.19 I Use my background picture on the logon page (uses cookies) Tick box
+
+Show the users selected background picture on the logon page.
+
+15.1.20 Fix (Java) Call List size to Tick box and Text boxes
+
+Customise the Java Call List to a specific size rather than the default full screen.
+
+15.1.21 Default Logging Call Type
+
+A default logging type when raising new calls.
+
+15.1.22 Call List Font
+The font used by the Java Call List.
+
+15.1.8 Main Menu
+
+>» Click button to return to Peak Main page.
+
+© 2003 Fujitsu Services Page: 66 of 69
+FUJ00079926
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+15.2
+
+15.2.1
+
+15.2.4
+
+15.2.5
+
+Note: Changes made using Preferences will not affect existing windows, to effect
+the changes; you must go back and navigate from Peak Main menu.
+
+Customising Call List Grid
+
+User has the option to configure their Peak Client interface to their choice. From Peak
+Main page,
+
+> Click Preferences, the User Pr
+
+s page is displayed
+
+Manipulating the Column headings information in the Call List page, see fig 4.
+
+Changing Column Width
+
+If the information in a column is not fully visible due the column being too narrow,
+you can increase the size of the column by
+
+>» Pointing at the dividing lines on the (right hand side) of the column, mouse
+changes to horizontal arrow <>
+
+> Press down arrow or click on the left mouse and drag to the new preferred
+point and release the mouse.
+
+Moving the Columns
+
+You can change the position of a column to another position by
+Pointing at a column heading
+
+Dragging the column across to the desired position.
+
+Resizing the Window
+
+You can resize the window using standard Windows techniques with the mouse.
+Save Layout button
+
+You can make permanent changes to the layout by performing any of the above
+actions and then clicking on the Save Layout button.
+
+Note: Layout setting relates to the current Query only! No functionality exists for
+reinstating previous page layout from the Call List grid. User must make the
+required changes and click Save Layout button again.
+
+When building a query if you edit an existing call, the layout will be copied to the
+new query.
+
+© 2003 Fujitsu Services Page: 67 of 69
+FUJ00079926
+
+FUJ00079926
+
+Fujitsu Services PEAK User Guide Ref: CS/MAN/011
+Version: 1.0
+
+User Guide Date: 08-Oct-2004
+
+15.2.6 Display button
+
+Select a particular call entry and double click or click on the Display button to
+display the Call Details page.
+
+15.3. Changing Password
+
+Users have the option to change their own password where they feel their existing one
+has been compromised. Select New Password from Peak Main menu page, the
+Change User Password page is displayed.
+
+15.3.1 Change User Password form page
+
+The Change User Password form has three input fields.
+
+User: Catherine Obeng ~ Change User Password
+
+Enter New Password [ I
+Re-Enter New Password:
+: ss
+
+Main Mena
+
+Fig 29 Change User Password form page
+
+15.3.2 Old password
+
+Before you can choose a new password, you must know what your current password
+is. Input the current password that you now wish to change in this field.
+
+© 2003 Fujitsu Services Page: 68 of 69
+Fujitsu Services PEAK User Guide
+
+User Guide
+
+Ref:
+
+Version:
+
+Date:
+
+FUJ00079926
+FUJ00079926
+
+CS/MAN/011
+1.0
+08-Oct-2004
+
+15.3.3 New Password
+
+Input a new value to change the password.
+
+15.3.4 Re-enter New Password
+
+The new password must be entered twice to allow verification. Type the same input in
+
+section 5.3.2.
+
+15.3.5 Change button
+
+Press on this button to validate and confirm the change.
+
+Back to Top of Section
+
+© 2003 Fujitsu Services
+
+Page: 69 of 69

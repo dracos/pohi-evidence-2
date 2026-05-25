@@ -1,0 +1,1726 @@
+FUJ00058180
+FUJ00058180
+
+ICL Pathway
+Bringing
+
+Technology = Monthly
+to Post Office Progress
+Counters & Report ,
+Benefit Payments CL
+
+Mm
+
+March 1999
+
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Programme Monthly Report Ref: PA/REP/036
+Version: 1.0
+
+Dare: 15/04/99
+
+Document Title: ICL Pathway Monthly Report - March 1999
+
+Associated Documents:
+
+Reference Vers Date Title Source
+[1] PM/PRO/002 1.0 26/09/96 Pathway Programme - Project
+Planning, Reporting and Control
+
+Approval Authorities:
+
+Name Position Signature . Date
+
+J. H. Bennett Managing Director
+
+COMMERCIAL IN CONFIDENCE Page I of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Monthly Progress Report
+
+Contents:
+Managing Director’s Summary
+
+ey
+
+Systems Report
+
+Commercial & Financial Report
+
+Customer Requirements Report
+Customer Service Report
+
+Quality & Risk Report
+
+Business Development Report
+
+Implementation Report
+
+Organisation & Personnel Report
+
+Post Office Client Report
+
+;
+
+mu
+
+FUJ00058180
+FUJ00058180
+
+Managing
+Director’s
+Summary
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Managing Director's Monthly Report Ret: PA/REP/O36
+Version: 1.0
+Date: 15/04/99
+
+Managing Director’s Summary
+
+PROGRAMME PROGRESS
+
+¢ — The live Release 1c’service continued to pérform well in March.
+
+e —- The targeted testing to check the successful resolution of PinICLs
+outstanding at the end of End-to-End and Model Office started and
+completed on schedule. The results. of this testing was viewed both by
+ourselves and POCL to have been successful with a high degree of success
+across the number of PinICL’s under regression test..A closure report on
+this has been produced by POCL, and was one of the reports tabled for the
+Release Authorisation Board (RAB) for Live Trial which met on the 7"
+April.
+
+e Next version of the Known Problem Register (KPR) has been issued which
+is judged both by Pathway and POCL to be an acceptable list of issues both
+in business: impact.and quantity. However, we know that BA take.a different
+view and are using this, and other statistics to support their argument that
+further testing is still necessary and that another cycle in the Model C.‘ice
+Test should be conducted. We will oppose this very strongly and are
+pressing POCL to take an equally robust line.
+
+° The POCL Infrastructure Acceptance Specification was approved, making
+22 out of the 24 specifications now approved. Pathway has proposed, in
+writing, the detailed way forward to getting the BES specification approved.
+The last specification, Service Boundaries is progressing. The BPS and
+EPOSS Trials Closure reports are in preparation following completion. of
+the associated test reports on 6” April and Acceptance Review document
+packs are being published. The first difficulr Acceptance Review, on Audit,
+was successfully concluded,
+
+° The RAB on the 7" April was important to maintain project progress and
+here BA have been increasingly difficult and disagreed with the views of
+both POCL and Pathway that the programme should proceed into Live
+Trial. We haye contingency plans to force the programme forward along
+our timescale, but without the full support of both BA and POCL this will
+become increasingly difficult.
+
+e@ Our plans towards achieving beginning of-live trial remain on schedule, and
+we are prepared to begin the migration of the Release. 1¢ counter positions
+to New Release 2 starting 11" April with the critical Data Centre conversion
+to New Release 2 scheduled for 8"/9"" May.
+
+° No progress had been achieved on the Multi-benefit testing arrangements
+with BA until the middle of the month. They declared their willingness to
+restart on the 12" April but then more recently changed their demands on
+what such a restart might require. We remain ata stage of readiness to
+support BA on this date.
+
+COMMERCIAL IN CONFIDENCE Page 2 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Managing Director's Monthly Report Ref: PAREPO36
+Version: 1.
+
+Date: 15/04/99
+
+. Preparation of Post Office outlets continues to make progress with over
+11,000 Sub-Postimasters now in the process and site surveys running at-over
+8,000. We now have over 2,500 Post Offices in a state of ready for
+installation.
+
+NEGOTIATIONS WITH THE AUTHORITIES
+
+e Discussions with HM Treasury and the two sponsor authorities have been
+continuous over the last month and progress achieved has been reported
+separately.
+
+. HM Treasury understands the importance of reaching an agreed position in
+time for the year-end reporting of both ICL and Fujitsu. A lot of work
+remains to be done to reach a consensus on the right way forward and to
+put this into a legally binding agreement. This will be a challenging target in
+the short amount of time which is available.
+
+COMMERCIAL IN CONFIDENCE Page 3 of 30
+FUJ00058180
+FUJ00058180
+
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Systems Monthly Report Ref: PAVREP/036
+Version: 1.0
+Dare: 15/04/99
+
+Systems Report
+
+MONTHLY SUMMARY
+
+¢ The final E2E and MOT test phases successfully completed on 15°" March
+on schedule. As anticipated, it was necessary’ to demonstrate clearance of a
+number of incidents via a target test exercise scheduled between the 24"
+and 31" March. This also ran successfully and achieved a pass rate in
+excess of 98%. The Known Problem Register (KPR) will be closed with
+approximately 140 entries. Consequently, the Horizon Programme have
+confirmed that they are willing to enter ‘live trial’ commencing with the
+migration of the counters:in the existing 204 outlets. They will be stating
+this view at the Release Aiithorisation Board due to take place 7 April
+1999,
+
+. A rehearsal of the release 1¢ to NR2 counter migration activities
+uncovered two potentially serious issues, one concerning the outlet specific
+reference data and the other regarding the ‘initialise training’ function.
+These have since.both been resolved and a final rehearsal is planned
+immediately prior to the first outlet being converted on Monday 12 April
+1999,
+
+. The BIT regression cycle, an important input to the acceptance process,
+finished successfully on 14"" March. Further runs are expected in parallel
+with ‘live trial’ to confirm clearance-of contractual acceptance incidents.
+This updated version of the system will be used for National Roll-Out.
+
+. The second usability trial held at che Twickenham Regional Post Office
+proved a valuable exercise for POCL. It confirmed that the staff had very
+few problems with the new accounting and stock balancing procedures.
+
+. The Benefits Agéncy have still to confirm that they are prepared to start
+the multi-benefit testing on 12" April as originally planned. They have also
+stated thar the interface testing of the on-line enquiriés functionality will
+not start until the end of May, after CAPS 3.5 has gone live and not in line
+with the Treasury planned date of 1“ March 1999. This.functionality is
+present in the current NR2 software baseline and has been ready for CAPS
+to exercise for several weeks.
+
+. Progress-on new release.2+ is improving as the support demands for NR2
+gradually reduce. KMS remains the critical path act'vity closely followed
+by the development of the new LFS product for POCL.
+
+¢ Preparation for the reorganisation of the systems department are near to
+completion and we expect this to be operational from 4" May 1999. This
+should enable ICL Pathway to deal more effectively with the additional
+and diverse workload expected in the latter half of 1999.
+
+. Ir is quite remarkable that the team continues to work extremely hard and
+remains focused on the job in hand, this is in spite of the air of uncertainty
+surrounding the future of the programme.
+
+COMMERCIAL IN CONFIDENCE Page 4 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Systems Monthly Report Ref: PA/REP/036
+Version: 1.0
+
+Date: 15/04/99
+
+PROGRESS
+
+¢ The technical and security testing which runs in parallel with the customers
+facing test streams is progressing well. The number of medium business
+impact incidents has been reduced to 3 and fixes for these are awaiting
+regression testing. All of the final test reports are in production.
+
+* — The End to End testing counter activity completed on 12" March with
+POCL back end processing completing on 17 March. The MOT counter
+activity completed on 10" March with POCL processing completed during
+week ending 14°" March. The number of incidents and their complexity
+have not been the cause of undue concern. The large majority have been
+investigated and resolved either because no fault found, software fix
+identified or an agreed entry on the Known Problem Register (KPR). Those
+where a fix was identified were subject to target testing between 24" and
+31™ March and this achieved a 98% success rate.
+
+¢ — The automatic cash account validation exercise is now complete and
+outputs are with ROCL for scrutiny. Initial reports suggests that the
+reference data for ‘live trial’ will be approved. Discussions regarding the
+process for changing reference data during live trial have not yet reached
+agreement.
+
+e — A regression cycle of the data warehouse and MIS/SLAM/FRMS/CCS
+systems is not going well. ‘This version of the software was designed to
+address the performance-and usability issues we had identified in earlier
+versions but the quality of the latest release appears to be poor with
+indications of major regression. Urgent discussions with the supplier (AT&C
+Belfast & Dublin) have been arranged and hopefully actions-can be taken to
+resolve the situation.
+
+° Progress on testing the very large 22 counter position ourlet has been
+excellent. The message store is 780Mbytes in size and continues to grow but
+very few problems have been uncovered. Not surprisingly, training takes
+several miiiutes to initialise in this environment and options to improve this
+are currently being evaluated.
+
+. The BIT Regression cycle finished on 14" March. Further runs of this cycle
+are expected in order to confirm clearance of'specific acceptance incidents.
+
+° The formal sign off of the Process and Procedures (PPD’s) will not be
+achieved on the’2™ April as planned. This is a critical dependency for
+Acceptance and maximum effort is being applied to resolve the few
+remaining issues many of which are with POCL and long-standing.
+
+COST DOWN
+
+° No new cost down initiatives were identified this month.
+
+COMMERCIAL IN CONFIDENCE Page 5 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Systems Monthly Report Ref: PA/REP/036
+Version: 1.0
+
+Date: 15/04/99
+
+CURRENT CRITICAL PROBLEMS
+
+° The Sponsors may not authorise the NR2 system for release into live trial.
+They may conclude that the accimutlative effect of the number-of software
+incidents classified as low business impact represent an unacceptable risk
+and may insist on some or all of them being fixed and a rerun of the model
+office with the consequential adverse impact on the delivery schedule.
+
+ISSUES
+
+° Integration of the new POCL product LFS, and the EPOSS infrastructure at
+the counter is proving troublesome. Senior management intervention is
+necessary to address the issues identified.
+
+° Now thar the total Pathway system is built and will shortly be in full
+operation, it has become apparent that there is a need for a Riposte
+regression facility. i.e. a special environment which enables new versions of
+Riposte to be properly regression tested.
+
+. The PSTN solution remains technically unproven and meetings have been ». a
+arranged with POCL to discuss further‘their requirements for
+mobile/portable configurations. In parallel, we continue to negotiate with
+Energis and BT with the objective of réducing the cost of installing and “3
+running frame relay connections. "
+
+° ICL Pathway believe that it should now assume responsibility for the BES i
+
+application developed for thé counter by Escher; this will enable the & wy
+product to be completed for NR2+. If this Csnot be successfully negotiated &
+it raises doubts as to whether the required enhancements can be completed
+in time.
+
+¢ The introduction of NUMA-Q is progressing well and an agreement has
+
+been reached with EMC with regard to fibre channel on NT. However, the
+implementation strategy needs to be very carefully monitored to ensure that
+the NR2 roll-out is not adversely impacted.
+
+COSTS
+
+. The systems directorate is currently refining the 1999/2000 forecasts and a
+series of regular financial reviews have been scheduled throughout the year.
+These are designed to enable management to monitor the derailed
+expenditure on a monthly basis.
+
+COMMERCIAL IN CONFIDENCE Page 6 of 30
+FUJ00058180
+FUJ00058180
+
+yI0ddyy
+jeDueuly ==
+2 [elosourWO7) ——— ——
+
+ICL Pathway Commercial & Financial Monthly Report Ref:
+Version:
+Date:
+
+FUJ00058180
+FUJ00058180
+
+PA/REP/036
+1.0
+
+Commercial & Financial Report
+
+MONTHLY SUMMARY
+
+. No Input
+
+COSTS
+
+° The Controller’s report follows,
+
+MARCH ACTUALS 1999
+
+KEY NUMBERS (£000'S)
+
+Trading/Project Costs: Revenue
+
+Project Cosis delore Caplatisatiens
+Declared PBT, Losses
+
+Cash: Business Oneraiing Cash Flow
+
+Balance Sticet: Project WiP
+Net Fixes Assets
+Tota! Borrowings
+
+Headcount Permanent
+Nan-Permanent {ITs ang Temporares)
+
+(Memey” Freelancer
+
+Summary:
+
+Ail key incicators were favourable to forecast in Maren,
+
+Ton Com. (is mins from san S98)
+‘Variance.
+
+Actual Acwal Forecast
+799 1.894 33
+0.875 132,989 108
+5r 1598 75
+(0.779) * (42.496) 38
+
+‘cd through ICL IT Goniractor Services
+
+Endor tarch 1955,
+
+Variance ws.
+Forecast
+
+Bry
+3,100
+318
+
+15/04/99
+
+Pathway financial submissions were made on time 1 Group 04 Frigay Sin Apri, These were Dased 09 our continuing policy of capilalsing all UX oroject
+
+expenditure into project Work=n-Pragress.
+
+Any notion of favourable variancas Wl
+of intense activily with cur main client
+
+jealy evaporate these poicies
+
+consigared 10 be unsusiannatile, even taking due account of ne current fevels
+
+COMMERCIAL IN CONFIDENCE
+
+Page 7 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Commercial & Financial Monthly Report Ref: PAREPIOS6
+Version: 1.
+Date: _15/04/99
+
+MARCH ACTUALS 1999
+
+PROJECT COST ANALYSIS (£000’S)
+
+Woah Tom (75 tins em Jan 1oSB)
+Vanance vs.
+Actual Aewial Forecast
+Revenue 7 1894 23
+Decl Cost of Sales 25.150 281
+Gross Margn (Dore) I 723.258) 318
+Ovex: Lapeur - Own Siall 203 vhO1S iv
+Travel & Subsisience 79 785 ‘a
+Freelancers 2,088 24,678 7
+{CL Subconiracts 2.255 20793 «7a
+‘Otner Suocontracis 350 9.789 132
+Depreciation 498 17.788 31
+Marketing 29 633 25
+Protessicha! 261 3.285 3]
+Otrer op2x 631 5528 (200)
+Gross Project Opex e083 93.263, 205)
+Interest costs 1.240 15.470 .
+Costs before Capilatisaiions: 132385 08
+
+Declared PBT Losses 7 1588 3
+Capitaised into WP cunng year 10.618 21801 uM
+
+Comments.
+
+Revenue was slightly ahead o! forecast, wilh supptemé
+for nei conindution 1a sie survey and modkicaton work
+
+FY vernal invoscing on inlemarenal aroyects otfesiting 3 small shontall on invoicing to POCL
+
+‘There were further gains an arect costs, mostly fram Operational Services (lormer CFM ane Sorbus), where additional forecas: costs relating lo Ine
+‘mugration 9 release 2 sysiems were not incurred. The pxysical migration exercse siarled over ine weekenc, wih a single ofice now enabled 10 nct only
+encaih benefits bul also lo rangac! Post Otlce iransactions, Such as slamp sas: The exising 200+ offices, plus a furtne: 100+ are due lo be se! up for
+release 2 by the midete of May.
+
+Mast ovex vanances were either small or offsetting, sitn Ne exception af the cesis of Seting uD cur expancea Customer Service function in Brackenel, which
+‘were dealt win through P&L. rather nan fives assels (g ¥en oUr Accounling poLaes; this aiferennialion is somawhat academic)
+
+Dectares losses on intemauiona’ actuiies were CS7k, wich was £75k eller than forecast: due 10 a comoinaion of the extra revenue tevels and cosl coniainment
+
+COMMERCIAL IN CONFIDENCE Page 8 of 30
+ICL Pathway
+
+Commercial & Financial Monthly Report
+
+Ref:
+Version:
+Date:
+
+FUJ00058180
+FUJ00058180
+
+PA/RE
+1.0
+15/04/99 -
+
+1036
+
+MARCH ACTUALS 1999
+
+HEADCOUNT
+
+Permanent Headcount
+
+Systems.
+
+Implementauos
+
+Customer Service
+
+AlVolner departments (UK Project)
+Tolal ; UK Project
+
+Inlernational Saies
+
+Totals « Permanont Statt
+Non-Permanant Headcount
+
+Industelal Trainees and Temporary Stott
+
+Freelancors (sourced through
+ICLIT Contractor Services)
+systers
+Implementation
+Customer Service
+All omner departments
+
+Total - UK Pro;
+Jntemational Sales
+
+Totals - Highor Skills Frealancers
+
+Totals - Nten-Permanent Staff
+
+Grang Tota! - UK PFI Project
+
+GRAND TOTALS
+
+[([Enecinarenes—_)
+Vanance vs.
+Actual Forecasi
+E 6
+st a
+ST
+53 3
+20 6
+4 1
+[Ta 7
+Eng of March 1585
+‘Vanance vs,
+Awa} Forecasi
+[5 a
+4 fi
+r .
+26 el
+782 mI
+7 $
+7
+I _ af]
+Tz @
+1 2
+EE we
+
+Permanent heaccount leve's
+were again lower than
+forecast, with the now
+‘amiiar dificulies of Cling
+positions in Systers areas.
+slit apparer
+
+Freelancer levels were.
+i line with forecast im total
+
+. ta
+we
+m
+1 a
+* «a
+
+COMMERCIAL IN CONFIDENCE
+
+Page 9 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Commercial & Financial Monthly Report Ref: PA/REP/036,
+
+ersion: 1.0
+
+Date: 15/04/99
+
+MARCH ACTUALS 1999
+
+CASH FLOW (£000'S)
+
+Tor Cum, (1S rahe fom Jan TSEB)
+Vanance vs.
+
+Inflows/(Outflows) Actual Actual Forecast
+
+Net Project Costs - capitaised into WIP 179,610)] (131,401) ua
+Project cosis taxes straight 10 P & 7) (188) 75
+Dépreciation 1,498 17.788 (53
+Movement in other Working Capua! tems 3530 1125 (2.831}}
+Fixed Assel Adcwons 3.122) (28:00) 3151
+Business Operating Cash Outflow 773) (ERE) a8
+
+Opening Net Sortowings,
+Closing Net Borrowangs
+
+BALANCE SHEETS (£000'S)
+
+Comments:
+
+Cash flow and resultant month-end borrowings were £318
+better nan forecast
+
+Soebfic variances in the month rarely transiaie into immodiste
+cash Nowivorrowngs, due lo working capial mpacis: this is
+‘evicent (rom ne lower than forecast levels of fixed assel adaiions
+bbeing almost entirely offset by iower creditor levels,
+
+Monin-eng po:rowings levels variances are generally more
+likely 0 be impacted by day-to-¢iy cash conlrol niaasures an
+the limung of supplier payrnents, and we were sucess in keeping
+
+‘ur norrowings requirements witin previously forecast levels.
+
+Net Fixed Assois
+Project Workin Progress
+‘Ctner Working Capital
+
+Totals
+
+Snare Capita
+Relaines Eamngs
+
+Grous Pooled Borrowngs.
+iemernal Loans.
+
+Enternai Loans,
+
+Tola! Sorroungs
+
+Tees
+232.252
+
+Ena of Maren 1958
+Rewat__] _Forecssr
+6.925 I $0,025
+228,187 224.991
+(20,808)] (23.897]]
+25076 BOSS
+20,000 20,000
+2,178) (2.251)
+332! 59.650
+59,000
+573.120 173,120.
+232,
+250278 BOSS
+
+COMMERCIAL IN CONFIDENCE
+
+Page 10 of 30
+FUJ00058180
+FUJ00058180
+
+yoday
+sjuswmoimboy =
+Jouwlojsn’) 3 F=
+
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Customer Requirements Monthly Report Ref: PA/YREP/036
+Version: 1.0
+Date: 15/04/99
+
+Customer Requirements Report
+
+MONTHLY SUMMARY
+
+e There are now 22 approved Acceptance Specifications out of a total of 24,
+with approval of the large POCL Infrastructure one being achieved. There is
+a way forward on the BES specification and the one for Service Boundaries
+is progressing.
+
+. The four key BPS and EPOSS Trials Closure reports are in préparation with
+the completion of‘regression run reports for BIT and EPOSS. Review Packs
+are going outa little'later than plan but are progressing well. The
+potentially difficult first Audit Acceptance Review was conducted
+satisfactorily.
+
+DETAILED PLAN ACTIVITIES
+
+NEW RELEASE 2
+
+. The Version of the Known Problem Register (KPR) to document entry to
+Live Trial was negotiated, including three days of intensive off-site
+meetings. This was the dominant activity during March and produced a very
+positive result. There were 146 entries on the register not Closed. The
+medium severity entries were reduced to six. This register included all the
+unresolved issues from the last stages of Technical Testing, Model Office
+and End to End Tests,and the supplementary Targeted Testing.
+
+. The Requirements team has supported the daily QFP (Quality Function
+Process) and Targeted Testing meetings to marshal and resolve the current
+PinICL work in progress.
+
+. A further revised Audit Trail Functional Specification (2.6), to resolve
+Acceptance Review issues, was ourput.
+
+. Horizon wants the document Post Office Not Available For Benefit
+Encashment document introduced as a Contract Controlled Document
+(CCD) after review. The associated Pathway Change Proposal was raised.
+
+RELEASE NEW 2+
+
+. Tony H has negotiated to produce a functional specification in April,
+funded by Horizon, for-the support of additional DSS agent roles of Split
+Payment Payees and Death Arrears Payees: Agreement to our proposal for
+Summarised Reccipts (R909) was achieved.
+
+COMMERCIAL IN CONFIDENCE Page 11 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Customer Requirements Monthly Report Ref: PAREDIOS6
+Version: 1.0
+
+Date: 15/04/99
+
+CCNS / CRS / CPS
+
+¢ = The whole CCN list was restated showing the status of all CCNs at the
+point of Live Trial start. This was a prerequisite to obtain approval of CCN
+251, which was the original CCN to approve the Release Contents
+Definition (RCD) for New Release 2.
+
+. CCN 397 was withdrawn by Pathway as too late for NR2 +.
+
+° Pathway commitment is awaited on CP 1799 (Service Boundaries).
+ACCEPTANCE SPECIFICATIONS
+
+° POCL Infrastructure - this was finally approved.
+
+e BES - We have provided POCL and DSS with.a list of changes that we
+believe are required to resolve the issue of POCL’s ultimate liability that had
+held up POCL approval. We will convert this into a CCN without waiting
+for the Change Request from POCL. Only superficial changes-to the BES
+Acceptance Specification will be required and Acceptance will not be
+otherwise arrected.
+
+° Service Boundaries - A response from the customer to our earlier review of
+comments was reviewed and a further response returned. There is dispute
+over the detail of performance that needs to be recorded at service
+boundaries and POCL concern over the BES/PAS boundary. The: customer is
+pressing for a boundary performance measurement capability to be available
+as part of Acceptance, that is, during live trial operations. A simple
+recording of a subset of the. information has been offered.
+
+. CP 1799 has been raised to improve boundary measurements for NR2+.
+Only a subset of the information would be available at NR2 and we may yet
+have difficulties providing all the assurance that the Authorities require.
+
+. The SADD Appendix B has been reworked to include additional material
+necessary for service boundaries acceptance and-also to bring the
+information into line with NR2 to reflect the rework of Agent design.
+
+ACCEPTANCE TRIALS
+
+. Work continues on the BES Acceptance Trial Closure Report using the
+material from the BIT Regression Final Report, the TPS Closure Report and
+the Security Testing Report. There are no outstanding Acceptance Incidents
+from either TPS or Security Testing and one individual test step under TPS
+was not completed because of script error.
+
+. The position on BIT test results is thar 64 BES Acceptance Criteria are
+proved and ten were unsuccessful. The areas with outstanding incidents
+included card authentication and impounds, receipts for casual agents,
+appointee encashments, foreign encashment processing. In general this is a
+very positive result.
+
+e — The EPOSS Closure report is in preparation following availability of the
+EPOSS Regression Final Report.
+COMMERCIAL IN CONFIDENCE Page 12 of 30
+
+FUJ00058180
+FUJ00058180
+
+ICL Pathway = Customer Requirements Monthly Report Ref: PARERIOS6
+sion: 1
+
+Date: 15/04/99
+° Approval of the Security Trials Closure report has been recommended
+following a successful appraisal of the Girobank third party testing.
+
+° The POCL Infrastructure Trials Clostire report is dependent on the
+Technical Testing test reports that.are now coming through at the level of
+progress required.
+
+e — Approval by the Authorities of the OBCS, APS Trials Closure Reports and
+Reference Data is now overdue.
+
+ACCEPTANCE REVIEWS
+
+. BES - The first segment review pack was issued on time, although Horizon
+was unable to unzip files. The first review is intended to be a relatively
+gentle introduction. dealing -with soft issues such as “flexibility”.
+
+. Four BPS Acceptance Review segment packs were issued on schedule. A
+further four segment packs are due during April.
+
+. The first wo EPOSS Acceptance Review segment packs were output, and
+the first set of comments on the first of these was produced.
+
+¢ The first-two review packs were issued for Security together with the first. Ps
+Service Levels pack. 1
+. Two review packs were outpur for each of Implementation and Policies & 2
+Standards. " a
+e Review packs have been output also for OBCS, APS and POCL
+Infrastructure. -
+° The document spreadsheet (of acceptance ‘ew documents) was i"
+
+completed and passed to Design who are adding some additional
+information to assist management of the final production of the outstanding
+documents.
+
+. The principal holding factors are the set of PPDs (Policies & Procedures
+Documents), a number of Implementation area documents, the MIS test
+report for the testing repeated for Live. Reference Data and Invoicing
+Standing Data and Business Continuity documentation. A set of PPDs has
+been commissioned that will document the current state of agreements and
+issues and will support document reviews needed for Acceptance.
+
+e The first Audit Acceptance Review was conducted satisfactorily. It had
+threatened to be a difficult review because the comments on the review pack
+were very “oppositionist”. However, face-to-face it proved possible to
+overcome all objections with only minor revisions of the Auditors’ Manual
+and the Audir Trail Functional Specification.
+
+‘OPTION B'
+
+. A significant amount of effort has gone into'this during the month,
+including meeting attendance with POCL/BA/Treasury, Pathway reviews
+and producing updated service definitions at outline level.
+
+COMMERCIAL IN CONFIDENCE Page 13 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Customer Requirements Monthly Report Ref: PA/REP/O36
+Version: 1.0
+
+Date: 15/04/99
+
+OTHER TEAM ACTIVITIES
+
+. DCH continued to support the workshops on Better Government. This has
+included reviewing the White Paper and examining the options for smart
+card usage and synergy with other ICL programmes such as Government
+branch, Persona (Financial Systems) and the Microsoft.Alliance and card
+plans.
+
+¢ — All appraisals were completed.
+
+e John
+
+CURRENT CRITICAL PROBLEMS
+
+. None.
+
+ISSUES
+
+. The completion of documents needed for Acceptance Review is beginning
+to delay Acceptance Review Packs. Actions are.being pursued with named
+individuals.
+
+COMMERCIAL IN CONFIDENCE Page 14 of 30
+FUJ00058180
+FUJ00058180
+
+wodsay
+SALS —=
+Dwojsny =
+
+—___
+EE
+——
+
+fll
+
+"I
+
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Customer Service Monthly Report Ref: PAYREP/O36
+Version: 1.0
+
+Date: 15/04/99
+
+Customer Service Report
+
+MONTHLY SUMMARY
+
+° Release 1c has continued to be stable and provides excellent service in the
+run up to NR2 Live Trial.
+
+. No new problems reported
+. Majority effort is being invested in completing MOT and preparing:supplier
+services for NR2 migration in early April.
+
+RELEASE 1C VITAL STATISTICS
+
+. Installed base: 203 Post Offices, 332 counters ©
+
+Number of Cards issued 49,038
+Number of Active Cards in use 37,584
+Total number of BES Counter Transaction 1,100,048
+BES Counter Transactions in month 102,088
+Total value of Benefit Payments received _ £34.6
+Value of Benefit Payments received in month £2.9m
+Total value of Benefit Encashments made £33.6m
+Value of Benefit Encashments in month £3.2m
+Total number of OBCS Transactions 7.4m
+Total number of books impounded 19,507
+
+PROGRESS
+
+OPERATIONS
+
+° Live Reference Data Proving exercise completed with no major issues.
+
+. MOT completed successfully and it was pleasing to receive positive
+responses to the performance: of the underlying support services during this
+period.
+
+. Majority effort is now being invested in preparing for the Rlc to NR2
+counter migration. The rehearsal on 2™ April identified some new problems
+but these have been overcome in time for the cut-over on 11" April.
+
+COMMERCIAL IN CONFIDENCE Page 15 of 30
+FU,
+
+ICL Pathway Customer Service Monthly Report Ref: PA/REP/036
+Version: 1.0
+Date: 15/04/99
+
+BUSINESS SUPPORT
+
+¢ The overall incident.rate decreased to 0.03% in March with 33 incidents
+being received against 102k payments. Of these, 16 were ‘Non committed’
+transactions all due to the clerk voiding the transaction after paying the
+customer.
+
+° The number of incomplete transactions was 9 (0.009%) 4 of which were
+due to power failures.
+
+. There were no SLA-non-conformances.and the BES stream continues to be
+fully reconciled.
+
+. A proposal to make reconciliation reports available co POCL and BA via
+access to a dial-up PC has been formally documented and distributed to
+relevant Authorities’ staff.
+
+BA & POCL SERVICES
+
+. Service performance in March was very good.
+. There were no new probléms identified.
+
+* — After-much prompting by Pathway, a change request has been submitted by
+POCL to introduce the National Business Support Centre. This will replace
+the 7 Regional Helplines and is eventually intended to-provide a first point
+of contact for all post offices reporting problems or querying procedures
+with the Horizon system. This should reduce our Helpdesk costs
+significantly with unnecessary calls being filtered by the NBSC before being
+passed to the Horizon Systems Helpdesk.
+
+CUSTOMER SATISFACTION
+
+. Remains high with no issues to report.
+
+. Service Visit Reply Cards continue to be returned regularly. and ‘reveal the
+continued excellent performance of field service staff.
+
+SYSTEM SUPPORT
+
+° Following completion of the extended machine room, work has now started
+on the rigs, initially with the RDMC rig.
+
+e There were few problems on the live service in March until, at the end of
+the month, there were issues with the Cash Account Week. SSC staff were
+able to fix this problem pending the provision of updated reference data
+from POCL.
+
+. For the first half of the month SSC were heavily involved with MOT work.
+
+° The SSC requirements for access to the live system have been formally
+documented and distributed. There. are no outstanding comments and the
+SSC PCs to support NR2 arc being built on the basis of the document.
+
+FUJ00058180
+}J00058180
+
+COMMERCIAL IN CONFIDENCE Page 16 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Customer Service Monthly Report Ref: PA/REP/036
+Version: 1.0
+Date:_ 15/04/99
+
+. ICL Group has made a corporate decision that the helpdesk of choice will
+be Peregrine. This is likely to dictate the future of Powerhelp-and can be
+considered in the context of a PinICL replacement
+
+CURRENT CRITICAL PROBLEMS
+
+. None
+
+ISSUES
+
+. At the pre-RAB meeting on 25" March, BA declared they were unhappy
+with the quality of testing for NR2 and would require to rerun MOT and
+E2E before giving their authorisation for NR2 Live Trial. This was rejected
+by Horizon in favour of a proposal to perform Targeted Tests at the end of
+MOT to specifically test the c120 outstanding problems. .BA agreed to the
+Targeted Test approach but reserved their position. They offered no
+quantification of the extent ef cause of their concern other than the
+‘relatively high’ number of new problems identified during MOT.
+
+COMMERCIAL IN CONFIDENCE Page 17 of 30
+FUJ00058180
+FUJ00058180
+
+r0day
+
+ASA 29
+Ayyend
+
+j Jil
+tn)
+Mn
+
+i
+
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Quality & Risk Monthly Report Ret: PA/REP/036
+
+Version: 1.0
+Date: 15/04/99
+
+Quality & Risk Report
+
+MONTHLY SUMMARY
+
+. FRM - Testing of FRM irregular encashment reports has raised major faults
+which are being addressed.
+
+. Risk Management - The programme risk review has shown a fall in overall
+tisk - major issues now being the potential impact of DSS attitude in
+acceptance and the lack of an end to end plan.
+
+. System Security - Good progress with documentation of processes and the
+clearing of final issues.
+
+¢ Quality - Policies & Standards -Segment 1 and 2 acceptance review packs
+have been distributed. Implementation processes rémain the major gap in
+process documentation.
+
+° Audit - Good progress - successful Segment I documentation review, minor
+incidents from BIT testing and a successful extraction demonstration.
+
+° Year 2000 Conformance - POCL have raised a CR, requesting a con:}.:gency
+© plan against Ric being live at end Q3/1999. Our response is to request a
+paid study - we do not expect to get approval for this until after RAB.
+
+° Contingency Planning - considerable work is required to complete and fill
+gaps-for successful acceptance review.
+
+PROGRESS
+
+FRAUD RISK MANAGEMENT
+
+GENERAL
+
+. Processes:
+° Discussion of E2E processes is underway with BA.
+
+° EVP reporting and desktop requirements are being progressed.
+RELEASE 1C
+
+. New layouts for che FRMS reports are being defined.
+
+° No.FRM incidents were reported daring March.
+NEW RELEASE 2
+
+. FRM testing (MOT environment). FCMS was tested and while a number of
+small issues were discovered, the core functionality operatéd correctly. The
+FRM irregular encashment reports showed major faults, which are being
+addressed.
+
+COMMERCIAL IN CONFIDENCE Page 18 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Quality & Risk Monthly Report Ref: PA/REP/036
+
+Version: 1.0
+Date: 15/04/99.
+
+NEW RELEASE 2+
+° EVP: CCN 243. The CCN has been issued.
+
+RISK MANAGEMENT
+
+° NRO Risk Register, March. Major risks that.have been identified include:
+° RODB; the requirements for 2.6 have yet to be finalised
+
+° Geographical Spread of RFI Offices; a significant number of offices
+have dropped out of the Infrastructure programme. The existence of
+these “holes” is likely to increase the risk of logistical problems
+associated with implementing offices in different areas.
+
+. Business continuity planning-is not complete.
+
+. The quality of HFSOs is a key factor. ICL Pathway has no means to
+measure performance, and no capability to contractually mandate the
+removal of an individual.
+
+° User Proficiency Levels. It is possible for an office to go-live (having
+achieved Minimum Training Compliance) with a significant number of
+outlet staff who are unable to operate the system.
+
+¢ — Implementation modelling. The first version of the “I think’ model has been
+completed.
+
+. Programme Risk Register, April. The overall risk.score has decreased again,
+mainly as a-result of reduction in NR2 risk. Major risks now include:
+
+° Planning - The lack of agreement to an E2E plan continues to be the
+major programme risk.
+
+. Acceptance - The attitude of DSS and BES boundary disagreement
+benveen BA and POCL. Internally, we have some issues in the
+production of documents for Acceptance review.
+
+e NR2+ - Main risks include the impact of NR2 (software quality and
+PinICL fixing) and delivery of new functionality, in particular KMS
+and EVP.
+
+SYSTEM SECURITY
+
+GENERAL
+
+e Three new viruses were reported to QRM in March 1999 all of-which had
+significant impact. This has raised the urgency for the new Anti-Virus
+software ‘Virus Scan’ from NAI.
+
+. Physical security requirements for the RoDB in Feltham have been defined.
+
+° An assessment was prepared of risks associated with the compromise of
+sensitive documentation.
+
+COMMERCIAL IN CONFIDENCE Page 19 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Quality & Risk Monthly Report Ref: PAYREP/036
+
+Version: 1.0
+Date: 15/04/99
+
+NEW RELEASE 2
+
+° Work has begun to define an optimum security solution for “follow the
+sun” technical support from outside the UK which allows Foreign Nationals
+visibility of HMG data.
+
+° Live NR2 keys have been created and distributed.
+
+. A meeting was held with a Computer Forensics expert from Thames Valley
+Police to review and modify the ICL Pathway PACE certification process.
+
+e A Testing Security Policy was written to specify how sensitive material is to
+be protected during testing.
+
+. A solution to PCHL authentication [SFS 5.4.1.4] has been agreed; the SFS
+will be amended to reflect the agreement and a CCN raised.
+
+. PACE, Security Awareness, Security Management Procedures and Security
+Event Management documents required for Acceptance have been delivered
+to the relevant Acceptance Stream Managers.
+
+QUALITY
+
+. Disaster Recovery Planning. Plans have been received from SMH and are %
+under review. The requirement of detailed plans for acceptance review is .,
+being discussed.
+
+. Policies & Standards Acceptance Test
+
+e Segment I and 2 review packs have been submitted. o
+
+° QMS review lias identified the largest ~->s as being in Implementation
+processes. Jim Flynn has set up a smal] team to address these issues.
+
+AUDIT
+
+° Acceptance - BIT Regression 2 was run during March and resulted in 26
+PinICLs being raised against Audit Acceptance Criteria. This equated to 8
+Acceptance. Incidents and a number of Observations. As at.30/03/99 there
+are 11 PinICLs and 3 Acceptance Incidents still Open. The Acceptance
+Review Segment 1 was successful in that it raised only 20 minor
+amendments to documentation.
+
+. Model Office Testing Demonstration Extraction was completed and
+witnessed by BA and POCL.
+
+. Internal audits:
+
+. Customer Services Audit - The Report was formally issued and a draft
+CAP is out for comment.
+
+. Security Policy Deployment Audit - Terms of Reference have been
+issued and agreed with Barry Procter, and will be conducted in April.
+
+° Change Management Audit is being conducted with A&TC resource.
+
+COMMERCIAL IN CONFIDENCE Page 20 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Quality & Risk Monthly Report Ref: PA/REP/036
+
+Version: 1.0
+Dare: 15/04/99
+
+° Implementation Audit - Draft Terms of Reference have been
+produced.
+
+YEAR 2000 CONFORMANCE
+
+° A CR has been received, requesting a contingency plan against Ric being
+live at end Q3/1999, Our response is to request a paid study - we do not
+expect to get approval for this until after RAB.
+
+° Business Contingency plans have been reviewed from a Y2k perspective.
+Progress on system contingency has been good, significant work is still need
+for disaster recovery and there is no evidence of Implementation
+contingency plans.
+
+COST DOWN
+
+. Discussions have taken place with Girobank and a proposal is being
+developed to cut the cost of the 1999 FRM contract. “ee
+
+¢ — Publiciry material has: beeimproduced and distributed.
+
+ISSUES
+
+° Horizon (particularly POCL) have not agreed the One Shot Password
+verification. HLD. As-a direct result ICL Pathway design and development
+deadlines have been missed, and the service cannot be provided.
+
+° R2+ Requirements for Audit - The experiences during MOT have
+confirmed that the requirement’ for the GUI to front end the identification
+and marking of audit files for retrieval is paramount. A CP to accelerate the
+production of this software is being raised. If this is not accepted, we may
+find retrievals using the default Legato structure unworkable.
+
+° Gaps in business continuity plans need to be addressed.
+
+COMMERCIAL IN CONFIDENCE Page 21 of 30
+FUJ00058180
+FUJ00058180
+
+Business
+Development
+Report
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Business Development Monthly Report Ref: PA/REP/036
+
+Version: 1.0
+Date: 15/04/99
+
+Business Development Report
+
+MONTHLY SUMMARY
+
+POCL have initiated discussions in the area of Network Bank, although
+decisions are still pending outcome of Treasury review negotiations.
+
+ROCL has re-engaged with us to progress-their requirements for accepting
+debit and credit cards. Discussions regarding costs are on-going. We are
+awaiting an updated SOR.
+
+Work continues internally with Customer Requirements, Architecture, and
+Design on new products; Banking, Multi-channel, and Generics.
+
+Press activity: the usual calls - no specific coverage.
+
+The South African Project Manager and the Namibian TDA will visit the UK
+in April for project initiation.
+
+PROGRESS
+
+NETWORK BANK
+
+We are now in discussion with POCL regarding Network Bank and related
+volumes. Work is on-going for the global requirement document being
+created by Dominic Barton (UK) and Brian Hauxwell (International) to
+form the basis of design and development activities in Systems.
+
+EFTPOS (CREDIT/DEBIT CARDS)
+Discussions with Matthew Bruce regarding locarion.of hot card file and
+
+subsequent costs have been on going throughout the month.
+
+Requirements and Design are continuing to investigate a very simple
+requirement which would be less integrated at the counter, but would
+provide the core functionality and be deliverable in shorter timescales.
+
+Customer education acceptance review actions are being progressed.
+
+Thie Austrian Post meeting went well; there is potential for new business
+and there will be a follow up visit to the UK.
+
+CRITICAL PROBLEMS
+
+None.
+
+COMMERCIAL IN CONFIDENCE Page 22 of 30
+FUJ00058180
+FUJ00058180
+
+ody =
+
+FUJ00058180
+FUJ00058180
+
+(CL Pathway Implementation Ref: PA/REP/036
+
+Monthly Report Version: 1.0
+Date: 15/04/99
+
+Implementation Report
+
+MONTHLY SUMMARY
+
+. The Implementation OMR has been completed addressing weaknesses in
+the organisation and ensuring the team is prepared for the Live Trial and
+National Rollout phases of the programme.
+
+° The infrastructure, training and migration programmes continue to make
+steady progress without any unmanageable critical concerns. The profile for
+National Rollout has now been agreed in principle with all parties and is
+due to commence on 23” August 99.
+
+e The level of suspends in the infrastructure programme is still too high and
+the schedule is currently running 5 weeks behind. Action has been taken to
+address the cause and it is anticipated that the 5 weeks can be recovered.
+The current aim is to ensure sufficient stock of outlets is achieved in order
+to commence National Rollout with a strong back-of outlets at RFI.
+
+e Actions have been taken to initiate improvements in programme and cost
+control within Implementation. However there are currently a number of
+suppliers who are attempting to progress contract re-negotiations on the
+basis of requirement change. This is being resisted although it is realistic to
+expect some cost impact. :
+
+PROGRESS
+
+. The Implementation OMR has now been cusciuded and the revised
+organisation has been communicated throughout Pathway, to POCL and all
+implementation suppliers. The OMR was communicated to the
+Implementation team at a teani event ini Stratford-on-Avon and feedback
+has indicated it has been well received. The appointment of [PMs (expanded
+role) to the four regions was concluded in the month and the key positions
+of Financial Concroller and Field Manager have been filled. The Field
+Manager joins the team in mid-April and the Financial Controller in May.
+
+¢ The infrastructure rollout programme is continuing to make steady progress
+(see weekly statistics below) although the level of office suspends is still
+impacting the target beat rate. Weekly tracking of the causes of suspends is
+now being used to identify problem areas and to bring pressure to bear on
+regional teams to address these causes.
+
+IMPLEMENTATION WEEKLY STATISTICS
+
+(For week ending 4" April 99)
+
+I Activity : This Week Cumulative I
+
+RGM letters issued _ 300 I 1,359
+
+COMMERCIAL IN CONFIDENCE Page 23 of 30
+FUJ00058180
+
+FUJ00058180
+ICL Pathway Implementation Ref: PAVREP/O36
+I MIB events held I 8 I 215
+MIB Attendees 338 10,644
+Site surveys undertaken I 302 - 8,384 I
+I Site re-surveys required "123 3,157
+Site re-surveys undertaken 121 2,742
+I Site modifications done 88 1287
+[Site preparations done I 193 2,787
+Sites RET iz 193 2,787
+User Awareness Events Held BY 3
+I UAE Number of Offices 33 I ~ 53
+° The number of non-ISDN sites has.now reduced to 351.
+e The training programmie is also making steady progress, with the first User ne
+
+Awareness Events for LiveTrial and the first HFSO training course having
+been completed during the month. There had.been some difficulties in being
+ready for the HFSO training programme, although these were overcome
+and the programme dares were achieved. Feedback from the first HFSO
+course, a dry run, has been usec to-revise and improve the course to the
+customer’s satisfaction such that future courses will meet with trainee and
+POCL expectations.
+
+. Readiness for the migration of live trial outlets and migration activities in
+general has progressed satisfactorily during the month. The final two
+Transition Executives, required for migration support activity, joined the
+team this month and will be ready to support migration during Live Trial.
+Migration tools, processes and key suppliers are briefed and ready for the
+migration of Live Trial outlets.
+
+e The HFSO training course has been developed, dry run with 12.HESOs and
+the course has been revised based on student feedback. A draft HFSO sub-
+contract has been passed to POCL and feedback has been received. POCL
+are resisting the formality of a sub-contract for the HFSO work (see Issues).
+
+. Preparations for the migration of Live trial outlets are at an advanced stage.
+A migration rehearsal has been scheduled for Easter weekend and the first
+migration of a live trial site is scheduled for 11" April 99. Discussions are
+continuing with regard to the need for a rehearsal of an ECCO outlet
+migration rehearsal.
+
+e The revised profile for the National Rollout installation programme has
+been agreed. This profile has a gradual ramp up to a target rate of 334
+offices and also allows for Christmas stand down periods. The National
+Rollout installation programme is due to commence on 23“ August 99.
+
+COMMERCIAL IN CONFIDENCE Page 24 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway implementation Ref: PA/RE
+
+Monthly Report Version: 4.0
+Date: 15/04/99
+
+CURRENT CRITICAL PROBLEMS
+
+. None to report.
+
+ISSUES
+
+° Continuing high level of suspends in the infrastructure programme.
+
+. Revised counter capping limits, although agreed by POCL are still
+restricting the-modifications'programme. It is expected that this will be
+resolved in tlie week commencing 12" April through ratification of the
+disruption proposal.
+
+. High volume of exceptions in infrastructure programme has put regional
+teams under considerable pressure. It is anticipated thar the support
+provided through the appointment of the Field Manager and the addition of
+new recruits into these teams will alleviate some of the strain.
+
+° A number of Implementation suppliers have made approaches to re-
+negotiate costs based on increasing complexity, delays and changes in
+original contract assumptions.
+
+se ks
+
+° POCL have requested a 10 day training window for ECCO offices coming.
+into live trial. This request has come at a late stage in the programme . oe
+although it is anticipated this request can.be successfully navigated through
+the change control process. Actions are in hand to address this issue for
+National Rollout.
+
+e POCL are resisting and hesitating over agreeing to the formality of a HESO
+sub-contract. This will be progressed within Pathway and with POCL in the
+week commencing 12" April 99.
+
+° The Implementation team are behind schedule for the preparation of
+acceptance documentation. Additional administrative support has been
+acquired for one month to address this.
+
+COSTS
+
+° Implementation is aiming to improve cost control processes and reporting
+through the appointment of a Financial Controller and the creation of a
+Business Operations team. This will provide the infrastructure for c6-
+ordinated programme and cost monitoring and control within the
+Implementation scope of work. It is anticipated that key appointnients and a
+more refined reporting and control mechanism will be in place within 3
+months.
+
+COMMERCIAL IN CONFIDENCE Page 25 of 30
+FUJ00058180
+
+FUJ00058180
+ICL Pathway Implementation Refs PAREP/O36
+Monthly Report Version: tyo4/99
+
+e — Re-negotiation of the major sub-contracts with WT and Exel, to reflect
+changes from the original contracts, is at an advanced stage. It is anticipated
+this activity will be concluded during April 99 and that the creation of a
+revised financial baseline will then be achievable. A strong stance is being
+taken during the negotiation process to limit the cost impact although some
+increases, attributable to changes in requirements is unavoidable. Some, but
+not all, cost increases, will be recoverable from our customer.
+
+COMMERCIAL IN CONFIDENCE Page 26.0f.30.
+—
+————
+al
+
+Jilin
+
+{
+
+_—
+
+—
+_
+
+—
+aE
+———
+
+FUJ00058180
+FUJ00058180
+
+Organisation
+& Personnel
+
+Repor t
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Organisation & Personnel Ref: PA/REP/036
+
+Monthly Report Version: 1.0
+Dare: 15/04/99
+
+Organisation & Personnel Report
+
+MONTHLY SUMMARY
+
+e The number of identified vacancies fell due-to excellent progress in
+recruitment and a decrease in the number of new positions being approved.
+Work is in hand to ensure space is available to accommodate these new
+recruits: Other key activities were associated with the preparation for the
+salary review and the Employee Opinion Survey.
+
+PROGRESS
+
+. Appointments in March:
+
+External Recruits 7
+Transfers 2
+A&xTC 4
+Linkwise 0
+Freelance 8
+Temporary i
+Total: 22
+° Known joiners:
+External Recruits 9
+Transfers 1
+A&TC 1
+Linkwise 0
+Freclance 3
+Total: 4
+
+. Offers outstanding:
+
+External Recruits
+
+PROGRESS
+
+* The number of registered permanent vacancies decreased from 82 at the end
+of February to 46 at the end of March. Key vacancies have been filled in
+Implementation, including the Field Manager and Financial Controller
+positions and reasonable progress has been made filling vacancies elsewhere
+in Implementation. There are, however, still a significant number of
+vacancies to fill.
+
+COMMERCIAL IN CONFIDENCE Page 27 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway Organisation & Personnel Ref: PA/REP/036
+
+M Report Version: 1.0
+onthty Repo Date: 15/04/99
+
+© Two open evenings were held in March, one in the London area and one in
+Manchester. Line managers supported both events and in general those
+attending were a good match for our advertised requirements.
+
+° ICL Pathway attended the VISIT recruitment fair in Manchester. This was
+planned in conjunction with the Manchester open evening and produced
+candidates for roles in both Kidsgrove and Feltham.
+
+° A graduate assessment centre was held in order to recruit technical
+graduates. Four offers have been made.
+
+° The new structure for Implementation was agreed and announced. The
+ongoing programme of Organisation and Managemenit Reviews continued,
+due for completion on April.
+
+° Preparation for the June salary review was completed. A timetable was
+agreed and managers were provided with salary information about their
+employees as well as external benchmark data to-assess market
+competitiveness. Meetings to finalise the review will take place in April.
+
+e The necessary work to allow ICL Pathway to participate in the 1999
+Employee Upinion Survey was completed. This will be issued to all
+employees in early April.
+
+CURRENT CRITICAL PROBLEMS
+
+¢ — There is a pressing need to secure more space within FEL 01 to
+accommodate new recruits to the programme. ICL. Properties are currently
+exploring possible solutions but there isa need for a-speedy solution before
+the available space is filled.
+
+COMMERCIAL IN CONFIDENCE Page 28 of 30
+FUJ00058180
+FUJ00058180
+
+yoda
+
+10 oq (BSS
+
+FUJ00058180
+FUJ00058180
+
+ICL Pathway The Post Office - Client Director's Rel: PAYREP/036
+
+Monthly Report Version: 1.0
+y P Date: 15/04/99
+
+The Post Office - Client Director’s Report
+
+MONTHLY SUMMARY
+
+° The White Paper “Modernising Government” has been published.
+e We are progressing the Service Management Tools bid.
+
+° The SCS reorganisation of Post Office will also affect the IS/IT community.
+MODERN GOVERNMENT
+
+. The White Paper was published on 30" March. The potential role of the
+Post Office is outlined as expected, with no major surprises. The real work
+is to come in establishing where departments/local auithorities/ RDAs will
+commit budget and resources to new forms of electronic service delivery,
+utilising the Post Office/Pathway.
+
+1999 BUSINESS
+
+° Post Office revenues have held up well, with MC expecting £3m in ..arch
+after £1.6m in Jan and over £3m in Feb. The march ourturn will be below
+expectation owing to the Post Office’s capital squeeze - which will bite hard
+in 1999/2000.
+
+CURRENT CONTRACTS
+
+TECHNICAL RESOURCES SUPPLY CONTRACT
+
+° Post Office bureaucracy is impeding the take-off of the work packages
+opportunity, of which there are 400 outstanding. The ICL Onsite ream have
+been working hard to help PO sharpen its processes. By end-March over
+£1m of orders had been taken under this contract since its inception in July
+
+1998.
+
+ONE STOP SHOP
+
+. The Orange Alert-at Parcelforce has now been closed by OSD following 5
+weeks achievement of the target SLA call-to-fix level
+
+NEW BIDS
+
+SERVICE MANAGEMENT TOOLS
+
+. The response to RFI and presentation were well received and ICL is
+shortlisted together with IBM and DMR. The ICL Reference visit to
+Celestica went well. Our decision is imminent on how to respond to the
+“Invitation to Negotiate”. A preferred supplier will be selected by end-April.
+
+COMMERCIAL IN CONFIDENCE Page 29 of 30
+FUJ00058180
+FUJ00058180
+
+ICL Pathway _— The Post Office - Client Director's Ref: PA/REP/036
+
+Monthly R Version: 1.0
+y Report Date: 15/04/99
+
+SPICE
+
+° The PO initiative “Supporting Post Office ina Commercial Environment”
+has finally erherged as a broad ranging invitation covering Customer
+Contact, Client Relationship Marketing and data warehousing: The first
+response has beer submitted, RFI will arrive in May and ITT in August.
+
+POCL INTERNET
+e Bid lost to Hyperlink - the debrief is reported separately
+REORGANISATION
+
+¢ As part of SCS (Shaping for Competitive Success) the IS/IT central rolé of
+Dunean Hine will be strengthened, with his unit being responsible for the
+deployment (not just development) of IS/IT strategy. As part of this the
+ownership of all IT infrastructure will migrate, at some point in 99/00, from
+the current (pre-SCS) business units into central IS. The major ‘challenge
+facing IS/IT is turning the Info Systems to reflect the new Business Unit
+structures. This is scén as a major task which will severely constrain the
+implementation of any new IS ininatives.
+
+COST DOWN
+
+. No change.
+
+COMMERCIAL IN CONFIDENCE Page 30 of 30

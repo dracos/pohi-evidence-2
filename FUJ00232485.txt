@@ -1,0 +1,785 @@
+FUJ00232485
+
+FUJ00232485
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+Document Title: Pension Book MBCI (8 November 2001) Report
+Document Type: Business Continuity Incident Report
+Release: Not Applicable
+Abstract: This document provides a report on the activities that occurred on
+
+the 8" of November 2001 for the ‘Pension Book’ MBCI,
+applicable related issues and ICL’s subsequent actions to prevent a
+recurrence of the problem.
+
+Document Status: DRAFT
+Originator & Dept: Tony Wicks — ICL Pathway Business Continuity Team
+Contributors: David Wilcox ICL Pathway Reference Data Team
+
+Mik Peach ICL Pathway System Support Centre
+
+Peter Burden ICL Pathway Customer Services Ops and Support
+Dean Felix ICL Pathway Counters Service Management
+Various ICL Infrastructure Services Division teams
+
+Reviewed By: Martin Riddell ICL Pathway Customer Services Director
+Peter Burden ICL Pathway Customer Services Ops and Support
+
+Comments By:
+
+Comments To: Originator
+
+Distribution: ICL Pathway Document Management
+Don Gray POL Julian White POL
+Dave Hulbert POL Mary Love POL
+Stephen Muchow ICL Pathway = Martin Riddell ICL Pathway
+Liam Foley ICL Pathway = Kieran McGuirk ICL Pathway
+Gill Jackson ICL Pathway Peter Jeram ICL Pathway
+Colin Lenton-Smith ICL Pathway Graham Hooper ICL Pathway
+Peter Burden ICL Pathway Paul Westfield ICL Pathway
+Pat Lywood — ICL Pathway Mik Peach ICL Pathway
+
+Dave Wilcox ICL Pathway Eric Hillier ICL Pathway
+Mike Stewart ICL Pathway
+
+Dave Riglar ICL Infrastructure Services Division
+
+Denise Miller ICL Infrastructure Services Division
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 1 of 17
+FUJ00232485
+
+FUJ00232485
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+0.0 Document Control
+0.1 Document History
+Version No. I Date Reason for Issue Associated
+CP/PinICL
+0.1 14/11/2001 First draft of the report
+0.2 14/11/2001 Incorporates general comments and
+improvements
+0.3 15/11/01 Incorporates comments from Martin Riddell
+1.0 16/11/01 Incorporates final comments from Paul
+Westfield and Martin Riddell
+0.2 Approval Authorities
+Name Position Signature Date
+Martin Riddell ICL Pathway Customer
+Services Director
+0.3 Associated Documents
+Reference Version I Date Title Source
+PA/TEM/001 ICL Pathway Document PVCS
+Template
+
+Unless a specific version is referred to above, reference should be made to the current
+
+approved versions of the documents.
+
+0.4 Abbreviations/Definitions
+
+Abbreviation Definition
+
+BCM Business Continuity Manager
+
+BSM Business Service Management (POL)
+HIT Horizon Incident Team
+
+HSH Horizon System Helpdesk
+
+MBS Message Broadcast Service
+
+NBSC Network Business Support Centre (POL)
+OBCS Order Book Control Service
+
+POL Post Office Limited
+
+RDDS Reference Data Distribution Service
+SMC Systems Management Centre
+
+SSC System Support Centre
+
+TIP Transaction Information Processing
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence
+
+Page: 2 of 17
+ICL Pathway Ltd
+
+Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+FUJ00232485
+FUJ00232485
+
+0.5 Changes in this Version
+
+Version. Changes
+
+0.2 Incorporates general comments and improvements
+
+0.3 Incorporates comments from Martin Riddell
+
+1.0 Incorporates final comments and improvements from Paul
+
+Westfield and Martin Riddell
+
+0.6 Changes Expected
+
+Changes
+
+© 2001 ICL Pathway Ltd
+
+Commercial-in-Confidence Page: 3 of 17
+FUJ00232485
+
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+0.7. Table of Contents
+
+1.0 INTRODUCTION.....
+
+2.0
+
+3.0 MANAGEMENT SUMMARY...
+
+4.0 THE FAULT SYMPTOM.B.......
+
+5.0 ‘PENSION BOOK’ PROBLEM MANAGEMENT 81! NOVEMBER
+
+5.1 PROBLEM IDENTIFICATION...
+5.2. MANAGEMENT ESCALATION.
+5.3. PROBLEM INVESTIGATION AND RELEASE OF THE SSC FIX.
+5.4. COMMUNICATION WITH POST OFFICE OUTLETS.
+
+6.0 TECHNICAL DESCRIPTION OF THE UNDERLYING FAULT.
+
+7.0 ISSUES RELATING TO THE SSC FIX.
+
+7.1 TIP PROCESSING ISSUES. ....
+7.2. PENSION BOOK SCANNING ISSU!
+
+8.0 FOLLOW-UP ACTIONS. ll
+
+8.1 REFERENCE DATA FOLLOW-UP ACTIO!
+8.2 PROBLEM MANAGEMENT FOLLOW-UP ACTIONS ......csssesessssssseeeeseeeeeseseseaesceseseaeseeeeeeesees 11
+
+9.0 APPENDIX ONE —- MBS MESSAGES.
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 4 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+1.0 Introduction
+
+This document provides a report on the activities that occurred on the 8" of November
+2001 for the ‘Pension Book’ MBCI and applicable related issues e.g. TIP file transfer
+errors.
+
+This report also details ICL’s subsequent actions to prevent a recurrence of the
+‘Pension Book’ problem and the actions being taken for process and communication
+improvements.
+
+2.0 Scope
+
+This document reports on the events relating to the ‘Pension Book’ MBCI of the 8" of
+November, associated activities and the subsequent investigation into the root cause.
+
+3.0 Management Summary
+
+At 06.00 on Thursday the 8" of November the first of many calls was received by the
+HSH where the Post Master was unable to scan or manually input a pension book. An
+analysis of the problem was initiated and the problem was identified in the Pathway
+Reference Data. By 09.30 a fix was produced and distributed to 10 outlets for an
+initial trial. The major part of the distribution of the fix to the remainder of the outlets
+was completed by 11.15.
+
+The impact to Post Offices and their customers on that morning was minimised by the
+use of the Message Broadcast facility and MBS234, which documented the manual
+process the Post Masters should follow regarding the payment of pensions.
+
+Pension groups 5, 6, 7, 11, 12 and 13 were affected by this fault.
+
+From 11.15 onwards Post Masters were able to manually enter the pension book
+details into Horizon and, where counters had been rebooted, to scan pension books.
+(Other scanners may have functioned prior to the reboot, please see section 7.2.)
+
+The underlying fault occurred because incorrect Pathway Reference Data was sent to
+cure anomalies identified by the Scavenger (a tool developed to keep the counter
+message store data tidy). This data was based on the same criteria that all previous
+Scavenger tidy ups have been based.
+
+However, in this instance there was a further anomaly in the system because a tidy up
+of product modes for certain items was still required following the introduction in M1
+of the graceful retirement for non-core products.
+
+Because the two anomalies existed at the same time the Scavenger tidy was actually
+incorrect in this instance and incorrect reference data was released by ICL Pathway.
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 5 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+4.0 The Fault Symptoms.
+
+When staff in Post Offices attempted to either scan or manually input pension books
+for groups 5, 6, 7, 11, 12 and 13 an error message occurred. An example of a group 7
+error message is "invalid mode: product returned (%2 is not available in %3 mode)"
+
+For reference, the 6 affected products were:
+
+Item I Long Name Item I Long Name Item I Long Name
+177 I Group 5 178 I Group 6 179 I Group 7
+Child Benefit War Pension Disability
+182 I Group 11 183 I Group 12 184 I Group 13
+Income Support Industrial Injury Retirement Pension
+
+5.0 ‘Pension Book’ Problem Management 8" November
+
+5.1. Problem Identification.
+
+The problem was first experienced at 06.00 by the Sub-Post Master at FAD 160116
+and reported to the Horizon Systems Helpdesk (HSH). Powerhelp incident E-
+0111080019 was raised. When the Sub-Post Master was advised to reboot the counter
+the problem recurred.
+
+By 06.56 a second Post Office outlet, FAD 336306, had reported that they had
+experienced the same problem.
+
+At 07.07 it was apparent that this problem could affect a significant percentage of
+outlets as it had also been reported by FADs 336306, 238632, 123818. At this time
+the problem was voice prompted to the SSC for investigation.
+
+As further occurrences of this problem were reported to the HSH the calls were linked
+into the master Powerhelp incident E-0111080019.
+
+At 07.21 the incident was formally reassigned to the SSC and PINICL PC 0071427
+was created.
+
+5.2 Management Escalation.
+
+At 07.40 the Pathway Duty Manager (Tony Wicks) was paged by the HSH and
+briefed on the problem. The Pathway Duty Manager was advised that at this time
+approximately 20 outlets had reported the problem and that the SSC were
+investigating the problem. Tony Wicks, in his Pathway Business Continuity Manager
+(Pathway BCM) role, decided that there was a high risk that this problem could affect
+the whole estate and decided to escalate the problem.
+
+At 07.45 the Pathway BCM contacted Dave Hulbert, the Post Office Limited National
+Business Continuity Manager (POL BCM), and informed him of the problem. The
+POL BCM was asked if the POL NBSC could monitor the call levels for this problem
+and if POL could conduct any checks which would assist in determining the severity
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 6 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+5.3
+
+of the problem, in accordance with the Cross-Domain Business Continuity Interface
+Agreement.
+
+At 07.47 the problem was escalated, via voice message, to the Pathway CS Support
+and Operations Manager.
+
+The 08.00 hand-over from the SMC team to HSH operational teams included details
+of this problem and the potential of a very high number of telephone calls from Post
+Masters to the Helpdesks. (Note that between 20.00 and 08.00 the HSH is resourced
+by SMC staff.)
+
+At 08.10 the ICL Horizon Incident Team (Steve Barber) telephoned the NBSC, as per
+the Cross Domain Helpdesk Interface Agreement, to inform them of the potential
+influx of incidents. At 08.45 the NBSC phoned and provided an update to Glynis
+Stokes, an HSH Team Manager.
+
+Throughout the morning of Thursday 8" of November the Pathway BCM, as Problem
+Manager, advised appropriate staff in POL, i.e. Richard Ashcroft (on Dave Hulbert’s
+behalf) and Mary Love, of the situation and progress.
+
+Problem Investigation and Release of the SSC Fix.
+
+At 08.00 the Pathway BCM telephoned the SSC Manager and discussed the problem.
+At this time the problem had been reported on pension book groups 5 and 7 and was
+urgently being investigated by the SSC team in BRAOI.
+
+At approximately 08.20 the Pathway BCM spoke with Mary Love, POL Problem
+Management, and exchanged problem information. (In accordance with the Cross-
+Domain Problem Management Interface Agreement). Mary advised the Pathway
+BCM that pension group 13 products were also affected.
+
+At 08.30 the Pathway BCM visited the SSC and a brief situation review was held. At
+this time it was established that the cause of the failure was incorrect Pathway
+Reference Data for these pension groups and SSC consultants were investigating the
+possibly of producing a fix for this.
+
+At approximately 08.45 the Pathway BCM telephoned the POL Problem Manager and
+provided an update. A further telephone conversation was held by the Pathway BCM
+with Richard Ashcroft (POL BC team) and it was identified that Post Masters could in
+fact make the pension payment by retaining the pension payment foil and, at a later
+time, scanning these in bulk.
+
+At approximately 09.00 it was confirmed by the SSC that a fix could be produced and
+shortly after this it was confirmed that the fix had been tested on the Live System Test
+Rig.
+
+Shortly after this the Pathway BCM was advised that approval had been given by the
+Pathway CS Infrastructure Manager (Paul Westfield) and by Don Gray (POL) for the
+SSC to test the fix on 10 outlets and, if successful, release it to all outlets.
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 7 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+5.4
+
+At approximately 09.30 the drop to the first 10 outlets was undertaken. SSC staff then
+liased with Post Office staff on the testing of the fix at these outlets.
+
+At approximately 10.30 the release of the fix to the rest of the estate was started and
+this was completed around 11.15.
+
+Communication with Post Office Outlets.
+
+At 09.15 the HSH requested that the NBSC consider changing the ‘Single Point of
+Contact’ Interactive Voice Response message to notify Post Masters that there was a
+known problem with the OBCS service. At 11.30 the HSH contacted the NBSC as
+the IVR message appeared not to have been updated. However, it transpired that Post
+Masters needed to select NBSC via Option 3 before they were able to hear the
+message, therefore it was likely that most did not hear the message.
+
+Within ICL it was reported during the Thursday morning that some Post Masters
+phoning the Single Point of Contact number received the message “Unable to connect
+you” and the connection was dropped.
+
+At 10.14 ICL Pathway received Message Broadcast MBS234 from Andrew Bradley
+of POL. In summary this message advised Post Masters that there was a known fault
+with the OBCS service. With the POL Problem Manager’s agreement the message
+was not distributed by ICL Pathway, because the release of the fix by the SSC caused
+the message to become obsolete.
+
+Note: For completeness MBS messages 234, (Approved) 235 and 236 have been
+included in Appendix One of this report.
+
+ICL Pathway produced a revised MBS message (Draft MBS235) which was sent at
+approximately 11.00 to POL for amendment and approval. This message in the form
+of Message Broadcast MBS235 was transmitted by ICL at 13.09.
+
+During the afternoon of the 8'" of November various discussion were held between
+POL and ICL Pathway CS Service Management on the wording of a further message -
+MBS 236. This was withdrawn because of concerns of introducing further operational
+problems due to the rebooting of counters, e.g. lost Post Master passwords.
+
+Following the 11.15 download of the fix for the 6 OBCS ProductModes the HSH
+were advised that Post Masters would be able to manually enter pension books. In
+some cases Post Masters were asked to reboot their systems due to the side affect of
+the OBCS problem. These were due to the Post Masters entering a foil under OBCS
+manual and the system freezing or having a ‘no entry sign on home and log out’
+which could not be removed using the usual work around.
+
+It has been reported by POL that inconsistent advice was being given by the HSH
+desk during the afternoon of the 8" of November. This has been investigated and
+there is no evidence to support this.
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 8 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+6.0 Technical Description of the Underlying Fault.
+
+On counters, each product has a ProductModes collection which controls the modes that
+product is available in, e.g. Serve Customer, Remit In, ete. It is data within this collection
+which disappeared, due to incorrect Pathway Reference Data, for the six OBCS pension book
+products in the live estate on the 8"" November.
+
+With the introduction at release M1 of the facility for the graceful retirement of Non-Core
+products an on-going process provided by business as usual change has been updating the
+ProductModes data for all Non-Core products. There were originally 1200 products which
+has reduced through this business as usual change. The 6 OBCS products have not yet been
+updated. The Reference Data Team had already initiated a plan to complete the task on the
+remaining products and this is scheduled to complete by the end of this year.
+
+For the $10 release, POL introduced a Change Request RO141 to extend OBCS to N Ireland.
+This involved receiving data from POL to make the OBCS products core as of 19"
+November. To minimise the risk of offices not receiving this data, it was agreed between CS
+RDT and POL EPOSS Service Provision that this data would be released on Thursday 1* of
+November, well ahead of its effective date, to minimise the effect on any non-polled offices.
+However, for the 6 OBCS products, it is now apparent that this resulted in 2 active core
+versions of the ProductModes on N Ireland counters - and only NI counters.
+
+The Scavenger was run on the nights of Friday 2" of November and Saturday 3“ of
+November. On Monday, when the results were analysed, it was observed that anomalies had
+been reported including ProductModes anomalies against 14 unique products, 6 of these
+being the fact there were 2 active core versions for the OBCS ProductModes. ProductModes
+anomalies are not unexpected on Scavenger runs as they had been reported on all previous 8
+runs.
+
+ProductModes anomalies had previously been reported by Scavenger and successfully
+corrected, and there was no reason to believe that these 14 would be any different. The data
+fix for these anomalies was then applied on Wednesday 7" of November via Operational
+Change Proposal 4343.
+
+The data fix took the form of removing the unwanted active version of the ProductModes.
+However, as mainland offices only had 1 active version the net effect was to remove the only
+active version
+
+On diagnosis of the problem, the SSC undertook an exercise to reinsert the ProductModes for
+the OBCS products, by correcting the Pathway Reference Data. This fix allowed the manual
+input of pension books for the 6 affected products. On the 8" of November it was expected
+that the scanning of pension books for these 6 product groups would be available after a Post
+Master initiated counter reboot or the automated reloading of counters at 3.00 am on the
+Friday morning. Subsequent analysis shows this was not the case see 7.2
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 9 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+7.0 Issues Relating to the SSC Fix
+
+Two further issues were raised as a result of the fix by the SSC.
+
+7.1 TIP Processing Issues.
+
+When the SSC fix was applied to the 6 pension groups it was inadvertently made on version 7
+ProductModes across the 6 groups. This was incorrect as two of the pension groups are
+version 5 products.
+
+The consequence of this mistake was that approximately 1800 TIP files from ICL were
+rejected on the Thursday night transfer. This error was addressed on Friday and all the TIP
+files were retransmitted successfully on Friday night (9"* November).
+
+On Saturday 10" November slow processing was reported on the OpTIP system and this
+problem was raised with the SSC team. A joint SSC/OpTIP investigation took place on
+Saturday afternoon. At that time it was believed that the OpTIP processing would catch-up
+over the weekend. Subsequent investigation identified that the underlying cause of this slow
+processing was a change made to Product 1 — ‘Serve Customer - Settle To Cash’ OpTIP.
+This change was introduced by POL and had nothing to do with the original problem.
+
+On Monday 12" November this problem was addressed by OpTIP and as at 16.30 on
+Tuesday 13" of November all TIP processing was up to date.
+
+7.2 Pension Book Scanning Issue
+
+On the 8" of November ICL Pathway reported that the scanning of the 6 OBCS pension
+books would not work until either the Post Master initiates a reboot or the overnight reload
+completes. However, during that afternoon Mary Love (POL Problem Management) reported
+that the scanners at FADs 259246, 473340, 011207, 273340 and 275340 started working
+without a Post Master manual reboot.
+
+As a result of additional analysis of the code, since the event, it has been established that
+some forms of OBCS transaction, e.g. an Issue or a no-barcode transaction would reset the
+necessary flags and allow the new reference data to be loaded. This meant that some scanners
+became operational after these transactions, i.e. before a reboot.
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 10 of 17
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+FUJ00232485
+FUJ00232485
+
+8.0 Follow-up Actions
+
+8.1
+
+Reference Data Follow-up Actions
+
+Actions have been taken to ensure there is no recurrence of the Reference Data problem.
+
+1.
+
+8.2
+
+The Reference Data Team had already identified the need to clear out the
+remaining items from the M1 activity and the work is scheduled for completion by
+the end of the year. The immediate safety net for future Scavenger activity is to
+check if the Scavenger tidy is to any item in the table of M1 items. This check has
+now been implemented.
+
+As this problem was as a direct result of two anomalies overlapping each other,
+with the added check ICL Pathway has already implemented and the clear out of
+the table of M1 items in the longer term (item I above), there will be no recurrence
+of the problem.
+
+Problem Management Follow-up Actions
+
+Whilst 8.1 addresses the underlying technical issue, Pathway CS consider improvements
+could be made in the general handling of similar failures e.g.
+
+ds
+2
+
+Escalation processes;
+
+Communication with Post Masters, e.g. a pre-approved MBS message for such
+circumstances;
+
+A review of the Single Point of Contact system to reduce the abandoned call rate;
+
+A review of and improvements to the IVR message processes.
+
+Eric Hillier, who is the Senior Problem Manager within Pathway Customer Service, will
+investigate these areas. His findings along with POL's will be presented at the HSRF on
+26th November for discussion, so that the necessary ICL, POL and cross-domain process
+improvements can be introduced.
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 11 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+9.0 Appendix One — MBS Messages
+
+Message Broadcast 234
+
+Post Office Limited - Message Broadcast Service Emergency Cascade
+
+Important information - Any urgent messages that impact on Horizon in anyway must be fully approved by BSM
+before submitting this form to the Communication Team. Any urgent operational messages should also be
+communicated in the next available Counter News where necessary.
+
+Reference number (to be allocated by Communication Team): MBS234
+Date: 8 November 2001
+£
+
+The following characters cannot be used: pound sterling character {6}, single quote {}, double quotes (7, bullet points (), colon
+{3}, brackets {()}, greater than {>} and smaller than {<}.Do not use italics, underlining or bold type,
+
+Title (up to 18 characters including space characters) OBCS Failure
+
+Message (up to 1,670 characters including space characters. The Communication Team will insert message reference number,
+date and, helpline details, which will form part of the message)
+
+MBS234 - OBCS failure - 8 November 2001
+
+‘A fault has occurred in the OBCS system affecting certain groups which has resulted in offices not being able to scan order
+books or use the OBCS Foils entry. An error message is displayed on screen
+
+Please follow these instructions until further notice when encashing orders from affected books:-
+-check order books against the stop list you printed last night [or most recent available]
+
+perform the normal manual checks on the order book
+
+-pay the due foills and file these foils separately
+
+Please do not contact NBSC, HSH or PON external helpline regarding this problem.
+
+‘further MBS will follow giving you an update on the situation and instructions on how to input the foils you have filed
+
+Target branches for cascade (insert one or more branch types -BO, CFPO, IFPO, ISPO, MSPO, SO, SPSO - or the words ‘All
+branches’ or supply a list of outlet names and FAD codes for other selection e.g. product specific)
+
+All branches
+You must ensure the helpline you use is aware this message is being sent and they have background information or
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 12 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Versio 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+‘additional information as appropriate. Relevant helpline e.g. NBSC, HSH or other (for outlets with queries)
+
+Priority (insert ‘high’ or ‘low’ meaning, respectively, ‘open immediately’ or ‘open as soon as possible’) High
+
+Retention period (10 to 37 days) 10
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 13 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+ssage Broadcast 235
+
+Post Office Limited - Message Broadcast Service Emergency Cascade
+
+Important information - Any urgent messages that impact on Horizon in anyway must be fully approved by BSM
+before submitting this form to the Communication Team. Any urgent operational messages should also be
+communicated in the next available Counter News where necessary.
+
+Reference number (to be allocated by Communication Team): MBS235
+Date: 8 November 2001
+1
+
+The following characters cannot be used: pound sterling character {6}, single quote {}, double quotes (7, bullet points (), colon
+(), brackets {0}, greater than {>} and smaller than {<}.Do not use italics, underlining or bold type,
+
+Title (up to 18 characters including space characters) OBCS Failure
+
+Message (up to 1,670 characters including space characters. The Communication Team will insert message reference number,
+date and, helpline details, which will form part of the message)
+
+MBS235 - OBCS failure - 8 November 2001
+
+‘A fault has occurred in the OBCS system affecting certain groups which has resulted in offices not being able to scan order
+books or use the OBCS Foils entry. An error message is displayed on screen
+
+UNDER NO CIRCUMSTANCES SHOULD CUSTOMERS BE TURNED AWAY - MANUAL PROCEDURES MUST BE
+FOLLOWED UNTIL SERVICE IS RETURNED. PLEASE NOTE NEW ORDER BOOKS CAN BE ISSUED FOLLOWING
+HORIZON SYSTEM USER GUIDE, TRANSACTIONS - SERVE CUSTOMER - PART TWO, OBCS PENSIONS &
+ALLOWANCES, SUBSECTION 9.1
+
+A correction has been released this morning which will allow manual entry of the barcode details via the OBCS Manual or OBCS
+Foils button. You will need to select YES on the System Failure question on entry.
+
+The scanning facility for OBCS books will be available Friday 9 November 2001. If you have logged a call with the HSH about
+this problem, it will be closed.
+
+Please log a new call if you still have a problem on Friday.
+
+All foils already taken manually should be entered via the Bulk Input facility i.
+Transactions [F 1]
+Bulk Input [F9]
+
+Other Products [F13]
+
+P&A [F1]
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 14 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+OBCS foils [F9]
+
+See Horizon System User Guide, Booklet D, Section 9.2.
+
+If you continue to experience problems please call HSH.
+
+We apologise for any inconvenience this has caused you and your customers
+
+If you do not understand any part of this message please contact NBSC on! = GRO.
+
+electing Option 3.
+
+Target branches for cascade (insert one or more branch types -BO, CFPO, IFPO, ISPO, MSPO, SO, SPSO - or the words ‘All
+branches’ or supply a list of outlet names and FAD codes for other selection e.g. product specific)
+
+All branches
+
+You must ensure the helpline you use is aware this message is being sent and they have background information or
+additional information as appropriate. Relevant helpline e.g. NBSC, HSH or other (for outlets with queries)
+
+Priority (insert ‘high’ or ‘low’ meaning, respectively, ‘open immediately’ or ‘open as soon as possible’) High
+
+Retention period (10 to 37 days) 10
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 15 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+Commercial-in-Confidence Date: 16-NOV-2001
+
+ssage Broadcast 236
+
+Post Office Limited - Message Broadcast Service Emergency Cascade
+
+Important information - Any urgent messages that impact on Horizon in anyway must be
+fully approved by BSM before submitting this form to the Communication Team. Any
+urgent operational messages should also be communicated in the next available Counter
+News where necessary.
+
+Reference number (fo be allocated by Communication Team):
+Date:
+1.
+
+The following characters cannot be used: pound sterling character {£}, single quote {}, double quotes {*, bullet points (+), colon
+£3, brackets {0}, greater than {>} and smaller than {<}.Do not use italics, underlining or bold type,
+
+Title (up to 18 characters including space characters) OBCS Update
+
+Message (up to 1,450 characters including space characters. The Communication Team will insert message reference number,
+date and, helpline details, which will form part of the message)
+
+MBSxxx - OBCS Failure Update - 8 November 2001
+
+A fix for the fault in the Order Book Control System has been sent to your office. This will enable you to start scanning bar-coded
+order books when you receive it
+
+You can receive the fix immediately at your counter[s] by restarting your workstation[s]. You will need your PMMC and PIN
+record to perform this operation. This operation can take up to about 15 minutes at each workstation so you are advised to take
+this action only if you are able to do so without it adversely impacting on customer service. For further information see the
+Horizon System User Guide, booklet B, Subsection 14, page 46.
+
+Alternatively, you need take no action now and the fix will be received automatically during the night. If you decide on this course
+of action you will NOT need to restart your workstation[s] tomorrow morning,
+
+Until you have received the fix by either of the above methods you will not be able to scan bar-coded order books and should
+enter foils as advised in MBS 235.
+
+Please accept our apologies for any inconvenience caused to you and your customers by this fault. If you do not understand this
+Message or you still encounter problems after receiving the fix contact the Horizon System Helpdesk by calling the NBSC on
+GRO __iand selecting OPTION 2
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 16 of 17
+FUJ00232485
+FUJ00232485
+
+ICL Pathway Ltd Pension Book MBCI Report Ref: CS/REP/113
+Version: 1.0
+
+Commercial-in-Confidence Date: 16-NOV-2001
+
+Target outlets for cascade (insert one or more outlet types -BO, CFPO, IFPO, ISPO, MSPO, SO, SPSO - or the words ‘Ail
+outlets’ or supply a list of outlet names and FAD codes for other selection e.g. product specific)
+
+You must ensure the helpline you use is aware this message Is being sent and they have background information or
+additional information as appropriate. Relevant helpline e.g. NBSC, HSH or other (for outlets with queries)
+
+Priority (insert ‘high’ or low’ meaning, respectively, ‘open immediately’ or ‘open as soon as possible’)
+
+Retention period (10 to 37 days)
+
+Contact details Budget code
+
+Name:
+Title: (insert POL or ICL Pathway after title)
+Telephone number:
+
+© 2001 ICL Pathway Ltd Commercial-in-Confidence Page: 17 of 17

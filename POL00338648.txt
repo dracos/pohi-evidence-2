@@ -1,0 +1,249 @@
+POL00338648
+POL00338648
+
+Message
+
+From: Andrew Winn;
+
+on behalf of © Andrew Winn},
+
+Sent:
+
+To: .
+Subject: RE: Branch visits with shex
+
+I think it might be better to use On line help as I have used the old Ops manual here.
+
+Andy
+
+From: Alison Bolsover
+
+Sent: 20 February 2012 15:56
+
+To: Andrew Winn
+
+Subject: RE: Branch visits with shex
+
+Thanks Andy - And welcome back ,hope you had a great time
+
+Could you download and send me the 57 pages in a document so I have it to show Rod or I can summarise
+Cheers Ali
+
+sore Original Message-----
+
+From: Andrew winn
+
+Sent: 20 February 2012 13:28
+
+To: Alison Bolsover
+
+Cc: Cathy X Macdonald
+
+Subject: RE: Branch visits with shex
+
+Ali
+
+The 6pm target is not defined as such but it makes sense to ensure end of day/week/month routines are
+commenced by this time as all data produced on Horizon is recorded real time at the data centre. This is
+the polled at 19.00 to POLSAP/Credence/Clients. If activities are performed later than 19.00 it will
+form part of the next day's transactions.
+
+As covered in the chain already there is no requirement for a branch to close to carry out branch
+trading. Crowns already carry out such routines whilst service continues - although there is a customer
+experience issue when staff are seen counting cash etc rather then serving. Small PO Local type branches
+do have a problem here. I understand the project are aware and considering how to sensibly maintain
+service level whist carrying out essential routines.
+
+There are 57 pages of branch trading report instructions so will not try to squeeze that into half a
+page.
+
+we do need pre 19.00:-
+
+Cash declarations - flexible planning.
+
+Cheque despatches - last collection time.
+
+RM & Parcelforce despatches - last collection time.
+
+Santander cut off (Wednesdays) - we get charged for each cut off error.
+
+(this list is not necessarily exclusive - the product owners may be aware of implications in their areas
+I am not aware of.)
+
+There are lots of different daily and weekly reports but the majority of SUs will not have to run most of
+them as they will not have performed related transactions. Branch trading has no timing implications -
+we already ask the Lottery network to roll on the Thursday.
+
+Andy
+
+wo--- Original Message-----
+
+From: Alison Bolsover
+
+Sent: 20 February 2012 08:59
+
+To: Andrew Winn; Cathy X Macdonald
+Subject: FW: Branch visits with shex
+
+andy / cathy
+
+Urgent
+Can you pull me this request together today please so that I can give to Rod tomorrow a.m.
+Ali
+POL00338648
+POL00338648
+
+-----Original Message-----
+
+From: Rod Ismay
+
+Sent: 20 February 2012 08:22
+
+To: Alison Bolsover
+
+Subject: Re: Branch visits with shex
+
+Thanks Ali. I shall send the note below and then could you get a short note like a half page email which
+explains in bullet points the main things that a branch would be doing as part of that end of day and end
+of period stuff. I'm briefly in chesterfield before a train to london tomorrow so would be great if we
+could have a few mins chat first thing.
+
+Thanks Rod
+
+- Original Message -----
+From: Alison Bolsover
+
+Sent: Monday, February 20, 2012 08:53 AM
+To: Rod Ismay
+
+Subject: RE: Branch visits with shex
+
+Rod
+Looks Ok to me
+Ali
+
+-original Message-----
+From: Rod Ismay
+
+Sent: 19 February 2012 23:42
+
+To: Alison Bolsover
+
+Cc: Rod Ismay
+
+Subject: Re: Branch visits with shex
+
+Hi Alison - I'm off a day but will give you a quick call first thing just to check the note below reads
+ok.
+
+It follows my email earlier today, I plan to send the note below to Kevin Gilliland but would like to
+follow up soon after with a bit more description of what key routines happen at end of day, end of week
+and end of trading period. And to be clear about who is driving the need for them and whether they can in
+part or in full be done earlier or later.
+
+For now though is the following ok from your point of view.
+Kevin, Lesley,
+Accounting processes do not force a branch to stop trading at 6.
+
+However, there are housekeeping and cash security routines that do need doing at some time. Some of them
+can only be done when trade has finished and when the system is no longer in serve customer mode. I
+think the issue is more of being clear with branches what the trading hours are and then ensuring
+Fcieney and security in getting the end of day routines done after the agreed closing time. This will
+involve:
+
+(a) reinforcing necessary end of day routines to bring them more to life if they are not understood -
+this fits with the current review of procedural instructions in NTP,
+
+(b) reinforcing the need for conformance during the day to save time at the end of the day, and
+
+(c) having a lean mindset to how through technology and process we can work with branches to streamline
+routines
+
+I_suspect there is a risk that when we say, for example 7-7 hours for a branch, they may interpret 7pm
+closure as being “end of wrap up routines" as opposed to “end of customer opening hours". That then
+creates a false branch closure at say 6.30 which is not what we want.
+
+The end of day routines have probably been well understood by agents in the traditional 9-5 model but,
+particularly with staff shift changes etc on longer trading days, it needs review in NTP.
+
+Enablers will depend on joined up solutions between P&BA, Network and IT. This may also necessitate an
+understanding of how PO data processing windows align with those of our clients too.
+
+Branches are required to follow a “Branch Trading" cycle which ends on a Wednesday. The routines are part
+of their local assurance processes, their sign off on their accounts and housekeeping to rol] into the
+new period.
+
+As I say, I don't believe this has to be done at 6.
+
+There are things that need doing to tie in with end of trade on the wednesday, but it can be done later.
+As regards the work that is needed at month end, branches can also help themselves to reduce it if they
+deploy good conformance and compliance during the day. That means getting it right first time in their
+
+transactions, in their "cut-offs", in their remittances and in their cash and stock checks during the
+day.
+POL00338648
+POL00338648
+
+I will find out more on the specifics of period end routines and how these are being considered in NTP.
+Thanks, Rod
+
+----- Original Message -----
+
+From: Lesley J Sewell
+
+Sent: Sunday, February 19, 2012 06:55 PM
+To: Kevin Gilliland
+
+Cc: Rod Ismay
+
+Subject: RE: Branch visits with shex
+
+Kevin
+
+A branch has to be closed to perform their balance. However, we have checked with Fujitsu whether there
+are any technical reasons why the branch would have to close at 6pm on a Wednesday to do this, and
+there's no technical reason for this at all. It's all down to our business processes.
+
+We have made Rod aware of your query as this looks to be a call between P&BA and Network about when
+branches need to balance. From an IT perspective, there's no problem with the branch performing their
+balance as soon as they close. The only point I will make is that we do have the feasibility study
+looking at extended hours as there will be times when there is a need for ‘down time’ periods due to
+changes or operational overnight activities. But these would not be a 6 on a Wednesday evening.
+
+I've copied Rod into the email to respond from a business process perspective.
+
+Regards Lesley
+
+From: Kevin Gilliland
+
+Sent: 16 February 2012 06:00 PM
+
+To: Roger W Gale; Sue Huggins; Lesley J Sewell
+Cc: Jackie Meylak
+
+Subject: Branch visits with shex
+
+Belsize park - looks good, no queues. 2 issues arising: they have to close the PO once a month on a
+wednesday at 6 to balance. They have been told that they have to do this because of Horizon. This is one
+of the main reasons for customer complaints because it's closed just when customers use the service on
+their way home from the office. Lesley, is this right an if so how do we resolve this? Sue, presumably
+this is a wider issue? How much of a problem is it? The second issue is the helpline not being
+available. They didn't know that we were going to address this. what are the plans and when will it
+happen? why haven't we kept the branch informed?
+
+camden - this was an eye opener for Susanna as she experienced se of the challenges we face in Crowns
+such as property and flexibility of staffing. The manager and CAM expelled that it was quiet in branch
+because of half term. I asked if they therefore let staff take holidays to match the reduced demand bur
+was told that we can only let 3 go at a time! Their was a sea of unoccupied staff.
+
+Fulham: great looking branch and store. And everyone impressed.... But the was no signage at the local
+counter and it wasn't being used! If I had of realised this I wouldn't have gone. Also they had
+experienced massive problems getting forms because the fad code has changed. why haven't we picked this
+up. The manager was asp saying that they have lost business because there is no in store signage
+anywhere. To cope they've put up some of the old signs from The WHS branch (!!!) and there are no signs
+that point to where the Po is at the back of a very large store. who is supposed to be project managing
+this and what quality checks do we have in place?
+
+I'd like your responses by Monday pls
+
+Sent from my iPhone

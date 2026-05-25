@@ -1,0 +1,1947 @@
+POL00113432
+POL00113432
+
+ROTA CHECK PROCEDURE
+
+Duty Notes
+
+The procedure for analysis of branches and production of fraud and conformance reports
+
+Andy Wynn
+
+Produced August 2011 (Version 2.1)
+(Based on version 1 by Cathy Macdonald and Richard Allen)
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Introduction to Rota Checks
+
+A Rota check is a name used to describe any branch that has been, or should be investigated by the Fraud &
+Conformance team in Product & Branch Accounting. This document attempts to explain this procedure in full.
+
+There are many aspects of everyday branch operations that we can check to understand a branch position at a
+moment in time.
+
+This is an ongoing process, and as such modifications can be made to this procedure and this document at any
+time. This document can be accessed in the following location:
+
+T:\Finance\Finance Product & Branch Accounting \Finance P&BA Branch\Branch Control & Cerformance\Duty
+Instructions \Rota Check Process.doc
+
+Starting a Rota Check
+
+Initially, a branch will be identified for a rota check for any of the following criteria:
+
+Requests by Contracts Advisors, Security
+
+Branches escalated by other teams in P&BA
+
+Branch identified as a problem office e.g. Cash concerns , reversals
+Random checking
+
+Watch list
+
+New Postmaster
+
+When a branch is identified as requiring a rota check, the person responsible for performing the rota check
+must start a new SharePoint item. The SharePoint site for the fraud and conformance team is located at:
+Attp://iplatform-sp.intranet point/sites/fraudconformance/Lists/Rota %20check%20recording/Allitems.aspx
+
+This can be copied and pasted into the address bar of Internet Explorer.
+
+If you then click on New /tem (see fig 1), you will be presented with a series of questions about the rota check,
+which can be answered by following the procedure detailed in this document.
+
+If you are returning to a previous rota check, click on /ilterand then select criteria, like the FAD code, your
+name, or the date of the check to restrict the list.
+
+Fraud and Conformance
+Rota check recording
+
+jew Details of branches who have been checked in P&BA across a number of categories
+
+ks “ZjNew Item I “Eritter I GAEdit in Datasheet
+kes, O Fad Code Hame of Postmaster Branch Name He's long has postmaster been in ¢I
+day 232313 Mr Sukwant Singh Garden Farm Unknown
+
+ih.
+
+Tecan!
+Fig 1. Rota check recording SharePoint site.
+
+Please bear in mind that the SharePoint site has a 30 minute inactivity timeout enabled, which means if you
+don't click save at least once every 30 minutes, all of the data you have entered since you last saved will be
+lost. Most people that are new to Rota Checks can take well over an hour to complete one, and longer if there
+are issues to be raise, so plan accordingly.
+
+Please also be aware that the SharePoint site is available to view by colleagues from around the business
+including Network and Security. Therefore details must be logged in a clear, concise and consistent manner
+whilst avoiding the use of jargon. The details you log may be need to be used several months later and must
+be easy to understand - remember that not everyone understands the reports that you are using , they will
+not always know how to tell if a branch is rolling a loss etc.
+
+Rota Check Procedure - Version 2.1 (Aug 20111) . 2
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+The Initial Questions
+
+The first few questions can be answered from either the config database (See the appendix for the location of
+
+this) OR from the Template spreadsheet, which is located in
+
+T:\Finance\Finance Product & Branch Accounting\Finance P&BA Branch\Branch Control &
+
+Cerformance\Branch Control\Rota Checks\Template.xls
+
+Using Template is the recommended method for performing a rota check, and will be covered extensively in
+
+this document.
+
+Enter FAD Code of CREDENCE download I
+
+Branch Details
+
+FAD Code: Po
+
+Fig 2. The Template Spreadsheet upon opening
+
+If you already know an office FAD code, load up the 7emplate spreadsheet, click the Enter FAD Code button,
+
+and type the FAD code into the box. Uncheck the “Full Check” tick box, and click the Run button.
+
+Items In RED DO NOT require a credence rota check download, r
+FAD Code: } 004003  NewData Edit Current
+(- Partial Check
+ea I) T Spoilt Postage T Non-Sales [~ Branch Trading
+T Cash T™ Stock Adjustments {~ Green Giros I~ Scratch Cards
+T™ Im & Out Payments T All Sales Reversals Green Giros
+I cheques Sales Reversals F petal p~ Graphs &Old
+T cheques To EDs T™ Sales Reversals FP Missing change cn
+- ; I Non-Sales Reversals T cat ofF ge Swing
+I~ Transaction Corrections
+Other Check Ttems
+Ir Traveller's Cheques T~ LoanTo PO [~ MYL Losses Cancel Run
+
+Fig 3. Starting a new Rota Check with just config
+
+A progress bar will be displayed, and after a few seconds, the locally stored data on the branch will be
+
+displayed. This includes a lot of information that is initially required. At this point you can fill in:
+
+© Date of check (in format dd/mm/yyyy)
+Period of check
+Checked by (your name)
+FAD Code (the six digit version)
+Branch Name
+Number of Counter Positions
+Name of Postmaster
+How long has postmaster been in post
+¢ Does the postmaster have more than one branch
+Amongst others, but lets not get too far ahead.
+
+Rota Check Procedure - Version 2.1 (Aug 2011)
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Here is a little explanation on the less obvious of the criteria that needs to be determined before we go any
+further:
+
+‘ © Intervention or Analysis - This will default to Analysis for new rota checks, and unless you have a good
+reason to change it, it should probably be left on analysis. If you intend to contact the office, this
+should be marked as Intervention, and the Details of Contact field must be filled in after your contact
+with the office.
+
+* Reason for Checking - The default is N/A, which should be sufficient for most Rota Checks (as you
+don’t have a specific area to focus on), but if there is a specific area of concern, then this should be
+changed accordingly. New Postmasters have their own option in here.
+
+e Part or Full check - Unless told otherwise, or if speed is important, a full check is recommended, as
+this will highlight most concerns about the office.
+
+* Number of Counter Positions - This is also known as the number of Horizon Terminals, as horizon is
+the system that postmasters have to use to process all transactions and communicate with the wider
+post office network. This is an indication of the size of the post office, and can go some way towards
+explaining if they have a large amount of cash on hand.
+
+¢ How long has postmaster been in post - Statistically, newer postmasters are more likely to behave
+fraudulently, and have issues with non-conformance.
+
+At this point, it would be advisable to fill all of this data into SharePoint. Then we can draw in the other
+required data about the post office. The other things that can be filled in without further action are:
+
+¢ Other Branches linked to the postmaster - If the postmaster does have more than one branch then
+inside template, you can click on the number of braches and the list will be displayed and copied to the
+clipboard. This information can then simply be pasted straight into the SharePoint site. If there are
+more than 10 branches, don’t provide the list, just provide a total, e.g. “PM has 31 branches”
+
+Horizon Terminals:
+
+Postmaster Name: Rymans Ld
+Start Date: * More Than Yeats (26/08/2001)
+Contact Number:
+of PM Branches: 4 [Click to View List)
+
+Branch Trading Group
+
+Complete BT On Time
+
+Fig 4. Postmaster Branch List
+
+¢ Does the Branch have a BO! ATM - This stands for Bank Of Ireland Automated Teller Machine,
+Essentially, does the branch have an ATM machine?
+
+«Is this a Lottery office - Does the office deal with lottery transactions like scratchcards and winning
+tickets?
+
+Please also remember to save and close periodically when using SharePoint to prevent data being lost
+
+Fraud and Conformance
+
+Rota check recording: New Item
+
+(ASave and Close I () Attach File I Go Back to List
+
+Fig 5. Remember to Save and Close!
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 4
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Retrieving Additional data for Analysis
+
+So far, all we have looked at are details of the branch that don’t change frequently, if at all. The only way to
+get recent data is to download it from a database called Credence, which can be accessed at:
+
+http://polboxi. polmi.point:808O/Info ViewApplogon jsp
+
+You will receive a username and password for this system from Ashley Hall or Marie Pyatt. The username will
+be in the format firstname.secondname
+
+Once you have logged on, you may get a blank screen with just a header:
+
+)
+
+2% Home I Document List I Open + I Send To + I Log Out I Preferences I About I Help
+
+Fig 6. Credence header
+
+In this case, just click on Home to get to the main screen. When you are on the main screen, which looks like
+this: .
+
+Fx
+=) F381 I New + Add I Organize ~I Actions » I Search title
+: Title * Last Run
+Y Branch Overviews - Hon Sales- 2 Year Data \ *
+
+i i
+1 Public Folders Branch Overview - Sales - 2 Year Data
+
+t
+
+© ' Branch Overview - Sales - 2 Year Data (Item ID} I
+
+Fig 7. Credence Homepage
+
+Click on Public Folders on the left hand side of the screen, then enter Finance, then P&BA, then Branch
+Control, and scroll down in the right hand side of the screen until you see an item called ROTA CHECK. (You
+may need to go to the next page by using the controls in the top right hand of the screen.)
+
+Ho4 ff jofa bon
+Fig 8 Page Controls
+
+I:
+F S ROTA CHECK
+I
+
+ic
+
+Fig 9. The ROTA CHECK Credence report
+
+All of the items with this icon % are called Credence Reports, or Credence Web Intelligence Reports.
+
+Double Click ROTA CHECK and after a short delay, you will be asked what context(s) you wish to use with the
+query. Select EVENTS, then after another short delay, you will be asked for either 3 or 5 pieces of information.
+The Location FAD code is the same FAD code we have been using so far, and the current buisiness dates are
+provided on the Branch Detail sheet of Template. You may be asked for two sets of dates, with both a Start
+and an End date. If it requests a 10 week date, enter the 10 week dates from Template, if it doesn’t specify
+the time period; enter the 3 month dates from template. (See overleaf)
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 5
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Branch Data Periods:
+
+I 7t08Mtt
+
+I-osiosnitter#08itt
+Period 05 2011
+THosi2ont
+
+Business DateiStert}: 024072040 00:00:00 _ f=
+Enter 10 Yk Business DatsiEndi: 1312/2010 00:00:04
+
+Fig 10. The Branch Data Periods from template.
+
+Once these dates have been entered (there is no need to enter 00:00:00 on each one as well), click Aun
+Query. This query will take several minutes to run (usually between 2 and 5 minutes), so it is recommended in
+the future to start this running, and then do the initial work of transferring the fixed branch information
+discussed in the previous section. Once the report has been generated, you may see a message like this:
+
+Giro Cut Off
+Lean To PO
+
+Fig 11. Data Retrieval Failure.
+
+If it has that many items on it, it is unlikely to be worthwhile loading into 7ermplate, but if there are only a few
+listed items, then there shouldn't be significant problems. There is no reason for concern if Loan To POhas no
+data for example, but recognising which areas are required comes with experience, as these are variable based
+on the branch in question.
+
+The final thing to do on Credence is download the report to your computer. This can be done by clicking the
+Document menu, then Save to my computer as, then Excel.
+
+Web Intelligence - ROTA CHECK
+
+$ Document] ~I view ~ I 231 88 I ~ I[ioo% ]
+
+Close
+Save as
+
+Save te my computer as. > Excel
+
+Save Report tc my Computer As > POF
+Sock Adjustments csv
+
+BT Group evr pei .
+© jn Gut Payments CSV (with options)...
+
+Fig 12. Saving Credence Report
+
+Click Save in the dialog box presented, and save the file to the following location:
+
+T:\Finance\Finance Product & Branch Accounting \Finance P&BA Branch\Branch Control &
+Cerformance\Branch Control\Rota Checks \kFADCode> IROTA CHECK.x!s
+
+Where <FADCode> is the 6-digit FAD code of the branch. (If you only have a 5- or 4-digit code, lead it with
+zeros. E.g. 004123). This file can technically be saved anywhere, but in the current version of 7emplate, it is a
+requirement that the file is named ROTA CHECKxls.
+
+After saving the file, it is important to log out of Credence, as the system reserves resources for logged in
+users, and it will not log you off automatically until 8pm.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 6
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Importing Additional Data into 7emplate
+
+Now we have a saved Credence download, we can import it into the 7emplate. Open up the copy of template
+
+that you still have open, or load up a new one. (See the Appendix for the location of 7emplate)
+
+Click on the Enter FAD code button, and make sure that Full Rota Checkis ticked. If you already have data
+loaded into the workbook, this will compliment it, rather than overwrite it. The data can be forcibly overwritten
+
+(for example, if you wanted to check another branch) by ensuring that New Data is selected.
+
+g
+
+Edit Rota Check.
+Teepe nero
+
+pirSen Ene NN UA
+
+FAD Code: I 004053
+
+£ New Data
+
+© Edit Current
+
+r- Partial Check
+
+Sales Reversals
+
+FF 5ek
+
+Green Giros
+TF coat
+rt
+
+PF Cia OFF
+
+T™ Change Giving
+
+f~ Other Check Items
+T Traveller's Cheques I~ LoanToPO J~ MYL Losses
+
+Cancel Run
+
+Fig 13. Running a full Rota Check.
+
+If will take about 30-40 seconds for 7emplate to pull in all information.
+
+When it has, the majority of summary information will be available on the Branch Detail sheet.
+
+If you are unfamiliar with the rota check procedure, or need reminding of the areas to highlight when
+performing a rota check, the /nformation button on the Branch Detail sheet will add comments to all of the
+relevant cells and sections. Before we get into great detail of the rota check, the next section is a quick guide
+to Excel, and the major and useful functions and utilities provided. If you are comfortable with spreadsheets,
+pivot tables, sheet navigation and autofilters, feel free to skip this next section, and continue on page 12.
+
+Rota Check Procedure ~ Version 2.1 (Aug 2011)
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Excel Function Overview
+
+An Excel workbook (Such as Template, or Config, briefly touched on earlier), can consist of many worksheets.
+These worksheets are access through a series of named tabs at the bottom of the program. If the workbook
+contains a lot of worksheets (Usually just referred to as sheets), there can be too many to display at the
+bottom, and the user must scroll through these, using the controls on the left side of them.
+
+[<> Branch Detail {Cash Data_{_In And Out Payments {BT Trading ATCs {1c Breakdown _X Scratch Cards {checI<_]
+
+Fig 14. Workbook Tabs
+
+The Branch Detail sheet is always the leftmost sheet, so clicking this arrow (¥ ) will always display it on the tab
+list.
+Let's take a closer look at one of these sheets that holds a lot of data. This is the Stock Adjustments sheet:
+
+3 os ON loan fereee[ [Som Aguameet-Pesuwe [1 [oath I
+q om [sexaet —— [ares [Som Agunneet-Perun [2 [sven ream fo z
+2] fone [meson [ress — [FF [ose [ora Ser Agus Peru ie io
+eco [mown [reese — [FF [eae — fre Soe Agua Penure [2059 —[sucg Sreuiae ———[o
+coo fueron fans — [Fr [pews ——fersa —[w [sea aqunnet-Pesaee Ib a a
+= er fuosnen feast — [rr [peat — Terre [set Aguseet-Posure [SO Sarer ry ir
+r io faoson [aoe — [a freon —— [err fs [Sent Aguarwe:Peswre [6 [Pesan Siok Fe
+I foro saeco fssean — [re foewani Teresi Stet Ada Posare_[t [eas a ir
+a cI cn ea ak [pavarsia [Sek Aauseet-Posere [SE I Op Oo B
+rae ood a oa [panini rete [Soa Aaineet-Possee [em a [
+ce] foam mean ass [FF [oavaet —— [arene [Sea Agunet Pome [5 [omSmreroaan —[o 7
+
+Fig 15. An Example of the Stock Adjustments Worksheet.
+
+As you can see, there are several points of data in this list, and this is organised into columns and rows. A
+column is headed by a letter, and stretches the entire height of the page, and a row is headed by a number
+and stretches the length of the page. Where a single column and row meet is called a cell. This cell's reference
+is given by the column letter and the row number. In Fig 15 above, the cell A3 is selected. There are millions
+of individual cells on this worksheet, but most of them are empty. Each cell usually contains a single point of
+data. Whereas all the data combines to form a worksheet, the area enclosed in the thick black border with the
+red column heading is called a table (or more correctly, a sub-table).
+
+The example in Fig 15 is a typical occurrence of the Stock Adjustments worksheet. In a large branch, this will
+go down for several hundred rows, In the Green Giros worksheet, there can be in excess of six thousand rows!
+We could analyse this data by hand, but it makes far more sense to filter it for the criteria that we require.
+
+Autofilters
+
+If we decide that a certain employee requires investigation on the stock adjustments he has performed, we can
+use an autofilter to filter this data. If you select any cell in the area you wish to filter (an autofilter will apply to
+all data in the section above, if you were to select any cell in the range B4:N89), then click the Data menu
+option (at the top of the screen), then click fitter, then autofilter.
+
+ta I Window Help
+Eiter > I[v= autogiter U
+iff I Form... \ show All
+tial] PivotTable and PivotChart Report... I Advanced Fiter...
+I Import External Data
+I ust
+XML
+I ¥ 287802
+ter rr qoert00i 867802 [16
+
+rears
+Fig 16. Where to find the Autofilter Option
+
+Rota Check Procedure - Version 2.1 (Aug 2014) 8
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+This adds small down arrow buttons (J) to each of the colurnn headers in the sub-table, and when you click
+_ on this arrow, a list of all unique iterns in that column will be displayed, as well as some advanced features
+such as Sort Ascending.
+
+FF doin 887914 16
+
+FF I oenoor sera [16
+18:08:41 A DTHOOt 48877 16
+755920 [FF Iarnsco 278880 [16
+e500 (FF I Mzaoot 278880 [16
+16153 [FF I pxooot 270886 [16
+18:18:53 FF ‘YJEOO1 27esss 16
+ava [PF error 27685 [16
+
+Fig 17. Choosing an employee to filter hy.
+
+So, we have decided to look at this employee in detail. If we click on his ID code in the drop down list, all other
+ID codes will be hidden from us, to give the following table:
+
+[stock use [reasaction Mote Code]
+fps fs 7
+2 fons foveszoi_[eotar — [rs hs (ear [rome ——Te
+= [ovo fzmoozer [snes — fos ig es tr
+3 favo LN g ae Cy i EiI
+a fo avaon Irasas — [rs [anaans —— [ene fe r
+for avai roms [Ps [anans ——_Jnose fe a ec iz a
+
+Fig 18. Stock Adjustments filtered by User ID for user AHAOOS
+
+Notice how the down arrow in the header of the imployee /D column has turned blue, and the row headers
+have also tured blue, to indicate that there is an autofilter in place and some of the data is hidden.
+
+We can apply more specific autofilters too. Say for example, we were only interested in transactions that took
+place in July by this user, we can filter the Date column to only show dates after June. If you click the down
+arrow next to Date, then select (custom) you will be presented with the dialog box in Fig 20.
+
+Show rows where:
+Date
+
+[is greater than or equal to ¥] [euo7izouil iy]
+
+@and Oor
+
+I ¥I I I
+
+Bt06/2011
+2210812011
+aTroT20nt
+
+Use ? to represent any single character
+
+Fig 19. Selecting the custom filter Use * to represent any series of characters
+
+option
+
+Fig 20. Choosing criteria to filter by
+
+To understand this, just start reading at the top of the box, and sop reading at the point you stopped entering
+data. Fig 20 reads: “Show rows where Date is greater than or equal to 01/07/2011. "This essentially means
+“Show all dates in July and all following months”.
+
+These criteria are much more powerful and flexible than this, but this was just an overview.
+
+Rota Check Procedure - Version 2.4 (Aug 2011) 9
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Pivot Tables
+
+As you have seen, this Template workbook can hold an enormous amount of data, and the key skill required of
+anyone using it is getting to the relevant data quickly. Autofilters do this well, but they always hide data. Pivot
+tables have the ability to place all of the summary data in full view, and the filtered detailed data just a double
+click away. They are slightly more complicated to set up and use, however. This is essentially how a pivot table
+works:
+
+Product Date Amount Period Deb Cred Caused By Volume of Errors Caused by Branch vs Errors Caused By “Other”
+Cametot otoszoe #281000 201005 Debt Btanch
+
+Camelot otoszo £28200 20005 Crest «Branch Peviod [tan
+
+CashFems ToBianch 19920 $500 2oPO5 —Credt Other
+
+Aon esoaz0 £500 200PO5 Debt Bench [Court of Amount
+
+Bureau zaor20 «£451 2010PRL_os) ana ro I Test
+
+Camelot sans200 «£8800 200PH} Debit Branch Branch Ed
+
+Camelot snoszow —-t72800 2omPh cu __euanch nee 3
+
+Camelot eso72m0 «£2800 200POF = Debit «Branch ta
+
+Camelot 0307200 © $51200 200POF Debt «Branch [Grand Total nm
+
+Camelot 506200 £001 2010P03 Debt Branch
+
+Camelot e20s2n © £001 201003 Credt Branch
+
+ova 11062010 £20060 201003 Creét_———Bvanch
+
+Suspense 16062010 £15000 2010P03 Credt_ Branch
+
+Ontine Banking 1905200 £19000 2010P02 —Credt_——Btanch
+
+AN 0304200 £800 2010P01 —Debt_——Branch
+
+Bureau 04200 £180000 z9FOI Debit Branch
+
+Bureau 2eo4200 e874 200PO1 = Debt, Banch baa [>]
+
+AON os22008 #800 2009P03 Debit Branch [Product [¥] Count of Amount_Sum of AmountI
+Bureau 15122008 £897.10 2009P09Credt_ Branch [At -ManualDepost 1 7424
+CashRemsFromBranch zusez0e £20060 2009P09 Debit Branch 1 £1700
+CashFemsFromBianch ‘122008 £1000 2009P08——Debit_—_—Bxanch 5 £4000
+Bureau a co ? a1p2438
+CashRemsFiomBranch entzo0s £1000 2009F}8—Credk_=Branch fo £29600
+Cheques ToEDS zanzo0s £3630 2008Phs Debt Branch 1 40.90
+AL Manual Withdawat 18082003 £17.00 2008Phs Crest. Branch 4 £22000
+Aon ‘082009 £3.00 2009Pf6_Oebit_ Branch 2 #1000
+Bureau 9082009 £7538 2009P08 Debit Branch 1 #9830
+Bureau 2072008 «£192 2008F0t Debit ranch 2 £28250
+ova, 1.072008 £8250 2003P04 Crest’ = Branch 1 £19000
+AON 13052009 $1800 2003P03 Debit «Branch 5 #150000
+Camelot asipay 23052003 £40.00 2003P02 Crest Other {ttanky
+
+Suspense 15052008 £2500 2009P02 Debit «Branch [Grand Tota 2 22828
+Suspense 9052009 £2800 2008P02 Credit Branch
+
+At -Manual Deposit o1ot2009 £87424 2009PO1 Cred Branch
+
+Camelot 01052008 £28760 2003P01 Debit «Branch
+
+Camelot 01062009 «£1250 2003P01 Debit. «Branch
+
+CashRemsFromBranch 21042009 © «£2000 200301 Debit «Branch
+
+CashRems ToBianch 03942009 £500 2003PO1 Creat Other
+
+Suspense 21052009 £108.00 2009P01 Debit «Branch
+
+Suspense 21042008 £10400 2009P01 Credit Btanch
+
+Fig 21. How pivot tables work. (Taken from the Transaction Corrections Page)
+
+In essence, the table on the left hand side is the original data, where the two pivot tables on the right hand
+side use that data to generate summery overviews. The top pivot table is very simple, as it just shows totals of
+the two listed causes in “Caused by”, whereas the bottom pivot table shows a list of all unique products, the
+total of the amounts for those products and how many of each that there are.
+
+If we take a simpler example, based on our previous Stock Adjustments data, we can use the pivot table to
+access the original data by double clicking a data cell in the pivot table.
+
+In Fig 22, if we were to double click on the highlighted cell for cheques, it would create a new sheet and put
+the data that is exclusively relevant to cheque stock adjustments in it. Essentially, the cheque data has been
+autofiltered with a single double click! The results of this are shown in Fig 24.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 10
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Yol & ¥al of Stock Adjustments by Product
+
+Data__[v]
+
+Count of Amount_Sum of Amount
+
+emLong Name
+Cash
+
+Cheque
+‘Olympic&Paralympic PP
+‘Other Stamps Ordinary
+PO Phonecard £10
+POPhonecard £5
+
+POL Cheque
+
+Postal Order Stock
+{blank)
+
+Grand Total a £358.85
+
+Fig 22. An example Pivot Table, with a cell highlighted
+
+anes o+ ae
+
+1) fle EGR Mew Irsert Feyinat Jools Dota Window Hey acuastonferhep +. 8X
+DGASAMA MTHS Be fio 19, SO A by ad 008% ~
+Tass Zw IES SD eo SSE) S~ Co~ A -i ye 1 tice Sipnttte aracreckdwe & @ Sroooitoge OTL!
+AL = fe FAD
+Aya [—¢ [5 [eT FT ia H i a
+T [FAD Date Start Time Stock UNIO Employee 1) Session Transnclon Wode Cove —Tronsncion Hove — Trem 10 Nem Long Wame Reversat indicator
+2 (DMO ATE 14916 A. DaLoos 57764 16 Sock Ausiment- Posie 2 Cheque i
+3 aOrae 14sg4 ‘VieDoI 576180 16 Slock Ajustment Poste 2 Cheque 0.
+4 pownos: 07S 15019 ‘YuED "6 Slock Aujustment - Postve 2 Cheque D
+5 owns 078 170 RKOODT 16 Stock Asjsiment = Postire 2 Cheque 3.
+3 fos 40732 10: 16 Sock Ajusiment= Posive 2 Cheque o
+} 7 jood0es 40732 09.03.08 WMADOT 16 Stock Adjustment - Positive ZChegce, 1
+1 joo5_atrso 05.020 MAOOL 16 Stock Adjustment - Poste 2 Cheaue i
+bs OTS 12:At oS MAO 16 SieckAajusiment= Posie 2 Cheque o
+70 posta 070 122804 KOOOI 16 Stock Aajusiment- Posie 2 Cheque 3
+it OS 1657-0 WAMAOOT 8 Sleek Adjustment -Postie 2 Chegue 0
+2 Ha 18192 KOOL 652312 16 Stock Aajustment Postne 2 Cheque 0
+1-13 yoos003 40715 150551 FRADO? 77ST 16 Stock Adjustment - Positive 2 Cheque a
+ja poss aoris 11381 DiiGor 271178 1 Sock Austen! Posie? Cheque v
+15 joowos 20624 16-1953 PBEM 655048 ____ 16 Stock Adusiment - Positive 2 Chease, 3.
+16 foson3 40535 ‘Seyoot “2765s 16 Siock Adjustment Postve 2 cheque i
+i> WZ Te eresiclown Z Scratch Cards Z cheque Data_{ cheques To e0s_{ Spait Postage Sheet {Stock Adus I<
+Bead conto
+
+Fig 23. The results of double clicking the cell in Fig 22.
+
+This new sheet can be deleted safely with no repercussions to the rest of the worksheet. To delete the sheet,
+right click on it, and choose delete. (Fig 24) A warning about data being potentially useful will pop up, but this
+can be ignored.
+
+Any of these data cells from Fig 22 can be double clicked on to generate a new sheet full of information, and if
+
+you double click on the very bottom right cell, labelled Grand Total, the entirety of the original data will be
+shown.
+
+Selection Criteria
+
+When a range is selected in Microsoft Excel, the current Sum or Count of that information is shown in the
+bottom right hand comer of the screen. You can right click on these to change them to whatever you like.
+
+I Insert... I
+
+Delete -
+I Rename
+I Move or Copy... I
+Select All Sheets I
+
+i Tab Color... I
+
+I--——I Gli view Code
+Shetcr+ SATU
+
+Fig 24. The option to delete a sheet
+
+Count=11
+
+Fig 25. The alternative selection criteria.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 41
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Navigating Template
+
+Most of the information required by a rota check is summarised on the Branch Detail sheet of Template. In
+most cases, these cells can be clicked on to view the specific information. If you are in a specific sheet, cell A1
+can be clicked on to return to the Branch Detail sheet, and there will be links to the next and previous detail
+sheets for the rota check. For example, if you are on the Green Giro Details, the next link will show Sales
+Reversals, and the previous link will show Missing Green Giros.
+
+If any cell is highlighted in blue, then it should be recorded in the rota check.
+Occasionally, there will be data hidden off to the side of a sheet, usually a pivot table. This data can be very
+valuable in explaining the situation, and it is recommended to scroll a short way to ensure you know where all
+
+the data is.
+
+There is also a small section at the bottom of the Branch Detail sheet which allows verbose analysis of the
+data, arranged in a readable format. This is not readable from within template but it has been designed so
+
+~ that it can easily be copied and pasted into SharePoint.
+
+>>22>>' Green Giros Green Girosiiit35 Total, 23 by Fi
+
+Sales Reversals 1110 Total, for £0.00, 248 by PBEOO! Sales Reversals Sales Reversalsijiti10 Total, for
+Saati eams 7 Total, for -£1,777,454.98, 3 by RKHO01, 3 by RK]
+
+CUR tesiegm Nlon-Gales Reversalsill? Total, f
+
+= Stock Adjustments. ‘Stock AdjustmentsIII83 Total, f
+
+‘Stock Adjustments 83 Total, for -£358.65, Max = £3,500.00, 31 by DEy
+
+Postage Rem InsiOuts [Ce apeno
+Spoilt Postage 26 Total, for £248.88, 6by FRA0I2
+
+Cash Analysis Spoilt Postage Spoilt Postageiti26 Total, for -£
+Tes seomee TES Transostion Coveaionsf?8T.
+
+Fig 26. The bottom of the template sheet, with the copy and pasteable cells on the right,
+
+Es
+¢ Rem Ins Rem Insil-2500 of First Class L:
+©
+
+Copy and Paste to
+Rota Check
+
+Rem Outs Rem Outsii4230 of Stamp SpecI
+
+When this data has been pasted it will look like this:
+
+Sales Reversals
+
+1110 Total, for -£0.00, 245 by PBE001, 179 by AHA005, 153 by RKOO01,
+104 by DEMO01, 80 by MMAO01
+
+483 for ‘Cash’, totalling £86,230.49
+
+Fig 27. The editable text output of the Sales Reversals Copy/Paste cell, shown above.
+
+Maintenance
+The Template needs data to run. Some of this data can be processed very quickly if it is in the correct format.
+There are two buttons at the top of Template:
+
+Go Faster this Week I Maintenance
+
+Enabled Cash and Cheques Datais 2 Day(s) Old
+Fig. 28 The Go Faster and Maintenance buttons.
+
+The go faster button required almost no interaction. You click the button, click yes, then wait 20 seconds, and
+it will allow Template to keep processing in 30-40 seconds instead of in excess of 50,
+
+The Maintenance button is documented exhaustively in 7:\Finance\Finance Product & Branch Accounting \Finance
+P&BA Branch\Branch Control & Cerformance\Duty Instructions\Rota Check Maintenance Procedure.doc
+
+A More complete manual for Template.xls is available in 7:\Finance\Finance Product & Branch Accounting\Finance
+P&BA Branch\Branch Control & Cerformance\Duty Instructions\ Template Spreadsheet.doc
+
+Rota Check Procedure - Version 2.1 (Aug 2014) 22
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+A Full Rota Check
+
+At this point we should already have several points filled in on our SharePoint sheet, but let us reiterate them
+here so all the data is in the same place.
+
+It is wise to use the Bold, Italic and Underline features of SharePoint to highlight specific data. This can also be
+of assistance drawing your attention to the points that you thought were worth highlighting when you
+compose your summary of findings.
+
+¢ Date of Check - Required to compare branch states across a range of dates. After several rota checks on
+a single branch have been completed over a period of months, patterns and continuing issues will start to
+emerge.
+
+¢ Period of Check ~ This field should automatically default to the period of the date when the rota check is
+started, but this should be verified with the period displayed in 7ermp/ate at the start of a new period.
+
+© Checked By - When performing a new rota check, you should select your name from the drop down list.
+This is used for monitoring individual performance.
+
+e FAD Code - This should be recorded as the SIX digit number. If you have a seven digit FAD code, the last
+digit can be omitted. If you have a four or five digit FAD code, this needs to be prefixed with additional
+Zeros to make it a six digit number. E.g. 4003 should be entered as 004003.
+
+¢ Branch Name - The Branch name can be found in either 7emplate or in the Config database, by
+searching for the FAD code (Press Ctrl+F to open up the Find window in most applications, after selecting
+the FAD code column)
+
+¢ Intervention or Analysis - Use the drop down box to select either Intervention or Analysis
+=> Intervention - Select this option if you need to contact the office. If you select this option you must
+
+also fill in the Contact with Postmaster section, including the name of the people you
+spoke with and the dates, times and phone numbers called, as well as a summary of
+the conversation
+=> Analysis - Select this option if you do not need to contact the office. For example if you are analysing
+a new postmaster to see if they have any conformance issues.
+
+e Reason for Checking - The primary focus of this criterion is for cases where intervention is required, but
+this can also be used to provide extra information for analysis, if a specific focus is required, or if you are
+performing a part check. If you are investigating a new postmaster, then select New Postmaster from the
+list.
+
+© Part or Full Check - A Full check is where the majority or entirety of the office is to be checked, whereas a
+part check is just for a few selected areas
+
+« Number of Counter Positions - This is also known as the number of Horizon Terminals, as Horizon is the
+system that employees have to use to process all transactions and operations within their duty. This
+information is on the Branch Detail page of Template, or can be found in Config.
+
+© Name of Postmaster - This can be recovered from the Branch Detail sheet of Template, from Config, or
+from POL-SAP. The details of recovery from POL-SAP are discussed in the respective section, but the
+POL-SAP information is considered to be inferior to the Config source.
+
+¢ How long has Postmaster been in Post - This can also be recovered from the Branch Detail sheet of
+
+Template, or from Config or POL-SAP. Again, this process of recovery is detailed in the section on
+POLSAP data recovery.
+
+¢ Does the postmaster have more than one branch - This is listed in the Branch Detail sheet of Template,
+or can be found by applying an autofilter to the postmaster column of Config for the postmaster’s name.
+
+¢ Other Branches linked to the postmaster - This should be entered into SharePoint as a list of FAD Codes
+and Branch names, headed by the total number of branches linked to this postmaster. If the postmaster
+has more than one branch (and less than 500), you can click on the cell holding the number of
+postmaster branches in Template to be taken to a new sheet with this information already presented in
+the correct format. Select and copy and paste this information to Sharepoint, and Include a header with
+the total number of branches.
+
+[IF THE POSTMASTER HAS MORE THAN 10 BRANCHES, JUST STATE THE TOTAL IN SHAREPOINT] do
+not include a full list.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 13
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+« Branch Trading Group - This information is provided in Template, as well as being available in Credence.
+The procedure for downloading this information from Credence is beyond the scope of this document, but
+it will have been included in the ROTA CHECK.xis file that you downloaded.
+
+The branch trading group specifies which timetable they should keep to. Groups A and B are general
+offices, C includes some Multiple Partners and the Northern Ireland Crown offices. Group D includes some
+other Multiple offices, other Crown offices, and MVL branches.
+
+¢ Does the branch complete their BT on time - Do they file their Branch Trading report on the period end
+date? 7emplate will currently provide this information on the Branch Detail sheet, specifying if they are
+on time. If they have “never submitted a report on time” you should go to the Branch Trading sheet, and
+check the dates that they completed their statements against the dates they were supposed to be
+submitted. If a branch is a few days late, there is not usually cause for concern, but if they are more than
+3 days late, this may indicate either a training issue, or that they are reluctant to balance, and this needs
+to be detailed in the rota check and specified in your summary of findings.
+
+All branches should complete their Branch Trading according to their Branch Trading group, and the
+postmasters have a contractual obligation to submit this on time, and he should show whether or not
+they have a gain or a loss in his office.
+
+It can help to check General Ledger 539590 for recent discrepancies, paying particular attention to
+discrepancies around the time of the BT dates. The process for accessing General Ledgers is detailed in
+the sections on POLSAP.
+
+¢ Does the branch have a BO! ATM - This information is on the Branch Detail sheet of Template, or can be
+found in Config or POL-SAP General Ledger 627047 for ZJ or RV (BOI or Branch postings)
+
+This can explain high cash holdings
+
+e ATM Details - Compare RV/ZJ figure + report time - Every day, the branch should enter the total amount
+of dispensed notes from the ATM machine into horizon. This should be done at 16:30 ideally, but we
+allow for a time range or 16:30 - 19:00, and any non-conformance should be noted.
+
+We also need to compare the RV (Branch figure) with the ZJ (BOI figure) to ensure that they are the
+same amount every day and there are no discrepancies.
+
+This information is not included in 7emp/ate yet, and must be accessed from GL 627047. The process to
+retrieve this is detailed in the section on POLSAP.
+
+A high value KC entry that shows on a Monday's posting date should net to nil by the Tuesday. It is also
+worth nothing that some branches may not submit weekend and bank holiday entries immediately. This
+can go some way to explain mismatches.
+
+¢ Is this a Lottery Office - Not all branches carry out Lottery transactions; this information is available in the
+Branch Detail sheet of Template, or from Config. If they are not allowed to carry out lottery transactions,
+it should be noted in the SharePoint if there are any transactions involving the lottery or scratchcards.
+
+¢ Does the branch complete next day accounting - Each morning the branch should enter the value of their
+lottery transactions into Horizon for the previous day. If the branches were to follow this rule, it would
+significantly reduce the volume of Lottery TC's. Lottery TC's are one of the highest volumes of
+Transaction Corrections across the network.
+
+Every day a file is received from Camelot and is posted into POLSAA this data is matched with the
+Horizon data entered by the branch, and any exceptions are shown in Open Items. This is in GL 627010,
+and the process of accessing this is detailed in the section on POLSAP.
+
+e How many scratchcards are on hand - Branches can hold a maximum of 12 packs of scratchcards. The
+packs all have different volumes, and this is managed by Security, who maintains an active list of the
+current scratchcards and the maximum scratchcards that a branch can have. The current volume should
+not exceed the maximum volume, and both of these values are on the Branch Control sheet of Template.
+If the current volume of scratchcards exceeds the maximum, the cell will turn blue. This data can also be
+retrieved from A/S on POLSAP, but this is not discussed in this docurnent. The process can be found in
+the Rota Check Maintenance Procedure document located in the Duty /nstructions folder.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 14
+
+POL00113432
+
+POL00113432
+I
+
+POL00113432
+POL00113432
+
+© Does the branch hold cheques at site - When a branch accepts a cheque as a method of payment, or
++ settles a TC to cheque, these cheques are considered to be held at site. The value will remain here until it
+is remmed out to /PSL (This may appear as EDS, as these were the former contractors). Sometimes a
+branch may adjust between cash and cheque and in the majority of cases this is done because the
+incorrect method of payment was accepted at the time of the transaction. A branch acting fraudulently
+may use the cheques at site facility to increase or decrease their generated cash holdings, which in turn
+may result in extra cash being dispatched to the office, or simply as a way of hiding a loss ~ a fictitious
+cheque.
+Phone calls are regularly made by P&BA agents to branches holding cheques at site for extended periods
+of time, This has helped to prevent high value frauds in this area. Template will attempt to perform a
+rudimentary analysis on the cheque data to determine how often cheques are held at site, but this is just
+to give an indication of the state of cheques at site. In the Cheque Data sheet, there is a graph which can
+be analysed for the following:
+=> The cut off for rem outs is 3:30pm (15:00). If the cheque has been received before this time, there is
+No need for the branch to hold it overnight. If it is after this time, then there is usually no cause for
+concern.
+=> Is there a regular pattern
+=> Does a peak in cheque holdings correspond with a drop in cash holdings?
+This can indicate that the cheque may be fictitious.
+=> Does the branch always have a value in Cheques at Site?
+=> Does the same or a similar value reappear consistently?
+=> Is the value steadily increasing and then fall to nil at Branch Trading date, and then reappear?
+If the answer to any of these last five questions is yes, this should be noted in your report.
+
+© Does the branch dispatch cheques on time - This can be found on 7emplate in the Cheques to EDS sheet.
+This can be accessed by clicking on the cell next to the Dispatch on Time cell if there is any data to show.
+Further in-depth analysis can be performed on General Ledger 553040 in POLSAP. although this
+excludes Northern Ireland branches. Branches must rem out their cheques at site every day, Monday to
+Thursday. These cheques are processed by IPSL, and a file which is summarised at branch level is posted
+into GL 553040. This received value shows as a KC entry, and it should match the Horizon entry for the
+same date.
+
+There are several legitimate reasons as to why there could be a mismatch, but if there is an item that is a
+few weeks old, the cheque team should be informed. If a branch has continuous discrepancies it could be
+
+a non conformance issue.
+
+Be aware that a branch may rem out a fictitious cheque, which leaves the loss with the Post Office until a
+TC is issued, and the branch may balance if audited. Watch for activity around branch trading time.
+
+© Postmasters own unpaid cheques - If any unpaid cheque TC's have been issued to the branch, these will
+be highlighted in blue on the Branch Detail sheet of Template, and are also visible in the 7ransaction
+Corrections sheet. If there are any, this must be verified with customer line items on POLSAP to verify
+that the postmaster in question is responsible for them, and then the branch must be escalated. It is a
+clear indication that there are problems with cashflow for the postmaster.
+
+° Green Giros cut off correctly - Green Giros should be cut off at the close of play on Wednesday. If a
+branch is not cutting off on Wednesday, this should be noted in the report. Record details of non
+conformance, such as dates, times, and stock units. This information can be found summarised on the
+Branch Detail sheet of Template, but can be view in full by clicking that cell.
+
+¢ Missing Green Giro Enquiries - Santander receive a file detailing the volumes and values of cashed Green
+Giros by Client Accounting Week. This data is verified by the paper cheques received by Santander. Where
+there is a discrepancy between the two, a missing green giro report is generated and processed by the
+Santander team. The enquiry is then forwarded to the branch that provides either a copy of the GG
+listing, or the A4 Summary sheet. Branches may have missing green giros legitimately, because they have
+not followed cut off procedures, they have sent them in the incorrect pouch, or they believe that they
+shouldn't send them with the report, instead sending them monthly to coincide with branch trading
+periods. Any of these cases make it obvious that further training is needed, and the other alternative is
+fraudulent activity.
+
+This data is summarised on the Branch Detail sheet of Template.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 15
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+* Green Giro Details - This is located in the Green Giro and Green Giro Detailtabs of Template. In the
+Green Giro tab, we are looking for a year-on-year decline of the use of green giros, and if the branch has
+more this year than last, this should be noted. We are also looking for any sudden peaks and troughs, as
+this can also be an indicator of fraud.
+
+In Green Giro Details, we are looking for any occurrences where several have been processed within a
+minute by a single employee, or if more than 5% of the total volume are more than £449.99 (The
+maximum value), or any whole number values. This last criteria is less indicative of fraud, and can only be
+checked manually, or by using the excel formula =/F(<REF>=/N7(<REF>) <REP>,") (Where <REF> is the
+adjacent Amount cell)in the blank space next to amount, and autofilling it to the last cell. Autofilling is
+easily done by clicking on the cell’s handle, which is the black square in the bottom right hand corner of a
+selection. Please also note that there may be more Green Giros in the winter.
+
+«Reversals - All branches occasionally have to reverse transactions at some time. Reversals can indicate:
+=> Isolated incorrect entry being rectified
+=> Lack of knowledge of a transaction or product
+=> Attempt to cover up fraudulent activity
+The sheets for Sales Reversals and Non Sales Reversals follow the same process, but typically, there
+should be about 60-80% less Non Sales reversals. The summary of this information is available on the
+Branch Detail sheet, and all large values or high quantities are available in the Copy/Paste section to be
+pasted into SharePoint directly.
+
+In the Reversals sheets, any reversals showing against cash or cheque can be added up and will balance
+against products. If any products have high values or quantities these should be noted. Particularly,
+lottery, Green Giro, MVL/V11, and E-Top Up reversals (e.g. Orange or Vodaphone topups)
+
+Additionally, Council client type reversals could indicate a vulnerable customer being targeted.
+
+Note anything that is unusual for the Branch or branch type.
+
+Anything in the category Other Stamps Ordinary can safely be ignored. This usually occurs when a branch
+puts retail transactions through the Horizon system, then reverses them later and puts them through the
+shop till, in post offices that have a shop attached. This is something that the Post Office accept happens,
+but it is not an official process.
+
+¢ Stock Adjustments - These are also summarised and in a copy/paste friendly format on the Branch Detail
+sheet of 7emplate, and they can also be viewed in the Stock Adjustments sheet. There is a cache of pivot
+tables to the right of the sub table if you scroll across which can make the information more digestible.
+Stock Adjustments are closely monitored by the Mails & Stock team and they will often suggest branches
+for full rota checks,
+
+If there are frequent cash/cheque adjustments, this could be a training issue, as the staff are likely to be
+selecting the wrong method of payment.
+
+They may also be putting themselves in financial risk if they finish to cash but accept a cheque as
+payment. If the cheque then goes missing, the customer has no requirement to provide a replacement as
+they have a receipt for cash, and the branch will need to stand for the loss.
+
+Look out for stock adjustments taking place at period end and then adjusting back up to a week later, as
+this could be hiding a loss.
+
+¢ Postage Rem Ins/Outs - This is available in the Non-Sales sheet of Template, and is summarised on
+Branch Detail. \f you click on Postage Rem Ins/Outs in template, it will take you to a normally hidden
+sheet which just contains postage information. We are looking for high volumes of stock remmed in, then
+remmed out without being sold, or excessive rem outs with few or no rem ins.
+
+© — Spoilt Postage - This is summarised on the Branch Detail sheet of Template. Look out for excessive
+claims in relation to the branch size or location. For example, it is reasonable to expect a branch on a high
+street to have more claims than a branch in a village.
+
+¢ Rolling loss & Discrepancies - Including Crowns - This will be detailed in full in the POLSAP section, as it
+requires analysis of POLSAP data.
+
+¢ Current Debt & Debt Trend - This will also be covered in the section on GL Account like iterns in POLSAP.
+
+Cash Analysis is more complicated and requires visual aides, and is detailed in full in the next section.
+Transaction corrections are similarly complicated. The Additional /nformation section is exclusively for anything
+else that you find concerning or out of the ordinary, and the Summary of Findings is self-explanatory.
+
+This concludes the time consuming part of the rota check. The following information is on specific analysis and
+data retrieval from POLSAP.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 16
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Cash Analysis
+
+The monitoring of generated cash (Horizon derived figure based on all transactions processed by the branch)
+is a proven process of detecting fraud within Post Office branches.
+
+When analysing the branch, you need to consider
+
+¢ Size of the Branch - Number of counter positions - larger branches have more counters, deal with more
+transactions and therefore have a higher generated cash value
+
+e Whether it has an ATM - Branches need to put the ATM figure into Horizon, and this can lead to a much
+larger cash graph
+
+e Weather Conditions - In the north of Scotland or remote islands they may hold on to cash during the
+winter months
+
+¢ Bank Holidays - Extra cash may be delivered in advance of bank holidays, and Northern Ireland has
+different holidays to the rest of the UK.
+
+¢ Winter Fuel Payments
+
+We look at the in and outpayments of an office and ensure that the cash balance can cover a one week's
+outpayments.
+
+The majority of cash graph trends and patterns are discussed on the next page, but there are two particular
+graphs which can assist in highlighting the techniques used in analysis.
+
+Increases in the branch may have been cause by unusually high rem ins, or the office may not be remming out
+enough money or no money at all. Decreases work in the same way, with high rem outs, and remming in low
+amounts or none at all. Anything that does not follow the cash holdings needs further investigation. Fig 29
+shows a regular pattern of rem ins on the same day every week and for the same value.
+
+oa
+A
+ra Poh
+an
+LAR a i 4
+eoteee ran ay oe I
+‘ a Hod WA 7 VV AL I
+oY Wy Toe Poesy ‘
+on or v=
+‘ . Fig 30. Example of possible housekeeping, transferring to
+Fig 29. Weekly Rem Ins and Rem Outs. the loss system.
+
+Housekeeping (Shown in Fig 30) is where amounts are held in the suspense account. Losses and gains can
+affect a branch’s cash holdings. Declaration discrepancies can be a surplus or a loss.
+
+If this graph is compared with Non Sales, (which is found as a tab in 7emplate), it may be the case that there
+is a reference to the Loss System, Local suspense or similar. If the discrepancy has been settled centrally or
+assigned to nominee, then it is not an issue.
+
+There may also be individual reasons for the branches cash holdings to increase or decrease. Check the
+branch’s location on Google™ Maps.
+
+Further Investigation - Cash Check
+This check on a branch will show if they are holding too much cash or not. Pick the most recent week, then:
+Take the cash balance the night before the first rem in of the week
+Sum the total mount remmed in for the seven days after. (e.g. From Wed > Tue, not Wed > Wed)
+Add the two figures together
+Take away the total amount remmed out over the seven days.
+¢ Repeat for other weeks
+If the end figures are S/GN/FICANTLY higher than the maximum weekly outpayments then the office has too
+much cash.
+
+Rota Check Procedure - Version 2.4 (Aug 2044) a7
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+(LOZ Bny) TZ wolssaq - asnparcig y2aY) BOY
+
+8T
+
+NS 4 fh
+
+AD N aw
+[MV AVAWLUAV AVM AVAVAVAVAWAVAWAY A's
+cans
+
+PASAT AN
+TATE
+Vo AES
+
+Fig 31. Larger Inpayments than Outpayments
+
+Some branches have larger outpayments than
+inpayments, and they will have to rem in cash to
+cover this, the office should rem in enough to cover
+one week's outpayments (or just above).
+
+Fig 32. Larger Inpayments than Outpayments
+
+When branches have larger inpayments than
+outpayments the branch should rem out the extra
+cash that they have acquired during the week, leaving
+enough to cover next weeks outpayments
+
+Fig 33. Follows a pattern
+
+This branch follows a routine. This does not
+necessarily mean that the branch is or isn’t
+fraudulent, but this behaviour should be noted in
+your cash analysis
+
+Kel
+
+i A
+{I
+
+fw
+
+L
+
+Att.
+AVUL I]
+Pa ay
+
+Ag
+
+VN Yv
+
+Fig 34. Erratic including negative and large values
+
+The cash in this branch is erratic (it is impossible
+to predict and follows no pattern). There are
+
+Fig 35. Sudden increase and continuing to increase
+
+This branch would definitely need further
+investigation as the cash holdings have suddenly
+
+Fig 36. Sudden increase for a while then a return to normal
+
+Even though there is a regular pattern, there would
+be cause for concern after a sharp increase or
+
+negative values and high values, making this a begun to increase and continues to increase, decrease.
+suspicious branch.
+HN a
+As a a
+TX DOI
+KA ALA wr at RAL ‘ SLEREEEAREH [oT A i As
+aa hit i SSA ATLESSISPST
+Z 1
+
+Fig 37. Low outpayments in a period
+
+If this graph is cross-checked with the /n and
+Outpayment tab on Template, it may be the case
+that there are low outpayments In this period.
+
+Fig 38. Introduction of an ATM
+
+A sudden increase in cash holdings followed by a
+trend similar to the time before the increase can
+correlate with the installation of an ATM machine.
+
+Fig 39. Transaction correction issued
+
+If a branch has been issued a Transaction
+Correction, then this can affect their cash holdings.
+This can be compared with the 7ransaction
+corrections sheet on Template.
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Accessing Data on POLSAP
+
+After logging on to POLSAP, there is a menu bar at the top of the screen showing broad categories, and then
+detailed navigation down the left hand side of the screen.
+
+FOLFSRezeringRele POLFSGL Operatens FOLFSGL Vendcr Operatons-29 POLS Generel Ledger Operations I FOL-FSGL Customer Operatens 20 F
+
+GL Operations ,
+
+GL Account Line Items I Hetory, Back +
+Tol 4
+
+etalled Navigation [ l G/L Account Line Item Display
+
+>To Documeat Estry ! Menu4l I} Save as Variant. II Back I Cancel I. Tools 4] I Execute I GetVariant.. I More 4]
+
+» Ca Document ae I I
+
+1 GiL account sele
+
+GIL account
+‘Company code
+YO Sieck I Selection using search help
++ Change Purchase Order {Search help 1D c
+
+Fig 40. Navigating POLSAP
+
+If a category is clicked on at the top of the screen, the options will change down the side of the screen. In our
+case, we will require access to the General Ledger, located at:
+
+POL-FS General Ledger Operations > Account > G/L Account Line ltems
+
+We also need access to Customer Line items, which follows a slightly different system. If we click on POL-FS
+GL Customer Operations - 80, then the folders will appear as another row underneath the menu, rather than
+down the right hand side. This is subject to change, but it is important to be familiar with both systems.
+
+POL-FS Reporting Reis POL-FS GL Operations FOL-FSGL Vendor Operations -20 POL-FS GereralLedger Operatons POL-FSGL Customer Operations -€0 FI
+Bocursat , Cuaning + Clesnng . Correspondence I Migration ofErrortioticss Master Data
+
+Fig 41. Second set of folders.
+
+Customer Line Items is located at
+POL-FS GL Customer Operations - 80 > Clearing > Customer Line Items
+
+Sometimes, tables can be displayed in POLSAP, and it can also be useful to sort the table by date, (or other
+criteria) by selecting the Doc... Date header, and clicking on More... then Sort in Ascending Order.
+
+imn [ Column Left I Column Right I Last column I lore I
+
+First column ChieFS:
+‘Column Left cue?
+‘Column Right Cer
+Last column tier
+Displaj Document shiteF2
+Change document Cit+Shit+re
+lass change Chi+Shiters
+‘
+
+Display check information Ctel+Shit+F7
+Account master data Ctt+F10
+Correction request Ctrl+Shiter10
+Setter CtrleShiter2
+Sort in agoending order__ (ClereShIReES
+
+arti dasrendiag ander Cire Shifter,
+
+Fig 42. Sorting a POLSAP List
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 19
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Customer Line Items
+
+This section details how to recover the postmaster’s name and start date from POLSAP. This can also be used
+to determine their debt to Post Office Limited.
+
+Go to POLSAP, and navigate to Customer Line Items. Once there, click on the Customer account text box and
+an icon (a) will appear next to it. Click on this icon and a search window will appear. Enter the branch FAD
+code into the search term box, omitting any leading zeroes, and ending in a star (*). For example, if the branch
+FAD code is 004003, enter 4003*. Click Start Search, and a window like that shown in Fig 43 should appear.
+
+[[ customer number @) B.
+
+» Search Criteria Z
+AS] Bi Search resuits: 12 Entries found
+
+$ SearchTenrPostalCode City Name 1
+
+003, 176s LONDON Bu POST HOUNDSDITCH . eLiPOsTHOUNDSOITCH 7001362 __ 00.00.0000 ]
+4003 E178S LONDON HOUNOSDITCH HOUNDSDITCH ‘080 00.00.0000
+400323 HG27LOQ._-HARROGATE HELEN CHOWDHURY fe. HELEN CHOWDHURY 1006885 00.00.0000
+400323 HG27LQ.- HARROGATE STARBECK ia STARBECK Po1s 09.00.0000
+400329 NE33RX NEWCASTLEUPONTYNE —WICHAEL DAVID RAISTRICIL_E UPOMTYNE ICHAEL DAMD RAISTRICK 1019644 09.00.0000
+400328 -NE3SRX NEWCASTLEUPONTYNE NORTH KENTON IEUPONTYNE —NORTHKENTON Po17 09.00.0900
+400329F —-NE33RX NEWCASTLEUPONTYNE LISANIICHELLESENIOR IEUPONTYNE  LISANICHELLE SENIOR 1013622 08.05.2008
+
+LRAISTRICK 1015526 31.01.2008
+ASTLEUPONTYNE THOMAS GEORGE BROS EUPONTYNE THOMAS GEORGE BROVIN 1017846 25.11.2008
+
+$00329F NE33RX = NEWCASTLEUPONTYNE HICHAELRAISTRICK = LEUPONTYNE i
+400329F —-NE33RX oN
+
+400320 NE2IRX © NEMICASTLEUPONTYNE —_ZUBEIR PATEL LEUPONTYNE  ZUBEIRPATEL 4018650 22.09.2000
+400340 © $8687EZ —ROTHERHA SALISBURY ROAD us SALISBURY RO!D Pore 00.00.0000
+4003407 $857EZ_ ROTHERHAM DINE LUASON ss DIANE LLASON 400173 _ 12.14.2008
+
+Fig 43 The first half of the customer (PM) information... Fig 43 ... The second half of this data
+
+If an item is selected in this list, you can scroll across to the right to see the data by using the arrow keys on
+the keyboard = We are looking for the row that has the Branch Fad code in the first column and a seven
+digit number in the second to last column. The Postmaster’s name will be in the fourth column (Labelled
+Name) on the same row, and their start date will be the finish date of the last postmaster to work there.
+
+Please be aware that if a four or five digit FAD code is searched for, there could be several matching post
+offices displayed (in the above screenshot, there are four post offices all starting with 4003). Ensure that you
+focus on just one of these
+
+If we were looking for Newcastle upon Tyne (FAD: 400329) for example, then we can see two entries with just
+the FAD code in the first column, and four entries with the FAD code suffixed with an F. The newest
+postmaster is therefore Michael David Raistrick, as he has no Finish Date (Shown in the Last Column). His
+start date is assumed to be the finish date of the last postmaster to leave. When the FAD code column is
+appended by an F, this means that the postmaster has finished, and the last column will show the date they
+have finished. In this case, the last person to finish is Zubier Patel, who finished on 22/09/2009. This is
+assumed to be the start date of the current postmaster.
+
+Please note that this information will occasionally conflict with Config. If the PM Debt is required, the
+CURRENT postmaster must be selected, even if the name is different on 7emplate.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 20
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Current Debt
+
+* To find the postmaster’s debt, double click on the current postmaster’s name, and their customer number will
+be inserted into the Customer Account field. Ensure that the Company Code reads 1254, and click Execute
+
+Now, one of two things will happen. Either the message G _Noitems selected (see long tert) Wil, pe displayed at
+the very bottom of the page, or a table with the Postmaster's debt will open up.
+
+Customer
+
+7020134
+
+Company Code 1254
+Hame Paul Francis Casiin
+City Knowsley
+
+Pbocumen... fy... Doc.Date
+
+[I =amountin local cur. [Lourr Feira doc. [Text
+
+16000143059
+
+21.04.2010 5
+
+3091.73 (GBP.
+
+Central (Hardship)
+
+301.7368P I
+
+Deduction trom remun
+
+~ Deduction rom remun
+Deduction from remune
+
+0,00-;6BP_ I Deduction from remun
+. 900,00 GBP
+Account 1020131 ae $00.00 GBP
+pp - ee “90000GBP Ott”
+
+Fig 45. An Example of Current PM Debt
+
+In this example, there is an initial debt of £3,091.73, and the branch is paying this off at £450 per month. The
+phrase Deduction from Remunerations means that the branch is paying off debt that they have claimed
+responsibility for. The Current Debt on the account should be noted as £900, and it should also be noted that
+this should be paid off in two months at the current rate of £450 per month.
+
+Debt Trend
+
+Sometimes, branches have debt trends which may reoccur over a period of time. We can look in A// /tems in
+Customer line items to see this debt.
+
+ILine item selection
+[Status = ti«SY
+© Open items
+
+Open at key date
+
+© Cleared items
+Clearing date
+Open at key date
+
+© Allitems
+Posting date
+
+Fig 46. Selecting All tems
+
+Running this report will show the branch's history of debt and any trends that have occurred. This type of non
+conformance is rare, but branches may start to increase the amount on each occasion if they are not being
+detected.
+
+Rota Check Procedure - Version 2.1 (Aug 2014) 21
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+GL Account Line Items
+
+This section can be used to find Rolling Loss, Cheques to EDS, and ATM information.
+
+On G/L Account Line Items, enter the GL Account number that you wish to investigate (provided in the
+relevant section above, or in Appendix 3, and then click on Dynamic selections I scroll to the bottom of the
+Dynamic selections window to reveal the box for Profit Center. Enter the Branch FAD code into this box.
+
+[64 Account Line tem Display
+
+MenuaI I Save as Variant... I } Back I Cancel I-Tools 4] I Execute I! GetVariant... I Hide dynamic selections I More 4]
+» Ie Assignment
+
+[ =I
+'Y EXGLAC taster Record “=I Posting Date _ >I
+H (3 Group account number _: I Document Date ip]
+i G Created on Documentt;pe Cl i>
+i Di Created by Posting Period im 12]
+Dy pat statmt acct ype Posting Key Cl >I
+I D Account group Business Area [I {>I
+I By tTrading Partner ‘ Le
+t Balance sheet account Profit Center &
+l PB tladefardalat x
+
+GiL account selection
+GIL account
+I Company code
+
+to I
+t £ I >I
+
+Fig 47. G/L Account Line Item display with Dynamic selections open.
+
+You should also select an appropriate option from the Line item selection pane. The Type pane should just
+have Normal items ticked, and the layout should be “CASH REMS
+The Company Code should be 1254.
+
+As before, if this is executed and 2 No items selected (see long text) j., gicntayed, then either there are no
+
+transactions of that type, or some information was entered incorrectly.
+
+GL 539590 - Branch Snapshot Balance Discrepancies
+This account shows discrepancies, and should be analysed for discrepancies around branch trading time.
+Ensure that Open /tems and Normal /tems are selected
+
+GL 627047 - BO! ATM's
+
+This is used to determine if the Branch has an ATM, and that they rem out the correct amount every day.
+Select A// /tems, and if the No items selected message appears, they don’t have an ATM. If a table appears,
+ensure that all RV transactions match the ZJ transactions on the same date. Be aware that on Mondays a
+branch has to enter the weekend figures. This can result in high Monday values. Look out for these being
+remmed out later in the week, as the branch may be trying to increase cash rem ins.
+
+GL 553040 - Cheques received in branched and remmed to IPSL, but not yet banked.
+This is used for checking the Dispatch of Cheques to EDS. Ensure that all RV values equal the KC values, by
+selecting Open /tems. If No items selected appears, then there are no problems.
+
+GL 539591 - Local Suspense
+
+This account shows the Rolling Loss of the Branch. Select A// /tems, and run the report. If Vo items selected
+appears then the branch has not used Local Suspense to balance at Branch Trading. Look out for values that
+are similar or increasing over a 3-6 month period.
+
+GL 627010 ~ Unresolved Exceptions between Camelot and Horizon
+Open Items will show all unresolved items not received by Camelot but remmed out from branch.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 22
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Transaction Corrections
+
+A Transaction Correction will be issues by Post Office Limited to balance out deficiencies that the Branch has
+caused. There are a variety of possible reasons for TC’s that have been issued, and these can be seen in
+Appendix 4.
+
+All the TC’s that have been issued for that branch are visible in 7emplate in the 7C Breakdown sheet.
+
+Though TC’s do not always represent fraudulent activities, there are checks that can help highlight genuine
+mistakes or cover ups.
+
+Identifying Non-Conformance in Transaction Corrections
+
+If there are a high volume of TC's, it could be caused by the fact that the branch is large, or is going through
+staff training. If they are over a period or if there is a pattern to when they were issued, this should be noted.
+
+High value TC's can affect the cash holdings of a branch and can be used to cover fraudulent cash
+transactions. If there is a pattern, or a one off this should be noted. The department that issued the TC can
+help to explain the reason for its issue.
+
+Branches that continually get TC’s for the same product may be doing this to cover up fraudulent activity. It
+could also be a case of poor training or competence. Could the staff be making the same mistakes and
+miscalculating amounts?
+
+TC's Year on Year can be analysed in the 7C’s sheet of 7emplate. If a branch is issued considerably more TC’s
+one year than another, is there a correlation with a new postmaster or other member of staff
+
+Finalising the Report
+
+Contact with the Branch --- If a branch needs to be contacted, all details of the communication should be
+noted in the section. It is important to note who you spoke to, the date and time
+of the call, what was said and the end result of the conversation, including any
+promises made by the branch. If adding further information to an existing
+contact box, start a new section by adding the new date and time in bold text,
+and detailing the additional correspondence below.
+
+Escalations --------------- If a branch needs to be escalated, the team that it should be escalated to should
+be specified along with any information that leads to the choice of that particular
+team. If there are several highly concerning points, it should be escalated to all
+relevant teams. It is recommended to speak to Cathy, Eleanor or Andy Moore
+about the branch before escalating it, however.
+
+Additional Information ----- If anything is found during the course of a rota check that does not fit neatly into
+one of the other categories, or if there is something alarming that does not have
+its own text box, then details of this should be included here. This could include
+details of the postmaster’s unpaid cheques, Lottery transactions, or anything in
+sales or non sales.
+
+Summary of Findings ------ All concerning points found throughout the rota check should be summaries in
+this section. An overview of all checks performed should be included if anything
+concerning or unorthodox was found, and this should also include any concerns
+detailed in the Additional Information section.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 23
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Appendix 41 - Resource Locations
+
+4. Template - 7:\Finance\Finance Product & Branch Accounting \Finance P&BA Branch\Branch Control &
+Cerformance\Branch Control\Rota Checks\Template.xis
+
+2. Config database - AKA Configuration Management Snapshots located in:
+T:\Finance\Finance Product & Branch Accounting\Finance P&BA Branch\Branch Control &
+Cerformance\intervention\Copy of Copy of Configuration Mgmt Snapshot.xls
+This file most likely has a password - Eleanor should have the newest password.
+
+3. SharePoint for Rota Checks -
+
+Attp://iplatform-sp.intranet. point/sites/fraudconformance/.ists/Rota®20check&2Orecording/Allitems.aspx
+
+SharePoint General - Atto/jplatform-sp.intranet point/sites/traudconformance/default.aspx
+
+Credence - /étp://polboxi polmi.point:8080/InfoViewApp/logon.jsp
+
+POL systems - /Attp://ipp.sap.point:9900/iri/portal
+
+Rota Check on Credence - Public Folders > Finance > P&BA > Branch Control> ROTA CHECK
+
+Template Documentation - 7:\Finance\Finance Product & Branch Accounting \Finance P&EBA
+
+Branch\Branch Control & Cerformance\Duty Instructions\ Template Spreadsheet doc
+
+9. Rota Check Maintainance Procedure Documentation - 7:\FinancelFinance Product & Branch
+Accounting \Finance P&BA Branch\Branch Control & Cerformance\Duty Instructions\Rota Check
+Maintenance Procedure.doc
+
+ONDA
+
+Appendix 2 - Glossary
+
+AaL..
+BO
+Client Accounting Week..
+
+Alliance and Leicester see Santander
+
+ank of Ireland
+
+he week from Thursday to Wednesday
+
+Town offices are directly managed by Post Office Limited
+
+irectly Managed Branches. See Crown offices.
+
+KA HP. See IPSL
+
+There are 12 per year, starting on a Monday.
+
+sed for specific transactions. General ledgers can be accessed through POLSAP.
+ee General Ledger
+
+Responsible for processing all cheques for Post Office Limited. Run by Barcleys.
+Formerly processed by EDS.
+
+Branches operated by multiple partners of the post office, such as WHSmith or
+ASDA. These branches are usually located on the Multiples premises.
+
+Motor Vehicle Licensing
+
+lorthern Ireland
+
+ost Office Limited
+
+‘sponsible for Green Giro Processing. Formally controlled by Alliance & Leicester
+ransaction Correction
+
+Appendix 3 - General Ledgers
+
+Branch Snapshot Balance Discrepancies
+
+ocal Suspense
+
+heques received in branches (Excluding NI), remmed to IPSL, but not yet banked
+stores unresolved exceptions between Camelot and Horizon.
+
+BOI ATMs (Exceptions between horizon data and client file)
+
+Appendix 4 - POLSAP locations
+
+POL-FS General Ledger Operations > genes G/ Account Line Items
+Customer Line Items......... POL-FS GL Customer Operations - 80 > (@Eeigeks Customer Line Items
+RIS .. POL-FS GL Account Reporting - 80 > (fee Call Self-Defined Analyses: Retail
+Rota Check Procedure ~ Version 2.4 (Aug 2011) 24
+
+General Ledger...
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Appendix 4 - TC Types
+TC TYPE POSSIBLE REASONS FOR TC'S ISSUED
+
+Manual - A&L Deposits and Withdrawals completed as Personal Banking. Co-Op cheques not
+entered / incorrect value entered on Horizon, Co-Op cheques not despatched to A&L.
+
+ASL Automated - miss keys for both deposits and withdrawals, transaction corrections issued as a
+result of enquiries from branch and A&L.
+
+Green Giro - claimed for but not received by A&L, enquiry sent to branch but no response or
+evidence provided. Incorrect value claimed or incorrect addition.
+
+Incorrect duration of cover entered on Horizon, policy sold at incorrect price e.g. holiday
+duration 1-3 Aug charged as two days cover required, TC issued for resulting mismatch
+between Horizon and AON.
+
+Horizon and Client data mismatch. Information from ATM receipt entered on Horizon after
+ATM cut off.
+
+Incorrect information from ATM receipt entered on Horizon.
+
+Payment by debit card, card is swiped but bill not scanned resulting in non-payment to
+client.
+
+Automated I Incorrect value scanned on Horizon, transaction not scanned or duplicated.
+
+Payments Transaction reversed incorrectly, recovery procedure not followed.
+
+Cheques incorrectly despatched to Bank of Ireland.
+
+Payment by cheque for multiple transactions but only once scanned.
+
+Contents of pouch incorrect when received at Hemel, rem received at Hemel but not
+remmed out, pouch remmed out twice.
+
+Mistakes made when remis are entered manually.
+
+Bureau Resulting discrepancy should be held in Rem Suspense and redeemed when Transaction
+Correction accepted.
+
+TC's issued for discrepancies caused by Hemel will still be included in pack for reporting
+purposes.
+
+Correct accounting procedures followed but incorrect figures entered from Lotto summary to
+Horizon. (Cheque prize payment included for example). :
+
+Correct figures entered on Horizon but transaction details not accounted for on same or next
+day.
+
+Scratch cards booked in and activated in different accounting week or incorrect value booked
+in.
+
+Pouch remmed in at Cash Centre, contents differ to amount stated on advice note.
+
+Cash Rems_ I Resulting discrepancy should be held in Rem Suspense and redeemed when Transaction
+from Branch I Correction accepted.
+
+Pouch despatched but not remmed out or remmed out twice.
+
+Contents of pouch sent from Branch to Cash Centre are incorrect; this is then forwarded
+from Cash Centre to a third party office.
+
+Cash Rems I Resulting discrepancy should be held in Rem Suspense and redeemed when Transaction
+Third Party I Correction accepted.
+
+TC's issued to branch who receive incorrect remittance will still be included in pack for
+reporting purposes.
+
+Pouch remmed in at branch, contents differ to amount printed on advice note.
+
+Pouch received in office but not scanned onto Horizon or scanned twice.
+
+Cash Rems to I Resulting discrepancy should be held in Rem Suspense and redeemed when Transaction
+
+AON Travel
+Insurance
+
+Camelot
+
+Branch Correction accepted.
+If incorrect pouch received is incorrect TC's issued will still be included in pack for reporting
+purposes.
+Cheques to Mismatch between physical cheques received at EDS (Belfast CC) and Horizon, incorrect
+EDS entry on Horizon or missing / too many cheques received at EDS. Any fault by EDS will not
+
+result in TC being issued.
+
+Rota Check Procedure - Version 2.1 (Aug 2011) 25
+
+POL00113432
+POL00113432
+
+POL00113432
+POL00113432
+
+Charge Back - fraudulent transaction, procedure not followed, identification details not
+recorded.
+
+Refunds - Transaction is reversed to cash value, not to zero as required.
+
+Resulting discrepancy entered in Emergency Suspense and TC issued to compensate
+
+Debit cards
+
+Car Tax transaction duplicated, original not reversed. 12 month disc issued for 6 month
+DVLA payment or visa versa. Compensating TC may be issued if customer accepts mistake.
+Incorrect method of payment given but transaction not reversed. Rates increase but old rate
+accepted.
+
+Mismatch between Horizon entry and First Rate, figures not entered on Horizon, incorrect
+First Rate figures entered on Horizon.
+Counterfeit Travellers Cheques enc¢ashed.
+
+Asylum Seeker - TC's issued, office then supplies evidence to warrant a compensating TC. TC
+Government I due to mismatch between values entered on Sodexho and Horizon.
+
+Services Passport - customer charged, even though of the age to receive ‘free’ passport. Customer
+charged twice.
+
+Duplicate Send - PM thinks transaction has failed so duplicate without contacting
+Moneygram to check.
+
+Moneygram Time-Out - Horizon ‘Times Out’, transaction not recorded on Moneygram System (Office
+should contact NBSC)
+NS&l Overpayments - withdrawal transacted as deposit. Mismatch between amount customer
+deposits and value entered on Horizon. NS&I will honour value entered in book.
+oan A€&L Online Banking value entered incorrectly on Horizon for both Deposits and Withdrawals:
+
+Once a certain volume or £500 approx of transactions completed the Paystation generates a
+Paystation Barcoded Summary, this information has to be entered on Horizon. TC's occur when there's
+amismatch between Paystation and Horizon
+
+Personal Cheque encashed but remmed out with bulk cheques, in effect claiming for the cheque twice.
+Banking Cheque encashment entered on Horizon twice or omitted.
+
+Transaction voided for various reasons including change of mind by customer or printer jam,
+AP part not reversed at same time.
+
+Postal Order encashed but also returned to customer who then cashes it elsewhere.
+
+Postal Order encashed but also claimed as cheque and remmed out on Horizon.
+
+Postal Orders
+
+Horizon and ist Rate mismatch. 2 part transaction, ist part confirms order, 2nd takes
+Pre-Order customer details. If Cust changes mind transaction should be cancelled but PM's incorrectly
+use 'prev' key.
+
+Value held in Robbery Suspense, TC issued to clear value (if robbery related) without
+
+Robbery effecting balance.
+
+PO Saving Stamps claimed on Horizon but physical stamps not received in P&BA. This may
+Saving Stamps I be due to stamps missing from pouch or pouch not received. Compensating credit TC issued
+when stamps are received or if P4555 has been completed.
+
+Contents of pouch differ to that on advice note,
+
+Compensating value should be held in Rem Suspense. Value should be redeemed or will be
+Stock redeemed automatically this is explained in Transaction Correction narrative.
+
+TC's issued for discrepancies caused by Hemel will still be included in pack for reporting
+purposes.
+
+Value held in Rem Shortages / Surpluses not authorised or not redeemed as per instructions
+
+Suspense on associated Cash / Bureau / Stock Transaction Correction.
+
+Personal Encashments -incorrect guarantee card endorsed on reverse of cheque or cheque
+guarantee card number omitted.
+
+Unpaid Product or bill paid is not cheque acceptable.
+
+Cheques No identifiable product / Client details on reverse of cheque and Branch cannot supply detail.
+Postmasters own cheque.
+
+Cheque not processed through EDS to timescale therefore POL cannot offset debt to Client.
+
+Rota Check Procedure - Version 2.4 (Aug 2014) 26
+
+POL00113432
+POL00113432
+

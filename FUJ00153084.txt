@@ -1,0 +1,190 @@
+FUJ00153084
+FUJ00153084
+
+From: charles mclachla
+
+Sent: Fri 23/04/2010 2:
+
+To: Jenkins Gareth Gl. 3
+
+Subject: I Re: Further info for REGINA v SEEMA MISRA GUILDFORD CROWN COURT
+Gareth,
+
+Many thanks for dealing with this so promptly.
+Yours,
+Charles McLachlan
+
+On 23 April 2010 11:34, Jenkins Gareth GI
+
+wrote:
+
+Charles,
+
+As promised, attached is a (zipped) spreadsheet that you can use to lookup Product Information.
+<<EPOSSProducts.zip>>
+
+I've left all the Product details in there. However the key columns that you'll find useful are:
+
+1. Col A: Which is the Product Id (and so corresponds to the transaction logs)
+
+2. Col Z: Which is the Product's “long name” which hopefully is fairly meaningful
+
+I've left the remaining Product data in the spreadsheet in case it subsequently proves to be of use, but won't attempt to
+explain it at this time.
+
+I've also had a look to see what we sent you in the transaction logs.
+
+The CD should have included a separate zip file for each month and in each zip file there should have been 3 of 4 files:
+1. 1 to dd MMM yy.xis
+
+2. BQ 1 to dd MMM yy.xis
+
+3. Events 1 to dd MMM yy.xis
+
+4, XXXXxxxx.xml
+
+where dd is last day of month, MMM is 3 char month name, yy is Year and xxxxxxx is fairly meaningless!
+
+(I'm not sure if we included item 1 on the version we sent you since Item 1 is a subset of the info in item 2 and so can be
+ignored.)
+
+Item 2 is the log of all transactions during the month. The column headings are as follows:
+
+COL Heading (in Row 5) Meaning
+
+Id Counter Position
+
+User User Id
+
+TxnData_Container Stock Unit ID
+
+TxnData_Start_Date Start date / Time (NB always GMT)
+TxnData_Start_Time — End date / Time (NB always GMT)
+FUJ00153084
+FUJ00153084
+
+TxnData_Sessionld Session Id (last part matches paper receipts)
+TxnData_Txnld Transaction Id (matches Transaction Logs)
+
+EPOSSTransaction_AdditionalData_C2Mess_NBAMsg_Id_HTxnNum Unique Id used for Banking, Plastic and E Top
+transactions
+
+TxnData_Mode Mode (key attached below)
+
+EPOSSTransaction_ProductNo — Product Id
+
+EPOSSTransaction_Qty Quantity
+
+EPOSSTransaction_AdditionalData_Additionallnfo_ReqAmt For Banking etc, amount requested (in pence)
+EPOSSTransaction_SaleValue _ Value of transaction
+
+EPOSSTransaction_EntryMethod Entry method (key below)
+EPOSSTransaction_AdditionalData_State Not used
+EPOSSTransaction_AdditionalData_lOP_ident Not used
+EPOSSTransaction_AdditionalData_Result Not used
+EPOSSTransaction_BlackBoxData_Foreignindicator Not used
+EPOSSTransaction_AdditionalData_C2Mess_NBAMsg_Txn_PAN For Banking etc PAN from card
+EPOSSTransaction_AdditionalData_C2Mess_NBAMsg_Txn_EPAN Not used
+EPOSSTransaction_AdditionalData_CN Client (only for AP Products)
+EPOSSTransaction_AdditionalData_Rref Token (only for AP Products)
+EPOSSTransaction_AdditionalData_SRTCDE Sort Code (off line banking)
+EPOSSTransaction_AdditionalData_ACC_NO12 Account Number (off line banking)
+
+Mode meanings are in the attached spreadsheet:
+<<ModeParameters.xls>>
+
+Col D is the value in the Transaction Spreadsheet and Col F is the English meaning (please ignore the other cols which I've
+not bothered to delete).
+
+Entry Methods are:
+0 = Barcode,
+1 = Keyboard/Screen (Manual),
+2 = Magnetic Card,
+
+3 = Smart Card,
+
+4 = Fallback from Chip and PIN,
+
+5 = Scales
+
+Item 3 provides details of Business Events during the month. The column headings are as follows:
+
+COL Heading (in Row 5) Meaning
+Groupld Branch ID
+
+Id Counter Id
+
+Date Date
+
+Time Time (always GMT)
+
+User User Id
+
+SU Stock Unit
+EPOSSTransaction_T Event text
+EPOSSTransaction_Ti Event Type
+Type Event Type
+FUJ00153084
+FUJ00153084
+
+LogoutAuthority If User logged Out by another user, this is the username of the User doing the Forced Log Out
+SecurityEvent_User Not Used?
+
+Item 4 is the raw log in xml format from which the spreadsheets have been extracted by our audit tools. It is not easy to read
+and very large.
+
+Hopefully this covers what you need.
+
+Happy to discuss further on Monday.
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+
+Distinguished Engineer
+
+Applications Architect
+
+Royal Mail Group Account
+
+Gareth.Jenking
+
+Web: http://uk.fujitsu.com
+
+st Please consider the environment - do you really need to print this email?
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services does
+not guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+
+Charles McLachlan
+
+Director Software Disputes
+Amsphere Consulting Limited
+90 Fenchurch Street
+
+London
+
+EC3M 4BY
+United Kingdom
+Tel:
+Fax :
+Mobile
+E-mail : charles.m
+
+Web : www.amsphere.com
+Amsphere Limited is a Carbon Offset Partner of Pure: The Clean Planet Trust. We have offset all of the carbon
+emissions associated with our business activities
+
+FUJ00153084
+FUJ00153084
+
+Please consider the environment before printing this email
+
+The information in this e-mail and any attachment(s) is confidential and may be legally privileged. This e-mail is
+intended solely for the addressee. If you are not the addressee, dissemination, copying or other use of this e-
+mail or any of its content is strictly prohibited and may be unlawful. If you are not the intended recipient please
+inform the sender immediately and destroy the e-mail and any copies. All liability for viruses is excluded to the
+fullest extent permitted by law. Any views expressed in this message are those of the individual sender. No
+contract may be construed by this e-mail.

@@ -1,0 +1,48 @@
+WITN04600306
+WITN04600306
+
+From: Holmes Jan R[/O=ICL/OU=UKSOUTH FEL01/CN=RECIPIENTS/CN=HOLMES\J]
+Sent: Fri 20/02/2004 9:21:14 AM (UTC)
+
+To: Cooke David[David.Cooke:
+
+Subject: RE: our discussion today
+
+David,
+
+Thanks for that. I'd pretty well confirmed that through Richard Brunskill yesterday afternoon.
+Cheers,
+
+Jan
+
+From: Cooke David
+
+Sent: 19 February 2004 17:02
+To: Holmes Jan R
+
+Subject: our discussion today
+
+Jan,
+
+I've spoken to James Stinchcombe on the topic we discussed we spoke about today. It is the case that
+transactions held on the session stack but not committed are held in memory only and not written to the
+message store until the session is settled.
+
+So any reboots that took place during a session would have wiped all EPOSS transactions. APS, NBS and
+ETU all create recovery records which are checked at reboot. Some of these are automatically recovered (and
+marked as such within message store). Others will request the clerk to confirm that the transaction was
+completed at which point they are committed or deleted.
+
+Hope this helps.
+
+Regards,
+
+Dave Cooke
+
+Fujitsu Services
+
+This e-mail is only for the use of its intended recipient. Its contents are confidential and may be privileged. Fujitsu Services does not guarantee that this
+e-mail has not been intercepted and amended or that itis virus-free.
+
+david.cooke
+

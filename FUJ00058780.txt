@@ -1,0 +1,101 @@
+FUJ00058780
+FUJ00058780
+
+HORIZON KEL KGreenwood5124N (Version 1)
+
+Type: Information
+Status: Authorised
+
+Title: Swiping APS card commits any transactions in the stack
+Summary: Swiping APS card commits any transactions in the stack
+Raised: by Kath Greenwood on 19/09/2000
+
+Last updated: by Anne Chambers on 08/08/2002
+
+Release: BI2
+
+System product: APS
+
+Keywords: swipe APS rates card transactions removed"
+
+Status: Authorised
+
+Visi Medium
+
+Peak: PC53802
+
+TFS: 9110862
+
+Symptoms
+
+At FAD 324227 when an Ashfield District Rates APS Card is swiped, it either removes transactions from the stack or just doesn't work.
+Sometimes it works on another counter, sometimes it has to be entered manually. When the transactions are "wiped off", the PM is sent back
+to the Serve Customer screen and when he presses receipt, nothing happens
+
+Problem
+
+This problem was investigated at great length by the SSC, development and the RNM. Eventually, the problem was found to be due to user
+error. <br><br>The PM was typing-ahead on faulty swipe cards: when an APS card failed to read, the PM continued to type in regular key
+strokes, the end result was that any items in the sales stack were committed. <br> <br>The problem can also happen if an APS card is swiped
+at an inappropriate moment and is rejected - for example if a second APS card is swiped while the receipt for a previous transaction is still
+being printed. The swipe will be ignored (and the system will beep) but the clerk may type in the details anyway.
+
+Solution - Helpdesk
+
+<kel> <p> Instruct the PM NOT to type-ahead after swiping an APS card - wait until the card details are shown. If the card fails to read more
+than twice, advise the customer to get a replacement.</p> <table border="1" width="717"> <tr> <td align="left” width="42"> </td> <td
+width="659">Correct Key Sequence</td> </tr> <tr> <td width="42">1</td> <td width="659"> Card swiped and accepted or barcode scanned
+with confirming beep.</td> </tr> <tr> <td width="42">2</td> <td width="659"> Enter amount into the correct line of the box on screen.</td>
+</tr> <tr> <td width="42">3</td> <td width="659">Postmaster checks that the amount is correct.</td> </tr> <tr> <td
+
+width="42">4</td> <td width="659"> Press/touch ENTER to accept amount. </td></tr> <tr> <td width="42">5</td> <td width="659"> Fi for
+MOP cash.</td> </tr> <tr> <td width="42">6</td> <td width="659"> Receipt printed. </td></tr> <tr><td width="42">7</td> <td
+width="659"> Press/touch ENTER to accept first receipt, second receipt printed. </td> </tr> <tr> <td width="42">8</td> <td width="659"> PM
+checks the transaction is in sales stack with any previous transactions.</td> </tr> <tr> <td width="42">9</td><td width="659"> F1 to settle
+to cash (or other settlement keys, e.g. F2 fast cheque) </td> </tr> </table> <p>What can happen.</p> <table border="1" width="718"> <tr>
+<td width="41"> </td> <td width="661">Scenario 1</td> </tr> <tr> <td width="41">1</td> <td width="661"> Card swiped or barcode scanned
+~ system beeps and ignores it.</td> </tr> <tr> <td width="41">2</td><td width="661"> Amount entered quickly (goes into quantity box at
+top of screen).</td> </tr> <tr> <td width="41">3</td> <td width="661"> ENTER pressed to confirm amount (no effect on
+
+anything).</td> </tr> <tr> <td width="41">4</td> <td width="661"> F1 for MOP cash (items on the stack are settled to cash).</td></tr> <tr>
+<td width="41">5</td> <td width="661"> No receipt for the AP is printed.</td> </tr> <tr> <td width="41">6</td> <td width="661"> PM looks at
+screen and sees the items have disappeared! (Quantity box is back to 1)</td></tr> <tr> <td width="41">7</td> <td width="661">
+Investigation proves items were settled to cash - PM blames equipment.</td> </tr></table> <p> </p> <table border="1" width="718"><tr> <td
+width="40"> </td> <td width="662">Scenario 2</td> </tr> <tr> <td width="40">1</td><td width="662"> Card swiped or barcode scanned -
+system beeps and ignores it.</td> </tr> <tr> <td width="40">2</td> <td width="662"> Amount entered quickly (goes into quantity box at top
+of screen).</td></tr> <tr> <td width="40">3</td> <td width="662"> ENTER pressed to confirm amount (no effect on
+
+anything).</td> </tr> <tr> <td width="40">4</td> <td width="662"> Fi for MOP cash (items on the stack are settled to cash).</td> </tr> <tr>
+<td width="40">5</td> <td width="662"> No receipt for the AP is printed.</td> </tr> <tr> <td width="40">6</td> <td width="662"> PM swipes
+card again or barcode scanned; system reads the card this time.</td> </tr> <tr> <td width="40">7 </td> <td width="662"> Amount entered
+quickly.</td> </tr> <tr> <td width="40">8</td> <td width="662"> ENTER pressed to confirm amount.</td> </tr> <tr><td width="40">9</td> <td
+'662"> Fi to settle to cash.</td></tr> <tr> <td width="40">10</td> <td width="662"> Receipt printed. </td></tr> <tr> <td
+
+'40" >11 </td> <td width="662"> ENTER pressed to accept first receipt, second receipt printed.</td></tr> <tr> <td
+
+h="40">12</td> <td width="662"> PM checks transaction is on the stack, only the AP transaction is there! </td> </tr> <tr> <td
+'40">13</td> <td width="662"> Investigation proves items were settled to cash - PM blames
+
+equipment. </td> </tr> </table> <p> </p> <table border="1" width="718"> <tr> <td width="39"> </td> <td width="663">Scenario 3</td> </tr>
+<tr> <td width="39">1</td> <td width="663"> Card swiped or barcode scanned - system beeps and ignores it.</td></tr> <tr> <td
+'39">2</td> <td width="663"> Amount entered quickly (goes into quantity box at top of screen).</td></tr> <tr> <td
+
+'39">3</td> <td width="663"> Miss ENTER or it is not pressed firmly enough. </td></tr> <tr> <td width="39">4</td> <td width="663">
+F1 for MOP cash (1st Class Stamp appears).</td> </tr> <tr> <td width="39">5 </td> <td width="663"> PM sees that his AP transaction has
+been entered on the system as a ist Class stamp - PM blames equipment.</td> </tr> </table> <p> Other scenarios are possible - if F2 is used
+instead of F1, for MOP Cheque, this can result in <ul> <li>stack settled to cheque (if the items on the stack were receipts), or </li>
+<li>Cheque from Customer added to stack (if the items on the stack were payments). or </li> <li> 2nd Class stamp added to
+
+FUJ00058780
+FUJ00058780
+
+stack. </li> </ul> </p> <br> <p><font size="3"><b>Questions to be asked: - </b> </font> </p> <ul> <li>Was a swipe card/barcoded bill transaction
+completed successfully on the first attempt at this time? </li> <li>Did the AP receipt print first time? </li> <li>Was the screen checked during
+the entering of the transaction or after? </li> <li>Was the AP transaction performed ahead of the system or in step with the screen display?
+</li> <li>Was a receipt printed to see if the missing transactions were in the system? </li> </ul>Also see KELs: RColeman4733L and
+PSteed2751P - which say there could be a fault with the keyboard/screen. </kel>
+
+Evidence
+
+The sequence of events is often visible in the psstandard.log.
+

@@ -1,0 +1,464 @@
+POL00029713
+POL00029713
+
+Follow Up Review of Key
+System Controls in Horizon
+
+Horizon
+System
+
+Controls Post Office Limited
+
+Assurance Review
+
+Report: AR12/050 December 2012
+
+TSS Internal Audit & Risk Management aT EEE
+POL00029713
+POL00029713
+
+Context and Objectives
+
+The Post Office Limited (POL) network of some 11,000 branches processes client and business transactions in excess of £100 billion annually. The majority
+of transactions are conducted on behalf of other parties, for example, receiving payment for domestic utility bills and paying out National Savings.
+Customer transactions are captured through the Horizon electronic point of sale system in branches and transmitted to central systems (utility payment,
+external banking and POL finance systems) throughout the day.
+
+The overall objective of the review was to assess the degree to which the issues raised in the 2011/12 Ernst & Young (E&Y) Management Letter regarding
+the Horizon control environment have been addressed by management. Where actions have not been completed, or were completed part way through
+the financial year 2012/13 any existing compensating controls were also assessed.
+
+Key Findings
+
+The 2011/12 E&Y Management Letter identified a number of areas for improving Horizon system controls. This Internal Audit & Risk Management
+(IA&RM) review assessed the degree to which management action plans have progressed to address the issues which related to Horizon only. Overall,
+the majority of the areas for improvement identified by E&Y have been completed by POL and third party supplier management. There remain a few
+items that require further input from management to ensure that all controls have either been designed and implemented or that the risks have been
+accepted by POL, specifically:
+
+1. Generic privileged accounts: Generic privileged accounts remain in use on Horizon by Fujitsu. A paper was presented to the November POL Risk and
+Compliance Committee where any residual business risks associated with this control were accepted by IT and Change on behalf of the business.
+
+Implication: Accountability in the application may not be fully controlled, leading to a risk of inappropriate activities being undertaken within the system.
+
+2. Password parameters: E&Y recommended that POL operate a single Information Security Policy, however POL management use two separate policies,
+one for Horizon and one for POLSAP respectively. Any residual business risks associated with this control were accepted by IT and Change on behalf of the
+business at the November POL Risk and Compliance Committee meeting.
+
+In addition, POL management have not completed the E&Y recommendation to review key password parameters, as these have not been defined.
+Testing also identified two password parameters configured in the Horizon application that did not comply with the Horizon Security Policy.
+
+Implication: Unauthorised access may occur, leading to a risk of inappropriate activities being undertaken within the system.
+
+5 SSE SESE ESS TSS EERE Internal Audit & Risk Management
+Confidential Page 2 of 11
+POL00029713
+POL00029713
+
+ee
+
+Conclusion: POL management have made progress against the areas for improvement identified by E&Y. Where areas that have been improved had not
+been addressed from the beginning of the year testing has demonstrated that compensating controls have been in operation for the financial year
+starting in April 2012. There remain, as noted above, some areas where POL management should either accept the risk of not implementing the E&Y
+recommendations in full, or where further work is required to strengthen the control environment. The findings, summarised on pages 4 — 8 have been
+shared with E&Y and reflect the IA&RM assessment as at the end of November 2012.
+
+Control Environment Rating: Recommended Actions Partially Implemented.
+
+Management Comment
+
+We agree with this report and its findings, and we have already begun to progress the agreed action plan within the agreed timescales — Lesley J Sewell
+
+5 SSE SESE ESS TSS EERE Internal Audit & Risk Management
+Confidential Page 3 of 11
+POL00029713
+POL00029713
+
+IT Manageme
+
+Disciplines and Transaction C
+
+The summary findings from the review are noted below and represent the status of controls at 30" November 2012. Testing has been performed from
+the control remediation date. Where actions have not been completed, or were completed part way through the financial year 2012/13 any existing
+compensating controls have been assessed from 1* April 2012.
+
+Remediation
+
+E&Y Recommendation Summary date What was done What was found
+
+Change management - Retain
+documentation to show the . Documentation for the change
+. Inspected the testing and release .
+
+evidence that POL has been st . management procedure was in place for
+. . cogs , 1* April management processes and performed st .
+
+1 I involved in authorisation, testing . a sample of changes tested from 1* April
+
+2012 walkthroughs and sample testing of h
+
+and approval of changes. In completed changes on Horizon to 30" November 2012. Controls were
+
+particular document evidence P e . found to be operating effectively.
+
+from 3rd party suppliers.
+
+Through consultation with Fujitsu, POL
+management have confirmed that
+privileged generic accounts are
+controlled and will not be replaced with
+individual accounts.
+
+Generic privileged accounts -
+Consider a review of generic
+
+2 I privileged accounts to determine I Nov2012 I Inspected the review of generic The residual business risk associated
+
+if these accounts can be replaced ivi
+
+' individual P privileged accounts performed by POL with this control was accepted by IT and
+
+by individual user accounts. management for both POL and third Change at the November POL Risk &
+party users.
+
+Compliance Committee on behalf of the
+business.
+
+Due to the completion of this
+recommendation part way through the I A review of generic privileged accounts
+year, inspected the review of privileged I On a monthly basis, including those
+
+Generic privileged accounts - Horizon activity at the Information I operated by third parties, commenced in
+Consider monitoring controls to Security Management Forum (ISMF) I November 2012 at the ISMF. Accounts
+3 help ensure robust — security Nov 2012 I from 1* April to 2" November 2012. with privileged access in the application
+practices are in place, particularly have been reviewed at the ISMF since
+those operated by third party April 2012 and consequently mitigating
+service providers. controls were found to have been
+operating effectively since the start of
+
+the financial year.
+
+5 SSE SESE ESS TSS EERE Internal Audit & Risk Management
+
+Confidential Page 4 of 11
+POL00029713
+POL00029713
+
+ZY R alae
+&Y Recommendatio at was done a ound
+date
+Logical security settings — Set an All Oracle databases — supporting
+encrypted assword. for the 4st April Inspected the password policy for the I Horizon were upgraded to Oracle
+4 IiSTPNER ORD file on all Oracle so LISTENER.ORA file and reviewed the I version 10gR2 prior to April 2012. This
+databases supporting Horizon recommendation status. upgrade enabled the encryption of
+PP 8 . passwords on this file.
+POL management confirmed that key
+password parameters will be reviewed
+Logical Security Settings - Inspected the review of privileged er he annual basis. Presently, a the
+Consider monitoring controls to Horizon activity at the ISMF from 1* horisan = heaton has not been
+help ensure robust — security April to 2"? November 2012. Pp
+5 . : . N/A performed. Password parameters on
+settings are in place, particularly Windows Active Directory were mainl
+those operated by third party Tested the recommendation status ry . . y
+. - ae found to meet those defined in the
+service providers. with POL and Fujitsu management. . . .
+Horizon Security Policy. However two
+exceptions were noted and are listed in
+Appendix A.
+POL management have presented a
+d . requirement to have one security
+Passwor ‘ ores f Review policy covering Horizon and another
+an up' ate ne nrormation covering another application, POLSAP.
+Security Policy’ to meet the . . Security policies are maintained and
+recommended generally-accepted Inspected the password policy covering reviewed through periodic reviews and
+6 practice password settings N/A Horizon used by POL users and third POL management confirmed the
+outlined below. Management party users and reviewed the appropriateness of the security policies
+should also consider having only recommendation status. during this review
+one policy document outlining the . : . .
+password guidelines that apply to The residual business risk associated
+both Horizon and POLSAP. with this control was accepted by IT
+, and Change at the November POL Risk
+& Compliance Committee.
+
+Confidential
+
+Internal Audit & Risk Management
+
+Page 5 of 11
+E&Y Recommendation Summary
+
+Remediation
+date
+
+POL00029713
+
+POL00029713
+
+action Controls Summary Findings (cont)
+
+What was done
+
+What was found
+
+Password Parameters - Configure
+all network, application and
+supporting infrastructure
+components in line with the policy
+requirements. For infrastructure
+supporting the applications in
+scope, where the critical
+7 I authentication level is at the
+POLSAP application layer or Active
+Directory, management should
+consider the risk of unauthorised
+access to the financial data by
+privileged accounts on the Oracle
+database and Linux operating
+system.
+
+N/A
+
+Inspected password parameters for the
+Oracle, Linux and Windows
+environments supporting the Horizon
+application used by POL and third party
+users and reviewed the E&Y
+recommendation status.
+
+Password parameters are set in the
+Windows Active Directory Group
+Policy. The Group Policy overrides
+password configurations on the local
+Oracle and Linux systems that make up
+the Horizon environment. Password
+parameters on Windows Active
+Directory were mainly found to meet
+those defined in the Horizon Security
+Policy. However two exceptions were
+noted and are listed in Appendix A.
+
+Passwords for privileged accounts on
+the Oracle database and Linux
+operating systems conform with the
+Horizon Security Policy and are
+restricted to a small number of system
+administrators in Belfast. Passwords
+are enforced manually in line with the
+Horizon Security Policy. However the
+process for manually changing
+privileged passwords on the Oracle and
+Linux operating systems needs to be
+documented within the policy.
+
+Confidential
+
+Internal Audit & Risk Management
+
+Page 6 of 11
+POL00029713
+POL00029713
+
+E&Y Recommendation Summary
+
+Password Parameters -
+Management should consider
+implementing monitoring controls
+
+Remediation
+
+date
+
+What was done
+
+Inspected the review of privileged
+Horizon activity at the ISMF from 1*
+
+What was found
+
+POL management confirmed that key
+password parameters will be reviewed
+on an annual basis. Presently, a review
+of key password parameters on the
+Horizon application has not been
+
+8 I to help ensure robust security N/A April to 2° November 2012 and I performed. Password parameters on
+settings are in place, particularly reviewed the recommendation status I Windows Active Directory were mainly
+those operated by third party with POL and Fujitsu management. found to meet those defined in the
+service providers. Horizon Security Policy. However two
+
+exceptions were noted and are listed in
+Appendix A.
+Periodic User Access Reviews and
+Monitoring Controls - Consider a A review of privileged and generic user
+POL owned periodic review of . accounts on the Horizon application
+. : Inspected the review of user access . .
+appropriateness of access to in- was carried out in October 2012 and
+ge . performed by management for both , th
+scope applications and their POL and third party users on Horizon was signed off on 8" November at the
+supporting infrastructure. The Party . ISMF as completed. Accounts with
+
+9 implementation of this review will Nov 2012 Due to the completion of this privileged access in the application
+assist in the identification of . have been reviewed at the ISMF since
+inappropriate access and potential recommendation during the year, April 2012 and consequently mitigatin
+
+Pprop e IA&RM_ inspected the review of PI q y gating
+
+segregation of duties conflicts. In
+addition, this will act as an
+additional control to help detect
+users that no longer require access
+to the financial applications.
+
+privileged Horizon activity at the ISMF
+from 1* April to 2"4 November 2012.
+
+controls were found to have been
+operating effectively since the start of
+the financial year.
+
+Confidential
+
+Internal Audit & Risk Management
+
+Page 7 of 11
+agement Disciplines and T
+
+E&Y Recommendation Summary
+
+Remediation
+
+What was done
+
+POL00029713
+
+POL00029713
+
+What was found
+
+User Administration - Strengthen
+the existing user administration
+
+date
+
+Documentation for the user
+administration procedure for new and
+modified access on the Horizon
+
+processes within Fujitsu so that st . Inspected user administration ae °
+10 . . 1* April age application was in place for a sample of
+documentation supporting the arrangements for new and modified i" :
+request, approval and set-up of 2012 Fujitsu technical support staff. Fujitsu technical support staff tested
+quest, app . po PP . from 1* April to 30° November 2012.
+access to the Horizon estate is a
+. Controls were found to be operating
+retained.
+effectively.
+User Administration Process -
+Strengthen the revocation of
+access process such that IT is
+notified in a timely manner when Documentation for the user
+a terminated employee no longer administration procedure for leavers
+requires access to the Horizon on the Horizon application was in place
+estate. Consideration should be for a sample of Fujitsu technical
+given to the HR department 1 April Inspected user administration I support staff tested from 1* April to
+11) sending a list of terminated soln arrangements for Fujitsu technical I 30° November 2012. Fujitsu
+employees to the IT department support staff. administrators were notified on a
+
+on a periodic basis, e.g. weekly or
+fortnightly. This is in addition to
+the line manager notifying the IT
+department of the terminated
+employee. All documentation
+supporting this process should be
+retained.
+
+timely basis and user accounts were
+removed on or before the leave date
+on the request. Controls were found to
+be operating effectively.
+
+Confidential
+
+Internal Audit & Risk Management
+
+Page 8 of 11
+POL00029713
+POL00029713
+
+What is Being
+
+The following actions have been agreed with management against the observations made in this report.
+Generic privileged accounts
+
+1. Management should set out the reasons for having generic privileged accounts on Horizon and present this to the Risk & Compliance
+Committee for review. Priority 2 (Andy Jones - Completed)
+
+Password parameters
+
+2. Management should set out the reasons for operating two Information Security Policies, covering Horizon and POLSAP, and present this to
+the Risk & Compliance Committee for review. Priority 2 (Andy Jones - Completed)
+
+3. Ensure that the Horizon Security Policy is reviewed and changed to reflect the configuration of the password parameters detailed within
+Appendix A. Priority 2 (Mark Pearce — January 2013)
+
+4. Ensure that the process for manually changing privileged account passwords on the Oracle databases and Linux operating systems is
+documented within the Horizon Security Policy. Priority 2 (Mark Pearce — January 2013)
+
+5. Define key password parameters to be reviewed on a periodic basis. Once defined, management should perform a review of key password
+parameters to ensure that the third party supplier is implementing the Horizon Security Policy. Priority 2 (Mark Pearce — January 2013)
+
+No of Implementation
+Importance actions Completed by Mar 13
+Priority 1 - - -
+Priority 2 5 2 3
+5 SSE SESE ESS TSS EERE Internal Audit & Risk Management
+
+Confidential Page 9 of 11
+POL00029713
+POL00029713
+
+Appendix A — Windows A\ Directory — Password Parameters
+
+The following password parameters in the Windows Active Directory Group Policy were observed to not meet the requirements set out in the
+
+Horizon Security Policy.
+
+Password parameter
+
+Horizon Security Policy Requireme:
+
+ws Active Directory Group P.
+
+Setting
+1 Number of failed login attempts before After 3 to 5 failed attempts After 6 failed attempts
+account lockout
+2 Account lockout counter Reset by an Administrator 30 minutes
+
+Fujitsu have stated that they do not have the resource available to have the account lockout counter reset by an administrator, which is why it
+automatically resets after 30 minutes. The Horizon Security Policy should be reviewed and changed to reflect the configuration of the password
+
+parameters detailed above.
+
+SE ES ER TES EEE
+Confidential
+
+Internal Audit & Risk Management
+
+Page 10 of 11
+POL00029713
+
+POL00029713
+Susan Barton, Strategy Director Derek K Foster, Internal Audit & Risk Management Director
+Susan Crichton, Legal and Compliance Director Justin Thornton, Head of Risk and Assurance
+Christopher Day, Chief Financial Officer Ernst & Young, External Auditors
+
+Kevin Gilliand, Network and Sales Director
+Andy J Jones, Quality and Standards Manager
+Mark R Pearce, Head of Information Security
+Lesley J Sewell, Chief Information Officer
+Paula Vennells, Chief Executive
+
+Malcolm Zack, Head of Internal Audit
+
+5 SSE SESE ESS TSS EERE Internal Audit & Risk Management TT AEE,
+Confidential Page 11 of 11

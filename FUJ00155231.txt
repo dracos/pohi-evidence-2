@@ -1,0 +1,1017 @@
+FUJ00155231
+FUJ00155231
+
+Thomas Penny
+
+From:
+Sent:
+To:
+Subject:
+
+Attachments:
+
+Hi All
+
+NH —-
+
+POH
+Thomas Penny rs
+12 August 2008 17:44
+
+Jenkins Gareth GI; Holmes Alan; Meek Steven; Sewell Peter (FELO1)
+
+FW: Branch 141832 Craigpark
+View KEL dsed5628Q.htm; PC0152376.htm; PC0152421.htm
+
+Pete has asked me send a note to set up a meeting to discuss this issue.
+
+Can everyone make 10.00, Thursday 14 August?
+
+I've sought out relevant Peaks and KEL and attach.
+
+Kind regards
+Penny
+
+é) §
+
+View KEL P1523) htm ements htm (47
+
+45628Q.htm (37 KE
+From: Sewell Peter (FELO1)
+
+Sent: 12 August 2008 14:41
+
+To: Holmes Alan; Thomas Penny
+Subject: FW: Branch 141832 Cralgpark
+Alan
+
+Can we set up a meeting please, Gareth has raised a potential issue with events which might require a change in our
+
+ARQ process.
+
+See below, don't know if you are aware of thos already.
+
+Pete
+
+Pete Sewell
+
+Security Operations Manager
+?
+
+‘Fujitsu Services Royal Mail Group Account
+
+LOVELACE ROAD,
+BRACKNELL,
+BERKS.
+
+RG12 8SN
+
+Tel: f
+Mobile
+Fax
+
+E-Mail
+Web
+
+Fujitsu Services Registered in England no 96056,
+Registered Office 22 Baker Street,
+
+London W1U 3BW
+
+This e-mail is only for the use of its intended recipient. Its contents are confidential and may be privileged. Fujitsu
+Services does not guarantee that this e-mail has not been intercepted and amended ot that it is virus free.
+FUJ00155231
+FUJ00155231
+
+From: Jenkins Gareth GI
+
+Sent: 11 August 2008 15:15
+
+To: Sewell Peter (FELO1)
+
+Cc: Stewart Mike; Peach Mik
+Subject: FW: Branch 141832 Craigpark
+Pete,
+
+Over the last couple of years we've had a couple of cases where EOD (which runs at 19:00) interferes with
+transactions being written at the counter. If this happens, then there is an Event written to the NT event Log.
+
+Given we. only have a couple of instances, and a fix is as likely to cause further problems, then we're reluctant to make
+a change to Horizon. However if Horizon data is being used in evidence for the prosecution of a Postmaster, it is
+probably wise to also check to see if any such events were produced ‘during the period in question. Is this something
+that can / should be built into the ARQ process?
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+Distinguished Engineer
+Applications Architect
+oyal Mail Group Account
+
+FUJITSU
+Lovelace Road, Bracknell, Berkshire, RG12 8SN
+Th enn RG12 BSN
+Mobile:
+
+Mab GRO
+Web:
+
+) Please consider the environment - do you really need to print this email?
+
+Fujitsu Services Limited, Registered in England no 96058, Registered Office 22 Baker Street, London, W1U 3BW
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu
+Services does not guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+
+From: Jenkins Gareth GI
+
+Sent: 11 August 2008 15:11
+
+To: Peach Mik
+
+Cc: Drake Claire; Card Cheryl; Chambers Anne O; Stewart Mike; Budworth John
+Subject: RE: Branch 141832 Craigpark
+
+Mik,
+As discussed, I am still uneasy about this, but I agree that it is probably safer to leave things as they are.
+
+I've discussed this with Mike and I'll mention this to Pete Sewell so that he can ensure that if we are providing
+evidence for an ARQ that we also check on relevant events.
+
+Regards
+Gareth
+
+Gareth Jenkins
+Distinguished Engineer
+Applications Architect
+Royal Mail Group Account
+
+FUJITSU
+Lovelace Road, Bracknell, Berkshir
+Tel
+Mobile:
+email:
+Web:
+
+FUJ00155231
+FUJ00155231
+
+1 Please consider the environment - do you really need to print this email?
+
+Fujitsu Services Limited, Registered in England no 96056, Registered Office 22 Baker Street, London, W1U 38W.
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged.
+Fujitsu Services does not guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+
+From: Peach Mik
+
+Sent: 11 August 2008 14:41
+
+To: Jenkins Gareth GI
+
+Cc: Drake Claire; Card Cheryl; Chambers Anne O; Stewart Mike; Budworth John
+Subject: RE: Branch 141832 Craigpark
+
+Gareth,
+OK - I understand that you don’t want this to be left un-fixed.
+
+On the basis of the evidence that we have - there are 35 errors per week ( inside the 7-8pm
+Wednesday window) and two in 35*52(weeks) = 1820 are known to have caused a discrepancy.
+
+a) SSC staff spending lots of time monitoring these events for 1-2 per year is simply not cost-effective
+b) Fixing the underlying problem of holding the "lock" for too long is feasible - from PC0152376 BUT
+c) I would want some assurance that making this change to the live estate, to resolve 2 reported
+issues, is NOT going to have a knock-on effect anywhere else...
+
+I know that this is a difficult request - but I don’t like changing Horizon at this stage - and I would like
+to be convinced that it is necessary, and that we wont make things worse..
+
+Regards
+Mik
+FUJ00155231
+FUJ00155231
+
+PC0152376 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 1 of 7
+
+"
+Expanded File Call Conference Options
+Peak Incident Management System
+Call 1PCO0152376 Call Logger Customer Call_ -- EDSC
+Reference c =
+Release Proposed For -- T80__ ITop Ref 182747
+iCall Type Live use error Priority IB -- Business restricted
+Contact IEDSC Call Status Closed -- Avoidance Action Supplied
+Target Date _I10/01/2008 Effort (Man Days) [2.00
+Summary ig unit was rolled over it was forced to clear the local suspense
+ferences Type Value
+ITRIOLE for Service I82747
+Clone Call IPCO152421
+ISSCKEL IKEL dsed5628Q
+Progress Narrative
+
+Date: 20-Dec-2007 12:35:19 User: Customer Call_
+ALL PCO152376 opened
+
+Details entered are:-
+
+summary:Ibrahim from the NBSC has asked that an issue be i
+all Type:L
+
+call Priority:B
+
+arget Release:T70
+
+outed to:EDSC - _Unassigned
+
+wiginator: XXXXXX@TFSO1
+riginator's reference: 82747
+Product Serial No:
+
+Product Site: 005948
+
+Itbxahim from the NBSC has asked that an issue be investigated by our software
+eam regarding discrepancies still showing when the MIS stock unit is rolled to
+clear the local supsense account.
+
+2007-12-20 11:53:19 [ Brooks, Katrina]
+INIT : create a new request/incident/problem/change/issue
+
+2007-12-20 12:01:32 [ Brooks, Katrina]
+OG : The following information has been sent to me via Email from Ibrahim @
+IBSC
+
+m Wednesday 12/12 the BM stock unit had a gain of £465.73. As this stock unit
+rolled over it was forced to clear local suspense £1083.76- . The gain of
+£465.73 did not go to local suspense and is not included in the £1083.76-.
+his was not the last stock unit to roll over. The last stock unit to roll over
+as MIS at 10:20 on 13/12. This stock unit had no discrepancies. MIS is a
+
+IRRELEVANT 12/08/2008
+
+FUJ00155231
+FUJ00155231
+
+PC0152376 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 2 of 7
+
+?
+
+orrection stock unit and was not inactive as it is rolled every BP.
+
+he suspense account and final balances corroborate the above as the office has
+lsent us copies.
+
+ithe Trading statement agrees with the suspense account and that BM stock
+cleared suspense but did not send its gain to suspense. The Trading position
+line should always show zero. Under the BM stock column it shows £465.73-.
+
+iI have had a trial done on BM stock to see if this is showing the £465.73 but
+it is not.
+
+0007-12-20 12:02:28 [ Brooks, Katrina]
+0G : I contacted the PO to gain more details but the pm was on the other
+hone. I was asked to call back in 15 mins.
+
+2007-12-20 12:04:59 [ Brooks, Katrina]
+
+0G : Ibrahim stated that this might be the same issue for branch code 003020
+(incident number 76918) .
+
+2007-12-20 12:25:58 [ Brooks, Katrina]
+
+OG : I have spoken to the PM for more details:
+
+SU - BM that has the problem
+
+IISC SU is one they use to roll over the office.
+iser name JBAOO1L
+
+lave rolled into TP9
+
+jode 1
+
+2007-12-20 12:33:53 [ Brooks, Katrina]
+OG : Ibrahim from the NBSC states that this might be related to Branch Code
+1003020 (76918) that I have sent back across for investigation.
+
+2007-12-20 12:37:31 [ Brooks, Katrina]
+
+OG : Can you please investigate as to why when the BM stock unit was rolled
+lover it was forced to clear the local suspense account. This was not the last
+stock unit to be rolled over.
+
+2007-12-20 12:38:11 [ Brooks, Katrina]
+R : Transfer ‘group' from 'HSH7' to 'PEAK'
+
+Date: 20-Dec-2007 12:41:36 User:Lorraine Elliott
+ithe call summary has been changed from:—
+
+Itbrahim from the NBSC has asked that an issue be i
+
+he call summary is now:~
+
+FADO05948 BM stock unit was rolled over it was forced to clear the local
+suspense account
+
+Date: 20-Dec-2007 12:41:51 User:Lorraine Elliott
+Product EPOSS & DeskTop -~ Counter Common (version unspecified) added.
+
+Date: 20-Dec-2007 12:42:07 User:Lorraine Elliott
+he Call record has been assigned to the Team Member: David Seddon
+progress was delivered to Provider
+
+IRRELEVANT ~ : 12/08/2008
+
+FUJ00155231
+FUJ00155231
+
+PC0152376 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 3 of 7 i?
+
+Date: 21-Dec-2007 13:46:12 User:David Seddon
+loning call so original can be passed to development for further investigation
+land clone can be passed to MSU for reconcilaition purposes.
+
+Date: 21-Dec-2007 13:46:19 User:David Seddon
+all has been cloned to Call:PC0152421 by User:David Seddon
+
+Date: 21-Dec-2007 13:50:29 User:David Seddon
+vidence Added - 005948 - Complete Messagestore
+
+Date: 21-Dec-2007 13:51:13 User:David Seddon
+idence Added - Subscription Groups
+
+Date: 21-Dec-2007 13:52:39 User:David Seddon
+vidence Added - 005948 Ctrl Event/Audit/TuneableTrace logs
+
+Date: 21-Dec-2007 14:55:20 User:David Seddon
+
+[Start of Response]
+
+ttockunit BM was being rolled over on counter 1 at the same time that the
+arious EOD of day processes were being run in the background around 7pm. It
+as during the CABSProcess that the following message was written to the audit
+og...
+
+U: fPost TxnsToLocal Suspense
+(0xC1090003) CreateMessageE
+
+-1056374781) Timeout occurred waiting for lock.
+RiposteCreateMessageEx call failed.
+
+che- messages that should have posted the. £465.73 gain in stockunit, BM to local
+usperige failed to be written. Consequently, when. local suspense was cleared
+(written off to P&L in'this case) the £465.73 wasn't taken into account and
+his resulted in the -£465.73 trading position seen on.the Branch Trading
+tatement.
+
+outing call to development to investigate further and improve the error
+andling so that following the failure to write messages the system doesn't
+arry on regardless.
+
+(End of Response]
+
+Response code to call type L as Category 40 -- Pending -- Incident Under
+Investigation
+
+sponse was delivered to Consumer
+
+ate:21-Dec-2007 15:01:22 User:David Seddon
+
+{Start of Response]
+
+It is not believed that there will be any ongoing impact of this problem at the
+ranch and the branch is not personally out of pocket given that losses were
+itten off to P&L. However, there is an impact on POLFS which will need to be
+corrected. The detail for this is contained in call. PC0152421 which has been
+assed to the MSU for’ onward progression to POL.
+
+{End of Response]
+
+esponse code to call type L as Category 40 -- Pending -- Incident Under
+Investigation
+
+Response was delivered to Consumer
+
+ate:21-Dec-2007 15:01:29 User:David Seddon
+the Call record has been transferred to the team: QFP
+Progress was delivered to Provider
+
+ate:02-Jan-2008 08:29:51 User:Lionel Higman
+
+12/08/2008
+FUJ00155231
+FUJ00155231
+
+PC0152376 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 4 of 7
+
+he Call record has been assigned to the Team Member: Mark Scardifield
+Progress was delivered to Provider
+
+iDate:02-Jan-2008 09:51:02 User:Mark Scardifield
+
+the Call record has been transferred to the team: EPOSS-Dev
+
+The Call record has been assigned to the Team Member: Gerald Barnes
+Progress was delivered to Provider
+
+Date: 02-Jan-2008 13:17:58 User:Gerald Barnes
+
+arget Date/Time updated: new value is 10/01/2008 12:35
+
+Development Cost updated: new cost is 2 (Man Days)
+
+[Start of Response]
+
+he..fact. that EPOSS code ‘is not resilient to errors is endemic. There seems
+Hiittle-point’ fixing it in this one particular. case because there will be many
+others to catch you‘out. For example when I tried to balance with CABSProces$
+cunning Ifound that declaring cash failed with the same sort of error message!
+
+Itt may be worth passing on the general message to the HNGx team that in many
+cases code should always try and exit gracefully after an error and not just
+lunder on regardless.
+
+his is a perfect example of why. Had the balancing code exited gracefully then
+if the user had tried again after CABSProcess had finished working then all
+jould have been well.
+
+For the time being I propose a much cheaper solution then re-writing a lot of
+POSS error handling.
+
+he problem is that because of a previous PEAK (PC0140715) CABSProcess writes
+ut messages atomically. It does a StartTransaction quite early on (which
+creates the lock), then initiates writing lots of transactions with
+‘reateMessage and persistent objects with PutObject and finally really writes
+them with a call to EndTransaction (which ends the lock). If something else
+tries to write a transaction whilst CABSProcess has things locked then it will
+time out after 10 seconds. Hence if CABSProcess takes more than 10 seconds to
+run you could get this sort of problem. In this case CABSProcess took 33
+seconds to run which gives a significant window of opportunity for this sort of
+roblem to occur. I suggest addressing this matter directly by having
+‘ABSProcess store all that it wants to write out to a collection and then only
+really write it out at the very end. In this way the system will be locked for
+ess than 10 seconds and there will be no possibility of this sort of problem.
+
+FIX IMPACT
+complete Forecast Date and Development (man days) fields below this text box.
+Include a brief statement for each of the headings below these instructions.
+n return to Details window Set Target Release Type to "Proposed for" and
+‘arget Release to that proposed.
+
+‘© the Developer:
+
+(1) Put yourself in the shoes of people downstream and provide information that
+hey are. likely to need to process this fix. eg the testing and rollout costs
+ay add significantly to the COST of the fix
+
+(2) Check that the statements are still accurate post-implementation
+
+IMPACT ON DEVELOPMENT:
+ffort in mandays.
+
+man days
+
+here will be an expectation at RMF that this approximates to the timescale for
+
+IRRELEVANT : 12/08/2008
+
+FUJ00155231
+FUJ00155231
+
+PC0152376 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 5 of 7
+
+lelivery so if there are reasons why this might not be the case please note
+hem here. .
+
+IMPACT ON TEST:
+hat independent test coverage does development recommend?
+
+This will often be about the level of regression testing required.
+
+Just some independent tests that CABSProcess is still producing the same
+results as before.
+
+IMPACT ON USER:
+[Benefit of making the fix.
+
+‘It will no longer matter if CABSProcess is running when the user tries to do
+Inany sorts of different things, balancing included.
+
+hat does the user have to do to get this problem?
+Ibo anything which involves writing a transaction whilst CABSProcess is running
+(after 19:00) when CABSProcess has sufficient work to do so that it takes more
+than 10 seconds to run (so probably on the larger offices).
+
+How does it affect them when it occurs?
+
+hatever is being tried on the counter at this time can potentially fail.
+
+IMPACT ON OPERATIONS:
+enefit of fix that may not visible to end user.
+
+Iuess support calls.
+
+RISKS (of releasing and of not releasing proposed fix):
+hat live problems will there be if we do not issue this fix?
+
+Problems will continue to occur if the counter is being used whilst CABSProcess
+lis running in those cases when it takes more than 10 seconds to run.
+
+hat are the risks of this fix having unexpected interactions with other areas?
+
+one.
+Its this a high-risk area in which changes have caused problems in the past?
+
+es. However the fix proposed is self contained and is considered unlikely to
+cause any problems.
+
+Should we consider a pilot rollout and of what sort?
+
+It think a pilot is well worth while in all cases. However as stated before I do
+ot consider this a dangerous fix.
+
+IST OF LIKELY DELIVERABLES:
+
+‘ABSProcess
+
+IST OF THE ABOVE. ALREADY DELIVERED FOR THE PROPOSED RELEASE:
+jone
+
+IST OF THE ABOVE ALREADY DELIVERED TO A RELEASE LATER THAN THAT PROPOSED:
+
+jone
+
+IRRELEVANT 12/08/2008
+
+FUJ00155231
+FUJ00155231
+
+PC0152376 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 6 of 7
+
+IST OF THE ABOVE LIKELY TO BE REDELIVERED INTO THE PROPOSED OR A LATER
+-ELEASE:
+
+jone
+NYTHING ELSE THAT SHOULD BE KNOWN ABOUT THIS CHANGE:
+jothing
+
+[End of Response]
+
+sponse code to call type L as Category 55 -- Pending -- Live Fix Impact
+supplied
+
+pate: 02-Jan-2008 13:20:43 User:Gerald Barnes
+he call Target Release has been moved to Proposed For -- T70
+
+Date: 02-Jan-2008 13:21:40 User:Gerald Barnes
+
+[Start of Response]
+
+IT have put proposed for T70. However I think it really wants to be T80. There
+is no T80 option at the moment.
+
+[End of Response]
+
+esponse code to call type L as Category 55 -- Pending -- Live Fix Impact
+upplied
+
+ate:02-Jan-2008 13:23:17 User:Gerald Barnes
+‘he Call record has been transferred to the team: RelMngmntForum
+Progress was delivered to Provider
+
+Date: 08-Jan-2008 15:19:29 User:John Boston
+he call Target Release has been moved to Proposed For -- T80
+
+Date:10-Jan-2008 14:31:17 User: Tyrone Cozens
+
+[Start of Response]
+
+outing to EDSC for KEL and close.
+
+[End of Response]
+
+esponse code to call type L as Category 68 -- Final -- Administrative Response
+
+outing to Call Logger following Final Progress update.
+
+Date:10-Jan-2008 14:39:30 User:Lorraine Elliott
+he Call record has been assigned to the Team Member: David Seddon
+progress was delivered to Provider
+
+Date:10-Jan-2008 15:58:49 User:David Seddon
+eference Added: SSCKEL _dsed56280
+
+Date: 10-Jan-2008 16:06:12 User:David Seddon
+
+[Start of Response]
+
+tt has been decided that no fix will be carried out for the time being given
+ithe rarity of the problem. Should the problem become more prevalent then the
+eed for a fix will be reviewed once again. In the meantime KEL dsed5628Q
+as been created to cover the problem.
+
+ith regard to this instance of the problem we have already passed details and
+corrective actions necessary on to Post Office Limited by means of a BIM issued
+y the MSU (PC0152421). Therefore no further action is necessary and this call
+
+12/08/2008
+FUJ00155231
+FUJ00155231
+
+PC0152376 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 7 of 7
+
+Jcan simply be closed.
+
+(End of Response] .
+esponse code to call type L as Category 70 -- Final -- Avoidance Action
+Supplied
+
+outing to Call Logger following Final Progress update.
+
+ervice Response was delivered to Consumer
+
+Date: 10-Jan-2008 16:06:13 User:David Seddon
+‘ALL PC0152376 closed: Category 70 Type L
+
+Date:10-Jan-2008 16:06:12 User:David Seddon
+Defect cause updated to 14 -- Development - Code
+
+Date:10-Jan-2008 16:14:50 User: Customer Call_
+[consumer XXXXXX@TFSO1 has acknowledged the call closure
+
+[Root Cause
+
+Development - Code
+Logger Customer Call_ -- EDSC
+Subject Product IEPOSS & DeskTop -- Counter Common (version unspecified)
+Assignee Customer Call_ -- EDSC
+Last Progress 10-Jan-2008 16:14 -- Customer Call
+
+IRRELEVANT 12/08/2008
+FUJ00155231
+FUJ00155231
+
+} View KEL dsed5628Q Page 1 of 2
+1
+
+Class: HORIZON
+Title: Stockunit loss / gain not sent to local suspense
+Stockunit loss / gain not sent to local suspense when stockunit was rolled
+
+Summary: during CABSProcess
+Raised by: Dave Seddon
+Email: david.seddon
+Raised on: 10/01/2008
+Release: $70
+
+Last updated: 01/08/2008
+
+we updated anne Chambers
+KEL type: Unresolved
+
+System
+
+product: EPOSS
+
+Branch code: None
+Server name:
+
+Keywords: local suspense suspence bts non zero
+Status: Authorised
+7 Medium
+Peak: PCO152376
+TES: 82747
+Version: 4
+Symptoms
+
+When a stockunit was rolled over at 7pm the loss/gain for that stockunit
+was not sent to local suspense and consequently when local suspense
+was Cleared this loss/gain was not included. The value of this loss/gain
+was shown on the trading position line on the branch trading statement
+which would always be zero if there was ‘no problem.
+
+In the counter application event log the following pair of events were
+written at 7pm in between events that showed the CABSProcess was
+running...
+
+Source: Riposte
+Text: An unexpected error occurred while attempting to modify an entry
+in the run map. Timeout occurred waiting for lock.
+
+Source: EPOSSStockUnit
+Text: Warning Messaeg: Unexpected error executing
+fPostTxnsToLocalSuspense - see audit log for details.
+
+In the counter audit log the following was written at the time...
+
+SU:fPostTxnsToLocalSuspense (:-1056374781) Timeout occurred waiting
+for lock. (0xC1090003) CreateMessageEx: RiposteCreateMessageEx call
+failed.
+
+Problem
+
+IRRELEVANT : 12/08/2008
+
+FUJ00155231
+FUJ00155231
+
+\ View KEL dsed5628Q Page 2 of 2
+
+The problem is that because of a previous Peak, PC0140715,
+CABSProcess writes out messages atomically. It does a StartTransaction
+quite early on (which creates the lock), then initiates writing lots of
+transactions with CreateMessage and persistent objects with PutObject
+and finally really writes them with a call to EndTransaction (which ends
+the lock). If something else tries to write a transaction whilst
+CABSProcess has things locked then it will time out after 10 seconds.
+Hence if CABSProcess takes more than 10 seconds to run you could get
+this sort of problem. In the first case seen, PC0152376, the CABSProcess
+took 33 seconds to run which gave a significant window of opportunity
+for this sort of problem to occur.
+
+Note: The CABSProcess only runs on the gateway counter so the
+problems seen will not occur on slave counters.
+
+Solution
+
+No fix planned for Horizon given the relative rarity of the problem.
+However, should the problem start occurring more often then the need
+for a fix should be reviewed. Add any cases to list below.
+
+MSU will need to be informed of what has gone wrong and what we
+believe needs to be done to correct matters. We need to look at impact
+on counter as well as the impact on POLFS. See PC0152421 as an
+example of what was done in one particular case but be aware that
+corrective actions in particular will not always be the same and these will
+need to be looked at on a case by case basis.
+
+List of cases seen...
+
+Date Peak Reference
+
+12/12/2007 PC0152376 - problem with local suspense
+05/03/2008 PC0155120 - DEF did not rollover auto with the Office
+27/12/2007 PC158102 - problem with local suspense
+
+Evidence
+Event log Audit log Messagestore
+
+Other versions of this HORIZON KEL:
+Version 2 (Deprecated)
+Version 3 (Deprecated)
+
+I 1208/2008
+
+FUJ00155231
+FUJ00155231
+
+, PC0152421 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 1 of 4
+
+Expanded File Call Conference Options
+Peak Incident Management System
+——
+‘ Bi
+Call pco1s2421 call Logger David Seddon -- EDSC
+Reference
+Release Reported In -- T70 Top Ref 82747
+Call Type Cloned call Priority iB -- Progress stopped
+Contact iDavid Seddon Call Status Closed -- Administrative Response
+Target Date [24/12/2007 Effort (Man Days) 0
+si IFAD005948 BM stock unit was rolled over it was forced to clear the local suspense
+ummary
+
+laccount
+All
+References Type Value
+
+ITRIOLE for Service _I82747
+
+Clone Master PC0152376 _
+Progress Narrative
+
+Date: 21-Dec-2007 13:46:19 User:David Seddon
+
+ALL PC0152421 opened
+
+Details entered are:-
+
+Summary: FAD005948 BM stock unit was rolled over it was forced to clear the
+local suspense account
+
+call Type:C
+
+all Priority:B
+
+arget Release:T70
+
+outed to:EDSC - David Seddon
+
+Date: 20-Dec-2007 12:35:19 User:_Customer Call_
+ALL PC0152376 opened
+
+Details entered are:-
+
+Summary:Ibrahim from the NBSC has asked that an issue be i
+all Type:L
+
+all Priority:B
+
+target Release:T70
+
+outed to:EDSC - _Unassigned_
+
+Date/Time Raised: Dec 20 2007 11:53AM
+
+jag - NBSC
+
+riginator: XXXXXX@TFSO1
+riginator's reference: 82747
+Product Serial No:
+
+Product Site: 005948
+
+Ibrahim from the NBSC has asked that an issue be investigated by our software
+jteam regarding discrepancies still showing when the MIS stock unit is rolled to
+iclear the local supsense account.
+
+Incident History:
+
+2007-12-20 11:53:19 [ Brooks, Katrina]
+INIT : create a new request/incident/problem/change/issue
+
+12/08/2008
+
+FUJ00155231
+FUJ00155231
+
+, PC0152421 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 2 of 4
+
+2007-12-20 12:01:32 [ Brooks, Katrina]
+OG : The following information has been sent. to me via Email from Ibrahim @
+IBSC
+
+m Wednesday 12/12 the BM stock unit had a gain of £465.73. As this stock unit
+olled over it was forced to clear local suspense £1083.76- . The gain of
+465.73 did not go to local suspense and is not included in the £1083.76-.
+
+his was not the last stock unit to roll over. The last stock unit to roll over
+as MIS at 10:20 on 13/12. This stock unit had no discrepancies. MIS is a
+orrection stock unit and was not inactive as it is rolled every BP.
+
+he suspense account and final balances corroborate the above as the office has
+ent us copies. °
+
+ithe Trading statement agrees with the suspense account and that BM stock
+eared suspense but did not send its gain to suspense. The Trading position
+ine should always show zero. Under the BM stock column it shows £465.73-.
+
+II have had a trial done on BM stock to see if this is showing the £465.73 but
+it is not.
+
+007-12-20 12:02:28 [ Brooks, Katrina]
+OG : I contacted the PO to gain more details but the pm was on the other
+hone. I was asked to call back in 15 mins.
+
+007-12-20 12:04:59 [ Brooks, Katrina]
+
+OG : Ibrahim stated that this might be the same issue for branch code 003020
+(incident number 76918).
+
+007-12-20 12:25:58 [ Brooks, Katrina]
+
+OG : I have spoken to the PM for more details:
+
+ISU - BM that has the problem
+
+IISC SU is one they use to roll over the office.
+User name JBAOO1
+
+lave rolled into TP9
+
+jode 1
+
+2007-12-20 12:33:53 [ Brooks, Katrina]
+
+0G : Ibrahim from the NBSC states that this might be related to Branch Code
+lo03020 (76918) that I have sent back across for investigation.
+
+2007-12-20 12:37:31 [ Brooks, Katrina]
+
+OG : Can you please investigate as to why when the BM stock unit was rolled
+lover it was forced to clear the local suspense account. This was not the last
+stock unit to be rolled over.
+
+2007-12-20 12:38:11 [ Brooks; Katrina]
+TR : Transfer 'group' from 'HSH7' to 'PEAK'
+
+Date: 20-Dec-2007 12:41:36 User:Lorraine Elliott
+ithe call summary has been changed from:-
+Itbrahim from the NBSC has asked that an issue be i
+
+IFADO0S948 BM stock unit was rolled over it was forced to clear the local
+suspense account
+
+IRRELEVANT
+
+12/08/2008
+
+FUJ00155231
+FUJ00155231
+
+. 4 PC0152421 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page.3 of 4
+
+Date: 20-Dec-2007 12:41:51 User:Lorraine Elliott
+Product EPOSS & DeskTop -- Counter Common (version unspecified) added.
+
+ate:20-Dec-2007 12:42:07 User:Lorraine Elliott
+he Call record has been assigned to the Team Member: David Seddon
+Progress was delivered to Provider
+
+Date: 21-Dec-2007 13:46:12 User:David Seddon
+loning call so original can be passed to development for further investigation
+nd clone can be passed to MSU for reconcilaition purposes.
+
+ate: 21-Dec-2007 13:46:19 User:David Seddon
+all cloned from original call:PC0152376 by User:David Seddon
+
+ate: 21-Dec-2007 13:46:31 User:David Seddon
+he Call record has been assigned to the Team Member: Anne Chambers
+
+Date: 21-Dec-2007 14:44:26 User:Anne Chambers
+
+[Start of Response]
+
+,ocal suspense had to be cleared from stock unit BM because it was the last
+ctive stock unit (MIS had not been rolled over, but was marked as inactive
+ecause it hadn't been used during the balance period).
+
+he stock unit was being balanced at 7pm at night, and, at the point where the
+tock unit gain should have been written to local suspense, there was some
+contention with the End Of Day processes which were running in the background,
+nd the messages were. not written.
+
+his is very unusual (we have never seen it before, and it is not an area that
+as changed recently). A call PC0152376 has been sent to development to
+investigate why this happened and how it can be avoided in future.
+
+it the branch, the loss for TP 8 was £465.73 bigger than it should have been.
+he loss (£1083.76) was written off to P&L. As I understand it, this means the
+ranch is not personally out of pocket, and there is no need to attempt to
+correct anything at the branch. The BTS shows a trading position of -£465.73.
+
+here is no carried forward impact on the branch accounts from this problem.
+
+There is however an impact on POLFS, since £465.73 (the gain which wasn't
+hifted to local suspense and then cleared) is still held in article z064 /
+ccount 539590. I think this needs to be moved (journalised?) to write-off P&L
+rticle AABQ / account 250503.
+
+SU, please inform POL of this problem via BIMS. I'm happy to discuss further
+i: provide additional information, for example the BTS, if required.
+
+{End of Response)
+
+esponse code to call type C as Category 40 -- Pending -- Incident Under
+investigation
+
+ate: 21-Dec-2007 14:45:14 User:Anne Chambers
+he Call record has been transferred to the team: MSU-Indt Mgt
+
+ate: 03-Jan-2008 12:04:28 User:Claire Drake
+[Start of Response]
+
+12/08/2008
+
+FUJ00155231
+FUJ00155231_
+
+. 5 PC0152421 -- FAD005948 BM stock unit was rolled over it was forced to clear the lo... Page 4 of 4
+
+hank you Anne.
+
+ase of any further queries from Jane Smith et al.
+(End of Response]
+Response code to call type C as Category 68 -- Final -- Administrative Response
+
+Routing to Call Logger following Final Progress update.
+
+Final BIMS issued to POL. Leaving call open for 24 hours in
+
+Date: 03-Jan-2008 13:52:15 User:David Seddon
+Defect cause updated to 7 : Design ~ High Level Design
+
+[Date:03-Jan-2008 13:52:18 User:David Seddon
+
+ALL PCO152421 closed: Category 68 Type C
+
+[Root Cause Design - High Level Design
+
+Logger David Seddon -- EDSC
+
+Subject Product IEPOSS & DeskTop -- Counter Common (version unspecified)
+Assignee IDavid Seddon -- EDSC
+
+Last Progress (03-Jan-2008 13:52 -- David Seddon
+
+12/08/2008

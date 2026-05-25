@@ -1,0 +1,4255 @@
+fee)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+Document Title:
+
+Document Type:
+
+Release:
+
+Abstract:
+
+Document Status:
+
+Author & Dept:
+
+Internal Distribution:
+
+Service Management Portal High Level Design
+
+High Level Design (HLD)
+
+N/A
+
+This document represents a definition of data capture, storage and
+delivery for the reporting of SLT and PM information to POL after
+receipt from incoming data sources
+
+APPROVED
+
+Mik Peach SSC
+
+External Distribution: None
+
+Approval Authorities:
+Name le Signature Date
+Mik Peach SSC Manager
+
+Note: See Post Office Account HNG-X Reviewers/Apprwers Role Matrix (PGM/DCM/ION/0001) for guidance.
+
+© Copyright Fujitsu Services Ltd 2007
+
+‘COMMERCIAL IN CONFIDENCE. Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 1of71
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0 Document Control
+
+0.1 Table of Contents
+
+0 DOCUMENT CONTROL
+
+0.1 Table of Contents
+0.2 Document History
+0.3 Review Details ..
+0.4 Associated Documents (Internal
+0.5 Abbreviations
+0.6  Glossary....
+0.7. Changes Expected .
+0.8 Accuracy
+0.9 Copyright
+
+INTRODUCTION
+
+1 Scope...
+2 Context within the Architecture...
+
+2 DESIGN PRINCIPLES
+
+2.1. Permanence of Data..
+2.2 Application Components..
+
+2.2.1 Mapping of components — top level . 12
+2.2.2 Mapping of components — system MONItOF ...............eccecceseseeeeereseeeeeeeeeeeesenteeetarersreneretereeeeee VD)
+2.2.3 Mapping of components — incident management . . 14
+2.2.4 Mapping of components — reports and SLT... cesses eeseeeeseseeeeneee wee 15
+2.2.5 Mapping of components — Operational Business Change (OBC) .. 16
+
+2.2.6 Mapping of components — Operational Change Process (OCP).
+2.2.7 Database...
+2.2.8 Java Servlets.
+2.2.9 Web Pages.
+2.2.10 Drop Box ............ cee
+2.3 Input Data Streams....
+2.4 ‘Input from Data Warehouse
+2.4.1 Data Warehouse Import Application Components.
+2.4.2 Data Warehouse Import Process Flow
+2.5 Input from Triole (TFS).
+2.5.1 Triole Import Applic
+2.5.2 Triole Import Process Flow
+2.6 Input from Telephony system:
+2.6.1 Telephony Import Application Components.
+2.7 Mapping of SLT web pages to SQL tables.
+
+3 SUB-SYSTEM DESCRIPTION — SLT MONITORS...
+
+3.1. Design Overview .....
+3.2. HNG-X Requirements.
+
+4 SUB-SYSTEM DESCRIPTION — MAJOR INCIDENTS
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 2o0f71
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+41 Overview
+4.2 Data Flow......
+4.3. Application Components.
+
+5 SUB-SYSTEM DESCRIPTION — SYSTEM MONITORS .
+
+5.1 Overview
+
+5.2 Data Flow......
+
+5.3 Application Components.
+5.3.1 Alliance and Leicester
+5.3.2 CAPO NWB
+5.3.3. Link NWB
+5.3.4 NWB High
+5.3.5  TESQA
+5.3.6 Debit Card... eee
+5.3.7 E-Top ups
+5.3.8 DVLA
+5.3.9 PAF..
+5.3.10 BAS Routers .
+5.3.11 Track and Trace
+5.3.12 Map of sites without comms.........
+
+6 SUB-SYSTEM DESCRIPTION —- OBC PROCESS
+
+6.1 Overview
+
+6.2 Data Flow
+
+6.3 Application Components.
+6.3.1 OBC activity schedule...
+6.3.2 OBC PM Branch list.
+6.3.3. OBC Counts
+
+7 SUB-SYSTEM DESCRIPTION - OCPS.
+
+7.1 Overview
+7.2 Data Flow
+7.3 Application Components.
+7.3.1 OCP summary.
+7.3.2 OCP detail... eee
+
+8 SUB-SYSTEM DESCRIPTION —- REPORTS
+
+8.1 Overview
+8.2 Data Flow
+8.3. Application Components.
+
+9 SUB-SYSTEM DESCRIPTION — DROP BOX
+
+9.1. Inbound Data Processing - The drop box..
+9.1.1 Drop Box Overview ..............:020
+9.1.2 Drop Box Data Flow - input.
+
+9.1.3 Drop Box Data Flow - output... eee cece cece tee ce cece ee teeeeteneeeenenee
+
+10 CHANGES FOR HNG-X
+
+10.1 Data in to DWH...
+10.2 HNG-X Data Extracts From DWH .
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 3of71
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+11. PLATFORMS
+
+12 NETWORKS .....cccsecscseessseseesessestscsseseeses sueneeseseseseneeseacseensseseacaseneaseneacasens caseneaees 68
+13 SYSTEM QUALITIES .......ccecsssssessessssssssssnes soessescsnssesesssssnsssscessessssessnseeseases snes 69
+13.1 Securit
+
+13.2
+
+13.3
+
+13.4 Potential for Change..
+
+14 RISKS AND ASSUMPTIONS .......ccsecsecsssssesessees sessesneesssesssesneeeeseeseesnenteneeseenensen 7
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref, DES/APP/HLD/0085
+
+Version: 1.0
+Date: 19-Jul-2007
+PageNo: 4of71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+(ee)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0.2 Document History
+
+Version No Date Summary of Changes and Reason for Issue Associated Change -
+CP/PEAK/PPRR:
+Reference
+
+0.1 19-Jul-2007 Draft for review.
+
+1.0 18-Jun-2009 Document Approved
+
+0.3 Review Details
+
+Review Comments by : Friday, 3 August 2007
+
+Review Comments to :
+
+roger. barnes
+
+RMGADocumentManagementt
+
+Mandatory Review
+
+Role Name
+ssc Mik Peach
+ssc Andy Keil
+ssc Kevin Miller
+
+Optional Review
+
+Issued for Information — Please restrict this
+distribution list to a minimum
+
+Position/Role Name
+
+(* ) = Reviewers that returned comments
+
+0.4 Associated Documents (Internal & External)
+
+Reference Version Date Title Source Ref
+
+PGM/DCM/TEM/0001 Fujitsu Services Post Office AccountI pimensions
+HNG-X Document Template
+(DO NOT REMOVE) P
+DES/GEN/STD/0001 HNG-X Host Applications Database I Dimensions I Rt
+Design and Interface Standards
+DES/APP/HLD/0049 HNG-X Generic Reports Data Extract I pimensions I R2
+HLD
+DWIARCIO10 [2] Data Warehouse Architecture PVCS RS
+ARC/GEN/REP/0001 HING-X GLOSSARY Dimensions I R4
+DW/IFS/025 [8] MIS BI3RDMC Application Interface PVCS R5
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 5Sof71
+fee)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+Reference Version Date Title Source Ref
+Specification
+
+DWIFS/021 [13] MIS BIS TPS Application Interface I PVCS R6
+Specification
+
+DW/HLD/007 Datafile Delivery Performance PVCS R7
+
+(CP3390)
+
+Measurement High Level Design
+
+DES/APP/IFS/0011
+
+Interface Specification
+
+Data Warehouse HNG-X File
+
+Dimensions I pg
+
+DES/APP/HLD/0082
+
+Data Warehouse High Level Design I Dimensions I Rg
+
+Unless a specific version is referred to above, reference should be made to the current approved
+
+versions of the documents.
+
+0.5 Abbreviations
+
+For additional abbreviations and glossary items see ARC/GEN/REP/0001
+
+Abbreviation Definition
+
+ASL Alliance & Leicester
+
+APS Automated Payment System
+
+BRDB Branch Database
+
+CAPO Card Account Post Office
+
+csv ‘Comma Separated Value (database export/import brmat and file extension).
+
+Denotes a text file whose records each consist of anumber of data fields separated
+by a comma. Each record is terminated by a linefeedcharacter.
+
+DCR Database Change Record
+
+DRS Data Reconciliation Service
+
+DWH Data Warehouse
+
+FI Financial Institution
+
+FS Fujitsu Services
+
+LINK LiNK Interchange Network Limited
+
+LFS Logistics Feeder Service
+
+LREC LINK Reconciliation File
+
+MSU Management Service Unit
+
+NBE Network Banking Engine
+
+NBX The term used to describe the NBE functionality absorbed into the Horizon domain
+
+APS Automated Payment System
+
+BRDB Branch Database
+
+BRSS Branch Support System
+
+DCR Data Change Request
+
+DWH Data Warehouse
+
+HLD High Level Design
+
+SMP Service Management Portal
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+
+Version: 1.0
+Date: 19-Jul-2007
+Page No: 6 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+(ee)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Abbreviation Definition
+
+TES Transaction Enquiry Service
+Tws Tivoli Workflow Scheduler
+xcc Xtranet Call Cleanser. CS internal application allowing HSD staff to view and change
+
+suspensions on calls which will, in turn, affect the performance of calls against the
+relevant SLTs
+
+0.6 Glossary
+
+Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 7of71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+(ee)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+OS:
+OFFICE
+
+0.7 Changes Expected
+
+0.8 Accuracy
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but, whilst every
+
+effort is made to ensure the accuracy of such information, it accepts no liability for any loss (however caused)
+sustained as a result of any error or omission in he same.
+
+0.9 Copyright
+
+Copyright Fujitsu Services Limited 2006. All rig hts reserved. No part of this document may be reproduced, stored
+or transmitted in any form without the prior written permission of Fujitsu Services
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 8of71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+1 Introduction
+
+1.1 Scope
+
+The Service Management Portal, in its Horizon state, is an SSC development. It is a web site backed by
+data from a number of sources which presents to the customer details of the condition of the live estate.
+This document details the design of the web site and its supporting infrastructure. The actual sources of
+the data are not examined in any detail as these are covered by design documents for each of the
+individual components.
+
+1.2 Context within the Architecture
+
+The Service Management Portal does not form part of the Horizon or HNG-X architecture; rather it is a
+response to the customer requirement for information about the live estate which has been met in the
+past by a variety of reports, emails and word of mouth. The Service Management Portal collects many of
+these disparate elements into a consistent form and presents them in an on-demand fashion.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 9of71
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2 Design Principles
+
+The Service Management Portal is intended to perform the following functions
+
+- Receive almost real-time information about the state of the system via high-level system
+monitors
+
+- Receive up to date information about the performance of the system against SLTs
+
+- Review progress of any Major incident, including the logging of additional information and the
+progress against actions
+
+- Receive information about any operation business changes (OBCs) which have been
+requested
+
+- Receive information about any operational change procedures (OCPs) which either require
+client approval, or which are service affecting
+
+- Receive a variety of reports from Customer Service Management about the state of the
+system, including the counts of the various sorts of transactions and the Service Review
+Book (SRB)
+
+The SMP, in its Horizon state, is an SSC development which is documented only to the extent of having a
+user guide (as both a word document and an html equivalent available to the end user) and a support
+guide. At HNGX, since it is intended that the SMP be the primary mechanism for reporting on SLTs to the
+client, a more rigorous documentation regime is required
+
+The SMP web server has been located in the “Southern Data Centre” since 2006 , was installed and is
+maintained in accordance with the relevant corporate standards for equipment installation in the data
+centre and complies with the corporate requirements for an internet site. In effect, this means that the
+web server itself does not contain a database, but instead uses HTML and jsp pages to access database
+servers which are resident in BRAO1. Access from the web server to these databases is rigidly enforced
+by firewall and the web server is only allowed access to the SMP database and to Peak.
+
+The Java servlets have been written to comply with Java runtime version 1.5.0.06 using jdk version
+1.5.0.06.
+
+The HTML and jsp pages have been designed to operate with any browser, but have been specifically
+tested with Microsoft Internet explorer 6. HTML , Java and JavaScript checking have been done using
+Macromedia Dreamweaver MX version 6.0.
+
+2.1 Permanence of Data
+
+Data is kept within the SMP database indefinitely because the amounts of data are relatively small and it
+is anticipated that the client will require information spanning a long period. At HNGX, some of the SLTs
+specified operate on a rolling 5 year average, therefore data must be retained for at least that period
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 10 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.2 Application Components
+
+The first group of sub-sections within this section are diagrammatic representations of the mappings
+between components in the overall structure of the application.
+
+A black box indicates a menu option on the preceding jsp page.
+A white box indicates a jsp page
+A blue box indicates a SQL server table , stored procedure or view
+
+An orange box indicates a java serviet
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 11 of 71
+FUJ00142218
+FUJ00142218
+
+oe Service Management Portal High Level Design FEO
+FUJITSU COMMERCIAL IN CONFIDENCE GSS
+
+2.2.1 Mapping of components — top level
+
+This Section diagrammatically describes the links from the main menu to the underlying components within the design
+
+Logon
+
+(POL_logon jsp)
+
+Main Menu
+
+POL_main_menu.jsp
+
+System Incident mgmt Repo
+
+monitor
+
+POL_monitor_menu jsp POL_reports_menu,jsp POL_OGP_menujsp
+POL_MIR_menu,jsp POL_OBC_menu.sp Milesixtranet user
+‘© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref: DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 12 0f 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+oO i,
+FUJITSU COMMERCIAL IN CONFIDENCE is
+
+2.2.2 I Mapping of components — system monitor
+
+Mgmt Monitor
+
+About Monitor
+
+Monitors ite jsp POL_monitor_about htm POL_main_menu.jsp
+
+NearestOffice jsp
+
+BasFailures jsp
+
+‘SMDB_FAD_STATE_LATEST
+
+BasCounters.jsp
+
+DLEDown jsp
+
+DLEFailures jsp
+
+CountyDown.jsp
+
+DowmMap jsp z x SMC_Post_Office
+
+\VsATCounters jsp
+
+GetFADDetails jsp
+
+TotalDownCounters jsp
+
+DownOfficeMap jsp
+posttowns
+DownOfficeMap isp
+MonitorsLite jsp ‘SMDBLiteMonitors
+‘© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref: DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 13 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.2.3 Mapping of components — incident management
+
+Show Open Update MIR Close Incident
+
+Create Action
+
+Show Reps
+Update Action
+
+Show All
+
+Raise New MIR
+
+POL MIR show alls
+POL_main_menu jsp
+
+POL MIR show open
+I POL_MIR_show_clos
+
+POL_MIR_now act, POL. MIR_show open ‘
+POL MIR create MIR fon ‘80
+1 I I POL_MIR_report jsp
+
+POL MIR update ore
+
+POL MIR update Ml
+
+POL_MIR_close_MIR js
+
+POL WIR actonsi_}o{ POL_MIR show acto
+JAVA: ie ro
+JAVA:
+Xtra_new_incid xtra_new_incident_u JAVA:
+ent Nae me wire ines inrident
+I I = — I POL_MIR_updat
+Sal pr SQL prog: SQL proc:
+xtranetmik.a xtranet.mit_ad I I xtranet_mik_a
+dd. incident _incident_upd dd acti Pe tre delete sete J xtranet_mik_
+I I MIR close tne
+seen
+SQL table: SQL table: SQL table:
+xtranet_mik_ xtranet_mik Ml xtranet_rik_ MI SAL proc: SQL proc: BoE fable
+Linh Rucdate faction. xtranet_mik_ xtranet_mik_ xtranet_mik_
+MIR ubdate'a_II_MIR closure
+SQL table:
+xtranet_mik_MI
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref: DES/APP/HLD/0085.
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 14 of 71
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.2.4 Mapping of components — reports and SLT
+
+Reports/SLT
+Weekly update Success Rate Daily Report SLT tracker SRB dashboard
+I l !
+Files Files Files daily report Filesssb'SRB HTML POL reports. menu Files/SRB_dashboard/SRB POL main_menu,jsp
+dashboard
+Weekly report him Success Rates hm Daily Revort him Latest SRB him lower,jp
+Network Availability Engineering Call to Telephony Deb )
+Banking Resolution ard
+POL_SLT_Avai
+POL_SLT_DFO_menuj labilityMenu jsp POL_SLT_ POL_SLT_DCS_ POL_main_menu.jsp
+POL_SLT_NWB_menuj CallTaResolitinn ien meni isn
+POL_SLT_DF
+D_LFS jsp POL_SLT_Network POL_SLT_Engineer POL_SLT_Telephony jsp I I POL_SLT_ETU_menu jsp }
+M Menu jsp
+POL_SLT_NWB_xxx_yyy_ —
+zzisp I Po._sLT_OF POL_SLT_DCS_xxx_yyy_
+. Djsp zjsp POL_SLT_ETU_xxx_yyy,
+Where xxx = Transactions a SSUTETU 20 9
+or Reliability T III GalteResolution ‘Where xxx = Transactions Z21SP
+and yyy = ADSL or Fixed aryDaily POL_SLT_XXXYYY jsp where XXX = oF Reliability were = Transactions
+or Dailled shen availability, network, engineer and I Telephony and yyy = ADSL or Fixed
+and 22 = Daily, Monthly or \ YYY = daily, monthly or quarterly or Dailled ard yy = ADSL o Fed
+and zz = Daily, Monthly or
+T and zz = Daily, Monthly of
+SQL Tables
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date 19-Jul-2007
+
+PageNo: 15 of 71
+FUJ00142218
+FUJ00142218
+
+oe Service Management Portal High Level Design FEO
+FUJITSU COMMERCIAL IN CONFIDENCE GSS
+
+2.2.5 Mapping of components — Operational Business Change (OBC)
+
+Operational
+Business Change
+
+POL_OBC_activity jsp POL_OBC_PM_Branchjsp POL_OBC_counts,jsp POL_main_menujsp
+
+2.2.6 Mapping of components — Operational Change Process (OCP)
+
+‘© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref: DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 16 of 71
+FUJ00142218
+FUJ00142218
+
+oe Service Management Portal High Level Design GS
+OFFICE
+FUJITSU COMMERCIAL IN CONFIDENCE
+OCP Menu
+POL_OCP_summary_list POL_main_menu jsp
+POL_OCP_full
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+
+Version: 1.0
+
+Date 19-Jul-2007
+
+PageNo: 17 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+OST N
+
+OFFICE
+
+2.2.7. Database
+
+The database is written using SQL Server 2005. The table below describes the tables and
+stored procedures within the database, relates them to the module to which they are
+relevant (System Monitor, SLT etc) and outlines the function of each.
+
+Table 7 View! proc name Module mode function
+xtranet_mik_users generic table Holds the details of usemames and
+passwords
+
+Entries have to be created manually,
+there is no web interface for user
+
+setup
+
+xtranet_mik_MIR Major Table Holds the details of a Major Incident
+Incidents Report
+
+Entries are created by calls to the
+
+stored procedure
+
+xtranet_mik_add_incident. Once
+
+created, they cannot be altered. Any
+updates to the Major Incident are held
+in the update table, and an MIR is
+closed when a closure record is
+created.
+
+The table holds the basic details
+which are likely to be available at the
+creation of the MIR. The incident title
+and a call number are mandatory
+fields in the HTML because all further
+reference to the table is based on
+
+these two fields.
+xtranet_rmik_MIR_update Major table Holds any updates which are made to
+Incidents the major incident during the course of
+
+its existence up until the time that it
+becomes closed.
+
+Once the major incident has been
+closed, no further updates can be
+made.
+
+Title and call are mandatory fields
+imposed by the HTML code.
+
+xtranet_mik_MIR_actions Major table Holds any actions which _are
+Incidents associated with the major incident
+during the course of its existence up
+until the time that it becomes closed.
+
+Once the incident has been closed no.
+new actions can be created
+
+Title and call are mandatory fields
+imposed by the HTML code
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 18 of 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+
+FUJ00142218
+
+OST
+
+OFFICE
+
+xtranet_mik_MIR_closure
+
+Major
+Incidents
+
+‘able
+
+‘Once a major incident is closed,
+details are held in the closure table.
+Only one closure record is permitted
+for any major incident
+
+xtranet_mik_MIR_status
+
+Major
+Incidents
+
+table
+
+Lookup table only
+
+xtranet_mik_MIR_update_types
+
+Major
+Incidents
+
+table
+
+Lookup table only — used in the trial
+version of the extranet system but not
+incorporated in the final version. This
+table has been retained in the
+expectation that someone at some
+stage is probably going to ask for it to
+be included
+
+‘OBCBigtable
+
+OBC
+
+table
+
+Contains all of the relevant data from
+the OBC database. The table is
+copied into the database daily by a
+job running within SQL server which
+runs at 01:00
+
+‘ocps
+
+ocP
+
+table
+
+There is only one table associated
+with the OCP system — the OCP table
+which holds details of all of the OCPs
+which have either service affected set
+to yes, or else have been sent to the
+customer for approval. The table is
+documented here for completeness,
+but in practice all access to the data
+is held in a view called
+VW_SP_get_service_affecting
+
+VW_SP_get_service_affecting (View)
+
+OcP
+
+‘able
+
+The only means of access into the
+OCP data
+
+CallToResolution
+
+SLT
+
+table
+
+Used to hold the data relating to Call
+to resolution SLTs
+
+DCSOnPerfDaily
+
+SLT
+
+table
+
+Used to hold the data relating to Debit
+Card Daily Transaction SLTs
+
+DCSOnPerfMonthly
+
+SLT
+
+table
+
+Used to hold the data relating to Debit
+Card Monthly Transaction SLTs
+
+DCSOnPerfQtrly
+
+SLT
+
+table
+
+Used to hold the data relating to Debit
+Card Quarterly Transaction SLTs
+
+DCSSerRelDaily
+
+‘SLT
+
+Table
+
+Used to hold the data relating to Debit
+Card Daily Reliability SLTs
+
+DCSSerRelMonthly
+
+SLT
+
+Table
+
+Used to hold the data relating to Debit
+Card Monthly Reliability SLTs
+
+DCSSerRelQtrly
+
+SLT
+
+Table
+
+Used to hold the data relating to Debit
+Card Quarterly Reliability SLTs
+
+DFDInbound
+
+SLT
+
+Table
+
+Used to hold the data relating to
+Inbound data file delivery
+
+DFDOutbound
+
+SLT
+
+table
+
+Used to hold the data relating to
+Outbound data file delivery
+
+ETUOnPerfDaily
+
+SLT
+
+‘able
+
+Used to hold the data relating to E-
+Top-ups Daily Transaction SLTs.
+
+ETUOnPerfMonthly
+
+SLT
+
+table
+
+Used to hold the data relating to E-
+Top-ups Monthly Transaction SLTs
+
+ETUOnPerfQtriy
+
+SLT
+
+table
+
+Used to hold the data relating to E-
+Top-ups Quarterly Transaction SLTs
+
+© Copyright Fujitsu Services Ltd 2007
+
+‘COMMERCIAL IN CONFIDENCE.
+
+Ref.
+Version:
+Date:
+Page No:
+
+DES/APP/HLD/0085
+1.0
+
+19-Jul-2007
+
+19 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+OST
+
+OFFICE
+
+ETUSerRelDaily SLT table Used to hold the data relating to E-
+Top-ups Daily Reliability SLTs
+
+ETUSerReiMonthly SLT table Used to hold the data relating to E-
+Top-ups Monthly Reliability SLTs
+
+ETUSerRelQtrly SLT table Used to hold the data relating to E-
+Top-ups Quarterly Reliability SLTs
+
+Inbound SLT Table Used to hold the data relating to Data
+File Delivery Inbound SLTs on their
+way into the database. The only
+purpose of the table is to hold the
+data prior to changing the DAY_A
+column to a date, after which the data
+is stored in table InboundFinal
+
+Inbound_Append SLT table Takes data from the InboundFinal
+table and reformats this data to
+concatenate some columns and to
+make them consistent — the data is
+generated by sp_processinbound and
+is appended to DFDinbound table
+
+inboundFinal SLT table Used to hold the data relating to Data
+File Delivery Inbound SLTs after the
+data for day_a has been converted to
+datetime format
+
+‘OnPerfDaily SLT table Used to hold the data relating to
+Network Banking Daily Transaction
+SLTs
+
+‘OnPerfMonthly SLT table Used to hold the data relating to
+Network Banking Monthly Transaction
+SLTs
+
+‘OnPerfQtrly SLT table Used to hold the data relating to
+Network Banking Quarterly
+Transaction SLTs
+
+Outbound SLT table Used to hold the data relating to Data
+File Delivery Outbound SLTs on their
+way into the database. The only
+purpose of the table is to hold the
+data prior to changing the DAY_A
+column to a date, after which the data
+is stored in table OutboundFinal
+
+‘Outbound_Append Sut table Takes data from the OutboundFinal
+table and reformats this data to
+concatenate some columns and to.
+make them consistent — the data is
+generated by sp_processOutbound
+and is appended to DFDOutbound
+table
+
+‘OutboundFinal SLT table Used to hold the data relating to Data
+File Delivery Outbound SLTs afer the
+data for day_a has been converted to
+datetime format
+
+aryDaily SLT Table Used to hold the data relating to
+Inbound and outbound file delivery
+SLTs. The data in this view is created
+from the DFDinbound and
+DFDOutbound views and is the
+primary source of data for the web
+pages
+
+SerRelDaily SLT table Used to hold the data relating to
+Network Banking Daily Transaction
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+PageNo: 200f71
+FUJ00142218
+FUJ00142218
+
+oO Service Management Portal High Level Design er
+} COMMERCIAL IN CONFIDENCE
+SLs
+SerRelMonthly SLT table Used to hold the data relating to
+Network Banking Monthly Transaction
+SLTs
+SerRelQiry SLT Table Used to hold the data relating to
+Network Banking Quarterly
+Transaction SLTs
+SLT Definition SLT table Used to hold the targets for SLTs for
+File delivery and LFS
+Telephony SLT Table Used to hold the data relating to
+Telephony SLTs
+XCCDailyHardwareSLTSummary SLT view This is a view from POASMPDEV to
+BOGGIT, which is the live XCC
+system. It holds the summary of
+Engineer call to fix details by day
+XCCDailyNetworkSLTSummary SLT view This is a view from POASMPDEV to
+
+BOGGIT, which is the live XCC
+system. It holds the summary of
+network call to fix details by day
+
+XCCMonthlyAvailabiltySLTSummary SLT view This is a view from POASMPDEV to
+BOGGIT, which is the live XCC
+system. It holds the summary of
+Availability of counters and branches
+by month
+
+XCCMonthiyHardwareSLTSummary SLT view This is a view from POASMPDEV to
+BOGGIT, which is the live XCC
+system. It holds the summary of
+Engineer call to fix details by month
+
+XCCMonthiyNetworkSLTSummary SLT view This is a view from POASMPDEV to
+BOGGIT, which is the live XCC
+system. It holds the summary of
+network call to fix details by month
+
+XCCQuarterlyAvailabilitySLTSummary SLT view This is a view from POASMPDEV to
+BOGGIT, which is the live XCC
+system. It holds the summary of
+Availability of counters and branches
+by quarter
+
+XCCQuarterlyHardwareSLTSummary SLT view This is a view from POASMPDEV to
+BOGGIT, which is the live XCC
+system. It holds the summary of
+Engineer call to fix details by quarter
+
+XCCQuarterlyNetworkSLTSummary SLT view This is a view from POASMPDEV to
+BOGGIT, which is the live XCC
+system. It holds the summary of
+network call to fix details by quarter
+
+xtranet_mik_add_incident Major Stored ‘Adds a new incident record to the
+Incidents I Procedure I database table by inserting values
+from the HTML page into the
+database table xtranet_mik_MIR
+
+Incident title and call number are
+mandatory fields imposed within the
+
+HTML
+xtranet_mik_add_incident_update Major Stored Adds a record to the table
+Incidents I Procedure I xtranet_mik_MIR_update using
+
+parameters gathered from the HTML.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 21 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+o OST
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+OFFICE
+
+pages.
+
+Incident title and call number are
+mandatory fields imposed within the
+HTML
+
+xtranet_mik_add_action Major Stored Adds a record to the table
+Incidents I Procedure I xtranet_mik_MIR_actions using
+parameters gathered from the HTML
+pages.
+
+Incident title and call number are
+mandatory fields imposed within the
+HTML
+
+xtranet_mik_delete_action Major Stored ‘Allows the user to delete a previously
+Incidents Procedure I created action from the table
+xtranet_mik_MIR_actions.
+
+xtranet_mik_MIR_update_action Major Stored Allows the user to update a previously
+Incidents I Procedure I created action from the table
+xtranet_mik_MIR_actions.
+
+xtranet_mik_MIR_close_incident Major Stored Adds a record to the table
+Incidents I Procedure Ixtranet_mik_MIR_closure using
+parameters gathered from the HTML
+pages.
+
+Incident title and call number are
+mandatory fields imposed within the
+HTML.
+
+The stored procedure also changes
+the status of the associated Major
+Incident in the table xtranet_mik_MIR
+to “closed”
+
+xtranet_mik_import_OBC_Data OBC Stored Imports data from the linked table
+Procedure I OBCACCESS...Bigtable into the table
+OBCBigTable
+
+Sp_Datacollection SLT Stored Runs the stored procedures
+Procedure I sp_processOutbound and
+sp_Processinbound to do the actual
+work
+
+Sp_ProcessOutbound SLT Stored Processes the data _in the
+Procedure I OutboundFinal table and checks to
+see if there is any data in the existing
+DFDOutbound table which has been
+manually amended. If there is, then
+this data is left intact, data for other
+dates is processed into the
+DFDOutbound table
+
+xtranet_mik_import_DCS_ETU_SER_Perf Sit Stored Imports data from text files in the
+Procedure I D:\incomingSLTdata folder into the
+tables for ETU, Debit Card and
+Network Banking SLTs
+
+xtranet_mik_import_inbound_outbound SLT Stored Imports data from text files in the
+Procedure I D:\incomingSLTdata folder into the
+Inbound and Outbound tables which
+contain data about the data file
+delivery SLTs, then copies this data
+to_InboundFinal_and OutboundFinal
+
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 22 of 71
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+POST?
+
+OFFICE
+
+tables which have the dates correctly
+formatted
+
+xtranet_mik_import_Telephony_CallToResolution
+
+SLT
+
+Stored
+Procedure
+
+Imports data from text files in the
+DilincomingSLTdata folder into the
+Telephony and  CallToResolution
+tables which contain data about the
+delivery SLTs. The files themselves
+are delivered from HSD via MSU
+
+2.2.8 Java Servlets
+
+The Java servlets are written to be compliant with Java runtime version 1.5.0.06 using jdk
+
+version 1.5.0.06.
+
+The table below describes the servlets, relates them to the module to which they are
+relevant (System Monitor, SLT etc) and outlines the function of each.
+
+Servlet name
+
+Module
+
+function
+
+xtra_logon
+
+generic
+
+Takes data from POL_logon.htm
+and checks the database to confirm
+that there is a valid user and
+password. Also registers the size of
+the usable screen and sets up a
+session variable which is read by the
+web pages to determine which
+cascading style sheet should be used
+
+Xtra_new_incident
+
+Major incidents
+
+Takes data from
+POL_MIR_create_ MIR web page,
+formats it and then calls the database
+stored procedure
+xtranet_mik_add_incident to create
+anew MIR
+
+xtra_new_incident_update
+
+Major Incidents
+
+Takes data from
+POL_MIR_update_MIR web page,
+formats it and then calls the database
+stored procedure
+xtranet_mik_add_incident_update to.
+create a new update record
+
+xira_new action
+
+Major Incidents
+
+Takes data from POL_MIR_Actions
+web page, formats it and then calls
+the database stored _ procedure
+xtranet_mik_add_action to create a
+new update record
+
+xira_delete action
+
+Major incidents
+
+Takes the selected record from
+POL_MIR_show_actions web page
+and then calls the database stored
+procedure
+
+© Copyright Fujitsu Services Ltd 2007
+
+‘COMMERCIAL IN CONFIDENCE.
+
+Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 23 of 71
+
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+
+FUJ00142218
+
+xtranet_mik_delete_action to delete
+an already created action record
+
+xira_update action
+
+Major Incidents
+
+Takes data from
+POL_MIR_update_action.jsp web
+page, formats it and then calls the
+database stored procedure
+xtranet_mik_MIR_update_action to
+change an existing update record
+
+xira_close incident
+
+Major incidents
+
+Takes data from
+POL_MIR_close_MIR jsp web
+page, formats it and then calls the
+database stored. ——_procedure
+xtranet_mik_MIR_close_incident to
+create a new closure record
+
+DrawPostCodes
+
+System Monitors
+
+Takes the basic map of the UK and
+draws map points indicating the post
+offices with a communication status
+of down by converting Post code to
+map references — varying the size of
+red blob by pixels for FADS which
+are “down” in the same post code
+area. The data for the status of the
+Post office communications is
+gathered from SMDB
+
+CleanAccessLog. ‘Genecie used to remove unwanted
+information from the Tomcat
+access log and perform
+diagnostic logging
+
+2.2.9 Web Pages
+
+The web pages were designed and written using Dreamweaver MX. They are compliant to
+the corporate Visual Identity standards Version 1.3.
+
+2.2.9.1
+
+Cascading Style Sheet
+
+The cascaded style sheet is called either POL_xtranet_small.css or POL_xtranet_large.css.
+
+The decision between the two is based on the available screen size, which is held in a
+session variable and checked within the file screen_size_check_jsp, which is part of an
+include statement on each web page.
+
+© Copyright Fujitsu Services Ltd 2007
+
+‘COMMERCIAL IN CONFIDENCE.
+
+Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 24 of 714
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+The style sheets define the following characteristics of all the web pages with the
+exception of the MIR report which is intended to be printed. For the large screen size, the
+settings are -
+
+background-colour is set to black,
+H1 is set to Arial, 20 point, Fujitsu grey
+H2 is set to Arial, 9 point, Fujitsu blue
+H3 is set to Arial, 9 point, white
+H4 is set to Arial, 9 point, Fujitsu red
+HS is set to Arial, 14 point, Fujitsu grey
+Screen visible size is set to 1400 by 900 pixels
+The banner is set to FJBanner_1300.png in the images folder
+The target frame, in which all results appear is set to 1000 by 825 pixels
+The sidebar, containing the menus is set to 170 by 825 pixels
+
+The background images on menu items are set to FJ_button_initial.png in the images
+folder in their normal state.
+
+The background images on menu items are set to FJ_button_over.png in the images folder
+in their “mouse-over” state.
+
+For the small screen size, the settings are -
+
+background-color is set to black,
+H1 is set to Arial, 15 point, Fujitsu grey
+H72 is set to Arial, 8 point, Fujitsu blue
+H3 is set to Arial, 8 point, white
+H4 is set to Arial, 8 point, Fujitsu red
+HS is set to Arial, 10 point, Fujitsu grey
+Screen visible size is set to 90% by 70% of the available screen space
+The banner is set to FJBanner_1000.png in the images folder
+
+The target frame, in which all results appear is set to 80% by 90% of the available space
+within the screen visible size
+
+The sidebar, containing the menus is set to 10% by 85% of the available space within the
+screen visible size
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 25 0f71
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+The background images on menu items are set to FJ_button_initial_small.png in the
+images folder in their normal state.
+
+The background images on menu items are set to FJ_button_over_small.png in the images
+folder in their “mouse-over” state.
+
+2.2.9.2 Connections to the database
+
+Connections to databases are held in the file connections/peak_connect.jsp This includes
+connection strings to all databases involved, not just the peak system.
+
+2.2.10 Drop Box
+
+2.3
+
+2.4
+
+Data for various functions within the SMP are provided by a number of units outside the
+SSC. These units FTP their prepared data to a directory on the SMP development box for
+processing. This directory (D:\SMPDropBox ) is know as the SMP "Drop Box".
+
+A Java class called DropBox parses this directory and then processes the files as
+appropriate.
+
+Files to be processed by the DropBox class are controlled by a parameter file
+"SMPDropBox.param" within the drop box directory. This files is read as the DropBox
+class is loaded. Each line of the file contains "filenameIdirectoryname". At each cycle the
+DropBox class will look for "filename" within the dropbox directory and if present move it
+to "directoryname". If the file is a ZIP file (extension .zip) then it will be expanded into
+"directoryname" and then deleted from the dropbox. Any files that already exist in
+directoryname will be silently overwritten.
+
+Input Data Streams
+
+Input from Data Warehouse
+
+This Section describes the high level design of the Data Warehouse sub-system within the
+Service Management Portal.
+
+The Data Warehouse sub-system is responsible for incorporation of data from the Data
+Warehouse running on the live HNGX system, with .csv files being collected from the
+<<name of the generic red>corporate interface system not yet defined>> .
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 26 0f71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.4.1 Data Warehouse Import Application Components
+These modules have been developed using Microsoft SQL Server 2005 stored procedures.
+
+The Data Warehouse provides the data for the SLT monitors; details of the mapping of the
+data warehouse data to the web pages in the Service Management Portal are contained in
+section 3.2.
+
+The data from the data warehouse is delivered from the data warehouse in the form of .csv
+files to the <<generic data portal from live>corporate>> server. It is collected from the
+server by means of an overnight SQL Server job, which imports the data into SQL server
+tables and then concatenates the data from previous extracts into a form suitable for
+querying by SQL commands in the web pages.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 27 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.4.2 Data Warehouse Import Process Flow
+Prior to HNGX the data warehouse import process consists of the following steps —
+a) MSU staff run queries via Business Objects to produce csv files
+b) MSU copy these files from the live system to the corporate system by floppy disc
+c) The files are put into fixed locations on the POASMPDEV system.
+d) The drop-box component validates them
+e) SQL Server stored procedures import the files into tables within the SQL database .
+
+The overnight job which imports and processes the files is called import_SLT_data. In
+turn, this calls the stored procedures xtranet_mik_import_inbound_outbound and
+xtranet_mik_import_DCS_ETU_SER_Perf.
+
+xtranet_mik_import_inbound_outbound imports the following files into SQL tables of the
+same name:
+
+OnPerfDaily
+OnPerfMonthly
+OnPerfQtrly
+SerRelDaily
+SerRelMonthly
+SerRelQtrly
+DCSOnPerfDaily
+DCSOnPerfMonthly
+DCSOnPerfQtrly
+DCSSerRelDaily
+DCSSerRelMonthly
+
+DCSSerRelQtrly
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 28 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+ETUOnPerfDaily
+ETUOnPerfMonthly
+ETUOnPerfQtrly
+ETUSerRelDaily
+ETUSerRelMonthly
+ETUSerRelQtrly
+
+2.5 Input from Triole (TfS)
+
+This Section describes the high level design of the Triole sub-system within the Service
+Management Portal.
+
+The Triole sub-system is responsible for incorporation of data from the TfS call
+management system, with a SQL view having been set up in TfS containing the details of
+the calls closed from 3 days prior to the extraction. The three day window is set to enable
+the HSD staff to modify the calls to remove any obvious anomalies and to tidy the data.
+
+This data in its raw form is used for presentation of both the call-to-fix SLTs and the
+“availability” SLTs. In its raw form from TfS it is not in a state suitable for display to the
+customer, and instead of being loaded directly into the Service Management Portal
+database is loaded instead into a SQL database called XCC (extranet call cleanser). A
+limited number of HSD staff have direct access to this database in which they can add or
+modify “suspensions” to the calls which will impact the SLTs.
+
+The XCC database does not form part of the live RMGA estate and therefore, although
+there is a support guide and a user guide for this system, they are not held in dimensions.
+
+For the purposes of the service Management Portal the XCC system holds views of the
+cleansed data which are presented to the customer under the relevant availability and call-
+to-fix SLTs
+
+2.5.1 Triole Import Application Components
+These modules have been developed using Microsoft SQL Server 2005 stored procedures.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 290f71
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+2.5.2 Triole Import Process Flow
+
+2.6
+
+There is no direct input from Triole for Service to the Service Management Portal. Before
+any data relating to call-to-fix of calls and availability of branches and Post Offices is
+presented to the Service Management Portal, it is cleansed by HSD staff using the XCC
+database (see section 2.5 for a brief explanation of this process).
+
+Since there are network and security restrictions in place which permit the live SMP web
+server to only query the SMP and Peak databases, the data which is usually held on the
+XCC database is accessed from the SMP database by views.
+
+The relevant views are:
+
+XCCDaily HardwareSummary
+XCCDailyNetworkSummary
+XCCMonthly AvailabilitySummary
+XCCMonthly HardwareSummary
+XCCMonthlyNetworkSummary
+XCCQuarterly AvailabilitySummary
+XCCQuarterlyHardwareSummary
+XCCQuarterlyNetworkSummary
+
+Input from Telephony systems
+
+This Section describes the high level design of the Telephony input sub-system within the
+Service Management Portal.
+
+The Telephony input sub-system is responsible for incorporation of data from the
+Telephony system, with .csv files being delivered from the HSD into the Drop Box
+
+The SQL server overnight process import_SLT_data calls the stored procedure
+xtranet_mik_import_Telephony_CalltoResolution which imports the files called
+“Telephony” and “CalltoResolution” into tables of the same names.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No:  300f71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+2.6.1 Telephony Import Application Components
+
+These modules have been developed using Microsoft SQL Server 2005 stored procedures.
+
+2.7 Mapping of SLT web pages to SQL tables
+
+Web Page
+
+SQL. server table /
+view
+
+POL_SLT_AvailabilityMonthlyCritical.jsp
+
+View XCCMonthlyCoreSummary
+
+POL_SLT_AvailabilityQuarterlyCritical jsp
+
+View XCCQuarterlyCoreSummary
+
+POL_SLT_DCS_Reliability_ ADSL_Daily jsp
+
+DCSSerRelDaily
+
+POL_SLT_DCS_Reliability_Dialled_Daily jsp
+
+DCSSerRelDaily
+
+POL_SLT_DCS_Reliability_Fixed_Daily jsp
+
+DCSSerRelDaily
+
+POL_SLT_DCS_Reliability_ ADSL_Monthly jsp DCSSerRelMonthly
+POL_SLT_DCS_Reliability_Dialled_Monthly jsp DCSSerReiMonthly
+POL_SLT_DCS_Reliability_Fixed_Monthly jsp DCSSerReiMonthly
+POL_SLT_DCS_Reliability_ ADSL_ Quarterly jsp DCSSerRelQtrly
+POL_SLT_DCS_Reliability_Dialled_Quarterly jsp DCSSerRelQtrly
+POL_SLT_DCS_Reliability_Fixed_Quarterly jsp DCSSerRelQtrly
+
+POL_SLT_DCS_Transactions_ADSL_Daily.jsp
+
+DCSOnPerfDaily
+
+POL_SLT_DCS_Transactions_Dialled_Daily.jsp
+
+DCSOnPerfDaily
+
+POL_SLT_DCS_Transactions_Fixed_Daily jsp
+
+DCSOnPerfDaily
+
+POL_SLT_DCS_Transactions_ADSL_Monthly.jsp DCSOnPerfMonthly
+POL_SLT_DCS_Transactions_Dialled_Monthly jsp DCSOnPerfMonthly
+POL_SLT_DCS_Transactions_Fixed_Monthly jsp DCSOnPerfMonthly
+POL_SLT_DCS_Transactions_ADSL_ Quarterly.jsp DCSOnPerfQtrly
+POL_SLT_DCS_Transactions_Dialled_Quarterly.jsp DCSOnPerfQtrly
+POL_SLT_DCS_Transactions_Fixed_Quarterly jsp DCSOnPerfQtrly
+POL_SLT_EngineerDaily.jsp View
+XCCDailyHardwareSLTSummary
+POL_SLT_EngineerMonthly jsp View
+XCCMonthlyHardwareSLTSummary
+POL_SLT_EngineerQuarterly jsp View
+
+XCCQuarterlyHardwareSLTSummary
+
+© Copyright Fujitsu Services Ltd 2007
+
+‘COMMERCIAL IN CONFIDENCE.
+
+Ref. DES/APP/HLD/0085
+Version: 1.0
+
+Date: 19-Jul-2007
+
+Page No: 31 of 74
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+POL_SLT_ETU_Reliability_ ADSL_Daily jsp ETUSerRelDaily
+POL_SLT_ETU_Reliability_Dialled_Daily.jsp ETUSerRe!IDaily
+POL_SLT_ETU_Reliability_Fixed_Daily jsp ETUSerRelDaily
+POL_SLT_ETU_Reliability_ ADSL_Monthly.jsp ETUSerRelMonthly
+POL_SLT_ETU_Reliability_Dialled_Monthly jsp ETUSerRe!Monthly
+POL_SLT_ETU_Reliability_Fixed_Monthly.jsp ETUSerRe!Monthly
+POL_SLT_ETU_Reliability_ADSL_ Quarterly jsp ETUSerRelQtrly
+POL_SLT_ETU_Reliability_Dialled_Quarterly jsp ETUSerRelQtrly
+POL_SLT_ETU_Reliability_Fixed_Quarterly.jsp ETUSerRelQtrly
+POL_SLT_ETU_Transactions_ADSL_Daily.jsp ETUOnPerfDaily
+POL_SLT_ETU_Transactions_Dialled_Daily.jsp ETUOnPerfDaily
+POL_SLT_ETU_Transactions_Fixed_Daily jsp ETUOnPerfDaily
+POL_SLT_ETU_Transactions_ADSL_Monthly.jsp ETUOnPerfMonthly
+POL_SLT_ETU_Transactions_Dialled_Monthly.jsp ETUOnPerfMonthly
+POL_SLT_ETU_Transactions_Fixed_Monthly.jsp ETUOnPerfMonthly
+POL_SLT_ETU_Transactions_ADSL_ Quarterly jsp ETUOnPerfQtrly
+POL_SLT_ETU_Transactions_Dialled_Quarterly jsp ETUOnPerfQtrly
+POL_SLT_ETU_Transactions_Fixed_Quarterly.jsp ETUOnPerfQtrly
+
+POL_SLT_NetworkDaily jsp View XCCDailyNetworkSLTSummary
+
+POL_SLT_NetworkMonthly jsp View
+
+XCCMonthlyNetworkSLTSummary
+
+POL_SLT_NetworkQuarterly jsp View
+
+XCCQuarterlyNetworkSLTSummary
+POL_SLT_NWB_Reliability_ ADSL_Daily jsp SerRelDaily
+POL_SLT_NWB _Reliability_Dialled_Daily jsp SerRelDaily
+POL_SLT_NWB _Reliability_Fixed_Daily.jsp SerRelDaily
+POL_SLT_NWB _Reliability_ADSL_Monthly.jsp SerReiMonthly
+POL_SLT_NWB _Reliability_Dialled_Monthly.jsp SerRelMonthly
+POL_SLT_NWB _Reliability_Fixed_Monthly.jsp SerReliMonthly
+POL_SLT_NWB _Reliability_ADSL_ Quarterly jsp SerRelQtrly
+POL_SLT_NWB _Reliability_Dialled_Quarterly jsp SerRelQtrly
+POL_SLT_NWB _Reliability_Fixed_Quarterly jsp SerRelQtrly
+POL_SLT_NWB _Transactions_ADSL_Daily jsp OnPerfDaily
+POL_SLT_NWB _Transactions_Dialled_Daily.jsp OnPerfDaily
+POL_SLT_NWB _Transactions_Fixed_Daily.jsp OnPerfDaily
+
+© Copyright Fujitsu Services Ltd 2007
+
+‘COMMERCIAL IN CONFIDENCE.
+
+Ref. DES/APP/HLD/0085
+Version: 1.0
+
+Date: 19-Jul-2007
+
+Page No: 320f71
+FUJ00142218
+FUJ00142218
+
+o Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+POL_SLT_NWB _Transactions_ADSL_Monthly.jsp OnPerfMonthly
+POL_SLT_NWB _Transactions_Dialled_Monthlyjsp OnPerfMonthly
+POL_SLT_NWB _Transactions_Fixed_Monthly.jsp OnPerfMonthly
+
+POL_SLT_NWB_Transactions_ADSL_ Quarterlyjsp OnPerfQtrly
+POL_SLT_NWB _Transactions_Dialled_Quarterly jsp OnPerfQtrly
+POL_SLT_ NWB_Transactions_Fixed_Quarterly jsp OnPerfQtrly
+
+POL_SLT_DFD.jsp qryDaily
+POL_SLT_DFD_LFS jsp qryDaily
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref, DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 33 0f 71
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+3  Sub-System Description - SLT Monitors
+
+3.1 Design Overview
+
+We are obliged to report on our performance against a number of Service Level Targets, and
+Performance Measures. The data warehouse will load and store SLT and PM data extracted from each
+of the other host systems and perform data aggregation as required for SLT and PM reporting. A generic
+reporting program (ref. DES/APP/HLD/0049) will produce data extracts from tables in the data warehouse
+to a directory on the DWH Host server. These will be picked up by SSC and subject to possible checks
+by MSU loaded to a SQL server database which in turn will be connected to a web front end for reporting
+to the client, the latter being collectively known as the Service Management Portal (SMP).
+
+Reports produced by the Data Warehouse (DWH) will be captured by SSC who will be responsible for an
+initial vetting process and sanity check in conjunction with MSU and will then format and deliver these
+onto the SMP for access by the client. In some cases — for example where number of failures per year
+are measured, the SMP database may do the count accumulation, DWH provides data on a shorter
+timescale (week or month) to provide the raw data.
+
+The first sheet shows a brief description of the SLT or PM, whether it involves Liquidated Damages (LD),
+whether it is a new (HNG-X) requirement and the anticipated source. In the source column, the system
+or application which will supply the data is defined. Where the data is to come from the data warehouse,
+then the column entitled Xref in DES/APP / 1FS/0011 indicates the relevant chapter in the Data Warehouse
+HNGx file interface specification which refers to this SLT. All references in this document are from
+version 0.1 of the interface spec.
+
+3.2 HNG-X Requirements
+
+The following table details the SLT and PM reporting requirements which have been identified for HNG-X .
+This document specifies the data gathering and storage for those identified as “New” (i.e. relating to
+HNGX) and “Old” (i.e. those SLT measures which are already provided by the SMP). The expected
+source of the data is also included.
+
+The reporting requirements for the following SLT and PM's are dealt with in this document:-
+
+Lo
+
+Area Sub-Area Measure SLT andior PM RefNo New
+ISLT lOld
+ARL Xref in DES/APP /
+Source 1FS/0011
+Priority A-4
+Re tu hour call 0 fix xec/
+Engineering Coit (Flexible Powerhelp /
+Service structure) 95% NO SLT SLT1 Triole NA
+Branch foures te to 8 xcc/
+}our call to fix
+Engineering (hastmcrure - Flexible Powerhelp /
+Service structure) 95% NO SLT SLT2 Triole NA
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DESIAPPIHLD (0085
+Version: 1.0
+Date: 19-Jul-2007
+Page No: 34 of 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+SPOS»
+
+OFFICE
+
+FUJ00142218
+FUJ00142218
+
+Priority © —
+Branch End of Next
+Business Day
+{nfrastructure - call to fx xec/
+Engineering (Flexible Powerhelp /
+Service structure) 95% NO SLT SLT3 Triole NA
+Priority A-6
+Branch ture nour call to fx xec/
+Engineering Culms px (exible Powerhelp /
+Service structure) 100% NO SLT SLT4 Triole NIA
+Branch hour oa i ‘om xcc/
+}our call to fix
+Engineering iMfzstuctie- Fie Powerhelp /
+Service structure) 100% NO SLT SLTS Triole NA
+Priority C —
+End of Next
+Branch Business Day
+Infrastructure - plus 2 hours
+Call to Fix call to fix xcc/
+Engineering (Flexible Powerhelp /
+Service structure) 100% NO SLT SLT6 Triole NA
+Service PostShop Fix critical
+Integration Engineer - incident within
+Service Call to Fix 8 hours 100% NO SLT SLT7 NA
+Fix non-
+Service postshop critical
+Integration Gate, incident within
+Service 8 hours 100% NO SLT SLT8 NIA
+Calls
+Sewvice Telephony answered
+Desk Response within 30 HSD /
+Service seconds >=80% NO SLT SLT9 Telephony NA
+Service
+Desk egehony ‘Average time < 10 HSD/
+Service P to answer seconds NO SLT SLTIO Telephony NIA
+a Telephon,
+Desk Response: Calls not HSD/
+Service answered <5% NO SLT. SLTH1 Telephon NA
+First Time
+Incident Fix
+Service (across all
+Desk ‘Support
+Service Functions) First time fix >= 85% NO SLT SLTI2 NA
+Availability of
+Voicemail
+: Sere pesk facility outside
+Service Availabilty of Service
+Desk Desk core HSD/
+Service working day 100% NO SLT SLT13 Telephony N/A
+Availability of
+Service Desk Web call
+Service Systems logging facility
+Desk Availability (back end HSD / Triole
+Service server) 100% NO SLT SLTI4 2 NA
+Web /
+Voicemail
+calls raised
+out of Service
+Desk core
+working day
+Serice Desk Oh Fue
+ystems
+Availability Services call
+logging
+system
+responded to
+Service next Service
+Desk Desk core HSD /
+Service working day 100% NO SLT SLT15 Telephony N/A
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ret DESIAPPIHLD (0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 35 of 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+OST
+
+OFFICE
+
+FUJ00142218
+FUJ00142218
+
+Software
+Software incidents
+Incidents- resolved by
+Service Call to re-boot or
+Desk Resolution workaround
+Service <= 15minutes 96% NO SLT SLTI6 NA
+Software
+Software incidents
+Incidents- resolved by
+Service Call to re-boot or
+Desk Resolution _ workaround
+Service <= 30minutes 100% NO SLT SLTI7 NA
+Branch Priority A= 4
+Branch Telecom hour call to fix xcor
+Network Infrastructure - (Flexible Powerhelp /
+Service Call to Fix structure) 96% NO SLT SLTIB Triole NA
+Priority C —
+Branch End of Next
+Telecom Business Day
+Branch Infrastructure - call to fix xccr
+Network Call to Fix (exible Powerhelp /
+Service structure) 96% NO SLT SLTI9 Triole NIA
+Branch Priority A -6
+Branch Telecom hour call to fix xec/
+Network Infrastructure - Flexible Powerhelp /
+Service Call to Fix structure) 100% NO SLT SLT20 Triole NA
+Priority C —
+End of Next
+Branch Business Day
+Teco re = call to fix + 2
+Branch Cato pe hours Xcc/
+Network exible Powerhelp /
+Service structure) 100% NO SLT SLT2t Triole NA
+Branch
+Branch Branch apg Availability xcc/
+Network Avsteity uring the Powerhelp /
+Service Critical Period > 98.80% NO SLT SLT22 Triole NA
+Branch and Counter
+Branch aa Availabilty xec/
+Network Restepiity ing the Powerhelp /
+Service Critical Period > 98.53% NO SLT SLT23 Triole NA
+Branch
+Branch and Availability
+Branch Counter during Post xec/
+Network Availability Office Core Powerhelp /
+Service Day >9937% NO SLT SLT24 Triole NA
+Counter
+Branch and Availability
+Branch Counter during Post xec/
+Network Availability Office Core Powerhelp /
+Service Day >99.10% LD SLT SLT25 Triole NA
+Branch
+Branch Branch and Availability xcc/
+Network fvalabaity using the Powerhelp /
+Service Critical Period > 98.91% NO SLT SLT26 Triole NA
+Branch and Counter
+Branch conn Availabilty xcc/
+Network Rvatepiity fing the Powerhelp /
+Service Critical Period => 98.61% NO SLT SLT27 Triole NA
+Branch
+Branch and Availability
+Branch Counter during Post xcc/
+Network Availability Office Core Powerhelp /
+Service Day >99.48% NO SLT SLT28 Triole NA
+Branch and Counter
+Branch ear Availabilty xcc/
+Network Avatopiity uring Post Powerhelp /
+Service Office Core > 99.19% LD SLT SLT20 Triole NA
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DESIAPPIHLD (0085
+Version: 1.0
+Date: 19-Jul-2007
+Page No: 36 of 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+Day
+Banking &
+Branch Related Fixed
+Network Services Connection
+Service Reliability reliability 99% LD SLT SLT30 0
+Banking &
+Branch Related ADSL
+Network Services Connection
+Service Reliability reliability 99% LD SLT SLT31 0
+Banking &
+Branch Related Dialled
+Network Services Connection
+Service Reliability reliability 97% LD SLT SLT32. 0
+Network
+Availability —
+Central (for each SLT
+Network. Calendar A&L Network
+Service Year) Availability  >=99.95% NO SLT SLT33. oN
+Banking
+Authorisation
+Agent Number of PI
+availability for outages for
+Central Each more than 2
+Network Availability minutes for
+Service Period same bank <= NO SLT SLT34. ~N DWH 46
+Banking
+Authorisation Number of PI
+Agent outages for
+availability for more than 2
+Central Each minutes for
+Network Availability different
+Service Period banks <=2 NO SLT SLT35. N DWH 46
+Banking
+Authorisation
+Agent Number of PI
+availability for outages for
+Central Each more than 4
+Network Availability minute for
+Service Period same bank <=1 NO PM SLT36. «=N DWH 46
+Banking
+Authorisation Number of PI
+Agent outages for
+availability for more than 1
+Central Each minute for
+Network Availability different
+Service Period banks <=2 NO PM SLT37_ «= N._DWH 46
+Average time DI y
+Banking & for Banking
+Related Transactions <5 5
+Services across Fixed, SP
+Data Centre Transaction ADSL and
+Operations Times Dialled
+Service Connections LD SLT SLT38. oN
+Data File APS
+Delivery - transactions
+Data Centre Outbound delivered by
+Operations (APS - All day 23:59h
+Service Clients) Day 8 97% LD SLT SLT39 O
+5 Data File APS
+Delivery — transactions
+Data Centre Outbound delivered by
+Operations (APS - All sre
+Service Clients) y 98% LD SLT sito Oo
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DES/APP/HLD/0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 37 of 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+Data File
+Operations (APS — All on by
+Service Clients) 90% LD SLT SLT41 0
+Data File
+Data Centre Outbound transactions
+Operations (APS —Alll day J y
+Service Clients) 100% LD SLT SLT42 0
+Data File
+Delivery -
+Data Centre Outbound pe rawres:
+Operations (APS - All per ear
+Service Clients) <2 NO SLT SLT43. ~=N  _DWH 42
+% of EDG
+Boao Ales deivered
+within
+Data Centre areal 48hours of
+Operations Gena) transaction
+Service date 400% NO SLT SLT44. N DWH 42,43
+Data File Zi
+Delivery -
+Data Centre Outbound
+Operations (APS - All
+Service Clients) <2 LD SLT. SLTAS, «NN DWH 42,43
+Data File
+Delivery -
+Data Centre Aisbount
+Operations (APS A
+Service Clients) “date 100% NO SLT SLT46 N DWH 42,43
+Individual
+Belven— Directly
+Outbound Connetted
+Data Centre GiseUn Clients
+Operations iorig) Failures: per
+Service SLT year <4 LD sSLT_sSLT47, «Ns DWH 42,43
+% of Directly
+Connected
+Ree on Client files
+‘Outbound delivered
+(APS — All within
+Data Centre (Pes) 72hours of
+Operations transaction
+Service date 400% NO SLT SLT48 N DWH 42,43
+Data File Confirmation
+Belwen of Pouch
+Data Centre elven’ received at
+Operations 76) Branch by
+Service 22:00h Day A 97% NO SLT SLT49 0
+Confirmation
+balwen of Pouch
+Data Centre Qowery received at
+Operations 7S) Branch by
+Service Day B 97% LD SLT sLT50 0
+Confirmation
+Delvery— of Pouch
+Data Centre Gove”; received at
+Operations PS Branch by
+Service Day! 400% NO SLT SLT51 oO
+Data File Pouch
+Data Centre Delivery — Receipt
+Operations Outbound failures per
+Service (LFs) SLT year <3 LD SLT_sSLT52, «N= DWH 42,43
+Data Centre Data File % of Pouch
+Operations Delivery - Receipts
+Service Outbound received 400% NO SLT SLT53 N DWH 42,43
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ret DESTAPPIHLD 0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 38 of 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+POST?
+
+OFFICE
+
+(LFS) within
+48hours of
+creation date
+Details of
+Data File Poms
+Delivery - &
+Outbound ollected
+Data Centre 78) from Branch
+Operations by 22:00h
+Service Day A 97% NO SLT SLTS&4 oO
+Details of
+Data File SAPADS
+Delivery - Pouch
+Data Centre Outbound Collected
+Operations (LFS) from Outlet by
+Service Day B 97% NO SLT SLT85 Oo
+Details of
+Data File SAPADS
+Delivery - Pouch
+Data Centre Outbound Collected
+Operations (LFS) from Outlet by
+Service Day! 100% NO SLT SLT& O
+Data File Pouch DWH
+Data Centre Delivery ~ Collection
+Operations Outbound failures per
+Service (FS) SLT year <3 NO SLT. SLTS7_N 42,43
+% of Pouch DWH
+Data File collections
+Delivery - received
+Data Centre Outbound within
+Operations (LFS) 48hours of
+Service creation date 100% NO SLT SLT588 N 42,43
+Daily Cash on
+belwen- Hand details
+Data Centre Gower to SAPADS
+Operations P89 by 23:59h
+Service DayA 96% NO SLT SLT59 ON
+Data File Cash on Hand DWH
+Data Centre Delivery ~ details failures
+Operations Outbound to SAPADS
+Service (LFS) perSLT year <=3 NO SLT SLT60 N
+% of Cash on DWH
+Data File Hand details
+Delivery - received
+Data Centre Outbound within
+Operations (LFS) 48hours of
+Service creation date 100% NO SLT SLT61 N 42,43
+Transaction
+Data Centre Pala Pelvery records to TIP
+Operations (POL Mis) gateway by
+Service 03.00h Day 8 96% NO SLT sLTe2 oO
+, Transaction
+Data Centre Data Delivery records to TIP
+Operations (POL Mis) gateway by
+Service 03.00h Day C 97% NO SLT SLT63 O
+Transaction
+Data Centre PBADEIEY records to TIP
+a‘ = Outbound
+Operations (POL Mis) gateway by
+Service 03.00h Day D 98% NO SLT SLTé4 Oo
+, Transaction
+Data Centre Data Delivery records to TIP
+Operations (po. mis) gateway by
+Service 03.00h Day J 100% NO SLT slTés oO
+Transaction
+Data Delivery records to TIP
+Data Centre - Outbound gateway -
+Operations (POLMIS) _Failures per
+Service SLT year <2 NO SLT _SLT6é6_ N DWH 42,43
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DES/APPIHLD (0085
+Version: 1.0
+Date: 19-Jul-2007
+Page No: 39 of 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+POST?
+
+OFFICE
+
+Data Centre
+Operations
+Service
+
+Data Centre
+Operations
+Service
+
+Data Centre
+Operations
+Service
+
+Data Centre
+Operations
+Service
+
+Data Centre
+Operations
+Service
+
+Data Centre
+Operations
+Service
+
+Data Centre
+Operations
+Service
+
+Data Centre
+Operations
+Service
+
+Data Delivery
+— Outbound
+(POL Mis)
+
+Data Delivery
+- Outbound
+(POLFS)
+
+Data Delivery
+= Outbound
+(POLFS)
+
+Data Delivery
+= Outbound
+(POLFS)
+
+Data Delivery
+= Outbound
+(POLFS)
+
+Data Delivery
+- Outbound
+(POLFS)
+
+Data Delivery
+- Outbound
+(POLFS)
+
+Data File
+Delivery -
+Outbound
+(Reconciliation
+and
+Settlement
+Reports to TIP
+gateway)
+
+% Transaction
+records
+delivered to
+TIP gateway
+within
+48hours of
+transaction
+date
+Transaction
+records
+loaded to
+configured
+POLFS by
+07.30h Day B
+Transaction
+records
+loaded to
+configured
+POLFS by
+07.30h Day C
+Transaction
+records
+loaded to
+configured
+POLFS by
+07.30h Day D
+Transaction
+records
+loaded to
+configured
+POLFS by
+07.30h Day J
+Transaction
+records
+loaded to
+configured
+POLFS —
+Failures per
+SLT year
+
+% of
+Transaction
+records
+loaded to
+configured
+POLFS within
+48hours of
+transaction
+date
+
+Delivery by
+08:05h Day B
+(providing the
+LREC is
+received by
+Fujitsu at
+23:59:59h
+Day A) this is
+imrespective of
+a DRSH
+failure.
+Delivery by
+08:05h Day B
+(providing the
+LREC is
+received by
+Fujitsu at
+01:59:59h
+Day B). If
+there is a
+
+100%
+
+96%
+
+97%
+
+98%
+
+100%
+
+<=2
+
+100%
+
+<2
+failures in
+total per
+
+SLT year
+
+NO
+
+NO
+
+NO
+
+Ne}
+
+NO
+
+NO
+
+NO
+
+NO
+
+SLT
+
+SLT
+
+SLT
+
+SLT
+
+SLT
+
+SLT
+
+SLT
+
+SLT
+
+‘SLT67
+
+SLT68
+
+SLT69
+
+SLT70
+
+SLT71
+
+SLT72
+
+SLT73
+
+SLT74
+
+N
+
+DWH 42,43
+
+DWH
+
+42,43
+DWH
+
+4.2,4.3
+
+DWH
+
+© Copyright Fujitsu Services Ltd 2007
+
+‘COMMERCIAL IN CONFIDENCE.
+
+Ref.
+Version:
+Date:
+Page No:
+
+DES/APP/HLD/0085
+1.0
+
+19-Jul-2007
+
+40 of 74
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+OST
+
+OFFICE
+
+DRSH failure
+the target is
+10.05h Day B.
+Ifthe LREC is
+received by
+Fujitsu
+between
+02.00h and
+22:00h Day B
+the file will be
+delivered in
+line with the
+target for
+received by
+01:59:59h
+Day B but the
+file will not be
+enriched with
+the LREC
+data until day
+Cc.
+
+ifthere is a
+failure within
+the Fujitsu
+Services Ltd.
+domain on a
+system [other
+than DRSH or
+TES] which is
+being utilised
+inthe
+generation of
+
+Data File n
+Delivery -
+Delvery Reconciliation
+EReconciiion  Stement
+Reports,
+Settlement delivery of
+Reports to TIP
+gateway) said reports
+will be by
+42.00h Day B
+ifthe system
+failure is
+either of the
+DRSH or
+TES, then
+said reports
+Data Centre will be
+Operations delivered by
+Service 18.00h Day 8 400% NO SLT SLT75 N DWH
+Data File Number of DWH
+Belwen failures of
+Outbound REC file
+Data Centre ett ation delivered to
+Operations {Fee CAPO daily
+Service by 03.00h <2 NO SLT SLT76 oN 47
+Delivery -
+Outbound REC file
+Data Centre et ation delivered to.A
+Operations {Fees &L daily by
+Service 03.00h <2 NO SLT SLT77_ N 47
+Data File REC files will DWH
+Delivery - be delivered
+Data Centre Outbound to CAPO by
+Operations (Reconciliation 16.00h on
+Service Files) Day B 100% NO SLT SLT78 N 47
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ret DESIAPPHLD 0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 41 of 71
+FUJ00142218
+
+FUJ00142218
+Service Management Portal High Level Design q
+FUJITSU COMMERCIAL IN CONFIDENCE
+"Data File REC files will DWH
+Delivery — be delivered
+Outbound to A&L by
+~ (Reconciliation 18.00h on
+Files) Day B 100% NO SLT SLT79 ON 47
+Data File REC files are DWH
+Delivery - dispatched to
+Outbound CAPO and
+(Reconciliation A&L by
+- Files) 00.10h daily  100%PM NO PM SLT80 N 47
+HR SAP file DWH
+I delivered to
+- Data file the POL
+delivery - gateway by
+I Outbound (HR — 21.30hrs on
+e SAP) the Friday :
+4 preceding the a
+pay run date 100% LD sir sit NO Af 42,43
+I CTS file WH 2
+Data fle delivered to ie, SO
+livery — the POL
+Outbound e
+(CTS files) gateway by Ss Se
+I 07:30hrs daily 100%PM NO PM SLT82. N
+Data file Production of ¥ i
+Delivery (PO NSBL fle by =
+- Clients) 23.5¢hrs on
+Saturday 100% NO PM SLT&3 N
+Production of .
+Data file Alliance and
+Delivery (PO Leicester file
+Clients) by 23.59hrs.
+on Saturday 100% NO PM SLT8&4 N
+Production of 7
+Data file SAPADS fle
+lelivery — (PO. :
+Clients) by 07.30hrs
+my Daily 100% NO PM = SLT8S N
+SAPADS data
+~  Yoaded to
+ts POLFS by
+Data outbound —97:30h Day B
+(Loaded to ifthe datas
+POLFS) ifthe data is
+received by
+(time to be
+agreed) 100% NO PM SLT86 N
+RDS vendors
+data loaded to
+Data outbound POLES BY
+_=(loadedto ay
+I POLES) ifthe data is
+received by
+(time to be
+agreed) 100% NO PM SLT87 N
+RDS
+‘customers
+data loaded to
+Data outbound ~POLFS by
+=(Loadedto —_07:30h Day B
+_ POLFS) ifthe data is
+received by
+(time to be
+agreed) 100% NO PM SLT@B8 N
+RDS product
+
+data loaded to
+Data outbound —POLFS by
+=(Loaded to —_07:30h Day B
+
+_ POLFS) ifthe data is
+received by
+(time to be 100% NO PM SLT89 N
+‘© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 42of71
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+agreed)
+RDS branch
+data loaded to
+Data outbound POLES EY
+=(Loadedto 97° y
+PoLFS) ifthe data is
+received by
+(time to be
+agreed) 100% NO PM SLT9O N
+Moneygram
+data loaded to
+Data outbound POLES by
+=(Loaded to 07'30h Day B
+POLFS) if the data is
+received by
+(time to be
+agreed) 100% NO PM SLT ON
+SAPADS %,
+_ Data File Banned
+Pelivery I eg) delivered by
+(LFS) 08:00h on ‘
+DayA 90% NO SLT SLT92 fe}
+SAPADS *
+Data File Banned
+peer 7 delivered by
+inbound (LFS) $Syere
+Day A 96% ARL SLT SLT93. 0
+SAPADS
+Planned
+Orders
+Data File available for
+Delivery — use by the
+Inbound (LFS) Branch by
+08:00h
+Failures per
+SLT year <4 No SLT -SLT94. ~=N DWH 42,44
+SAPADS DWH
+Planned
+Orders
+Data File available for
+Delivery — use by the
+Inbound (LFS) Branch by
+12:00h —
+Failures per
+SLT year <4 ARL SLT SLT95. ON 42,44
+% of SAPADS DWH
+Planned
+orders
+ba on available for
+I Inbound (Les) pee bythe
+48hours of
+receipt 100% NO SLT SLT96 N 42,44
+Delivery of
+Transaction Transaction
+5, comection corrections
+Branches that Suavaole by
+are available PA00
+/ at 23:59:59h y
+Day A 90% LD siT siTa7 0
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ret DESTAPPIALD0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 43 0f 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+Delivery of
+transaction Transaction
+correction corrections
+records to available by
+Branches that SyaapIe
+Data Centre are available 208
+Operations —_at 23:59:59h y
+Service Day A 96% LD SLT SLT98 Oo
+Delivery of
+transaction
+correction Transaction
+corrections
+records to
+Branches that 2vallable by
+C 23:59:59h on
+Data Centre are available = 5275
+Operations at 23:59:59h y
+Service Day A 100% LD SLT sLT99 oO
+Delivery of paiture of DWH
+transaction Transaction
+records ta Corrections to
+Branches that Be available
+at Branches
+Data Centre are available BOs gon
+Operations _at 23:59:59h Y SLT year
+Service Day A me y <4 LD SLT SLT100_-N 4.2, 4.4
+Delivery of I % of DWH
+transaction Transaction
+correction Corrections
+records to available at
+Branches that the Branch
+Data Centre are available —_ within
+Operations at 23:59:59h _48hours of
+Service Day A receipt 100% NO SLT SLTIO1 N 42,44
+Outages in
+Core Hours
+where the
+Central Core Solution
+Systems (Branch
+Availability Network, Core
+(measured Infrastructure
+overa5 year and Sales
+rolling Database) is
+average) unavailable at
+Data Centre > 10% of
+Operations Branches- <= 3core
+Service Per SLT year hours NO SLT SLT102_-—N
+Outages in
+Core Hours
+where the
+Central Core Solution
+Systems AND the
+Availability Banking
+(measured Solution
+overaSyear (CAPO, A&L
+rolling , LINK) is
+average) unavailable at
+Data Centre > 10% of
+Operations Branches~ <= 8 core
+Service Per SLT year hours NO SLT SLT103._-N
+Outages in
+Central Core Hours
+Systems Where the
+Availability— Fors souition
+AND Other
+(measured eee cee
+overaS year (ETU, DVLA
+Data Centre 9 PAF,APOP, <= 14
+Operations 2¥e"@9°) DCS) is core
+Service unavailable at hours NO SLT SLT104._-N
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DES/APP/HLD/0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 44 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design a
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+> 10% of
+Branches —
+Per SLT year
+
+POLFS
+availability
+POL FS during each
+Data Centre Availability service level
+Operations management
+Service period 99% NO SLT SLTI05 N
+POLFS shall
+not be
+unavailable to
+users on any
+single
+occasion
+during the
+service level
+POLFS management
+Availability period
+(this is
+increased to
+40 hours if an
+offsite
+engineer or
+Data Centre replacement
+Operations equipmentis — >=4
+Service required) hours NO SLT SLT106_-N
+Discussions
+POLFS required
+Data Centre Transaction between Post _ Still under
+Operations performance ._ Office and discussion
+Service Fujitsu forsa0 NO SLT SLTI07 ?
+TESQA
+availability
+Transaction _ between 99.75%
+Enquiry 07:00h and
+Data Centre Service 22:00h for
+Operations SLT Calendar
+Service Year downtime NO SLT SLT108_-N
+Transaction
+received in
+the Data
+Centre
+between
+07.00h and
+Transaction _20.00h daily
+Enquiry will be
+Service available
+within 15
+minutes. on
+the TESQA
+Data Centre for the SLT
+Operations Calendar
+Service Year 97% NO SLT SLTI09 N DWH 48
+Ifthe TES DWH
+fails
+transaction
+Transaction _received in
+Enquiry the Data
+Service Centre
+Data Centre between
+Operations 07.00h and
+Service 20.00h daily 100% NO SLT SLTI10 N 48
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085.
+Version: 1.0
+Date: 19-Jul-2007
+Page No: 45 0f71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+OST
+
+OFFICE
+
+will be
+available
+within 2 hours
+‘on the
+TESQA for
+the SLT
+Calendar
+Year
+Transaction DWH
+received in
+the Data
+Centre
+between
+20.00h and
+Transaction 22.00h daily
+Enquiry will be
+Service available
+within 40
+minutes on
+the TESQA
+Data Centre for the SLT
+Operations Calendar
+Service Year 97% NO SLT SLTI11. N 48
+ifthe TES DWH
+fails,
+transaction
+received in
+the Data
+Centre
+between
+Transaction 20.00h and
+Enquiry 22.00h daily
+Service will be
+available
+within 2 hours
+on the
+TESQA for
+Data Centre the SLT
+Operations Calendar
+Service Year 100% NO SLT SLTH2 N 48
+Transaction DWH
+received in
+the Data
+Centre
+between
+22.00h and
+Transaction _07.00h daily
+Enquiry will be
+Service available
+within 4 hours
+‘on the
+TESQA for
+Data Centre the SLT
+Operations Calendar
+Service Year 100% NO SLT SLTH13 N 48
+The query DWH
+time for
+properly
+constrained
+transaction
+queries on the
+TESQA
+Data Centre between
+Operations 07.00h and
+Service 18.00h <=20secs NO PM SLTI14 N 49
+
+Transaction
+Enquiry
+Service
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+PageNo: 46 of 71
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+FUJ00142218
+
+Data File APS
+Data Centre Delivery — reference
+Operations Inbound (APS data delivered
+Service tariff data) by day B 96% NO SLT SLTII5 O
+Data File APS
+Data Centre Delivery — reference
+Operations Inbound (APS data delivered
+Service tariff data) by day C 97% NO SLT SLTI16 O
+Data File APS
+Data Centre Delivery — reference
+Operations Inbound (APS data delivered
+Service tariff data) by day D 98% NO SLT SLTII7 O
+Data File APS
+Data Centre Delivery — reference
+Operations inbound (APS data delivered
+Service tariff data) by day J 100% NO SLT SLTI18 O
+APS Tariff
+Data available
+for use by the
+Branch -
+Failures per
+Data File SLT year
+Delivery — (Review once
+Inbound (APS further design
+tariff data) work
+completed ~
+re similarity
+Data Centre with standard
+Operations Reference
+Service Data) <2 NO SLT SLT119._-N
+% of APS
+Tariff Data
+Boao avaible for
+use by the
+Data Centre tne late S Branch within
+Operations 48hrs of
+Service receipt 100% NO SLT SLTI20 N
+Data's Reference
+livery —
+no tnpeund delivered b
+Reference (Reference day 8 ¥
+Data Service Data ) ay 96% NO SLT SLTI21 N DWH 42,44
+Data File Reference DWH
+livery —
+Inbound Oat8 red by
+Reference (Reference da C y
+Data Service Data ) y 97% NO SLT SLTI22 N 4.2.4.4
+pais File Reference DWH
+jelivery —
+i Inbound Oat8 red
+Reference (Reference fay
+Data Service Data ) Y 98% NO SLT SLT123_ N 42,44
+Data File Reference DWH
+Delivery —
+Inbound Oat red b
+(Reference oe Iv ye y
+Data ) y 100% NO SLT SLT124 N 42,44
+Banking &
+Related
+Exception/ Services
+Error Priority
+Resolution Exceptions
+resolved in 8
+hours or less 95% NO SLT SLT125 N
+BIM Report
+Exception ' issued within
+Resolution 5 working
+I days 95% NO SLT SLTI26 N NA
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DES/APP/HLD/0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 47 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design a
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+initial BIM
+report issued
+by the end of
+the same
+working day
+Exception / as the
+Error exception or
+Resolution error has
+been reported
+by the
+Reconciliation
+Service or by
+Post 100% NO PM SLT128 N NIA
+i Payment file
+_ Payment File delivered to
+Delivery to MA on the
+I Merchant day following
+Acauirer - the creation
+(Debit Card) date of the
+paymentfile By 12:00h LD PM = SLT129. N- DWH
+0BC20
+receipt
+acknowledged
+by Fujitsu
+within 48
+hours 100% NO  OLT SLT130 N NIA
+Branch
+changes
+delivered to
+proposed
+target date
+(including
+Line Plant
+issues) 95% NO  OLT SLT131_ N NA
+Branch
+changes
+delivered to
+proposed
+target date
+(not including
+Line Plant
+issues) 96% NO  OLT SLT132_N NIA
+Branch
+changes not
+failing due to
+incorrect
+delivery of
+Branch
+configuration
+changes via
+ocMs 99% NO  OLT SLT133._ N NIA
+Fujitsu to
+advise Post
+Office Ltd by
+16:00 hours
+on the day ifa
+scheduled
+Fujitsu
+Engineer is
+unable to
+attend the
+Branch 100% NO  OLT SLT134._N NIA
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DES/APP/HLD/0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 48 of 71
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+4
+
+41
+
+4.2
+
+Sub-System Description — Major Incidents
+
+Overview
+
+In the event of a Major Incident, it is important that both Post Office and Fujitsu Services
+Post Office Account have immediate access to the resolution progress, and that both
+organizations can see the relevant progress updates and the actions which have been
+allocated to the resolution. In addition, the current mechanisms for handling the necessary
+paperwork involved in the final resolution and sign-off of any incident are cumbersome
+and prone to excessive delays.
+
+In order to resolve these deficiencies, the Major Incident Management system has been
+created to reside on the Service Management Web portal.
+
+Data Flow
+
+The major incident module operates on four objects: The incident object held in table
+xtranet_mik_MIR, an update object held in table xtranet_mik_update, an action record
+held in table xtranet_mik_actions and a closure object held in table xtranet_mik_closure.
+
+The incident object must be created first. Having been created, the other objects will relate
+to the incident object. The incident object contains the title of the incident and the call
+number as mandatory fields, the remaining fields relate to the impact of this incident in
+business and technical terms. Once created, the object cannot be directly changed. The
+facility to update an incident record actually creates an update object.
+
+The update object relates to a specific incident object. There can be any number of updates
+relating to any given incident. Updates can change the impacts of the incident, and provide
+additional narrative, but cannot alter the title or the call number. Update objects cannot be
+altered once created.
+
+The action record relates to a specific incident. There can be any number of action records
+associated with an incident. Actions can allocate specific tasks to specific individuals and
+provide additional narrative. Action records, once created can be altered using the “update
+action” functions.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 49 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+The closure record relates to a specific incident. There can only be one closure record for
+any incident. Once created, the closure object cannot be altered and also prevents any
+further updates or actions being created against that incident.
+
+4.3 Application Components
+
+The SQL database tables and Java servlets relating to this module in the application are
+documented in the tables in sections 3.3.7 and 3.3.8. The interactions of the web pages
+with the database tables and servlets is documented in section 3.3.3.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 50 of71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+5  Sub-System Description — System Monitors
+
+5.1 Overview
+
+The System monitors get all of their data by a links to the Peak database, which in turn
+links to two tables in the SMDB — SMC_Post_Office and SMDB_FAD._State_Latest plus
+one internal peak table posttowns.
+
+5.2 Data Flow
+
+5.3 Application Components
+
+Individual components of this section of the application are based on the services which
+they are monitoring. They are detailed individually in the following sub-sections
+
+5.3.1. Alliance and Leicester
+
+This monitors the connection from the two network banking authorisation agents in POA
+that connect to A&L. Including:
+
+* Connection Heartbeat
+* Statistical anomalies such as stale transactions or invalid encryption
+* Key Performance statistics of the agents such as CPU usage
+
++ Heartbeats or bad events on the Routing agents
+
+Amber: Any of the routing agents alerting
+Red: Both A auth agents or Both B auth agents alerting
+
+5.3.2. CAPO NWB
+
+This monitors the connection from the four network banking authorisation agents in POA
+that connect to CAPO. Including:
+
++ Connection Heartbeat
+
+* Statistical anomalies such as stale transactions or invalid encryption
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 51 of 74
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+* Key Performance statistics of the agents such as CPU usage
+
+* Heartbeats or bad events on the Routing agents
+
+Amber: Any of the routing agents alerting
+Red: Both A auth agents or Both B auth agents alerting
+
+5.3.3 Link NWB
+
+This monitors the connection from the two network banking authorisation agents in POA
+that connect to LINK. Including:
+
++ Connection Heartbeat
+* Statistical anomalies such as stale transactions or invalid encryption
+* Key Performance statistics of the agents such as CPU usage
+
++ Heartbeats or bad events on the Routing agents
+
+Amber: Any of the routing agents alerting
+Red: Both A auth agents or Both auth B agents alerting
+
+5.3.4. NWB High Failure Count
+
+Using the reconciliation infrastructure, the number of failed transaction for each NWB FI,
+Debit Card and ETU service are totalled each two minutes. If any service has a failure rate
+of five percent or above an alert is raised.
+
+Amber: None
+
+Red: Any of the FIs reporting a percentage failure outside of core business hours
+
+5.3.5 TES QA
+This monitors the Transaction Enquiry Service web servers. Including:
++ The state of the Oracle application server
+* The http server
+
+* The web cache
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 52o0f71
+FUJ00142218
+FUJ00142218
+
+o Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Amber: None
+
+Red: Both web servers alerting
+
+5.3.6 Debit Card
+
+This includes the health of each of the four active and four standby authorisation agents in
+POA and the connection of each to Streamline. This includes:
+
+* Solve Connection.
+* Checking that there is an active agent in each cluster.
+
+* Statistical count of timeouts in the last fifteen minutes.
+
+Amber: one clusters agent alerting
+
+Red: Communications to Streamline or more than one cluster alerting
+
+5.3.7. E-Top ups
+
+This includes the health of each of the four active and four standby authorisation agents
+and eight reversal agents in POA and the connection of each to EPAY. This includes:
+
++ EPAY Connection.
++ Checking that there is an active authorisation and reversal agent in each cluster.
+
+* Statistical count of timeouts in the last fifteen minutes.
+
+Amber: one clusters auth or reversal agent alerting
+
+Red: Communications to EPAY of more than one clusters alerting
+
+5.3.8 DVLA
+
+This monitors the health of the two POA web servers and the statistical number of
+timeouts received when connecting to the DVLA servers.
+
+Amber: Timeout threshold exceeded (10%)
+Red: Any Web server alerts
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 53 0f71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+5.3.9 PAF
+
+This monitors the health of the four POA web servers. Internal and external test calls are
+made to the system and the results checked.
+
+Amber: None
+
+Red: Any Web server alerts
+
+5.3.10 BAS Routers
+
+The network management system checks that each BAS router can be contacted via ping.
+If one fails three consecutive ping attempts it is flagged as possibly down.
+
+Amber: Any router has more than 50 counters markedas down
+
+Red: Any BAS has not responded to 3 consecutive pings from the network management
+service.
+
+5.3.11 Track and Trace
+
+This monitors both the harvester agents, interface agents and the web server on the
+Electronic Data Gateway (EDG). There are four harvesting agents, one per cluster and four
+interface agents, one per cluster.
+
+Amber: Correspondence servers for one cluster alerting.
+
+Red: Agents or Web service alerting.
+
+5.3.12 Map of sites without comms
+
+Switches to a geographical display (see diagram below)
+
+In this display, each red dot represents a Post Office which is not in communication with
+the data centre. Larger , red squares indicate that more than one Post Office has lost
+communications to the data centre within the same geographical area — this is most
+common during periods of severe weather when communications lines are disrupted.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 54 of 71
+FUJ00142218
+FUJ00142218
+
+oO Service Management Portal High Level Design a
+FUJITSU &
+
+COMMERCIAL IN CONFIDENCE
+
+Positioning the mouse pointer over a county produces a pop-up message with the count of
+uncommunicative Post Offices in the are and the total number of Post Offices in the area,
+for example “Powys — 6 of 204 down (2%)”
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DES/APP/HLD/0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 55 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Clicking the mouse on a county area displays information about the individual Post Office
+affected, FAD, Name, number of counters, connection type, Post Code and Local
+
+Exchange
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 56 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+6 Sub-System Description - OBC process
+
+6.1 Overview
+
+The operational business change process is primarily concerned with business changes to
+Post Office requested by Post Office Ltd. For example closing offices, opening offices and
+changing the number of counters within an office.
+
+The function of this part of the Service Management Portal is to provide summary
+information on the changes that have been requested. There is no requirement, nor
+opportunity to actually input any data.
+
+6.2 Data Flow
+
+There is only one SQL server table in this component of the SMP design (OBCBigTable).
+This table is actually maintained externally to the SMP in an Access database owned by
+the OBC team in Crewe. The data in the SMP is copied from the master table in the OBC
+database on a daily basis by an overnight job inside the SQL server database called
+xtranetCopyOBCTable. This in turn calls stored procedure xtranet_mik_copy_OBC,
+which copies the Access table into the SQL table OBCBigTable. It is against this table that
+all OBC queries are run.
+
+6.3 Application Components
+
+The SQL database table relating to this module in the application are documented in the
+tables in section 3.3.7 . The interactions of the web pages with the database table is
+documented in section 3.3.5.
+
+6.3.1 OBC activity schedule
+
+This screen shows, in date order, the activities which are scheduled to take place at post
+offices.
+
+6.3.2. OBC PM Branch list
+
+This screen displays the branches in which activities are scheduled, together with the
+contact details of name and address.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 57 of 74
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+6.3.3. OBC Counts
+
+This screen displays the count of activities which have been scheduled or completed, by
+year and month, by year and week number, and by Date
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 58 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+7  Sub-System Description - OCPs
+
+7.1 Overview
+
+OCPs are operational changes made to the system. The Service Management Portal shows
+both a summary and the detail of any OCP which has either been sent to Post Office for
+approval, or else has been marked as being system affecting.
+
+7.2 Data Flow
+
+All access to the data is held in a view called VW_SP_get_service_affecting
+
+7.3 Application Components
+
+The SQL database table relating to this module in the application are documented in the
+tables in section 3.3.7. The interactions of the web pages with the database table is
+documented in section 3.3.6.
+
+7.3.1. OCP summary
+
+The OCP summary is displayed as shown in figure 55. This gives basic information about
+the change being proposed. If the mouse pointer is held over any part of the summary
+lines then the cursor will turn to a hand. Clicking on an OCP summary entry will cause the
+OCP details to be displayed
+
+7.3.2 OCP detail
+
+Having selected an OCP to display from the OCP Summary, full details of the OCP are
+displayed in a separate window.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 59o0f71
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142218
+
+FUJ00142218
+
+Service Management Portal High Level Design
+
+8
+
+Sub-System Description — Reports
+
+8.1 Overview
+
+There are a number of reports which are delivered to the customer on a regular basis. It is
+the purpose of this section of the Service Management Portal to provide access to the most
+current version of these reports.
+
+It should be noted, as displayed on the initial screen for this section, that the data in the
+SLT tracker is raw data direct from the systems and has not been adjusted to take account
+of those factors which are beyond the control of Fujitsu for example file deliveries which
+could not be made because the remote end was inopemble, Post Offices which have been
+closed, but for which the closure notification has been delayed etc). Accurate figures are
+held in the SRB section.
+
+8.2 Data Flow
+
+With the exception of the “About SLTs”, “HSMF dashboard”, and “CSIP” files, all of the
+data in this section is supplied from sources external to the SMP via the drop box. There is
+no real data flow other than the arrival of the files from the drop box, and then the upload
+of those files to the live SMP
+
+“HSMF dashboard”, and “CSIP” files were one-off incdusions supplied by RMGA
+Customer Service Management and are probably no longer relevant. They will be removed
+from the HNG-X system.
+
+“About SLTs”, is a fixed html document which contains an extract from the Horizon
+contract which details the SLTs in place at that contract. It will need to be replaced by its
+equivalent at HNG-X.
+
+8.3 Application Components
+
+The components of the reports are as follows:
+
+SRB (Service Review Book) a collection of data which has for some years been presented
+to the customer on a monthly basis for discussion at the Service review meetings . The data
+is uploaded from a zip file supplied monthly by MSU. Zip is extracted into the
+Dreamweaver local directory /files/SRB by the drop box code and then the Dreamweaver
+site re-synchronised to upload to the remote server
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 600f71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+SRB dashboard — single html page which is a summary of actions from the Service Review
+. The data is uploaded from a single file supplied by MSU and uploaded into
+/files/SRB_dashboard.htm by the drop box code and then the Dreamweaver site re-
+synchronised to upload to the remote server
+
+Daily Report — A single page showing a summary, for the previous 24 hours of the
+number of supported branches, their network composition, the number of trading hours
+available and an indication of their availability. supplied by MSU and uploaded into
+/files/SRB_dashboard.htm by the drop box code and then the Dreamweaver site re-
+synchronised to upload to the remote server
+
+Success Rates — single html page which reports on the number of successful and failed
+transactions through the online components of the live estate. Uploaded from a single file
+supplied by MSU into local directory /files/success_rates.htm by the drop box code and
+then the Dreamweaver site re-synchronised to upload to the remote server
+
+CSIP — one off file supplied by Carl Marx uploaded into local directory /files/csip.html by
+the drop box code and then the Dreamweaver site re-synchronised to upload to the remote
+server — probably no longer relevant. Certainly not relevant to HNG-X
+
+HSMF dashboard - one off file supplied by Carl Marx uploaded into local directory
+/files/hsmf.html by the drop box code and then the Dreamweaver site re-synchronised to
+upload to the remote server — probably no longer relevant. Certainly not relevant to HNG-
+xX
+
+About SLTs is an extract from the Horizon contract and is held as an html file in the local
+server — this page has hot- links to the definitions of those SLTs which is also a single html
+
+page held locally
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 49-Jul-2007
+
+PageNo: 61 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+9 Sub-System Description — Drop Box
+9.1 Inbound Data Processing - The drop box
+
+9.1.1 Drop Box Overview
+
+Data for various functions within the SMP are provided by a number of units outside the
+SSC. These units FTP their prepared data to a directory on the SMP development box for
+processing. This directory (D:\SMPDropBox ) is know as the SMP "Drop Box".
+
+A Java class called DropBox parses this directory and then processes the files as
+appropriate.
+
+9.1.2 Drop Box Data Flow - input
+
+Files to be processed by the DropBox class are controlled by a parameter file
+"SMPDropBox.param" within the drop box directory. This files is read as the DropBox
+class is loaded. Each line of the file contains "filenameIdirectoryname". At each cycle the
+DropBox class will look for "filename" within the dropbox directory and if present move it
+to "directoryname". If the file is a ZIP file (extension .zip) then it will be expanded into
+"directoryname" and then deleted from the dropbox. Any files that already exist in
+directoryname will be silently overwritten.
+
+The currently implemented parameters as follows :
+daily_report.zipID:\Tomcat\webapps\SMP\files\daily_report
+
+Provided daily by MSU. File is moved to web site filestore and is then accessible to users
+of the SMP.
+
+success_rates.htmID:\Tomcat\webapps\SMP\files
+
+Provided daily by MSU. File is moved to web site filestore and is then accessible to users
+of the SMP
+
+srb_dashboard.zipID:\Tomcat\webapps\SMP\files\srb_dashboard
+
+Provided daily by Steve Taplin / Mark Jones. File is moved to web site filestore and is then
+accessible to users of the SMP
+
+latest_srb.zipID:\Tomcat\webapps\SMP\files\srb
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 62of71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Provided daily by Steve Taplin / Mark Jones. File is moved to web site filestore and is then
+accessible to users of the SMP.
+
+weekly_report.htmID:\Tomcat\webapps\SMP\files
+
+Provided by Liz Melrose's team. File is moved to web site filestore and is then accessible
+to users of the SMP
+
+DCSOnPerfDaily txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+DCSOnPerfMonthly .txtID:\IncomingSLTData
+Provided daily by Pooja Sujith.Processed by SQL stored procedure before use on website
+
+DCSOnPerfQtrly .txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+DCSSerRelDaily .txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+DCSSerRelMonthly .txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+DCSSerRelQtrly.txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+ETUOnPerfDaily txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+ETUOnPerfMonthly .txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+ETUOnPerfQtrly .txt/D:\IncomingSLTData
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 63 o0f71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+ETUSerRelDaily.txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+ETUSerRelMonthly .txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+ETUSerRelQtrly txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+OnPerfDaily.txt}D:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+OnPerfMonthly..txt/D:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+OnPerfQtrly .txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+SerRelDaily.txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+SerRelMonthly.txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+SerRelQtrly.txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+Inbound.txt/D:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 64 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Outbound.txtID:\IncomingSLTData
+Provided daily by Pooja Sujith. Processed by SQL stored procedure before use on website
+
+9.1.3 Drop Box Data Flow - output
+
+Any file being output to a top level directory will have its file name converted to lower
+case.
+
+With the parameter as specified above, an input file named SuCCesS_RaTeS.HTM will
+be written to D: \Tomcat \webapps\SMP\files\success_rates.htm
+
+With a parameter line of:
+
+srb_dashboard. zipID:\Tomcat\webapps\SMP\files\srb_dashboard
+If the zip file contains:
+
+Srb_Dashboard.htm
+
+srb_dashboard files/filelist.xml
+srb_dashboard_files/image001.gif
+
+Then the top level file Srb_Dashboard.htm will be written as
+srb_dashboard.htm. The files within the sub-directory srb_dashboard_files
+and the directory name itself will not have their name case changed.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085.
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 65 0f 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+10 Changes for HNG-X
+10.1 Data in to DWH
+
+10.2 HNG-X Data Extracts From DWH
+
+Data Extracts for SLT reporting will be extracted by running the generic reporting
+mechanism as detailed in ref. DES/APP/HLD/0049. The generic data reporting mechanism
+needs to be installed on the DWH and inserted in the TWS (MAESTRO) overnight
+schedule to run after all the data load and aggregation modules and before the end of day.
+Suitable entries will be made in the meta-data tables in the reporting mechanism to
+produce the reports detailed in this section. In addition the reporting mechanism contains
+the facility to produce additional and ad-hoc reports by inserting entries via a DCR.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 66 0f71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+11 Platforms
+
+The Data warehouse is hosted and run on the main Sdaris Host. Details of this are in the
+Solaris Host PPD. Ref. DES/APP/HLD/
+
+The Service Management Portal is a web site hosted at the Southern Data Centre. Since it
+is not part of either the Horizon nor the HNG-X live estate, there is no PPD for this
+platform.
+
+The database server which holds the incoming data, Logon details, and aggregated tables
+is a platform which is shared by the XCC system (used for “cleansing” calls prior to their
+use in calculating the availability SLTs). This system is hosted in BRAOI. It does not
+form part of the Horizon or HNG-X live estate and therefore there is no PPD for this
+platform.
+
+TS (Triole for Service) has been implemented as a call management system within RMG
+Account. The platform is based in Stevenage and is a shared system which is used by other
+major accounts. There is no PPD for this platform.
+
+Peak is the incident management and problem management system implemented within
+RMG Account. The server is hosted in BRAOI. It does not form part of either the Horizon
+or HNG-X live estate and therefore there is no PPD for this platform. The system is
+documented in PK/TSD/001.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 67 of 71
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+FUJ00142218
+FUJ00142218
+
+12 Networks
+
+The network design for the SMP web portals and the design assumptions behind this
+design are documented in 1S30938-001. For brevity, only the diagrammatical representation
+
+is repeated here
+
+oorge ares
+Greece Noniay
+pon gts
+t
+ema
+Poasocor-swot POASOCOt-FWOi Poa-socot-Fwo2
+poasue Gata! 2650-12, Netscreenas he Netscroon2s
+wes
+Server 20/1 cover
+wo oon na
+ont ale
+4a0/3- at xover
+pon a6
+Greace Norway
+Poa soco1-NsMot
+NetScreen
+sect Manager
+‘over
+Fupesoco1Ros FaPesocosRot
+Crossboam
+Guisterea
+Firewall
+PoasMPoev ean 100 018
+a BRAD sdcot-mamt-m.2 por 12
+_ Fujitsu
+POACSINTRANET Fujtsu Corporate Management
+atBRAOt Network Network
+PEAK! & PEAK2 ~
+atBRAG
+PEAKS at LEWO2, ‘MP & MPDEV
+Si BRADY
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DES/APP/HLD/0085
+Version: 1.0
+Date: 49-Jul-2007
+Page No: 68 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+13 System Qualities
+
+13.1 Security
+
+There are two aspects to security: Security of the server itself, and security of the data
+residing on the server. The HNG-X data warehouse will be physically located in the secure
+data centre in IRE11 with a backup data centre in IRE12.
+
+The Service Management Portal is a web site hosted at the Southern Data Centre. It is
+protected by firewalls and the firewalls are configured to only allow traffic from the web
+site to named databases. Specifically, data can flow from the main database and from Peak
+to the web server only by the use of SELECT statements in jsp . Data can only flow from
+the web server to the central database when accessing the Major Incident components of
+the system, and these transactions are controlled via servlets.
+
+The SMP database server is maintained in a secure area, using a security system which is
+separate from the rest of the building. Access to the database is limited by username and
+password. Administrator rights to any part of the server are restricted to a small number of
+SSC staff.
+
+TfS (Triole for Service) is a corporately mandated incident management system. Its
+security is beyond the scope of this document.
+
+Peak is maintained in a secure area, using a security system which is separate from the rest
+of the building. Strong passwords requiring frequent changes, have been implemented.
+The call narrative information held on Peak is not sensitive and is not required to be
+secure. Data connected to Peaks from the live estate should also not be secure (because the
+live estate security systems should prevent this), but as a “double check” such evidence is
+encrypted. All encrypted evidence attached to a Peak which has been closed is
+automatically deleted after 28 days.
+
+13.2 Availability
+
+The Data warehouse will be available during the core POCL day for use in general
+reporting duties. This core day is roughly from 8.00am to 8.00pm. This means that all
+processing and changes to the data in the data warehouse must take place between the
+hours of 8.00pm and 8.00am the following day.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+Page No: 690f71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+The Service Management Portal is available 24 x 7 except during infrequent periods of
+maintenance.
+
+The Service Management database server is available 24 x 7 except during infrequent
+periods of maintenance.
+
+TfS (Triole for Service) is a corporately mandated incident management system. Its
+availability is beyond the scope of this document.
+
+Peak is available 24 x 7 except during infrequent periods of maintenance.
+
+13.3 Usability
+
+The Service Management Portal is a web site which is client-facing. The major influencing
+factor in its design therefore is its usability. A user guide has been written for the SMP
+and it is available on the SMP itself in the form of an html document with a hit-link from
+the menu pages.
+
+13.4 Potential for Change
+
+Reporting requirements are subject to periodic changes and as such there is considerable
+scope for change as requirements are finalised and new requirements agreed.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DES/APP/HLD/0085
+Version: 1.0
+Date: 19-Jul-2007
+
+PageNo: 70 of 71
+FUJ00142218
+FUJ00142218
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+14 Risks and Assumptions
+
+The data warehouse has been in operation under Horizon for some considerable time and
+as such the risks are well known and reduced. However some new reporting requirements
+are being introduced and as such there is some risk. This however is very low as the data
+is captured and stored in files prior to processing and as such the data is available in more
+than one source, and the warehouse is able to work in “catch up mode” when necessary.
+
+The Security requirements at HNG-X are slightly different from those at Horizon, with an
+intention to provide a server which will sit between the live estate and the corporate
+network. Since this server is still in design stage, it is not completely clear at present
+exactly how the .csv files presented by the DWH will actually be collected by the SMP
+database.
+
+The Service Management Portal web server has been in operation under Horizon for some
+considerable time and as such the risks are well known and reduced. The new reporting
+requirements for HNG-X involve some additional development and therefore impose some
+risk. The HNGX changes to the Sysman subsystems means that there will also be a
+requirement to make changes to the System monitors which will have a knock-on effect on
+the SMP.
+
+To date, data relating to availability and engineer performance against SLTs has been
+derived by a merger of data from SMDB and Powerhelp. With the implementation of TfS,
+the incoming data feed from TfS will replace the one from Powerhelp. This imposes some
+tisk because the provision of this data feed is seen as a very minor requirement in the
+overall implementation of the call management System. In addition, TfS is a corporately
+mandated system and therefore there will be political pressure to implement it which will
+exceed anything but the most major technical issues. It is likely therefore that the data feed
+from TfS will not be identical to Powerhelp and will require additional development work
+
+in SMP.
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DESTAPP/HLD10085
+Version: 1.0
+Date: 49-Jul-2007
+
+Page No: 71 of 71

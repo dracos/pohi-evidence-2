@@ -1,0 +1,216 @@
+POL00097745
+POL00097745
+
+Message
+From: Jenkins Gareth Gl [o_
+Sent: 20/03/2013 10:01:02
+To: Ivan Swepson
+cc: i ; Dave Posnett
+; Craig Tuthill
+‘od Ismay
+Subject: tly Private and Confidential - Subject to Legal Privilege - Not for Wider Circulation
+
+Attachments: image003.png; image004.png; image005.png; image006.png; image007.png; image008.jpg;
+DESAPPHLD0083v1.1.Counter.Recovery.doc; HorizonOnlineDatalntegrity_POL.doc;
+ARCGENREPO004.HorizonDatalntegrity.doc
+
+ivan,
+
+{have already done some investigation in this case as a result of an enquiry from Helen Rose in January, so I have the
+main facts already to hand.
+
+I would expect to be able to put something together to share with Andy within the next week {ie before Easter).
+In the meantime there may be something that could be shared with Second Sight:
+
+We have a Design Document on Horizon Online Recovery which may be appropriate to pass to Second Sight. All Horizon
+Online Design documents are freely available to Post Office Ltd, so I think it is POL’s decision as to whether it should be
+passed to Second Sight. I attach that document (DES/APP/HLD/0083) so you can consider if you want to pass it across to
+Second Sight immediately. The key aspects are summarised in a paper entitled Horizon Online Data Integrity for Post
+Office Ltd which I have already given to Second Sight and have also exhibited as evidence in a number of court cases. I
+would have thought that this would meet Second Sight’s requirements as far as Horizon Online is concerned. There is an
+equivalent paper (Horizon Data integrity) that covers the old Riposte based Horizon system (also sent to Second
+
+Sight}. However that doesn’t go into much detail on Recovery. I don’t think there are simple documents on that, but I
+could probably put together a summary paper if really necessary.
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+Distinguished Engineer
+Business Applications Architect
+Post Office Account
+
+FUJITSU
+
+Fujitsu is proud to partner with Shelter, the housing and homeless charity
+
+Reshaping ICT, Reshaping Business in partnership with FT.com
+
+ent - do you really need to print this email?
+
+wea Please consider the envi
+
+POL-0097328
+POL00097745
+POL00097745
+
+From: Ivan Swepson
+Sent: 20 March 2013 08:48
+To: Jenkins Gareth GI
+
+Cc: Simon Baker; Alison Bolsover; Dave Posnett; Rodric Williams; Craig Tuthill; Andrew Winn; Rod Ismay
+Subject: RE: SROO1 - Strictly Private and Confidential — Subject to Legal Privilege — Not for Wider Circulation
+Sensitivity: Confidential
+
+Strictly Private and Confidential — Subject to Legal Privilege —- Not for Wider Circulation
+
+Gareth,
+Further to my email yesterday Simon Baker has asked if you would lead on the response to this SR please in
+light of its’ emphasis on Horizon functionality in response to power and comms failures. Andy Winn will
+
+provide input on the operational procedures given to SPMRs and specifically how POL handled this dispute.
+
+How long do you think you will require for first draft (given Easter coming up) so I can make a note on the
+Tracker?
+
+Many thanks, Ivan
+
+Ivan Swepson I IT Separation Programme Office, IT&C
+
+ae ’ Floor Bunhill Wing, 148 Old Street, LONDON ECIV 9HQ
+
+From: Ivan Swepson
+
+Sent: Tuesday, March 19, 2013 2:44 PM
+
+To: Craig Tuthill; gareth jenkins (Gareth.Jenkins¢
+Cc: Simon Baker; Alison Bolsover; Dave Posnett; Rodric Williams
+
+Subject: SROO1 - Strictly Private and Confidential — Subject to Legal Privilege — Not for Wider Circulation
+Sensitivity: Confidential
+
+; Andrew Winn; Rod Ismay
+
+Strictly Private and Confidential — Subject to Legal Privilege — Not for Wider Circulation
+
+Further to Simon’s email below:
+
+1. Andy, will you take the lead again please on the draft response with input from Gareth (words and
+flowchart) on Horizon operational design for power and comms failures. How long will you require for
+first draft (given Easter coming up) so I can make a note on the Tracker?
+
+2. Who is best placed to enable and facilitate the Horizon testing requested by Second Sight? I suggest
+we need suitable access to a Horizon terminal but I also think we ought to ask for a test plan so we can
+see the number and type of tests to be done to ensure a) the approach is robust (from a system testing
+point of view) and b) the environment is correctly configured and support to enable the testing.
+
+Thanks, Ivan
+
+POL-0097328
+POL00097745
+POL00097745
+
+Ivan Swepson [IT Separation Programme Office, IT&C
+
+From: Simon Baker
+
+Sent: Tuesday, March 19, 2013 1:05 PM
+
+To: Craig Tuthill; Dave Posnett; gareth jenkins (Gareth.Jenkins
+Ismay; Alison Bolsover
+
+Subject: FW: Various items
+
+Sensiti : Confidential
+
+Ivan Swepson; Andrew Winn; Rod
+
+All
+
+Please find attached the next spot review. Also some comments below on what lan expects us to include in our
+response.
+
+Regards, Simon
+
+From: Ian Henderson [mailto:irh¢
+Sent: 19 March 2013 12:14 .
+To: Simon Baker
+
+Cc: ‘Ron Warmington’; Susan Crichton
+Subject: Various items
+
+Sensitivity: Confidential
+
+Simon
+This is a general catch up on a number of issues:
+
+1. I attach Spot Review SROO1.docx which is the John Armstrong case we discussed on the last call
+
+2. The main issue in SROO1 is the automated and largely silent recovery process which occurs when Horizon
+detects either a power or a communications failure. Can you ask Fujitsu to provide us with a clear written
+description, including flowcharts, of how this is designed to operate for both old and new Horizon?
+
+3. Tied in to the above, we would like to run some tests on a live Horizon terminal (possibly a training terminal)
+when we execute various types of transaction and at the same time cut the power or the internet connection.
+We will then observe and analyse the recovery process. It will be important that the terminal being used is a
+close to a live system as is possible. I assume the training office terminal in your building will be the best place to
+do this, however we will probably need to book this for a number of sessions. Will this be possible?
+
+Many thanks. I look forward to seeing you on Thursday afternoon
+With best wishes
+
+Ian R Henderson CCE CISA FCA
+Advanced Forensics - London, UK
+
+Forensic computing expert witness and electronic disclosure specialist
+
+POL-0097328
+POL00097745
+POL00097745
+
+UK Mobile: GRO i
+
+Website: http://advancedforensics.com
+LinkedIn: http://linkedin.com/in/forensicgod
+Twitter: http://twitter.com/forensicgod
+
+CONFIDENTIALITY. This email and any attachments are confidential
+
+If you are not the intended recipient, please notify me at irht
+delete the email and any attachments.
+
+ivileged.
+and
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient,
+you must not use, disclose, reproduce, copy or distribute the contents of this communication. If you have received this in
+error, please contact the sender by reply email and then delete this email from your system. Any views or opinions
+expressed within this email are solely those of the sender, unless otherwise specifically stated.
+
+POST OFFICE LIMITED is registered in England and Wales no 2154540. Registered Office: 148 OLD STREET,
+LONDON EC1V 9HQ.
+
+JOH IO SGI IOUS AIO IOI ROI ADIOS SIDI SOU II DDD AI
+
+Unless otherwise stated, this email has been sent from Fujitsu Services Limited, from Fujitsu (FTS) Limited, or
+from Fujitsu Telecommunications Europe Limited, together "Fujitsu".
+
+This email is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may
+be privileged. Fujitsu does not guarantee that this email has not been intercepted and amended or that it is virus-
+free.
+
+Fujitsu Services Limited, registered in England No 96056, registered office 22 Baker Street, London W1U
+3BW.
+
+Fujitsu (FTS) Limited, registered in England No 03808613, registered office 22 Baker Street, London W1U
+3BW.
+
+PFU Imaging Solutions Europe Limited, registered in England No 1578652, registered office Hayes Park
+Central, Hayes End Road, Hayes, Middlesex, UB4 8FE.
+
+Fujitsu Telecommunications Europe Limited, registered in England No 2548187, registered office Solihull
+Parkway, Birmingham Business Park, Birmingham, B37 7YU.
+
+POL-0097328

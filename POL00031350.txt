@@ -1,0 +1,194 @@
+POL00031350
+
+POL00031350
+Message
+From:
+Sent: 20/06/2013 09:49:48
+To: Parsons, Andrew [/O=BOND PEARCE/OU=First Administrative Group/cn=Recipients/cn=ap6]
+Subject: Fw: Does POL have (and use) a facility to make entries to Sub Post Office Branch books without the SPMRs
+
+knowledge, approval or involvement?
+
+From: Steve Allchorn
+
+Sent: Thursday, June 20, 2013 09:41 AM .
+To: ‘Parsons,.Andre\ <Parsons,.Andrew
+Subject: Fw: Does POL Have (aiid ise) a Facility to MaKe Eiitries to Sub Post Office Branch Books W
+knowledge, approval or involvement?
+
+ithout the SPMRS
+
+Andy
+Last email refers.
+
+Thanks
+Steve
+
+From: Rod Ismay
+Sent: Wednesday, June 19, 2013 10:56 PM
+
+To: Steve Allchorn
+
+Subject: FW: Does POL have (and use) a facility to make entries to Sub Post Office Branch books without the SPMRs
+knowledge, approval or involvement?
+
+Second email to associate with your email SROOS
+Thanks, Rod
+
+From: Rod Ismay
+
+Sent: 05 February 2013 15:44
+
+To: Ron Warmington; Angela Van-Den-Bogerd
+Cc: Simon Baker; irhé
+Subject: RE: Does POL ha’
+knowledge, approval or involvement?
+
+‘lity to make entries to Sub Post Office Branch books without the SPMRs
+
+Ron, lan,
+
+Please see my interim update below. Can I suggest we discuss this further on the call on Friday and consider a workshop
+with relevant specialists to bring the relevant clarity and knowledge to the group.
+
+As regards the 2006 text that you refer to, please let me try to clarify that.
+
+“The introduction of the new Post Office Ltd Finance System (POLFS) in Product and Branch Accounting (PBA), Chesterfield means
+that the finance teams can no longer adjust client accounts on site.”
+
+Post Office introduced a SAP finance system in 2006 and a change in branch trading processes.
+
+We have spoken about situations where branches could inadvertently make errors in the values they enter into Horizon
+and in the clients / products to which they attribute some transactions. Prior to 2006, if a branch miskeyed a £20
+
+transaction to Client A Subproduct X instead of to Client A Subproduct Y then the Horizon data interfaced to the central
+finance system (CLASS) into the “wrong” general ledger line (due to the branch error). Colleagues in Chesterfield would
+
+POL-0028252
+POL00031350
+POL00031350
+
+then investigate data and correct such “wrong line entries” centrally such that the £20 liability went into the right
+{subproduct Y} account centrally. This did not alter the branches focal accounts in Horizon. it was done “on site in
+Chesterfield”.
+
+With the introduction of the SAP finance system a key principle was that we wanted to push awareness and
+accountability for “wrong line entries” and other errors more clearly back down to the branches, who in turn would then
+be more informed to avoid repeating the mistake in future. We therefore began issuing Transaction Corrections for
+things which previously might have been reclassified centrally. May I reinforce here that the desire before and after the
+SAP change was to notify branches of errors of VALUES, but some errors of CLASSIFICATION were not notified back to
+the branches before SAP.
+
+The use of “on site” is therefore about making entries in the central system in Chesterfield, not about making entries
+into Horizon in branch.
+
+Further on in your email you refer to:
+
+- The inference “..that TCs have to be ‘accepted’ at the branch level and that there exists no power/capability at the
+centre (in Chesterfield or anywhere else) to impact any branch’s accounts without the SPMR’s knowledge, approval and
+involvement.”
+
+This is so. TC’s appear on screen in branch inviting the branch to formally accept them or to request more
+evidence. There is a process for following that up if the branch wants more evidence.
+
+However, with some cases of “absentee subpostmasters” who may delegate office leadership to their chosen reps in
+branch the Spmr may not have seen the item, but they would have chosen to delegate oversight to another individual in
+their branch. We would have encouraged and made clear to the subpostmaster, as per their contract, that they have
+responsibility though.
+
+As regards the subsequent matters in your note there are many controls in the systems to ensure double entry
+accounting. As discussed on the last call it would be best for us to respond to specific challenges against that by way of
+investigating specific situations that have been presented to you for consideration.
+
+I would, however, like to differentiate “one sided accounting allegations” from known situations where comms line
+failures etc cause part of a service to fail despite another part having completed. Eg. Like the card payment situation
+that was notified to you during your meetings with subpostmasters or former subpostmasters.
+
+Situations can arise such as the bill payment by debit card where the customers bank account is debited via
+communications through the LINK network, but the update to the bill payment organisation is interrupted. That type of
+situation leads to “Recovery” processes whereby screen prompts advise the colleague in branch what to do as regards
+dealing with the failed bill payment. The accounts will remain in balance by “suspense” balances during recovery. We
+can walk you through processes which confirm the maintenance of double entry accounting in branch and in central
+systems, involving middleware and data harvesting systems etc.
+
+As regards the final comments and the sworn statement, we will have to discuss the specific point being made. {f you
+can expand on it during our next call that would be helpful. If it is indeed an allegation about 2008 then hopefully we
+
+will be able to access relevant records in order to analyse the who, what, whens of the specific allegation.
+
+Kind regards
+Rod
+
+Rod Ismay I Head of Finance Service Centre
+
+valk, We:
+Postlin
+
+terfield, S49 IPF
+
+POL-0028252
+POL00031350
+POL00031350
+
+From: Ron Warmington I
+
+Sent: 05 February 2013 12/167"
+To: Rod Ismay; Angela Va
+Cc: Simon Baker; irh( GRO
+Subject: Does POL have (and use) a
+knowledge, approval or involvement?
+
+make entries to Sub Post Office Branch books without the SPMRs
+
+Angela/Rod:
+
+We are looking into an assertion by a SPMR that POL had, in Bracknell, a basement office where
+entries were being passed over the live Horizon system without the knowledge or approval of
+the impacted SPMRs. Here is a short write-up that addresses this point. Could you please let
+Tan and I know what you discover?
+
+Page 9, Section 7 of POL’s Horizon Operating Manual (as of December 2006) includes a sentence stating that: “The introduction of
+the new Post Office Ltd Finance System (POLFS) in Product and Branch Accounting (PBA), Chesterfield means that the finance teams
+can no longer adjust client accounts on site.” It is not yet clear whether the reference here to “on site” means “in Chesterfield or
+anywhere else within POL” or something else. POL is asked to clarify this. The inference (also to be confirmed or refuted by POL) is
+that TCs have to be ‘accepted’ at the branch level and that there exists no power/capability at the centre (in Chesterfield or
+anywhere else) to impact any branch’s accounts without the SPMR’s knowledge, approval and involvement. What is being asserted
+by this SPMR is that there did exist a capability to pass as it were Journal entries’ — or even one-sided transactions — over the heads
+of the impacted SPMRs and without their knowledge (either as the transaction was executed or perhaps even at any later
+
+stage). This SPMR asserts (he has offered to send us a copy of his sworn where he asserts this) that in 2008 he visited a basement in
+a POL facility in Bracknell where a POL employee demonstrated to him his ability to pass an entry altering a branch’s foreign
+currency cash balance, then, “making light of it” said “I’d better reverse that entry now or the SPMR will have a shortage tonight.” If
+this SPMR’s assertion is true and there really was such a capability (and for persons other than the SPMRs to have been using it),
+then POL will need to report back to the investigators to show all transactions executed there during the period covered by the
+investigation (broadly the previous seven years — from 2006 to end 2012). POL will also need to establish whether that facility
+continued to exist after the implementation of Horizon Online in mid-2010.
+
+Thanks and regards,
+
+Ron Warmington
+
+2nd Sight Support Services Ltd
+Tythe Farm
+
+Maugersbury
+
+Cheltenham
+
+Gloucestershire
+
+POL-0028252
+POL00031350
+POL00031350
+
+GL54 1HR
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient,
+you must not use, disclose, reproduce, copy or distribute the contents of this communication. If you have received this in
+error, please contact the sender by reply email and then delete this email from your system. Any views or opinions
+expressed within this email are solely those of the sender, unless otherwise specifically stated.
+
+POST OFFICE LIMITED is registered in England and Wales no 2154540. Registered Office: 148 OLD STREET,
+LONDON EC1V 9HQ.
+
+POL-0028252

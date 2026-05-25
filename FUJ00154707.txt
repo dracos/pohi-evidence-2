@@ -1,0 +1,193 @@
+FUJ00154707
+FUJ00154707
+
+From: Moronfolu Oddette S[//O=ICL/OU=ICL IT CONSULTANCY/CN=RECIPIENTS/CN=ODETTEG]
+Sent: Mon 17/10/2005 3:13:21 PM (UTC)
+To: Craig Richard[F_ “"G
+
+Subject: FW: Gaerwen Fad code 160604
+
+Sorry I should have forwarded you this email too.
+
+From: Moronfolu Oddette S
+
+Sent: 17 October 2005 15:56
+
+To: Lowther Neneh
+
+Cc: Sewell Peter (FELO1); Pinder Brian; Harrison David P
+Subject: RE: Gaerwen Fad code 160604
+
+Hi Neneh,
+
+In order for Ric to do any investigational work he would probably need a call to be raised. He said he needed a Message
+Store, PS Standard Logs and NT Event Logs, which he usually gets from the SSC.
+
+I went in search of Ann Chambers (SSC) to raise a call on your behalf but she is off today. So I spoke with Mik Peach
+instead to find out if there were any alternative SSC members that could help.
+
+The output of which was, if you want Ric to investigate this then a call has to be raised with SSC giving time and date
+details for all information required for the FAD.
+
+In the meanwhile Ric Craig (development) will continue to think of any possible scenario's that could cause a nil
+transaction other than those mentioned below.
+
+I have taken it as far as I can and from the reactions of all involved I would say there was nothing other than an
+investigation (requiring a call to be raised/ or an ARQ) that we can do at this stage to validate/substantiate any claims.
+
+Hope this helps.
+Regards,
+Oddette
+
+-----Original Message-
+From: Moronfolu Oddette S
+
+Sent: 17 October 2005 13:51
+
+To: Craig Richard
+
+Cc: Pinder Brian; Sewell Peter (FELO1); Lowther Neneh
+Subject: FW: Gaerwen Fad code 160604
+
+Hi Ric,
+
+Can you have a look at this?
+
+They really need to know if there is anything else that could have caused the nil transactions.
+Many Thanks,
+
+Oddette
+
+From: Lowther Neneh
+
+Sent: 17 October 2005 13:22
+
+To: Moronfolu Oddette S
+
+Subject: FW: Gaerwen Fad code 160604
+
+Hi, Odette,
+FUJ00154707
+FUJ00154707
+
+Could you advise us on this please.
+
+I'm on a course tomorrow so hoping Penny would pick it up.
+
+Kind regards,
+
+Neneh
+
+From: Pinder Brian
+
+Sent: 14 October 2005 17:09
+
+To: Thomas Penny; Lowther Neneh; Dunks Andy; Membery William; Sewell Peter (FELO1)
+Subject: FW: Gaerwen Fad code 160604
+
+All
+
+Obviously this has not come our way yet, but meanwhile any thoughts comments?
+I guess we just wait for an ARQ, but do we (security) have anything in our arsenal, to go back to Graham with at all?
+
+Regds Brian
+
+From: graham.c.wardé ~ —GRO
+Sent: 14 October 2005 16 F Ee
+To: Fujitsu’
+Cc: diane.matthew: charles. leighton:
+Subject: Re: Gaerwen Fad code 160604
+
+All
+
+The e mail below from one of our investigators says it all ...........
+
+is there a check that can be made to ensure there are / were no serious errors on the system at this Post Office. We
+already have details of calls made to the helpdesk (see spreadsheet below), which do not highlight anything obvious
+sss are there general error type reports that will tell you when there is a problem with the system, which the Post Office
+may not necessarily be aware of, particularly in relation to the highlighted paragraph....have there been similar problems
+elsewhere ?
+
+(I've heard of Tivoli event logs......... could these be relevant ?)
+
+This case is in it's early stages, but if it were to proceed to a prosecution, we'd likely need a statement which outlines how
+you can confirm that there were no operating errors with this office's system. I haven't submitted an ARQ yet but can do
+so if you feel it's needed.
+
+Happy to discuss if needs be
+
+Regards
+
+Graham
+
+Casework Manager
+Post Office Ltd Investigation Team
+
+PO BOX 1, CROYDON, CR9 1WN
+
+Postline: N/A, STD Phone:
+N/A, Mobex:
+
+VoiceMail:
+1, Mobile: External Email: graham.c.wai
+
+(Charles - can you offer your thoughts)
+
+oe Forwarded by Graham C Ward/e/POSTOFFICE on 14/10/2005 14:39 —----
+FUJ00154707
+FUJ00154707
+
+Diane Matthews
+
+To: Graham C Ward/e/POSTOFFICE@POSTOFFICE
+14/10/2005 14:37 ce:
+
+Subject: Re: Gaerwen Fad code 160604
+
+Graham,
+
+Just to clarify, the Subpostmaster has not made any calls to HSH or NBSC prior to yesterdays audit, and is now voicing
+his concerns over the nil transactions on card account/on line banking transactions.
+
+I believe there are at least 2 scenarios where a nil value will be recorded. These are
+If a customer places a card into the pinpad and enters an incorrect pin
+number, the system will decline the transaction and request the customer
+to remove their card. This transaction was undertaken at the branch
+using a Post Office card account operated by the auditor. The report was
+printed with a nil value showing
+If a customer places a POCA card into the pinpad, enters a correct PIN
+and asks to withdraw cash, if there are no funds in the account, the
+transaction will be declined and the customer requested to remover their
+card. The summary would again show a nil value against the transaction
+
+Please can you check any other possibilities of nil values on these types of transactions with Fujitsu.
+
+Also as the Subpostmaster is blaming the system on his losses, please could we check there are no problems with the
+Horizon kit at the branch.
+
+To confirm, the branch will remain closed until we are happy that the Horizon system is fully operational.
+Thanks
+Diane
+
+Investigation Manager
+Post Office Ltd
+
+POL Capacity
+
+Management Info To: Paul Dawkins/e/POSTOFFICE
+
+Sent by: Jay cc: Andrew Harley/e/POSTOFFICE@POSTOFFICE
+
+O'Laogun Subject: Re: Gaerwen Fad code 160604(Document link: POL Capacity Management
+Info)
+
+14/10/2005 11:15
+
+(See attached file: fad 160604 calls.xis)
+FUJ00154707
+FUJ00154707
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient,
+you must not use, disclose, reproduce, copy or distribute the contents of this communication.
+If you have received this in error, please contact the sender and then delete this email from your system.
+

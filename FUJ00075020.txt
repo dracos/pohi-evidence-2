@@ -1,0 +1,574 @@
+FUJ00075020
+FUJ00075020
+
+Peak Incident Management System
+Call Reference PC0031313 Call Logger _ Customer Call_
+Release Targeted At -- CSR-CI2_2R Top Ref E-9910130827
+
+EDSC
+
+Call Type Live Incidents Priority B -- Business restricted
+
+Contact _ EDSC Call Status Closed -- Reconciliation - resolved
+Target Date 18/10/1999 Effort (Man Days) 0
+
+Summary Receipts and payments mismatch 29 for CAW 28
+
+Progress Narrative
+
+999 15:56:00 User: Customer Call_
+
+ALL PC0031313:Priority B:CallType L - Target 18/10/99 16:56:28
+
+13/10/99 16:15 Raised on behalf of Julie Dart. Receipts and payments
+ismatch 29 live trial offices have receipts and payments mismatches on
+their ca for week 28, This is the first balance produced by these offices.
+jbetails of offices forwarded to Angela Shaw at MFU.
+
+If} Call details
+
+lDiagnostician name:
+
+customer opened date 13/10/1999 16:15:58
+
+CALL PC0031313 opened
+
+bate:13-Oct-1999 16:27:00 User:Barbara Longley
+[fhe call summary has been changed fro
+Raised on behalf of Julie Dart. Receipts and paym
+The call summary is now:-
+
+Receipts and payments mismatch 29
+
+lTfarget Release updated to PDR ~ CSR
+
+Product General/Other/Misc Reconciliation added
+
+Date:14-Oct-1999 07:14:00 User:John Simpkins
+
+IPRESCAN: No office details included on call, Angela hes these - routing to
+ISU. (We expect payments not equal to receipts for 6329, 10511, 221328,
+127140, 455329, 286329 and 023329 due to the transfer problem.)
+
+[fhe call summary has been changed from:
+Receipts and payments mismatch 29
+
+[fhe call summary is now:-
+
+Receipts and payments mismatch 29
+
+[fhe Call record has been transferred to the Team: MgtSupportUnit
+Defect cause updated to 99:General - Unknown
+
+Hours spent since call received: 0 hours
+
+JDate:18-Oct-1999 10:36:00 User:Angela Shaw
+
+New evidence added - 29 offices in ist CA
+
+IF) Response :
+
+Please see the attached evidence for the 29 offices that have all produced
+their Ist cash account. Can we confirm that these were migration problems
+from the Bfd message from the message store. Please route back to MSU
+lbfterwards.
+
+[END OF REFERENCE 12896314]
+
+kesponded to call type L as Category 40 -Incident Under Investigation
+fhe response has been flagged to the gateway team for validation
+
+the Call record has been transferred to the Team: EDSC
+
+fours spent since call received: 0.5 hours
+
+JDate:18-Oct-1999 10:49:00 Uscr:Barbara Longley
+richard, In the absence of John Simpkins, another team member needs to deal
+ath this.
+
+Jbate:18-Oct-1999 13:21:00 Uscr:Richard Coleman
+fhe Call record has been assigned to the Team Member: Paul Steed
+ours spent since call received: 0 hours
+
+lDate:18-Oct-1999 13:26:00 Uscr:Paul Steed
+the call summary has been changed from:
+lkeceipts and payments mismatch 29
+
+fhe call summary is now:-
+
+Receipts and payments mismatch 29 for CAW 28
+
+JDate:18-Oct-1999 15:45:00 User:Paul Steed
+Ir} Response =
+
+FUJ00075020
+FUJ00075020
+
+Responded to call type Lb as Category 40 ~Incident Under Investigation
+the response was delivered to: Powerllelp
+
+Date:18-Oct-1999 15:50:00 User:Paul steed
+If) Response :
+
+Iso 26 were due to migration errors, which leaves three, 006116, 008323 §
+286329. Of these, 286329 has been mentioned by John Simpkins as being
+expected to have discrepancies on account of the Transfer Problem.
+
+[END OF REFERENCE 12906286]
+
+responded to call type L as Category 40 -Incident Under Investigation
+[the response was delivered to: Powertelp
+
+Date: 19-Oct-1999 0:
+
+IF} Response :
+
+IFAD 286329 had a discrepancy of -£946.00, this equates to two Transfer Outs
+
+that were done on 01-Oct-1999 at 10:51:56 GMT and 11:15:34 GMT respectively.
+th were for Product:56 Qty:473 SaleValue:473 Src:LL Dest: AA.
+
+[END OF REFERENCE 12914094]
+
+lkesponded to call type L as Category 40 -Incident Under Investigation
+
+8:00 Uscr:Paul Steed
+
+[Date:19-Oct-1999 09:09:00 Uscr:Paul Steed
+[the response was delivered to: Powertlelp
+
+JDate:19-Oct-1999 10:46:00 User:Paul Steed
+If} Response :
+
+IFAD 008323 is also due to the Transfer Problem. In this case there was a
+fransfer In done ob 02-Oct-1999 (Saturday) which appears to have been missed
+lby the people handling the Transfer Problem. The details of the Transfer In
+re?
+
+bate: 02-Oct-1999
+
+rime 08:59:49
+
+oty:—=1
+salevalue
+bestsu:DD
+srcsU:BM
+[rhe symptom of the Transfer Problem was double minuses which doubled up the
+discrepancy; thus 2 x 3882 - £7764.00 which is the discrepancy reported.
+[END OF REFERENCE 12917852]
+
+lkesponded to call type L as Category 40 -Incident Under Investigation
+
+[fhe response was delivered to: PowerHelp
+
+3882
+
+joate:19-Oct-1999 13:18:00 User:Paul Steed
+New evidence added - Zipped text message store for 006116
+
+IF} Response +
+
+IFAD 006116 is less straightforward than all the others.
+
+[he migration discrepancy was -11298.72 which would have amounted to a
+ifference of (+)£11,298.72. The reported difference is -£57,279.10 which
+would equate to £68,577.82. According to a spreadsheet from Steve Warwick,
+this PO had £38,944.50 worth of Transfers affected by the Transfer Problem. I
+have found three extra ones which were done late on 06-Sep-1999.
+
+[id Num SaleValue Dest Src
+
+2 4431-6242 BE MA
+[7 3215 =-9377 AR MA
+ja 4585 367 JJ MA
+
+can Steve Warwick please look at this one and comment on the reported
+ldiscrepancy. (One week's worth of zipped message store attached).
+[END OF REFERENCE 12922671]
+
+Responded to call type L as Category 40 -Incident Under Investigation
+the response was delivered to: PowerHelp
+
+fhe Call record has been transferred to the Team: QFP
+
+Hours spent since call received: 0 hours
+
+JDate:19-Oct-1999 18:48:00 Uscr:Steve Warwick
+IF} Response :
+
+It have had an extensive look at the message store extract provided and am
+unable at the present time to explain the differences. The total value of
+
+the invalid Transfer In transactions in the message store adds up to
+:57930.50 which is £651.40 greater than the total Cash Account discrepancy.
+the Transfer In transactions (without the invalid records, but with the
+correctional records inserted by Pathway) balance with the Transfer out
+transactions, but without sight of the complete message store (including the
+correspondence server nodes) it is not possible to see whether the
+correctional transactions reached the outlet in time to affect the
+appropriate stock unit balances.
+
+Itt is also possible that since the outlet was migrating on 1.10.99 when there
+as a known problem with the Mode Parameters reference data and the Pathway
+settlement Products Reference Data that the migration of any Remittances and
+['ransfers from the ECCO+ system may not have been handled correctly - again,
+I would need to see the correspondence server node messages in order to
+Jdctermine this.
+
+can you please attach a complete message store for the outlet so that the
+
+FUJ00075020
+FUJ00075020
+
+investigation can continue.
+[END OF REFERENCE 12932460]
+
+Responded to call type las Category 96 Insufficient evidence
+Hours spent since call received: 2 hours
+
+[fhe Call record has been transferred to the Team: EDSC
+
+fhe response has been routed to the gateway team for validation
+
+jDate:20-Oct-1999 07:39:00 Uscr:Diane Rowe
+the Call record has been assigned to the Team Member: Paul Steed
+Hours spent since call received: 0 hours
+
+jDate:20-Oct-1999 08:29:00 Uscr:Paul Steed
+levidence deleted ~ Zipped text message store for 006116
+lew evidence added - Full zipped text format message store for FAD 0061
+
+Date: 20-Oct-1999 08:31:00 User:Paul Steed
+the Call record has been transferred to the Team: QFP
+Hours spent since call received: 0 hours
+
+JDate:21-Oct-1999 07:31:00 User:del (05/01 John McLean)
+the Call record has been assigned to the Team Member: Steve Warwick
+fours spent since call received: .1 hours
+
+[Date:26-Oct-1999 1
+IF} Response :
+Responded to call type L as Category 40 -Incident Under Investigation
+[the response has been flagged to the gateway team for validation
+
+3:00 Uscr:Steve Warwick
+
+jbate:11-Nov-1999 13:27:00 User:Barbara Longley
+IF) Response :
+
+fhe Call record has been assigned to QFP Team Member: Steve Warwick
+(END OF REFERENCE 13398489]
+
+Responded to call type L as Category 40 -Incident Under Investigation
+the response was delivered to: PowerHelp
+
+jDate:12-Nov-1999 14:41:00 Uscr:Angela Shaw
+can you please send this call back to MSU when updated. thanks
+
+bate:15-Nov-1999 10:58:00 User:Steve Warwick
+lk} Response :
+
+lave not yet been able to devote any further time to anlysing the source of
+the final element of the misbalance, but it is undoubtedly tied up with the
+reference data issues which caused the Transfer and Remittance issues
+identified in the earlier update. Is it possible to close this call or is
+further analysis required?
+
+Passing to MSU for guidance.
+
+[END OF REFERENCE 13462430]
+
+Responded to call type L as Category 40 -Incident Under Investigation
+
+[the response has been flagged to the gateway team for validation
+
+[the Call record has been transferred to the Team: MgtSupportunit
+
+Hours spent since call received: 0 hours
+
+Date:18-Nov-1999 18:01:00 User:Del (04/03 Audrey Adams)
+
+If} Response :
+
+11 of the above has been passed to TP. Will advise soonest if further
+investigation is required.
+
+{END OF REFERENCE 13561718]
+
+Responded to call type L as Category 40 -Incident Under Investigation
+[fhe response has been flagged to the gateway team for validation
+
+the Call record has been assigned to the Team Member: Pending closure
+fours spent since call received: 0 hours
+
+Date:22-Nov-1999 16:54:00 Uscr:Barbara Longley
+IF} Response +
+
+H8/11/1999 18:01:52 - By Audrey Adams - MSU
+
+the Call record has been assigned to the Team Member: Pending closure
+[END OF REFERENCE 13621205]
+
+kesponded to call type L as Category 40 -Incident Under Investigation
+[tae response was delivered to: PowerHelp
+
+ldate:13-Jan-2000 11:24:00 User:Angela Shaw
+lr} Response :
+
+FUJ00075020
+FUJ00075020
+
+eed further info @ confirmation from Jacqui Cave (live Trial).
+[END OF REFERENCE 14513376]
+
+responded to call type L as Category 40 -Incident Under Investigation
+fhe response has been flagged to the gateway team for validation
+
+the Call record has been assigned to the Team Member: Angela Shaw
+Hours spent since call received: 0 hours
+
+Date: 18-gan-2000 1:
+IF} Response :
+POCL require an update asap on the 2 remaining FADs on this list that have
+Inot been investigated. The remaining offices are 241329 (Fieldhouse Rd) &
+Jooe116 (Clacton on Sea). Are they migration r & p errors or TI/TO errors
+like the others???? Please return to MSU afterwards. Thanks
+
+[END OF REFERENCE 14673110]
+
+lkesponded to call type L as Category 40 -Incident Under Investigation
+
+[the response has been flagged to the gateway team for validation
+
+the Call record has been transferred to the Team: EDSC
+
+tours spent since call received: 0.5 hours
+
+8:00 User:Angela Shaw
+
+jbate:18-Jan-2000 11:40:00 Uscr:Barbara Longley
+the Call record has been assigned to the Team Member: Paul Steed
+Hours spent since call received: 0 hours
+
+jbate:18-dan-2000 12:04:00 User:Paul Steed
+lk) Response :
+
+241329 is covered by my initial analysis and appears in the update of
+18/10/1999 15:45:15 Response Ref 12906179.
+
+[END OF REFERENCE 14673884]
+
+Responded to call type L as Category 40 -Incident Under Investigation
+[the response was delivered to: PowerHelp
+
+bate:18-dan-2000 1
+I} Response :
+steve Warwick has spent some time on 006116, but there was still an
+lunexplained final element to the misbalance to which MSU appears to require
+[END OF REFERENCE 14675316]
+
+sponded to call type Las Category 40 -Incident Under Investigation
+
+[the response was delivered to: PowerHelp
+
+{the Call record has been transferred to the Team: QFP
+
+Hours spent since call received: 0 hours
+
+7:00 Uscr:Paul Steed
+
+Date:49-dan-2000 09:31:00 Uscr:Lionel Higman
+fhe Call record has been assigned to the Team Member: Steve Warwick
+fours spent since call received: 0 hours
+
+Date:20-dan-2000 15:41:00 Usar:del (05/01 John McLean)
+target Release updated to CSR-CI2_2R
+
+Jbate:21-dan-2000 4:
+lr} Response :
+
+the Call record has been assigned to QFP Team Member: Steve Warwick
+[END OF REFERENCE 14809830]
+
+kesponded to call type L as Category 40 -Incident Under Investigation
+the response was delivered to: PowerHlelp
+
+4:00 User:Barbara Longley
+
+[Date:07-Feb-2000 12:07:00 User:Angela Shaw
+Update requested on last office. Thanks
+
+IDate:17-May-2000 12:13:00 User:Barbara Longley
+lf} Response :
+
+call currently with QFP. HSH are chasing to try to speed closure.
+[END OF REFERENCE 18172045]
+
+Responded to call type Las Category 40 -Incident Under Investigation
+[the response was delivered to: PowerHelp
+
+Date: 24-May-2000 08:49:00 Uscr:_Customer Call_
+lempry 24/05/00 09:38 uktemp6 HSH1 Information: spoke to barbara longley for
+lupdate on this call she said
+
+that it is being dealt with by angela shaw & cant close
+
+ithout confirmation from pocl
+
+FUJ00075020
+FUJ00075020
+
+[Date:0i-gun-2000 1
+Ir} Response
+lkesponded to call type L as Category 94 -Advice and guidance given
+Hours spent since call received: 80 hours
+
+Ibefect cause updated to 42:Gen ~ Outside Pathway Control
+
+fhe Call record has been transferred to the Team: EDSC
+
+[the response has been routed to the gateway team for validation
+
+6:00 User:Steve Warwick
+
+Date:01-dun-2000 12:38:00 Uscr:Barbara Longley
+Ihe Call record has been assigned to the Team Member: Paul Steed
+liours spent since call received: 0 hours
+
+lDate:01-gun-2000 1:
+If} Response :
+outing to MSU FAO Angela. Please see Steve Warwick's final update.
+[END OF REFERENCE 18628856]
+
+Jkesponded to call type lL as Category 40 -Incident Under Investigation
+[the response was delivered to: Powerlielp
+[the Call record has been transferred to the
+Hours spent since call received: 0 hours
+
+3:00 User:Paul Steed
+
+am: MSU-Indt Mgt
+
+bate:02-dun-2000 10:11:00 User:Ilka Koehler-wain
+fhe Call record has been assigned to the Team Member: Angela Shaw
+jours spent since call received: 0 hours
+
+jbate:14-Jun-2000 0:
+IF) Response
+
+call being chased for a speedier closure.
+
+call currently assigned to Angela Shaw in MSU.
+
+[END OF REFERENCE 19086268)
+
+Responded to call type L as Category 40 ~Incident Under Investigation
+[the response was delivered to: Powerlelp
+
+(0:00 User:Barbara Longley
+
+lDatc:15-Sun-2000 10:21:00 User:Angela Shaw
+IF} Response
+
+Have informed POCL that the last office 006116 was due to the TI/TO out
+roblem from October 99. Awaiting confirmation that this call can be closed.
+(END OF REFERENCE 19146202]
+
+Responded to call type L as Category 40 -Incident Under Investigation
+
+the response has been flagged to the gateway team for validation
+
+[fhe Call record has been transferred to the Team: MSU-forClosure
+
+Hours spent since call received: 0 hours
+
+Jbate:05-gul-2000 1
+lr} Response :
+
+IdSH chasing an update on this call
+
+call currently with MSU for closure
+
+(END OF REFERENCE 19789722]
+
+kesponded to call type Las Category 40 -Incident Under Investigation
+
+9:00 User:Deleted User (Anna Croft Sep/00)
+
+jDate:05-Jul-2000 16:10:00 User:Deleted User (Anna Croft Sep/00)
+the response was delivered to: PowerHelp
+
+pate:17-Jul-2000 15:15:00 User:Barbara Longley
+If} Response :
+
+[the Call record has been transferred to MSU-forClosure
+
+[END OF REFERENCE 20172719]
+
+Responded to call type L as Category 40 -Incident Under Investigation
+[the response was delivered to: PowerHelp
+
+bate:16-dan-2001 12:41:00 User: Customer Cali_
+leMPTY 16/01/01 12:40 uk081626 HSH1 Information: From John Moran - Waiting
+for Chesterfield to close the
+
+call.
+
+Date:31-dan-2001 10:53:00 Uscr:Tara Mills
+If) Response :
+
+jOate:3i-Jan-2001 10:54:00 User:Tara Mills
+the Call record has been transferred to the Team: MSU-forClosure
+
+{END OF REFERENCE 24489621]
+
+lkesponded to call type L as Category 40 -Incident Under Investigation
+
+FUJ00075020
+FUJ00075020
+
+ihe response was delivered to: PowerHelp
+
+Date:12-Apr-2001 11:03:00 User:Angela Shaw
+Ir) Response :
+
+PON agree closure. please close call thanks
+
+[END OF REFERENCE 25724391]
+
+responded to call type L as Category 40 Incident Under Investigation
+fhe response has been flagged to the gateway team for validation
+
+fhe Call record has been transferred to the Team: EDSC
+
+Hours spent since call received: 0 hours
+
+jbate:12-Apr-2001 11:48:00 User:Barbara Longley
+If} Response
+2/04/2001 12:03:40 ~ By Angela Shaw - MSU
+
+Pon agree closure. please close call thanks
+
+closing as reconciliation resolved
+
+[END OF REFERENCE 25726420]
+
+kesponded to call type L as Category 90 Reconciliation ~ resolved
+fours spent since call received: 0 hours
+
+CALL PC0031313 closed: Category 90, Type L
+
+the response was delivered to: PowerHelp
+
+Date:12-Apr-2001 11:52:00 User: Customer Call_
+pate and time complete: 12/04/2001 12:56:36
+service Complete (Confirmation) Received
+
+Root Cause Gen - Outside Program Control
+
+Logger _Customer Call_ -- EDSC
+
+Subject Product General/Other/Misc -- Reconciliation (version unspecified)
+Assignee _Unassigned_ -- EDSC
+
+Last Progress 12-Apr-2001 11:52 -- Customer Call_

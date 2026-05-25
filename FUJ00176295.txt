@@ -1,0 +1,162 @@
+“an essential part of everyday life’ www.p
+
+06/02 '02 17:41 FAX
+
+COMMERCIAL TEAM oz
+
+Colin Lenton-Smith
+
+Finance and Commercial Director
+ICL Pathway
+
+Forest Road
+
+Feltham
+
+TW13 7EJ
+
+06.02.02
+
+Dear Colin
+Re: LOST DATA & AUDIT REQUESTS
+
+I wrote to you on 29 August 2001 regarding lost data and you
+responded to that letter on 19 September. I have learnt from
+colleagues in Business Service Management that the latest update of
+the entry in the ICL Pathway CS Problem Management Database
+(dated 7 January 2002) states that “Whilst the action outlined above
+mitigates a recurrence, ICL Pathway has advised the Head of Horizon
+Commercial .... that measures to remove altogether the risk of future tape
+corruption can be achieved only by a complete re-design of the current
+solution”. In fact, I have received no such advice and am therefore
+writing to ask for an update on the incident.
+
+There are significant concerns arising from this issue, which I have set
+out below. My understanding of the events based on information Post
+Office Ltd has received from ICL Pathway is as follows.
+
+Following your attempt to action our Request for Information (RF1)
+Number 8, Charles Leighton, Post Office Ltd Security Manager, was
+told that ICL Pathway were unable to provide the information requested
+because the Audit Trail was incomplete for a period between 8 August
+2000 and 14 August 2000.
+
+This was confirmed in a letter dated 23 May 2001 from Jan Holmes of
+ICL Pathway to Susan Kinghorn of Consignia Internal Audit. Additional
+details provided in the letter showed a remarkable series of events,
+which appear to have been caused by poor implementation of the audit
+
+Page 1 of 3 Post Office Ltd
+Registered in England Number: 2154540
+Registered Office: Gavrelle House, 2-14 Bunhill Row
+London ECIY 8HQ
+
+‘The Post Office and the Post Office symbol are
+Fegistered trade marks of Post Office Ltd in the
+UK and other countries
+
+FUJ00176295
+FUJ00176295
+FUJ00176295
+FUJ00176295
+
+COMMERCIAL TEAM Bo3
+
+06/02 '02 17:41 FAX?
+
+Page 2o0f3
+
+trail (which appears not to comply with the contracted solution), and by
+ICL Pathway’s failure to exercise appropriate management control in
+carrying out the procedures for servicing audit trail requests.
+
+We understand that both data centre tapes for the same period ®
+became corrupt. We have not seen any evidence to indicate that
+
+Pathway understands the root cause of these failures, and therefore
+
+must conclude that either data corruption is a common occurrence or
+
+that there is some common cause that makes the holding of duplicate
+
+or multiple copies ineffective as a resilience measure.
+
+This incident has been further compounded by the fact that the courier
+you used to transport the tape from your Wigan computer centre lost
+the tape in transit.
+
+The lack of a satisfactory explanation for the series of events means
+that we have no confidence that similar incidents will not occur in
+future.
+
+I am also not convinced that the introduction of “read after write”
+activity to the digital linear tapes (DLTs) will alleviate this problem. The
+ICL Pathway problem log states that “The data is appended to DLTs
+over a period of weeks thus the tape is subject to repeated read/write
+activity”. It is also not clear whether the tape corruption had occurred
+on writing to the tapes, in storage, or on reading them to process the
+audit trail query.
+
+! also note from your problem log that the “read after write” facility
+impacts on an already tight schedule for the Legato drives. it appears
+to me that this will have had an adverse impact on the cost of the audit
+trail requests to be provided for the Network Banking service. Can you
+please provide proof that this is not the case.
+
+This incident and the issues arising from lost data represent significant
+risks to Post Office Limited's business. It compromises our ability to
+asssure end to end financial integrity of our business, our ability to
+comply with accounting and data protection regulations, and puts at
+risk our service commitments to our existing clients. This failure also
+calls into question the credibility of the existing service infrastructure as
+a platform that is fit to deliver financial services and that will satisfy our
+future clients specifications for these services.
+
+06/02 '02 17:41 FAX! COMMERCIAL TEAM Bos
+
+Page 3o0f3
+
+As you will be no doubt aware, you are in default of various obligations
+
+in the Codified Agreement as a result of this incident, which give rise to
+
+the right to terminate, and there is a risk of future similar defaults
+
+because the root causes have not been identified and corrected. ®
+These obligations include, without limitation, clauses 702.1 and 702.2,
+
+schedule A02 paragraph 4.1.6 Schedules A15 and A16, Requirements
+
+and Solutions 699, 828 and 829. I note also that the solution described
+
+in S699, namely the use of optical storage media, does not appear to
+
+have been implemented.
+
+I look forward to a full and detailed report in response to this letter with
+ICL Pathway’s detailed plan for rectification of this issue or proposed
+enhancement that will without doubt remove this event happening
+again. Because of the implications of this issue for the banking
+solution, I require a response within the next week.
+
+I would also like confirmation of whether or not the original loss of data
+is capable of rectification, and if so when you expect to recover the
+
+data, this is also required within the next week.
+
+Post Office Limited reserves all rights in relation to this incident
+including those set out in clause 902.2 of the Codified Agreement.
+
+Yours sincerely,
+
+Keith Baines
+
+Post Office Ltd
+
+IS Service Manager
+Calthorpe House
+15-20 Phoenix Place
+LONDON WC1X ODG
+
+FUJ00176295
+FUJ00176295

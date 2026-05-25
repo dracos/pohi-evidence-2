@@ -1,0 +1,874 @@
+FUJ00081896
+
+FUJ00081896
+
+Peak Incident Management System
+
+Call Reference PC0198077 Call Logger Deleted User -- EDSC
+Release Targeted At -- HNG-X 02.10.03.00 Top Ref Live Supp.Test
+Call Type Cloned call Priority B -- Progress stopped
+Contact _ Deleted Contact Call Status Closed -- Fix Released to Call Logger
+Target Date 25/04/2010 Effort (Man Days) 0
+Summary FAD351217 discrepancy of £167.17
+All References Type Value
+Call reference PC0197797
+SSCKEL KEL acha5259Q
+Product Baseline CTR_APP_X0210_V209
+DevintRel-Director ITU SV&I
+SSCKEL KEL acha5259Q
+Release PEAK PC0203438
+DevIntRel-Director ITU SV&I
+TRIOLE for Service 2240422
+DevintRel-Director Live Supp.Test
+Clone Master PCO197797
+Collections Name User Date
+: PrescanCounter : Lorraine Elliott 22-Apr-2010 14:23:02
+Progress Narrative
+
+foate:22-Apr-2010 14:13:26 Uscr:Anne Chambers
+CALL PCO198077 opened
+
+Details entered are:~
+
+summary :FAD351217 discrepancy of £167.17
+call Type:C
+
+call Priority:B
+
+ffarget Release:HNG-X 01.00
+
+outed to:EDSC ~ Anne Chambers
+
+[Dar Apr-2010 14:14:56 User:_customer Call_
+
+CALL PC0197797 opened
+
+jbetails entered are:-
+
+Summary: Ibrahim @ NBSC has reported... On 14/03/2010 office carri...
+all Type:3
+
+call Priori
+Harget Releas
+Routed to:EDSC
+
+Date/Time Raised: Apr 15 2010 2:07PM
+priority: B
+contact Nam
+Sontact Pho:
+iginator:
+riginator's reference: 2240422
+Product Serial No:
+
+Hibrahim @ NBSC has reported...
+
+On 14/03/2010 office carried out Trading Period balance for period 12. The spmr balanced AA and ended up with a discrepancy of
+167.17.
+
+incident History:
+
+04-15 14:07:56 [ White, Martin]
+: create a new request/incident/problem/change/issue
+
+2010-04-15 14:11:16 [ White, Martin]
+eneun_en_rmg : Open Notification
+
+FUJ00081896
+FUJ00081896
+
+P010-04-15 14:11:35 I white, Martin]
+IK0G : Office is on Horizon On Line.
+
+n 14/03/2010 office carried out Trading Period balance for period 12. The spmr balanced AA and ended up with a discrepancy of
+167.17. The was cleared from local suspense as normal and the spmr selected to make good cash. At this point the system printed
+ut. a final balance report for TP12 with the cash figure amended and nil discrepancy. Normally the system would then come up with a]
+message to confirm rollover, but instead went back to the screen asking how the discrepancy was going to be made good. Again the
+spmr selected cash and this time a final balance report showing TP01 was produced, again showing nil discrepancy but the cash
+figure had risen by £167.17. All the rest of the transactions in receipts and payments were still showing. The spmr says that again]
+instead of allowing him to confirm the rollover, it again went back to the screen asking how the discrepancy was to be made good.
+Wain cash was selected and another final balance report produce, this time with the cash figure showing £334.34 more cash than it
+should have done. At this point the spmr managed to get out of the screen (he cannot remember how) .
+
+B010-04-15 14:11:48 [ White, Martin]
+
+FLD : FIELD='zcbflag’ OLD='NO' NEI
+
+YES"
+
+2010-04-15 14:11:53 [ White, Martin]
+Ik0G : On logging on 15/04/2010 the spmr produced a balance snapshot that showed nil discrepancy and again the inflated cash figure.
+
+[the spmr had logged a couple of incidents with NBSC, and was referred to HSD, reference 2238224.
+[he spmr was bounced back to NBSC as a balancing error rather than a system problem.
+
+0010-04-15 14:12:48 [ White, Martin]
+L0G : Can this issue by investigated further and the office contacted about dealing with the issue raised. The office is currently
+
+fin ding Period 01, balance period 01 and are open to the public. The spmr is called Robin, and the contact number is {
+
+b010-04-15 14:13:06 [ White, Martin]
+(OG : Branch ~ Uppinghom SPSO
+
+Jeap - 351217
+
+pate - 14/03/2010
+
+Stock unit - AA
+
+User - RBROO2
+
+lode 3
+
+jalue £167.17
+
+010-04-15 14:13:23 [ White, Martin]
+
+Loc : Can you please investigate this problem? NBSC second line completed their investigation and they cannot find a user error.
+0010-04-15 14:13:59 [ White, Martin]
+
+lneut_en_rmg : Transfer Notification
+
+2010-04-15 14:14:00 [ White, Martin]
+
+IR : Transfer group from '' to 'PEAK*
+
+joate:5-Apr-2010 14:17:58 Uscr: Lorraine Elliott
+Hhe call summary has been changed from:
+Ibrahim @ NBSC has reported... On 14/03/2010 office carri...
+fhe call summary is no
+fraD351217 discrepancy of £167.17
+
+JDate:5-Apr-2010 14:18:08 Uscr:Lorraine Elliott
+oduct EPOSS & DeskTop -- Counter Common (version unspecified) added.
+
+[Date:49-Apx-2010 17:27:46 Uscr:Anne Chambers
+he Call record has been assigned to the Team Member: Anne Chambers
+Progress was delivered to Consumer
+
+JDate:19-Apr-2010 17:30:56 User:Anne Chambers
+[Start of Response]
+
+i think that the date of the problem was 14th April, not 14th March as recorded above - if it is April, I stand some chance of
+finding some useful evidence...
+
+[End of Response]
+
+esponse code to call type J as Category 40 -- Pending -- Incident Under Investigation
+
+esponse was delivered to Consumer
+
+{e:21-Apr-2010 10:18:57 User: Customer Call_
+[the date is supposed to be 14/04/10
+
+BSC has just advised that another office had a similar problem, although the discrepancy has now been sorted out. Details of the
+site and problem are below for information
+
+fice - Hucclecote SPSO
+IFAD - 186523
+
+pate - 15/04/2010
+
+stock unit - OOH
+
+Office rolling from TP12 to TPO1
+
+ffice was dealing with the discrepancy in the office following the TP rollover, and selected settle centrally. The office reports
+lchat nothing happened and they ended up doing this a further 2 times before they could proceed. This has resulted in the office
+settling the loss centrally 3 times. This showed as such as the total on the final balance. The Trading Statement and suspense
+lccount seemed to be correct though. On Monday 19th April the office reported they showed a cash gain of double the original loss
+lnd after further investigation a suspense account was produced that showed 2 clear loss from local suspense entries. We have now
+
+FUJ00081896
+FUJ00081896
+
+Eleared this by clearing gain from local suspense, which should clear the gain in the office.
+
+Te:22-Apr-2010 11:26:12 User:_Customer Call_
+Ihe solution we thought we had for Hucclecote SPSO, FAD 186523, has not resolved the problem, but has actually doubled the
+Hliscrepancy. The original figures in suspense were clear loss from local suspense in OOH su of £998.81 which was the original loss
+in the for the branch and this shows twice. We have entered a clear gain from local suspense but has doubled the discrepancy that
+jas showing on AA su from
+
+1997.62 to £3995.24.
+
+Date:22-Apr-2010 11:27:14 User:_Customer Call_
+je have now also got a similar issue with Kingsbury Road SPSO, FAD 277201, who also had problems when clearing a gain of £235.52
+from the trading period balance done on 15/04/2010 in OOH su. They have ended up now with 3 clear gain from local suspense entries
+n the suspense account for £235.52 from 15/04/2010 on OOH su. The office reports again they had problems when pressing the assign
+to nominee icon and ended up pressing it several times to get the rollover complete. The suspense account and Trading Statement
+from the 15/04/2010 show correct. This office reports there does not seem to be any related cash discrepancy in the branch.
+
+jbate:22-Apr-2010 12:31:14 User:Anne Chambers
+[Start of Response]
+Looking first at 351217 Uppingham...14 Apr, counter 3, SU AA. Times UTC
+
+7:08 Print trial balance report. Shows net loss £167.17
+
+h7:14 Final balance report
+Cash 60834.12
+
+eceipts section:Short Resolved 167.17
+ayments section: Short Transferred 167.17
+
+17:15 Final balance report
+cash 61001.29
+
+eceipts section:Short Resolved 334.34
+Payments section: Short Transferred 167.17
+
+h
+
+9 Final balance report
+ash 61168.46
+
+eceipts section:Short Resolved 501.51
+Payments section: Short Transferred 167.17
+
+checking on BRDB, I can see three pairs of ‘Clear loss from LS'/ cash.
+
+fhe balance report saved for reprint is the correct one (produced at 17:14).
+Whe Suspense account and BTS are correct, and only show the single LS clearance.
+
+Ihe cash figure for the next period in the opening balance table is 60834.12 (again as on the correct balance report) - does this
+mean there is no long term effect on the branch figures? I suspect though there will be an effect within POLFS and they may need toI
+ake some adjustment between the Cleared from LS account and cash.
+
+[Investigations continue,
+[End of Response]
+
+Response code to call type J as Category 40 ~~ Pending
+lkesponse was delivered to Consumer
+
+Incident Under Investigation
+
+[Date:22-Apr-2010 1.
+[Start of Response]
+
+[the two extra LS clearances, and their cash settlement, are in the new TP/BP - so there will be a knock-on effect at the branch.
+IBSC tried to clear Hucclecote SPSO, FAD 186523, via Housekeeping, which seems sensible, but apparently it hasn't worked as
+lexpected. I'11 look at that branch too.
+
+5:15 User:Anne Chambers
+
+It can't yet see anything obvious in the counter logs to indicate why the system apparently went back to the wrong screen twice and
+forced them to clear LS again.
+
+[End of Response]
+
+eaponse code to call type J as Category 40 -~ Pending -- Incident Under Investigation
+
+esponse was delivered to Consumer
+
+jate:22-Apr-2010 14:13:22 User:Anne Chambers
+[Start of Response]
+
+ttm going to clone this
+original call to work out what needs to be done to get the branches straight.
+
+[End of Response]
+
+esponse code to call type J as Category 40 -- Pending -- Incident Under Investigation
+Response was delivered to Consumer
+
+11 and send the clone to development for investigation of the underlying cause, while keeping the
+
+jate:22-Apr-2010 14:
+fall cloned from original call
+
+3:26 User:Anne Chambers
+C0197797 by User:Anne Chambers
+
+[Date:22-Apr-2010 14:13
+eference Adde
+
+Si User:Anne Chambers
+PC0197.
+
+(te:22-Apr-2010
+
+FUJ00081896
+FUJ00081896
+
+Terence Deleted: SSCKEL PCOlSTTST
+
+te:22-Apr-2010 14:14:03 Uscr:Anne Chambers
+Reference Adde 1 OL
+
+joate:22-Apr-2010 15:07:47 User:Anne Chambers
+[Start of Response]
+
+Looking at the counter logs, after they pressed the Stock Balancing/Report button the first time, there was a ClassCastException /
+Lystem error 0437 (trying to pro: a corrupt ReportingService response), forcing them to start again.
+
+his happened at all three branches. The reason for the exception is understood (PC0197409) .
+
+an 4th line please try to confirm that this exception and failure does subsequently cause the user to have to clear local suspense]
+lultiple times, as described clearly at the start of this call. Can anything be done to stop it doing this after an unexpected
+
+[End of Response]
+
+Response code to call type C as Category 40 -- Pending
+
+Incident Under Investigation
+
+[Date:22-Apr-2010 15:16:24 Uscr:Anne Chambers
+evidence Added - 351217 poc and message. log extrac
+
+Te122-ApE-2010 15:19:08 Uscr:Anne Chambers
+Ihe Call record has been transferred to the team: xCtr GDC
+Jser:Anne Chambers Confirmed that this Incident may be passed to the external company with the attached evidence.
+
+jate:22-Apr-2010 15:21:02 User:Suresh Chitikela
+fhe Call record has been transferred to the team: xCtr_BAC_GDC
+he Call record has been assigned to the Team Member: Suresh Ch:
+
+‘€6:23-ApE-2010 11:27:29 User:Suresh Chitikela
+[Start of Response]
+
+incident under investigation
+
+[End of Response]
+
+esponse code to call type € as Category 40 -- Pending -- Incident Under Investigation
+
+[bate:27-Ape-2010 1
+[Start of Response]
+nalys
+
+254 User:Suresh Chitikela
+
+Ihe description given in the Peak says they didnt get the rollover confirmation message instead went back to the previous screen.
+
+but in the counter log file it ig clear that they got the rollover confirmation messsage (MSG01012) at 17:15:13 where the pm clickedI
+the Continue.
+
+fter click Continue on the message (MSG01012) normally Enter button will be disabled but pm able to c
+7:15:31.
+
+ick Enter button here at
+
+from the post office counter log
+h)pm able to rollover ‘ip 12 and final balance report for tp 12 was produced which contains Cash 60834.12 and at this point he was
+lble to get the message MSG01012 saying stockunit rolled over successfully to tpl and bpl.pm click continue on the message.
+
+2)at this point pm was able to click Enter button,which is disabled .counter generated final balance copy for tpl and bp] which
+shows cash 61001.29
+
+biter clicking enter i can see below lines in counter log which i couldn't understand
+
+010-04-14 17:15:43,882 UTC [AWT-EventQueue-0] com. fujitsu.poa.ctre.business logic. startup. Inact ivityTrackerBL
+lstartTimer] DETAIL: timerl::start-@@—-
+
+2010-04-14 17:15:43,882 UTC [AWT-EventQueue-0] com. fujitsu.poa.ctre.businesslogic.startup.InactivityTrackerBLO INEO - [] [J-
+lstartTimerl DETAIL: timerl::start timer: java.util.Timer@b87c51; -@@-
+
+INFO - [] (1~
+
+lot able to reproduce it in my counter.
+
+jot able to understand how pm able to click enter(at 17:15:31) which is disabled.may be this is causing the counter to behave
+iffrently here.
+
+[End of Response]
+esponse code to call type C as Category 40 -- Pending -~ Incident Under Investigation
+
+jDate:27-Apr-2010 11:27:43 Uscr:Suresh Chitikela
+ction placed on Team:xCtr OSR SME, User:Jon Hulme
+
+FUJ00081896
+FUJ00081896
+
+[ater27-Ape-2010 14:07:14 User: Suresh Chitikela
+ction has been removed from the call
+
+7:37 User:Suresh Chitikela
+eam:xCtr_OSR_SME, User:Steven Porter
+
+‘Te:27-Apr-2010 1
+ction placed on
+
+Jate:28-Apr-2010 0:
+[Start of Response]
+ny am I actioned on this peak?
+
+4:17 User: Steven Porter
+
+[End of Response]
+esponse code to call type C as Category 40 -- Pending -- Incident Under Investigation
+
+Te:28-Apr-2010 09:34:19 User:Steven Porter
+Action has been remoyed from the call
+
+jbate:28-Apr-2010 11:11:02 User:Suresh Chitikela
+action placed on Team:xCtr_OSR_SME, User:Martin Day
+
+ate:28-Apr-2010 12:39:24 Uscr:Steven Porter
+ction has been removed from the call
+
+Date:29-ApE-2010 10:33:39 User:Anne Chambers
+It strongly suspect that this problem is connected to the exception that occurred at the start
+te:22-Apr-2010 15:07:47.
+
+of the process ~ see my Peak entry
+
+8) - but then they were unexpectedly presented with a previous screen again. You
+1:02, before they finally Cancelled at
+
+es the PM clicked the Confirm button (at 17:1
+ean see the final balance being reprinted, and Confirm pressed again, at 17;16;49 and 17:
+7:24:04.
+
+[this problem affected 33 branches in all, a few on 7/8 Apr then more 14/15 Apr. This fits in with the BAL problem where corrupt
+essages were being returned. There were no instances last week - the OSRs had been restarted and corrupt messages were not being
+
+lsenerated.
+
+[Date:29-Apr-2010 1.
+evidence Added - Se.
+
+Date: 27-May-2010 12:16:28 Uscr:Suresh Chitikela
+je cannot reproduce this error in any environment. Going through the log files only we need to identify the root cause. From the
+hog file we can not identify what went wrong.There are serious of corrupt messages came from bal at the point of error which was
+
+\ddressed by peak PC0197409.
+
+t this point I am not in a position to identify the root cause and propose a solution
+
+jpate:02-dun-2010 11:42:13 UscriSuresh Chitikela
+IsME Help Required
+
+with Unread user memos detail.With this also i
+
+je are not able to reproduce the issue.GDC UI team suggested me to run the use cas.
+mm not able to reproduce the issue and i am not able to figure out the root cause from the log files also
+
+Joate:02—dun-2010 11:42:37 User:Suresh Chitikela
+ction placed on Team:xCtr OSR SME, User:Steven Porter
+
+Date:02-Jdun-2010 13:45:30 User: Steven Porter
+evidence Added - SME Analy
+
+[Date:02-dun-2010 13:45:53 Uscr:Steven Porter
+SME Analysis provided as attachment.
+
+jDate:02-dun-2010 13:45:58 Uscr:Steven Porter
+ction has been removed from the call
+
+Date:03-Jun-2010 09:42:19 User:Suresh Chitikela
+peak PC0197261 address this issue.Hence a fix is available with PC0197261 .This peak can be closed once PC0197261 is merged in to
+release. PC0197261 is not targetted for any release as of now.it should be considered for the next release
+
+FUJ00081896
+FUJ00081896
+
+Date:08-dun-2010 1.
+[Start of Response]
+
+hanging the status
+
+[End of Responsel
+
+esponse code to call type C as Category 41 -~ Pending -- Product Error Diagnosed
+
+2:17 User:Suresh Chitikela
+
+te:11-Jun-2010 17:06:10 Uscr:Steven Porter
+DEVELOPMENT IMPACT OF FIX:
+
+SPECIFY THE HNG-X PLATFORMS IMPAC’
+es - Counter
+
+ED:
+
+[ECHNICAL SUMMARY:
+ounter Java code changes. Improvements to error handling to mitigate screen freezes, double settlements and accounting/discrepancyI
+lissues.
+
+LIS? OF KNOWN DIMENSIONS DESIGN PARTS AFFECTED BY THE CHANGE:
+"TR APP
+
+ARE ANY OF THESE DESIGN PARTS AFFECTED BY APPROVED CPs/PEAKS in HNGX Release 2:
+lone
+
+ELEASE 2 IMPACT:
+
+)EPENDENCIES :
+ione
+
+DOES THE FIX REQUIRE ANY MANUAL DEPLOYMENT BASELINES:
+/A
+
+DEV EFFORT IN MANDAYS:
+h day fix/test - fix available
+
+IMPACT ON USER:
+Avoids accidental double settlements.
+
+Avoids screen freezes and hence reboots subsequently.
+
+woids further such significant errors.
+
+lrixing this will ensure roll-overs can continue accordingly.
+this can potentially affect any branch.
+
+IMPACT. ON OPERATIONS:
+
+these errors are costly for SSC and 4LS to investigate/resolve. The impact ranges from discrepancies, screen freezes and roll-oversI
+hich can be costly to support to resolve.
+
+HAVE RELEVANT KELS BEEN CREATED OR UPDATED?
+
+IMPACT ON HORIZON TO HNGX BRANCH MIGRATIONS
+io impact, beyond ability to handle call volume.
+
+HMPACT ON TEST:
+lsasic Counter regression testing in CI’ and
+specific error scenarios to be tested in Development.
+Development regression test suite to be run.
+
+lew development automation test suite to be provided.
+
+ISKS (of releasing and of not releasing proposed fix):
+isk of releasing is low - a low risk area.
+
+Risk of not releasing is fairly high - these issues will continue to impact operations and business as described above.
+io pilot required.
+
+LIST OF LIKELY DELIVERABLE:
+LIST OF THE ABOVE ALREADY DELIVERED FOR THE PROPOSED RELEASE:
+
+I.IST OF THE ABOVE ALREADY DELIVERED TO A RELEASE LATER THAN THAT PROPOSED:
+
+LIST OF THE ABOVE LIKELY TO BE REDELIVERED INTO THE PROPOSED OR A LATER RELEASE:
+
+[Date:4i-dun-2010 17:06:36 Uscr:Steven porter
+Product HNG-X Platforms -- CNT-HNG-X NT4 Counter (version unspecified) added.
+
+Date:14-Jun-2010 08:19:19 User:Steven Porter
+[the call Target Release has been moved to Proposed For ~~ HNG-X 02.10.00.00
+
+joate:4-dun-2010 10:19:41 User:Suresh Chitikela
+
+an we get these two peaks tidied up?
+
+Hr suggest:
+
+IPc0198077 ? please route to Sateesh
+
+Pc0197261 ? please close as covered by PC0198077
+
+Ir?d like to do it this way round since PC0198077 is B priority, whereas PC0197261 is C priority. Hence PC0198077 has a better
+chance of being delivered even though it?s the same issue 6#61514;
+
+jote that I do not expect any more work on either peaks ? as far as I am concerned, the solution for PC0198077/ PCO197261 from
+lsateesh is fine.
+
+FUJ00081896
+FUJ00081896
+
+fi have proposed PCOIS807T for 02.10 on this basis.
+Regards
+steve
+
+Jateri4-dun-2010 10:19:55 Uscr:Suresh Chitikela
+fhe Call record has been transferred to the team: xCtr_UI_GDC
+the Call record has been assigned to the Team Member: Sateesh Nelluri
+
+Date:14-Jun-2010 12:50:20 User:Sateesh Nelluri
+KiNGX CODE FIX
+
+FIX DESCRIPTION
+
+li) Add a new boolean flag to WorkspaceScreenControllerBLO ?applicat ionStarted?
+
+ii) WorkspaceScreenControllerBLO registers for the APPLICATION ACTION EVENT NAME, which sets applicationStarted-true
+
+ii) WSSC BLO sets applicationStarted-false, when it fires the APPLICATION ENDED EVENT NAME
+
+iv) Add a new method ?isApplication? which returns applicationStarted II isInCurrentApplication()
+
+) Modify Applicat ionlielperBLO.abandonApplication(needToGoliome) to use this new method instead of wssc.isInCurrentApplication()
+i) Register ScriptControllerBLO to APPLICATION ACTION EVENT NAME, to log a warning if PDL BLO stack is not empty.
+
+ii) if applicationGettingStarted is true, and the new UIA is not an application screen - then isLeavingApplication() should returnI
+erue.
+
+PROPOSED BRANCH
+2.10
+
+COUNTER JAVA FILES CHANGED
+lorkspaceScreenControllerxBLO, ApplicationHelperBLO, ScriptControllerBLO. java
+
+COUNTER PDL FILES CHANGED
+jone.
+
+UNTER REFDATA FILES CHANGED
+jone
+
+SHARED CODE FILES CHANGED
+jone.
+
+IAL JAVA CODE FILES CHANGED
+jone.
+
+OL FILES CHANGED
+lone.
+
+THER FILES CHANGED
+jone.
+
+PPROPRIATE CODE COMMENTS
+es
+
+)EPENDENCIES
+
+RELATED PROBLEMS
+jone.
+
+[NIT TESTING EVIDENCE
+
+REGRESSION TEST CLASS
+Pc0198077_FinishPrematureApplicationTest. java
+IBACKWARDS COMPATIBILITY
+
+V/A.
+
+DEVELOPMENT DOCUMENTATION
+one.
+
+REQUIREMENTS DOCUMENTATION
+jone.
+
+HELP
+one.
+
+nvidence Added ~
+
+[pate:44-sun-2010
+evidence Added -
+
+jbate:14-dun-2010 12:51:55 User:Sateesh Nelluri
+ction placed on ‘Team:xCtr_OSR_SME, User:Steven Porter
+
+FUJ00081896
+FUJ00081896
+
+Pateris-sun-2010 1
+IME Review:
+
+753755 User
+
+teven porter
+
+changes have been reviewed previously - production code is fine.
+
+lest is OK.
+
+[Date:i5-dun-2010 10:53:57 Uscr:Steven Porter
+ction has been removed from the call
+
+[pate:45-Jun-2010 11:39:22 Uscr:Sateesh Nelluri
+ction placed on Team:RelMngmntForum
+
+Te:16-Jun-2010 09:37:08 User:Steven Porter
+The specific issue which caused the roll-over and subsequent discrepancy was addressed in PC0196767.
+
+[here is a wider, general issue in relation to error handling that is still not addressed, hence which can and will still cause
+roll-over and subsequent discrepancies. This wider issue is outstanding, and can also contribute to screen freezes and double
+settlements and hence further di
+
+repancies.
+
+The wider issue can occur when any unhandled exception ¢
+such example).
+
+cours in the early stages of the roll-over process (PC0196767 was just one
+
+Ihis wider issue is addre:
+
+ed by the fix for this peak.
+
+Date:28-Jun-2010 16:17:53 Uscr:Sateesh Nelluri
+ction has been removed from the call
+
+[Date:0i-dul-2010 1
+ffhe call Ta
+
+8:32 User:Christopher Hammond
+get Release has been moved to Targeted At -- HNG-X 02.10.03.00
+
+Jate?09-dul-2010 09:40:28 Uscr:Sateesh Nelluri
+[Start of Response]
+
+[End of Response]
+Response code to call type C as Category 46 -- Pending -- Product Error Fixed
+
+Dat e:16-dul-2010 1:
+Rvidence Added - 22
+
+[ate:i9-dul-2010 08:51:43 Uscr:Sateesh Nelluri
+Defect cause updated to 15: Development - Low Level Design
+
+Te:19-dul-2010 08:52:15 User:Sateesh Nelluri
+Ihe Call record has been transferred to the team: xCtr REL GDC
+
+Date:21-Jul-2010 15:58:02 User:Pavan Vejendla
+Rig: 418 ccIT
+
+Release: CTRO2.10.03.00
+baseline . APP_X0210_V209
+
+beak has been successfully verified at 4L9 CCIT and working as expected
+
+Scenario covered:
+
+rest
+h. Check we're at Front Office Home
+
+2. Disable network
+
++ Press Postal Services", "F2"
+
+Press RM Speed bulk", "84"
+
+System error will occur
+
+6. Now enable network
+
+7. Press RM Speed bulk", "84"
+
+Enter barcode
+
+Is. Press Enter
+
+HO. Complete the prin
+
+Hii. Current screen should be in front office home
+
+Date:21-Jul-2010 16:13:29 User:Kishor GaneshRao
+the Call record has been assigned to the Team Member: Kishor GaneshRao
+
+FUJ00081896
+FUJ00081896
+
+[ateiae-sul-2010 1.
+
+4:23 User Pavan vejendia
+
+FIX RELEASE CHECKLIST
+
+E FULLY COMP!
+
+etx IMPACT TEMPLA’
+
+ME APPROVAL GRANTED?
+
+CODE CHECK-IN BRANCH SPECIFIED?
+es
+
+ALL, CHECKED-IN FILES HAVE PEAK REFERENCE IN CVS COMMENT?
+
+FIX PASSED CIT AND REGRESSION TESTING?
+
+L UPDATED TO
+
+PEAK FIX?
+
+CIT TEST SCRIPT UPDATED TO REFLE
+IT TEST RESULTS PUBLISHED?
+es
+
+PEAK?
+
+Jate:26—dul-2010 4.
+Addec
+
+4:42 User:Pavan Vejendla
+Product Baseline CTR APP X0210 v209
+
+eferen
+
+[pate:26-dul-2010 13:14:45 Uscr:Pavan Vejendla
+oP Reference set to: Product Baseline CTR APP _X0210 v209
+
+Jate:26-Jul-2010 13:15:04 Uscr:Pavan Vejendla
+The Call record has been transferred to the team: Devy-Int-Rel
+Jser:Pawan Vejendla Confirmed that this Incident may be passed to the external company with the attached evidence.
+
+Date:30-Jul-2010 11:22:15 User:Vijesh Pandya
+[Start of Response]
+
+Baseline has been processed. and is available for release to test
+[End of Response]
+esponse code to call type C as Category 49 =- Pending -- Fix Available for Independent Test
+
+30-Jul-2010 11:22:22 User:Vijesh Pandya
+rd has been transferred to the team: Int-Rel
+
+jbate:30-dul-2010 11:43:49 User:Vijesh Pandya
+fhe Call record has been transferred to the team: Live Supp.Test
+
+re:10-Aug-2010 09:55:48 User
+eference Added: DevIntRel=Dir
+
+jabe?ii-Aug-2010 17:47:14 User:Sheila Bamber
+ffoP Reference set to: Product Baseline CTR _APP_x0210_V209
+
+[Date:24-Aug-2010 12:12:59 Uscr:John Budworth
+
+eference Added:
+
+ell
+
+Date: 25-Aug-2010 10:47:36 Uscr:Lionel Higman
+Reference Added: DevIntRel-Director Live Supp. Test
+
+JDate:25-Aug-2010 11:02:43 Uscr:Lionel Higman
+Reference Deleted: DevintRel-Director LST
+
+[Date:03-Sep-2010 15:05:06 Uscr:Sheila Bamber
+
+FUJ00081896
+FUJ00081896
+
+fie Call record has been assigned to the Team Member! Release to hive
+
+te:15-Sep-2010 16:47:21 User:dohn Budworth
+[Start of Response]
+
+counter release RNT9612 delivering Tivoli Product COUNTER _X0210 54 1 has now commenced roll out to the live sstate. Routing to call
+hogger for closure.
+
+[End of Response]
+
+Response code to call type C as Category 71 -- Final
+outing to Call Logger following Final Progress update.
+
+Fix Released to Call Logger
+
+Jate?17-Sep-2010 16:31:53 User:Anne Chambers
+[Start of Response]
+
+Hhis problem has happened intermittently since April but never at the levels seen then. Being investigated on PC0204396. The good
+jrews is thatno instances have been seen since this fix was applied. Closing call.
+
+[End of Response]
+
+esponse code to call type C as Category 71 -- Final
+outing to Call Logger following Final Progress update.
+
+Fix Released to Call Logger
+
+[Date:47-Sep-2010 16:31:58 Uscr:Anne Chambers
+CALL PCO198077 close:
+
+tegory 71 Type C
+
+Root Cause Development - Low Level Design
+
+Logger Deleted User -- EDSC
+
+Subject Product EPOSS & DeskTop -- Counter Common (version unspecified)
+Assignee Deleted User -- EDSC
+
+Last Progress 17-Sep-2010 16:31 -- Anne Chambers

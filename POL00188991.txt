@@ -1,0 +1,64 @@
+POL00188991
+POL00188991
+
+From:
+
+Sent:
+
+To: Lesley J Sewellf
+Subject: FW: Email summary
+Attachment: responses to emails.doc
+
+Lesley, Alwen
+As a heads up Ron mentioned to today that he was going to quote one of the emails in the preliminary report.
+
+He was going to quote “Although it is rarely done it is possible to journal from branch cash accounts. There are
+possible P&BA concerns about
+how this would be perceived and how disputes would be resolved.”
+
+I hope I have convinced him otherwise, however he is being unpredictable right now and I can’t guarantee where he
+will end up. This quote is clearly referring to POLSAP and not horizon, he now understands that, but lan and Ron are
+still thinking though their position on whether to include it.
+
+Simon
+
+From: Simon Baker
+
+Sent: 25 June 2013 16:45
+
+To: Ron Warmington; Ian Henderson...
+Cc: Lesley J Sewell; Alwen Lyons:
+Subject: Email summary
+
+Ron, lan
+Following the discussion on the emails attached document details my findings.
+In summary the emails fall into three categories
+
+1. The email is referring to POLSAP, not horizon
+
+2. The email is referring to reference data, this is managed by a different team, with no connection to the
+testing team, apart from the fact that some are based in Bracknell (but a different part of the building)
+
+3. The email is about testing TCs in the test environment as part of Horizon release 5 which contained changes
+that required the TC process to be tested.
+
+I took a couple actions away from our discussion.
+1. For point 1 above, confirm how changes to POLSAP impact sub postmasters and Horizon
+2. For point 3 above, confirm that the FAD codes used were test branches.
+
+For action 1, I can confirm that there no automatic interfaces from POLSAP to Horizon. Any changes to POLSAP
+that need to be reflected in Horizon are done by the TC process.
+
+For action 2, I have investigated the process where reference data is feed into the test system, and the reference
+data system feeds data to both Horizon live and Horizon test so the FAD codes are the same in both systems.
+
+Simon Baker Head of Business Change and Assurance
+
+Old Street, London, EC1V 9HQ
+
+POL00188991
+POL00188991
+
+postoffice-co'u
+@postofficenews
+

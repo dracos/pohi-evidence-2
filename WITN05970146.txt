@@ -1,0 +1,339 @@
+WITN05970146
+WITNO05970146
+
+RESTRICTED - COMMERCIAL DRAFT
+
+OPptiON C - CONSIDERATIONS AROUND FUTURE USE OF ASPECTS OF THE ICL PATHWAY SOLUTION
+
+1. Introduction
+
+This note explores a number of possibilities for future use of aspects of the ICL Pathway solution in an Option C (Termination) environment.
+For the purpose of this note, Option C is taken to mean the termination of all current contracts with ICL Pathway, and in particular the demise
+of any requirement from BA for the Benefit Payment Service. However, given that POCL’s desire for automation still remains, it is likely to be
+suggested that ICL Pathway could continue, under some revised contract, to provide front end automation for POCL.
+
+2. Advantages of Re-Use
+
+Although there may be a natural reaction against any further use of ICL Pathway or its solution, based on POCL’s experience of the ICL
+Pathway’s track record, there are a number of potential justifications for examining re-use options:
+
+¢ the likely lead-time and costs of any “new” procurement for front end automation - any new procurement is likely to take at least 2-3 years;
+re-use of ICL Pathway may considerably reduce this delay.
+
+* reduction in risk (“better the devil you know”; much of solution now present and becoming proven)
+
+* gaining maximum leverage out of the considerable sums spent by POCL during the past three years in working with ICL Pathway and in
+defining, assuring, testing the Horizon solution and planning its rollout.
+
+* cost benefits through reduction of any termination charges with ICL Pathway and more attractive (“fire-sale”) pricing
+3. Specific Issues
+Before considering the options for re-use, it is worth exploring a number of specific issues:
+
+e What are POCL’s business requirements? Have they changed to invalidate the Pathway solution?
+
+ICL Pathway successfully bid and commenced development against an expression of POCL’s business requirements which was produced
+
+some 4 years ago. With the removal of BPS and other changes to POCL’s business and processes (move towards Network Banking, desire
+to re-engineering the end to end design, etc), we need to understand whether ICL Pathway’s solution is still valid (or rather, how much is
+
+still valid).
+
+Jf/Option C Considerations Page 1 of 7
+WITN05970146
+WITNO05970146
+
+RESTRICTED - COMMERCIAL DRAFT
+
+It is worth being aware that 9 other Post Offices world-wide are now using, or planning to use, a Riposte based solution (and that none of
+these have a Benefits Payments Service type requirement). A number of these have profiles of business which reflect POCL’s new
+direction, and have explicitly selected a Riposte based architecture to meet their needs - in particular a number who have high levels of on-
+line processing have chosen the Riposte based architecture. [This increase in use of on-line by POCL may change the balance of frame relay
+vs ISDN on commercial and performance terms, however this is does not fall outwith the ICL Pathway architecture].
+
+© Solution vs Company
+
+In considering any re-use, it is important to distinguish between ICL Pathway (the company) and the Horizon solution. Whatever our
+experience and view of ICL Pathway as a supplier, the Horizon solution - taken to be mean the technical solution to be provided by ICL
+Pathway - was evaluated by POCL prior to award of contract and was considered to be fit for POCL’s needs (and indeed to provide
+advantages, in terms of resilience and availability, over other solutions).
+
+In this “pro’s” and “con’s” in this document it is the solution, rather than the company, which is being considered; some points on ICL
+Pathway as a supplier are made later in this document.
+
+© Application vs Infrastructure
+
+It is also important to distinguish between the business applications developed by ICL Pathway, and over which there may be some
+concerns (eg EPOSS) and the underlying infrastructure, of which we have increasing confidence. The majority of problems (at least
+visible to POCL) to date have been within the implementation of Pathway’s applications (where we believe they have taken an
+inappropriate approach and not allowed an independent verification and validation) rather than in the infrastructure, where they have
+taken a more traditional approach, have been more open, have involved various joint working teams, etc.
+
+« Infrastructure
+
+We should not underestimate the complexities of building a secure, self-managing, resilient, highly available infrastructure covering 20,000
+offices and 40,000 counter terminals spread over the entire UK, which is capable of being operated by non-technical staff with “zero-
+intervention” (backups etc) in the office. Although other service providers could undoubtedly build such an infrastructure given time, the
+scale and nature of our operation would be alien to them much as it was with ICL Pathway, and the complexity likely to be initially
+
+Jf/Option C Considerations Page 2 of 7
+WITN05970146
+WITNO05970146
+
+RESTRICTED - COMMERCIAL DRAFT
+
+underestimated. We should be sceptical of any suggestion that such an infrastructure could be build bought “off the shelf” or developed
+without considerable time, cost and effort by a third party.
+
+4. Non-technical considerations
+
+There are, of course, a number of “non-technical” issues that are likely to influence any decision to make further use of ICL Pathway or its
+solution.
+
+These would include:
+
+* are ICL Pathway “fatally wounded”?
+
+© can ICL Pathway or POCL make the transition to a new form of relationship? Will the necessary changes (including of staff) be made?
+* does POCL have sufficient faith in ICL Pathway to deliver?
+
+* can suitable relationships be (re-)built between POCL and ICL Pathway to enable future working?
+
+* can a service be negotiated with and delivered by ICL Pathway in parallel with the work on termination of the current ICL Pathway
+contract?
+
+No view is taken within this paper on these issues.
+
+Jf/Option C Considerations Page 3 of 7
+WITN05970146
+WITNO05970146
+
+RESTRICTED - COMMERCIAL DRAFT
+
+5. Possible Levels of Re-Use
+
+Outlined below are a number of levels at which we might consider “re-use” of the ICL Pathway solution.
+
+Description Pro's Con's
+Re-use of relevant parts of design ¢ Infrastructure design still valid - « New service provider may not wish to be
+through some form of purchase of IPR Pathway have addressed and solved constrained by previous solution
+
+many of the unique problems of
+POCL (size, network etc) which any
+other service provider would hit.
+
+(ICL Pathway cease to have any major
+role with POCL, and therefore do not
+provide or operate service)
+
+« Documentation of “design” in a state fit for
+useful handover unlikely to be simple (may
+need ongoing consultancy)
+
+Purchase ICL Pathway technical ¢ Avoids having to design and build * May acquire kit too soon for use, becomes
+infrastructure (including hardware, infrastructure from scratch obsolete
+
+operating systems, etc), as is, for our ae . . . A
+
+ee ‘ieee y' ) ° ¢ Opportunities for good pricing? ¢ Little value in large amount of un-installed
+
+hardware; little installed so far in field.
+
+Could include: * POCL take on “risk” of systems integration
+
+« data centres (buildings? staff?)
+( 8 ) © Much of infrastructure is outsourced - eg
+
+* network (contracts?) data centres are rented locations, with
+
+«support services operations outsourced to other ICL
+VISIONS.
+* surveys . «ops
+, © POCL potentially take on variety of existing
+
+subcontracts from Pathway.
+
+Jf/Option C Considerations Page 4 of 7
+Level Description
+3 Contract to ICL Pathway for use of .
+infrastructure on which POCL run
+own applications (a form of “facilities
+management” deal).
+
+Service could include:
+¢ hardware in offices and data centre
+¢ provision of comms network
+
+* provision of operating systems, .
+middleware, security, systems
+management, software
+distribution, ....
+
+* operation of data centres
+¢ installation activities
+
+© support activities (field support,
+help desks etc).
+
+POCL manage development of
+applications - either in house or
+through third party subcontractor
+(maybe direct use of Escher for
+counter?)
+
+Pro’s
+
+RESTRICTED - COMMERCIAL
+
+Infrastructure believed sound and
+“ready to roll”
+
+Infrastructure largely independent of
+application design; problems of
+scale, geography etc likely to be hit
+by any service provider; Pathway
+believed to have solved these
+problems
+
+Pathway technical infrastructure
+reflects that used in other countries.
+PO (eg Riposte etc)
+
+Infrastructure provides significant
+functionality which we would have
+to provide in any solution:
+
+¢ data transport/comms
+¢ security (incl crypto)
+
+* system management
+
+¢ support
+
+Allows POCL to focus on the
+business applications whilst service
+provider provides the largely
+business-independent infrastructure
+
+WITN05970146
+WITNO05970146
+
+DRAFT
+
+Con's
+« Need to develop clear definition of
+
+“infrastructure” and therefore of the service
+provided.
+
+« POCL take on some integration risks (eg
+between application and infrastructure)
+
+e Will other parties be able to develop
+applications for this infrastructure without
+considerable Pathway involvement?
+(especially at startup).
+
+* Need to obtain full and unfettered access to
+design of infrastructure to be able to
+discharge our expanded integration role
+
+* POCL will need to be able to “manage” ICL
+Pathway’s provision of infrastructure.
+
+« Writing applications from scratch =>
+rollout not possible until critical mass
+available.
+
+Jf/Option C Considerations
+
+Page 5 of 7
+Level Description
+4 Contract to ICL Pathway for use of .
+Infrastructure plus existing
+applications (APS, EPOS, OBCS?).
+
+POCL develop future applications as
+in (3).
+
+5 Contract to ICL Pathway for use of .
+
+Infrastructure plus existing
+applications (APS, EPOS, OBCS?) plus
+for development of new applications in
+some “partnership” manner.
+
+[Would need revised relationship with
+ICL Pathway where we have full
+visibility and review of design, no
+“hiding behind IPR’ etc]
+
+RESTRICTED - COMMERCIAL,
+
+Pro’s
+
+Allows infrastructure and existing
+applications to be rolled out,
+replacing existing legacy automation
+
+Early rollout of infrastructure de-
+risks rollout and allows early
+introduction of new functionality.
+
+Pathway continue to take some
+integration risk/ responsibility
+
+Pathway have application
+development capability.
+
+WITN05970146
+WITNO05970146
+
+DRAFT
+Con's
+
+e Are these applications what we now want
+(eg EPOSS).
+
+© —EPOSS is not built on Escher’s strategic
+EPOS product; Pathway already
+considering re-write (EPOS2).
+
+* Have to integrate new applications into
+existing EPOSS solution.
+
+« Need to gain assurance on current
+applications (as we “take them over”) -
+need visibility of design etc.
+
+* Need to move to new mode of operation
+with ICL Pathway for application
+development - responsibilities on both ICL
+and POCL.
+
+Jf/Option C Considerations
+
+Page 6 of 7
+WITN05970146
+WITNO05970146
+
+RESTRICTED - COMMERCIAL DRAFT
+
+5. Conclusion
+
+These options are, of course, highly dependent on the right commercial and contractual arrangements being achieved between POCL and ICL
+Pathway. If the correct agreements could be reached, then there may be some advantage in POCL making use of at least part of ICL
+Pathway’s solution in their future plans - where ICL Pathway already developed a suitable solution and are in a position to deploy it ina
+considerably shorter timescale than could be achieved with a new service provider.
+
+The provision by ICL Pathway of a managed technical infrastructure (level 3), on which POCL could mount its applications, could be worthy
+of further consideration, if a suitably beneficial commercial arrangement could be found. The purchase by POCL of elements of hardware - eg
+PCs, servers, etc - is not considered to significant benefit for POCL and is not recommended.
+
+In summary - some options around the infrastructure are potentially worth exploring in more detail, but dependent on:
+* anadvantageous commercial agreement for POCL
+
+* agreement of a suitable contractual arrangement with ICL Pathway
+
+* a belief that we can work with ICL Pathway
+
+Jf/Option C Considerations Page 7 of 7

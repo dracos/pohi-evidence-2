@@ -1,0 +1,3624 @@
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+Document Title: HNG-X SUPPORT NETWORK LLD
+
+Document Reference: DEV/INF/LLD/0054
+
+Document Type: Low Level Design (LLD)
+
+Release: 1.8
+
+Abstract: Provides a Low level description of the Support access network
+infrastructure.
+
+Document Status: APPROVED
+
+Author & Dept: Jon Dawes
+
+Internal Distribution: Dean Parsons
+Gill Jackson
+
+Extemal Distribution:
+
+Approval Authorities:
+
+Nam Role Signatu Date
+
+Solution Design /
+
+Infrastructure Design Dave Haywood
+
+Infrastructure Mark Jarosz
+
+Note: See Royal Mail Group Account HNG-X Reviewers/Approvers Role Matrix (PGM/DCM/ION/0001) for
+guidance.
+
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 1 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+0 Document Control
+
+0.1 Table of Contents
+
+0 DOCUMENT CONTROL.
+
+0.1 Table of Contents.
+0.2 List of Tables..
+0.3 List of Figures.
+0.4 Document History.
+0.5 Review Details.
+0.6 Associated Documents (Internal & External).
+0.7 Abbreviations.
+0.8 Glossary...
+0.9 Changes Expecte
+0.10 = Accurac:
+0.11. Copyright.
+
+INTRODUCTION
+
+1 Purpose...
+2 Readership.
+3 Scope....
+A Assumption
+5
+6
+7
+
+Risks..
+Dependencies.
+Constraints (Standards, Policies, Guidelines).
+
+2 OVERVIEW...
+2.
+
+Design Proposal - “RED LAN” Support Network.
+
+Target design high level diagram,.
+Design overview.
+IRE11 and IRE1
+
+NNNNNNNNNN=
+Conon bnons
+
+3 FIREWALL RULEG.........:000000
+3.1.1 Firewall Rule.
+
+4 PLATFORM REQUIREMENTS.
+
+4.1.1 Availability & Resilienct
+4.1.2 SAS Servers...
+4.1.3 Software delivery.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED PageNo: 2 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+0.2 List of Tables
+
+Table 1 ASA Interface Security.....
+Table 2 DC Handoff routers...
+Table 3 DC Local Support Handoff router.
+Table 4 BRAO1 LAN info.
+Table NAT table — Corporate to Horizon to HNG-X. - Now md!
+
+Table 6 LEW02 LAN info.
+Table 7 CREO2 LAN info....
+Table 8 STE04 LAN info......
+Table 9 WAR13 LAN info... sees
+Table 10 WGN01/BTLO1 Loopback addresses.....
+Table 11 IRE11 and IRE 19 ASA Firewall Rule base.
+Table 12 BRAO1 Firewall Rule base.
+Table 13 STE04 Firewall Rule base....
+Table 14 LEW02 Firewall Rule base...
+Table 15 Wigan and Bottle Firewall Rule base.....
+
+Table 16 SAS connectivity requirements...
+Table 17......
+
+0.3 List of Figures
+
+Figure 1 Support sites target design High level diagram.
+
+Figure 2 Support Networks (Migration phase) Four DC sites High level diagram.
+Figure 3 Traffic flow diagram TBC when the next version of the DC LAN LLD is issued........
+
+Figure 4 Generic GRE tunnel diagram....
+
+Figure 5 Logical network diagram........
+Figure 6 Data Centre Support Access physical.......
+Figure 7 Data Centre Support Access logical.
+Figure 8 Data Centre Support Access routing.
+Figure 9 IRE11/19 RMGA LAN physical...
+
+Figure 10 IRE11/19 RMGA LAN Logical.......
+Figure 11 BRAO1 Support transit Network Physical...
+Figure 12 BRAO1 Support transit network Layer 3 diagram......
+Figure 13.BRA01 BGP/OSPF/IPSEC/GRE diagram......
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 3 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+Figure 14 BRA01 HNGx - Horizon integrated Layer 3 Support Workstation LAN....
+Figure 15 LEW02 Support transit Physical Network.....
+Figure 16 LEW02 Support transit network Layer 3 diagram.....
+Figure 17 LEW02 BGP/OSPF/IPSEC/GRE diagram.....
+Figure 18 LEW02 HNGx - Horizon integrated Layer 3 Support Workstation LAN...........
+Figure 19 CREO2 Physical.
+Figure 20 CRE02 Layer 2/BGP/NAT diagram.
+Figure 21 CREO2 Layer OSPF/GRE diagram.........
+Figure 22 STE04 Physical..
+Figure 23 STE04 Layer3 diagram.......
+Figure 24 STE04 Layer 3 BGP/OSPF/GRE/IPSec diagram...
+Figure 25 STEO4 HNGx - Horizon integrated Layer 3 Support Workstation LAN
+Figure 26 WAR13 Physical.
+Figure 27 WAR13 Layer 3 diagrai
+Figure 28 WAR13 Layer OSPF/GRE diagram.....
+Figure 29 WGNO1/BTL01 Data Centre Layer 3 diagram...
+Figure 30 WGNO1/BTLO1 Data Centre BGP/NAT diagram.....
+Figure 31 WGNO01/BTLO1 Data Centre IP Routing/IPSEC/GRE diagram.....
+
+Figure 32 SAS Connectivity diagram...
+Figure 33 Software delivery diagram (TBC
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED PageNo: 4 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+0.4 Document History
+
+Version No. Date Summary of Changes and Reason for Issue Associated Change-
+CP/PEAK/PPRR
+Reference
+
+0.1 15-Oct-2007 I Initial for review Internal Peer
+Review
+
+0.2 10/11/07 Made changes in line with peer review TBD
+
+0.3 13/01/08 Made changes in line with formal review TBD
+
+0.34 11/02/08 Made changes inline with design changes as
+
+agreed with implementation team
+0.3A v002 12/02/08 Made changes inline with DAB comments.
+0.3A v003 22/02/08 Added BRA0O1 NAT and Firewall tables
+
+0.3A v004 05/05/08 Updated BRAO1 NAT and Firewall tables for
+additional SSN server access.
+
+0.3A vO05 13/05/08 Updated BRAO1 NAT and Firewall tables in line
+with re-DAB comments on SSN IP addresses.
+
+0.4 27/05/08 Final LLD subject to DC LAN LLD changes and
+firewalls addition. DC LAN LLD impacts the
+firewall rules.
+0.4 05/06/08 Updated with DAB review comments and SSC I Kept version inline
+firewall rules. with DAB process.
+0.4 09/06/08 Updated with remote sites firewall rules Kept version inline
+with DAB process.
+1.0 06/07/08 Updated with regards review comments. For Approval
+Now for Approval
+1.1 10/02/09 SSN Access Updates & Removal of ST RIG
+1.2 06/03/09 Updated with SSN IP address changes following
+
+CP0295. It should be noted that if these changes
+are implemented before the DC LAN and servers
+have been changed things will no longer work.
+
+1.3 02/06/09 Updates following DAB review.
+
+STE04 layout revised to reflect C&W connection
+via spare FastEthernet interface.
+
+Added flow for rvacc KSN to ACD in IRE19
+
+1.4 08/06/09 Amended flow for RVACC KSN following testing.
+Added a range of ports from 49152 — 50151 to
+cater for dynamic allocation of RPC service ports.
+The ACD server will need to be patched to restrict
+RPC services to this range.
+
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED PageNo: 5 of 89
+Fe)
+FUJITSU
+
+HNG-X Support Networks LLD
+
+FUJ00088633
+FUJ00088633
+
+1.5
+
+10/06/09
+
+14/07/09
+
+Added access for RVACC KSN to KMN on TCP
+33031 for CAPO volume testing and end-to-end
+counter transactions.
+
+Updated IP subnet for the LEW02 transit network
+VLAN 914 due to address conflicts with the
+BRAO1 migration routers
+
+172.20.0.240/28 has been allocated.
+
+Winrtr001 & bonrtr001 10100 interface IPs
+changed to resolve conflict with IRE11
+aggregation router.
+
+1.6
+
+21/09/09
+
+Added BRAO1 SSC IRE SSN on RDP
+(TCP3389) to BRAO1 Firewall rules
+Added LEW02 SSC > IRE Iprpssc001 on RDP,
+SSH, FTP to LEW02 Firewall rules.
+
+1.7
+
+21-07-10
+
+New requirement
+
+Table 11 - top 3 rows new
+Table 12 - top 2 rows new
+tabvie 15 - top row new
+
+1.8
+
+01-08-10
+
+New requirement
+
+Table 11 — added bsysinv02
+Table 15 — added bsysinv02
+
+Underlined text in sect 2.2 following service
+Incident
+
+0.5 Review Details
+
+Role
+
+Review Comments by :
+
+Review Comments to :
+
+Mandatory Review
+
+Name
+
+IA&D (peer reviewer)
+
+Dave Haywood
+
+ssc
+
+Steve Parker
+
+System Test
+
+John Rogers
+
+SV&I Manager
+Opti
+Role
+
+al Re’
+
+Chris Maving
+
+Name
+
+System Qualities Architecture
+
+Dave Chapman
+
+Chief Information Security Officer Tom Lillywhite
+
+©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+Ref:
+
+Version:
+Date:
+Page No:
+
+DEV/INF/LLD/0054
+
+18
+01/08/2010
+6 of 89
+Fe)
+FUJITSU
+
+HNG-X Support Networks LLD
+
+FUJ00088633
+FUJ00088633
+
+Security and Risk Team
+
+CSPOA. security, GRO
+
+Architect
+
+Jason Clark
+
+Business Continuity
+
+Adam Parker
+
+Service support
+
+Tony Atkinson
+
+HNG-X Service Transition Graham Welsh
+Service Network lan Mills
+Data Centre Migration Geoff Butts
+
+Data Centre Migration
+
+Vince Cochrane
+
+SV&l Manager
+
+Sheila Bamber
+
+RV Manager James Brett (POL)
+VI / TE Manager Mark Ascott
+Integrity Testing Michael Welch
+
+Networks Architect (Data Centre)
+
+Position/Role
+
+Mark Jarosz
+
+Issued for Information — Please restrict this
+distribution list to a minimum
+
+Name
+
+0.6 Associated Documents (Internal & External)
+
+Reference Version Date Title Source
+ARC/SOL/ARC/0001 HNG-X Overall Solution I Dimensions
+Architecture
+DES/PPS/HLD/0006 Naming Standard Dimensions
+ARC/SYS/ARC/0001 Support Services Architecture Dimensions
+ARC/SOL/ARC/0001 HNG-X Solutions Architecture I Dimensions
+Outline
+ARC/SEC/ARC/0003 Security Architecture Dimensions
+ARC/NET/ARC/0001 HNG-X Technical — Network I Dimensions
+Architecture
+DES/NET/HLD/0012 HNG-x Network Management I Dimensions
+HLD
+DES/NET/HLD/0014 Branch Access Network HLD Dimensions
+DES/NET/HLD/009 Wide Area Network HLD Dimensions
+DES/NET/HLD/008 Data Centre LAN Design Dimensions
+DES/NET/HLD/0015 Transit LAN HLD Dimensions
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version 18
+Date: 01/08/2010
+UNCONTROLLED IF PRINTED PageNo: 7 of 89
+fee)
+FUJITSU
+
+HNG-X Support Networks LLD
+
+FUJ00088633
+FUJ00088633
+
+DES/SYM/HLD/0017
+
+Server High Level Design
+
+Remote Support Secure Access I Dimensions
+
+Unless a specific version is referred to above, reference should be made to the current approved
+
+versions of the documents.
+
+0.7 Abbreviations
+
+Abbreviation ion
+
+AAA Authentication, Authorisation and Accounting
+
+ACE Application Control Engine
+
+AS Autonomous System
+
+ASBR Autonomous System Boundary Router
+
+ASDM Adaptive Security Device Manager
+
+ASA Adaptive Security Algorithm
+
+AUX Auxillary
+
+BCP Best Current Practice
+
+BGP Border Gateway Protocol
+
+BT British Telecommunications PLC
+
+BTLO1 IRE19 data centre
+
+CE Customer Edge
+
+CEF Cisco Express Forwarding
+
+CoPP. Control Pane Policing control
+
+CoS Class Of Service (IEEE802.1p) (layer 2 QoS)
+
+DAI Dynamic ARP Inspection
+
+dCEF Distributed Cisco Express Forwarding
+
+CSM Content Switching Module
+
+DMS Degrees, Minutes, Seconds
+
+DWDM Dense Wave Division Multiplexing
+
+DMZ De-Militarised Zone
+
+DRS Data Reconciliation Service
+
+DTP. Dynamic Trunking Protocol
+
+DWH Data WareHouse
+
+FWSM Firewall Services Module
+
+GMT Greenwich Mean Time
+
+HP Hewlett Packard
+
+ICMP Internet Control Message Protocol
+
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED
+
+Page No:
+
+8 of 89
+oo
+FUJITSU
+
+HNG-X Support Networks LLD
+
+FUJ00088633
+FUJ00088633
+
+IPMP Internet Protocol Multi Pathing
+
+IGP. Interior Gateway Protocol
+
+IP Internet Protocol
+
+IPSec Internet Protocol security
+
+IRE11 Ireland 11 data centre
+
+IRE19 Ireland 19 data centre
+
+ITU Infrastructure Test Unit
+
+LAN Local Area Network
+
+MDS Multilayer Data Centre Switch, Multilayer Fabric Switch used for Storage
+
+MSFC Multi-layer Switch Feature Card
+
+MTBF Mean Time Between Failures
+
+MTBR Mean Time Between Repairs
+
+MTTF Mean Time To Failure
+
+MTTR Mean Time To Repair
+
+NNM Network Node Manager
+
+NMS Network Management Server
+
+NPS Network Persistence Store
+
+NTP. Network Time Protocol
+
+OEE Overall Equipment Effectiveness.
+
+os Operating System
+
+OSPF Open Shortest Path First
+
+ovo OpenView Operations
+
+PDU Power Distribution Unit
+
+PFC Policy Feature Card
+
+POA Post Office Account
+
+PVST+ Per-VLAN Spanning Tree +
+
+Qos Quality Of Service
+
+RFC Request For Comments
+
+RMGA Royal Mail Group Account
+
+ROSS The Router Operational Support System
+
+SAN Storage Area Network
+
+SAS Secure Access Server
+
+STD Standard
+
+SYSMAN The Horizon Systems Management product
+‘©Copyright Fujitsu Services Ltd 2010 Ref. DEV/INF/LLD/0054
+
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED PageNo: 9 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+TES Transaction Enquiry Service
+TPS Transaction Processing System
+TTY Teletype
+UDLD Uni-Directional Link Detection
+UPS Uninterruptible Power Supply
+UTC Coordinated Universal Time
+VLAN Virtual LAN
+VLSM Variable Length Subnet Mask
+VRF Virtual Routing & Forwarding
+VRRP Virtual Router Redundancy Protocol (RFC3768)
+VTP VLAN Trunking Protocol (IEEE802.1q)
+VTY Virtual Teletype
+WAN Wide Area Network
+WGNO1 IRE11 data centre
+HO Handoff Router
+0.8 Glossary
+Term ion
+
+AAA AAA is Cisco's framework of security services that provide the method for
+identifying users (authentication), for remote access control (authorization),
+and for collecting and sending security server information used for billing,
+auditing, and reporting (accounting).
+
+DMZ A DNZ is a subnet between a trusted internal network and an untrusted
+external network. Typically, the DMZ contains publicly accessible systems
+(e.g., Web servers, file servers, mail servers and DNS servers). It usually is
+located at the perimeter of the trusted internal network.
+
+DWDM Dense Wave Division Multiplexing. A technique for multiplexing many data
+streams (usually 32) over a single fibre optic cable by using different
+frequency laser optics.
+
+Production When referring to data centre use, indicates the data centre primarily
+providing service to the customer business. Normally the Primary data
+centre at IRE11.
+
+Test When referring to data centre use, indicates the data centre primarily
+providing a test service. Normally the Secondary data centre in IRE19.
+mrEth BladeFrame Mega Redundant Ethernet. Allows a vSwitch interface to
+failover between chassis.
+pServer BladeFrame Processing Server. A virtual processing server composed of
+physical and virtual hardware resources. Il.e., consists of a number of
+pBlades.
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 10 of 89
+2
+FUJITSU
+
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+rEths BladeFrame redundant Ethernets. Two or more physical NICs from
+different cBlades providing resilience to failure. A vSwitch rEth is similar to
+a traditional switch uplink port.
+
+LPANs BladeFrame Logical PAN. A collection of physical and virtual resources
+allocated to provide resource for a set of applications. I.e. a number of
+pServers.
+
+PAN BladeFrame Processing Area Network.
+
+cBlade BladeFrame Control Blade. Physical component used to interface 1O
+between the BladeFrame internal network and the external network. The
+PAN Manager software runs on the cBlade. Load balancing and fail-over
+policies are configured in the cBlade. Each cBlade has a 100Mb
+management interface and eight 1000Mb external network interfaces.
+Redundant cBlades provide resilience.
+
+pBlade BladeFrame Processor Blade. Physical component used to provide
+pServers
+
+sBlade BladeFrame Switch Blade. Physical component used to provide
+communication between external networks and the pBlade and cBlade
+components in conjunction with the bladePlane.
+
+vEths BladeFrame virtual Ethernet interfaces connected to pServers. The PAN
+Manager software is used to connect vEths to vSwitches.
+
+vSwitch BladeFrame virtual instance of a layer 2 Ethernet switch that spans pBlades
+
+and cBlades. Used to connect pServers together in an LPAN, LPANs
+together and pServers and LPANs to external network equipment.
+vSwitches may not be connected to other vSwitches. Routing between
+vSwitches is performed at layer 3 by a dedicated pServer or an external
+router.
+
+0.9 Changes Expected
+
+Changes to IP addressing at Bracknell will require changes to this document
+
+0.10 Accuracy
+
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but,
+whilst every effort is made to ensure the accuracy of such information, it accepts no liability for any loss
+(however caused) sustained as a result of any error or omission in the same.
+
+0.11 Copyright
+
+© Copyright Fujitsu Services Limited (2010). All rights reserved. No part of this document may be
+reproduced, stored or transmitted in any form without the prior written permission of Fujitsu Services.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED
+
+Page No: 11 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+1 Introduction
+
+1.1 Purpose
+
+The purpose of this document is to provide a low level design of the HNG-X Support/Business
+workstations network Access. There are two types of workstations (LAN); RMGA LAN and corporate
+LAN. The workstations on the corporate LAN are out of scope in this design and are described in the
+corporate networks LLD (DEVINFLLDO055).
+
+The HNG-xX target solution is described for IRE11 / IRE19 and the associated support sites as described
+in the WAN HLD - DESNETHLDOOO9 and the provision of infrastructure for the migration of services
+from the existing data centres in WGNO1 and BTLO1.
+
+The design document is intended for Systems Integration and Network Services engineers. It provides
+the details and enumeration for the network required for the new support access into the support DMZs
+in IRE 11 & 19.
+
+The design will enumerate an integrated HNG-X/Horizon support network at all RMGA remote sites for
+HNG-X support connectivity.
+
+The Support DMZs will host SAS and SSN (HNGx SAS Server), these servers will act as a gateway for
+support activities into the rest of the HNG-X estate. They will be used for terminal services and remote
+desktop type activity to the servers in IRE11 and 19.
+
+1.2 Readership
+
+This document is intended to be reviewed by the Support, Operations and Architect communities. A low
+level design of the solution is provided, although parts of the content are technical.
+
+1.3 Scope
+Workstations at support Sites including;
+1. BRAO1
+STE04
+LEwo2
+CRE02
+WAR13
+IRE11 (Local support)
+IRE19 (Local support)
+WGN01 (migration phase)
+9. BTLO1 (migration phase)
+Support DMZ in IRE 11 & 19 as depicted in the Data Centre LLD.
+The associated transport between the support sites and the support DMZ in IRE 11 & 19.
+
+OoNnNOnP YON
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 12 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+1.4 Assumptions
+HNG-xX build workstations will be connecting to this network,.
+No live IP addressing will be redone.
+
+1.5 Risks
+
+Horizon and HNG-X build support workstations will co-exist on the same LAN at various remote sites.
+The support traffic will transverse an existing Horizon C&W MPLS VPN .....
+
+1.6 Dependencies
+The new data centres IRE 11 & 19 already exist.
+The underlining transport infrastructure already exists.
+
+The HNG-x infrastructure cannot be managed without the physical environments, hardware, software,
+physical links and services are available.
+
+The Network management LLD already exist and addresses the various management workstations like
+the Tivoli, HP Openview, and Cisco Works e.t.c.
+
+1.7 Constraints (Standards, Policies, Guidelines)
+The design must conform to:
+
+e —ARC/NET/ARC/0001
+
+e —ARC/SEC/ARC/0003
+
+e =DES/NET/HLD/0015
+
+e DES/SYM/HLD/0017
+
+e DESNETHLDOO009
+
+This design will integrate HNG-X with the existing legacy Horizon infrastructure at the remote support
+sites.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 13 of 89
+FUJ00088633
+FUJ00088633
+
+FUJITSU HNG-X Support Networks LLD &
+
+2 Overview
+
+2.1 Design Proposal - “RED LAN” Support Network
+2.1.1 Target design high level diagram,
+
+IRE11 : 2) = IRETG,
+
+STEO4
+BRAOt
+LEWo2
+Figure 1 Support sites target design High level diagram.
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version; 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED PageNo: 14 of 89
+FUJ00088633
+FUJ00088633
+
+FUJITSU HNG-X Support Networks LLD &
+
+Migration phase design high level diagram:
+
+IRE11 . IRE19
+
+=I ‘STEO4
+WARIS I
+mS BRAot
+CREO2
+Lewo2
+Figure 2 Support Networks (Migration phase) Four DC sites High level diagram.
+‘©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version; 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED PageNo: 15 of 89
+FUJ00088633
+
+FUJ00088633
+oO HNG-X Support Networks LLD ~
+2.1.2 Design overview
+ene Se
+Remote LANs Routes to OC core
+advertised by Handoft — advertised by Handoff
+routers via OSPF == = routers via OSPF
+Areasoo OSPF Area300 VLAN ~ Ares300
+~~. C~ remote Handoff a _—"”
+routers, —
+BoP ] BoP
+Core LANs advertised via
+OSPF over GRE/ IPSec
+sec Tunner tunnels
+Area 300
+via OSPF over GRE/ anne
+wrsec unmet Handottroutere int tose
+IPSec encrypts GRE Handort routers int Tuo
+IPSec tunnel endpoints~ Support
+Handoff routers Int LoS, meus ven
+GRE tunnel endpoints-
+Handoff routers Int Tuo
+i
+Re
+Gistribution vian N
+‘OSPr Aread
+advertised
+sn sro through the
+POA Core
+‘Network
+Figure 3 Traffic flow diagram TBC when the next version of the DC LAN LLD is issued.
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 16 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+Remote HNG-x Support workstation on Horizon LAN - The generic connectivity between HNG-x
+workstations and Horizon LAN with respect to IRE11 & 19 bound traffic is thus; there will be no re-
+addressing on the existing remote support sites presently using the Horizon IP range! IRRELEVANT?
+HNG-X build support workstation will be assigned a Horizon IP address in the
+Horizon LAN for the platform already exists at the remote site. The alloc:
+statically NAT on the local Horizon firewalls to a HNG-X IP address in thi ‘Trange. The local
+Horizon firewalls are the demarcation between the HNG-X and the existing Horizon based networks, as
+
+shown in figure 3 above.
+Traffic coming from each remote site will be source NATed to a HNG-X
+
+Destination networks in IRE11 and 19 will not be NATed, as HNG-X,
+Horizon remote networks.
+
+THIP address.
+irange will be visible to
+
+LAN -— If an Horizon LAN does not exist, a new HNG-x
+remote support IP range. This will be subject to switch
+
+Remote HNG-x Support workstation on HN
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 17 of 89
+FUJ00088633
+FUJ00088633
+
+FUJITSU HNG-X Support Networks LLD &
+
+port allocation and accessibility to the HNG-x switch platforms
+
+AD ciexvuna
+
+‘
+' ‘ ‘ ‘
+Handoff router ‘ ’ / ‘
+: an a H ‘ 2 joandot outer ‘
+} Sbintoes \ ‘ ‘ Ix ‘
+‘ a 7 : VK siietices
+7 244 . sang ‘
+
+‘
+N < ‘
+
+access VLAN A st,
+“ys
+
+access VLAN B
+
+“int Tu 0” — Tunnel interface
+
+—
+1PSec Tunnel
+Om ae oe om
+GRE Tunnel
+Transit VLAN
+
+two int
+ff
+Handoff route Handof router
+
+I Client VLAN
+
+Figure 4 Generic GRE tunnel diagram
+
+The Support network will follow the “Handoff router” model as enumerated in the WAN networks LLD
+(DESNETHLD0009). The “Handoff” router model! will run GRE tunnelling from “Handoff” routers in the
+DC to “Handoff” routers at the remote client LAN and the GRE tunnels will be further secured using
+IPSec tunnelling as shown above in figure 4.
+
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED PageNo: 18 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+There will be no mesh tunnels; the primary remote handoff router will terminate its tunnels on
+pit1nrtrO06 in IRE11. The secondary remote handoff router will terminate its tunnels on pi19nrtrO06 in
+IRE19. The tunnels will back up each other and the failover will be invoked via IP SLA tracking and
+VRRP configured on the remote handoff routers to monitor the DC access VLAN in its routing table.
+
+Figure 5 Logical network diagram
+
+Figure 5 depicts the logical routing topology for the support networks as seen in OSPF for each remote
+site.
+
+2.1.3 IRE11 and IRE19
+Issued in line with DC LAN LLD (DEVINFLLD0041 v0.3 draft).
+
+The data centres will operate in an Active and DR state, while the network component will operate in an
+“Active” “Active” state. IRE11 will be the Active DC while IRE19 is the DR. Network traffic path does not
+determine the state of the data centres as failure of IRE11 access network does not necessarily invoke
+IRE19 as the DR.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 19 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+The access layer of the network is primarily concerned with:
+¢ WAN termination
+e Network edge security enforcement and DMZ provision
+e — Inter-data centre connectivity at layer 2 and layer 3
+
+Access layer network components within each Ireland Data Centre include 1 x C&W CE Router, 2 x
+Cisco catalyst 6513 series switches with integrated ACE module and MSFC, multiple Cisco ASA 5540's
+and multiple Cisco 2811 handoff routers two of which are used in this design proposal to cater for
+support access IPSEC termination/handoff. The handoff router Cisco 2811 devices provide routing
+between the FJ and C&W domain for HNG-X support traffic.
+
+The access layer physical switches will provide high availability and resiliency across the access layer
+domain whilst the ASA devices operate as an active/standby pair and provide security against
+unauthorized or malicious threats towards the distribution and core layers of the network.
+
+All traffic will be encrypted via IPSec tunnels across the MPLS VPN between sites and terminated on the
+handoff routers. The handoff routers will be the demarcation between clear and encrypted traffic. The
+encrypted tunnels will carry all live and test support traffic from BRAO1, LEW02 and from the rest of the
+remote support site both for user data and network management.
+
+The distribution layer of the network is primarily concerned with:
+e Inter Access layer DMZ connectivity
+¢ Distribution security enforcement with IPS/IDS
+
+Distribution layer network components within each Ireland Data Centre include multiple ASA 5540's, 2 x
+McAfee Intrashield IPS 3000's and 2 x MSFC routers. The ASA devices within this layer are the same
+ASA devices as those residing in the access layer. The ASA firewalls provide a security policy
+enforcement point between the access and distribution layers. The IPS components operate inline as
+transparent layer 2 devices and provide further security against malicious/suspect traffic through pattern
+matching against known signatures.
+
+The core layer of the network is primarily concerned with:
+e High speed routing (or layer 3 switching)
+e — Inter-data centre connectivity at layer 2 and layer 3
+e Core security enforcement and DMZ provision with IPS.
+
+Core layer network components within each Ireland Data Centre include 2 x Cisco catalyst 6513 series
+switches with integrated ACE module, MSFC module and FWSM. The MSFC devices provide routing
+between the core and distribution layers of the network. The ACE modules in either switch operate as an
+active/standby pair and provide a virtualized service for backend servers residing on core layer LANs.
+There is no requirement for server IP addressing virtualization in the support environment.
+
+Two core layer physical switches (Cisco 6513's), provide high availability and resiliency across the core
+layer domain, the FWSM's operate as an active/standby pair and provide a final security policy
+enforcement point to critical systems residing on core LANs in the network.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 20 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+fee)
+FUJITSU
+
+In line with the Data Centre LAN Design - DEVINFLLD0041 the ASA devices are to be configured with
+interface security levels set to 0. Used in conjunction with “same-security-traffic permit inter-interface”
+this sets all interfaces as untrustworthy requiring an ACL to be applied to the interface to allow traffic to
+pass through an interface.
+
+The below table defines the preferred ASA Firewall interface security configuration model.
+
+Inside ie)
+Outside i¢)
+DMZ i}
+State Default
+
+Table 1 ASA Interface Security
+
+DC Support Networks ACCESS/DMZ: Physical Diagram.
+The following are installed in IRE11 and 19;
+
+Ire11
+
+2 x Cisco catalyst 6513 with integrated ACE and MSFC
+
+2 x Cisco catalyst 6513 with integrated ACE, MSFC and FWSM
+Multiple Cisco ASA 5540
+
+Multiple Cisco 2811
+
+2 x McAfee IPS
+
+lre19
+
+2 x Cisco catalyst 6513 with integrated ACE and MSFC
+
+2 x Cisco catalyst 6513 with integrated ACE, MSFC and FWSM
+Multiple Cisco ASA 5540
+
+Multiple Cisco 2811
+
+2 x McAfee IPS
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version; 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 21 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+OFFICE
+
+IRRELEVANT
+
+, ‘igure 6 Data Centre Support Access physical
+
+All LAN devices will be connected as shown in the physical diagram inline with DC LAN LLD
+(DEVINFLLD0041).
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 22 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+KIT Name Int. Loopback 99 Int. Loopback 100 Management Int.
+
+Table 2 DC Handoff routers
+DC Support Networks ACCESS/DMZ: Logical Diagram.
+
+Interface Loopback 100 will be used to manage the handoff routers.
+
+Interface Loopback 99 will be used as IPSec/GRE endpoints. This will be further explained in the
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 23 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+IPSec/GRE sections.
+
+mm Access Layer VLAN Type A
+
+Access Layer VLAN Type B
+Routing / Interconnect VLAN
+== Aovess DMZ VLAN
+
+CORE DMZ VLAN
+
+Figure 7 Data Centre Support Access logical
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 24 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+Layer 2 will be configured as shown in figure 7 above and inline with DC LAN LLD (DEVINFLLD0041).
+
+The Network Management/support servers in IRE11 and IRE19 data centre are connected to the core
+and access switches in a DMZ; the Network Management servers to the core and the SAS/SSM/RSA
+servers to the access. The management tools and servers will be used for secure support access into the
+Data centres, Post Office branches and other remote network equipment. As depicted in the network
+management LLD (DEVINFLLD0045), HP OpenView and CiscoWorks will have access to all network
+equipment and application servers within the data centres and to the Client access routers.
+
+At each data centre, two Catalyst switches are installed in the Access Layer and two at the Core Layer
+for resilience as header and footer switches. HP Openview, Cisco Works and all other support servers
+will use two NIC’s; primary NIC connects to header switch and the other to footer switch in IRE11 and 19.
+
+In the Header/Footer switch connection; the Header switch is
+is the preferred switch for
+
+e Spanning tree, Footer switch backs it up.
+¢ Data over bonded links on dual eth attached devices Blade / individual servers
+e Inthe case of HO routers the header would normally take the traffic in the active standby model
+
+The Footer switch backs up the Header switch for all of the above functions.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 25 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+IRRELEVANT
+
+Figure 8 Data Centre Support Access routing
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 26 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+2.1.3.1 External Routing:
+
+eBGP will be used as the preferred routing protocol between the CE (in Ire11 and 19) and the handoff
+routers. eBGP peering will be between CE’s and the handoff routers’ interface IP addressing on VLAN
+There will be two eBGP peer commands on the handoff router “ and Ire11’s
+CE the same applies to between the handoff and the CE in Ire19. There will be no need for bgp
+multihop as eBGP peering across sites is not needed.
+
+BGP will only be required to advertise IPSec tunnel endpoints interface loopback 99, as specified in the
+figure 8 above.
+
+2.1.3.2 Internal Routing:
+
+Inline with the DC LAN LLD (DEVINFLLD0041), OSPF is the preferred routing protocol for internal
+routing. OSPF area 300 has been designated as the support client access OSPF area id. The core of the
+network at the date centre will be configured as Area 0 with the client ASA firewalls serving as the OSPF
+Area Border routers (ABR) into Area 0. Only routes specifically allowed through the firewalls will be
+allowed into area.
+
+OSPF area 300 will be used to advertise all subnets as shown in figure 8, in addition it will advertise the
+management interface (loopback 100) and the GRE tunnel endpoints (interface tunnel 0).
+
+There will be no redistribution between eBGP and OSPF locally in IRE11 and 19.
+
+The ASA’s will be configured with a higher OSPF priority so that they will always become the designated
+router (OSPF DR) and the backup designated router (OSPF BDR) on the support client access VLANs.
+
+Note: OSPF traffic engineering will be included in the next update of the document.
+
+2.1.3.3 GRE:
+
+GRE tunnelling will be used to extend OSPF Area 300 from the Data centre support access into all
+remote support sites. GRE Tunnel interfaces will be configured as depicted in the various remote support
+BGP/OSPF/GRE diagrams below. Tunnel source will be interface loopback 99 on the local handoff
+router while the Tunnel destination will be the IP address of interface loopback 99 of the corresponding
+handoff router.
+
+IP MTU size and TCP maximum segment size will be adjusted accordingly after tests have been carried
+out to determine what values will work best.
+
+2.1.3.4 IPSec:
+
+IPSec will be used to secure the GRE tunnels across the C&W MPLS VPN. IPSec will provide secure
+tunnels between two peers namely the handoff routers in the DC and the handoff routers at each remote
+site.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 27 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+IPSec tunnels are formed when an IPSec peer recognizes a sensitive packet; the peer sets up the
+appropriate secure tunnel and sends the packet through the tunnel to the remote peer. With IPSec you
+define what traffic is “sensitive” between the two IPSec peers by configuring access lists and applying
+these access lists to interfaces by way of crypto map sets. The access lists used for IPSec (crypto
+access list) are used only to determine which traffic should be protected by IPSec, not which traffic
+should be blocked or permitted through the interface. The crypto access lists will only permit traffic with
+GRE tunnel endpoints as sensitive traffic between sites.
+
+The steps for IPSec configuration are as follows
+
+1. Create Crypto Access List.
+Since we are securing GRE Tunnels;
+
+- IRE 11 & 19; “interface loopback 99” will be the source networks and the corresponding
+handoff router's “interface loopback 99” at the client site will be the destination.
+
+- Client Site; “interface loopback 99” will be the source networks and IRE 11 & 19's
+“interface loopback 99” will be the destination.
+
+2. Define IKE to handle negotiation of protocols and algorithms based on local policy.
+- For encryption use “aes 256”
+- For authentication, a pre-shared key will be defined.
+
+3. Defining Transform Sets: A Combination of Security Protocols and Algorithms.
+
+- For Encryption (ESP Encryption Transform), esp-aes 256 (ESP with the 256-bit AES
+encryption algorithm) will be used
+
+- For Header Authentication (AH Transform), ah-sha-hmac { AH with the SHA (an
+HMAC variant) authentication algorithm} will be used
+
+4. Create Crypto Map Sets.
+- This will be ipsec-isakmp based.
+
+5. Apply Crypto Map Sets to handoff router Interfaces on VLAN#
+6. Apply Crypto Map Sets to corresponding handoff router's Interface FEO/0 at remote site.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 28 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+2.1.3.5 DC Local Support Network
+RMGA (RED) LAN: Physical
+
+Figure 9 IRE11/19 RMGA LAN physical
+
+The local RMGA LAN in IRE 11 and 19 will be connected as shown in figure 9. New cabinets are being
+installed to accommodate each switch and handoff router.
+
+KIT Name Int. Loopback 99 Int. Loopback 100 Management Int.
+
+Layer 2:
+
+‘©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 29 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+The switches will be configured as VTP transparent mode and all trunks will be IEEE802.1q. VTP
+domain name will be determined by the RMGA support team.
+
+VLAN= “land VLAI will be used as an access VLAN connecting the local site support handoff
+routers to the access LAN in the Data centres.
+
+(IRE11) will be the local RMGA LAN and it will serve as the management VLAN for the
+itches;
+
+Figure 10 IRE11/19 RMGA LAN Logical
+
+OSPF area 300 will be used to advertise all subnets as shown in figure 10.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 30 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+2.1.3.6 IRE11 & IRE19 Acceptance into Service Criteria
+
+This section provides some criteria for Acceptance into Service tests to be performed. The AIS tests will
+show conformance of the implementation to the design but are not exhaustive and need to be performed
+in conjunction with other tests which are within the remit of the implementation teams.
+
+The local Hand-Off routers at IRE11 and IRE19, respectively {IF are directly
+attached to the HNG-x infrastructure so the AIS criteria for IRE11 and IRE19 will bé different from other
+support sites.
+
+* an OSPF adjacency can be established between and / IRRELEVANT!
+
+e an OSPF adjacency can be established betwee! RELEVANT! Nd} IRRELEVANT
+e an OSPF adjacency can be established between
+
+an OSPF adjacency can be established between
+
+IRRELEVANT will learn routes via OPSF Area 300 for the following support LANs
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 31 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+2.1.4 BRAO1
+
+The following will be installed at BRAO1;
+2x Cisco 2811 — Handoff routers
+2x Catalyst 2960 — Access switch.
+
+Horizon
+
+Figure 11 BRA01 Support transit Network Physical
+
+All LAN devices will be connected as shown in the physical diagram for resiliency. There will be no single
+point of failure on the LAN.
+
+The support team will determine where to install the kits
+
+Interface Ethernet 0 is configured as a trunk port on [IRRELEVANT to carry the new HNGx to Horizon
+transit DMZ.
+
+To interconnect the Horizon — HNG switches, fa0/19 has been allocated on switche:
+These will be cabled up with cross over cables.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 32 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+KIT Name Int. Loopback 99 Int. Loopback 100 Int. VLAN 915 Management Int.
+
+Table 4 BRA01 LAN info
+
+¢ MPLS VPN >.
+
+« BRAO1 HORIZON
+< OSPF Area 9 >
+
+Figure 12 BRA01 Support transit network Layer 3 diagram
+
+Layer 2:
+
+The switches will be configured as VTP transparent mode and all trunks will be IEEE802.1q. VTP.
+domain name will be determined by the RMGA support team.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 33 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+VLAN will be used as an access VLAN connecting the support VRF interface on the CE with
+interface. the handoff routers. It will also serve as the management VLAN for the access
+switches} IRRELEVANT} in }
+
+‘=st will be the local transit LAN connecting HNG-X handoff routers to Horizon firewalls and will
+have the handoff router's VRRP address as the default gateway.
+
+High availability:
+
+VRRP group 1 will be configured on interface FEO/1 on! i The virtual router
+master for the gro! ill be configured with a priori e virtual router backup fro
+group 1 will be {iki with a priority of 100. VRRP tracking will be used to dynamically failover
+between the master ai ackup. The IP address to be tracked will be } the IP address
+configured on interface f iT}
+
+FIRRELEVANT and/i
+
+address on{
+
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 34 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+“OSPF Process id 1 Area 300
+
+Figure 13.BRA01 BGP/OSPF/IPSEC/GRE diagram
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 35 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+External Routing
+
+eBGP will be used as the preferred routing protocol between the CE (in BRAO1) and the handoff routers
+as depicted in figure 13. eBGP peering will be between CE’s and the handoff routers’ interface IP
+ing on VLAN shown. There will be one eBGP peer commands on the primary handoff
+I IRRELEVANT} and its BRAO1’s corresponding CE, the same applies to between the secondary
+handoff anid it Gorrésponding CE. There will be no need for bgp multihop as eBGP.
+
+BGP will only be required to advertise IPSec tunnel endpoints interface loopback 99, as specified in the
+figure 13 above.
+GRE:
+
+GRE tunnelling will be used to extend OSPF Area 300 from the Data centre support access into all
+remote support sites. GRE Tunnel interfaces will be configured as depicted in figure 13. Tunnel source
+will be interface loopback 99 on the BARO1 handoff router while the Tunnel destination will be the IP
+address of interface loopback 99 of the corresponding IRE11/19 handoff router.
+
+GRE Interface Tunnel 0 will be configured between handoff routers in IRE11/19 and handoff routers in
+BRAO1.
+
+IP MTU size and TCP maximum segment size will be adjusted accordingly after tests have been carried
+out to determine what values will work best.
+
+IPSec:
+The steps for IPSec configuration are as follows
+
+1. Create Crypto Access List - To secure the GRE Tunnel;
+
+IRE 11 & 19: “interface loopback 99” will be the source networks and the corresponding handoff
+routers “interface loopback 99” at the client site will be the destination.
+
+BRAO1; “interface loopback 99” will be the source networks and IRE 11 & 19's “interface
+loopback 99” will be the destination.
+
+2. Define IKE to handle negotiation of protocols and algorithms based on local policy.
+For encryption use “aes 256”
+For authentication, a pre-shared key will be defined.
+
+3. Defining Transform Sets: A Combination of Security Protocols and Algorithms.
+
+For Encryption (ESP Encryption Transform), esp-aes 256 (ESP with the 256-bit AES encryption
+algorithm) will be used
+
+For Header Authentication (AH Transform), ah-sha-hmac { AH with the SHA (an HMAC variant)
+authentication algorithm} will be used
+
+4. Create Crypto Map Sets.
+This will be ipsec-isakmp based.
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 36 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+5. Apply Crypto Map Sets to handoff router Interfaces on {
+
+6. Apply Crypto Map Sets to corresponding handoff router
+Interfaces
+
+Internal Routing: HNG-X and Horizon -
+
+OSPF is the preferred routing protocol for internal routing. OSPF area 300 has been designated as the
+support client access OSPF area id. Area 300 in the data centres will be extended to the BRA01 handoff
+routers over a GRE tunnel, which is encrypted in IPSec tunnel over C&W’s MPLS VPN as shown in
+figures 13 and 14.
+
+OSPF area 300 will advertise the LAN subnet! in addition it will advertise the management
+interface (loopback 100) and the GRE tunnel endpoints (interface tunnel 0).
+
+There will be no OSPF neighbours formed on VLAI
+HNG-X (area 300) and Horizon (area 9).
+
+ind there will be no OSPF routing between
+
+f IRRELEVANT!
+
+The Handoff routers will point (via static routing) the NAT IP addresses
+i High availability (HA) IP address {.
+failover the static routing, €€cH handoff router will be configured to track interface FEO" 's IP any
+(track xx interface FEO/1 ip routing). Each static route will be configured to reference the tracking ID (xx)
+as configured and then redistributed into area 300. This will allow the static routes configured on the
+Primary/secondary HO routers dynamically failover.
+
+All OSPF routing and static routes (redistributed into Area 300) on the secondary HO router will be
+configured with a higher metric cost for LIVE traffic so that the primary handoff router will always be
+preferred for outgoing/incoming traffic.
+
+Static routes will be configured on the pair {1
+the Handoff routers VRRP IP addres:
+
+F} pointing the HNG-X
+
+{ pointing each switch management interface out the HO router IP address
+Yor interface FEO/O. These Static routes will be redistributed into Area 300.
+
+There will be no redistribution between eBGP and OSPF locally in BRAO1.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 37 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+OFFICE
+
+Figure 14 BRA01 HNGx - Horizon integrated Layer 3 Support Workstation LAN
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 38 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+fee)
+FUJITSU
+
+Support Workstations:
+
+NAT range.
+
+BRAO1 NAT addresses: The following will be NAT configured on to allow for software
+delivery and SAS server connectivity to IRE11 and 19 from BRAO1 corporate sourced traffic.
+
+Source IP Address HNG-X NAT IP Address I Comment
+
+Node
+
+cmwKsees—s—=—“—*~srS=“‘CSSS*™*;~™ ‘CM Workstation 06
+‘CMWKSO2 CM Workstation 02
+‘CMWKSO5 CM Workstation 05
+PRJOOO40SDT CM Workstation 07
+‘Support traffic ‘Support PAT IP address for
+
+terminal access to IRE11/19.
+IRE19 SAS server
+
+IRE19 SAS server
+
+IRE11 SAS server
+
+IRE11 SAS server
+
+fi RRELEVANT IRE 19 Corporate proxy
+
+TRE 19 Corporate proxy
+
+IRRELEVANT
+
+TRE 17 Corporate proxy
+
+IRRELEVANT!
+
+IRE 11 Corporate proxy
+
+IRE11 SAS server
+
+IRE19 SVI SAS server
+
+IRE19 RV MIG SAS server
+
+IRE19 RV ACC SAS server
+
+IRE19 LST SAS server
+
+IRE19 LST SAS server
+
+TRE19 LST Corporate Proxy
+
+5 BRAOI NAT table — Corporate to Horizon to HNG-X.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 39 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+2.1.4.1. BRA01 Acceptance into Service Criteria
+
+This section provides some criteria for Acceptance into Service tests to be performed. The AIS tests will
+show conformance of the implementation to the design but are not exhaustive and need to be performed
+in conjunction with other tests which are within the remit of the implementation teams.
+
+will show C&W CE router!
+
+is a BGP neighbour
+
+is a BGP neighbour
+
+loopback addresses via eBGP
+loopback addresses via eBGP.
+loopback addresses via eBGP
+loopback addresses via eBGP
+
+e an OSPF adjacency can be established between; I
+hould learn routes via OSPF Area 300 for the following support
+
+o {IRRELEVANT I
+
+should learn routes via OPSF Area 300 for the following remote
+
+IRRELEVANT I
+
+: IRRELEVANT.
+
+o [IRRELEVANT I
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 40 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+°
+
+2.1.5 LEW02
+
+The following will be installed;
+2x Cisco 2811 — Handoff routers
+2x Catalyst 2960 — Access switch.
+
+PE Router Fujser_fujnwbt_test
+
+IRRELEVANT
+
+—_—_— TT ‘Trunk TEEE 80210
+Figure 15 LEW02 Support transit Physical Network
+
+All LAN devices will be connected as shown in the physical diagram for resiliency. There will be no single
+point of failure on the LAN.
+
+The support team will determine where to install the kits and which switches on the existing infrastructure
+the catalyst 2960 switch trunk ports will connect to.
+
+To interconnect the horizon - HNG-x switches, fa0/23 has been allocated on switches’
+These will be cabled up with cross over cables as shown above. .
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 41 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+KIT Name Int. Loopback 99 Int. Loopback 100 Int. VLAN 914 Management Int.
+
+Int. Loopback
+- 100
+
+Int. Loopback
+- 100
+
+Int. VLAN 914
+Int. VLAN 914
+
+(IRRELEVAI
+
+< MPLS VPN >
+
+< LEW02 HORIZON
+
+Figure 16 LEW02 Support transit network Layer 3 diagram
+
+Layer 2:
+
+The switches will be configured as VTP transparent mode and all trunks will be IEEE802.1q. VTP
+domain name will be determined by the RMGA support team.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 42 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+VLAN
+interface
+
+will be used as an access VLAN connecting the support VRF interface on the CE with
+. It will also serve as the management VLAN for the access
+
+and will have the handoff router's VRRP address as the default gateway for all HNG-x traffic.
+High availability:
+
+VRRP group 1 will be configured on interface FEO/1 o1
+The virtual router master for the gr i configured with a priority 110. The virtual
+router backup for group 1 will be I! with a priority of 100. VRRP tracking will be used to
+dynamically failover between the master and the backup. The IP address to be tracked will be
+i the IP address configured on interface RI
+
+as shown above.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 43 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+Area 10
+
+Figure 17 LEW02 BGP/OSPF/IPSEC/GRE diagram
+
+External Routing
+
+eBGP will be used as the preferred routing protocol between the CE (in LEW02) and the handoff routers
+as depicted in figure 17. eBGP peering will be between CE's and the handoff routers’ interface IP
+addressing on VLAN as shown. There will be one eBGP peer commands on the primary handoff
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 44 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+rT! and its LEW02's corresponding CE, the same applies to between the secondary
+handoff and it corresponding CE. There will be no need for bgp multihop.
+
+BGP will only be required to advertise IPSec tunnel endpoints interface loopback 99, as specified in the
+figure 17 above.
+GRE:
+
+GRE tunnelling will be used to extend OSPF Area 300 from the Data centre support access into all
+remote support sites. GRE Tunnel interfaces will be configured as depicted in figure 17. Tunnel source
+will be interface loopback 99 on the LEW02 handoff router while the Tunnel destination will be the IP
+address of interface loopback 99 of the corresponding IRE11/19 handoff router.
+
+GRE Interface Tunnel 1 will be configured between handoff routers in IRE11/19 and handoff routers in
+LEwo2.
+
+IP MTU size and TCP maximum segment size will be adjusted accordingly after tests have been carried
+out to determine what values will work best.
+
+IPSec:
+
+Configure as depicted in section 2.1.3.4.
+
+Internal Routing: HNG-X and Horizon -
+
+OSPF is the preferred routing protocol for internal routing. OSPF area 300 has been designated as the
+support client access OSPF area id. Area 300 in the data centres will be extended to the LEW02 handoff
+routers over a GRE tunnel, which is encrypted in an IPSec tunnel over C&W’s MPLS VPN as shown in
+figure 17.
+
+There will be no OSPF neighbours formed on VLAN
+HNG-X (area 300) and Horizon (area 10).
+
+ind there will be no OSPF routing between
+
+if “to dynamically failover the static routing, each handoff router will be
+configured to track interface FEO/ ‘s IP routing (track xx interface FEO/1 ip routing). Each static route will
+be configured to reference the tracking ID (xx) as configured and then redistributed into area 300. This
+will allow the static routes configured on the Primary/secondary HO routers dynamically failover. In
+addition Area 300 will advertise the management interface (loopback 100) and the GRE tunnel endpoints
+(interface tunnel 0).
+
+Static routes will be configured on the pail
+Handoff routers VRRP IP address:
+
+IRRELEVANT pointing the HNG-X
+
+‘Horizon OSPF Area 10 will see HNG-x routes advertised to them viat
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 45 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2 access switches will be via static routes configured on the handoff routers
+t{, pointing each switch management interface out the HO router IP address
+
+“for interface FEO/0. These static routes will be redistributed into Area 300.
+There will be no redistribution between eBGP and OSPF locally in LEW02.
+
+IRRELEVANT
+
+Figure 18 LEW02 HNGx - Horizon integrated Layer 3 Support Workstation LAN
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 46 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+2.1.5.1 LEW02 Acceptance into Service Criteria
+
+This section provides some criteria for Acceptance into Service tests to be performed. The AIS tests will
+show conformance of the implementation to the design but are not exhaustive and need to be performed
+in conjunction with other tests which are within the remit of the implementation teams.
+
+IRRELEVANT I will show C&W CE router
+r {will show C&W CE router!
+
+. as a BGP neighbour
+
+is a BGP neighbour
+
+iwill learn routes to the DC HO routet loopback addresses via eBGP
+
+will learn routes to the DC HO router: loopback addresses via eBGP
+
+will learn routes to the remote HO route
+
+loopback addresses via eBGP
+will learn routes to the remote HO router, Ti
+e aGRE tunnel can be built between leO2nrtr001 andi!F
+
+« aGRE tunnel can be built between leO2nrtr002 and
+
+loopback addresses via eBGP
+
+« an OSPF adjacency can be established between;
+e an OSPF adjacency can be established betwee!
+
+should learn routes via OPSF Area 300 for the following remote
+
+(need to check this range is correct)
+
+IRRELEVANT:
+IRRELEVANT
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 47 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+2.1.6 CRE02
+
+The following will be installed;
+
+2x Cisco 2811 — Handoff routers
+2x Catalyst 2960 — Access switch.
+
+These will be installed 1st floor comms room racks 1B and 2B by the installed C&W CE’s by the existing
+network — a Cisco 2500 router and a hub.
+
+CE Router
+
+Trunk—IEEE 802.1Q
+
+Figure 19 CRE02 Physical
+
+All LAN devices will be connected as shown in the physical diagram for resiliency. There will be no single
+point of failure on the LAN.
+
+KIT Name Int. Loopback 99 Int. Loopback 100 Int. VLAN 9
+IRRELEVANT
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 48 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD ’
+FUJITSU &
+
+Table 7 CRE02 LAN info
+
+MPLS VPN
+
+CE Router
+
+Figure 20 CRE02 Layer 2/BGP/NAT diagram
+
+Layer 2:
+
+The switches will be configured as VTP transparent mode and all trunks will be IEEE802.1q. VTP
+domain name will be determined by the RMGA support team.
+
+VLANE
+interface
+switches
+
+“will be used as an access VLAN connecting the support VRF interface on the CE with
+=E0/0 on the handoff routers. It will also serve as the management VLAN for the access
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 49 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+will be configured as the local LAN.
+
+High availability:
+
+VRRP group 1 will be configured on interface FEO/1 oniiri r; The virtual router
+master for the group_wi configured with a priority 110. The Virtual router backup fro
+group 1 will be; IRRELEVANT! with a priority of 100. VRRP tracking will be used to dynamically failover
+between the master he backup. The IP address to be tracked will be! rj, the IP address
+configured on interface
+
+External Routing
+
+eBGP will be used as the preferred routing protocol between the CE (in BRAO1) and the handoff routers
+as depicted in figure 20. eBGP peering will be between CE’s and the handoff routers’ interface IP
+as shown. There will be one eBGP peer commands on the primary handoff
+and its BRAO1’s corresponding CE, the same applies to between the secondary
+handoff and it corresponding CE. There will be no need for bgp multihop.
+
+BGP will only be required to advertise IPSec tunnel endpoints interface loopback 99, as specified in the
+figure 20.
+
+Internal Routing:
+
+OSPF is the preferred routing protocol for internal routing. OSPF area 300 has been designated as the
+support client access OSPF area id. Area 300 in the data centres will be extended to the CRE02 handoff
+routers over a GRE tunnel, which is encrypted in an IPSec tunnel over C&W’s MPLS VPN as shown in
+figure 21 below.
+
+OSPF area 300 will be used to advertise the LAN subnet /! shown, in addition it will
+advertise the management interface (loopback 100) and the GRE tunnel endpoints (interface tunnel 0).
+
+2 access switches will be
+
+iT}, pointing interface VLAN:~
+
+ia static routes configured on the handoff routers
+“IP addresses to CREO2.
+
+There will be no redistribution between eBGP and OSPF locally in CREO2.
+
+GRE:
+
+GRE tunnelling will be used to extend OSPF Area 300 from the Data centre support access into all
+remote support sites. GRE Tunnel interfaces will be configured as depicted. Tunnel source will be
+interface loopback 99 on the CREO2 handoff router while the Tunnel destination will be the IP address of
+interface loopback 99 of the corresponding IRE11/19 handoff router.
+
+GRE Interface Tunnel 2 will be configured between handoff routers in IRE11/19 and handoff routers in
+CREO2.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 50 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU ore
+
+a
+
+IP MTU size and TCP maximum segment size will be adjusted accordingly after tests have been carried
+out to determine what values will work best.
+
+IPSec:
+Please refer to section 2.1.3.4.
+
+—~ “(OSPF Process id 1 Area 300 ~
+
+IRRELEVANT
+
+Figure 21 CRE02 Layer OSPF/GRE diagram
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 51 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+2.1.6.1 CRE02 Acceptance into Service Criteria
+
+This section provides some criteria for Acceptance into Service tests to be performed. The AIS tests will
+show conformance of the implementation to the design but are not exhaustive and need to be performed
+in conjunction with other tests which are within the remit of the implementation teams.
+
+Twill show C&W CE route! las a BGP neighbour
+
+las a BGP neighbour
+‘will learn routes to the DC HO rout
+
+loopback addresses via eBGP
+will learn routes to the DC HO router! loopback addresses via eBGP.
+
+loopback addresses via eBGP
+loopback addresses via eBGP
+¢ aGRE tunnel can be built between
+
+a GRE tunnel can be built between
+
+o [IRRELEVANT
+IRRELEVANT }
+
+IRRELEVANT
+IRRELEVANT ;
+
+should learn routes via OPSF Area 300 for the following remote
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 52 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU ore
+
+a
+
+2.1.7  STE04
+
+The following will be installed;
+2x Cisco 2811 — Handoff routers
+
+Access switches — Existing Horizon switches will be used for Handoff router connectivity as shown
+below.
+
+Fujser_fujnnbt_test
+
+AJ
+AJ
+Mm
+re"
+<
+>
+=<
+—_I
+
+sae SD
+
+Horizon RMGA Computer Room
+Figure 22 STE04 Physical
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 53 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+All LAN devices will be connected as shown in the physical diagram for resiliency. There will be no single
+point of failure on the LAN.
+
+The support team will determine where to install the handoff routers.
+KIT Name Int. Loopback 99 Int. Loopback 100 Management Int.
+
+Table 8 STE04 LAN info
+
+MPLS VPN >
+
+IRRELEVANT
+
+< STE04 HORIZON 2. .
+< OSPF Area 11 y
+
+Figure 23 STE04 Layer3 diagram
+
+Layer 2:
+The switches will be as configured in Horizon. New HNG-X VLAN will be configured as shown.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 54 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+Horizon VLANwe:«iwill be the local transit LAN and will have the handoff router's VRRP address as the
+default gateway for all HNG-x destined traffic.
+
+°
+
+High availability:
+
+VRRP group 1 will be configured on interface FEO/1 on j The virtual router
+ill bef I, configured with a priority 110. The virtual router backup for
+group 1 will bei i with a priority of 100. VRRP tracking will be u: mically failover
+between the master and the backup. The IP address to be tracked will be the IP address
+configured on interface!
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 55 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+a aaa a - - - SR.
+
+OSPF Process id 1 Area ee
+
+IRRELEVAN
+
+igure 24 STE04 Layer 3 BGP/OSPF/GRE/IPSec diagram
+
+External Routing;
+
+eBGP will be used as the preferred routing protocol between the CE (in STE04) and the handoff routers
+as depicted in figure 24. eBGP peering will be between CE’s and the handoff routers’ interface IP
+addressing on VLANi= as shown. There will be one eBGP peer commands on the primary handoff
+router {and its STEO4’s corresponding CE, the same applies to between the secondary
+handoff and it corresponding CE. There will be no need for bgp multihop.
+
+BGP will only be required to advertise IPSec tunnel endpoints interface loopback 99, as specified in the
+figure above.
+GRE:
+
+GRE tunnelling will be used to extend OSPF Area 300 from the Data centre support access into all
+remote support sites. GRE Tunnel interfaces will be configured as depicted in figure 10 BGP/OSPF/GRE
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 56 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+diagram”. Tunnel source will be interface loopback 99 on the STE0O4 handoff router while the Tunnel
+destination will be the IP address of interface loopback 99 of the corresponding IRE11/19 handoff router.
+
+GRE Interface Tunnel 3 will be configured between handoff routers in IRE11/19 and handoff routers in
+STE04.
+
+IP MTU size and TCP maximum segment size will be adjusted accordingly after tests have been carried
+out to determine what values will work best.
+
+IPSec:
+Configure as depicted in section 2.1.3.4.
+
+Internal Routing: HNG-X and Horizon -
+
+Area 300 in the data centres will be extended to the STE04 handoff routers over a GRE tunnel, which is
+encrypted in an IPSec tunnel over C&W’s MPLS VPN as shown in figure 24.
+
+jand there will be no OSPF routing between
+
+There will be no OSPF neighbours formed on VLAI
+HNG-X (area 300) and Horizon (area 11).
+
+00 wi
+
+(via static routing redistributed into Area 300) the NAT subnets
+i(corporate). The static route will point to firewalls! H
+
+Thigh
+availability (HA) }. To dynamically failover the static routing, each handoff
+router will be configured to track interface FEO/1’s IP routing (track xx interface FEO/1 ip routing). Each
+static route will be configured to reference the tracking ID (xx) as configured and then redistributed into
+area 300. This will allow the static routes configured on the Primary/secondary HO routers dynamically
+failover. In addition Area 300 will advertise the management interface (loopback 100) and the GRE
+tunnel endpoints (interface tunnel 0).
+
+Static routes will be configured on th pointing the HNG-X H
+
+Handoff routers VRRP IP address I_ _L The static route will be redistributed oni i
+into Horizon’s OSPF area 11. The Horizon ABR routers will be configured with the “area range (no
+advertise)” to prevent the advertising of the HNG-X i! (JIP range outside STEO4 into Horizon
+OSPF devices in Horizon OSPF Area 11 will see HNG-x routes
+
+advertised to them viai
+
+2 access switches will be via static routes configured on the handoff routers
+pointing each switch management interface out the HO router IP address
+‘atic routes will be redistributed into Area 300.
+
+There will be no redistribution between eBGP and OSPF locally in STE04.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 57 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+Fujitsu Steo4 c+w ce
+FSBN.POP Room... ALAR ee enn a -
+
+IRRELEVANT
+
+Figure 25 STE04 HNGx - Horizon integrated Layer 3 Support Workstation LAN
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 58 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+2.1.7.1. STE04 Acceptance into Service Criteria
+
+This section provides some criteria for Acceptance into Service tests to be performed. The AIS tests will
+show conformance of the implementation to the design but are not exhaustive and need to be performed
+in conjunction with other tests which are within the remit of the implementation teams.
+
+will show C&W CE route!
+;will show C&W CE route!
+will learn routes to the DC HO router;
+
+loopback addresses via eBGP
+
+will learn routes to the DC HO router loopback addresses via eBGP.
+
+iT loopback addresses via eBGP.
+loopback addresses via eBGP
+
+should learn routes via OPSF Area 300 for the following remote
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 59 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+2.1.8  WAR13
+
+The following will be installed;
+2x Cisco 2811 — Handoff routers
+2x Catalyst 2960 — Access switch.
+
+CE Router
+
+IRRELEVANT
+
+Figure 26 WAR13 Physical
+
+Trunk—IEEE 802.1Q
+
+All LAN devices will be connected as shown in the physical diagram for resiliency. There will be no single
+point of failure on the LAN.
+
+The support team will determine where to install the kits and which switches on the existing infrastructure
+the catalyst 2960 switch trunk ports will connect to.
+
+KIT Name Int. Loopback 99 Int. Loopback 100 Int. VLAN 917 Management Int.
+
+I IRRELEVANT
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 60 of 89
+FUJ00088633
+
+FUJ00088633
+(oe) HNG-X Support Networks LLD &
+wa13nsw002 - - 172.20.0.54/28 Int. VLAN 917
+
+Table 9 WAR13 LAN info
+
+MPLS VPN
+
+BGP AS64512
+
+CE Router
+
+Figure 27 WAR13 Layer 3 diagram
+
+Layer 2:
+
+The switches will be configured as VTP transparent mode and all trunks will be IEEE802.1q. VTP
+domain name will be determined by the RMGA support team.
+
+will be used as an access VLAN connecting the support VRF interface on the CE with
+
+interface 0/0 on the handoff routers. It will also serve as the management VLAN for the access
+switches: I t
+©Copyright Fujitsu Services Ltd 2010 Ref. DEV/INF/LLD/0054
+Version 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 61 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+High availability:
+VRRP group 1 will be configured on interface FEO/1 oni, [IRRELEVANT] and
+
+The virtual router
+configured with a priority 110. The virtual router backup fro
+ith a priority of 100. VRRP tracking will be used to dynamically failover
+backup. The IP address to be tracked will be the IP address
+
+master for the gi
+group 1 will be! IRRELEVANT!
+
+between the master
+configured on interface
+
+External Routing
+
+eBGP will be used as the preferred routing protocol between the CE (in WAR13) and the handoff routers
+as depicted in figure 20. eBGP peering will be between CE’s and the handoff routers’ interface IP
+AN 917 as shown. There will be one eBGP peer commands on the primary handoff
+T? and its BRAO1's corresponding CE, the same applies to between the secondary
+handoff and it corresponding CE. There will be no need for bgp multihop as eBGP.
+
+BGP will only be required to advertise IPSec tunnel endpoints interface loopback 99, as specified in the
+figure 27 above.
+
+Internal Routing:
+
+OSPF is the preferred routing protocol for internal routing. OSPF area 300 has been designated as the
+support client access OSPF area id. Area 300 in the data centres will be extended to the WAR13 handoff
+routers over a GRE tunnel, which is encrypted in an IPSec tunnel over C&W’s MPLS VPN as shown in
+figure 28 below.
+
+OSPF area 300 will be used to advertise the LAN subnet shown, in addition it will
+advertise the management interface (loopback 100) and the GRE tunnel endpoints (interface tunnel 0).
+
+agement of I
+IRRELEVANT ; ant
+
+e layer 2 access switches will be via static routes configured on the handoff routers
+
+} IRRELEVANT I
+
+There will be no redistribution between eBGP and OSPF locally in WAR13.
+
+GRE:
+
+GRE tunnelling will be used to extend OSPF Area 300 from the Data centre support access into all
+remote support sites. GRE Tunnel interfaces will be configured as depicted in figure 10 BGP/OSPF/GRE
+diagram”. Tunnel source will be interface loopback 99 on the WAR13 handoff router while the Tunnel
+destination will be the IP address of interface loopback 99 of the corresponding IRE11/19 handoff router.
+
+GRE Interface Tunnel 4 will be configured between handoff routers in IRE11/19 and handoff routers in
+WAR(13.
+
+IP MTU size and TCP maximum segment size will be adjusted accordingly after tests have been carried
+out to determine what values will work best.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 62 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU
+
+IPSec:
+
+Configure as depicted in section 2.1.3.4.
+
+OSPF Process id 1 Area 300
+
+‘Figure 28 WAR13 Layer OSPF/GRE diagram
+
+2.1.8.1 WAR13 Acceptance into Service Criteria
+
+This section provides some criteria for Acceptance into Service tests to be performed. The AIS tests will
+show conformance of the implementation to the design but are not exhaustive and need to be performed
+in conjunction with other tests which are within the remit of the implementation teams.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 63 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+IRRELEVANT } will show the new C&W CE router xxxx-rxx-001 as a BGP neighbour
+
+will show the new C&W CE router xxxx-rxx-002 as a BGP neighbour
+
+will learn routes to the DC HO router!i loopback addresses via eBGP
+
+. [IRRELEVANT I Will learn routes to the DC HO router loopback addresses via eBGP
+
+‘loopback addresses via eBGP
+
+jwill learn routes to the remote HO rout
+
+loopback addresses via eBGP.
+
+e aGRE tunnel can be built between:
+
+¢ aGRE tunnel can be built between
+« an OSPF adjacency can be established betwee
+
+«® an OSPF adjacency can be established between
+
+. rs i hould learn routes via OPSF Area 300 for the following remote
+
+2.1.9 WNG01 and BTLO1
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 64 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+The following will be installed;
+
+2x Cisco 2811 — Handoff routers
+
+igure 29 WGN01/BTL01 Data Centre Layer 3 diagram
+
+The support team will determine where to install the kits and which switches on the existing infrastructure
+the handoff routers will connect to as discussed with Neil P..
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 65 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+Figure 30 WGN01/BTL01 Data Centre BGP/NAT diagram
+
+KIT Name Int. Loopback 99 Int. Loopback 100 . Management Int.
+
+MIRRELEVANT! I CCUURRELEVANT
+
+IRRELEVANT I
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 66 of 89
+FUJ00088633
+FUJ00088633
+
+(oe) HNG-X Support Networks LLD
+
+FUJITSU ore
+
+a
+
+Table 10 WGN01/BTL01 Loopback addresses
+
+myers, —  OSPEProvessidt Area300= &- _
+
+RRELEVANT
+
+Figure 31 WGN01/BTL01 Data Centre IP Routing/IPSEC/GRE diagram
+
+) BTLO1) will be used as an access VLAN connecting the support VRF
+interfaéé On the CE with interface FEO/0 on the handoff routers.
+
+{WGNO1) and VLAN: 'BTLO1) will be configured for HNG-X Support workstations.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 67 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+External Routing
+
+eBGP will be used as the preferred routing protocol between the CE and the handoff routers as depicted
+in figure 29. eBGP peering will be between CE’s and the handoff routers’ interface IP addressing on
+VLAN: ‘WGNO1) and: }(BTLO1) as shown. There will be no need for bgp multihop.
+
+BGP will only be required to advertise IPSec tunnel endpoints interface loopback 99.
+
+GRE:
+
+GRE tunnelling will be used to extend OSPF Area 300 from the Data centre support access into all
+remote support sites. GRE Tunnel interfaces will be configured as depicted in figure 29. Tunnel source
+will be interface loopback 99 on the WGNO01/BTL01 handoff router while the Tunnel destination will be
+the IP address of interface loopback 99 of the corresponding IRE11/19 handoff router.
+
+GRE Interface Tunnel 5 will be configured between handoff routers in IRE11/19 and handoff routers in
+WGN01/BTLO1.
+
+IP MTU size and TCP maximum segment size will be adjusted accordingly after tests have been carried
+out to determine what values will work best.
+
+IPSe
+The steps for IPSec configuration are as follows
+
+1. Create Crypto Access List - To secure the GRE Tunnel;
+
+IRE 11 & 19: “interface loopback 99” will be the source networks and the corresponding handoff
+router's “interface loopback 99” at the client site will be the destination.
+
+WNG01/BTL01; “interface loopback 99” will be the source networks and IRE 11 & 19’s “interface
+loopback 99” will be the destination.
+
+2. Define IKE to handle negotiation of protocols and algorithms based on local policy.
+For encryption use “aes 256”
+For authentication, a pre-shared key will be defined.
+
+3. Defining Transform Sets: A Combination of Security Protocols and Algorithms.
+
+For Encryption (ESP Encryption Transform), esp-aes 256 (ESP with the 256-bit AES encryption
+algorithm) will be used
+
+For Header Authentication (AH Transform), ah-sha-hmac { AH with the SHA (an HMAC variant)
+authentication algorithm} will be used
+
+4. Create Crypto Map Sets.
+This will be ipsec-isakmp based.
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 68 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+(IRE11/19).
+"](WNGO01) and
+
+Internal Routing:
+
+Area 300 in the data centres will be extended to WGNO1 and BTLO1 handoff routers over a GRE tunnel,
+which is encrypted in an IPSec tunnel over C&W’s MPLS VPN as shown in figure 29.
+
+it will also advertise the NAT
+) (Wigan NAT ranges) and NAT subnets
+Bootle NAT ranges) as seen in figure 28 and 29, in addition
+it will advertise the management interface (loopback 100) and the GRE tunnel endpoints (interface
+tunnel 5).
+
+There will be no redistribution between eBGP and OSPF locally in WGNO1 and BTLO1.
+
+ntly using the IP range! the
+if r}. All NAT in Wigan and Bootle will be
+configured on the Handoff routers and they will be the demarcation between the HNG-X and the existing
+Horizon based networks, as shown in figure 28. Static and Dynamic NAT will be configured on the
+handoff routers.
+
+Wigan NAT range 4
+Bootle NAT range - I
+
+(Horizon SAS NAT range).
+Horizon SAS NAT range).
+
+Static NAT will be configured to the SAS servers as follows;
+Horizon SAS Servers Static NAT:
+
+IRRELEVANT
+
+HNG-x SSN (SAS) servers Static NAT: TBD, presently access to HNG-x SSN servers is over FJS
+corporate.
+
+For resilience to work with NAT on the handoff routers, static routing with IP SLA monronng will be
+configure on the HO routers locally pointi inside interface on VLAN!
+interface Fe0/1 (WGNO1) and to VLAN! - - interface Fe0/1 (BTLOT). These mail then be
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 69 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+redistributed into OSPF area 300. IP SLA monitoring will be monitoring the handoff router’s NAT inside
+interface — interface Fe0/1 which if it fails causes the NAT to failover between WGNO1 and BTLO1.
+
+Interface FEO/O will be configured as NAT outside and FEO/1 as NAT inside interfaces.
+
+2.1.9.1. Wigan/Bootle Acceptance into Service Criteria
+
+This section provides some criteria for Acceptance into Service tests to be performed. The AIS tests will
+show conformance of the implementation to the design but are not exhaustive and need to be performed
+in conjunction with other tests which are within the remit of the implementation teams.
+
++ [IRRELEVANT!will show the new C&W CE routet
+
+will show the new C&W CE routef I
+
+IRRELEVANT I as a BGP neighbour
+
+as a BGP neighbour
+
+will learn routes to the DC HO route opback addresses via eBGP.
+
+loopback addresses via eBGP.
+
+loopback addresses via eBGP
+}loopback addresses via eBGP
+« aGRE tunnel can be built between
+« aGRE tunnel can be built between;
+e an OSPF adjacency can be established between
+* an OSPF adjacency can be established between!
+
+‘should learn routes via OSPF Area 300 for the following support
+
+should learn routes via OPSF Area 300 for the following remote
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 70 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+2.2 Remote Support Workstations
+
+SSW (SSC Support Workstation) - All SSC workstations will be virtualized on the existing Horizon
+hardware with three Horizon IP addresses as follows —
+
+- One for the host operating system,
+
+- One for the Windows 2000 VM which is being use to support Horizon, and which will continue during
+Hydra.
+
+- One for the XP VM which will support HNG-x, and which will be used during Hydra.
+Attached connectivity requirements for SSC workstations in HNG-x and HYDRA -
+
+ttached is a list of Ssc workstation on [IRRELEVANT and these will NAT to
+
+be configured for N
+
+Serial No Machine ID IP
+Host Win2K VM
+
+IRRELEVANT: ; IRRELEVANT
+
+Gateway
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 71 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+NMW (Network Management Workstation) — Traffic types/endpoints in HNG-x will be RDP to SSN
+servers.
+
+« WGNO1/BTLO1 - HNG-x
+(Wigan) and VLAN
+
+twork management workstations will sit on thi
+I (Bootle). Horizon workstations will NAT tof a
+
+¢ WAR‘3 - The HNG-x network management workstations will sit on the HNG-x VLAN
+will be no need to NAT.
+
+MSS/SMG/MAN (SYSMAN2 Tivoli Workstation) - MSS/SMG workstations will target all Rig SSN
+servers both for Live and Test
+
+« WGNO1/BTLO
+x NAT range:
+allocated for expansion. SYSMAN2 will in time upgraded ‘0 SYSMAN3 and the target endpoint is
+the Estsysman platform.
+
+Attached is the port requirements and list of workstations for SYSMAN2.
+
+I IRRELEVANT
+
+« BRAO1 — SMG sits on tht
+
+KAW/KSA/KSN/ACE/CAW : These will target the Keyman domain in IRE11/19.
+CAW - Certificate Authority Workstation (Horizon)
+
+KAW - KMA workstation (Horizon)
+
+KSA - KMA Admin Workstation (Horizon)
+
+KSN - KMNG Workstation
+
+ACE Workstation (Horizon)
+
+« BRA0O1 - These platforms sit on the RMGA security LAN, IP subne
+to HNG-x subnet
+
+IRRELEVANT I and will NAT
+
+“land will NAT
+
+. Additionally
+for enrolment. The
+iched spreadsheet.
+
+access is required to an HTTPS server on the SSN server IRRELEVANT
+required traffic flows are described in the IRE11/19 firewall rules table
+
+These rules contain a range of ports for Dynamic allocation of TCP ports to RPC services. The current
+version of the firewall software deployed (7.0) does not include the ability to open dynamic ports for RPC
+service calls. This is addressed in version 7.2 of the software. To allow the KSN servers to communicate
+with the ACD a range of ports has been specified. The ACD server will need to be patched to restrict the
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version; 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 72 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+fee)
+FUJITSU
+
+range of ports which can be allocated to services. This range has initially been set at 1000 but will need
+reviewing to minimise the number of ports open on the firewalls. If the firewall software is upgraded at a
+later date this range can be removed.
+
+The RVACC KSN also needs access to the KMN on TCP port"! for CAPO volume testing and end-
+to-end counter transactions.
+
+a)
+
+AUD/AUW: Will target the Keyman domain in IRE11/19.
+AUD - Audit Workstation (Horizon)
+AUW - Audit Workstation
+
+« BRA01 — These I
+to HNG-x subne’.
+
+ity LAN, IP subnet.
+
+. 'y LAN, IP subnet! Jand will NAT
+to HNG-x subnet! _
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 73 of 89
+Fe)
+FUJITSU
+
+HNG-X Support Networks LLD
+
+FUJ00088633
+FUJ00088633
+
+eo
+
+3
+3.1.1
+
+Firewall Rules.
+
+Firewall Rule
+
+Firewall rules TBC, in line with the DC LAN LLD which is presently unavailable.
+Updated with BRAO1/IRE SSC firewall rules, others to follow.
+
+The RMGA Network team will manage the network equipment in IRE11 and IRE19. The monitoring and
+management platforms used in the network will be the HP Open View and CiscoWorks platforms.
+Protocols required for support will be SNMP, SFTP, SSH, SCP.
+
+General firewall policy: deny all inbound traffic unless explicitly authorised and traffic from internal VLAN
+users is unrestricted. All deny rules are logged.
+
+e Firewall rules coloured Orange are believed to be unnecessary as they define return traffic flows
+for conversations initiated by client devices outside the data centre rather than initiated by the
+data centre servers back to the clients. The firewall appliances employed should be capable of
+handling these implied return rules. These rules tend to be from a single device or cluster of
+devices to a network or PAT address.
+
+« Entries coloured Blue are new in this version of the document.
+
+Source Destinatior Service Port Protocol Actio Comments
+n
+: ih i Live SSN SQL Connectivity
+' IRRELEVANT I! IRRELEVANT I Sql 1521 Tep allow for MSS Toom
+LST SSN SQL Connectivity
+Sql 1521 Tep allow for MSS Team
+= , RvMig SSN SQL
+‘IRRELEVANT I Sal 1521 Tep allow I Connectivity for MSS Team
+} IRRELEVANT I IRRELEVANT ; RDP 3389 I TCP I allow I SSN server connectivity
+S Copyright Fujitsu Services Ltd 2010 Ref. DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+UNCONTROLLED IF PRINTED Page No: 74 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+I IRRELEVANT I IRRELEVANT
+
+TeP SAS server LAN to the rest
+
+I IRRELEVANT I) IRRELEVANT OpenssH I 22 Allow of the Estate
+
+For Steve Glasgow's team
+ALLO I (IRE11 NT/UNIX Support)
+
+Ww access to the SAS servers
+in Horizon (WGNO1/BTLO1)
+
+RDP 3389 TCP
+
+IRRELEVANT
+
+BRAO1 Corporate PAT IP.
+
+RDP 3389.) TCP I alt ddress to SAS
+RRELEVANT ony eesonnestvity.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 75 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+RDP. 3389
+ALLO SSC Workstation t
+IRRELEVANT; IRRELEVANT} ss# 22) Top lw IRE11/19 SSC Server
+FTP 20,21
+
+RRELEVANT I ° w
+pocenennennnnnnniny i I 3389 I TCP SSC server to IRE11/19
+! H q RDP. Allow SSN (SAS) server terminal
+I IRRELEVANT I I IRRELEVANT access
+oT gt 22
+FTP 20,21
+SQL 1433
+Server/ 1434
+Client TCP/ I ALLO I IRE11/19 SSC Server to
+
+IRRELEVANT
+
+RRELEVANT } ares I 43 I upp I w IRE11/19 SSN servers
+EVENTS I 31111
+PerfMon I 31119
+RPC 31111
+JDBC 31119
+
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 76 of 89
+Fe)
+FUJITSU
+
+HNG-X Support Networks LLD
+
+FUJ00088633
+FUJ00088633
+
+» IRRELEVANT
+
+135
+
+1433/1
+434
+
+TCP)
+
+: IRRELEVANT II I ALO] IRELTOSSN Sete fo
+qe events UDP w IRE11/19 vers
+I PerfMon
+/ RPC
+
+JDBC
+RPC 135
+{ ae _I ToP/
+' 1433/1 ALLO I IRE11/19 SSC Server to
+‘IRRELEVANT IRRELEVANT I JDBC #4 I upp I W IRE11/19 WIN servers
+‘ sone ~ Copy file 139
+— RPC 138
+TCP/
+1433/1 ALLO I IRE11/19 SSC Server to
+I IRRELEVANT voBC 44 I upp I WwW IRE11/19 NIX servers
+Copy file 439
+22
+
+i SSH 20,21
+
+i - FTP 31111
+
+H i " TCP/ I ALLO I IRE11/19 SSN Server to
+
+/IRRELEVANT II ;IRRELEVANT;I events J st1t9 ] Ww IRE11/19 WIN servers
+
+a PerfMion 3titt
+31119
+Hl : SSH 2 TCP/ I ALLO I  IRE11/19 SSN Server to
+: IRRELEVANT FTP 2021 I ypp I Ww IRE11/19 NIX servers
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+UNCONTROLLED IF PRINTED Page No: 77 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+IRRELEVANT
+
+H HTTPS 443 I TCP! I aLLo I  IRE11/19 SSN Server to
+IRRELEVANT icits 44s I upp I W_ I IRE11/19 WEB servers
+H 31111
+
+IRRELEVANT} IRRELEVANT I 9 ™s_—sf aso I top I AO I RETRO wen
+
+i HTTPS
+! was I top I ALLO I ipbit/10 SYSMANSIRAD &
+I IRRELEVANT w toMy
+i i ALLO IRE11/19 SSN Server to
+» IRRELEVANT I SSH 22) TCP IW I IRE11/19 Oracles servers
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 78 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+E ALLO I IRE11/19 SSN Server to
+I IRRELEVANT HTTP 80} TCP IW. I IRE11/19 PAN manager
+] HTTPS
+] ALLO I _IRE11/19 SSN Server to
+I IRRELEVANT 443) TCP I "W_ I Third party Access Servers
+Fs - Key management
+all all te allow workstations to Key
+i i management domain
+L access.
+I IRRELEVANT I all al I top I allow tations to Key
+Key management
+all all te allow workstations to Key
+i management domain
+access.
+IRRELEVANT all all tep allow
+F I posteres I 8482
+: ; Sttp a
+I ! Jscape secure I 10880) 1 I 1 I CM Workstation access to
+I IRRELEVANT I file server DXC
+I 1 HTTPS 443
+\ ; HTTP 80
+ns i STE04 Support PAT IP
+H IRRELEVANT! ‘IRRELEVANT: RDP 3389 I TCP I Allow address to SAS server
+onan i connectivity
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 79 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe
+FUJITSU
+
+IRRELEVANT I
+
+TCP
+LDAP Global I 3268
+Catalogue
+LDAP 3e9 I TCP
+i” Kerberos gg I UDPITC BRAO1 KSN to IRE19
+I IRRELEVANT Pp Allow I RVACC ACD server for ikey
+‘ Kpasssword I 464 I nome USB token
+cits 445 Pp
+RPC Dynamic I 44952. TCP
+orts*
+p 50151 I sop
+— BRAOT KSN to IRE19
+! IRRELEVANT I HTTPS 443 I Top I Allow I RVACC SSN for ikey USB
+token
+I IRRELEVANT I 33031} TCP I Allow I BRAOTKEN to KMN for
+
+Table 11 IRE11 and IRE 19 ASA Firewall Rule base
+
+1 Please see note regarding dynamic RPC ports for KSN access in section 2.2 above.
+
+Source Destination Service] Port Protocol] Action ‘Comments
+_ _ - LST SSN SQL
+I IRRELEVANT : Sql 1521 Tep allow Connectivity for MSS.
+i I Team
+RvMig SSN SQL
+Sql 1521 Tep allow Connectivity for MSS.
+Team
+= Tt Postgres I 5432 TCP CM workstation to Data
+H IRRELEVANT i]t Database 21 Tcp Exchange Proxy (DXC)
+i iy i ALLOW platform for software
+' Wy IRRELEVANT Fips 10880 TcP delivery from BRAO1
+i__ yt Jscape Corporate LAN to
+E secure file I 449 Top IRE11/19.
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 80 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+[IRRELEVANT I TCP
+
+IRRELEVANT II IRRELEVANT.
+
+ALLOW
+TCP
+: : ! IRE11/19
+i i TCP
+RDP 3389 top I attow I _JRE11/19 SSN (SAS)
+server terminal access
+RDP 3389
+SSH 22 TCP I ALLOW I _IRE11/19 SSC Server
+FTP 20,21
+RDP
+SSH ALLOW
+FTP
+
+! IRRELEVANT I
+
+SMG to IRE11/19 SSN
+
+/ IRRELEVANT I RDP 3389 TcP Allow (SAS) server terminal
+
+! access
+: IRRELEVANT :
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 81 of 89.
+2
+FUJITSU
+
+HNG-X Support Networks LLD
+
+FUJ00088633
+FUJ00088633
+
+- : Key management
+H i i workstations to Key
+IRRELEVANT I =I IRRELEVANT; all all ‘ep allow I management domain
+A I I access.
+Key management
+ey i all all tep allow orkstations to Key
+IRRELEVANT I IRRELEVANT : 8 a oF anos management domain
+- nna a ness.
+Table 12 BRA01 Firewall Rule base
+Source’ Destination Service Port Protocol I Action Comments
+SMG to IRE11/19 SSN
+IRRELEVANT RDP 3389 TcP Allow (SAS) server terminal
+access
+I 3389 Tep STE04 Support PAT IP
+: IRRELEVANT I RDP Allow I address to SAS server
+connectivity
+Table 13 STE04 Firewall Rule base
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version 18
+Date: 01/08/2010
+UNCONTROLLED IF PRINTED PageNo: 82 of 89
+2
+FUJITSU
+
+HNG-X Support Networks LLD
+
+FUJ00088633
+FUJ00088633
+
+Source Destination Service Port Protocol] Action Comments
+' I SSC to IRE11/19 SSN
+I IRRELEVANT III IRRELEVANT RDP 3389 Top Allow (SAS) server terminal
+i i access
+
+RDP. 3389
+SSH 2 TcP I ALLOW I __IRE11/19 SSC Server
+FTP 20,21
+i STE04 support traffic to
+IRRELEVANT I RDP 3389 Top Allow Reig
+- , Key management
+H i workstations to Key
+IRRELEVANT: I I IRRELEVANT : all all ‘ep allow I management domain
+° i H access
+__ Key management
+H i H ay - hos workstations to Key
+IRRELEVANT I IR all all tep alow management domain
+be - te access.
+Table 14 LEW02 Firewall Rule base
+‘©Copyright Fujitsu Services Ltd 2010 Ref. DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+UNCONTROLLED IF PRINTED Page No: 83 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+Fe)
+FUJITSU
+
+Source Destination Service I Port Protocol Action Comments
+
+Live SSN SQL
+sql I 1521 Top allow Connectivity for MSS
+Team
+
+IRRELEVANT I
+
+SSC to IRE11/19 SSN
+RDP 3389 TCP Allow (SAS) server terminal
+access
+
+IRRELEVANT
+
+I IRRELEVANT I
+
+Table 15 Wigan and Bottle Firewall Rule base
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 18
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 84 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+2
+FUJITSU
+
+4 Platform Requirements
+4.1.1 Availability & Resilience
+
+As discussed in each remote site section.
+
+4.1.2 SAS Servers
+SAS Server Requirements:
+The high level requirements for the Secure Access Servers are to provide support teams with:
+« Controlled and audited access to the operational platforms
+e Multiple sessions for support users
+« OpenSSH access from the SAS to the managed operational platforms.
+« Secure web based access to campus servers
+e Access to the System Management.
+
+This High Level Design sets out the design for the Secure Access Servers described in the Remote
+Support and Diagnostics architecture (ARC/SYS/ARC/0004). This will provide remote support access to
+IRE11 and IRE19 for the following user communities:
+
+« SSC
+
+« SMG
+
+e ISD (Unix, NT and Network support)
+
+° Test
+
+Support workstations will access the SAS using RDP and will also have the ability to access BSDB (SSC.
+database) and the SSC server (RDP) directly.
+
+©Copyright Fujitsu Services Ltd 2010 Ref DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 85 of 89
+FUJ00088633
+FUJ00088633
+
+FUJITSU HNG-X Support Networks LLD &
+
+Figure 32 SAS Connectivity diagram
+
+Source Destination Description Protocol Ports
+WGNO01, STEO9, I SAS Server Support Teams, RDP.
+IRE11, BRAO1 Application Support Teams and
+workstations. Testing Teams access SAS and
+Test SAS.
+WGNO1, STEO9, I Application & Host Testing Teams file transfer to SFTP. i]
+IRE11, BRAO1 Support MPLS VPN /from Infrastructure.
+workstations. j RELEVANT:
+SAS Application Servers & Secure channel between SAS ssh _ I ssh I ‘I
+Counters client and target SSH Server.
+SAS Application servers Server Support Teams, RDP* ‘I
+Application Support Teams and
+Testing Teams access to
+Infrastructure.
+
+* Only in exceptional circumstances and only to DC hosted servers
+Table 16 SAS connectivity requirements
+
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 86 of 89
+FUJ00088633
+FUJ00088633
+
+HNG-X Support Networks LLD
+
+fee)
+FUJITSU
+
+SAS Authentication:
+SAS servers will support authentication via Windows Active Directory.
+For non Microsoft AD based users, authentication to the SAS servers will be local.
+
+4.1.3 Software delivery
+
+Software delivery flow diagram
+
+BRA01 Corporate ——+
+RE 19 DC Campus
+
+i
+1
+i
+' I IRE19 FWSM firewall
+' H ——
+Dimensions I IRE19 ASA firewall I —— —
+t ! a
+iz z H N NAS.
+' Proxy \ ' / \ _
+{ Dx ] TPM
+' jt \*
+H ! /
+t H .
+1 = Hl x
+I { ! Servers -
+»I Packaging I 1 Campus
+I H Servers — Manually
+x \ ! Built by SAS
+Ew 1 TeM EBS
+\ 4 EDS
+\ i EPM
+I CM Workstation ut
+\ jt
+\ i
+t
+Figure 33 Software delivery diagram (TBC).
+Connectivity requirements is as shown
+Source Destination Description Method
+CM Workstation Generic Proxy Software Secure File
+Repository (NAS) Transfer
+Table 17
+©Copyright Fujitsu Services Ltd 2010 Ref: DEV/INF/LLD/0054
+Version: 1.8
+Date: 01/08/2010
+
+UNCONTROLLED IF PRINTED Page No: 87 of 89

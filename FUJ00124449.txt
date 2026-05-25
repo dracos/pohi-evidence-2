@@ -1,0 +1,326 @@
+FUJ00124449
+FUJ00124449
+
+Message
+
+From: Jenkins Gareth Gl [/O=EXCHANGE/OU=ADMINGROUP1/CN=RECIPIENTS/CN=GARETH JENKINS]
+Sent: 05/06/2013 15:08:30
+
+To: Newsome Pete [/O=EXCHANGE/OU=AdminGroup1/cn=Recipients/cn=Blagg-NewsomeP]
+
+ce: Davidson James [/O=EXCHANGE/OU=AdminGroup1/cn=Recipients/cn=DavidsonJ2]; Membery Bill
+
+[/O=EXCHANGE/OU=AdminGroup1/cn=Recipients/cn=MemberyW]; Warren Brad
+[/O=EXCHANGE/OU=AdminGroup1/cn=Recipients/cn=WarrenB]
+
+Subject: RE: Second Sight Info
+
+Attachments: 3605.answers to audit questions v0.1.docx; ARCGENREP0004.HorizonDataintegrity.doc;
+HorizonOnlineDatalntegrity_POL.doc; JENKINS Gareth witness statementv1.0.doc
+
+Pete,
+¥ve added comments and changes to the doc.
+
+ve also attached my 2 docs on Horizon and Horizon Online Integrity plus the standard Witness statement that I’ve used
+in recent court cases.
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+
+Distinguished Engineer
+Business Applications Architect
+Post Office Account
+
+Fujitsu is proud to partner with Shelter, the housing and homeless charity
+
+Reshaping ICT, Reshaping Business in partnership with FT.com
+
+BA Please
+
+From: Newsome Pete
+
+Sent: 05 June 2013 15:53
+
+To: Jenkins Gareth GI
+
+Cc: Davidson James; Membery Bill; Warren Brad
+
+Subject: RE: Second Sight Info
+
+Gareth
+
+Had a go at the answers. Can you check and add the missing info.
+
+Bill: Do you have those docs?
+
+Pete
+FUJ00124449
+FUJ00124449
+
+Pete Newsome
+Business Change Manager
+Post Office Account, Fujitsu UK&l
+
+pAypesse consider the er
+From: Jenkins Gareth GI
+
+Sent: 05 June 2013 14:11
+
+To: Newsome Pete
+
+Cc: Davidson James; Membery Bill
+Subject: RE: Second Sight Info
+
+Pete,
+
+As stated below, this allegation relates to 2008. At that time there was no Live BRDB and so BRDB is irrelevant to this
+issue.
+
+The stuff below from the Ops Guide refers to changes that were made to the old Horizon system in 2004 or 2005
+relating to Auto Rems and TCs which were introduced at that time as part of the IMPACT Programme. Auto Rems meant
+that POL send Horizon a data feed defining the content of Cash pouches and so as soon as the Branch scans in the pouch
+that value of cash is added into their accounts (and a receipt printed). Before that they had to key in the amount and
+this caused a number of issues with incorrect amounts being keyed.
+
+However as with TCs the SPMR (or a member of staff} would be responsible for the transaction and it would be recorded
+against their name.
+
+Prior to this, then Error Notices were sent to Branches which were often months after errors occurred and staff were
+expected to carry out appropriate transactions at the branch. TCs automated this process and speeded it up. P&BA
+
+have never had access to adjust client accounts on site through Horizon. I'd be surprised if they could do that in any
+
+earlier suystems.
+
+Clearly on a test System, then a tester would be injecting such files into the test rigs to simulate this process.
+
+As you have already pointed out, there is no link between test and Live.
+
+Just seen Steve's response. I’ve sent you some suggested answers this morning. Hopefully you’ve got everything you
+need from me.
+
+V'm with POL / NCR tomorrow and then away until 17" June. { will check my phone for messages each day while away,
+but won’t have a laptop with me.
+Regards
+
+Gareth
+
+Gareth Jenkins
+Distinguished Engineer
+Business Applications Architect
+Post Office Account
+
+FUJ00124449
+FUJ00124449
+
+http://uk fujitsu.com
+
+Fujitsu is proud to partner with Shelter, the housing and homeless charity
+
+Reshaping ICT, Reshaping Business in partnership with FT.com
+
+ly need te pri
+
+a Please consider the environment - d
+
+From: Newsome Pete
+Sent: 05 June 2013 13:15
+To: Steve Allchorn
+
+Cc: Simon Baker; Davidson James; Membery Bill; Jenkins Gareth GI
+Subject: RE: Second Sight Info
+
+Steve
+
+f assume the questions are those contained in the statement below. If I have read the section properly there are two key
+questions we need to provide answers and supporting evidence:
+
+1. The SPMR observation was in the Bracknell ‘basement’ so the question is what access to any live environment
+was available so that area for any member of the joint test team could pass transaction directly into the live
+system (not the test system)?
+
+2. is it possible to generate a ‘REM Out’ without the Post Master approving the change?
+
+We will continue with the piece of work to identify when the BRDB has had a manual transaction correction and
+identifying the process.
+
+Can you confirm these are the correct questions or are there any others?
+Regards
+Pete
+
+This SPMR asserts that on Tuesday 19" August, 2008 he observed an individual based in the basement of the Fujitsu office in
+Bracknell who demonstrated an ability to pass transactions directly into the Horizon system, and, in so doing, to alter, in real time or
+overnight, the recorded holdings of Foreign Currency in POL sub post offices. The SPMR also states that the person, after altering a
+branch’s cash balance, then “made light of it” saying “I’d better reverse that entry now or he’ll have a shortage tonight.”
+
+The SPMR asserts that the person did this by generating an outgoing remittance (a ‘Rem Out’) for a branch. The SPMR expands on
+this by asserting that, contrary to POL’s repeated reassurances (see Note below), there did exist a capability to pass entries over the
+heads of the impacted SPMRs and without the knowledge of those SPMRs or their in-branch staff. It is not clear whether, if such
+entries WERE being passed, whether those transactions were invisible to the impacted SPMRs and their staff both at the time that
+the transaction was being executed and also at any later stage.
+
+Note: Page 9, Section 7 of POL’s Horizon Operating Manual (as of December 2006) includes a sentence stating that: “The
+introduction of the new Post Office Ltd Finance System (POLFS) in Product and Branch Accounting (P&BA), Chesterfield means that
+the finance teams can no longer adjust client accounts on site.” The reference here to “on site” means, it is understood, “in
+Chesterfield or anywhere else within POL”. The inference is that Transaction Corrections (‘TCs’), and Rems In and Out, have to be
+‘accepted’ at the branch level and that there exists no power/capability at the centre (in Chesterfield or anywhere else) to impact
+any branch’s accounts without the SPMR’s (or his/her staffs’) knowledge, approval and involvement. POL is hereby asked to clarify
+the position on this.
+
+Pete Newsome
+FUJ00124449
+FUJ00124449
+
+Business Change Manager
+
+wire
+
+From: Steve Allchorn
+Sent: 05 June 2013 12:
+To: Newsome Pete
+
+Cc: Simon Baker; Davidson James; Membery Bill
+Subject: RE: Second Sight Info
+
+Importance: High
+
+Pete — thanks very much for sending through some preliminary information quickly.
+
+Can I just reiterate that although these documents are both relevant and additional information, what we require are
+some clear statement of facts in response to lan’s key questions raised below.
+
+Can you ensure that each of lan’s points are provided with a response. These will then collectively assist Second Sight in
+determining the viability of the allegations set out in the Spot Review.
+
+Alwen Lyons is keen to get a further meeting set up early next week therefore an urgent response to each of the
+questions would be greatly appreciated and by the end of this week at the latest please.
+
+Thanks
+Steve
+
+From: Newsome Pet
+Sent: 04 June 2013 15:47
+
+To: Steve Allchorn
+
+Cc: Simon Baker; Davidson James; x.bill.membery
+Subject: FW: Second Sight Info
+
+Steve
+
+The audit report above describes the separation and controls around the test and live systems. Bill is also going to
+provide the SLD and HLD which will show that the live system in not accessible from the basement in Bracknell, i.e. the
+member of staff in question can only have been talking about the test system. At the time indicated the system on test
+was the as yet brand new HNGx release 1 so there was no live instance available.
+
+Hope this helps.
+
+Pete
+
+Pete Newsome
+Business Change Manager
+Acc:
+
+it, Fujitsu UK&d
+
+FUJ00124449
+FUJ00124449
+
+From: Membery Bill
+
+Sent: 04 June 2013 11:55
+
+To: Newsome Pete
+
+Subject: RE: Second Sight Info
+
+Hi Pete
+
+Yes the best report is the ISAE3402 report which shows change Management in section 4.9.9 the Technical segregation
+of Test and Live is also documented across various sections..
+
+PO Ltd also have copies of their PCI DSS Annual report and Link report that both review these Topics unfortunately as
+these reports are PO Ltd’s IPR we do not get these (Mark Pearce is best Contact here)
+
+Omniport the IRM Audit review tool actually stores the PCI DSS Auditors findings and Raj Patel and Security Operations
+have access to print these out with PO Ltd’s permission.
+
+The [SO 27001 standard to which we are accredited reviews this when it is selected as a topic area by the Auditors I have
+attached the Schedule of the last Audit where you can see they covered Change Management.
+ican extract all earlier reports if required as well as others from Business assurance.
+
+In addition to this PO Ltd have ensured Penetration Tests for PCI have taken place and as part of the approval process
+for the change to Horizon.
+
+I have attached the one from Horizon to HNG-X, Dave King at PO Ltd should have those instigated by PO Ltd again as
+they are PO Ltd’s IPR. { I might have unofficial copies)
+
+Kind Regards
+Bill Membery
+
+Quality and Compliance Manager
+POA
+
+Fujitsu
+
+Fujitsu is proud to partner with Shelter, the housing and homeless charity
+
+Reshaping ICT, Reshaping Business in partnership with FT.com
+
+hy Please consider the environment - do you reaily need to 5
+
+From: Newsome Pete
+Sent: 04 June 2013 10:17
+To: Membery Bill
+
+Subject: Second Sight Info
+FUJ00124449
+FUJ00124449
+
+Bill
+
+As a result of our meeting yesterday with PO we need to be able to show how the Test and Live environments are
+separated both physically and in terms of access and process.
+
+Do you have any documentation as part of the audits around change?
+I will give you a call.
+Pete
+
+Pete Newsome
+Business Change Manager
+Post Office Ac Fujitsu UK&l
+
+E-Mail:
+Web: nite 7ik fitsiccor
+
+ea Please consider the environment - do you really need to print this email?
+
+Unless otherwise stated, this email has been sent from Fujitsu Services Limited, from Fujitsu (FTS) Limited, or
+from Fujitsu Telecommunications Europe Limited, together "Fujitsu".
+
+This email is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may
+be privileged. Fujitsu does not guarantee that this email has not been intercepted and amended or that it is virus-
+free.
+
+Fujitsu Services Limited, registered in England No 96056, registered office 22 Baker Street, London W1U
+3BW.
+
+Fujitsu (FTS) Limited, registered in England No 03808613, registered office 22 Baker Street, London W1U.
+3BW.
+
+PFU Imaging Solutions Europe Limited, registered in England No 1578652, registered office Hayes Park
+Central, Hayes End Road, Hayes, Middlesex, UB4 8FE.
+
+Fujitsu Telecommunications Europe Limited, registered in England No 2548187, registered office Solihull
+Parkway, Birmingham Business Park, Birmingham, B37 7YU.
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient,
+you must not use, disclose, reproduce, copy or distribute the contents of this communication. If you have received this in
+error, please contact the sender by reply email and then delete this email from your system. Any views or opinions
+expressed within this email are solely those of the sender, unless otherwise specifically stated.
+
+POST OFFICE LIMITED is registered in England and Wales no 2154540. Registered Office: 148 OLD STREET,
+LONDON EC1V 9HQ.

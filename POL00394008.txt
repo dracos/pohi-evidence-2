@@ -1,0 +1,1149 @@
+Business Service Management - Problem Management
+
+POL00394008
+POL00394008
+
+Problem Management
+
+Status Report
+
+For Month - August 2001
+
+Author Des Hansbury
+
+Reference
+
+BSM/PM/SR/AUG/001
+
+Version 1.0
+
+Classification
+
+Status Report
+
+Date 7 Sept 2001
+
+Status
+
+Final
+
+Authority
+
+Signature
+
+Date 07/09/2001
+
+POCL Kevin Lenihan
+
+Distribution
+
+BSM Lead Team
+
+Dave Hulbert
+
+Kate Elliot
+
+BSM Problem Management Team
+Problem Co-ordinators
+
+PRONE
+
+POL-BSFF-0220678
+POL00394008
+
+POL00394008
+Business Service Management - Problem Management
+Table of Contents Pages
+Section 1 :- Introduction 2
+Section 2 :- Management Summary 3-4
+Section 3 :- New Problems 5-6
+Section 4 :- Problem Management Volumetrics 7-8
+Section 5 :- Problem Management Development/ Initiatives 9
+Section 6 :-Performance Measures 10
+Appendix : Problems Over 3 Months Old 11-19
+
+Section 1 - Introduction
+
+11
+
+1.2
+
+13
+
+Purpose
+The purpose of this report is to provide Business Service Management with a status report of problems managed by the
+Problem Management team for the month of August 2001.
+
+Context
+The report will focus on the management of ‘open’ problems and provides details of ongoing development and operational
+activity during the month.
+
+Problem Definition / Classification
+
+A ‘Problem’ :-
+
+¢ isa record of an underlying cause which may result in Incidents;
+
+¢ potentially exists when a defect in the specification, design, production, implementation, or use of any of the service
+components results in any aspect of the service not meeting expectations;
+
+e will be raised when the impact of the defect (e.g. the level and severity of the related incidents) is substantial enough to
+warrant action to eradicate it.;
+
+e will be deemed to exist when it is logged on a PON or ICL Pathway Problem Management system;
+
+¢ will be closed when it has been agreed that the underlying cause has been fixed or removed.
+
+POL-BSFF-0220678_0001
+POL00394008
+
+POL00394008
+
+Business Service Management - Problem Management
+
+Section 2- Management Summary
+
+21
+
+2.1.2
+
+2.2
+
+23
+
+24
+
+24.1
+
+August has seen a fall in new problems - Problem Offices issues accounted for 7 (47%) of the 15 new problems opened this
+month. The usual average is 20 - 25 new problems, but as August is the main holiday month, I expect this to be a blip.
+
+Interestingly, an issue that the holiday period highlighted was an increase of calls to the Horizon Helpdesk from ‘holiday
+relief’ staff in sub offices. ICLP have supplied data to highlight this issue and I am concerned that PON will also be feeling
+the impact of this - not only in helpdesk support terms, but also in respect of error notices, increased administration costs
+and a poor service to customers and clients. Iam pursuing the issue of training for ‘holiday relief staff’ as this is an area
+where I believe a short term fix which was implemented during roll out is now beginning to fail.
+
+We have still got a lot of issues in relation to Bureau work and environmental issues - the challenge for us at present is to
+crack these and some of our other long standing issues. One of the main problems tackled this month related to Frensham
+Way Post Office. The action arising is detailed below - after many twists and turns the office is closing but a new office is
+opening with a different FAD code and name in approximately 8 weeks - negotiations with the council continue at present.
+I feel that the Territory could have been a lot more actively involved, but thankfully we had a lot of support from Don Grey
+on this, which made the difference in bringing the issues to a close.
+
+As reported last month, the lack of movement on Toolset development has been escalated to find what the issues are. The
+proposed changes on Impact Assessment are long overdue and this delay merely causes frustration after all the effort
+undertaken to identify a more simplified, streamlined process.
+
+A report highlighting the way forward for Problem Management was produced for the Head of Operations and Head of
+BSM earlier this month. Currently awaiting agreement on the recommended changes.
+
+The key problems and issues which have provided the main focus for us this month were in relation to :-
+
+Frensham Way Post Office
+As stated above, this month saw the height of activity that we’ve had at this office. Originally it was going to close
+
+following a hastily organised meeting chaired by Don Grey - then the council and local MP became involved and
+
+POL-BSFF-0220678_0002
+POL00394008
+
+POL00394008
+
+Business Service Management - Problem Management
+
+2.4.2
+
+24.3
+
+244
+
+eventually the council recognised that their procrastination and earlier intransigence was a major factor in the office having
+to close. The council has now agreed to give the office a 3 month lease to enable an ISDN solution to be trialled and they
+will pick up all associated costs should it fail. The office will open on the intended new site, but with a new name , FAD
+and different postmaster. In the meantime, the ‘exit’ package for the postmistress at Frensham is still being finalised and
+the office actually ceases trading on 7 September. The delay in opening the new site is linked to getting the ISDN line
+installed - negotiations with the council are still taking place over the longer term issues involved.
+
+Non Polling
+Traised this issue at the Cross Domain Problem Management (XDPM) meeting earlier this month because Mike Woolgar
+
+had informed us that ‘a senior source’ in ICLP was reluctant for him to go to any Non Poll meeting. Dave Law agreed that
+my suggestion for a ‘check step’ meeting to look at the whole area of non poll reporting was a sensible way forward. Mick
+Theobald has subsequently set the meeting up for 19 September and hopefully we can get a more effective management
+information stream that is agreeable to all parties.
+
+LFS
+
+LFS bar coded labels are now in place. Authorised Temporary Procedures (ATPs) 39,47,57 and 60 have been withdrawn
+and problems 279, 328, 357 and 377 were placed on monitor pending imminent closure. The SAPADS upgrade 4.6 failed
+however and has been re-scheduled for 8 October. The Materials Replenishment Programme (MRP) cannot be piloted until
+the upgrade has been successful, therefore problem 457 - Cash Declarations - continues to drag on with no progress. If the
+October upgrade fails it will be after Christmas before the next attempt.
+
+White Screens in Your Guide
+
+A request was put to Cap Gemini Ernst & Young (CGEY) on 3 August to make changes to the error message currently
+received by kiosks as a result of the 3am reboot; this change was to aid ICL Pathway in the diagnostics of the problem. In
+addition, to help offices and end-users in those cases where a white screen occurs for other reasons, a change request was
+put to CGEY to revert the kiosk to the home page after fifteen minutes of non-activity. CGEY have not yet responded to
+these change requests, despite being raised at the Star Chamber of 3 September - now escalated to Graham Shervington.
+
+POL-BSFF-0220678_0003
+POL00394008
+
+POL00394008
+Business Service Management - Problem Management
+Section 3 - New Problems
+Problems Raised between 01/08/2001 and 31/08/2001
+Problem Id ICL Pathway Problem Title Closure Criteria Target Date Date Raised
+
+Problem Id
+
+/P10000591 LFS Daily cash Clear communication to Shared Stock Unit outlets of the correct way to use ID
+
+declarations, numbers for cash declarations followed by a reduction in queries to help lines
+
+process unclear for Iregarding this problem.
+
+SSU offices
+
+yXaroumes A high volume of calls to HSH have been made from outlets experiencing problems with daily and weekly cash on hand figures not matching up.
+INS Uta This affects outlets with Shared Stock units that use ID numbers to declare cash and will affect the level of non conformance (P10000457). The
+
+IHSUG, LFS workbook and Balancing with Horizon guide cover the use of ID numbers but the level of detail is not sufficient. Horizon Project are
+
+working on a communication to outlets.
+
+*YG* - White 1) Agreed & deployed scripting for NBSC and HSH 20/9/2001 [13/08/2001
+
+screens on YG 12) ID & eliminate root cause(s) of white screens.
+
+kiosks
+
+27/9/2001 09/08/2001
+
+Kiosks. They are also fairly sure that the 3am reboot is causing large numbers of white screens, and have proposed to stagger the times of rebooting.
+
+Other than that, they at ill collecting data of a technical nature, concentrating their efforts on network monitoring. Results to date would appear to
+point to the web server as a potential source of trouble. A change request has been made of CGEY (software providers ) in an attempt to alleviate the
+effect on Subpostmasters and end-users; no-one in CGEY has yet been found to acknowledge this request.
+
+Incorrect MBS issued to TVL network. Longer term, instruction to be removed from bar coded }27/9/2001 — I21/08/2001
+instruction on TVL ITVL counterfoils.
+counterfoil
+
+PNET There isa new bar-coded TV Licence transaction which will run alongside the existing TVL transaction. There are no despatch requirements for the
+evetiaeam new bar-coded transaction. However, TVL Counterfoils for August were printed with an incorrect instruction to send to Data Central. It would
+appear that only August counterfoils were affected. If this is confirmed with IAM the problem can be closed.
+
+POL-BSFF-0220678_0004
+Business Service Management - Problem Management
+
+POL00394008
+POL00394008
+
+Problem Title
+
+Ea No. requested from pathway for this problem. Training for the office requested from the Territorial Problem Co-ordinator 30/8/2001
+Resolution
+
+P10000598 First Glasgow ice changed on Horizon (01/09/01). 12/9/2001 29/08/2001
+Ticket and Travel
+Scheme
+PNatoamem A price increase was originally requested by the client for First Glasgow Bus Tickets. The client then cancelled the change but it was too late to stop
+INsseltdieam the price increase on the system. An Authorised Temporary Procedure has been implemented
+/P10000599 Problem Office - Establish if the errors have been caused by the system. 29/9/2001 I29/08/2001
+[Nunhead Nr
+Station (169007)
+Nero Office believes discrepancies have been caused by the system. Impact assessments sent out. Initial action will be to discuss the problem with the
+IReeO Mtoe Eastern Territory Horizon Liaison Manager.
+/P10000600 Training: Parkfield ICalls to return to average 4 per month 31/10/2001 [30/08/2001
+Road 203246 -
+Problem Office
+Es office. Problem opened 31/08/01. Sent for impact assessment and to the territory for comment
+Resolution
+/P10000601 Training: NetherleeICalls to be down to an average of 4 per month. 31/10/2001 [30/08/2001
+222832 - Problem
+Office
+eee ‘opened 31/08/01. Sent for impact assessment and to the territory for comment
+slution
+/P10000602 Training: Great ICL Pathway Calls to be down to an average of 4 calls per month 31/10/2001 {30/08/2001
+[Moor 175432 -
+Problem Office
+ee No. requested from pathway for this problem Training for the office requested from the Territorial Problem Co-ordinator 30/8/2001
+rlutic
+P10000603 Training: Pendre —ICalls to be reduced to an average of 4 calls per month. 31/10/2001 {30/08/2001
+371632 - Problem
+Office
+
+POL-BSFF-0220678_0005
+POL00394008
+POL00394008
+
+Business Service Management - Problem Management
+
+Section 4 - Volumetrics
+
+No. of Problems Open No. of Problems Open No. of Problems Open No. of Problems Open No. of Problems Open No. of Problems Open
+
+1 - 20 Days 21 - 40 Days 41 - 60 Days 61 - 80 Days 81 - 100 Days ~100
+
+4.1. Ownership of Open PON Problems
+
+Ownership of PON Problems
+
+25
+20 D internal A/C Mgnt
+1 Operating Process
+o 15 0 Transaction Processing
+5 1 Outlet Systems Group
+3 10 Security & Investigation
+Netw ork Policy & Trans
+5 @ Cash Handling & Distrib.
+0
+
+Business Service Management
+ii
+
+Business Units
+
+@ Territories
+
+POL-BSFF-0220678_0006
+Business Service Management - Problem Management
+
+POL00394008
+POL00394008
+
+4.2
+
+Breakdown of Services Affected
+
+Services Affected
+
+infrastructure
+
+26% All Services
+
+30%
+
+OBCS
+
+POSS
+26%
+
+15%
+
+POL-BSFF-0220678_0007
+POL00394008
+POL00394008
+
+Business Service Management - Problem Management
+
+Section 5 - Problem Management Development/ Initiatives
+
+e Adopt an Office The themes for September visits include :-
+¢ P&A Weekly Report P2311ma (b);
+* Slow Running Counters;
+* Postal Order Weekly Reports;
+¢ Reboots.
+Weare still looking at improving the links to Supplier Performance to ensure that our useful front line
+feedback gets combined with that arising from the Senior Manager Visits. In the meantime, the information
+received remains a useful feed into the PM process.
+
+e Problem Co The ongoing work in terms of the PC liaison role will make a definite impact on the effectiveness of this
+ordinator network. The associated ‘Service Charter’ was launched at the PC meeting 17 August and the first visits got
+Liaison underway last week. This may pave the way for an OLA as part of a restructure of the PC network. (see
+
+item on ‘Infrastructure Change’ below).
+
+¢ Staffing As reported last month, Carole Conway and Russell Scott have now left the team and Paul Smith has
+returned. But as always there’s plenty of activity here and I’ve agreed to second Nicola Wood to the Change
+Implementation Team with effect from 10 September. This is another good example of a wider ‘Operations
+team’ approach to staffing that I believe is important both for practical workload considerations but also for
+personal development
+
+¢ Infrastructure As mentioned in the management summary, a paper proposing future (medium / longer term ) strategy for
+change Problem Mgt in PON was delivered to the Head of Operations and Head of NBSC during w/c 15 August. I
+am currently awaiting feedback before I can progress these changes.
+
+POL-BSFF-0220678_0008
+POL00394008
+
+POL00394008
+
+Business Service Management - Problem Management
+
+Mechanism
+
+Problems opened, having,
+previously been rejected
+
+Problem Mana:
+
+ement Performance Measures: Au:
+
+ust 2001
+
+<10% of problems opened
+
+having been previously rejected.
+
+Performance
+© Achieved; 0% of
+problems opened had
+previously been rejected
+
+Comments
+This measure has been achieved every month since
+measurement began.
+
+ATPs Implemented
+
+100% implemented within 3
+days of the problem being
+opened
+
+© Achieved; 100% of
+ATPs implemented to
+target.
+
+2 ATPs implemented. This measure achieved for the
+3 month running.
+
+Problem Impact Assessment :
+Problem Manager's Performance
+
+100% problems sent to Impact
+Assessors within 24 hours of
+status change to Open.
+
+® Notachieved; 79% of
+problems sent to all Impact
+Assessors to target.
+
+Deterioration from last month (82%).. The 3 problems
+which failed were 1 LFS, 1 YG & 1 EPOSS. In all 3
+cases, most Impact Assessments were sent on time, but
+one or two assessments for each problem were sent
+outside the target time.
+
+Problem Impact Assessment :
+Impact Assessors’ Performance
+
+100% of assessments completed
+& closed within 48 hours of
+being sent by Problem Manager
+
+® Notachieved; 69% of
+problems sent for Impact
+Assessment completed to
+target.
+
+Slight improvement over last month (60%).
+
+Duty Manager's assessment
+
+100% proposed problems
+assessed & either allocated to a
+Problem Manager or rejected
+within 24 hours of proposal
+
+© Achieved; 100%
+allocated or rejected to
+target.
+
+Improvement from last month (96%).
+
+Average number of days a
+problem remains open before &
+after root cause analysis (RCA)..
+
+This measure is in 2 parts:
+Days from problem raised to
+root cause identified.
+
+Days from root cause identified
+to problem closed.
+
+No baseline target exists at
+present.
+
+92% of closed problems,
+raised in the year to
+31/08/2001, had a root
+cause annotated.
+
+Average time from raised -
+RCA = 15 days
+
+Average time RCA - closed
+= 52 days.
+
+Percentage has improved from last month (79%).
+Both average times have deteriorated slightly; last
+month’s averages were:
+
+Raised - RCA = 14 days
+
+RCA - Closed = 45 days.
+
+POL-BSFF-0220678_0009
+POL00394008
+POL00394008
+
+Business Service Management - Problem Management
+
+Appendix 1; Problems over 3 months old
+
+Problem Id ICL Pathway Problem Title Closure Criteria Target Date Date Raised
+
+Problem Id
+
+10000046 Information For the information on Remedy and on the Region's system to be in sync. 16/9/2001 I14/12/1999
+downloaded to the
+NBSC.
+
+PXateumem he solution was delayed yet again despite having to be implemented before RLR National Rollout on September 10th. Richard Poulton has advised
+ese) tlaeem that PON, Tertio and Admiral are holding a meeting on the 4th September to progress.
+
+10000073 IPC27145 Pathway Non Non-polling incidents managed in such a way as to provide transaction data within 27/9/2001 I24/01/2000
+Polling of Offices ISLA.
+
+Actiot A meeting is required between PON & ICL Pathway to discuss all the issues around non-polling, including reporting. ICL Pathway have consistently
+ese teeam cancelled monthly meetings since February, to the point where they have "fizzled out". Problem Manager to address this via ICL's Problem Manager.
+IP10000186 Late delivery of ref./Proof that ICLP can specify the offices that have received any item of ref. data and 29/9/2001 {31/05/2000
+data. changes to _Ispecification of a process that ensures timely identification of problems from the HSH
+some outlets call logs
+
+PXetumes Over 100 Horizon offices in Scotland & N. Ireland were unable to process AP swipe cards. Ref. data changes were not fully transferred to a number
+eve ttaeam of offices prior to the automatic reboot deadline of 3.00 a.m. - hence message to end some products was received but not the replacement product
+message. Immediate problem resolved by reboot. A Change request has been submitted to Pathway which will meet the requirements needed to
+address this problem. Awaiting confirmation that CR has been approved, and target implementation date.
+P10000202 IPC0060430 {Inadequate Improved procedures for outlet closures to include a check for any non polled 7/10/2001 — I27/06/2000
+procedures for transactions / cash accounts
+office closures
+
+PXateumeg A wailing confirmation from Pathway that they are confident the new procedures they have introduced are robust enough to move the problem to
+eee monitor status.
+
+POL-BSFF-0220678_0010
+POL00394008
+POL00394008
+
+Business Service Management - Problem Management
+
+Problem Id ICL Pathway Problem Title Closure Criteria Target Date Date Raised
+Problem Id
+
+1P10000227 IPC0052508 IUnmatched Complete eradication of this fault ensuring AP transactions: a) cannot be reversed 30/11/2001 I27/07/2000
+reversed / reversing Iafter or during end of day process b) all reversals which are accepted refer only to
+jat EOD transactions completed on the same working day.
+
+PXetame Fix to prevent reversing over the end of day marker is scheduled for $10. TP agree this is an acceptable release schedule.
+
+Resolution
+
+IP10000228 Printer Roll When the printers use the full potential of paper. 31/12/2002 I01/08/2000
+Wastage
+
+PNetonwem Printer indicates paper running out too early. Horizon printers are indicating that the paper needs changing after approx. 80% of the roll has been
+[eso toae used. The problem is apparently linked to a weight sensor in the printer. Current approximate cost per month of wastage: £4000. This problem is
+being taken on by Mike Balmer (Benefits & Bus. Case Team Leader). Mike is due to provide feedback on progress made at the next Horizon service
+review forum.
+/P10000229 IPC0051640 ICorrespondence __ {Identification and resolution of root cause in order to ensure no disruption to, or 30/11/2001 {01/08/2000
+Server issues. impact on, the network arising from correspondence servers
+
+PXetonmem Ihe necessary changes have been made to the Operational Change Proposal procedures. ICL's Problem Manager will be conducting an audit of the
+eve) tlaeam amended process during September. A Business Continuous Volume backup was carried out as part of a recent shutdown & rebuild of Bootle
+Correspondence server 1. This was successful. However, a full report has not yet been received. The above mentioned audit & report, subject to
+content, should provide closure of the problem.
+P10000258 PLU numbers 1.Improvement to procedures followed by the Change process.2. Communication to I31/10/2001 {17/08/2000
+removed from go out to outlets to inform them of the reasons why the numbers were removed and
+horizon system jalso to let them know about the system speeding up after a few weeks.
+
+Pate The Terms of Reference for a Change Impact Panel are being worked on. However, the recommendation for the introduction of the Panel needs to be
+INSSe) team escalated to the BSM Lead Team, given the lack of buy-in from the Change Control Team.
+
+P10000274 Outlets unable to IAll Cash Centres, Hemel Stock Centre and all Outlets using the correct pouches. (01/10/2001 I12/09/2000
+follow Inward Rem
+Procedure
+
+PNatoamem A problem was found with the first batch of bar-coded labels supplied to NSSC for use with items sent in packages other than grey remittance
+eset pouches. Awaiting a new start date from CHD. In the meantime it has been discovered that NSSC still hold over 100 000 grey remittance pouches
+printed with incorrect barcodes. May require the ATP to be re-introduced.
+
+POL-BSFF-0220678_0011
+Business Service Management - Problem Management
+
+POL00394008
+POL00394008
+
+Problem Id
+
+ICL Pathway
+Problem Id
+
+Problem Title
+
+Closure Criteria
+
+Target Date Date Raised
+
+/P10000292
+
+Action
+Resolution
+
+P10000293
+
+/P10000299
+
+Action
+
+Resolution
+
+P10000302
+
+Action
+
+Horizon outlets not}1.A Counter News article to emphasise the need for the correct version to be sent. 19/9/2001 22/09/2000
+sending FINAL 2 A reduction in the number of trial accounts noted.
+version of cash 3 It is hoped that the PIA Team will take this work on in the month of September.
+jaccount (Subject to agreement)
+Closure criteria: 1. (MET) Two Counter .News articles have been published.
+2 (MET) There has been a noted reduction.
+3 Itis hoped that_a decision will be made by Sept 10",
+IPC0054259 — I( CSR+) All differences are satisfactorily resolved 30/11/2001 25/09/2000
+Differences
+between TPS
+harvested AP txns
+I& OPTIP
+Fix is scheduled for S10.
+Incorrect postal 1. Reminder Counter News article 29/9/2001 —I26/09/2000
+
+order paid
+summary docket
+used
+
+2. Reduction in PO QPA errors
+3. TP data input compatible Horizon report developed
+
+Development
+
+by the Business as to whether or not to puta Change Request_to ICL Pathway.
+
+of an acceptable Horizon generated form is now in the final stages of design, and a feasibility study has been carried out.
+Manager is meeting TP Development Team on September 3rd_to finalise details. It is hoped that by September 30th a decision will have been made
+
+. Problem
+
+IPC0060137
+
+Message store
+amendments - no
+process
+
+[Documented / agreed procedures in place
+
+13/9/2001
+
+26/09/2000
+
+[Ownership of the process will be with BSM Supplier Performance team. Problem Manager to progress final agreement of this before brokering
+Stren agreement with ICL Pathway.
+
+POL-BSFF-0220678_0012
+POL00394008
+POL00394008
+
+Business Service Management - Problem Management
+
+Problem Id ICL Pathway Problem Title Closure Criteria Target Date Date Raised
+
+Problem Id
+
+P10000303 Horizon outlets [Documented contingency instructions produced 27/9/2001 —I26/09/2000
+producing manual
+cash accounts
+
+iene Operational Performance & Reporting Manager's report is due for delivery 31/08/01. A decision is then to be made on manual working policy.
+Resolution
+
+P10000304 Contingency for {Contingency arrangements for passing information to Clients agreed and 27/9/2001 I26/09/2000
+AP txns when documented
+outlet reverts to
+manual
+
+FOTN Operational Performance & Reporting, Manager's report is due for delivery 31/08/01. A decision is then to be made on manual working policy.
+Resolution
+
+P10000307 IPC0055529 I( CSR+) Screen Root cause identified & fix implemented 16/9/2001 28/09/2000
+freezes in planned
+orders
+ZXateumem I here have been no further incidents in July or August but this could be because either users are not using the service or are doing reboots if
+
+Ieee tiene experiencing screen freezes. Without further incidents ICLP cannot investigate. Closure has been agreed with a view to re-opening if necessary when
+ILFS is fully operational.
+/P10000340 INBSC access to Clearly defined route brokered & signed off, by which NBSC can access written 30/09/2001 I01/11/2000
+[Business Policies _ Irecords of Business Policy on all issues.
+
+ct
+
+eg Action on Service Quality Manager to progress this problem via Head of Network Management.
+
+Resolution
+P10000342 LFS Remittance _IA delivery process to be brokered which is acceptable to both PON & CH&D 31/10/2001 03/11/2000
+receipt at open
+plan offices.
+
+Neroamem I he bar coded labels for use in outlets are now in place and this has resolved the problem of sending remittances from open plan environments.
+ISeeo tone There is, however, a problem with the format of labels printed by SAPADS which may delay a solution for inward remittances to open plan outlets
+juntil Oct 2001.
+
+POL-BSFF-0220678_0013
+POL00394008
+POL00394008
+
+Business Service Management - Problem Management
+
+Problem Id ICL Pathway Problem Title Closure Criteria Target Date Date Raised
+
+Problem Id
+
+1P10000358 JPC0058014 —ICSR+ Slow Investigation undertaken by ICL. The root cause and solution identified and fixed. 29/9/2001 {17/11/2000
+running problem
+jon counters
+
+P Natoma Lhe ‘slow rollover’ fix - PinICL pc0066257, RNA2085, was withdrawn from the S10 release. The latest information is that it will now be released in SLOR. ICL P
+ECO tene have stated that their developers have resolved the problems and will be testing the fix at outlets that have reported this type of problem to ensure that it works.
+
+1P10000360 IPC0056242 IFrensham Way All system related problems are resolved and the Postmistress is happy. 11/9/2001 {17/11/2000
+IFAD 415420 - RHI
+
+Pate Office is still due to shut on 12th September. There are political sensitivities to be managed in the meantime. Steve Gibbs and Colin Baker are
+Lexa tam negotiating the ‘exit’ details.
+
+10000361 IPC0061694 _JOBC Process - A process to prevent this happening to be put in place 7/10/2001 17/11/2000
+Unplanned
+(Closures
+Bvatemeg Pathway’s review of their end to end closure processes was delayed by work on Your Guide. However, they have indicated that they recognise there
+ISSO Utoam is a gap in their process between the initial management of closures as incidents and the point where the OBC process comes into play. To address
+this they are setting up a data base to track closures which will result in a more proactive approach.
+
+P10000370 Persistent power —_IKnowledge Base updated with a business policy to enable advice to be provided for I01/10/2001 I23/11/2000
+supply future requests.
+interruptions
+
+ytatoamem A meeting has been set up for 4 September between Network Policy & Transformation, Problem Management, NBSC Incident Mgmt., NBSC Complaints and the
+owe) (elem Service Review Manager to finalise the details of the process to be followed for queries raised by spmrs about persistent power supply interruptions.
+
+P10000384 Criccieth 164604- IAll transactions downloaded successfully to the office to enable balancing. 29/9/2001 {15/12/2000
+Problem Office Identification of Root Cause and solutions provided and implemented.
+
+r Xai (CL Pathway have sent a letter to Keith Baines detailing their position on all outstanding case law issues. Included in this is their current position on Cricceith -
+Ive) lateam more analysis is being undertaken on the cash account week in question to enable ICL Pathway to come up with a figure which they believe they are liable for after
+which they will negotiate with Keith. Liz Tuddenham is trying to get a copy of the letter from Keith so we can see the detail.
+
+POL-BSFF-0220678_0014
+POL00394008
+POL00394008
+
+Business Service Management - Problem Management
+
+Problem Id ICL Pathway Problem Title Closure Criteria Target Date Date Raised
+
+Problem Id
+
+P10000386
+
+Action
+Resolution
+
+P10000394
+
+/P10000401
+
+Action
+Resolution
+
+P10000425
+
+Action
+Resolution
+
+Inter-Office Communication to all offices stating that Inter-Office Transfers can now no longer be I6/9/2001 19/12/2000
+Transfers being, done on Horizon. Also to state that using the offices cash to purchase items is not
+attempted by permitted.
+
+Horizon offices.
+Due to Industrial Action, the temporary procedure for the use of Inter Office transfers in extreme circumstances is currently in place. This however will not become
+business as usual. Kevin Thomson has been asked to provide information which can be held on the Knowledge base to deal with requests of this nature. Awaiting
+instruction.
+PC0060428 Outlet temporary IAmendments to existing process is agreed between ICL Pathway and PON and clear I7/10/2001 — I04/01/2001
+closed' procedure _ Iareas of responsibility are defined and agreed. NBSC and ICLP non-polled
+failure procedures amended and approved.
+
+Feedback from Net. Transformation teams and ICL shows considerable improvement. However, there is concern that implementation of the RLR
+
+will worsen the situation because of the reduction in staff ‘on the ground’, Audits have been approached to obtain their co-operation when they are
+present in situations where RNMs would previously have been responsible for_notifying NBSC of a closure.
+Non conformance {Counter News article to underline correct procedure and also highlight the fact PON I31/10/2001 [12/01/2001
+relating to OBCS __Iis penalised for failures. Acceptable levels of conformance to be maintained.
+
+joperations
+IOBCS Work aid published week 12 and training brief week 21. There has been some reduction in non conformance incidents reported by DWP in
+July. However, an article on multiple scanning released prior to the August Bank Holiday had little effect and multiple scanning incidents were
+unacceptably high. The reasons for this need to be assessed in order that articles published prior to the Christmas bank holidays are more effective. A
+pool of Counter News articles have now been prepared and are awaiting authorisation. The OBCS working party will agree a call off schedule so the
+articles can be published to have maximum impact. The call scripts on Remedy have been improved so calls made to offices deal with the incidents
+raised more effectively. It is hoped that some training sessions can be held with T1 and T2 operators to consolidate their OBCS knowledge.
+PC0063013 _ IPM-Rec. & Following delivery of a fix into the live estate, a period of 6 weeks where no further —I23/9/2001 {14/02/2001
+Payments incidents of this type occur.
+Misbalance- Cash
+[Declaration
+
+TP have received notification of a number of incidents that appear to be related to a software fault which causes incorrect (negative / duplicated)
+cash declarations resulting in receipts and payments misbalances. From the incident details provided by Pathway it is not clear why or how this
+problem is occurring. The incidents received all seem to indicate that there is a system fault which is allowing / causing Postmasters to make an
+incorrect (negative and duplicated) declaration. One incident report states " the problem here is the system, during roll over, added this discrepancy
+transaction again which had the effect of recording cash holdings as £166.07 more than it should have been" In all cases the incidents are resulting in
+receipt and payment_misbalance errors. A fix, WP 12240, is scheduled to go into testing during w/c 20/8/01.
+
+POL-BSFF-0220678_0015
+Business Service Management - Problem Management
+
+POL00394008
+POL00394008
+
+Problem Id Pathwa
+Problem Id
+
+Problem Title
+
+}P10000428
+
+Winlaton PO
+claims figure in
+Suspense Account
+has doubled
+
+16/9/2001 15/02/2001
+
+Re
+
+PNatoamem Further evidence to prove user error has been forwarded to the RNM. RNM has been on leave. He will look at the evidence and get back to us when.
+Bite he has either spoken to the PM or has further questions.
+
+}P10000440
+
+Obsolete stock at
+outlets
+
+Full implementation of cessation of products.
+
+20/9/2001 I27/02/2001
+
+PXetemeg Outlets have now been advised to
+
+return all obsolete stock to the NSSC as the process will soon change. The change will mean that spmrs. will be
+eve) tlaeem accountable for any losses due to not returning old stock to timescales. There will be an appeals process which is currently being agreed.
+
+1P10000441 ITBA
+
+Old Isleworth
+111025 - Problem
+Office
+
+PM's calls to reduce to an acceptable level i .e 4 per month.
+
+29/9/2001 I27/02/2001
+
+to be
+
+tata Phantom Transaction issue has been investigated and no evidence has been found of system error. There are examples of user error and the RNM
+ese taeem has been asked to arrange more training for the office. The PM is old and it has been suggested that further training will not add any value. Will need
+on call volumes etc. following training.
+
+}P10000444
+
+INo clear policy for
+
+dealing with outlet
+environmental
+issues
+
+Clear process, responsibilities and ownership established for environmental issues.
+These should enable PON and ICL to efficiently and effectively deal with office issues
+which are caused by environmental factors
+
+2/11/2001 {01/03/2001
+
+tem No evidence t
+
+hat any action has been taken following the issue being raised at April’s HSRF . ICL P have been asked to detail what action has been
+eve) teeem taken in response to the action point accepted at the meeting.
+
+P10000445
+
+[Hemel Hempstead
+phone lines
+
+A recorded message to confirm busy lines at Hemel Hempstead asking callers to try
+again later. A contingency set in place to communicate the eventuality of a phone line
+fault, and to process orders accurately and efficiently in the event of a fault.
+
+28/9/2001 {01/03/2001
+
+PXatoamem NSSC do not have a contingency for failure of phone lines for stock ordering. The NSSC Contingency Planning manager left the business in May and
+
+NSSe Ue toam his replacement does not take over until Monday 3rd September. We have been told this problem will be high on his list of priorities once he has his
+feet under the table.
+
+POL-BSFF-0220678_0016
+Business Service Management - Problem Management
+
+POL00394008
+POL00394008
+
+Problem Id
+
+ICL Pathway
+Problem Id
+
+Problem Title
+
+Closure Criteria
+
+Target Date
+
+Date Raised
+
+}P10000453
+
+Action
+Resolution
+
+P10000457
+
+Action
+Resolution
+
+P10000485
+
+Action
+Resolution
+
+}P10000486
+
+Actic
+Resolu
+
+on
+
+}P10000508
+
+tion
+olution
+
+IPC0063140
+
+ILlanbedrog, 269604
+I- Problem Office
+
+Further provision of training and a marked reduction in calls to the average for a
+mature office - 3 per month.
+
+31/10/2001
+
+08/03/2001
+
+(06/10/01. Aft
+
+It has been suggested that extra training will not reduce call volumes. The RNM has put together an action plan which will be monitored until
+er this date the situation will be reassessed and appropriate action taken.
+
+Incorrect Cash
+Declarations
+
+All outlets correctly declaring cash both daily and weekly
+
+27/9/2001
+
+12/03/2001
+
+Monitoring of outlets failing to conform continues. However the level of urgency placed on this by CHD has decreased due to the failure of the
+ISAPADs upgrade which has delayed further the rollout of MRP. A further problem has been identified with the use of ID numbers when declaring,
+cash (P10000591) which could be a contributing factor to the high level of non conformance identified.
+
+IPC0064429
+
+Screen freezes
+when charging,
+Quantum cards
+
+Root Cause Identified and resolved. No more calls made regarding this problem.
+
+30/11/2001
+
+03/04/2001
+
+to counters in
+
+S10.
+
+Firmware issue is currently with Pathway Development to find reasons for the problem and develop a fix. Software fix/resilience targeted to be sent
+
+PC0064430
+
+Quantum cards:
+Incorrect amounts
+charged
+
+Root Cause Identified and resolved. No further calls from affected offices.
+
+30/11/2001
+
+[0370472001
+
+A fix containing enhancements to
+
+the system is available but due to problems during regression testing the release date has been rescheduled for S10.
+
+PC0065677
+
+Corruption of
+
+(Quantum Gas
+(Cards
+
+Root cause identified and suitable fix delivered to the network. No more corrupt
+cards caused by this problem.
+
+(07/09/2001
+
+(04/05/2001
+
+Pathway to be contacted 5/9/2001 to agree closure of problem as the last 2 keyboards to be replaced should have been swapped by then.
+
+POL-BSFF-0220678_0017
+Business Service Management - Problem Management
+
+POL00394008
+POL00394008
+
+Problem Id
+
+ICL Pathway Problem Title
+Problem Id
+
+Closure Criteria Target Date
+
+Date Raised
+
+P10000520
+
+Action
+Resolution
+
+P10000522
+
+Action
+Resolution
+
+/P10000524
+
+Action
+Resolution
+
+}P10000525
+
+Action
+Resolution
+
+P10000527
+
+Action
+
+Resolution
+
+PC0066318 — ILost Data from Ideally, the recovery of the lost data. Fallback; a change to ensure this does not occur I29/9/2001 — I22/05/2001
+ICLP Data again.
+IWarehouse
+
+not enough and that a better method o1
+
+September.
+
+ICLP have proposed to introduce ‘read after write! when recording the data. A letter is due to be sent to ICLP by POCL Horizon Commercial indicating that this is
+-d in respect of the attempt to
+reconstitute the period of missing data from the correspondence server tapes. Trying to get a meeting set up to decide our position, before meeting ICLP again in
+
+f preventing a repeat loss is to create ‘parent, grandparent’ tapes. No data has as yet been receive
+
+Gamesley 279432 -
+Problem Office
+
+Diagnosis and fix of the problem. 13/9/2001
+
+23/05/2001
+
+investigated the site but found no
+
+This has been escalated to the HoRN (Carole Pryslak) who is due to meet with the PM W/C 3 Sept.
+
+Office is blaming the system on the amounts he is holding in suspense account and is refusing to make them good. ICL have monitored
+
+evidence to prove system error. There are examples of user error. PM is threatening to take the issue
+
+and
+to the papers.
+
+PC0066995 {Noise levels of
+mobile & PES units
+jon Horizon system
+
+Development of a range of solutions that are acceptable to Subpostmasters and enable I31/10/2001
+Horizon installations to continue.
+
+24/05/2001
+
+potential offices which are passed
+
+There have been a number of complaints from offices about the noise levels of both the Horizon mobile solution & Personnel Earth Station (PES)
+units during the Horizon Implementation Project. Problem Management have been monitoring complaints and the non p
+
+to Kevin Cox, Horizon BAU Manager for investigation. Following a survey, many of the outlets have or will have
+their Mobile Horizon kits swapped for a standard kit.
+
+olled reports to identify
+
+Childwall 185420 -
+Problem Office
+
+Diagnosis and fix the problems to resolution 16/9/2001
+
+25/05/2001
+
+Office experiencing losses due to ‘system error’, This has been investigated by ICL and no system errors have been detected. HFSO has attended site
+but has yet to report. RNM is currently on leave. Agreed with PM to discuss next steps with RNM w/c 3/9/01.
+
+Blandford Forum
+(192518)
+
+Office to be running without experiencing further problems 16/9/2001
+
+29/05/2001
+
+Awaiting confirmation that an Health & Safety survey of the office has actually taken place.
+
+POL-BSFF-0220678_0018
+POL00394008
+POL00394008
+
+Business Service Management - Problem Management
+
+20
+
+POL-BSFF-0220678_0019

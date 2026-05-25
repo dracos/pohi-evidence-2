@@ -1,0 +1,102 @@
+POL00001267
+POL00001267
+
+OCP 12388 Completed
+
+Reset Stock Unit AA back to TP8 BP1 for FAD
+459611
+
+An error occurred during the rollover of Stock unit AA from TP8 BP1 to TP8 BP2, and as a result all
+figures on the balance report were set to zero, On the subsequent rollover to BP3 there was a gain of over
+£20000. Stock Unit AA needs to be reset back to BP1 so that it can be re-rolled into BP2 with the correct
+figures.
+
+Justification: The branch currently has a gain of £20000 due to the error which occurred during rollover
+to TP8 BP2. This can be resolved by resetting the stock unit back to TP8 BP1. The PM can then re-
+rollover into BP2 and the figures should be calculated correctly.
+
+When: Planned for 24/11/2005 15:00
+
+Extra detail: Stock Unit AA is currently in TP8 BP4, and has a gain of £20000 due to the error during
+rollover into BP2. The stock unit can be reset back to TP8 BP 1 so that the PM can re-roll into BP2. The
+error may have been caused by a temporary network problem and is being looked at by the development
+team. It is unlikely that the same error would occur again during the rollover.
+
+If the stock unit is reset, the PM would then need to rollover 3 weeks worth of transactions into BP2. (The
+transactions themselves would not have to be re-entered).
+
+We will update the StockUnit and StockUnitMarker objects for AA, removing references to BP2, BP3 and
+BP4. The BPMarker objects themselves will also be deleted.
+
+Business risks:
+If this action is not taken, the Branch Trading Statement due on 30/11/05 will contain incorrect figures.
+
+Rolling over Stock Unit AA into BP2 again is likely to take longer than usual as there will be 3 weeks
+worth of transactions rather than 1 week.
+
+Regression: Reinstate the StockUnit, StockUnitMarker and BPMarker objects as they are now..
+
+Comments
+
+Chris Ansell (POL) wrote at 24/11/2005 12:36: Email received from Sarah Darvill
+With regards to the above change proposal that is scheduled to take place on Thursday 24th November
+2005 at 1500hrs. POL now approve this change
+
+Regards
+
+F/312.2/1
+POL00001267
+POL00001267
+
+Sarah
+
+Release Implementation Manager
+
+POLTD
+
+IT Directorate
+
+1st floor, Calthorpe House, 15-20 Phoenix Place, LONDON, WCIXODG
+
+Cheryl Card (POA SSC Support) wrote at 24/11/2005 15:00: The correction has been applied. Details of
+the change, and before/after snapshots, are attached to PC0128969. Rollover has not yet been carried out as
+the PM is on holiday - this will be done when when she returns next week.
+
+Other details
+
+Raised by: Cheryl Card 22/11/2005 12:19
+Monitored by: SSC
+
+Peak: PC0128969
+
+TES: 511170808
+
+Change at location: Bootle
+
+Change type: Messagestore
+
+Machine ID: MBOCOR04
+
+Priority and risk
+Priority: High
+
+Risk: Medium
+
+Properties
+
+New equipment: No
+System build affected: No
+Required on LST rigs: No
+
+Required on Lewes rigs: No
+
+F/312.2/2
+POL00001267
+POL00001267
+
+Approval status
+Action status
+
+POA SSC Support Core Services SMC
+
+F/312.2/3

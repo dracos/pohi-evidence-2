@@ -1,0 +1,4558 @@
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Document Title: Service Management Portal Support Guide
+Document Type: Support Guide (SPG)
+Release: N/A
+Abstract: This document enables SSC staff to perform diagnostic and repair
+work on the Service Management Portal
+Document Status: DRAFT
+Author & Dept: Mik Peach SSC
+
+Internal Distribution:
+
+External Distribution: None
+
+Approval Authorities:
+
+Name Role Signature Date
+
+Naomi Elliott CS Director
+
+Note: See Post Office Account HNG-X Reviewers/Apprwvers Role Matrix (PGM/DCM/ION/0001) for guidance.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 1 of 186
+FUJ00142217
+
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0 Document Control
+
+0.1 Table of Contents
+
+0 DOCUMENT CONTROL
+
+0.1 Table of Contents
+0.2 Document History
+0.3. Review Details ..
+0.4 Associated Documents (Internal
+0.5 Abbreviations
+0.6  Glossary....
+0.7. Changes Expected .
+0.8 Accuracy
+0.9 Copyright
+
+INTRODUCTION
+
+1 Scope...
+2 Context within the Architecture ..
+
+2 DESIGN PRINCIPLES
+
+2.1. Permanence of Data.
+
+2.2 Location of the system components.
+
+2.3. Application Components..
+2.3.1 Mapping of components — top level ..
+2.3.2 Mapping of components — system monitor
+2.3.3. Mapping of components — incident management...
+2.3.4 Mapping of components — reports and SLT.......
+2.3.5 Mapping of components — Operational Business Change (OBC)
+2.3.6 — Mapping of components — Operational Change Process (OCP)..
+
+3 SMP DATABASE
+
+3.1 Tables...
+3.1.1 Logon
+3.1.2 Managemen
+3.1.3 Incident Management .... .
+3.1.4 Operational Business Change
+3.1.5 OCP...
+3.1.6 Reports and SLT monitors
+
+3.2. Stored Procedures.....
+3.2.1 Incident Management .
+3.2.2 OBC Data......
+3.2.3 Reports and SLT monitoring
+
+3.3 Views.......
+
+4 XCC DATABASE
+41 Tables...
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 2 0f 186
+FUJ00142217
+
+FUJ00142217
+oO Service Management Portal High Level Design &
+FUJITSU COMMERCIAL IN CONFIDENCE
+5 JAVA SERVLETS. 85
+5.1 85
+5.2 89
+5.3. Management Monitor: 22
+6 WEB PAGES... 122
+6.1 Cascaded Style sheet 22
+6.2 Connections to database 22
+
+6.3 Imported files and data sources
+6.3.1 Management Monitors
+6.3.2 Incident Management .
+6.3.3 Reports and SLTs sees
+6.3.4 Operational Business Change
+6.3.5 I Operational Change (OCP).
+
+7 THE DROP BOX
+
+7.1 General
+7.2 Files processes
+7.3 Current parameters
+7.4 Running DropBox.
+7.5 Logging...
+7.6 Case sensi
+
+7.6.1 Input files
+
+7.6.2 Output files .
+
+8 TOMCAT SETUP..
+
+8.1 Installation and loading
+8.2 Context changes
+
+8.2.1 All web apps.... cceeeeeeeseeesreeeeeteeereretererenete . . weve ceeeeee ceveeeee d22
+8.2.2 admin app 122
+B.2.3 © MAMAGER APP oo... eee eee cccee cece ceceeseeceseseeceseecevenceveueaveveneeseseeveusetensteteatsusatetsatevensetenesereneee T22
+8.2.4 host-manager app . . 122
+
+8.3 Access log filter...
+8.3.1 Access log valve
+8.3.2 web.xml............
+8.3.3 Filter logging to STDOUT.
+
+8.4 Others
+8.4.1 (POASMP) Tomcat documentation.
+8.4.2 (POASMP) Default page...
+
+9
+
+9.1 FTP servers...
+9.1.1 Params . sesseeneenee . . .
+9.1.2 SOLS nen eceecceecc cece cscs eceesesecesceeseeseeeeseeescesseesiseseeensesessssseessesneseiseenseensesssensnenseensenmneenseenseee
+9.1.3 Usage....... 122
+
+10 DAILY TASKS
+
+11. NETWORKS
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 3 of 186
+FUJ00142217
+
+FUJ00142217
+
+oO Service Management Portal High Level Design &
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+12, SYSTEM QUALITIES
+
+12.1 Security.
+12.2 Availability
+12.3 Usability
+12.4 Potential for Change.
+
+13 RISKS AND ASSUMPTIONS.
+
+14 CHANGES EXPECTED IN HNGX .......sscssssesssssesnsses seseenssnssseasssstscensenteasensensenses 122
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref, DEVIGENISPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+Page No: 4 0f 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0.2 Document History
+
+Version No Date Summary of Changes and Reason for Issue Associated Change -
+
+CP/PEAK/PPRR.
+Reference
+
+0.1 29 August 2007 I Draft for review.
+
+0.3 Review Details
+
+Review Comments by : Friday, 3° August 2007
+
+Review Comments to : roger. barnes@
+
+& RMGADocumentManagement@:
+
+Mandatory Review
+
+Role Name
+ssc Mik Peach
+ssc Andy Keil
+ssc Kevin Miller
+
+Optional Review
+
+Issued for Information — Please restrict this
+distribution list to a minimum
+
+Position/Role Name
+
+(* ) = Reviewers that returned comments
+
+0.4 Associated Documents (Internal & External)
+
+Reference Version Date Title Source Ref
+
+PGM/DCM/TEM/0001 Fujitsu Services Post Office AccountI pimensions
+HNG-X Document Template
+(DO NOT REMOVE) P
+ARC/GEN/REP/0001 HNG-X GLOSSARY Dimensions I R4
+DW/HLD/007 Datafile Delivery Performance PVCS R7
+Measurement High Level Design
+(CP3390)
+DES/APP/IFS/0011 Data Warehouse HNG-X File Dimensions I rg
+Interface Specification
+DES/APP/HLD/0082 Data Warehouse High Level Design Dimensions I pg
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 01
+Date: 29 August 2007
+
+PageNo: 5 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Reference Version Date Source
+
+DES/APP/HLD/0085 Service Management Portal High Dimensions
+Level Design
+
+Unless a specific version is referred to above, reference should be made to the current approved
+versions of the documents.
+
+0.5 Abbreviations
+For additional abbreviations and glossary items see ARC/GEN/REP/0001
+
+Abbreviation Definition
+
+AaL Alliance & Leicester
+
+APS Automated Payment System
+
+BRDB Branch Database
+
+CAPO Card Account Post Office
+
+csv Comma Separated Value (database export/import brmat and file extension).
+Denotes a text file whose records each consist of anumber of data fields separated
+by a comma. Each record is terminated by a linefeedcharacter.
+
+DCR Database Change Record
+
+DRS Data Reconciliation Service
+
+DWH Data Warehouse
+
+FI Financial institution
+
+FS Fujitsu Services
+
+LINK LINK Interchange Network Limited
+
+LFS Logistics Feeder Service
+
+LREC LINK Reconciliation File
+
+MSU Management Service Unit
+
+NBE Network Banking Engine
+
+NBX The term used to describe the NBE functionality absorbed into the Horizon domain
+
+APS Automated Payment System
+
+BRDB Branch Database
+
+BRSS Branch Support System
+
+DCR Data Change Request
+
+DWH Data Warehouse
+
+HLD High Level Design
+
+SMP Service Management Portal
+
+TES Transaction Enquiry Service
+
+Tws Tivoli Workflow Scheduler
+
+xcc Xtranet Call Cleanser. CS internal application allowing HSD staff to view and change
+suspensions on calls which will, in turn, affect the performance of calls against the
+relevant SLTs
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 6 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0.6 Glossary
+
+Term Definition
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 7 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0.7 Changes Expected
+
+0.8 Accuracy
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but, whilst every
+
+effort is made to ensure the accuracy of such information, it accepts no liability for any loss (however caused)
+sustained as a result of any error or omission in he same.
+
+0.9 Copyright
+
+Copyright Fujitsu Services Limited 2006. All rig hts reserved. No part of this document may be reproduced, stored
+or transmitted in any form without the prior written permission of Fujitsu Services
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 8 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design &
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+1 Introduction
+
+1.1 Scope
+
+The Service Management Portal, in its Horizon state, is an SSC development. It is a web site backed by
+data from a number of sources which presents to the customer details of the condition of the live estate.
+This document details the web site and its supporting infrastructure. The actual sources of the data are
+not examined in any detail as these are covered by design documents and in particular the Service
+Management Portal High Level Design (DES/APP/HLD/0085).
+
+1.2 Context within the Architecture
+
+The Service Management Portal does not form part of the Horizon or HNG-X architecture; rather it is a
+response to the customer requirement for information about the live estate which has been met in the
+past by a variety of reports, emails and word of mouth. The Service Management Portal collects many of
+these disparate elements into a consistent form and presents them in an on-demand fashion.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 9 0f 186
+FUJ00142217
+
+FUJ00142217
+
+oO Service Management Portal High Level Design &
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2 Design Principles
+
+The Service Management Portal is intended to perform the following functions
+
+- Receive almost real-time information about the state of the system via high-level system
+monitors
+
+- Receive up to date information about the performance of the system against SLTs
+
+- Review progress of any Major incident, including the logging of additional information and the
+progress against actions
+
+- Receive information about any operation business changes (OBCs) which have been
+requested
+
+- Receive information about any operational change procedures (OCPs) which either require
+client approval, or which are service affecting
+
+- Receive a variety of reports from Customer Service Management about the state of the
+system, including the counts of the various sorts of transactions and the Service Review
+Book (SRB)
+
+The SMP, in its Horizon state, is an SSC development which is documented only to the extent of having a
+user guide (as both a word document and an html equivalent available to the end user) and a support
+guide. At HNGX, since it is intended that the SMP be the primary mechanism for reporting on SLTs to the
+client, a more rigorous documentation regime is required, and therefore an HLD has been written in
+addition to this support guide, and both have been reformatted to the RMGA standards.
+
+The SMP web server has been located in the “Southern Data Centre” since 2006 , was installed and is
+maintained in accordance with the relevant corporate standards for equipment installation in the data
+centre and complies with the corporate requirements for an internet site. In effect, this means that the
+web server itself does not contain a database, but instead uses HTML and jsp pages to access database
+servers which are resident in BRAO1. Access from the web server to these databases is rigidly enforced
+by firewall and the web server is only allowed access to the SMP database and to Peak.
+
+The Java servlets have been written to comply with Java runtime version 1.5.0.06 using jdk version
+1.5.0.06.
+
+The HTML and jsp pages have been designed to operate with any browser, but have been specifically
+tested with Microsoft Internet explorer 6. HTML , Java and JavaScript checking have been done using
+Macromedia Dreamweaver MX version 6.0.
+
+2.1 Permanence of Data
+
+Data is kept within the SMP database indefinitely because the amounts of data are relatively small and it
+is anticipated that the client will require information spanning a long period. At HNGX, some of the SLTs
+specified operate on a rolling 5 year average, therefore data must be retained for at least that period.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 10 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design &
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.2 Location of the system components
+
+The live web server is named POASMPLIVE and is resident in the Southern Data Centre with a web
+
+address oft
+
+For security, and corporate standard reasons, the web server is only allowed to interrogate two
+databases, both held in BRAO1. Peak, used for information about the system in the System Monitoring
+subsystem and POASMPDEV, which holds details about SLTs and Major Incident Management.
+
+2.3 Application Components
+
+The first group of sub-sections within this section are diagrammatic representations of the mappings
+between components in the overall structure of the application
+
+A black box indicates a menu option on the preceding jsp page.
+A white box indicates a jsp page
+A blue box indicates a SQL server table , stored procedure or view
+
+An orange box indicates a java serviet
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 11 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE Siig
+
+2.3.1 Mapping of components — top level
+This Section diagrammatically describes the links from the main menu to the underlying components within the design
+
+Logon
+
+Main Menu
+
+System Incident mgmt
+monitor
+
+‘© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+Page No: 12 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE See
+2.3.2 Mapping of components — system monitor
+
+Mgmt Monito!
+=m =a
+
+‘© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+Page No: 13 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.3.3 Mapping of components — incident management
+
+Update MIR
+
+Show Open
+
+Close Incident
+
+Sh Ri t
+
+Create Action
+
+Show All
+
+Raise New MIR Update Action
+
+‘© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+Page No: 14 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.3.4 Mapping of components — reports and SLT
+Reports/SLT
+
+Weekly update Success Rate Daily Report SLT tracker SRB dashboard
+
+Network Engineering Call to
+Resolution
+
+Banking
+
+Telephony
+
+GRO I So go) GRO. ‘GRO
+
+hhantd i GRO I Telephony
+
+i i i
+Seneze oar wrenenyort
+
+I I
+SQL Tables
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DEV/GEN/SPG/0003
+Version: 0.1
+Date 29 August 2007
+
+Page No: 15 of 186
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.3.5 I Mapping of components — Operational Business Change (OBC)
+
+Operational
+Business Change
+
+Activity Plan Branch/PM
+
+‘© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+Page No: 16 of 186
+
+FUJ00142217
+FUJ00142217
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.3.6 Mapping of components — Operational Change Process (OCP)
+
+OCP Menu
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.4
+Date: 29 August 2007
+Page No: 17 of 186,
+
+FUJ00142217
+FUJ00142217
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3 SMP Database
+
+The database is held on POASMPDEV server. It has been written using SQL Server 2005.
+The table below describes the tables and stored procedures within the database, relates
+them to the module to which they are relevant (System Monitor, SLT etc) and outlines the
+function of each.
+
+3.1 Tables
+3.1.1 Logon
+Type
+Name
+Function Holds the details of usernames and passwords.
+Entries have to be created manually, there is no web onterface for
+user setup
+Accessed by Web pages :
+None directly, indirect access from I
+SQL stored procs:
+None
+Java serviets :
+Location Local server
+Creation script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 18 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+SY NY SE
+
+GRO I
+
+3.1.2. Management Monitors
+
+Data for this section is held in the Peak database, with access from the web site.
+
+3.1.3. Incident Management
+
+Data for this section is held locally on the SQL server database
+
+Type Table
+Name
+
+Function Holds the details of a Major Incident Report
+
+Entries are created by calls to the stored procedure
+f 880oc avons! Once created, they cannot be altered.
+Any updates to the Major Incident are held in the update table, and
+an MIR is closed when a closure record is created.
+
+The table holds the basic details which are likely to be available at
+the creation of the MIR. The incident title and a call number are
+mandatory fields in the HTML because all further reference to the
+table is based on these two fields:
+
+Accessed by Web pages :
+
+SQL stored procs:
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 19 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Java servlets :
+
+none
+
+Location Local server
+
+Creation script
+
+Type
+Name
+Function Holds any updates which are made to the major incident during the
+course of its existence up until the time that it becomes closed.
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref, DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 20 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Once the major incident has been closed, no further updates can
+be made.
+Title and call are mandatory fields imposed by the HTML code.
+Accessed by Web pages:
+Java servlets :
+none
+Location Local server
+Creation script —_—eo—VKs—————_—_—_—_—_—_—_—_— fl
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 21 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Type Table
+Name
+
+Function Holds any actions which are associated with the major incident
+during the course of its existence up until the time that it becomes
+closed
+
+Once the incident has been closed no new actions can be created
+
+Title and call are mandatory fields imposed by the HTML code.
+
+Accessed by Web pages:
+
+SQL server stored procs:
+
+Java serviets :
+
+none
+Location Local server
+Creation script fi
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE. Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 22 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type
+Name
+Function Once a major incident is closed, details are held in the closure
+table. Only once closure record is permitted for any major incident
+Accessed by Web pages:
+SQL server stored procs:
+Java serviets :
+none
+Location Local server
+
+Creation script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 23 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Table
+Name
+
+Function Lookup table only
+
+Accessed by Web pages:
+
+GRO
+
+SQL server stored procs:
+
+Java servlets :
+
+none
+
+Location Local server
+
+Field definition
+
+Type
+
+Name
+
+Function Lookup table only — used in the trial version of the extranet system
+but not incorporated in the final version. This table has been
+retained in the expectation that someone at some stage is probably
+going to ask for it to be included.
+
+Accessed by none
+
+Location Local server
+
+Field Definition
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 24 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3.1.4 Operational Business Change
+
+Data for this section is held locally on the SQL server database — the original data is held in an
+access database used by the OBC team in Crewe, data is extracted from this database dail
+on an overnight schedule by a SQL server job on the local machine called {
+(which in turn calls the stored procedure ¢ “veer-t-"-~and inserts into the
+local database table.
+
+Type
+
+Name
+
+Function Contains all of the relevant data from the OBC database. Th table
+is copied into the database daily by a job running within SQL
+server whichj runs at 01:00
+
+Accessed by Web pages:
+SQL server stored procs:
+none
+Java serviets :
+none
+
+Location Local server
+
+Field Definition fi
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 25 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3.1.5 OCP
+Type Table
+Name ocps
+Function There is only one table associated with the OCP system — the OCP
+table which holds details of all of the OCPs which have either
+service affected set to yes, or else have been sent to the customer
+for approval. The table is documented here for completeness, but
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 26 of 186
+Fe)
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+Service Management Portal High Level Design
+
+FUJ00142217
+FUJ00142217
+
+-in._oractice. all access to the, data is
+
+held in a view called
+
+Accessed by
+
+Web pages:
+
+none
+
+SQL server stored procs:
+none
+
+Java servlets :
+
+none
+
+Location
+
+Peak
+
+Creation Script
+
+Ly
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE
+
+Ref.
+
+Version:
+
+Date:
+Page No:
+
+DEV/GEN/SPG/0003
+0.1
+
+29 August 2007
+
+27 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type
+Name
+Function The only means of access into the OCP data
+Accessed by Web pages:
+SQL server stored procs:
+none
+Java servlets :
+none
+Location Peak
+
+Creation Script
+
+annie nen enone nen ee Ne een me ere EeneTe epee
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 28 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3.1.6 Reports and SLT monitors
+
+The report files are entered into the web site via a script called “drop-box” covered later in the
+manual, they do not use SQL server tables.
+
+The SLT monitors do use SQL server tables, with data being input to the tables from flat files on
+a daily basis, some of these tables are then manipulated by stored procedures which generate
+views which are queried by the web pages.
+
+Type Table
+Name
+Function Used to hold the data relating to Call to resolution SLTs
+Accessed by Web pages:
+Java serviets :
+none
+Location Local database
+
+Creation Script
+
+Type
+Name
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref, DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 29 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Function Used to hold the data relating to Debit Card Daily Transaction
+SLTs
+Accessed by Web pages:
+
+GRO
+
+‘SQL server stored procs:
+
+Java servlets :
+
+none
+
+Location Local database
+
+Creation Script ean
+
+Type Table
+
+Name i GRO i
+
+Function Used to hold the data relating to Debit Card Monthly Transaction
+SLTs
+
+Accessed by Web pages:
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 30 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+SQL server stored procs:
+
+Java servlets :
+
+none
+
+Location Local database
+
+Creation Script
+
+Type Table
+
+Name
+
+Function Used to hold the data relating to Debit Card Quarterly Transaction
+SLTs
+
+Accessed by
+
+Java servlets :
+
+none
+
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 31 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Table
+Name
+
+Function
+
+Accessed by
+
+Java serviets
+
+none
+
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 32 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type
+Name
+Function Used to hold the data relating to Debit Card Monthly Reliability
+SLTs
+Accessed by Web pages:
+i
+SQL server stored procs:
+Java serviets
+none
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 33 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Type Table
+Function Used to hold the data relating to Debit Card Quarterly Reliability
+SLTs
+Accessed by Web pages:
+
+Sai
+
+Java serviets :
+
+none
+
+Location Local database
+Creation Script
+
+Type Table
+Name
+Function Used to hold the data relating to Inbound data file delivery
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 34 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+Java servlets :
+
+none
+
+Location
+
+Local database
+
+Creation Script
+
+Type
+
+Name
+
+Function
+
+Used to hold the data relating to Outbound data file delivery
+
+Accessed by
+
+Web pages:
+
+none
+
+SQL server stored procs:
+
+Java serviets :
+
+none
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 35 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Location Local database
+
+Creation Script
+
+Type Table
+Name
+Function Used to hold the data relating to E-Top-ups Daily Transaction SLTs
+Accessed by Web pages:
+SGi Server stored procs:
+Java servlets :
+none
+Location Local database
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 36 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+Creation Script
+
+Type
+Name
+
+Function “Used to hold the data relating to E-Top-ups Monthly Transaction
+SLTs
+
+Accessed by
+
+Java servlets :
+none
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 37 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Table
+
+Name
+
+Function Used to hold the data relating to E-Top-ups Quarterly Transaction
+SLTs
+
+Accessed by Web pages:
+“Java Serviets I
+none
+
+Location Local database
+
+Creation Script
+
+Type Table
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref, DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 38 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Name '
+Function Used to hold the data relating to E-Top-ups Daily Reliability SLTs
+Accessed by Web pages:
+I GRO
+f
+Java serviets
+none
+Location Local database
+
+Creation Script
+
+Type
+Name
+
+Function
+SLTs
+
+Accessed by
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 39 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+SQL server stored procs:
+
+Java servlets :
+
+none
+
+Location Local database
+
+Creation Script
+
+Type
+Name
+Function Used to hold the data relating to E-Top-ups Quarterly Reliability
+SLTs
+Accessed by Web pages:
+r
+SQL server stored procs:
+Java serviets :
+none
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 40 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Table
+Name Inbound
+Function Used to hold the data relating to Data File Delivery Inbound SLTs
+
+on their way into the database. The only purpose of the table is to
+hold the data prior to changing the DAY_A column to a date, after
+which the data is stored in tablelnboundFinal
+
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+
+Java serviets :
+
+none
+
+Location Local database
+
+Creation Script
+
+I
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 41 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+“Aint -Ganarol LOS NOI
+
+Type View
+
+Name
+
+Function Takes data from the InboundFinal table and reformats this data to
+concatenate some columns and to make them consistent — the
+data is generated by sp_processinbound and is appended to
+DFDInbound table
+
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+
+Java serviets
+
+none
+Location Local database
+Creation Script 0]
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE. Ref. DEVIGEN/SPG/0003,
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 42 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 43 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+g I
+i '
+
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 44 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+Type
+Name
+Function Used to hold the data relating to Data File Delivery Inbound SLTs
+after the data for day_a has been converted to datetime format
+Accessed by Web pages:
+none
+SQL server stored procs:
+Java servlets :
+none
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 45 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+[pawansani/alana chown ah Rl Pavanshad ROL ALL AT
+
+GRO
+
+Type
+
+Name
+
+Function
+
+Used to hold the data relating to Network
+Transaction SLTs
+
+Banking Daily
+
+Accessed by
+
+Web pages:
+
+SQL server stored procs:
+
+Java serviets
+
+none
+
+Location
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 46 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Table
+
+Name
+
+Function Used to hold the data relating to Network Banking Monthly
+Transaction SLTs
+
+Accessed by Web pages:
+
+SQL server stored procs:
+
+Java serviets :
+
+none
+
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 47 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Table
+Name OnPerfQtrly
+Function Used to hold the data relating to Network Banking Quarterly
+
+Transaction SLTs
+
+Accessed by Web page:
+
+saL server stored procs:
+
+Java servlets :
+
+none
+
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 48 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Type Table
+Name H i
+
+Function Used to hold the data relating to Data File Deliver y Outbound SLTs
+on their way into the database. The _only purpose of the table is to
+hold the data prior to changing the! GRO {column to a date, after
+which the data is stored in table Outbouni
+
+Accessed by Web pages:
+none
+SQL server stored procs:
+
+Java serviets :
+
+none
+
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 49 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type
+Name
+Function Takes data from the OutboundFinal table and reformats this data
+to concatenate some columns and to make them consistent — the
+rated by sp_processOutbound and is appended to
+Accessed by Web pages:
+none
+SQL server stored procs:
+Java serviets :
+none
+Location Local database
+Creation Script
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 50 of 186
+Fe)
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+Service Management Portal High Level Design
+
+FUJ00142217
+FUJ00142217
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 51 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Table
+Name
+
+Function
+
+Used to hold the data relating to Data File Deliver y Outbound SLTs
+after the data for ‘has been converted to datetime format
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 52 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+
+Java serviets :
+
+none
+
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 53 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Type View
+Name
+
+Function Used to hold the data relating to Inbound and outbound file delivery
+SLTs. The data in this view is created from the DFDInbound and
+DFDOutbound views and is the primary source of data for the web
+pages
+
+Accessed by Web pages:
+tba
+
+SQL server stored procs:
+
+Java servlets :
+
+none
+
+Location Local database
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 54 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+ae
+
+Type Table
+Name Ln GRO i
+Function Used to hold the data relating to Network Banking Daily
+
+Transaction SLTs
+
+Accessed by Web pages:
+
+none
+
+Location
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 55 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+Type Table
+Name
+
+Function Used to hold the data relating to Network Banking Monthly
+Transaction SLTs
+
+Accessed by Web pages:
+
+SQL server stored procs:
+
+Java servlets
+
+none
+Location Local database
+Creation Script
+Type Table
+Name H GRO :
+Function Used to hold the data relating to Network Banking Quarterly
+Transaction SLTs
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 56 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+Accessed by
+
+Web pages:
+
+Java serviets :
+none
+
+Location
+
+Local database
+
+Creation Script
+
+Type Table
+Name LL F
+Function Used to hold the targets for SLTs for File delivery and LFS
+
+Accessed by
+
+Web pages:
+
+SQL server stored procs:
+none
+
+Java servlets :
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 57 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+FUJ00142217
+
+FUJ00142217
+
+COMMERCIAL IN CONFIDENCE
+
+Location
+
+Creation Script
+
+Type Table
+Name
+Function Used to hold the data relating to Telephony SLTs
+
+Accessed by
+
+Web pages:
+
+SQL server stored procs:
+
+Java servlets :
+
+none
+
+Location
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 58 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3.2 Stored Procedures
+
+3.2.1. Incident Management
+
+Type Stored Procedure
+Name i
+Function Adds a new incident record to the database table by inserting
+values from the HTML page into the database table
+Incident title and call number are mandatory fields imposed within
+the HTML
+parameters ono
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref, DEVIGEN/SPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 59 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+The number of HSH logged incidents which are related to or
+dependant on the resolution of this incident
+
+Accessed by Web pages:
+
+none
+
+SQL server stored procs:
+none
+
+Java serviets
+
+Location Local
+
+Creation Script Pracccuna GDI ATE-mesoardnnnadnanat onic cada dmaid sok nana
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 60 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Stored Procedure
+
+Name r
+
+Function Adds a record to the table £
+parameters gathered from the HTML pag:
+
+Incident title and call number are mandatory fields imposed within
+
+the HTML
+parameters ¢ 1
+{ i
+( i
+{ I
+t i
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 01
+Date: 29 August 2007
+
+PageNo: 61 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+Accessed by
+
+Web pages:
+
+none
+
+none
+
+Java servlets :
+
+SQL server stored procs:
+
+Location
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE
+
+Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 62 of 186
+FUJ00142217
+FUJ00142217
+
+FUIITSU Service Management Portal High Level Design
+} COMMERCIAL IN CONFIDENCE
+
+as
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 63 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Stored Procedure
+
+Name m
+
+Function Adds a record to the table i.
+parameters gathered from the HTML pages.
+
+Incident title and call number are mandatory fields imposed within
+
+the HTML
+parameters ;
+Accessed by Web pages:
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref, DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 64 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+none
+
+SQL server stored procs:
+
+none
+
+Java serviets :
+
+Location Local
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 65 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Stored Procedure
+Name
+Function Allows the user to delete a previously created action from the table
+parameters i
+Accessed by Web pages:
+none
+SQL server stored procs:
+none
+Java servlets :
+Location Local
+Creation Script (i
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 66 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Stored Procedure
+Same EE GRO ened
+Function Allows the user to update a previously created action from the
+tablet
+parameters nanan aA EF
+UL eenre-engimermunieronmnmnerrine aenorryrEc-oornprsseurnnicetoned
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref, DEVIGEN/SPG/0003,
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 67 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Accessed by
+
+SQL server stored procs:
+none
+
+Java serviets
+
+Location Local
+
+Creation Script mm naman Rrceneecetinscinn Move mgtamecrcrnbeaiececint
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 68 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 69 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Stored Procedure
+Name
+Function Adds a record to the table onroncimynn’ using
+parameters gathered from the HTML pages.
+Incident title and call number are mandatory fields imposed within
+the HTML.
+The stored procedure also changes the status of the associated
+Major Incident in the table £
+parameters (Bana wea siarcialerhditin
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+Page No: 70 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+The date and time at which Post Office agreed the closure of the
+incident
+
+Accessed by Web pages:
+
+none
+
+SQL server stored procs:
+none
+
+Java servlets
+
+Location
+
+Creation Script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 71 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 72 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+3.2.2 OBC Data
+
+Type Stored Procedure
+
+Name i GRO a
+
+Function Imports data from the linked table OBCACCESS...Bigtable into the
+table OBCBigTable
+
+parameters None
+
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+none
+Java serviets :
+
+None
+
+SQL job
+
+t. 2:00
+Location Local
+Creation Script I
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE Ref.
+Version:
+
+Date:
+
+Page No:
+
+DEV/GEN/SPG/0003
+0.1
+
+29 August 2007
+
+73 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3.2.3. Reports and SLT monitoring
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 74 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Type Stored Procedure
+Name
+
+Function Runs the stored procedures {7 and
+“J to do the actual work
+parameters
+Accessed by Web pages:
+none
+SQL server stored procs:
+none
+Java servlets :
+None
+SQL job
+Location Local
+Creation Script I [fF GRO I
+Type Stored Procedure
+Name Hl
+Function Processes the data in the InboundFinal table and checks to see if
+
+there is any data in the existing (77
+manually amended. If there is, then
+other dates is processed into the ”™
+
+which has been
+ft intact, data for
+
+parameters None
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+
+none
+
+Java serviets :
+
+SQL job
+Location
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref, DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 75 of 186
+FUJ00142217
+FUJ00142217
+
+FUIITSU Service Management Portal High Level Design
+} COMMERCIAL IN CONFIDENCE
+
+Creation Script
+
+¢
+4
+é i
+é H
+‘ :
+4
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 01
+Date: 29 August 2007
+
+PageNo: 76 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Stored Procedure
+
+Name
+
+Function Processes the data in the; nd checks to see if
+there is any data in the existing DFDOutbound table which has
+been manually amended. If there is, then this data is left intact, data
+for other dates is processed into the:
+
+parameters None
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+
+Java servlets :
+
+None
+SQL job
+Location Local
+Creation Script ieee
+ince nerinumertrine:y yee niet wrinueennrturanuryinennonsninnennn
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE. Ref. DEVIGEN/SPG/0003,
+Version. 0.1
+Date: 29 August 2007
+
+PageNo: 77 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 78 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Type Stored Procedure
+Name o
+
+Function Imports data from text files in the {” into
+the tables for ETU, Debit Card and Network Banking SLTs
+parameters None
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+
+none
+Java serviets :
+
+None
+SQL job
+Location Local
+Creation Script
+lnancane wore uate rocUMnNEIEIyy nen eeneeenenenenenenn !
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE. Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 79 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 80 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Type Stored Procedure
+
+Name
+
+Function Imports data from text files in the {_ folder into
+the Inbound and Outbound tables which contain data about the
+data file delivery SLTs, then copies this data to i and
+$$ which have the dates correctly formatted
+
+parameters None
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 81 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+none
+Java servlets :
+None
+SQL job
+
+Location Local
+
+Creation Script
+
+Type Stored Procedure
+
+Name
+
+Function Imports data from text files in the £ Yfolder into
+the Telephony and CallToResolution tables which contain data
+about the delivery SLTs. The files themselves are delivered from
+HSD via MSU.
+
+parameters None
+
+Accessed by Web pages:
+none
+SQL server stored procs:
+none
+Java serviets :
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 82 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+None
+SQL job
+Location Local
+
+Creation Script
+
+3.3. Views
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 01
+Date: 29 August 2007
+
+PageNo: 83 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design &
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4 XCC Database
+
+This section is not exhaustive — it only relates to those parts of the XCC system which
+have a direct relevance to the SMP. For more extensive details of the XCC system see the
+SSC documents XCC Support guide and the XCC user Guide
+
+The database is held on BOGGIT server. It has been written using
+table below describes the tables and stored procedures within the databas
+the module to which they are relevant (System Monitor, SLT etc) and outlines the function
+of each.
+
+4.1 Tables
+
+Type Table
+
+Name
+
+Function
+
+Accessed by
+
+Location
+
+Creation script
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 84 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+5 Java Servlets
+
+5.1 Logon
+
+Name Lon !
+
+Function Takes data from ;O*~ “s*e-nand checks the database to
+confirm that there is a valid user and password. Also registers the
+size of the usable screen and sets up a session variable. which is
+read by the web pages to determine which cascading style sheet
+should be used
+
+parameters All parameters are read from the web page by the se rviet:
+
+Accessed by
+
+SQL server stored procs:
+none
+Java servlets :
+
+Location Local
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 85 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 86 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 87 of 186
+FUJ00142217
+
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 88 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+5.2 Incident Management
+
+Name Lance BR paren
+
+Function Takes data from) GRO 4 formats it and
+then calls the database stored procedur z elooat
+to create anew MIR
+
+parameters All parameters are read from the web page by the servlet:
+
+© Copyright Fujitsu Services Ltd 2007
+
+‘COMMERCIAL IN CONFIDENCE. Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 89 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Accessed by
+
+SQL server stored procs:
+
+none
+Java serviets :
+
+none
+
+Location Local
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 90 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 91 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 92 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 93 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 94 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 95 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+ee ~ — a
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/IGEN/SPG/0003
+
+Version: 0.1
+
+Date: 29 August 2007
+
+Page No: 96 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+it ;
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 97 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 98 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 99 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Name
+Function Takes data from ¢ “j web page, formats it and
+then calls the database stored procedure
+update to create a new update record
+parameters No parameters directly passed to the servlet, all parameters are read
+from the iweb page by the serviet
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 100 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 101 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Accessed by Web pages:
+
+SQL server stored procs:
+
+none
+Java servlets :
+
+none
+
+Location Local
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 102 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 103 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 104 of 186
+FUJ00142217
+FUJ00142217
+
+FUIITSU Service Management Portal High Level Design
+} COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 105 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 106 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 107 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 108 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 109 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 110 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 111 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 112 0f 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+Name q {
+Function Takes data from 22° formats it and then
+calls the database stored procedure { to
+create a new update record .
+parameters No parameters are passed direct to the serviet. The serviet reads
+parameters from (C077 "Gao"
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 113 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Accessed by Web pages:
+
+SQL server stored procs:
+none
+Java serviets :
+
+none
+
+Location Local
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 114 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+——— —
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 115 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Ref. DEV/GEN/SPG/0003
+Version: 0.1
+
+Date: 29 August 2007
+PageNo: 116 of 186
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 117 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 118 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 119 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE Ref.
+
+Version:
+Date:
+Page No:
+
+DEV/GEN/SPG/0003
+0.1
+
+29 August 2007
+
+120 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 121 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEVIGENISPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 122 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 123 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 124 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Name
+
+Taal
+
+Function Takes the selected record from 2! io we
+and then calls the database stored procedure
+- delete an already created action record
+
+parameters No parameters passed directly to the serviet. The servlet reads data
+
+Accessed by
+
+SQL server stored procs:
+none
+Java servlets :
+
+none
+
+Location Local
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 125 0f 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+aoe ey IRTP — ~
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 126 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 127 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 128 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 129 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Name
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 130 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+Function Takes data from P°* web page, formats it
+
+and then calls the database stored procedure
+“action to change an existing update record
+
+parameters No parameters are passed directly to the serviet. The serviet reads
+the parameters from the:7~ ~~
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 131 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 132 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 133 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Accessed by
+
+SQL server stored procs:
+none
+Java servlets :
+
+none
+
+Location Local
+
+© Copyright Fujitsu Services Ltd 2007S COMMERCIAL IN CONFIDENCE Ref. DEVIGENISPGIO003
+Version. 0.1
+Date: 29 August 2007
+
+PageNo: 134 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 135 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 136 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 137 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 138 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 139 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 140 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 141 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 142 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 143 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 144 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 145 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 146 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design ‘a
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 147 of 186
+Fe)
+FUJITSU
+
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+Name
+
+Function Takes data from f° web page, formats it and
+then calls labase stored procedure
+x ‘to create a new closure record
+
+parameters No paramete ly to the servlet, the serviet reads
+
+data from the
+
+isp web page
+
+© Copyright Fujitsu Services Ltd 2007
+
+COMMERCIAL IN CONFIDENCE Ref,
+Version:
+Date:
+Page No:
+
+DEV/GEN/SPG/0003
+0.1
+
+29 August 2007
+
+148 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe) S
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Accessed by
+
+SQL server stored procs:
+
+none
+Java servlets :
+
+none
+
+Location Local
+
+© Copyright Fujitsu Services Lid 2007 + COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 149 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+a roaperinmqrurmgyrinnn
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 150 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+beeen
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 151 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 152 0f 186
+Service Management Portal High Level Design
+
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE Ref.
+Version:
+Date:
+
+Page No:
+
+© Copyright Fujitsu Services Ltd 2007
+
+DEV/GEN/SPG/0003
+0.1
+
+29 August 2007
+
+153 of 186
+
+FUJ00142217
+FUJ00142217
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+i
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 154 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 155 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 156 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 157 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 158 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+é '
+é i
+‘ ‘
+i I
+4 I
+¢ i
+H :
+A '
+d i
+‘ '
+i i
+é '
+é i
+{ ‘
+i I
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 01
+Date: 29 August 2007
+
+PageNo: 159 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 160 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+5.3 Management Monitors
+
+The Java servlets in the management monitors are primarily concerned with the production of the map of the UK
+showing Post Offices currently imoperable
+
+Name a]
+
+Function Takes the basic map of the UK and draws map points indicating the
+post offices with a communication status of down by converting Post
+code to map references — varying the size of red blob by pixels for
+FADS which are “down” in the same post code area. The data for the
+status of the Post office communications is gathered from SMDB
+
+parameters
+
+none
+Accessed by Web pages:
+© Copyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref. DEVIGEN/SPG/0003,
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 161 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+none
+
+SQL server stored procs:
+none
+Java serviets :
+
+none
+
+Location Local
+
+CIN CONFIDENCE. Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 162 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 163 of 186
+Fe)
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+Service Management Portal High Level Design
+
+FUJ00142217
+FUJ00142217
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+PageNo: 164 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 165 0f 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Function used to remove unwanted information from the Tomcat access log and
+perform diagnostic logging
+
+parameters none
+
+Accessed by Web pages:
+none
+
+SQL server stored procs:
+none
+Java servlets :
+
+none
+
+Location Local
+
+Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 166 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 167 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 168 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 169 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design ‘a
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+6 Web Pages
+
+The local site for all of the web pages is:
+
+The remote site during development is : i
+
+Dreamweaver was configured to save files to the remote location when saved locally, so that the remote and local
+ends should be identical
+
+All html pages and jsp pages were written using /
+
+vexcept for those in the /files directory which are
+imported ‘ !
+
+All images are held in the ¢~”
+
+All files, including those which are updated daily are in the ¢
+
+Database connection definitions are held in the
+
+6.1 Cascaded Style sheet
+
+The cascaded style sheet is called either T=:
+
+The decision between the two is based on the available screen size, which is held in a
+session variable and checked within the file ¢~ “», which is part of an
+include statement on each web page. i _
+
+The style sheets define the following characteristics of all the web pages with the exception
+of the MIR report which is intended to be printed. For the large screen size, the settings are -
+
+background-color is set to black,
+
+H1 is set to Arial, 20 point, Fujitsu grey
+
+H2 is set to Arial, 9 point, Fujitsu blue
+
+H3 is set to Arial, 9 point, white
+
+H4 is set to Arial, 9 point, Fujitsu red
+
+HS is set to Arial, 14 point, Fujitsu grey
+
+Screen visible size is set to 1400 by 900 pixels
+The banner is set tof the images folder
+
+The target frame, in which all results appear is set to 1000 by 825 pixels
+
+The sidebar, containing the menus is set to 170 by 825 pixels
+
+The background images on menu items are set to
+folder in their normal state.
+
+in the images
+
+The background images on menu items are set to
+folder in their “mouse-over” state.
+
+in the images
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 170 of 186
+FUJ00142217
+
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+For the small screen size, the settings are -
+
+background-color is set to black,
+
+H1 is set to Arial, 15 point, Fujitsu grey
+
+H2 is set to Arial, 8 point, Fujitsu blue
+
+H3 is set to Arial, 8 point, white
+
+H4 is set to Arial, 8 point, Fujitsu red
+
+H6 is set to Arial, 10 point, Fujitsu grey
+
+Screen visible size is set to 90% by 70% of the available creen space
+
+The banner is set to!
+
+the images folder
+
+The target frame, in which all results appear is set to 80% by 90% of the available space
+withing the screen visible size
+
+The sidebar, containing the menus is set to 10% by 85% of the available space withing
+the screen visible size
+
+The background images on menu items are set to
+images folder in their normal state.
+
+The background images on menu items are set to
+images folder in their “mouse-over” state. .
+
+6.2 Connections to database
+
+Connections to databases are held in the file
+connection strings to all databases involved, not j
+
+This includes
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 171 of 186
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+
+FUJ00142217
+
+Service Management Portal High Level Design
+
+6.3
+
+6.3.1
+
+6.3.2
+
+6.3.3
+
+Imported files and data sources
+
+Management Monitors
+
+Management monitors get all of their data by a links to the Peak database, which in tum links to two
+tables in the 77" gerne ““-y one intemal peak table
+posttowns
+
+Incident Management
+
+Data is recorded and stored in the SQL server database held on the web server
+
+Reports and SLTs
+
+SRB - uploaded from a zip file supplied monthly by MSU. Zip is extracted into the ¢
+¢oo7*"@Re™"7 by the drop box code and then the dreamweaver site re-synchro
+the remote server”
+
+SRB dashboard — single html page uploaded from a single file supplied by MSU and uploaded into
+H Sy the drop box code and then the dreamweaver site re-synchronised to
+upload to the remote server
+
+ided from a zip file supplied monthly by MSU. Zip is extracted into the dreamweaver
+
+yy the drop box code and then the dreamweaver site re-synchronised
+
+to upload to the remote server
+
+Success Rates — single html page uploaded from a single file supplied by MSU into local directory
+yy the drop box code and then the dreamweaver site re-synchronised to
+upload to the remote server
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+PageNo: 172 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3 — one off file supplied by ¢ iploaded into local directo’
+code and then the dreamweaver site re-synchronised to upload to the remote server
+
+F dashboard - one off file supplied by 7x uploaded into local irowwrysunedBionrenemmay
+
+About SLTs is an extract from the contract and is held as an htm! file in the local server — this page has
+hot- links to the definitions of those SLTs which 6 also a single html page held locally
+
+6.3.4 Operational Business Change
+gets data from a single SQL server view held in the SSC’s OCP database
+
+6.3.5 Operational Change (OCP)
+
+performs a daily extract and transition of data from the OBC access owned by the OBC team in Crewe.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 173 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+7 The Drop Box
+
+7.1 General
+
+Data for various functions within the SMP are provided by a number of units outside the SSC.
+These units FTP their prepared data to a directory on the SMP development box for processing.
+This directory is know as the SMP "Drop Box"
+
+A Java class called DropBox parses this directory and then processes the files as appropriate.
+
+7.2 Files processed
+
+Files to be processed by the DropBox class are controlled by a parameter file
+the drop box directory. This files is read as the DropBox class is loaded. Each li
+1} At each cycle the DropBox class will look for i
+directory and if present move it to! If the file is a ZIP filet, 2) then it will be
+expaned into "¢! and then deleted from the dropbox. Any files that already exist in
+directoryname will be silently overwritten.
+
+7.3 Current parameters
+
+dloils..eamantninl Ol Tan natuaboenal@ MAR Mileeldailssceminn thee cceciceesnsereiscsennsnnenneseinisevennseetinnsnneimesnenn
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 174 of 186
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+
+FUJ00142217
+
+Service Management Portal High Level Design
+
+7.4 Running DropBox
+The directory for the class to process (the dropboxname) is specified as args[0]. Typical call line for
+processing SMP files i
+To simplify things this command line is held in the file RunDropBox.cmd irt:
+a “te DropBox class should be running on the development server at all times.
+7.5 Logging
+The DropBox class creates a daily log file in the dropbox directory called’ i.
+The log file records any problems with the parameter file found on loading and then records any files as they
+are processed.
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 01
+Date: 29 August 2007
+
+PageNo: 175 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design ‘a
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+7.6 Case sensitivity
+
+7.6.1 Input files
+
+To prevent mistakes with the files that are delivered into the drop box directory by external units the
+DropBox class ignores case on any incoming file name specified in the parameter file. Hence a parameter
+line of
+
+7.6.2 Output files
+
+Any file being output to a top level directory will have its file name converted to lower case.
+
+With the parameter as specified above, an input file named ¢ -will be written to
+.
+
+With a parameter line of:
+
+1 Will be written as [ The files within the
+and the directory name itself will not have their name case
+
+Then the top level file
+sub-directory g**~=#
+
+changed. :
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 176 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+8 Tomcat Setup
+
+Most of this information applied to both the development,
+Where the servers differ the information will be preceeded wi
+
+8.1 Installation and loading
+
+GRO
+
+8.2 Context changes
+
+The following changes have been made to Tomcat default applications (contexts).
+
+8.2.1 All web apps
+
+8.2.3 manager app
+
+8.2.4 host-manager app
+
+Gi
+
+Ref. DEV/GEN/SPG/0003
+Version: 0.1
+
+Date: 29 August 2007
+PageNo: 177 of 186
+
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+8.3 Access log filter
+
+SMP website uses a filter to clean up the information written to the access logs. The filter code is in
+- The filter removes unwanted log records by
+
+! setting the serviet attribute "dontlog” for transactions where the ServietPath ends with png, .jpg, gif, .css,
+
+emz, .wmz or starts with "image".
+
+This is achived by parameters for the access log valve and the web application definition for the SMP
+context.
+
+8.3.1 Access log valve
+
+The access log valve has to be defined with conditio
+
+“dontlog". This defines the flag for requests that
+
+8.3.2. web.xml
+
+The web application definition for SMP in SMP/WEB-INF/web.xmI now defines:
+a) The name of the filter class <filter-name>
+
+b) Additional parameters to filter (see 6.1.1 below)
+
+c) Which requests the filter appies to <filter-mapping>:
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 178 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+GRO
+
+8.3.3 Filter logging to STDOUT
+
+The filter is also used to do request logging to STDOUT. By default the filter will log a line containing user
+name and URL accessed, e.g.
+
+Additional logging can be turned on. This is controlled by inserting <init-param> parameters in the <filter>
+definition above. These log parameters can be seen above commented out
+
+Iflog_requestis not null, perform logging of every transaction through the web server along with any
+cookie present. e.g
+
+8.4 Others
+
+8.4.1. (POASMP) Tomcat documentation
+
+8.4.2 (POASMP) Default page
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 179 of 186
+FUJ00142217
+FUJ00142217
+
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+9 FTP
+
+9.1 FTP servers
+
+Both servers run the FileZilla FTP server. This is designed as the olmy way to transfer files too and from
+these systems. Windows (SMB) sharing should not be used
+
+9.1.1 Params
+
+9.1.3 Usage
+
+Clients should not use passive mode because it willbe blocked by windows firewall. In FileZilla client use
+advanced settings in the hosts manager to select "normal" and not the "default" which is passive ftp.
+FileZilla will make outgoing connections on ports 20 or 22 which should be cleared on client firewall
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 180 of 186
+Service Management Portal High Level Design
+
+Fe)
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00142217
+FUJ00142217
+
+10
+
+Daily tasks
+
+Under normal running there is only one task which requires to be done — the daily upload of files from the
+development server to the live system.
+
+server and load
+On the right hand side in the “files” tab, ensure that SMP is the site selected
+
+Right click on the “Files” folder and select “synchronise”
+
+Ensure that the check boxes are correct, they should read “selected files only” and “put newer files to
+remote”
+
+Click on preview
+Dreamweaver will check to see which files are more up to date — click on OK to load these files to the live
+
+system.
+
+NOTE: FTP errors are frequent, normally 3 or 4 for every 150 files uploaded = click on OK to accept them
+and then repeat the above process until all files have been transferred successfully.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 181 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design ‘a
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+11 Networks
+
+The network design for the SMP web portals and the design assumptions behind this
+design are documented in }. For brevity, only the diagrammatical representation
+
+is repeated here
+
+George Mires
+
+Groves Norway
+
+port sits
+
+en
+
+Server ‘eit cover
+tootn2 ans
+fa0re Pi
+; I
+
+port si16
+
+crossbeam
+Clustered
+
+Fujtsu Corporate
+Network.
+
+Fujitsu
+Management
+Network
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+Page No: 182 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design ‘a
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+12 System Qualities
+
+12.1 Security
+
+There are two aspects to security: Security of the server itself, and security of the data
+residing on the server. The HNG-X data warehouse will be physically located in the secure
+data centre in IRE11 with a backup data centre in IRE12.
+
+The Service Management Portal is a web site hosted at the Southern Data Centre. It is
+protected by firewalls and the firewalls are configured to only allow traffic from the web
+site to named databases. Specifically, data can flow from the main database and from Peak
+to the web server only by the use off . Data can only flow from.
+the web server to the central database when accessing the Major Incident components of
+the system, and these transactions are controlled via servlets.
+
+The SMP database server is maintained in a secure area, using a security system which is
+separate from the rest of the building. Access to the database is limited by username and
+password. Administrator rights to any part of the server are restricted to a small number of
+SSC staff.
+
+TfS (Triole for Service) is a corporately mandated incident management system. Its
+security is beyond the scope of this document.
+
+Peak is maintained in a secure area, using a security system which is separate from the rest
+of the building. Strong passwords requiring frequent changes, have been implemented.
+The call narrative information held on Peak is not sensitive and is not required to be
+secure. Data connected to Peaks from the live estate should also not be secure (because the
+live estate security systems should prevent this), but as a “double check” such evidence is
+encrypted. All encrypted evidence attached to a Peak which has been closed is
+automatically deleted after 28 days.
+
+12.2 Availability
+
+The Data warehouse will be available during the core POCL day for use in general
+reporting duties. This core day is roughly from 800am to 8.00pm. This means that all
+processing and changes to the data in the data warehouse must take place between the
+hours of 8.00pm and 8.00am the following day.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 183 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design ‘a
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+The Service Management Portal is available 24 x 7 except during infrequent periods of
+maintenance.
+
+The Service Management database server is available 24 x 7 except during infrequent
+periods of maintenance.
+
+TfS (Triole for Service) is a corporately mandated incident management system. Its
+availability is beyond the scope of this document.
+
+Peak is available 24 x 7 except during infrequent periods of maintenance.
+
+12.3 Usability
+
+The Service Management Portal is a web site which is client-facing. The major influencing
+factor in its design therefore is its usability. A user guide has been written for the SMP
+and it is available on the SMP itself in the form of an html document with a hit-link from
+the menu pages.
+
+12.4 Potential for Change
+
+Reporting requirements are subject to periodic changes and as such there is considerable
+scope for change as requirements are finalised and new requirements agreed.
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 184 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design ‘a
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+13 Risks and Assumptions
+
+The data warehouse has been in operation under Horizon for some considerable time and
+as such the risks are well known and reduced. However some new reporting requirements
+are being introduced and as such there is some risk. This however is very low as the data
+is captured and stored in files prior to processing and as such the data is available in more
+than one source, and the warehouse is able to work in “catch up mode” when necessary.
+
+The Security requirements at HNG-X are slightly different from those at Horizon, with an
+intention to provide a server which will sit between the live estate and the corporate
+network. Since this server is still in design stage, it is not completely clear at present
+exactly how the!” presented by the DWH will actually be collected by the SMP
+database.
+
+The Service Management Portal web server has been in operation under Horizon for some
+considerable time and as such the risks are well known and reduced. The new reporting
+requirements for HNG-X involve some additional development and therefore impose some
+risk. The HNGX changes to the Sysman subsystems means that there will also be a
+requirement to make changes to the System monitors which will have a knock-on effect on
+the SMP.
+
+To date, data relating to availability and engineer performance against SLTs has been
+derived by a merger of data from SMDB and Powerhelp. With the implementation of TfS,
+the incoming data feed from TfS will replace the one from Powerhelp. This imposes some
+tisk because the provision of this data feed is seen as a very minor requirement in the
+overall implementation of the call management System. In addition, TfS is a corporately
+mandated system and therefore there will be political pressure to implement it which will
+exceed anything but the most major technical issues. It is likely therefore that the data feed
+from TfS will not be identical to Powerhelp and will require additional development work
+
+in SMP.
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref DEVIGENISPG/0003
+Version: 0.4
+Date: 29 August 2007
+
+PageNo: 185 of 186
+FUJ00142217
+FUJ00142217
+
+oO Service Management Portal High Level Design ‘a
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+14 Changes expected in HNGX
+
+© Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. DEV/GEN/SPG/0003
+Version: 0.1
+Date: 29 August 2007
+
+PageNo: 186 of 186

@@ -1,0 +1,462 @@
+ICL Pathway
+
+Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+
+FUJ00232471
+FUJ00232471
+
+Document Title:
+
+Document Type:
+
+Release:
+
+Abstract:
+
+Document Status:
+
+Originator & Dept:
+
+Contributors:
+
+Reviewed By:
+
+Comments By:
+
+Comments To:
+
+Distribution:
+
+Release Management Processes
+
+Process Definition
+
+N/A
+
+This document provides a first-level decomposition of the
+
+software release management process, which divides the
+process into the following sub-processes: (a) Manage the
+release, (b) Develop the release and (c) Test the release.
+
+APPROVED
+
+Tania Reynolds, Business Effectiveness Team
+
+Sheila Bamber, Dean Felix, David Royle, Bob Davis, Pat
+Lywood, Peter Burden
+
+Peter Burden and Pat Lywood
+
+ICL Pathway Library
+
+© 2001 ICL Pathway Limited © COMPANY IN CONFIDENCE Page 1 of 10
+FUJ00232471
+
+FUJ00232471
+ICL Pathway Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+0.0 Document Control
+0.1 Document History
+Version No. [Date Reason for Issue Associated
+(CP/PinICL No.
+0.1 (05/01/01 First draft of Release Management
+Processes
+1.0 26/01/01 Approved Version of Release)
+Management Processes
+2.0 (02/02/01 Approved
+
+0.2 Approval Authorities
+
+IName [Position Signature Date
+[Peter Burden Support Services (02/02/01
+Manager
+IPat Lywood Major Release (02/02/01
+Introduction Manager
+0.3 Associated Documents
+Reference Version [Date Title Source
+ICS/QMS/002 1.0 6/12/00 ICL Pathway Customer ICL Pathway
+Service Process Manual
+IDE/PRO/003 4.0 20/10/00 {ICL Pathway Development IDevelopment
+Directorate Processes
+
+0.4 Abbreviations/Definitions
+
+‘Abbreviation Definition
+
+B&TC Business and Technical Consistency
+ICCB (Change Control Board
+
+ICP (Change Proposal
+
+ICS (Customer Service
+
+ICSRM (Customer Service Release Management
+ISD Infrastructure Services Division
+
+(OTT (Operational Test Team
+
+IPinICL System for logging and tracking changes
+
+© 2001 ICL Pathway Limited © COMPANY IN CONFIDENCE
+
+Page 2 of 10
+FUJ00232471
+FUJ00232471
+
+ICL Pathway Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+IPON Post Office Counters
+SMC Service Management Centre
+SSC Systems Support Centre
+TDA [Technical Design Authority
+
+0.5 Changes in this Version
+
+Version Changes
+
+1.0 Added definitions of symbols used in the text.
+1.1 Added feedback comments from Pat Lywood
+2.0 INo change
+
+0.6 Changes Expected
+
+(Changes
+
+(Additional process information will be added in a later version of this document to]
+\define: (a) how Icons are released to the live environment and (b) how the following}
+isub-processes operate:
+
++ Manage the release
++ Develop the release
++ Test the release
+
+The additional information will take into account any fundamental differences!
+between fast-track releases and major releases.
+
+© 2001 ICL Pathway Limited © COMPANY IN CONFIDENCE Page 3 of 10
+FUJ00232471
+FUJ00232471
+
+ICL Pathway Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+
+0.7 Table of Contents
+
+0.0 DOCUMENT CONTROL.
+
+1_INTRODUCTION.....
+
+2_ SCOPE.
+
+3. RELEASE MANAGEMENT.....
+
+3.1 PROCESS OWNER..
+3.2 MANAGE THE RELEASE..
+3.3 DEVELOP THE RELEASE.
+3.4 TEST THE RELEASE...
+
+Sera
+
+© 2001 ICL Pathway Limited © COMPANY IN CONFIDENCE Page 4 of 10
+FUJ00232471
+FUJ00232471
+
+ICL Pathway Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+
+1 Introduction
+This version of the document describes the first level of decomposition, which
+divides Software Release Management into the following sub-processes:
+(a) I Manage the release
+(b) I Develop the release
+(c) Test the release
+
+Subsequent versions of this document will include additional levels of
+decomposition.
+
+2 Scope
+
+This document includes software releases that are initiated by PinICLs and
+CPs.
+
+© 2001 ICL Pathway Limited © COMPANY IN CONFIDENCE Page 5 of 10
+FUJ00232471
+
+FUJ00232471
+ICL Pathway Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+3 Release Management
+Manage
+Manage Live Change
+@-— Incident (ICL Pathway PON
+(SSC) Programme
+Office)
+T
+CP for i
+Live PinICL Scheduling Weekly schedules and
+daily notifications
+Y Words for Counter
+N ‘Mi: Rel
+Menaze Draft Counter News I lews (Major Release)
+Communication Item for validation Manage the *-—————}
+with PON Response to Release
+(SSU) I~e Draft Counter News + pagan
+Item validation
+Notification
+PinICLs
+and CPs
+Provide Safe Software for
+Storage for development Develop the
+a Release
+(Configuration Developed Changes to
+Management) software Start priorities
+; testing
+Start trigger
+testing trigger (Fast Track)
+(Major
+Release)
+Software 1
+for testing — Progress
+Testing complete Test the
+notification I Release
+(Major Release)
+New live PinICL
+Test details
+(A) ieentified during (Major Release) (8)
+testing
+sottware for Distribute the I ____ Release _I
+— Release
+distribution (ISD)
+Closed Release
+Note
+
+© 2001 ICL Pathway Limited © COMPANY IN CONFIDENCE Page 6 of 10
+FUJ00232471
+
+FUJ00232471
+ICL Pathway Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+3.1. Process owner
+Support Services Manager
+3.2 Manage the Release
+Description 1. A live PinICL is received from the Manage Live Incident
+
+process and scheduled for development.
+
+2. An approved CP is received from the Manage Change)
+process and scheduled for development.
+
+3. Items in Draft Counter News will be passed to the Manage
+the Release process if they are considered to be relevant.
+
+4. CSRM return their comments to the Manage CommunicationI
+with PON process.
+
+5. If it is a major release, then CSRM send words for a Counter
+News Item to PON.
+
+6. CSRM monitor progress of releases. CSRM send a WeekI:
+Schedule and a Daily Notification of Releases to PON.
+
+7. CSRM authorises Development Directorate to start work on)
+the PinICL or CP.
+
+8. Notification of software development progress and
+completion is received from the Development Directorate.
+
+9. For fast-track releases CSRM send a ‘Start Testing Trigger’
+to Test the Release process when the item is ready to be
+tested.
+
+Note: For major releases, the Development Directorate sends}
+a ‘Start Testing Trigger’ to Test the Release process.
+
+10.CSRM receive details of progress from Test the Release)
+and adjust schedules accordingly.
+
+11.CSRM send to Test the Release changes to priorities so that
+they can adjust testing.
+
+112.CSRM decide whether the release can be released to live. If
+they decide to release it, they send a Release Note to
+Distribute the Release (ISD).
+
+13.A closed Release Note is received by CSRM when the)
+release has been installed in the live environment.
+
+Input From
+
+Live PinICL Manage Live Incident (SSC)
+
+© 2001 ICL Pathway Limited © COMPANY IN CONFIDENCE Page 7 of 10
+FUJ00232471
+
+FUJ00232471
+ICL Pathway Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+
+COMPANY IN CONFIDENCE Date: 02/02/01
+
+CP for Scheduling Manage Change (ICL Pathwa
+Programme Office)
+Counter News Item for Manage Communication with PON
+Validation (SSU)
+Closed Release Note Distribute the Release (ISD)
+Progress Test the Release (B & TC or OTT)
+Notification of Develop the Release (DD)
+Developed Software
+Output To
+
+Weekly Schedules and) PON
+Daily Notifications
+Words for Counter) PON
+
+News (Major Release)
+
+Response to Counter]
+News for Validation
+
+Manage Communication with PON
+
+PinICLs and CPs
+
+Develop the Release (DD)
+
+Start Testing Trigger
+(Fast Track)
+
+Test the Release (OTT)
+
+Changes to Priorities
+
+Test the Release (B & TC or OTT)
+
+Release Note
+
+Distribute the Release (ISD)
+
+© 2001 ICL Pathway Limited
+
+COMPANY IN CONFIDENCE
+
+Page 8 of 10
+FUJ00232471
+
+FUJ00232471
+ICL Pathway Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+3.3. Develop the Release
+Description 1. Development Directorate receives PinICLs and CPs that
+
+require to be developed.
+
+2. When appropriate Development Directorate obtains the
+correct version of software to be developed from Provide
+Safe Storage for Software (Configuration Management).
+
+3. Development Directorate carries out changes in accordance)
+with the PinICLs and CPs.
+
+4. Development Directorate provides a Notification of
+Completion to CSRM when the development is finished (Fast
+track).
+
+5. Development Directorate provides the developed software)
+back to Provide Safe Storage for Software (Configuration)
+Management).
+
+6. Development Directorate send a ‘Start Testing Trigger’ to)
+Test the Release (Major Release).
+
+Input From
+PinICLs and CPs Manage the Release (CSRM)
+Software for Provide Safe Storage for SoftwareI
+Development (Configuration Management)
+
+Output To
+Developed Software Provide Safe Storage for SoftwareI
+
+(Configuration Management)
+
+Start Testing Trigger Test the Release (B & TC)
+
+© 2001 ICL Pathway Limited © COMPANY IN CONFIDENCE Page 9 of 10
+ICL Pathway
+
+FUJ00232471
+FUJ00232471
+
+Release Management Processes Ref: CS/PRD/086
+Version: 2.0
+COMPANY IN CONFIDENCE Date: 02/02/01
+
+3.4 Test the Release
+
+Description
+
+No os
+
+For major releases a ‘Start Testing Trigger’ is sent by the,
+Development Directorate.
+
+For Fast-track releases a ‘Start Testing Trigger’ is sent b'
+CSRM.
+
+Software to be tested is obtained from Provide Safe Storage}
+for Software (Configuration Management).
+
+Testing progress is reported to Manage the Release.
+Manage the Release provides changes of priorities.
+For a major release, test details are sent to PON.
+
+If a new fault is discovered during testing that will affect the)
+live environment, it is reported to Manage the Live Incident
+(SSC). This only applies to fast track releases.
+
+When testing is completed, a ‘testing complete’ notification is)
+sent to Provide Safe Storage for Software (Configuration
+Management). This only applies to major releases.
+
+Input
+
+From
+
+Start Testing Trigger Develop the Release (DD)
+(Major Release)
+
+Start Testing Trigger Manage the Release (CSRM)
+(Fast Track)
+
+Changes to Priorities Manage the Release (CSRM)
+
+Software for Testing Provide Safe Storage for Software!
+(Configuration Management)
+
+Output
+
+To
+
+Progress Manage the Release (CSRM)
+
+Testing complete] Provide Safe Storage for Software)
+notification (major (Configuration Management)
+Release)
+
+New PinlCL _ identified) Manage Live Incident (SSC)
+during testing
+
+Test Details PON
+
+© 2001 ICL Pathway Limited I COMPANY IN CONFIDENCE Page 10 of
+
+10

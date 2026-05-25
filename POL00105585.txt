@@ -1,0 +1,224 @@
+POLO0105585
+POL00105585
+
+Message
+
+From: Lesley J Sewell: GRO.
+on behalf of — Lesley J Sewell :
+
+Sent: 02/03/2012
+
+To: Dave Hulbert
+
+Subject: Fw: IMPORTANT - Horizon
+
+We need to craft a board paper ASAP.
+
+Thx
+
+From: Andrew P Jacques
+
+Sent: Friday, March 02, 2012 05:03 PM
+
+To: Lesley J Sewell
+
+Cc: Dave Hulbert; Liz J Tuddenham; Antonio Jamasb
+Subject: IMPORTANT - Horizon
+
+Hi Lesley,
+
+As per your request, below is an outline of the incident types that have impact the network. We are still
+reviewing the commercial implication and this information will be available by Monday.
+
+The four major incidents that have impacted the network over the last 7 months have all been independent of
+each other. But they can be grouped into two areas:
+
+1. Hardware failure within the Fujitsu data centre — 12" December 2011 & 1° March 2012
+2. Software releases into the live environment — 27" July 2011 & 1° February 2012
+
+The hardware failures have been in two completely separate areas of the data centre on different pieces of
+equipment. With the first being a disk error and the incident on the 1“ of March being a Cisco router failing to
+pass traffic through. The common theme on both issues was that inbuilt reliance of the equipment did not kick
+in and this produced the impact on the customer experience
+
+For the software releases, the first incident was due to a ref data change that was not adequately tested and
+impact the functionary of the pinpad estate. The second incident on the 27" July was due to a change that was
+tested against the horizon environment ok and then was laying in wait to be released. During the period the
+change was waiting to be release a new version of horizon software was deployed which impact the change
+when it was released in the environment.
+
+A number of changes have either been put in place or are being investigated to mitigate the risks highlighted by
+these incidents. Such as more rigours testing of ref data and evolution of the risk profile of changes and further
+changes to the monitoring and alerting is being performed or evaluated by Fujitsu in support of the Horizon
+environment.
+
+A detailed explanation of each incident is provided below for reference
+
+Regards
+
+Andy
+
+Horizon Service Issue — Wednesday 27th July 2011
+
+POL-0104569
+POLO0105585
+POL00105585
+
+Overview of Service Issue
+
+Transactions involving PIN Pads were unsuccessful starting from 08:00 on Wednesday 27th July 2011.
+Investigations identified a problem with a scheduled overnight Reference Data distribution for PIN Pads. This
+resulted in the PIN Pads being unable to initialise.
+
+To resolve the issue, Fujitsu identified the fault with the Reference Data. Following consultation with the
+architect and supporting teams, Fujitsu produced correcting data, tested and delivered an update to the PIN
+Pads.
+
+Once the Post Masters rebooted their counters (resetting the PIN Pads), banking functionality was restored from
+approximately 14:30 on Wednesday the 27th of July. Normal banking transaction levels were seen from 15:15
+onwards.
+
+Root Cause
+
+1. A truncated data file as a result of a tooling issue used for the generation of the Reference Data to the live
+estate.
+
+2. A failure to follow the defined deployment framework process. Validation and test phases were not followed
+by Post Office Ltd and Fujitsu employees working at BRAO1. The normal process would have identified the
+erroneous data before release to the counter estate.
+
+Alerting events which should have alerted Fujitsu to the issue were filtered by the monitoring system because
+they are generic and normally of no value (typically 0998 error).
+
+Improvement activities
+Event management has been changed to notify monitoring teams should a large number of 0998 events be
+
+generated within a short period of time
+
+A 2nd Pair of Eyes Policy introduced into the Fujitsu Reference Data Team validation process, to add further
+validation.
+
+A new tool was generated to parse the file, confirm the format is correct and summarise the data contained. This
+tool will also be used to prevent RDT counter start-up in the event that a bad file is detected.
+
+Horizon Service Issue —- Monday 12th December 2011
+
+Overview of Service Issue
+
+A failure with a Network Persistent Store (NPS) server in the early afternoon of 12th December resulted in
+some online transactions failing between 12:54 and approximately 14:30.
+
+Loss of banking transactions across the estate, initially impacting between 25% and 33% of transactions
+(depending on transaction type) gradually worsening between 13:45 and 14:00 then steadily returning to normal
+transaction volumes by 14:30.
+
+Communications were issued to POL Clients, PO Branches and internal stakeholders throughout the incident.
+At 12:54 the NPS1 server experienced a system problem and closed. The system is designed to work in this way
+to safeguard data integrity.
+
+Root Cause
+
+The initial cause of the incident was a failure in a disk subsystem associated to the Network Persistent Store
+(NPS).
+
+Alerting on the disk subsystem is in place, and a proactive hot disk swap took place automatically as expected,
+however subsequent processes were locked and unable to complete transaction requests. This led to a build up
+of transaction queues and subsequent failures of the BAL services.
+
+The database locks held by the Branch Database (BRDB) associated with NPS001 resulted in blocking within
+the OSRs and subsequent failure to process messages from branches.
+
+POL-0104569
+POLO0105585
+POL00105585
+
+Resolution action
+
+A PAN manager update has been redesigned to be more passive in it’s response to any future failures. This will
+give the disk adequate time to swap before then switching the bladeframes onto the new disk.
+
+ACE Blade pings received no response ~ an update has been delivered to the live estate to rectify this.
+
+EMC alerting improved
+
+GREV agents locking issues — A change has been raised to address this — this would reduce the impact to
+branches if this occurred in the future.
+
+Horizon Service Issue — Wednesday Ist February 2012
+
+Overview of Service Issue
+
+Between 08:00hrs and 11:15hrs on Wednesday Ist February all POCA transactions were unable to
+
+complete.
+
+Additionally at 3009 Branches AP, E Top Up and a small number of banking transactions were undertaken that
+matched to an incorrect token ID. The affected volume represented less that 1% of the days AP transaction
+volumes.
+
+POCA transactions commenced at 11.15hrs and at12.00hrs transactions were higher than the monthly average.
+No other HNG-X Services were impacted.
+
+Root Cause
+
+The Live data centre migration to Release 5.5 took place on 29th January. However, the RDT platform was still
+in a pre Release 5.5 state hence, the data was never exposed to testing on a Release 5.5 platform until it went
+live.
+
+Resolution action
+
+Fujitsu have added a check step to the token generation to validate that the first 6 characters of each token mask
+are numeric. If not, the process must raise an alert and terminate with an error.
+
+Change the AP token mask generation function to use the data appropriate to the latest time for the effective
+date of the object rather than, at present, using the data that’s effective at midnight
+
+Horizon Service Issue — Thursday Ist March 2012
+
+Overview of Service Issue
+
+Between 11:00 and 14:30 on Thursday Ist March at its worst 95% of branch transactions were unable to
+complete.
+
+The incident manifested around 10:45 with branches experiencing transactions taking longer to process,
+eventually leading to branches experiencing the transactions timing out completely and then the users being
+booted from the system.
+
+Actions taken to restore the service saw a return to normal transaction volumes by around 14:30. During the
+incident, Post Office Branches were able to utilise the Post Office Paystation for the majority of their bill
+payment and e Top up transactions. They were also able to make a payment to Post Office Card Account
+(POCA) customers of £20, or redirect POCA and banking customers to any available Post Office ATM’s to
+complete banking transactions.
+
+Root Cause
+
+Fujitsu advised that a Cisco unit within the data centre environment began to stop passing transactions through
+the system.
+
+The issue was made worse due to the hardware not reporting itself as faulty which impacted the ability for
+Fujitsu to diagnose the fault, Cisco the manufacture of the faulty unit have been assisting Fujitsu in the
+investigations.
+
+POL-0104569
+POLO0105585
+POL00105585
+
+Resolution action
+This is still under investigation, but overnight Fujitsu replaced the faulty unit to insure that the Post Office
+infrastructure was fully supported as we entered trading on Friday 2nd March.
+
+Andrew Jacques
+IT & Change
+Service Development and Transition
+
+_148 Old Street London, EC] 9HQ
+
+Building a Post Office® we can all be proud of
+
+Confidential Information:
+
+This email message is for the sole use of the intended recipient(s) and may contain confidential and privileged information. Any
+unauthorised review, use, disclosure or distribution is prohibited. If you are not the intended recipient please contact me by reply
+email and destroy all copies of the original message.
+
+POL-0104569

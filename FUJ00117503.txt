@@ -1,0 +1,1952 @@
+FUJ00117503
+
+FUJ00117503
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+Document Title: HNGX Counter Performance High Level Test Plan
+Document Type: Test Plan
+Release: HNG-X
+Abstract: This document details the approach, resource and schedule for
+counter performance within the V&l Test team
+Document Status: APPROVED
+Author & Dept: Michael Welch, Raj Kumar, Cheryl Smith, Richard Locke —- HNG-X
+
+V&l (Volume), Peter Langford - PO Ltd
+
+External Distribution:
+
+Approval Authorities:
+
+Role
+Stephen Gilbert HNG-X Test Manager
+Lee Farman Post Office Ltd (Test Manager)
+
+Note: See Post Office Account HNG-X Reviewers/Approvers Role Matrix (PGM/DCM/ON/0001) for guidance.
+
+(*) = Reviewers that retuned comments
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 1 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0 Document Control
+
+0.1 Table of Contents
+
+Q@ DOCUMENT CONTROL 2
+0.1 Table of Contents
+0.2 Document History
+0.3 Review Details ..
+0.4 Associ: Documents (Internal & External)
+0.5
+06
+0.7 Changes Expecte:
+0.8 Accuracy 10
+0.9 Copyright 4
+4 INTRODUCTION... eal 4
+414 Objectives
+2 SCOPE wiszcsana 14
+2.4 Requirements Coverage
+2.1.4 In Scope.......
+2.2 Features not to be tested 16
+2.2.4 Qut of Scope ..
+3 AT
+3.1 Software Risk Issues .
+3.2 Planning Risks and Contingen
+4 QUALITY ......... 18
+5 APPROACH... 19
+5.1 General
+5.2 Outline
+5.3 Test Case Analy:
+
+on
+FS
+Fy
+in
+ie)
+Fy
+a
+io
+Im
+><.
+>
+io
+
+5.5 Test Case Results and Evidence 20
+5.6 Call Logging Proces:
+5.7 Escalation Process
+5.8 Approach to Testing
+6 ENVIRONMENTAL NEEDS.. +23
+7 DEPENDENCIES... 24
+8 SCHEDULE
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 2 0f 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+10.4 Relevant Factors to Be Considered At Handov
+0. General Considerations for Entry
+
+10.2.1 Dependency on earlier testing ....
+10.2.2 Dependency on other pre-requisite:
+10.2.3 Other relevant factors ...............
+10.3 Specific Criteria for Entry to Performance Test Stage
+
+ae teas
+
+Pa Test ‘Pass’ Status
+12.2 Test ‘Fail’ Status
+2. Test ‘No Run’ Status.
+
+APPENDIX 3 — HORIZON VIDEO BENCHMARK RESULTS .........csssesseseeeseseeneere AT
+APPENDIX 4 _- HNGX TRANSACTIONS COVERAGE. .........ccscsssssseseseserseeeseseeeeeee AQ
+
+APPENDIX 5 - HORIZON BASKET ANALYSIG..........c:cccssesssssssssssseseersesenseseeereeeeesenes DO
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 3 0f 45
+FUJ00117503
+FUJ00117503
+
+HNGX Counter Performance High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+FUJITSU
+
+0.2 Document History
+
+Version No. Date
+
+Summary of Changes and Reason for Issue
+
+Associated Change -
+CP/PEAK/PPRR
+
+Reference
+04 13/11/08 Initial Version
+02 05/01/09 Changes to reflect strategy regarding Video Benchmarking
+03 40/03/09 Changes to schedule to reflect strategy regarding V&l testing
+on VOL rig rather that V&l rig. Changes to content based on
+Counter Assessment meetings, creating a distinction between
+counter performance testing and formal Transaction
+Benchmarking (forms part of acceptance)
+04 15/06/2009 Changes after review comments
+1.0 49/08/2009 Document Approved
+
+0.3 Review Details
+
+24 November 2008
+
+Review Comments by
+
+Review Comments to Peter Langford & PostOfficeAccountDocumentManagement!
+
+Mandatory Review
+
+Role Name
+
+HNG-X Test Manager
+Post Office Ltd - Test Manager
+
+Stephen Gilbert
+‘Andrew Thompson
+HNG-x Testing Programme Manager David Cooper
+HNG-X Performance Architect David Chapman
+
+Optional Revie
+
+Role Name
+
+Development
+
+Adam Cousins
+
+Test Design George Zolkiewka
+Development Mukesh Mehta
+System Test John Rogers
+
+Post Office Ltd - RV Manager James Brett
+
+VI & TE Manager Mark Ascott
+
+SV&l Manager
+
+Sheila Bamber
+
+Tester
+
+Hamish Munro
+
+Programme Director
+
+Graham Murray
+
+Post Office Ltd - Test Manager
+
+Lee Farman
+
+Post Office Ltd - Test Manager
+
+Chris Young
+
+Post Office Ltd — Acceptance Analyst
+
+Wayne Roberts
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref (TST/SOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+Page No: 4 of 45
+oO
+FUJITSU
+
+HNGX Counter Performance High Level Test Plan
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00117503
+FUJ00117503
+
+Security Architect Jim Sweeting
+HNG-X Service Transition Graham Welsh
+Core Services Ed Ashford
+
+Core Services
+
+Andrew Gibson
+
+Performance Architect
+
+David Chapman
+
+Acceptance Manager
+
+David Cooke
+
+Post Office Ltd — Design Authority
+
+Mike C Gallagher
+
+Post Office Ltd — Design Authority
+
+Torstein Godeseth
+
+Customer Services
+
+Victor Gough
+
+0.4 Associated Documents (Internal & External)
+
+Reference Version Date Tith Source
+PGM/DCM/TEM/0001 Fujitsu Services Post Office Account Dimensions
+(00 NOT REMOVE) HNG-X Document Template
+CS/SER/010 Horizon: Transaction Benchmark Pvcs
+Service: Service Description
+TSTGENSTD0003 Performance Model for Testing Dimensions
+PA/PER/033 Horizon Capacity Management and I PVCS
+Business Volumes
+DES/APP/HLD/0110 HNG-X Counter Applications: I Dimensions
+Transaction benchmarking High Level
+Design
+CS/TSC/003 Horizon Benchmarking Scripts PvcS
+CS/PER/046 Horizon: Counter Transaction PYCS
+Performance - Measurement and
+Results
+ARC/PER/ARC/0001 HNG-X System Qualities Architecture I Dimensions
+SVM/SDM/PRO/00 HNGx: Transaction Benchmark Dimensions
+17 Service: Service Description
+
+Unless a specific version is referred to above, reference should be made to the current approved
+
+versions of the documents.
+
+0.5 Abbreviations
+
+APOP Automated Payments Out Payments
+APS Automated Payment Service
+
+CAPO Card Account at Post Office
+
+cit Component Integration Test
+
+DR Disaster Recovery
+
+©Copyright Fujitsu Services Ltd(2009)
+
+COMMERCIAL IN CONFIDENCE Ref:
+Version:
+Date:
+
+Page No:
+
+(TST/SOT/HTP/0008)
+(V1.0)
+
+27-Mar-2009
+
+5 of 45
+(ee)
+FUJITSU
+
+HNGX Counter Performance High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+FUJ00117503
+FUJ00117503
+
+Abbreviation Definition
+
+DVLA Driver Vehicle Licensing Authority
+EPOSS Electronic Point of Sale Service
+FUS Fujitsu Services
+HLD High Level Design
+HLTP. High Level Test Plan
+HNG-X Horizon Next Generation (plan X)
+LLTS Low Level Test Script
+MGRM Moneygram
+PAF Postal Address File
+PAT Product Acceptance Test
+PO Ltd Post Office Ltd
+SORN Statutory Off-Road Notice
+sT System Test
+SV&l Solution Validation & Integration
+TDN Test Design Note
+TESQA Transaction Enquiry Service Query Analyser
+TPOC Testing Proof Of Concept
+0.6 Glossary
+
+0.7 Changes Expected
+
+0.8 Accuracy
+
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but, whilst every
+effort is made to ensure the accuracy of such information, it accepts no liability for any loss (however caused)
+sustained as a result of any error or omission in the same.
+
+0.9 Copyright
+
+© Copyright Fujitsu Services Limited (2009). Alll rights reserved. No part of this document may be reproduced,
+
+stored or transmitted in any form without the prior written permission of Fujitsu Services.
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOT/HTP/0008)
+Version:
+Date: 27-Mar-2009
+
+Page No:
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 7 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+1. Introduction
+
+This document is the High Level Test Plan (HLTP) that represents the independent testing that will take
+place for counter performance.
+
+The production of the HLTP will be a two-phase process. The first phase will include the Scope and
+Objectives of the testing (all sections up to the Appendix). The second part of the document is to be
+listings / reports of the planned testing that is to take place.
+
+This paper defines the approach and method to be followed, and identifies some of the issues to be
+resolved, to ensure that counter performance is carried out at appropriate stages during the deployment
+of HNG-X. The testing of counter performance scenarios will be performed as part of V&I testing on the
+VOL rig and therefore part of the Non-Functional Testing Work Package 5.
+
+VOL Rig
+
+It is not possible in the project plan to complete all HNGX volume tests pre-pilot (in Volume Test cycles 1-
+4), therefore HNGX volume testing will continue alongside HNGX pilot. The V&I rig is required to be re-
+provisioned for the HNGxX ‘live’ environment, and therefore there is a need for a test rig to accommodate
+outstanding volume tests. CP0341
+
+The VOL rig is the test environment created in IRE19 to facilitate outstanding HNGX Volume testing. The
+VOL rig is built as close to the ‘live’ environment as possible from the Release Validation Accreditation
+(RVACC) and Release Migration test rigs (RVMIG).
+
+The design of the VOL rig is outlined in DEV/GEN/SPE/0007, and the activities involved are described in
+CP0291 and CP341
+
+1.1 Objectives
+
+The objectives of counter performance are to provide information to assess the performance of the HNG-
+X counter and to provide an input of information into the Formal Transaction Benchmarking Process
+
+The formal Transaction Benchmarking Process is outlined in SVM/SDM/PRO/0017
+The basket mix for performance acceptance is outlined in SVM/SDM/PRO/0017
+
+utlined in
+SVM/SDM/PRO/0017
+1.
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 8 of 45
+FUJ00117503
+FUJ00117503
+
+HNGX Counter Performance High Level Test Plan q
+COMMERCIAL IN CONFIDENCE
+
+Fe)
+FUJITSU
+
+2 Scope
+
+2.1 Requirements Coverage
+
+5460 During testing New Video Benchmarks shall be conducted on —_I During testing New Video Benchmarks shall be
+SVC-856 I Baseline Horizon and equivalent Video Benchmarks shall be conducted on Baseline Horizon and equivalent
+conducted on the System, in accordance with the process Video Benchmarks shall be conducted on the
+described in "HNG-X Test Strategy - HX/STR/001 and System, in accordance with the process
+assessment made Req5460 described in “HNG-X Test Strategy - HX/STR/001
+and assessment made according to the Video
+tia tra Fannin Boning Benchmarking Tolerances agreed therein.
+3462 Teshall be possible for the System Measurement of the Counter _I It shall be possible for the System Measurement
+SVC-858 I to be switched on in the Live Estate, but central collection and of the Counter to be switched on in the Live
+analysis of such data shall only be performed for diagnostic Estate, but central collection and analysis of such
+purposes. Req5462 data shall only be performed for diagnostic
+purposes.
+3465 The System shall measure the Duration and record the The System shall measure the Duration and
+SVC-860 I Response for each Third Party Transaction Request from the I record the Response for each Third Party
+time the request leave the Fujitsu Domain for routing to the Transaction Request from the time the request
+external party (e.g. Financial Institution, DVLA) to the time the r_ I leave the Fujitsu Domain for routing to the external
+party (e.g. Financial Institution, DVLA) to the time
+the response is received back from the Third
+Party.
+3468 The response and duration measurement for all Third Party ‘The response and duration measurement for all
+SVC-862 I Transmission Requests shall be made available in the response I Third Party Transmission Requests shall be made
+to the initiating Online Transaction request from the Counter in I available in the response to the initiating Online
+order that the end-to-end timings and the System Time Transaction request from the Counter in order that
+component can be calculated and recorded by the Counter and _ I the end-to-end timings and the System Time
+reported in system testing and subsequently for diagnostic ‘component can be calculated and recorded by the
+urposes. Req5468 Counter and reported in system testing and
+subsequently for diagnostic purposes.
+3470 The end-to-end performance of Banking and related The end-to-end performance of Banking and
+SVC-815 I Transactions shall be no worse than set out in the Service Level I related Transactions shall be no worse than out in
+Target described in the Data Centre Operations Service the Service Level Target described in the Data
+document. Req5470 Centre Operations Service document.
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+PageNo: 9 0f 45
+
+Fe)
+FUJITSU
+
+FUJ00117503
+FUJ00117503
+
+HNGX Counter Performance High Level Test Plan q
+COMMERCIAL IN CONFIDENCE
+
+5471
+SVC-816
+
+5474
+SVC-817
+
+5475
+SVC-818
+
+5476
+SVC-819
+
+The end-to-end performance of the Basket Settlement
+transaction shall be no worse than that set out in the Service
+Level Target described in the Data Centre Operations Service
+document. Req5471
+
+The Time taken to complete Branch Administrative or Back
+Office Transactions shall meet Design Targets (if specified) in
+“HNG-X Capacity Management and Business Volumes”
+
+The time taken for Stock Unit and Branch Reports shall meet
+Design Targets (if specified) in HNG-X Capacity Management
+and Business Volumes
+
+The time taken to retrieve Help pages shall meet Design
+Targets (if specified) in “HNG-X Capacity Management and
+Business Volumes”
+
+The end-to-end performance of the Basket
+Settlement transaction shall be no worse than that
+set out in the Service Level Target described in
+the Data Centre Operations Service document.
+
+The Time taken to complete Branch Administrative
+or Back Office Transactions shall meet Design
+Targets (if specified) in “HNG-X Capacity
+Management and Business Volumes”
+
+The time taken for Stock Unit and Branch Reports
+shall meet Design Targets (if specified) in HNG-X
+Capacity Management and Business Volumes
+
+The time taken to retrieve Help pages shall meet
+Design Targets (if specified) in “HNG-X Capacity
+Management and Business Volumes”
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+PageNo: 10 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+2.1.1
+
+In Scope
+
+The following items are in scope of HNGX Counter Performance Testing:
+
+2.2
+
+2.2.1
+
+Counter performance testing a set of transactions for providing performance information on
+those transactions
+
+Counter performance testing settlement of items in a basket with different basket sizes for
+providing performance information on those settlements
+
+Assessing the affect on performance of a set of transactions while there is traffic from up to 20
+counters using the same Branch Router access to the HNGX data centre for performance
+information purposes
+
+Testing on ADSL connections only
+
+Counter Performance Testing an agreed set of transactions as an input to the Formal
+Transaction Benchmarking Process outlined in SVM/SDM/PRO/0017
+
+Features not to be tested
+
+Out of Scope
+Any Horizon Counter performance
+Counter performance testing in any migrated state is out of scope.
+Counter performance testing via ISDN or Wireless VSAT connections is out of scope
+Testing the functionality of performance logging
+Re-Video Benchmark of Horizon
+
+Video Benchmarking of HNG-X (although out of scope of testing, this may required to be
+performed by FJS CS within a test cycle as an input to the Formal Transaction Benchmark
+Process outlined in SVM/SDM/PRO/0017)
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 11 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3
+
+3.1
+
+Risks
+
+Software Risk Issues
+
+Completing Counter performance testing will depend on the following factors:
+
+A full range of working transactions on a counter on the VOL rig — Full Counter code / fully
+operational test rig
+
+Availability to generate a load on the HNGX data centre while counter performance tests are
+being performed.
+
+Availability of the Winrunner tool as there are only 2 licenses for all test teams. i.e. if SV&I testing
+are using 2 Winrunner licenses for regression testing, counter performance testing cannot be
+performed.
+
+3.2 Planning Risks and Contingencies
+.
+e Volume testing of Horizon PCI transactions will be performed within the data centre (not using a
+counter) and should give confidence of Horizon PCI transactional performance
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 12 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+4 Quality
+
+The Test Cases and the design requirements from which they were derived will be recorded in Quality
+Centre. Within Quality Centre the requirement will include a reference to the document (Reference
+Number, Version and Section Number) from which it was derived. If a document, from which a design
+requirement was derived is changed the requirement, Test Case and Test Case reference to the
+requirement will need to be reviewed and possibly changed.
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 13 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+5 Approach
+
+5.1 General
+
+The process, guidelines and governance for HNG-X V&l Test is defined in V&l Test Definition and
+Process [TST/GEN/PRO/0004].
+
+The structure and contents of a HLTP are defined in [TST_GEN_PRO_0003]
+The approach to non-functional testing is defined in [TST_GEN_PRO_0012].
+The generic Test Entry and Exit Criteria are defined in [TST_GEN_PRO_0001].
+Defect management is defined in [TST_GEN_PRO_0010].
+
+The extraction of Test Case definitions from Quality Centre for input to a HLTP is defined in
+[TST_GEN_PRO_0006].
+
+5.2 Outline Timescales
+
+The POA Level 3 plan will contain the up to date timescales for planned activities for Counter
+Performance Testing. The testing will take place in the second phase of the two distinct performance test
+phases
+
+> Phase 2 on the VOL in IRE19 at the same time as_ pilot.
+The cycles in which this testing will be performed has yet to be decided.
+
+PHASE 2
+
+Activity Start End Notes
+
+A cycle of environment suitability testing will commence
+prior to cycle 1 and is referenced as VI Blitz. This will check
+that the rig and all the tools needed for test execution and
+reporting, work as required. Amendments to the rig and
+tools will be made as required before commencement of
+the VIC1.
+
+Note: If changes are made to the VOL Rig prior to the start of testing on any particular cycle, a period of
+VOL Blitz may be required.
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 14 0f 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+5.3. Test Case Analysis
+
+The appropriate document will be analysed by a members of the VI Test Team, to identify the
+performance requirements that should be met by the defined design or development. From these
+performance requirements the analyst will derive Test Cases that can be executed to demonstrate
+conformance to that performance requirement.
+
+All identified performance requirements and Test Cases will be recorded in Quality Centre.
+
+5.4 Test Case Execution
+
+VI Team members in BRAO1 using a WAN connection to the data centre in IRE19 will execute the test
+cases.
+
+This information will be recorded against the Test Case within Quality Centre and graphs of the
+Performance Model for testing.
+
+As per the HNG-X Testing Strategy [3], test prioritization will be driven by requirements and the risk
+analysis of those requirements.
+
+5.5 Test Case Results and Evidence
+
+The VI team member that executes the Test Case is responsible for updating the Test Case in Quality
+Centre with the result (Pass or Fail) of the attempt to execute that Test Case.
+
+Failed Test Cases will require evidence to be added to the defect that is raised.
+
+5.6 Call Logging Process
+A basic overview of the HNG-X incident handling procedures is defined in [ISNO01486].
+This procedure covers the routing of the following: -
+e Any issue that the POA test team require Development or another POA team to investigate
+e Any Backup / Restore requests from the POA test team to IS
+e Any issue that IS require POA to investigate
+e Any issue that IS identify that needs further investigation within IS
+
+The process for managing defects raised during the independent testing phases of HNG-X is defined in
+[TST/GEN/PRO/0010].
+
+Note: for any failed test there must be an associated defect stored in Quality Center.
+
+5.7 Escalation Process
+
+An escalation process for use by the HNG-X Test Manager and IS Support Teams is defined in
+[ISNO01487].
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 15 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+5.8 Approach to Testing
+
+e Different types of testing will be performed within counter performance. All the testing will be
+performed on the VOL rig. All testing will be performed on one counter of the 20-counter outlet of
+the VOL rig. Each counter will be setup per section 6.
+
+Each of the transactions performed in Appendix 4will be performed and accessed for performance.
+1. HNGX Counter Performance Testing
+
+a. HNG-X Counter testing using a Winrunner tool to simulate user actions and record the time
+they take. Scenarios defined in Appendix 4 will be conducted using the Winrunner tool.
+
+Winrunner has been selected to perform counter performance testing for the following
+reasons:
+
+e  Winrunner can simulate user actions on the counter and time how long actions
+take, in particular system actions. (E.g. how long it takes from selecting a button to
+a screen appearing)
+
+e Using Winrunner we have the capability of testing counter performance early, on
+CIT rigs/system test rigs for early feedback on performance, as outlined in the test
+strategy.
+
+e Transactions can be tested on the counter as and when they become available
+
+e Negates the time and cost for multiple iterations of Video benchmarking and/or
+manual timings
+
+Transactions in Appendix 4 will be performed when there is no or small amount of load on
+the HNGX data centre and also when there is a peak load being performed on the HNGX
+data centre. The results will be compared.
+
+Transactions in Appendix 4 will also be combined to produce multi baskets (more than one
+item per basket) to discover if there is any affect on basket size and settlement time.
+From previous Horizon analysis the most frequent baskets are highlighted in Appendix 5.
+
+b. HNG-X Branch Router testing. This test will be performed to see the performance affect of
+the transactions outlined in Appendix 4 when there is more than one counter trading at the
+same time at an outlet.
+
+The transactions outlined in Appendix 4 will be performed using on a counter using the
+Winrunner tool whilst there are 5, 10 and 15 counters trading at the time on the same outlet. The
+results will be compared to tests performed in 1a to determine any differences.
+
+c. Any testing required to produce information as input into the formal Transaction Benchmark
+
+Process
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 16 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+6 Instrumentation
+
+Counter performance testing using Winrunner will record the end-to-end time for the designated business
+transaction. Within the end-to-end timing, individual timings for various actions will also be collected.
+These individual timings will incorporate ‘system processing times’. System processing times are defined
+as the time it takes to process an action on the system. An example of the times that Winrunner will
+record are detailed below.
+
+Process Flow: Purchase £5 Saving Stamp
+
+I I
+USER SYSTEM BAL
+
+1 I
+Pr ! I
+l Front Office Home 1
+
+A ‘Screen
+1 I
+I owe 1
+START: Retail Tab A 1
+
+(F7) :
+
+1 I
+I I
+
+hats Retail
+T Screen I
+I I
+
+w4
+£5 Saving Stamps I vt :
+(F7) 1 1
+! 1
+WS i i
+Product in basket
+I I
+! I
+Fast Gash 1
+
+(F12) vs :
+1 I
+1 I
+I t
+We6 I I
+I T2b- +
+I I
+! I
+
+Front Office Home.
+Screen
+
+Figure 1 Process Flow for buying a saving stamp Winrunner captured timings are shown as W1, W2, W3,
+W4, WS, W6
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 17 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+7 Environmental Needs
+
+For HNGX Counter performance testing a 20-counter branch is required on the VOL rig with at least one
+counter having the following specification.
+
+e PC Base Unit (400MHz Pentium II with 256Mbytes of memory and a PCI card providing multiple
+serial connections)
+
+e Touch Screen (touch element connected via a serial connection to PC)
+
+« LIFT Keyboard incorporating a Magnetic Swipe and Smart Card reader (serial connection for
+card reader)
+
+e BAR Code Scanner (Serial Connection)
+e — Slip and Tally Roll Printer (Serial Connection)
+
+e Weigh Scales (serial connection — normally shared between two counters with both counters
+having a separate serial connection).
+
+e PIN Pad (Serial Connection)
+Asingle back office printer is required for the outlet.
+The branch must be connected to the data centre via a branch router.
+
+Video recording equipment for recording HNGX transactions for calibration of timings from Winrunner and
+the counter performance logs.
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 18 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+8 Dependencies
+
+> The High Level test plan has been approved.
+The Low Level test scripts have been written.
+
+v
+
+The rig design has been approved.
+Completion of RVACC and RVMIG testing so that Vol rig can be built
+The complete VOL rig has been built and is operational in IRE19.
+
+vVvv
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 19 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 20 0f 45
+oO HNGX Counter Performance High Level Test Plan
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00117503
+FUJ00117503
+
+9 Schedule
+
+TDN: Schedule on the VOL rig still to be defined
+
+Counter performance tests
+
+Branch Router Tests
+
+To be run against
+background HNG-
+X load
+‘Sub-set of counter
+tests for 1, 5, 10&
+20 counters
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+Page No: 21 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+10
+
+Resources
+
+The following resource needs have been identified to effectively undertake counter performance testing:
+
+>
+
+>
+
+v
+
+There is a requirement for a specialist in WinRunner to develop the automated test scripts
+
+There is a requirement for support from Customer Services to provide guidance on previous
+Horizon video benchmarking
+
+HNG-X Performance Architect
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOT/HTP/0008)
+
+Version: (V1.0)
+Date: 27-Mar-2009
+PageNo: 22 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+11 Entry Criteria
+
+Whilst Counter Performance Testing will be conducted separately from SV&l as a discrete testing stage,
+the entry criteria is governed by the relevant section of the HNG-X Testing Process Entry and Exit Criteria
+document [9] pertaining to Solution Validation and Integration.
+
+11.1 Relevant Factors to Be Considered At Handover
+The following factors are to be considered at a ‘Handover Review Meeting’:
+
+> On the assumption that delivery of a tested product from one Test Stream to the next Test
+Stream may be Modular in form (i.e. parts of the system will be delivered as and when they have
+completed testing), any requirements for a specific delivery sequence (of modules) to the
+Performance Test Stage must have been discussed, understood and agreed as part of the Entry
+Criteria.
+
+> At the time of writing, a ‘Critical Defect’ is deemed to be a Level 1 or 2 defect. Although it is
+possible that lower level defects may also prevent a specific deliverable from being passed into
+the next Testing Stream. This decision will be made by the Testing Stream Manager(s) at the
+time of a Handover Review.
+
+> Although it is possible to move a deliverable from one test stage / stream to the next with some
+testing (Test Cases) outstanding (e.g. from CIT to System Test), no deliverable should be
+allowed to move into a subsequent stage with testing still outstanding from 2 stages previous
+(e.g. Testing outstanding in CIT will allow a module to move into System Test, but (if still
+outstanding) will prevent it moving into Performance Test from System Test).
+
+11.2 General Considerations for Entry
+
+11.2.1 Dependency on earlier testing
+
+> Are delivery plans in place to clear all necessary defects in time for the subsequent tests that
+may be dependent on them?
+
+> Remaining tests in earlier stage(s) planned and on track to keep pace with (stay ahead of) plans
+for this stage.
+
+11.2.2 Dependency on other pre-requisites
+
+> Test Environment ready and available
+
+co If part ready but not complete, or if complete but not yet proven/stable, then assess likely
+disruption and weigh against benefits to be gained from starting before stable.
+
+o Would this activity assist or hinder stabilising the environments.
+o Is the necessary environment support on hand to mitigate issues?
+
+o If multiple environments needed, should start be made with just one first to fully prove the
+configuration prior to replication?
+
+> Test Scripts/Data ready
+
+o Sufficient completed and available to support initial planned tests, and planned work for
+completion on track to keep pace with (stay ahead of) planned test execution.
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 23 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+co If Scripts/Data produced, but not reviewed/approved, then assess likely rework, which
+may result and weigh against benefits to be gained from starting without approval.
+
+11.2.3 Other relevant factors
+
+> External bodies/third parties (where involved) ready and available (including any
+equipment/systems concerned).
+
+» Project priorities/imperatives understood — cost vs. elapsed time vs. quality.
+
+11.3 Specific Criteria for Entry to Performance Test Stage
+> There is an agreed low-level plan available for Performance Test Stage.
+> HLTP (this document) has been approved.
+
+>» LLTS's have been finalised and reviewed. I.e. A set of re-useable test cases have been prepared
+in Quality Centre and related to pertinent test Objectives (Objective Driven Testing) and
+Requirements.
+
+> Details of versions of all deliverables must be available.
+
+> All the critical defects for the module being delivered, from previous test stage (CIT and / or PAT)
+have been cleared.
+
+> There are no defects outstanding (of any Priority) that will affect the initial (high risk) testing that
+will take place in this test stream.
+
+> All testing for contents of the module have been completed in System Test (if not, is it viable for
+the module to begin Performance Testing?).
+
+» Resources are available.
+All training has been identified and delivered.
+
+VV
+
+TPOC for any test tooling and methods has been satisfactorily completed.
+Test Tools and licences for those tools have been obtained, installed and configured for use.
+
+Redelivery of components and modules — Evidence must be available for regression testing that
+has been carried out for defect fixes applied to re-delivered software.
+
+v
+
+v
+
+Suitable Reference Data is available.
+» The exit criteria values for this test stage are known and agreed.
+
+v
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 24 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+12
+
+Exit Criteria
+
+Whilst Counter Performance Testing will be conducted within V&l and therefore separately from SV&I as
+a discrete testing stage, the exit criteria is governed by the relevant section of the HNG-X Testing
+Process Entry and Exit Criteria document [9] pertaining to Solution Validation and Integration.
+
+>
+
+>
+>
+
+>
+
+All the Requirements and testing objectives (Objective Driven Testing) have been met in full or
+non-compliance has been agreed and signed off.
+
+All the Objectives (Objective Driven Testing) designated for the Performance Test Stage have
+been covered within the testing cycles.
+
+All the System Acceptance Criteria have been met in full or non-conformances has been agreed
+and signed off.
+
+All critical defects have been resolved*.
+All non-critical defects have been resolved*.
+
+Test Reports have been produced.
+
+*Note that in some cases there is scope to hand over testing with outstanding defects (both critical and
+non-critical). This can only occur where the impact has been assessed and full agreement is achieved
+between stakeholders.
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 25 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan @®
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+13 Test Pass / Fail criteria
+
+13.1 Test ‘Pass’ Status
+
+A test will be deemed to have been ‘passed’ if the ‘Actual Result’ matches the ‘Expected Result’ in the
+Test Plan steps - either individually or all depending on the type of test being undertaken. In some tests,
+it may be possible to continue past a defect and satisfy the remaining steps within the test.
+
+A test will also be deemed to have ‘passed’ if the actual result does not equal the expected result, but it is
+subsequently found that the expected result (as per the test plan) has been specified incorrectly (as
+sometimes happens). In which case, this must be annotated in the test plan / set and any defects that
+were raised for it, annotated similarly and closed. Any test modified in this way will require a review
+against the HLTP and HLD. It must also adhere to version control rules
+
+13.2 Test ‘Fail’ Status
+
+A test will be deemed to have failed if the actual results deviate from the expected results. In all instances
+a defect will be raised. The cause of the deviation, the test failure, must then be assessed.
+
+Fixing of a defect (or other agreement to close) will allow a retest of the test plan and pass, if no further
+defects are raised.
+
+13.3 Test ‘No Run’ Status
+
+It may not be possible to run a test if there is an unresolved defect against the area under test. In this
+case the test will remain as ‘No Run’ in Quality Centre until the defect has been cleared.
+
+Where it is not possible to run a test in its original form (due to outstanding defects), it may be necessary
+or possible to reform the test in order to approach from a different perspective. This must be done only
+by agreement with all parties concerned in which case; the original test may be abandoned and
+discarded.
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 26 of 45
+FUJ00117503
+
+FUJ00117503
+[-e) HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Appendix 1 — Planned Testing
+The following list constitutes the planned tests to be carried out.
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M07_HNG-X CAPO <OBJECTIVE> H I 5460 - SVC-856
+Balance Enquiry & Withdrawal To demonstrate that the End-to-End Transaction 5462 - SVC-858
+time for the Scenario is no greater than the 5465 - SVC-860
+equivalent Horizon transaction timings. 5468 - SVC-862
+5470 - SVC-815,
+<PREREQ>
+<NOTES>
+cot NFUN_SVC_M02_HNG-X A&L Business I <OBJECTIVE> H
+Deposit To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+5470 - SVC-815,
+<PREREQ>
+<NOTES>
+C07 NFUN_SVC_M03_HNG-X NS&l Cash <OBJECTIVE> H
+Withdrawal To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+5470 - SVC-815,
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 27 of 45
+FUJ00117503
+
+FUJ00117503
+[oe] HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M04_HNG-X Purchase E- I <OBJECTIVE> H
+Top Up To demonstrate that the End-to-End Transaction
+time for the Scenario is no greater than the 5460 - SVC-856
+equivalent Horizon transaction timings. 5462 - SVC-858
+5465 - SVC-860
+5468 - SVC-862
+<PREREQ>
+<NOTES>
+cot NFUN_SVC_M05_HNG-X Purchase <OBJECTIVE> H
+Phone Card To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+<PREREQ>
+<NOTES>
+COT NFUN_SVC_M06_HNG-X Taxa vehicle I <OBJECTIVE> A
+for 12 months no VAT To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 28 of 45
+FUJ00117503
+
+FUJ00117503
+[oe] HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M07_HNG-X SORN with <OBJECTIVE> H
+vehicle address changes To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+<PREREQ>
+<NOTES>
+or NFUN_SVC_M08_HNG-X Purchase <OBJECTIVE> A
+postal order To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+<PREREQ>
+<NOTES>
+or NFUN_SVC_M09_HNG-X Encash postal I <OBJECTIVE> A
+order To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 29 of 45
+FUJ00117503
+
+FUJ00117503
+[-e) HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M10_HNG-X Payment by I <OBJECTIVE> H
+Debit-Credit card To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+<PREREQ>
+<NOTES>
+cot NFUN_SVC_M11_HNG-X Address <OBJECTIVE>
+Lookup To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+
+equivalent Horizon transaction timings.
+
+<PREREQ>
+<NOTES>
+C07 NFUN_SVC_M12_HNG-X Purchase <OBJECTIVE> a
+Saving Stamp To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+
+equivalent Horizon transaction timings.
+
+<PREREQ>
+<NOTES>
+cot NFUN_SVC_M13_HNG-X Purchase 1st <OBJECTIVE> H
+Class Stamps To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+
+equivalent Horizon transaction timings.
+
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 30 of 45
+FUJ00117503
+
+FUJ00117503
+[-e) HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M14_HNG-X Purchase Pure I <OBJECTIVE> H
+Air Sure Europe Stationary To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+cot NFUN_SVC_M15_HNG-X Purchase <OBJECTIVE>
+Scratchcard To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+Cot NFUN_SVC_M16_HNG-X Purchase <OBJECTIVE> H
+Electricity Tokens To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+COT NFUN_SVC_M17_HNG-X Purchase <OBJECTIVE> H
+Premium Bonds To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 31 of 45
+FUJ00117503
+
+FUJ00117503
+[-e) HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M18_HNG-X Purchase 1 <OBJECTIVE> H
+Day Fishing License To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+cot NFUN_SVC_M19_HNG-X Post Special I <OBJECTIVE>
+Delivery Small Letter To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+Cot NFUN_SVC_M20_HNG-X Post Large <OBJECTIVE> H
+Letter To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+COT NFUN_SVC_M21_HNG-X Post Letter <OBJECTIVE> H
+USA Weighting To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 32 of 45
+FUJ00117503
+
+FUJ00117503
+[oe] HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M22_HNG-X Packet <OBJECTIVE> H
+To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+co NFUN_SVC_M23_HNG-X Bulk Post <OBJECTIVE> H
+To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+cot NFUN_SVC_M24_HNG-X Pay Bill <OBJECTIVE> H
+To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOT/HTP/0008)
+Version: (v1.0)
+Date: 27-Mar-2009
+
+Page No: 33 of 45
+FUJ00117503
+
+FUJ00117503
+[-e) HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M25_HNG-X Freedom <OBJECTIVE> H
+Passes To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+or NFUN_SVC_M26_HNG-X Moneygram I <OBJECTIVE> A
+To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings. 5465 - SVC-860
+5468 - SVC-862
+<PREREQ>
+<NOTES>
+cot NFUN_SVC_M27_HNG-X Travel <OBJECTIVE> H
+Insurance To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+PageNo: 34 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Test Test Name Description Priority I Requirement ID
+Group HIMIL
+
+cot NFUN_SVC_M28_HNG-X Purchase <OBJECTIVE> H
+Foreign Currency To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+COT NFUN_SVC_M29_HNG-X Purchase <OBJECTIVE> A
+Foreign Currency in Travellers Cheques _I To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+cot NFUN_SVC_M30_HNG-X Purchase Pre- I <OBJECTIVE> H
+Order Foreign Currency To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+PageNo: 35 of 45
+FUJ00117503
+
+FUJ00117503
+[-e) HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Test Name Description Priority I Requirement ID
+Group H/M/L
+cot NFUN_SVC_M31_HNG-X Foreign <OBJECTIVE> H
+Currency Buy Back To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+or NFUN_SVC_M32_HNG-X Remittance <OBJECTIVE> A
+Acceptance To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+C07 NFUN_SVC_M33_HNG-X Remittance <OBJECTIVE> H
+Rejection To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+<PREREQ>
+<NOTES>
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TSTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 36 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Test Test Name Description Priority I Requirement ID
+Group HIMIL
+
+cot NFUN_SVC_M34_HNG-X Transaction I <OBJECTIVE> H
+Correction for a Remittance Shortage To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+cot NFUN_SVC_M35_HNG-X Spolied Postal I <OBJECTIVE> H
+Orders To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+C07 NFUN_SVC_M36_HNG-X Stock Unit <OBJECTIVE> A
+Reports To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+PageNo: 37 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Test Test Name Description Priority I Requirement ID
+Group HIMIL
+
+cot NFUN_SVC_M37_HNG-X Office Reports I <OBJECTIVE> H
+To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+cot NFUN_SVC_M38_HNG-X Logon <OBJECTIVE> H
+To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+COT NFUN_SVC_M39_HNG-X Logoff <OBJECTIVE> A
+To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+PageNo: 38 of 45
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Test Test Name Description Priority I Requirement ID
+Group HIMIL
+
+cot NFUN_SVC_M40_HNG-X Help <OBJECTIVE> H
+To demonstrate that the End-to-End Transaction 5460 - SVC-856
+time for the Scenario is no greater than the 5462 - SVC-858
+equivalent Horizon transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+ROW NFUN_SVC_M01_Branch Router <OBJECTIVE> H
+Performance 1 counter Transaction Performance via Branch Router 5460 - SVC-856
+with 1 Counter
+
+To demonstrate that there is no degradation in
+the End-to-End Transaction time for the following
+scenarios conducted on 1 counter via a branch
+router.
+
+The following transactions will be performed:
+
+<PREREQ>
+
+<NOTES>
+
+****Transaction Yet To Be Defined***
+22/01/2008 PL
+
+TDN: Reuse of Counter Performance Tests
+Rot NFUN_SVC_M02_Branch Router <OBJECTIVE> a
+Performance 5 counter Transaction Performance via Branch Router 5460 - SVC-856
+with 5 Counters
+
+To demonstrate that there is no degradation in
+the End-to-End Transaction time for the following
+‘scenarios conducted on 1 counter of a trading 20
+counter branch via a branch router.
+
+E.g. The branch router is not affecting
+transactions running on one counter by
+transactions running on the other 4
+
+The following transactions will be performed:
+<PREREQ>
+
+<NOTES>
+
+“Transaction Yet To Be Defined"**
+
+22/01/2008 PL
+TDN: Reuse of Counter Performance Tests
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+PageNo: 39 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Test Test Name Description Priority I Requirement ID
+Group HIMIL
+
+ROW NFUN_SVC_MO03_Branch Router <OBJECTIVE> H
+Performance 10 counter Transaction Performance via Branch Router 5460 - SVC-856
+with 10 Counters
+
+To demonstrate that there is no degradation in
+the End-to-End Transaction time for the following
+scenarios conducted on 1 counter of a trading 20
+counter branch via a branch router.
+
+E.g. The branch router is not affecting
+transactions running on one counter by
+transactions running on the other 9
+
+The following transactions will be performed:
+
+<PREREQ>
+
+<NOTES>
+
+****Transaction Yet To Be Defined***
+22/01/2008 PL
+
+TDN: Reuse of Counter Performance Tests
+
+ROW NFUN_SVC_MO03_Branch Router <OBJECTIVE> H
+Performance 20 counter Transaction Performance via Branch Router 5460 - SVC-856
+with 20 Counters
+
+To demonstrate that there is no degradation in
+the End-to-End Transaction time for the following
+scenarios conducted on 1 counter of a trading 20
+counter branch via a branch router.
+
+e.g. The branch router is not affecting
+transactions running on one counter by
+transactions running on the other 19
+
+The following transactions will be performed:
+<PREREQ>
+
+<NOTES>
+
+“Transaction Yet To Be Defined***
+
+22/01/2008 PL
+TDN: Reuse of Counter Performance Tests
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+Page No: 40 of 45
+FUJ00117503
+FUJ00117503
+
+o HNGX Counter Performance High Level Test Plan ‘q
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref: (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 41 of 45
+FUJ00117503
+FUJ00117503
+
+HNGX Counter Performance High Level Test Plan @®
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+Appendix 3 — Horizon Video Benchmark Results
+
+Target Times by Software Release
+
+Service/Measured Item
+
+Product Menu Display - Other
+
+Product Menu Display — Item 0.2 0.25 0.23 0.22 02 0.32 0.18
+Fee Screen Display — Item 0.33 0.36 0.42 035 0.38 0.58 0.47
+Amount Screen Display - Item 0.19 0.24 0.27 0.26 0.26 0.37 0.19
+Product Sale Display — Item 0.26 0.29 035 03 0.34 0.45 0.23
+Settlement Menu Display - Item 0.2 0.22 0.21 0.21 022 036 0.19
+Main Menu Display 0.37, 0.32 0.41 0.48) 0.46 1.08 0.67
+Swipe Magnetic Card 1.2 0.98 0.95 1.27 1.09 1.13 1.68
+Insert SMART Card 4.05 4.37 448 447 4.29 4.23 4.27
+Input Monetary Amount 0.12 0.12 0.12 032 0.29 03 0.32
+Cash Payment Select 3.67 3.89 3.97 3.45 3.47 3.13 3.68
+Print Office Receipt - 1 457, 4.99 5.2 5.22) 4.93 5.17 5.02
+Tear Off Print Report - 1 463 5.02 5.29 24 507 5.27 5.01
+Print Customer Receipt — 2 3.92 4.07 434 3.27 3.14 3.09 3.26
+Tear Off Print Report — 2 0.13 0.17 0.19 0.17 0.25 0.35 0.59
+Customer Serve Screen Refresh 0.34 0.37 0.37 0.64 0.62 0.68 0.63
+
+Cash Deposit
+Cash Withdrawal (Signature)
+Cash Withdrawal (PIN)
+
+Cash Withdrawal, with Balance (Signature)
+Cash Withdrawal, with Balance (PIN)
+Cash Withdrawal to Limit (PIN)
+Balance Enquiry (Signature)
+
+Balance Enquiry (PIN)
+Change of PIN
+
+SCopyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (ISTISOTIHTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+
+Page No: 42 of 45
+oO HNGX Counter Performance High Level Test Plan a
+FUJITSU COMMERCIAL IN CONFIDENCE
+Bureau een
+Mails De Change Back Office Reports Management AP - ADC EPOSS
+Post 1 Special Purchase 200US Accept a Stock Unit Purchase £5
+delivery small etter Dollars remittance Reports Logon/Logoff Moneygram saving stamp
+Purchase 4 x
+Purchase 500 US
+Dollars in travellers Freedom iaslets sian
+Post 1 large letter cheques Reject a remittance Office Reports Help Service Passes
+Transaction
+Purchase 200 US Correction for cash Purchase Pure Air
+Post 1 letter to USA Dollars in pre-order remittance Travel Sure Europe
+weighting currency shortage Insurance Stationary
+Post 1 packet Spoiled postal Purchase 2 x
+(280g) Bureau Buy Back orders £2.00 seratchcard
+Mail 6 items using Purchase £10
+bulk post facility electricity tokens
+Purchase £5000
+Premium Bonds
+Purchase 1 Day
+fishing license
+Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date’ 27-Mar-2009
+Page No: 43 of 45
+
+Network
+Banking
+
+NS & I Cash
+Withdrawal
+
+CAPO Balance
+Enquiry and
+Withdraw all
+
+A&l Business
+Deposit
+
+FUJ00117503
+FUJ00117503
+FUJ00117503
+FUJ00117503
+
+oO HNGX Counter Performance High Level Test Plan "q
+FUJITSU COMMERCIAL IN CONFIDENCE &
+
+Appendix 4 - HNGX Transactions Coverage
+
+©Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE Ref. (TST/SOT/HTP/0008)
+Version: (V1.0)
+Date: 27-Mar-2009
+PageNo: 44 of 45
+HNGX Counter Performance High Level Test Plan
+
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00117503
+FUJ00117503
+
+Appendix 5 - Horizon Basket analysis
+
+The top 25 basket sessions derived from analysis on the live Horizon system which equate for 86.12% of
+the overall baskets
+
+3,384,777]
+3.2552
+2,399.21
+1,108,882]
+14444
+604,04
+41573
+341519
+333,307]
+326,83
+286,579)
+282,569)
+212.061]
+228 56
+213,52
+183,58:
+182,322]
+181,855
+s77 81
+173,239)
+156,302]
+146,92:
+
+13.11%
+6.06%
+4.23%
+3.30%
+227%
+1.87%
+1.82%
+1.79%
+1.57%
+1.54%
+1.49%
+1.25%
+1.17%
+1.00%
+1.00%
+0.99%
+097%
+0.95%
+0.85%
+
+49.40%)
+55.46%)
+59.69
+
+62.99%]
+65.26%
+67.13%
+68.95
+
+70.73%
+72.30%)
+73.84%)
+75.33
+
+76.58%)
+71.75%)
+78.75%)
+79.75%)
+80.74%)
+81.71%)
+82.66%)
+83.51
+
+Copyright Fujitsu Services Ltd(2009) COMMERCIAL IN CONFIDENCE
+
+Ref.
+Version
+Date:
+Page No:
+
+(ISTISOTIHTP/0008)
+
+(V1.0)
+
+27-Mar-2009
+45 of 45

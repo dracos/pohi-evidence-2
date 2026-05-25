@@ -1,0 +1,1213 @@
+Fujitsu Services Post Office Account Internal Audit Manual
+
+Company in Confidence
+
+Ref:
+
+Version:
+
+Date:
+
+WITN04600101
+WITNO4600101
+
+TA/MAN/003
+70
+29/07/05
+
+Document Title:
+
+Document Type:
+
+Release:
+
+Abstract:
+
+Document Status:
+
+Originator & Dept:
+
+Contributors:
+
+Internal Distribution:
+
+External Distribution:
+
+Approval Authorities:
+
+Post Office Account Internal Audit Manual
+
+Manual
+
+N/A
+
+This Manual describes the Post Office Account Internal Audit
+organisation, the management framework within which it
+operates, its aims and objectives and the processes to be used in
+arranging audits and following up on their results
+
+APPROVED
+
+Jan Holmes (Programme Assurance)
+
+Post Office Account via BMS
+
+Nil
+
+(See PA/PRO/010 for Approval roles)
+
+‘Name
+
+Position
+
+Signature
+
+Date
+
+Peter Jeram
+
+Systems Integration Director
+
+© 2003 Fujitsu Services
+
+Company in Confidence
+
+Page: I of 21
+WITNO04600101
+
+WITN04600101
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+0.0 Document Control
+0.1. Document History
+Version No. Date Reason for Issue Associated
+CP/PinICL
+0.1 31/03/98 Initial Draft
+0.2 12/05/98 Further expansion
+0.3 02/07/98 Incorporation of detail from Audit Policy document and
+expansion on JWF.
+0.4 27/07/98 Incorporation of Security Audit into single audit approach.
+0.5 19/11/98 Following feedback from BA/POCL and de-coupling from
+Acceptance.
+0.6 08/03/99 Final draft for approval
+0.7 07/02/00 Introduce Audit Committee, general upgrade and raise for
+issue
+1.0 03/03/00 Approved
+Ll 31/10/00 Update to include more detail on roles & responsibilities,
+follow up activities and process effectiveness measures.
+Removal of references to audits of the Horizon System.
+For initial review by contributors only.
+1.2 09/11/00 Revised to include feedback from DG / MB. For re-
+review by contributors / review by Directorate Quality
+Representatives.
+2.0 14/11/00 Review comments incorporated. Raised to Approved
+241 25/09/01 Revised organisation and BSI, ICL Group relationship.
+2.2 11/10/01 Revised organisation. Remove IAC. Revised DQR TORs.
+2.3 11/10/01 To overcome the intransigence of PVCS.
+3.0 24/10/01 Raised to Approved
+3.1 04/12/02 Changes to organisational names and job title
+4.0 17/12/02 Raised to Approved
+4.1 09/12/03 Annual review PPRR_0170
+5.0 16/12/03 Raised to Approved
+5.1 22/12/04 Annual review PPRR_0316
+6.0 23/12/04 Raised to Approved
+6.1 29/07/05 Annual review and links to corporate Quality Audit PPRR_0425
+7.0 29/07/05 Raised to Approved
+
+© 2003 Fujitsu Services Company in Confidence Page: 2 of 21
+WITNO04600101
+WITN04600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+0.2 Review Details
+Review Comments by :
+Review Comments to: I Jan Holmes
+Mandatory Review Authority Name
+Optional Review / Issued for Information
+Systems Integration Director Peter Jeram (*vS.1)
+Security Manager Bill Mitchell (#v4.1)(*v5.1)
+( *vn.n ) = Reviewers that returned comments
+0.3 Associated Documents
+Reference Version Date Title Source
+1S09001:2000 Quality Management System Requirements I BSI
+PA/POL/002 Post Office Account Business Management I PVCS/BMS.
+System
+
+Unless a specific version is referred to above, reference should be made to the current
+
+approved versions of the documents.
+
+0.4 Abbreviations/Definitions
+
+Abbreviation _I Definition
+
+ASP Audit & Security Panel
+
+BMS Business Management System
+BSI British Standards Institution
+
+ccD Contract Controlled Document
+DQR Directorate Quality Representative
+POL Post Office Limited
+
+PRF Process Review Forum
+
+QMS. Quality Management System
+SMT Senior Management Team
+
+© 2003 Fujitsu Services
+
+Company in Confidence
+
+Page: 3 of 21
+Fujitsu Services
+
+Post Office Account Internal Audit Manual
+
+Company in Confidence
+
+WITNO04600101
+WITN04600101
+
+Ref: TA/MAN/003
+Version: 7.0
+Date: 29/07/05
+
+0.5 Changes in this Version
+
+Version
+
+Changes
+
+0.6 Changes Expected
+
+Changes
+
+© 2003 Fujitsu Services
+
+Company in Confidence
+
+Page: 4 of 21
+WITNO04600101
+WITN04600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+0.7. Table of Contents
+
+3.0 AUDITING IN POST OFFICE ACCOUNT.
+
+3.1 AUDIT DEFINITION...
+3.2. AUDIT OBJECTIVES
+3.3. AUDIT POLICY ..
+3.4 AUDIT ORGANISATIO’
+3.5. Joint AupIT & SECURITY PANEL
+3.6 FUJITSU SERVICES GROUP BUSINE
+3.7 BSI
+
+4.0 ROLES AND RESPONSIBILITIE:
+
+41 SYSTEMS INTEGRATION DIRECTOR .
+42 PROGRAMME ASSURANCE MANAGER
+
+43 INTERNAL AUDITORS...
+44 i
+45
+46
+5.0 THE AUDIT PLAN...
+
+5.1 PRODUCING THE PLAN
+5.2 AubIT NEEDS ASSESSMENT
+5.3. ASSESSING RISK
+5.4. ALLOCATING RESOURC
+5.5 AUDIT PLAN AUTHORIS.
+5.6 REVIEWING THE PLAN.
+5.7. UNPLANNED ITEM!
+5.8 COVERAGE RESTRICTIONS
+5.9 AUDIT PLAN CONTENT ... .
+
+6.0
+
+6.8 CATEGORISATION OF FINDING
+6.9 FOLLOW-UP oo escesseecccsssesseesseeseesseesesseesseessesueessesscsusesnsessessesseesnesssesuesnesnessueesneaseensess 17
+
+7.0 MANAGING THE AUDIT PROCESS.....
+
+© 2003 Fujitsu Services Company in Confidence Page: 5 of 21
+WITNO04600101
+WITN04600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+7A
+72
+73
+74
+74.1 Measure 1 : Audit Planning
+7.4.2 Measure 2: CA Closure Rate . 18
+
+7. Measure 3 : CA Effectiveness.
+744 Measure 4: Added Value ....
+
+7.5 RECORD KEEPING.
+8.0 WORKING WITH OTHER AUDIT GROUPS ..
+
+8.1 GENERAL ..
+8.2 JOINT WORKING FRAMEWORK
+8.2.1 Planning...
+8.2.2 Terms of Reference. .
+8.2.3 Detailed Audit Schedules.
+Resources...
+Reporting Arrangements ..
+Corrective Actions Review.......
+Process Review and Improvement.
+
+© 2003 Fujitsu Services Company in Confidence Page: 6 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+1.0 Introduction
+
+This Manual provides guidance and instruction on the principles and approach to
+audit in Post Office Account. It describes the audit organisation, the management
+framework within which it operates, and the aims, objectives and processes to be used
+in arranging audits and following up results.
+
+The contents of this Manual are mandatory unless otherwise indicated. It has been
+written assuming that Post Office Account staff will interpret it intelligently and with
+due regard for the objectives of their respective departments and the interests of Post
+Office Account.
+
+It addresses various contractual obligations insofar as it establishes an Internal Audit
+function which operates to provide assurances to Post Office Account and POL about
+the adequacy, effectiveness and efficiency of internal controls.
+
+2.0 Scope
+
+This manual provides details of the policy, organisation, processes and procedures
+under which Internal Audit operates. All potential types of audit or assessment are
+covered by this document.
+
+It excludes the processes concerned with the provision of an audit trail of transactions
+processed through the Horizon System. That is covered in the Horizon System Audit
+Manual and the various Audit Trail Specifications
+
+3.0 Auditing in Post Office Account
+3.1 Audit Definition
+
+Internal auditing is an independent, objective assurance and consulting activity
+designed to add value and improve an organisation’s operations. It helps an
+organisation accomplish its objectives by bringing a systematic, disciplined approach
+to evaluate and improve the effectiveness of risk management, control and
+governance processes.
+
+Institute of Internal Auditors; June 1999
+
+3.2. Audit Objectives
+
+Internal Audit is conducted on behalf of the Managing Director, Post Office Account,
+and advises it on the adequacy, effectiveness and efficiency of internal control
+systems. It also operates as a constructive service to Post Office Account management
+in general.
+
+It operates at three levels :
+
+» Through its relationship with the BSI and Fujitsu Services Group Business
+Assurance in supporting Post Office Account’s, and ultimately Fujitsu
+Service’s registration to IS09001:2000.
+
+© 2003 Fujitsu Services Company in Confidence Page: 7 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+» By providing assurance to Post Office Account management about the
+effectiveness and continued suitability of processes.
+
+v
+
+By working with POL Auditors to help their understanding of the Horizon
+system and, when requested, providing assurance as to its operation.
+
+3.3. Audit Policy
+
+It is the policy of Post Office Account Limited to assess and improve the
+effectiveness of Post Office Account’s Business Management System and control
+mechanisms through a series of internal audits.
+
+The Internal Audit function is not there to assure the technical aspects of Post
+Office Account’s products and services.
+
+The activities of the Audit function fall within the broader remit of Programme
+Assurance and complies with the relevant Group policies on Quality and Risk
+Management Master Policy :
+
+Quality Master Policy
+Risk Management Master Policy
+
+The process described in this document recognises and is complementary to the
+Assure the Business and Conducting a Quality Audit corporate processes :
+
+Assure the Business Process
+Guide to Conducting Quality Audits
+
+3.4 Audit Organisation
+
+The Programme Director has overall responsibility for the Audit function, as
+illustrated below.
+
+Cc ~ ‘
+i seme Customer Services
+i 3 Director Pos Office Ltd
+‘I Director
+I L
+I Programme Internal Audit
+Assurance Security Manager
+i: Nonatee & Security
+i a Investigations
+' i Joint Audit & Security Panel
+I Departmental
+: Quality
+Representatives
+
+© 2003 Fujitsu Services Company in Confidence Page: 8 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+The green lined area indicates membership of the Business Effectiveness Group; the
+blue lined area represents the relationship with POL.
+
+3.5 Joint Audit & Security Panel
+
+The Joint Audit & Security Panel is a semi-formal grouping of Post Office Account
+and POL Security and Internal Audit staff that meets, when required, to agree and co-
+ordinate joint audits and other matters of mutual interest. The Post Office Account
+representatives are the Security Manager and Programme Assurance Manager.
+
+3.6 Fujitsu Services Group Business Assurance
+
+The relationship with Fujitsu Services Group Quality is primarily to ensure that any
+Group requirements are incorporated into the Internal Audit Plan or reporting
+structures. It also exists to accommodate Group assessments carried out in
+conjunction with the BSI.
+
+3.7 BSI
+
+The Programme Assurance Manager is responsible for the IS09000:2000 certification
+programme within Post Office Account and liaises with BSI to this end.
+
+4.0 Roles and Responsibilities
+
+4.1 Systems Integration Director
+The SI Director is responsible for :
+
+» Setting objectives for the Internal Audit function,
+> Approving Audit Reports and Corrective Action Plans,
+
+> Providing a route for the escalation of issues to Senior Management.
+
+4.2 Programme Assurance Manager
+
+The Programme Assurance Manager is responsible for ensuring implementation of
+Post Office Account’s Audit Policy and maintaining “best practice”, within the remit
+of Post Office Account.
+
+The responsibilities include:
+
+Ownership of the Internal Audit Process
+
+> Communication of Internal Audit Policy and Standards within Post Office
+Account,
+
+> Liaison with Fujitsu Services Group Business Assurance,
+>» Overall responsibility for Post Office Account’s Internal Audit activities,
+
+> Specifying and arranging Internal Audit education and training,
+
+© 2003 Fujitsu Services Company in Confidence Page: 9 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+» Providing the point of contact for all Internal Audit related matters.
+> Line management, selection and recruitment of Internal Audit personnel.
+
+Audit Planning and Execution
+Planning the schedule of internal audits,
+
+>
+> Obtaining suitably qualified resources to carry out the programme of audits,
+Liaison with POL audit personnel and their agents for joint audits,
+
+>
+> Developing, agreeing and monitoring improvement programmes,
+» Tracking progress against the Internal Audit Plan,
+
+va
+
+Reporting progress / issues to the SMT.
+Improving the Audit Process
+>» Examining and evaluating the results of internal audits,
+> Co-ordinating the evaluation of all new audit products proposed, as required,
+
+>» Analysis of process measures with a view to proposing and implementing process
+improvements.
+
+4.3 Internal Auditors
+
+The Programme Assurance Manager is the normal line manager for this group, hence
+many of the activities assigned to them will be to support the functions listed in
+section 4.2. They may be staff permanently in the role, or seconded in from other
+parts of Post Office Account or Fujitsu Services in order to fulfil specific audit
+requirements.
+
+Wherever possible, Auditors will act in a supporting role rather than as a Service
+Provider for the operational service. In this capacity they can:
+
+> Assist the Programme Assurance Manager with planning and scheduling the
+programme of audits,
+
+> Conduct independent reviews of compliance to Post Office Account’s Business
+Management System,
+
+> Assess the efficiency and effectiveness of processes in place and their contribution
+to the overall business objectives of Post Office Account,
+
+v
+
+Conduct follow up reviews / visits to progress Corrective & Preventive action,
+
+Vv
+
+Report security incidents, and risks identified as the result of an audit,
+
+Vv
+
+Maintenance of tracking spreadsheets etc. which monitor progress against the
+Internal Audit Plan / progress of outstanding Corrective Actions,
+
+a
+
+Maintenance of process measures for the Internal Audit function,
+
+» Recommend changes, to enhance Post Office Account’s. Internal Audit Process /
+Business Management System.
+
+© 2003 Fujitsu Services Company in Confidence Page: 10 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+4.4 Auditee Managers
+
+Each Directorate in Post Office Account is responsible for the management, operation
+and systematic improvement (including corrective and preventive action) of all owned
+processes wherever and whenever they are used, as defined by the Post Office
+Account Process Management process [PA/PRO/038]. In the context of Internal
+Audit, auditee managers are responsible for :
+
+Agreeing for Internal Audits to be carried out in their area of the business,
+
+vv
+
+Agreeing Terms of Reference for each audit in their area,
+
+Vv
+
+Making suitable auditees available when required,
+
+Reviewing / approving audit reports,
+
+vv
+
+Ensuring that Correcting / Preventive Action is carried out, as required,
+
+> Reviewing / approving Corrective Action Plans.
+
+4.5 Auditees
+
+Auditees are responsible for :
+» Making themselves available at the appointed time to meet the auditor,
+
+> Providing the auditor with information / documents which are required for the
+audit to be conducted prior to, during or after the audit,
+
+> Co-operating with the auditor to determine whether a non-conformance or
+opportunity for improvement exists,
+
+> Carrying out Corrective / Preventive Action, as required,
+
+4.6 Directorate Quality Representatives
+
+Each Directorate is represented by a Quality Representative, who works with the
+Programme Assurance Manager to manage execution of CAPs in their own
+Directorate.
+
+5.0 The Audit Plan
+
+The activities of Internal Audit during the year will be governed by the Internal Audit
+Plan. Typically, the Plan spans a calendar year, however, the SI Director/ SMT may
+decide that it is more appropriate for the Plan to cover a shorter period e.g. to cater for
+planned changes to the organisation. This section covers all planning cycle activities,
+regardless of the term of the Plan.
+
+mn
+m
+
+Producing the Plan
+
+The Plan is derived from an audit needs assessment carried out during the final
+quarter of the previous plan period.
+
+© 2003 Fujitsu Services Company in Confidence Page: 11 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+mn
+Re
+
+Audit Needs Assessment
+
+There will be a number of inputs to the audit needs assessment including:
+
+Vv
+
+All known areas of work by system, sub-system and Department,
+Major enhancements to the Horizon solution since the last audit,
+
+Forthcoming activities on the Programme Plan,
+
+vv WV
+
+Planned external BSI or Fujitsu Services Business Assurance audits,
+
+Vv
+
+Planned independent POL audit activity,
+
+Vv
+
+Contractually required audits,
+
+Suggested or requested Joint Audit opportunities,
+
+vVwv
+
+Requests by Post Office Account management for audit involvement,
+
+v
+
+Legislative changes that may affect the Horizon solution,
+
+a
+
+Post Office Account organisational changes / coverage of the Post Office Account
+organisation by previous audits.
+
+Part of this activity is to determine the way in which these feeds can be grouped for
+audit purposes and from this activity a list of potential audit topics will be derived.
+
+Initially, the audit needs will be determined without regard to constraints such as the
+time and resources that may be available.
+
+5.3. Assessing Risk
+
+Once the audit needs have been identified they are assessed against the Post Office
+Account Risk Register, taking into account impact on the Business Case. This will
+enable appropriate priorities to be established for the list of potential audits.
+
+mn
+EN
+
+Allocating Resources
+
+The Plan is based on the audit needs and risk assessments. It is a broad outline of the
+work to be undertaken to meet internal audit objectives. At this stage it is resource
+independent and the Director of Quality and the Audit Manager must now determine
+how the proposed plan can be met or where reductions have to be made in the face of
+resource constraints.
+
+When allocating resources consideration should be given to the availability of :
+
+Post Office Account Auditors.
+
+Vv
+
+Other suitably qualified Post Office Account staff.
+Other suitably qualified Fujitsu Services staff.
+Suitably qualified and available POL staff.
+
+Vv WV
+
+Vv
+
+External organisations (consultancies, accountancy houses, etc.).
+
+© 2003 Fujitsu Services Company in Confidence Page: 12 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+Audits must be resourced and prioritised according to business need. In some
+instances, a low priority audit may be postponed or cancelled to save resources,
+otherwise additional resources will need to be sourced from outside the Programme
+Directorate.
+
+5.5 Audit Plan Authorisation
+
+The Plan is authorised by the Post Office Account SMT. Although not strictly
+required, POL Internal Audit may be requested to endorse the Plan, especially where
+they intend placing reliance on work carried out within its constraints.
+
+5.6 Reviewing the Plan
+
+Once defined and approved the Plan will be executed according to the dates
+scheduled. Where there is likely to be significant slippage of dates (>1 month late to
+start) this should be reported to the SMT.
+
+The Plan should be continually reviewed during the year to deal with changes in
+circumstances, slippage or potential additions.
+
+5.7 Unplanned Items
+
+By their very nature unplanned activities are not included although capacity exists
+within Internal Audit to accommodate them. This document describes how they are
+included in the Plan and any subsequent actions to drop or delay planned audits from
+the Plan.
+
+5.8 Coverage Restrictions
+
+The Plan will include audit areas where the reporting will be open to POL and their
+external auditors. This is necessary as they will place reliance on our coverage and
+reporting only if they have access to it and remain confident of Internal Audit’s
+independence, objectivity and professionalism. However, there will be areas where
+the reports will not be made available to external bodies, usually in the area of Post
+Office Account’s internal processes and departmental activities.
+
+Audit Plan Content
+
+The Plan contains the following information :
+
+Vv
+
+Identification of audit subject Area/System/Department.
+Shared Reporting Indicator (SRI). [Y = shared; N = internal]
+Planned start date:
+
+Actual start date.
+
+Planned completion date.
+
+vVvvY
+
+Actual completion date. (Defined as date Report issued).
+
+> Audit Report Reference.
+
+© 2003 Fujitsu Services Company in Confidence Page: 13 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+» Corrective Action Plan Reference.
+
+5.10 Audit Plan Annual Review
+
+On completion of the planned audits, the Plan is reviewed and updated with
+completion dates and any other changes required. A brief Resume will be produced
+and inserted into the completed document. The Resume covers the following items :
+
+Overview of audits conducted during the year.
+
+vv
+
+Major deviations from the Plan with reasons.
+
+Statement of lessons learnt from the audit results in comparison to earlier years.
+
+Vv
+
+Vv
+
+Modifications to audit policy and processes for the coming year.
+
+v
+
+Any weakness / trend identified as a result of the programme of audits which
+needs to be brought to the attention of the Programme Director / the Process
+Review Forum.
+
+6.0 The Audit Process
+
+Although the content of an audit will differ from one audit to another there is an
+underlying framework to be followed. The audit process consists of ten discrete
+stages each with a specific objective and supporting guidance.
+
+This approach is entirely consistent with the principles established in the Fujitsu
+Services Guide for Conducting a Quality Audit.
+
+6.1 Plan
+
+Each audit must be planned and the key audit objectives identified. If a formalised
+approach, eg the use of Control Objective Questionnaires or other Detailed Audit
+Programmes, is to be used the necessary documentation should be prepared.
+Assignment planning is also the time to make the necessary arrangements with the
+auditee regarding the audit. This will include the preparation of Terms of Reference
+which must be circulated to the auditee and management for agreement.
+
+6.2. Ascertain
+
+During this stage the main activity is to understand the area under review. This may
+be through the scrutiny of documentation, interviews with managers and staff of the
+audit area, review of earlier audit reports or other review reports.
+
+6.3 Record
+
+A key element of audit work is to record what is found during the earlier stage. Each
+audit should result in an Audit File being opened and Working Papers prepared to
+record interview notes, summarised reports, working calculations and statistics,
+process flowcharts, etc.
+
+© 2003 Fujitsu Services Company in Confidence Page: 14 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+6.4 Assess
+
+Once recorded, the controls identified should be assessed for adequacy. Where risks
+are deemed to exist and no corresponding controls identified, the auditor should
+consider a series of ‘What if..?’ scenarios to understand fully the consequences of the
+lack of control continuing.
+
+6.5 Test
+
+Once identified and assessed they should be tested for compliance. This can be
+achieved through confirming that what has been reported as happening is actually
+taking place. For example, if an authorising signature, from a specified list of
+signatories, is required before a document can be issued, can this be verified by
+obtaining documents that contain the appropriate signatures. Other supporting
+controls in this example might be the age of the signature list, controls over additions
+to or deletion from the list. Care should be taken when conducting and recording the
+results of tests as they will form the substantive basis for the observations and
+recommendations in the audit report.
+
+Testing is also used to determine the impact of weak controls or poor compliance
+should this be identified during the Assess stage.
+
+6.6 Report
+
+Report production is the penultimate stage in the audit process. Reports should be
+objective, crisp and to the point. Observations, especially critical ones must be
+supported by evidence and not based purely on supposition and conjecture.
+
+Prior to formal issue, audit reports should be walked through with the auditee
+manager and any points of contention identified. Once agreed at this level, a final
+draft should be issued to the managers and the Director of the area under review. A
+final opportunity to comment on the report should be provided before the final report
+is issued to the agreed circulation list
+
+Audit reports will often contain confidential and, if critical, sensitive information
+about the audit area so due consideration must be given to their eventual distribution.
+The final circulation list should be agreed between the Audit Manager, and the
+Director of the area under review, and documented in the Terms of Reference.
+
+The final section of the report summarises the key findings and forms the basis of the
+Corrective (and Preventive) Action Plan.
+
+6.7 Corrective Action Plan
+
+Tf not already carried out as part of the auditing activity, about 1 - 2 weeks after final
+report distribution a meeting should be convened between the Audit Team and the
+Director and Managers of the area under review to review the report and agree
+corrective and/or preventive actions
+
+© 2003 Fujitsu Services Company in Confidence Page: 15 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+A Corrective Action Plan will be associated with an Audit Report. The CAP will list
+each recommendation made in the Report and an agreed statement on what action is
+to be taken and by whom. The CAP will be distributed to the Audit Committee and all
+contributing parties.
+
+A date by which the action will be complete or, alternatively, progress can be
+reviewed should also be included.
+
+The CAP will be reviewed on a monthly basis, preferably by the Auditor who led the
+original audit.
+
+6.8 Categorisation of Findings
+
+All audit findings are categorised to assist with prioritisation of corrective / preventive
+action, as follows :
+
+Category A
+
+Business Assurance definition : TOTAL — indicates a lack of, or total breakdown in
+the operational and / or financial control. HIGH RISK.
+
+Post Office Account definition : This is a serious breach of, or absence of an
+important management control which is likely to result in Post Office Account failing
+its ISO 9001 assessment.
+
+Category B
+
+Business Assurance definition : MODERATE -— indicates either a moderate
+breakdown in operational and /or financial control, or the absence of a non-critical
+control. MEDIUM RISK.
+
+Post Office Account definition : There is a breach of, or absence of a management
+control within one directorate which (on its own) is likely to result in Post Office
+Account’s compliance with ISO 9001 to be dependent on its corrective action.
+
+Category C
+
+Business Assurance definition : NO FAILURE - the issue is a matter of good
+business practice and / or efficiency. NO SIGNIFICANT RISK.
+
+Post Office Account definition : A minor failure to comply with stated policy /
+procedure, or missing documentation, or an opportunity for improvement.
+
+It should be noted that where multiple instances of (Category B or C) corrective
+actions indicate a wider problem, the category may be elevated at the discretion of the
+Programme Assurance Manager.
+
+If multiple instances of a Category A corrective action become apparent, this should
+be flagged to the SMT at the earliest opportunity.
+
+The assigned category is noted against each action item on the CAP Report.
+
+© 2003 Fujitsu Services Company in Confidence Page: 16 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+6.9 Follow-up
+
+Based on the CAP, the Auditor will carry out a series of follow-up meetings with the
+auditees / auditee manager(s) to review the status of the agreed corrective actions until
+such time as all actions have been completed, and the audit is officially signed-off.
+
+The Auditor assesses the changed processes / documents for compliance with the Post
+Office Account BMS.
+
+In some instances, the intended corrective or preventive action becomes no longer
+relevant (e.g. due to an organisational change). It is left to the Auditor’s discretion
+whether or not to close the action.
+
+The Auditor may reassess the category of an outstanding item when sufficient
+progress has been made to justify a downgrade. Similarly, the category of an item
+may be elevated if corrective action is not carried out in a timely manner or, if after
+further investigation, the issue is found to be more serious / widespread than was
+originally believed. Actions that are upgraded should be brought to the attention of
+the auditee manager at the earliest opportunity.
+
+The Auditor may also decide that an action can be closed on the basis of future
+planned action, if it is considered unreasonable / unnecessary to leave the CAP report
+open until the action is actually carried out. In this case, the Auditor needs to be
+assured by the auditee manager that the planned action will be carried out, and that it
+is likely to address the non-conformance.
+
+Interim updates are noted on the CAP report each month, with the report version
+number being incremented by one point (e.g. from 1.0 to draft 1.1, 1.2 etc.) until all
+actions have been completed.
+
+Once completed, the CAP report is incremented to the next whole integer version, and
+approved by the Programme Director.
+
+7.0 Managing the Audit Process
+
+The Programme Assurance Manager is responsible for monitoring the progress of
+audits against the Plan, reporting on progress / issues, and for the continual
+improvement of the Audit Process.
+
+The following activities are carried out for this purpose.
+
+7.1 Tracking
+
+The Internal Audit Plan is checked for progress of audits according to those
+scheduled, and that Terms of Reference have been agreed for forthcoming audits.
+Periodically, usually quarterly, the Internal Audit Plan is updated to show actual
+progress to date.
+
+Corrective Action Plans are monitored at least monthly, and actionees prompted if
+necessary to maintain progress. A summary CAP Status spreadsheet is maintained by
+the Programme Assurance Manager to assist with this.
+
+© 2003 Fujitsu Services Company in Confidence Page: 17 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+7.2 Reviews
+
+Approximately monthly, the Auditor / Programme Assurance Manager meets with the
+Directorate Quality Representative to review progress on outstanding _Corrective
+Actions. This can take place during the DQR Forum (DQRF), or separately, as
+appropriate.
+
+Monthly, the Programme Assurance Manager reviews progress on serious (Priority A)
+audit findings_with the Programme Director. Resulting updates are recorded on the
+relevant Corrective Action Plans.
+
+At the end of each programme of audits, a review of the Internal Audit Plan is carried
+out and documented. Any issues not previously identified are brought to the attention
+of the Director of Quality or the SMT, as appropriate.
+
+7.3 Reporting
+Reports on each audit are provided to auditees, auditee managers / Directors,
+Programme and Managing Director after each audit is completed.
+
+After progress reviews with Directorates’ Quality Representatives, the Auditor /
+Programme Assurance Manager updates the relevant Schedule(s) of Corrective
+Actions with the updated status of each item and revised completion dates, where
+appropriate.
+
+Monthly, the Programme Assurance Manager provides a progress report to the
+Programme Director. The report includes a summary of the numbers of corrective
+actions brought forward, the number resolved during the month, and the number
+remaining to be carried forward.
+
+Periodically, the Programme Assurance Manager conducts analysis on the Corrective
+Actions being identified, and highlights any concerns e.g. recurring problems which
+should have been resolved; areas where the QMS is not adequately understood or
+being applied; multiple minor issues which may indicate a wider problem. This
+analysis is presented to the SMT during the regular reviews.
+
+7.4 Measures
+
+The effectiveness of the audit process is measured as follows :
+
+7.4.1 Measure 1 : Audit Planning
+
+Audits are being carried out in accordance with the agreed Internal Audit Plan :
+
+> No. and percentage cancelled or delayed
+7.4.2 Measure 2 : CA Closure Rate
+
+Corrective Actions are being carried out in a timely manner:
+
+> Time taken to finally close Corrective Actions by Category.
+
+© 2003 Fujitsu Services Company in Confidence Page: 18 of 21
+WITN04600101
+
+WITN04600101
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+7.4.3, Measure 3 : CA Effectiveness
+
+Corrective Actions are sufficient to correct the problem, and to prevent recurrence:
+
+>» Numbers of CAs which are discovered not to have been carried out (during
+verification / follow up activity),
+
+» Numbers of CAs, where the problem is found still to be in evidence at the next
+internal audit or during an external assessment.
+
+7.4.4 Measure 4: Added Value
+
+Value of Internal Audits to Post Office Account
+
+Vv
+
+Coverage of the organisation by the Internal Audit Plan,
+
+Vv
+
+Timing of audits, so as to provide best value to the organisation,
+
+Vv
+
+Issues identified by audit which would otherwise have gone undetected, and could
+have caused problems for Post Office Account / its customers,
+
+> Results gathered from Audit Feedback Forms completed by auditees,
+> Number of suggested opportunities for improvement which are taken up by Post
+Office Account.
+
+7.5 Record Keeping
+
+PVCS is used for holding key Post Office Account documentation. Documents
+relating to the Internal Audit function can be found within the N.A_QRM_AUDIT
+workset. These are available (read only) to Post Office Account staff. Primarily they
+are prefixed as follows:
+
+> IA/REP/nnn for Audit Reports
+
+> IA/CAP/nnn for Corrective Action Plans
+» IA/MAN/nnn for Audit Manuals
+
+> IA/PLA/nnn for Audit Plans
+
+Working documents, monthly reports, tracking spreadsheets etc are held locally on
+the Quality Management Directorate shared drive.
+
+Historically, paper files have been maintained for each audit. These contain all
+correspondence relating to the planning of each audit (e.g. Terms of Reference),
+evidence provided to support corrective action, report review comments etc. It is not
+required that these be kept on paper, so long as they are accessible to the Quality &
+Audit Manager via electronic media / other means.
+
+Copies of auditees’ documents collected during the course of the audit need only be
+retained until the relevant corrective / preventive actions have been addressed, or until
+the closure of the audit.
+
+The following audit records shall be retained for a minimum period of 2 years, as
+required by the Fujitsu Service Group Business Assurance :
+
+© 2003 Fujitsu Services Company in Confidence Page: 19 of 21
+WITN04600101
+
+WITN04600101
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+>» Annual Internal Audit Plan
+> Audit Reports
+>» Corrective Plans
+
+v
+
+External Assessment Reports
+
+8.0 Working With Other Audit Groups
+8.1 General
+
+From Post Office Account’s perspective the term Joint Working applies to all levels
+of involvement from members of a fully integrated audit team to merely hosting
+external auditors and facilitating visits to Post Office Account locations. It also covers
+audits that may be undertaken into Commercial or Operational activities.
+
+Each audit organisation will operate to its own detailed processes and standards
+within a framework that enables joint agreement on planned audits, terms of reference
+for audits and the sharing of audit reports and results.
+
+8.2. Joint Working Framework
+
+Schedule 3 establishes the contractual framework for the conduct of audits by POL or
+its Agents. The framework described here provides the working interpretation of that
+Agreement.
+
+8.2.1 Planning
+
+Joint audits can be planned or unplanned although the majority are expected to be
+planned. Where POL Internal Audit anticipate conducting audits within Post Office
+Account they would normally build them into their respective Audit Plans and notify
+Post Office Account Internal Audit.
+
+Similarly, where the Post Office Account Internal Audit Plan identifies an area where
+complementary audits by POL could improve the value of the audit they will be
+encouraged to support the Post Office Account activity with resource managed either
+by Post Office Account or by themselves.
+
+Accepting that some audits may be unplanned, every effort will be given to providing
+adequate notice, say 3 months, of an impending visit.
+
+8.2.2 Terms of Reference
+
+Whether planned or unplanned, Terms of Reference must be established for any Joint
+or External Audits and agreed by both parties. The ToRs may be supported by
+detailed schedules to be agreed nearer to the start date of the audit. The Terms of
+Reference should contain at least the following information:
+
+> Scope of work to be undertaken.
+> Proposed dates for the audit and initial schedule.
+
+© 2003 Fujitsu Services Company in Confidence Page: 20 of 21
+WITN04600101
+WITNO4600101
+
+Fujitsu Services Post Office Account Internal Audit Manual Ref: TA/MAN/003
+Version: 7.0
+Company in Confidence Date: 29/07/05
+
+» Proposed resources for the audit.
+> Details of any site visits to be undertaken as part of the audit.
+>» Reporting arrangements for the audit.
+
+Once agreed, the Terms of Reference should be shared and agreed with the auditee.
+8.2.3 Detailed Audit Schedules
+
+Depending on the nature and scope of the proposed audit, it may be necessary to
+establish and agree Detailed Audit Schedules. Again these should be shared with the
+auditee, especially if the scope of the audit is in any way restricted or special
+arrangements for site visits and personnel interviews have to be made.
+
+8.2.4 Resources
+
+It is anticipated that adequate resources will be provided to conduct the audit. Where
+an audit crosses domain boundaries, eg. if an end-to-end audit of an Horizon service
+was being conducted, POL or Post Office Account resources may be allocated to
+specific tasks within their own area.
+
+8.2.5 Reporting Arrangements
+
+There is likely to be sensitivity over the reporting arrangements, especially the extent
+to which audit reports and findings are disseminated within organisations. To avoid
+difficulty, it is imperative that agreement on this subject is reached during the
+establishment of the Terms of Reference and has the full support of the auditee.
+
+8.2.6 Corrective Actions Review
+After an agreed period, established in Schedule 3 as a minimum of 30 days, the
+
+recommendations of any Joint Audit will be subject to review by the participating
+audit groups.
+
+8.2.7 Process Review and Improvement
+At the end of each Joint Audit the lead auditors from participating group should
+
+arrange to conduct a Post Audit Review to assess performance and areas for
+improvement. The views of the auditee will be taken into account.
+
+© 2003 Fujitsu Services Company in Confidence Page: 21 of 21

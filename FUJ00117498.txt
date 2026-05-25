@@ -1,0 +1,5277 @@
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FU TSU COMMERCIAL IN CONFIDENCE
+Document Title: HNG-X Performance/Stress High Level Test Plan
+Document Reference: TST/SOT/HTP/0003
+Document Type: High Level Test Plan
+Release: HNG-X
+Abstract: This document is the High Level Test Plan for HNG-X Performance,
+Stress and Volume testing.
+Document Status: APPROVEDDRAFT
+Author & Dept: Michael Welch, Raj Kumar, Richard Locke - HNG-X V&l (Volume),
+Peter Langford - PO Lid
+External Distribution:
+Approval Authorities:
+Pete Drewealt HNG-X Test Manager
+‘Andrew Thompson Post Office Lid (Test Manager)
+Note: See Royal Mail Group Account HNG-X Reviewers/Approvers Role Matrix (PGM/DCMON/0001) for
+guidance.
+Formatted: Font color Black 7}
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SEP.
+2008
+UNCONTROLLED IF PRINTED PageNo: of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU} COMMERCIAL IN CONFIDENCE
+
+0
+
+Document Control
+
+0.1 Table of Contents
+
+0__ DOCUMENT CONTROL
+
+0.1 TABLE OF CONTENTS. z
+0.2 Document History 4
+0.3 ReviEW Deratts, A
+0.4 ASSOCIATED DOCUMENTS (INTERNAL & EXTERNAL). 5
+0.5 ABBREVIATIONS m 7 6
+0.6 _ GLossary. Z
+0.7 CHANGES EXPECTED 2.2.0.0... - a I
+0.8 AccuRAcY 7
+0.9 Copyricur 7
+1__INTRODUCTION. 8
+44 OBJECTIVES......... 8
+
+2__ SCOPE 9
+(2.4___PEATURES To BE TESTED. 2
+21.1 Volume Testing. eel
+21.2 Load Testing. "3
+24.24 Counter Transaction Response Times, il
+
+Out of Scope Tests 7
+
+222 Migratio 10
+3__RISKS. 12
+4__ QUALITY, 13
+S__APPROACH. 13
+GENERAL 13
+
+: 13
+
+TTS GA ANA cman ciate seccamaitlS
+
+Test CASE EXECUTION. sila pili - ila 7 eh inal
+
+Test CASE RESULTS AND EVIDENCE. 15
+
+‘CALL LOGGING PROCESS zi 15
+ESCALATION PROCESS. 16
+_APPROACH TO TESTING a 16
+
+6__ ENVIRONMENTAL NEEDS...
+
+64
+
+DATA CENTRE,
+
+64.4 EDS Test Rig.
+
+6.1.2 Counter Simulators...
+
+6.1.3 FTMS Remote Platforms.
+
+6.1.4 Time Control,
+
+FUJ00117498
+FUJ00117498
+
+_{ Formatted: Font color: Black
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref, TSTSOTHTPIOO0S
+
+UNCONTROLLED IF PRINTED Page No:
+
+Version: 0.31.0
+
+/
+
+Date: poaMavao08i2.sEP. _/
+
+2008
+2of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU} COMMERCIAL IN CONFIDENCE
+
+6.2__ ENVIRONMENTAL NEEDS REQUIRED IN TEST LOCATION,
+62.1 Horizon Counters. = .
+6.2.2 HNG-X Counters.
+
+‘WinRunner License Server
+“Access to Data Centre from Bracknell .
+
+7_ RESPONSIBILITIES.
+
+8__DEPENDENCIES 20
+
+9 SCHEDULE.
+
+10___ RESOURCE!
+
+RY CRITERIA,
+
+44.4 ___ RELEVANT FACTORS TO BE CONSIDERED AT HANDOVER,
+
+44.2 __ GENERAL CONSIDERATIONS}
+14.2.1 Dependency on earlier testing...
+(14.2.2 _Dependency on other pre-requisites
+11.2.3 Other relevant factor’ ex
+
+12__ EXIT CRITERIA.
+
+13. TEST PASS / FAIL CRITERIA. 24
+13.4 Test ‘Pass’ STATUS — ——— _ an - - - - 24
+43.2 “Test ‘Fam.’ Stars, Pr
+13.3 Test ‘No RUN’ STATUS. 24
+
+A__ APPENDIX ~ MANUAL TESTING. 25
+
+B__ APPENDIX — AUTOMATED TESTING...
+
+FUJ00117498
+FUJ00117498
+
+0-—DOCUMENE- CONTROL 2
+04 —TaBLé oF ConTENTS, . : 02
+a —"Haapene Secas 4
+0.3 ReviEW-DE 4
+04—A Dec DERNAL BE 2
+05 i
+0.6—G “< 06
+07a 2
+0.8 —AccuRac: ©
+0.9—ex od
+1-_INFRODUCHION, os
+44 28
+LOPE. 9
+_{ Formatted: Font color: Black J
+‘SCopyight Fujtsu Services 1d 2007 ‘COMMERCIAL IN CONFIDENCE Ret TSTISOTIATPIOOOS
+
+Version: Vo3Vi.0
+Date: poaMavao08i2.sEP. _/
+
+2008
+UNCONTROLLED IF PRINTED Page No:  30f 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU} COMMERCIAL IN CONFIDENCE
+
+52—<¢ hi H
+5.3 —Ts A
+6.4 Te #
+6.6 CALL LOGGING PROCESS wr a anal aaa O14
+
+10 RESOURCES...
+
+442 —G C B
+44.2.4—Depend
+44be2—Dependencs ”
+
+FUJ00117498
+FUJ00117498
+
+_{ Formatted: Font colo: Black
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref, TSTISOTHTPIOO0S
+Version: 0.31.0
+Date: MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No:  40f 112
+HNG-X Performance/Stress High Level Test Plan
+
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+44.2.3—Oth . 4
+443 nee - 2 48:
+42 EXEE-CRITERE 4821
+13 —TEST PASS / FAIL CRITERIA ww =— sow 1822
+494 —Tesr-Pass* +8
+3822
+
+43.2 Test Fam STATUS,
+
+A-—APPENDIXMANUAL-TESTING.
+
+B—APPENDIX—AUTOMATED TESTING...
+
+FUJ00117498
+FUJ00117498
+
+_{ Formatted: Font color: Black
+‘DCopyight Fujtsu Senvices Ud 2007 ‘CORMERGIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+Version: Vo3Vi.0 /
+Date: poaiavzoosi2.sep.—_/
+008
+
+UNCONTROLLED IF PRINTED Page No:
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FUJITSU COMMERCIAL IN CONFIDENCE
+0.2 Document History
+PIPEAKIPPRI
+o4 0810972007 I Inal document
+02 (061272007 I High Level tests are scoped out in more deta Sections
+updated and clarified in light of the development of tests and
+howto test them, Also, the configuration of the Vii in IRE
+is better know and i reflected in the document. A high level
+test schedule forthe test cycles s ncided The responsibities
+across stakeholders during testing are included. Changed the
+Teviewers lst. Added a section on migration, Inckided a table
+of requirements from Quality Center. Included the timescales
+{or the testing on the VOL rg post pic.
+03 (0610572008 I The main chenges inthis version are:
+Clarification of scope: Identifying which groups of tess wil be
+runinwhieh phase and which wil not be run tal
+Ciarication of requirement descriptions in section 2.1
+Updated Ist of tests in Appendix B Associaton of ests to
+requrements
+Updated schedule of planned tess.
+io 90108008127007 I Final version issued for approval
+2008
+Includes updates tothe following sections aftr review of
+‘ievous version 03
+2.21 Out of cope
+2.22 Migration
+5.20utine Timescales
+6.1.1 EDS Test Ri
+6.22 HNG.X Couriers
+0.3 Review Details
+Role Name
+HNG-X Test Manager Pete Dreweatt
+HNG-X Solution Design David Harrison
+Role Name
+{ Formatted: Font color Back 5)
+SCopyright Fijisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+Version: Vo3vi.0
+I Dace” point boosia.se
+2008
+
+UNCONTROLLED IF PRINTED PageNo: 6 of 112
+HNG-X Performance/Stress High Level Test Plan
+
+FUJITSU COMMERCIAL IN CONFIDENCE @&
+
+Development Adrian West
+Test Design Peter Robinson
+Test Design George Zolkiewka
+System Test John Rogers
+
+RV Manager James Brett
+
+Vi& TE Manager Peter Rickson
+‘SVal Manager Sheila Bamber
+Tester Hamish Munro
+Programme Manager Phil Day
+
+Post Office Ltd — Test Manager Lee Farman
+
+Post Office Ltd - Test Manager
+Post Office Ltd - Test Manager
+
+‘Andrew W Thompson
+Chris Young
+
+Post Office Ltd — Acceptance Analyst
+
+‘Wayne Roberts
+
+HNG-X Service Transition
+
+‘Steve GodsonGraham Walsh
+
+Security Architect Jim Sweeting
+Core Services Mark Walsh
+
+Core Services Ed Ashford
+
+Core Services Andrew Gibson
+Performance Architect David Chapman
+Requirements David Cooke
+Post Office Ltd — Design Authority Mike C Gallagher
+‘SPITS Manager Brad Keane
+
+Position/Role
+
+Torstein Godeseth
+
+Name
+
+(*) = Reviewers that retumed comments
+
+(1) I PowocmTewooo1 I 2.0
+
+16-Apr-07 _I HNG-X Generic Document Template _I Dimensions
+
+[5] I TST/GEN/TP/0002
+
+(2)_I TSTIGEN/PRO/003 HNG-X HLTP Definition Report Dimensions
+{3I_ I TSTIGENSTG/0001 HNG-x Testing Strategy Dimensions
+(4]_I PGMIPASIPRO/0004 Test Planning and Preparation Dimensions
+
+HNG-X DR & BCP Testing - HLTP (Part I Dimensions
+1)
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+pyight Fujitsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+Date: (BS-MAY-2008:12.SEP.
+
+2008
+Page No:  Tof 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+{6} I PAPER/033 Horizon Capacity Management and I PVCS
+Business Volumes
+
+(7]_I TSTIGEN/STD/0003 HNG-X Performance Model for Testing I Dimensions
+
+{@] I TSTIGENwPDI0005 I 1.0 15/09/2006 I HNG-X Work Package for Non- I Dimensions
+Functional Testing
+
+9] I TST/GENPROI001 HNG-X Testing Process — Enty and I Dimensions
+Exit Criteria
+
+[10] I TST/GEN/PRO/0006 Process for Creating Data for Inclusion I Dimensions
+in HNG-X High Level Test Plan Reports
+
+[14]_I TSTIGEN/PRO/0010 HNG-X Defect Management Process _I Dimensions
+
+[12] I CSISERIO10 20 Transaction Benchmark Service: pvcs
+Service Description
+
+(13) _I TBA Counter Bencharking HLTP Dimensions
+
+Annotate the reference / details for
+any HLD used in the production of
+this document here
+
+Unless a specific version is referred to above, reference should be made to the current approved
+
+versions of the documents.
+
+0.5 Abbreviations
+
+Definit
+
+Automated Payments Out Payments
+Automated Payment Service
+
+Business Continuity Planning
+
+Card Account at Post Office
+
+FUJ00117498
+FUJ00117498
+
+(Formatted: Left
+
+ar ‘Component integration Test
+DR Disaster Recovery
+DVLA Driver Vehicle Licensing Authority
+EPOSS Electronic Point of Sale Service
+FS Fujitsu Services
+HLD High Level Design
+HLTP High Level Test Plan
+HNG-X Horizon Next Generation (plan X)
+Luts Low Level Test Script
+MGRM Moneygram
+PAF Postal Address File
+PAT Product Acceptance Test
+Formatted: Font color Black
+SCopyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ret TSTSOTITPI0003
+Version: Vo-3Vi.0
+Date: 12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 8 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+PO Ltd Post Office Ltd
+SORN Statutory Off-Road Notice
+
+sT System Test
+
+val Solution Validation & Integration
+
+TON Test Design Note
+
+TESQA Transaction Enquiry Service Query Analyser
+TRoc Testing Proof Of Concept
+
+0.6 Glossary
+
+LoadRunner ‘An industry standard performance test tool used to get an accurate picture of en-to-
+end system performance, to identify bottlenecks and whether applications meet
+specified performance requirements
+
+Performance Testing or I A series of tests to measure the performance characteristics and behaviour of
+Load Testing specific components of the solution under load to demonstrate their ability to achieve
+
+defined performance requirements, For example, to test that a particular web service
+is capable of supporting the relevant contrac tual peak rate of transactions per
+second (the defined load)
+
+Stress Testing A series of tests to measure the maximum performance capabilities of specific
+‘components of the solution by increasing the load placed on a component unti iis
+no longer able to satisfactorily support the load ie. it becomes ‘stressed’. Such tests
+should demonstrate that a component is atleast able to achieve its design limits and
+will also give an indication of headroom capacity.
+
+Test stage or Testing The specific phase (stage) within the Software Development Life Cycle. For instance
+
+stage Component Test, Component integration test, System Test, Solution Validation and
+Integration or Release Validation
+
+Volume Testing A series of tests to demonstrate that the whole solution is able to support a typical
+
+dally workload. For example, to test that a peak weekday transaction profile can be
+successfully harvested and that all scheduled batch processing can be completed
+within expected timescales,
+
+WinRunner ‘An industry standard functional test automation tool
+
+0.7 Changes Expected
+
+Tie-ck is the High-Level Test Plan HLTP Hh: Hosting that-williak
+first-stage-will include the- Scope-and-Objectives-of the testing (all sections-up-to-the Appendix). The
+second -part-to-be listings / reports of the Planned testing that is to take place and will include extracts
+
+FUJ00117498
+FUJ00117498
+
+document can be isstied. Material that is missing /expected to-be changed etc is shaded in yellow and
+peehasG vila Toh: meanng Tes! Design Motel loro
+{ Formatted: Fort color: Block
+SCopyigh Fuisu Sonics Ud 007 CONMERCI N CONFIOENCE Ra TS/SOTITPHOS
+Version: VO.3V1.0
+Date 12.see.
+
+2008
+UNCONTROLLED IF PRINTED PageNo:  90f 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+0.8 Accuracy
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but, whilst every
+
+effort is made to ensure the accuracy of such information, it accepts no liability for any loss (however caused)
+sustained as a result of any error or omission in the same.
+
+0.9 Copyright
+
+© Copyright Fujitsu Services Limited (20087). Al rights reserved. No part of this document may be reproduced,
+stored or transmitted in any form without the prior written permission of Fujitsu Services.
+
+FUJ00117498
+FUJ00117498
+
+SCopyright Fujisu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: (BS-MAY-2008:12-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 10 of 112
+
+{Fermatted: Fot color Back
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+1 Introduction
+
+This document is the High Level Test Plan (HLTP) that represents the independent testing that will take
+place for the Performance Testing stage. In accordance with the HNG-X Testing Strategy [3],
+Performance Testing (Load, Volume and Stress) will be conducted separately from SV&l as a discrete
+testing stage.
+
+The production of the HLTP will be a two phase process. The first phase will include the Scope and
+Objectives of the testing (all sections up to the Appendix). The second part to be listings / reports of the
+planned testing that is to take place and will include extracts from Quality Center (where appropriate) in
+the appendix of this HLTP.
+
+This paper defines the approach and method to be followed, and identifies some of the issues to be
+resolved, to ensure that Load, Volume and Stress tests are carried out at appropriate stages during the
+deployment of HNG-X. The testing of Load, Volume and Stress scenarios is part of Non-Functional
+Testing Work Package 5 and will be conducted against HNG-X Releases for Final Counter Drop (FCD)
+and Batch 3 CPs.
+
+1.1 Objectives
+
+The overall objectives of the Performance testing stage is to ensure that FUS hand over to PO Ltd a
+tested integrated solution that is capable of supporting contractual volumes. The Performance objectives
+for the HNG-X/Hydra system can be categorized in three areas; user satisfaction, system productivity and
+system cost
+
+In particular these should include:
+> Conformance to performance related requirements held in DOORS
+> Tested performance of solution components to Design Limits defined in relevant HLDs
+
+Demonstrated ability to support the level of business volumes and conformance to contractual
+Service Level Targets defined in the Horizon Capacity Management and Business Volumes [6]
+
+> Conformance to contracted transaction response times at both the counter and online system
+level for key scenarios defined in HNG-X Performance Model for Testing [7]
+
+> Current Horizon volumes can be supported on the Hydra configuration with no degradation of
+performance.
+
+» Tested performance limitations (stress test) of solution components to identify ‘breakpoints’ and
+maximum headroom capacity.
+
+> End-to-End test including interfaces to External systems to demonstrate the support of a peak
+rate of CAPO Network Banking transactions,
+
+System cost in HNG-X is not comparable to Horizon, due to infrastructure changes but the following
+‘components are all expected not to be 100% utilized whatever the transaction type or transactional mix or
+volume:
+
+> BAL Application Servers
+
+> Branch Database Servers
+
+> Branch to Data Centre Network Bandwidth
+> Data Centre LAN Segment Bandwidth
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+SCopyight Fujitsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: ttof 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+> Data Centre LAN Switch Bandwidth
+
+Tests should be identified within the HLTP which allow each of the above objectives to be proven to PO
+Ltd's satisfaction. There are a number of PO Ltd stakeholders who need to be assured of completion of
+this testing including:
+
+> PO Ltd Live Service Manager
+
+> PO Ltd Head of Systems
+
+> PO Ltd Design Authority
+
+> Banking and other specific Third Parties
+HNG-X Acceptance Manager
+
+> HING-X Release Authorisation Board
+
+2 Scope
+
+This document is concemed solely with performance related aspects of the solution and does not cover
+other non-functional requirements. Specifically, Business Continuity and Disaster Recovery testing,
+sometimes referred to as Integrity (Resilience & Recovery) testing, will be a separate discrete testing
+stage and subject to its own HLTP [5]. However, it is likely that there will be some cross-over between
+testing stages that will need to be co-ordinated during test execution planning. For example, it may be
+necessary for some Business Continuity tests to be performed under full load and therefore appropriate
+for these to be conducted during the Performance Testing stage.
+
+The scope of testing covered by this HLTP gives particular focus to:
+> the new Counter system,
+> the Branch Access Layer, and
+> the Branch Database
+> the online services
+All of the above figure prominently in the overall performance of the new HNG-X solution.
+
+The Counter system (or more specifically, an agreed selection of transaction types on the counter
+system) will be re-benchmarked to ensure acceptable performance at the point of sale. The Branch
+Access Layer will require careful configuration and tuning to avoid bottlenecks and adverse
+housekeeping, and the new Branch Database is performance critical, needing to achieve the requisite
+transaction throughput, and to be demonstrably scaleable.
+
+The retention of the Host and Extemal Interfaces largely intact (unchanged) mitigates external
+performance impacts. Providing the internal performance of the solution is proven, and the
+volume/throughput rate across the external interfaces remains as is, then there will be no need to repeat
+full end-to-end performance tests involving the extemal systems. One exception to this, however, is the
+‘external interface for CAPO banking transactions, for which the external client has requested full end-to-
+‘end performance tests to be conducted
+
+The types of testing within the scope of this document can be categorised into three main areas; Volume
+testing, Load testing and Stress testing, which are defined in the following section. The following key
+stages will need to be tested on the migrated Hydra configuration;
+
+> Post Data Centre migration, all outlets still Horizon
+> Amixture of 50% Horizon and 50% HNG-X outlets
+> Alloutlets fully migrated to HNG-X
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+SCopyight Fujitsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 12 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan aie
+
+COMMERCIAL IN CONFIDENCE
+
+The following diagram scopes out the high level areas to be tested, their priority and whether the tests
+
+are to be run during phase 1 in the V&l test environment (and in which cycle), run during phase 2 in the
+VOL test environment, or not run at all..
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE
+
+Formatted: Fot color Black )
+Ref. TST/SOTHTP0003 f
+
+Version: 0.31.0
+Date: (pe-May-200812.SEP._/
+
+2008
+UNCONTROLLED IF PRINTED Page No: 13 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan S&S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+Counter performance tests
+Ho1_I Hzn Volume — Monday 1
+Ho2_I Hzn Volume — Saturday
+Ho3__I Hzn Volume — Sunday
+
+Hzn Volume - 2 day Harvest
+Hzn DCS up to contractual rates
+Hzn CAPO up to contractual rates
+
+To be run against background HNG-X load
+
+Do not run, subsumed in MO2
+Do not run, subsumed in M03.
+
+Hzn ETU up to contractual rates
+Hzn T&T up to contractual rates
+APOP contractual and Design Limits
+
+HCB_I Hzn Combined banking up to contractual rates 2 :
+Mo1_I Hydra Mixed Volume - Monday (& TES rec tests) 6 1[2]3
+M02 _I Hydra Mixed Volume - Saturday 1 1 2
+Mo3_I Hydra Mixed Volume - Sunday 1 1 2
+M04 __I Hydra Mixed Volume - 2 day Harvest Do not run, n/a for HNG-X
+Mos _I Hydra Mixed DCS contractual and Design Limits 4 1 I 2
+M06 I Hydra Mixed CAPO up to contractual rates Do not run, subsumed in MCB
+M07 _ Hydra Mixed Link up to contractual rates Do not run, subsumed in MCB
+Mos _I Hydra mixed A&L up to contractual rates Do not run, subsumed in MCB i Font calor: Blac }
+Copyright Fujtsu Services Ltd 2007 ‘CONIMERCIAL IN CONFIDENCE Ref, TSTISOTIATPIO003 - -
+Version’ §—V0.aV1.0
+Date: (P6-MAY-200812-SEP.
+2008
+
+UNCONTROLLED IF PRINTED PageNo: 1 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan S&S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+Hydra Mixed ETU contractual and Design Limits Only time for 1 iteration
+M1o_I Hydra Mixed T&T contractual and Design Limits 4 1_I Only time for 1 iteration
+Hydra Mixed Combined banking contractual and Design
+MCB I Limits 4 1 I 2
+Branch Router Tests Sub-set of counter tests for 1, 5, 10 & 20
+Rot 4 1 I 2 I 3 I counters
+X01 _I HNG-X Volume - Monday (& TES rec tests) 6 7 /[23I4 I56
+
+HNG-X Volume - Saturday Do not run, subsumed in M02
+HNG_X Volume Sunday Do not run, subsumed in M03
+HNG-X Volume - 2 day Harvest Do not run, n/a for HNG-X.
+HNG-X DCS contractual and Design Limits Only time for 1 iteration
+
+HNG-X ETU contractual and Design Limits I 4 I Only time for 1 iteration
+HNG-X T&T contractual and Design Limits I 4 I Only time for 1 iteration
+
+BAL and BRDB contractual and Design Limits
+BAL and BRDB stress test
+
+{ Formatted: Font color: Black )
+
+‘@Copyright Fujtsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. TSTISOTINTPIOONS
+Version: VO.3V1.0
+Date: (P6-MAY-2008 12-SEP.
+2008
+
+UNCONTROLLED IF PRINTED PageNo:  2of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan
+
+FUjITSU COMMERCIAL IN CONFIDENCE
+
+Reports contractual and Design Limits I 2 I Could cover in X11 with right mix of txns.
+HNG-X Combined banking contractual and Design Limits I 4 _I Only time for 1 iteration
+
+{ Formatted: Font color: Black )
+
+‘Copyright Fujitsu Services Ltd 2007 COMMERCIAL IN CONFIDENCE Ref. TSTISOTINTPIOONS
+Version: VO.3V1.0
+Date: (P6-MAY-2008 12-SEP.
+
+UNCONTROLLED IF PRINTED PageNo:  3of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan 4
+FUJITSU COMMERCIAL IN CONFIDENCE
+I orrsene: Foe coor bck }
+Sopp Fi Sones Ud D007 CORTERCTACN CONFIDENCE at TaTsoTATRRIS ———
+Gaus: vanes }
+ba fou sizsce. _/
+7
+
+2008
+UNCONTROLLED IF PRINTED PageNo: of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FUJITSU COMMERCIAL IN CONFIDENCE
+2.1 Features to Be Tested
+Our tests are defined from a combination of the requirements from Quality Centre listed below and areas
+which have been sufficiently changed architecturally and warrants testing.
+
+Req ID Requirement Name Description
+
+5379 I Design Targets specified in the Capacity & Design Targets specified in the Capacity
+Performance document ("HNG-X Capacity & Performance document (“HNG-X
+Management and Business Volumes”) shall be Capacity Management and Business
+measured during testing: they are not required to Volumes") shall be measured during
+be subject to continuous monitoring (e.g. measured I testing: they are not required to be
+over Service Re Req5379 subject to continuous monitoring (e.g.
+
+measured over Service Reporting
+Period) nor are they required to be
+differentiated between particular Service
+Periods unless explicitly stated in the
+Design Target
+
+5431 The System's ability to achieve the MHTR shall be I The System's ability to achieve the
+confirmed by a combination of Volume Testing and I MHTR shall be confirmed by a
+Modelling as described in the “HNG-X Test combination of Volume Testing and
+‘Strategy - HX/STR/001". Req5431 Modelling as described in the “HNG-X
+
+Test Strategy - HX/STR/001".
+
+5435 I The System shall support the volume of Business I The System shall support the volume of
+Transactions defined in the “HNG-X Capacity Business Transactions defined in the
+Management and Business Volumes” document at I "HNG-X Capacity Management and
+the Peak Rates identified. Req5435. Business Volumes” document at the
+
+Peak Rates identified.
+
+5438 The System shall support the volume of The System shall support the volume of
+Administrative and Back Office Transactions Administrative and Back Office
+defined in the “HNG-X Capacity Management and Transactions defined in the “HNG-X
+Business Volumes” document at the peak rates. Capacity Management and Business
+identified. ReqS438 Volumes” document at the peak rates:
+
+identified.
+(Formatted: Fort color Back }
+
+Coppa Fi Sees Ud 007 COE GIACN CONFIDENCE Raf TSSOP
+
+Veuon:  vouuio
+Date: 312-SEP-
+
+2008
+UNCONTROLLED IF PRINTED Page No: 2of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+5441 I The System shall support the range of values in the I The System shall support the range of
+list of parameters (for example number of Counters I values in the list of parameters (for
+per Branch, Number of Stock units per Branch, example number of Counters per
+Number of failed Logon events before lock-out) Branch, Number of Stock units per
+specified in the "HNG-X Capacity Management Branch, Number of failed Logon events
+Req5441 before lock-out) specified in the “HNG-X
+Capacity Management and Business
+Volumes" document,
+Note: This requirement is not relevant to
+system qualities performance - see
+section 15 of Systems Qualities
+Architecture (ARC/PER/ARC/0001)
+5444 I The System shall support the display, storage and I The System shall support the display,
+manipulation of a set of agreed data items (for storage and manipulation of a set of
+example Currency Amounts, Languages, agreed data items (for example
+Messages, Number of Products) with a size or Currency Amounts, Languages,
+value range identified in the “HNG-X Capacity Messages, Number of Products) with a
+Management and Req5444 size of value range identified in the
+“HNG-X Capacity Management and
+Business Volumes” document.
+Note: This requirement is not relevant to
+system qualities performance - see
+section 15 of Systems Qualities
+Architecture (ARC/PER/ARC/0001)
+5460 I During testing New Video Benchmarks shall be During testing New Video Benchmarks
+conducted on Baseline Horizon and equivalent shall be conducted on Baseline Horizon
+Video Benchmarks shall be conducted on the and equivalent Video Benchmarks shall
+‘System, in accordance with the process described I be conducted on the System, in
+in “HNG-X Test Strategy - HX/STR/001 and accordance with the process described
+assessment made Req5460 in "HNG-X Test Strategy - HX/STR/001
+and assessment made according to the
+Video Benchmarking Tolerances agreed
+therein.
+5462 _ I It shall be possible for the System Measurement of I It shall be possible for the System
+
+the Counter to be switched on in the Live Estate,
+but central collection and analysis of such data
+shall only be performed for diagno:
+ReqS462
+
+Measurement of the Counter to be
+switched on in the Live Estate, but
+central collection and analysis of such
+data shall only be performed for
+diagnostic purposes.
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+SCopyight Fujitsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+2008
+UNCONTROLLED IF PRINTED Page No: Sof 112
+FUJITSU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+5465 I The System shall measure the Duration and record I The System shall measure the Duration
+the Response for each Third Party Transaction and record the Response for each Third
+Request from the time the request leave the Fujitsu I Party Transaction Request from the time
+Domain for routing to the extemal party (e.g, the request leave the Fujitsu Domain for
+Financial Institution, DVLA) to the time the r routing to the external party (e.g
+Req5465 Financial Institution, DVLA) to the time
+
+the response is received back from the
+Third Party.
+
+5468 I The response and duration measurement for all __I The response and duration
+Third Party Transmission Requests shall be made I measurement for all Third Party
+available in the response to the initiating Online _I Transmission Requests shall be made
+Transaction request from the Counter in order that I available in the response to the initiating
+the end-to-end timings and the System Time Online Transaction request from the
+Req5468 Counter in order that the end-to-end
+
+timings and the System Time
+component can be calculated and
+recorded by the Counter and reported in
+system testing and subsequently for
+diagnostic purposes.
+
+'5470__I The end-to-end performance of Banking and The end-to-end performance of Banking
+related Transactions shall be no worse than that and related Transactions shall be no
+set out in the Service Level Target described in the I worse than that set out in the Service
+Data Centre Operations Service document. Level Target described in the Data
+Req5470 Centre Operations Service document.
+
+See section 3.1.3.1 of System Qualities
+Architecture (ARC/PER/ARC/00011).
+This requirement translates to the
+following response time target (SLT):
+
+"= Network Banking transactions will
+take on average 2.5 seconds or less
+within the total of the HNG-X systems
+and infrastructure. This is the total time
+to and from the counter, excluding the
+time in the banks' infrastructure and
+systems.”
+
+3477 I The end-to-end performance of the Basket The end-to-end performance of the
+
+Settlement transaction shall be no worse than that
+set out in the Service Level Target described in the
+Data Centre Operations Service document,
+Reqs471
+
+Basket Settlement transaction shall be
+no worse than that set out in the Service
+Level Target described in the Data
+Centre Operations Service document.
+See section 3.1.3.1 of System Qualities
+Architecture (ARC/PER/ARC/0001)
+
+This requirement translates to the
+following response time targets (SLTs):
+Settlements will take on average 2
+seconds or less.
+
+= No Settlement within the 95th
+Percentile will take 7 seconds or more.”
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+SCopyright Fujisu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+2008
+UNCONTROLLED IF PRINTED Page No: 4of 112
+FUJITSU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+8474
+
+The Time taken to complete Branch Administrative
+of Back Office Transactions shall meet Design
+Targets (if specified) in “HNG-X Capacity
+Management and Business Volumes” Req5474
+
+The Time taken to complete Branch
+Administrative or Back Office
+Transactions shall meet Design Targets
+(if specified) in "HNG-X Capacity
+Management and Business Volumes”
+
+Note: See Section 3.1.3.2 of the System
+Qualities Architecture
+(ARC/PER/ARC/0001) which states the
+following.
+
+"No targets have been set for these new
+services in the current version of the
+HNG-X version of the Horizon Capacity
+Management and Business Volumes
+document [PA/PER/033], so these
+requirements are not currently
+measurable.”
+
+‘3475
+
+The time taken for Stock Unit and Branch Reports
+shall meet Design Targets (if specified) in “HNG-X
+Capacity Management and Business Volumes”
+Reqs475
+
+The time taken for Stock Unit and
+Branch Reports shall meet Design
+Targets (if specified) in "HNG-X
+Capacity Management and Business
+Volumes"
+
+Note: See Section 3.1.3.2 of the System
+Qualities Architecture
+(ARC/PER/ARC/0001) which states the
+following.
+
+“No targets have been set for these new
+services in the current version of the
+HNG-X version of the Horizon Capacity
+Management and Business Volumes
+document [PA/PER/033], so these
+requirements are not currently
+measurable.”
+
+3476
+
+The time taken to retrieve Help pages shall meet
+Design Targets (if specified) in “HNG-X Capacity
+Management and Business Volumes” Req5476
+
+The time taken to retrieve Help pages
+shall meet Design Targets (if specified)
+in *HNG-X Capacity Management and
+Business Volumes”
+
+Note: See Section 3.1.3.2 of the System
+Qualities Architecture
+(ARC/PER/ARC/0001) which states the
+following.
+
+“No targets have been set for these new
+services in the current version of the
+HNG-X version of the Horizon Capacity
+Management and Business Volumes
+document [PA/PER/O33], so these
+requirements are not currently
+measurable.”
+
+2.1.1
+
+Volume Testing
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+©Copyright Fujitsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref
+
+TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date: 12.SE.
+2008
+
+Page No: Sof 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+Volume testing can be described as:
+
+> Asseries of tests to demonstrate that the whole solution is able to support a typical daily workload.
+For example, to test that a peak weekday transaction profile can be successfully harvested and
+that all scheduled batch processing can be completed within expected timescales.
+
+Typically, due to differing batch scheduling, volume tests will be conducted for a peak weekday
+transaction profile, a Saturday transaction profile and a Sunday transaction profile.
+
+During the volume tests, particular attention will be paid to monitoring the following aspects:
+> Performance characteristics of the Host
+> Performance characteristics of Generic Agent platforms during harvesting
+Completion times of all batch scheduling, including Backups
+Capability of supporting a 2 day harvest
+
+vvy
+
+Client file transfer (where these have changed)
+> Performance characteristics of virtualised Horizon platforms
+
+Due to critical changes to the harvesting agents to be able to support both Horizon and HNG-X
+transactions, and the likely virtualisation of Horizon components, volume tests will be conducted at each
+of the three key stages identified above.
+
+2.1.2 Load Testing
+Load testing can be described as:
+
+> A series of tests to measure the performance characteristics and behaviour of specific
+components of the solution under load to demonstrate their ability to achieve defined
+performance requirements. For example, to test that a particular web service is capable of
+supporting the relevant contractual peak rate of transactions per second (the defined load).
+
+Specific performance tests will be conducted for:
+> All new / changed online service platforms
+1, Debit Card System
+Network Banking System
+Electronic Top-up System
+
+‘APOP
+DVLA
+7. PAF
+
+> Branch Database, including load balancing and maximum session logons via the Branch Access
+Layer
+
+2.
+3.
+4, Track and Trace
+5.
+6.
+
+> End-to-end performance to external client for CAPO banking transactions
+> Counter transaction response times (see section 2.1.2.1 below)
+
+Whereas volume testing will need to be conducted at each of the three key stages described previously,
+the performance tests are specific to HNG-X aspects and so will only need to be conducted for one
+phase. For test scheduling purposes, they could be conducted during any of the three phases subject to
+
+FUJ00117498
+FUJ00117498
+
+the relevant components of the test environment being in place. { Formatted: Font color: Black
+
+SCopyright Fujisu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: Gof 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+2.1.2.1 Counter Transaction Response Times
+
+Performance testing will also—encompass re-benchmarking re-benchmarking_of counter transaction
+response times for both a Horizon and a HNG-X counter on NT. Tests will be conducted for key
+‘scenarios that have specific performance expectations or requirements or pose most risks to the
+performance objectives.
+
+Horizon tests will include repeating video benchmarking scenarios outlined in (CS/SER/010) using the
+same performance targets.
+
+HNG-X scenarios are intended to include those conducted for Video Benchmarking on Horizon
+(CS/SER/010) with additional scenarios identified by POL Ltd.
+
+Tests will initially be performed using the Winrunner tool to simulate mouse movements and key strokes
+and record the time each actions takes. Each transaction element will be recorded and evaluated against
+the targets outlined in the HNG-X Performance Model for Testing [7].
+
+At the end of HNG-X Counter testing new video benchmarks will be recorded for HNG-X using the
+methods outlined in CS/SER/010
+
+A detailed plan of counter benchmarking activities is documented in [13]
+
+There are six services that currently require specific Online Service Routing or interactions with the Data
+Centre (under Horizon these were known as Online Transactions as they are the only online services in
+Horizon):
+
+Network Banking
+
+2. Debit/Credit Card
+3. Electronic Top Up
+4. DVLA Online
+
+5. PAF
+
+6. APOP
+
+The scenarios for these transaction types include the counter response times together with the system
+response time for the online transaction (response time of counter to external network and back to the
+counter).
+
+The architecture for other types of transactions has changed. In Horizon, these transactions were
+considered offline; however in HNG-X these transactions are considered online which include interaction
+with the branch database.
+
+7. EPOss
+
+8. Mails
+
+9. APS
+
+10. AP-ADC
+
+11, Bureau
+
+12. Back Office
+
+13, Reports
+
+14, User Management
+
+As the above transactions in Horizon are all offline the current measurements are based on counter
+response times only. HNG-X Measurements will be both counter and online system response times.
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Font calor Back
+
+‘SCopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S 7
+Version: 0.31.0
+Date: (BS-MAY-2008:12.SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No:  Tof 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+Full details of the performance objectives for counter transactions are specified in the HNG-X
+Performance Model for Testing [7], but a summary of the transactions to be included for testing is
+repeated here for completeness.
+
+Debit/Credit Electronic
+
+Card Top-up DVLA Online PAF APOP APS Settlements
+Taxa Vehicle for Pay 1
+Payment by Purchase 02E-Top 12 months with no Address Purchase £20 postal transaction bill
+DebitiCredit Up for £15 var Lookup order (plus fee) Basket settlement
+SORN with
+changes tothe
+Purchase £10 address of the Encash £30 postal
+Virgin Phone Card vehicle order
+Bureau (
+Mails deChange Back Office Reports © Management AP-ADC —_ EPOSS
+Post 1 Special Purchase 200 US Accept a Stock Unit Purchase £5
+delivery smallletter Dollars remitance Reports LogoniLogott Moneygram saving stamp
+
+Purchase 500 US Purchase 4 x
+
+FUJ00117498
+FUJ00117498
+
+tates stay
+Dollars in travellers Freedom -
+Post tlaige later cheques Rejectaremitance Offce Reports Help Service Passes
+Transscion
+Purchase 200 US Gorecton fr cash Purchase Pure A
+
+Post tletertoUSA  Dolarsin preorder emitance Travel Sure Europe
+venting eumeney shortage Ireurance——Staonary
+Post 1 packet Spoled postal Purchase 2x
+(2809) Bureau BuyBack ord £200 seratcheard
+Mail 6 tems using Purchase £10
+Dum po ct ectety tokens
+
+Purchase £5000
+
+Promum Bonds
+
+Purchase 1 Day
+
+fehingtooree
+
+Afior counter performance tosis have been
+{Fermatted: Fot color Back
+SCopyigh Fuisu Sonics Ud 007 CONMERCI N CONFIOENCE Ra TS/SOTITPHOS
+Version: voavio
+Date
+
+(pe-Mav-200812-sEp._//
+2008
+UNCONTROLLED IF PRINTED PageNo: 8 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+2.1.3 Stress Testing
+Stress testing can be described as:
+
+> Assries of tests to measure the maximum performance capabilities of specific components of the
+solution by increasing the load placed on a component until it is no longer able to satisfact
+support the load i.e. it becomes ‘stressed’. Such tests should demonstrate that a component
+least able to achieve its design limits and will also give an indication of headroom capacity.
+
+Specific stress tests will be conducted for:
+
+> Allnew/ changed online service platforms
+1, Debit Card System
+
+Network Banking System
+
+Electronic Top-up System
+
+Track and Trace
+
+APOP.
+
+DVLA
+7. PAF
+
+> Branch Database
+
+PaARONn
+
+> Branch Access Layer
+
+2.2. Features Not To Be Tested
+
+2.2.1 Out of Scope Tests
+The following aspects will not be tested under the scope of this document.
+
+> Existing online services if unchanged, as performance capabilities for these platforms are already
+proven or volumes are low. Also, they were never tested as a release under Horizon.
+
+© MGRM
+© Broadband
+> End-to-end performance testing to external interfaces (except CAPO)
+> Other non-functional attributes e.g. resilience, recoverability, system management, security
+TESQA (assumed there are no changes)
+
+> VPN. The nature in which transaction load is generated for V&l testing is such that the VPN layer
+must be by-passed. Therefore, performance testing of VPN servers is out of scope. There is a
+separate workstream dedicated to performance testing of the VPN layer, for which a separate
+test plan and subsequent test report will be produced.
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: (BS-MAY-2008:12.SEP.
+08
+
+2008
+UNCONTROLLED IF PRINTED PageNo:  90f 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+2.2.2 Migration
+
+The target end state of the HNG-X project is that all POL Counters will run HNG-X (rather than Horizon)
+software and those counters will be served by the data centre IRE11 with the data centre IRE19 as
+standby. Supporting Horizon and HNG-X counters out of IRE11/19 will be achieved overnight through
+transitioning multiple stages. (i.e. Weekends A, B, C etc)
+
+To assure the confidence in capability for each and every migration (Hydra) state one
+following testing tasks appropriate:
+
+1. Validate and Verify the processes required to effect the Migration step
+2. Verify and Validate the processes required to assure a completion of migration step
+3. Test for any regression on the Functional Requirements of the Soluti
+4. Test for any regression on the Non-Functional requirements including
+© Performance (Volume, Load, Stress)
+© Integrity (Resilience, Recovery, Error Reporting)
+
+ht consider the
+
+Tasks 1, 2 and 3 will be carried out by RV (Release Validation) test stream. These assertions however
+beg the question of how assured will POL be regarding the various Hydra configurations’ capabilities to
+satisfy the Non-functional requirements.
+
+Without the availability of a fully specified test rig to undertake the Non-Functional testing for each
+Migration (Hydra) State it will not be possible to give the highest level of assurance of System Capability
+before it goes live.
+
+Until Migration Weekends A, B, C and D are complete in the production/business domain, POL bu:
+workflow requires both the Bootle/Wigan pair and the IRE11/IRE19 pair to be running: with full resilience
+provisions. Whereas the current test plan provides for testing the new and replacement
+hardware/software at the (IRE11/19) data centres using the IRE11/19 kit configured as test rigs, the plan
+makes no provision for the use of test rigs (of similar specification to Bootle/Wigan) for non-functional
+testing of the dual (i.e. England/lreland) data centre migrations. The (IRE11) VI test rig will never be
+taken through the planned migration steps. The conclusion therefore is that the VI test team will have no
+‘opportunity to test the IRE11/19 migration configurations.
+
+In summary, the current plan is that no physical, E2E performance testing of the various, migration states
+(other than the final state that will go into Pilot) will be possible on the VI test rig.
+
+‘An entry has been placed in the Risk Register as follows:
+
+"No programme plan exists for_performance and integrity testing of major migration states. The
+Programme plan has to address at least: 1) theoretical performance models, 2) PoC on simulated
+performance environments, 3) risk analysis of using ITU test environments to validate predictions from
+phases 1 and 2, 4) migration step resilience test cost benefit analysis"
+
+FUJ00117498
+FUJ00117498
+
+{Fermatted: Fot color Back
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: (BS-MAY-2008:12-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 10 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+However, one aspect of migration that IS included in V&l testing is the overnight batch feed between TPS
+and BRDB whilst Horizon outlets enter the pre-migration state. The number of outlets in such status will
+be ramped up to measure the performance of this critical batch process and assess the level of
+processing that can be achieved within the alloted time window during the overnight scheduling.
+
+Furthen nsideration is current! iven
+jitional_laten¢ fe into t rk to reflect the im,
+
+and IRE11/19. Certain high volume tests could then be re-run with the ad
+
+measure the affect against the baseline performance statistics gathered for the tests in a fully post-
+
+migrated data centre. The HLTP will be updated to include this as and when consideration of the
+sssibilities of this approach have been fully explored, and when the necessary data has been obtained
+
+from monitoring latency on the actual link once it has been implemented,
+
+FUJ00117498
+FUJ00117498
+
+_{ Formatted: Font color: Black
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Refi TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: itr 12.SEP.
+
++2008
+UNCONTROLLED IF PRINTED Page No: 11 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+3 Risks
+
+From experience of performance testing past releases of the Horizon and information gamered from
+various design documents the following risks have been identified that can impact the successful
+‘completion of the performance tests for the HNG-X solution (including the Hydra configuration). Issues
+are included in the table below (they will be added to as and when identified).
+
+ID Cat. Date Risk Summary Risk Impact Mitigation Action
+Raised Description
+ROO1 DD 08/10/07 BTC2 data applied to Unknown issues = —_— Planned activity to ‘clean
+
+live images may unknown impact. up’ BTC2 data (with
+present unknown Best case: Some development support)
+issues. minor configuration
+
+changes required Complete
+Worst case: BTC2
+data unusable
+
+R002 D 08/10/07 Notall platforms are Unable to achieve _—_Prioritise tests according
+
+delivered and built all planned tests to to business and technical
+prior to start of test schedule, risk
+execution
+
+Complete
+
+R003 08/10/07 May not be possible to Unable to freeze rig Identify all critical
+hold / control time on whilst awaiting platforms for which time
+V&l environment in critical fixes - could control is essential.
+
+IRE11 cause significant
+
+issues with batch Agree acceptable method
+
+scheduling and of time control on all
+
+data, required platforms.
+
+Test planning
+
+difficulties. Complete: Now agreed
+that V&l will run in ‘real
+time.
+
+R004 C 08/10/07 _ In-house tools used for Increased overhead Identify all tools used and
+managing test in managing test against new OS. Re-
+environment may net platforms, gathering write tools for new OS
+work on new and analysing data, where appropriate
+platforms. Such tools causing delay to
+include: test execution Complete
+
+= triggercopy (control Some tools may
+platforms from single need to be re-
+
+FUJ00117498
+FUJ00117498
+
+source) written
+- event log analysis
+R005 08/10/07 Not all counter Scripts may not Identify which
+applications willbe work in actual transactions will become
+available to capture environment available earliest and
+transactions for without some re-create baskets made up
+Loadrunner scripting work of those where possible.
+prior to start of test Record scripts from
+execution another rig as
+Ongoing changes to transactions become
+Formatted: Font color Black
+‘SCopyright Fujteu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ret TSTSOTITPI0003
+
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED PageNo: 12 of 112
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+FUjiTsU
+
+transactions XML as available
+development and
+testing progresses
+
+R006 C — 08/10/07 Pin Pad will not be Potential issues for Closed?
+
+delivered until INTS _ script development
+(unknown)
+
+R007 D 08/10/07 Dynamic Bulking tool Significant re-work Run transaction profile for
+isunable to handle of dynamic bulker bulking after BTC2 has
+new or changed to handle such been topped up to latest
+messages introduced messages position
+since S90
+
+Complete
+
+R009 D 16/11/07 LRECgen.exe drops. __ Insufficient Program amended and
+certain transaction transactions will be _ tested by Val
+types, needs generated in the
+amending. LREC file to Complete
+
+facilitate a valid
+performance test,
+
+4 Quality
+
+The Test Cases and the design requirements from which they were derived will be recorded in Quality
+Centre. Within Quality Centre the requirement will include a reference to the document (Reference
+Number, Version and Section Number) from which it was derived. If a document, from which a design
+requirement was derived is changed the requirement, Test Case and Test Case reference to the
+requirement will need to be reviewed and possibly changed
+
+5 Approach
+
+5.1 General
+The structure and contents of a HLTP are defined in document HNG-X HLTP Definition Report [3]
+
+The generic System Test Entry and Exit Criteria are defined in document HNG-X Testing Process ~ Entry
+and Exit Criteria [9].
+
+Defect management is defined in document HNG-X Defect Management Process [11]
+
+The extraction of Test Case definitions from Quality Centre for input to a HLTP is defined in document
+Process for Creating Data for Inclusion in HNG-X High Level Test Plan Reports [10]
+
+5.2 Outline Timescales
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+2008
+UNCONTROLLED IF PRINTED Page No: 13 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+The POA Level 3 plan will contain the up to date timescales for planned activities for Performance
+
+Testing. The testing will take place in two distinct phases on two different rigs:
+
+> Phase 1 on the VI (Live rig)
+
+Current plan (based on V0.60.A4200 revised 290 Mar Aug 08) shows the following di
+
+IRE11 prior to pilot.
+
+> Phase 2 on the Vol rig in IRE19 post pilot.
+
+FUJ00117498
+FUJ00117498
+
+PHASE 1
+Retivity Start End Notes
+VIBIiz/Rig A cycle of environment suitability testing
+provisioning will commence prior to cycle 1 and is
+*o802/10/2008 I 22/0810/10/2008 I referenced as VI Blitz. This will check that
+the rig and all the tools needed for test
+execution and reporting, work as required.
+‘Amendments to the rig and tools will be
+made as required before commencement
+of the VIC1.
+viezt Cycle 2, NBi This cycle will primarily be
+oeioe17/10/2008 I 26/0825/10/2008 I Sed tor Business Continuity / Disaster
+ATH) 25/10) Recovery tests and there will be limited
+availabilty for conducting performance
+tests in this cycle.4
+ViC32 Cycle 32
+oG/003/11/2008 I 24/4024/1 1/2008
+vies Cycle 23
+o3i+401/12/2008 I 24/4+19/12/2008
+Vies4 I 01/28712/2008 I 70742/200816101/2000 I Cycle 54
+Peaks 2022008 610472000 The current plan does not provision for a
+Peaks Cycle for (Re-test of defects for
+which fixes have been delivered.
+PHASE 2
+‘Activity I Start End Notes
+VIBIRz/RIg A eycle of environment suitability testing will commence
+provisioning I gi95/2909 I 20/03/2000 I Prior to cycle 64 and is referenced as VI Bitz
+vices Cycle BS
+2103/2009 I 09/04/2009
+EE
+‘StopyGh Fujtsu Serves Ud 2007 COMMERCIAL IN CONFIDENCE Rat TSTSOTIATPIOODS 7
+Version: VOV1.0
+Dele: pe-sav-200012.sE.
+2008
+UNCONTROLLED IF PRINTED Page No: 14 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+vic7s Cycle 76
+20/04/2009 I 08/05/2009
+vicar Cycle 7
+18105/2009 I 05/06/2009
+
+Peak
+
+Clearance I 15/06/2009 I 26/06/2009 I Re-test of defects for which fixes have been delivered.
+
+Detailed information of the types of testing for each cycle is shown in greater detail in the ‘Section 9,
+Schedule’ section (as much as can be) of this document.
+
+Note: If changes are made to the VI Rig prior to the start of testing on any particular cycle, a period of VI
+Blitz may be required.
+
+5.3 Test Case Analysis
+
+The appropriate document will be analysed by a members of the VI Test Team, to identify the
+performance requirements that should be met by the defined design or development. From these
+performance requirements the analyst will derive Test Cases that can be executed to demonstrate
+conformance to that performance requirement.
+
+Allidentified performance requirements and Test Cases will be recorded in Quality Centre.
+
+5.4 Test Case Execution
+
+The test cases will be executed by VI Team members in BRAO!, using a WAN connection to the data
+centre in IRE11
+
+TT
+
+‘As per the HNG-X Testing Strategy [3], test prioritization will be driven by requirements and the risk
+analysis of those requirements.
+
+form:
+
+will be recorded against the Test Case within Quality Centre.
+
+5.5 Test Case Results and Evidence
+
+The VI team member that executes the Test Case is responsible for updating the Test Case in Quality
+Centre with the result (Pass or Fail) of the attempt to execute that Test Case.
+
+Failed Test Cases will require evidence to be added to the defect that is raised.
+
+5.6 Call Logging Process
+
+A basic overview of the HNG-x incident handling procedures is defined in [ISNO01486].
+
+This procedure covers the routing of the following: -
+* Any issue that the POA test team require Development or another POA team to investigate
+* Any Backup / Restore requests from the POA test team to IS
+
+*  Anyissue that IS require POA to investigate { Formatted: Font color: Black })
+
+‘Copyright Fujisu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date:
+
+12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 15 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+‘+ Anyissue that IS identify that needs further investigation within IS
+
+The process for managing detects raised during the independent testing phases of HNG-X is defined in
+HNG-X Defect Management Process [11]
+
+Note: for any failed test there must be an associated defect stored in Quality Center.
+
+5.7 Escalation Process
+
+An escalation process for use by the HNG-X Test Manager and IS Support Teams is defined in
+[isNo01487]
+
+5.8 Approach to Testing
+
+Testing will be organized into three streams so that 100% Horizon transactions, a mixture of 50%
+Horizon & 50% HNG-X transactions and 100% HNG-X transactions will be conducted on the migrated
+Hydra configuration; i.e. the starting state for pilot
+
+In each of these streams, some or all of the Volume, Performance and Stress Testing (as described in
+Section 2) will be carried out.
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+SCopyight Fujitsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 16 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+6 Environmental Needs
+
+This section describes what component is required in which location. The full list can be viewed in the
+following embedded file.
+
+\\dusupport\toois\
+Management\Docume
+
+However, below are some notable components that pethaps require a special mention,
+
+6.1 Data Centre
+
+In order to achieve 100% test coverage of the Hydra configuration the VI rig needs to reflect a full Hydra
+(Active) environment. However those Horizon components that is in an active/active configuration will
+obviously only have one half of those components (i.e. the Bootle components) in IRE11. The Hydra
+(Active) data centre components of the VI rig will be as Live and reside in IRE11 but there will be a ‘VOL’
+Tig in IRE19 to continue testing once the VI rig is live. The perception is that the majority of the Windows
+platforms will be virtualised to run on blade frames.
+
+6.1.1 EDS Test Rig
+
+‘As part of the CAPO E2E performance tests there will be a requirement for EDS to provide a test system.
+This testing will be carried out on the Release Validation rig based in IRE 19 and Fujitsu Services (Core
+Services) is to provide a test network link from IRE19 to EDS. Our assumption is that this test link will be
+secured in the same manner as for RV Accreditation testing,
+
+6.1.2 Counter Simulators
+
+The counter simulators used during past Horizon releases will be virtualised and hosted in IRE19. This
+will enable the continued production of Horizon transactions on the Hydra VI rig.
+
+6.1.3 FTMS Remote Platforms
+
+Itis assumed that the FTMS Local Gateways will reside in the Data Centre. The Test Remote Gateways
+will also reside in the Data Centre. They include:-
+
+> FTMS EDG Remote Gateway
+> TIP Remote Gateway
+
+6.1.4 Time Control
+
+The ability to hold the time on all rig platforms from a central point is required for testing. This is an
+essential requirement for the VI rig and will be controlled from the data centre.
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 17 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FU ITSU COMMERCIAL IN CONFIDENCE
+6.2 Environmental needs required in Test Location
+The location of the performance test team will be at BRAQ1. Therefore, in order for testing to take place
+access to the VI rig in IRE11/19 will be required in a secure manner and the equipment listed below will
+also be required in BRAO1.
+6.2.1 Horizon Counters
+There will be five offices reflecting 10 counter positions. The riposte messages will ‘bulked’ up to create a
+work load of approximately 9600 counter positions into clusters one & two of the correspondence servers
+in the same way as it was done during the Horizon releases.
+6.2.2 HNG-X Counters
+There will be two 1 counter outlet and one 20 counter outlet. The 20 counter outlet will be used for branch
+router testing
+Performance testing of Branch Router in respect the impact upon individual transaction processing times
+within an outlet is included in the scope of V&l testing. With regard to Requirement ‘Router 053B' which
+states’
+“The branch router must be capable of handling up to 30 counters or other services via the primary
+‘comms service type i.e. ADSL or ISDN"
+This_will_actually be tested up to a maximum of 20 physical counter positions and results then
+extrapolated.
+Testing of WWAN is not included as Requirement ‘Router 053A’ which states:
+“A breakdown must be provided, prior to the Branch Router pilot, showing how many counters can
+operate across the various WWAN services i.e. GPRS, EDGE & 3G. The solution design for the Branch
+Router will drive the WWAN service to maximum counter volume ratio and it is expected that this will be
+defined in the Branch Router architecture."
+Has a verification method of DR (Document Review) only.
+6.2.3 Testing Tools
+6.2.3.1 LoadRunner
+This tool is required to perform the injection of data into the branch access layer to simulate a specified
+workload scenario. LoadRunner can be used to analyse response times and resource usage of the
+system under test. A 1000 VUser licence has been requested. The LoadRunner controller will be located
+in Bracknell but note that the LoadRunner generators will be located in IRE11
+6.2.3.2 WinRunner License Server
+This tool is required to enable the continuance of the Horizon automated counter testing. The licences
+have effectively expired from beyond a date of March 2006. New licences will need to be purchased.
+6.2.3.3 Access to Data Centre from Bracknell
+{ Formatted: Font color: Black 7}
+‘SCopyight Fujtsu Senices Ld 2007 CCONIMERCIAL IN CONFIDENCE Ret TSTISOTIATPIOOOS 7
+Version: VO-3V10
+Date: poalav-2oosi2.see. _/
+
+2008
+UNCONTROLLED IF PRINTED Page No: 18 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+Test teams need to be able to access all VI rig platforms that reside in the data centre in order to perform
+rig commissioning tasks, tests, problem investigation and resolution, and general day to day activities.
+This will be achieved in a secure way via the SSC workstations.
+
+6.2.3.4 Workstations
+
+There is a current belief that for test, any platforms that would not normally reside in the Live data centre
+in the Live system, will reside at a remote site, i.e. Bracknell:
+
+>
+
+>
+>
+
+RDMC.
+
+APS (Hosted on the same server as the RDMC)
+KMA (including the KMA admin workstation)
+ssc
+
+FUJ00117498
+FUJ00117498
+
+{Fermatted: Fot color Back
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+Date: (BS-MAY-2008:12-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 19 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+6.2.3.5 FTMS Remote Platforms
+
+The FTMS Local Gateways will reside in the Data Centre. The Test Remote will also reside in the data
+centre. The platforms include:-
+
+> FTMS EDG Remote Gateway
+> TIP Remote Gateway
+
+6.2.3.6 CAPSYS
+
+This is the performance version of Lexcel Emulator for Network Banking transactions. There are has two
+Windows 2000 platforms running CAPSYS for Link, A&L and CAPO. This will be sufficient for testing.
+
+6.2.3.7 Emulators
+
+The following emulators will be hosted in Bracknell on 3 servers:
+> DVLA
+
+Track &Trace
+
+Des
+
+eTu
+
+v
+
+v
+
+7 Responsibilities
+To undertake performance testing successfully on a remote site in Ireland there will be certain
+
+responsibilities on different groups of people and not just the V&l team members. These responsibilities
+are documented in the following embedded document.
+
+\\dusupport\tools\
+Management\Docume
+
+8 Dependencies
+Before any performance testing can be initiated the following, ideally, will need to be in place:
+> The High Level test plan has been approved.
+
+sy
+
+The Low Level test scripts have been written.
+
+The rig design has been approved,
+
+The complete VI rig has been built in IRE11.
+Cycle 1 of SV&I has been successfully completed.
+
+vv
+
+¥
+
+> Testing Proof of Concept of LoadRunner (or other tool) has been undertaken and any
+development of scripts and tools to underpin performance testing has been completed.
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTISOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 20 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+9 Schedule
+
+The POA Level 3 plan will contain the up to date definition of the planned timescales for the VI activities.
+Based on the current plan (VO.60.A00 A42 revised 20 Mar29 Aug 08) the following embedded document
+‘shows the planned test execution by cycle for phase 1 on the Vl rig in IRE11. In-addition-to-the-4-main
+
+eycles-during-this-phase-there-will_alse-beThe current plan no longer includes _a ‘Peak clearance’ cycle
+for the re-test of any fixes delivered for defects identified during the main cycles.
+
+Any tests remaining will be performed during Phase 2 on the VOL rig in IRE19. A detailed plan for phase
+2 will be prepared nearer the time when a clearer picture of tests still to be performed is known
+
+jl
+
+\Wdusuppart\toaks\ _ \\dusuyppart\toak:\
+‘Management\Docur Management\Docum
+
+10 Resources
+
+The following resource needs have been identified to effectively undertake performance testing:
+
+> LoadRunner experience. Some member of the performance team will require training in this test
+product.
+
+> There is a requirement for WinRunner support for the current Horizon scripts which may require
+changes for testing in the Hydra configuration.
+
+> There is a requirement for support from Core Services to resolve any issues with platforms
+located in the Data Centres which require physical access.
+
+> There may be a requirement for development support for any changes required to our existing
+tools.
+
+> Development support for any new tools that may be required especially around the area of the
+Branch Database. (see CP4565 HNG-X CP 0110 - Horizon Data Requirements)
+
+> Development support for data cleaning of the databases on the BTC2 rig in readiness for
+migrating to the new VI rig,
+
+11 Entry Criteria
+Whilst Performance Testing (Load, Volume and Stress) will be conducted separately from SV&I as a
+
+discrete testing stage, the entry criteria is governed by the relevant section of the HNG-X Testing Process
+Entry and Exit Criteria document [9] pertaining to Solution Validation and Integration.
+
+11.1 Relevant Factors to Be Considered At Handover
+
+The following factors are to be considered at a ‘Handover Review Meeting’
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+‘SCopyright Fujisu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 21 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+> On the assumption that delivery of a tested product from one Test Stream to the next Test
+‘Stream may be Modular in form (ie. parts of the system will be delivered as and when they have
+completed testing), any requirements for a specific delivery sequence (of modules) to the
+Performance Test Stage must have been discussed, understood and agreed as part of the Entry
+Criteria
+
+> At the time of writing, a ‘Critical Defect’ is deemed to be a Level 1 or 2 defect. Although it is
+possible that lower level defects may also prevent a specific deliverable from being passed into
+the next Testing Stream. This decision will be made by the Testing Stream Manager(s) at the
+time of a Handover Review.
+
+> Although it is possible to move a deliverable from one test stage / stream to the next with some
+testing (Test Cases) outstanding (e.g. from CIT to System Test), no deliverable should be
+allowed to move into a subsequent stage with testing still outstanding from 2 stages previous
+(eg. Testing outstanding in CIT will allow a module to move into System Test, but (if still
+outstanding) will prevent it moving into Performance Test from System Test).
+
+11.2 General Considerations for Entry
+
+11.2.1 Dependency on earlier testing
+
+>» Are delivery plans in place to clear all necessary defects in time for the subsequent tests that
+may be dependent on them?
+
+> Remaining tests in earlier stage(s) planned and on track to keep pace with (stay ahead of) plans
+for this stage.
+
+11.2.2 Dependency on other pre-requisites
+> Test Environment ready and available
+
+© If part ready but not complete, or if complete but not yet proven/stable, then assess likely
+disruption and weigh against benefits to be gained from starting before stable.
+
+© Would this activity assist or hinder stabilising the environments.
+‘© Is the necessary environment support on hand to mitigate issues.
+
+© If multiple environments needed, should start be made with just one first to fully prove the
+configuration prior to replication?
+
+> Test Scripts/Data ready
+
+© Sufficient completed and available to support initial planned tests, and planned work for
+completion on track to keep pace with (stay ahead of) planned test execution.
+
+© If Scripts/Data produced, but not reviewed/approved, then assess likely rework which
+may result and weigh against benefits to be gained from starting without approval.
+
+11.2.3. Other relevant factors
+
+> External bodies/third parties (where involved) ready and available (including any
+equipment/systems concerned).
+
+> Project priorities/imperatives understood - cost vs. elapsed time vs. quality.
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 22 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FUJITSU COMMERCIAL IN CONFIDENCE
+11.3 Specific Criteria for Entry to Performance Test Stage
+> There Is an agreed low level plan available for Performance Test Stage.
+> HLTP (this document) has been approved.
+> LLTS's have been finalised and reviewed. l.e. A set of re-useable test cases have been prepared
+in Quality Centre and related to pertinent test Objectives (Objective Driven Testing) and
+Requirements.
+» Details of versions of all deliverables must be available.
+> All the critical defects for the module being delivered, from previous test stage (CIT and / or PAT)
+have been cleared.
+> There are no defects outstanding (of any Priority) that will affect the initial (high risk) testing that
+will take place in this test stream.
+> All testing for contents of the module have been completed in System Test (if not, is it viable for
+the module to begin Performance Testing?).
+» Resources are available.
+> All training has been identified and delivered.
+> TPOC for any test tooling and methods has been satisfactorily completed.
+» Test Tools and licences for those tools have been obtained, installed and configured for use.
+» In house tooling is ready and installed?
+> Redelivery of components and modules - Evidence must be available for regression testing that
+has been carried out for defect fixes applied to re-delivered software.
+» Suitable Reference Data is available.
+> The exit criteria values for this test stage are known and agreed.
+12 Exit Criteria
+Whilst Performance Testing (Load, Volume and Stress) will be conducted separately from SV&l as a
+discrete testing stage, the exit criteria is governed by the relevant section of the HNG-X Testing Process
+Entry and Exit Criteria document [9] pertaining to Solution Validation and Integration.
+> All the Requirements and testing objectives (Objective Driven Testing) have been met in full or
+non compliance has been agreed and signed off.
+» All the Objectives (Objective Driven Testing) designated for the Performance Test Stage have
+been covered within the testing cycles.
+> All the System Acceptance Criteria have been met in full or non conformances has been agreed
+and signed off.
++All testing for contents of the system has been completed in the previous System Test stage (if not,
+> Allctitical defects have been resolved*.
+» Allnon-critical defects have been resolved’.
+» Test Reports have been produced.
+(Formatted: Font color: Black )
+
+SCopyight Fujitsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date:
+
+12.SE.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 23 of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU TSU COMMERCIAL IN CONFIDENCE
+
+“Note that in some cases there is scope to hand over testing with outstanding defects (both critical and
+non-critical). This can only occur where the impact has been assessed and full agreement is achieved
+between stakeholders.
+
+13 Test Pass / Fail criteria
+
+13.1 Test ‘Pass’ Status
+
+A test will be deemed to have been ‘passed’ if the ‘Actual Result’ matches the ‘Expected Result’ in the
+Test Plan steps - either individually or all depending on the type of test being undertaken. In some tests,
+it may be possible to continue past a defect and satisfy the remaining steps within the test.
+
+A test will also be deemed to have ‘passed if the actual result does not equal the expected result, but itis
+subsequently found that the expected result (as per the test plan) has been specified incorrectly (as
+sometimes happens). In which case, this must be annotated in the test plan / set and any defects that
+were raised for it, annotated similarly and closed. Any test modified in this way will require a review
+against the HLTP and HLD. It must also adhere to version control rules
+
+13.2 Test ‘Fail’ Status
+
+A test will be deemed to have failed if the actual results deviate from the expected results. In all instances
+a defect will be raised. The cause of the deviation, the test failure, must then be assessed.
+
+Fixing of a defect (or other agreement to close) will allow a retest of the test plan and pass, if no further
+defects are raised,
+
+13.3 Test ‘No Run’ Status
+
+It may not be possible to run a test if there is an unresolved defect against the area under test. In this
+case the test will remain as ‘No Run’ in Quality Centre until the defect has been cleared.
+
+Where it is not possible to run a test in its original form (due to outstanding defects), it may be necessary
+or possible to reform the test in order to approach from a different perspective. This must be done only
+by agreement with all parties concerned in which case, the original test may be abandoned and
+discarded,
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Fort color: Block
+
+‘Copyright Fujisu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: 12.SE.
+
+72008
+UNCONTROLLED IF PRINTED Page No: 24 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan 4
+FU) ITSU COMMERCIAL IN CONFIDENCE
+A Appendix — Manual Testing
+There are no manual tests define. All tests will be automated.
+{ Formatted: Font color: Black }
+
+Sopra Fan Services US 2007 COMMERCIAL IN CONFIDENCE Ref TSTSOTATPOODS
+
+Version: VOSVIO
+
+Date 12.56.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 25 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+B_ Appendix — Automated Testing
+
+The following list constitutes the planned tests to be carried out. (Not finalised and also the tests will need
+to be mapped back to the requirements).
+
+FUJ00117498
+FUJ00117498
+
+UNCONTROLLED IF PRINTED
+
+2008
+Page No: 26 of 112
+
+Test] Testa Daa HL I Req
+Group fy
+oT NFUR_SVE_MOT_FINGX CAPO Balance) <OBJECTIVES A 3460
+Enauiy & Witrdrval To demonstrat that the End-to-End Transaction tine for S482
+the Seonano sno gleatr thant equvalent Herzon 54es
+transection tings S408
+5470
+<PRERE®
+<noTEs>
+Cot) NFUNSVE_MO2_FINGX Ral Business) =OBJECTIVES A $40
+To demonstrate that the End-to-End Transaction time for S4o2
+the Soonario eo greater than the equtvalnt Horton 5485
+transaction tinge S468
+5470
+<PRERE®
+<noTEs>
+Cot} NFUNLSVE_MO8-INEX NEETCash OBJECTIVES A $40
+Wither To demonstrot that the End o-End Transaction time for S4oe
+the Soonario fo greater than the equvalent Horzon 5485
+transaction tings S468
+5470
+<PRERE@
+<noTes>
+{ Formatted: Font ctor Black )
+Sopra Fan Services US 2007 COMMERCIAL IN CONFIDENCE Ref TSTSOTTPOOGS 7
+Version: VOSVIO y
+Deter” peaazoosi2.sep.—_/
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+cr “<OBJECTIVE> $460
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon 5465,
+transaction timings. 5468,
+=<PREREQ>
+<NOTES>
+loo) NFUN_SVC_MO5_HNG-X Purchase Phone I <OBJECTIVE> H I $460
+Card To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon 5465,
+transaction timings. 5468,
+<PREREQ>
+<NOTES>
+oy NFUN_SVC_MO6_HNG-X Taxa vehicle for I <OBJECTIVE> Hw I 5460
+12 months no VAT To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon 5465,
+transaction timings. 5468
+<PREREG>
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007
+
+‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 27 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+cot NFUN_SVC_MO7_HNG-X SORN with vehicle I <OBJECTIVE> $460
+‘address changes To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon 5465,
+transaction timings. 5468,
+=<PREREQ>
+<NOTES>
+i NFUN_SVC_MO08_HNG-X Purchase postal I <OBJECTIVE> A I $460
+order To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon 5465,
+transaction timings. 5468
+<PREREQ>
+<NOTES>
+Or TiFUN_SVC_MO8_HNG-X Encash postal OBJECTIVES A I S460
+order To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon 5465,
+transaction timings. 5468
+<PREREG>
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 28 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+cr
+
+NFUN_SVC_M10_HNG-X Payment by Debi
+Credit card
+
+“<OBJECTIVE>
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+oor
+
+NFUNLSVC_M1_HNGX Address Lookup
+
+OBJECTIVES
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+‘transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+oo
+
+NFUN_SVC_M12_HNG-X Purchase Saving
+Stamp
+
+<OBJECTIVE>
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+NFUN_SVC_MTS_HNG-X Purchase Tet Class
+‘Stamps
+
+OBJECTIVES
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREG>
+
+<NOTES>
+
+FUJ00117498
+
+FUJ00117498
+
+‘Copyright Fujtsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTISOTHTP/O003
+
+Version: 0.31.0
+
+Date: 12-SEP.
+
+Page No: 29 of 112
+
+Font color: Black
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+
+COMMERCIAL IN CONFIDENCE
+
+cr
+
+NFUN_SVC_M14_HNG-X Purchase Pure Ar
+‘Sure Europe Stationary
+
+“<OBJECTIVE>
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+oor
+
+NFUN_SVC_MTS_HNGX Purchase
+Soratcheard
+
+OBJECTIVES
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+‘transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+oo
+
+NFUN_SVC_MT6_HNG-X Purchase
+Electricity Tokens
+
+<OBJECTIVE>
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+NFUN_SVC_M17_HNG-X Purchase Premium
+Bonds
+
+OBJECTIVES
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREG>
+
+<NOTES>
+
+FUJ00117498
+
+FUJ00117498
+
+‘Copyright Fujtsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTISOTHTP/O003
+
+Version: 0.31.0
+
+Date: 12-SEP.
+
+Page No: 30 of 112
+
+Font color: Black
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+
+COMMERCIAL IN CONFIDENCE
+
+cr
+
+NFUN_SVC_M18_HNG-X Purchase 1 Day
+Fishing License
+
+“<OBJECTIVE>
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+oor
+
+NFUN_SVC_MT0_HNG-X Post Special
+Delivery Small Letier
+
+OBJECTIVES
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+‘transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+oo
+
+NFUN_SVC_M20_HNG-X Post Large Letter
+
+<OBJECTIVE>
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+NFUN_SVC_M21_HNGX Post Letter USA
+Weighting
+
+OBJECTIVES
+To demonstrate that the End-to-End Transaction time for
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREG>
+
+<NOTES>
+
+FUJ00117498
+
+FUJ00117498
+
+‘Copyright Fujtsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTISOTHTP/O003
+
+Version: 0.31.0
+
+Date: 12-SEP.
+
+Page No: 31 of 112
+
+Font color: Black
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+cot NFUN_SVC_M22_HNG-X Packet “<OBJECTIVE>
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+oo NFUN_SVC_M23_HNG-X Buk Post ~<OBJECTIVES A I $460
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+‘transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+Or NFUN_SVC_M24_HNG-X Pay Bil OBJECTIVES A I $460
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREG>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 32 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+cot NFUN_SVC_M25_HNG-X Freedom Passes I <OBJECTIVE>
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+i NFUN_SVC_M26_HNG-X Moneygram ~<OBJECTIVE> A I $460
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon 5465,
+transaction timings. 5468
+
+<PREREQ>
+
+<NOTES>
+
+roo NFUN_SVC_M27_HNG-X Travel Insurance I <OBJECTIVE> A I $460
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+‘transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007
+
+‘COMMERCIAL IN CONFIDENCE 7 TSTSOTHTPIOO0S
+Version: 0.31.0
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 33 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+cr NFUN_SVC_M28_HNG-X Purchase Foreign I <OBJECTIVE>
+Currency To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+loo) NFUN_SVC_M20_HNG-X Purchase Foreign I <OBJECTIVE> H I $460
+Currency in Travellers Cheques. To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+oy NFUN_SVC_M30_HNG-X Purchase Pre- “<OBJECTIVES Hw I 5460
+‘Order Foreign Currency To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+
+transaction timings.
+
+<PREREG>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 34 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU} ITSU COMMERCIAL IN CONFIDENCE
+
+cr NFUN_SVC_M31_HNG-X Foreign Currency I <OBJECTIVE>
+Buy Back To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+i NFUN_SVC_M32_HNG-X Remittance ~<OBJECTIVE> A I $460
+
+Acceptance To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+oo NFUN_SVC_M33_HNG-X Remittance <OBJECTIVE> H I $460
+Rejection To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+
+‘transaction timings.
+
+<PREREGQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007
+
+‘COMMERCIAL IN CONFIDENCE 7 TSTSOTHTPIOO0S
+Version: 0.31.0
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 35 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+cot NFUN_SVC_M34_HNG-X Transaction “<OBJECTIVE>
+Correction for a Remittance Shortage To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+i NFUN_SVC_M35_HNG-X Spolied Postal ~<OBJECTIVE> A I $460
+Orders To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+Or NFUN_SVC_M36_HNG-X Stock Uni Reports I <OBJECTIVE> A I 3460
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 36 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU} ITSU COMMERCIAL IN CONFIDENCE
+
+cr NFUN_SVC_M37_HNG-X Office Reports “<OBJECTIVE>
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+i NFUN_SVC_M38_HNG-X Logon ~<OBJECTIVE> A I $460
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+cot NFUN_SVC_M39_HNG-X Logoff <OBJECTIVES H I $460
+
+To demonstrate that the End-to-End Transaction time for 8462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE 7 TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 37 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+Test TestName Description HIML
+
+cr NFUN_SVC_M40_HNG-X Help “<OBJECTIVE> H I 5460
+
+To demonstrate that the End-to-End Transaction time for 5462
+the Scenario is no greater than the equivalent Horizon
+transaction timings.
+
+=<PREREQ>
+
+<NOTES>
+
+ROT NFUN_SVC_MOi_Branch Router OBJECTIVE I 5460
+Performances 1 counter ‘Transaction Performance via Branch Router with 4
+‘Counter
+‘To demonstrate that there is no degradation in the End-to-
+End Transaction time for the following scenarios
+Conducted on 1 counter via @ branch router.
+
+The following transactions will be performed:
+
+<PREREG>
+
+<NOTES>
+s****Transaction Yet To Be Defined"* 22/01/2008 PL
+TON: Reuse of Counter Performance Tests
+
+ROT TFUN_SVC_MO2_Branch Router OBJECTIVES A) 5460
+Performance § counter ‘Transaction Performance via Branch Router with §
+Counters
+To demonstrate that there is no degradation in the End-to-
+End Transaction time for the following scenarios
+Conducted on 1 counter of a trading 20 counter branch via
+‘a branch router.
+
+‘8.9 The branch router is not affecting transactions running
+(on one counter by transactions running on the other 4
+
+The following transactions will be performed:
+<PREREQ>
+<NOTES>
+
+*****Transaction Yet To Be Defined”** 22/01/2008 PL
+TON: Reuse of Counter Performance Tests
+
+{ Formatted: Font ctor Black 7)
+
+‘SCopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date:
+
+2008
+UNCONTROLLED IF PRINTED Page No: 38 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+Test
+
+TestName
+
+Description
+
+R01
+
+NFUN_SVC_MO3_Branch Router
+Performance 10 counter
+
+“<OBJECTIVE>
+‘Transaction Performance via Branch Router with 10
+
+Counters,
+
+To demonstrate that there is no degradation in the End-to-
+End Transaction time for the following scenarios
+‘conducted on 1 counter of a trading 20 counter branch via
+a branch router.
+
+8.9 The branch router is not affecting transactions running
+‘on one counter by transactions running on the other 9
+
+The following transactions will be performed:
+<PREREG>
+<NOTES>
+
+*****Transaction Yet To Be Defined” 22/01/2008 PL
+TON: Reuse of Counter Performance Tests
+
+HIML
+
+460
+
+ROT
+
+NFUN_SVC_MO3_Branch Router
+Performance 20 counter
+
+OBJECTIVES
+
+To demonstrate that there is no degradation in the End-to-
+End Transaction time for the following scenarios
+Conducted on 1 counter of a trading 20 counter branch via
+a branch router.
+
+8.9 The branch router is not affecting transactions running
+‘on one counter by transactions running on the other 19
+
+The following transactions will be performed:
+<PREREQ>
+<NOTES>
+
+*****Transaction Yet To Be Defined” 22/01/2008 PL
+TON: Reuse of Counter Performance Tests
+
+S60
+
+HOT
+
+NFUN_SV_A002_Horizon Volume Monday
+Schedule
+
+~<OBJECTIVE>
+To exercise data centre processing for a peak day volume
+of representative transactions
+
+<PREREQ>
+
+<NOTES>
+
+5435
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Font calor Back
+
+‘SCopyright Fujtsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+
+Date: (BS-MAY-2008:12-SEP.
+
+2008
+Page No: 39 of 112
+FUjiTSU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+NFUN_SVC_A003_Horizon Volume Two-Day
+Harvest
+
+“<OBJECTIVE>
+To exercise data centre processing for a peak day volume
+of representative transactions together with a previous
+peak day volume that had not been harvested
+
+=<PREREQ>
+
+<NOTES>
+
+5435,
+
+HOS
+
+NFUN_SVC_A008_Horizon DCS Contracted
+Peak Hour
+
+‘<OBJECTIVE>
+The DC Service must achieve 79,368 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+
+<PREREQ>
+
+<NOTES>
+
+_{ Formatted: Font color: Black
+
+FUJ00117498
+FUJ00117498
+
+‘ECopyright Fujtsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+Date: fers
+
++2008
+Page No: 40 of 112
+
+12.SEP.
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+NFUN_SVC_A008_Horizon DCS Contracted I <OBJECTIVE> I 5435
+Peak 5 Minutes The DC Service must achieve 22 business transactions
+per second during a peak § minute period with acceptable
+response times (tbe defined).
+~ sare
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 41 of 112
+HNG-X Performance/Stress High Level Test Plan
+
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00117498
+FUJ00117498
+
+NFUN_SVC_AOOi_Horizon CAPO Contracted I <OBJECTIVE> I 5431
+Peak Hout The CAPO Service must achieve 484,174 business
+transactions n'a peak hour with acceptable response
+times (0 be defined).
+> sae
+NFUN_SVC_A003_Horizon CAPO Contracted I <OBJECTIVE> HW) 5035
+Peak 5 Miniies The CAPO Service must achieve 160 business
+transactions per second during a peak 5 minute period
+wih acceptable response times (tobe defined)
+“<PREREG>
+<NoTES>
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+2008
+UNCONTROLLED IF PRINTED PageNo:  420f 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+5379
+_{ Formatted: Font color: Black B
+
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+
+Version: Vo3Vi.0
+
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 43 of 112
+FUJ00117498
+FUJ00117498
+
+COMMERCIAL IN CONFIDENCE
+
+ir HNG-X Performance/Stress High Level Test Plan aie
+
+08/07/06 I NFUN_SVC_A016 Horizon Combined
+Banking Contracted Peak Hour
+
+“<OBJECTIVE> The combined Network Banking Service H
+(CAPO, LINK and A&L) must achieve 618,240 business
+transactions in a peak hour with acceptable response
+
+times (to be defined).The limits ofthe individual Financial
+Institutions should not exceeded as part of this
+
+‘combination which are:484,174 CAPO transaction97,750
+
+LINK transactions36,316 A&L
+
+‘ransactions<PREREQ><NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+Date: fers
+
+_{ Formatted: Font color: Black B
+
+12.SEP.
++2008
+UNCONTROLLED IF PRINTED Page No: 44 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+HOB/07/06 I NFUN_SVC_AD18_Horzon Combined “<OBJECTIVE> I 5435
+Banking Contracted Peak 5 Minutes ‘The combined Network Banking Service (CAPO, LINK and
+AA&L) must achieve 204 business transactions per second
+wit acceptable response times (tobe defined
+Te lms ofthe individual Francia Insttutons should not
+exceeded as par of tis combination which are:
+‘60 CAPO transactions per second
+22 LINK ttansactons per second
+12 ABL. transactions per second
+am)
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 45 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+“<OBJECTIVE>The LINK Service must actieve 97,750 I Saar
+business transactions in a peak hour with acceptable
+response times (tobe defined) <PRERE> <NOTES>
+> 5370
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 46 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+NFUN_SVC_A008_Horizon LINK Contracted I <OBJECTIVE> L_ I 549.
+Peak 5 Minutes The LINK Service must achieve 32 business transactions
+per second during a peak § minute period wih acceptable
+response times (10 be defined).
+> sare
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 47 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+NFUN_SVC_AOTi_Horizon ABL Contracted I <OBJECTIVE> L I saat
+Peak Hout The A&l Service must achieve 36,316 business
+transactions in a peak hour wth acceptable response
+times (to be defined).
+> sae
+NFUN_SVC_ADTS_Horizon A&L Contracied ” <OBJECTIVE> Tas
+Peak S Minutes The ABL Service must achieve 12 business transactions
+per second during a peak 5 minute period with acceptable
+Fesponse times (tbe defined).
+“<PREREG>
+<NoTES>
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 48 of 112
+HNG-X Performance/Stress High Level Test Plan
+
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00117498
+FUJ00117498
+
+5379
+<OBJECTIVE™ SSI
+The ETU Service must achieve 17,254 business
+transactions ina peak hour wit acceptable response
+times (tobe defined).
+<PREREG
+<NoTES>
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+2008
+UNCONTROLLED IF PRINTED PageNo:  490f 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+~ I 8970
+NFUN_SVC_A008_Horion ETU Contracted I <OBJECTIVE> S85
+Peak § Minutes The ETU Service must achive 5 business transactions
+er second during a peak 5 minute period with acceptable
+Fesponse times (to be defined)
+S76
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 50 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+<OBJECTIVE™ A Saar
+The TAT Service must achieve 42,500 business
+transactions in a peak hour with acceptable response
+times (0 be defined).
+S78
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+‘2008
+UNCONTROLLED IF PRINTED Page No: St of 112
+HNG-X Performance/Stress High Level Test Plan @S
+FU} ITSU COMMERCIAL IN CONFIDENCE
+
+“<OBJECTIVE> H
+The T&T Service must achieve 11.66 business
+
+transactions per second in a peak S minute period with
+acceptable response times (to be defined).
+
+5435,
+
+3370
+
+FUJ00117498
+FUJ00117498
+
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 52 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+HIT NFUN_SVC_A001_APOP Peak Hour “<OBJECTIVE>
+
+‘The APOP service must achieve 120,000 business 5431
+transactions in a peak hour with acceptable response
+times (to be defined).
+
+<PREREQ>
+
+<NOTES>
+For APOP, the design limit is the same as the contracted
+rate
+
+ANT NFUN_SVC_A0G2_APOP Peak S Minutes I <OBJECTIVE> Ware
+
+"The APOP Service must achieve 39 business transactions 5435,
+pper second in a peak 5 minute period with acceptable
+response times (to be defined),
+
+<PREREQ>
+
+<NOTES>
+For APOP, the design limit is the same as the contracted
+rate.
+
+Hi2 NFUN_SVC_A001_OVLA Contracted Peak I <OBJECTIVE> C_ I saat
+Hour The DVLA Service must achieve 101,996 business
+
+transactions in a peak hour with acceptable response
+
+times (to be defined).
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 53 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+Hi2 NFUN_SVC_A002_DVLA Design Limit Peak I <OBJECTIVE>
+Hour The DVLA Service must achieve 122,396 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+
+$379
+
+=<PREREQ>
+
+<NOTES>
+
+Hi2 NFUN_SVC_A003_OVLA Contracted Peak I <OBJECTIVE> Css
+
+Minutes The DVLA Service must achieve 30 business transactions.
+per second during a peak 5 minute period with acceptable
+response times (to be defined),
+
+<PREREQ>
+
+<NOTES>
+
+Hi2 NFUN_SVC_A0G4_DVLA Design Limit Peak I <OBJECTIVE> L_ I 3379
+
+5 Minutes The DVLA Service must achieve 36 business transactions
+per second during a peak 5 minute period with acceptable
+response times (fo be defined). Allowing for actual per
+‘second peak, arate of 47 tps must be achieved.
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 54 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+Hi2 NFUN_SVC_A005_DVLA Stress Test “<OBJECTIVE>
+
+The business transaction rate is uniformally increased until,
+the service can no longer be sustained at acceptable
+response times (to be defined) or complete failure of
+service.
+
+<PREREQ>
+
+<NOTES>
+Low priority - candidate for phase 2
+
+ci} NFUN_SVC_AOOT_PAF Contracted Peak I <OBJECTIVE> The PAF Service must achieve 162,246 Tsar
+Hour business transactions in a peak hour with acceptable
+response times (to be defined) <PREREG><NOTES>
+
+icy NFUN_SVC_A002_PAF Design Limi Peak I <OBJECTIVE> Tsao
+
+Hour The PAF Service must achieve 194,695 business
+‘transactions in a peak hour with acceptable response
+times (to be defined).
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+2008
+UNCONTROLLED IF PRINTED Page No: 55 of 112
+
+12-SEP.
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+Hig, NFUN_SVC_A003_PAF Contracted PeakS I <OBJECTIVE> 5435,
+Minutes The PAF Service must achieve 46 business transactions
+pper second during a peak 5 minute period with acceptable
+response times (to be defined).
+=<PREREQ>
+<NOTES>
+His NFUN_SVC_A004_PAF Design Limit PeakS I <OBJECTIVE> L_ I 3379
+Minutes The PAF Service must achieve 55 business transactions
+
+pper second during a peak 5 minute period with acceptable
+response times (to be defined). Allowing for actual per
+‘second peak, arate of 72 tps must be achieved.
+
+<PREREQ>
+
+<NOTES>
+
+ci NFUN_SVC_AO05_PAF Stress Test OBJECTIVES T
+The business transaction rate is unformally increased until,
+
+the service can no longer be sustained at acceptable
+
+response times (to be defined) or complete failure of
+
+<PREREG>
+
+<NOTES>
+Low priority - candidate for phase 2
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 56 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+Mot NFUN_SVC_A004 Hydra Volume Monday I <OBJECTIVE>
+‘Schedile To exercise data centre processing for a peak day volume
+of representative transactions, where 50% generated by
+Horizon and 50% generated by HNG-X
+
+5435,
+
+=<PREREQ>
+
+<NOTES>
+
+Moz NFUN_SVC_A005_Hydra Volume Saturday I <OBJECTIVE> A I $435
+‘Schedile To exercise data centre processing (Saturday schedules)
+for a representative Saturday volume of transactions,
+Where 50% generated by Horizon and 50% generated by
+HINGX.
+
+<PREREQ>
+
+<NOTES>
+‘Some specific batch processing only takes place on a
+Saturday
+
+Mos NFUN_SVC_A006_Hyara Volume Sunday I <OBJECTIVE> H I $435
+Schedule To exercise data centre processing (Sunday schedules)
+
+for @ representative Sunday volume of transactions, where
+
+'50% generated by Horizon and 50% generated by HNG-X.
+
+<PREREQ>
+
+<NOTES>
+‘Some specific batch processing only takes place on a
+Sunday
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 57 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+Mos NFUN_SVC_A007_Hydra Volume Two-Day I <OBJECTIVE>
+Harvest To exercise data centre processing for a peak day volume
+of representative transactions together with a previous
+peak day volume that had not been harvested. 50%
+‘generated by Horizon, 50% generated by HNG-X
+
+5435,
+
+<PREREQ>
+
+<NOTES>
+
+MOS NFUN_SVC_AO11_Hydra DCS Contracted I <OBJECTIVE> A I 5437
+Peak Hour ‘The DC Service must achieve 79,368 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+The transaction rates should be at a mix of 05% Horizon /
+‘5% HNG-X and also at a mix of 50% Horizon / 50% HNG-
+x.
+
+<PREREQ>
+
+<NOTES>
+
+MOS NFUN_SVC_A012 Hydra DCS Design Limit I <OBJECTIVE> H I $370
+Peak Hour ‘The DC Service must achieve 95,242 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+The transaction rates should be at a mix of 95% Horizon /
+15% HNG-X and also at a mix of 50% Horizon / 50% HNG-
+Xe
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+‘2008
+UNCONTROLLED IF PRINTED Page No: 58 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+MOS NFUN_SVC_A013 Hydra DCS Contracted I <OBJECTIVE>
+Peak 5 Minutes The DC Service must achieve 22 business transactions
+pper second during a peak 5 minute period with acceptable
+‘response times (to be defined).
+The transaction rates should be at a mix of 95% Horizon /
+‘5% HNG-X and also at a mix of 50% Horizon / 50% HNG-
+x.
+
+5435,
+
+<PREREQ>
+
+<NOTES>
+
+MOS NFUN_SVC_A014 Hydra DCS Design Limit I <OBJECTIVE> H I $370
+Peak 5 Minutes The DC Service must achieve 26 business transactions
+
+per second during a peak 5 minute period with acceptable
+
+response times (to be defined). Allowing for actual per
+
+‘second peak, arate of 34 tps must be achieved.
+
+The transaction rates should be at a mix of 05% Horizon /
+
+5% HING Xa alo ata mi of 50% Horizon /SO% HNG.
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007
+
+‘COMMERCIAL IN CONFIDENCE 7 TSTSOTHTPIOO0S
+Version: 0.31.0
+Date:
+
+2008
+UNCONTROLLED IF PRINTED Page No: 59 of 112
+
+12-SEP.
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+Ec
+_{ Formatted: Font color: Black B
+
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+
+Version: Vo3Vi.0
+
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 60 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+5379
+3455
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+‘2008
+UNCONTROLLED IF PRINTED Page No: 61 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+5379
+_{ Formatted: Font color: Black B
+
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+
+Version: Vo3Vi.0
+
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 62 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+Test
+
+TestName
+
+Description HME
+
+'M08/07/06
+
+NFUN_SVC_A056_Hydra Combined Banking
+Contracted Peak Hour
+
+“<OBJECTIVE>The combined Network Banking Service H
+(CAPO, LINK and A&L) must achieve 618,240 business
+transactions in a peak hour with acceptable response
+times (to be defined).The limits ofthe individual Financial
+Institutions should not exceeded as part of this
+‘combination which are:484,174 CAPO transaction97,750
+LINK transactions36,316 A&L transactionsThe transaction
+rates should be at a mix of 95% Horizon / 5% HNG-X and
+also at a mix of 50% Horizon / 50% HNG-
+X.<PREREG><NOTES>
+
+THOBIO7IOB
+
+NFUN_SVC_A0S7_Hyara Combined Banking
+Design Limit Peak Hour
+
+OBJECTIVES 7
+"The combined Network Banking Service (CAPO, LINK
+‘and A&L) must achieve 741,888 business transactions in @
+peak hour with acceptable response times (to be defined).
+The limits of the individual Financial Institutions should not
+exceeded as part ofthis combination which are:
+
+‘581,009 CAPO transaction
+
+117,300 LINK’ transactions
+
+43,579 ABL transactions
+
+Tre transaction rates should be at a mix of 85% Horizon /
+5% HNG-X and also at @ mix of 50% Horizon / 50% HNG-
+x.
+
+FUJ00117498
+FUJ00117498
+
+UNCONTROLLED IF PRINTED
+
+2008
+Page No: 63 of 112
+
+“<PREREG>
+<noTes>
+{ Formatted: Font calor Back
+SyrGR Fjisu Sonics Ud 2007 CONNERCINC N CONFIDENCE Rat TS/SOTITPOO0S
+Version: voavio
+Date 2.sep.
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test] Test are Description HIML I Req
+Group D
+'MOB/07108 I NFUN_SVG_A088_Hydra Combined Banking I <OBJECTIVE> H I 5485
+Contraciod Peak 5 Minutes The combined Network Banking Service (CAPO, LINK and
+
+ASL) must achieve 204 bushess transactons per second
+
+with acceptable response times (to be defined).
+
+The nts ofthe nda Financial nstutons shoud not
+
+txceaded as part of ts combination which ae
+
+160 GAPO transactons por second
+
+32. LINK transactions per second
+
+12 aL. transotions por second
+
+The transaction rates shuld be al mix of 85% Horizon /
+
+S90 HNG-X and alo at @ mix of 90% Horizon / 09% HNG-
+
+x
+
+<PRERE®
+
+<NoTES>
+‘M08/07/06 I NFUN_SVC_A059_Hydra Combined Banking I <OBJECTIVE> H I 5379
+
+Design Limi Peak 5 Minutes The combined Network Banking Service (CAPO, LINK and
+
+A&L) must achieve 245 business transactions per second
+
+with aoceptable response times (tbe detned), Alowing
+
+foraclual per second posh, afte of 300 ips must be
+
+ocheved
+
+The lt of the individual Financial Insitutions shoud not
+
+be etcoutod os pat of es combination which a
+
+250 CAPO transactions per second
+
+51. LINK transacions per second
+
+19 ABL.transatone per second
+
+The transacton rates shouldbe al 2 mix of 85% Horizon
+
+S90 HNG-X and aio at 9x of 90% Hoizon / 90% HNG-
+
+x
+
+<PRERE@
+
+«ores»
+
+{ Formatted: Font ctor Black 7)
+pyTah Fuiau Sevsces Ud 2007 ‘CONMERCIALIN CONFIDENCE Rf TSTSOTTPOOGS
+
+UNCONTROLLED IF PRINTED
+
+Version: 0.31.0
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 64 of 112
+
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+381
+_{ Formatted: Font color: Black B
+
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+
+Version: Vo3Vi.0
+
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 65 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+5379
+35
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 66 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+5379
+_{ Formatted: Font color: Black B
+
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+
+Version: Vo3Vi.0
+
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 67 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+5431
+3370
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 68 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan -
+FU} ITSU COMMERCIAL IN CONFIDENCE
+5435
+379
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Re TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 69 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X PerformancelStress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+NFUN_SVC_AOTI_Hydra ETU Contracted I <OBJECTIVE>
+Peak Hour The ETU Service must achieve 17,254 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+The transacton rates should be ata mix of 95% Horizon /
+59% HNG-X and also ata mix of 0% Horizon / 50% HNG-
+x
+_{ Formatted: Font color: Black B
+‘SCopyra Fujisu Services Ud 2007 ‘COMMERCIAL IN CONFIDENCE Ra TSTISOTATEIOOOS
+Version: Vo3Vi.0
+Date ‘MAY-200812-SEP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 70 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+Test
+
+TestName
+
+Description
+
+Moe
+
+oe
+
+NFUN_SVC_A012_Hydra ETU Design Limit
+Peak Hour
+
+NFUN_SVC_A013_Hydra ETU Contracted
+Peak 5 Minutes
+
+“<OBJECTIVE>
+‘The ETU Service must achieve 20,705 business
+transactions in a peak hour with acceptable response
+times (to be defined),
+
+The transaction rates should be at a mix of 95% Horizon /
+‘5% HNG-X and also at a mix of 50% Horizon / 50% HNG-
+x.
+
+<PREREQ>
+
+<NOTES>
+
+<OBJECTIVE>
+The ETU Service must achieve § business transactions
+pper second during a peak 5 minute period with acceptable
+response times (to be defined).
+
+The transaction rates should be at a mix of 95% Horizon /
+5% HNG-X and also at a mix of 50% Horizon / 50% HNG-
+x.
+
+<PREREQ>
+
+<NOTES>
+
+THe
+
+NFUN_SVC_A014 Hydra ETU Design Limit
+Peak 5 Minutes
+
+OBJECTIVES
+‘The ETU Service must achieve 6 business transactions
+per second during a peak 5 minute period with acceptable
+response times (to be defined). Allowing for actual per
+‘second peak, arate of & tps must be achieved
+
+The transaction rates should be at a mix of 95% Horizon /
+‘5% HNG-X and also at a mix of 50% Horizon / 50% HNG-
+x.
+
+<PREREQ>
+
+<NOTES>
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Font calor Back
+
+pyight Fujitsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0-3)
+
+V0
+Date: 12-SEP.
+
+2008
+Page No: 71 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FU} ITSU COMMERCIAL IN CONFIDENCE
+NFUN_SVC_AOIT Hydra T&T Contracted I <OBJECTIVE>
+Peak Hour ‘The T&T Service must achieve 42,500 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+The transaction rates should be at a mix of 95% Horizon /
+5% HNG-X and also at a mix of 80% Horizon 50% HNG-
+x
+<PREREG>
+<NOTES>
+m0 NFUN_SVG_ADi2_Hydia TET Design Peak I =OBJECTIVE> uM I 3370
+Hour ‘The T&T Service must achieve 51,000 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+The transaction rates should be at a mix of 95% Horizon /
+5% HNG-X and also at a mix of 80% Horizon / 50% HNG-
+x
+<PREREG
+<NOTES>
+£ Font color: Black J
+‘@ Copyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTTPI0003
+Version: Vo-3Vi.0
+Date: Mi 12.5EP.
+
+2008
+UNCONTROLLED IF PRINTED Page No: 72 of 112
+FUjiTSU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+TAT Contracted
+
+M10 NFUN_SVC_AO13_Hydr
+Peak 5 minutes
+
+“<OBJECTIVE>
+The T&T Service must achieve 11.66 business
+transactions per second in a peak § minute period with
+acceptable response times (to be defined).
+
+The transaction rates should be at a mix of 95% Horizon /
+‘5% HNG-X and also at a mix of 50% Horizon / 50% HNG-
+x.
+
+<PREREQ>
+
+<NOTES>
+
+5435,
+
+Mio NFUN_SVC_A014 Hydra T&T Design Peak 5
+minutes
+
+~<OBJECTIVES
+The TAT Service must achieve 16 business transactions
+per second in a peak § minute period with acceptable
+response times (to be defined). Allowing for actual per
+‘second peak, arate of 21 tps must be achieved.
+
+The transaction rates should be at a mix of 05% Horizon /
+5% HNG-X and also at mix of 50% Horizon / 50% HNG-
+x.
+
+<PREREQ>
+
+<NOTES>
+
+FUJ00117498
+FUJ00117498
+
+_{ Formatted: Font color: Black
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+Version: 0.31.0
+Date: MMAY-200812-SEP-
++2008
+UNCONTROLLED IF PRINTED Page No: 73 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+TestName
+
+Description
+
+NFUN_SVC_A001_HYDRA A&L TES Rec
+
+“<OBJECTIVE>
+‘The fle generation process on the TES system -
+TES_AL_REC_RUN, TESC332, for a peak day, completes
+within an acceptable time frame, well within the target
+delivery time to the Fl of 00:10.
+
+Document DES/APP/HLD/0052 states that file generation
+time is estimated to take
+
+Peak Day Volume(Design Limit) = 123386 transactions
+File generation time - 3 minutes
+
+<PREREQ>
+4) Sufficient relevant transactions have been generated in
+2 peak days test load to generate the required no. of TES
+‘AL transactions. (PA/PER/O33 - Peak Day Baseline:-
+90992 transactions).
+
+<NoTES>
+Will be run as part of M1 (Hydra volume Monday schedule)
+
+HME
+
+FUJ00117498
+FUJ00117498
+
+WOT
+
+NFUN_SVC_A002_HYDRA AL TES Ree
+coe
+
+OBJECTIVES
+‘The time taken for agent process ‘agent_nbs_rec’ to
+process the A&L Rec file on the Connect Direct gateway,
+for a peak days transactions, is within acceptable limits,
+‘and completes well within the delvery tothe Fl target
+deadline of 00.10.
+
+<PREREQ>
+4). That there are a peak days no. of transactions present
+inthe A&L Rec fie on the Connect Direct Gateway. (90992
+transactions),
+
+<NOTES>
+Will be run as part of Mi (Hydra volume Monday schedule)
+
+DESIAPPYHL.D/0052 states that “Test runs have provided
+estimates so that for 2 milion rows using 4 threads @
+decryption time of about 50 minutes is possible”
+
+{ Formatted: Font ctor Black 7)
+
+pyight Fujitsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 74 of 112
+
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+TestName
+
+Description
+
+NFUN_SVC_A003_HYDRA CAPO TES Rec
+
+“<OBJECTIVE>
+‘The fle generation process on the TES system ~
+TES_CAPO_REC_RUN, TESC332, for a peak day,
+completes within an acceptable time frame, well within the
+target delivery time to the Fl of 00:10.
+
+Document DES/APP/HLD/0052 states that file generation
+time is estimated to take
+
+Peak Day Volume(Design limit) = 3331423 transactions
+File generation time - 60 minutes
+
+<PREREQ>
+2) Sufficient transactions have been generated in a peak
+days test load to generate the required no. of TES CAPO
+transactions. (PAPE! Peak Day Baseline:- 1529839
+transactions).
+
+<NOTES>
+Will be run as part of M1 (Hydra volume Monday schedule)
+
+HIML
+
+FUJ00117498
+FUJ00117498
+
+NFUN_SVC_A004_HYDRA CAPO TES Ree
+coe
+
+~<OBJECTIVES
+‘The time taken for agent process ‘agent_nbs_rec' to
+process the CAPO Rec file on the Connect Direct
+gateway, for a peak days transactions, is within acceptable
+limits, and completes well within the delivery to the Fl
+target deadine of 00.10,
+
+<PREREQ>
+2). That there are a peak days no. of transactions present
+inthe CAPO Ree file on the Connect Direct Gateway.
+(1529838 transactions)
+
+<NOTES>
+Will be run as part of M1 (Hydra volume Monday schedule)
+
+DES/APP/HL.D/0052 states that “Test runs have provided
+estimates so that for 2 milion rows using 4 threads a
+decryption time of about 50 minutes is possible”
+
+5435
+
+_[ Formatted: Font clo Back 7)
+
+SCopyright Fujisu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref
+
+Version:
+
+TSTSOTHTPIOO0S
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 75 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+TestName
+
+Description
+
+NFUN_SVC_A005_HYDRA LINK TES Rec
+cos
+
+“<OBJECTIVE>
+The time taken for agent process ‘agent_nbs_rec' to
+process the Link LREC fle on the Connect Direct gateway,
+for @ peak days transactions, is within acceptable limits,
+and completes well within the delivery toTES target
+deadline of 02.02am.
+
+=<PREREQ>
+a). That there are a peak days no. of relevant transactions
+present in the Link LREC file on the Connect Direct
+Gateway. (202849 transactions).
+
+»). For transactions to be included in an LREC file, they
+‘must be of the correct transaction type:- 63 for instance. A
+type 64 will not be included,
+
+¢) The curent mechanism for creating the LREC file is
+‘based on extracting C1 messages from the bulker sig files
+and then fitering out the required records. For HNG-X,
+records will need to be extracted from the branch database
+‘and amalgamated with the files from Horizon to produce
+Hydra fie.
+
+<NOTES>
+Will be run as part of M1 (Hydra volume Monday schedule)
+
+DES/APP/HLD/0052 states that "The CDG conversion
+process is insignificant since the hash process has been
+estimated to process 200,000 values in 0.5 seconds on a
+test run”
+
+HIML
+
+OT NFUN_SVC_A001_HNG-X Volume Monday
+
+Schedule
+
+OBJECTIVES
+To exercise data centre processing for a peak day volume
+of representative transactions
+
+<PREREQ>
+
+<NOTES>
+
+x
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Font calor Back
+
+SCopyright Fujisu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE
+
+Ref
+Version:
+
+TSTSOTHTPIOO0S
+vosvi.0
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 76 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+NFUN_SVC_A001_HNG-X DCS Contracted I <OBJECTIVE>
+
+Peak Hour ‘The DC Service must achieve 79,368 business
+transactions in a peak hour with acceptable response
+
+times (to be defined).
+
+=<PREREQ>
+
+<NOTES>
+
+x05 NFUN_SVC_A0G2_HNG-XDCS Design Limi I <OBJECTIVE> M379
+Peak Hour ‘The DC Service must achieve 95,242 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+
+<PREREQ>
+
+<NOTES>
+
+x05 NFUN_SVC_A003_HNG-XDGS Contracted I <OBJECTIVE> I S35
+
+Peak 5 Minutes The DC Service must achieve 22 business transactions
+pper second during a peak 5 minute period with acceptable
+response times (to be defined).
+
+<PREREG>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 77 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+Peak Hour
+
+The CAPO Service must achieve 484,174 business
+transactions in a peak hour with acceptable response
+times (to be defined),
+
+<PREREQ>
+
+<NOTES>
+
+Test TestName Description HIML I Req,
+Group 10
+X05 NFUN_SVC_A004_HNG-XDCS Design Limt I <OBJECTIVE> M I 8379
+Peak 5 Minutes The DC Service must achieve 26 business transactions
+
+pper second during a peak 5 minute period with acceptable
+
+response times (to be defined). Allowing for actual per
+
+second peak, arate of 34 tps must be achieved
+
+<PREREQ>
+
+<NOTES>
+X05 NFUN_SVC_A005_HNG-XDCS Stress Test I <OBJECTIVE> T
+
+‘The business transaction rate is uniformally increased until,
+
+the service can no longer be sustained at acceptable
+
+response times (to be defined) or complete failure of
+
+<PREREG>
+
+<NOTES>
+
+Candidate for Phase 2 as historical peak volumes are well
+
+below design limt
+0S NFUN_SVC_A021_HNG-X CAPO Contracted I <OBJECTIVE> I Saat
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Font calor Back
+
+SCopyright Fujisu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 78 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+NFUN_SVC_A022_HNG-XCAPO Design I <OBJECTIVE> $379
+Limit Peak Hour ‘The CAPO Service must achieve 581,009 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+=<PREREQ>
+<NOTES>
+x06 NFUN_SVC_A023_HNG-X CAPO Contracted I <OBJECTIVE> M I 5435
+Peak 5 Minutes The CAPO Service must achieve 160 business
+transactions per second during a peak 5 minute period
+with acceptable response times (to be defined)
+<PREREQ>
+<NOTES>
+06 NFUN_SVC_A024_HNGXCAPO Design I <OBJECTIVE W I Sa7o
+Limit Peak 5 Minutes The CAPO Service must achieve 192 business
+transactions per second during a peak 5 minute period
+with acceptable response times (to be defined). Allowing
+for actual per second peak, a rate of 250 tps must be
+achieved.
+<PREREG>
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
++2008
+UNCONTROLLED IF PRINTED Page No: 79 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+FUJ00117498
+FUJ00117498
+
+UNCONTROLLED IF PRINTED
+
+2008
+Page No: 80 of 112
+
+Test TestName Description HIML I Req
+Group 1D
+x06 NFUN_SVC_A025_HNG-X CAPO Stress Test I <OBJECTIVE> L
+
+‘The business transaction rate is uniformally increased until
+
+the service can no longer be sustained at acceptable
+
+‘esponse times (to be defined) or complete failure of
+
+service,
+
+<PREREQ>
+
+<NOTES>
+
+Candidate for Phase 2 as historical peak volumes are well
+
+below design limit
+‘08/0706 I NFUN_SVC_A036_HNG-X Combined <OBJECTIVE> w I S43
+
+Banking Contracted Peak Hour ‘The combined Network Banking Service (CAPO, LINK and
+
+‘ABL) must achieve 618,240 business transactions in a
+
+peak hour with acceptable response times (to be defined).
+
+‘The limits of the individual Financial Institutions should not
+
+‘exceeded as part of this combination which are:
+
+484,174 CAPO transaction
+
+97,750 LINK transactions.
+
+36,316 ABL transactions.
+
+<PREREGQ>
+
+<NOTES>
+
+{ Formatted: Font color: Black
+‘BCopyright Fujitsu Services Ltd 2007 ‘COMMERCIAL IN CONFIDENCE Ref; TSTISOTIHTP/OOOS 7
+Version: VO.3V1.0
+Date: PS-MAY-2008 12-SEP.
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+
+COMMERCIAL IN CONFIDENCE
+
+‘08/07/08 NFUN_SVC_A037_HNG-X Combined
+Banking Design Limit Peak Hour
+
+“<OBJECTIVE>
+
+‘The combined Network Banking Service (CAPO, LINK and
+‘ABL) must achieve 741,888 business transactions in @
+peak hour with acceptable response times (to be defined).
+The limits ofthe individual Financial Institutions should not
+exceeded as part ofthis combination which are:
+
+$581,009 CAPO transaction
+
+117,300 LINK’ transactions
+
+43,579 A&L transactions
+
+<PREREQ>
+
+<NOTES>
+
+$379
+
+‘08/07/08 I NFUN_SVG_A036_HNG-X Combined
+Banking Contracted Peak 5 Minutes
+
+~<OBJECTIVES
+
+‘The combined Network Banking Service (CAPO, LINK and
+‘ABL) must achieve 204 business transactions per second
+with acceptable response times (to be defined).
+
+The limits ofthe individual Financial Institutions should not
+exceeded as part ofthis combination which are:
+
+160 CAPO transactions per second
+
+32 LINK transactions per second
+
+12 ABL transactions per second
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE
+
+TSTSOTHTPIOO0S
+Version: 0.31.0
+Date:
+
+2008
+Page No: 81 of 112
+
+12-SEP.
+
+FUJ00117498
+FUJ00117498
+
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+Test
+
+TestName
+
+Description
+
+"08/07/08
+
+NFUN_SVC_A039_HNG-X Combined
+Banking Design Limit Peak 5 Minutes
+
+“<OBJECTIVE>
+"The combined Network Banking Service (CAPO, LINK
+‘and A&L) must achieve 245 business transactions per
+‘second with acceptable response times (to be defined).
+Allowing for actual per second peak, a rate of 320 tps must
+bbe achieved,
+
+The limits ofthe individual Financial Institutions should not
+exceeded as part ofthis combination which are:
+
+250 CAPO transactions per second
+
+51. LINK transactions per second
+
+10 A8L transactions per second
+
+<PREREQ>
+
+<NOTES>
+
+HME
+
+5379
+
+KOS TIO
+
+NFUN_SVC_A0@#_HNGX Combined
+Banking Stress Test
+
+OBJECTIVES
+The business transaction rate is uniformally increased until,
+the service can no longer be sustained at acceptable
+response times (to be defined) or complete failure of,
+service.
+
+The individual rates of the Financial Institutions (CAPO,
+LINK and A&L) should be in proportion ofthe expected
+volumes.
+
+<PREREG>
+
+<NOTES>
+Candidate for Phase 2 as historical peak volumes are well
+below design limt
+
+{ Formatted: Font calor Back
+
+FUJ00117498
+FUJ00117498
+
+pyight Fujitsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 82 of 112
+
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+x07 NFUN_SVC_A026_HNG-X LINK Contracted I <OBJECTIVE> 5431
+Peak Hour The LINK Service must achieve 07,750 business
+transactions in a peak hour with acceptable response,
+times (to be defined).
+=<PREREQ>
+<NOTES>
+x07 NFUN_SVC_A027_HNG-XLINK Design Limit I <OBJECTIVE> L_ I 3379
+Peak Hour The LINK Service must achieve 117,300 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+<PREREQ>
+<NOTES>
+x07 NFUN_SVC_A028_HNG-X LINK Contracted I <OBJECTIVE> T_ I sa35
+Peak 5 Minuies ‘The LINK Service must achieve 32 business transactions
+per second during a peak 5 minute period with acceptable
+response times (to be defined).
+<PREREG>
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 83 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+x07 NFUN_SVC_A029_HNG-X LINK Design Limit I <OBJECTIVE> $379
+Peak 5 Minutes The LINK Service must achieve 39 business transactions
+per second during a peak 5 minute period with acceptable
+response times (to be defined). Allowing for actual per
+second peak, arate of 51 tps must be achieved.
+<PREREQ>
+<NOTES>
+x07 NFUN_SVC_A030_HNG-X LINK Stress Test I <OBJECTIVE> v
+‘The business transaction rate is uniformally increased until,
+the service can no longer be sustained at acceptable
+response times (to be defined) or complete failure of,
+<PREREQ>
+<NOTES>
+Candidate for Phase 2 as historical peak volumes are well
+below design limt
+OS NFUN_SVC_A0S1_HNG-XAEL Contracted I <OBJECTIVE> T_I Saar
+Peak Hour ‘The A&L Service must achieve 36,316 business
+‘transactions in a peak hour with acceptable response
+times (to be defined).
+<PREREQ>
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+‘2008
+UNCONTROLLED IF PRINTED Page No: 84 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+NFUN_SVC_A032_HNG-X AL Design Limit I <OBJECTIVE> $379
+Peak Hour ‘The A&L Service must achieve 43,579 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+=<PREREQ>
+<NOTES>
+x08 NFUN_SVC_A033_HNG-XA&L Contracted I <OBJECTIVE> Uses
+Peak 5 Minutes The A&L Service must achieve 12 business transactions
+pper second during a peak 5 minute period with acceptable
+response times (to be defined).
+<PREREQ>
+<NOTES>
+x08 NFUN_SVC_A034_HNG-XAaL Dasign Limit I <OBJECTIVE> L_ I 3379
+Peak 5 Minutes ‘The CAPO Service must achieve 14 business transactions
+pper second during a peak 5 minute period with acceptable
+response times (to be defined). Allowing for actual per
+second peak, arate of 19 tps must be achieved.
+<PREREQ>
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 85 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+NFUN_SVC_A035_HNG-XA&L Stress Test I <OBJECTIVE>
+
+The business transaction rate is uniformally increased until,
+the service can no longer be sustained at acceptable
+response times (to be defined) or complete failure of
+service.
+
+<PREREQ>
+
+<NOTES>
+Candidate for Phase 2 as historical peak volumes are well
+below design limt
+
+Oo NFUN_SVC_A001_HNG-XETU Contracted I <OBJECTIVE> I Saat
+Peak Hour ‘The ETU Service must achieve 17,254 business
+transactions in a peak hour with acceptable response
+times (to be defined),
+
+<PREREQ>
+
+<NOTES>
+
+xoo NFUN_SVC_A002_HNG-XETU Design Limit_I <OBJECTIVE> MW] 3379
+Peak Hour The ETU Service must achieve 20,705 business
+transactions in a peak hour with acceptable response
+times (to be defined),
+
+<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+‘2008
+UNCONTROLLED IF PRINTED Page No: 86 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test] Test are Description HIML I Req
+Group D
+X08 NFUN.SVC_A003_HNGXETU Contracted I <OBJECTIVE> wm I 5435
+Peak SMinies The ETU Service must achive S business transactions
+
+per second dunnga peak S minute period wih acceptable
+
+response times (0 be dened).
+
+<PRERE@
+
+<NoTEs>
+309 NFUNLSV6-AGO#_FING-XETU Design Lt} “OBJECTIVES a) S78
+
+oak 5 Mines The ETU Service must achive 6 business transactions
+
+Dor second dunnga peak 5 minute prod wih acceptable
+
+Foeporse times (tobe defined). Alowing fractal por
+
+second peak, a fate of pe must be achioved
+
+<PRERE@
+
+<noTes>
+308 HONS VE_ROOS ANG XETU Siess Teat I “OBIECTIVES T
+
+The business transaction rate unformalyineressed unt
+
+tho serie can no longer be sustained at sccapable
+
+Tesporse tines (0 be defined or complete fle of
+
+<PRERE®
+
+<noTes>
+
+Candiate for Phase 20s historical peak volumes are well
+
+bovow deen rt
+
+{ Formatted: Font ctor Black 7)
+Sopra Fan Services US 2007 COMMERCIAL IN CONFIDENCE Ref TSTSOTTPOOGS 7
+Version: VOSVIO
+
+UNCONTROLLED IF PRINTED
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 87 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+x10 NFUN_SVC_A001_HNG-X T&T Contracted I <OBJECTIVE>
+Peak Hour The T&T Service must achieve 42,500 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+
+=<PREREQ>
+
+<NOTES>
+
+xi0 NFUN_SVC_A002_HNG-X T&T Dasign Peak I <OBJECTIVE> M I 8379
+
+Hour ‘The T&T Service must achieve 51,000 business
+transactions in a peak hour with acceptable response
+times (to be defined).
+
+<PREREQ>
+
+<NOTES>
+
+xI0 NFUN_SVC_A003_HNG-X T&T Contracted I <OBJECTIVE> MW) S35
+Peak 5 minutes The T&T Service must achieve 11.66 business
+transactions per second in a peak 5 minute period with
+acceptable response times (to be defined).
+
+<PREREG>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 88 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+TestName
+
+Description
+
+NFUN_SVC_A004_HNG-X T&T Design Peak
+5 minutes
+
+“<OBJECTIVE>
+The T&T Service must achieve 16 business transactions
+per second in a peak § minute period with acceptable
+response times (to be defined). Allowing for actual per
+second peak, arate of 21 tps must be achieved
+
+<PREREQ>
+
+<NOTES>
+
+NFUN_SVC_A005_HNG-X T&T Stress Test
+
+<OBJECTIVES
+"The business transaction rate is uniformally increased
+Lunt the service can no longer be sustained at acceptable
+response times (to be defined) or complete failure of,
+service.
+
+<PREREQ>
+
+<NOTES>
+Candidate for Phase 2 as historical peak volumes are well
+below design limt
+
+NFUN_SVC_A00T_BAL Design Lint
+Performance
+
+OBJECTIVES
+‘The BAL must support 4028386 online service calls in a
+peak hour (1119 tps), and 1128 online service calls per
+‘second in a peak 5 minute period. Allowing for actual per
+Second peak, arate of 1468 tps must be achieved.
+
+Within the overall online service call limits, the BAL must
+‘support 3520717 (978 tps) transaction volumes in a peak
+hhour and 1068 transaction volumes per second in @ peak 5
+‘minute period. Allowing for actual per second peak, a rate
+of 1388 tps must be achieved.
+
+<PREREQ>
+
+<NOTES>
+The term "Transactional volumes” defines all Service calls
+that are written within @ basket as a result of branch
+trading (ie.. no reports, help, user management etc)
+
+Using the correct mix of service calls / transactions will
+simultaneously test the BAL and BRDB
+
+5431
+Sart
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Font calor Back
+
+‘SCopyright Fujtsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE
+
+Ref
+Version:
+
+TSTSOTHTPIOO0S
+
+Date: (BS-MAY-2008:12-SEP.
+
+2008
+Page No: 89 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+x12 NFUN_SVC_A001_8RDB Design Limit “<OBJECTIVE>
+Performance ‘The BRDB must support 1068 business transactions per
+‘second in a peak 5 minute period with acceptable
+response times (between 50ms and 100ms for atypical
+transaction). Allowing for actual per second peak, a rate of
+11388 tps must be achieved.
+
+$379
+
+<PREREQ>
+
+<NOTES>
+Using the correct mix of service cals / transactions will
+simultaneously test the BAL and BRDB
+
+xT NFUN_SVC_A002_BAL Stress Test OBJECTIVES 4
+
+The online service call rate is uniformally increased until
+the service can no longer be sustained at acceptable
+response times (to be defined) or complete failure of
+service.
+
+<PREREQ>
+<NOTES>
+xT2 NFUN_SVC_A002_BRDB Stress Test ~<OBJECTIVE> 4
+Performance The business transaction rate is uniformally increased until,
+
+the service can no longer be sustained at acceptable
+response times (to be defined) or complete failure of
+
+=<PREREQ>
+
+<NOTES>
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
+2008
+UNCONTROLLED IF PRINTED Page No: 90 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+FUJ00117498
+FUJ00117498
+
+Test I Test Name Deserpion HIML I Rea
+Group 1D
+x1 NFUN_SVC_AOOi_LogonLogoff Contracted I <OBJECTIVE> L_ I 543s
+Peak 5. ites ‘A peak 5 minute peak of 100 logon/logoffs per second $438
+mist be achievable 5474
+-<PREREG>
+<NOTES>
+xT, NFUN_SVC_A002_Logon-Logoff Design Limit I <OBJECTIVE> v 5379
+Peak S minutes {peak 5 minute peak of 120 lagoniogtts per second 5498
+‘must be achievable. Allowing for actual per second peak, a 5474
+{ate of 200 session establishments must be achieved
+“<PREREG>
+<NOTES>
+xi NFUN_SVC_A003_Logon-Logof Stress Test I <OBJECTIVES t
+‘The logor/ogof rate is unformally increased until the
+semce can no longer be sustained at acceptable response
+times (to be defined) or compete failure of service.
+<PREREG>
+<NOTES>
+xs NFUN_SVC_A004_Logon-Logoff Maximun <OBJECTIVE> U 5435
+Concurrent sessions ‘The Branch Access Network must support a design limit of
+234,054 concurrent connections
+“<PREREG>
+-<NOTES>
+{ Formatted: Font color: Black 5)
+pyrght Fujtsu Services Ud 2007 ‘CONIMERCIAL IN CONFIDENGE Rat TSTSOTIATPIOODS
+Version: Vo3Vi.0
+Date: Mav-2008 12-SEP-
+2008
+UNCONTROLLED IF PRINTED Page No: 91 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+Stress Test
+
+‘The business transaction rate is uniformally increased until,
+the service can no longer be sustained at acceptable
+response times (to be defined) or complete failure of
+
+<PREREQ>
+
+<NOTES>
+Phase 2
+
+Test TestName Description HIML I Req,
+Group 10
+x14 NFUN_SVC_A001_HNG-X Help Service “<OBJECTIVE> L I 543s
+Contracted Peak § Minutes ‘The Help Service must achieve 50 business transactions 5438
+pper second during a peak 5 minute period with acceptable 5475
+response times (to be defined), 5476
+=<PREREQ>
+<NOTES>
+By using the right mix of service calls / transactions, these
+tests can be covered by the BAL testing (X11)
+xia NFUN_SVC_A002_HINGX Help Service OBJECTIVES T_ I 3378
+Design Limit Peak 5 Minutes The Help Service must achieve 60 business transactions 5438
+pper second during a peak 5 minute period with acceptable 8475
+response times (to be defined). Allowing for actual per 5476
+second peak, arate of 78 tps must be achieved
+<PREREQ>
+<NOTES>
+By using the right mix of service calls / transactions, these
+tests can be covered by the BAL testing (X11)
+xt NFUN_SVC_A0G3_HING-X Help Service OBJECTIVES T
+
+FUJ00117498
+FUJ00117498
+
+{ Formatted: Font calor Back
+
+SCopyright Fujisu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTSOTHTPIOO0S
+
+Version: 0.31.0
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 92 of 112
+FUjiTsU
+
+HNG-X Performance/Stress High Level Test Plan
+COMMERCIAL IN CONFIDENCE
+
+‘second peak, arate of 250 tps must be achieved
+
+<PREREQ>
+
+<NOTES>
+By using the right mix of service calls / transactions, these
+tests can be covered by the BAL testing (X11)
+
+Test TestName Description HIML I Req,
+Group 10
+x01 NFUN_SVC_A001_HNG_XA&LTESRec I <OBJECTIVE> H I 5435
+‘The fle generation process on the TES system -
+TES_AL_REC_RUN, TESC332, for a peak day, completes
+within an acceptable time frame, well within the target
+delivery time to the Fl of 00:10.
+Document DES/APP/HLD/0052 states that file generation
+time is estimated to take
+Peak Day Volume(Design Limit) = 123386 transactions
+File generation time - 3 minutes
+<PREREQ>
+2) Sufficient transactions have been generated in a peak
+days test load to generate the required no. of TES ABL.
+transactions. (PAPERI033 - Peak Day Baseline:- 90002
+transactions),
+<NOTES>
+Will be run as part of X1 HNG-X volume Monday
+schedule)
+ar TFUN_SVC_A001_HNG-X Reports OBJECTIVES I S35
+Contracted Peak § Minutes Reports must achieve 125 business transactions per 5438
+second during a peak 5 minute period with acceptable 5474
+response times to be defined) 5475
+<PREREQ>
+<NOTES>
+By using the right mix of service calls / transactions, these
+tests can be covered by the BAL testing (X11)
+x NFUN_SVC_A002_HNG-X Reports Design I <OBJECTIVE> Mm I 3379
+Limit Peak § Minutes Reports must achieve 150 business transactions per 5438
+‘second during a peak § minute period with acceptable 5474
+response times (to be defined). Allowing for actual per 5475
+
+FUJ00117498
+FUJ00117498
+
+stted: Font color: Black
+
+pyight Fujitsu Services Lid 2007
+
+UNCONTROLLED IF PRINTED
+
+‘COMMERCIAL IN CONFIDENCE Ref TSTISOTHTPIO00S
+
+Version: 0.31.0
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 93 of 112
+
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+NFUN_SVC_A003_HNG-X Reports Service I <OBJECTIVE>
+
+‘Stress Test ‘The business transaction rate is uniformally increased until,
+the service can no longer be sustained at acceptable
+
+response times (to be defined) or complete failure of
+
+service.
+
+<PREREQ>
+
+<NOTES>
+Phase 2
+
+x01 NFUN_SVC_A002_HNG_XA&LTESRec I <OBJECTIVE> H I 5435
+cos The time taken for agent process ‘agent_nbs_rec' to
+
+process the A&L Rec fle on the Connect Direct gateway,
+
+for a peak days transactions, is within acceptable limits,
+
+and completes well within the delivery tothe Fl target
+
+deadline of 00.10.
+
+<PREREQ>
+
+2). That there are a peak days no. of transactions present
+inthe A&L Rec fie on the Connect Direct Gateway. (90992
+transactions),
+
+<NOTES>
+Will be run as part of X1 HNG-X volume Monday
+schedule)
+
+DESIAPP/HL.D/0052 states that “Test runs have provided
+estimates so that for 2 milion rows using 4 threads @
+decryption time of about 50 minutes is possible”
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
++2008
+UNCONTROLLED IF PRINTED Page No: 94 of 112
+FUJ00117498
+
+FUJ00117498
+HNG-X Performance/Stress High Level Test Plan
+FUJITSU COMMERCIAL IN CONFIDENCE
+Test Testa Desertion HM. I Req
+Group fo
+X01) NFUN_SV_A008_HNG_XCAPOTES Rec I <OBJECTIVE> I 540s
+Tho fle ganeratonproeas on the TES system
+TES.CABO, REC-RUN, TECHS for 8 peek doy,
+Completes wih a acceptable ine fame, wol vain the
+target devon tine tthe Ff 0070
+Document DESIAPPYHLD/002 states tha fle generation
+Srateaticed
+Posk bay Volne(Deaig ii) = 9381428 ransacons
+Fie generation hme 8 rus
+<PREREG
+Gatien alaanapencintiaceale
+ap et ad to gonorte ho roqutos ne FTES CAPO
+ttansactone:(PABEROS3 Peak Day aselne 1520029
+foneasone
+<noTEs»
+Wile run a part of Xt HNG.X volume Monday
+sched)
+X01] RFUR_SV0_AUDY_ANG_K CAPO TES Res <OBIECTVES SR
+coe The tne len for ager process ‘agent_nbs_ec! to
+process the CAPO is a on the Comet Dect
+sy apt pth yn <a
+far atd compltce wal win the dohvery tothe
+tage’ desc of 0.10,
+<PREREG>
+a). That there are @ peak days no. of transactions present
+inte CAPO Ros fe on tne Comedt Diet
+(1529839 transactions).
+<noTEs>
+Witte run 2 prt of Xt HNG X volume Monday
+Schedule)
+DESIAPPIHLD/062 states that "Tet runs have provided
+tettratos so that for 2 milion rows using teats a
+Sup ie eae 6S cates pele”
+[ Formatted: Fort calor: Black }
+right Fasu Senices Ud 2007 CONNTERCIALN CONFIDENCE Raf. TST SOTTTPODDS
+Version: VOaviLO
+
+UNCONTROLLED IF PRINTED
+
+Date: (PE-MAY-200812-SEP.
+
+2008
+Page No: 95 of 112
+FUJ00117498
+FUJ00117498
+
+HNG-X Performance/Stress High Level Test Plan @S
+FU ITSU COMMERCIAL IN CONFIDENCE
+
+x01 NFUN_SVC_A005_HNG_XLINKTESRec I <OBJECTIVE> 5435,
+cos The time taken for agent process ‘agent_nbs_rec' to
+
+process the Link LREC fle on the Connect Direct gateway,
+
+for @ peak days transactions, is within acceptable limits,
+
+and completes well within the delivery toTES target
+
+deadline of 02.02am.
+
+=<PREREQ>
+a). That there are a peak days no. of relevant transactions
+present in the Link LREC file on the Connect Direct
+Gateway. (202849 transactions).
+
+»). For transactions to be included in an LREC fie, they
+‘must be of the correct transaction type:- 63 for instance. A
+‘type 64 will not be included.
+
+) A mechanism needs to be developed to extract C1
+records from the Branch database in a similar fashion to
+the way C1 messages are extracted from the Riposte
+bukkers.
+
+<NOTES>
+Will be run as part of X1 HNG-X volume Monday
+schedule)
+
+DES/APP/HLD/0052 states that “The CDG conversion
+process is insignificant since the hash process has been
+‘estimated to process 200,000 values in 0.5 seconds on a
+test run’
+
+‘ECopyright Fujtsu Services Lid 2007 ‘COMMERCIAL IN CONFIDENCE TSTSOTHTPIOO0S
+Version: 0.31.0
+
+Date:
+
+12-SEP.
++2008
+UNCONTROLLED IF PRINTED Page No: 96 of 112

@@ -1,0 +1,187 @@
+FUJ00152563
+FUJ00152563
+
+To: Thomas Penny _ GRO
+
+Subject: FW: Gaerwen Fad code 160604
+
+-----Original Message-----
+
+From: Craig Richard
+
+Sent: 17 October 2005 16:01
+
+To: Moronfolu Oddette S
+
+Ce: Pinder Brian; Sewell Peter (FELO1); Lowther Neneh
+Subject: RE: Gaerwen Fad code 160604
+
+Oddette,
+
+the original email makes reference to an audit. To answer your question definitively I'd need to know what data they are auditing
+that defines a "nil transaction". Is it zero transaction values in the R or A messages? Or are they auditing data in some host database
+or log? This matters because for example, the counter doesn't send up an amount value in the R message for "Withdraw to limit", but
+that may be represented as a zero value in a log or database field. The same might be true for Change PIN and Balance Enquiry.
+
+All banking transactions are approved on-line with the acquirer. The acquirer may decline for reasons other than incorrect PIN entry
+(for example a stolen/cancelled card was used). These other reasons might also cause a nil transaction.
+
+Nil transactions could also be caused by errors in PIN Pad, counter, agents or host code depending on what constitutes a "nil
+transaction". This cannot be determined without access to the appropriate system logs. I understand that it is not felt to be
+appropriate at this stage for those logs to be examined by development staff. I'd recommend however that counter logs are harvested
+now before potential evidence is lost.
+
+Regards,
+Ric.
+
+-----Original Message-----
+
+From: Moronfolu Oddette S
+
+Sent: 17 October 2005 13:51
+
+To: Craig Richard
+
+Ce: Pinder Brian; Sewell Peter (FELO1); Lowther Neneh
+
+Subject: FW: Gaerwen Fad code 160604
+
+Hi Ric,
+
+Can you have a look at this?
+
+They really need to know if there is anything else that could have caused the nil transactions.
+
+Many Thanks,
+Oddette
+
+-----Original Message-----
+
+From: Lowther Neneh
+
+Sent: 17 October 2005 13:22
+
+To: Moronfolu Oddette S
+
+Subject: FW: Gaerwen Fad code 160604
+
+Hi, Odette,
+
+Could you advise us on this please.
+
+I'm on a course tomorrow so hoping Penny would pick it up.
+
+Kind regards,
+
+Neneh
+FUJ00152563
+FUJ00152563
+
+-----Original Message-----
+
+From: Pinder Brian
+
+Sent: 14 October 2005 17:09
+
+To: Thomas Penny; Lowther Neneh; Dunks Andy; Membery William: Sewell Peter (FELO1)
+Subject: FW: Gaerwen Fad code 160604
+
+All
+
+Obviously this has not come our way yet, but meanwhile any thoughts comments?
+I guess we just wait for an ARQ, but do we (security) have anything in our arsenal, to go back to Graham with at all?
+
+Regds Brian
+
+From: graham.c.ward
+Sent: 14 October 200:
+To: Fujitsuf_
+Ce: diane.matthews¢ ~t charles. leighton
+Subject: Re: Gaerwen Fad code 160604
+
+All
+
+The e mail below from one of our investigators says it all
+is there a check that can be made to ensure there are / were no serious errors on the system at this Post Office. We already have
+details of calls made to the helpdesk (see spreadsheet below), which do not highlight anything obvious . are there general error
+type reports that will tell you when there is a problem with the system, which the Post Office may not necessarily be aware of,
+particularly in relation to the highlighted paragraph....have there been similar problems elsewhere ?
+
+(I've heard of Tivoli event logs. . could these be relevant ?)
+
+This case is in it's early stages, but if it were to proceed to a prosecution, we'd likely need a statement which outlines how you can
+confirm that there were no operating errors with this office's system. I haven't submitted an ARQ yet but can do so if you feel it's
+needed.
+
+Happy to discuss if needs be
+
+Regards
+
+Graham
+
+Casework Manager
+Post Office Ltd Investigation Team
+
+PO BOX I, CROYDON, CR9 1WN
+
+Postline: N/A, STD Phon«
+N/A, Mobex:
+
+(Charles - can you offer your thoughts)
+
+----- Forwarded by Graham C Ward/e/POSTOFFICE on 14/10/2005 14:39 -----
+
+Diane Matthews
+To: I Graham C Ward/e/POSTOFFICE!
+14/10/2005 14:37 ce: -
+Subject: Re: Gaerwen Fad code 160604
+
+Graham,
+FUJ00152563
+FUJ00152563
+
+Just to clarify, the Subpostmaster has not made any calls to HSH or NBSC prior to yesterdays audit, and is now voicing his concerns
+over the nil transactions on card account/on line banking transactions.
+
+I believe there are at least 2 scenarios where a nil value will be recorded. These are
+Ifa customer places a card into the pinpad and enters an incorrect pin
+number, the system will decline the transaction and request the customer
+to remove their card. This transaction was undertaken at the branch
+using a Post Office card account operated by the auditor. The report was
+printed with a nil value showing
+Ifa customer places a POCA card into the pinpad, enters a correct PIN
+and asks to withdraw cash, if there are no funds in the account, the
+transaction will be declined and the customer requested to remover their
+card. The summary would again show a nil value against the transaction
+
+Please can you check any other possibilities of nil values on these types of transactions with Fujitsu.
+
+Also as the Subpostmaster is blaming the system on his losses, please could we check there are no problems with the Horizon kit at
+the branch.
+
+To confirm, the branch will remain closed until we are happy that the Horizon system is fully operational.
+Thanks
+Diane
+
+Investigation Manager
+Post Office Ltd
+
+POL Capacity
+
+Management Info To: Paul Dawkins/e/POSTOFFI¢
+
+Sent by: Jay cc: Andrew Harley/e/POSTOFFICE.
+
+O'Laogun Subject: Re: Gaerwen Fad code 160604(Document link: POL Capacity Management Info)
+
+14/10/2005 11:15
+
+(See attached file: fad 160604 calls.xls)
+
+FCIAC ICR AOR RR ARTO AOR AAR RARA RR AOR ARE ATOR AR ARIA AAR A TIAA AA
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient, you must
+not use, disclose, reproduce, copy or distribute the contents of this communication.
+
+Ifyou have received this in error, please contact the sender and then delete this email from your system.
+ISH HHCCd esc ac Sdddddd ubbbbbaccrriblbea accede acbacack 24a

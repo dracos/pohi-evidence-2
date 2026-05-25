@@ -1,0 +1,104 @@
+FUJ00087192
+FUJ00087192
+
+8/16/2016 View OCP
+
+OCP 15926 Completed
+
+Branch 161327 (Guisborough) is unable to rollover due to a negative holding
+of foreign currency
+
+Branch 161327 (Guisborough) is unable to rollover due to a negative holding of foreign
+currency. Manual messagestore changes are required to convert the 1p negative
+holding to cash to allow rollover to be possible.
+
+Justification: The office will not be able to rollover and generate trading statements
+until the negative holding of foreign currency is resolved.
+
+When: Planned for 17/05/2007 16:00 with a duration of 10 mins
+
+Extra detail: There is -£0.01 worth of Romanian Lei ROL (ProductNo:6788) being held
+in stockunit AA at this branch. This holding has existed for a number of months but now
+that the reference data for this product has been removed the negative holding is
+stranded on the system and preventing the stockunit rollover.
+
+To resolve the problem in stockunit AA we propose to insert an additional opening
+figures message for product 6788 (Romanian Lei) to negate the one which is there and
+to cause the system to have a zero holding of this currency. We also need to insert an
+additional opening figures message for product 1 (Cash) for 1p to ensure there is no
+receipts and payments mismatch. Effectively we are converting the holding of Romanian
+ROL into Cash.
+
+The fix has been tested on our test counters using a copy of the office's messagestore
+and has been found to remove the negative holding and allow rollover without any
+issues. To the best of our knowledge the fix will not cause any problems on Post Office
+Limited's back end systems.
+
+The two messages inserted will be written on Node 36 and will include .
+
+The branch will be contatced by FS before and after the change, and have been
+requested to print and sign a balance snapshot both before and after.
+
+Regression: None..
+Comments
+
+Victoria Hancock (PO!
+From: antonio.jamasb
+Sent: 17 May 2007 14:
+To: RMGA Operational Change
+Cc: OCP_Impact_Assessment@
+Subject: Approved OCP 15926 : Branch+161327+
+
+(Guisborough) +ist+unable+to+rollover+due+to+a+negative+holding+of+foreign+currency
+
+POL Approve this change.
+Thank you.
+
+Change Control
+
+POL Live Service Team
+POL Operations
+Dearne House
+
+FUJ00087192
+FUJ00087192
+
+8/16/2016 View OCP
+
+Cortonwood
+S73 OTB
+
+SEIS BBE GOERS AAAI ACK CIC
+Dave Seddon (POA SSC Support) wrote at 17/05/2007 16:00: PM produced balance
+
+snapshots before and after the changes we made and the outcome was as expected,
+i.e. the -1p currency was converted to cash.
+
+Other details
+
+Raised by: Anne Chambers 17/05/2007 12:50
+
+Monitored by: SSC
+
+Peak: PC0146066
+
+TfS: 705150570
+
+Change at location: Bootle
+
+Change type: Messagestore
+
+Machine ID: MBOCORO3
+
+Priority and risk Properties
+Priority: High New equipment: No
+Risk: Medium System build affected: No
+
+Required on LST rigs: No
+
+Required on Lewes rigs: No
+
+Approval status
+
+Action status
+

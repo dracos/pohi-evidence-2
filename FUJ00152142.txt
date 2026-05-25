@@ -1,0 +1,339 @@
+FUJ00152142
+
+FUJ00152142
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+Certification and Retention (PACE) Version: 0.4
+Date: 09/12/98
+Document Title: Evidential Information - Production, Certification &
+Retention (PACE).
+Document Type: Process
+Abstract: A description of the process required to demonstrate the
+integrity of a PACE certificate and the associated
+declaration.
+Status: Draft
+
+Distribution: Graham King
+Patrick Cattermole
+Pete Spence
+Alan D’Alvarez
+Christopher Billings
+Martyn Bennett
+Library
+Les Fereday (ICL Outsourcing)
+Matthew Cooper (Alliance & Leicester)
+Graham Hooper (Alliance & Leicester)
+
+Author: Barry Procter
+Comments to: Author
+Comments by: 18'" December 1998
+
+© 1998 ICL Pathway Ltd
+
+Q Document control
+
+0.1 Document history
+
+COMMERCIAL IN CONFIDENCE Page 0 of 9
+FUJ00152142
+
+FUJ00152142
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+Certification and Retention (PACE) Version: 0.4
+Date: 09/12/98
+Version Date Reason
+0.1 4/08/98 Initial draft for comment
+0.2 10/08/98 Comments on V0.1 included.
+0.3 08/12/98 Figure updated & N.I and Scottish implications resolved
+0.4 09/12/98 Updated following review with ICL Outsourcing
+0.2 Approval authorities
+Name Position Signature Date
+Martyn Bennett Director, Quality & Risk
+0.3 Associated documents
+Reference Vers Date Title Source
+1 DW/REQ/0017 1.6 18/03/98 FCMS System Requirements Pathway
+Specification
+2 PACE 1984 Police & Criminal Evidence Act HMSO
+0.4 Abbreviations
+CAPS Customer Accounting & Payment Service
+FCMS Fraud Case Management System
+OPS Office Platform Service
+PACE Police and Criminal Evidence Act
+0.5 Changes in this version
+Figure modified; DN’s removed. Section’s 4 & 5 updated.
+0.6 Table of content
+
+COMMERCIAL IN CONFIDENCE
+
+Page 1 of 9
+FUJ00152142
+
+FUJ00152142
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+Certification and Retention (PACE) Version: 0.4
+Date: 09/12/98
+4. Certification... eee eee ec cece eeeeeeeeeeeeeeeseceeeeeeesseeseneeseeiseseseseneesaseseseeereeseees 4
+4.1. Certification PrOCESS.............ccsccscecseveseseeeeeeeeseeeeeeenceceeseseseeenceeeseenees 5
+5. Supporting Evidence... .ceeeeecceccecceceseeseeceseeeeseeseeseeeceeceeeseeeeseeeeeeeneeeeeees 5
+6. Appendix A - PACE Declaration ...............cccccecceseeecseeeeeeeeeeeeeeeeeeeeeeeeeereneeneees 7
+7. Appendix B - Pro Forma Witness Statement. .................::cceeecceseeseeeeeeeeeeeeee 8
+
+COMMERCIAL IN CONFIDENCE Page 2 of 9
+FUJ00152142
+
+FUJ00152142
+
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+
+Certification and Retention (PACE) version: 09/12/98
+
+Introduction
+
+Prima facie evidence to be presented in support of criminal prosecutions is
+obtained solely from the ICL Pathway Fraud Case Management System
+(FCMS). This computer output is only admissible in evidence where special
+conditions are satisfied. These conditions are described in detail in Section
+69 of the Police and Criminal Evidence Act [1] and require ICL Pathway to
+provide ‘honest’ certification of such computer-generated evidence.
+
+Scope
+
+This process describes the PACE certification of computer evidence
+originating within the ICL Pathway Fraud Case Management System (FCMS)
+to support criminal prosecutions in England, Wales and Northern Ireland.
+PACE does not apply in Scotland even if the host system operates in
+England.
+
+This process also identifies secondary evidence which may be required to
+demonstrate the integrity of the PACE certificate.
+
+Production and Retention of Computer Evidence
+The method by which the ICL Pathway Fraud Case Management System data
+
+is populated, and the steps taken to ensure its secure retention are described
+in [1].
+
+Certification
+PACE certificates may be required for each individual criminal prosecution
+supported by the ICL Pathway FCMS.
+
+Section 69 of PACE provides that:
+
+“In any proceedings, a statement in a document produced by a computer
+shall not be admissible as evidence of any fact therein unless it is shown-
+
+a) that there are no reasonable grounds for believing that the statement is
+inaccurate because of improper use of the computer and;
+
+a) that at all material times the computer was operating properly or, if not, that
+any respect in which it was not operating properly or was out of operation
+was not such as to affect the production of the document or the accuracy of
+
+COMMERCIAL IN CONFIDENCE Page 3 of 9
+FUJ00152142
+
+FUJ00152142
+
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+
+Certification and Retention (PACE) version: 09/12/98
+
+its contents.”
+
+It is therefore vitally important that whoever signs the PACE declaration on
+behalf of ICL Pathway can produce evidence to support these statements.
+
+Traditionally, PACE certificates are signed by a senior member of the
+Computer Operations staff responsible for managing the computer installation
+and its associated networks. ICL Outsourcing performs this role as a
+managed service for ICL Pathway,
+
+The certificate (see example at Appendix A) contains a declaration including
+the statement “/ sign this certificate knowing that I shall be liable for
+prosecution if I have stated in it anything which I know to be false or do not
+believe to be true”, it is therefore in his rational self-interest to ensure a) that
+the logs are adequately comprehensive and b) that they are investigated
+thoroughly.
+
+4.1. Certification Process
+
+The manager of the ICL Pathway Fraud Risk Management team, or his
+deputy, will advise a nominated member of ICL Outsourcing of the relevant
+dates and times for which a PACE certificate is required.
+
+The ICL Outsourcing nominee will consult operational records pertaining to
+computer and network operations on the dates and times advised, in order to
+satisfy himself that the certificate can be signed with confidence.
+
+A statement should accompany the certificate to the effect that additional
+(supporting) evidence to uphold the certificate can be produced if so desired.
+To offer all the evidence without it being requested would only serve to flood
+the courtroom with documentation.
+
+Supporting Evidence
+
+In order to demonstrate the integrity of a Horizon PACE certificate for the
+Benefit Payment Service, it is necessary to describe the information flow from
+CAPS to OPS and from OPS to the FCMS and to illustrate where
+cryptographic and integrity protection are applied.
+
+COMMERCIAL IN CONFIDENCE Page 4 of 9
+FUJ00152142
+FUJ00152142
+
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+
+Certification and Retention (PACE) version: 09/12/98
+
+End to End Payment Protection
+
+(Benefits Agency)
+
+File integrity protected by RedPike encryption
+
+(SMDS link) I ~<——— of either file checksums or TPDU data packets
+
+Pathway Central
+Sites (secure domain)
+
+-<—_— Payment data transferred in clear
+
++ Digital Signature added to each payment
+
+<—_!___.
+
+LPN. Payment authorisation data
+transferred & stored with
+° digital signature protection
+
+PI ras [77 oxal Ie
+
+= <«—_-
+
+Signature verified on
+payment
+
+Figure 1 - BPS Information Flow
+
+Given the size and complexity of the Horizon system, it is conceivable that
+the integrity of the PACE certificate will be challenged by Counsel in order to
+discredit a prosecution. If it is not possible to demonstrate the certificate’s
+integrity to the Court’s satisfaction, a very dangerous precedent will have
+been set and all subsequent prosecutions will be automatically jeopardised.
+However, the corollary is also true and a successful demonstration of honest
+certification will stand all subsequent prosecutions in good stead.
+
+Comprehensive records pertaining to the site(s), services and individuals
+
+concerned should be able to be produced for all material times. These
+
+records will serve to show that the relevant services were available at all
+
+material times, were operating properly and had not been used
+
+inappropriately.
+
+This secondary evidence should include, but is not restricted to, the following
+e An external Auditor's certificate of data integrity;
+
+e Logs of calls to the Horizon System Helpdesk and the Payment Card Helpline
+detailing incidents of error, inaccuracy or malfunction pertaining to the sites,
+equipment, services and individuals concerned;
+
+¢ A log of ISDN ‘ping’ records which demonstrate the availability of network
+communications between the affected site(s) and the Data Centre;
+
+e Operational logs and shift handover documentation to demonstrate consistent
+COMMERCIAL IN CONFIDENCE Page 5 of 9
+
+FUJ00152142
+
+FUJ00152142
+
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+
+Certification and Retention (PACE) version: 09/12/98
+
+operation and availability of the service;
+Secure NT, Dynix and SecurlD definitions;
+
+Testimony from expert witnesses stating that, in their experience similar
+incidents have never happened or, if they had, that they would be reflected in
+the relevant audit log.
+
+Appendix A - PACE Declaration
+DECLARATION
+
+e To the best of my knowledge and belief there are no reasonable grounds
+for believing that the information or statement in the document(s) identified
+above is inaccurate because of improper use of the computer system.
+
+e At all material times the computer devices were operating properly, or if
+not, any aspect in which they were not operating properly, or were out of
+operation, was not such as to affect the integrity of the data processed, the
+production of the document(s) or the accuracy of its content.
+
+e I occupy a responsible position in relation to the computer systems,
+namely: Pathway Service Manager.
+
+e I sign this certificate knowing that I shall be liable to prosecution if I have
+stated in it anything which I know to be false or do not believe to be true.
+
+Signed hea neeeeeeeeeeeeeeeeeeeeeeeneeseeeeeeeeeeeeenee Date Jd
+PrintName oie cece eeeeettseeeeeeeeeeeeettseeeeee
+
+Signature witnessed ................. cc eeeeeeeeeeeeeeeereeeeenee Date Jd
+
+by
+
+Dr Martyn Bennett, ICL Pathway Director of Quality & Risk
+
+Full name and address of employment:
+
+7.
+
+ICL Pathway, Forest Road, Feltham, Middlesex. TW13 7EJ
+
+Appendix B - Pro Forma Witness Statement
+
+COMMERCIAL IN CONFIDENCE Page 6 of 9
+FUJ00152142
+FUJ00152142
+
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+
+Certification and Retention (PACE) version: 09/12/98
+
+Witness Statement
+
+Statement of:
+Age if under 18: (if over 18 insert ‘Over 18’)
+This statement (consisting of Pages, each signed by me) is true to
+
+the best of my knowledge and belief and I make it knowing that, if it is
+tendered in evidence, I shall be liable to prosecution if I have wilfully
+stated in it anything I know to be false or do not believe to be true.
+
+Dated the day of 19
+Signature:
+
+Signature..
+by...
+
+. Signature witnessed
+
+Continuation sheet No.
+
+Continuation of Statement
+
+COMMERCIAL IN CONFIDENCE Page 7 of 9
+FUJ00152142
+
+FUJ00152142
+ICL Pathway Evidential Information - Production Ref: RS/PRO/030
+Certification and Retention (PACE) Version: 0.4
+Date: 09/12/98
+of:
+‘Signature. ... Signature witnessed
+by.
+
+COMMERCIAL IN CONFIDENCE Page 8 of 9

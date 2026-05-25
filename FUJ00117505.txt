@@ -1,0 +1,3391 @@
+FUSITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+Document Title:
+
+Document Reference:
+
+Release:
+
+Abstract:
+
+Document Status:
+Author & Dept:
+
+COUNTER PERFORMANCE TEST REPORT
+
+TST/SOT/REP/0926
+
+HNGX Release 1
+
+This is the Counter Performance Test Report conducted on the
+VOL rig.
+
+DRAFT
+
+Peter Langford
+Comments to be returned to Mark Ascott
+
+External Distribution: None
+Security Risk YES — No Risk
+Assessment Confirmed
+Approval Authorities:
+lame Role Signature
+Alan D’Alvarez Programme Manager See Dimensions for record
+Debbie Richardson Test & Integration Manager See Dimensions for record
+Lee Farman Test Manager (POL JTT) See Dimensions for record
+
+See HNG-X Reviewers/Approvers Matrix (PGM/DCM/ON/0001) for guidance on who should approve
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 01
+Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 1 of 63
+
+FUJ00117505
+FUJ00117505
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+0 Document Control
+
+0.1 Table of Contents
+
+it} DOCUMENT CONTROL....
+0.1 Table of Content:
+0.2 Document History
+0.3 Review Details
+0.4 Associated Documents (Internal & External).
+0.5 Abbreviations and Terms
+0.6 Glossary.
+0.7 Changes Expected
+0.8 Accuracy...
+0.9 Security Risk Assessment...
+4 INTRODUCTION
+3 MANAGEMENT SUMMARY
+3.1 Test Case Coverage..
+3.2 Defects .
+3.2.4 Defects Raised
+
+Qpen Defects
+
+TEST CASE DETAILS
+
+Test Group C01 — HNG-X Counter Performance.
+Results Analysis Interpretation...
+Results shown in this section are taken from the output from Winrunner and some explanation is required to align
+screen flows with Winrunners results output...
+C01.M01_HNG-X CAPO Balance Enquiry & Withdrawal ..
+4.4.4 C01.M02_HNG-X A&L Business Deposi
+C01.M03_HNG-X LINK Cash Withdrawal...
+44.2 C01.M04_HNG-X Purchase E-Top Up.
+4.1.3 C01.M0S_HNG-X Purchase Phone Card ..
+4.1.4 C01.M06_HNG-X Tax a vehicle for 12 months no VAT
+4.41.5  C01.M07_HNG-X SORN with vehicle address change:
+4.1.6 C01.M08_HNG-X Purchase postal order...
+4.1.7 C01.M09_HNG-X Encash postal order.
+
+4.1.8 CO1.M10_HNG-x Payment by Debit-Credit card
+4.4.9 CO1.M11_HNG-X Address Lookup....
+4.4.40 C01.M1i2_HNG-xX Purchase Saving Stamp.
+4.1.11 C01.M13_HNG-X Purchase ist Class Stamps ...
+4.4412 C01.Mi4 HNG-x Purchase Pure Air Sure Europe
+4.4.43 CO1.M1i5 HNG-X Purchase Scratchcard ..
+4.4.14 C01.M16_HNG-x Purchase Electricity Tokens
+4.4.15 CO1.M17_HNG-xX Purchase Premium Bonds..
+
+4
+44
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE Ref: TST/SOT/REP/0926
+Version: 0.1
+1482008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 20f63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+C01.M18
+
+HNG-X Purchase 1 Day Fishing License..
+
+CO1.M19.
+
+HNG-X Post Special Delivery Small Letter
+
+C01.M20
+
+HNG-X Post Large Letter..
+
+C01.M24
+
+HNG-X Post Letter USA Weighting.
+
+C01.M22
+C01.M23
+
+HNG-X Packet...
+HNG-X Bulk Post
+
+C01.M24_HNG-X Pay Bill.
+
+CO1.M25
+C01.M26
+
+HNG-X Freedom Passe:
+HNG-X Moneygram.
+
+C01.M27
+
+HNG-X Travel Insurance
+
+C01.M28
+
+HNG-X Purchase Foreign Currency
+
+C01.M29
+
+HNG-X Purchase Foreign Currency in Travellers Cheques
+
+C01.M30.
+
+HNG-X Purchase Pre-Order Foreign Currency
+
+CO1.M34
+
+HNG-X Foreign Currency Buy Back
+
+C01.M32
+
+HNG-X Remittance Acceptance .
+
+C01.M33
+
+HNG-X Remittance Rejection
+
+C01.M34
+
+HNG-X Transaction Correctio:
+
+C01.M35
+
+HNG-X Spoiled Postal Order:
+
+CO01.M36
+
+HNG-X Stock Unit Reports
+
+C01.M37_HNG-X Office Reports.
+C01.M38_HNG-X Logon
+C01.M39_HNG-X Logoff.
+. C01.M40_HNG-X Help .
+Test Group R01 — Branch Router
+
+FUJ00117505
+FUJ00117505
+
+“Although the graph above does show some variance in response times these are minimal compared to the amount of
+
+items being transacted. The table below shows that with the increase in counters trading the settlement response time
+
+reaches no higher that 1.25 seconds in the 95 percentile. .......
+
+5 RECOMMENDATIONS
+6 CONCLUSIONS
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 01
+Ltd 2009 TROLLED IF PRINTED O@®: 06/10/2010
+UNCONTROLLED II IN’ Page No: 30f63
+
+252
+
+co VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+0.2 Document History
+
+Summary of Changes and Reason for Issue
+
+Version No. Date
+
+Associated Change -
+CP/PEAK/PPRR
+Reference
+
+0.4 First draft for review by Joint Test Team
+
+0.3 Review Details
+
+FUJ00117505
+FUJ00117505
+
+See HNG-X Reviewers/Approvers Matrix (PGM/DCM/ION/0001) for guidance on completing the lists below. You may include
+additional reviewers if necessary, but you should generally not exclude any of the mandatory reviewers shown in the matrix for the
+
+document type you are authoring.
+
+Review Comments by
+
+Review Comments to
+Mandatory Review
+Role
+
+Name
+
+Programme Manager
+
+Alan D’Alvarez
+
+Test & Integration Manager
+
+Debbie Richardson
+
+Test Manager (POL JTT)
+
+Lee Farman
+
+Solution Design/Development
+
+lan Tumer (Counter & BAL/OSR)
+
+Solution Design/Development
+
+Role
+
+Optional Review
+
+David Harrison (Legacy Web Sves, Agents & Audit, Crypto Host &
+Ref Data)
+
+Name
+
+Test Manager
+
+Chris Young (POL JTT)
+
+RV Manager James Brett (POL JTT)
+VI & TE Manager Mark Ascott
+VI Test Team Lead Michael Welch
+
+Systems Qualities Architect
+
+David Chapman
+
+Lead Architect
+
+Peter Jobson
+
+SV&I Manager
+
+Issi for Information — Please restrict this
+distribution list to a minimum
+
+Position/Role
+
+Sheila Bamber
+
+Name
+
+(*) = Reviewers that retumed comments.
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+UNCONTROLLED IF PRINTED
+
+COMMERCIAL IN CONFIDENCE
+
+Ref: TST/SOT/REP/0926
+Version: 0.1
+Date: 06/10/2010
+
+PageNo: 4 of 63
+FUSITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+
+COMMERCIAL IN CONFIDENCE
+
+0.4 Associated Documents (Internal & External)
+
+Reference Version Date Title Source
+
+(1) 5.0 03 June 2009 RMGA HNG-X Generic Document Dimensions
+PGM/DCM/TEM/0001 Template
+
+(DO NOT REMOVE)
+
+i] 1.0 12-September-2008 I HNG-X Volume and Performance Dimensions
+TST/SOT/HTP/0003 High Level Test Plan
+
+3] Horizon Capacity Management and I PVCS
+PA/PER/033 Business Volumes
+
+(41 System Qualities Architecture Dimensions
+ARC/PER/ARC/0001
+
+FUJ00117505
+FUJ00117505
+
+Unless a specific version is referred to above, reference should be made to the current approved versions of the
+
+documents.
+
+0.5 Abbreviations and Terms
+
+Abbreviation Definition
+
+BRDB Branch Database
+
+DAT Main Host Database
+
+Dc Data Centre
+
+Dcs Debit Card Service
+
+DRS Data Reconciliation Service
+
+DVLA Driver Vehicle Licensing Authority
+
+EOD BLOB Attachment to End Of Day messages generated at a Horizon counter containing data
+pertaining to stock unit and product information
+
+EPOSS Electronic Point Of Sale Service
+
+ETU Electronic Top-Up
+
+HLTP. High Level Test Plan
+
+LREC Link Reconciliation File
+
+NTSS Non Test Stream Specific
+
+PAF Postal Address File
+
+Pcl The Payment Card Industry Data Security Standard
+
+TaT Track & Trace
+
+TPS Transaction Processing System
+
+tps transactions per second
+
+val Volume & Integrity
+
+© Copyright Fujitsu Services
+
+Ltd 2009
+
+COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 01
+Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 5 0f 63
+FUSITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+0.6 Glossary
+
+Term
+
+Performance Testing or
+Load Testing
+
+Definition
+
+A series of tests to measure the performance characteristics and behaviour
+of specific components of the solution under load to demonstrate their ability
+to achieve defined performance requirements. For example, to test that a
+particular web service is capable of supporting the relevant contractual peak
+rate of transactions per second (the defined load).
+
+Volume Testing
+
+A series of tests to demonstrate that the whole solution is able to support a
+typical daily workload. For example, to test that a peak weekday transaction
+profile can be successfully harvested and that all scheduled batch
+processing can be completed within expected timescales.
+
+0.7 Changes Expected
+
+Accepted comments following document review.
+
+0.8 Accuracy
+
+FUJ00117505
+FUJ00117505
+
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but, whilst every effort is made to
+ensure the accuracy of such information, it accepts no liability for any loss (however caused) sustained as a result of any error or
+
+omission in the same.
+
+0.9 Security Risk Assessment
+
+Security risks have been assessed and it is considered that there are no security risks relating specifically to this document.
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 01
+Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 6 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+1. Introduction
+
+The HNG-X Volume and Performance High Level Test Plan [2] outlined the approach and scope of the Counter
+Performance Testing. The plan outlined two types of tests:
+
+Counter Performance Tests- Tests designed to record the timings for each part of the specified transactions
+
+Branch Router Tests — Tests designed to assess the performance affect of a transaction when there is more than one
+counter trading at the same time at an outlet
+
+This is the Test Report for Counter Performance Testing and includes the results of both sets of tests and provides a
+factual statement on the Counter Performance test status metrics at completion of Phase 2 of Volume and Performance
+Testing. The status of particular Test Cases raw system logs, and any associated defects can be ascertained from the
+Quality Centre system.
+
+2 Scope
+
+The approach to testing counter performance was to take baseline timings where there was no or little load on the HNGX
+data centre and compare those with timings taken where there was significant load on the HNGX data centre for each of
+the transactions outlined in the Counter Performance Test Plan.
+
+Due to the amount of transactions that needed to be conducted in a short schedule window, priority was given to ‘core’
+transactions that either made up a significant amount of the Post Office business or had equivalent Horizon timings to
+compare. These ‘core’ transactions are highlighted below:
+
+e CAPO Enquiry
+
+e CAPO Withdrawal All
+
+« LINK Withdrawal
+
+e A&L Business Deposit
+
+e DVLA 12 month Tax disc
+
+«First Class Stamps
+
+e £-Topup
+
+© Paya bill
+
+e Debit Card Payment
+
+e Post 1 Large Letter
+Transactions outside the ‘Core’ set were at the very least conducted when the HNGX data centre was under load.
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE Ref: TST/SOT/REP/0926
+Version: 0.1
+1482008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 7 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Load was generated on the HNGX data centre using a tool called Loadrunner which generated approximately 900
+transactions per second (TPS) across a mix of transaction types for non-banking counter transactions . This is represents
+a close alignment to peak Post Office business volumes.
+
+Below is a list of transaction types that were generated as the background load to loaded counter performance results.
+
+CAPO Banking Withdrawal 14
+AaL Banking Withdrawal 1
+LINK Banking Withdrawal 3
+Stamp Sale 20
+DVLA 12 month Tax 3
+Special Delivery Mails 5
+Bill Payment 3
+E-Top Up 1
+Postal Orders 1
+
+For banking transactions, restrictions on the test environment prevented the same type of banking transactions being
+generated at the data centre and on the counter. i.e. CAPO/LINK/A&L banking load could not be generated at the data
+centre while CAPO/LINK/A&L banking transactions are conducted on the counter.
+
+However to make the background load more realistic, load generation at the data centre was switched off for a banking
+type while that banking type was conducted on the counter. i.e. CAPO/LINK/A&L load generation was switched off at the
+data centre while CAPO/LINK/A&L counter transactions were being performed. This meant that when CAPO load was not
+being generated at the data centre while CAPO transactions were being performed there was a reduced background load
+(although LINK and A&L load was still being generated) to about 5S00TPS
+
+3 Management Summary
+
+For completeness, the following table shows all tests originally identified in the Counter Performance HLTP.
+Yellow = tests conducted during Phase 2 on the Vol rig, which are the subject of this report
+
+Pink = Not tested (as agreed on completion of Phase 1). These were either subsumed in other tests or considered to be
+low risk.
+
+Test
+Grp__I Description
+C01 __I Counter performance tests
+R01 __I Branch router tests
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 01
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 8 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+3.1 Test Case Coverage
+
+The following table provides an overview of the final test status at the end of Counter Performance Testing for each Test
+Case within those test groups highlighted in yellow above.
+
+cot C01.M01_HNG-X CAPO Balance Enquiry & Withdrawal
+C01.M02_HNG-X A&L Business Deposit
+C01.M03_HNG-X LINK Cash Withdrawal
+C01.M04_HNG-X Purchase E-Top Up
+C01.M05_HNG-X Purchase Phone Card
+C01.M06_HNG-X Tax a vehicle for 12 months no VAT
+C01.M07_HNG-X SORN with vehicle address changes
+C01.M08_HNG-X Purchase postal order
+C01.M09_HNG-X Encash postal order
+C01.M10_HNG-X Payment by Debit-Credit card
+C01.M11_HNG-X Address Lookup
+
+C01.M12_HNG-X Purchase Saving Stamp
+C01.M13_HNG-X Purchase 1st Class Stamps.
+01.M14_HNG-X Purchase Pure Air Sure Europe Stationary
+C01.M15_HNG-X Purchase Scratchcard
+C01.M16_HNG-X Purchase Electricity Tokens
+C01.M17_HNG-X Purchase Premium Bonds
+C01.M18_HNG-X Purchase 1 Day Fishing License
+C01.M19_HNG-X Post Special Delivery Small Letter
+C01.M20_HNG-X Post Large Letter
+
+C01.M21_HNG-X Post Letter USA Weighting
+C01.M22_HNG-X Packet
+
+C01.M23_HNG-X Bulk Post
+
+C01.M24_HNG-X Pay Bill
+
+C01.M25_HNG-X Freedom Passes
+
+C01.M26_HNG-X Moneygram
+
+C01.M27_HNG-X Travel Insurance
+
+C01.M28_HNG-X Purchase Foreign Currency PASS
+C01.M29_HNG-X Purchase Foreign Currency in Travellers
+Cheques PASS
+C01.M30_HNG-X Purchase Pre-Order Foreign Currency PASS
+C01.M31_HNG-X Foreign Currency Buy Back PASS
+C01.M32_HNG-X Remittance Acceptance PASS
+C01.M33_HNG-X Remittance Rejection PASS:
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENcE Ref TST/SOT/REP/0926
+Version: 0.1
+1482008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 9 0f 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+C01.M34_HNG-X Transaction Correction for a Remittance Shortage I»
+
+C01.M37_HNG-X Office Reports
+
+C01.M35_HNG-X Spolied Postal Orders PAS
+C01.M36_HNG-X Stock Unit Reports PASS:
+PASS
+
+C01.M38_HNG-X Logon
+
+C01.M39_HNG-X Logoff.
+
+C01.M40_HNG-X Help
+
+Rot RO1.MO01 Branch Router Performance 1 Counter
+
+RO1.M02 Branch Router Performance 5 Counter
+
+RO1.M03 Branch Router Performance 10 Counter
+
+RO1.M04 Branch Router Performance 20 Counter
+
+Full results for each test are detailed in Section 4 of this report.
+
+3.2 Defects
+
+3.2.1 Defects Raised
+
+A total of nnn defects were raised by the Volume and Performance test team up to the conclusion of Phase 2 testing. The
+
+following table shows the priority and status breakdown for these defects as at the date of this report.
+
+Current Priority I Open I Awaiting I Awaiting I Closed
+PEAK (QC) Test Closure
+(4.- Very High)
+
+3 - High)
+
+A
+BC
+
+C (2 - Medium
+D (1 - Low)
+
+Open
+
+Awaiting Test
+Awaiting Closure
+Closed
+
+Calls are with a development or support team
+Calls have been returned to V&I awaiting retest or some other action
+Calls are with V&I awaiting formal closure
+
+Calls are closed, no further actions required
+
+© Copyright Fujitsu Services
+
+Ltd 2009
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED
+
+Ref:
+
+Version:
+Date:
+
+Page No
+
+TST/SOT/REP/0926
+0.1
+
+06/10/2010
+
+10 of 63
+
+FUJ00117505
+FUJ00117505
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Open Defects
+
+The following table shows the priority and call summary for all defects that currently remain Open.
+
+©Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE re persom REP/0926
+ersion:
+1482008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 11 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4 Test Case Details
+
+This section provides a more detailed view of each Test Case executed for each of the Test Groups during Phase 2.
+
+4.1 Test Group C01 —- HNG-X Counter Performance
+
+Results Analysis Interpretation
+
+Results shown in this section are taken from the output from Winrunner and some explanation is required to align screen
+flows with Winrunners results output.
+
+Below is example output from a banking transaction. An explanation of each column is shown below
+
+From Window - this column indicates the window the timing is taken from. i.e. the current window.POC is the main Post
+Office Counter window, Dialog is any dialog that appears in the screen flow. SysMsg is a dialog that may appear for a
+period of time giving information to the clerk but disappear without user intervention.Object — The object the action is
+performed on. Objects are Winrunner objects and relate to Graphical User Interface (GUI) elements on the screen.
+Objects will for the most part be named exactly as they are seen on the screen. i.e the Banking object refers to the
+Banking button on the screen , there are some objects that have a trailing identifier see ‘Service_IbI’ in the example
+below. This object refers to the service label. Other variants of object name include text input boxes which may have a
+trailing edt identifier i.e Postal Order Value_edt which is the postal order value text box
+
+Action - The action that is performed. Actions include Click/Appear/Vanish/Set/StartTimer/StopTimer
+
+e Click — This simulates a press on the screen, when there is a row that contains a click action if the following row
+contains an appear or vanish action then the ‘To Window’ and ‘to Object’ columns are populated and the timing
+for the click includes the time for the following window/object to appear or vanish. On row 3 of the example below
+a click action is present and the following row (row4) contains an appear action. i.e. we want to click on banking
+and see how long it taked for the Chip & PIN object to appear. The accurate timing of the click on the banking
+button and the time it takes for the Chip & PIN button to appear is the timing taken from Row 3 which contains the
+click action.
+
+e Appear/Vanish — This is used to time how long an object takes to appear or vanish. The accurate timing is taken
+from the preceding row.
+
+e Set - Simulates keyboard typing into a text box field (this should not be used for any timing as Winrunner
+performs this much faster than a real user)
+
+e StartTimer/StopTimer — This starts/stops a timer running. Most transactions have a start timer at the beginning
+of the transaction and a StopTimer at the end of the transaction. This timing event encapsulates the end-to-end
+time, however it does include any wait times, i.e. the delay in scanning a barcode or inputting a bank card and
+therefore not a true indication of system performance
+
+Average — This column contains the average time for each of the steps. Each transaction was performed 12 times. ‘No
+Load’ times are average timings taken when there was no load injected into the data centre. ‘Under Load’ times are the
+average timings taken when load was injected into the data centre.
+
+Difference (where applicable) — This column is the difference between the loaded and unloaded timings for each step.
+ie. Load minus unloaded average timing
+
+From Window ‘Object Action To Window ‘Object
+poc StartTimer E2E Time
+POC Banking Click Poc Chip & PIN 443, 553 110
+POC Chip & PIN Appear - - 613 805 193
+Poc ‘Chip & PIN Click Dialog Card Insertion 794 906 113
+Dialog Card Insertion Appear - - 422 603 181
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 01
+Ltd 2009
+Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 12 0f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+C01.M01_HNG-X CAPO Balance Enquiry & Withdrawal
+CAPO Balance Enquiry
+
+The results for a CAPO balance enquiry show that there is no significant difference between when the transaction is
+performed under load or not.
+
+The online parts of the transaction are the following:
+
+Transaction Authorised: The time it takes from entering the PIN to the transaction authorised dialog appearing which in
+the sample data is slightly quicker under load.
+
+Transaction settlement: The time taken for Settle Click to item empty. This is slightly higher under load of about 600
+milliseconds.
+
+From Window I Object felon I Window I Oe
+Poc Home Click Poc
+PoC StartTimer E2E Time 0 0 0
+PoC Banking Click Poc Chip & PIN 443 553 110
+PoC Chip & PIN Appear : : 613 805 193
+PoC Chip & PIN Click Dialog Card Insertion 794 906 113
+Dialog Card Insertion Appear - - 422 603 181
+Dialog Card Inserted Appear - - 1334 1233 -102
+Poc Service _[bl Appear : : 8560 8479 81
+POC Balance Click Dialog Enter PIN 904 979 75
+Dialog Enter PIN Appear - - 399 579 180
+Dialog Enter PIN Vanish : : 4007 3922 86
+Dialog Transaction Authorised Appear : : 2787 2135 652
+Dialog Transaction Authorised Vanish : : 1422 1904 “118
+SysMsq Authorised - Receipt Printing I Appear : : 2150 2245 95
+Poc Chip & PIN Appear - - 2763 2630 133
+POC StopTimer 31571 31956 386
+POC Home Click POC 41 39 -2
+POC StartTimer E2E Time 0 0 0
+POC Item Appear - - 4089 4703 615
+POC Settle Click POC Item Empty 1225 1049 77
+Poc Item Empty Appear : : 644 780 136
+PoC StopTimer 4464 4840 377
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Ltd 2009 Dates pe/t0r2010
+
+UNCONTROLLED IF PRINTED Page No: 13 0f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+CAPO Withdrawal
+
+The results for a CAPO Withdrawal show that there is no significant difference between when the transaction is performed
+under load or not.
+
+The online parts of the transaction are the following:
+
+Transaction Authorised: The time it takes from entering the PIN to the transaction authorised dialog appearing which in
+the sample data is slightly greater under load of 1009 milliseconds.
+
+Transaction settlement: The time taken for ‘Fast Cash Click’ to ‘Item Empty’. This is slightly lower under load.
+
+Wins fr 3 Average
+POC Home Click Poc 43 40 3
+POC StartTimer E2E Time i) i) [)
+POC Banking Click POC Chip & PIN 439 577 138
+Poc Chip & PIN Appear - 600 808 208
+
+Card
+Poc Chip & PIN Click Dialog Insertion 809 921 112
+Dialog Card Insertion Appear - - 425 603 178
+Dialog Card Inserted Appear : - 1420 1214 206
+Poc Service_Ibl Appear - - 8518 8486 -32
+POC Withdraw Limit Click Dialog Enter PIN 916 1041 124
+Dialog Enter PIN Appear : : 391 619 228
+Dialog Enter PIN Vanish : : 3989 3814 175
+Dialog Transaction Authorised Appear - - 2146 3155 1009
+Dialog Transaction Authorised Vanish - - 1532 1293 -240
+Authorised - Receipt
+
+SysMsg Printing Appear - 2143 2249 106
+Poc Chip & PIN Appear - 2741 2780 39
+Poc StopTimer 30982 33170 2188
+Poc StartTimer E2E Time 0 0 0
+Poc Fast Cash Click Poc I Item Empty 1453 1259 “194
+Poc Item Empty Appear - - 603 780 77
+POC StopTimer 3979 4273, 294
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Ltd 2009 Dates pa/tor2010
+
+UNCONTROLLED IF PRINTED Page No: 14 0f 63
+FUJ00117505
+FUJ00117505
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+
+fos]
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.1. C01.M02_HNG-X A&L Business Deposit
+
+The results for an A&L Business Deposit transaction show that there is no significant difference between when the
+transaction is performed under load or not.
+
+The online parts of the transaction are the following:
+
+Transaction Authorised: The time it takes from entering the PIN to the transaction authorised dialog appearing which in
+the sample data is marginally quicker under load.
+
+Transaction settlement: The time taken for ‘Fast Cash Click’ to ‘Item Empty’. This is marginally higher under load of 363
+milliseconds.
+
+From To
+
+wo Object Action Ga Object ‘Average
+No Under
+Load Load
+Poc Home Click PoC 43 44 1
+Poc StartTimer E2E Timer 0 0 0
+Poc Banking Click POC Chip & PIN 435 504 69
+Poc Chip & PIN Appear : : 607 634 28
+Poc Chip & PIN Click Dialog Card Insertion 793 907 114
+Dialog Card Insertion Appear : : 416 449 33
+Dialog Card Inserted Appear - - 1385 1842 457
+Poc Service_Ibl Appear - - 9272 9288 17
+Poc Cash Deposit Click Poc ‘Amount 461 572 111
+Poc Amount Appear : : 582 596 15
+SetValue as
+Poc Amount 00.00 : : 129 128 A
+Poc Enter Click Dialog I Confirm Deposit Amount I 343 357 14
+Dialog Confirm Deposit Amount Appear : : 402 439 37
+Dialog Confirm Click Dialog Transaction Authorised 5082 5223 140
+Dialog Transaction Authorised Appear - - 471 414 57
+Dialog Transaction Authorised Vanish : : 1137 1173 37
+Dialog Confirm Deposit Amount Appear : - au 408 3
+Authorised - Receipt
+Dialog Confirm Click SysMsg Printing 2416 2590 174
+Authorised - Receipt
+SysMsg Printing Appear : : 389 393 4
+
+Poc Chip & PIN Appear : : 2373 2600 226
+Poc StopTimer 36936 38562 1627
+Poc StartTimer E2E Time 0 i) 0
+Poc Fast Cash Click POC Item Empty 1285 1638 353
+Poc Item Empty Appear : : 619 639 20
+PoC StopTimer 3835, 4216 381
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+
+Ltd 2009 Dates pa/tor2010
+
+UNCONTROLLED IF PRINTED Page No: 15 0f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+C01.M03_HNG-X LINK Cash Withdrawal
+
+The results for a LINK Cash Withdrawal transaction show that there is no significant difference between when the
+transaction is performed under load or not.
+
+The online parts of the transaction are the following:
+
+Transaction Authorised: The time it takes from entering the PIN to the transaction authorised dialog appearing which in
+the sample data is marginally higher of 293 milliseconds.
+
+Transaction settlement: The time taken for ‘Fast Cash Click’ to ‘Item Empty’. This is slightly higher under load of about
+738 milliseconds
+
+From To
+Window Object Action Window I _ Object
+Poc StartTimer E2E Time 0 0 0
+Card
+Poc Chip & PIN Click Dialog Insertion I 893 788 105
+Dialog Card Insertion Appear : : 606 443 “163
+Dialog Card Inserted Appear - - 1404 1287 118
+POC Withdrawal Appear - - 9061 9168 107
+POC Withdrawal Click POC Amount 554 428 -126
+Poc Amount SetValue as 20.00 : : 114 100 14
+POC Enter Click Dialog Enter PIN 929 871 -58
+Dialog Enter PIN Appear - - 587 393 194
+Dialog Enter PIN Vanish : : 3679 I 4141 462
+Dialog Transaction Authorised Appear : : 2450 I 2743 293
+Dialog Transaction Authorised Vanish : : 1216 1897 381
+SysMsg I Authorised - Receipt Printing Appear : : 2253 I 2154 99
+
+Poc Chip & PIN Appear - - 2876 2868 7
+POC StopTimer 33286 32785 -501
+Poc StartTimer E2E Time 0 0 0
+Poc Fast Cash Click Poc I ItemEmpty I 1442 I 2179 738
+Poc Item Empty Appear - - 848 606 -242
+POC StopTimer 4559 47741 212
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+
+Ltd 2009 Dates pa/t0r2010
+
+UNCONTROLLED IF PRINTED Page No: 16 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.2 C01.M04_HNG-X Purchase E-Top Up
+
+As test CO1.M05_HNG-X Purchase Phone Card swipe timing taken from video
+
+The average timing from the ‘card swipe being accepted’ to the ‘ETU Menu’ appearing is 122 milliseconds
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE Ref: TST/SOT/REP/0926
+Version: 0.1
+1482008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 17 0f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.3. C©01.M05_HNG-X Purchase Phone Card
+
+The results for an E-Top Voucher Sale show that there is no significant difference between when the transaction is
+performed under load or not.
+
+The online parts of the transaction are the following:
+
+Transaction Authorised: The time it takes from selecting a voucher to the transaction being authorised dialog
+(Dialog0091 2) to appear which is almost the same with a peak days load as it is with not.
+
+Transaction settlement: This transaction was settled by debit card and the settlement time for this transaction is included
+under the results for CO1.M10_HNG-X Payment by Debit-Credit card.
+
+Note: The timing on row 7 of the results indicates the timing from the System Authorised dialog to the system message
+Receipt Printing. The system message does not actually indicate the start of the printing and is not a persistent message
+(the printing of the receipt on the printer can start before the message is displayed)
+
+From Window Object ction I window Object Average
+ee
+PoC Home Click PoC 32
+POC StartTimer E2E Time 0
+POC Telephony Click POC Virgin 381
+e-voucher
+POC Virgin Click POC £10 361
+Poc e-voucher £10 Click Dialog I MsGoos12 I 400
+Dialog Mse00912 Appear - - 362
+Receipt
+Dialog Continue Click SysMsg Printing I 3165
+SysMsq Receipt Printing I Appear : : 360
+POC Item Appear : : 2750
+POC StopTimer E2E Time I 13681
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Ltd 2009 Dates pe/t0r2010
+
+UNCONTROLLED IF PRINTED Page No: 18 0f 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+4.1.4
+
+C01.M06_HNG-X Tax a vehicle for 12 months no VAT
+
+FUJ00117505
+FUJ00117505
+
+The results for a the DVLA transaction of Taxing a vehicle for 12 months show that there is no significant difference
+between when the transaction is performed under load or not.
+
+The online parts of the transaction are the following:
+
+Transaction Authorised: The online part of the transaction is incorporated into the last scan of the tax disc so it is hard to
+pinpoint the online timing, however each step of the transactions is slightly better under load. For completeness the
+
+counter transaction log records the online part of the transaction as follow:
+
+No Load
+
+[BALCommunication
+
+1720
+
+1319
+
+401
+
+Transaction settlement: The time taken for ‘Fast Cash Click’ to ‘Item Empty’. This is slightly less under load.
+
+From Window Object Action To Window Object A
+No Load I ze
+Poc Home Click Poc 38 A
+POC StartTimer E2E Time oO Oo 0
+POC Licences & Government Click POC Motor Vehicle Licences _Ibl 393 403 10
+Poc Motor Vehicle Licences_lb I Appear - - 877 555 22
+Poc Scan DVLAV11 barcode I Message I POC I Licence: MOT/New Vehicle I 175 155 -20
+Poc Licence: MOT / New Vehicle I Appear - - 5818 4823 -995
+Poc Licence: MOT / New Vehicle I Click Poc Scan (or key) the taxdisc I 1103 931 173
+Poc Scan (or key) the tax disc I Appear - - 563 557 5
+PoC Scan Tax Disc Message POC Cash 1784 1420 -364
+Poc Cash Appear - : 5018 5370 352
+Poc Cash Click PoC Item 730 733 3
+POC Item Appear - - 583 576 7
+POC StopTimer 19716 19745 29
+Poc StartTimer E2E Time ° ° t)
+Poc Fast Cash Click Poc Item Empty 14335 13564 712
+Poc Item Empty Appear - : 605 582 22
+Poc StopTimer 16878 16069 809
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 0.1
+mene UNCONTROLLED IF PRINTED Date: 06/10/2010
+Page No: 19 0f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.5 C01.M07_HNG-X SORN with vehicle address changes
+
+The DVLA SORN transaction was recorded under peak load at the data centre only. The results below show the timings
+for each step.
+
+The Settlement timing of ‘Settle Click’ to ‘Item Empty’ includes printing of the transaction receipt.
+
+From To
+
+Window I Object Action Window I Object Average
+U
+Poc I Home Click Poc 40
+Poc StartTimer E2E Time 0
+Motor Vehicle
+Poc I Licences & Government I Click Poc I Licences_Ibi 456
+Motor Vehicle
+Poc I Licences {bl Appear : : 580
+Scan DVLA V11
+poc I barcode Message Poc I SORN 184
+poc I SORN Appear : : 3439
+POC SORN Click POC Product Description_tb! 923
+Poc Product Desoription_tb!_I Appear - - 614
+SetValue as
+
+Poc Description_edt sornwith - - 296
+Poc I Enter Click Poc I Licences & Government 1161
+Poc I Licences & Government I Appear : : 592
+Poc I Item Appear : : 584
+Poc StopTimer 14502
+POC Home Click POC 42
+POC StartTimer E2E Time [)
+Poc I Item Appear : - 4123
+POC Settle Click POC Item Empty 11305
+Poc Item Empty Appear - - 606
+POC StopTimer 14561
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+
+Version: 01
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 20 0f 63
+FUJ00117505
+FUJ00117505
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+
+fos]
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.6 C01.M08_HNG-X Purchase postal order
+
+The results for a the purchase postal order transaction show that there is no significant difference between when the
+transaction is performed under load or not.
+
+The online parts of the transaction are the following:
+
+Voucher check: The online part of the transaction flow whereby the transaction gets routed to the APOP webservice is
+hard to pinpoint, however each step of the transactions is slightly better under load. For completeness the counter
+transaction log records the online part of the transaction as follows:
+
+No Load Under Load Difference
+BALCommunication 1468 906 -562
+BALCommunication 977 602 -376
+
+Transaction settlement: The time taken for ‘Fast Cash Click’ to ‘Item Empty’. This is 282 milliseconds less less under load.
+
+From To
+Window Object Action Window Object Average
+Under
+No Load
+Poc Home Click Poc 36 27 2
+POC StartTimer E2E Time i) O i)
+POC AP Manual Entry Click POC Barcode 454 314 -140
+Manual Token
+POC Barcode Click POC Input 444 358 86
+Manual Token SetValue as
+Poc Input 982693651 12099971968 - : 408 316 92
+Poc Enter Click Poc I SellPostalOrder I 1185 562 593
+Postal Order
+PoC Sell Postal Order Click POC Value_edt 1465 899 -567
+Postal Order
+POC Value_edt SetValue as 20.00 - - 129 99 -30
+Poc Enter Click Dialog I ConfrmPOFee I 988 679 -310
+Dialog I Confirm PO Fee ClickOn Continue Poc I PayeeName_edt I 766 635 “134
+Poc I Payee Name_edt Appear - - 611 506 105
+POC I Payee Name_edt I SetValue as mr'b brown : : 290 237 52
+PoC Enter Click Dialog Crossed? 875 689 -186
+Dialog Crossed? Appear - : 407 322 85
+Dialog Yes Click Dialog PO Sale 2504 I 1936 568
+Dialog PO Sale Appear : : 374 308 66
+Dialog OK Click Dialog Insert Slip 2092 1458 634
+Dialog Insert Slip Appear - - 368 296 -72
+Dialog Print Click ‘SysMsg Printing 2407 2316 -91
+SysMsg Printing Appear - - 393 307 -86
+Dialog I Remove Slip Appear - - 2629 I 2982 352
+Dialog Continue Click POC Item 14816 10663 4153
+Poc Item Appear : : 582 528 54
+Poc Fast Cash Click Poc Item Empty 1890 I 1608 -282
+Poc Item Empty Appear - - 599 516 84
+Poc StopTimer 55878 46530 -9349
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version:
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 21 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.7. C©01.M09_HNG-X Encash postal order
+
+The results for an encash postal order transaction are similar to that of purchasing a postal order and show that there is
+no significant difference between when the transaction is performed under load or not.
+
+From Te
+Window Object Action Window Object
+Poc Home Click Ppoc I AP Manual Entry 185 185 0
+Poc AP Manual Entry Appear - - 583 514 69
+Poc I AP Manual Entry Click pos 254 185 69
+pos StartTimer E2E Time o ° °
+POG Barcode Click POG Manual Token Input 431 346 -85
+Poc I Manual Token Input Appear - - 566 468 -98
+SetValue as
+POC Manual Token Input 982693651 12099971968 - - 395 306 -89
+Barcode/Card
+Pos Enter Click Dialog Already Used 622 an 151
+Barcode/Card
+Dialog I Already Used ClickOn Continue Poc I Encash Postal Order I 796 304 402
+POC Encash Postal Order Appear - - 559 488 71
+POC Encash Postal Order Click Dialog Security Check 1794 926 -867
+Dialog I — Security Check Appear - - 409 306 ~103
+Dialog Yes lick Dialog I Confirm Amount 1948 I 1538 I -409
+Dialog Confirm Amount Appear - - 366 322 43
+Dialog Yes Click Dialog PO Encash 1189 760 429
+Dialog PO Encash Appear - - 395 325 -70
+Dialog ok Click Pos Item 15836 I 11488 I -4348
+Poc Item Appear : : 623 509 “114
+Poc Fast Cash Click poc Item Empty 1630 I 1302 I  -328
+Poc Item Empty Appear - - 604 534 -70
+POC StopTimer E2E Time 40061 31580 -8481
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — Ret TSTISOTIREP/O926
+Version: 0.1
+tid 2008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 22 0f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.8 C01.M10_HNG-X Payment by Debit-Credit card
+
+The results for a payment by debit card show that there is no significant difference between when the transaction is
+performed under load or not.
+
+The online parts of the transaction are the following:
+
+Transaction Authorised: This time is from the ‘PIN Entry’ dialog appearing to the ‘Transaction Authorized’ dialog
+appearing. This time includes the manual entering of the PIN. However there is no significant difference under load.
+
+The Debit Card Settlement was performed on an ETU only basket and therefore the printing time includes an ETU
+
+receipt.
+From To
+Window Object Action Window Object Average
+No
+Load i
+Poc Home Click Poc 29 3 4
+POC StartTimer E2E Time oO i) O
+POC Settle Click POC Settlement 403 466 62
+Poc Settlement Appear - - 537 553 16
+Card
+Poc Chip & PIN_26 Click Dialog Insertion 934 1008 4
+Dialog Card Insertion Appear : : amt 361 9
+Dialog Card Inserted Appear : - 1485 1387 “128
+Poc Amount Appear : : 8626 8654 28
+Poc Enter Click Dialog PINEntry I 1487 1827 40
+Dialog PIN Entry Appear - : 342 360 18
+Transaction
+Dialog Authorised Appear - - 6519 6467 -52
+Dialog Partner Bank Appear : - 2825 2323 502
+ClickOn
+Dialog Partner Bank Continue I  SysMsg Printing I 3363 3629 266
+SysMsg Printing Appear : : 370 387 7
+SysMsg Printing Vanish : : 3283 3221 62
+Poc Item Empty Appear - - 567 567 0
+Poc StopTimer E2E Time I 37600 I 38544 944
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 01
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 23 0f 63
+FUJ00117505
+
+FUJ00117505
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+4.1.9 C01.M11_HNG-X Address Lookup
+These results are incorporated in the results for test CO1.M@719_HNG-X Post Special Delivery Small Letter
+The Address lookup in the transaction occurs on row 19 of the transaction and the results shown below.
+I poc I Enter I Click I poc I Addresses_tbl I 1200 I 1270 I -20 I
+
+The loaded timing average was slightly less at 1270 milliseconds and comparable with the no load timing
+
+4.1.10 C01.M12_HNG-X Purchase Saving Stamp
+
+The results of purchasing a Saving Stamp show that there is a slight increase in the settlement time (the only
+online part of the transaction) under load of 411 milliseconds to 1998 milliseconds.
+
+From To
+Window Object Action _I Window Object
+Poc Home Click Poc
+Poc StartTimer E2E Time
+£5 Saving
+PoC Retail Click POC Stamps
+£5 Saving
+PoC Stamps Click Poc Item
+POC Item Appear : :
+PoC StopTimer
+Poc StartTimer E2E Time
+POC Fast Cash Click POC Item Empty
+POC tem Empty I Appear - -
+POC StopTimer
+
+Note: Since this transaction was performed and compared, performance improvements to the solution have been made
+and the transaction performed again with no load, the average timing being 1106 milliseconds.
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE Ref: TST/SOT/REP/0926
+Version: 0.1
+1482008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 24 of 63
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+FUJ00117505
+FUJ00117505
+
+4.1.11 C01.M13_HNG-X Purchase 1st Class Stamps
+
+The results of purchasing 4 18' Class stamps show that the timings are slightly less under load and the online part of the
+transaction the settlement time being 1016 milliseconds.
+
+From To
+Window Object Action _I_ Window Object Average
+No Load oad
+POC Home Click Poc 43 34
+POC StartTimer E2E Time 0 t)
+POC Quantity_F15 Click Poc Quantity 220 185
+Poc Enter Click Poc (st 234 198
+Total Due From
+Poc ist Click POC Customer 1154 640
+Total Due From
+
+POC Customer Appear - - 653 656
+POC StopTimer E2E Time 8172 6919
+POC StartTimer E2E Time t) t)
+POC Fast Cash Click Poc Item Empty 1989 1016
+fzere StopTimer 4738 3438
+
+4.1.12 C01.M14_HNG-X Purchase Pure Air Sure Europe Stationery
+
+The results of purchasing Pure AirSure Stationary show that the timings are comparable
+
+The settlement being the only online part of the transaction and the timing under load being 1565 milliseconds.
+
+From To
+Window I Object _I Action I Window I Object Average
+No
+Load
+Poc Home Click Poc 35
+Poc StartTimer E2ETime I 0 0 0
+Poc Stamps Click Poc I Stationery I 546 867 2
+Airsure
+POC Stationery Click POC Europe 532 530 -2
+Airsure
+POC Europe Click POC Item 1088 931 -157
+Poc Item Appear : : 637 642 5
+Poc StopTimer 7930 7807 “123
+Poc StartTimer E2ETime I 0 0 0
+poc I FastCash I Click poc I ItemEmpty I 1617 1865 52
+Poc I Item Empty I Appear : : 628 636 8
+Poc StopTimer 4236 4205 31
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 01
+mene UNCONTROLLED IF PRINTED Date: 06/10/2010
+Page No: 25 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.13 C01.M15_HNG-X Purchase Scratchcard
+
+The results of purchasing 2 Lottery Scratchcards show that the timings are comparable.
+The settlement being the only online part of the transaction and the timing under load being 1541 milliseconds.
+
+From To
+Window Object Action I Window Object Average
+POC Home Click POC 39 40 1
+Poc StartTimer E2E Time ° ° 0
+POC Retail Click POC Quantity_F15 478 486 8
+POC Quantity_F15 Click POC Quantity 208 206 “1
+£1 Instant
+Poc Enter Click Poc Win 29 222 38
+£1 Instant
+Poc Win Click POC Item 880 896 16
+POC Item Appear - - 621 589 -32
+POC StopTimer 9852 9732 -119
+Poc StartTimer E2E Time 0 o °
+Poc Fast Cash Click POC Item Empty 1877 1541 +35
+Poc Item Empty I Appear - - 673 648 -25
+POC StopTimer 4220 4137. -83
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENcE Ref TST/SOT/REP/0926
+Version: 0.1
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 26 of 63
+FUJ00117505
+
+FUJ00117505
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+4.1.14 C01.M16_HNG-X Purchase Electricity Tokens
+The purchasing of Electricity tokens was only conducted under load.
+The settlement timing being 9219 milliseconds which includes printing of the receipt.
+From To
+Window Object Action Window Object Average
+AP Manual
+Poc Home Click Poc Entry 193
+POC AP Manual Entry Click POC I Token Type_lbl 334
+POC Token Type_tbl Appear - - 601
+POC Magnetic Card Click POC I Token Type_lbl 368
+PoC Token Type_tbl Appear - : 552
+Manual Token
+Poc Input SetValue as 9826121501 739808731 - - 302
+Poc Enter Click Dialog MSG10430 486
+Dialog MSG10430 ClickOn Continue Poc Amount 560
+POC ‘Amount Appear - : 647
+POC ‘Amount SetValue as 10.00 - - 99
+POC Enter Click Poc Cash 563
+PoC Cash Appear : - 596
+AP Manual
+PoC Cash Click Poc Entry 780
+Poc AP Manual Entry Appear - - 617
+PoC Fast Cash Click Poc Item Empty 9219
+Poc tem Empty Appear : : 643
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 0.1
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 27 of 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+4.1.15 C01.M17_HNG-X Purchase Premium Bonds
+
+The results of purchasing a Premium Bond show that the timings under load are comparable to those when there is no
+load. The settlement timing includes the receipt print.
+
+FUJ00117505
+FUJ00117505
+
+From To
+Window Object Action Window Object
+poc Home Click Poo Home 2
+poc Home StartTimer E2E Time 0 0 0
+Poe AP Manual Entry Click Poc Barcode us I 336 10
+Manual Token
+poc Barcode Click Poo Tut 30s I 987 2
+SetValue as
+PoC Manual Token Input 633625001014000000500004 - - 384 366 -19
+POC Home Click POC Home 444 454 10
+PoC Home StartTimer E2E Time 495 495, o
+POC AP Manual Entry Click Poc Barcode 766 586 -180
+Manual Token
+POC Barcode Click POC Input 281 287 5
+SetValue as
+PoC Manual Token Input 633625001014000000500004 - - 608 574 34
+Barcode/Card
+POC Enter Click Dialog Already Used 413 469 56
+Barcode/Card Already Enter Holder /
+Dialog Used GiickOn Continue Poo ‘Account NO os I ats 190
+Enter Holder /
+PoC Account No Appear - - 270 280 10
+Enter Holder /
+Poc ‘Account No SetValue as 9876543210 - : 28 I 237 9
+Poc Enter Click Dialog Message Prompt I 256 251 5
+Dialog Message Prompt Appear - - 718 726 8
+Dialog OK Click PoC Surmame_edt 594 598 3
+Poc ‘Surname_edt SetValue as Gordon - - 1304 1679 375
+PoC Forename_edt SetValue as Simon - - 511 550 39
+Poc inials_edt SetValue as S : : 200 I 799 4
+POG Enter Giick Poo English 376 I 49 a
+POC English Appear - - 637 608 -28
+POC Enter Click POC Addresses_tb! 344 239 -105,
+POC Addresses_tbl Appear : - 656 661 5
+Enter phone
+poc Enter Click Poo number 42s I 480 5
+POC Enter phone number SetValue as 02081234567 - - 613 624 12
+poo Enter Click poc I EnterDate ofBith I 199 I 199 4
+PoC Enter Date of Birth SetValue as 10111970 - - 600 607 7
+Poc Enter Click Dialog Message Prompt I 861 879 17
+Dialog I Message Prompt Appear : : 628 I 623 5
+Dialog OK Click Poc Amount 44709 45774 1065
+PoC Amount SetValue as 5000.00 - - 12 an A
+Poc Enter lick poo cash 14202 I 13958 4
+Poo Cash Click Poo item ae) 2
+PoC item Appear - - 16660 16446 214
+PoC StopTimer E2E Time 54057 51805 -2252
+poe StartTimer E2E Time 173 I 200 2
+Poe Fast Cash Click Poo tememoty I 1484 I 1346 38
+Poc tem Empty ‘Appear - - 349 360 4
+Poc stopTimer 2052_I 1928 124
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 01
+seo UNCONTROLLED IF PRINTED Date: 96/10/2010
+Page No: 28 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.16 C01.M18_HNG-X Purchase 1 Day Fishing License
+
+The results of purchasing a Fishing License show that the timings under load are comparable to those when there is no
+load. The settlement time includes receipt printing.
+
+From i
+Window Object. Action Window Object
+Poc Home Click Poc A
+Poc StartTimer E2E Time i) i) i’)
+Licences &
+Poc Government Click Poc EA First Time 468 I 395 74
+Poc EA First Time Click POC I Salmon &SeaTrout I 639 I 517 123
+Product
+Poc I Salmon & Sea Trout Click Poc Description tel I 1232 I 939 293
+Product
+Poc Description_tbl Appear - - 2120 I 736 1384
+POC Enter Click POC Start date 865 939 74
+POC Start date Appear - - 659 734 76
+SetValue as
+POC Start date 05032010 - - 154 126 -28
+Poc Enter Click Poc I EnterStartTime I 767 I 644 “123
+SetValue as
+POC Enter Start Time 00:00:01 - - 124 108 17
+Poc Enter Click POC I Date ofbirthbi I 674 I 597 17
+Poc Date of birth_bI Appear - - 603 I 544 59
+SetValue as
+Poc Date of Birth 25121990 - - 133 I 104 -29
+Poc Enter Click Poc Forename_edt I 664 I 644 -20
+POC Forename_edt SetValue as peter - - 251 231 -19
+Poc Enter Click Poc Surame_edt 657 I 620 37
+Poc Sumame_edt SetValue as smith - - 242 I 222 -20
+Poc Enter Click Poc English 837 I 752 85
+Poc English Appear - - 636 I 586 50
+PoC Enter Click POC Addresses_tbl 1934 1399 -535
+Poc Addresses_tbl Appear - - 572 544 -30
+POC Enter Click POC Male 1097 856 -241
+Poc Male Click PoC Cash 764 720 44
+POC Cash Click POC Item 1142 1043 -99
+POC Item Appear - - 709 581 -128
+POC StopTimer 53177 48195 4982
+Poc StartTimer E2E Time ° 0 °
+Poc Fast Cash Click Poc Item Empty 13015 I 14466 551
+Poc Item Empty Appear - - 644 586 55
+Poc StopTimer 16719 16971 252
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 0.1
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 29 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.17 C01.M19_HNG-X Post Special Delivery Small Letter
+
+The results of posting a Special delivery Small Letter show that the timings under load are comparable to those when
+there is no load.
+
+From Te
+Window Object Action Window Object
+Poc Home Click Poc 2
+Poc StartTimer E2E Time °
+POC Post Mail Items Click POC Weight 1610 1628 19
+PoC Weight Appear - - 573 583 10
+Poc Weight SetValue as 10 - : 201 I 201 0
+Poc Postcode SetValue as rgi28sn I : 245 I 270 24
+Poc Letter Click Poc Enter 588 6i1 23
+Select service then press
+Poc Enter Click Poc Enter_tbl 383877 6
+Select service then press
+Poc Enter_tbl Appear : : 815 884 68
+PoC Enter Click Dialog Postcode Restrictions 1099 1105 6
+Dialog Postcode Restrictions ‘Appear - - 477 518 42
+Dialog Continue Click Poc Value of Goods 548 I 818 31
+Poc Value of Goods Appear : : S77 I 610 3
+Poc Value of Goods SetValue as 1.00 : : a) 103 2
+Poc Enter Click Poc Add-ons_Ibl 696 I 890 194
+Poc Add-ons_Ibl Appear : : 606 I 650 44
+Poc Enter Click Poo English 607 I 593 13
+Poc English Appear : : 610 I 644 34
+Poc Enter Click Poo Addresses_tbl 1290 I 1270 20
+Poc Addresses_tbl Appear - - 592 603 12
+POC Enter Click Poc Barcode_edt 684 694 11
+Poc Barcode_edt Appear - - 769 586 183
+SetValue as
+Poc Barcode_edt «12340074 16B - : 276 I 310 33
+Poc Enter Click Poo Stamps_68 1377 I 1894 214
+Poc Stamps_68 Appear : : 669 679 1"
+Poc Stamps_68 Click Poc Enter 338 346 9
+POC Enter Click Poc Item 7522 7793 271
+POC Item Appear - - 597 726 130
+Poc StopTimer 50914 I 62642 I 1728
+Poc StartTimer E2E Time ° 0 0
+POC Fast Cash Click PoC Item Empty 1477 1586 109
+POC Item Empty Appear - - 607 653 46
+Poc StopTimer 4015 I 4230 218
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — Ret TSTISOTIREP/O926
+tid 2008 Date” Oartono10
+
+UNCONTROLLED IF PRINTED Page No: 30 of 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+4.1.18 C01.M20_HNG-X Post Large Letter
+
+The results of Posting a Large Letter show that the timings under load are comparable to those when there is no load.
+
+FUJ00117505
+FUJ00117505
+
+© Copyright Fujitsu Services
+
+Ltd 2009
+
+From To
+Window Object Action Window Object
+Poc Home Click Poc 12
+PoC StartTimer E2E Time 0 0 0
+Poc Postal Services Click Poc Post Mail Items 407 451 44
+Poc Post Mail Items Click Poc Weight 1697 1607 -90
+Poc Weight Appear - - 651 602 -49
+SetValue as
+Poc Weight 101 - - 208 209 1
+SetValue as
+Poc Postcode 1912 8sn - - 255 264 9
+Poc Large Letter Click Poc Enter 714 704 9
+Select service then press
+Poc Enter Click Poc Enter_tbl 1040 865 “175
+Select service then press
+Poc Enter_tbl Appear - - 854 818 -36
+Poc Enter Click PoC Stamps_68 1314 1468 154
+PoC Stamps_68 Appear : : 736 660 76
+Poc Stamps_68 Click Poc Yes 268 366 98
+Poc Yes Click Poc Enter 280 298 18
+Poc Enter Click Poc Item 6424 I 6650 226
+Poc Item Appear - - 709 597 “112
+Poc StopTimer 32608 I 31795 813
+Poc StartTimer E2E Time 0 0 0
+Poc Fast Cash Click Poc Item Empty 1289 I 1299 10
+Poc Item Empty Appear - - 719 633 -86
+POC StopTimer 4191 3845 -346
+Ref TST/SOT/REP/0926
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED
+
+Version: 0.1
+Date: 06/10/2010
+
+Page No: 31 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.19 C01.M21_HNG-X Post Letter USA Weighting
+
+The results of posting a Large Letter to USA Weighting show that the timings under load are comparable to those when
+there is no load.
+
+From To
+Window Object Action Window Object Average
+bed
+Poc Home Click Poc a I 4 4
+Poc StartTimer E2E Time 0 ° 0
+POC Postal Services Click POC Post Mail Items 515 498 -17
+POC Post Mail Items Click POC History 2514 2324 -190
+Poc History Appear : . 632 I 589 42
+Poo Weight SetValue as 100 : - zat I 224 3
+Poc Change Country Click Poc USA 264 I 1046 I 193
+Poo USA Appear : : 650 I 649 4
+Poc USA Click Poc Letters & Postcards I 1542 I 1503 I  -39
+Poc Letters & Postcards Appear : : 635 I 647 "1
+Poc Letters & Postcards Click Poc Enter 1118 I 911 -207
+Select service then press
+Poo Enter Glick Poc Enter_tbl 1447 I 1826 I 80
+Select service then press
+Poc Enter_tbl Appear . . s4o I 888 47
+Poc Enter Click Dialog MSG99905 1438 I 1581 I 143,
+Dialog Ms@99905 ClickOn Continue I POC Value of Goods 795 I 840 46
+Poc Value of Goods Appear : : 623 I 675 52
+Poo Value of Goods SetValue as 100.00 . . 137 I 139 1
+Poc Enter Click Poo Weight 81 1444 I 1503 I 59
+Poc Weight_81 Appear : - 704 I 699 4
+POG Enter Click POG Premises_Ibl 1009 1216 207
+POC Premises_Ibl Appear - - 634 588 45
+POC Enter Click POC Barcode_edt 1207 1244 36
+SetValue as
+
+Poo Barcode_edt LY123400755GB : . 358 I 358 1
+Poc Enter Click Poc Print Label 1913 I 2034 I 121
+Poc Print Label Appear : : 705 I 699 6
+Poc Stamps_68 Click Poc Enter 363 I 354 2
+POG Enter Click POC Item 12951 I 13192 242
+POC Item Appear - - 625 644 19
+Poc StopTimer 74685 I 75452 I 767
+Poc StartTimer E2E Time 0 0 0
+POC Fast Cash Click POC Item Empty 1651 1668 17
+POC item Empty Appear - - 636 I 614 -22
+Poo StopTimer 4405 I 4312 I _-93
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — Ret TSTISOTIREP/O926
+
+tid 2008 Date” darton010
+
+UNCONTROLLED IF PRINTED Page No: 32 0f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.20 C01.M22_HNG-X Packet
+
+The results of posting a packet show that the timings under load are comparable to those when there is no load.
+The transaction includes printing a pre-paid label.
+
+From To
+Window Object Action Window Object Aver:
+No
+Load
+POC Insert Label Message. POC Home 194
+POC Home Click PoC 29
+POC ‘StartTimer E2E Time oO
+PoC Postal Services Click Poc Post Mail Items 475
+Poc Post Mail Items Click Poc Weight 1625
+poc Weight Appear : 591
+poo Weight SetValue as 280 : 210
+POC Postcode SetValue as rg128sn - 258
+PoC Packet Click PoC Enter 613
+Select service then press
+Poo Enter Glick poo Enter tb 1oo2 I 968 I 34
+Select service then press
+POC Enter_tbl Appear - - 842 824 18
+PoC Enter Click Dialog Postcode Restrictions 1170 1648 478
+Dialog Postcode Restrictions Appear - - 498 457 41
+Dialog Continue Click PoC Value of Goods 597 613, 16
+POC Value of Goods Appear - 591 559 32
+poo Value of Goods SetValue as 1.00 : 9 I 87 2
+Poc Enter Click Poc ‘Add-ons_Ibi 714 770 87
+PoC Add-ons_Ib! Appear - 626 614 12
+POC Add/ Remove_53 Click Poc Enter 711 14 3
+POC Enter Click Poc English 651 821 170
+PoC English Appear - ~ 618 634 16
+POC English Click POC o1 98 6
+POC Enter Click POC Addresses_tb! 1278 2195 917
+POC Addresses_tb! Appear - 560 572 12
+POC Enter Click Poc Barcode_edt 717 706 14
+SetValue as
+poc Barcode_edt Kc1234089588 . 168 I 200 I 1967
+poe Enter Click poo Pre-paid 1213 I 1860 I 647
+POC Pre-paid Appear = - 686 715 29
+POC Pre-paid Click POC Enter 396 365 31
+POC Enter Click Poc Pre-paid Amount 627 685 58
+Poc Pre-paid Amount Appear - 498 626 127
+POC Pre-paid Amount SetValue as 0.50 - 209 138 72
+poo Enter Click poc Print Label ees I 797 I 132
+Poe Print Label Appear : : sss I 700 I 146
+POC Print Label Click POC Enter 909 410 499
+POC Enter Click Dialog Confirm Print Successful 3805, 5510 1704
+Dialog Confirm Print Successful Appear - - 887 392 196
+Dialog Yes Click ‘SysMsg Printing 2108 I 2919 att
+SysMsg Printing Appear - - 722 446 217
+Poc item Appear - 13647 I 4502 I 9145
+Poe Stoptimer 55242 I 76224 I 20982
+POC StartTimer E2E Time 252 O -252
+POC Fast Cash Click Poc Item Empty 1674 2084 410
+PoC tem Empty Appear - 1152 I 584 568
+POC StopTimer 3128, 4665, 1537
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 01
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 33 0f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.21 C01.M23_HNG-X Bulk Post
+
+The Bulk Post transaction cuts off the Postal Services Despatch before conducting the actual Bulk Post (which starts on
+row 11), this is to ensure that the Postal Service barcodes can be re-used. The action ‘Message’ on row 14 indicates a
+Winrunner message, which is used to more accurately indicate the time of the scan of the first barcode.
+
+The Bulk Post transaction was conducted under load only.
+
+From To
+
+Window Object Action _I Window I Object
+Poc Home Click Poc I Back oftce
+Poc Back Office Click Poc I Despatch 375
+Poc PS Despatch Click Poc Branch 333
+Poc Branch Click Poc All Carriers 399
+PoC All Carriers Click PoC Cut Off 1087
+POC Cut Off Click Dialog MSG90903 486
+Dialog MsG90903 Appear : : 361
+Dialog No Click Poc Branch 618
+Poc Branch Appear - - 595
+POC Front Office Click POC Home 441
+
+Postal
+Poc Home Click Poc I Services 201
+Poc Postal Services Click Poc 290
+Poc StartTimer E2E Time °
+Poc RM Speedbulk Click Poc I Barcode_edt I 2841
+Poc Barcode_edt Appear - : 537
+‘Speed Bulk Post
+Poc Facility Message I POC Enter 193
+POC Enter Click PoC Item 1129
+PoC Item Appear - - 699
+SysMsg Printing Appear : : 1341
+Poc StopTimer 21885
+Poc Home Click Poc 30
+Poc StartTimer E2E Time 0
+Poc Item Appear : : 7639
+Poc Settle Click PoC I ItemEmpty I 1766
+Poc Item Empty Appear : : 583
+POC StopTimer 4819
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Ltd 2009 beter” dartoz0r0
+
+UNCONTROLLED IF PRINTED Page No: 34 0f 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+4.1.22 C01.M24_HNG-X Pay Bill
+
+The results of paying a Barcoded Bill show that the timings under load are comparable to those when there is no load.
+The settlement timing includes the receipt print.
+
+From Te
+Window I Object Action _I Window I _ Object
+Poc Home Click Poc Home
+Poc Home Message poc Home 465 344 176
+POC Home StartTimer E2E Time i) 0 i)
+POC Amount Appear - - 3932 3924 8
+SetValue as
+POC Amount 100.00 - - 121 135 14
+Poc Enter Click Poc Cash 542 703 161
+Poc Cash Appear - - 583 589 6
+AP Manual
+POC Cash Click Poc Entry 765 887 122
+AP Manual
+Poo Entry Appear : - 631 624 7
+Poc StopTimer 7632 I 7947 316
+Poc StartTimer E2E Time ° ° o
+Poc I FastCash Click POC I ItemEmpty I 8052 I 7503 549
+POC I Item Empty Appear - : 605 era 9
+Poc StopTimer 10594 I 10081 513
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE RF TSTISOTIREP/O926
+Version: 0.1
+tid 2008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED
+
+Page No: 35 of 63
+
+FUJ00117505
+FUJ00117505
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+4.1.23 C01.M25_HNG-X Freedom Passes
+
+The results of applying for a Freedom Pass show that the timings under load are comparable to those when there is no
+
+load.
+
+FUJ00117505
+FUJ00117505
+
+From
+Window Object Action To Window Object
+POC Home Click POC AP Manual Entry 201 210
+POC AP Manual Entry Click Poc Barcode 328 328
+POC Barcode Appear - - 551 555
+POC Barcode Click Poc Manual Token Input 378 363
+SetValue as
+POC Manual Token Input. 982694350000000000950005, : - 362 365
+POC Enter Click Dialog MSG10430 498 483
+ELDERLY Freedom
+Dialog MSG10430 ClickOn Continue poc Pass 583 421
+ELDERLY Freedom
+POC Pass Appear - - 591 583
+ELDERLY Freedom Product
+
+PoC Pass Click Poc Description_tb! 826 814
+Poc I Product Description tbl Appear - - exe I 62
+Poc Description edt SetValue as 32 : : 23 I 230
+PoC Enter Click Dialog MSG10800 810 811
+
+Dialog MSG10800 Appear - - 416 411
+
+Dialog OK Click poc Date of Birth 553 538
+POC Date of Birth Appear - - 563 555
+PoC Date of Birth ‘SetValue as 01011945, - - 118 108
+Poc Enter Click Poo Birth Certificate osz I 652
+Poo Birth Certificate Appear - - oa I 583
+POC Birth Certificate Click PoC Utility Bill 929 704
+POC Utility Bill Appear - - 646 631
+PoC Utility Bill Click Poc Sumame_edt 725 703
+Poc ‘Surname_edt ‘Appear : - 589 617
+PoC Surname_edt SetValue as Lowe - - 228 229
+Poc Forename_edt SetValue as John : : 28 I 224
+
+Select Customers
+POC Enter Click Poc Gender 868 663
+Select Customers:
+
+POC Gender Appear - ~ 599 614
+Poo Male Click Poo Customer are I 750
+POC Customer Appear : - 612 597
+POC JTextField_O SetValue as RG128SN - - 279 264
+Poe ‘STextFietd_1 SelValue as 1 : : 228 I 226
+POC Enter Click Poc Addresses_tb! 1470 1402,
+Poc Addresses _tbl Appear - - 559 548,
+PoC Enter Click Dialog MSG10802 926 890
+
+Dialog MSG10802 Appear - - 416 395
+
+Dialog OK Click PoC Amount: 681 658
+POC ‘Amount: Appear : - 638 689
+POC ‘Amount: SetValue as WES - - 239 242
+PoC Enter Click Poc British 839 831
+Poc British Appear - - 672 659
+POC British Click Poc British_1 801 953
+POC British_1 Appear - - 648 837
+POC Enter Click Dialog MSG10802 832 825
+
+Dialog MSG10802 Appear - - a7 417
+PoC Home Click PoC 44 41
+POC StartTimer E2E Time oO oO
+Poc Item ‘Appear . . s493 I 5462
+Poc Home Click Poo 27a I 10832
+POC StartTimer E2E Time 102, 402,
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 0.1
+seo UNCONTROLLED IF PRINTED Date: 96/1012010
+Page No: 36 of 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+FUJ00117505
+FUJ00117505
+
+4.1.24 C01.M26_HNG-X Moneygram
+
+The MoneyGram Send transaction is comparable when under load to when there is no load
+
+From To
+Window Object Action window object
+poo Home Citek pos
+Pos startiner £26 Time 0
+Pos Banking Chek poe MoneyGram sor I avr So
+MoneyGram Send
+poo MoneyGram Cie pos Srainary oa I se zr
+Moneysram Send
+Poo Sranary Ciiek poc I Receive countycode I 1331 I 1021 310
+Poc I Receive County Code Appear ° gee I saz a3
+Poc I Receive County Code SetValue as deu : : 20 I 206 4
+Pos Enter Ciek poe £ incuding fee z001 I 108 4183
+Pos Cincng feo Sick Pos Cums ooo I 680 os
+Pos EURO Chek Pos Amourtin€ ree I 656 08
+POC Amount in £ Appear - - 554 509 45
+Pos meant € setvale 3610081 : : te or ”
+Poo ene Grek Dialog Confirm Around sir I see ies
+Dialog Conti Amounts Appear : ’ sor I st
+Diag ‘continue Chex Disieg I Paymentitecevear I a25 I oss aa
+Dialog I Payment Received? Appear : ’ = I oss a
+Bases ‘ontince hex poc I sendersFistnane I 1123 I for te
+POC I Senders Fist Name Appesr ° : ‘ea BH ‘o
+Pos I SendersFist Name SetValue as mark : : ze I ote Me
+Pos Emer ick poc I senders middeintat I fore I eet Py
+Poe I Senders mc Inta! Appear ° " Soo I See BH
+Poe I Senders Miele Int! SetValue asc : : a2 I bos z
+Pos mer ‘Cick poc I Senderstastname I tos2 I ius su
+Poc I Senders ast Name ‘Appear ° “ soe I Ser 7
+Poo I Senderstast Name Setvaive ae Graham : : ger I be ie
+Pos Ener Chek pac I senders Telephone No I 800 I 770 i
+POC I Senders Telephone No Appecr ° : so I Sr 53
+Poc I Senders Telephone No I Setvalue a 02083210085, : : 300 I 261 233
+Poe Ener ick poe English dois I Sox 208
+Pos Engtsh Appear ° , tes Ie 28
+Pos enter Chex poe Adresses 1 tm I tose %
+Pos Addrewses tl Appear ° “ gs I 08 2
+Pos Emr Chex poc I ReceiversFistName I tsa I 1900 aH
+Poe I Recewvers Fst Name ° ! or 20 2
+Po I Recewers Fret Name setvae a5 ames : : ga I 8 3
+Pos cote ick poc I Receivers itisae misar I 850 I 708 B
+Poe I Receivers Mil ra Appesr ° " fs I ova %
+Pos I Recewers Mad atl Selvalue 951 : : I 2s ‘
+Pos Enter tek pac I Receiverstastname I a8 I fez a1
+POC Receiver's Last Name Appear - - $73 S71 2
+Pos I Receve’s LastName Setvaive as morgan : : a2 I os ie
+Receiver 2nd Last
+poe enter Ck pos Name wo I on aa
+Receiver 2nd Last
+poe Name Ae . - coo I 575 2
+Receives 2d Last Setvate oo Francisco
+poo Namo ‘Cabanias, . . as I oe 46
+Pos Enter ick Dialog I Testaueston Provided I i308 I ora 300
+Disiog I Test Question Provided Appear : ° we I 3a Sos
+Diag Yeo Chek poe Test Queston or I tao 30
+Poo Test Question Appear ° “ 01 03 °
+Pos Test Question SetValue as county of bith : : fo I 385 se
+Pos tr ick poe eat Arava or I te 180
+Poo Test Answer Appear ° * as I S00 3
+Pos Testarsner SetValue ss new zealand : : 81 23 ey
+Pos enter ick poc Sender Message iors I B08 inv
+Pos Sender Message Appear ° " oe I ats ot
+Pos Sender Message SetValue asinvice 123456 : : tie I one tO
+Poo Enter ek Dialog Liabity Warning too I 820 aie
+Dialog Laity Warring Appear : : gre I 400 Py
+Daag Conte Chex sys Printing ee I 708 tae
+Syst Panne Appear : " aos I 85 Me
+SyaMeg Panne Vent : : cose I dean tree
+Poe tom peat : : zooss I irs I 2056
+Poo stoptimer £26 Time taarer I teas I rover
+Pos Stantimer E2E Time 0 ° 0
+Pos Fast Cash Chek poc tern Empty wonI 1420 181
+Pos tem Empty Appear ° : ozs I 86 ‘or
+Poo stoptimer sioe_I 3079 2s
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Ltd 2009 Version: 01
+UNCONTROLLED IF PRINTED Date: 96/1012010
+Page No: 37 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.25 C01.M27_HNG-X Travel Insurance
+
+The Travel Insurance transaction sells a single trip policy for two people to Norway Europe without Winter Sport Cover
+The Travel Insurance transaction is comparable when under load to when there is no load.
+
+From es Te.
+
+Window. Object. Action. Window Object
+
+No
+
+ia
+poe Home ek roc Home at
+Poe ome Moosane Poo Home a2
+Poe Home Stertiner °
+Bisa I Barcode/cara Ateady Used I clckOn Contnue Poo Single Tp Cover a1
+PoC ‘Sate Trp Gover ‘pest ° : ser
+Pos Single Tp Cover Seek poo Product Description. I 927
+Poo Produ Deserpton Appear ° ° nr
+Pot mer Chee poe I Numberoftiaveters 1854 I Tor
+PoC I Number of Trevalers 18-54 Appear ° ° a2
+pos I Number of Travelers 18.54 selec as 2 : : ‘7
+Pot ter Chek pac I Number oftaveters 5.04 I 729
+PoC I Number of Tavalers 55.04 Appear ° " us
+poo I Number of Travelers 5-68 soivaue es 0 : : 204
+Pot tree Ciek pac Destination County ier
+Poe Destinavon County Appear ° : os
+Pos Destnavon County Setvalue as nowey : 28
+Poe enn ick poe Europe oes
+Pos Curepe peat ° : oor
+pot Ewore Chek poc Departure Date ost
+Pot Departure Date sevaweasori22010 I Pe : ‘34
+Poe ener cick poe Retin Date on
+Poe etn Date seveueassirza010 I : ve
+Poe Cmer Ciek Dialog vwsoi0s02 Ba
+isla wws10800 Appear ! iar
+Dios OK Chex poe pe
+toc enter tek isla Winter Spors Cover ais
+Dialog Winter Sports Cover ‘ClickOn No Poc Promotion Code {if any)_Ibl 669
+toc I Prometon Gove (fan) ‘Appest ° Bs
+Pot Ener Chee Dialog uote mat
+Dislog ucts Appear : ‘ “ea
+Bios Yes Chee Dialog Ht ep 138
+Big wate Appesr : {es
+Balog ‘Yes Chex Dialog Statement oes
+Bag sttenert Appesr ss
+Dialog OK rex PoC I PotcyHoldersAge_ect I 850
+POC Policy Holder's Age_edt ‘SetValue as 30 - - 222
+Pos mer tick poe Policy Heider 0.0.8 ies
+Pos Potoy Hoter 0.8 Anpest ° * tor
+Pot ter Chee poe Surname_edt sar
+Poe Suname_edt SetVate a enkins ° " 2
+Poe inal ast Sewvsuc sem : : 2
+Pot ite ick Poe cree 6
+Pot ner Chek Poe cralch oes
+Poe engin Appear ° : By
+pos ener Chee poo Addresses. 2001
+Pos Adctenses Appear ° ; So
+poe Cnr Sick Poe Ener 100
+Pot Ener het Poe I PolcyHoiers Age eat I bss
+Pot Policy elders Age_edt Setvsive 35 20 ° ° a8
+Poe mer ick poe Policy Heider 0.0.8 arr
+Pot Poly Hoier 0.0.8 Aepeat ° ; car
+Pot emer Sick poo Suiname_eat ovo
+Pos SetValue sjonkins ° " 304
+Poe Seivauc oe : : 50
+Poe Chek Poo erie an
+poo emer het Dialog Marketing Consent cor
+slog Marketing Consent Appear ° “0
+Disiog Mes Chee Dialog Statement tet
+Dilog Staement Appear : : oor
+Bios OK Chex poo cash 2
+to Cash Appear ° : 0
+Pot Cash Chee poc tom ‘3
+Pot tom Appesr ° " tas
+Poe soptiner 2E Time rom
+Poe Seutiner SE Tine °
+Pot Fast Cash ick poo tem Empty 20526
+poe tem Empty Appear ° : ori
+POs stoptimer sei20
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Ltd 2009 Version; 0.1
+Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 38 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.26 C01.M28_HNG-X Purchase Foreign Currency
+
+There are several ways to perform a bureau sale foreign currency transaction.
+
+The results displayed here are for selling Euros by the amount specified in British pounds. This transaction was chosen
+so that it can be compared against the most recent Horizon video timings.
+
+The Purchase of Foreign Currency transaction is comparable when under load to when there is no load.
+
+Results have also been collected for selling U.S dollars specifying a dollar amount rather then British pounds with similar
+timings.
+
+From To
+Window I Object Action Window I _ Object
+POC Home Click Poc 4
+POC ‘StartTimer E2E 0
+Amount In
+PoC Sell Euros Click POC GBP 711 725 14
+Amount In
+POC GBP Appear - - 583 603 20
+Amount In
+Poc GBP Click Poc I Amount I 611 I 788 17
+poc I Amount Appear : : 598 I 625 27
+SetValue as
+PoC Amount 200.00 - - 147 150 3
+POC Enter Click POC Sell*_22 620 595 -25
+POC Sell*_22 Appear - - 594 578 -16
+poc I sellt_22 Click Poc I SummarytelI 908 I 837 al
+Poc I Summary_tbl Appear - - 634 634 0
+POC Enter Click POC Travel 1003 1032 29
+Poc Travel Appear - - 636 I 685 49
+Poc StopTimer 16104 I 16199 I 95
+POC StartTimer E2E Time 0 0 0
+poc I FastCash Click Poc I ItemeEmpty I 9117 I 8922 I -195
+Poc I Item Empty Appear : : 696 I 643 53
+Poc StopTimer t1ee6_I 11550 I _-316
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE Ref: TST/SOT/REP/0926
+Version: 01
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 39 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.27 C01.M29_HNG-X Purchase Foreign Currency in Travellers Cheques
+The Sale of Foreign Currency in Travellers Cheques, sells Euros with the amount specified in British pounds.
+The Sale of Foreign Currency in Travellers Cheques transaction was conducted under load only.
+
+From To
+Window I Object Action Window I Object
+POC Home Click POC
+Poc StartTimer E2E 0
+Amount In
+POC Sell Euros Click PoC GBP 725
+Amount In
+PoC GBP Appear - - 603
+Amount In
+Poc GBP Click Poc ‘Amount 788
+Poc ‘Amount Appear : : 625
+SetValue as
+POC Amount 200.00 - - 150
+POC Enter Click PoC Sell*_22 595
+Poc Sellt_22 Appear : : 578
+POC Sell*_22 Click POC Summary_tbl 837
+Poc I Summary_tbl Appear - - 634
+Poc Enter Click Poc Travel 1032
+Poc Travel Appear : : 685
+Poc StopTimer 16199
+PoC StartTimer E2E Time 0
+POC Fast Cash Click Poc Item Empty 8922
+Poc I Item Empty Appear : : 643
+POC StopTimer 11850
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 01
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 40 of 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+4.1.28 C01.M30_HNG-X Purchase Pre-Order Foreign Currency
+
+The sale of Pre-Order Foreign Currency creates an order for Euro currency and then submits the order.
+The Pre-order Foreign Currency transaction was conducted under load only.
+
+From
+Window Object Action. Object _ Averages
+POC Home Click POC 32
+POC StartTimer E2E 0
+PoC Travel Click PoC PreorderService 446
+PoC PreorderService Click Poc Create Order 537
+PoC Create Order Click Dialog MSG10802 935
+Dialog OK Click Poc “Amount 628
+PoC Amount SetValue as FRA : : 206
+PoC Enter Click Dialog MSG10802 1534
+Dialog ‘OK Click POC Currency Options_!bI 779
+POC Euro, Click POC Currency Input 658
+PoC Sterling Click Poc Amount 642
+PoC Amount: SetValue as 500.00 - - 135,
+Poc Enter Click poc Select Rounding 818
+Poc Sell EUR Click Dialog MSG 10800 954
+Dialog ‘Yes Click Poc Method of Payment 1 648
+PoC Cash Click Dialog MSG10802 2325
+Dialog OK Click PoC Total Due From Customer 5085,
+Poc StartTimer E2E Time co)
+PoC Fast Cash Click Poc item Empty 1289
+POC ‘StopTimer 3612
+Poo Travel Click Poc PrearderService 472
+Poc I PreorderService Click Poo Submit Order 543
+POC Submit Order Click PoC Amount: 965
+PoC Amount SetValue as PBL1019137 - - 269
+POC Enter Click Dialog MSG10802 1653
+Dialog OK Click Dialog MSG10802 712
+Dialog OK Click PoC Sumame_edt 725
+Poc I sumame_edt SetValue as Blah : : 232
+POC Forename_edt SetValue as Bobby ~ - 236
+PoC Enter Click POC English 790
+Poc Enter Click PoC Addresses_tbl 1353
+PoC Enter Click Poc ‘Amount: 876
+PoC Amount: SetValue as 02081234567 - - 182
+PoC Enter Click Poc Email Address 683
+Poc Enter Click Dialog MSG 10800 708
+Dialog No Click Dialog MsG10800 a2
+Dialog No Click Dialog MSG10800 673
+Dialog Yes Click ‘SysMsg Printing 4663
+POC Home Click Poc 27
+PoC StartTimer E2E Time co)
+PoC Settle Click Poc item Empty 1154
+Pos StopTimer 4018
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 01
+seo UNCONTROLLED IF PRINTED Date: 96/10/2010
+Page No: 41 of 63
+
+FUJ00117505
+FUJ00117505
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+4.1.29 C01.M31_HNG-X Foreign Currency Buy Back
+The Foreign Currency Buy Back transaction buys back 200 US Dollars.
+The Foreign Currency Buy Back transaction was conducted under load only.
+
+From To
+Window I Object Action Window I Object _I Average
+POC Home Click POC 35
+Poc StartTimer E2E 0
+us
+POC Travel Click PoC Dollar_23 454
+POC polar 23 Click PoC 383
+POC StopTimer E2E 4085
+Poc I Amountin£ Appear : : 2665
+SetValue as
+Poc I Amount in é 200.00 - - 80
+Poc StartTimer E2E o
+Poc Enter Click Poc I Summary_tbl I 577
+Poc I Summary_tbl Appear : : 527
+POC Enter Click POC Travel 667
+Poc Travel Appear - - 598
+Poc StopTimer 5573
+Poc StartTimer E2E Time °
+POC Fast Cash Click PoC Item Empty 6876
+Poc Item Empty Appear - - 549
+Poc StopTimer 9239
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Ltd 2009 beter” oartorzor0
+
+UNCONTROLLED IF PRINTED
+
+Page No: 42 of 63
+
+FUJ00117505
+FUJ00117505
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+4.1.30 C01.M32_HNG-X Remittance Acceptance
+
+The Remittance Acceptance transaction accepts a Cash remmitance.
+
+The Remittance Acceptance transaction was conducted under load only.
+
+FUJ00117505
+FUJ00117505
+
+From To
+Window Object Action Window Object
+POC Home Click Poc
+POC StartTimer E2E Time [)
+POC Back Office Click POC Back Office Home 423
+Poc Back Office Home Appear : : 534
+Poc Rems & Transfers Click Poc Delivery 403
+Poc Delivery Appear : : 576
+PoC Delivery Click POC I Pouch Barcode t_edt I 395
+Poc Pouch Barcode 1_edt Appear - - 526
+SetValue as
+POC Pouch Barcode 1_edt 301200000662 - - 260
+Auto-Remittance Data
+POC Enter Click Dialog Error 2100
+Auto-Remittance Data
+Dialog Error Appear : : 396
+Dialog Manual Click Poc Cash Value_edt 366
+Poc Cash Value_edt Appear : : 590
+Poc Cash Value_edt SetValue as 1000.00 : : 132
+Cash Value
+Poc Confirmation_edt SetValue as 1000.00 : : 110
+Poc Enter Click Poc Pouch Barcode 2_edt 457
+Poc Pouch Barcode 2_edt Appear - - 540
+POC Enter Click POC Print 516
+Poc Print Click SysMsq Printing 2541
+SysMsq Printing Appear : : 399
+Dialog Remove Receipt Appear : : 3277
+Dialog Continue Click SysMsq Printing 2405
+SysMsg Printing Appear - - 414
+SysMsq Printing Vanish : : 2571
+PoC Print Appear : : 700
+PoC Enter Click Poc New 4924
+Poc New Appear - - 570
+POC Front Office Click POC Front Office Home 463
+Poc Front Office Home Appear - - 609
+PoC Home StopTimer 45485
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 01
+seo UNCONTROLLED IF PRINTED Date: 96/10/2010
+Page No: 43 of 63
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+4.1.31 C01.M33_HNG-X Remittance Rejection
+
+The Remittance Rejection transaction reverses a remmitance.
+The Remittance Rejection transaction was conducted under load only.
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED
+
+Version: 0.1
+Date: 06/10/2010
+
+Page No: 44 of 63
+
+From To
+Window Object Action Window Object Average I
+der
+Poc Home Click Poc Back Office 229
+PoC Back Office Click Poc Back Office Home 449
+Poc Back Office Home ‘Appear - - 650
+POC Rems & Transfers Click Poc Out to ADC 429
+Poc Out to ADC Click Poc Usable & Unusable. 504
+Poc Usable & Unusable. Click POC I Notes_Denomination_tbl I 876
+POC I Notes_Denomination_tbl Appear - : 736
+Poc Enter Click Poc Settle 1065
+POC Settle Click Poc Barcode_edt 396
+Poc Barcode_edt Appear - - 632
+SetValue as
+Poc Barcode_edt 302100011352 - : 273
+POC Enter Click Dialog MSG00557 5653
+Dialog MSGO00557 Appear - - 426
+Dialog Continue Click Poc New 4864
+Poc New Appear - - 608
+POC Home Click Poc Rems & Transfers 191
+Poc Rems & Transfers Click Poc Reverse_24 392
+Poc Reverse_24 Click Poc Pouch Barcode 1_edt 413
+Poc Pouch Barcode 1_edt Appear - - 582
+SetValue as
+POC Pouch Barcode 1_edt 302100011352 - : 258
+POC Enter Click Poc New 7853
+Poc New Appear : - 669
+Ref: TST/SOT/REP/0926
+
+FUJ00117505
+FUJ00117505
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.32 C01.M34_HNG-X Transaction Correction for a Remittance Shortage
+
+The transaction Correction for Remmitance Shortage transaction was not run.
+
+4.1.33 C01.M35_HNG-X Spoiled Postal Orders
+
+The Spoiling of a Postal Order transaction was conducted under load only.
+
+From To
+Window Object Action Window Object
+Dialog Insert Slip Message Poc Home
+POC Home Click POC
+POC StartTimer E2E Time i)
+PoC I AP Manual Entry Click Poc Barcode 339
+Manual Token
+Poc Barcode Click Poc Input 366
+Manual Token SetValue as
+POC Input 982693651 12099994234 - - 333
+Spoil Postal
+POC Enter Click POC Order 565
+Spoil Postal Reversal
+POC Order Click Dialog Reminder 950
+Dialog oK Click Dialog Insert Slip 840
+Dialog Print Click Dialog I Remove Slip 5228
+Dialog Continue Click Poc Item 693
+Poc StopTimer 2tett
+POC Home Click POC 41
+POC StartTimer E2E Time i)
+POC Settle Click POC Item Empty 5029
+Poc StopTimer 8071
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 0.1
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 45 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.34 C01.M36_HNG-X Stock Unit Reports
+
+Two individual reports were conducted as part of Stock Unit Reports. A Balance Snapshot and Foreign Currency Holding
+Report both were conducted under load.
+
+Balance Snapshot Report
+The majority of the transaction time is spent printing the report where 177 Lines were printed on the report
+Note: 35 Rows were returned from the SQL query at the data centre for this transaction
+
+Object Action Window Object Average _I
+Home Click POC
+StartTimer E2E Time 0
+
+Back Office Click POC I Back Office Home 398
+Stock Balancing Click Poc Snapshot 465
+Snapshot Click Poc Print 379
+Print Click Dialog Printing 3443,
+Enter Click Poc Front Office 552
+Front Office Click Poc 344
+StopTimer 24296
+
+Foreign Currency Holdings Report
+
+The Results of the Foreign Currency Holding Report are shown below. The bulk of the time is spent retrieving data from
+the Counter Daily Report Group which equates to 7131 milliseconds.
+
+Object deton I window Object
+Home Click POC Back Office 177
+Back Office Click POC Reports 359
+Reports Click Poc Daily 380
+Daily StartTimer E2E Time 0
+Daily Click Poc Foreign Currency Holdings 7131
+Foreign Currency Holdings Click Poc Print 423
+Print Click Dialog Printing 1289
+Enter Click Poc Foreign Currency Holdings 796
+Foreign Currency Holdings I StopTimer E2E Time 18755
+Enter Click Poc Home 508
+Home Click PoC Front Office 351
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Ltd 2009 Dates pa/t0r2010
+
+UNCONTROLLED IF PRINTED Page No: 46 of 63
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+FUJ00117505
+FUJ00117505
+
+4.1.35 C01.M37_HNG-X Office Reports
+
+Three Reports were conducted as part of the Office Reports, Office Snapshot, Sales Report and Transaction Log Report
+
+all performed under load.
+Office Snapshot Report
+
+The majority of the transaction time is spent printing the report where 177 Lines were printed on the report
+Note: 35 Rows were returned from the SQL query at the data centre for this transaction
+
+Object Action window Object eae
+Home Click Poc 44
+StartTimer E2E Time 0
+Back Office Click Poc Back Office Home a7
+Office Balancing Click Poc Office Snapshot 355
+Office Snapshot Click Poc Print 452
+Print Click Dialog Printing 3615
+Enter Click Poc Front Office 488
+Front Office Click Poc 303
+StopTimer 24458
+
+Sales Report
+The Results of the Sales Report are shown below. The bulk of the time is spent printing the report.
+To
+Object Action Window Object Average
+Home Click PoC Back Office
+Back Office Click POC Reports
+Reports Click POC Sales
+Sales StartTimer E2E Time 0
+Sales Click PoC Date Range 481
+Date Range Click POC Date From_edt 486
+Date From_edt I SetValue as 130510 - - 108
+Enter Click Poc Date To_edt 500
+Date To_edt I SetValue as 130510 - - 104
+Enter Click POC Print 543
+Print Click Dialog Printing 3113
+Enter Click POC Sales 649
+Sales StopTimer E2E Time 25929
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 0.1
+seo UNCONTROLLED IF PRINTED Date: 96/1012010
+Page No: 47 of 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+Transaction Log Report
+
+Object Action window Object Average I
+‘Under —
+id
+Home Click PoC ist Large 247
+1st Large Click POC Item 737
+Fast Cash Click POC Item Empty 1578
+Back Office Click Poc Reports 376
+Reports Click Poc Transaction Log 377
+Transaction Log StartTimer E2E Time 0
+Transaction Log Click Poc Criteria_Ibl 433
+Date From Click Poc Date From_edt 505
+Date From_edt I SetValue as 130510 : : 94
+Enter Click Poc Date To 649
+Date To Click Poc Date To_edt 613
+Date To_edt SetValue as 130510 - - 97
+Enter Click POC Time From 783
+Time From Click Poc Time From_edt 745
+Time From_edt I SetValue as 1132 : : 91
+Enter Click Poc Time To 883
+Time To Click POC Time To_edt 894
+Time To_edt SetValue as 1143 : : 90
+Enter Click Poc Enter 1042
+Enter Click Poc Print 3442
+Print Click Dialog Printing 1786
+Enter Click Poc Transaction Log 1201
+Transaction Log StopTimer E2E Time 47836
+Home Click Poc Front Office 364
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 01
+seo UNCONTROLLED IF PRINTED Date: 96/10/2010
+Page No: 48 of 63
+
+FUJ00117505
+FUJ00117505
+FUJ00117505
+FUJ00117505
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+
+fos]
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.36 C01.M38_HNG-X Logon
+
+Logging on to the counter was conducted with no load and under load with comparable results.
+
+From To
+Window Object Action Window Object
+Poc StartTimer E2E Time
+Touch Screen or Press Enter to
+Welcome Continue Click Dialog Agreement 430 415 -16
+Dialog Agreement Appear - - 435 I (387 48
+Dialog Continue Click Log On Username 304 I 388 6
+SetValue as
+Log On Username man001 : : 192 I 200 8
+SetValue as
+Log On Password password : : 223 «I 229 5
+POC Previous Login
+Frame Enter Click Dialog Details 5241 I 5822 581
+Dialog Previous Login Details Appear - - 489 I (377 “112
+Dialog Continue Click POC Chip & PIN 925 698 -227
+POC Chip & PIN Appear : = 978 578 -400
+
+4.1.37 C01.M39_HNG-X Logoff
+
+Logging off from the counter was conducted with no load and under load.with comparable results.
+
+From To
+Window I Object I Action I Window I Object Average
+No 7 Ui
+Load
+Poc StopTimer 16289
+E2E
+Poc StartTimer Time I 0
+Confirm
+Poc I Logout Click Dialog I Logout I 853
+Confirm
+Dialog I Logout I Appear - - 482
+Touch
+Screen
+or Press
+Enter to
+Dialog Yes Click Welcome I Continue I 1315.
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Version: 01
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 49 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+4.1.38 C01.M40_HNG-X Help
+
+Help Index
+The following results show the timings for operations conducted on the Help Index Menu
+Object Action Wicae Object —_—I Average
+Home Click Poc Screen Title 206
+Help Click Preview Help Screen 639
+Verify Help Screen Details I Message I Preview Help Home 223
+Help Home Click Preview Help Screen 228
+Verify Help Screen Details I Message I Preview Close 214
+Close Click Poc Stamps 314
+Banking Click Poc Manual Entry 472
+Manual Entry Click Poc Screen Title 334
+Help Click Preview Help Screen 653
+Verify Help Screen Details I Message I Preview Help Home 183
+Help Home Click Preview Help Screen 194
+Verify Help Screen Details I Message I Preview Close 180
+Close Click Poc Screen Title 234
+
+Help Navigation
+The following results show the timings for Help when accessing help from within a transaction.
+
+To
+
+Object i Action ‘Window Object Average
+Home Click Poo Screen Title 200
+Postal Services Ciick Poo RM Speedbuik 450
+Help Click Preview Help Screen 600
+Help Screen Message Preview Help Screen 206
+Help Soreen Message I Proview Help Screen 200
+Help Seren Message I Proview Help Screen 198
+Help Screen Message Preview Back 201
+Back Click Preview Help Screen 212
+Help Screen Message Preview Help Screen 206
+Help Screen Message Preview Back 197
+Back Click Preview Help Screen 215
+Help Screen Message Preview Back 202
+Back Click Preview Help Screen 234
+Help Screen Message Preview Back 200
+Back ‘Click Preview Help Screen 213
+Help Screen Message Preview Forward 196
+Forward ‘Click Preview Help Screen 233
+Help Soren Message Preview Forward 201
+Forward Click Preview Help Screen 210
+Help Screen Message Preview Forward 197
+Forward Click Preview Help Screen 231
+Help Screen Message Preview Back 200
+Back ‘Click Preview Help Screen 215
+Help Screen Message Preview Back 204
+Back Click Preview Help Screen 212
+Help Screen Message Preview Back 195
+Back ‘Click Preview Help Screen 214
+Help Screen Message Preview Help Screen 200
+Help Screen Message Preview Help Screen 199
+Help Screen Message Preview Help Screen 497
+Help Screen Message: Preview Help Screen 190
+Help Screen Message Preview Help Screen 195
+Help Screen Message Preview Help Screen 200
+Help Sereen Message I Preview Help Screen ‘99
+Help Screen Message Preview Close 193
+Close Ciice POC Screen Title 287
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — et TSTISOTIREP/O926
+Version: 0.1
+Ltd 2009 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 50 of 63
+FUJ00117505
+FUJ00117505
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+No Help Available
+
+The following results show the timings for Help there is no help available.
+
+Object Action I wingew Object Average
+Home Click POC Screen Title 203
+Local Schemes Click POC Couneil Tax Schemes ai
+Council Tax Schemes Click POC Council Tax Voucher_tb 346
+Help Click Preview Help Screen 618
+Help Screen Message I Preview Close 491
+Close Click POC Screen Title 256
+
+4.2 Test Group R01 — Branch Router
+
+The branch router tests were designed to gradually increase the number of counters transacting at a branch and see if
+there were any affect on transaction times. Starting with 1 and increasing the by 5 counters until 20 counters were trading
+at a branch. The transaction used in the test was selling a 18‘ class stamp. Transactions were conducted using Winrunner
+on 20 counters. Due to issues with Winrunner the test actually performed 3 counters, increased to 7, 12 and finally 19.
+Results are shown based on one of the counters trading throughout the test. An additional test was conducted to ensure
+that 24 counters could trade simultaneously which was successful.
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE Ref: TST/SOT/REP/0926
+Version: 0.1
+1482008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED 51 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+Settlement Response Times with increasing number of counters
+
+3. Counters 7 Counters 12 Counters 19 Counters
+4500
+4000
+3500
+3000
+2500
+2000
+
+1500
+
+Response Time (milliseconds)
+
+1000
+
+500
+
+0 -
+
+Elapsed Time (minutes)
+
+Although the graph above does show some variance in response times these are minimal compared to the amount of
+items being transacted. The table below shows that with the increase in counters trading the settlement response time
+reaches no higher that 1.25 seconds in the 95 percentile.
+
+95 Percentile
+3-7 Counters 72 Counters I 12-19 Counters
+1150 ms 1251 ms 1242 ms
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE — Ret TSTISOTIREP/O926
+Ltd 2009 Version: 0.1
+
+Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 520f 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 ~
+FUJITSU COMMERCIAL IN CONFIDENCE
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE Ref: TSTISOTIREP/O926
+Ltd 2009 Version: 01
+Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 53 0f 63
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+5
+
+Recommendations
+
+FUJ00117505
+FUJ00117505
+
+The following graphs show the comparison of the video timings taken from SVM/SDM/REP/0008 against the results from the counter performance testing on the VOL
+rig whilst the data centre is under load as presented above.
+
+Timing (Seconds)
+
+Link Cash Withdrawal - Counter Timing Comparison
+
+WinRunner does not time the
+how long to enter the amount so
+taken the timing from the Video
+Average
+
+WinRunner Timing from Receipt
+Printing message to item in the
+basket. NOTE: Printing may
+have already started
+
+‘selec Chip &
+Pinbuton
+
+Diepoy
+ea ot
+
+Resi
+tng
+Pisiay Bask
+
+WinRunner Timing from
+authorisation to item in basket
+= 5.022
+
+Counter Stats Timing for Slip
+Printer = 4.097
+
+[—— Ferson- Vieeo at
+
+Fo] a8
+
+rr
+
+oz
+
+eae
+
+42
+
+oe
+
+[=m GX Vide Val
+
+Tree 1287
+
+rr)
+
+tar
+
+FEC
+
+Step
+
+Horizon - Video LST
+
+— HNG-X- Video V&l
+
+HNG-X- WinRunner VOL Under
+Load 950 TPS
+
+For a Link Cash withdrawal the results from the counter performance test under load show comparable results to Horizon and the HNGX videoing.
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED
+
+Ref:
+Version:
+
+TSTISOT/REP/0926
+
+0.1
+
+06/10/2010
+54 of 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+Timing (seconds)
+
+CAPO Withdraw Limit - Counter Timing Comparison
+
+— Horizon - Video LST
+== HNG-X - Video V&I- No Load
+~~» HNG-X - WinRunner VOL Under Load 500 TPS
+
+0% P F F F Be
+IseectcnipsI meencant I Past I sacct I traescion Remove card] Racogt [Select Fah’ [Set Barket
+Prvaton processes [ihiawtim [Autorsaton] &contawe I pratng’ I Cash
+cas I bon Dany
+rE) Te toe oat a ae ¢ mo
+09 1s a EE] a if ae a
+“HNGX WnRunne VOL UserioosmmoreS I —Oeat I ree I eees_I vor [aes] a0 I aes I 1059
+Step
+
+For CAPO Withdrawal Limit the results from the counter performance test under load show comparable results to Horizon and the HNGX videoing.
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED
+
+Ref:
+Version:
+
+TSTISOT/REP/0926
+
+0.1
+06/10/2010
+55 of 63
+
+FUJ00117505
+FUJ00117505
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+EPOSS Stamp Sale - Counter Timing Comparison
+
+04 ———
+
+Timing (seconds)
+°
+&
+
+== Horizon - Video LST
+
+mumm HNG-X Video V&I No Load
+
+»oo HNG-X- WinRunner VOL.
+Under Load 950 TPS
+
+s Se
+
+User selects Fast Cash
+
+Select stamp button
+Step
+
+FUJ00117505
+FUJ00117505
+
+For an EPOSS stamp sale the results from the counter performance test under load show slightly higher results than Horizon and lower results than HNGX
+videoing (due to system improvements since videoing). Even though HNGX timings are slightly higher than Horizon the maximum difference is approximately
+500 milliseconds for settlement under a peaks day load.
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+COMMERCIAL INCONFIDENCE — Ref TSTISOTIREP/0926
+Version: 0.1
+Date. 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 56 of 63
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+iming (Seconds)
+
+Ti
+
+Barcoded Bill Payment - Counter Timing Comparison
+
+"= Horizon - Video LST
+
+= HNGX - V8I Video
+
+seems HNG-X - WinRunner VOL.
+Under Load 950 TPS
+
+10
+8
+6
+4
+2
+0
+iS lu iS iu
+‘Scan Barcode] Enter Amount I DisplayMOP I Select MOP I Print Reciept
+and confirm menu and settle
+=== Horizon - Video LST 1.64 3.76 0.39 141 917
+ome HNGX - V&I Video 4.11 444 06 142 6.93
+ewe HNG-X - WinRunner VOL Under 4.454 4.44 0.703 1.42 7.503
+Load 950 TPS
+Step
+
+For a Barcoded Bill Payment the results from the counter performance test under load showed comparable results to Horizon.
+
+Note: The more realistic timing for scanning a barcode for HNGX is from the video.
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED
+
+Ref:
+Version:
+
+TSTISOT/REP/0926
+
+0.1
+
+06/10/2010
+
+57 of 63
+
+FUJ00117505
+FUJ00117505
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+COMMERCIAL IN CONFIDENCE
+
+For Taxing a Vehicle for 12 months the results from the counter performance test under load showed comparable results to Horizon apart from printing and
+
+Timing (Seconds)
+
+DVLA Tax Disc - Counter Timing Comparison
+
+15
+14
+13
+
+is s+ Se
+Sean Select Enter Tax I Select MOP Istart Receipts I Print Reciepts
+Barcode service disc and Settle
+
+[—— Horizon - Video LST 427 0.75 2.82 1.28 1.38 9.43
+Jam HNG-X V&l Video 3.87 0.91 247 1.65 0.76 10.53
+
+HNG-X- WinRunner VOL Under [4.823 0.934 142 1.65 0.733 13.56
+
+Load 950 TPS
+
+Step
+
+== Horizon - Video LST
+
+— HNG-X V&l Video
+
+HING-X - WinRunner
+VOL Under Load 950
+TPS
+
+FUJ00117505
+FUJ00117505
+
+settlement. The counter performance tests cannot separate the printing and settlement as it is related to screen flow. However the HNGX counter system logs show
+
+that the settlement took 1.319 seconds and both printing elements took 5.715 and 6.027. The printing elements take up most of the time, however as seen in other
+transactions the printing timecan vary.
+
+© Copyright Fujitsu Services
+
+Ltd 2009
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED
+
+Ref: TSTISOT/REP/0926
+Version: 0.1
+Date: 06/10/2010
+
+Page No: 58 of 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+CAPO Balance Enquiry - Counter Timing Comparison
+10
+9
+8
+zg 7 = Horizon - Video LST
+Z
+8 6
+& 5 =m HNG-X Video V&I- No Load
+2
+£ 4 HNG-X - WinRunner VOL Under Load 500
+—E TPS
+- 3
+2
+1
+0 Is g Is is [s [s [s [Se
+sect cp] rsencardI pinpes I sect [TiasaconI Remove I Recant I Soect
+Seaton pocsses I Saimce Kutonatoy cxos, I pare! I Fine
+cao I Erauy corince I "Bonty I “darn
+aaa toa I as [re [08 [ae 22} 308 I oe
+NG awe VEL No Load es a Te
+(Stes wintns ol unaroeraoorpS ose Pts] gaye [oars] ps [pes ae]
+Step
+
+FUJ00117505
+FUJ00117505
+
+For CAPO Balance Enquiry the results from the counter performance test under load show overall comparable results to Horizon and the HNGX videoing.
+
+© Copyright Fujitsu Services
+
+Ltd 2009
+
+UNCONTROLLED IF PRINTED
+
+COMMERCIAL INCONFIDENCE — Ref TSTISOTIREP/0926
+
+Version: 0.1
+Date: 06/10/2010
+Page No: 59 of 63
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+ETU Voucher - Counter Timing Comparison
+I
+I
+> 4 fo—
+3 ; _ I — Horizon - Video LST
+5 3 /
+Oo "
+3 I I mee HNG-X V&1 Video - No Load
+D 2 i
+= I I HNG-X - WinRunner VOL Under Load
+= / 950 TPS
+1 /
+I
+0-5 S S S
+[——tiorzon-Video LST 096 049 263 aot
+[mem HING-X Val Video “No Load o5 oes 7a aa
+[=== HNG-X- WinRunner VOL Under 0494 0491 37 285
+Load 950 TPS
+Step
+
+For CAPO Balance Enquiry the results from the counter performance test under load show overall comparable results to Horizon and the HNGX videoing
+
+© Copyright Fujitsu Services COMMERCIAL INCONFIDENCE ef TSTSOTREP/0026
+Version: 0.1
+
+Ltd 2009
+Date. 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 60 of 63
+
+FUJ00117505
+FUJ00117505
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+
+Timing (Seconds)
+
+Bureau Sell Euros
+
+- Counter Timing Comparison
+
+The WinRunner timing is
+8.92 from the Counter
+Stats Log the following
+is reported
+
+BAL Comms = 1.561
+Slip Printer = 6.258
+
+With Video From
+Counter Stats Log
+BAL Comms = 0.311
+Slip Printer = 4.603
+
+There is a variance in
+slip printer times
+reported by the counter
+stats log - both manual
+and automated??. Just
+this transaction?
+
+045 io E E S+Se
+select I Select emer I Display I select I Contiem I Settieand
+currency I option I Amount I currency I Cureney I detaiie print
+famount_I amount
+= Horaon- Video (ST az 062 425, 008 oni 086 aoa
+[mmm HING-X Video V8I-No Load 052 049) 362 051 056 068 5a4
+“Ons HNG-X- WinRunner VOL Under Load I 0728 0768 362 0598 0837 1032 892
+950 TPS
+Step
+
+—— Horizon - Video LST
+
+owe HNG-X Video V&l- No Load
+
+HNG-X - WinRunner VOL Under
+Load 950 TPS
+
+FUJ00117505
+FUJ00117505
+
+For Selling Euros the results from the counter performance test under load showed comparable results to Horizon. The counter performance tests cannot separate
+the printing and settlement as it is related to screen flow. The HNGX counter system logs show that the settlement (Branch Access Layer Communication) took 0.3
+seconds and both printing elements took 6.258 and 4.603. The printing elements take up the most difference between Horizon and HNGX , however when the printing
+time was investigated it was shown that the printing timing can vary.
+
+© Copyright Fujitsu Services
+Ltd 2009
+
+COMMERCIAL IN CONFIDENCE
+
+UNCONTROLLED IF PRINTED
+
+Ref:
+Version:
+
+TSTISOT/REP/0926
+
+0.1
+06/10/2010
+61 of 63
+FUJITSU
+
+VOLUME AND PERFORMANCE TEST REPORT - PHASE 2
+COMMERCIAL IN CONFIDENCE
+
+iming (Seconds)
+
+T
+
+Debit Card - Counter Timing Comparison
+
+Winrunner does not time
+05 the how long to enter the
+9 amount so taken the timing
+from the Video Average
+
+8
+7 Includes entering the PIN
+6 on the Pinpad
+5
+4
+3
+2
+1
+0 ic ey y Be ey ay Ee Be
+
+Select I insert card] Display I Enter I Oisplay ITransactionbontimatiod ttemin I Receipt
+
+bebe Card center I Amount I EnterPIN [Authorised Basket I priming!
+fom Amount Display
+[Hieron Viseo ST oes I 207 I o® ee 2 asi] 08a = 379
+= HNG-x--valviseo 095 I 28 om 178 a7 [504 14s [ 708 — Horizon - Video LST
+SHNGX VOL Winunner Undertoad I 1008 I 1957 I 865s_I 7a I 157 I eae7_I 2303 I 7am HNNGX-Valvid
+— -X - ideo
+Step
+~~ HNG-X VOL Winrunner Under Load
+
+FUJ00117505
+FUJ00117505
+
+For Settling by Debit Card the results from the counter performance test under load show overall comparable results to Horizon and the HNGX videoing. There is a
+noticeable difference in the printing time in HNGX, however the Debit card transaction was performed on an ETU transaction where I believe the receipt printing flow
+may have changed from Horizon. On settlement in HNGX the ETU receipt is also printed.
+
+© Copyright Fujitsu Services
+
+Ltd 2009
+
+UNCONTROLLED IF PRINTED
+
+COMMERCIAL IN CONFIDENCE
+
+Ref: TSTISOT/REP/0926
+Version: 0.1
+Date: 06/10/2010
+
+Page No: 62 of 63
+FUJ00117505
+FUJ00117505
+
+oO VOLUME AND PERFORMANCE TEST REPORT - PHASE 2 -
+FUJITSU COMMERCIAL IN CONFIDENCE
+
+6 Conclusions
+
+From the Counter Performance Test results, it can be concluded that there are no significant increase in timings at the
+counter for transactions when there is a peak day's load on the data centre. It can also be concluded there is no adverse
+affect to transactions from multiple counters trading at the same time via a branch router. It can also be noted that the
+equivalent timings from HNGX are comparable to that of Horizon.
+
+© Copyright Fujitsu Services COMMERCIAL IN CONFIDENCE Ref: TST/SOT/REP/0926
+Version: 0.1
+1482008 Date: 06/10/2010
+
+UNCONTROLLED IF PRINTED Page No: 63 0f 63

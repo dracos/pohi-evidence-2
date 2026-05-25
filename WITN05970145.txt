@@ -1,0 +1,74 @@
+WITNO5970145
+WITN05970145
+
+Comments on the 2/9/99 Rectification Plan for AI298
+
+5.2.3
+
+5.3.2
+
+5.3.3
+
+5.3.4
+
+5.3.7
+
+5.3.9
+
+This section gives an overview of the stability incidents from weeks 19 to 23.
+This shows
+
+* number of system stability incidents is still high - remains at CAP19 levels
+(after an INCREASE in intervening weeks)
+
+* number of unauthorised reboots has more than halved (as a result of the
+joint POCL-Pathway efforts to discourage, plus improvements in stability
+
+number of authorised reboots have halved (improvements in stability)
+=> reduction in reboots, but numbers still remain high; total incidents still
+high
+
+Suspense Account Print (P2) (H28)
+
+Insufficient data to see whether there is any improvement - but still had one
+report after the second fix had been implemented.
+
+Virtual Memory Problems (P3) (H2, 4, 20)
+
+Some reduction, but still getting on average one a day - with 7 on the last day
+of CAP 22, after a drop had been put in.
+
+Need information on when the remaining problem(s) will be fixed.
+
+Printer Hanging (P4) (H5, 6, 7, 16)
+
+Appears no better, despite a fix going in. Need to evaluate the w/c 6” Sept
+drop.
+
+Freezing after log-on (P5) (H12, 17)
+
+Despite two fixes, the problem is still significant, at least one a day average.
+[The underlying problem here appears to be major design error with
+archiving - suggest we need to understand whether all archiving related
+issues now fixed, so avoid time related problems downstream].
+
+System Busy Messages (P7) (H24)
+
+Depressing to note that the problems we identified in reviewing the CCN
+emerged almost immediately after implementation. This has caused
+significant numbers of incidents (max 16 in one day), potentially more (in call
+volume terms) than it was designed to fix.
+
+Miscellaneous Freezing / Usage (P9) (H9, 10*, 13, 14)
+
+The number of calls in this category (against which no fixes have been
+identified) are still significant, running at about 4aday. The general trend
+appears to have been upwards since CAP19 (with a peak at CAP21),
+suggesting a worsening of this category (although this could be due to
+WITNO5970145
+WITN05970145
+
+changes in reporting).
+5.3.10 Counter Printer Problems (P10) (H8, 27)
+
+Some improvement, but still remaining high. Another fix awaited.

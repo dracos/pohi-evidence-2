@@ -1,0 +1,2201 @@
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+Document Title:
+
+Document Type:
+
+Release:
+
+Abstract:
+
+Document Status:
+
+Originator & Dept:
+
+Contributors:
+
+Reviewed By:
+
+Comments By:
+
+Comments To:
+
+Riposte 6 Message Server Configuration for Counters
+Configuration Definition
+
+N/A
+
+This document defines the configuration to be used for the
+Riposte message server on the counters.
+
+This version includes Riposte 6.0.3 configuration information.
+
+Draft
+
+Gareth I Jenkins TDA BRAO1
+
+Mark Jarosz
+James Stinchcombe
+
+Mark Jarosz FELO1
+James Stinchcombe FELO1
+Joe Brown FELO1
+Ajay Nehra FELO1
+15/12/2000
+
+Document Controller & Originator
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: I of 29
+
+c:\gif\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+Distribution: ICL Pathway Library FELOL
+Chris Wannell FELO1
+Tan Morrison FELOL
+Gill Jackson FELO1
+Brian Orzel FELO1
+Phil Hemmingway FELO1
+Rex Dixon BRAOI
+Peter Wiles FELO1
+Allan Hodgkinson FELO1
+Janet Dore FELO1
+Glenn Stephens FELO1
+Frank Loftus FELO1
+Colin Mills MAN27
+Mik Peach BRAOI
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 2 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+ICL Pathway
+
+COMPANY IN CONFIDENCE
+
+Riposte 6 Message Server Configuration for Counters Ref:
+
+Version:
+Date:
+
+FUJ00171955
+FUJ00171955
+
+TD/SPE/010
+0.5
+08/12/2000
+
+Document Control
+
+0.1. Table of Contents
+
+0. Document Control
+
+Table of Contents
+Document History
+Approval Authorities
+
+Changes Expected
+1. Introduction
+2. Scope
+
+3. Configuration Parameters
+3.1 Main Riposte Service
+3.2
+3.3
+
+4 Indexes
+4.1 Indexes Required
+4.2. Index Maintenance
+
+3. Node Identifiers
+6. Neighbour Relationships
+
+6.1
+
+6.2 Other counters
+
+7. Message Store
+
+0.2 Document History
+
+Associated Documents
+Abbreviations/Definitions
+Changes in this Version
+
+Configuration of RiposteMirror
+Configuration of RiposteTraining
+
+Correspondence Servers
+
+ww
+
+AREY
+
+Version No. [Date
+
+[Reason for Issue
+
+Associated
+(CP/PinICL No.
+
+(0.1 [2/10/2000
+
+[This is the first issue. It is a reformatting of [OLD].
+
+0.2 [24/10/2000
+
+ITake into account new configuration items and facilitiesI
+lin Riposte 6.0.3 to be exploited for M1 and the
+requirements of the Counter Call Scheduler
+
+2774 & 2764
+
+0.3 [2/11/2000
+
+Stinchcombe.
+
+[Minor corrections based on feedback from James
+
+0.4 27/11/2000
+
+Inclusion of change in CP 2711. Additional information
+jon some of the Configuration parameters.
+
+ICP 2711
+
+0.5 12/2000
+
+[Change to value of TimeSynchDriftLimit.
+
+InICL 53384
+
+0.3. Approval Authorities
+
+Name. osition
+
+ignature
+
+ate
+
+ICliff Wakeman FELO1 [TDA Manager
+
+© 2000 ICL Pathway Limited
+
+COMPANY IN CONFIDENCE
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+
+Page: 3 of 29
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+0.4 Associated Documents
+[Tag IReference _ Version [Date [Title Source
+[AUTO] [TD/DES/032_/1.0 [22/9/97 _IAuto-Configuration for Release 2
+CTRCFG] ISD/DES/010_I1.1 2/7/98 _ [Physical Design for Counter PCs
+[OLD] IAD/DES/033_ 1.3 [8/9/00 __ IRiposte Message Server
+[Configuration for Counters
+0.5 Abbreviations/Definitions
+Abbreviation [Definition
+ICS [Correspondence Server
+0.6 Changes in this Version
+Version (Changes
+(0.1 lone.
+10.2 include the new configuration items introduced by Riposte 6.0.3.
+[Descriptions of configuration parameters has been added.
+[Details of Neighbour relationships added.
+(Changes are highlighted as in this section.
+[The following table sumarises the actual changes to configuration parameters from CI4.
+Item. From To
+DisableNetworkCompression 0 1
+HeartbeatsPerDay 1 0
+LogRecoveryModeConnections 0 1
+MaximumWorkingSetSize 0 12582912
+MinimumWorkingSetSize 0 8388608
+UnconnectedBroadcastInterval 1800000 7200000
+UnconnectedBroadcastRetry Attempts. 0 2
+UnconnectedBroadcastRetryInterval 60000 900000
+TraceIndexBuild 1 0
+[There are also changes to the Riposte Mirror Service as follows :-
+Item From To
+LogRecoveryModeConnections 0 1
+ReplicatedTransactionChunkSize 500 60
+TracelndexBuild 1 0
+IB: Currently for RiposteMirror services HeartbeatsPerDay is set to 1 even though not
+specified in this document. This must now be set to 0.
+lo configuration changes are explicitly required for the RiposteTraining Service. NB I
+lieve that TraceIndexBuild is currently set to 1 for the RiposteTraining Service even
+hough not specified in this document. This should now be set to 0.
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 4 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+(0.3 inor corrections. All changes are marked as from version 0.1.
+0.4 inor corrections. All changes are marked as from version 0.3.
+OS Change to value of TimeSynchDriftLimit. All changes are marked as from version 0.4.
+
+0.7. Changes Expected
+(Changes
+Completion of information in the “Dynamic” column in the table in section 3.1.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 5 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+1. Introduction
+
+This document defines the configuration to be used for the Riposte message server on the counters.
+
+It covers the following areas:
+
+a) Settings of Riposte configuration parameters.
+b) Indexes
+
+c) Node Identifiers
+d) Message Volumes
+
+Changes from the current Build scripts are highlighted.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 6 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+2. Scope
+
+This document defines the configuration to be used for the Riposte message server on the counters. It
+
+will be used together with other information (e.g. platform design) to produce the build scripts for the
+counters.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 7 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+3. Configuration Parameters
+
+3.1
+
+This section defines the configuration parameters for the Riposte message server. For each parameter
+it the following are defined:
+
+a) The default value set by Riposte Message server (v6.0.3.13)
+
+b) The current valued used in the build scripts (if explicitly defined).
+
+Note: The configuration parameters for a system can be found by either looking at the Riposte settings
+in the NT Registry or by using the “RiposteConfig” command.
+
+Main Riposte Service
+
+meter Notes Description / Comme!
+
+\ArchiveEndTime End time of the archive (in hours).
+
+ArchiveExpiredPercent Y (% Of messages that have to
+lexpired in order to force run to be
+archived. 0 means that the run will
+lbe archived anyway.
+IArchiveMaxDaysUnarchived 7 IThis has two uses :-
+
+1. It is used to control the order
+in which message runs are
+archived (all those greater
+than this value are treated as
+being top priority, and then
+those between this value and
+ArchiveMinDaysUnarchived
+are archived in priority order
+
+2. It is also used to control the
+values used for automatic
+archiving that is invoked
+whenever Riposte is restarted,
+in that the archive run takes a
+value of
+ArchiveMaxDaysUnarchived +
+
+In particular having a value close
+fo ArchiveMinDaysUnarchived is
+\dangerous since when Riposte is
+restarted when a number of
+archive slots have been missed
+(not uncommon), then it is liable toI
+initiate archiving immediately
+
+hich will cause performance
+
+roblems.
+\ArchiveMinDaysUnarchived 0 The minimum time (in days)
+between attempting to archive a
+message run.
+ArchiveShutdownWait 5000 [This is the amount of time in
+milliseconds that the Riposte
+shutdown will wait before
+abandoning the archive threads.
+ArchiveStartTime 0 22 ‘Start time of the archive (in hours).
+
+ArchiveThreads 1 Number of Archive threads per
+jolume.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 8 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+
+Printed at 08:03 on 8/12/00
+ICL Pathway
+
+COMPANY IN CONFIDENCE
+
+Riposte 6 Message Server Configuration for Counters Ref:
+
+FUJ00171955
+
+FUJ00171955
+
+TD/SPE/010
+Version: 0.5
+Date: 08/12/2000
+
+IAttachmentFragmentSize
+
+1024
+
+Maximum size of a Fragment
+before it is Uuencoded in a
+“BLOBed” message
+
+BlockCacheSize
+
+64
+
+128
+
+Number of message blocks (16K
+leach) allocated to the cache.
+128 blocks = 2048 Kbytes
+
+BuildIndexCheckpointinterval
+
+5000
+
+The frequency with which index
+maintenance message ports will
+be checkpointed (in messages)
+during index rebuilding
+
+BuildIndexCheckpointMinTime
+
+30000
+
+IThe minimum between the index
+maintenance message ports takingI
+checkpoints (in milliseconds)
+during index rebuilding
+
+BuildIndexMessagePortSize
+
+32
+
+The size of a message port for
+indexes (in messages) during
+index rebuilding
+
+(CacheFreeListWaitTimeou
+
+(60000
+
+Timeout (in milliseconds) for the
+cache free list
+
+(CacheLockTimeout
+
+10000
+
+Timeout (in milliseconds) for the
+‘cache lock
+
+\ClientConnectionsDuringRecovery
+
+Ignored if not a correspondence
+server.
+
+(ClientConnectionStartupDelay
+
+Ignored if not a correspondence
+‘server.
+
+(ClusterCacheSize
+
+40
+
+35
+
+Number of cluster blocks (64K
+leach) allocated to the cache
+
+35 clusters = 2.25 Mbytes
+
+(A minimum of
+IndexBuildMergeFactor+1 clusters
+must be available in the cluster
+cache for each index build
+operation that is taking place.
+
+(ConcurrentlOThreads
+
+Number of Concurrent IO threads
+ito be requested from NT. This
+should exceed the number of
+available processors.
+
+(ConnectedBroadcastinterval
+
+1000
+
+2000
+
+IThe marker interval for non-
+permanent connections in the
+connected state (ms).
+
+(ConnectionTimeout
+
+10000
+
+‘The timeout period for all
+‘connections (ms)
+
+(Countryldentifier
+
+lag
+
+iThe country ID of the installation.
+las used by BES at the counter.
+
+(CriticalSectionSpinCount
+
+400
+
+The number of cycles to spin on a
+lock before waiting on that lock
+
+[DefaultMessageExpiry
+
+90
+
+36
+
+The default message expiry which
+ill be applied to any messages
+hich are created without explicit
+
+specification of the message expiry
+
+(in days).
+
+DefaultObjectVersionExpiry
+
+iThe default message expiry which
+ill be applied to persistent object
+version messages
+
+(DeletedObjectVersionExpiry
+
+100
+
+40000
+
+The minimum expiry period for
+current deleted persistent object
+ersions.
+
+DirtyUnitAgeLimit
+
+5000
+
+IThe length of time a modified disk
+junit which is not explicitly
+‘committed will sit in the cache
+before the cache manager will
+
+flush it to disk
+
+© 2000 ICL Pathway Limited
+
+COMPANY IN CONFIDENCE
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+
+Page: 9 of 29
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+DirtyUnitFlushinterval 500 The sleep period (in milliseconds)
+between checks on flushing dirty
+= — units —
+DisableArchiving \A Boolean flag, which specifies
+hether archiving is disabled or
+not.
+[DisableCorruptStorageUnitShutdown IA boolean flag which can be used
+
+lo manage corrupt storage unit
+\detection behavior. If this is set to
+(0, the Message Server will treat a
+corrupt storage unit as a fatal 1/0.
+error causing an immediate
+(Message Server shutdown to avoid)
+the potential for creating
+‘secondary errors as a result of the
+corrupt storage unit. Setting this
+to 1 will disable this behavior.
+DisableDeletedUserCheck ‘A Boolean flag which allows
+\disabling the check for re-use of
+deleted usernames when a new
+user account is created
+
+DisableintegrityCheck 0 (0 Y ‘A Boolean flag which allows
+operational integrity checking to be,
+disabled.
+
+DisablelOWaitTimeoutShutdown i) iJ IA boolean flag which can be used
+
+ito manage I/O wait timeout
+behavior. If this is set to 0, the
+(Message Server will treat an I/O
+/ait timeout condition as a fatal
+W/O error causing an immediate
+‘Message Server shutdown to avoid
+ithe potential for creating any
+‘secondary errors as a result of the
+1/O wait timeout. Setting this to 1
+ill disable this behavior.
+DisableNetwork (0 Y ‘A Boolean flag, which allows all
+peer-to-peer message server
+communications to be disabled.
+[DisableNetworkCompression i) 1 12 if this is set to 1, then Network
+(Compression will be disabled even
+if a dictionary is present.
+DisableNetworkCompressionVerificatiO If this is set to 1, then verification
+on hat a compressed message can
+ibe decompressed to match the
+original is suppressed.
+[DisableNTSecurityUpdates If this is set to 1, then
+synchronisation of Riposte User
+updates with the NT users is
+
+suppressed.
+DisableRemoteRpcCalls 0 Y If this parameter is set to 1, then
+
+Riposte will not support remote
+
+RPC calls.
+[DisableServerNeighborCheck N ‘A Boolean flag which allows
+
+\disables the checking for a
+neighbour that is a
+correspondence server
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 10 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters. Ref: TD/SPE/010
+
+COMPANY IN CONFIDENCE
+
+Version: 0.5
+Date: 08/12/2000
+
+[DisableStartupUnconnectedBroadcas.
+s
+
+If this is set to 0 a Riposte
+Message Server will (as in earlier
+ersions of the message server)
+lattempt to contact non-permanent
+neighbours in order to obtain a
+neighbour marker for a particular
+(group. Setting this value to 1 will
+cause the Message Server to set
+ithe Neighbour marker for a
+particular group equal to the
+‘current local marker for that group.
+For example, this would prevent a
+Correspondence Server attempting
+fo connect to all Clients on start-up)
+and similarly prevent a Client on
+‘start-up attempting to connect to a
+CS.
+
+DisableUnconnectedBroadcasts 0
+
+If this is set to 0, a Riposte
+Message Server behaves as in
+earlier versions with respect to the
+Unconnected Broadcast Interval
+lexpiring. Setting this to 1 prevents
+any Unconnected Broadcasts.
+
+[DisconnectedSendThreshhold 2
+
+[This specifies the number of
+imissing markers that need to be
+detected before considering a
+neighbour to be disconnected.
+
+EnableMessagelmport 0
+
+IA Boolean flag which determines
+hether messages may be
+imported or not.
+
+[ExternalLogon 0 Y
+
+This controls the way in which
+Riposte logons relate to NT
+security.
+
+HeartbeatsPerDay )
+
+The number of heartbeats that v
+be generated in each twenty-four
+hour period
+
+[HeartbeatTime 12 7
+
+The time of day (in hours) at which’
+heartbeats will be generated.
+
+NB the value of this is irrelevant if
+HeartbeatsPerDay is zero
+
+IndexBuildMergeFactor 2
+
+‘Specifies the merge factor that is
+used during the merge sort.
+
+IndexCheckpointinterval 1000 N
+
+The frequency with which index
+maintenance message ports will
+be checkpointed (in messages)
+
+IndexCheckpointMinTime 10000
+
+IThe minimum between the index
+maintenance message ports taking
+‘checkpoints (in milliseconds)
+
+IndexFlushTimeout 1000 Y
+
+IThe amount of time to wait for
+index flushing to complete before
+fiming out an access operation on
+a persistent object (ms)
+
+IndexMessagePortSize 1024 N
+
+The size of a message port for
+indexes (in messages)
+
+IOWaitTimeout 20000 id
+
+This is the timeout period for disk
+10s.
+
+\LargeVolumeGrowthPercent 10 Y
+
+The percentage by which a ‘large’
+Message Store volume will be
+dynamically grown by Riposte.
+
+lLargeVolumeSize 1262144, Y
+
+The threshold size for a ‘large’
+
+Message Store volume in pages.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 11 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+ICL Pathway
+
+Riposte 6 Message Server Configuration for Counters Ref:
+
+COMPANY IN CONFIDENCE
+
+FUJ00171955
+
+FUJ00171955
+
+TD/SPE/010
+Version: 0.5
+Date: 08/12/2000
+
+LimitForwardBroadcasts
+
+If this item is set to 0, forward
+broadcasts are not suppressed in
+any way, however if it is non-zero,
+then forward broadcasts will be
+suppressed to neighbours whose
+most recently received marker is
+"behind" the current marker by an
+amount greater than or equal to
+the value of
+\LimitForwardBroadcasts.
+Thus if LimitForwardBroadcasts
+ere 100, once the neighbour
+marker was within 100 messages
+of the current marker, forward
+broadcasts would be enabled.
+Note that this value should be
+probably larger than the maximum
+ransaction size, which would
+'ypically be used. Currently this
+behaviour applies to all neighbour
+connections and the transition
+between having forward
+broadcasts enabled or disabled
+can occur once only in a single
+connection. Therefore, once
+Forward Broadcasts are enabled
+for a connection then they remain
+jenabled for the remainder of that
+connection. It should be noted that
+this behaviour applies to both
+messages forwarded by the node.
+and messages originated at the
+inode.
+
+\LocalBroadcastinterval
+
+5000
+
+‘Specifies the marker interval for
+local permanent neighbours. (ms)
+
+LocalTimeAttribute
+
+If this is set to 1, then all Riposte
+messages will contain the Local
+‘Time as well as the Universal
+Time.
+
+ILockCache
+
+This is a Boolean flag. When set
+ito 1 this will cause the Message
+Server to lock its caches in
+memory to prevent them from
+being paged.
+(CAUTION: This should be used
+ith extreme caution and is only
+appropriate when there is sufficient
+physical memory to permanently
+dedicate a portion of it to the
+Message Server caches.
+
+© 2000 ICL Pathway Limited
+
+COMPANY IN CONFIDENCE
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+
+Printed at 08:03 on 8/12/00
+
+Page: 12 of 29
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters. Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+LockEventCacheSize 700 IThis determines the number of
+
+jevents which are pre-allocated for
+juse by locks when events are
+required. Increasing this
+parameter will simply increase the
+resource utilisation (i.e. memory
+and handles) but should not have
+ia negative impact on performance
+(all operations on the lock event
+cache are constant time
+irrespective of the size of the
+cache). The benefit of the cache is
+simply to avoid creating and
+destroying events too frequently.
+If the number of Lock Events is
+requently rising well above
+\LockEventCacheSize and then
+falling back near zero (i.e. where
+the typical fluctuation is
+‘substantially larger than
+LockEventCacheSize), then it may
+improve performance to increase
+jit. Note that the sustained value of
+ILock Events isn't really relevant,
+rather it is the size of the
+fluctuations that matters (if more
+events are needed than are in the
+‘cache, they will be created on
+demand, and conversely, when
+locks are destroyed, any
+associated events will be put in the:
+cache until it is full
+after which they will be freed).
+LogArchiveActivity [A Boolean flag, which specifies
+hether archive logging, is
+disabled or not.
+‘Logging of archiving hits
+
+erformance
+\LogDiscards 1 Y Determines whether an error will
+_ ee es ee 2 ___be logged if a packet is discarded. I
+ILogNetworkCompressionWarnings If this is set to 1, then warnings
+
+lare generated for problems during
+
+ILogRecoveryModeConnections 0 1 4,12
+to 1 it will cause the Message
+‘Server to log all neighbor
+connections that are established
+hile the Message Server is in
+recovery mode, including the
+message that initiated the
+‘connection (which will typically be
+a marker).
+Note that this only applies to
+Message Servers that are not
+‘configured as Correspondence
+Servers. _
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 13 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+ICL Pathway
+
+COMPANY IN CONFIDENCE
+
+Riposte 6 Message Server Configuration for Counters Ref:
+
+FUJ00171955
+FUJ00171955
+
+TD/SPE/010
+Version: 0.5
+Date: 08/12/2000
+
+MaxArchivelndexRebuilds
+
+2
+
+Specifies the maximum number of
+lindex runs per volume that may be
+rebuilt by the archiver during a
+‘single archive session.
+
+‘Setting this configuration item to a
+lower value places a limit on the
+amount of index rebuild activity
+that can take place during a single
+archive session
+
+NB there is currently a bug such
+that a maximum of
+(MaxArchivelndexRebuilds + 1
+index runs may be rebuilt.
+
+MaxClientConnections
+
+This is ignored on Counters
+
+MaxDefinedGroupRanges
+
+256
+
+‘Specifies the maximum number of
+group ranges that may be defined
+it can be increased to as high as
+256000. (Note that a higher value
+uses slightly more memory.)
+
+MaxDirtyUnits
+
+20
+
+This specifies the maximum
+jnumber of cache items that can be:
+being updated concurrently without
+being flushed to disk. In general
+there should be at least one for
+every concurrently connected
+outlet that is replicating data to the
+CS.
+
+MaxFreeRuns
+
+IThe number of free runs in the
+[Message Store.
+
+\MaxGroupVolumeTransitionThreads 4
+
+‘Specifies the maximum number of I
+group-volume transitions that can
+bbe taking place simultaneously.
+
+MaximumWorkingSetSize
+
+MaxindexArchiveDays
+
+MaxindexBuildThreads
+
+1258291
+2
+
+9, 12 This, together with
+
+(MinimumWorkingSetSize, allows
+control over the working set of the
+(Message Server. Note that the
+forking set can never be
+decreased via this configuration
+item, only increased; if the current
+alue of the maximum working set
+size is greater than this, no
+changes will be made.
+12582912 is 12Mb
+
+Specifies the maximum number of
+days that may pass before an
+index run will be rebuilt by the
+archiver.
+
+Note that this configuration item
+must be set to a value greater than
+
+This configuration item is obsolete
+and is no longer used
+
+MaxindexThreads 2 This is set explicitly on the Live
+‘systems, since it in the past it was
+lexplicitly set to 3. It should not be
+included in Build Scripts.
+
+MaxinsertionThreads 2 ‘The maximum number of threads
+
+fo be used to insert new
+
+Ses
+
+© 2000 ICL Pathway Limited
+
+COMPANY IN CONFIDENCE
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+
+Printed at 08:03 on 8/12/00
+
+Page: 14 of 29
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters. Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+(MaxMarkerBurst 3 (Maximum number of markers sent
+per minimum sleep interval
+
+(7 _
+Specifies the maximum message
+expiry that may be specified when
+a message is created.
+
+37 is one day longer than the
+default to catch coding errors
+MaxMessagePortRecoveryQueueSizel15 hen the queue of items on a
+message port exceeds the
+(Message port's defined queue size
+plus this value, then the message
+port will go into recovery mode.
+Having this value greater than
+MaxMessagePortRecoveryQueueS.
+ize prevents hysteresis when
+‘switching into and out of recovery
+imode.
+
+MaxMessageExpiry
+
+MaxMessagePorts 256 Y ‘Sets maximum number of
+Message Ports.
+(MaxPendingQueueltems 32 [This defines the number of “out of
+
+lorder” messages that are cached
+awaiting earlier messages from the
+run arriving
+
+MaxPendingRequests 7 Y The maximum number of pending
+requests that can be stored.
+
+MaxQueries 32 N The maximum number of query
+threads that can simultaneously
+lexist.
+
+MaxRealTimeMessagePortSize 16 1024 The maximum size for the queue
+on a real-time message port
+
+(MaxReanimation 90 36 N IThe maximum period of time that
+may pass with the message server:
+not running
+
+MaxRetrievalThreads 2 ‘The maximum number of threads
+to be used to retrieve messages.
+
+[MaxSelectExpressions 64 ‘The maximum number of boolean
+
+expressions which may occur in a
+
+single selection expression
+
+MediumVolumeGrowthPercent 25 The percentage by which a
+
+medium’ Message Store volume
+ill be dynamically grown by
+
+Riposte
+MessageCacheSize 32 N (The number of messages to wait
+I __ _ ee __I __I __ [before checkpointing. _ ___I
+MessagePortRecoveryThreads 1 [This configuration item specifies
+
+the number of threads that will be
+scanning messages while the
+Message Port is in recovery mode.
+\MessageQueueltems 64 \This defines the number of items.
+that can be buffered up by NT
+before Riposte deals with them.
+MessageStoreCompression (0 Y Enables message store
+compression.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 15 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters. Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+MinAvailableMessageQueueltems 8 If the number of free items
+
+currently available in the message
+queue is less than
+(MinAvailableMessageQueueltems,
+requests will be suppressed - this
+lis done as a means of flow control
+io avoid discarding messages
+because of overflowing the
+message queue. It may be
+appropriate to increase this value
+on a correspondence server which
+may have synchronisation
+occurring with a large number of
+ineighbours simultaneously if there
+lare frequent warning messages in
+fhe event log regarding overflow of
+he message queue, provided that
+the message queue size itself is
+large enough (this is determined
+by the configuration item
+MessageQueueltems and should
+be set to at least 7 * (#
+simultaneous connections) to
+avoid overflow).
+MinExtendInterval 10000 How long the Message Store
+should wait between dynamic
+— expansions (ms) —
+MinExtendSize 256 Y Minimum amount to expand a
+Message Store volume (in pages)
+MinFreeDiskSpace 256 The minimum amount of space
+that must be present on disk in
+order to expand the Message Store)
+(MB)
+(MinFreePercent 10 ‘The minimum percentage of free
+‘space in the message store which
+ithe message server will attempt to
+maintain.
+MinimumWorkingSetSize 8388608 9,12 This, together with
+MaximumWorkingSetSize, allows
+control over the working set of the
+[Message Server. Note that the
+orking set can never be
+decreased via this, only increased;
+lif the current value of the minimumI
+orking set size is greater than
+this, no changes will be made.
+8388608 is 8Mb
+MinIndexArchiveDays 15 13 Specifies the minimum number of
+days that must pass before an
+index run will be rebuilt by the
+archiver.
+This will result in each index being
+_frebuilt every 2weeks.
+‘The minimum message expiry
+hich may be specified when a
+message is created.
+34 days is used to allow 5 weeks
+jof disconnect before we loose
+messages and is less than explicit
+_for EPOSS to catch coding errors.
+
+MinMessageExpiry
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 16 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+MinMessagePortRecoveryQueueSize 8 hen the queue of items on a
+
+message port drops below the
+(Message port's defined queue size
+plus this value, then the message
+port will come out of recovery
+mode. Having this value less than
+MaxMessagePortRecoveryQueueS.
+ize prevents hysteresis when
+‘switching into and out of recovery
+
+imode.
+MinMessagePortSize 16 N The minimum size of a message
+- ort queue.
+NetSocketBufSize (65536 Buffer Size for communication with,
+NT comms stack
+PageCacheSize 256 (512 N Number of page blocks (4K each)
+
+allocated to the cache.
+512 pages = 2048 Kbytes
+PendingQueueExpirationTime 60000 hen a message has been in the
+Pending queue for longer than this
+time it is discarded.
+PersistentObjectIndexRetryCount 10 This defines the number of retries
+10 be attempted when accessing
+the Persistent Object index when a:
+itimeout occurs.
+QueryOptimization 2 43 This controls the use of Riposte
+indexes with queries and when
+‘Select expressions are used in
+RiposteScanMessage or
+RiposteNextMessage. If it is set to
+(0 then all optimizations are
+disabled. If QueryOptimization is
+set to 1, then optimization will
+always be attempted. If
+(QueryOptimization is set to 2, then’
+loptimization will only be attempted
+hen specifically requested by the
+application.
+ReadAheadMessageBuffers 15 Specifies the number of additional
+messages that will be “read ahead”
+jin a single message retrieval
+operation by a Message Port
+recovery thread.
+RebuildPersistentObjectindex ‘This provides a mechanism for
+forcing the persistent object index
+ito be rebuilt before the Message
+‘Server comes online. (Note that
+this can’t necessarily be done with
+RiposteRebuildIndexRun.) When
+set to 1, the persistent object index
+ill be automatically rebuilt the
+next time the Message Server
+restarts, and once this happens,
+RebuildPersistentObjectindex will
+ibe reset to 0.
+RecoveryMode 0 N If this is set to 1, then Riposte will
+restart in Recovery Mode. This is
+required in some recovery
+‘scenarios.
+This is set explicitly on the Live
+systems, since it has been used in
+recovery situations. It should not
+pts
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 17 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+ICL Pathway
+
+Riposte 6 Message Server Configuration for Counters Ref:
+
+COMPANY IN CONFIDENCE
+
+FUJ00171955
+
+FUJ00171955
+
+TD/SPE/010
+Version: 0.5
+Date: 08/12/2000
+
+RecoveryNeighbors
+
+1 Y
+
+‘Specifies the number of neighbors
+
+ith which a message server must
+synchronize before it can exit
+recovery mode
+
+Regionldentifier
+
+[The region ID of the installation.
+Jas used by BES at the counter.
+
+RemoteBroadcastinterval
+
+0000
+
+Specifies the marker interval for
+remote permanent neighbors (ms)
+
+ReplicatedTransactionChunkSize
+
+500 60
+
+The minimum number of
+messages committed together
+hen transactions are replicated
+
+RequestQueueltems
+
+64
+
+This queue is used to store
+incoming requests (there is no
+queue for outgoing requests, a
+‘separate mechanism is used to
+avoid sending the same request
+too frequently that does not involve
+la queue). A value equal to the
+maximum number of simultaneous
+connections should be sufficient,
+and often a value less than this is
+‘enough, as requests are serviced
+fairly efficiently. This value can be
+uned by observing the frequency
+lof "Incoming request discarded"
+
+arning messages in the event log
+lif these are happening frequently,
+then RequestQueueltems should
+be increased.
+
+RequestTimeoutinterval
+
+3000 Y
+
+The amount of time, in
+milliseconds, for the node to wait
+before re-requesting messages
+from a neighbor.
+
+‘ScavengerPauseinterval
+
+1000 Y
+
+IThe amount of time that the
+
+‘scavenger process should idle
+
+before continuing its background
+rocessing. (ms)
+
+‘ScavengerShutdownWait
+
+5000
+
+This is the amount of time in
+milliseconds that the Riposte
+shutdown will wait before
+abandoning the scavenger.
+
+‘ScavengerTableSize
+
+32
+
+‘The scavenger table is used to
+keep track of units which are
+candidates for being scavenged.
+‘Typically, when a unit is found
+
+hich can be scavenged (or which
+is explicitly identified as being
+available storage due to a run
+being destroyed or a volume
+lextension), the next unit pointed to
+iby that unit is also a likely
+candidate for scavenging. The useI
+jof this table does involve a linear
+scan of the table, so it should not
+be set to a large value and in
+general it is not recommended that
+ithis configuration item be modified
+from its default value.
+
+‘Siteldentifier
+
+IThe site ID for the Riposte
+installation.
+
+‘SmallVolumeGrowthPercent 50 Y
+
+The percentage by which a ‘small’
+Message Store volume will be
+
+dynamically grown by Riposte
+
+© 2000 ICL Pathway Limited
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+
+COMPANY IN CONFIDENCE
+
+Printed at 08:03 on 8/12/00
+
+Page: 18 of 29
+ICL Pathway
+
+COMPANY IN CONFIDENCE
+
+Riposte 6 Message Server Configuration for Counters Ref:
+
+FUJ00171955
+
+FUJ00171955
+
+TD/SPE/010
+0.5
+08/12/2000
+
+Version:
+Date:
+
+‘SmallVolumeSize
+
+25600
+
+iThe threshold size for a ‘small
+Message Store volume in pages.
+
+‘SplitPorts
+
+0
+
+No longer used
+
+ITCPConnect
+
+0
+
+Required to support RSA autodial
+Not used by Pathway.
+
+ITimeSynchDriftLimit
+
+(60000
+
+IThe maximum allowable difference!
+jin time values between the host
+server and the time source
+message server (ms).
+
+‘Set by autoconfig see [Auto].
+
+\TimeSynchLevel
+
+Sets the level to which time
+synchronization is enabled.
+
+‘1 = Allow time change but not date,
+change.
+
+Note: set to value 2 by autoconfig
+jon install to allow date to change ifI
+PC clock drift is significant see
+[Auto].
+
+ITimeSynchNodeld
+
+Indicates the Riposte node
+responsible for keeping
+synchronization time for other
+nodes.
+‘Set by Autoconfig [Auto] to
+\Gateway node for slave counters
+land correspondence server for
+ateway counter.
+
+\TraceCriticalSections
+
+Allows debugging of Critical
+sections. Not to be used on Live
+since it is very verbose.
+
+\TracelndexBuild
+
+hen set to 1, the Message
+Server will log additional
+information and statistics in the
+
+indows NT Event Log regarding
+the progress and performance of
+index build operations.
+
+\TraceShutdown
+
+A boolean flag which specifies
+hether Shutdown should be
+raced or not.
+
+\TransactionWaitTimeout
+
+10000
+
+IThe amount of time to wait on a
+blocked transaction before
+returning a timeout error (ms)
+
+lUnconnectedBroadcastinterval
+
+100000)
+
+\7200000
+
+12
+
+Specifies the interval at which
+connections will be established to
+non-permanent neighbors (ms).
+Note: set to 60000 during
+autoconfig install to get around a
+
+Imilliseconds) between scans of the
+table of non-permanent
+neighbours to see if any UBIs have
+been triggered.
+
+IUnconnectedBroadcastRetryAttempts:
+
+IThe number of Retries to be made
+following a failed connection to a
+lof non-permanent neighbour. I
+
+nectedBroadcastRetryinterval
+
+(60000
+
+(00000
+
+IThe base interval between retries
+following a failed connection to a
+lof non-permanent neighbour.
+Retries are after time n,n, 2n, 4n,
+8n etc.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 19 of 29
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+
+Printed at 08:03 on 8/12/00
+ICL Pathway
+
+COMPANY IN CONFIDENCE
+
+Riposte 6 Message Server Configuration for Counters Ref:
+
+FUJ00171955
+
+FUJ00171955
+
+TD/SPE/010
+0.5
+08/12/2000
+
+Version:
+Date:
+
+(UnconnectedBroadcastStartupDelay
+
+Setting this to a non-zero value
+delays the first
+UnconnectedBroadcastinterval
+expiry by the amount specified
+(see also
+UnconnectedBroadcastStartupinte
+val).
+
+\UnconnectedBroadcastStartupintervaj0 9
+\
+
+[This specifies a time interval in
+milliseconds. It works in
+conjunction with
+UnconnectedBroadcastStartupDel
+ay to delay the timing of the first
+unconnected broadcast attempt
+after startup. The length of the
+\delay is equal to the number of
+milliseconds specified by
+UnconnectedBroadcastStartupDel
+ay plus a random number of
+milliseconds that is uniformly
+distributed over the interval
+specified by
+UnconnectedBroadcastStartupinte
+irval.
+
+\UnmaskedBroadcastFrequency 10
+
+‘Specifies the frequency with which
+ia Correspondence Server will
+make a “unmasked” marker
+broadcast.
+
+/alidateNetworkAddresses 1
+
+If this is set to 0, then IP
+addresses are not checked when
+communicating with neighbours.
+iThis can be used to support
+dynamic IP addresses on clients.
+
+erifyPersistentObjectIndexKey 0
+
+If this is set than additional
+diagnostic checks are made on the
+
+larnExtendSize 512 Y
+
+Persistent Object index.
+
+larnFreeDiskSpace 5120 8
+
+‘Specifies when a low disk space
+arning message will be written to
+
+the Message Store (MB)
+
+Notes:
+
+db This is set to 70 during migration to Cl4 and then reset to 35.
+
+2) This should only be configured on the Gateway PC. It appears to be configured on all PCs.
+(Probably not a problem since all messages should be sent to the centre in a single ISDN
+
+call.)
+
+[Although this
+leave it alone.
+
+is strictly wrong,
+
+it is best
+
+to
+
+3) This is configured appropriately by Auto Config.
+
+unnecessary now.
+
+I believe it is only used by BES so is strictly]
+
+4) This is set to 1000 by AutoConfig, Why is it not set up by the build scripts?
+
+[Although this
+leave it alone.
+
+is strictly wrong,
+
+it
+
+is best tol
+
+© 2000 ICL Pathway Limited
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+
+COMPANY IN CONFIDENCE
+
+Page: 20 of 29
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+5) This is initially set to 2 by AutoConfig, then once the initial synchronisation is complete it is
+reset to 1.
+6) Set by AutoConfig to the Virtual CS on the gateway Node and to Node 1 on all other nodes.
+7) AutoConfig initially sets this to 60000 (1 minute) to speed up the initial download then resets
+
+it to 1800000 (30 mins) on completion. This should now be set to 7200000.
+
+This value is based on a separate RegistryI
+jparameter. I need to add in the details.
+
+Ajay: can you supply this info please?
+
+8) This seems rather high for a counter.
+
+However I can’t think of a better way of using it]
+so I propose we leave it alone.
+
+9) This parameter was introduced with Riposte 6.0.3 (Build 223 Update 20 or Update 21).
+
+10) This previously had a default value of 4000, The default changed prior to CI4 going live, but
+this document was not updated at the time
+
+11) For Satellite connected outlets this needs a value of 14 for normal running and 35 for rollout
+(PinICL.
+
+12) This change is covered by CP 2774 or 2764.
+
+13) This change is covered by CP 2711.
+
+3.2. Configuration of RiposteMirror
+
+I propose that the following parameters are set explicitly (the following is a copy of the table from
+section 3.1, but only including those entries which explicitly need to be set) :-
+
+Parameter Defaul Live Dy Notes Description / Comment
+
+amic
+ArchiveEndTime End time of the archive (in hours).
+ArchiveStartTime Start time of the archive (in hours).
+BlockCacheSize IN Number of message blocks (16K each)
+
+allocated to the cache.
+
+(128 blocks = 2048 Kbytes
+(ClusterCacheSize 40 35 IN Number of cluster blocks (64K each)
+allocated to the cache
+
+35 clusters = 2.25 Mbytes
+
+(A minimum of IndexBuildMergeFactor+1
+clusters must be available in the cluster
+cache for each index build operation that
+
+is taking place.
+Countryldentifier 0 44 IThe country ID of the installation
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 21 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters. Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+[DefaultMessageExpiry eo Be IThe default message expiry which will be
+
+applied to any messages which are
+reated without explicit specification of theI
+
+message expiry (in days).
+
+120 days is the longest time a benefit
+
+authorization can exist for.
+
+DefaultObjectVersionExpiry
+
+The default message expiry which will be
+japplied to persistent object version
+messages
+
+DeletedObjectVersionExpiry
+
+100
+
+40000
+
+The minimum expiry period for current
+deleted persistent object versions.
+
+ILogRecoveryModeConnection
+s
+
+\This is a Boolean flag. When set to 1 it
+ill cause the Message Server to log all
+neighbor connections that are established
+hile the Message Server is in recovery
+mode, including the message that initiated)
+he connection (which will typically be a
+marker).
+Note that this only applies to Message
+Servers that are not configured as
+(Correspondence Servers
+
+MaxDirtyUnits
+
+20
+
+MaxMessageExpiry
+
+37
+
+Specifies the maximum message expiry
+lhat may be specified when a message is
+created.
+
+37 is one day longer than the default to
+catch coding errors
+
+(MaxReanimation
+
+36
+
+The maximum period of time that may
+ass with the message server not running
+
+MinIndexArchiveDays
+
+‘Specifies the minimum number of days
+that must pass before an index run will be
+rebuilt by the archiver.
+
+IThis will result in each index being rebuilt
+every 2 weeks.
+
+MinMessageExpiry
+
+PageCacheSize
+
+~ (256
+
+34
+
+“612
+
+The minimum message expiry which may
+be specified when a message is created.
+{34 days is used to allow 5 weeks of
+disconnect before we loose messages and
+is less than explicit for EPOSS to catch
+eoding errors,
+Number of page blocks (4K each)
+allocated to the cache.
+
+512 pages = 2048 Kbytes
+
+(QueryOptimization
+
+Regionldentifier
+
+IThe region ID of the installation.
+las used by BES at the counter.
+
+ReplicatedTransactionChunkSi
+ze
+
+‘60
+
+3,4
+
+The minimum number of messages
+committed together when transactions are!
+replicated
+
+‘Siteldentifier
+
+a4
+
+IThe site ID for the Riposte installation.
+
+\TracelndexBuild
+
+hen set to 1, the Message Server will
+log additional information and statistics in
+he Windows NT Event Log regarding the
+progress and performance of index build
+
+operations.
+
+© 2000 ICL Pathway Limited
+
+COMPANY IN CONFIDENCE
+
+Page: 22 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+Notes:
+3) RegionIdentifier is already set up by AutoConfig
+
+TI believe it is only used by BES so is strictlyI
+
+unnecessary now.
+2) I’ve not set the TimeSynch... parameters since no messages are ever initiated on the
+
+3.3
+
+RiposteMirror service. Note it is probably safest not to configure these since we do NOT
+
+want multiple services trying to maintain the clock.
+
+3) This value was omitted from earlier versions of this document.
+This is how it should be set in the future.
+
+current value is on the Live estate.
+
+currently incorrect it may not be worth explicitly correcting it.)
+
+4) This change is covered by CP 2774 or 2764.
+
+5) This change is covered by CP 2711.
+
+Configuration of RiposteTraining
+
+I propose that the following parameters are set explicitly (the following is a copy of the table from
+
+section 3.1, but only including those entries which explicitly need to be set) :-
+
+It is not clear what the
+(If it is
+
+Parameter Default Live Build
+Value Script
+
+BlockCacheSize 64 128 \Number of message blocks (16K each)
+allocated to the cache.
+128 blocks = 2048 Kbytes
+
+(ClusterCacheSize 40 35, N Number of cluster blocks (64K each) allocated
+ito the cache
+35 clusters = 2.25 Mbytes
+‘A minimum of IndexBuildMergeFactor+1
+[clusters must be available in the cluster cache
+for each index build operation that is taking
+place.
+
+(Countryldentifier I0 44 \The country ID of the installation
+
+MaxDirtyUnits 8 20
+
+PageCacheSize 256 512 N Number of page blocks (4K each) allocated to
+he cache.
+1512 pages = 2048 Kbytes
+
+(QueryOptimizatio 0 2 4 I
+
+n
+
+Regionldentifier (0 4 I
+
+Siteldentifier 0 44 [The site ID for the Riposte installation.
+
+Notes:
+
+ib) RegionIdentifier is already set up by AutoConfig
+
+unnecessary now.
+
+I believe it is only used by BES so is strictly]
+
+© 2000 ICL Pathway Limited
+
+COMPANY IN CONFIDENCE
+
+Page: 23 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+2) I’ve not set the Message Expiry parameters since the message store is destroyed each day,
+
+however it may be simpler to configure such parameters for consistency.
+3) I’ve not set the TimeSynch... parameters since there is nothing to synchronise the time to,
+
+Also we do NOT want multiple services trying to maintain the clock.
+4) This change is covered by CP 2711.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 24 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+Indexes
+
+4.1 Indexes Required
+The indexes that are required on the counter are defined in the table below together with their key
+size.
+All these indexes should be configured for all 3 Riposte services (ie Riposte, RiposteMirror and
+RiposteTraining).
+Note: The index configuration for a system can be found by either looking at the Riposte settings in
+the NT Registry or by using the “RiposteIndex” command.
+Attribute Indexed KeySize Notes Comm
+IAMEntry.AMType 8 3
+‘AMEntry.DValue 32 8
+IAMSession.AMType 8 3
+IAMTxn.AMType 3
+‘Application 16 This was originally marked for
+removal in CP 2500, but
+subsequently reinstated for use by
+APS
+CardID 100 1,4
+Data.BalanceDatald 36 3
+Data.BatchID 12 4
+Data.CardID 20 4
+Data.MarkerHash 8 3
+Data.MessagelD. 24 4
+Data.NINO- 12 4
+[Data.PaymentID 24 4 I
+Data.TranType _ 32 4 _
+Date 12 4
+EPOSSTransaction.AdditionalData.APSSEQS
+EPOSSTransaction.BlackBoxData.APSXRE 8
+F
+EPOSSTransaction.CrossReference 20 1,4
+EPOSSTransaction.DSM.L5 4 4
+EPOSSTransaction.OpeningFiguresid 32 2
+POSSTransaction.PM.LS 4 4
+EPOSSTransaction.PM.L7 4 4
+LPO.Collection 32
+MsgType 24 3
+Reversal.Id 4 1,4
+Reversal.Num 12 1,4
+SecurityEvent.EventName 16 2
+ServiceType 4 1,2,.4
+\TranType 100 1,4
+[TxnData.Container 4
+ITxnData. Txnld 20
+/Alndex.LFSFlag 4
+Notes:
+iD) I don’t believe that this index will ever contain any messages.
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 25 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+2) This doesn’t appear to be created by any Desktop application if not explicitly created (at least
+not in training mode)
+3) Needed for Asset Manager. Not used.
+4) Originally marked for deletion at Cl4 in CP 2500, however those deletions not implemented
+
+due to lack of testing.
+
+I need confirmation from the EPOSS team that it isI
+safe to remove all of these. My belief is that
+they are all safe to delete.
+
+Some are NOT safe. I'll try again later!
+
+4.2. Index Maintenance
+
+With the introduction of Riposte 6, index maintenance is required. This is achieved by allowing
+Riposte Archiving to periodically rebuild the indexes. Archiving is currently configured so that each
+index will be rebuilt every 14 days.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 26 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+
+FUJ00171955
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+Node Identifiers
+
+The Riposte node identifiers and the corresponding UDP port settings for the counters are:
+Gateway 1 0)
+Mirror message store on removable disk in single counter office 31 2996)
+Other counters 2 to 30) 0
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 27 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters. Ref: TD/SPE/010
+
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+6.
+
+6.1
+
+6.2
+
+Neighbour Relationships
+
+There are 2 types of Neighbour relationships for the Counters :-
+a) To Correspondence Servers (gateways only)
+b) To other counters
+
+These are described in the following sub-sections.
+Correspondence Servers
+
+These relationships are set up as part of auto config.
+
+The Correspondence Server is set up as a Virtual neighbour to each gateway. The relationship is
+configured with both IP addresses for each main CS (4 addresses in all). The relationships are all
+configured as non-local, non-permanent and virtual
+
+This is done using the following commands
+
+cd c:\rtools
+
+RiposteNode Add 0 42 ipl 0 0 1
+RiposteNode AddAddress 0 42 ip2
+RiposteNode AddAddress 0 42 ip3
+RiposteNode AddAddress 0 42 ip4
+
+Where “ipn” are the 4 IP addresses for the remote node.
+
+These are defined elsewhere. Perhaps I need a
+cross reference.
+
+All CSs are assumed to be Virtual neighbour 42.
+
+[Zs it 42 or 40?
+
+Other counters
+
+These relationships are set up as part of auto config.
+
+Each counter (including the Riposte Mirror in a single counter office) is set up as a neighbour to each
+other counter. Each relationship is configured with the single IP addresses for the remote counter.
+The relationships are all configured as local, permanent and non-virtual
+
+This is done using the following commands
+
+ed c:\rtools
+RiposteNode Add gggggg nn ip 1 1 0
+
+Where “gggggg” is the Riposte Group Id (ie FAD code) of the outlet and “nn” is the Riposte Node Id
+of the remote counter and “ip” is the IP address for the remote counter.
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 28 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+
+Printed at 08:03 on 8/12/00
+FUJ00171955
+FUJ00171955
+
+ICL Pathway Riposte 6 Message Server Configuration for Counters Ref: TD/SPE/010
+Version: 0.5
+COMPANY IN CONFIDENCE Date: 08/12/2000
+
+Message Store
+
+There are up to three message stores on a counter. The initial allocation size for these is shown below.
+
+Message Store Comment
+Normal le 100 Mb
+Mirror message store (Single 25,000le 100 Mb
+counter offices only) _
+
+© 2000 ICL Pathway Limited COMPANY IN CONFIDENCE Page: 29 of 29
+
+c:\gij\winword\documents\gij documents\tdspe010.counterconfig_6.0.doc
+Printed at 08:03 on 8/12/00

@@ -1,0 +1,427 @@
+FUJ00081071
+FUJ00081071
+
+D'Alvarez
+
+Cochrane
+in Achte
+“)); Turner lan
+
+Salawu Saheedf. “} Lywood Patt”
+Hammond ChristopherI
+Porter Stevenf”” ‘
+Welsh Graham[/O=EXCHANGE/OU=ADMINGROUP1/CN=RECIPIENTS/CN=WELSHG]
+4 Wed 6/16/2010 7:24:38 PM (UTC)
+
+Subject: I RE: Rates Board & Region
+
+HNGx Region Risk.xIsx
+
+HNGx Region Risk.xIs
+
+Okay based on conversations with Graham & Mark and the information that I have available to me, Ref Data Enablement and Non Region 1 data,
+I have produced the model below.
+
+This is a worst case and can be fine tuned once the actual Event and frequency are known.
+
+Counter Trading Days for Non Region 1 Branches
+
+Total Counter A
+05Jun O06Jun O7Jun = 08Jun = 09Jun = 10-Jun Trading Days Bor
+Migrated Counters Volumes 177 16 1177 1177 4177 A177
+for Week 5th - 10th June 5901
+Wc 7th June O7Jun =O08Jun =09Jun =10Jun 11Jun = 12Jun = 13-Jun
+Previous Migrations AV77 1177 1455 1455 1855 1855 16 8990
+
+Migration Activity 278 400
+
+Ave Events per Day
+
+Wc 14th June 14Jun 15Jun  16Jun = 17Jun = 18Jun = 19-Jun = 20-Jun
+Previous Migrations 1855 1855 2289 2517 2966 2966 16 14464
+Migration Acti 434 228 449
+Ave Events per Day
+Wic 21 June 21Jun  22Jun 23Jun = 24un-25Jun = 26-Jun = 27-Jun
+Previous Migrations 2966 3193 3504 3504 3805 3605 47 20624
+
+Migration Activity 227 M1 301
+
+Ave Events per Day
+
+Note: Figures in Blue are projected worse case based on the information available
+In addition PSA excel file if which has the background data:
+in older format
+Can we have the “Event” identified so that we can ensure that the SMC are proactively aware what they are looking for.
+
+I appreciate and recognise that any attempt to pull forward will impact more than just R1 activities and thus we need to validate and contain as
+much as we can.
+
+Regards,
+
+Migration Governance Manager
+Royal Mail Group Account
+
+FUJITSU
+FUJ00081071
+FUJ00081071
+
+Lovelace Road, Bracknell, Berkshire RG12 8SN
+
+Mob: [
+
+E-mail:
+Web
+
+ik Fat
+
+st Please consider the environment - do you really need to print this email?
+
+Fujitsu Services Limited, Registered in England no 96056, Registered Office: 22 Baker Street, London, W1U 3BW
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu does not guarantee that
+this e-mail has not been intercepted and amended or that it is virus-free.
+
+From: Allen Graham (BRAO1)
+
+Sent: Wednesday, June 16, 2010 4:01 PM
+
+To: Butts Geoff; Welsh Graham; D'Alvarez Alan; Andrews Mark (GD HQ); Cochrane Vince; Davidson James; Van Achte Gaetan;
+Richardson Debbie DB; Turner Ian T
+
+Cc: Salawu Saheed; Lywood Pat; Bamber Sheila; Hammond Christopher; Jepson Mark; Porter Steven
+
+Subject: RE: Rates Board & Region
+
+Development have advised that hot fixing 1.23.00 will be painful
+
+To avoid issues of creating regression we would really have to deliver the hotfix for 1.23.00 before the hotfix for 1.23.01. This will
+therefore impact the date of the latter fix and likely cause a delay to LST for 1.23.01 and other important fixes and also delay the
+relaase of the fix into the R2 baseline. In short we are doing so much that something would have to give to do this. If at all possible
+we should therefore avoid this.
+
+After discussion there is an event generated which shows a counter has reverted to boot strap data; and form looking at events we
+have form the last few days we have calculated that approx 0.004% of counters not in region 1 will get this error daily.
+
+So from Gareth...
+
+I would suggest the following approach:
+
+1. On day of Migration, any Branch not in Region 1 needs to reboot all counters. This needs to be in place through the entire
+rollout or until we get a fix in the migration software target.
+
+2. Until we have 1.23.01.01 rolled out to all counter, then need to get SMC to monitor for the Event that indicates reversion to
+bootstrap. They should then check these against non Region 1 Branches (RDT can provide as a spreadsheet) and if
+necessary phone the branch asking them to reboot that counter that generated the event.
+
+This seems a reasonably watertight approach and covers all the known problems in this area.
+
+If we follow this approach we need to define the exact event to look far and provide the Bureau region info to SMC and they may
+
+well need to change the event filters to stop filtering out the event that is generated.
+
+Regards,
+
+Graham Allen
+Application Services - Post Office Account
+
+FUJITSU
+
+E-mail
+Web: htfp://uk
+
+wa Please consider the environment - do you really need to print this email?
+
+Fujitsu Services Limited, Registered in England no 96056, Registered Office: 22 Baker Street, London, WiU 38W
+FUJ00081071
+FUJ00081071
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services does not
+guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+
+From: Butts Geoff
+
+Sent: 16 June 2010 14:39
+
+To: Allen Graham (BRAO1); Welsh Graham; D'Alvarez Alan; Andrews Mark (GD HQ); Cochrane Vince; Davidson James; Van Achte
+Gaetan; Richardson Debbie DB; Turner Ian T
+
+Cc: Salawu Saheed; Lywood Pat; Bamber Sheila; Hammond Christopher; Jepson Mark
+
+Subject: RE: Rates Board & Region
+
+Importance: High
+
+Graham,
+Thanks. As per our discussion I would like Graham W and Mark to agree:-
+1. Is there a viable workaround for branches (i.e. rebooting the counter immediately after migration)?
+2. If we go with targeting the fix into 1.23.01.01, this will take approximately 4 weeks to get into live (we'll be in the 3° week of
+rollout). Will this be acceptable from a support and business perspective?
+We'll review this on Morning Prayers tomorrow before any communication is made to POL.
+
+Regards,
+
+Geoff
+
+From: Allen Graham (BRAO1)
+
+Sent: 16 June 2010 13:36
+
+To: Welsh Graham; D'Alvarez Alan; Andrews Mark (GD HQ); Cochrane Vince; Davidson James; Van Achte Gaetan; Butts Geoff;
+Richardson Debbie DB; Turner Ian T
+
+Cc: Salawu Saheed; Lywood Pat; Bamber Sheila; Hammond Christopher; Jepson Mark
+
+Subject: RE: Rates Board & Region
+
+Importance: High
+
+Graham,
+We need to be clear then what we are proposing.
+So what I understand is:
+
+1. The first day of trading on HNGx these branches WILL have the wrong rates
+
+2. There is a small risk that at any other time single counters could fallback to boot strap data invisibly and have the wrong rates
+To protect against 2 earlier we will need to develop a hot fix against 1.23.00 (1.23.00.01?) This is the release that is currently in or
+about to go to Model Office and would seem the earliest sensible delivery release. I have asked development for a date for this not
+affecting the agreed plan for 1.23.01.01 already in track. LST will need to confirm how they test this and how long.
+Additionally to protect against 1 we will need to update the migration package. This will take a couple of days to re-engineer the
+migration package to contain 1.23.01.01 and will require LST to do redo the migration testing which they need to confirm but I believe
+is 2 weeks.
+
+Finally I believe we identified a problem that we could not simply cut over from one migration package to a new one whilst migrations
+were taking place and hence this may require a pause in rollout. This needs to be confirmed but not sure by who.
+
+How do we agree this and who manages it?
+
+Regards,
+
+Graham Allen
+Application Services - Post Office Account
+FUJ00081071
+
+FUJ00081071
+FUJITSU
+Lovelace Road, Bracknell, Berkshire, RG12 8SN.
+Tel: internally {GRO
+
+Mob:
+E-mai
+
+Web: ik fujits
+
+st Please consider the environment - do you really need to print this email?
+
+Fujitsu Services Limited, Registered in England no 96056, Registered Office: 22 Baker Street, London, W1U 3BW.
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services does not
+guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+
+From: Welsh Graham
+
+Sent: 16 June 2010 12:12
+
+To: Welsh Graham; D'Alvarez Alan; Allen Graham (BRAO1); Andrews Mark (GD HQ); Cochrane Vince; Davidson James; Van Achte
+Gaetan; Butts Geoff; Richardson Debbie DB; Turner Ian T
+
+Cc: Salawu Saheed; Lywood Pat; Bamber Sheila; Hammond Christopher; Jepson Mark
+
+Subject: RE: Rates Board & Region
+
+All,
+To be clear I have spoken to Saheed & agreed the following:
+
+¢ HSD & SMC need to be aware of the 119 this week.
+e In conjunction with Ref data establish the numbers of Branches that could be impacted for next week.
+
+Spoken to Mark Andrews:
+e Agreed that nothing should be said to POL until we are clear on what can be achieved above and beyond the targeting of Ctr 1.23.01,
+agreed this morning.
+e  Briefed him on the detail above.
+Spoken to lan and left a message for Graham A:
+e Requesting a view on what could be achieved in pulling forward a fix prior to 1.23.01
+
+Texted Geoff:
+
+¢ He is aware of the headline detail
+¢ However as he and Alan’s mailboxes are full not sure if he has seen the mails etc.
+
+From: Welsh Graham
+
+Sent: Wednesday, June 16, 2010 11:36 AM
+
+To: Alan D'Alvarez; Allen Graham (BRAQ1) ; Andrews Mark; Cochrane Vince; Davidson James
+i Gaetan Van Achte; Geoff Butts; Richardson Debbie DB
+Tan T
+Cc: Salawu Saheed
+
+Subject: Rates Board & Region
+
+Turner
+
+All,
+FUJ00081071
+FUJ00081071
+
+Further to the dialogue on this last night and going through my mail I had reason to question the 119 quoted given the source and title of the
+data set.
+
+Whilst I appreciate that we have taken steps to target the fix the issue is that it is not 119 Branches that could be effected BUT 6258, including
+CTO’s.
+
+As such we need to revisit the approach to fix urgently.
+
+Regards,
+
+From: Woodley Adam
+
+Sent: Wednesday, June 16, 2010 10:09 AM
+
+To: Welsh Graham; Parker Steve (PostOfficeAccount)
+
+Cc: Young Nicola; Gelder Robert; Wilcox David; Bansal Steve (BRAO1); Salawu Saheed; Hill Sarah(POA HSD)
+Subject: RE: region issues
+
+Good Morning,
+Please find attached a report detailing all offices which are not region 1, as requested.
+
+Regards << File: ALL_OFFICES_NOT_REGION1.zip >>
+Adam
+
+From: Welsh Graham
+
+Sent: 16 June 2010 09:06
+
+To: Woodley Adam; Parker Steve (PostOfficeAccount)
+
+Cc: Young Nicola; Gelder Robert; Wilcox David; Bansal Steve (BRA01); Salawu Saheed; Hill Sarah(POA HSD)
+Subject: RE: region issues
+
+Adam,
+If you have not already can you please provide a view on ALL Branches i.e. the full Estate that are not Region 1
+
+Or Confirm that the detail within the original report is all the Branches.
+
+From: Woodley Adam
+
+Sent: Tuesday, June 15, 2010 11:50 AM
+
+To: Parker Steve (PostOfficeAccount)
+
+Cc: Young Nicola; Welsh Graham; Gelder Robert; Wilcox David
+Subject: FW: region issues
+
+Good Morning,
+Please find attached the HNG-x enablement monitor with the BDC Regions added, as requested.
+
+Regards << File: HNGx_Enablement_Regions.xls >>
+Adam
+FUJ00081071
+FUJ00081071
+
+From: Parker Steve (PostOfficeAccount)
+Sent: 15 June 2010 09:01
+
+To: Gelder Robert; Wilcox David
+Subject: RE: region issues
+
+Can you supply a list please
+
+From: Gelder Robert
+
+Sent: 15 June 2010 09:00
+
+To: Parker Steve (PostOfficeAccount); Wilcox David
+Subject: RE: region issues
+
+Good Morning,
+
+I understand that all those currently migrated, have now resolved themselves. Regarding future migrations, we are able to
+identify which branches are in the same scenario (i.e. which migrating branches are not in Region 1).
+
+Regards
+
+Rob
+
+From: Parker Steve (PostOfficeAccount)
+Sent: 15 June 2010 08:35
+
+To: Wilcox David; Gelder Robert
+Subject: RE: region issues
+
+Gents,
+Is it possible to identify the other sites that this problem will impact, i.e. a list of sites on this special bureau rate?
+
+Steve
+
+From: Wilcox David
+
+Sent: 14 June 2010 17:27
+
+To: Parker Steve (PostOfficeAccount)
+Cc: Gelder Robert
+
+Subject: FW: region issues
+
+Steve,
+Seems as though the problem has been diagnosed.
+
+David
+
+David Wilcox
+Reference Data Manager, Retail and Royal Mail Group
+
+Fujitsu
+
+Fujitsu Services Limited, Registered in England no 96056, Registered Office 22 Baker Street, London, W1U 3BW
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu does not
+guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+FUJ00081071
+FUJ00081071
+
+From: — Macdonald Duncan
+
+Sent: 14 June 2010 16:59
+
+To: Wilcox David; McKeown Kevin
+Subject: FW: region issues
+
+From: Porter Steven
+Sent: 14 June 2010 16:56
+To: Macdonald Duncan
+Cc: Mulye Vinay
+
+Subject: region issues
+
+Duncan,
+We think we spotted a Counter code problem:
+
+If we receive downloads in the order below (which we have seen previously, that we think we do), on a bootstrap counter,
+freshly migrated:
+
+Package 2
+Package 1
+Package 3
+Package 4
+
+Then the region update in package 1 is ignored, and when package 4 is received (the first time we go tradable) then the rates
+board is updated with the old region, not the new region.
+
+This issue goes away once counter is rebooted. The root cause seems to be that the region id is cached at startup, and the
+logic to determine when to re-read it is wrong - current code only re-reads the region when the counter is already fully tradable,
+and a new package’ is received.
+
+We'd propose to reload the cached region whenever we receive a package’ update regardless.
+
+Can you get the peak routed our way?
+
+Regards
+Steve
+
+Steven Porter
+Software Design & Development (SDD) Practice & HNGX Design/Development
+Fujitsu Services
+
+Berkshire, RG12 8SN
+

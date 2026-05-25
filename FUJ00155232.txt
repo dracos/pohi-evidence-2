@@ -1,0 +1,126 @@
+FUJ00155232
+
+FUJ00155232
+From: Sewell Peter (FEL01)[/O=EXCHANGE/OU=ADMINGROUP1/CN=RECIPIENTS/CN=SEWELLP]
+Sent: Tue 12/08/2008 10:48:25 AM (UTC)
+To: Jenkins Gareth oi GRO
+Ce:
+Subject: I RE: Branch 141832 Craigpark
+Gareth
+
+When you say interfere are transactions actually lost when the EOD is run.
+
+I need to talk with you on another subject could you spare some time today please.
+Pete
+
+Pete Sewell
+
+Security Operations Manager
+
+Fujitsu Services Royal Mail Group Account
+
+LOVELACE ROAD,
+BRACKNELL,
+
+Web http://uk.fujitsu.com
+
+Fujitsu Services Registered in England no 96056,
+Registered Office 22 Baker Street,
+London W1U 3BW
+
+This e-mail is only for the use of its intended recipient. Its contents are confidential and may be privileged. Fujitsu
+Services does not guarantee that this e-mail has not been intercepted and amended ot that it is virus free.
+
+From: Jenkins Gareth GI
+Sent: 11 August 2008 15:15
+
+To: Sewell Peter (FELO1)
+
+Ce: Stewart Mike; Peach Mik
+Subject: FW: Branch 141832 Craigpark
+Pete,
+
+Over the last couple of years we've had a couple of cases where EOD (which runs at 19:00) interferes with transactions
+being written at the counter. If this happens, then there is an Event written to the NT event Log.
+
+Given we only have a couple of instances, and a fix is as likely to cause further problems, then we're reluctant to make a
+change to Horizon. However if Horizon data is being used in evidence for the prosecution of a Postmaster, it is probably
+wise to also check to see if any such events were produced during the period in question. Is this something that can /
+should be built into the ARQ process?
+
+Regards
+
+Gareth
+FUJ00155232
+FUJ00155232
+
+Gareth Jenkins
+Distinguished Engineer
+Applications Architect
+Royal Mail Group Account
+
+ss Please consider the environment - do you really need to print this email?
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services
+does not guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+
+From: Jenkins Gareth GI
+
+Sent: 11 August 2008 15:11
+
+To: Peach Mik
+
+Cc: Drake Claire; Card Cheryl; Chambers Anne O; Stewart Mike; Budworth John
+
+Subject: RE: Branch 141832 Craigpark
+
+Mik,
+
+As discussed, I am still uneasy about this, but I agree that it is probably safer to leave things as they are.
+
+I've discussed this with Mike and I'll mention this to Pete Sewell so that he can ensure that if we are providing
+evidence for an ARQ that we also check on relevant events.
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+Distinguished Engineer
+Applications Architect
+Royal Mail Group Account
+
+St Please consider the environment - do you really need to print this email?
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu
+Services does not guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+
+From: Peach Mik
+
+Sent: 11 August 2008 14:41
+
+To: Jenkins Gareth GI
+
+Cc: Drake Claire; Card Cheryl; Chambers Anne O; Stewart Mike; Budworth John
+Subject: RE: Branch 141832 Craigpark
+
+Gareth,
+
+OK - I understand that you don’t want this to be left un-fixed...
+FUJ00155232
+FUJ00155232
+
+On the basis of the evidence that we have - there are 35 errors per week ( inside the 7-8pm Wednesday
+window) and two in 35*52(weeks) = 1820 are known to have caused a discrepancy.
+
+a) SSC staff spending lots of time monitoring these events for 1-2 per year is simply not cost-effective
+b) Fixing the underlying problem of holding the "lock" for too long is feasible - from PC0152376 BUT
+
+c) I would want some assurance that making this change to the live estate, to resolve 2 reported issues,
+is NOT going to have a knock-on effect anywhere else....
+
+I know that this is a difficult request - but I don't like changing Horizon at this stage - and I would like to
+be convinced that it is necessary, and that we wont make things worse...
+
+Regards
+Mik

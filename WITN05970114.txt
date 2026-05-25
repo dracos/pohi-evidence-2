@@ -1,0 +1,217 @@
+Programme Review - Brainstorm on Suggestions
+
+1. TIP
+
+tchpoi
+
+Get part or all of TIP
+functionality from
+Pathway & consider
+outsourcing some or all
+of TP BU
+
+Group IS Strategy
+Migration path
+Legacy systems
+Lose control of value
+
+Releases scarce
+IT/Project resource
+
+Refocus on rest of
+programme/year 2000
+
+Reduces cost
+
+chain
+
+e Technically Pathway’s architecture wouldn't preclude - they are running a large
+‘data warehouse’ for the BA side (MIS/FRMS etc), and are developing ‘data
+mining’ functionality (CFM Dublin, Business Objects, Oracle etc).
+
+e Obviously Pathway would need to grow current systems - processing/storage - but
+this would be extension of current architecture rather than new architecture.
+
+e Currently TIP (ignoring HAPS and now ADS) acts as the single interface for data
+into POCL from Pathway => simple service boundary. Shifting TIP into Pathway
+would increase number of Pathway-POCL links (for back-end systems);
+presumably POCL will need access to data in TIP?
+
+e POCL’s design for some new products (eg NS) involves data to clients flowing via
+TIP (ie Counter-Pathway-TIP-Client), as against the AP model of direct Pathway-
+Client. Shifting TIP into Pathway could reduce the chain (improve
+performance/QoS etc) if the “value-added” component of TIP is needed in this
+flow.
+
+e Could avoid the need for bulk transfer of transaction level data from Pathway to
+TIP (10Gb/night) but presumably still needs to be accessed by POCL?
+
+e Where would RDP fit - would that be shifted to Pathway (could resolve some
+problems between Pathway and RDP, TIP and RDP)?
+
+e Procurement rules - proberty of adding TIP to Pathway’s scope without public
+tender?
+
+e Pathway’s record in delivery so far - would we want to increase reliance? What
+effect would extending Pathway’s scope have on their ability to manage the
+current core products (“eye off the ball”).
+
+e What exactly do we want from TIP in the long run?
+
+WITNO5970114
+WITNO5970114
+2. Decouple EPOS from Release 2
+
+Uncouple EPOS from Is this technically Release 2 quicker to
+Release 2 possible? market?
+Assumes that AP is Girobank/Bill Payment
+more advanced than clients ©
+EPOS. BAO
+Why
+Either
+
+e we don’t think Pathway can deliver contracted solution in the time - ie to de-risk
+Release 2
+
+or:
+
+e we don’t want what we've contracted for => we are going to change our business
+processes
+
+Feasibility
+
+e AP at the counter appears to be intergrated part of EPOSS - so using the EPOSS
+facilities for reports/receipts/settlement/ref data etc - more integrated than BES,
+for instance (historical reasons).
+
+e But techncially possible to “do a BES” - make standalone AP, not dependent on
+EPOSS (apart from the shell), produce AP specific reports etcto feed manual in-
+office accounting (similar to APT). AP requirements should be easy to implement
+on the Riposte platform - gives you all the tools.
+
+e Introducing this now may be too late to give payback - depends on how sceptical
+we are about EPOS - against latest plan would appear to be too late
+(development finishes end of year, it’s now mid-Oct) but this could reduce risk
+
+e Should this be followed as a parallel activity, as contingency against EPOS
+problems - but again danger of taking Pathway’s eye off the ball (sub-contracted
+to Escher).
+
+e Could use HAPS-type reference data (has a logic, if Pathway seen as another
+feed to HAPS alongside APT and AP/ECCO).
+
+e Downstream issues - if you roll out non-EPOS version, how do you get EPOS on it
+later (training, migration etc)?
+
+Desirability
+
+e Lack of EPOS would preclude rollout into ECCO offices => problems for rolllout of
+BA functionality, “holes” in coverage
+
+e Unclear whether EPOS is part of critical path - Pathway claim that the gating item
+for Release 2 development is Oracle PAS/CMS functioniality, not at the counter
+=> removing EPOS may not speed up R2.
+
+WITNO5970114
+WITNO5970114
+Pathway replan (interim) currently showing all counter and central development to
+be finished by end-97 (including AP and EPOS)
+
+However, we (PDA and POCL) have had very little visibility of AP and EPOS
+development
+
+e joint working on AP in Autumn 96 with POCL, another demo of AP early
+summer 97
+
+e both products counter functionality shifted to Escher for ‘completion’
+summer 97 (re-write?)
+
+e Early drop of EPOS from Escher has been demo’d to PDA - but not AP yet
+
+e Pathway claim central site (agent/oracle) functionality for AP and EPOS “on
+the shelf’ ready
+
+e Lack of available design documentation on AP and EPOS
+
+e AP and EPOS dependent on POCL reference data - currently to be
+sourced from RDP and “enriched”
+
+=> Pathway not flagging AP/EPOS as risk or critical path however we have
+little evidence to judge readiness
+
+Even if Pathway believe EPOS is “fit for purpose”, is POCL going to agree - given
+POCL's uncertainty over what it really wants?
+
+AP mag/barcode should be much simpler than EPOS - so less risk of a mis-
+match, less room for debate
+
+=> although we don’t have evidence that AP is more advanced than EPOS,
+gut feeling is that AP is far simpler and clear cut, EPOS is complex and
+less well defined -> greater risk.
+
+Question - what is POCL’s busness priority (ignoring ECCO constraint):
+e Automation of transactions (eg AP, BES, NS, Giro...)
+e Automation of accounting (eg EPOS and TIP)
+
+What does it actually give you - ability to handle AP mag/barcode in the 200
+offices, but could you roll-out => commercials, what's in it for Pathway, etc.
+Rollout is dependent (currently) on acceptance, could we accept without such a
+major element of the service?
+
+Rollout may be de-risked - training for BES and APS far simpler than EPOS (may
+help hit beat rate is training/support seen as critical path).
+
+WITNO5970114
+WITNO5970114
+3. Redesign EPOS
+
+Re-design EPOS to Dependent on technical I Can we get for “free”
+better fit business architecture ADS, EFTPOS, EMU,
+requirements Mails, MIS?
+
+Do we actually know what we want - what are the business requirements? Failed
+to specify over the past 3 years, how long would it take to specify now?
+
+Do we actualy know what's going to be wrong with what we are getting (assuming
+we get what we've contracted for)?
+
+What is the inherent inflexibility (“the ECCO syndrome”) that we think is a
+problem?
+
+Do we know what we - as POCL - actually want from (say) EMU? Liable to be
+rather more than what a till may want - eg are we to account for denominations,
+ONCH, SADADS etc.
+
+Escher have a Mails package already - it’s their core business - so should be not
+be following the Post Office direction
+
+Feasibility
+
+Could start a redesign - do we put EPOS on hold until we do, what effect on the
+rest of Horizon (esp rollout and acceptance) and on the commercials?
+
+If we know what functionality we want, Pathway could deliver on the Riposte
+platform - it provides the “toolkit”.
+
+Riposte designed to be “fast time to market”, good separation between
+infrastructure and applications - other PO’s (eg An Post) have achieved very fast
+development times.
+
+We need to move to generic products so that we can get maximum re-use (and
+faster time to market)
+
+What's not feasible
+
+Cannot just pick up a retail EPOS package and “drop” into place - although
+theoretically may be able to make fit technically, it would be a mismatch, high risk,
+unsupported etc - very high risk
+
+Retail EPOS packages suit retail - much of what we are trying to do isn’t retail
+
+We'd loose much of what we gain through Riposte - high availability, high
+resiliance, high security etc.
+
+Procurement/proberty aspects
+
+WITNO5970114
+WITNO5970114

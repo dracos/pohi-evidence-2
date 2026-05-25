@@ -1,0 +1,1323 @@
+Fujitsu Services
+
+Bureau Rate Board Technical Installation Training Ref:
+
+Guide
+
+COMMERCIAL IN CONFIDENCE
+
+Version: 4.0
+13-Sep-2010
+
+Date:
+
+FUJ00002247
+FUJ00002247
+
+IM/MAN/023
+
+Document Title:
+
+Document Type:
+
+Release:
+
+Abstract:
+
+Document Status:
+
+Originator & Dept:
+
+Contributors:
+
+Internal Distribution:
+
+External Distribution:
+
+Approval Authorities:
+
+Bureau Rate Board Technical Installation Guide
+
+Manual
+
+Release Independent
+
+This document provides the technical information which will be
+required for engineers to perform the installation of Bureau Rate
+
+Boards
+
+APPROVED
+
+Adam Bowe
+
+Chris Bryer, Mike Eldon
+
+See reviewers/approvers
+
+See reviewers/approvers
+
+Name
+
+Position
+
+Signature
+
+Date
+
+Tony Atkinson
+
+Head of Service Operations,
+RMGBU, Fujitsu Services
+
+See Dimensions for record
+
+Mark Weaver
+
+Senior Service Delivery
+Manager, Post Office Ltd
+
+See Dimensions for record
+
+© 2010 Fujitsu Services
+
+COMMERCIAL IN CONFIDENCE
+
+Page 1 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+0.0 Document Control
+0.1Document History
+Version No. I Date Reason for Issue Associated
+
+CP/PinICL
+0.1 03/07/03 I Initial draft
+0.2 17/09/03 For Review by FJS and POL
+0.3 16/10/03 Issued For Review following comments
+1.0 27/10/03 Issued For Approval
+2.0 21/01/04 I Issued For Approval following change to
+
+shutdown process
+2.1 10/02/04 I Issued with a correction for review by Barry
+Evans prior to reissue for Approval
+
+3.0 11/02/04 I For Approval
+3.1 25/08/10 I Updates for HNG-X
+3.2 13/09/10 I Updated in response to review
+4.0 13/09/10 I Approved version
+0.2Review Details
+
+Review Comments by :
+
+Review Comments to : Chris Bryer
+Mandatory Review Authority Name
+Post Office Ltd, Travel Products Eddie Jarman
+Fujitsu Services, SSC Steve Parker
+
+Optional Review / Issued for Information
+
+Service Delivery Management Team Sandie Bothick
+Business Architect Allan Hodgkinson
+RMGA Test Consultant Brian Sheldon
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 2 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training — Ref: IM/MAN/023
+Guide Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+Software & Solution Design Developer Jon Hulme
+HNG-X Service Change & Transition Sarah Bull
+Counter Architecture Andrew Thomas
+Counter Infrastructure Simon Dugdale
+Head of Service Operations Tony Atkinson
+Service Manager - Retail and RMGA Claire Drake
+Development Steve Evans
+RMG BU Senior Engineer Mike Eldon
+OBC Service Delivery Manager Tan Venables
+HNG-X R1 Programme Manager Geoff Butts
+Counter Tan T Turner
+LST Manager Sheila Bamber
+0.3 Associated Documents
+Reference _Versiot Date Soure
+AS/REP/013 Rate Board Cables
+IM/MAN/024 Bureau Rate Board
+Maintenance Guide
+BP/DES/003 Counter Hardware
+Design
+Specification
+
+Unless a specific version is referred to above, reference should be made to the current
+approved versions of the documents.
+
+0.4Abbreviations/Definitions
+
+Abbreviation Definition
+
+FMC Forde Money Changer
+
+NIET Network Implementation & Equipment Team
+FRES First Rate Exchange Services
+
+FJS Fujitsu Services
+
+POL Post Office Limited
+
+HNG-X Horizon Next Generation (Fujitsu definition)
+
+© 2010 Fujitsu Services
+
+COMMERCIAL IN CONFIDENCE Page 3 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+HOL Horizon Online (POL definition)
+
+0.5Changes in this Version
+
+Version Changes
+
+0.1 None — first issue
+
+0.2 Changes following comments. Removal of Maintenance
+instructions, which will now form a separate document,
+IM/MAN/024.
+
+0.3 Changes following comments
+
+1.0 Final changes following comments, ready for v1.0 issue For
+Approval
+
+2.0 Changes to shutdown process following pilot site install
+
+2.1 Correction within Section 10, to remove duplication of Riposte
+Status Check
+
+3.0 No changes from v2.1 - Issued For Approval.
+
+3.1 General updates for HNG-X
+
+0.6Changes Expected
+
+Changes
+
+None
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 4 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+0.7Table of content
+1 INTRODUCTION........ccccssccesecscscsseesececsseseseeseseeseseceseseseeneeesesesesaaeeeeeeneeseneaeee 6
+
+2 BACKGROUND..
+
+3 CABLING.........ccsssesessssssesssesesessessnesessesssssescsesesseseaesessseseseaeacseseeseneensesseneseseaeess 7
+4 SCOPE........cccssssssesesssessssessessssessesesescsssessscsessseseneaeenscssesenesesensessseaeececeeseseoees 8
+5 MULTI RATE BOARD BRANCHEG............:sssssssssesssesessssesssssnessatassssssseseeneeaes 8
+6 PREPARATION........s:ccssssssssssssssssesessessessessssesesessssaesneseseaeanssseseneasananeneneaeaeneeee 9
+7 DEFAULT BUREAU RATES REPORT.........:sssscsssssssssstetseeeeseseseesessseeneseeanes 11
+8 PERFORMING NETWORK TEST.........cssssssssssessssssssesssssnssessasesseseeseseeeessenses 14
+9 SHUTTING DOWN THE RATE BOARD COUNTER..........ss:scssssssseseseseseeees 16
+
+10 CONNECTING THE RATE BOARD TO A HORIZON COUNTER.
+
+11 POWERING ON THE COUNTER AND TESTING THE RATE BOARD........ 22
+12 TIMESCALEG.............scssesessssesesesesnenssesesesessessssesesseseseneseansensesenenseeseeseaeseaeoen 26
+13 FAULT FINDING GUIDE.............cccscssssesssessessseseseeessessaeaseeeesseatasseeseneseeeaeneen 27
+14 ERROR RESOLUTION PROCEDURE..........cssssssssssessssssssesseseesesssessseeeeseees 28
+15 CONTACTING THE HORIZON SYSTEM HELPDESK.............s:s:sssssesssseeeeee 29
+16 APPENDIX A- BUREAU CURRENCY CODEG...........:cccsssssseesseseseeneneeeee 30
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 5 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+1 Introduction
+
+This document defines the procedure that should be undertaken by engineers when
+attending a Branch in order to connect a Rate Board to a Horizon counter. The
+procedure described within this document is mandatory, and in order to perform the
+installation effectively, it is assumed that every engineer will be familiar with the use of
+a standard Windows PC, and will understand how a standard PC and its peripheral
+devices are connected together.
+
+2 Background
+
+Previously all on demand Bureau de Change transactions were carried out via the
+Forde Money Changer (FMC). The Forde Money Changers have all been replaced
+
+Tt was decided to transfer all Bureau de Change transactions at on demand Branches
+to the Horizon platform.
+
+First Rate Travel Services provide Rate Boards to selected Branches. Some Branches
+will have more than one Rate Board. Horizon on Line (HNG-X) will not support daisy-
+chaining of Rate Boards, therefore in Branches where more than one Rate Board is
+present, cach will be connected to a separate Horizon Counter Position.
+
+Once on HNGX, Bureau de Change will support one model of Rate Boards currently
+in use in Branches, i.e.:
+
+e DB7
+
+It is Post Office Ltd’s responsibility to manage and carry out the installation of Rate
+Boards. The Network Implementation & Equipment Team (NIET) will be the Post
+Office team that controls the physical rollout of Rate Boards into Branches on behalf
+of Post Office Ltd. They will manage the contractors required to carry out the work.
+At this point in time it is expected that Romec will undertake the installation work,
+whilst the on-going maintenance of Rate Boards will be contracted to an alternative
+supplier. First Rate Exchange Services (FRES) will be responsible to Post Office Ltd
+for managing the maintenance of Rate Boards.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 6 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+3 Cabling
+
+The Rate Board referred to in Section 2 can be connected to any Horizon Counter
+Position in Branches using the same interface Currently Branches that have Rate
+Boards all have cables from the Rate Board that terminate in a 3 pin DIN male plug
+(the “Segment 2” see figure 1). The DB7 model Rate Board uses an additional cable
+(the “Segment 1” cable) to connect the Segment 2 cable to the Rate Board. The
+Segment 2 cables are identical for all types of Rate Board.
+
+When the FMC was replaced by an Horizon Counter Position, the 3 pin DIN male plug
+will be disconnected from the FMC end, and an additional length of cable was used to
+connect the Horizon counter’s Specialix 10/8 RJ12 to this 3 pin DIN male plug. This
+new length of cable is described in detail in the CCD entitled “Rate Board Cables”
+(AS/REP/013), and will be referred to in this document as the “Segment 3” cable.
+
+8
+
+Segment 2 Seg 3
+
+Horizon Counter Position
+
+(Seg 1 for DB7 only) (All Rate Boards)
+
+Figure I
+
+© The Segment I cable is used to plug directly into the rate board. This cable is
+required for the DB7 models only.
+
+e The Segment 2 cable connects directly to the end of the Segment I cable for DB7
+models.
+
+« The Segment 3 cable connects the Horizon Counter Position to the Segment 2
+cable.
+
+These cables are defined in detail in the Contract Controlled Document entitled “Rate
+Board Cables” (AS/REP/013).
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 7 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+4 Scope
+
+This document describes:
+
+e The steps involved in connecting a Rate Board to the Horizon system, and
+configuring & testing a Rate Board at a standard fixed Horizon Counter
+Position.
+
+e Allcurrently foreseeable problem scenarios, and how to deal with them.
+
+This document does not cover the infrastructure aspects of the installation, such as
+installing the physical Rate Board within a Branch, drilling holes or laying cables.
+
+5 Multi Rate Board Branches
+
+Some Branches may have more than one Rate Board installed. When the Rate Boards
+are connected to Horizon, ‘daisy-chaining’ will not be possible, and therefore each
+Rate Board will need to be connected to separate Horizon Counter Positions.
+
+Connections between the Rate Boards should have been removed, and cabling must be
+routed through the Branch to allow for connection to dedicated Horizon Counter
+Positions. This activity is outside the scope of this document.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 8 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+6 Preparation
+
+Each Rate Board will be installed in the Branch, mounted in the appropriate position,
+with the Segment I cable attached to Rate Board. The Rate Board should be
+functioning correctly.
+
+Post Office Ltd shall provide the mains power to Rate Boards from circuits that are
+separate from the dedicated Horizon power circuit.
+
+Materials required in order to perform the connection of the Rate Board to a Horizon
+Counter are this installation document, a Segment 3 cable of appropriate length (plus
+spare), and any additional data cabling required where daisy-chained Rate Boards need
+to be connected direct to Horizon Counter Positions.
+
+At any stage during the procedure, if a problem occurs such as an error message on the
+monitor or the Rate Board, make a note of the message, and refer to section 13, the
+Fault Finding Guide, to see if there is a resolution provided.
+
+Ifa problem occurs which cannot be resolved using the Fault Finding Guide, or by
+calling the Horizon System Helpdesk, then the Horizon System Helpdesk will arrange
+for a Fujitsu Services’ engineer to attend the site to resolve the problem at a later time
+in accordance with the procedures detailed in Section 13 and 14 of this document.
+
+The Fujitsu Services’ engineer will remain on site to assist the Branch Manager in
+testing the Rate Board after resolving the fault. Post Office Ltd will ensure co-
+operation of the Branch Manager to facilitate timely closure of these calls. If the
+Fujitsu Services’ engineer finds that there is not a problem with the Horizon Counter
+Position a call will be raised with the FRES contracted maintenance engineers who will
+correct the fault and complete the connection of the Rate Board in accordance with the
+CCD entitled “Bureau Rate Board Maintenance Guide”, (IM/MAN/024).
+
+If for any reason the touchscreen is not working at a Horizon Counter Position, the
+procedure described in this document can be performed by using the keyboard instead.
+In general, the message displays indicate on each button which key to press to perform
+the function. The default action is usually performed by pressing the ‘Enter’ key
+(indicated bya ‘+ — symbol), while other actions usually require the use of a
+Function key (eg. ‘F1’). The keyboard layout is shown in Figure 2 below:-
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 9 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+Magnetic Card
+Alpha R
+" * eader
+Smart-Card
+Reader
+~w =
+=Nalleleneriy nel: Te Te
+TeMolern ota Aes
+xiLe!) Se
+Ls
+i I
+== [es
+i= feel I]
+Post Ht Fe Pad
+te lla coat
+Function 1 ; = = Navigation/
+Keys SPE sl Command Keys
+Numeric
+Keys
+
+Figure 2 The Horizon Keyboard
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 10 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+7 Default Bureau Rates Report
+
+The first step of the installation process is to disable the defaulted Bureau Rates Report Print
+on all counters (see Section 7.1 for details of how to do this). Later in the installation process,
+a Report Print will be set up on the Horizon Counter Position which will be driving the Rate
+Board within the Branch.
+
+7.1 Deselecting The Default Bureau Rates Report Print
+
+If the Branch Manager should log into each counter and deselect the default bureau rates
+report. This not only assists the installation but has a cost saving and “Eco” benefit not
+producing unnecessary paperwork. This function is also available to an engineer with a Global
+User password but should only be attempted by the engineer with the Post Office Managers
+approval. De-selection can also help stop vibration sensitive alarms being triggered overnight.
+
+From the main menu select Back office F14. Admin F2 and then F4 Engineer (Blue icons at
+left hand side of screen)
+
+Figure 3
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 11 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+1) The Branch Manager should touch the ‘Configure Rate Board” icon which
+will prompt the first of the Rate Board configuration screens. The Branch
+Manager will first be asked to input the number of rows on the Rate Board, see
+figure 4.
+
+Figure 4
+
+2) The screen will display a defaulted figure of 12 in the ‘Number of Rows’ field,
+as shown above in 4. As no Rate Board is connected to this counter, the
+Branch Manager should disregard the question and simply select the icon (or
+press enter on the keyboard). The Branch Manager will then be asked whether
+the last 2 rows should be reserved as commission lines, see figure 4 above
+
+3) As no Rate Board is connected to this counter, the Branch Manager should
+disregard this question and simply select ‘Yes’. The Branch Manager will then
+be asked whether to automatically print a report on rates update, figure 4
+above
+
+4) The Branch Manager must deselect icon or keyboard 34. Currency selection
+screen will then be displayed, figure 5.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 12 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+Figure 5
+
+6) As no Rate Board is connected to this counter, the Branch Manager
+should disregard the information displayed and simply descend through
+the rows in the ‘Rate Board Order’ by selecting the icon (or pressing
+‘Enter’ on the keyboard). Please be aware that to configure all 12 rows
+the HNGX display only shows 6 rows. Navigation to rows 7 to 12 can
+be obtained using “Page down” and “Page up” to return to rows I to 6
+
+Upon passing the final Currency Code, HNGX will navigate back to the
+engineer screen, see figure 4 above
+
+The default Bureau Rates Report print is now disabled on the counters. Touch the
+‘Front Office’ icon to navigate back to the Home Page. Follow the instructions in the
+next section to ensure that the Branch is communicating correctly with the Datacentres
+before moving on to Section 9, Shutting Down The Rate board Counter.
+
+8 Performing Network Test
+
+After following the above instructions the manager should be logged off a counter and
+should touch the grey screen. At the first screen (Figure 6) they should touch System
+Diagnostics icon
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 13 of 31
+Fujitsu Services
+Guide
+
+COMMERCIAL IN CONFIDENCE
+
+Bureau Rate Board Technical Installation Training Ref:
+
+FUJ00002247
+FUJ00002247
+
+IM/MAN/023
+
+Version: 4.0
+Date: 13-Sep-2010
+
+you proceed fata wane auhory you vl
+Eisler cimina chonsase-nevehseu coud be
+Srevecusd lor asceired
+
+co
+
+Sitemaps Conve ‘Cancel
+Et)
+
+ENTER
+
+Figure 6
+
+Diagnostics Options
+
+e Selactthe dacnostic function requied
+
+Engine I Manage Aoplicaton I Cancel
+
+Set RS CARER END)
+‘ontine
+
+Figure 7
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE
+
+Page 14 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+From this starting position, the Branch Manager should follow these instructions in
+order to perform a Network test:
+
+1) The Branch Manager should select the ‘Engineer’ (82) icon. The
+engineer screen will now be displayed (See figure 8).
+
+Home [ Enginesr's Menu Sa CST Hai
+
+Select engineering hncton
+
+"Noge nro ‘Adjust Seiven
+
+Test
+Mag Card Reler Barcode Scanner
+
+ee el
+Taran —SPrmer Bae Parte
+
+PIN Pad
+
+‘ontine
+
+Figure 8
+
+2) The Branch Manager should select the ‘Network’ (82) icon. HNG-X
+will then display the Current Status screen (See figure 9 below)
+
+25/01/2008 11-5318 397 code: 18 reason PPP 0 Stat AUTHENTICATE.
+25/01/2008 11 5314.50, code 131 veeson DASY 9 arsuned to usb Globes HSDPA Modem)
+9701/2008 11 58 14:450, code'191 reason DASY 8 asigned to usb (Globebeter HSDPA Modem)
+aren OASY 7 arined io usb 1-1 Gleboiter HSDPA Modem)
+Caer Status
+
+E)
+
+Fit
+
+[inte sence — foo coro
+
+Figure 9
+
+Please note this is for an HNGX system with ADSL comms
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 15 of 31
+
+FUJ00002247
+FUJ00002247
+
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+3) Ideally, the engineer should confirm that the system is communicating
+with start test. If the comms icon is green this is not completely
+necessary but is a confirmation that comms are present
+
+4) If the system fails to “ping” this must be resolved before continuing.
+
+5) The Branch Manager will now need to log onto the Horizon Counter
+Position to which the Rate Board will be attached in order to begin the
+shut down procedure (See Section 9).
+
+9 Shutting Down the Rate Board Counter
+
+The engineer should confirm with the Branch Manager which Horizon Counter
+Position is to be connected to the Rate Board. If the Branch has a dedicated Bureau
+position, the Rate Board should be connected to the Horizon Counter PC at this
+position. Otherwise whichever counter is nearest to where First Rate have terminated
+the Segment 2 cable.
+
+Before connecting or disconnecting a Rate Board (or any other peripherals) from a
+Counter Position, the engineer must ensure that the Counter Position is shut down and.
+powered off. The shut down procedure is the responsibility of the Branch Manager,
+however the engineer should follow the following instructions as part of this activity.
+
+1) Before asking the Branch Manager to power off the Counter Position to which
+the Rate Board will be connected, check with the Branch Manager that HNGX
+is working properly at that Counter Position — if there is a problem with this,
+this should be resolved before attempting to connect a Rate Board at that
+counter — if necessary, contact the Horizon System Helpdesk (see Section 15,
+Contacting the Horizon System Helpdesk). If the error cannot be resolved
+whilst the engineer is on-site, the Rate Board should instead be connected to
+the next nearest functioning counter.
+
+2) Shutting down a Horizon counter. Log out of the counter and return to the
+“grey” screen. Touch the screen and then touch System Diagnostics (82).
+When the display below (see Figure 10) appears touch Manage Application.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 16 of 31
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref:
+Guide
+Version:
+COMMERCIAL IN CONFIDENCE Date:
+
+FUJ00002247
+FUJ00002247
+
+IM/MAN/023
+
+4.0
+13-Sep-2010
+
+6 Select the diagnostic function equi
+
+Engineer I Manage Applicanon I Cancel
+1
+END)
+
+omne
+
+Figure 10
+
+When the display changes to below (Figure 11) press Shutdown (84).
+
+‘Confirm System Shutdown
+
+6 ‘Ave yu sure you wish to shutdown the system?
+
+omnes
+Figure 11
+
+The system will now shut down and is ready for rateboard connection.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE
+
+Page 17 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+10 Existing Connections
+
+The existing peripherals are connected as follows:-
+
+Specialix I8+ card
+
+Eicon ISDN card, Com 12 Coms
+
+code:
+Reader
+
+I Paralle!
+port
+
+VGA
+port
+
+LAN Com2 Keyboard = Cot
+Figure 12
+
+Details of the Specialix Card:-
+
+Scales
+
+PIN Pact Keyboard Barcode Reader
+Rate Board
+
+Figure 13
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 18 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+Branch Router
+The branch router is connected to the counter via the LAN cable either directly or via the hub
+LAN Cable
+
+There will be a LAN cable connected to the LAN socket marked in Figure 18 above, linking
+this counter to the branch router and other counter(s) in the Post Office Branch
+
+Touch Screen Monitor
+
+The monitor has three connections - the 9-Pin female plug is connected to COM1, the VGA
+cable is connected to the VGA port, and the mains lead is connected to the female end of the
+PIN Pad’s ‘Y’ shaped power cable. Note that these connections are the same for both types of
+flat screen monitors.
+
+Keyboard
+
+The keyboard has two connections - the mini-DIN connector is connected to the keyboard
+socket, and the RJ12 connector is connected to COM6 (2™ socket from the right of the
+Specialix Card).
+
+Bar Code Reader
+
+The bar code reader has two connections - the mini-DIN connector is connected to the mouse
+port, and the RJ12 connector is connected to COMS (1“ socket from the right of the Specialix
+Card).
+
+Receipt and Slip Printer
+
+The 9-PIN female cable from the Epson printer is connected to COM2. The mains lead is
+connected to a mains socket.
+
+BackOffice Printer (connected to counter position 1)
+
+The Back Office printer is connected to the parallel port. The mains lead is connected to a
+mains socket.
+
+Electronic Weigh Scales
+If present, these are connected to COMS8 (4" socket from the right of the Specialix Card).
+PIN Pad
+
+The PIN Pad has three connections. The RJ12 connector is connected to COM9 (5" socket
+from the right of the Specialix Card). The plug end of the ‘Y’ shaped power lead is connected
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 19 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+to the daisy-chain PSU output, and the socket end connects to the mains lead trailing from the
+touchscreen monitor.
+
+ADSL & ISDN Cards
+
+These may be fitted but have no function in HNGX
+
+10 Connecting the Rate Board to a Horizon Counter
+
+Once the Counter Position to which the Rate Board is to be connected has been shut down,
+the Rate Board connection can commence.
+
+1) Move the PC into a position where the connections at the rear are accessible,
+taking care not to drag the existing connections out of their sockets. If any
+cable becomes disconnected, use the information given in Section 11 to
+reconnect it to the correct socket.
+
+2) Connect the segment 3 cable to the segment 2 cable. Take the segment 3
+cable, and connect the female 3-pin DIN plug (Figure 14) to the male 3-pin
+DIN plug at the end of the Segment 2 cable.
+
+3)
+
+Pin 1(looking into socket)
+
+Fa
+3 Pole
+
+Figure 14 The Female 3 pin din plug Figure 15 — the RJ 12 plug
+
+4) To connect the Rate Board to the Horizon Counter Position, take the segment
+
+3 cable which should now be connected to the Rate Board via the segment 2
+cable (see Figure 1 and connect the trailing RJ12 plug to COM12 on the
+Specialix card at the rear of the base unit (as shown previously in figure 19.
+Ensure that this plug ‘clicks’ home securely. NB:- Do not try to connect the
+RJ12 plug to any other COM port on the Specialix Card — this will not work.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 20 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+5) Move the PC back to its original position, ensuring that all cables remain
+
+securely attached (in the instance of any cables becoming detached during this
+process, please replace these connections with reference to Section 11 of this
+document, Existing Connections.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 21 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+11 Powering on the Counter and Testing the Rate Board
+
+Once the Rate Board is connected the Horizon Counter Position can be powered
+on once again. This process is the responsibility of the Branch Manager, who
+should power on and log into the counter following standard procedures, and
+navigate to the Desktop - see figure 16 below
+
+I eet predict uncon ov ore acer
+the tabs or a token ve é
+
+Post oi tems
+
+halt
+Tash
+
+=p it Bask,
+
+Fin) RECPT) Ftd
+mele [Quan &
+
+i
+
+evan Smteen
+
+‘SMOKES —«TP:01 BP:01 SU:DEF Shared Serve Customer
+
+Figure 16
+
+5) From the Desktop, the Branch Manager should touch the “Back Office” icon.
+Then “Engineer” The screen below will now be displayed (see Figure 17
+below)
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 22 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+Figure 17
+
+6) The Branch Manager should touch the ‘Configure’ icon- keyboard 21 under
+Ratesboard to commence the Rate Board configuration process. The Branch
+Manager will first be asked to input the number of rows on the Rate Board
+connected to the Counter Position (See Figure 18 below)
+
+Figure 18
+
+7) The Branch Manager should enter the number of rows to correspond with the
+number of rows on the Rate Board attached to the Counter Position. If the
+default of 12 is incorrect, remove this entry using the ‘back space’ button on
+the keyboard or by touching the Total Rows icon on the screen, then use the
+number pad to enter the correct number of rows and press ‘Enter’ on the
+keyboard. Under Commission and Print Options the manager should decide if
+the last 2 rows should be reserved as commission lines (See Figure 18 above).
+Touch the icon or keyboard 32.
+
+8) The Branch Manager will then be also be asked whether to “Auto Print on
+Rates Update, (see figure 18 above).
+
+9) After making the appropriate selection, the currency selection screen will be
+displayed (See Figure 19 below).
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 23 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+Figure 19
+
+10) I The Branch Manager should descend through the rows in the ‘Rate Board
+Order’ column entering the codes of the appropriate currencies to be displayed
+on the Rate Board. If there is an incorrect entry, use the ‘back space’ button
+on the keyboard to remove it (see Figure 2 The Horizon Keyboard), type in the
+correct Currency Code and then press the ‘enter’ key to confirm. Please note
+that the display is not large enough to display all codes and the manager will
+need to access the second and first screens using the “Page Up” and “Page
+Down” icons.
+
+A table of Currency Codes can be found in Appendix A of this document.
+Upon entering the final Currency Code and selecting the tick icon (or pressing
+
+the ‘Enter’ key), Horizon will navigate back to the engineer screen (Figure 20
+below)
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 24 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+Figure 20
+
+11) The Branch Manager should touch the ‘Update’ icon (22). After a few
+seconds, you will be navigated back to the engineer screen (Figure 20 above)
+
+12) The Branch Manager should now print off a Bureau Rates report and check
+that the Rate Board is displaying the correct rates.
+
+13) Ifthe Rate Board is not displaying correctly (i.e. the displayed rates do not
+match the printed rates), please refer to section 13, the Fault Finding Guide.
+
+Otherwise, this marks the end of the Installation Process. Touch the ‘Front Office’
+icon on the screen to be navigated back to the Home Page. The Branch Manager
+can now log off the Horizon Counter Position, or resume normal activity.
+
+NB:-_ If there is another Rate Board within the Branch, it should be attached to
+another Counter Position following the same process as above.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 25 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training — Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+12 Timescales
+
+Typical timings for the stages of the process are as follows:-
+
+e Time to shut down and power off the counter, starting from the Horizon On
+Line login screen
+
+2 minutes.
+
+¢ Time to connect Rate Board to the Counter Position
+5-10 minutes.
+
+¢ Time to power up the counter and reach the login screen
+
+10 minutes. If this stage takes longer than 15 minutes, contact the Horizon
+System Helpdesk.
+
+e Time to log on and test the Rate Board
+
+10 minutes.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 26 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+13 Fault Finding Guide
+
+Although the procedure is straightforward, there are a number of problems that might occur.
+
+Problem
+
+Resolution
+
+15.1
+After logging on, the ‘Configure’ and
+‘Update’ icons are not displayed.
+
+The software may not have been correctly
+deployed to the counter.
+
+Advise the Branch Manager to contact the
+Horizon System Helpdesk (See Section 15).
+
+15.2
+The ‘Configure’ and ‘Update’ icons are
+present, but do not respond when touched.
+
+The required Reference Data may not have
+been delivered to the counter.
+
+Advise the Branch Manager to contact the
+Horizon System Help Desk (See Section 15).
+
+15.3 Upon pressing the ‘Update’ icon, the
+message “Rates cannot be updated, Rates
+have expired” is displayed.
+
+The required Reference Data may not have
+been delivered to the counter.
+
+Advise the Branch Manager to contact the
+Horizon System Help Desk (See Section 15).
+
+15.4
+
+The ‘Configure’ and ‘Update’ icons appear to
+be working, but Rates are incorrectly
+displayed on the Rate Board (i.e. they do not
+match the printed Bureau Rates Report)
+
+The Rate Board configuration may not have
+been completed correctly. Repeat steps 6-17
+of Section 10. If the Rate Board still does not
+display correctly, there may be a problem
+with the cables, the counter, or the Rate
+Board. Refer to the resolution procedure
+detailed in Section 14.
+
+15.5 The relevant ‘Configure Rate Board’
+and ‘Refresh Rates’ icons appear to be
+working, but no Rates are displaying on the
+Rate Board
+
+There may be a problem with the cables, the
+counter, or the Rate Board. Refer to the
+resolution procedure detailed in Section 14.
+
+15.7 After running the ‘Network’ test on the
+Counter Position to which the Rate Board
+will be attached, the message “Ping Test
+Failed” is displayed.
+
+There may be a problem with the Horizon
+Counter Position. Advise the Branch
+Manager to contact the Horizon System
+Helpdesk (see Section 15).
+
+© 2010 Fujitsu Services COMMERCIAL IN
+
+CONFIDENCE Page 27 of 31
+Fujitsu Services
+
+FUJ00002247
+
+FUJ00002247
+Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+14 Error Resolution Procedure
+
+This section describes the procedure that the engineer should follow in order to resolve
+install errors when the Counter Position appears not to drive the Rate Board.
+
+)
+
+2)
+
+3)
+
+4)
+
+The engineer should ensure that the cables connecting the Horizon Counter
+Position to the Rate Board are securely and correctly connected and retest the
+Rate Board by pressing the ‘Update’ icon. If upon retesting the Rate Board
+the problem is resolved, this marks the end of the installation process.
+Otherwise:
+
+The engineer should replace the Segment 3 cable with a spare Segment 3 cable
+and retest the Rate Board by pressing the ‘Refresh Rates’ icon. If upon
+retesting the Rate Board the problem is resolved, this marks the end of the
+installation process. Otherwise:
+
+The engineer should connect the Rate Board to the next closest counter and
+repeat the installation process. If upon retesting the Rate Board the problem is
+resolved, the engineer should leave the Rate Board attached to the functioning
+counter, and advise the Branch Manager to raise a call the Horizon System
+Helpdesk on the faulty counter (see Section 15, Contacting The Horizon
+System Helpdesk). This marks the end of the installation process. Otherwise:
+
+If it still fails the engineer should leave the Rate Board connected to the
+Counter Position, and arrange for FRTS contracted maintenance engineers to
+visit the site to correct the possible Rate Board/Cabling fault. The FRES
+contracted maintenance engineers should follow the procedure detailed in the
+CCD entitled “Bureau Rate Board Maintenance Guide” (IM/MAN/024), to
+correct the fault and complete the installation process
+
+NB:- You should xot attempt to connect the Rate Board to any COM Port other than
+COM12 - this will not work.
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 28 of 31
+FUJ00002247
+
+FUJ00002247
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref: IM/MAN/023
+Guide
+Version: 4.0
+COMMERCIAL IN CONFIDENCE Date: 13-Sep-2010
+
+15 Contacting the Horizon System Helpdesk
+
+If a problem is experienced while closing down or powering up the Horizon Counter
+Position, or while configuring or testing the Rate Board, which cannot be resolved
+using the Fault Finding Guide, then it will be necessary for the Branch Manager to
+contact the Horizon System Helpdesk, being sure to take a note of the Call Reference
+Number which will be provided. The Horizon System Helpdesk will advise the Branch
+Manager of the next steps as appropriate, and the Branch Manager should ensure that
+a Call Reference Number is provided in order that the call can be followed up, and that
+evidence of the call is properly logged.
+
+Note that the Horizon System Helpdesk is available to deal with technical issues only;
+it cannot assist with physical or infrastructure problems, or deal with administrative
+issues.
+
+The Horizon System Helpdesk telephone number i:
+Option 2 should be selected.
+
+Please have the following information ready before making the call:-
+1) Post Office name.
+
+2) FAD Code.
+
+3) Counter number.
+4) Stage reached in the installation procedure.
+5) Any message displayed on the monitor.
+
+6) Any message shown on the Rate Board display
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 29 of 31
+Fujitsu Services Bureau Rate Board Technical Installation Training Ref:
+
+Guide
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00002247
+FUJ00002247
+
+IM/MAN/023
+
+4.0
+13-Sep-2010
+
+16 APPENDIX A - Bureau Currency Codes
+
+The following table provides a full list of currencies along with their three letter codes,
+required for configuration of the Bureau Rate Boards.
+
+Argentine Peso
+Australian AUD Dollar
+Bahamian Dollar_I BSD
+Bahrain Dinar BHD
+Bangladesh Taka I BDT
+Barbados Dollar_I BBD
+Belize Dollar BZD
+Bermuda Dollar _I BMD
+Botswana Pula BWP.
+Brazillian Real BRL
+Brunei Ringgit BND
+Bulgarian Lev BGN
+Canadian Dollar _I CAD
+Cayman Island Dollar KYD
+Chilean Peso CLP
+Chinese Yuan CNY
+Colombian Peso_I COP
+Costa Rica CRC
+Colones
+Croatian Kuna HRK
+Cypriot Pound CYP.
+Czech Republic I Koruna CZK
+Danish Krone DKK
+Dominican Rep Peso DOP.
+East Caribbean Dollar XCD.
+Egyptian Pound EGP.
+Estonian Kroon EEK
+Euro EUR 5S
+Fiji Dollar Fld
+French Franc XPF
+Polynesian
+Guatemala GTQ
+Quetzal
+Hong Kong HKD
+Dollar
+Hungarian Forint_I HUF
+Icelandic Krona ISK
+Indonesian IDR
+Rupiah
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 30 of 31
+Fujitsu Services
+
+Bureau Rate Board Technical Installation Training Ref:
+
+Guide
+
+COMMERCIAL IN CONFIDENCE
+
+Version:
+
+Date:
+
+FUJ00002247
+FUJ00002247
+
+IM/MAN/023
+
+4.0
+13-Sep-2010
+
+Israeli Shekels ILS
+Jamaican Dollar__I JMD
+Japanese Yen JPY
+Jordanian Dinar __I JOD
+Kenyan Shilling KES
+Kuwait Dinar KWD
+Latvian Lat LVL
+Lebanese Livres I LBP
+Lithuanian Litas I LTL
+Malaysian Ringgit I MYR
+Maltese Pound MTL
+Mauritius Rupee I MUR
+Mexican New MXN
+Peso
+Namibia Dollar NAD
+New Zealand Dollar NZD
+Norwegian Krone I NOK
+Omani Rial OMR
+Pakistan Rupee PKR
+Papua Kina PGK
+Peru Nuevo PEN
+Philippine Piso PHP
+Polish Zloty PLN
+Qatar Riyal QAR
+Romanian Lei (New) RON
+Russian Ruble RUB
+Saudi Riyal SAR
+Seychelle Rupee I SCR
+Singapore Dollar_I SGD
+Slovakian Korun_I SKK
+Slovenian Tolar__I SIT
+South African Rand ZAR
+South Korean KRW
+Won
+Sri Lanka Rupee _I LKR
+Swedish Krona SEK
+Swiss Franc CHF
+Taiwan Yuan TWD
+Thailand Baht THB
+Trinidad & Dollar TTD, USA
+Tobago Dollar USD
+Turkish Lira TRY
+(New)
+UAE Dirham AED
+Uruguay Peso UYU
+
+© 2010 Fujitsu Services COMMERCIAL IN CONFIDENCE Page 31 of 31

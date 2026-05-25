@@ -1,0 +1,253 @@
+FUJ00156217
+FUJ00156217
+
+From: Thomas Penny[/O=EXCHANGE/OU=ADMINGROUP1/CN=RECIPIENTS/CN=THOMASP]
+Sent: Thur 09/09/2010 2:43:06 PM (UTC)
+To: Jenkins Gareth GIf
+Subject: I FW: PEAK 202819 - Sysman3 Events - Service Delivery Issue
+Gareth
+FYI
+Penny
+
+Penny Thomas
+Security Analyst, Customer Services
+
+it Group Account
+RG12 8SN
+
+Services Retail & Roy:
+
+Fujitsu Services Limited, Registered in England no Registered Office 22, Baker Street, London W1 w
+This E-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services does
+not guarantee that this E-mail has not been intercepted and amended or that it is virus-free.
+
+From: Thomas Penny
+
+Sent: 09 September 2010 15:41
+
+To: Lillywhite Tom; Munro Donna
+
+Cc: Wilkerson Guy
+
+Subject: FW: PEAK 202819 - Sysman3 Events - Service Delivery Issue
+Importance: High
+
+Tom/Donna
+
+I have had a conversation with Guy on this issue; obviously he was well aware of the issues experienced during the
+first few months of migration to HNGX.
+
+I have explained that we just do not know what caused the Sysman event 0831 to occur and that technical have
+advised extreme caution. I have questioned whether we should provide the transaction data at all and Guy's
+recommendation was that someone (he suggested James Davidson, but maybe that’s you, Tom) should speak to POL
+at senior management level and explain the issue in hand.
+
+In the event that we provide the transaction records we would need to include a caveat; and if we were then asked to
+provide a witness statement we would have to state the facts, this is, that we are unsure what has happened.
+
+The details of the request are - ARQ194/1011, outlet Derby. I have advised the Casework Team that I am conducting
+some further analysis on this request which should have been returned by 31 August.
+
+Kind regards
+Penny
+
+Penny Thomas
+Security Analyst, Customer Services
+
+rvices Retail & Royal h
+Road, Bracknell
+
+FUJ00156217
+FUJ00156217
+
+“htip Tuk fujitsu
+
+Fujitsu Services Limited, Registered in England no 96056, Registered Office 22, Baker Street, London W1U
+This E-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services does
+not guarantee that this E-mail has not been intercepted and amended or that it is virus-free.
+
+From: Thomas Penny
+
+Sent: 06 September 2010 12:22
+
+To: Munro Donna; Lillywhite Tom
+
+Subject: FW: PEAK 202819 - Sysman3 Events
+
+Will keep you advised on this.
+
+Penny Thomas
+Security Analyst, Customer Services
+
+Fujitsu Services Retail & Royal
+
+Group Account
+Lovelace Road, Bracknell, Berks S
+
+SN
+
+Fujitsu Services Limited, Registered in England no 96056, Registered Office 22. Baker Street, London W1U 3BW
+This E-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services does
+not guarantee that this E-mail has not been intercepted and amended or that it is virus-free.
+
+From: Thomas Penny
+
+Sent: 06 September 2010 11:43
+
+To: Wilkerson Guy
+
+Cc: Jenkins Gareth GI
+
+Subject: FW: PEAK 202819 - Sysman3 Events
+
+Guy
+
+As you know the provision of an ARQ return could easily result in the request for a witness statement to support
+litigation activity.
+
+We currently have a request for transaction records which covers March 2010 for an outlet already migrated to HNG-
+X; the events analysis is in the mail string. My concern is that we are unable to provide confirmation that the records
+reflect the activity at the outlet and we need to discuss how to progress this and any other similar requests we may
+receive.
+
+Could you please spare sometime to discuss?
+
+Kind regards
+Penny
+
+Penny Thomas
+Security Analyst, Customer Services
+
+Fuji
+
+Services Retail & Royal Mail Group Account
+jelace Road, Bracknell, Berks RG12 8SN
+
+Fujitsu Services Limited, Regist. London W1U 3BW
+
+ed in England no 96056, Registered Office 22, Baker Si
+
+FUJ00156217
+FUJ00156217
+
+This E-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services does
+not guarantee that this E-mail has not been intercepted and amended or that it is virus-free.
+
+From: Jenkins Gareth GI
+
+Sent: 01 September 2010 17:39
+
+To: Thomas Penny
+
+Cc: Wright Mark; Parker Steve (PostOfficeAccount)
+
+Subject: FW: PEAK 202819 - Sysman3 Events
+
+Penny,
+
+Steve Porter has had a look at these events as requested and his responses are below.
+
+Unfortunately they are a bit inconclusive, but there is nothing that is obviously suspicious.
+
+Given that this relates to HNG-X in March, then we do know that there were a number of potentially serious issues
+around at that time, so we would need to be wary about making any witness statements associated with such data.
+However it should be fine to pass the data to POL with an ARQ.
+
+We're going to need to tread fairly carefully for ARQs in this area.
+Hopefully this gives you something to move forward on.
+
+Happy to have a chat if this isn’t enough for you.
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+
+Distinguished Engineer
+
+Applications Architect
+Royal Mail Group Account
+
+eS Please consider the environment - do you really need to print this email?
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu Services does
+not guarantee that this e-mail has not been intercepted and amended or that it is virus-free.
+
+From: Porter Steven
+
+Sent: 01 September 2010 16:58
+
+To: Jenkins Gareth GI
+
+Subject: RE: PEAK 202819 - Sysman3 Events
+
+Gareth,
+
+PSB
+FUJ00156217
+FUJ00156217
+
+For the 3 categories of Counter App NT event, there is not really enough information to provide anything
+terribly meaningful:
+
+0998 - Exception raised but with no specified error code. -
+com. fujitsu.poa.ctrc.businesslogic.startup.ExceptionHandlerBLO ERROR.
+
+There is nothing suspicious as such here, although in such cases we should be aiming to improve the code to
+trap this and give a more helpful error number.
+
+KumarR1549Q - does NOT apply (the peak incorrectly indicates this) - KumarR395Q
+does apply.
+
+0058 - Runtime exception in PDL: IOP39BLO.buildInitialAddDataState -
+com. fujitsu.poa.ctrc.businesslogic.startup.ExceptionHandlerBLO ERROR.
+
+There is nothing suspicious as such here. This is basically like a 0998, but within PDL rather than Java.
+Again, for each instance, we should look for why this occurred, and try to improve it with a more meaningful
+number if possible.
+
+KrishnaC 1545S does indeed apply.
+
+0831 - Error processing request due to a settlement error. -
+com. fujitsu.poa.ctrc.businesslogic.startup.ExceptionHandlerBLO ERROR.
+
+This one can occur when an attempt is made to remove an item which is either - a reversal (secure
+reversal??) or something which has already been settled (unlikely, but given the bugs we had a while ago, is
+possible.).
+
+I have updated suklabaidyas2541Q to clarify that the item is not in fact removed from the basket.
+
+Probably easiest to talk through any further actions if required on these.
+
+Regards
+Steve
+
+From: Jenkins Gareth GI
+Sent: 01 September 2010 15:46
+‘0: Porter Steven
+iSubject: FW: PEAK 202819 - Sysman3 Events
+Steve,
+This email trail relates to what we were talking about.
+
+Here’s my version of the spreadsheet.
+FUJ00156217
+FUJ00156217
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+Distinguished Engineer
+
+[Applications Architect
+Royal Mail Group Account
+
+bhp //uk fujitsu com
+
+\s4 Please consider the environment - do you really need to print this email?
+
+This e-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu
+Services does not guarantee that this e-mail has not been intercepted and amended or that itis virus-free.
+

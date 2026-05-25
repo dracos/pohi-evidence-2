@@ -1,0 +1,311 @@
+FUJ00154859
+FUJ00154859
+
+POH - 54050
+Identification
+Transition: I RMGA/POL Fraud Team Meeting Stage: Bi-Monthly Review
+Period: From: I 01/09/2009 To: 30/10/2009 Period: Sep/Oct 2009
+Manager: Penny Thomas Date: 03/11/2009
+RMGA Litigation Support/POL Fraud Team Meeting Summary I Overall Status: [Neal
+
+Present:-
+
+Mark Dinsdale POL Security Programme Manager
+Jane Owen POL Service Support Manager
+Connie Penn POL PCI Project Manager
+
+Dave Posnett POL Fraud Risk Manager
+
+Alan Simpson POL Security Incident Senior
+
+Penny Thomas RMGA Security Analyst
+
+Meeting Notes 03 November 2009 Security Team Office, Clippers House
+
+Introductions — each explained role/remit.
+
+Payment Card Industry (PCI) Compliance - Connie covered the PCI compliance
+requirements. She explained that PCI requirements were part of the overall Security
+Standard 27001 and that it was paramount that these requirements were met. She said that
+Fujitsu had provided POL with one of the best systems she had seen in Europe and that
+security had not been bolted on to our systems it had been built into it.
+
+Each individual had a responsibility to comply with PC1 requirements and a good exercise
+would be to consider that their own card details were in the POL system and for each to ask
+the question ‘is my card in danger?’
+
+In particular, her messages to the Security Team were that each process where sensitive
+data was present should be examined and infringements to the standard should be identified
+and remedial action taken. Some of the points for consideration were:-
+
+* Elimination of duplicate and unnecessary storage of data — what is the retention and
+disposal policy?
+
+e Ensure processes relating to the management of sensitive data has management
+signoff
+
+e Has the JLT (joiners, leavers and transfer) process been reviewed? Is there a
+written process for movers? Does the requisite form exist?
+
+e POL card handlers may well be audited, make sure there are clearly documented
+
+procedures
+
+Ensure operational procedures are in line with policy
+
+Review all relevant processes
+
+Use the PCI learning module
+
+Access management for sensitive systems and data is to be implemented
+
+Are PAN numbers used as a reference point anywhere?
+
+Only request a PAN from Fujitsu if it is really needed.
+
+PANs will be provided by Fujitsu in the hashed and encrypted form — is the clear
+
+PAN really a requirement?
+
+Connie agreed to spend a day with the Security Team reviewing processes.
+
+PT/041109 Page 1 of 4
+FUJ00154859
+
+}J00154859
+ae ry re
+
+Transaction Data Changes - During this discussion Penny provided an overview and
+comparison of current Horizon transaction data against Horizon data via HNG-X and HNG-X
+data, along with other reference information. Details were left with the group for consideration
+and reference.
+
+4 She explained the PAN presentation for both PCI enhanced outlets and HNG-X data and the
+: request requirement for clear PANs. A single decryption of a PAN would be a manual
+process and a detailed audit trail of the decryption would be maintained. All such requests
+would require a full audit trail; PAN decryptions would be logged on the audit workstation and
+the process would be subject to full audit.
+
+Continued PCI Compliance - Connie explained that the Fujitsu processes and retention of
+historic data had been the discussion point for her with various POL/Fujitsu teams. Should
+historic audit data be altered to conform to the requirements of PCI or would this action impair
+the integrity of data? She was in the process of taking Fujitsu processes to counsel for end
+to end review for guidance purposes.
+
+Transaction Enquiry System (TES) Issues — Alan was asked whether there were any
+
+/ problems with TES since the migration of the data centres. He said that initial reports were
+that logging on was slower but that performance was OK now. A general discussion took
+place and it was agreed that Alan would email a copy of the TES user guide to the Security
+Team.
+
+Horizon Integrity - Dave explained there had been recent press coverage which questioned
+4 the integrity of Horizon data. This had been founded by Lee Castleton and articles had been
+seen in Computer Weekly and The Grocer and had featured on the Welsh BBC News. A
+team had been formed to review these accusations.
+
+Requests for Information (RFI) - Dave presented the RFI summary YTD and agreed to
+forward his analysis to Penny who would attach to the minutes.
+
+Prosecution Updates - Dave presented the latest list of POL Prosecution Results which
+would also be forwarded to Penny and attached to the minutes.
+
+YTD Litigation/BQ Update - Penny presented the Litigation Support figures YTD which
+showed a reduction in requests YTD verses YTD contract. Banking Query (BQ) request
+figures were also provided. A copy of the analysis is attached to these minutes.
+
+) AOB - PGP - Penny explained that PGP would to be used to encrypt all transaction data
+which had been retrieved from the. audit servers; this would occur prior to burning to disc to
+send to POL. Only the encrypted form would be retained on the audit workstations.
+
+A general discussion followed concerning the mechanics of PGP use, including the exchange
+of public keys and it was agreed that Dave King would be involved from POL. Connie said
+
+--~- --  -I that this-was.a key issue-and needed to.be-resolved.as soon as possible and-should remain. .I_ -
+an agenda item until that time.
+
+Mark was asked to (a) identify those who required PGP installation; (b) to identify the budget
+holder(s) and (c) to log the appropriate call with the POL helpdesk.
+
+Date of Next Meeting — It was decided that the next.meeting would be early January 2010,
+hopefully in the Fujitsu offices at Bracknell. Date and confirmation of venue would be agreed
+nearer the time.
+
+The migration of the POL Casework support function is now complete as Dave formally
+handed his responsibility over to the Salford Team.
+
+PT/041109 Page 2 of 4
+Alan very kindly made a note of direct action points:-
+
+Action Point
+
+03/11 -01
+
+To chase Jason Collins re data
+retention/disposal policy document
+
+03/11 —02
+
+To review storage/retention of request
+forms locked in casework team cupboard.
+These contain card details.
+
+03/11 - 03
+
+To discuss with Penny Thomas, the
+possibility of presenting her revised HNGX
+reporting data to wider security team.
+03/11 -04
+
+To issue copies of revised HNGX reporting
+data to wider security team
+
+03/11 - 05
+
+To contact HNGX team and look at
+possibility of storing pre & post migration
+reports centrally rather than at branch.
+03/11 —06 .
+To send TES user guide to Mick Renshaw
+03/11 - 07
+
+Send latest version of PCI DSS to Alan
+03/11 -— 08
+
+To check with casework team where & how
+PAN used as a reference point/significant
+element (Ref Slide 32 of Connie's
+presentation) in any enquiry. To also
+discuss with Mark & Jane how to change
+this.
+
+03/11 - 09
+
+To arrange to spend a day with the
+casework team to review current processes
+& working practices to reveal any
+necessary amendments/changes.
+
+Owned by:
+
+Connie Penn
+
+Mark & Jane
+
+Connie
+
+Connie
+
+Alan
+
+Alan
+
+Connie
+
+Connie
+
+Connie/mark/Jane
+
+03/11 — 10 Alan
+To send PGP details to Casework Team
+03/14 -11 Connie/Alan
+To arrange with Dave King to deliver short
+training session to Casework team re PGP
+(Need to agree actual process re this team
+re communicating effectively with third
+parties). Connie to be advised when all in
+place.
+03/11 — 12 All
+To agree date & venue for next meeting —
+Jan 2010.
+‘
+Prosecutions RFI Summary.xls Actual Contract 3
+03-11-09.doc Nov 09.xIs
+
+PT/041109 Page 3 of 4
+
+FUJ00154859
+FUJ00154859
+FUJ00154859
+
+FUJ00154859
+SS
+
+PT/041109 Page 4 of 4
+FUJ00154859
+
+FUJ00154859
+a
+
+LITIGATION REVIEW MEETING 3 NOVEMBER 09
+
+Contract IContract %YTDV I% YTD Vv
+end Oct jend Mar Contract IContract
+ARQs 09 10 Actual Oct 09 Mar 10
+420 720 275 65.48 38.19
+APOPs 50 24 48.00
+Contract IContract %YTDV I% YTD Vv
+Query = _jend Oct [end Mar Contract IContract
+Days 09 10 Actual Oct 09 Mar 10
+8,750 _15,000 5,944 67.93 39.63
+Witness Contract %YTDV
+State- end Mar Contract
+ments 10 Actual Mar 10
+150 10 6.67
+Contract %YTDV
+Court end Mar Contract
+Days 10 Actual Mar 10
+60 0 0.00
+Contract IContract %YTDV I% YTD Vv
+end Oct Iend Mar Contract IContract
+BQs 09 10 Actual Oct09  IMar10_
+117 200 118 101.14 59.00
+Requests IEstimates IBudgets IRFls
+RFls Received IProvided _IApproved IReturned
+
+2 0 0 0
+
+FUJ00154859
+
+FUJ00154859
+ie
+
+Post Office Ltd Security - Contact Details
+
+i
+Address
+
+Post Office Ltd :
+Security Team
+
+Royal Mail
+
+3rd Floor, Clippers House
+
+Clippers Quay
+
+Salford
+
+MSO 3NW
+
+Telephone Numbers
+
+Name . External Postline
+Mark Dinsdale, /
+Jane M Owen
+
+Kris Green nen
+Maureen Moors {GRO}
+Michael A Rensh
+Christina Wood}
+
+Fax
+
+Internal (PL)
+External:
+
+Email
+
+Internal: Post Office Security
+External: post.office.security
+

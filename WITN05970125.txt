@@ -1,0 +1,57 @@
+Incident 298 (System Stability)
+
+Pathway’s latest response lists some 7 categories of problem that have been diagnosed by
+Pathway asa result of this incident. The status of these varies between a fix being produced
+and put into service (although lacks the details of when these went into service), a fix
+awaiting, distribution, a fix in test, and the problem still under investigation. The response
+does not provide a detailed analysis of the cause of each problem or the fixes that have been
+implemented.
+
+Until all these fixes are in place and we have had an opportunity to observe the service in live
+operation for an adequate period (eg, 2 full CAPs after distribution to all offices), we can have
+little confidence that the stability of the system has been adequately improved. The current
+level of instability, reported from a live environment in which a number of fixes have
+apparently been applied, does not give adequate confidence that the service will be adequate
+stable.
+
+A period of monitoring is therefore recommended to provide evidence that these fixes have
+indeed have the desired effect, and that these 7 areas of deficiency do indeed account for the
+problems experienced during the live trial. This monitoring should be obviously be
+performed having removed any manual workarounds (by positive communication with the
+outlets if required) to ensure that the fixes would be valid in a “green field” office.
+
+Pathway have not offered a Resolution Plan to handle the underlying, lack of stability in the
+system. Given that the system was supposedly of adequate quality when offered to enter
+into a live trial, and the number of stability-affecting problems found to date, we would
+expect a Resolution Plan aimed at bringing, the overall system stability up to the “industrial
+strength” claimed by Pathway. It is insufficient to just attack and resolve the user-visible
+signs of instability. This plan could include:
+
+* analysis of the complete design and code to look for similar faults (ie faults caused by
+similar design and/or coding errors to those behind these 7 problem areas)
+
+* execution of further specific tests aimed at flushing out any aspects of instability which
+are current hidden but may be exhibited when the system is modified in some way (eg,
+with new reference data, new software).
+
+© analysis of the design, development, test and integration methods and controls to
+determine what corrective actions can be taken to avoid such faults “slipping through the
+net” for future release.
+
+[NB. POCL dispute the validity of the table attached to the latest Pathway response giving
+the number of faults identified from helpdesk calls]
+
+Specific points
+
+Problem (1) (6) It is not clear from the Status of "Fixes produced and in service" where the
+quantification of the effectiveness of the fix is shown.
+
+Problem (2) is still being, diagnosed. No forecast on analysis or remedy or deployment
+and measure of fix.
+
+Problem (3) (4) (8) fix yet to be deployed and effectiveness quantified.
+
+Problem (7) fix still to be proven and then deployed
+
+WITNO5970125
+WITN05970125

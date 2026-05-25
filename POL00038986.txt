@@ -1,0 +1,1838 @@
+BT & POL FS High Level (Summary) Implementation Plan
+
+HOS
+OFFIGE
+
+Impact Programme
+
+BT & POL FS High Level
+
+(Summary) Implementation Plan
+
+(S80 Release)
+
+Author(s)
+
+Karen Rogers
+
+Reviewer(s)
+
+Chris Allen, Dawn Brooks, Debbie Brown, Mandy
+Brown, Ann Clarke, Martin Cox, Julie Dart, Shaun
+Delaney, Jamie Dixon, Martin Drake, Ben Gildersleve,
+Steve Grayston, Keith Hall, Eddie Harris, Beverley
+Hickey, Ed Hicks, Karen Hillsden, Rod Ismay, Mandy
+Jepson, Peter Jones, Jill Kennedy, Alan Orpe, Sue
+Reed, Jennifer Robson, Andy Terrett, Alvin West, Chris
+Young.
+
+Approver Torstein Godeseth (DA), Marc Reardon (RIT), Vicky
+Noble (PBA/Finance), Ann Cruttenden (Operations),
+Bob Lammin (NSS CLS), Sue Reed (HR), Tina Davis
+(S&M).
+
+Reference POL FS and Branch Trading Implementation Plan
+
+Version 0.1
+
+Operational PSO/S80/E2E/SOL/099A
+
+Baseline No.
+
+Status Draft
+
+Classification
+
+Date April 2005
+
+Circulation (Info)
+
+Linda Austin, Ijaz Bhatti, Philip Godden, Keith Lawless.
+
+1
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+1 Document Control
+
+1.1 Version History
+
+VERSION DATE CHANGE DETAILS
+0.1 Initial Draft
+
+1.2 Change Control
+
+All changes to this document are to be sent to the Change Controller, as
+below:
+
+Name Karen Rogers
+
+Job Title BT & POL FS Implementation Manager
+Business Address see ECD
+
+Tel:
+
+Email: Karen.Rogers
+
+1.3 References / Related / Dependent / Parent Documents
+
+Document I Title Version I Date
+Reference
+
+001 (PBA) Pre-Implementation Plan
+
+002 $80 Data Migration October
+003 (HR) People Change Specification
+
+004 $80 Impact CBDB\OPTIP Data DRS80239Vv0.1
+
+Retention and Archiving
+Requirements
+
+005 $80 Impact All Other Legacy
+Systems Data Retention and
+Archiving Requirements
+
+006 Migration Strategy September 2004
+007 Error Migration Strategy September 2004
+008 High Level Implementation Plan I PSO/S80/E2E/ 27/01/05
+
+$80 Impact - MI SOL/099B v1.0
+009 Communications Plan
+010 Technical Implementation Plan
+
+Electronically Distributed Documents
+
+Any problems, comments or improvement opportunities are to be sent to Change Controller
+above. If not received direct, may wish to ensure it is the latest version by checking with the
+‘Change Controller.
+
+2
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+1 Document Control 2
+1.1 Version History. .2
+1.2 Change Contro! 2
+1.3 References / Related / Dependent / Parent Documents. 2
+1.4 Terms and Abbreviations. .4
+
+2 — INCFOCUCTION............cceesseseseeesseeeesensesenaeceeneseeeesesaeseeaecessenecenseeaneneasenses 6
+
+3 De FINItIONS........ eee eceessesetseseeseeseseeeseeeusnesecesecensesecesaususeseseenenausesesesen 6
+
+4 Scope. a7
+
+5 Inputs and Outputs. 8
+
+6 ASSUMPTIONS... eeeeeeeeeeeeeeeeeeeeeeseneneeeeseesenseeeseeseeeseeeaneenseeseeneenenenens 8
+
+7 Implementation Stages... seeenseeeteeeeenens 9
+
+71 Pre-implementation
+7.2 Reference Data set-up & Horizon Data Centre Migration — (Component A,
+
+7.3 Implement S80 on Horizon — (Component B, pt20).
+74 Prepare POL FS Implementation — (Component C).
+7.5 POL FS Implementation — (Component D, pt30).
+7.6 POL FS Hangouts — (Component E)...
+7.7 Enhanced MIS — (Component F, pt40).
+7.8 Branches to Branch Trading — (Component G, pt50).
+7.9  Non-Value Stock conversion to volume stock (Pt55),
+7.10 HRSAP — (Component H)..........
+
+7.11 Decommissioning - (Component I
+7.12 Impact Programme Closure.
+
+8 Management Reporting Requirements... 29
+9 Issues and Risks.
+10) — COMS traits... eseseeeeeeeeeeeeeeeseseeeeseeeesseeesseseeseseeeeeeseeseseeseneneane
+11 Dependencies. ............escescescseeceeeeeeeeeseseeeeeeeseaseseesaseaeeaeeeeseeseneeaeeeeee
+12 Way of Working
+
+APP dix AQ... ceeecceseeeesceseeseeeeceeeesaesaeesesseeseeeaeeaeesaesaeeseseaseaseaeeeeeaeeaeees
+Migration Strategy Timeline. ............cecceecececeseseeseeeseseseeeeseseseeseseseeeeeeecseeeneestaeeeeseseaeeeeeeetee 31
+
+3
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+1.4 Terms and Abbreviations
+
+Term Meaning
+
+ATM Automated Teller Machine
+
+BAU Business As Usual
+
+BT Branch Trading
+
+BTS Branch Trading Statement
+
+CA Cash Account
+
+CAP Cash Account Period
+
+CBDB Counters Business DataBase
+
+CLASS Client Ledgering And Settlement System
+
+CLS Cash Logistics Solutions
+
+CMO Calthorpe Model Office
+
+DMB Directly Managed Branches
+
+EPOSS Electronic Point of Sale Service
+
+ESFS Enterprise System Finance System
+
+FAD Financial Accounts Division (FAD Code)
+
+Forex Foreign Exchange
+
+HRSAP Human Resources SAP (system)
+
+IRF Input Review Forum
+
+IVR Interactive Voice Response
+
+MI Management Information
+
+MOP Method of Payment
+
+MVL Motor Vehicle Licence
+
+NBSC Network Business Support Centre
+
+NSS Network Support Services
+
+NSSC National Secure Stock Centre
+
+PBA Product and Branch Accounting
+
+RAB Release Authorisation Board
+
+RDS Reference Data System
+
+OBC Operational Business Change
+
+OBC RDS Operational Business Change/Reference Data Service Team
+(part of NS)
+
+OLA Operational Level Agreement
+
+ONCH Overnight Cash on Hand
+
+POL Post Office Ltd
+
+POL FS Post Office Ltd Financial System
+
+pt Point
+
+RIT Release Implementation Team
+
+S&M Sales & Marketing
+
+SAP. Systems Applications and Products (Systeme Anwendungen
+Produkte In der Datenverarbeitung)
+
+SAPADS SAP Advanced Distribution System
+
+SLA Service Level Agreement
+
+SST System Support Team (part of PBA)
+
+STAMPS Stock Transfer and Movements Planning System
+
+4
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+tbc To be confirmed
+TMS Transaction Management System
+TP Trading Period
+
+5
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+BT & POL FS High Level (Summary) Implementation Plan
+
+2 Introduction
+
+The purpose of this document is to provide visibility and understanding, to the
+Impact Programme and relevant BAU domains, of a high-level business
+implementation plan for BT and POL FS and the main activities for the initial
+Pre-Implementation stage.
+
+This document is largely derived from the Migration Strategy [ref 006] and
+meetings held with business area representatives. It outlines the high-level
+implementation approach that will govern and guide a lower level BT and
+POL FS Implementation Plan.
+
+Approval to the High Level Implementation Plan is agreement to the high-
+level activities described below.
+
+Note: This document refers to implementation and migration interchangeably.
+
+3 Definitions
+
+The Migration Strategy [006] refers to a number of BT and POL FS
+‘Components’ and migration points. These are summarised here (see
+Migration Strategy timeline in Appendix A), in addition to ‘new’ Components:
+
+Related Component Point I Comment
+
+Pre-Implementation - Implementation work done upfront prior
+(New Component) to migration occurring
+
+Reference Data Set-up pt05 I RDS80 set up with all required reference
+(Component A) data to support S80 changes, including
+
+Track and Trace and +1 Sales Prompts
+
+pt10 Data Centre Migration:
+Horizon Data Centre migrated to S80
+
+Implement S80 on pt20 Rollout of S80 software release to
+Horizon branches
+(Component B)
+- pt25 I Switch to new Horizon to POL FS
+Interface
+Preparation to Implement - Undertaking all necessary pre-
+POL FS implementation tasks prior to POL FS
+(Component C) Implementation e.g. loading balances
+POL FS Implementation pt30 I POL FS (S80 build) goes live with
+(Component D) interfaces and loading of balances
+Handling hangouts from - Final CA information received from late
+POL FS Implementation branches into CBDB
+(Component E)
+Switch on Enhanced MI pt40 I New MI system available. Feed into
+(Component F) OPTIP ceases. Dependent upon last CAs
+being received in CBDB.
+Switch Branches to ptso Branches cease CA and move onto BT in
+Branch Trading a phased approach
+(Component G)
+6
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+Convert Non-Value Stock I pt55 I Conversion of Non-Value Stock to
+to volume volume after all branches are on BT
+(New Component)
+
+Switch remuneration feed I pt60 I HRSAP receives feed from TMS for first
+
+into HRSAP time
+
+(Component H)
+
+Decommissioning legacy I pt70 Decommissioning of the various legacy
+systems systems
+
+(Component 1)
+
+Programme Closure = Closure of Impact Programme
+
+(New Component)
+
+4 Scope
+
+The high-level plan scope includes:
+
+1. All business change activities required to introduce BT & POL FS.
+
+2. All business change activities that support the introduction of or have a
+dependency upon technical changes.
+
+3. Conversion of Non-Value Stock to volume stock post BT (excluding MVL,
+Electric Tokens and Rod Fishing Licences which will be converted at
+$90).
+
+4. Changes in legacy systems required to support POL FS, including loading
+
+data from legacy systems e.g. balances, and changes in processes e.g.
+
+supporting Non-Value Stock conversion.
+
+Implementing Impact Change Requests that result in business change.
+
+Reference to ‘pre-implementation’ activities [ref 001].
+
+Reference to Horizon and POL FS reference data changes [ref 002].
+
+Reference to communication activities [ref 009].
+
+Distribution of materials to branches and the NBSC, including training and
+
+operational instructions.
+
+10.Development of branch error scenarios and scripts for NBSC.
+
+11.Dual running of Knowledgebase database as branches migrate from CA to
+BT.
+
+12. Training of NBSC in types of calls and changes to BT.
+
+13.Reference to People Change activities [ref 003], including Cash Centres.
+
+14. Reference to accessing MI with new data on transactions and events to
+support management reporting during the implementation period.
+
+15. Benefits management handover to relevant BAU domains.
+
+16.BAU domains handover and acceptance of BT and POL FS into business
+as usual.
+
+OCONDH
+
+Out of scope are:
+
+Implementation of RDS80 and new the MI system.
+
+Enhanced MI activity relating to Component F.
+
+Design and development of systems and procedures.
+
+System and End-to-End Testing, and User Assurance.
+
+Technical delivery, including system interfaces and decommissioning.
+Non Impact Programme S80 content, although where business
+implementation activities are jointly undertaken, reference will be made.
+
+QaARWON>
+
+7
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+7. Model Office and Live Proving plans except with reference to the overall
+context of business implementation activities.
+
+8. Detailed descriptions of changes covered in other documents, such as
+People Change, Decommissioning, Reference Data plan.
+
+9. OLAs and SLAs agreement with suppliers.
+
+10.Management of any changes to clients systems and client procedures due
+to removal of CA.
+
+11.Revised HRSAP interface.
+
+5 Inputs and Outputs
+
+The primary inputs into this document have been:
+
+Migration Strategy [ref 006].
+
+Various sessions with Impact Business Change team members and BAU
+domains.
+
+People Change Specification [ref 003].
+
+Lessons learnt from Impact Release 1 (S60 Release).
+
+Error Migration Strategy [007].
+
+Relevant Impact Change Requests.
+
+Call forecasting by NBSC.
+
+Draft Counter Operations Manual and procedures.
+
+N>
+
+ONDA Ww
+
+The outputs from this document are expected to be:
+
+Lower-level BT & POL FS Implementation plan.
+
+BT & POL FS Issues Log and Risk Register.
+Assumptions relating to BT & POL FS Implementation.
+Communications Plan.
+
+POND
+
+6 Assumptions
+The assumptions used to produce this paper are:
+
+1. POL FS S60 cash reconciliation has been proven and accepted.
+
+2. All new procedures have been previously developed, tested and
+approved.
+
+3. All End-to-End testing activity regarding both migration and ‘steady
+state’ functions are completed successfully.
+
+4. Pre-implementation ‘Desired State’ is achieved via BAU processes.
+
+5. All personnel allocated to new roles are in place and have been
+trained to the required standards.
+
+6. ‘CA’ referring forms are either replaced and/or workarounds developed
+due to migration into BT.
+
+7. Allclient systems requiring changes have been changed or
+workarounds agreed and implementated.
+
+8. Calthorpe House Model Office is available for 2 phases of live proving
+sessions, covering S80 software release and BT migration.
+
+9. NBSC, Dearne House receives the S80 software release and migrates
+to BT prior to the rest of the network.
+
+10.S80 software release rollout takes 6 weeks to complete.
+
+8
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+11.All branches do not have to be on S80 and must not have completed
+the ‘trigger’ CA prior to pt25;
+
+12.OLA/SLAs are agreed before implementation.
+
+13. Operational Focus articles and branch training and procedural material
+are required during S80 software release and BT migration.
+
+14.No proving of the new MI Reports to support migration/implementation
+will occur at Pt 40.
+
+15.CBDB will remain until December 2005 and data then archived as
+agreed.
+
+16. After the IRF decision following BT pilot, reference data soft launch
+product can be rolled out in time to rest of network.
+
+PBA will have the necessary resource available to deal with TC
+enquiries from branches.
+
+17. The S90 Release, which will implement the changes necessary to
+support the migration of MVL, Electric Tokens and Rod Fishing
+Licences from Non-Value Stock to controlled stock products, will occur
+in Jan/Feb 2006.
+
+18.BAU domains agree Impact People Change Specification.
+
+19.POL accepts a level of service degredation at the NBSC during the
+migration phase due to the limited funds available for POL support.
+
+7 Implementation Stages
+The Migration Strategy paper’s [ref 006] components for migrating to BT are
+considered below in addition to some new components. The components are
+
+referred to as stages and their related high-level implementation activities are
+described below.
+
+7.1 Pre-implementation
+
+Implementation Team
+
+Key communication dates and messages will be identified and agreed.
+Communication material used in Face-to-Face events will be supplied to NS
+before the events are held, so that call scripts can be developed and any
+queries answered.
+
+$80 Soft Launch branches will be identified, agreed and passed to the
+OBC/RDS Team and Release Implementation Team.
+
+Management Information requirements for the migration/implementation
+phase will be defined and passed to the SSP Team.
+
+An approach to dealing with branches that may perform late or early CAs
+during the POL FS Implementation period will be considered to support the
+current BAU process.
+
+Details of the POL FS cutover plan will be developed and agreed.
+
+The potential for both a stock and bureau embargo to support a smooth
+cutover from legacy systems to POL FS will be explored with all relevant
+parties.
+
+9
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+Scenario planning will consider exception scenarios at pt20, pt30 and pt50,
+enabling development of the appropriate procedures.
+
+There is an opportunity for messages to appear on Horizon at the counter
+when users select certain buttons, thus negating or reducing the need for
+branches to call the NBSC. These buttons will be enabled by the +1 Sales
+Prompts facility. The key buttons and appropriate messages will be defined
+and provided to the +1 Sales Prompts Project Manager for inclusion in +1
+Sales Prompts reference data.
+
+Client and branch forms that refer to Cash Account will either be considered
+for change (re-print) or workarounds developed.
+
+The National Implementation Equipment Team will be advised that the
+‘Miman’ Horizon facility will be removed during S80.
+
+A Benefits Plan and Handover document will also be produced and agreed
+with BAU domains in the run up to the S80 Release.
+
+POSC Salford will be informed of branch Sales Report changes arising from
+the S80 software release as there may be an increase in remuneration calls.
+
+Finance
+
+A ‘Desired State’ will have been agreed regarding what position branches
+should be in prior to the start of S80. This will focus on:
+
+Reducing the amounts held in Suspense accounts;
+Bringing error notices to account;
+
+Making good discrepancies each week;
+
+Ensuring branches are in the correct CA week.
+
+PONS
+
+A plan will be developed by PBA to drive branches and PBA to the Desired
+State, with support expected from other BAU domains, such as Operations
+and Network Support. PBA will provide regular updates of how the move to
+the Desired State is progressing.
+
+There will be a review of how up to date the return stock forms are from
+Hemel, and actions agreed to bring these up to date as required for POL FS
+Implementation.
+
+Development of the necessary approaches and requirements for migration at
+pt30 will occur. This will confirm the migration approaches and the
+development of appropriate interim training and procedures. Approaches will
+need to be developed for Financial Year End and pt30 for the loading of
+ledger balances (such as client, debtor, creditor, agents suspense and cash),
+the migration of supporting documents, such as EDS, and defining and
+agreeing the ‘open items’ to be brought forward. This should be completed in
+time to allow for any necessary system development and testing.
+
+10
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+The Finance Assurance Group will determine the assurance activities
+required to confirm that POL FS is ready to go-live.
+
+PBA will review branch and Cash Centre control requirements required post
+ptso.
+
+To support the Desired State, the Agents’ Losses and Gains policy regarding
+authority to hold will reduced from 8 weeks to 4 weeks.
+
+Discussions will commence between NSS (CLS) and PBA on the handover of
+Cash Centre discrepancy procedures regarding (shortage/surplus for Forex
+and shortage for cash), Scottish notes and Coins to Royal Mint.
+
+Network Support
+
+There will be a review of how up to date the return stock forms are from
+Hemel to PBA and actions will be taken to clear any backlog in time for POL
+FS Implementation.
+
+NS will support PBA if required in making outbound calls to branches to clear
+out Suspense Accounts, bringing error notices to account and rolling
+balancing discrepancies, thereby achieving the ‘Desired State’.
+
+There will be a review of possible call volumes expected during S80 software
+release rollout and BT migration.
+
+There will be a review of the expected resource levels required in NBSC after
+BT implementation, considering only allocated Groups of branches will
+perform balancing activities during a given week rather than the entire
+network.
+
+Call categories and scripts will be developed in anticipation of calls raised by
+branches following Face-to-Face events. The Impact Communications
+Manager will supply NBSC with the communication material prior to the
+events. The Knowledgebase database will be updated accordingly.
+
+Forms referring to ‘Cash Account’ will have been identified that can either be
+replaced or workarounds developed. The Logistics Team will co-ordinate the
+production of new forms and the removal destruction of other forms in
+Swindon and branches.
+
+Network Support Services (CLS)
+
+Discussions will commence with PBA on the handover of procedures
+currently performed by Cash Centres regarding the transfer of discrepancies
+(Forex shortage and surplus and cash shortage ), Scottish notes and Coins to
+Royal Mint.
+
+11
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+SAPADS enhancements will be ready to go into production and where
+possible new changes will be introduced prior to pt30, such as new
+discrepancy procedures for cash and Forex. SAPADS changes will also
+incorporate the CA system changes to support POL FS interface.
+
+The Cash Centre training package will be agreed to support the technical
+development of SAPADS 4.2. The training will begin to be rolled out across
+the Cash Centres and Finance Teams.
+
+Note: Forex will be migrated from STAMPS onto SAPADS in April 2005, with
+the SAPADS Impact associated changes being switched on pt30, or earlier, if
+feasible.
+
+Network Operations
+
+Reference data to support branch Groupings will be defined and provided to
+the End-to-End Testing Team. Revised reference data will be provided prior
+to implementation.
+
+Visits to a variety of branches will take place to understand the impact on
+current procedures.
+
+Sales & Marketing
+
+A client communications approach will be agreed, which will confirm how and
+when clients will be communicated to.
+
+Clients will be informed of the proposed changes affecting their products.
+System and process changes will be identified. These changes may result in
+contract amendments.
+
+Client Horizon ‘Cash Account’ reports will be identified and any necessary
+technical Change Requests progressed by the Design Authority. ‘Cash
+Account’ referring non-Horizon forms that require changing will be identified.
+The forms will be re-printed, or workarounds developed for an interim period
+until the next print run when the reference to ‘Cash Account’ will be removed.
+
+7.2. Reference Data set-up & Horizon Data Centre Migration —
+(Component A, pt05 & pt10)
+
+RABI/IRF Decision Point
+
+A RAB and IRF decision will be required prior to the Horizon Data Centre
+upgrade.
+
+Implementation
+
+A Live Proving plan will be produced and agreed for the S80 Soft Launch.
+
+A list of the Branch Groups and the BT Calendar will be supplied to
+OBC/RDS Team for inputting into Reference Data.
+
+12
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+BT & POL FS High Level (Summary) Implementation Plan
+
+A list of the possible scenarios that may occur when branches receive S80
+software and when they migrate to BT will be supplied to NS for scripts to be
+developed.
+
+The Flash screen and Operational Focus articles used to communicate the
+S80 software rollout changes to the branches will be developed, agreed and
+issued to Network Support Services.
+
+The S80 software release and +1 Sales Prompt messages to support
+migration/implementation will be passed to the +1 Sales Prompts Project
+Manager.
+
+Ways of working and how issues will be dealt with during the S80 software
+release will be agreed with Problem Management.
+
+Work will start on defining the critical success factors for BT migration.
+The Fujitsu Data Centre will be migrated to S80.
+Design Authority
+
+The Impact Design Authority will supply all of the necessary mappings, e.g.
+for products.
+
+Supplier SLAs and OLAs will be developed with input from NSS. These will
+be reviewed at an appropriate Supplier Service Review meeting.
+
+Finance
+
+The System Support Team (SST) will key in the Horizon reference data
+changes and also the POL FS reference data changes, such as the Chart of
+Accounts.
+
+SST will confirm with the Release Implementation Team the level of
+involvement during the Data Centre upgrade and will provide feedback on the
+S80 Data Centre upgrade, as required.
+
+There will be a review of the ‘Desired State’ against predefined success
+criteria; where deemed appropriate, further actions will be agreed and
+implemented to tackle any remaining problem areas.
+
+PBA activities to implement the various migration approaches will be
+identified and agreed; these approaches will include pt30 activities and
+specific activities to support the period between pt30 and pt50.
+
+PBA will take over the ownership from NSS of Cash Centre discrepancy
+procedures for cash shortages and Forex shortages and surpluses.
+
+Network Support
+
+13
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+The Type C reference data previously managed by Fujitsu Services will move
+into POL as Type A, and this will be keyed and verified by SST and the
+OBC/RDS Teams.
+
+The OBC/RDS Team will verify the Horizon reference data changes.
+
++1 Sales Prompts and Track and Trace reference data activities will also take
+place at the same time as the Impact changes. For more details see S80 Data
+Migration document [ref 002].
+
+Slots at Swindon will be booked 13 weeks prior to the arrival of branch
+migration materials, such as procedures material and any revised
+client/branch forms. Swindon will receive materials for the S80 software
+release and prepare these for despatch at the appropriate time.
+
+Change control will be introduced to manage any changes to the branch
+Groups, including any new or closed branches, as well as FAD code
+changes.
+
+Scripts will be in place at the NBSC prior to the S80 software release and the
++1 Sales Prompt pilot. The Knowledgebase database will be updated
+accordingly.
+
+NBSC contingency plans will be developed to deal with an unexpectedly high
+increase in call volumes.
+
+Network Support will receive a list of Soft Launch branches from the Release
+Implementation Team.
+
+Network Support Services (CLS)
+
+Cash Centres will handover the management of cash shortages and Forex
+shortages and surpluses discrepancy procedures to PBA.
+
+Network Operations
+The list of branch Groupings will have been developed and agreed.
+
+7.3. Implement S80 on Horizon — (Component B, pt20)
+
+RABIIRF Decision Point
+
+An IRF decision will be required prior to distribution of S80 software to CMO.
+A RAB decision will be required prior to national rollout of the S80 software
+
+release.
+
+Implementation Team
+
+14
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+Soft Launch branches selected by Fujitsu will be agreed with Operations.
+This will be a mix of branch configurations; some branches will also pilot +1
+Sales Prompts.
+
+Reference Data will be distributed to all branches after the Data Centre is
+upgraded and before S80 software release.
+
+CMO live proving activities will be performed to prove the S80 software
+changes in a live environment.
+
+Live terminals at Dearne House will be upgraded to the S80 release.
+
+The Impact changes will be communicated to branches via an Operational
+Focus article. A ‘Flash Screen’ message will advise users of receipt of the
+S80 release software.
+
+$80 release software will be distributed to Soft Launch branches, some of
+which will also pilot +1 Sales Prompts. The branches will include a number of
+different branch configurations.
+
+A review of the Soft Launch will take place with Operations and NS.
+Requirements for workarounds and/or key messages will be developed prior
+to the rest of the network receiving the release.
+
+The Impact Programme will visit by appointment some Soft Launch branches
+to gain first hand feedback on the release.
+
+Impact personnel will support NBSC in developing any additional scripts or
+workarounds for national rollout.
+
+Provided that Soft Launch is successful, standard S80 software release will
+occur. The distribution will be monitored in conjunction with Fujitsu. There will
+also have been monitoring of Reference Data roll out to all branches via
+Fujitsu Services reports.
+
+Finance
+
+There is no impact on PBA as a result of the Impact elements of the S80 Soft
+Launch/national rollout.
+
+Network Support
+Dearne House will migrate to S80 shortly after CMO is upgraded.
+Scripts previously in place prior to the S80 software release will be reviewed
+
+and amended as necessary at the end of the Soft Launch period.
+
+Network Support Services (CLS)
+
+15
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+There is no impact on NSS (CLS) at pt20.
+Network Operations
+
+The Soft Launch branches will receive the S80 software prior to the national
+release, as per the normal release Soft Launch approach.
+
+An Operational Focus article will inform branches of the changes in the S80
+release. This will be supported by a ‘Flash Screen’ message that will appear
+once the new S80 software is received at the branch.
+
+[tbc] The Impact team will visit by appointment some Soft Launch branches at
+the end of their first week; feedback collected will be considered for
+confirming what key messages and workarounds are required for the national
+release.
+
+Sales & Marketing
+
+There is no impact on Sales & Marketing as a result of the Impact elements of
+the S80 Soft Launch/national rollout.
+
+7.4 Prepare POL FS Implementation — (Component C)
+
+RABI/IRF decision point
+
+A RAB decision will be required prior to confirm that POL FS Implementation
+can proceed.
+
+Implementation Team
+
+(tbc) Appropriate communications will be issued to ensure branches and
+other relevant parties are aware that despatches will not take place during the
+agreed stock embargo and Bureau embargo periods.
+
+Finance
+
+PBA will commence collecting the necessary Period End figures for closing
+balances for 2004/05 and Period End balances for transaction and settlement
+ledgers from CBDB (CLASS) until pt30.
+
+Prism will support the loading of key balances from the legacy systems into
+POL FS.
+
+PBA will provide Prism with a list of POL FS users and the access levels
+required.
+
+Key PBA users who will work on POL FS immediately after cutover will be
+identified and trained. (Non-key users will be trained following cutover to POL
+FS).
+
+16
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+The assurance activities previously determined by the Finance Assurance
+Group will take place to ensure that S80 POL FS ledgers are populated as
+expected from the new interfaces and that POL FS can hold large amounts of
+transactional data.
+
+POL FS opening figures from branches will be based on the wk 22 CA, which
+is due for completion at pt30. The POL FS $80 interface will be available
+from pt25 to capture opening figures from branches that complete the wk 22
+CA early. Branch opening figures must be received in POL FS prior to pt40
+when the new MI system is implemented. PBA will monitor production of
+branch CAs to ensure that branches complete the wk 22 CA between pt25 to
+pt40o.
+
+Reports will be defined to enable PBA to prove that data between CBDB and
+POL FS is correct.
+
+NSSC will pass opening stock balances to POL FS.
+
+The data for MVLs, Rod Fishing Licences and Electric Tokens will be
+removed from POL FS.
+
+PBA will monitor Non-Value Stock, as CBDB will no longer receive sales
+values.
+
+Network Support
+
+(tbc) NS will support the stock and Bureau embargoes by ensuring that there
+are no movements between Hemel and Crusader Houses and branches
+during the agreed embargo periods.
+
+Network Support Services (CLS)
+
+SAPADS system changes will occur support to support the introduction of
+POL FS. These changes will be in 2 phases;
+« Phase 1 - any changes that can be introduced earlier than the POL FS
+go-live date;
+« Phase 2 - changes that can only be introduced once POL FS goes live
+e.g. the discrepancy process and voucher write-off process.
+
+Network Operations
+
+Branches must complete a wk 22 CA at pt30.
+
+Branches will continue to undertake stock reconciliation processes for Non-
+Value Stock until it converts to volume at pt55 or, for MVLs, Rod Fishing
+
+Licences and Electric Tokens, at S90.
+
+(tbc) Branches will support the agreed stock and Bureau embargo by
+remitting in stock receipts prior to the embargo period and not returning stock
+
+17
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+during the embargo period. Stock must only be ordered in cases of absolute
+business critical need.
+
+Sales & Marketing
+
+As per the current CBDB process, A&L transactions for branches in advance
+of the wk 22 CA will be held in POL FS and transmitted with the bulk of wk 22
+transactions i.e. 10 days after the end of wk 22. The paper stream sent from
+branches to A&L will continue to be sent to A&L on a daily basis, as per the
+current counter process.
+
+HR
+
+HRSAP will no longer be fed by CBDB - TMS will start accumulating data for
+HRSAP based on defined pay periods.
+
+7.5 POL FS Implementation — (Component D, pt30)
+
+Implementation
+
+Pt30 will occur at CA the end of Period 5 - POL FS will commence receiving
+daily data from branches and other interfaces, such as SAPADS from pt30.
+
+The feed from CBDB to HRSAP will cease - HRSAP will receive feeds for
+agent remuneration from TMS, which will start accumulating data for HRSAP
+based on defined pay periods, although this data will not pass through until pt
+60.
+
+Finance
+
+CBDB will receive CA data from branches based on the wk 22 CAP; this is
+the last CA week that CBDB will receive data for.
+
+POL FS will become operational and the main POL financial system,
+replacing the legacy systems.
+
+PBA will commence proving POL FS against legacy systems figures. POL FS
+
+will receive:
+
+1. Foreign Exchange in Hand (data supplied - quantity of foreign currency,
+Sterling equivalent);
+
+2. Stocks — both balance sheet and non balance sheet (data supplied -
+quantity of stock);
+
+3. Suspense, discrepancy and other products that form part of the Branch on
+hand values (data supplied — value).
+
+The above figures will be reconciled and proved against the legacy systems.
+POL FS opening positions will be based on the closing CA position, residual
+client balances, bank info etc from CBDB and branch CA Table 5 details.
+
+18
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+BT & POL FS High Level (Summary) Implementation Plan
+
+Data from clients will continue to be received in legacy systems if the data is
+for wk 22 or earlier.
+
+PBA will continue to receive and process supporting documents from
+branches and clients, some of which will be from many weeks previous. This
+includes the weekly brown pouch from branches.
+
+PBA will continue to monitor CA production in branches and ensure that all
+branches complete the wk 22 Cash Account prior to pt40.
+
+POL FS interfaces to NS&I and A&L will be switched on.
+
+Any errors that have not been issued or dealt with up to pt30 will be migrated
+onto two ledgers in POL FS. These will continue to be issued as Error
+Notices to branches until the branches have migrated to BT, when TCs can
+be released. Errors occurring between pt30 and pt50 will be stored in POL FS
+as TCs, but not issued until an agreed point after Pt 50.
+
+CBDB will supply SAPADS with payment information as used by Flexible
+Planning between pt25 and completion of POL FS Hangouts, at the same
+time as POL FS, to cater for branches in an incorrect CA week.
+
+Fujitsu Services will undertake end-to-end data integrity checks between POL
+FS and the legacy systems, to ensure that the data has passed without
+corruption and into the correct ledgers. This is a technical activity and will
+prove that the feeds are correct and meet PBA’s Critical Success Factors.
+
+NSS will no longer supply 16/20Ds to PBA immediately after pt30 as this
+information will be obtained from POL FS.
+
+CBDB will remain operational until December 2005. PBA may make
+adjustments to the data in CBDB for periods prior to cutover to POL FS,
+provided that the adjustments do not affect the ledger figures.
+
+Network Support
+
+There is no impact on NS during POL FS implementation. Queries from POL
+FS users will be made to Systemline, as per the existing process.
+
+Network Support Services (CLS)
+
+CBDB will continue with the supply of the payment information into SAPADS
+for Flexible Planning at the same time as POL FS, from pt25 until POL FS
+Hangouts completes.
+
+The enhanced SAPADS interface 4.4 system changes implemented at pt30
+will involve new transactions such as Forex uplifted to POL FS. Flexible
+Planning will still receive generated and declared cash figures.
+
+19
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+16/20Ds produced by Cash Centres will continue for audit purposes, but will
+not be issued to PBA from pt30 as POL FS will provide this information.
+
+Voucher changes will also occur. Vouchers to Cash Account, created by
+Cash Centres, will no longer be in one general ledger account: this involves
+postal orders and Road Vehicle Licence stamps. Vouchers Write Off Process
+will also change, whereby vouchers will be transferred to POL FS and will no
+longer be held in suspense in Cash Centre Cash Account.
+
+Cash Centre manuals will be updated due to procedural changes, such as the
+dual inputting of ATM Services into Cashman and SAPADS in Cash Centres,
+(the latter so that this information can be received into POL FS).
+
+Network Operations
+
+Branches that have not performed a wk 22 CA at pt30 will have until pt40 to
+do this. No dispensations will have been given to branches to miss this CA as
+it is a Period End, when a CA must be produced.
+
+Branches will continue to produce a weekly CA and send the weekly brown
+pouch to PBA. However, the Horizon data will not be received in POL FS and
+the brown pouches will not be opened or actioned by PBA.
+
+Sales & Marketing
+
+There will be a last feed from CBDB to clients’ systems based on the wk 22
+CA. The interface from pt30 onwards will be from POL FS.
+
+Clients will continue to send data to the legacy systems if the data is for wk
+22 or earlier.
+
+Data received from clients for settlement purposes, where settlement is made
+on clients’ data rather than POL data, will be loaded into POL FS rather than
+into CBDB. New error resolution processes with clients will commence.
+
+7.6 POL FS Hangouts — (Component E)
+
+Implementation
+
+Implementation of the new MI system at pt40 will be delayed if all branches
+have not completed the wk 22 CA by the agreed date for pt40
+implementation. Feedback will be provided by PBA to confirm that all
+branches have completed the wk 22 CA. If this cannot be achieved,
+appropriate actions will be agreed.
+
+Finance
+PBA will continue to monitor CA production in branches and ensure that all
+
+branches complete the wk 22 CA prior to pt40. Progress will be reported to
+the Implementation Team.
+
+20
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+Training on POL FS will continue for those users not yet trained.
+Network Support
+Support may be required to assist in chasing late CA branches.
+
+The NBSC may start to receive calls from branches regarding their migration
+to BT.
+
+Network Support Services (CLS)
+
+There is no impact to CLS during this period.
+
+Network Operations
+
+(tbc) Support may be required to assist in completion of residual wk 22 CAs.
+Sales & Marketing
+
+There is no impact to Sales & Marketing during this period.
+
+7.7 Enhanced MIS — (Component F, pt40)
+
+Implementation of the new MI system will occur at the same time as POL FS
+Hangouts completes. The detail of the implementation is covered in the MI
+High-Level Implementation Plan [ref 008].
+
+Implementation
+
+Mi reports will be available to confirm whether branches have completed their
+BTS at the appropriate time, once branches have moved to BT at pt50.
+
+Finance
+
+When the final ‘late’ branch performs its wk 22 CA, the transactional feed into
+
+OPTIP will cease and all transactions from branches will flow into the new MI
+
+system.
+
+The new MI system will provide all branch transactional data based on POL’s
+
+MI requirements and will be accessed by users within PBA and other parts of
+
+POL.
+
+PBA will receive details listing the branch rollout at pt50 so that TCs can be
+released to branches after migration to BT.
+
+Network Support
+
+21
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+Reports will be made available via MI to monitor completion of Branch
+
+Trading Statements according to the appropriate ‘branch off-set’. Branches
+
+that get ‘out of sync’ will be managed by the agreed ’42 day’ process .
+Network Support Services (CLS)
+
+There is impact on NSS (CLS) from a BT or POL FS implementation
+perspective.
+
+Network Operations
+
+There is no impact on Network Operations from a BT or POL FS
+implementation perspective.
+
+Sales & Marketing
+
+There is no impact on Sales & Marketing from a BT or POL FS
+implementation perspective.
+
+7.8 Branches to Branch Trading — (Component G, pt50)
+
+RABI/IRF decision point
+
+An IRF decision will be required to confirm that BT pilot and rollout can
+commence.
+
+Key dates
+
+Group -—in I Last ever Into First BT Trading
+
+date order I CA Trading I Statement Period of
+Period first BT
+
+Statement
+
+Pilot (from 14/09/05 6 21/09/05 6
+
+Group C)
+
+Approx.
+
+4,000
+
+branches
+
+1st Group 28/09/05 8 02/11/05 8
+
+2nd Group _I 05/10/05 8 09/11/05 8
+
+3rd Group 12/10/05 8 16/11/05 8
+
+4th Group 26/10/05 8 23/11/05 8
+
+Implementation
+
+CMO live proving takes place for Cash Account migration to BT. This will be
+
+based on a previously agreed Live Proving plan.
+
+Training materials for pilot groups will be despatched directly from the
+
+printers. (tbc) All Impact materials for rollout Groups will be despatched in a
+
+dedicated ‘Impact’ migration pack two weeks prior to their last ever CA.
+
+22
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+Soft Launch reference data will be released to branches to control BT
+migration.
+
+As branches will migrate to BT based on rolling into a specific CA week,
+branches in an incorrect CA week will not migrate on the day expected.
+Branches in future CA weeks must not be forward by more than a few weeks,
+otherwise they will move to BT before supporting materials arrive.
+
+Branches from Group C will pilot BT, prior to migrating the rest of the network.
+The pilot will include some DMBs, although in steady state these will be ina
+different BT Group compared to the pilot branches. These DMBs be migrated
+to their correct Group at an agreed time after pt50. The remaining migration
+will be based on branches in their allocated Groups.
+
+After their last CA branches will roll into the relevant TP associated with that
+CA week.
+
+Procedures will be supplied to branches to confirm that the ‘balance carried
+forward’ in the last CA reconciles with the ‘balance brought forward’ following
+migration to BT, should the branch wish to undertake a reconciliation. If
+discrepancies exist, branches should ‘make good’ straight away: if they do
+not ‘make good’ at this point, then this will need to be completed before the
+first BTS is produced.
+
+Pilot branches will be required to complete a BTS 1 week after migrating to
+BT. Rollout branches, however, will go into the normal TP cycle, meaning that
+a BTS will not produced until 4 or 5 weeks later.
+
+After pilot branches perform their first ever BTS reference data will be
+released to the next branch Group. Due to the short timescales in rolling out
+the reference data it may not be possible for all branches in the first migration
+Group to receive the reference data in time to complete their last ever CA at
+the correct time. If the reference data is not received prior to the designated
+migration date, then migration will be triggered following receipt of the
+reference data and following individual stock unit rollover into the next CA
+week: Due to the nature of the soft launch reference data product, migration
+will occur when individual stock units roll into the designated CA week. If a
+stock unit has completed the designated CA prior to receipt of the reference
+data, then the stock unit will not migrate into BT until a subsequent CA has
+been completed. This scenario will require careful communication to
+branches as there is the potential for some stock units to migrate into BT
+whilst others remain in CA mode.
+
+A review will take place during the week-long pilot period. On-going reviews
+will also take place during the national rollout period. Data will be gathered
+from various sources, including visits to branches, if feasible. The reviews will
+consider:
+
+23
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+1. Training and Operating Instructions materials used by pilot branches and
+if there is a need to amend.
+
+2. Branch behaviours having performed a last CA, and not completing a BTS
+every week, as well as dealing with TCs.
+
+3. Issues, risks and contingencies on an on going basis.
+
+4. Typical questions and scenarios that branches raise and the relevant
+actions required to reduce/eliminate similar questions and scenarios.
+
+5. Whether changes to communications or new communications are
+required.
+
+Impact personnel will also attend NBSC to assist with calls coming from the
+pilot branches during both the last CA and the first BTS production.
+
+NS call volumes and types will be monitored during pilot and rollout. Actions
+will be taken, such as developing key messages or workarounds, based on
+calls and issues being raised and from branch visits.
+
+Addendums will be produced where deemed necessary for correcting or
+clarifying branch instructions, as identified from issues and queries being
+raised by branches. It may be possible for the addendums to be issued to the
+latter rollout Groups at the same time as their primary materials are
+despatched. Earlier Groups may require special one-off despatches.
+
+At a point during migration and as previously agreed, Impact will hand over to
+NS Problem Management any issues under business as usual. Impact will
+remain responsible for branch migration until completion of rollout.
+
+Finance
+
+Some vouchers will cease when branches migrate to BT. Vouchers to TP will
+also cease at this point.
+
+TCs will be issued depending on the type of ‘error’ and when the error
+originally occurred:
+
+Errors pre pt30: Issued as Error Notices until pt50;
+Anything issued but outstanding at pt50 will be
+issued as TCs immediately after a branch has
+migrated to BT
+
+Errors pt30 — pt50 Stored ready for issuing as TCs at an agreed point
+post-pt50
+
+Errors from Pt50 onwards Issued as TCs at an agreed point post-Pt50
+
+Items where buttons TCs issued immediately at pt50.
+removed from Suspense
+
+Values in Suspense Accounts at pt50 and errors issued but not brought to
+account, or outstanding errors prior to pt30 will be converted to TCs and
+
+24
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+issued to branches the week following a branch performing its last ever CA.
+Branches will have 3-4 weeks to process these prior to completing their first
+BTS.
+
+There may be an increase in calls to PBA to question why the TCs are being
+issued. This may require additional PBA resource.
+
+There will be a re-organisation of personnel in PBA, based on the People
+Change plan [ref 003], as a consequence of the introduction of POL FS and
+the cessation of operating the legacy systems.
+
+PBA will cease printing Cash Centres Cash Account statements as this
+information will be sent via the enhanced SAPADS to POL FS interface.
+
+PBA will continue to receive the LS1 forms from branches until Local
+Schemes Non-Value Stock is converted to volume at pt55.
+
+PBA will review the activities required to support branch and Cash Centre
+control post pt50.
+
+Network Support
+
+NS will require access to a list of branch Groups and their rollout dates, as
+well as the expected TPs that branches are to migrate into.
+
+Materials will be issued by Swindon 2 weeks before each of the Groups
+complete their last ever Cash Account.
+
+Swindon will destroy ‘Cash Account’ branch/client forms that are no longer
+required.
+
+The remaining counters at Dearne will migrate to BT.
+
+The OBC/RDS Team will release the soft launch reference data products to
+enable pilot and rollout branches to migrate, as per the dates in the Low-
+Level Branch Trading and POL FS Migration/Implementation plan (to be
+agreed).
+
+Scripts and scenarios will be produced to support the pilot and rollout. The
+Knowledgebase database will be revised to contain references to both CAt
+and BT during BT migration.
+
+Calls are expected to increase during pt50 migration as a result of:
+
+1. Receipt of training materials into branches.
+
+2. Last ever CA and reconciliation of the balance carried forward in the CA to
+the balance brought forward in BT mode.
+
+3. The first Monday following the last ever CA, when TCs are received for
+the first time.
+
+25
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+4. The first Wednesday/Thursday after the last ever CA, when branches
+migrating are not required to do any balancing activity (with the exception
+of pilot branches who will complete their first BTS one week after
+migrating to BT).
+
+5. First time a branch completes a BTS.
+
+A degradation in service is anticipated at the NBSC during the
+migration/rollout period, due to the high number of calls anticipated. This is
+likely to require the implementation of contingency measures. IVR and voice
+portal facilities will be implemented to assist in answering calls during this
+period.
+
+Call scripts, scenarios and the Knowledgebase database will be reviewed
+after the pilot branches complete their last ever CA and during the period
+following the completion of the BTS for the first rollout Group. There will be
+on-going reviews thereafter.
+
+Management Information will be produced by the SSP team in NSS to support
+the migration/rollout period.
+
+At a point during migration and as previously agreed, Problem Management
+will assume responsibility for problems that arise following migration.
+However, Impact will remain responsible for branch migration until completion
+of rollout.
+
+At the end of BT migration, the dual running of the Knowledgebase database
+will cease. CA information will be removed from the database and any other
+reference sources used by the NS teams.
+
+Network Support Services (CLS)
+
+Most vouchers will cease being issued to Cash Centres from branches when
+a branch moves to BT, such as those relating to losses/gains, discrepancies
+in shortages and surpluses for cash, Forex and stock. These will be replaced
+by TCs. The only ones to remain for inputting into SAPADS are for those in
+Northern Ireland:
+
+1. Redeemed Postal Orders for Bank of Ireland;
+
+2. Ulster Savings Certificate Warrants;
+
+3. Vehicle Trading Licence Stamps.
+
+(tbc) Cash Centres cease issuing 16/20Ds to PBA at pt50.
+
+Flexible Planning will continue to receive the generated and declared cash
+figures. Branches will continue to declare cash as part of the mandatory
+process.
+
+Network Operations
+
+26
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+Branches will not be able to move any values into and out of certain
+Suspense Account lines from pt50. These can only be removed by
+processing appropriate TCS issued by PBA.
+
+Any balancing discrepancies under BT will be transferred into the Local
+Suspense account. This will need to be cleared before a BTS can be
+produced.
+
+TC will be issued to branches the week according to the order shown in
+paragraph 7.7 Finance.
+
+Branches will continue to complete a daily and weekly despatch of summaries
+and dockets, unless changed by BAU product simplification.
+
+Most value stock will convert automatically to volume following production of
+the last ever cash CA (NB. ‘Other Postage’ and Bureau will remain as value
+stock). Branches may perform a one-off reconciliation to satisfy themselves
+
+that the new volumes are correct at following migration to BT.
+
+Controlled stock will still be displayed on Horizon on the ‘Adjust Stock’
+screen. Other Stock and MOP values will disappear and be replaced by a set
+of stock volumes on Balance Reports. Value figures will remain on Stock Unit
+Balances Reports, but this will not include stock. The need for manual
+reconciliation for the set of Non-value Stock products (Local Schemes, MVL,
+Rod Fishing Licences or Electric Tokens) will continue until these are
+converted to volume at pt 55 or S90 respectively.
+
+Branches will no longer use the ‘CA Calendar’; this will be replaced by a
+wallchart planner (design to be confirmed).
+
+As soon as a branch migrates into BT, the ‘42-day’ process will begin and
+branches will be monitored to ensure that they produce their BTS as planned.
+
+Ideally, product revaluations should not occur from the time of pt30 to the last
+branch Group performing their first BTS. Should a product revaluation occur,
+branches on BT will ignore the Horizon messages and branches on CA will
+perform a revaluation as they currently do now. (NB. POL FS will not be
+impacted by a revaluation exercise.)
+
+Messages will appear on key Horizon key buttons to assist branches in
+working within BT mode. These will be based on +1 Sales Prompts approach
+and will aim to divert calls away from the NBSC by providing branches with
+immediate and local reference.
+
+Auditors can continue to perform Final Accounts for branches that are
+closing. However, to avoid branches rolling incorrectly into the next TP, a
+Branch Period Rollover will be performed, rather than full a BTS.
+
+27
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+Branches will use new client forms that do not refer to ‘Cash Account’ or will
+operate workarounds until existing forms are replaced. Forms no longer
+required will be destroyed.
+
+Sales & Marketing
+
+Branches will use new client forms that do not refer to ‘Cash Account’ or will
+operate workarounds until existing forms are replaced. Forms no longer
+required will be destroyed in branches and Swindon.
+
+Weekly reconciliation for clients will remain Wednesday to Tuesday.
+
+Client contracts may need to be changed after POL FS and BT migration, for
+example, to reflect the removal of CA weeks.
+
+7.9 Non-Value Stock conversion to volume stock (Pt55)
+
+RABIIRF decision point
+
+There is no RAB or IRF decision as this is an OBC change which will be
+managed by Sales & Marketing.
+
+Non-Value Stock will be converted to volume stock after BT migration
+completes. This is currently planned for 31 October 2005. MVL, Rod Fishing
+Licences and Electric Tokens are excluded from this approach as they will
+convert to volume stock at S90. The remaining Non-Value Stock, primarily
+Local Schemes, will be converted to volume via the OBC process after all
+branches are on BT.
+
+Branches will ‘Rem In’ existing Non-Value Stock on Horizon so that the
+volumes are recorded as volume stock. Completion and despatch of LS1
+forms to PBA will cease at this point.
+
+The interim PBA process for reconciling Non-Value Stock following POL FS
+Implementation will cease.
+
+7.10 HRSAP — (Component H)
+
+Implementation
+TMS will feed HRSAP for the first time, 1 month after pt30.
+POL FS will receive an electronic interface to ESFS, 2 months after pt30.
+
+These technical changes will be documented in the Technical Implementation
+Plan, [ref 010].
+
+Note: The correct information and timing is essential to ensure remuneration
+
+to branches remains accurate following POL FS Implementation.
+
+28
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+POL00038986
+
+BT & POL FS High Level (Summary) Implementation Plan
+
+7.11 Decommissioning — (Component I)
+
+Decommissioning of legacy systems is out of scope of this document. The
+detail can be found in the relevant Decommissioning Plans [refs 004 & 005].
+
+7.12 Impact Programme Closure
+
+This will occur when all Components have been completed, the detail of
+which will be included in a specific Closure document that will be approved by
+the Programme Board.
+
+8 Management Reporting Requirements
+
+The likely requirements for management reporting during the
+migration/implementation phase are shown below. (NB. Some of these
+requirements will also be required during steady state).
+
+Software release migration (tail management) to branches.
+
+CAP conformance in branches — including future and late CAPs.
+
+Last CBDB balance figures.
+
+Calls to Systemline by POL FS users.
+
+POL FS system down times.
+
+Number of TC problems raised to PBA — to identify workload and how
+many branches are requesting evidence compared to Error Notices.
+Number of incidents and problems, including types, raised by branches.
+Number of branches not performing a BTS.
+
+Number of branches performing a BTS but doing more than required.
+
+QaARWN>
+
+DON
+
+Note: Agreements will be undertaken to source this information; where
+information is not available without significant resource or cost the
+information may not be provided.
+
+9 Issues and Risks
+
+Issues and risks relating to Branch Trading and POL FS Implementation are
+contained in the BT and POL FS Implementation Issues and Risks Logs. The
+latest version of these logs can be obtained from the Impact Document
+Library.
+
+10 Constraints
+The high-level constraints during implementation are:
+
+1. Costs: Business Change budget available to spend on implementation
+activities, such as additional staff at NBSC.
+
+2. Time: BT rollout needs to complete prior to Christmas pressure starting.
+
+3. Resource: PBA resource will need to be split between managing the run
+down of the legacy systems, such as dealing with late supporting
+documents, and operating POL FS.
+
+4. Timing of the S90 release.
+
+5. Outcome of the Retail Line Review.
+
+29
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+BT & POL FS High Level (Summary) Implementation Plan
+
+11 Dependencies
+
+The high-level dependencies that affect and are affected by the project are
+summarised below:
+
+1. Cash has been reconciled on POL FS from S60 Launch.
+
+Migration activities have been tested successfully by Testing Team.
+
+Pre-implementation activities being completed and the Desired State
+
+being reached before implementation commences.
+
+POL FS cutover can only at a Period End.
+
+No branch must roll into or past pt30 CAP week before pt25 occurs.
+
+BT can rollout only after POL FS pt30 occurs.
+
+New MI system is available, via the MI Project, to support the migration,
+
+such as the ‘42-day’ report showing branches that have not completed a
+
+Trading Statement within the past 42 days.
+
+8. BAU personnel available to support the Impact changes, such as dual
+running of systems and reports during migration.
+
+9. Conversion of Non-Value Stock to volume stock cannot occur until all
+branches are on Branch Trading.
+
+10.All branches with the same Non-Value Stock items must be converted to
+volume stock at the same time.
+
+On
+
+NOs
+
+12 Way of Working
+
+The BT & POL FS Implementation Manager will chair a Migration Meeting
+with identified attendees on a regular basis. This will be the main channel in
+which to obtain updates on progress, issues and risks. The attendees at this
+meeting will be reviewed and new persons invited during the project lifecycle
+as required.
+
+The Implementation Manager will maintain the BT & POL FS Implementation
+project plan and associated issues and risks logs.
+
+Other meetings are also expected to occur on a regular basis:
+
+Stock Update meeting, to gain visibility of migration requirements and
+progress. Chaired by the BT & POL FS Implementation Manager and
+attended by the Finance Change Manager, Stock Supply Chain Manager,
+SAPADS Project Manager and Finance Project Manger (Stock)
+
+30
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986
+BT & POL FS High Level (Summary) Implementation Plan
+
+Appendix A
+
+Migration Strategy Timeline
+
+DRAFT
+
+WORK IN
+PROGRESS
+
+DRAFT
+
+WORK IN
+PROGRESS
+
+31
+
+BT & POL FS High Level (Summary) Implementation Plan v0.1
+
+POL00038986

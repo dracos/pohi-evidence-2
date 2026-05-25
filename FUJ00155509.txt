@@ -1,0 +1,88 @@
+FUJ00155509
+
+FUJ00155509
+From: Chambers Anne
+O[/O=EXCHANGE/OU=ADMINGROUP1/CN=RECIPIENTS/CN=ANNE.CHAMBERS]
+Sent: Thur 25/02/2010 3:20:25 PM (UTC)
+To: Jenkins Gareth Gi GRO
+Subject: I RE: ARQ436-490 Witness Statement Support for West Byfleet, 126023
+Attachment: ARQ436-490 Witness Statement Support for West Byfleet 126023 22022010 1142.xIs
+
+Gareth, sending just to you initially.
+
+I know you have even more on your plate than I do, but my involvement has always been unofficial and on the
+basis that I had time to do it. If I need to do more detailed analysis on this (and I'm not sure what I would be
+able to find, without knowing what their specific problem was) it will have to be officially agreed with my
+manager - you can instigate that if you like, but I don't think I can keep volunteering.
+
+There are several entries on the 1 Sysman 2 126023 tab which require some further investigation. I've added
+some highlighting.
+
+Counter 1 on 2/3 May 2006, and 4 Feb 2008. I don't know whether the counter was replaced, or whether the
+messagestore was deleted and copied from another counter. The Powerhelp / TfS calls may illuminate this.
+
+I don't know if the counter was used while these errors were occurring - it may have been. If they have any
+complaints specific to these times, perhaps they should be checked out???
+
+There are some isolated timeout waiting for lock messages, but in general these appear to be associated with
+checksums being written. To be on the safe side, it could be checked whether anyone was logged on
+
+counter 1 or 2, 3-Apr-2007, 20:30
+
+counter 2 28-May-2008, 01:33
+
+counter 1 18-Aug-2008, 11:04
+
+and if so check the messages to find which processes were in contention.
+
+It is notable that the branch does not have the repeated lock messages which were a feature of the Callender
+
+Square problem.
+
+Error Message: Error in node retrieval for node(s) 1010 - as far as I know this hasn't been investigated but on
+the other hand no one has complained of a problem linked to it. I'll try to check it out.
+
+From: Barnes Gerald
+FUJ00155509
+FUJ00155509
+
+Sent: 24 February 2010 10:04
+
+To: Thomas Penny
+
+Cc: Chambers Anne O; Jenkins Gareth GI; Holmes Alan; Mansfield Andrew
+Subject: RE: ARQ436-490 Witness Statement Support for West Byfleet, 126023
+
+Penny,
+I attach the results of the query.
+
+Note that on the advice of Alan all BAL events are included for the date range. They are identified by a
+blank FAD. They may not be relevant for a Horizon counter.
+
+Regards,
+Gerald Barnes
+
+From: Thomas Penny
+
+Sent: 22 February 2010 10:57
+
+To: Barnes Gerald
+
+Cc: Chambers Anne O; Jenkins Gareth GI
+
+Subject: ARQ436-490 Witness Statement Support for West Byfleet, 126023
+
+Gerald
+Could you please check events for the following:-
+126023 - 30 Jun 05 to 31 Dec 09
+
+Kind regards
+Penny
+
+Penny Thomas
+Security Analyst, Customer Services
+
+ices Limited, Registered in England 6, Registered Office 22, Bal treet, London W1U 3BW.
+This E-mail is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may be privileged. Fujitsu
+Services does not guarantee that this E-mail has not been intercepted and amended or that it is virus-free.
+

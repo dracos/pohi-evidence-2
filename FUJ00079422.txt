@@ -1,0 +1,545 @@
+FUJ00079422
+
+FUJ00079422
+ICL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+
+Document Title:
+
+Document Type:
+
+Release:
+
+Abstract:
+
+Status:
+
+Author:
+
+Contributors:
+
+Reviewed By:
+
+Distribution:
+
+Comments by:
+
+Comments to:
+
+PINICL Resolution Status for Release Authorisation Board for
+CSR+
+
+Release Note
+
+CSR+
+
+This document provides a definition of the PINICL resolution
+status for input to the CSR+ RAB
+
+Approved
+
+Pat Lywood
+
+Dave Royle
+
+Dave Royle, Mike Coombs
+
+Horizon/POCL Library, ICL Pathway Library, Keith Baines &
+Reviewed by list
+
+Not required
+
+Pat Lywood & ICL Pathway Document Control
+
+© 2000 ICL Pathway Limited
+
+Page:1 of 10
+Printed On: [ DATE ]
+
+Company in Confidence
+FUJ00079422
+FUJ00079422
+
+ICL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+0 Document Control
+0.2 Document History
+
+13/10/00
+
+First draft for internal review
+
+1.0 16/10/00
+
+Final version for CSR+ RAB on 17/10/00
+
+0.2
+
+Approval Authorities
+
+Stephen Muchow
+Service
+
+Director, ICL Pathway Customer
+
+Keith Baines
+
+Head of Horizon Commercial
+
+0.2 Associated Documents
+
+PA/STR/013 1.0 2/7/99 ICL Pathway Core System Release Plus Contents
+Description
+
+PA/STR/O14 1.0 24/8/00 Supplement to Addendum B of ICL Pathway Core
+System Release Plus Contents Description
+
+CS/REN/001 1.0 13/10/00 Release Note for CSR+
+
+0.2. Abbreviations
+
+B
+AIS Application Interface Specification
+AP Authorised Payment
+
+API Application Program Interface
+APS Automated Payment Service
+
+BRD Business Requirements Definition
+ccD Contractual Control Document
+CCN Change Control Notice
+
+CSR Core System Release
+
+CQO Central Quantum Office
+
+DLL Dynamic Link Library
+
+DSS Department Social Security
+
+© 2000 ICL Pathway Limited
+
+Company in Confidence
+
+Page:2 of 10
+Printed On: [ DATE ]
+FUJ00079422
+FUJ00079422
+
+ICL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+DVLA Driver & Vehicle Licensing Agency
+ECCO Electronic Cash Registers at Counters
+ERA Errors, Reconciliation and Accounting
+ESNCS Electronic Stop Notice Control System
+ESNS Electric Stop Notices System
+HAPS Host Automated Payment System
+KMS Key Management System
+KPR Known Problem Report
+MVL Motor Vehicle Licence
+OBCS Order Book Control Service
+OpTIP Operational TIP
+PDA Project Design Authority
+PDR Product Defect Register
+POCL Post Office Counters Ltd
+PON Post Office Network
+PSTN Public Switched Telephone Network
+RCD Release Control Description
+SADD Service Architecture Design Document
+SFS Security Functional Specification
+SPM Simple Payment Method
+TIP Transaction Information Processing
+TPS Transaction Processing System
+0.2 Changes in this Version
+1.0 Updates as a result of updated KPR
+
+0.2 Changes Expected
+
+None
+
+© 2000 ICL Pathway Limited
+
+Company in Confidence
+
+Page:3 of 10
+Printed On: [ DATE ]
+FUJ00079422
+FUJ00079422
+
+ICL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+
+0.2 Table of Contents
+
+1 Scope...
+2 CSR+ PINICL Status
+
+© 2000 ICL Pathway Limited Company in Confidence Page:4 of 10
+Printed On: [ DATE ]
+FUJ00079422
+
+FUJ00079422
+IcL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+1. Scope
+
+The ICL Pathway Core System Release Plus Contents Description (PA/STR/013)
+V1.0 defined the content of the CSR+ release as it was comprehended at the time of
+approval of that document.
+
+Addendum B to PA/STR/013 V1.0 listed all Change Control Notes (CCNs)
+comprehended as at 18" June 1999, identified the status of each and specified in
+which Release the changed or new functionality described by certain of those CCNs
+was intended to be included.
+
+Document PA/STR/014 (Supplement to Addendum B of ICL Pathway Core System
+Release Plus Contents Description) provided further definition of the content of CSR+
+by acting as a supplementary document to that Addendum B.
+
+This document provides further definition of the content of CSR+ by listing PINICLs
+with their resolution status as at the date of the Release Authorisation Board on 17
+October 2000 for the CSR+ Release. ICL Pathway shall use reasonable endeavours to
+resolve each of the outstanding PINICLs listed below with “ICL Pathway Business
+Impact” of “B” or “C”.
+
+ICL Pathway shall use reasonable endeavours to resolve, as agreed by the parties but
+in any event before issue of the maintenance release known as “M1” which is
+scheduled for release by the Contractor in the period January to March (inclusive)
+2001, PINICLs in the said category B. Further, ICL Pathway shall use reasonable
+endeavours to resolve PINICLs in the said category C within M1.
+
+If any of the category “B” or “C” PINICLs listed below shall not have been remedied
+by the use of such reasonable endeavours within the timescales set out above, ICL
+Pathway shall continue to use reasonable endeavours to resolve such PINICLs as soon
+as practicable thereafter.
+
+If the resolution by ICL Pathway of any PINICL described in this document requires
+the co-operation of POCL then, at ICL Pathway’s request, POCL shall use its
+reasonable endeavours to provide such co-operation.
+
+© 2000 ICL Pathway Limited Company in Confidence Page:5 of 10
+Printed On: [ DATE ]
+FUJ00079422
+
+FUJ00079422
+ICL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+2  CSR+ PINICL Status
+PINICL I Summary ICL PON Status I Comments
+Pathway I Business I on 10
+Business I Impact Oct
+Impact
+26095 EPOSS : 'receipt' key in saving I C Low MI Under PC52252
+stamp red picklist
+32224 CSR+/EPOSS : Cancelling A4_ I C Low MI
+reports
+33631 CSR+/EPOSS : CW Rem In Cc Low MI
+and Out txn order
+34504 CSR+/EPOSS:securityevent.E I C Low No fault found. Issue
+VENTnamequery problems still under
+investigation
+36292 MIS closed PO report Cc Low No fault found. Issue
+still under
+investigation
+36895 CSR+/EPOSS : OW Cash Cc Low No fault found. Issue
+Flow report layout still under
+investigation
+37445 SU declarations discrepancy & I B Low Closed I No fault found
+memory Loss
+37446 The PM was doing his cheque IB Low Closed I Fix applied.
+listing
+37458 APS Receipt not printing A Medium I Closed _I Fix applied
+38860 Incorrect AP receipt prompt Cc Low MI
+39586 EPOSS Reconciliation process I C Low Closed I Fix applied
+did not complete.
+39670 Quantum: Control file layout is I C Low MI
+incorrect.
+39986 APS SPM ST FP- Receipts Cc Low No fault found. Issue
+format incorrect. still under
+investigation
+40750 CAPS being added together - Cc Low No fault found. Issue
+no rollover still under
+investigation
+41673 CSR+/EPOSS : OW Sales A Low Closed I Fix applied
+report negative volume
+42926 Response message layout Cc Low MI
+43111 Performance Office Balance Cc Closed I Fix applied
+Snapshot
+43178 EPOSS Mise Txns Report A Medium I Closed I Fix applied
+incorrectly shows ROAD
+43253 Bulk Input will not allow Re- I A Low Closed I Fix applied
+© 2000 ICL Pathway Limited Company in Confidence Page:6 of 10
+
+Printed On: [ DATE ]
+FUJ00079422
+
+FUJ00079422
+ICL PINICL Resolution Status for Release Authorisation Board — Ref; CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+enter
+43471 On engineer mode the barcode I B Low No fault found. Issue
+scanner displays message it not still under
+correct for the current context investigation
+45429 *SUSP’ barred in ADC out A Medium I Closed I Fix applied
+44463 Counter Rollout SyncOnce A Low Closed I Fix applied
+program fails to execute.
+45573 Office Balancing Barred A Low Closed I Fix applied
+45722 Preview planned order screen Cc Low MI
+45906 Grn Giro counter wkly rpt Cc Low MIL
+sequence incorrect
+46527 Discrepancy with control file Cc Low No fault found. Issue
+against AIS still under
+investigation
+46828 GB Delivery agreement ce Low Closed I Fix applied
+produces error.
+47132 Cannot transfer existing A Medium I Closed I Fix applied
+transaction
+47387 Performance of the ONCH Cc Low Closed I Fix applied
+declaration
+47538 Printer responses when Cc Low MI
+producing advice notes.
+48635 No mandatory suspense A Medium I Closed I Fix applied
+account report in training mode
+48796 EPOSS : Giro slip second page I A Medium I Closed I Fix applied
+problems
+48882 EPOSS : Balancing allowed A Low Closed I Fix applied
+with reval error
+48909 Wigan Corr Servers critical A Low Waiting test — this
+event —indexing should never happen
+in live. This will be
+done in the next 3
+weeks.
+49084 Off Dly UKPA missing Fees A Medium I Closed_I Fix applied
+49099 PPD incorrect for bulk input of I C Low Closed I No Fault Found
+non value stock
+49161 LFSC303 generated ‘internal A-C Low MI Pathway only issue.
+error’ exceptn POCL agreed C
+49202 Return point from Stk A Low Closed I Fix applied
+Neg/Reval check
+49204 Inconsistent CAP numbers on I C Low MI
+cash flow reports
+49225 KMS Key Manager Reports Cc Low MI
+faults
+49227 KMS ClientStatus.rpt could not I C Low MI
+be produced.
+© 2000 ICL Pathway Limited Company in Confidence Page:7 of 10
+
+Printed On: [ DATE ]
+FUJ00079422
+
+FUJ00079422
+ICL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+
+49253 DisabledDuringSwap doesn’t I A-C Low MI A priority fixed in
+work on top level menus live POCL agreed C
+
+49279 Emergency cust message files I C Low MI
+fail validation
+
+49303 Audit: DELETER reports LFS I C Low Closed I No Fault Found
+file error
+
+49352 Able to reverse same A Medium I Closed I Fix applied
+transaction twice
+
+49356 ROAD Cash products have A Medium I Closed I Fix applied
+‘PLUItem’ icon
+
+49373 EPOSS Esc Preview causes A Medium I Closed I Fix applied
+locked buttons.
+
+49391 Revaluation error A Low Closed I Fix applied
+
+49396 PPD unclear on UKPA Cc Low Closed I Call withdrawn
+transaction
+
+49397 Receipt printing for ROAD A-C Medium I M1 POCL agreed C
+with printer not working
+
+49409 Incorrect options for POCL A-C Medium I MI POCL agreed C
+auditor
+
+49416 SPM: Credit volume of Cc Low MI
+1800000 I rejected
+
+49428 KMS KEY_CHANGER Cc Low MI
+warning event
+
+49503 PPD and system differ for AP I C Low MI
+fallback recovery
+
+49540 BTCIMBOCORROI Critical I A Low Closed I No Fault Found
+events
+
+49590 KMS Failed Event Cc Low MI
+
+49626 KMS DataFeed Duplicate RE- I C Low MI
+OPENS
+
+49631 Manual OBCS duplicated Cc Low Closed I No Fault Found
+
+49632 Forced Logoff events on tIP i Low MI
+
+49688 Mobile - Delay after selection I C Low Closed I No Fault Found
+of Counter ‘OFF’
+
+49698 Reconciliation “DailyTxnCT” I C Low Closed I No Fault Found
+RIAD totals
+
+49702 TPSC252 Report shows A Low Closed I Fix applied
+Payments discrepancy
+
+49744 SPM desktop problem when Cc Low MI
+card removed
+
+49818 Misleading text on Tivoli KMS I C Low MI
+Workstation
+
+49843 Logout no entried Cc Low MI
+
+49844 Picklist option disappears after I C Low MI
+temp lock
+
+49953 Watercard output file did not Cc Low MI
+contain
+
+© 2000 ICL Pathway Limited Company in Confidence Page:8 of 10
+
+Printed On: [ DATE ]
+FUJ00079422
+FUJ00079422
+
+ICL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+
+User identifier.
+
+49962 Will KMS events be noticed Cc Low Closed I No Fault Found
+easily.
+
+49973 Sort order incorrect on Office I C Low MI
+daily reports
+
+50002 EPOSS SU reprint missing mig I A Medium I Closed I Fix applied
+figures
+
+50015 Attempted restore of Cc Low MI
+TMS_TX_LOCAL_STOPS
+failed.
+
+50054 Message when user attempts Cc Low MI
+second login when already
+rolling over.
+
+50055 Return point after not all SU’s_ I C Low MI
+rolled over message.
+
+50076 The CCF Status Flagon SPM IA-B Medium Declared to POCL as
+output file incorrect after fixed after migration
+disaster recovery. but before M1 54115
+
+50080 Volume Credit on SPM output I C Low MI
+file incorrect after disaster
+recovery.
+
+50085 Memo view printing £ instead I C Low Closed I No Fault Found
+of # on tallyrol prints
+
+50135 Ability to enter correct date Cc Low No fault found. Issue
+and time incorrect in SPM still under
+output file after disaster investigation
+
+recovery used.
+
+50138 Content of the second field in I C Low MI
+SPM output file after disaster
+recovery used.
+
+50143 Button locking after error Cc Low MI
+message displayed for
+attempted simultaneous
+declaration
+
+50145 Declare NVS — same id used at I B Low No fault found. Issue
+2 counters still under
+investigation
+
+50156 Short names i.e. “BC and MC” I C Low No fault found. Issue
+used on APS screen instead of still under
+Mag Card and Bar Code on investigation
+
+Cl4 counters
+
+50158 Mode Indicator missing on Cl4 I A Medium I Closed I Fix applied
+counters
+
+50162 Desktop icon navigation Cc Low MI
+different on CI4 counter to CI3
+counter
+
+50174 Cash account is showing A Medium I Closed _I Fix applied
+
+© 2000 ICL Pathway Limited Company in Confidence Page:9 of 10
+Printed On: [ DATE ]
+FUJ00079422
+
+FUJ00079422
+ICL PINICL Resolution Status for Release Authorisation Board Ref: CS/REN/002
+Pathway for CSR+ Version: 1.0
+Date: 16/10/00
+negative stock even though
+50213 Quantum CSM corrupted Cc Low MI
+during .dem file processing.
+50241 OBCS Training Foils allowed I A Medium I Closed I Fix applied
+in Live Mode
+50244 Card snapshot incorrect after Cc Low MIL
+disaster recovery option used.
+50257 SU Rollover allowed with non- I A Medium I Closed I No Fault Found
+zero POCL Cheques
+50279 Error responses after quantum I C Low MI
+50280 file loading.
+50282
+50285
+50289
+50290
+50422 Incorrect Ref2 on DR receipt I A Medium I Closed I Fix applied
+50651 Prev button active when A Medium I Closed I Fix applied
+entering declaration ids
+50800 Office Balancing icon bar A Medium I Closed I Fix applied
+50884 Inconsistent signing in Cc Low MI
+reversals
+51224 UCT Incorrect sequencing on I B Low Closed I Fix applied
+green giro report
+51280 Unable to exit recovery once A Medium I Closed I Fix applied
+susp icon used.
+51760 Cash stamp decs lost in 2°* A Medium I Closed I Fix applied
+office CAP
+Reference Data
+PINICL I Summary Priority I Target Status I Comments
+Fix on 10
+Oct
+42864 Daily Cash on Hand Report Cc LIVE Fixed
+inconsistent
+48663 Pocl RefData:Cellnet Prepay Cc LIVE Fixed
+Voucher products/MiMan
+49443 Text Overlaps button borders I C LIVE Fixed
+on message submission.
+49458 Datapost buttons have the Cc Cc Waiting testing
+incorrect names
+51042 Pocl OBC: Travel Schemes - B LIVE Fixed
+Dec NVS - Ordering
+51822 Watercard recovery cannot Cc Cc Closed I Manual procedure.
+recover lowercase REF2
+© 2000 ICL Pathway Limited Company in Confidence Page:10 of 10
+
+Printed On: [ DATE ]

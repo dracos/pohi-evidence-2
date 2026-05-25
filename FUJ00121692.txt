@@ -1,0 +1,208 @@
+FUJITSU SERVICES POST OFFICE ACCOUNT
+
+A DESCRIPTION OF WHAT CONSTITUTES FUJITSU SERVICES POST
+OFFICE ACCOUNT 15" TO 47 LINE SUPPORT FOR POST OFFICE USERS
+OF THE HORIZON SYSTEM
+
+Glossary of Terms
+
+Term/Acronym Explan:
+
+BRAOt Fujitsu building Bracknell 01
+
+Cleveley i GRO ~ ~~ the Post Office in question
+
+FELO1 Pojiist building Fetthaiy 077 -
+
+Front Line Name associated with the HSH staff actively interfacing with Post Masters on calls.
+
+HIT Horizon Incident Team (additional 1* Line). This function established in July 2000 to handle
+specific types of calls. Now amalgamated with SMC.
+
+HSH Horizon System Helpdesk (1* Line) (Fujitsu help desk for Post Masters with technical/system
+queries to call)
+
+ICL Pathway The name by which the current Fujitsu Services Post Office Account was known in 2000.
+
+KELs Known Error Logs
+
+MANOS Fujitsu building Manchester 05
+
+NBSC National Business Support Centre (A Post Office run help desk for Post Masters with
+business queries to call)
+
+OLA Operational Level Agreement
+
+PiniCL Call management system utilised by SSC and Pathway development for capturing and
+progressing incidents escalated from SMC (2 Line). (Replaced by system called PEAK in
+2004)
+
+PM Post Master
+
+PowerHelp Call management system utilised by HSH for capturing and progressing call information from
+
+s
+
+FP Quality Filter Process
+
+RMF Release Management Forum
+
+smc ‘System Management Centre (2 Line)
+
+ssc System Support Centre (3 Line)
+
+STEO9 Fujitsu building Stevenage 09
+
+FUJ00121692
+FUJ00121692
+Introduction
+
+Fujitsu Services Post Office Account (known as ICL Pathway in 2000) provides
+technical support to Post Office users of the Horizon system through a four-tier
+model, with the handling of incidents escalating through the tiers depending on the
+nature of the final resolution action.
+
+Horizon Support Domains’
+Tei lire Suppor Tra Lire Suppor Seine Suppor
+380
+
+ree enc
+
+{STEO9 (st=09 (gRA0%)
+
+Each of the domains, referred to as 1°, 27¢, 3“ and 4" Line Support, has it’s own
+objectives and responsibilities, both to themselves and each other, and these are
+defined in an internal Fujitsu document reference CS/FSP/006 : End to End Support
+Process, Operational Level Agreement. The content of this document has been in
+operation since 1999 and would have applied to all calls raised by the Cleveley office.
+
+Note that while the following paragraphs are written in the present tense they describe
+what would have happened in 2000. There have been changes to the processes and
+tools since 2000 but the basic four-tier model has not.
+
+Horizon System Helpdesk HSH/HIT Team (1° Line)
+
+Calls are received by the Horizon System Helpdesk (HSH) direct from Post Masters
+(PM). They can also arrive via the National Business Support Centre (NBSC), a Post
+Office organisation established for Post Masters to contact if they have business
+related problems. The NBSC sometimes receive calls that are more relevant to the
+HSH and these calls are transferred by telephone.
+
+All calls are registered on PowerHelp by the HSH and all calls remain open until such
+time as a resolution has been reached to the problem and the originating Post Master
+agrees to the call being closed.
+
+An initial diagnosis is conducted by the HSH Front Line while the PM is on the line,
+using the Horizon reference system co-located with the HSH terminals, and
+information available on the automated support tool HSHONE, Advice and Guidance
+information and the Weekly Counter News. If the problem requires further
+investigation, or an engineer, the call is escalated to the Horizon Incident Team (HIT),
+a subset of the HSH, and the current call to the PM terminated. [Note : The HIT was
+established in July 2000 to deal with specific types of calls]
+
+FUJ00121692
+FUJ00121692
+Known Error Logs (KELs), developed by the SSC (3 Line), are used by the HSH
+and HIT Team, and further attempts are made to resolve the problem with the PM. If
+resolution is still not possible the call will be escalated to 3" Line support, be that
+hardware engineers, network specialists or the SSC in BRAO1
+
+Calls that are to be escalated to SSC are transferred from the HSH and registered on
+the PinICL system.
+
+System Management Centre (2™ Line)
+
+The SMC deal with the more technically oriented elements of Horizon support
+including :
+
+Network monitoring.
+Event monitoring and, where possible, identifying problems using SSC KELs.
+Investigating non-polling Post Office’s and reporting back to CS
+
+VV V WV
+
+Providing software and POL Type A Reference Data distribution services to
+the live Horizon estate.
+
+Primary inputs to the SMC include calls that have been escalated from the HIT Team
+and a number that may also be escalated from the HSH Front Line.
+
+System Support Centre (3 Line)
+
+SSC receives the majority of its incidents as PinICL calls raised via Powerhelp. These
+may be calls raised by the HIT Team for counter related problems, or the SMC for
+central systems or Tivoli monitored errors.
+
+Problems are analysed through a process of elimination and by mimicking PM actions
+in an attempt to re-create the problem.
+
+Primary outputs are agreed closures of PinICLs, data fixes to enable Post Masters to
+continue working and workarounds, usually pending final resolution through a
+subsequent software release by 4" line.
+
+The SSC are also involved in the closure of PinICLs that are referred to 4" line for
+resolution, where they act as moderators with the customer before agreeing final
+closure. PinICL closures provide the filtration measure of errors transferred to 4" line.
+
+Workarounds are often required due to the backlog of software releases and unless a
+fix is absolutely required the PinICL is linked to a KEL entry and, with the agreement
+of the customer, a workaround agreed pending final resolution.
+
+The Release Management Forum (RMF) controls the release of software and data
+through the normal release cycle although the SSC can, in an emergency, Implement a
+change and seek retrospective approval from the RMF.
+
+Closed PinICLs refer back to the originating PowerHelp call, which is automatically
+closed.
+
+ICL Pathway Development (4 Line)
+
+Faults are passed to 4" line when all other attempts to resolve the problem have been
+exhausted and it is believed that changes to the underlying code will be required to
+bring the problem to closure. PinICLs are routed to the Quality Filter Process (QFP)
+for initial scrutiny and routing to the most appropriate development team.
+
+FUJ00121692
+FUJ00121692
+PinICLs are discussed at the Release Management Forum and a target release for the
+fix arrived at. Releases can be either Major or Interim and ‘live fix’ problems are
+usually targeted at the next available Interim Release if urgent, or Major Release if
+not. Counter based problems are usually targeted at Major Releases due to the
+complexity of distributing fixes to the entire estate. Once the Release has been
+identified the PinICL is returned to the QFP for transfer to the appropriate
+development team.
+
+Resourcing the Support Function
+
+National Rollout of the Horizon system did not complete until early to mid 2001 and
+would have been in full flow during 2000. As the number of Post Offices was
+automated so the support capability provided by ICL Pathway was enhanced to reflect
+the increased population of Horizon users.
+
+It should also be noted that calls relating to National Rollout were handled by a
+dedicated Rollout Helpdesk and not by the HSH. Rollout calls made to the HSH in
+error were transferred to the correct helpdesk. Cleveley made 16 such calls.
+
+Item Feb 2000 Nov 2000
+Number of Post Offices running Horizon System 3136 14841
+Number of ICL staff in Horizon System Helpdesk Front Line (1* Line) 65 186
+Number of ICL staff in Horizon Incident Team (Additional 1*Line) [Note 1] I 0 "1
+Number of ICL staff in System Management Centre (2 Line) 50 73
+Number of ICL staff in System Support Centre (3 Line) [Note 2] 34 34
+Number of ICL staff in ICL Pathway Development (4" Line) [Note 3] 257 287
+
+[Note 1] : The Horizon Incident Team was introduced in July 2000 to deal with
+specific types of problems.
+
+[Note 2] : Despite the increase in Post Offices the number of employees in the SSC
+remained static as working practices improved, better problem diagnosis tooling was
+available and the general level of staff competence increased.
+
+[Note 3] : The earliest reliable numbers that I have been able to obtain are dated April
+2001. However, the 2000 would not show a material difference, up or down, since
+ongoing development and support obligations of the Horizon system, and ICL
+Pathway obligations, required a Development Unit of about this size. The Unit
+continued at this size during 2001 and beyond.
+
+FUJ00121692
+FUJ00121692

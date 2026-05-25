@@ -1,0 +1,930 @@
+POL00093350
+POL00093350
+i
+Version : July0l 17/07/2001 I
+
+Business Service Management
+
+ORDER BOOK CONTROL SERVICE
+
+MONTHLY SERVICE REVIEW BOOK: June 2001
+
+Author Ben Gildersleve Reference
+
+Version I JulyO1 Classification
+
+Date 17/07/2001 Status Issued.
+Authority Liz Tuddenham
+
+© The Post Office 2000
+
+The contents of this document must not be reproduced (wholly or in part) used or disclosed without the written
+permission of The Post Office. This copyright applies to all forms of storage and reproduction in which this
+information may be embodied including without limitation magnetic storage, computer printout, and visual
+display.
+
+POL-0094742
+POL00093350
+POL00093350
+
+POL-0094742
+Version : July01
+
+0. DOCUMENT CONTROL
+
+0.1_VERSION HISTORY
+
+POL00093350
+POL00093350
+
+17/07/2001
+
+Version Dated Change Details
+
+March01 28/03/2001 To inform Service Management Meeting.
+
+April01 26/04/2001 To inform Service Management Meeting and Format changes
+
+May01 17/05/2001 To inform Service Management Meeting
+
+June01 12/06/2001 To inform Service Management Meeting
+
+July01 17/07/2001 To inform Service Management Meeting
+
+0.2 DISTRIBUTION LIST
+
+Name Title ‘Company
+
+Don Grey Head of Business Service Management Post Office Network
+
+Liz Tuddenham Head of Operational Performance Post Office Network
+
+Kevin Lenihan Head of Problem Management Post Office Network
+
+Mary Love Problem Analyst Post Office Network
+
+Mike Airey PRCS Centre Manager Department for Work & Pensions
+Brian Waldie OBCS Live Support Department for Work & Pensions
+Shui Lin Wong OBCS Live Support Department for Work & Pensions
+Tim Bentley Client Manager Network Bank
+
+Tina Davis Design & Specification Manager Network Bank
+
+Jacky MacKenzie Senior Design & Specification Manager Network Bank
+
+Phil Jeary Operations Manager Post Office Network
+
+0.3. DOCUMENT AND CHANGE CONTROL
+The BSM Change Control Team is responsible for maintaining and changing all the documentation created in Business Service Management. For
+
+further information on the existing documentation or procedures please contact the BSM Change Control Manager.
+
+0.4 GLOSSARY
+
+BSM Business Service Management - a dedicated function within the Post Office Network Unit that
+supports the automated (Horizon enabled) platform.
+
+DWP Department for Work and Pensions
+
+ICL Pathway ICL Pathway - supplier of the Horizon platform to Post Office Network
+
+OBCS Order Book Control service
+
+Post Office Network Business Service Management
+
+Page 2 of 22
+
+POL-0094742
+POL00093350
+POL00093350
+
+POL-0094742
+POL00093350
+POL00093350
+
+Version : July01 17/07/2001
+0.6 CONTENTS
+0. DOCUMENT CONTRO!
+0.1 VERSION HISTORY
+0.2 DISTRIBUTION LIST.
+0.3 DOCUMENT AND CHANGE CONTROL..
+0.4 GLOSSARY
+OBCS Roll out & Availabilit
+. TRANSACTIONS
+2.1 PAYMENT VOLUMES.
+2.2 BOOK RECEIPTS...
+2.3 BOOKS REDIRECTED
+2.4 BOOKS ISSUED.....
+2.5 NON BAR-CODED BOOKS ENCASHED.
+2.6 IMPOUNDS/ RECALLS ..
+3. SERVICE DELIVERY ..
+3.1 OBCS Stop LIST......
+3.2 OBCS FILE DELIVERY.
+4. FALLBACK...
+4.1 NON POLLED OUTLETS.
+4.2 HARDWARE FAILURES.
+4.2.1 Barcode Failure:
+4.2.2 Barcode Reader failures.
+4.2.3 PC Failures...
+4.2.4 Central Stop List Verification Calls
+5. EXCEPTION REPORTS......
+6. OUTSTANDING PROBLEMS.
+6.1 NON-POLLING OF OUTLETS.
+6.2 DWP DUPLICATE TRANSACTIONS ..
+6.3 MISSING IMPOUNDS..
+6.4 NON CONFORMANCE IN OUTLETS
+6.5 QUALITY OF BARCODES ON ORDER BOOKS .
+7. MANAGEMENT SUMMARY...
+7.1 COMMENTS ON PREVIOUS SECTIONS OF THE REPOR’
+8. APPENDIX A
+
+pe
+
+2
+2
+2
+2
+2
+4
+5
+5
+6
+7
+8
+9
+0
+‘1
+1
+2
+13
+3
+4
+4
+4
+4
+4
+5
+6
+6
+6
+6
+7
+7
+8
+8
+22
+
+Post Office Network Business Service Management Page 3 of 22
+
+POL-0094742
+POL00093350
+POL00093350
+
+POL-0094742
+POL00093350
+
+POL00093350
+Version : July01 17/07/2001
+1. OBCS Roll out & Availability
+(<=iLive OBCS Outlets (During Catch Up Period)
+(“Live OBCS Outlets
+(——1Forecast Live Outlets (17927 - 620 NI - 75 forecast closures= 17232)
+—OBCS Live Outlets as % of Total Network
+Proposed OBCS Live Outlets as % of Total Network
+48,000 aa 5RD=99E1-99: -9— 100.0
+, sepa on Tr 8 I
+46,000 As ile \ \I I I 90.0
+‘ Prk
+wa - 80.0
+14,000 oer tT} off 6 Ul OU
+g rz 700 p
+S 12,000 H H H H H H H H SB
+(-} s
+o 60.0 %
+a <
+@ 10,000 + 1 H H HI H H H H Py
+2 50.0 9
+2 ao
+3 I °
+= 8,000 H H H H H Y YH rf
+° 40.0 g
+2 6,0 3
+,000 H H H H H H H H
+2 300 &
+4,000 I I I I {I {I I {I 20.0
+2,000 1 i H H rI H rI I 10.0
+0 s 0.0
+o rc) ° ° ° eo e ° c c 6 bad c c c ce © c c
+e
+< s 5 5 Z Oo °o 2 a s ing = < = 5 ° q oO ° 2
+2000 / 2001
+Post Office Network Business Service Management Page 4 of 22
+
+POL-0094742
+POL00093350
+POL00093350
+
+POL-0094742
+POL00093350
+POL00093350
+
+Version : July01 17/07/2001
+2. TRANSACTIONS
+
+2.1 PAYMENT VOLUMES
+
+(<7 Encashment (local) (— Encashment (foreign) Cor’Total «=—"Average per OBCS Outlet
+
+50,000,000 10,000
+45,000,000 WH I I +++} 9,000
+40,000,000 — HRW KRHA WAH Wi F— 8.000 Pr
+r7 of] 3
+3
+2 35,000,000 Hee HW HW HW HWA 7000S
+g a
+o rm 2
+3 my §
+2 30,000,000 HY HHH HHH HW HWA 4 8000S oS
+s = 8
+5; 25,000,000 HI ES FSH HW HW HH t+t++ji tit) + 5000 ©
+8 =
+E ;
+2 3
+2 20,000,000 Lee EY ES eH YH OW OH WWW HRA OR aA ia iff 4000 <
+8 3
+o 2
+r o
+15,000,000 a 14 Poy H+ 3,000 >
+1 3
+4
+10,000,000 z Pe ee EO HW HOW HW WW iH Oia 'iBssi#F9-:2.1000
+5,000,000 Lee ed ES eS RYOHO HOW RR WOR HOW ia iW #9 1.000
+L_ I I I I II
+o ia qo L 0
+e 2 2 2 2 2 = x =
+§ 8 § 8 8 3 § 5 5 § co 8 =
+§ 3 2 a B 3 Fy § 3 5 & zs 5
+5 5° Et 8 ° 2 a § irq = ¢ g 3
+2000 / 2001
+Post Office Network Business Service Management Page 5 of 22
+
+POL-0094742
+POL00093350
+
+POL00093350
+
+Version : July01 17/07/2001
+2.2 BOOK RECEIPTS
+tC Local C— Foreign Co Total «=-=-Average per OBCS Outlet
+4,500,000 1,400
+4,000,000 Ly I
+1,200
+an
+3,500,000 as LJ Lt
+1,000
+3,000,000 ty }4 4 II mt wu ¢
+7 4 3
+E in r] 100 2
+% 2,500,000 bide ey ey eS EU = by ty ty g
+: r 5
+x .
+2 I_I 3
+2,000,000 Pete eg eH 4 HK l+H 60 2
+=
+a Ss
+g
+1,500,000 4 LH He HW H II brid Ed uu Z
+400
+1,000,000 I L4H HEH KG HW HH I_I bie} ey Lu
+a re r A ; NS rT 200
+500,000 I_I MIU EPO aes I IS Hera 1H LU
+14 I_I I LI L_I {I I
+0 t)
+g S = = = s = 5
+3 Ey 3 3 § cd 8 3 3 3 5 3 3
+5 3 ? c 8 3 8 5 3 5 5 & 5
+3 ° < a ° 2 a s irq = < = 3
+2000 / 2001
+Post Office Network Business Service Management Page 6 of 22
+
+POL-0094742
+POL00093350
+
+POL00093350
+Version : July01 17/07/2001
+2.3 BOOKS REDIRECTED .
+co Redirects «= Average per OBCS Outlet
+80,000 16
+70,000 43
+5
+fe)
+8
+60,000 120
+°
+.
+3 I Es
+i 50,000 +108
+: é
+3 40,000 rT+8 a
+a 3
+2 é
+rs
+8 30,000 Lise 3
+§ g
+2 —
+LL Z
+20,000 +—} ee Ll, 2
+ae SS ee — Ne >
+aa = Sa LJ a g
+<
+10,000 -— t+ 2
+0 0
+° ° ° ° ° ° ° c c c c c c
+z g
+5 ° 4 ao ° 2 a 5 o = < = 5
+2000 / 2001
+Post Office Network Business Service Management Page 7 of 22
+
+POL-0094742
+POL00093350
+
+POL00093350
+
+Version : July01
+
+17/07/2001
+2.4 BOOKS ISSUED
+CoTotal =-—=+Average per OBCS Outlet
+4,500,000 1,400
+4,000,000
+1,200
+3,500,000
+1,000
+3,000,000 — 3
+8
+z
+$ 2,500,000 I7 800 9
+a
+2 ] °
+3 q
+°
+8 2,000,000 4 600
+— S
+_ £
+S
+1,500,000 — = a
+400
+1,000,000 =
+Lt I
+I r cS
+500,000 Ltd te I er ww Lo I +200
+B I de Sa 7 PSs — r
+_ Na
+0 0
+2 2 ° ° 2 ° 2 © = rc = =
+ba g
+5 ° < 7) ° 2 a $s ir = < = 3
+2000 / 2001
+
+Post Office Network Business Service Management
+
+Page 8 of 22
+
+POL-0094742
+POL00093350
+
+POL00093350
+
+Version : July01
+
+2.5 NON BAR-CODED BOOKS ENCASHED
+
+5,000
+4,500
+
+4,000
+
+1,500
+
+Total Non Bar Coded Books Encashed
+XR
+f-4
+Ss
+
+1,000
+
+500
+
+Local
+
+(Foreign
+
+Average per OBCS Outlet
+
+Total Non-Bar Coded Books Encashed
+
+17/07/2001
+
+[
+
+10
+
+[
+
+Jun-00
+
+Jul-00
+
+Aug-00
+
+Sep-00
+
+Post Office Network Business Service Management
+
+Oct-00
+
+Nov-00
+
+Dec-00
+
+2000 / 2001
+
+Jan-01
+
+Feb-01
+
+Mar-01
+
+Apr-01
+
+May-01
+
+Jun-01
+
+Page 9 of 22
+
+a
+Average Encashments Per OBCS Outlet
+
+POL-0094742
+quauaSeueyy aotaras ssaursng YIOMIBN aJO 3s0g
+
+100z / 0002
+
+7ZJ0 OL a8eg
+
+POL00093350
+POL00093350
+
+Impounds & Recalls
+° Ss 8 8 & ty
+
+09
+OL
+
+ToAM{ : uorsiaA,
+
+Jun-00 =
+
+Jul-00 ———
+
+STIVOdu/SANNOANI 9°%
+
+spunodwj ——)
+
+Aug-00
+
+Sep-00
+
+yeoeyC—
+
+Oct-00
+
+Nov-00
+
+[eyo].
+
+Dec-00
+
+ry “SB
+Jan-01 Ry,
+/2I
+
+Feb-01
+
+iy
+
+Mar-01
+
+Apr-01 A
+
+May-01
+
+Jun-01
+
+1002/20/Z.
+
+06
+
+$6
+ol
+
+10 I
+OL
+StL
+ozL
+
+POL-0094742
+POL00093350
+POL00093350
+
+Version : July01 17/07/2001
+3. SERVICE DELIVERY
+
+3.1 OBCS STOP LIST
+
+Day B Actual Day C Actual @ Day D Actual
+100.50%
+Day D Target 100%
+99.50%
+Day C Target 99%
+2 98.50% —I ft I rc
+o
+2
+oO
+[=]
+2 97.50%
+a Day B Target 97%
+& : 1.
+no
+&
+96.50%
+95.50%
+94.50% +
+e 2 2 2 ° . = P= = 5 =
+§$ § § @ € € € § § &§ F & F
+EJ o [3
+2 3 2 8 8 $ & § &€ F &€ EF 8
+2000 / 2001
+Post Office Network Business Service Management Page 11 of 22
+
+POL-0094742
+POL00093350
+
+POL00093350
+
+17/07/2001
+Day D Target 100%
+
+Day C Target 99%
+Day B Target 97%
+
+mw Day D Actual
+
+Day C Actual
+
+® Day B Actual
+
+3.2 OBCS FILE DELIVERY
+100.50%
+
+Version : July01
+
+borune
+to-Aew
+Loudy
+boven
+B boded
+bouer
+f 00-220
+00-AON
+00390
+}
+oo-dag
+oc-Sny
+oor
+oo-unr
+xx x BS x x x
+8 8 8 F B 8
+o ry Ss 3 Py <
+& 8 5 8 3 3S
+Asaai1aq alt4 %
+
+POL-0094742
+
+Page 12 of 22
+
+2000 / 2001
+
+Post Office Network Business Service Management
+POL00093350
+POL00093350
+
+Version : July01
+4, FALLBACK
+
+4.1 NON POLLED OUTLETS
+
+17/07/2001
+
+C— Lost polling days «==-days polled as % of total
+
+10000
+
+100.00%
+0
+900 99.50%
+8000
+. 98.65% I 99.00% a
+7000 sem So e
+98.87% 99.00%  <‘P=7~ 98.94% $
+9 98.50% &
+s 6000 We Y FI
+98.26% 5
+2 \ EU fe or 5
+= 5000 7 : 1+ 98.00% @
+a tJ
+a June]& July/fiqures include NI out} g
+3 4000 a ye e = s
+- Yj 97.50% @
+47.354 3
+3000 I_I a
+97.00% &
+. ia}
+2000 I
+6.50
+1000 +— I + 96.50%
+0 + 96.00%
+e 2 2 ° 2 e 2 5 = = s = x
+5 ° < oO 2 a 3 o = < = 3
+2000 / 2001
+Post Office Network Business Service Management Page 13 of 22
+
+POL-0094742
+POL00093350
+
+POL00093350
+Version : July01 17/07/2001
+4.2 HARDWARE FAILURES
+4.2.1 Barcode Fail
+
+aoe NES 4.2.3 PC Failures
+: : -
+Fae ME Fas ae
+Faw Seo ha SC
+Pose DAA eae Kew
+fab Pb tf i ppd pd Ppt? bP: EP dpa id
+4.2.2 Barcode Reader failures 4.2.4 Central Stop List Verification Calls
+anes
+§ ones
+:
+_ goo
+ome L— te a8 an cote [a
+ee Pipe PPP bp peg
+Post Office Network Business Service Management Page 14 of 22
+
+POL-0094742
+POL00093350
+POL00093350
+
+Version : July01 17/07/2001
+
+5. EXCEPTION REPORTS
+
+This section will be used to present the information as required in Schedule 16. It is anticipated that this will be in tabular form detailing
+outlets whose transactions are less than 20% of the previous week with reasons where known. Shown below is a draft for how this
+information could be presented when the information is available.
+
+Outlet I Variation In Encashment I Week variation I OBCS Re OBCS : System/Part System I Any other’
+
+eS transactions compared _ I occurred(w/c) I Transactions in Transactions in downtime” “°: I information /
+to previous week (%). I Week Previous Week I information . “.) ~"-I explanation
+
+Post Office Network Business Service Management : Page 15 of 22
+
+POL-0094742
+POLO0093350
+POL00093350
+
+I
+
+Version : July01 17/07/2001
+
+6. OUTSTANDING PROBLEMS
+
+6.1 NON-POLLING OF OUTLETS
+
+The lap top solution for this problem was presented as part of the formal rectification plans by ICL Pathway in June. These proposals,
+including other areas around the implementation of remote monitoring of disconnected nodes and automatic warnings are being
+reviewed by POCL and a response to the proposals will be issued to ICL Pathway in the near future.
+
+6.2 DWP DUPLICATE TRANSACTIONS
+
+Following investigation of the small number of duplicates produced following implementation of the fix for this problem, a new
+problem has been identified involving missing impound messages reported from ICL Pathway to the DWP (see section 6.3 for an update
+on the missing impounds problem).
+
+Due to the fix for the duplicate transactions problem being the cause of the missing impounds problem, the monitoring for the
+duplicates problem will continue for a period following the implementation of the fix for the missing impounds problem.
+
+6.3. MISSING IMPOUNDS
+
+As discussed above in section 6.2, the fix for the duplicate transactions problem has affected the number of impound messages being
+reported from ICL Pathway to the DWP. The number of reported impounds were running at normal levels until the fix for the
+duplicates problems was implemented. It was following this fix that the number of reported impounds started to fall.
+
+It is important to stress that there has been no adverse impacts felt at Post Office counter’s due to this problem. There were no
+reductions in the number of impound messages produced Horizon screens, on any OBCS transactions, or the number of books
+impounded at the counter.
+
+A fix for this problem has been identified to return the information flows to normal, and will be implemented by the end of July.
+
+Further monitoring will take place by ICL Pathway and the DWP to identify whether this fix has been successful. In the interim period
+ICL Pathway have offered a temporary solution for supplying the missing impounds and this is being reviewed by the DWP.
+
+Post Office Network Business Service Management Page 16 of 22
+
+POL-0094742
+POL00093350
+POL00093350
+
+Version : July01 17/07/2001 ,
+
+There is additional work taking place to retrieve the missing impounds from April 2001 when the problem arose, to the present time and
+this should take 2-3 weeks to complete.
+
+The problem will be monitored for a period to identify whether information flows return to normal and to ensure all historical data is
+delivered to the DWP.
+
+6.4 NON CONFORMANCE IN OUTLETS
+
+A training brief has been developed which will cover OBCS procedures and will be published on the 8 of August. The brief will be
+distributed to all Post Offices and should be used by the outlet manager to lead training sessions, in conjunction with the Counter News
+Workaid on OBCS procedures published in June.
+
+The training brief discussed above was another item from the OBCS Communications plan, which has now been agreed and is in
+operation. There have been a number of communications planned for the coming months, including a-Counter News article prior to the
+August bank holiday aimed at reducing multiple scans.
+
+Further work is continuing on ‘OBCS Errors’ for the Transaction Accuracy Measure. The DWP have been investigating potential sources
+of data, and an update will be sought at the next service Review meeting. Other data sources are being investigated to identify whether
+they are appropriate for the measure.
+
+Additional incidences of non conformance have been raised by BSM through the weekly incident management process, which means the
+Network Business Support Centre will be contacting outlets to discuss the incident and highlight the correct procedures. The incidents
+have concentrated on the area of encashment non conformance.
+
+We await the final draft of the report and recommendations from the annual audit of OBCS procedures by Ernst & Young.
+
+6.5 QUALITY OF BARCODES ON ORDER BOOKS
+
+See Appendix A.
+
+Post Office Network Business Service Management Page 17 of 22
+
+POL-0094742
+Version : July01
+7. MANAGEMENT SUMMARY
+
+POL00093350
+POL00093350
+
+17/07/2001
+
+7.1 COMMENTS ON PREVIOUS SECTIONS OF THE REPORT
+
+Section : : Comments i}
+1.0 OBCS Availability I Roll-out of OBCS at the end of April was completed to 99.4% of the network.
+This leaves a total of approximately 112 outlets still to be migrated to the OBCS at the end of June 2001.
+See previous reports for update on migration plans for these remaining outlets.
+2.0 DWP Transaction I Transaction information for June 2001 has been gathered from ICL Pathway and used within this report. This
+Data information is for the following areas:
+¢ Book Receipt ¢ Book Redirect
+© Book Issue e Benefit Payment Volumes
+Transaction information has been included for the period June 2000 to June 2001, and will include a rolling 12 month
+period from now. This is unless historical information is deemed necessary to include.
+Benefit Payment Volumes
+Overall payment volumes in June were similar to those for May 2001 which is expected due to the very small number
+of outlets being migrated during June. The June average payment transactions per outlets remained consistent with
+May 2001. In June it was 2626 payments per outlets, with May being 2690 payments per outlet.
+The average payments in June 2001 were similar, although fractionally lower, to the average in June 2000. The average
+in June 2001 was 2626, with the June 2000 average being 2780 payments per outlet. Overall volumes are obviously
+lower due to the number of migrated Horizon outlets. ,
+Post Office Network Business Service Management Page 18 of 22
+
+POL-0094742
+Version : July01
+
+POL00093350
+POL00093350
+
+17/07/2001
+
+Section
+
+Comments et : ~ an I
+
+Data continued
+
+DWP Transaction
+
+Order Book Receipts
+
+The overall volumes of book receipts increased in June from May by approximately 650,000. This is likely to the
+residue of annually uprated books being received by outlets. The average book receipts per outlet also increased in
+June from May, with the average book receipts per outlet being 219 in June, from 182 in May. This increase supports
+the conclusion that the residue of uprated books were being receipted in June.
+
+Additional data shows the average in June 2001 is similar to the period June 2000 to November 2000, where the
+average was approximately 210 book receipts per month. With June 2000 specifically being 202, against June 2001
+being 219. The overall volumes are significantly lower due to the number of migrated outlets at each time.
+
+Order Book Redirects
+In June book redirection overall volumes remained consistent with May, with the average per outlet being the same in
+both months at 3 per outlet.
+
+The average book redirections for June 2001 year on year with June 2000, are the same at 3 per outlet. Overall volumes
+are significantly lower though, due to the number of migrated outlets.
+
+Order Book Issues
+
+The trend for book issues in June is similar to the trend for book receipts and redirects. Overall volumes of issues have
+increased in June from May by approximately 200,000. The average book issues per outlet has also increased in June
+to 173, whilst in May it was 163 per outlet.
+
+Year on Year shows an increase in book issues from 134 in June 2000, to 172 in June 2001. Although the June 2001
+average at 172 per outlet is similar, if compared to the consistent period of June 2000 to November 2000 which i: is”
+approximately 168 book issues per outlet.
+
+Post Office Network Business Service Management Page 19 of 22
+
+POL-0094742
+POL00093350
+
+POL00093350
+Version : July01 17/07/2001
+Section E . Comments cis 2 * ie “A
+System Service Performance Summary
+OBCS Data
+3.1 Stop List Delivery 99.66% delivered by Day D
+3.2 OBCS File Delivery 99.89% delivered by Day D
+Where SLA conformance has not been achieved for:
+Day D this is directly attributable to the ‘Non-Polling’ of outlets where transactions are not harvested from t
+coiinters and delivered to the DWP/outlet within the required timescales. .
+(see update on non-polling in section 6 of this report)
+In the May Service Review report the Day B Stop list delivery was provisionally reported as a failure at 95.76%
+(target 97%). This was confirmed by ICL Pathway, and it was explained that this was due to the scheduling of
+OBCS Stop list data behind the M1 Counter Upgrade which required the outlet manager to do a full log on. As, in
+most cases, the manager would do this just before/just after opening time, OBCS Stop list data would not be
+received by 8a.m., but it should have been received directly after the log on procedure i.e.: in time for the start of
+business.
+We have asked that this impact be considered when planning the scheduling of future release upgrades.
+4.1 Polling of Outlets There was a small increase of 0.29% in the percentage of days non polled: compared to available days. With the
+overall % of days polled remaining high at 98.94% of polling days available. ‘ " .
+1 ‘
+Post Office Network Business Service Management Page 20 of 22
+
+POL-0094742
+POL00093350
+
+POL00093350
+Version : July01 17/07/2001 ,
+Section I -- -.. {Comments : ae, : a ee I
+4.2-4.6 I Fallback data I Barcode reader faults
+Barcode reader faults based on incidents raised at the Horizon System Helpdesk remained low, with the average failures
+per counter position also very low at 0.006.
+This continued the trend seen in the previous 3 months.
+The overall volumes of Barcode reader faults in May 2001 remained extremely low, with the average fault per counter
+position also being low at 0.007 faults per counter position.
+There were 51 of the faults from 1 position outlets out of 251 faults. The average number of positions per outlet where a
+barcode reader fault has occurred in June 2001 was approximately 2.5 positions per outlet.
+Central StopList Verification calls
+The number of stop list verification calls were very low in June 2001, with the average calls per outlet also being very low at
+0.0005 calls per outlet.
+5.0 Exception The OBCS change to OP TIP has been re-prioritised and is now the next change in the timetable of OP TIP developments.
+Report This should mean user acceptance testing should start mid July, and take 2-3 weeks. Assuming the testing is successful the
+first information from OP TIP should be available to BSM by August. Once for sufficient data (ie 2 weeks worth) has been
+received we will commence the exception reporting in the service review report.
+Post Office Network Business Service Management Page 21 of 22
+
+POL-0094742
+POLO0093350
+POL00093350
+
+Version: July01- Ce ; ; . 17/07/2001 .
+8.. APPENDIX A : os
+
+B
+DWP Duplicate Transactions Monitor See section 6.2 in the'report this month. - ‘ 30 September
+. . . 2001
+Quality of barcodes on order books I Monitor _I No Update. *-* ~ ae 31 August 2001
+‘ + . . on ~
+Ln
+‘ ‘ . . . te . : 4 -
+Ne ‘ a ~ . .
+‘ " "
+I
+:
+Post Office Network Business Service Management : - . : : bbe ge Page 22 of 22
+
+POL-0094742

@@ -1,0 +1,2094 @@
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ates
+
+POCL Assignment)
+Document Title: Benefit Payment End to End Reconciliation Process For ICL
+
+Pathway Release NR2 - PART 3 (Liability Assignment)
+Document Type: Process Definition - Jointly developed by ICL Pathway, BA and
+
+POCL
+Abstract: Benefit payment reconciliation processes for ICL Pathway
+
+Release NR2 are divided into nine parts. Part 1 deals with
+reconciliation incident management. Part 2 describes
+reconciliation resolution processes. This part (Part 3) focuses on
+reconciliation liability assignment processes. Part 4 defines the
+interactions between reconciliation incident management and
+service/problem management. Part 5 describes the interactions
+between reconciliation incident management and fraud
+management. Part 6 defines ICL Pathway/DSS/ES/SSA(NI)
+financial reconciliation process. Part 7 defines ICL
+Pathway/POCL financial reconciliation process. Part 8 describes
+liability invoicing and Part 9 contingency arrangements for
+
+reconciliation.
+
+Status: Version 0.B
+
+Distribution: See list on Page 2
+
+Authors: Bob Davis - ICL Pathway Customer Service, Jenette Stark - BA
+CAPS Business Modelling Team, Mike Hannon POCL Business
+Assurance.
+COMMERCIAL IN CONFIDENCE Page I of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA recone Iiaisin Process For ICL Pathway Version: C09
+‘elease NR2 - PART 3 (Liability
+
+POCL Assignment)
+
+Distribution
+
+For Review
+
+BA
+
+Colin Galloway CAPS RD&D Manager
+
+Jackie Laughton CAPS Operations and Live Support-Service Management
+
+Steve Chandler CAPS Operations and Live Support- Service Development Manager
+
+Cheryl Fielder CAPS Field Implementation Manager
+
+Tan Marshall CAPS Business Procedures (Future Releases)
+
+Sue Hawley CAPS Business Procedures (Present Release)
+
+Stuart Riley CAPS Commercial
+
+Sue Venton ES
+
+Mary Cassidy DLA/AA
+
+Carol Shaw JSA
+
+Austin Toner ChB
+
+Betty Simpson ChB CSU
+
+Diane Christie WPA
+
+John Connor ICA
+
+Sue Thompson PSCS/INCAP
+
+Paddy McGlinchley SSA(NDI,
+
+Carl Mitchell BSB (SF)
+
+Leslie Bischert OSD BS (IS/SF)
+
+Rob Jennings BMB IS/SF
+
+Richard Harvey SoA BAB
+
+Kelvin Drew BAB(PA)
+
+Mark Turner Security, External Fraud
+
+Paul Cheesborough Security, Internal Fraud Project
+
+Darryl Dixon Security, Business System (FBT)
+
+Paul Burrows Data Management
+
+Joanne Adamezyk Audit
+
+Wayne Stephens COBAP
+
+Craig Lewis Card Policy
+
+COMMERCIAL IN CONFIDENCE Page 2 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+FUJ00232432
+
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability .
+
+POCL Assignment)
+
+Library
+POCL
+Library
+
+ICLPathway
+
+For review
+
+Stephen Muchow
+Paul Westfield
+Martin Riddell
+Peter Burden
+Richard Brunskill
+John Dicks
+Hillary Forrest
+Bob Davis
+
+COMMERCIAL IN CONFIDENCE Page 3 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability are
+POCL Assignment)
+0 Document control
+0.1. Document history
+Version I Date Reason
+0.A 23/10/98 I Internal PET QA
+0.B 21/11/98 I Second draft for sign off by PET
+0.C 6/2/99 External Review
+0.2. Approval authorities
+Name Position Signature Date
+ICL Pathway Ltd. Director: ICL
+Pathway Customer
+Stephen Muchow Service
+DSS CAPS Programme
+Executive Team
+Vince Gaskell
+POCL Business Integrity
+Manager
+Ruth Holleran
+CAPS Commercial CAPS Commercial
+Manager
+Stuart Riley
+0.3 Authors
+Name Position Signature Date
+Jenette Stark BA CAPS Process Team
+Bob Davis ICL Pathway Ltd
+Mike Hannon POCL Business Assurance
+COMMERCIAL IN CONFIDENCE Page 4 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+0.4 Associated documents
+
+Reference Vers I Date Title
+
+CS/PRD/0002 I 2.0 15/04/98 I Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release 1c - PART I (Incident
+Management)
+
+CS/PRD/003 2.0 Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release Ic - PART II (Resolution)
+
+CS/PRD/034 1.0 I 4/1/99 Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release NR2 - PART I (Incident
+Mgt)
+
+CS/PRD/035 0.C I12/2/99 I Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release NR2 - PART II (Resolution)
+
+CS/PRD/036 0.C 6/2/99 Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release NR2 - PART III (Liability
+Assignment)
+
+CS/PRD/037 Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release NR2 - PART IV (Links with
+Problem Mgt)
+
+CS/PRD/038 Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release NR2 - PART V (Links with
+Fraud Mgt)
+
+CS/PRD/039 1.0 I 8/2/99 Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release NR2 - PART VI (DSS/ICL
+Pathway Financial Reconciliation Process)
+
+CS/PRD/040 Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release NR2 - PART VII
+(POCL/ICL Pathway Financial Reconciliation Process)
+
+CS/PRD/041 Benefit Payment End to End Reconciliation Process
+For ICL Pathway Release NR2 - PART VIII (Liability
+Invoicing)
+
+CS/PRD/042 Benefit Payment End to End Reconciliation Process
+
+For ICL Pathway Release NR2- PART VIII
+(Contingency Arrangements for Reconciliation)
+
+COMMERCIAL IN CONFIDENCE Page 5 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway = Yewion: 0
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+0.5 Key To Symbols Used In Models
+> Event
+Process
+oo System/User
+) Delay
+© Decision
+0] End Process
+Simultaneous
+Process
+COMMERCIAL IN CONFIDENCE Page 6 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+ICL Pathway Benefit Payment End to End
+
+BA
+
+POCL
+
+Reconciliation Process For ICL Pathway
+Release NR2 - PART 3 (Liability
+Assignment)
+
+FUJ00232432
+FUJ00232432
+
+Ref: CS/PRD/036
+Version: 0.C
+Date: 6/2/99
+
+0.6
+
+Abbreviations
+
+A&L Alliance and Leicester (ICL Pathway)
+
+ABED Automated Benefit Encashment Database (POCL)
+
+AP Authorised Payment (DSS/ES/SSA(NI)
+
+APS Automated Payment Service (POCL)
+
+ASG Application Support Group (DSS/ES/SSA(NI))
+
+BA Benefits Agency
+
+BAB Banking Accountancy Branch (DSS/ES/SSA(NI))
+
+BAB(PA) Banking Accountancy Branch (Programme Accounting)
+
+(DSS/ES/SSA(NI))
+
+BAB ASG Banking Accountancy Branch Application Support Group
+(DSS/ES/SSA(ND)
+
+BES Benefit Encashment Service (POCL)
+
+BIA
+
+BIA Benefit Issuing Authority — Benefit Issuing Authority:
+
+BPS Benefit Payment Service (POCL)
+
+BS Business Section
+
+BSU Business Support Unit (ICL Pathway)
+
+CAP Cash Account Period (POCL)
+
+CAPS Customer Accounting and Payments Strategy
+(DSS/ES/SSA(NI))
+
+CBDB Counter Business Database (POCL)
+
+CBoS Common Basis of Settlement
+
+cc Counter Clerk (DSS/ES/SSA(NI)).
+
+CMS Card Management Service (ICL Pathway)
+
+CES Common Enquiry Service
+
+COBAP Corporate Banking and Methods of Payment Group
+
+COLS CAPS Operations and Live Support (DSS/ES/SSA(NI)
+
+COMMERCIAL IN CONFIDENCE Page 7 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Refi CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability
+
+POCL Assignment)
+
+COM Counters Operations Manual (POCL)
+
+CPCS Customer Payment Computer System (DSS/ES/SSA(NI))
+
+CR Change Request (DSS/ES/SSA(NI))
+
+CSO Computer Support Officer (DSS/ES/SSA(NI))
+
+CSU Card Support Unit (DSS/ES/SSA(ND)
+
+NM
+
+DEX Dialogue Expert (DSS/ES/SSA(NI))
+
+DN Drafters Note
+
+DP Due Payment (used to show data flows in diagrams)
+
+DPU Data Processing Unit (POCL)
+
+DQ Drafters Question
+
+DSS Department of Social Security
+BSS4CBE+DO} Depart Hepsi desl ity(Child Benefit Cent Titer ee ite
+
+DSS/ES/SSA(NI) Department of Social Security/Employment Services/Social
+Security Agency (Northern Ireland)
+
+E Encashment Transaction (used to show data flows in diagrams)
+
+ED Expert Domain
+
+EDIMS Expert Domain Incident Management System
+
+EPOSS Electronic Point of Sale Service (POCL)
+
+EVP Extended Verification Procedure
+
+FAD Financial Accounts Division (POCL)
+
+FBS Feeder Benefit System (DSS/ES/SSA(ND)
+
+FSG Fraud and Security Group (DSS/ES/SSA(NI)
+
+HSH Horizon System HelpDesk (ICL Pathway)
+
+ICL Pathway ICL Pathway Limited
+
+ID Identity
+
+JOP Instrument Of Payment
+
+IPMS Incident and Problem Management System (ITSA)
+COMMERCIAL IN CONFIDENCE Page 8 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway = Version: 0.C
+tabi Date: 6/2/99
+Release NR2 - PART 3 (Liability
+
+POCL Assignment)
+
+ISDN Integrated Services Digital Network (ICL Pathway)
+
+ITSA Information Technology Services Agency
+
+LAN Local Area Network (ICL Pathway)
+
+MIS Management & Information Statistics
+
+MOP Method Of Payment (DSS/ES/SSA(NI))
+
+NINO National Insurance Number
+
+NPO Nominated Post Office
+
+PAB Personal Acting Body
+
+PACS Programme Accounting Computer System(DSS/ES/SSA(NI))
+
+PAS Payment Authorisation Service (ICL Pathway)
+
+PCHL Payment Card Help Line (ICL Pathway)
+
+PDCS Personal Details Computer System (DSS/ES/SSA(NI))
+
+PinICL PinICL (an ICL Pathway incident management system)
+
+PI Payment Instruction (DSS/ES/SSA(NI))
+
+PID Personal Identification Device
+
+PO Post Office
+
+POCC Post Office Counter Clerk
+
+POCL Post Office Counters Limited
+
+PPD Processes and Procedures Description (POCL/ICL Pathway)
+
+PUN Pick Up Notice
+
+QA Quality Assurance
+
+RED Reconciliation Exception Database (ICL Pathway)
+
+SADD Service Architecture Design Document
+
+SCoP Service Code of Practice (DSS/ES/SSA(NI)
+
+SHD Service Help Desk (DSS/ES/SSA(NI))
+
+COMMERCIAL IN CONFIDENCE Page 9 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ates
+
+POCL Assignment)
+
+SMC System Management Centre (ICL Pathway)
+
+SoA Seal of Approval (DSS/ES/SSA(NI)
+
+SSC System Support Centre (ICL Pathway)
+
+TIP Transaction Information Processing (POCL)
+
+TMS Transaction Management Service (POCL/ICL Pathway)
+
+TP Transaction Processing (POCL)
+
+vo Voluntary Offer (DSS/ES/SSA(NI))
+
+WAN Wide Area Network (ICL Pathway)
+
+COMMERCIAL IN CONFIDENCE Page 10 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+0.7 Glossary of Terms
+
+The following glossary is generic, not Release specific. The contractual terms in italics
+are those used in the Related Agreements (Schedule A01-Interpretations). Any
+comments on the wording of the contractualeentractural terms (in ifalics) should be
+referred to the Joint Contracts Team based in Terminal House, London.
+
+Account
+A record of a customer or other payees details held on a computer system.
+Agency
+
+In this context, it is used to describe the Benefits Agency, War Pensions Agency,
+Employment Services, and the Social Security Agency (Northern Ireland).
+
+Alternative Payee
+
+A person entitled to collect certain benefits, allowances or pensions on behalf of a
+partner as defined in Regulation 36 of the Social Security (Claims and Payments)
+Regulations (1987).
+
+Appointee
+
+A person appointed by the Secretary of State in accordance with the provisions of
+Regulation 33 of the Social Security (Claims and Payments) Regulations
+
+Authorised Officer
+A person who is authorised locally to contact the PCHL.
+Authorised Person
+
+A person authorised by the DSS, or the relevant Beneficiary or an Appointee, to collect
+an Authorised Payment. An Authorised Person could be the Beneficiary or Appointee, or
+any of Alternative Payee, Casual Agent, Permanent Agent, or Signing Agent.
+
+Authorised Payment
+
+A single amount of a particular benefit type authorised by the DSS as being due to a
+specified Beneficiary on a specified date.
+
+Authorised User
+A person who has been granted access to certain restricted computer dialogues/functions.
+Authority to Pay
+
+The form a customer or PAB completes and signs to authorise an agent (standing or casual) to
+collect Payment Card payments from the PO on their behalf.
+
+COMMERCIAL IN CONFIDENCE Page 11 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+Automated Benefit Encashment Database
+
+Post Office Counters Limited database which receives encashment records from ICL
+Pathway, by Post Office, for benefit Encashmentseneashments made via the Benefit
+Payment System in order to produce a weekly “supporting” document for reconciliation
+against each Post Offices cash account. It also produces a daily “reconciliation”
+statement to the ICL Pathway 10 day settlement reports.
+
+Automated Payment Service
+
+This is the next automated product after BES, for delivery during ICL Pathway Release
+NR2, for clients other than those of the DSS/ES/SSA(NI).
+
+Award
+A decision of entitlement to a benefit, pension or allowance.
+Batch
+
+A process by which data is collected at intervals, usually every 24 hours and then sent to
+another system in one process overnight.
+
+Batch System
+
+A computer system which is not linked to an on-line system. The information held
+cannot be updated on line, but is manually input from a data input form.
+
+Benefit Apportionment System
+
+A computer system that records the details of all payments made that are recorded on the
+host business computer system whether paid clerically, or by the system. The details of
+these transactions are stored by the payment type and code of issue. Information is
+collected from all the business systems that are linked to BAS.
+
+Beneficiary
+A person entitled to receive one or more benefits.
+Benefit Encashment Service
+
+A service provided and maintained by ICL Pathway to support the encashment of
+authorised payments at the PO for Payment Cardholders.
+
+Benefit Payment Reconciliation Panel
+
+A monthly group meeting consisting of members from BA, POCL, and ICL Pathway
+who meet to identify, progress and discuss reconciliation issues which may affect
+deliverables in which all parties have an interest.
+
+Business System
+
+The system on which individual business Users record all details relating to the
+customers claim and entitlement. This may be an on-line computer system, a system
+using batch system processing or a clerical system.
+
+COMMERCIAL IN CONFIDENCE Page 12 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+Business Type
+
+This refers to a section within the business system which has an interest in the customer,
+e.g. IS, RP, WB or JSA.
+
+CAPS Programme
+The Programme to introduce the Customer Accounting and Payments Strategy.
+Card
+
+A card or other token to be issued by or on behalf of DSS for the payment of benefits and
+allowances and other related benefit and social security purposes, as provided and
+managed under the Card Management Service.
+
+Cardholder
+
+A person identified by CAPS as being entitled to hold a card, and to be named on that
+card, in order to collect benefit for a specified beneficiary, or a number of specified
+beneficiaries.
+
+Card Management Service
+
+A service provided and maintained by ICL Pathway who produce, automate, review,
+issue and distribute Payment Cards and Pick-Up Notices.
+
+Card Reader
+
+A device used by the PO through which the Payment Card is swiped. It allows access to
+the information held on BES.
+
+Cash Account Period
+POCL accounting week which runs from Thursday to the following Wednesday.
+Casual Agent
+
+A person authorised by the Beneficiary or Appointee to collect benefit on his or her
+behalf on a one-off basis.
+
+Clerical Payment
+
+Any payment that is non-system generated, such as clerically issued order books,
+girocheques, payable orders and in some cases, cash.
+
+Clerically Processed Cases
+
+Cases which may be assessed and processed manually by the benefit system, although
+payment can be made on CPCS provided an account exists on PDCS.
+
+CAPS Operationals and Live Support
+
+A dedicated team within the CAPS environment who provide live support duties for the
+CAPS systems and CAPS customers.
+
+COMMERCIAL IN CONFIDENCE Page 13 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+Commit
+
+In relation to a Transaction, to execute a Transaction Committal for that Transaction.
+Related terms shall be construed accordingly.
+
+Computer Support Officer
+
+A nominated individual who controls and supports access to mainframe systems,
+ensuring that security and integrity are maintained, liaising with various areas (PID
+stockholder, Security Specialist, DEX, etc.) when appropriate.
+
+Counter Node
+
+See Transaction Reference.
+Curator Bonis
+
+A person authorised by the Scottish courts to act on behalf of the customer.
+Customer
+
+A person transacting, or seeking to transact business with either AUTHORITY through
+any of the Services.
+
+Customer Payment Computer System
+
+It is through this system that Payment Card payments are administered. CPCS holds
+details of all payments for all benefits, regardless of the MOP and forwards accounting
+details to PACS.
+
+Customer Session
+
+A set of contiguous Transactions recording business transacted by a single Customer.
+Data
+
+Information stored electronically in a database.
+Data File
+
+A set of electronic data, contained within a single file and held or used within, or
+transmitted over, any of the Services.
+
+Death Arrears Payee
+
+A person accepted by the Secretary of State to receive outstanding amounts of payments
+upon the death of a customer.
+
+Deduction Component
+
+An amount deducted from a particular payment component to repay a loan/debt or an
+amount deducted for payment to a third party.
+
+Dialogue Expert
+
+A nominated individual who provides advice and guidance to Users with complex cases
+or suspected system faults, raising incidents where appropriate. In addition, they provide
+liaison between various expert domains, Users and advice lines, etc.
+
+COMMERCIAL IN CONFIDENCE Page 14 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+Earliest Encashable Date
+
+The earliest date that a payment can be cashed at the PO. This may be earlier than the
+due-date if an adjustment has been made to allow for a Bank or Local Holiday.
+
+Early Batch
+
+Functionality to issue a request in a batch file from a business system which will ensure
+that payment/stop will be available on the next working day.
+
+Encashment
+
+The act of collecting payment(s) for one beneficiary from a post office.
+Encashment Identification
+
+A means of uniquely identifying an individual encashment.
+Entitlement
+
+The details of the award of a benefit, pension or allowance.
+Electronic Point Of Sale
+
+A term used to describe the systems typically used in retail shops and stores, at the point
+of customer service, for recording sales transactions.
+
+Expiry Period
+The period beyond which Payment Cards and payments are no longer valid.
+Extended Verification Procedures
+
+Part of the card verification method requiring extra interactions in order to provide a
+greater degree of confidence in confirming the identity of a Cardholder.
+
+Exceptions
+Any action different from the normal business processing.
+FAD Code
+See Transaction Reference.
+Fall-back
+ICL Pathway term for contingency.
+File
+
+A means of transferring data from one system to another. Each file generally consists of
+a standard header, a series of detailed records and a specific trailer.
+
+Foreign Encashment
+
+An encashment of an Authorised Payment which occurs at a post office other than the
+Nominated Post Office.
+
+Help Desk
+
+The initial point of call for Users in need of support relating to the services.
+
+COMMERCIAL IN CONFIDENCE Page 15 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+
+POCL Assignment)
+
+Horizon System HelpDesk
+
+A technical help desk provided by ICL Pathway.
+Host Business System
+
+The business system through which CPCS and PDCS are being accessed.
+Improper Encashment
+
+An encashment that is found to have been subject to improper or fraudulent processing
+resulting from a business or technical error occurring in the CAPS or Pathway
+environment.
+
+Incident
+Any perceived abnormal or undesirable occurrence relating to a Service.
+Incident Resolution
+
+The agreed closure of an Incident which may include the re-establishment of Service
+following an Incident or, where the Incident was found not to be an abnormal or
+undesirable occurrence, clarification of the incorrect perception
+
+Incident and Problem Management System
+
+A dedicated ITSA system which enables DSS Expert Domains to log incidents and
+problems and maintain an accurate and ongoing review process from logging to
+resolution.
+
+Lisahally
+
+Lisahally is the location of the Paid Order Unit who provide payment receipt storage,
+search and retrieval services for the Agency or ES. The payment receipts are sent by the
+post office for secure storage, so that they remain accessible to the Agency or ES on
+request.
+
+Main Payee
+
+For certain business systems (e.g. Child Benefit), two people are equally eligible for
+collection: the customer and his/her spouse or partner. Sometimes the customer is also
+referred to as the Main Payee.
+
+Method of Payment
+
+The form of payment recorded against a Transaction involving a Customer.
+Node Id
+
+See Transaction Reference.
+Nominated Post office
+
+A specific post office at which a Beneficiary has elected to receive benefit payments.
+On-Line Day
+
+The period of time during which a computer system is available for use each day.
+
+COMMERCIAL IN CONFIDENCE Page 16 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+One Off Payment
+
+A Payment Instruction that contains only one Like Payment which consists of one
+Authorised Payment.
+
+Other Guardian
+A person appointed by the courts in Scotland to act on behalf of the customer.
+Other Payee
+
+A person who, in certain circumstances, the customer may elect, or have elected for
+them, to collect payments on their behalf.
+
+Outlet
+A location that transacts post office business.
+Parent/Guardian
+
+Specifically the parent or guardian of a child who has been awarded DLA or WPA. The
+parent/guardian acts on behalf of the child, regardless of whether the child is capable of
+managing their own affairs.
+
+PAS Exception
+
+A transaction received by CPCS from PAS contained in an Encashment file is matched
+against the customer record held in CPCS. Where one or more data item(s) do not match
+exactly with the corresponding data item(s) on the Authorised Payment record(s) held
+upon CPCS, an Exception (and report) is Produced. The Exception must be investigated
+to allow the correct updating of CPCS.
+
+Payee
+
+The person who is entitled to collect payments, (customer/PAB/alternative payee or
+agent).
+
+Payment Advice Notes
+Leaflets sent to the customer containing information and advice such as reporting
+
+changes of circumstances to the Agency or ES. These will replace the Yellow Pages
+currently found at the back of the order book.
+
+Payment Authorisation Service
+A service provided and maintained by ICL Pathway for the management of payments
+authorised for collection by customers or their representatives.
+
+Payment Card Help Line
+A telephone service provided by ICL Pathway covering Card Management Service
+(CMS) helpdesk and Payment Authorisation Service (PAS) helpdesk. This area acts as
+the single point of contact for all enquiries relating to Payment Cards and PUNs.
+
+Separate telephone numbers are used by the DSS, POCL and the public (one number is
+also dedicated to Welsh speaking customers).
+
+COMMERCIAL IN CONFIDENCE Page 17 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+
+POCL Assignment)
+
+Payment Component
+
+The breakdown of a payment into its component parts, e.g. basic rate, age related
+addition, additional components etc.
+
+Payment Due Date
+The date that payment is due to the customer, as authorised by the Agency or ES.
+Payment Instruction
+
+An instruction from a business system or clerically input to CPCS, that contains all the
+information necessary to allow CPCS to authorise the issue of payments to the correct
+person, at the correct rate and at the correct time.
+
+Permanent Agent
+
+A person authorised by the Beneficiary or Appointee to collect benefit on his or her
+behalf (until revocation of that authorisation).
+
+Payment Receipt
+
+A pre-printed slip completed during encashment at the Outlet counter to provide details
+of the Beneficiary’s Authorised Payments.
+
+Payment Request
+
+The action taken by a User to ask a business system to pass a Payment Instruction to
+CPCS.
+
+Personal Acting Body
+
+Someone who acts on behalf of a customer for the Agency and ES business. In effect,
+the PAB then becomes the customer, in that they are responsible for signing declarations
+and reporting any changes of circumstances on the customers behalf, e.g. an appointee.
+
+Personal Details Computer System
+
+The computer system through which personal details relating to a customer and, where
+appropriate, other payees are input and maintained.
+
+Pick-Up Notice (PUN)
+Notification to an Authorised Person that a card is ready for collection by him or her.
+POCL Outlet Accounting Period
+
+The shortest normal accounting period applying within an Outlet, normally a week and
+running Thursday through Wednesday, but subject to variation at financial year end and
+to revision. It may be merged by agreement in individual Outlets, e.g. to enable sub-
+postmaster holidays.
+
+Power of Attorney (Enduring)
+
+The appointment of an agent by deed, which if specified by that deed, can for the
+purposes of the Agency or ES transfer responsibility from the customer to the Attorney
+in relation to all matters concerning receipt of payments and are legally allowed to
+
+COMMERCIAL IN CONFIDENCE Page 18 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+manage the customers affairs without time limitation. It can be terminated by the death
+of a customer or attorney, or in the event of customers bankruptcy.
+
+Power of Attorney (Limited)
+
+Is legally contracted to manage the affairs of the customer. Must be granted specific
+powers by the court to handle the customers financial affairs, but may not act for the
+customer without the Secretary of State granting them powers to deal with the customers
+affairs under the BF56 procedure. The appointment may be limited by time and/or
+purpose. It can be terminated by the death of the customer or Attorney, the customer
+becoming bankrupt, or the customer losing the capacity to manage their own affairs.
+
+Qualified NINO
+
+A NINO allocated where we have established the customers identity but require to carry
+out final corroboration. The qualified NINO has time controls in place to ensure the
+necessary follow up action is carried out and can only be allocated if benefit is due.
+
+Reconciliation Exception Database
+
+ICL Pathway Customer Services database which will hold details of all reconciliation
+exceptions relating to benefit Encashmentseneashments made via the BPS, identified by
+themselves, DSS/ES/SSA(NI) or POCL.
+
+Record
+A unit of information. Several records make up a file.
+Records
+
+Full and accurate records relating to the performance of (i), in the case of the DSS
+Agreement, the DSS Services, (ii), in the case of the POCL Agreement, the POCL
+Services, (iii), in the case of the ICL Agreement, the ICL Pathway Services.
+
+Restricted Post Office
+
+A Restricted Post Office is a designation used to describe a situation where an
+Authorised Person must use their Nominated Post Office to encash Authorised
+Payments.
+
+Royal Mail Address
+
+An address which is in England, Scotland, Wales, Northern Ireland, the Isle of Man or
+the Channel Islands (Jersey, Guernsey, Alderney and Sark).
+
+Seal of Approval
+
+A key Information System Policy of the DSS/ES/SSA(ND, which aims to ensure that all
+deliverable end products are provided once all issues and non-conformities have been
+addressed. This provides assurance to Accountable Officers that a quality product is
+delivered with a guarantee of “fit for purpose”.
+
+Sequential Taxation Id.
+
+See Transaction Reference.
+
+COMMERCIAL IN CONFIDENCE Page 19 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+Service Architecture Design Document
+
+The document showing the Service Architecture developed pursuant to Clause 401.1.1,
+as amended from time to time to reflect optional and additional Products and Services
+supplied and performed under the POCL Agreement and the DSS Agreement.
+
+Service Code of Practice for Help Desks
+
+Describes the services involved in the Card Payment environment for Release Ic, their
+roles, responsibilities and the way they interact. Also describes the generic procedures
+for incident and problem management.
+
+Service Level
+
+A quantified and measurable standard, as defined in the Related Agreement, required
+for a specified Service.
+
+Signing Agent
+
+An official of the Local Authority who is authorised to deal with all the residents
+payment, e.g. a warden. A signing agent is only appropriate for customers who are in
+Local Authority Part III Residential Accommodation.
+
+Standing Agent
+
+A person nominated by the customer with prior agreement of the Agency or ES who
+may, on a long term basis, collect any payments on behalf of the customer.
+
+Stop Request
+An instruction released by CAPS to ICL Pathway to stop an authorised payment.
+Superseded Account
+
+The account which has been closed by the appropriate User. This account is held for
+historical purposes only and may be viewed but not maintained.
+
+Superseding Account
+
+An account which has replaced another for the same customer under a different NINO.
+The account is fully maintainable using existing CAPS facilities.
+
+Swipe
+
+The action of passing the Payment Card through the Card reader at the post office.
+System Support Centre
+
+ICL Pathway technical support services.
+Temporary Token
+
+A token that permits an Authorised Person to encash one or more Authorised Payments.
+
+COMMERCIAL IN CONFIDENCE Page 20 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+Temporary Token Post Office
+
+To collect payment(s) using a TT the customer/Alternative Payee/Death Arrears
+Payee/PAB can specify a post office to use the TT at for collection of payment. This
+post office must be used for all Encashmentseneashments made using the TT.
+
+Third Party Deduction
+
+An amount deducted from a payment component that is specifically for payment to a
+third party on the customers behalf, e.g. payments of electricity or gas.
+
+Transaction
+
+A recorded and auditable instance of business activity, involving Service provision or
+Stock movement across organisational or Service boundaries.
+
+Transaction Reference
+
+The unique identifier shown on the BES payment receipt, which has the following
+format;
+
+FAD Code (6 characters) - Identifies the post office at which the encashment was made.
+
+Counter Node (2 characters 00 or //) - The counter position where the encashment was
+made.
+
+Sequential Taxation ID (8 characters) - Unique number given to the post office clerk by
+the HelpDesk.
+
+Transitional Period
+
+The time from when the first customer is migrated to PDCS until customers of all
+business systems are accounted for under CAPS.
+
+Tripartite
+
+A three way partnership between ICL Pathway, DSS/ES/SSA(NI) and POCL.
+Tutor
+
+A person appointed by the courts in Scotland to act on behalf of a customer.
+Unsafe Address
+
+An address with a record of continual loss of IOPs and PUNs relating to it.
+Urgent Payment
+
+An Authorised Payment that must be available for collection at a post office within 30
+minutes of its authorisation by CAPS.
+
+Urgent Stop
+
+A stop request issued immediately to the post office and the result notified immediately
+to the post office clerk on-line and the business system. This stop request is actioned via
+a CPCS on-line dialogue
+
+COMMERCIAL IN CONFIDENCE Page 21 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability are
+POCL Assignment)
+User
+A person authorised by the relevant AUTHORITY to use a Service.
+Voice Bank
+
+An automatic system for receiving and directing information.
+
+Void Transaction
+
+A Transaction which is cancelled before Transaction Committal
+
+COMMERCIAL IN CONFIDENCE
+
+Page 22 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+0.8 Changes in this version
+
+Changes following comments from CAPS Commercial Team and a meeting with COBAP,
+CAPS Commercial, ICL Pathway BSU and POCL.
+
+COMMERCIAL IN CONFIDENCE Page 23 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+ICL Pathway Benefit Payment End to End
+
+BA Reconciliation Process For ICL Pathway
+Release NR2 - PART 3 (Liability
+
+POCL Assignment)
+
+FUJ00232432
+FUJ00232432
+
+Ref: CS/PRD/036
+Version: 0.C
+Date: 6/2/99
+
+0.8 Table of content
+
+1. Introduction 24
+2. Scope 25
+3. Purpose 25
+4. Approach 25
+5. High Level Principles For The Assignment of Liability 27
+5.1 Liability for Reconciliation and repudiation including Burden of Proof, linked
+Costs of Investigation and Recovery
+5.2 Liability in Fall-back 28
+5.3 The Scope of Liability before, during and after Operational Trial 28
+5.4 Liability arising from Phased Releases and Declared Deficiencies 29
+issues related to availability of data (e.g. EVP) 29
+5.6 Liability and Recovery Costs 30
+5.7 Liability impact of CCNs 30
+6. ICL Pathway Caselaw Database 31
+6.1 Caselaw Principles 31
+7. Generic Escalation Process Model for Liability Assignment 32
+7.1 Summary of Processes 33
+8. Low Level Principles for the Assignment of Liability 38
+COMMERCIAL IN CONFIDENCE Page 24 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+1. Introduction
+
+Benefit Payment Reconciliation Processes for ICL Pathway NR2 are divided into 9 parts. The
+end to end reconciliation incident management and resolution processes (Parts 1 and 2) describe
+how ICL Pathway, DSS and POCL work together to :
+
+¢ identify and manage incidents, and
+
+e resolve reconciliation incidents, in particular any benefit under or overpayments, and
+transaction data exceptions in the return leg (BES to CPCS).
+
+Although it is stated that this document is specific to ICL Pathway NR2, the principles and
+processes are not Release specific.
+
+Liability definition: In the context of this document, liability is taken to mean a financial loss
+or unplanned for charge which affects any party to the Related Agreements.
+
+The four main ways in which a potential liability may be identified due to operational events
+are:
+
+¢ areconciliation exception
+
+e service management reports identifying breach of an agreed service level in the Related
+Agreements (with an attached remedy);
+
+e an audit failure, see Section 2.1 of schedule B08 of the Authorities Agreement);
+e arepudiation by a customer (see schedule B08).
+
+There are other significant ways in which liability may arise, however these are detected and
+progressed through contract management. A separate forum will be held to resolve liability
+issues relating to contract management. Some of these are touched upon in the principles
+defined later in the document at part 5; they cover events such as:
+
+e failure to meet a contractual milestone with an associated cost to the Authorities;
+
+¢ failure to meet an obligation under the Related Agreements associated with a specific
+liability, e.g Operational Trial;
+
+e a general breach of contract for which specific remedies have not been specified, e.g.
+unauthorised publicity.
+
+This document links the assignment of liability (documented in Part 1 in the Incident
+Management Process Maps for COLS, BSU and POCL) to the generic escalation processes
+where liability cannot be agreed, through to conclusion and acceptance of liability by ICL
+Pathway, the DSS or POCL.
+
+COMMERCIAL IN CONFIDENCE Page 25 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+2. Scope
+
+The scope of the document includes:
+
+¢ for completeness all agreed high level principles for the assignment of liability; (although the
+document only focuses on liability assignment for reconciliation incidents),
+
+e the processes and low level principles involved in the assignment of liability for
+reconciliation incidents, including references to the appropriate forums for agreement.
+
+The scope excludes:
+
+* accounting implications following assignment of liability (settlement), i.e. who pays what,
+when and how, (This area of work will be developed under Part VIII- Liability Invoicing,
+although it may, at a later date be necessary to combine this document with Part VIII).
+
+3. Purpose
+
+¢ To define the principles and process framework for assignment of liability for Benefit
+Payment System related reconciliation incidents.
+
+¢ To support the development , enhancement and validation of local procedures.
+
+e To inform BA Security and BA Banking and Accountancy Branch Seal of Approval process.
+
+e To satisfy the contractual requirements associated with the Benefit Payment System.
+
+4. Approach
+
+4.1 Planning
+
+e plans for the production of process definitions are maintained by ICL Pathway, BA,
+POCL.
+
+¢ any changes to the plans are agreed by the 3 parties.
+
+4.2 Process Definition and Approval
+
+e joint ICL Pathway/BA/POCL development, publication and ownership of a set of
+reconciliation process definitions covering the scope of this document;
+
+¢ process definitions developed by a process team comprising nominees from ICL
+Pathway, BA and POCL, working in conjunction with nominees from the relevant
+business organisations;
+
+COMMERCIAL IN CONFIDENCE Page 26 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+© progress reviewed by the BPS Reconciliation Panel;
+
+© process definitions signed-off by senior management in ICL Pathway, BA and
+POCL;
+
+¢ process definitions maintained under change control for the duration of Release NR2
+and revised to accommodate approved continuous improvements.
+
+4.3 Document Control
+e The electronic master of this document resides in the DSS, CAPS library. Mirror
+copies are held in the POCL, ICL Pathway libraries.
+e Draft versions will use references 0.A, 0.B, 0.C, etc.
+e Definitive versions will use the references 1.0, 2.0, etc.
+
+e Authors of the documents are responsible for distribution within their own
+organisation.
+
+COMMERCIAL IN CONFIDENCE Page 27 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+ICL Pathway
+
+BA
+POCL
+
+Benefit Payment End to End Ref:
+Reconciliation Process For ICL Pathway
+Release NR2 - PART 3 (Liability
+Assignment)
+
+FUJ00232432
+FUJ00232432
+
+CS/PRD/036
+Version: 0.C
+Date: 6/2/99
+
+5 High Level Principles for the Assignment of Liability
+
+The following principles for the assignment of liability were agreed at the RAB (Release
+Assurance Board) on the 29 October 1997, involving PDA (now Service Management),
+BA, POCL and ICL Pathway. These are high level generic principles for the assignment
+of liability, are contractually bound, and do not just cover liability assignment for
+reconciliation. Those principles that are applicable to reconciliation are identified by
+
+italics.
+
+Lower level principles for the assignment of liability can be found at paragraph 6. They
+describe the processes within the operational areas, i.e. COLS and ICL Pathway.
+
+Liability Assignment Principles are prefixed L.
+
+5.1 Liability for Reconciliation and Repudiation including Burden of Proof,
+linked Costs of Investigation and Recovery
+
+Ref.
+
+Liability Assignment Principle
+
+‘Action By
+
+Ll
+
+The contractual liability clauses specify that the direct costs of a liability
+should fall on the party found liable. In general "direct costs” comprise
+three main areas - investigation costs, benefit losses and correction costs.
+Pathway would be responsible for investigating all reconciliation failures,
+and the Authorities for investigating all repudiations.
+
+All
+
+L2
+
+With the above broad principle, Pathway would not be responsible for
+investigating reconciliation differences between the Authorities, which
+may appear to arise as a result of timing differences. Pathway will
+investigate any reconciliation differences which directly involve their
+systems and will assist the Authorities in any investigation they need to
+make between them. On investigation costs, there should be a distinction
+drawn between normal operational costs (i.e. work that is undertaken in
+checking ete. even if no reconciliation differences are found) and specific
+extra work as a direct result of an investigation. Hence, if liable, Pathway
+would not bear the costs of the Authorities’ investigation of reconciliation
+differences, but would bear direct losses and recovery costs if shown to be
+liable.
+
+All
+
+In the case of fraud, there is a straightforward liability for cost of the
+money that has gone astray and the costs of investigation (as above), but
+there needs to be a more case specific consideration of the costs involved
+in any corrective action to prevent further occurrences. This last cost
+needs to be considered in context of the risk and value of the other losses.
+
+All
+
+L4
+
+In establishing “proof” of liability, while the relevant contract clauses
+(see Clause 808 of the Authorities’ Agreement) make the general
+provision that Pathway need to establish if the Authorities systems were at
+fault, it was agreed that it would be difficult in advance to provide any
+quantification of what constitutes proof, It_was_further_agreed_that
+
+TCL Pathway
+
+COMMERCIAL IN CONFIDENCE
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+
+Page 28 of 40
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+“proof” needed to be considered with a lest of reasonableness, and that
+care was needed over early cases to establish sound precedent.
+5.2 Liability in Fall-back
+Ref. Liability Assignment Principle Action By
+TCL Pathway
+Ls The principles of liability under fall-back should mirror those under live
+
+operation. Most fall-back errors will appear as reconciliation errors as
+data is reprocessed, And hence Pathway are responsible for resolving the
+error and unless they can show the Authorities were at fault, Pathway
+should accept any consequent liability.
+
+5.3 The Scope of Liability before, during and after Operational Trial
+
+Ref. Liability Assignment Principle Action By
+
+During the operational trial period all contracted service levels should be _ I All
+- monitored and reported against, although related remedies do not apply.
+After the operational trial period the related remedies will apply.
+
+Service faults or errors should attract liability at all stages. Direct losses I All
+- should be borne by the liable party, but that, as part of the normal trial
+
+activity during the operational trial period (cf. L2 above), the costs of
+investigating any errors should be borne each to their own, Within this
+context, the provisions of Clause 808 of the Authorities’ Agreement and
+Schedule B08 do still apply to service faults and fraud during operational
+trial.
+
+5.4 Liability arising from Phased Releases and Declared Deficiencies
+
+COMMERCIAL IN CONFIDENCE Page 29 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+FUJ00232432
+
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+
+BA Reconciliation Process For ICL Pathway Version: O09
+Release NR2 - PART 3 (Liability ,
+
+POCL Assignment)
+
+Ref. Liability Assignment Principle ‘Action By
+
+The change from the original contract intentions for a relatively small IGL I All
+in parallel to operational trial and prior to acceptance, compared to the
+current phasing of releases and significant live operation prior to
+acceptance makes this issue more important.
+
+L8
+
+«¢ Where the contracting authorities agree to the implementation
+of releases which contain declared deficiencies, Pathway will
+accept any consequent liability caused .
+
+© In the specific context of Release 1c, Pathway will therefore
+accept liabilities arising as a direct consequence of the
+restricted EVP, the reduced security functionality and the 10
+minute timing problem that could allow a payment to be
+encashed twice.
+
+© Where reduced functionality or declared deficiencies require
+the contracting authorities to adopt extra “work around”
+costs these cannot be recovered from Pathway - if such costs
+are considered excessive, the release contents should be
+declined
+
+5.5 Liability issues related to availability of data (e.g. EVP)
+
+Ref. Liability Assignment Principle ‘Action By
+
+The risk/liability should remain with whichever party makes an I All
+assumption (e.g. over the availability of data and the ability of customers
+and service users to understand and use that data; or how historic data
+represents future trends). Hence each party needs to be careful about how
+we present information and assumptions.
+
+Lo
+
+Where specific data is found to be less reliable than could reasonably be I All
+expected from its specification, the party that provided the data should be
+liable. Hence if EVP fails because of poor data quality from DSS systems,
+Pathway should not be liable.
+
+L10
+
+Tn the particular context of EVP it was agreed that for the limited number I DSS/ICL
+of cases where first name was not available, DSS and Pathway will split I Pathway
+
+rah any consequent loss 50-50.
+
+5.6 Liability and Recovery Costs
+
+COMMERCIAL IN CONFIDENCE Page 30 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+
+FUJ00232432
+FUJ00232432
+
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+Ref.
+
+Liability Assignment Principle ‘Action By
+
+The principles involved in liability and recovery costs are largely covered I All
+Liz I mder 5.1 above. It was however also agreed that there needs to be some
+
+baseline for standard recovery costs to enable each party to assess the
+level of exposure and agree the way forward.
+
+5.7 Liability impact of CCNs
+
+Ref. Liability Assignment Principle Action By
+
+Tt was agreed that variations to liability should be a specific point on CCN I All
+LI3 impact assessments.
+
+In the context of CCN117 specifically it was agreed that cards and I All
+temporary token liability at the point of encashment were identical. DSS
+L14 , ‘ 5
+
+are responsible for ensuring a temporary token is issued accurately, but at
+the post office, the same principles apply to temporary tokens as for cards.
+
+DQ Are principles 11 and 14 really low level principles or caselaw?
+
+COMMERCIAL IN CONFIDENCE
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+
+Page 31 of 40
+FUJ00232432
+FUJ00232432
+
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability Ie
+
+POCL Assignment)
+
+6 ICL Pathway Caselaw Database
+
+The Caselaw Database has been introduced in order to provide a comprehensive log of all
+reconciliation incident types which can act as the legal precedent for any future incidents of an
+identical nature. The forerunner to this is the ‘Error Matrix’ which is a table of liability
+allocations based on different ‘error’ scenarios. The Error Matrix will be retained until the
+Caselaw Database has mirrored all the liability ‘error’ scenarios on the Error Matrix. The
+Caselaw Database is kept within a secure unit at ICL Pathway’s Bracknell site where the
+Business Support Unit is based.
+
+Further information can be found in the Draft Document ICL Pathway Case Law Database
+(CS/SPE/009 Version 0.1), however the main principles are as follows;
+
+6.1 Caselaw Principles
+
+Ref. Caselaw Principle ‘Action By
+CLI New incident types will be entered on the Case Law Database by a BSU ICL Pathway
+Analyst. BSU
+CL2 A Case Law Referral Form will be used in the escalation process to refer to ICL Pathway
+the appropriate Level. (See Paragraph 7). BgU
+cL3 The Case Law Precedent will be referred to by its unique Caselaw number I ICL Pathway
+and used on the supporting reconciliation exception documentation used BSU
+by the contracting authorities.
+CL4 The database will include details of any investigation costs. ICL Pathway
+BSU
+CLS The database fields are designed to fulfil 3 functions:- ICL Pathway
+© provide a complete incident history in a manner which makes BSU
+the subsequent allocation of liability logical and consistent
+with existing documentation.
+© allow for searches and statistical analysis to be made
+© provide sundry information that allows cross referencing to
+supporting documents and finance information.
+CL6 The actual time reimbursement is made to the appropriate party is I ICL Pathway
+recorded, thus giving an expected time for completion of the process. Bey
+CL7 A Case Law Referral Form will be used in the escalation process for ICL Pathway
+reference to the appropriate Level. _
+DQ Do we need to include any other principles?
+COMMERCIAL IN CONFIDENCE Page 32 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+7 Generic Escalation Process Model for Cross Liability Assignment
+
+The following high level process map describes the escalation processes for liability assignment,
+where liability needs to be agreed between any of the three parties, the DSS, ICL Pathway or
+POCL.
+
+The lower level principles found later in this document, describe the generic processes that the
+operational areas and various Forums undertake to assign liability.
+
+The various levels of escalation are;
+
+LEVEL 1 Working Level e.g. BSU, COLS and POCL Service Management.
+LEVEL 2 Operational Forum (BPS Accounting and Reconciliation Review Meeting)
+LEVEL 3 Commercial Forum(s)
+
+LEVEL 4 Senior Managers Commercial Forum
+
+LEVEL 5 Courts or Independent Arbitration/Alternative Dispute Resolution.
+
+The Terms of Reference for the Operational Forum can be found in draft document
+PCL/SVM/TOR/001 Benefit Payment System Accounting and Reconciliation Review Meeting.
+
+DQ Is this the latest version of the document?
+
+They meet on a calendar month basis and consist of representatives from;
+
+e ICL Pathway, in particular BSU
+
+e DSS, in particular COLS, BAB/COBAP, CAPS Financial Controls
+
+e POCL, in particular TP and POCL Accounting Team
+
+e and any others on an ‘as and when’ basis e.g. Help Desks.
+
+Briefly, the meetings will deal with liability at the operational second level and;
+
+¢ assess and agree liability for incidents of recognised types based on evolving ‘case law’
+agreed with the Commercial Forum;
+
+e escalate other cases to the Commercial Forum with an agreed description of the incident(s),
+perhaps comparing and contrasting differences in opinion or interpretation between the
+parties;
+
+e feed the decisions into the appropriate accounting functions.
+The Commercial Forum(s) (Level 3) will decide on incidents which;
+are new incidents not included on the caselaw database
+
+¢ are incidents which can be matched against the caselaw but liability cannot be agreed
+or caselaw confirmed at the Operational Level.
+
+There are two Commercial Forums;
+¢ DSS/ICL Pathway,
+¢ POCL/ICL Pathway,
+
+COMMERCIAL IN CONFIDENCE Page 33 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+They each have the option to extend their scope to cover 3-way issues. If the Operational Forum
+refer any cases to the Commercial Forum(s) they should decide which Commercial Forum to
+refer the issue. Any cases that cannot be resolved by the Commercial Forum(s) should be
+referred to Level 4 the Senior Managers Commercial Forum (George McCorkell, Dave Miller)
+before reference to the Courts or other final resolution stage. The Senior managers Commercial
+Forum can use any appropriate steering Groups or Programme Boards to aid agreement.
+
+The last decision for liability will rest with the Courts an/or Alternative Dispute Resolution-
+Independent Arbitration (Level 5).
+
+Once liability has been assigned then costs are calculated. However the decisions/assignment of
+costs and timing fall outside the scope of this document (see Part 8 Liability Invoicing). The
+decision may well be made by the Commercial Forum.
+
+Role of Service Management Group(s) in the Liability Escalation Process
+
+Wherever it is deemed appropriate in the escalation process to obtain more information or
+advice then reference to the appropriate Service management Group(s) can be made. This can
+include holding joint Service Management meetings.
+
+7.1 Summary of Processes
+
+The following should be read in conjunction with the process model that follows;
+
+e Incident management models in Part I describe where incidents are likely to arise and how
+they are managed. If fraud is suspected then there are specific processes to follow which are
+contained in Part V. Part II describes how incidents are resolved. All of the processes
+described in these documents will feed into this process. (Processes a and 1).
+
+¢ For each reconciliation incident, before closure is agreed, liability assignment must be
+considered. Each operational area must consider if liability needs to be agreed with one or all
+of the other domains. If it does not , then each area will record the fact that liability has been
+accepted within the domain, (Local procedures will contain further details). (Process 1a).
+
+If liability needs to be agreed with one or all of the other domains and although the incident
+can be matched and agreed against existing caselaw, refer the incident to the Operational
+Forum for ratification. By doing this we are ensuring that precedents are not being set which
+may conflict with contractual obligations or agreements. (Processes 1b,1d and 4).
+
+© Once the decision has been ratified at the Operational Forum then the liable amount should
+be calculated, (see Part VIII), allocated and settlement arranged. (Processes 4a, 5-8). If the
+decision is not ratified by the Operational Forum then the incident should be escalated to the
+Commercial Forum and beyond if necessary. (Processes 4a and 11 et seq).
+
+¢ The raising of a problem should be considered, for instance, if liability is consistently being
+accepted rather than the problem being fixed, (see Part IV). The incident should be closed,
+once all appropriate accounting implications have been considered. At this stage the caselaw
+database held by ICL Pathway BSU should be updated. (Processes 4b and 9).
+
+COMMERCIAL IN CONFIDENCE Page 34 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+
+e Ifthe incident cannot be matched against existing caselaw and it is appropriate to obtain
+more information or advice then the appropriate service Management Group(s) should be
+contacted. (Processes le and 10).
+
+¢ The incident should be referred to the Operational forum, who will consider whether all
+information/advice has been obtained before referring to the Commercial Forum to agree
+liability. (Processes 11a, 12, 13,13a).
+
+¢ The Operational Forum are advised when liability is agreed at the Commercial Forum and (as
+above) the amount calculated, allocated, and settlement arranged. The caselaw database is
+also updated. (Processes 14,4b, and 5-9).
+
+e The Commercial Forum may decide that they need more information/advice from the
+appropriate Service Management Group(s) before agreeing liability. The Commercial Forum
+will once liability is agreed advise the Operational Forum. The amount will be calculated,
+allocated, settlement arranged and caselaw database updated. (Processes
+13b,15,16,16a,14,4b and 5-9).
+
+¢ Ifthe Commercial Forum cannot agree liability even after trying to obtain more
+information/advice then they must escalate to the Senior Managers Commercial Forum, who
+will agree liability and advise the Operational Forum of their decision. The amount will be
+calculated, allocated, settlement arranged and caselaw database updated. (Processes 17,
+17a,18,4b and 5-9).
+
+e Ifthe Senior Managers Commercial Forum cannot agree liability and feel they need more
+advice/information they can refer to the appropriate Service Management Group(s). Once the
+Senior Managers Commercial Forum can agree they advise the Operational Forum
+accordingly. The amount will be calculated, allocated, settlement arranged and caselaw
+database updated. (Processes 17b, 19, 20 20a,18 and 4b, 5-9)
+
+¢ The last decision if necessary will last with the Courts although resolution may be sought at
+an alternative panel, e.g. between Directors of ICL Pathway, the DSS or POCL, or
+Independent Arbitration. The amount will be calculated, allocated, settlement arranged and
+caselaw database updated.(Processes 21,22 and 4b,5-9).
+
+COMMERCIAL IN CONFIDENCE Page 35 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+Reconciliation Process For ICL Pathway — Version: 0.C_
+BA Date: 6/2/99
+
+Release NR2 - PART 3 (Liability
+POCL Assignment)
+
+FUJ00232432
+FUJ00232432
+
+PAGE LAYOUT
+
+GENERIC ESCALATION LV =
+PROCESS MODEL FOR CROSSI 1
+LIABILITY ASSIGNMENT
+
+Does Liability Need
+
+10 be Agreed with Ether Liabtey
+” Resolve Incident 1] PSS? way/POCL Caselaw? Agreed
+
+Incident Raised
+for Reconciliation
+
+fer to Operational
+
+4 Te oe I —$ pm
+
+System Customs
+
+. andor Fraud Investig
+Exception andr perpen Yes Yes Yer Ratton
+Bonus
+No No
+No
+
+fesen 2] tae, afer to Appropriate I yoy, fr to Appropriate
+See Incident See Fraud and Incident Mgt Lisbithy needed? Service Mgt needed? Service Mgt
+Mgt Model) Model(s) Pats Land V Group 4 3
+
+Go 10 Processes 4h and S Refer to Referto 24
+Operational Operational
+Forum Forum
+
+Ismore
+Info
+needed?
+
+efer to Appropriate
+Se
+
+Li
+
+Operational 1
+Forum Refer to
+Commercial Forum
+
+Go to Process 13a
+
+COMMERCIAL IN CONFIDENCE Page 36 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+
+BA Reconciliation Process For ICL Pathway Version: oe 09
+Release NR2 - PART 3 (Liability °
+
+POCL Assignment)
+
+FUJ00232432
+FUJ00232432
+
+See Liability Invoicing
+Past VIL
+
+7 4 7
+catculte Lp I Authority Decides > Funds Allocated
+Amount I Recovery Method or Service Credit
+
+See Problem Mgt Model(s)
+
+Close inewlent 9 4
+and Take Any
+
+I Appropriate Action
+
+From Process 4
+
+Should Problem
+be raised?
+
+<=
+
+Go 10 Process Ia
+
+COMMERCIAL IN CONFIDENCE Page 37 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+ICL Pathway
+
+BA
+POCL
+
+Reconciliation Process For ICL Pathway — «sion:
+Release NR2 - PART 3 (Liability
+
+Benefit Payment End to End Ref: CS/PRD/036
+
+0.C
+Date: 6/2/99
+
+Assignment)
+
+FUJ00232432
+FUJ00232432
+
+Courts
+
+2
+Refer to
+
+Liability
+Agreed?
+
+Ismore
+fli
+
+From Process 13,
+
+a
+
+cesses
+‘Advise gs
+PH I operational Forum
+of Decision
+Ya
+A Liabiiy
+
+Agreed?
+
+Senior Managers
+Commercial Forum
+
+Refer to
+
+Liability
+Agreed?
+
+Ismore
+Iinfoladvice
+needed?
+
+—_
+
+i Service Mat >I. Unit “><
+1s
+
+‘Advise 18
+Operational Forum
+
+ofDevision I <j
+
+Yed
+
+eter to Appropriate
+Service Mgt
+
+Grow,
+
+20" Update Senior
+Managers ><); Labiy
+‘Commercial Forum e
+
+No]
+
+Altemative
+Dispute Resolution
+
+I___»—_
+
+COMMERCIAL IN CONFIDENCE Page 38 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End CS/PRD/036
+BA Reconciliation Process For ICL Pathway C09
+Release NR2 - PART 3 (Liability
+POCL Assignment)
+
+8 Low Level Principles for the Assignment of Liability
+
+For each reconciliation incident before closure is agreed, liability assignment must be
+considered. Each operational area determines whether liability needs to be agreed with either of
+the other domains, e.g. do the DSS need to agree liability with ICL Pathway and/or POCL? (see
+Part 1 Incident Management Models for the appropriate operational areas). Procedures for how
+agreement for liability assignment is actually achieved will be developed by the individual
+operational areas.
+
+The following principles describe the principles that each level undertake to assign liability.
+
+Ref. Liability Assignment Principle ‘Action By
+
+© Liability can only be assigned at this level if it does not need to be
+
+agreed with any of the other 3 domains. LEVEL 1
+
+Tis © Close incident(s) after assigning liability and update as appropriate e.g
+IPMS or RED
+
+* Reference to the appropriate Service Mgt Group(s) can be made for
+further advice or information on those incidents with cross domain
+liability assignment, before reference to the next Level.
+
+¢ Liability assignment is ratified at this level where incidents can be
+
+16 matched against existing caselaw.
+
+LEVEL 2
+
+* Reference to the appropriate Service Mgt Group(s) can be made for
+further advice or information on those incidents with cross domain
+liability assignment, before liability assignment is ratified or reference
+is made to the next Level.
+
+© The Operational Forum will escalate to the next level all incidents that
+cannot be matched to existing caselaw, or agreed at the Operational
+Level.
+
+¢ Liability is assigned at this level for new incidents not included in
+
+7 existing caselaw.
+
+LEVEL 3
+© Liability is ratified/agreed at this level where liability cannot be agreed
+
+at Level 2.
+
+Reference to the appropriate Service Mgt Group(s) can be made for
+further advice or information on those incidents with cross domain
+liability assignment, before liability assignment is ratified or reference
+is made to the next Level.
+
+© If liability cannot be agreed at this level refer the incident(s) to the next
+level.
+
+© Liability is ratified/agreed at this level where liability cannot be agreed
+
+Lis at Level 3.
+
+* Reference to the appropriate Service Mgt Group(s) can be made for I t pvp 4
+further advice or information on those incidents with cross domain
+liability assignment, before liability assignment is ratified or reference
+is made to the next Level.
+
+COMMERCIAL IN CONFIDENCE Page 39 of 40
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE
+FUJ00232432
+
+FUJ00232432
+ICL Pathway Benefit Payment End to End Ref: CS/PRD/036
+BA Reconciliation Process For ICL Pathway Version: C09
+Release NR2 - PART 3 (Liability ate:
+POCL Assignment)
+L19 © DQ Stuart/John can you supply any extra info here on this level, I LEVEL 5
+ice. how is case referred to the courts or is it not appropriate to
+add any info other than refer to Solicitors Branch?
+COMMERCIAL IN CONFIDENCE Page 40 of 40
+
+THIS IS A DRAFT DOCUMENT AND MAY BE SUBJECT TO CHANGE

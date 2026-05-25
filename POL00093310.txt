@@ -1,0 +1,339 @@
+Horizon Programme
+Acceptance Board Meeting
+Gavrelle House
+17.00 - 19.00 pm
+
+18" August 1999
+
+Minutes ©
+
+Attendees:
+POCL: D.Miller, B. McNiven, K. Baines, J.Meagher, R.Holleran, A. Simpkins (minutes)
+Pathway: R. Christou, J.Bennett, M.Coombs, J.Dicks, T-Oppenheim
+
+Opening Remarks
+
+DM said the Board was meeting to establish if Acceptance had been met.
+Incidents Review
+
+JM confirmed the following 3 medium incidents already have agreed rectification
+plans:
+
+© 342 TIP data file delivery SLA breach
+
+« 361 Duplicate Records over TIP Interface
+
+¢ 371 Late Transaction over 9 days Old on HAPS
+
+376 Derived Cash Account
+
+JM summarised thc status and the current monitoring of fixes for which POCL need
+time to complete observation. He recognised that constructive discussions have taken
+place in the last few days to reach a comprehensive solution.
+
+POCL are unable, however, to agree the proposed rectification plan as it stands today.
+In their view the plan is still immature and the proposal not to deliver the additional
+controls until March 2000 is not acceptable.
+
+In addition, the latest analysis performed on Incident 410 (which POCL had agreed to
+include under 376 subject to an agreed resolution of the additional controls) has
+revealed further unresolved deficiencies and the workaround for these is not agreed.
+
+In summary this incident has not been resolved by the time of the Acceptance Board
+and POCL retain it as a high priority incident.
+
+JD said he was disappointed that the new proposals had not been accepted given what
+he believed was a reasonable plan and that good progress had been made in
+
+POL00093310
+POL00093310
+
+POL-0094702
+POL00093310
+POL00093310
+
+POL-0094702
+discussions. JM acknowledged this progress but the position remained as he had
+described.
+
+JB said the Pathway position was that the plan was sensible and that they considered
+the incident was medium severity with a sound rectification plan.
+
+378 AIS Contravention/Data Integrity
+
+JM said rectification activity had not been successful and that further analysis was
+awaited from Pathway. It remained as a medium incident without an agreed plan.
+
+JD said that a new and specific issue has arisen during rectification and that on
+frequency alone it could not be used to class the incident still as medium. He believed
+the proposed Pathway rectification plan comprises monitoring and fixing any new
+issues that arise.
+
+DM said the POCL view was that there is no agreed plan on this medium severity
+incident.
+
+JB said the Pathway position was that there is a sound rectification plan but that a
+
+further position has arisen which is being analysed and may not be part of the original
+
+incident. Pathway consider the incident is low.
+
+211 EPOSS Receipts and Payments not Equal
+JM said the rectification plan is agreed and accepted.
+218 Training
+
+BMc said the reason for the incident was based on the requirement to recognise the
+differences in users ability. Despite progress a significant number of offices could not
+cope with the first live balance without HFSO support which had never been intended
+by POCL.
+
+Pathway had looked at potential improvements outside the course. The areas POCL
+
+had raised included:
+
+a forming up of ideas on pre-entry training - a wider variety of course types was
+expected
+
+* aplan to address testing of attendees - some staff seem to have passed
+inappropriately
+
+¢ aneed to look at the use of Training Mode
+
+POCL have now had additional proposals from Pathway but they cannot accept this as
+a mature plan - it is lacking details of cost and time for example.
+
+POCL therefore see 218 as a continuing high severity incident.
+
+POL00093310
+POL00093310
+
+POL-0094702
+POL00093310
+POL00093310
+
+POL-0094702
+MC said Pathway did not see the incident as high but as closed. The recent
+discussions have identified new proposals and Pathway have made an offer about pre-
+entry event with details of aims and scope and POCL’s expected contribution. In the
+time that has been available Pathway have produced the construct of a plan which
+now needs POCL input. The proposals did cover Pathway’s views on testing and field
+support. These proposals in their view should enable POCL to reduce their perceived
+severity of the incident.
+
+BMc said he agreed new components were being proposed but their absence in Live
+Trial had been a serious problem and in terms of Acceptance the incident is not yet
+capable of being closed.
+
+JB summarised Pathway’s view that the incident had been medium on Monday and
+that the new proposal was a genuine attempt to help with the management of change
+and as such was an additional initiative. They continue to view the incident as
+medium.
+
+372 Systems Management
+
+JM said a rectification plan had been received but is not accepted as it does not
+
+contain clear dates and deliverables. There is a lack of evidence on resolution to
+
+enable the current plan to be agreed.
+
+JD said it was difficult to know what else can be done by Pathway at this stage.
+Explanations had been fully given in their view. Future upgrades would be observed
+and there is full visibility of current changes. Pathway cannot see what further can be
+done. JM said POCL do have recommendations to make which may help.
+
+DM confirmed that POCL see the incident as medium without an agreed plan.
+Pathway said they see it as medium with a sound rectification plan.
+
+391 Physical Security at Bootle and Wigan
+
+JM said the proposed rectification plan was not clear. Dates had not been provided
+and it does not commit Pathway to improvements. There is a lack of clarity to allow
+acceptance.
+
+JD said POCL had full visibility of work in hand and the opportunity to review
+outstanding work. JD said only detailed building plans were not supplied and this
+level of detail is not appropriate. JM said experience suggested that the commitments
+being proposed were insufficient to avoid future dispute.
+
+JB said Pathway had tabled a plan to address the remaining concerns and that in their
+view if the plan was agreed Pathway would accept it to be categorised as medium.
+However Pathway consider the incident as low given the plan is not agreed by POCL.
+
+POL00093310
+POL00093310
+
+POL-0094702
+POL00093310
+POL00093310
+
+POL-0094702
+390 and 395 AP Transactions
+
+JM said that POCL accept the rectification plans for these incidents.
+
+298 System Stability
+
+JM said the proposed rectification plan does not provide an understanding of how the
+problems will be resolved by the proposed fixes. It is also unclear when fixes will be
+implemented. Given the lack of understanding of the impact of the plan on the
+incident POCL cannot accept it.
+
+JD said all the fix dates were in the near future. JM confirmed that POCL would need
+to see the outturn as this was the only way to confirm the impact of the changes.
+
+JB said that Pathway have done the proposed analysis of incidents as agreed . JB
+asked if POCL have undertaken their assessment of business impact. DM said he did
+not believed ihat common data had yet been agreed and that information from
+Pathway was not yct available. JD said the data had been provided from the Help
+Desk. KB said the data had not come from the system logs but from user calls.
+
+DM asked if there is data other than the Help Desk logs. JD said there was other data
+
+from office observation. BMc said the evidence from ringarounds suggested the
+problem could be 50% higher than reported at the Help Desk and that there was no
+clear evidence from Pathway to confirm or deny this.
+
+MC said use of system event logs coupled with phoning of post offices had allowed
+additional analysis, but that use of event logs on their own would not provide a
+meaningful picture.
+
+DM stressed the need for a better view of the data on this incident and that Pathway
+must share as full a picture as possible. Would Pathway share all their information
+even if it was a top-side figure? JB said that such a figure would be wrong and that
+part of the issue is offices failing to report all incidents to the Help Desk.
+
+BMc said that he felt the analysis was simply not yet robust. JD denied this was the
+case.
+
+RC said the immediate task is to establish severity based on the data which has been
+agreed. The next step would be to share information with the expert. DM disagreed.
+He wanted to have additional information to establish the full impact of the incident.
+BMc said POCL view the incident as high on the basis of information that was
+available. JB said Pathway view it as medium with a sound plan.
+
+314 Provision of Technical Documentation
+JM said the plan suggests two documents should be obtained from Escher, one of
+
+Pathway’s subcontractors, and it was not acceptable on this basis. POCL retain the
+incident as medium without an agreed plan.
+
+POL00093310
+POL00093310
+
+POL-0094702
+POL00093310
+POL00093310
+
+POL-0094702
+POL00093310
+POL00093310
+
+TO said the situation with respect to Escher should be viewed in the same way as if
+the subcontractor were Oracle. Any supplier of Riposte based applications would need
+a development licence with Escher. Once they have an agreement with Escher they
+would have access to the APIs directly from them.
+
+TO said Pathway would nevertheless offer to write a generalised API for Riposte in
+addition to the EPOSS specific components and this would enable a procurement
+process.
+
+JM agreed to consider this offer. RC said that the offer was subject to agreeing the
+next steps.
+
+369 Scanner Reliability
+
+KB said POCL saw this as medium. He said there was doubt over field conditions for
+rejecting the present books and that lab tests had not resolved the problem in POCL’s
+view. POCL’s position is that the problem is not fully understood and a further round
+of tests would resolve this. POCL see the incident as medium without a plan.
+
+JB said that Pathway’s position had not changed and that this was not an Acceptance
+Incident in their view.
+
+408 Horizon Help Desk
+
+BMc said this is seen as still a medium incident requiring an agreed plan. The current
+proposed plan is seen as deficient in a number of areas. Production of scripts is not
+complete and the plan contains some items that have already missed dates. [Pathway
+stated that actions due on 17/18" August were done on schedule.] The plan did not
+show activities such as the need to train HSH staff.
+
+This suggests that the proposed plan is high risk and will not have the required impact
+on the achievability of NRO rates.
+
+Also call volume projections and staffing projections contain assumptions that POCL
+cannot agree based on experience to date.
+
+In summary the plan was not seen by POCL as credible.
+
+Pathway disputed this and said in their view the plan was sound and would resolve the
+incident.
+
+POL-0094702
+POL00093310
+POL00093310
+
+POL-0094702
+Summary
+
+The following incidents are in dispute:
+
+376 POCL high, Pathway medium
+
+378 POCL medium no plan agreed
+
+218 POCL high, Pathway medium
+
+372 POCL medium no plan agreed
+
+391 POCL medium no plan agreed
+
+298 POCL high, Pathway medium
+
+314 POCL medium no plan agreed
+
+369 Pathway do not accept as an incident
+408 POCL medium no plan agreed
+
+On the basis of the above DM said that from POCL’s view acceptance has failed.
+
+Next Steps
+
+DM said the next steps were for Peter Copping to work on areas of dispute. DM
+would wish to agree with RC the process for this.
+
+ts on two criteria - one the number of highs and two the
+
+KB added that Acceptance fails on two criteria - one the number high:
+lack of agreed plans for medium incidents.
+
+RC said 6 out of 15 incidents have now been agreed. Pathway dispute the highs,
+believe acceptable plans exist for the mediums, and that 369 is not an incident.
+
+RC said Copping should take a view on the robustness of the plans. KB said the fact
+was that the plans were not agreed and this was the condition for acceptance. The
+acceptability of the plans was not a dispute subject to decision by Copping
+
+RC said he therefore saw there were two legal issues on which he needed to take
+advice before Copping could be involved. These were:
+
+© can Copping rule on whether 369 was an incident ?
+
+* can Copping take a view on whether the plans should have been agreed ?
+
+RC would take legal advice as would POCL before the next contact, which would
+take place tomorrow.
+
+It was noted that the RAB could not take place on Friday. Training of staff for NRO
+would also have to be suspended. Both parties would need to take the appropriate
+action on this delay to RAB.
+
+POL00093310
+POL00093310
+
+POL-0094702
+POL00093310
+POL00093310
+
+POL-0094702

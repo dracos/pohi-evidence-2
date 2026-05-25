@@ -1,0 +1,53 @@
+POL00091670
+POL00091670
+
+Route 24 Dee
+
+Tea. Fa wpelaty 4 bys 1957
+
+Beer, Christine At BCH 46 by porbeuthaty ee
+
+From: Holleran, Ruth ak fone # bus roth. Contp
+To: Rego, Mena_Gen; Smith, David
+
+Ce: Charlton, Peter dry Tareas Oe (44VE
+Subject: Congo 4 and Lost Transactions
+
+Date: 24 December 1997 11:53 (Lonas lag ya peste
+
+Dave, Mena aX”
+
+You may want to be aware that we are ‘losing’ BES transactions at an alarming rate. The reason is
+without the EPOSS shell the BES system does not force the outlet to commit the transaction. If the user
+does not commit the transaction and the system times out, - after 1 and a quarter hours the transaction
+is lost. We knew this would happen i.e. a Known Problem but procedures were meant to cover this as
+far as possible, until we got the next release.
+
+Clearly these aren‘t adequate and a further update was sent out last friday to all 205 outlets. We are
+able to spot these lost transactions because good old SPMRs are using receipts to complete the cash
+account and, then ABED data from BES forms the supporting information to reconcile against in CFD.
+Because BES has lost the transaction the two.amounts-differ— hence the error. (Thank god for the cash
+account !!), Data in CFD is 2 weeks old st So we will not Séé“any.impact of the update for another
+3 weeks so the errors will increase and ti ight service management “keports(seen by Andy and John
+H & others) will increasingly see red - just SO-you-are-aware..Generally-the error happens in the newer
+outlets so hopefully things will simmer down as they get used to it. But the problem worsens because it
+can be aggravated by printer difficulties. In these cases the printer won't print receipt, SPMR writes
+manual one and because of distraction forgets to commit and we loose record on BES if system ‘times
+out’, This scenario accounts for 50% of lost transactions to date.
+
+So the upshot is the issue is being managed but if the update doesn't work we may have to take some
+action to hold progress on for example rollout of cards. I am watching this closely and have agreed with
+PDA that we may have to resort to this.
+
+Again just so you are aware.
+
+Ruth
+
+ore
+” any’ mw ~ 9 wel
+
+Page 1
+
+POL00091670
+POL00091670
+

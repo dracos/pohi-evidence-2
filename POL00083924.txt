@@ -1,0 +1,1001 @@
+Received ‘Sep 21
+21/09
+
+04:07PM ( It
+
+\7P I
+"99 TUE
+
+Fax message
+
+To ROBERT CHAPLIN
+ROOM 318
+SLAUGHTER & MAY
+
+Fax Number ' GRO
+
+From deff Austin
+
+cc
+
+Date 21/09/99
+
+No. of Pages 22
+
+(ing. this page)
+
+Subject Al 408 RES PLAN
+
+facet ot (SSS
+bia — rb Kath !
+ead .
+
+GRAMM
+
+POL00083924
+POL00083924
+
+INC37E7AF440FAF on Sep 21 04:17PM 1999 * int Me?
+ME 001
+Received Se
+Bi
+
+POL00083924
+POL00083924
+
+21 04:07PM (08:20) on SandM line (3]_for 'BGB' WORKSRV4 printed INC37E7AF440FAF on Sep 21 04:17PM 1999 * 22
+oe Toe Ten) Tee é PROGRAMME ” fRoae
+
+HORIZON
+
+Acceptance Incident Number (1)
+
+Acceptance Test Name (2) Source (3) Date Observed (4)
+Service Levels BSM 23/07/99
+Witness/Revicwer who observed Incident (Owner) (5) Authority (6)
+
+Description of Incident (10)
+reporting period and are listed below.
+
+Calls answered within 40s
+
+Calls ubondoned through ring off
+[Level I calls resolved within 5 mins
+[Level 1 calls resolved within 10 mins
+ILevel 2 calls resolved within 30 mins
+[Level 2 calls resolved within 45 mins
+
+IAll of these failures will have an impact on the network and customers.
+
+Failure of the Horizon System helpdesk to support the network. there were six service level failures in the last
+
+Horizon Aceeptanee
+Test Manager
+
+Witness / Reviewer
+
+‘Date: Date: Date: Date:
+‘DSS Acceptance Manager POCL Business Assurance
+Enteréd in Acceptance Database Date:
+
+POL00083924
+POL00083924
+
+Received $ 21 04:07PM (08:20)
+21709 '88 TUE 16:02
+
+"BGB" WORKSRV4 printed INC37E7AF440FAF on Sep 21 04:17PM 1999 * i] B22
+0 01 003
+
+Acceptance Incident Number (1) Analysis Sequence Number (2)
+408
+
+Acceptance Test Name (3)
+
+Service Levels
+
+‘High / Medium / Low (4) ‘Authority @)
+Medium
+
+Analysis of Acceptance Incident (6)
+
+IPleasc refer to the attached document CR/ACD/408 version 1.3 17/09/99.
+
+Clearance Action (7)
+
+‘To implement the actions contained in the referenced document.
+
+[Agreed Resolution Plan
+
+[I propose the Clearance Action
+and Incident Status described
+above John Dicks
+i accept / reject the Clearance
+Action and Incident Status
+described above
+
+20/09/1999]
+
+Received Sep 2’
+21708
+
+1 04:07PM (08:20) on SandM.line_[31_for.
+
+“99 TUE 16:03 TEL
+
+POL00083924
+POL00083924
+
+WORKSRV4 printed INC37E7AF440FAF on Sep 21 04:17PM 1999 * 4/22
+GRAMME " aos
+
+ICL Pathway Resolution Plan for Al408- Horizon System Helpdesk = Ref: CR/ACD/408
+Version: = 1.3
+Company-in-Confidence Date: 17/09/1999
+Document Title: Resolution Plan for 41408- Horizon System Helpdesk
+Document Type: Report
+Release: CSR
+Abstract: This document provides additional information and explanation
+concerning the resolution of AI408.
+Document Stutus: Definitive
+Author & Dept: Dave Cooke - ICL Pathway Customer Requirements
+Peter Burden - [CL Pathway Customer Service
+Paul Westfield - ICL Pathway Customer Service
+Reviewed By: John Dicks ~ Director Customer Requirements
+Stephen Muchow - Director Customer Service
+Kevin Dowling - Service Director, Operational Services Division
+Distribution: ICL Pathway POCL
+ICL Revicwers John Meagher
+Tony Oppenheim Keith Baines
+ICL Pathway Library
+© 1999 ICL Pathway Limited Company-in-Cunfidence Page: 1 of 19
+
+Last Printed: 21/09/99 15:43
+POL00083924
+POL00083924
+
+Re ived Sep 21 04:07PM (08:20 SandM Lit for 'BGB' WORKSRV4 printed INC37E7AF440FAF Sep 21 04:17PM 1999 * 5/22
+sceiveg PaaS OS Tk Tens Tate ate tt HORIZON PROGRAM *~ aos
+
+ICL Pathway Resolution Plan for AJ408- Horizon System Helpdesk Ref;  CRVACD/408
+Version: 1.3
+Company-in-Confidence Date: 17/09/1999
+0.5
+© 1999 ICL Pathway Limited ‘Company-in-Confidence Page: 2 of 19
+
+Last Printed: 21/09/99 15:43
+POL00083924
+
+POL00083924
+Re ived Sep 21 04:07PM (08:20; Si *BGB' WORKSRV4 inted INC3i hy <
+eceives Pad 88 LUE 16:05 Tel? HORTZOS PROGRAMME © AFAOFAF on Sep 21 04:17Pm 1999 * Fg 6/22
+ACL Pathway Resolution Plan for AI408- Horizon System Helpdesk Ref: CR/ACD/408
+Version: 1.3
+Company-in-Confidence Dates 09/1999
+
+Document Control
+
+0.5 Document History
+
+1.0 26/08/99 First issue
+
+Ll 08/09/99 Updated following workshops and
+Teviews with POCL
+
+1.2 16/09/99 Updated following an SLA workshop with
+POCL
+
+13 17/09/99 ‘Updated following Acceptance Meeting
+
+0.5 Approval Authorities
+
+Stephen Muchow Director, Customer
+Service
+
+John Dicks Director, Customer
+Requirements
+
+0.5 Associated Documents
+
+M1) CS/SMM/AT408 I 1.0 17/08/99 I HSH Scripting, SLA I TCL Pathway
+Recovery and Resource
+Plan
+
+2) 1.0 24/08/99 I AI408 ~ HSH Service I POCL
+Level Failure
+
+0.5 Abbreviations/Definitions
+
+FTE Full Time Equivalent
+HSH Horizon System Helpdesk
+SLA Service Level Agreement
+© 1999 ICL Pathway Limited Company-in-Confidence Page: 3 of 19
+
+Last Printed: 21/09/99 15:43
+Received Sep 21 04:07PM (08:20)
+21708 "8
+
+POL00083924
+POL00083924
+
+WORKSRV4 inted INC37E7AF440FAF 2 *
+@ TUE ‘16:04 HORIZON "PROGRAMME on Sep 24 04:17PM 1999 * a Shee
+ICL Pathway Resolution Plan for AI408- Horizon System Helpdesk Ref: CR/ACDIA08
+‘Version: 1.3
+‘Company-in-Confidence Date: LH/09/999
+
+0.5 Changes in this Version
+
+: crane = hes
+
+11 Primarily changes following the Acceptance Workshop on 26 August and
+the Call Volume/HSH Model Workshop on 8 September. Revision to
+document title,
+
+12 Changes following the Acceptance Workshop on 14 September to agree
+
+with POCL the Cash Account calls to be removed from the L1 and L2 SLA
+calculations and confirm that these SLAs were met during the month of
+August. Primarily Section 5.2.2 and 5.2.4.2 and a new 5.3. The old 5.3 is
+
+now 5.4
+17/09/99 — Additional final paragraph in section 5.2.4.2
+13 Changes to section 5.3 and 5.4
+© 1999 ICL Pathway Limited Company-in-Confidence Page: 4 of 19
+
+Last Printed: 21/09/99 15:43
+POL00083924
+
+POL00083924
+Received Sep 21,04:07PM (08:20) on SandM.ine.I31.for. 'BGB' — WORKSRV4 pri :
+received, Sep 21, 04:07PM, (08:20) chien 13)_for. 'BGB HORKSRVG printed, INCSTE7AFAA0FAF on Sep 21 04:17PH 1999 * Pg B/22
+ICL Pathway Resolution Plan for A1403- Horizon System Helpdesk —- Ref: CR/ACD/408
+Version: 1.3
+Company-in-Confidence Date: 17/09/1999
+
+0.6 Table of Contents
+
+1 INTRODUCTION
+
+2 SCOPE...
+
+3. POCL POSITION
+
+4 ICL PATHWAY POSITION............ ssaunnransnnssananssnvencergeyeqeesnesseenssoeneesnnonennes ae &
+
+5 CLARIFICATIONS AND PROGRESS.
+
+SL HSH Scripting Plan.r.nen
+3.11 Future activité
+
+Conclusions...
+5.3 Monitoring Period ..vmnnsennnmersnemnnennnntanitinnneneiitiinatnnertetntnnsttinmnetnnetnete 13
+54 SLA Rectification Plan rerevesessrerssesoreneersbeceestessss44sabtanst¥ eananen 15
+
+6 APPENDIX A— PROBLEM TYPE AGAINST SERVICE LEVEL....
+
+© 1999 ICL Pathway Limited ‘Company-in-Confidence Page: 5 of 19
+Last Printed; 21/09/99 15:43
+Received Sey
+21/
+
+id
+
+9
+
+21,0
+
+Introduction
+
+This document has been produced following the POCL / ICL Pathway Acceptance
+Board Meeting of 18/08/99 and addresses the comments made in the minutes of that
+meeting with respect to Acceptance Incident 408 and the statements made in the
+POCL paper 4/408 — HSH Service Level Failure — 24/08/99.
+
+This document provides additional information and explanation to that contained in
+HSH Scripting, SLA Recovery and Resource Plan - CS/SMM/AI408 - 17/08/99 issued
+to POCL as input to the Acceptance Board.
+
+This document has been updated in the light of the Acceptance Workshop of 26/08/99
+and the Cal! Volume/HSH Model Workshop on 8 September.
+
+This document has been updated in light of the Acceptance Workshop on 14
+September.
+
+2 Scope
+
+The scope of this paper comprises the content of AI408, the contents of the above
+paper CS/SMM/AI408, the topics contained in the draft minutes from the above
+Acceptance Board meeting and the paper 4/408 — HSH Service Level Failure.
+
+The topics can be summarised as: -
+
+* Plan for production and implementation of additional HSH Cash Account scripts
+
+* HSH Resource Plan, comprising call volume projections and HSH staffing
+projections
+
+« HSH SLA Rectification Plan
+
+3 POCL position
+
+Based upon the minutes of the Acceptance Board meeting of 18 August 1999, POCL
+contended that:
+
+“Production of scripts is not complete"
+“Yt does not take account of activities such as the need to train staff"
+"Some items have already missed dates"
+
+"Call volume projections and staffing projections contain assumptions that POCL
+cannot agree based on experience to date"
+
+On 24/08/1999 POCL also provided the paper 4/-408 - HSH Service level Failure.
+This supplemented the above points as follows:
+
+* POCL’s experience to date is that some scripts have resulted in inappropriate
+advice resulting in further calls to HSH and the National Business Support Centre.
+
+© 1999 ICL Pathway Limited ‘Company-in-Confidence Page: 6 of 19
+
+Last Printed: 21/09/99 15:43
+
+POL00083924
+
+POL00083924
+14:07PM. (08:20) on S *BGB' —-_ WORKSRV4._ pri :
+39 TUE 16:04 TEL. HORTZUS FRDGHAMME ~/AF-MOFAF on Sep 21 04:17PM 1999 * fg Shee
+ICL Pathway ‘Resolution Plan for 41408- Horizon System Helpdesk —-Ref.: CR/ACD/403
+Version: 1.3
+Company-in-Confidence Date; 17/09/1999
+Received $6
+2i/
+
+far 04:07PM (08:20) on Sa
+
+POL00083924
+
+POL00083924
+
+“98 TUE 16:05 TEL HORIZON Pro
+ICL Pathway Resolution Plan for Al408- Horizon System Helpdesk Ref: CRACD/408
+Version: 13
+Company-in-Confidence ‘Date: 17/99/1999
+
+POCL requires an explanation of how the call volume projections are produced
+and the logic that supports this process.
+
+POCL requires that the SLA rectification plan is produced and agreed.
+
+4 ICL Pathway position
+
+Taking the three main topics within this Al ICL Pathway's position can be
+summarised as: -
+
+HSH scripting plan - The plan described in section 2 of ref. (1) remains the basis
+for addressing this aspect of the AL. The ¢ Acceptance Board may not have been
+aware that actions designated for the 17" and 18th August were completed on
+time. Subsequent actions within ICL Pathway and POCL have been completed in
+a timely and co-operative manner from all parties involved. The revised HSH
+Cash Account script document was re submitted to POCL as Cash Account
+Process - ICL/PW/DSP/PRO/023 - version 2.1 - 24/08/1999.
+
+{At the Acceptance Workshop of 26/08/99, POCL advised that there were further
+comments on the scripts and a joint POCL/Pathway workshop aimed at finalising
+the scripts was planned for (and was held on) 02/09/99).
+
+HSH Resource Plan - Call Volume prediction
+
+ICL Pathway wish to ensure that POCL has confidence in the modelling tools and
+management processes that are used to manage the Horizon System Helpdesk in
+terms of staffing levels. The development of the HSH resource model draws upon
+a decade of market leading experience of ICL providing Help Desk Services to a
+diverse range of Clients.
+
+Somme of the key assumptions were introduced in ref. (1) and to supplement this
+ICL Pathway proposed that a workshop be held with POCL to address POCL’s
+concerns. A set of objectives for this event was proposed in section 5.2. This
+event was held 7-8/9,
+
+The HSH has experienced a substantial increase in calls on Wednesday / Thursday
+associated with outlets having difficulties in completing the Cash Account
+process. This increasc in business related calls was not predicted and it is ICL
+Pathway's intention to establish a cash account domain of skilled staff with the
+appropriate business knowledge dedicated to handling this increase.
+
+ICL Pathway does not consider it appropriate for these complex business related
+calls to be handled within the SLA constraints of the Level 1 / Level 2 call
+definitions. These calls have distorted the SLA performance.
+
+SLA Rectification Plan
+
+The actions and target dates that will contribute to an improvement in the HSH
+SLAs are set out in section 5.3.
+
+© 1999 1CL Pathway Limited Company-in-Confidence Page: 7 of 19
+
+Last Printed: 21/09/99 15:43
+
+MORKSRV4. print inked, INCE INC37E7AF440FAF on Sep 21 04:17PM 1999 * PH oh 10/22
+POL00083924
+POL00083924
+
+Received Sep 21, 04:07PM. (08:20)
+21s
+
+MORKSRV4 printed INC37E7AF440FAF on Sep 21 04: s
+9 ‘99 TUE 16:05 on Sep 21 04:17°M 1999 fort?
+
+HORIZON PROGRAMME
+
+ICL Pathway Resolution Plan for Al408- Horizon System Helpdesk Ref.: CR/ACD/408
+Version: 1.3
+Company-in-Cunfidence Date: 17/09/1999
+
+5 Clarifications and Progress
+
+5.1 HSH Scripting Plan
+
+The script production plan described in ref. (1) and shown below has now been
+successfully achieved with all actions completed on time.
+
+No. I Description ‘Target I Owner Achieved
+date
+1 Produce additional elements of CashI 17/08/99 I P. Curley wa
+Account Process document in draft form for
+POCL comment
+2 Review and issue additional scripts to} 17/08/99 I P. Curley x
+POCL
+3. POCL review and comment on new scripts 19/08/99 I POCL vv
+4, Collate and respond to comments 20/08/99 I P. Curley vv
+5. I Review and respond to POCL comments on I 17/08/99 I P. Curley vY
+version 2.0 draft of document
+6. I Review comments with HSH 19/08/99 I P. Curley vw
+7. Incorporate accepted comments into} 23/08/99 I P. Curley v
+document from new scripts and comments
+against draft Ver 2.0
+8. I Issue Document as V2.1 definitive 24/08/99 I P. Curley v
+{status to be confirmed with POCL)
+5.1.1
+© 1999 ICL Pathway Limited Company-in-Confidence Page: § of 19
+
+Last Printed: 21/09/99 15:43
+Received $B 21
+21709
+
+POL00083924
+
+POL00083924
+04:07PM (08:20) on SandM.Line.C31for 'BGB'  WORKSRV4 printed 1NC37E7/ : *
+‘98 TUE ‘16:03 TEL. GRO HORIZON PROGRAMME ~/AFMOFAF on Sep 21 04:17PH 1999 * Fg tey22
+ICL Pathway Resolution Plan for AI408- Horizon System Helpdesk = Ref: CRIACD/408
+. Version: 1.3
+Company-in-Confidence Date: 17/09/1999
+
+Future activities
+
+Following agreement of the new scripts, and in conjunction with the establishment of
+the cash account domain, these scripts came into operation from 08/09/99.
+
+Tt was agreed that a joint ICL Pathway / POCL review be held on 14/09/99. The
+objectives of the review held on 14/09/99 being:
+
+* Review scripts in light of operational use.
+e Review, agree and include any additional scripts
+* To identify any feaming opportunities
+
+Such reviews will contimme in line with the recommendation in
+ICL/PW/DSP/PRO/023
+
+5.2 HSH Resource Plan
+
+5.2.1
+
+5.2.2
+
+Background
+
+The development of the model to support the resource requirements of the HSH was
+based on ICL's previous experience in providing a wide range of Help Desk services
+covering both systems and infrastructure call types. This was supplemented by a set
+of assumptions covering the particular call types that ICL Pathway believed would be
+generated by POCL's outlets.
+
+ICL Pathway successfully applied the call volume and HSH resource model during the
+period of Release 1a through to Release fc. During this period there was good
+achievement against SLA targets.
+
+During the period of LT1 it became clear that the actual call pattems diverged from
+those predicted by the models. In particular there were significant differences in call
+volumes following the introduction of the first Wednesday cash account.
+
+Following the second and subsequent cash accounts the continuing high level of calls
+on Wednesday / Thursday, which had not been predicted by the model, required that
+remedial action should be taken.
+
+The resources of the HSH were supplemented by expert assistance from POCL and
+Peritas (now termed KnowledgePool) who were able to successfully handle the
+complex business related aspects of these Cash Account calls. This had a beneficial
+impact on the call response times for the remaining calls being handled by HSH staff.
+
+© 1999 ICL Pathway Limited ‘Company-in-Confidence Page: 9 of 19
+
+Last Printed: 21/09/99 13:43
+POL00083924
+
+POL00083924
+Received Sep 21,04:07PM (08:20) on Si "BGB! i 2
+received, Sep 21, 04:07PM (08:20) on. Sa fer GB HORKSRYG Brinted INCS7EZAFGGOFAF on Sep 21 04:17PM 1999 * ae
+ICL Pathway Resolution Plan for 41403- Horizon System Helpdesk Ref: CR/ACD/408,
+Version: 1.3
+Company-in-Confidence Date: 17H09/1999
+
+Service Level Analysis
+
+Level 1 and Level 2 call resolution SLAs (excluding cash account calls as agreed with
+POCL on 14 September) met their targets in August -- sce tables below.
+
+Service Level Number I August] Target
+Calls Resolved: atealls
+Level 1 I <=5 minutes 190 96% 95%
+>S minutes & 9 100% 100%
+<= 10 minutes
+Level 2 I <=30 minutes 144 97% 95%
+> 30 minutes & 4 100% 100%
+<= 45 minutes
+Total 347
+
+§,2,2.1 Level 1 & Level 2 Calls Analysis — August 1999
+
+The table below shows the number of service calls that were included within the L1
+and L2 SLAs and those which needed to be re-categorised as agreed with POCL on 14
+September. Cash Account printing’ calls remained in L2 as they involved an
+operational known error. The sub categories can be seen in appendix A.
+
+Total L1 & L2 Recorded in the Data Warchonse 455
+
+Calls to be re-categorised out of L1 & 12:
+Complaints 12
+Cash Account (see section 5.2.2.2) 96
+
+Calls to remain within L1 & L2:
+
+Implementation 2
+Advice & Guidance 292
+Printing within Cash Account 53
+
+Total 347
+
+5.2.2.2 Cash Account Calls Analysis
+
+The tables below show the breakdown of those Cash Account calls that were removed
+from the L1 and L2 SLA calculations.
+
+© 1999 ICL Pathway Limited Company-in-Confidence Page: 10 of 19
+Last Prinved: 21/09/99 15:43
+Received, Sep 21, Q4z07PH (08:20) on. Sa
+, 21709 "89 TUE 16:06 TEL:
+
+POL00083924
+POL00083924
+
+‘ted INC37E7AF440FAF on Sep 21 04:17PM 1999 * eats
+
+ICL Pathway Resolution Plan for 41408- Horizon System Helpdesk Ref:  CR/ACDi408
+Version: 1.3
+Company-in-Confidence Date: 17/09/1999
+Category Number of calls %
+Cash Account Reports 22 23
+Declarations 22 23
+CAP Roll Over 19 20
+Suspense Account 16 17
+Stock Unit Balance 10 10
+Discrepancies 7 7
+Total 96
+
+$.2.3
+
+The table below shows the number of calls falling into resolved time periods.
+
+Calls Resolved: Number of calls %
+
+<=5 minutes 48 50
+
+>5 minutes & 22 23
+
+<= 10 minutes
+
+> 10 minutes 26 27
+Total 96 100
+
+HSH Staffing review
+
+At the 08/09/99 workshop on the Call Volume/HSH model ICL Pathway shared with
+POCL the most up-to-date HSH resource plans for the remainder of 1999. These
+separately identified the staffing for cash account calls, The predicted staffing level, in
+terms of Full Time Equivalents, is sct out below.
+
+Model prediction (FTEs) I Oct Nov Dec
+HSH staff (excl. cash a/c) 26 35 35
+Cash a/c staff 6 8 8
+Total staff 32 43 43
+© 1999 ICL Pathway Limited Company-in-Confidence Page: 11 of 19
+
+Last Printed: 21/09/99 15:43
+Received Ser
+2170
+
+21 04:07PM (08:20) on Sand.
+9 '99 TUE 16:06 TEL;
+
+POL00083924
+
+POL00083924
+
+far 'BGB' —_WORKSRV4. pr
+H HORIZON PROGRA
+
+ICL Pathway Resolution Plan for Al408- Horizon System Helpdesk. Ref: CRIACD/408
+Version: 1.3
+Company-in-Confidence Date: 17/09/1999
+
+The planned staffing of HSH is as set out below.
+
+Oct Nov Dec
+Fully operational HSH 34 39 43
+analysts
+KnowledgePoo] staff for 10 g 4
+cash account domain
+
+5.2.4 Conclusions
+
+5.2.4.1 HSH staffing levels
+
+From its analysis ICL Pathway believes that the HSH is sufficiently resourced now to
+meet the call volumes for Level 1 and Level 2 call types. Further resource is needed to
+augment performance on cash account days.
+
+5.2.4.2 Cash Account Domain
+
+ICL Pathway has therefore established a domain of specialist staff with the business
+skills to handle Cash Account related calls. The solution for service levels for Cash
+Account calls was discussed at the workshop on 7/8 September and further
+suggestions were tabled at the workshop on 14 September.
+
+The scripts now employed bave been agrced with POCIL and are to be reviewed
+regularly to ensure they remain as effective as possible. Since the navigation of the
+scripts is dependant upon information provided by the postmaster and may mvolve
+returning to the counter terminal to provide further tasks as instructed, the time
+elapsed will vary (e.g. closeness to telephone, frequency of external intcrruptions,
+etc.). Pathway suggests that benchmarking of Cash Account scripts would add little
+yalue in determining the service performance and rather we suggest that a qualitative
+approach is adopted as follows:
+
+1, 100% availability of helpdesk staff skilled in providing the appropriate advice and
+guidance. That is, uo postmaster will be told that they would be rung back on
+initially logging a call at the HSH.
+
+2. No repeat call(s) from the same postmaster for the same incident in the same
+accounting period.
+
+3. Using a similar technique to “POCL Mystery Caller” or by inspection, to assure
+POCL that the approved call scripts have been followed conscientiously and that
+consistent advice has been given. The performance measure is 95% conformance
+each month.
+
+Pathway suggests that Customer satisfaction with the Help Desk service should be
+determined quarterly as described in requirement 914. Pathway will be pleased to
+assist POCL. in devising and conducting the satisfaction survey.
+
+© 1999 ICL Pathway Limited Company-in-Confidence Page: 12 of 19
+
+Last Printed: 21/09/99 15:43
+
+rinted INC37E7AF44OFAF on Sep 21 04:17PM 1999 * Pg 15/22
+AMME ors
+Receiver
+
+dS
+air
+
+“a9
+
+Version: 1.3
+Company-in-Confidence Date: 17/09/1999
+
+POCL may assure themselves that Cash Account service calls have been correctly
+coded by the HSH through their existing Intemet access to Powerhelp. The problem
+type ID, described in Appendix A, may be used to construct searches as required.
+
+Should POCL wish to further understand Pathway’s processes for service level
+Measurement then Pathway would be willing to provide a two-day workshop on the
+subject.
+
+5.2.4.3 ASH Resource Planning workshop
+
+In order to ensure that POCL share ICL Pathway’s confidence in the robustness and
+flexibility of the tools and processes used in HSH Resource planning, ICL, Pathway
+has held a workshop with POCL to cover this topic in more detail.
+
+The objectives of the event being: ~
+
+e To enable POCL to gain understanding and have confidence in the overall
+philosophy of the call volume model and it’s relationship to the resource planning
+model, :
+
+« To discuss and explain the factors and logic that apply to the modelling of call
+types and call profiles
+
+© To explain the iterative management processes that are supported by the model
+
+* To review the impact of Cash Account related calls on service levels
+
+5.3 Monitoring Period
+
+A workshop was held on 14" September to audit the service performance of Level 1
+and Level 2 calls and Cash Account calls, It was agreed that the service levels were
+met.
+
+Weekly monitoring of the service levels shown below will commence on the 4"
+October for a six-week period, ending 14" November. Over the six-week period each
+individual service level must be met, as a minimum, for 4 weeks, Reporting on the
+achievement will be weekly and in the form of the following table.
+
+@ 1999 ICL Pathway Limited
+
+Company-in-Confidence Page: 13 of 19
+Last Printed: 21/09/99 15:43
+
+POL00083924
+
+POL00083924
+21 04:07PM (08:20) Si Line [31for 'BGB' ‘WOR! i “T
+“99 TUE Stig ee ‘GF I HORTZ0s ROGAN © ATOMOFAF on Sep 21 Ghrtren avy? * hore?
+TCU Pathway ‘Resolution Plan for AI408-Horizon System Belpdesk Ref: CR/ACD/408
+Resolution Plan for Al408- Horizon System Helpdesk
+
+Refi: CRIACD/408
+
+ICL Pathway
+Version: 1.3
+Company-in-Contidence. Date: 1709/1999
+Service Level ‘Target Week Commencing
+0410/99 I 11/10/99 I 18/10/99 I 25/10/99) O1/11/99 I O8/11/99
+Level L I <=5 minutes 95%
+<= 10 minutes 100%
+Level2 I <=30 minutes 35%
+<= 45 minutes 100%
+Calls answered within 20 80%
+
+seconds
+
+Cash Account calls SLA
+{see note below)
+
+Note: A meeting between Pathway and POCL will be held prior to 4" October to agree the metrics to be used in measuring the
+Cash Account SLA.
+
+1.1
+
+© 1999 ICT. Pathway Limited
+
+‘Compuny-in-Confidence
+
+Page: 14 of 19
+Laat Printed: 2109/99 15:43
+
+POL00083924
+
+WdZ0#¥0'12 das partsoay
+
+soe 74.33, nl 66. 8o, Te,
+
+WeUES “US” Coz?0
+
+fa
+8
+
+ruoodd, NOZTYOH
+
+zl i) * 6661 WdZb?%0 12 das uo JvsOyydVZIZEONI POIULJd YAYSHAOM
+
+TO.
+
+¥26€800010d
+POL00083924
+
+POL00083924
+Received Sep 21 04:07PM (08:20 nd Li ‘BGB! i 2
+ceive 4, Se8 Sy Ore, c9g:70) ‘on SandM_ Line [3] for 'BGB HORNE Brinted INCHTETAFAGOFAF ‘on Sep 21 04:17PM 1999 * aoet?
+ICL Pathway Resolution Plan for 4J408- Horizon System Helpdesk = Ref.: CR/ACD/408
+Version: 1.3
+Company-in-Confidence Date: 17/09/1999
+
+5.4 SLA Rectification Plan
+
+This section summarises the activities that comprise the SLA Rectification Plan.
+
+HSH Scripts
+1 New scripts agreed with POCL a
+2 Implement new scripts (wef 03/09/99) v
+3. Initial ICL. Pathway / POCL zeview of the implementation of scripts in accordance I ¥
+with ICL/PW/DSP/PRO/023
+Call Volume/ HSH model
+4. [#1 workshop WHE POCL (on 07-0809) v
+HSH Statting
+5. ‘Train and introduce 2 additional HSH staff v
+TOTAL operational staff = 21 (by 31/08/99)
+6. ‘Train and introduce additional HSH staff On-going
+in light of monthly updates to Call Volume/HSH Model
+A Review of staffing model at the cnd of October. 31/10/99 ab.
+Call handling process
+8. Complete refresher courscs on call handling process (2** line) by 31/08/99 v
+9. Start refresher courses on call handling proccss (1 line) by 01/09/99 v
+10. ‘Conuplete refresher courses on call handling process (1” line) 30/09/99 +
+Cash Account Domain
+IL Specialist staff identified and re-depluyed by 06/09/99 v
+12. Cash Account domain operational (wef 08/09/99) v
+13. Train 6 LISH staff in use of cash account seripts v
+14, Train further 14 HSH staff in use of cask account scripts 30/09/99 +
+SLA achicyement
+15. Hold workshop with POCL (on 14/09/99) v
+16. Publish proposed service measurement for Cash Account calls by 16/09/99 ¥
+17, Publication of the weekly SLA measurement, as described in section 5.3, will be On-going
+on following Wednesday B
+18. Appendix A to cross-reference the equivalent scrvice contract schedule 30/09/99
+iW. Meeting to discuss the logisties and metrics for measuring the Cash Account Before 30/09/99
+
+service Javels
+
+20. I Pathway to hold a two-day workshop to doscribe ils processes for service level I Before 31/10/99
+Teasurement. Te
+
+1999 ICL Pathway Limited Company-in-Confidence Page: 15 of 19
+Last Printed: 21/09/99 15:43
+POL00083924
+
+ICL Pathway Resointion Plan for Al408- Iorizon System Helpdesk Ref. CRVACDI408 3
+Version: 1,2 my
+Company-in-Confidence Datc: 17/09/1999 ea
+#
+6 Appendix A — Problem Type against Service Level
+Closed Calls August 1999
+Call Description Problem Type ILevel Problem Description No, Calls
+IADVICE & GUIDANCT, ADO1 NA BES OPERATION ENQUIRY 1
+ADVICE & GUIDANCE ‘ADO? NA BES FALLBACK ENQUIRY 1
+JADVICE & GUIDANCE ADOS Level 1/2 I EPOSS OPERATION ENQUIRY 354
+[ADVICE & GUIDANCE AD0t Level 1 EPOSS FALLBACK ENQUIRY 6
+IADVICE & GUIDANCE ADOS Level I APS OPERATION ENQUIRY 11 5
+[ADVICE & GUIDANCE ADOG Tevel 1 APS FALLBACK ENQUIRY 6 58
+ADVICE & GUIDANCE ADO? Level 1 OBCS OPERATION ENQUIRY 10 32
+ADVICE & GUIDANCE ANOD Level OPERATING ENVIRONMENT ENQUIRY 26 a
+ADVICE & GUIDANCE ADIO Tevel2 I OPERATING ENVIRONMENT CONSUMABLE 1 EE
+ADVICE & GUIDANCE ADIL Eevel2 I DOCUMENTATION ISSUE 1 a
+ADVICE & GUIDANCE, ‘ADI2 Level2 I SYSTEM ACCESS ENQUIRIES 33 z
+ADVICE & GUIDANCE ADI3 Jevel2 I CUSTOMER COMPLAINT 2 2
+ADVICE & GUIDANCE ADI4 Level2 I GRNIERAL ENQUIRY 3 _
+(OTHER ECOL Level 3 POST OFFICE - EMERGENCY CLOSURE (SHORT TERM 1 3
+CLOSURE)
+OTTER COR Level3 I POST OFFICE -REOPENED 1 3
+2
+= vu
+1999 TCL Pathway Limited Couspany-in-Confidence Page; 16 of 19 3 2
+Last Printed: 21/09/99 15:43 st 3
+= by
+POL00083924
+
+lag pantasay
+
+ICL Pathway Resolutivo Plan for A1408- Horizon System Helpdesk Ref: CR/ACD/403 Re
+7 Version; 1.2 Sy
+‘Company-in-Confidence Date; «17/09/1999 e
+4S
+OTHER CC22 Tevel3 I POST OFFICE - PLANNED CLOSURE T a
+OPERATIONS THOT Level3 I FILE TRANSFER FAILURE 2 28
+OPERATIONS FEO4 Level? I INTERFACE OPERATION FAILURE T 28
+SOFTWARE FEOS Level? I SOPFWARE ERROR DETECTED 45 og
+NETWORK FE06 Level I CLIENT SYSTEM - NETWORK PROBLEM 3 ce
+SECURITY FEO? level3 I CLIENT SYSTOM - SECURITY BREACH T ae
+(OPERATIONS FEO9 Level3 I EPOSS OPERATION ERROR B .
+(OPERATIONS FEO Level3 I APS OPERATION FRROK 2 - -
+OPERATIONS FR Level3 I OBCS OPERATION ERROR 3 LJ
+HARDWARE HCO1 Level3 I CENTRAL SYSTEM - PROCESSOR FAULT - UNUSABLE 5 =
+HARDWARE C02 Level3 I CENTRAL SYSTEM - PROCESSOR AULT - USEABLE T ee
+AARDWARE TICo4 Level? I CENTRAL SYSTEM - TERMINAL FAIURE 2 Se
+OTHER HOD Tevel3 [CENTRAL SYSTEM - ENVIRONMENTAL FAILURE - 2 Es
+POWER ae
+HARDWARE BDO Level3 I PERIPHERAL FAILURE - PROCESSOR 19 a
+IHARDWART HD04 Level} I PERIPHERAL FAILURE - BAR CODE READER 4 3
+HARDWARE DO? Level3 I PERIPUIRRAL PAL_URE - COUNTER PRINTER : 4 £
+HARDWARE Hos Tevel3 I PSRIPAERAL FAILURE - BACK OFFICE PRINTER 14 Fs
+HARDWARE DOS Tevel3 I PBRIPHERAL FAILURE - KEYBOARD z :
+HARDWARE HDIO Level3 I BERIPHERAT. FAILURE - MONITOR TOUCH ELEMENT 3 8
+IHARDWARE Tibi Tevel3 I PHRIPHERAL FAILURE - MONITOR Ti g
+[OTHER HDI2 Level3 I ENVIRONMENT FAILURE - CABLING ; 4 Fi
+© 1999 ICI. Pathway Limited Company-in-Coniidence Page: 17 of 19 3 8
+: Last Printed: 21/09/99 15:43 ae 8
+Sg S
+®
+
+02.
+eer
+POL00083924
+
+las ‘panteoay
+
+ICL Pathway Resolution Plan fur AL408- Horizon System Helpdesk Ref.; CR/ACD408 oe
+Version 12 Sy
+Coupany-in-Confidence Date: 17/09/1999 ee
+2
+(OTHER FDIS Level3 I OFFICE ENVIRONMENT FAILURE - POWER a ea
+HARDWARE HD Level I EQUIPMENT DAMAGED OR DESTROYED 2 28
+IMPLEMENTATION TMO01 Tevel3 I PLANNED ACTIVITY RESCHEDULE T 38
+IMPLEMENTATION M03 Level3 I SITE PREPARATION ISSUE 2 a
+IMPLEMENTATION M07 Level2 I OTHER 2 -
+NETWORK NDOI Level3 I UNABLE TO CONTACT HQ 3 id
+NETWORK NbO2 Level3 I NETWORK FAILURE - ISDN (WAN) 9 in
+NETWORK NDOS Vevel3 I POST OFFICE - LINK FAILURE 7 a
+a
+NETWORK ‘NDOS Level3 I POST OFFICE - CONFIGURATION FAILURE 1 8
+(OPERATIONS coz Tevel3 I POSTONFICE- DATA DOWNLOAD FAILURE T =
+
+(OPERATIONS OD02 Level3 I BPOSS - OPERATION FAILURE mt =
+OPERATIONS — O03 Level3 I APS- OPERATION FAILURE 2 Ss
+OPERA LIONS, OD04 Level 3 OBCS - OPERATION FAILURE 4 Es
+OPERATIONS ‘O06 Tevel3 I ACCESS AND USER ADMINISTRATION FAILURE 10 ze
+OPERATIONS ‘OD07 Level3 I OPERATING ENVIRONMENT FAILURE 2 BG
+OPERATIONS ‘O08 Level3 I SYSTEM ENVIRONMENT FAILURE T 3
+OPERATIONS ORS Level3 I CUSTOMER PAYMENT ISSUE i §
+RECONCILIATION REOL Tevel 3 EPOSS ; 3 $
+[RECONCILIATION REO2 Levels I APS 1 g
+RECONCILIATION REO4 Level3 I OBCS 3 =
+(OPERATIONS S03 Level3 I CENTRAL SYSTEM - OPERATING SYSTEM - PROCESS T =
+, FAILURE : ‘ 3
+
+© 1999 ICL Pathway Limited ‘Company-in-Confidence Paye: 18 of 19 3 8
+
+Last Printed: 21/09/99 15:43 se 8
+POL00083924
+
+Ps
+3
+ES
+5
+wil
+ICL Pathway Resolution Plan for Al408- Horizon System Helpdesk Ret: CRVACD/A08 38
+Version: = L.2 ey
+Company-in-Confidence Date: 17/09/1999 se
+=
+SOFTWARE 8004 Tevel3 ICENIRAL SYSTEM - OPRRATING SYSTEM - ERROR 1 a
+MESSAGE 3
+is
+SOFTWARE SC0S Level 3 CENTRAL SYSTDM - OPERATING SYSTEM CRASH t aed
+SOFTWARE SCIZ Level 3 CENTRAL SYSTEM - APPLICATION ERROR MESSAGE 1 A
+[OPERATIONS $Ci3 Level 3 CENTRAL SYSTEM - APPLICATION - UNABLE TO 1 3
+PROCESS FILES
+SOFTWARE SDOI Level} I SYSTIM MESSAGE DISPLAYED ON SCREEN 38
+SOFTWARE SDOz Tevel3 I SOPFWARE ERROR 755
+SOFTWARE SDO3 Level3 I SYSTEM OPERATION HAS CHANGED UNEXPIICTEDLY 29
+SOFTWARE SD04 Level 3 EXPECTED CHANGE HAS NOT WORKED 1
+SOFTWARK SDOS Level 3 OTHER 2 Bs
+OTHER x005 Level 3 OTHER 175 ied
+8
+SECURITY 7802 Level 3 PMMC CARD OR PIN NUMBER LOST 3 ae
+SECURITY 2803 Level 3 ONE SHOT PASSWORD REQUIRED 8 EA
+Total 1846 BE
+fa
+Total Jevel Lcalls = 413 4g
+a
+Total Level 2calls = 42 z
+Total = 455 (agroclug with the figure in 5.2.2.1) 3
+8
+3
+8
+2
+3
+z
+= vu
+© 1999 ICL Pathway Limited Campany-in-Confidence Page: 19 of 19 3 Q
+6
+Last Printed: 21/09/99 15:43 ee 8
+8
+iy &
