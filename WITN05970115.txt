@@ -1,0 +1,524 @@
+RESTRICTED COMMERCIAL Product Assurance Group
+
+Bringing Technology to Post Offices and Benefit Payments
+
+THE ROUTE TO ACCEPTANCE THROUGH ASSURANCE AND TESTING
+
+Author: Jeremy Folkes Version: DRAFT B
+Authority: John Meagher 16th January 1998
+Reference: —_jf/22rouace.doc
+
+Contents Page
+
+1, PURPOSE...
+
+2. BACKGROUND.......
+
+3. REFERENCES...
+
+4, ACCEPTANCE OVERVIEW
+
+4.1, What is acceptance? ..
+4.2. Acceptance Method - Tests, Trials and Reviews
+4.3. Acceptance Specifications.
+4.4, Acceptance Criteria ...
+4.5. Timing of Acceptance
+4.6. Current Status of Acceptance Preparation,
+4.7. Partial Acceptance.
+
+5. ASSURANCE OVERVIEW...
+
+UAbBRRWwWwW Ww
+
+i
+
+5.1, Product Assurance Group....
+5.2. Product Assurance - Test Responsibilitie:
+
+6. TESTING OVERVIEW
+
+6.1, Introduction...
+6.2. Pathway Owned Testing
+6.3. PDA Owned Testing
+6.4. Test Phases ..
+
+© wenn UV uw
+
+7. RELATIONSHIP BETWEEN THE ACTIVITIES.......
+
+8. OUTSTANDING ISSUES
+
+9. RECOMMENDATIONS ...
+
+10. CONCLUSION.
+
+WITNO5970115
+WITN05970115
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ I of 10
+documents\initial submission\22rouacc.doc
+16th January 1998 DRAFT B
+RESTRICTED COMMERCIAL Product Assurance Group
+
+2.4.
+
+PURPOSE
+
+This paper outlines an approach to bring together the activities of Assurance and
+Testing in the PDA as a vehicle to achieving Acceptance of the Pathway service.
+The paper has been written as a joint production by members of the three groups in
+the PDA, in response to a request from the PDA Programme Management Team
+(PMT) at their meeting in December 1997.
+
+BACKGROUND
+
+Within the PDA there have traditionally been two separate activities relating to the
+“proving” of the service being developed by ICL Pathway - Product Assurance,
+formerly known as Service Development, and Testing.’
+
+In the context of Release Ic, these activities have largely been focused on “Release
+Authorisation”, however with Release 2, there is a need to consider the critical
+activity of Contractual Acceptance. Product Assurance have traditionally been
+involved in the review of both Testing and draft Acceptance materials, however for
+historical reasons there has been a lack of connection between the Acceptance and
+Testing activities themselves.
+
+Given that Acceptance Trials - effectively witnessed tests - form a major part of the
+Acceptance process, it is considered vital that the Acceptance and Testing activities,
+together with Assurance, are brought into a single coherent framework.
+
+This paper initially describes Acceptance, Assurance and Testing, and then goes on
+to explore the linkages and relationships between the activities. At this stage, the
+document contains a large number of Drafting Notes (DN’s) highlighting areas of
+uncertainty or concern.
+
+REFERENCES
+
+[ACCPRO] - Schedule All - “Acceptance Procedures”
+[DOCUM] - Schedule B3 - “Documentation”
+[HARDWR] - Schedule B2 - “Hardware”
+
+{[HLACC] - DSS Schedules B5, D2 and E2, POCL Schedules B5, D2, E2, F2, G4
+and H2, “Acceptance Criteria”
+
+[OPTRAC] - Schedule C3 - “Operational Trial Acceptance”
+[POLSTD] - Schedule A2 - “Policies and Standards”
+
+[REQS] - Schedule A15 - “Requirements”
+
+WITNO5970115
+WITNO5970115
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 2 of 10
+documents\initial submission\22rouacc.doc
+16th January 1998 DRAFT B
+RESTRICTED COMMERCIAL Product Assurance Group
+
+[ROLL] - Schedule B6 (DSS) “Roll-Out of DSS Service Infrastructure” and Schedule
+G6 (POCL) “Roll-Out and Implementation”
+
+[SOFTWR] - Schedule B1 - “Sofiware”
+
+[SOLNS] - Schedule A16 - “Solutions”
+
+WITNO5970115
+WITNO5970115
+
+4. ACCEPTANCE OVERVIEW
+
+4.1. What is acceptance?
+
+4.1.1. Acceptance - or more fully “Acceptance of Deliverables and Services provided under
+the terms of the agreement”, is a contract defined activity [ACCPRO], through which
+the contracting authorities formally confirm that ICL Pathway have met the terms of
+the contract.
+
+4.1.2. Acceptance is a ICL Pathway “owned” activity.....
+
+4.2. Acceptance Method - Tests, Trials and Reviews
+
+4.2.1. An Acceptance Test consists of a combination of Acceptance Trials and Acceptance
+Reviews. In general, acceptance of services will be performed by Trials, however
+Reviews will be used deemed appropriate.
+
+4.2.2. An Acceptance Trial consists of a combination of inspection, demonstration, test
+running or monitoring of an element of the service; in general this, in conventional
+terms, can be considered to be based on the execution of a test in controlled
+circumstances.
+
+4.2.3. An Acceptance Review consists of a combination of a review of a deliverable,
+inspection of evidence, or a presentation given by ICL Pathway.
+
+4.2.4. For the avoidance of doubt, note that “Acceptance Test” does not directly correspond
+to the conventional use of the word “test”; “tests” are, in acceptance parlance, more
+appropriately compared to “Acceptance Trials”.
+
+4.3. Acceptance Specifications
+
+4.3.1. Acceptance Tests are defined in Acceptance Specifications, which are produced by
+Pathway but reviewed and agreed by the Contracting Authorities. At present
+Pathway are proposing some 23 Acceptance Specifications, broken down by
+‘subject’ area (eg POCL Infrastructure, Security, etc).
+
+4.3.2. These specifications define the purpose and scope of the Tests, identify the
+deliverables and services concerns, and which method - Trial or Review - is to be
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 3 of 10
+
+documents\initial submission\22rouacc.doc
+16th January 1998 DRAFT B
+RESTRICTED COMMERCIAL Product Assurance Group
+
+used, for each Acceptance Criteria, together with the Acceptance Test Conditions
+which are used to establish whether or not the Criteria is met.
+
+WITNO5970115
+WITNO5970115
+
+4.4, Acceptance Criteria
+
+4.4.1. Fundamental the Acceptance process is the concept of Acceptance Criteria; these are
+the individual items which need to be “accepted”. Acceptance Criteria are bundled
+up into the Acceptance Specifications by subject.
+
+4.4.2. The initial list of Acceptance Criteria used in the first drafts of the Acceptance
+Specifications (reviewed during Summer 1997) was based purely on a decomposition
+of the formal Requirements [REQS]; in general a number of Criteria were generated
+by each Requirement, for instance one Criteria per sentence or paragraph of each
+Requirement.
+
+4.4.3. I However, as defined in [OPTRAC], the full list of Criteria will need to be expanded
+to include:
+
+(a) requirements [REQS]
+
+(b) policies and standards [POLSTD]
+
+(c) solutions [SOLNS]
+
+(d) software [SOFTWR] and hardware [HARDWR]
+
+(e) documentation [DOCUM]
+
+(f) roll out criteria [ROLL]
+
+(g) ‘high level’ acceptance criteria defined explicitly per service [HLACC],
+covering ability infrastructure, ability to interwork with sponsor environment,
+data security, resistance to fraudulent attack, resilience/contingency and service
+levels/minimum acceptable thresholds.
+
+4.5, Timing of Acceptance
+<< Acceptance Periods, and how they relate to test phases?? >>
+
+4.6, Current Status of Acceptance Preparation
+<< Where are we at - some AccSpecs reviewed, all need revisiting, only Reqs in so
+far, additional specs needed, ete >>
+DN: Pathway have chosen to base the Trials in their Acceptance Spec drafts on
+the existing portfolio of tests which they have created - independently - for Testing.
+The tests have therefore not been created for the purpose of testing. This
+approach is “bottom up” - start with a bucket of tests and assemble into Specs -
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 4 of 10
+
+documents\initial submission\22rouace.doc
+16th January 1998 DRAFT B
+RESTRICTED COMMERCIAL Product Assurance Group
+
+4.7,
+
+5.2.1.
+
+rather than “top down” - start with a set of Criteria/Specs and define the Trials
+required.
+
+DN: Pathway originally assumed that there would be relatively few test scripts
+required within Acceptance, and that therefore Acceptance could be run as a
+separate activity. However, when the Acceptance Specifications were produced
+(by Pathway) it transpired that they referred to a large proportion of the available
+test scripts (a consequence of Pathway choosing to build on existing scripts not
+designed for the purpose), which reduced the viability of running it as a separate
+activity - and hence Pathway have proposed (in their “Principles of Acceptance
+Trials for Pathway Release 2”) to host Acceptance on existing test phases.
+
+DN: The responsibility for defining and running Acceptance Trials falls with
+Pathway; PDA/Sponsors should not pick up any contractual responsibility. It is
+likely that some trials will need to be performed in End to End or Model Office,
+however the final passes of these are PDA owned - potential issue. PDA Testing
+had not planned for any Acceptance Trial demonstrations to take place during
+MOT (as a PDA owned phase) - indeed, this would be PDA demonstrating to PDA.
+
+Partial Acceptance
+
+DN: How are we handling “partial acceptance”, where the R2 functionality is
+insufficient to meet the criteria?
+
+ASSURANCE OVERVIEW
+
+Product Assurance Group
+
+The Product Assurance Group - formerly known as Service Development Group - in
+the PDA is constituted into three teams:
+
+. Product Management (Business Assurance)
+. Fraud & Security (Security Assurance)
+. Technical Assurance
+
+engaged, from their respective viewpoints, in providing assurance .....
+
+<< Fill this out... What do we want to say about Product Assurance?>>>
+
+Product Assurance - Test Responsibilities
+
+Product Assurance have the following involvement in testing:
+
+WITNO5970115
+WITNO5970115
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 5 of 10
+documents\initial submission\22rouace.doc
+16th January 1998 DRAFT B
+RESTRICTED COMMERCIAL Product Assurance Group
+
+(a) agreement of the scope and purpose of each phase of testing
+
+(b) assurance of the test preparation (preparation itself performed by Testing)
+(c) _ assistance with fault analysis/query resolution (when requested by Testing)
+(d) evaluation of impacts of faults
+
+(e) brokering of workarounds with Pathway and sponsors
+
+(f) [evaluation of results for Acceptance purposes]
+
+5.3. Constraints on Assurance
+Design
+
+The traditional SDLC involves an on-going process of Validation and Verification, to ensure
+that the emerging system both meets the underlying business requirements (“right system”)
+and that it conforms with earlier stages in the SDLC (“system right”). The need for V&V is
+not invalidated through the use of RAD, however this is largely irrelevant as there is little
+similarity between the development process used by Pathway for Horizon and industry-
+standard RAD.
+
+This V&V process provides traceability from the top level requirements (in our case, The
+Contract) against which final testing will be performed (in our case, Acceptance) down into
+the product, and back up through the various stages of Integration and Test.
+
+However, on Horizon the design has not been independently (PDA) validated against the
+Requirements/SADD, and SADD itself is weak in some areas. Pathway have proceeded, at
+their own risk, with the design and coding without this validation and now claim to have
+completed almost all design/development and be at a “code freeze”.
+
+At this stage it is considered too late for such validation to be usefully retrofitted into the
+SDLC (it would be very unlikely that problems found during such a validation would be
+sympathetically received by Pathway, and any problem would anyway be portrayed as
+causing slippage), and any such validation activity would only serve to give credibility to an
+otherwise dubious SDLC.
+
+However, access to design by Assurance would still be useful for:
+
+© early visibility of non-conformities (even if too late to achieve rectification prior to test) -
+to obtain a view as to the scale of an problem and likely state of readiness of conformant
+product
+
+WITNO5970115
+WITNO5970115
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 6 of 10
+documents\initial submission\22rouace.doc
+16th January 1998 DRAFT B
+RESTRICTED COMMERCIAL Product Assurance Group
+
+e to pre-warn testing of “sensitive areas”, to ensure appropriate tests are formulated to
+exercise and flush out, in the testing domain, problems which would have ideally (in a
+traditional SDLC) have been detected and resolved in the design validation.
+
+to inform the review and assurance of the test prep, to ensure that testing is
+adequate (very difficult to do on a black-box basis, especially in off main-thread and
+exception handling areas - which potentially account for the majority of both
+development and test effort)
+
+WITNO5970115
+WITNO5970115
+
+6. TESTING OVERVIEW
+
+6.1. Introduction
+
+6.1.1. The term “testing” is used to cover a multitude of different testing activities, with
+different ownership, purposes and organisational structures. This section attempts to
+provide a very high level overview, as an aid to the consideration of the relationship
+with Acceptance et al.
+
+6.1.2. PDAs interest in testing has, to date, been primarily based around informing the
+Release Authorisation decision, in other words determining whether the product as
+tested is fit for release into the field.
+
+6.2. Pathway Owned Testing
+
+6.2.1. The contracted BA/POCL service is being delivered by Pathway, and it is therefore
+their responsibility to test the system and service to ensure that they can deliver the
+contracted service.
+
+6.2.2. However, the PDA has involvement in these Pathway phases as follows:
+
+(a) through Joint Business Testing, the injection of business knowledge
+
+(b) through Joint Security/Technical testing, the injection of expertise
+
+(c) through review, managed by PDA Testing, of test preparation (in particular
+High Level Test Plans - HLTPs - reviewed by Product Assurance)
+
+(d) through review of test outputs
+
+(e) _ visibility of test progress
+
+DN: There is still the danger that we are “injecting” knowledge at this stage to
+
+testing, whereas Pathway have denied us access at any sensible level of detail to the
+
+emerging product for Assurance?
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~7 of 10
+
+documents\initial submission\22rouace.doc
+16th January 1998 DRAFT B
+WITNO5970115
+
+WITNO5970115
+
+RESTRICTED COMMERCIAL Product Assurance Group
+
+DN: What is contractual basis for our review and any sign off of these test phases,
+in prep or execution?
+
+DN: Acceptance must be done within a Pathway owned phase?
+
+6.3. PDA Owned Testing
+6.3.1. The PDA has an “end to end” role (integration of Pathway with sponsor systems and
+with sponsor business processes) and therefore has its own test phases (E2E/MOT)
+but these are not primarily intended to test the workings of the Pathway service per
+se.
+DN: Is this true? Does E2E/MOT assume a fully working and tested Pathway
+service, and that they are only testing the service in the round? Certainly the level
+of specification inferred by the High Level matrix suggests that EZE/MOT is
+covering much which is wholly within the Pathway service.
+6.4, Test Phases
+This table summarises the various test phases visible to the PDA - phases totally
+within Pathway’s control (such as PIT) are not shown:
+Phase Managed / Prep by PDA Testing j Testing Scope
+by Involvement j Against
+System Test Pathway {Pathway I ThroughJBT : Design Pathway Service - as separate
+vertical services (eg APS, BPS
+etc)
+Business Pathway I Pathway I ThroughJBT I SADD Pathway Service - as
+Integration Test integrated horizontal and
+
+vertical service (eg APS within
+full counter system)
+“Architectural Conformance”
+
+Security Test Pathway Pathway Through S&T I SFS/ACP. Pathway Service -
+Infrastructural Security
+Functionality
+Technical Test Pathway I Pathway I ThroughS&T I ? Pathway Service
+Direct Interface ; Pathway/ ; All Direct SADD Interfaces between Pathway
+Test PDA (?) suppliers {I involvement I Interface and sponsor system
+_ Specs
+End to End PDA PDA Managing ? R/S/SADD Sponsor systems and
+(final Pathway Service operating in
+phase) “live” configuration
+Model Office I PDA PDA Managing ? Pathway Service operating in
+Test (final Procedures _I business environment,
+phase) against procedures, training
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 8 of 10
+
+documents\initial submission\22rouace.doc
+16th January 1998 DRAFT B
+RESTRICTED COMMERCIAL Product Assurance Group
+
+WITNO5970115
+WITNO5970115
+
+! and business processes
+
+DN: What does Technical Test test against?
+
+6.4.1. Pathway have responsibility for executing all but the final stages of E2E and MOT
+
+8.
+
+(ie E2E rehearsal and MOR), however the tests will have been specified by PDA.
+DN: If PDA are specifying the tests for EZE/MOT, how can they be used for
+
+Acceptance - as Acceptance is a Pathway responsibility - even if Pathway are
+executing these pre-final passes?
+
+RELATIONSHIP BETWEEN THE ACTIVITIES
+
+DN: Currently very little between PDA Testing and Acceptance - eg PDA “End to
+End Interface and Model Office Testing” approach paper makes no mention of
+Acceptance.
+
+Product Assurance:
+
+- review Acceptance Specs (“own” the majority - but not all - of the requirements
+and therefore now the Acceptance Criteria - but ownership is not well define
+concept at the moment. Ownership needs to be at AC level.)
+
+- review HLTPs
+
+- review test outputs
+
+OUTSTANDING ISSUES
+
+Issues
+
+PDA have not been permitted to validate/verify the design against the
+Requirements/SADD; we cannot confirm that the design will meet the contracted
+requirements or that the design when implemented would provide a service which met
+the Acceptance Criteria [note - this is Pathway’s call]. However, JBT appear to be involved
+(at System Test) in testing the service against this, invalidated, design. This may give this
+unvalidated design false credibility and may weaken PDA position when aspects of the
+product are found to be unacceptable (at Acceptance).
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 9 of 10
+documents\initial submission\22rouace.doc
+16th January 1998 DRAFT B
+RESTRICTED COMMERCIAL Product Assurance Group
+
+=> PDA Testing and PDA Assurance should operate at the same “level” (the line across the
+V-diagram should be horizontal, not sloping
+
+e Ditto, if PDA involved in fault analysis against the design, if the design is unvalidated.
+
+e The level of detail in the SADD is highly variable, and in particular is thought insufficient in
+the EPOSS area to enable sensible business tests to be constructed. There is a
+temptation to make up this shortfall by constructing tests against the (unvalidated)
+design, rather than by correcting the position by bringing the SADD up to a consistent and
+satisfactory level.
+
+e Business Threads for EPOSS seen to date are at the wrong level (too detailed for a
+business thread), again danger of underwriting Pathway’s unvalidated design (and
+undocumented system specification due to SADD weaknesses).
+
+e@ Should the PDA “sign off” the test prep for either ST or BIT in JBT, or Sec or Technical in
+S&T?
+What does sign off mean, for a Pathway owned phase?
+What level should be signed off - HLTPs or down to individual scripts? [some have
+apparently been signed off already?]
+Who should sign it off - PDA Assurance or PDA Testing (or both)?
+
+e What is the split between JBT and S&T regarding technical failures (how does the
+application respond to known and likely failures, eg ISDN down, server down)? Wish to
+avoid these critical areas falling down the cracks.
+
+9. RECOMMENDATIONS
+
+10. CONCLUSION
+
+WITNO5970115
+WITNO5970115
+
+c:\~data\~info\_postal\uk\pol - horizon\_working and edited Page ~ 10 of 10
+documents\initial submission\22rouace.doc
+16th January 1998 DRAFT B

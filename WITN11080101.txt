@@ -1,0 +1,298 @@
+WITN11080101
+WITN11080101
+
+Timeline of Post Office Ltd engagement with Imperial College London
+Experts: Prof. Jeff Kramer and Dr. Naranker Dulay
+[Document WITN1108101]
+
+22 February 2024
+
+September 2013
+Initial contact by solicitors Cartwright King (Simon Clarke and Martin Smith) through ICON.
+
+Draft version of Scope of Work drafted by Cartwright King, Simon Clarke. [ref POL00040040]
+Essentially to “lay to rest the present concerns relating to the integrity of Horizon Online” following the Second
+
+Sight report.
+
+October 2013
+
+NDA sent to ICON and then to Company Secretary of PO for signature.
+(confirmation of availibility of Zuhke software engineers for any testing of case studies that may be required)
+
+November 2013
+
+Signed NDA received
+
+Two phase approach proposed:
+Phase 1 to study Horizon material and processes and produce preliminary report.
+Phase 2 Detailed report on assessment of integrity, recommendations for improvement.
+
+December 2013
+
+Discussions between Cartwright King, PO and Fujitsu, leading to a more focussed scope of work.
+
+January 2014
+13": Meeting at ICON with Martin Smith, Simon Clark from Cartwright King and the Post Office's Head of
+
+Criminal Law John Elsing in attendance. Fujitsu not present. (JK not present)
+
+Naranker Dulay reported: “Fujitsu believe that an examination of the so-called ‘Horizon Core Audit process
+(HCAPY' that comprises a number of elements including the central audit database, Horizon branch databases,
+terminals at counters, plus transactions conducted with external systems is fundamental to providing an opinion
+
+of the integrity of the Horizon Online system.”
+“I think that this would be a reasonable starting point for our examination and I would be happy to focus our
+efforts on it in Phase 1. However, a final report based only on HCAP will probably be insufficient to provide an
+
+opinion on the whole Horizon Online system as requested in the Draft Scope.”
+
+Phase 1 to study HCAP material and processes and produce preliminary report.
+Phase 2 Detailed report including those parts of Horizon Online not covered in Phase 1
+
+February 2014
+WITN11080101
+WITN11080101
+
+Contract negotiations conducted mainly through ICON.
+
+March 2014
+
+PO lawyers Bond Dickenson (Andrew Pheasant) request an ‘initial review’ into Horizon to scope the work.
+
+Initial Review:
+
+“Preliminary examination and review of the Horizon Core Audit Process (HCAP) and initial identification of
+potential issues. Brief report which scopes the objectives and work proposed for subsequent phases of the
+contract, as indicated (to be agreed).”
+
+April 2014
+Agreement signed between PO Ltd and IC Consultants to appoint an Expert (28/4/14). [ref POL00210444]
+
+May 2014
+Received from CK 9/5/14: draft Instructions to Expert, Second Sight (SS) interim report into alleged problems
+with the Horizon System, Draft Scope for Computer Experts. [ref WITN1108102]
+
+Meeting on 16/5/14 at POL HQ with Martin Smith and Andy Holt (POL IT).
+Discussed Second Sight (SS) report, Mediation Scheme, audit trails, integrity, reliability, case studies.
+
+Focus to be on technical system and procedural aspects.
+Potential issues: Central vs Local integrity of data bases and reconciliation if necessary?
+
+We produced a shopping list’ of documentation and information requested; sent to Martin on 21/5/14. [ref
+WITN1108103 and POL00204789]
+
+26" June 2014
+Initial Review produced. [ref. POL00125569]
+
+We clearly stated as follows: “Can such complex systems ever be determined to operate “without defect or
+error, securely, robustly and with integrity"? This is simply not possible. No complex system can be certified as
+bug (defect) free.”
+
+We therefore suggested as follows: “How then should an investigation into the integrity of Horizon proceed?
+The aim should be to provide a report on the extent to which the system is fit for purpose, supports integrity and
+robustness, and facilitates maintenance and upgrade. “
+
+We continued to indicate how we intended to go about this in Phase 2, the necessary organisation and steps,
+
+and an indication of the documentation required
+
+8" July 2014
+Quotation for Phase 2 work sent to Martin Smith. [ref. POL00325919)
+WITN11080101
+WITN11080101
+
+19" August 2014
+
+Roundtable meeting CK/POL/ICON at POLHK.
+CK: Simon Clarke, POL: J. George, Andy Holt, Jessica Madron
+
+“Can we argue that Horizon is fundamentally sound”
+Fujitsu documents from 2004, but major update in 2010! Need documentation of current system
+
+22"4 September 2014
+Signed NDA (agreeing to NDA of IC Consultants Ltd and POL [ref WITN1 108104]
+
+2/3 hours of branch counter training/systems familiarisation at POLHK.
+Summary: Horizon Online appears to provide the required functionality.
+Potential Issues:
+
+Training for subbranch managers?
+
+Interface — adequate but clumsy
+
+Mistakes vs fraud (forgetting end of transaction, merging two, ...)
+
+Discrepancies - little or no guidance at training or how to resolve.
+
+15" October 2014
+
+Fujitsu Office, Bracknell
+
+PO: Andy Holt;
+
+Fujitsu: James Davidson, Steve Ansell, Bill Membry, Torstein Gorstgh, Pete Newsome.
+
+High level design/architecture, change and support processes, audit system, process and standards.
+Basket of actions; completion of basket to central system; reversal if fails.
+Audit requests from PO if fraud suspected
+
+Review of counter software; basket scenarios; reversals and recovery; SS bugs and bug handling; update
+scenarios; testing and maintenance; some dispute cases.
+
+Request for more documentation (initially resisted by James Davidson of Fujitsu)
+Subsequent email from Andy Holt of PO 16/10/14: “I spoke to James after the meeting so rest assured you will
+
+get any information you require for this work.”
+
+4" November 2014
+
+Additional clauses to the NDA from Andrew Pheasant (Bond Dickenson)
+
+12" November 2014
+
+Some Horizon Architecture documents sent from James Davidson to Andy Holt, received via PO via CK on
+25/11/14. This is a subset of the documents finally received [ref POL00318212]
+
+27" November 2014
+
+Fujitsu Office, Bracknell
+WITN11080101
+WITN11080101
+
+Fujitsu: James Davidson, Torstein Gorstgh, Pete Newsome.
+
+Issues: Recovery flag set when not completed, even though a receipt issued?
+Recovery process varies depending on service to bring system into consistency (*Area of concern with
+PO branch managers).
+Audit trail consistency and reversals?
+
+Recovery?
+
+Awaiting further documentation.
+James suggestion of a shared file store. (NEVER IMPLEMENTED)
+
+2°° December 2014
+
+Email from Andy Holt:
+
+Apparently sent some documents to CK, including SS report and Mediation Scheme. (NEVER RECEIVED)
+James Davidson apparently collating further documentation.
+
+5" December 2014
+
+Email from Andy Holt (PO):
+
+Apparently “received 3 zip files from Fujitsu yesterday afternoon, I have forwarded these to Jarnail (Jarnail
+Singh, a criminal lawyer at POL)/Cartwright King.” (THESE WERE NEVER RECEIVED) [ref. POL00325994
+and POL00325994 and POL00318237]
+
+11" December 2014
+
+Email from Andy Holt:
+“James has provided all docs so I will chase Jarnail.” [ref. POLO0325994]
+
+19" January 2015
+
+Email to Martin Smith (CK) and Kevin Lenihan (PO — replacing Andy Holt) [ref. POL00325992] [ref.
+POL00325994]
+
+“We are having a problem with the transfer of documentation to us. This is causing a severe delay in progress
+and making it difficult to perform the work.
+
+We are still waiting for the documents which were apparently sent from Fujitsu and forwarded to Cartwright
+King in early December!
+We have also not received the Second Sight/Mediation documents mentioned by Andy Holt.
+
+At the last meeting at Fujitsu with James Davidson of Fujitsu in November, it was agreed that they would try
+and set up some form of file sharing arrangement so that access to documentation would be more convenient
+
+than a transfer via so many intermediaries.
+
+Please can you chase this up as a matter of some urgency.”
+
+27" February 2015
+Email from Martin Smith (CK):
+WITN11080101
+WITN11080101
+
+“I have made a number of recommendations to Post Office. A draft protocol has been provided which deals
+with the requests for and provision of information, thereby providing a suitable framework and the requisite
+visibility.
+
+I am currently awaiting further instruction and will revert to you just as soon as I am able.”
+
+19" May 2015
+
+Email from Susanne Westfold-Scott of Imperial Consultants:
+
+“A note to update you on the progress (or lack of it) on your and Naranker’s services for Cartright King and the
+PO. We submitted the invoice for your services on Phase 2 on 6" May, which I chased today (emails
+below). Martin Smith rang me today to explain that there has been some delay caused by the replacement of
+the General Counsel. The new (and third) General Counsel has just been appointed to the case and now wants
+to get the preparation of the case back on track. There have also been some problems due to officers at the
+PO instructing you and Naranker direct but these instructions have been invisible to both legal departments at
+the PO and Cartwright King. Martin mentioned that they had wanted to set up a Data Vault so that all parties
+knew what information was being shared but as it stands this vault was not set up and neither legal office at the
+PO and Cartwright King has any idea what material or instructions you have been given. Thus when we
+submitted our invoice to Martin it came as somewhat of a surprise to him as he was not aware it was part of
+the work for Phase 2 of the Services.”
+
+“What the new General Counsel now wants to do is have a round table meeting with you and Naranker to
+discuss the material that has already been passed to you along with your and Naranker's findings to date and
+work completed on this data (which was set out in the invoice). From this meeting they hope to draft a protocol
+for your Services to be undertaken. I also reminded Martin that at present we have no fully signed NDA (I have
+returned two copies signed by ICON but have never received a counter-signed agreement) nor a signed
+agreement for Phase 2 of your Services. Thus there is no protection of Confidentiality or terms for these Phase
+2 Services, including payment. “
+
+10" June 2015
+
+Email from Susanne Westfold-Scott of Imperial Consultants:
+
+“Martin Smith from Cartright King has just rung as he has just had a calll from the PO
+
+First of all Martin wanted to know if the PO had paid our last invoice — I have checked and they have not.
+
+1. What the PO now want is to meet with you and Naranker as soon as possible — so could you provide some
+dates please.
+
+2. The PO also want an inventory of what information has been passed to you and Naranker by the PO and
+Fujitsu
+
+3. And finally, if there are any other issues you would like to raise at the meeting? My only comment here,
+which Martin and I discussed, is that the NDA has still not been signed by the PO. We have sent a couple of
+copies signed on your /ICON’s behalf so really for the problem of confidentiality and completion of this
+agreement rests with the PO.”
+
+8" July 2015
+As requested by the PO (via Martin Smith)
+WITN11080101
+WITN11080101
+
+List of documents provided to Professor Kramer and Dr Dulay: Existing Architecture and Process Documents of
+Horizon System [ref POLO0318212 and POL00318212]
+
+29" July 2015
+Meeting at POLHK:
+
+CK: Martin Smith, Simon Clarke, Harry Bay(?)
+PO: Lawyers: Roderic Williams, John Scott, Jessica Madron (chair), POLIT Kevin Lenihan.
+
+Summarised state of the work and the need for convenient access to documentation (“vault”).
+Decision to continue with Phase 2 with Kevin Lenihan as POL contact, Torstein or Pete Newson as Fujitsu
+
+contact.
+
+17" August 2015
+BBC Panorama programme “Trouble at the Post Office”
+
+19" August 2015
+Email from Martin Smith that he agreed that the meeting was constructive and understood that POL were
+
+currently considering a number of the issues raised
+
+224 September 2015
+Reminder email from ICON to Martin Smith.
+
+NO FURTHER COMMUNICATION OR INTERACTION!

@@ -1,0 +1,2538 @@
+FAX TRANSMISSION
+
+To: Project Mentors Limited
+Atten\Ref: I Andrew Davies
+
+Fax No:
+
+From: Sam Swift
+
+Client: BA/POCL
+
+Account No: BPOCL/001
+Date: 15 June 1998
+Time:
+
+Number of pages (including this page) :
+
+Note: This f
+
+Ong)
+& BIRD
+
+90 Fetter Lane
+
+BIRD
+
+DWP00000204
+DwP00000204
+
+34
+
+x is intended for the named addressee only. It contains information which may be contidential and
+
+which may also be privileged. Unless vou are the named addressec (or authorised to receive for the addressee)
+you may not copy or use it, or disclose it fo anyone else. If you have received it in error please notify us
+immediately so that we can arrange for its return. To do so. or if you have any queries. please telephone (171
+
+415 6000,
+
+Message:
+
+Deay Arce ws
+
+As discussed on Friday and earlier this morning, Hamish will contact you
+sometime this week in respect of the attached.
+
+Regards.
+
+Sam Swift
+PA to Hamish R Sandison
+
+Encs
+
+EC Office 209 Avenue Louise, 1050 Brussels, Belgium Telephone +5322-654 3616 Facsimile +322-G44 2486,
+Hong Kong 20/f Pristing House, 16 ke House Street, Central, Hong Konig Telephone +852-2536 0960 Facsimile +852-2523 31.38
+
+Partners
+Ottassss
+
+Ct cmps
+OM Gathwnaite
+TM Cook
+
+RN Scott
+
+PH Christie
+
+P saat
+
+DW Bivan-Cook
+GH Smith
+IRE Walley
+hee
+
+(M Micon
+DMC Stone
+CW Rees
+
+SH Hubner
+
+PO Quinn
+HR Sandison
+Dit avers
+
+RI Waed
+
+RR Graham
+EM Crostinsaite
+NT Fenkins
+RA Bicherstal
+Sk Topping
+TEC Tether
+HE Peson
+VSACrok
+TRD Assesson
+f Stannard
+CAR Bare
+DCI Cook
+
+1M Gengett
+MR Hale
+Powel
+
+AI Sanderson
+HI Rubia
+
+HW Baker
+PRB:owniow
+1D Hunter
+FARecve
+Sins
+
+PC Dally
+
+Consultants
+KFC Amok
+SNL Chaltan
+PySam
+
+RE Sacceu"
+DEEN Walden
+
+wot a solicitor
+DWP00000204
+DwP00000204
+
+') File DES Pree ure,
+
+WITHOUT PREJUDICE.
+
+SELECTION OF EXAMPLES OF PROBLEMS FACING PATHWAY AS SET
+
+OUT IN THE PATHWAY POSITION PAPER DATED 6 MARCH 1998
+DWP00000204
+
+DWwP00000204
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+CONTENTS
+Section Description Page No.
+I Extended Verification Procedure ° 3
+2 Foreign Encashment Rules 9
+3. Automated Payment Service - “SMART APS" 13
+4 DSS Reference Data 20
+5 POCL Reference Data 24
+6 Conflict between the Authorities and criticism of the PDA 28
+7. Drop Down period 30
+8 Contradictory and misicading requirements 33
+81 CMS End of interest 33
+82 Summnarised receipts 35
+9 Change control issues {including delay, work in anticipation of formally 36
+approved change and subsequent re-work)
+ot On-line functionality, temporary tokens and casual agent encashment 37
+rules (CCN117)
+92 Unmatched encashments a0
+93 Continuation receipts 44
+10 Contracting Authority Responsibilities 8
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY. WITHOUT PREJUDICE
+
+i Extended Verification Procedure
+
+Issues
+
+The contractual requirements for the Extended Verification Procedure ("EVP") are vague
+and lack sufficient definition for Pathway to develop its solution. The carly history of EVP
+requirements definition illustrates the Authorities‘ interference in design, and optimisation
+
+and enhancement of the contractual requirements.
+
+Summary
+
+Devclopment of EVP has involved protracted negotiations from the outset. PDA draft
+discussion papers from July and September 1996 contain significant extensions to
+contractual requirements. Discussions and meetings have taken place throughout the course
+of the project over the interpretation of contractual EVP requirements, resulting in a
+number of requirements being placed upon Pathway which were clearly outside any
+interpretation of Schedule BO8 and relevant requirements. The PDA's extensive demands
+combined with the generic manner in which they have continually been expressed have
+
+exacerbated the problem. Pathway has met the PDA's demands in light of implied threats
+
+to withhold acceptance if it had not done so. Certain EVP issues remain unresolved, and
+
+EVP's adverse impact upon development of the Pathway solution continucs.
+
+tual Background
+
+il The following is a summary of the early history associated with EVP requirement definition.
+Recent issues arising in relation to EVP are not included in this analysis. EVP is defined in the
+Authorities Agreement (schedule AQ1) as being part of the Card Verification Method requiring
+extra interactions between counter clerk and card holder in order to provide a greater degree of
+confidence in confirming the identity of a card holder. The Card Verification Method, and
+associated technology, is used to verify that the person presenting a card in support of a benefit
+payment transaction ts the person authorised to reccive that benefit payment. There are a number
+of generalised requirements and solutions that relate to EVP, but the primary reference is
+
+contained in the Authoritics Agreement, Schedule BO8- Benefit Encashment Fraud.
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+12 Usually, Pathway is not liable for payments repudiated as a result of fraud provided payment
+conditions are fully met and/or standard counter procedures are properly used (schedule B08,
+paragraphs 2.3.3 and 2.3.4). However, where EVP is applied during a transaction, if it is
+subsequently repudiated, Pathway is liable in full for the value of that transaction (schedule B08,
+paragraph 2.3.5). Pathway is entitled to charge extra for EVP transactions (schedule A06), but
+there is a limit (broadly 8%) to the number of transactions to which EVP may be applied
+(schedule B08, paragraph 2.3.5), which reflects the need to maintain customer throughput at the
+
+counter and certain agreed service levels.
+
+13 There have been prolonged negotiations between Pathway and the PDA relating to the
+circumstances in which EVP may be invoked. Although the EVP criteria were not originally
+described as an agreement to agree in the Related Agreements, Change Control Note ("CCN")
+number 74 dated 3 December 1996 which introduced the 8% limit referred to above, made the
+8% limit subject to, inter alia, agreement being reached upon’ the criteria for selection of cases
+
+for EVP, the frequency with which such criteria could be changed: and the timetable for
+
+implementing any revised criteria,
+
+id The Authorities Agreement, Schedule BO8 provides 2 categories of options to be used in deciding
+when EVP should be used. These provided the basis for Pathway’s initial attempts to obtain
+sufficient detail from the PDA concerning the Authorities requirements for EVP, to enable the
+
+necessary functionality to be developed. Paragraph 2.3.5 of Schedule B08 states:
+
+“Extended Verification Procedures are those extra cardholder verification steps including
+verification screens which the Authorities agree shall be deployed for particular classes of
+
+Customer or type of Transaction which are considered to be at risk of fraud”.
+
+bs Accordingly, Pathway included amongst its list of information requirements for the Fraud Risk
+Management Service set out in its letter of 19 June 1996, a request for a definition of high risk
+transactions, which by reference to schedule BO8, was a request for those classes of customer or
+
+types of transaction that required the application of EVP.
+
+16 The PDA replied to this request with a draft discussion paper dated 2 July 1996, however it failed
+
+to provide a definitive answer, Instead (and this has been a consistent theme running through all
+
+EVP ncgotiations) citing (in paragraph 6.2 of the paper) the:
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE,
+
+“need to be able to change the application of EVP easily and quickly” and “{i}n order to
+
+correctly and continuously identify “high risk transactions”, which will generally involve
+
+false claims of identity”,
+the PDA stated that the definition of high risk transactions (for applying EVP) could not be fixed.
+
+1? Annex A of the discussion paper contained the criteria that the PDA considered could be used to
+create detailed definitions of high risk transactions which extended the categories of options
+contained in schedule B08 (described above). As well as categones of (ransaction type and
+customer types, the PDA listed: benefit type; payments where an agreed restriction could be
+applied; customer history; payment history, area of transaction; clerk identity, value, office type;
+age of benefit card, status, and “others” as additional criteria which are clearly outside the
+boundanies of choice envisaged in schedule BO8. The PDA stated that the high risk transaction
+definitions could be set with one or multiple selections from the criteria which was a further
+departure from the exclusive choice of class of customer “or” type of transaction set eut in
+
+schedule BOS.
+
+1g Pathway was not overly concerned at the time because the paper was a “discussion” paper and
+was expressed to be draft. To be helpful Pathway suggested which of the criteria in annexe A of
+the paper might be accommodated, and suggested a number of amendments as reflected in the
+second draft of the paper. However, in order to further define the contractual requirements for
+EVP, Pathway produced the Extended Verification Process Requirement document (“the EVP
+Document”}. Versien 0.2 of the EVP Document dated 18 September 1996 was provided to the
+PDA for comment. In this document Pathway listed individual customers (identified by National
+Insurance number) and suspicious customers (identified by the counter clerk) as classes of
+customer against which EVP could be invoked. Types of transaction listed for the application of
+EVP were foreign encashments (see paragraph 2 below), change of nominated post office, keyed
+entry (as oppased to card swipe) transactions and card collection. To limit the number of
+transactions attracting EVP in the above categories, Pathway also offered the Authorities the
+facility to select individual post offices and benefit types as additional criteria for invoking EVP.
+The Authoritics were required to specify post offices and benefit types where, or to which, they
+required EVP to be applicd and to inform Pathway accordingly (see paragraphs 9.1 to 9.3 and
+41.1 of V0.2 of the EVP Document).
+
+is The PDA did not accept Pathway’s interpretation of schedule BO8 and over a period of time
+succeeded in extending and optimising the requirements. Version 0.3 of the EVP Document
+
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY. WITHOUT PREJUDICE
+
+contains the first amendments required by the PDA. The sclection criteria, described as filters,
+were extended to include multiple benefit types although Pathway noted that this needed to be
+checked by the project architect (Alan Ward), to ensure that the solution design could support
+
+such an extension.
+
+-1.10 Following a meeting on 20 September 1996, attended by the PDA and Pathway, the PDA
+produced a further discussion document dated 25 September 1996 relating to EVP and the
+criteria by which EVP is selected. The introduction stated that it was understood that the
+preferred technica! solution lay with Pathway and that the document was intended to “aid”
+discussion by defining the prime business requirements for the application of EVP from the
+
+Authorities’ perspective. Reservations expressed about Pathways “current thinking” included’
+
+“.... an inability to provide the required degree of focus in the identification of high risk
+transactions against which to apply EVP [suggesting there is a requirement that Pathway
+should identify such transactions, which there is not]..... (and)... an inability to make
+rapid changes to the application selection criteria which will be needed to meet the
+changing requirements of both ICL Pathway and the Authorities as knowledge ond
+
+experience heightens the ability to more clearly identify custcmerstransactions {at risk of
+
+fraud)”
+
+tal It was clear that the PDA could not idenufy high-nsk transactions and was seeking to have
+Pathway develop a selutien which enabled it to target any transactions with any degree of
+definition, which the Authorities might consider appropriate at some point in the future.
+Although the discussion document made much of ensuring the provision of a cost-effective
+solution, it ignored the fact that Pathway is liable for fraudulent transactions against which EVP
+
+1s applied and should therefore have been entitled, at least to some degree, to manage the risk
+
+accordingly. .
+
+112 In paragraph 2 the discussion document contains the same quote from Schedule B08 as that in
+paragraph 14 above. As there is no definition of class of customer or transaction type in
+schedule B08, the PDA seems to have taken the statement in Pathway’s Functional Specification
+that high risk scenarios are to be identified by the Authoritics as an invitation to stipulate the
+
+requirement for a “sophisticated”, “flexible” and “dynamic” selection process for the use of EVP.
+
+1.3 In paragraph 4.1 the PDA acknowledges that the two basic selection criteria are class of customer
+
+and transaction type, but ignores the requirement that one or other of these criteria be selected.
+DWP00000204
+Dwpo0000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+Under these generic headings the PDA sought fit to list nearly all of the criteria previously
+specified in annexe A of the earlier discussion documents notwithstanding that this was obviously
+
+inappropriate in some cases (e.g. customer location as a class of customer) and at least a highly
+
+debatable classification in others,
+
+Lid In the conclusion section of the discussion paper the PDA states that the technical design of the
+mechanism for the selection of which cases are to be targeted for the application of EVP lies
+within the Pathway domain, which is correct However it also states “That whatever design is
+chosen “ust” meet the business requirements of cost effectiveness and ood customer service
+
+which it is suggested can be achieved using the PDA's selection criteria. The PDA also states (in
+
+Paragraph 3) that in order to meet these busincss Frequirements the selection process must be
+
+“sophisticated", “flexible” and “dynamic”. \What the PDA failed to recognise was that its
+
+requirements for the acceptance of Pathways solution for EVP (which fell outside even a broad
+
+interpretation of schedule BO8) had serious implications for the design of Pathway's solution
+based on a distributed network. Pathway did not immediately accept the PDA’s requirements set
+
+out in the discussion paper although some amendments were made to versions 0.5 and 0.6 of the
+
+EVP Document
+
+1.45 Pathway has in its Possession a copy of a letter dated 7 October 1996 from POGAB to the PDA
+commenting on the PDA's discussion Paper. Whilst generally endorsing the paper, and the
+approach being taken by the PDA, the letter also States that Pathway musi be provided with a list
+of situations to be covered by EVP in the initial stages of the contract and recognises this as an
+overdue responsibility on the Authorities, to be carried out urgently, Such a list has never been
+Provided by the PDA. However, some of POGAB’s suggested EVP cases identified in its letter
+were included in an undated letter subsequently sent by the PDA to Pathway, witit the request
+that Pathway confirm that the EVP selection mechanism would support these cases.
+
+&46 Pathway received the PDA's formal comments on version 0.6 of the EVP Document in November
+1996. Amongst the 67 comments on this document is a statement that the comments contained
+within the PDA's previous discussion Papers did not appear to have been incorporated, and if
+they had been, would Pathway state how and where. Clearly, the PDA and the Authorities
+fcgarded the requirements labelled "draft" in the PDA's earlier Papers, and intended for
+
+“discussion", as being mandatory,
+
+bir Pathway's definitions of class of customer and type of transaction (which remained largely
+
+unaltered from those described in previous versions. of the decument) were rejected with the
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE,
+
+statement that they did net fit with definitions provided by the PDA in previous documents.
+Section 10 which contained Pathway's definitions was described, amongst other things as
+“incomplete” and not meeting the Authorities business requirements which were presumably
+those stated in the discussion paper referred to above, as they are not contained in the Related
+Agreements, Pathway was informed amongst the comments, that a definitive list of
+circumstances in which EVP could be invoked could not be provided as the operation of criteria
+was not sufficiently defined, A list of 12, so called, transaction types and 10 classes of customer
+were provided which Pathway was asked to confirm it could support, as Well as any combination
+
+of them. The list was loosely described as indicative of those criteria which "may" be required by
+
+the Authorities.
+
+1.18 In the face of the PDA’s continual demands and the implied threat of non-acceplance, Pathway
+significantly amended the EVP Document (see version 0.7 dated 29 January 1997) to meet the
+PDAs expanded and optimised requirements. For the same reason, Pathway also confirmed in
+this document that it would support the numerous “indicative” classes of customer and
+
+transaction types required by the PDA.
+
+1.29 Pathway received 28 comments on version 0.7 of the EVP Document from the PDA ranging from
+the trivial to those which represented further optimisation of requirements. The comments also
+demonstrate the PDA's continued attempts, consciously or unconsciously, to influence design;
+requiring the EVP Design Specification Reference to be produced and circulated. Pathway
+incorporated most of these comments in version 0.8 of the EVP Document dated 5 March 1997.
+Seventy five comments were received from the PDA on version 0.8 some of which are very
+detailed and build upon and explore the extremes of Pathway's previous amendments. See
+comment 11, for example, which asks if Pathway has considered the type of questions used by
+banks in carrying out telephone transactions. Comment 18 asks if Pathway had considered EVP
+questions which requested one character of, rather than a full piece, of information, as this would
+avoid the post office clerk building up too much of a profile on the customer. The PDA
+constantly sought to persuade Pathway to introduce additional EVP functionality, backing up its
+Fequests with different scenarios (such as comment 13 which foresees problems with answers to
+
+EVP questions where a person was known by a different first name, for example “Richard may be
+
+known as Dick")
+
+1,20 Pathway incorporated as many of the PDA's comments as Possible in version 0.9 of the EVP.
+Document dated 28 April 1997. This cnabled version 1 of the EVP Document dated 30 April
+1997 to be approved by the PDA on behalf of the Authorities by letter of the same date.
+
+“8.
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+1.21 Despite having approved version 1 of the EVP Document, the PDA reopened negotiations
+relating to the requirements for EVP functionality associated with “cardholding casual agents" on
+31 October 1997. In the process, the PDA introduced the concept of “foreign EVP", This occurs
+when EVP is carried out against a cardholding casual agent with a different nominated post
+office to the beneficiary for which that agent is acting and requires additional EVP data (not
+anticipated in version 1 of the EVP Document) to be distributed through the network.
+Agreement on version 1 of the EVP Document had been reached on the basis that the casual
+agent and the beneficiary would have the same nominated post office. The introduction of
+foreign EVP represents a significant enhancement to the required EVP functionality. Issues in
+
+this and other respects remain unresolved
+
+1.22 Asa result of the more complex functionality required for EVP than that originally envisaged by
+Pathway as being within the boundaries of Schedule BO8, the system architecture and design used
+for Initial Go-Live ("IGL") and release 1C is to be fundamentally changed for New Release 2. {t
+will need to be changed again with the introduction of enhanced EVP functionality known as
+
+“soft EVP™ which ts due to be included in New Release 2 plus.
+2. Forcign Encashment Rules
+
+Issues
+
+The Authorities failed to comprehensively express their business rules for foreign
+encashments which Pathway required to know in order to develop Benefit Encashment
+
+y. The forcign encashment related requirements are poorly
+
+Service ("BES") functionali
+defined and of limited use. Pathway has been forced to define DSS foreign encashment
+
+business rules for the DSS. These difficulties have been compounded by the PDA's failure to
+
+properly manage this issue.
+
+The DSS's inconsistent approach to its own business rutes in this regard became clear in the
+course of workshops during October 1996, Pathway produced a document interpreting DSS
+foreign cncashment business rules in December 1996, after which extensive comments have
+continued to be received from the DSS and the PDA, some conflicting, suggesting alternative
+
+rules. Version 5 of Pathway's Forcign Encashments Paper is currently under review.
+EXAMPLES OF PROBLEMS FACED BY PATIIWAY.
+
+DWP00000204
+DwP00000204
+
+WITHOUT PREJUDICE
+
+21
+
+2.2
+
+24
+
+Factual Background
+
+A foreign encashment occurs when a person entitled to receive benefits (or his/her agent) makes
+a benefit encashment at a post office that is not the nominated post office of that person. The
+
+implementation of foreign encashment Processing needs to take into account two main factors,
+
+namely: -
+
+2.1.1 the number of transactions which use the foreign encashment mechanism (as Pathway is
+
+normally entitled to a higher charge for transactions which use this mechanism); and
+
+2.1.2 DSS encashment rules, which generally constrain the number of times a beneficiary can
+use the foreign encashment facility to 2 in every Tolling 26 week period (requirement
+
+770, schedule A15, DSS Agreement).
+
+Following workshops involving Pathway and the PDA in about October 1996, it became clear
+that the DSS did not have a consistent view of the operation of its business niles acress the
+various benefit types. The DSS could not produce a definitive document setting out its business
+nules (c.g. for foreign encashments and post office closures), which Pathway required in order to
+develop its solution, in particular, the BES functionality. As a result, Pathway produced a
+document setting out its own interpretation of the DSS business rules for foreign encashments (as
+well as other documents relating to various cncashment scenarios) based on its understanding of
+the rules and the relevant requirements in the Related Agreements. Pathway requested PDA
+Approval of this document as the basis for implementation. The document was entitled “Foreign
+
+Encashments” and version 1 was dated 12 December 1996.
+
+On 7 January 1997, 47 comments were received from the PDA following its review of version L.
+Accepting some of these comments, Pathway produced version 2, which amongst other things,
+
+introduced a glossary to clarify the different payee roles.
+
+The PDA provided 16 comments on version 2 on 29 January 1997, The covering memorandum
+
+stated that
+
+“For the avoidance of doubt, DSS do not recognise the document, nor any: comments made
+mt respeet of it, by any party, as in any way affecting, limiting or modifying the terms of the
+
+contract”.
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATIIWAY WITHOUT PREJUDICE
+
+Two days later, Pathway received comments on the same document from the CAPS High Levet
+Functional Design Team which is a division of the DSS Information Technology Services
+Agency (“ITSA"). The comment from CAPS relating to the “special case” for foreign
+encashment entitlement (paragraph 4.2. 1a) was entirely at odds with the PDA's comment on the
+
+same subject. The PDA and DSS were clearly unable to produce a definitive statement of the
+foreign encashment business tules and refused to recognise that Produced I by Pathway. .
+
+25 In order to progress the project, Pathway was forced to accept the risk that the DSS might decide
+to change or reinterpret its business rules (which were not adequately described in the Related
+Agreements) and that the DSS might declare Pathway's solution to be non-compliant. To
+minimise this tisk, Pathway attempted to flush out differences in understanding over foreign
+encashments. An urgent fax dated 25 February 1997 was sent by Pathway to the Preston office of
+the PDA. This fax contained a table showing whether a Payment was to be counted as foreign,
+and, if so, whether it was to count against the entitlement of the beneficiary, or the proxy of that
+beneficiary. Having received confirmation from the PDA by fax dated 25 February 1997 that
+(subject to a few minor amendments) the table was accurate, it was incorporated in annexe 2 of
+version 2.1 of the Foreign Encashments Paper dated 19 March 1997. Version 2.1 also
+incorporated many of the PDA's requirements and comments dated 29 January 1997 and more of
+the PDA's original comments dated 7 January 1997. In summary, version 2.1 provided: an
+explanation of transactions qualifying against the scorecard as foreign encashments and the
+facility for recording this; an expansion of Proxy roles and permitted office(s) for encashment
+{and whether it was the beneficiaries or the Proxy’s foreign cncashment count which would be
+incremented): and an explanation of the different Procedures which would be used for changing
+
+nominated post offices at release I and release 2.
+
+2.6 Pathway requested the PDA’s comments on version 2.1 by 4 April 1997, On 14 April 1997 the
+PDA provided (in two tranches) 26 cominents on the Forcign Encashments Paper. The comment
+
+relating to the table in annexe 2 (which, as stated above, had Previously been confirmed by the
+
+PDA) began:
+
+“There is some concern about the appointee encashing at the PO (nominated post office}
+
+of the beneficiary being counted as a FE (foreign encashment] in this table”.
+
+The comment goes on to Suggest alternatives which would not necessarily have been Tecognised
+
+by the DSS as the covering memorandum repeated the same disclaimer as that referred 10 above
+
+othe
+DWP00000204
+DwP00000204
+
+WITHOUT PREJUDICE.
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY
+
+(1. no comments are recognised by the DSS as in any way modifying or limiting the contract),
+
+Furthermore, some of the comments related to sections of the document that had remained
+
+unchanged since version 1,
+
+27 Pathway produced version 3 of the Foreign Encashments Paper on 15 April 1997. It
+incorporated the majority of the PDA’s comments and requirements such as clarification of the
+encashment threshold and of the applicability of restrictions if the system was to be extended to
+the Isle of Man. By memorandum dated 6 June 1997 the PDA finally confirmed that the business
+rules documented in version 3 of Pathway’s Foreign Encashments Paper “accurately reflect
+sponsor business". However, as previously, the PDA aiso stated that, for the avoidance of doubt,
+the DSS did not recognise the document, or any comments made in respect of it, as in any way
+limiting or modifying the Related Agreements; thus leaving the way open for further change or
+
+clarification if the DSS considered this necessary.
+
+28 Further change to the Foreign Encashments Paper was necessary. The Related Agreements refer
+te three payee types: alternative payec, appointees and permanent agents. In July 1997 Pathway
+became aware that CAPS intended to extend the requirements by providing data relating to other
+payee types. personal acting bodies, nominated agents and authorised payees. Whilst Pathway
+was able to recognise these payee types without difficulty or significant cost using the appropriate
+classification codes it was necessary to clarify whether these additional payee types would follow
+
+the existing foreign encashment rules.
+
+29 In light of CCN117, which is still not agreed (sec paragraph 9.1 below) and which is intended,
+inter alia, to introduce encashments using temporary tokens, Pathway had to amend the Foreign
+Encashments Paper to expand the rules. The normal foreign encashment rules had to be over-
+ridden in the case of temporary token encashments as, irrespective of payee type, such
+encashments should always take place at the post office specified for use with that temporary
+token. The introduction of temporary tokens also introduced a new payee role known as a
+“temporary agent” which had to be factored into the foreign encashment rules. All the necessary
+analysis was carried out by Pathway and the resulting. significant alterations to the mules were
+reflected in version 4 of the Foreign Encashment Paper dated 11 August 1997 (sec annexe 2 of
+
+the paper in particular).
+
+2.10 Even after version 4 of the paper had been produced, comments from the PDA continued to be
+received by Pathway. Pathway was informed by memorandum dated 4 November 1997 that the
+
+encashment threshold rule described in annex 3 of the.paper (known as “payment skipping") was
+
+“Qe
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+incorrect. The PDA requested confirmation that the “correct” procedure, which was described in
+the memorandum, would be followed. This was despite the PDA having provided the initial
+guidance for payment skipping by fax dated 20 September 1996 and the PDA’s confirmation
+(described above) that version 3 of the Foreign Encashments Paper accurately reflected sponsor
+business, This was pointed out to the PDA by memorandum dated 7 November 1997. Eventually
+Pathway conceded the change, and removed payment skipping, because it cost less to remove
+what had been done than to complete the development. Nevertheless, a significant amount of
+
+development work (payment skipping had been built into BES) has been wasted
+
+241 Pathway was provided by the PDA with a copy of a DSS memorandum dated 7 October 1997 that
+commented on version 4 of the Foreign Encashments Paper, One of the comments tried to re-
+open an issue (as to whether a second visit to a post office on the same day would count as a
+further foreign encashment) which had been agreed with the PDA in protracted discussions in
+late 1996. This was pointed out to the PDA by Pathway by memorandum dated 22 November
+1997, The Pathway memorandum also recorded that over a period of approximately 18 months
+Pathway had been in discussions with the PDA regarding the foreign encashment rules and that,
+although the rules had been agreed by the PDA, new issues had arisen with the DSS and the PDA
+with the approach of Pathway release 2 which affected the rules. These issucs included the basis
+
+of charging for nil payment transactions and signatures required for receipts
+
+2.12 Since November 1997, there have been new changes which have been tacitly, but not formally,
+agreed with the PDA (CCN220 and amendments to CCN117 (see paragraph 9.1.7 below)) which
+will affect foreign encashment rules relating to restricted post office and temporary token usage
+These changes have been incorporated in version 5 of the Foreign Encashments Paper which ts
+currently under review. This is another example (in additon to those described in paragraph 9
+
+below) of Pathway working against informal instructions pending formal change control
+3. Automated Payment Service - "SMART APS"
+
+Issues
+
+POCL has demonstrated an overall lack of knowledge of its own business rules behind
+SMART Automated Payment Service ("APS") requirements. To the extent that the
+knowledge exists within POCL there has been a failure to communicate this to Pathway in
+an effective manner. This has resulted in Pathway being provided with inadequate
+
+definition of requirements. The lack of proper business rules and requirements has meant
+
+“ide
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+that Pathway has continually been forced to seck information and clarification from POCL
+which has been difficult to obtain, causing significant delay, and on occasion abortive work
+and rework. Parallel to this process of drip-feeding Pathway with cssential information that
+it should have been given at the outset, POCL has interfered with Pathway's SMART APS
+design and development as carried out, seeking to enhance and optimise contractual
+requirements. The situation has been worsened by POCL's failure to manage its third
+
+party suppliers, together with the PDA's involvement in this issue.
+
+Summary
+
+The inadequacy of the Authorities’ SMART APS requirements became apparent during
+January 1997 when POCL revised significant elements of its SMART token service business
+niles. Throughout the course of the project Pathway has been forced to seck further
+information from POCL relating to its SMART APS business rules and requirements,
+POCL failure to manage its SMART third party suppliers emerged as a problem during
+April 1997 and continues to date, with Pathway being left this task in the absence of any
+proper contractual nexus. From June 1997 to the current time POCL has sought to enhance
+its requirements over and above those contained in the Related Agreements, notably in
+respect of the Quantum SMART service. Recent SMART APS review meetings have shown
+that Pathway still lacks a significant amount of crucial information required and requested
+from POCL. Pathway is also not in a position to rely firmly upon the limited amount of
+
+information it has received, as POCL has indicated that this may be subject to change.
+
+Factual Background
+
+3. ‘The APS enables post office customers to pay utility bills at post office counters. A feature of the
+service is the ability for customers to use SMART tokens. These take the form of SMART cards
+or SMART keys, which the customer pays to have “charged up” at the post offtce counter. The
+
+customer plugs the token into a meter at his or her home, with the credit on that token being
+
+transferred to the meter.
+32 SMART tokens also enable the transfer of information between the utility companies and their
+customers, such as recording amounts and times of payment, taking meter readings, setting off
+
+existing debis against recent payments, recording disconnections, and so on.
+
+13 The following SMART tokens are required to be supported by the Pathway solution:
+
+wfae
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+* Landis & Gyr PISCES SMART token for the electricity industry
+* GEC Meters WATERCARD SMART token
+
+* — Schlumberger Smart Key for the water industry
+
+* Schlumberger Smart Key for the electrical industry
+
+* — British Gas Quantum SMART token.
+
+3.4 No contractual relationship has existed or does exist between Pathway and any of POCL's
+SMART third party suppliers. Pathway required comprehensive SMART token specifications
+from POCL to ensure that interfaces and a counter machine suitable for use with all SMART
+tokens could be developed. To facilitate development of its solution, Pathway's information
+fequirements were expressed in the Related Agreements as Contracting Authority
+Responsibilities ("CARs"). Some of these CARs, and delays and problems experienced with
+them, are described in the table in Paragraph 10 below (see CARs numbered 543, 550 and 535 in
+
+particular).
+
+Requirement 547 (schedule AIS, POCL Agreement) states that the APS service is to use
+
+we
+ue
+
+information and rules contained ia:
+
+* POCL APS Generic Rules (supplied by POCL)
+
+* Token Technology Specifications (TTS”) (to be supplied by POCL - still not provided with
+an adequate level of detail to enable coding to take place)
+
+* AP Client Specifications (to be created by Pathway, but dependent upen client and token
+information to be supplied by POCL pursuant to CAR 545 000.003 - not yet created because
+POCL has still not provided Pathway with adequate information).
+
+36 Generally, all information so far provided to Pathway for SMART APS has been thin in content
+and general in nature and thereby lacks adequate detail. Without a clear expression of POCL's
+business rules and Tequirements in respect of SMART APS, Pathway has been forced to
+continually seck further information and clarification from POCL on these matters, Pathway is
+dependent upon POCL for the Provision of crucial data and information, which cannot be
+generated by Pathway. Some of the difficultics encountered by Pathway in obtaining the
+
+necessary information are described below.
+
+37 As early as 8 November 1996 it had been become clear to Pathway and the Authorities that there
+Was a need to develop the basic Strategy behind the APS. An AP Client Workshop was held on
+thus date attended by members of the PDA and POCL, and Pathway fepreseniatives. The minutes
+
+of this workshop indicate that it was acknowledged by. all present that no strategy existed for the
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY. WITHOUT PREJUDICE
+
+migration process of AP Client data, and it was agreed that Pathway and the Authorities would
+work together to develop such a strategy. Clearly, at the start of Pathway's SMART APS design
+process difficulties were already being encountered as a result of POCL's lack of an adequate
+knowledge of the business rules and strategy upon which APS was to be designed
+
+38 By January 1997 it had become apparent that SMART APS development would be difficult for
+Pathway due to a lack of information and POCL's changing requirements. POCL revised its
+Business Rules Definition for Talexus, a part of its existing SMART toKén service, as a result of
+a critical examination of its business case in this respect. This introduced new functionality and
+
+potentially affected the scorecard.
+
+39 In about April 1997 POCL began to abdicate responsibility regarding SMART APS development
+to its SMART third party suppliers, notably Landis and Gyr, and inappropriately began
+attempting to place responsibility on Pathway to manage the relationships with these third party
+suppliers and issues arising with them. A disagreement also arose between Pathway and the
+PDA over APS reconciliation statements, resulting from the PDA’s insistence that reconciliaion
+
+functionality be extended beyond contractual requirements without using the proper change
+
+control procedures.
+
+3.10 In May 1997 Pathway had stull not received information it required from POCL to design the
+APS and which POCL was contractually obliged to provide. This was raised by Pathway at
+
+“financial and commercial” meetings.
+
+tt A specific clement of APS, Quantum, became a contentious issue between POCL and Pathway in
+about June 1997, Quantum is the British Gas SMART service. Ata financial and commercial
+mecting in about June 1997 POCL referred to a number of its requirements in respect of
+Quantum APS including time-critical on-line transmissions enabling the provision of indicative
+prices to clients. Pathway pointed out that Uhis was not part of contractual requirements and
+indicated that the introduction of any such addition to the service should be managed through
+
+formal change control. This issuc ts stull ongoing,
+
+3.12 In July 1997 Pathway still had to issue requests for further information on AP SMART tokens
+because the information provided by POCL was incomplete and not properly defined. The notes
+
+of the 10 July 1997 financial and commercial meeting record that:
+
+HG.
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY. WITHOUT PREJUDICE,
+
+“There were concerns on a lack of Business Process Rules (processing rules} for Quantum
+and that the lack of a specification results in piecemeal approach to the access of
+
+knowledge".
+
+3.13, The notes of an APS meeting on 15 July 1997 illustrate that even at this stage the contractual
+baseline for APS was slipping due to POCL shifting the AP Client baseline. It was highlighted at
+this meeting that the contract terms would need to be changed to reflect the extra AP Client
+Services to be supported over and above those set out in the Related Agre&ments, and reference to
+contractual change control is made in respect of the extra obligations being placed upon Pathway.
+By the time of this meeting Pathway was already having to take into account AP Client Services
+over and above those which it was contractually obliged to consider. The number of AP Client
+
+Services has since increased five-fold from that originally envisaged in the Related Agreements.
+
+3.14 Althe CNT meeting on 23 July 1997, Pathway questioned POCL's commitment and support for
+the development of SMART products. Pathway pointed out that it was being asked to undertake
+significant work beyond the contractual requirements apparently without the necessary
+commitment from POCL or its SMART third party suppliers. The point was also made that
+Pathway had been provided with insufficient information for the purposes of meeting the requests
+being made of it and that such requests pivoted around Pathway's interaction with a third party
+(Quantum) with whom it had no contractual relationship. Keith Baines acknowledged POCL's
+delay stating that it had taken POCL a tong time to reach the conclusion that Quantum should be
+
+put through the Horizon solution and not through British Gas terminals
+
+At the 3 August 1997 financial and commercial mecting Pathway stated that it still lacked very
+
+rr
+
+basic information required to carry out work requested by POCL. APS service definitions had
+still not been provided by POCL, with the only documents received by Pathway being unofficial
+documents from Landis & Gyr. These were not sufficient to complete the APS work in the
+manner requesicd. At the 26 September 1997 financial and commercial meeting Pathway
+indicated that Landis & Gyr was still waiting (o be instructed by POCL to provide Pathway with
+
+sofiware specifications.
+
+3.16 In October 1997 Pathway appointed a member of staff specifically to drive forward issues of
+SMART development. This was in direct response to POCL's continued failure to provide
+Pathway with adequate information and specifications. Pathway still required information and
+equipment from POCL in respect of Talexus, the GEC Water card, Pisces and Quantum before
+
+any SMART APS matters could be progressed.
+
+oP}
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+3A? Despite the appointment of an APS dedicated member of staff, problems continued through
+November 1997. The 12 November 1997 Finance and Commercial Update records that the
+British Gas interface specification was missing and questions of payment and impact continued
+POCL only arranged the first meeting between Pathway and British Gas on 25 Febnuary 1998,
+
+3.18 In December 1997 difficulties were still being experienced as a result of POCL's failure to
+manage its relationship with Landis & Gyr. The Pisces security module had moved away from
+Pathway's working assumptions, as Landis & Gyr had introduced a combined Pisces and
+Quantum security module. This involved Pathway in significant rework. Obligations were
+
+outstanding from POCL in respect of service definitions and TTS.
+
+3.19 By letter dated 12 December 1997 Pathway requested that a formal change request be raised to
+update the Pisces TTS and to update references in other documents accordingly. This was
+needed because informal requests for change received from POCL (and its SMART third pany
+
+suppliers) had not been put through the proper change control process
+
+3.20 At the start of January 1998 Pathway's concern over essential information required from POCL.
+but not provided, or provided in a form expressly stated by POCL not to be final, was
+heightening. By the middle of January 1998 Pathway was suli missing a substantial amount of
+information and equipment required from POCL, and which POCL was contractually obliged to
+provide. The missing information and equipment affected Pathway's design, development and
+
+testing.
+
+3.21 An Automated Payments Issues Review mecting was held on 15 January 1998 attended by the
+Authorities and representatives of Pathway, Confusion still existed at this point over contractual
+relationships between Pathway, POCL and its third party suppliers. POCL was still abdicating
+responsibility for dealing with its third party supplicrs, seemingly expecting Pathway‘ to take over
+this role despite the absence of any contractual nexus between Pathway and these suppliers
+Concerns were expressed by Pathway over the information that it had received from POCL.
+Pathway had been provided with information in such a way that it was unable to ascertain
+whether it had received a complete and accurate set of documents, Information requirements in
+Fespect of APS business rules were attached to the review meeting notes, indicating further arcas
+where Pathway still required information in respect of APS, and extending to such basic aspects
+of the service as the business functions which POCL had contracted to perform on behalf of its
+
+chents, the rules for performing such functions, validation rules, and other issues
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATITWAY. WITHOUT PREJUDICE,
+
+3.22 A consolidated list of actions arising from APS meetings on 23 January 1998 and 30 January
+1998 was produced and distributed early in February 1998. It is clear from this list that the onus
+for the majority of outstanding actions is upon POCL, and the provision of crucial APS
+
+information to Pathway is dependent upon POCL performing as agreed
+
+3.23 During February 1998 Pathway was still in a position where it was not able to rely upon
+information received from POCL as being in its final form. This was in addition to difficulties
+arising from information which was required from POCL but had not been provided. A letter
+dated 9 February 1998 from Pathway to POCL continues to seek clarification from POCL as to
+the management of its third party suppliers, and information required and received from POSL
+
+by Pathway for the design and development of the APS Paragraph 7 of this letter states:
+
+"POCL will confirm in writing that the functional and Token Technology Specifications ..
+
+are the final versions of their documentation, and are the baseline from which development
+
+may conunence".
+
+POCL is stil unable today t9 confirm to Pathway that information it has provided is in its final
+form. For example, the Bar Code TTS, first provided to Pathway by POCL in around August
+
+1996, is currently stated by POCL not to be in its final form and therefore still cannot be relied
+
+upon for the purposes of Pathway's APS development.
+
+3.24 During March 1998 the same problems continued. A letter from Pathway to POCL dated 9
+March 1998 states that Pathway still requires clarification on numerous issues within a short
+period of time. Previous similar requests to POCL have proved unsuccessful. The Quantum
+issues also continue, with Pathway still having no proper understanding of Quantum
+requirements as a result of POCL not providing adequate information, hindering development
+and pricing for Talexus. A letter from Pathway to POCL dated 2 April 1998 continues in the
+same vein expressing scrious concerns about the difficulties in obtaining information and
+documentation from POCL. It is made clear in this Ietter that POCL's failure to provide
+necessary and requested documents and agreements to Pathway is having a serious impact upon
+Pathway's ability to proceed with the development of SMART APS products The urgency of
+
+Pathway's information requirements is clear from the schedule attached to this letter
+
+25 Concerns still existed over Talexus requirements as at 2 April 1998. A letter from Pathway to
+
+we
+
+POCL dated 2 April 1998 secks clarification as to ar agreed baseline for Talexus in order that
+
++19
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+Pathway can proceed with its development, Even at this point, Pathway is having to anticipate
+POCL's requirements in respect of Talexus in order that it can proceed with development, as
+POCL has not actually expressed these to Pathway. The enclosure to this letter is a detailed
+Pathway produced document entitled “Talexus Requirement Specifications". The need for
+Pathway to produce such a document anticipating the business rules and functional Tequirements
+
+of the Talexus service emanates from POCL not having provided, even as late as 2 April 1998,
+
+such crucial information to Pathway. oe
+4, DSS Reference Data
+
+Issues
+
+Contractual requirements in respect of DSS Reference Data are virtually non-existent.
+Pathway has had to seek and reconcile extensive information in respect of DSS Reference
+Data from 3 organisations (CAPS, ITSA and Electronic Data Systems ("EDS") in order to
+develop its solution. These organisations have not adopted a uniform or coordinated
+approach to the issue and Pathway has, in effect, been carrying out the DSS' work of
+‘analysis in this area. Information has been lacking, inconsistent between the 3
+This has involved Pathway in extensive
+
+Organisations, and generally of poor quality.
+analytical work not cavisaged under the Related Agreements, abortive work and re-work,
+
+involving cost and delay. The Authorities have sought to optimise and enhance the existing
+
+contractual DSS Reference Data requirements.
+
+Summary
+
+Difficulties with the inadequate DSS Reference Data requirements emerged in the carly
+stages of the project when Pathway began secking information from the 3 diverse
+organisations across which the responsibility for DSS Reference Data was dispersed. This
+involved meetings and correspondence with these organisations to resolve issues, which
+continue to the present day. The difficulties have always been compounded by the
+Organisations’ concerned apparent inability to provide Pathway with meaningfut
+information in a timely fashion. Pathway has encountered further difficulties in the DSS'
+departure from the manner in which the contractual requirements indicated that Pathway
+would be provided with DSS Reference Data. Having developed a data tink in accordance
+
+with requirements by February 1997, Pathway was subsequently required (without
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+compensation) to develop an alternative data link, occasioning delay and rework without
+
+compensation,
+
+Factual Background
+
+4b Reference data is defined as a set of parameters and relationships controlling the operation of
+services (schedule AQ1, Authorities Agreement). There are two main external sources of
+Reference Data used by Pathway: DSS Reference Data and POCL. Reference Data. This section
+describes some of the problems encountered by Pathway in defining the format and use of DSS
+
+Reference Data. The next section deals with POCL Reference Data.
+
+42 DSS Reference Data is used in, amongst other services, the Benefit Payment Service (“BPS”)
+provided by Pathway. DSS Reference data contains variable data items, for example: the
+descriptions associated with payment codes which are required for printing on receipts; and file
+
+routing data, t& enable files to be returned to CAPS according to Service ID.
+
+43 There are few requirements that relate to DSS Reference Data and none which help Pathway to
+understand what data it is expected to receive and how it is t be used. The only specific DSS
+Reference Data requirement is requirement 891 (schedule BO4, Authorities’ Agreement) which
+
+deals with service reconciliation. Paragraph 1,117.1 states
+
+“The CONTRACTOR shall ensure that afl captured data are complete and accurately
+
+reflected in the appropriate outward interfaces:
+
+(a) this applies to Transaction data of all types and modes (including normal working, fall-
+back and Recovery, and to normal usage, amendment, reversal, and so forth) and to
+Stock and cash levels; and
+
+(B) this applies to Reference Data changes, both local and as received from the Authorities
+as follows:
+
+© fram DSS in respect of Reference Pata for PAS and CMS ....
+
+d4 Paragraphs 1.126,9 and 1,127.15 of requirements 934 and 935 respectively (schedule A15, DSS
+Agreement) indicate that DSS Reference Data will be provided by CAPS.
+
+4.3 When Pathway sought to make use of DSS Reference Data it found there was no single point
+responsibility within the DSS. Responsibility was dispersed across thrce organisations: CAPS,
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+ITSA and EDS. CAPS is responsible for data maintenance and record description ITSA
+provides the distribution method, the operation of which is controlled by EDS. Pathway has been
+forced to engage in protracted negotiations with individuals from each of these organisations, and
+from the PDA, amongst which there has not been a uniform or coordinated approach. The
+process of specifying DSS Reference Data and developing a system to use it in New Release 2
+(and earlier releases) that can be supported by all parties has taken approximately 18 months. To
+progress the project, Pathway has carried out virtually all the necessary york of analysis (without
+payment) to ensure consistency between CAPS, ITSA and EDS. This work was net envisaged in
+the Related Agreements. A change request to define actual responsibility for DSS Reference
+
+Data within the DSS is still expected from the PDA.
+
+4.6 CAPS, ITSA and EDS have ali produced their own set of documents. It has been largely left to
+
+Pathway to analyse and compare these documents of which there have been numerous different
+
+versions.
+
+4.7 Pathway began Irving to establish a mechanism for the use of Reference Data required for BPS in
+about July 1996, when Pathway received documents from EDS and ITSA recommending the
+development of procedures for making DSS Reference Data available. Pathway commented on
+these documents and a meeting was held attended by representatives of the PDA, CAPS, ITSA,
+EDS, POCL and Pathway, the aim of which was t¢ gain a common understanding of each party’s
+Reference Data requirements. However, many issues remained unresolved and Pathway had to
+commence designing elements of the BPS well in advance of the CAPS Reference Data structure
+being made known to it. The result was that Pathway could not use any CAPS supplied DSS
+Reference Data during IGL and a substantial number of changes were subsequently needed to
+
+properly integrate DSS Reference Data within the BPS.
+
+48 CAPS provided 2 documents describing Reference Data in early 1997, neither of which gave the
+compleic picture. In a memorandum to the PDA dated 28 January 1997, Pathway requested a
+singic baseline document. In an urgent fax to CAPS dated 19 February 1997 (sent again on 27
+February 1997) Pathway explained that the CAPS document “CAPS to PAS/CMS Codes Files
+Definitions" did not give complete information regarding the content of codes files within DSS
+Reference Data. This document, and subsequent versions of it, had a number of errors and
+inconsistencies which were detected by Pathway. For example, {although subsequently rectified)
+the definition of the data item known as “Equipment Indicator” had been given a set of values
+differing from those provided by ITSA. The document is also misleading and assumes that
+Pathway has knowledge of DSS practice which Pathway does not have, Certain data items, for
+
+22.
+DWP00000204
+DwP00000204
+
+1
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY. WITHOUT PREJUDICE
+
+example, can be read as mandatory when they are not mandatory. This only started to become
+
+apparent in about August 1997 when Pathway received test data (see below)
+
+49 ITSA supplied a definition of code file headers, trailers and version numbers in its document
+“Download of Reference Data to BA/POCL Supplier” which is not consistent with the codes file
+document (referred to above) supplied by CAPS. This is because it ts aligned with an earlier
+
+version of CAPS.
+
+4.10 In an attempt to help Pathway, CAPS produced a memorandum dated 20 August 1997 which set
+out the headers, trailers and version numbers that CAPS expected to use for CAPS release 2.2.
+
+The memorandum anticipated work being done by Pathway for release 1C which was not
+
+intended until release 2.
+
+4d The process of extracting information from the PDA, CAPS, ITSA and EDS regarding DSS
+Reference Data for the various Pathway/CAPS software releases conunued over many months
+
+Pathway has received numerous documents which between them describe the format and use of
+
+DSS Reference Data, as follows:
+
+4.ELE CAPS to PAS/CMS Code File Definitions (versions fer CAPS releases 2.1, 2.2 and 3) +
+owned by CAPS;
+
+4.11.2 Distribution of Reference Data to BA/POCL Supplier (2 versions) - owned by ITSA,
+
+4.11.3 Strategy Maintenance of Codes Files User Guide (2 versions)- owned by EDS; and
+
+4114 CAPS memorandum dated 20 August.
+
+4412 Problems with the inconsistent and delayed documentation have not been the only problems
+experienced by Pathway in relation to DSS Reference Data. Pathway originally expected that, in
+accordance with requirements 934 and 935 referred to above, DSS Reference Data would be
+recived from CAPS. The necessary functionality was accordingly built into the batch interface
+between CAPS and Pathway (known as the CAPS Access Service (“CAS")), which Pathway
+indicated it would do as carly as 29 July 1996. DSS Reference Data was requesicd to test the
+CAS link in February 1997. However, this did not turn out ta be the method by which Pathway
+was actually required to receive DSS Reference Data. Instead Pathway had to develop a separate
+and additional transfer mechanism (though still within CAS) in order to receive DSS Reference
+Data, the distribution of which is operated by EDS. The original work on the CAS fink was
+aborted (without compensation to Pathway) and Pathway was forced to carry out work on the new
+
+link, without going dirough formal change control, in order to progress the project. By
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+memorandum dated 13 June 1996 Pathway requested that the PDA raise a change request as a
+
+matter of urgency to clarify the situation and ta correct the requirements. However, no response
+
+has been received.
+
+4.13 When DSS Reference Data was eventually supplied for testing by EDS (in about August 1997), it
+appeared to conform to the definition for CAPS release 2.2 DSS Reference Data, not release 2.1
+which was that required by Pathway at the time. The quality of test DSS Reference Data was
+poor and was found not to contain certain fields required by Pathway; post codes for example.
+This at first caused the whole file to be rejected by Pathway's DSS Reference Data system, as
+these fields were treated as being mandatory in accordance with what turned out to be
+inaccurately stated in the document “CAPS to PAS/CMS Cades Files Definitions” (referred to
+above), The test file was also found to contain post offices for the Isle of Man and the Channel
+Islands which are not covered by the Pathway solution. Post office telephone numbers were also
+
+found to be missing. Pathway notified the PDA of these difficulties, some of which were rectified
+
+whilst Pathway worked around others (see below)
+
+4d For release 1C, particular difficulty was encountered with the post office codes file within DSS.
+Reference Data. This file provides the key for electronic distribution of payments. Pathway has
+obtained different post office codes information from DSS, POCL (central) and POCL regions.
+The problem with Reference Data largely arose because the source of the DSS post office codes
+file was out of date and did nat conform with POCL Reference Data supplied to Pathway’s
+Reference Data Management Centre ("RDMC"), which is derived from POCL’s new Reference
+Data system. To work around this problem Pathway manually compiled a file of post office codes
+information necded by the BPS to operate the 200 (plus) post offices used in the release IC live
+trial. Due to this and other difficulties and delays associated with the DSS Reference Data there
+was no possibility of automating the download link for release 1C. All DSS Reference Data used
+
+with release IC is currently updated manually via the help desk, causing Pathway to incur
+
+additional expense without contpensation
+5. POCL Reference Data
+The POCL Reference Data contractual requirements were inadequate for the purposes of
+
+developing the Pathway solution. Furthermore, neither POCL nor the PDA had a proper
+
+understanding of related issues. POCL's requirements, particularly in respect of
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE,
+
+management of change of data, only began to emerge, at Pathway's instigation, relatively
+recently. Onc of the effects of this has been to render Pathway'‘s original design base for the
+RDMC unstable. Essential test data required by Pathway was provided late by POCL and
+was consistently of poor quality. This has caused delay and disruption to Pathway's work
+
+programme.
+
+Summary
+
+Pathway first designed the RDMC in September 1996 to mect requirements produced by
+inference during the development of the Electronic Point of Sale Service ("EPOSS") and
+APS. An interface bascline was established during December 1996. Initial test data was
+provided to Pathway by POCL in the period September 1996 to February 1997. Much of
+this data was of poor quality and had to be manually rectified by Pathway. In February
+1997 Pathway complained to the PDA about the programme impact and delay that the lack
+of accurate test data was causing. Although to a lessor extent, these problems persisted for
+many months and there still remains an absence of adequate business validation of POCL
+
+Reference Data which is likely to cause operational problems unless addressed.
+
+Factual Background
+
+3 POCL Reference Data supplied to Pathway has two primary functions, It is used to populate
+Generic transactions which take place during a customer session at a post office counter;
+providing information needed for these transactions. 1 also provides the essential mechanism for
+implementing operational business changes without having to alter software code. As such, it is
+of fundamental importance to both EPOSS and APS (which are both Reference Data driven) and
+other counter based services. There has to be a mechanism which allows for efficient change ¢.g.
+post office outlets to close, new outlets to open and details of POCL products and services to be
+altered over time, Without such a mechanism, the whole of the Horizon system weuld very soon
+collapse; yet there is a complete absence of meaningful requirements which relate to POCL
+
+Reference Data in the Related Agreements and the surrounding issues were initially poorly
+
+understood by both the PDA and POCL.
+
+5.2 As described in Pathway's Reference Data System Outline Design, Pathway's Reference Data
+Management Centre ("RDMC") was first designed in the period September 1996 to March 1997
+
+to meet internal requirements produced (by inference) using:
+* system object models produced for EPOSS and APS, which were under development
+
+223
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY. WITHOUT PREJUDICE,
+
+* workshops with the POCL Reference Data development team.
+
+5.3 It emerged that the POCL development team had little understanding of the full significance of
+Reference Data and how it is used, particularly how changes to Reference Data should be
+controlled and managed. Pathway had great difficulty persuading the PDA and POCL that this
+represented a serious shortfall in their business and systems analysis for the project. The result is
+that real business requirements have only begun to emerge relatively recently since the creation
+of the (ad hoc) Operational Business Change Committee ("OBCC"). Pathway is not represented
+on the OBCC (it is staffed by POCL and PDA members), but it was originally set up as a result of
+Pathway’s insistence that the whole area of Reference Data needed far more detailed analysis by
+POCL. The design baseline for the RDMC, that emerged over time, has been found to be
+unstable, Significant changes are needed to allow the RDMC to mect emerging requirements
+
+with an associated increase in costs for which Pathway will not be compensated.
+
+34 The first document to be produced (in July 1996), was the drafi “Reference Data Project
+Application Interface Specification Reference Data to TMS” ("AIS"). It was intended that when
+signed off, this document would fulfill a number of CARs (e.g. CAR number 818.000.004
+described in the table in paragraph 10 below). The AIS went through approximately 14 different
+versions in order to satisfy the Authorities. The CARs associated with it were registered as
+complete when the AIS was made available for final issue on 29 September 1996. However it
+was not until 16 December 1996 that version 3 of the AIS was agreed by the PDA and Pathway to
+
+be the “baseline” version, subsequent amendments to which would have to be introduced through
+
+change contro!
+
+53 Having agreed the AIS, Pathway required test data which conformed to the AIS to be supplied by
+POCL. A nuinber of CARs were associated with the provision of Reference Data by POCL the
+
+majority of which were due to be completed by December 1996 or earlier,
+
+36 POCL Reference Data is not only used by Pathway in the RDMC. Almost identical Reference
+Data ts also used by other systems outside the Pathway domain, such as POCL's Transaction
+Information Processing (“TIP") system. For this reason, Pathway did not expect that POCL.
+would have any difficulty supplying data of good quality in order to fulfill the applicable CARs.
+However this did not prove to be the case. For many months, the test data supplied by POCL via
+its Reference Data Project ("RDP") was of very poor quality, as catalogued in correspondence
+between the partics. In order 10 make some use of poor quality data provided by the RDP,
+
+26+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY
+
+DWP00000204
+DwP00000204
+
+WITHOUT PREJUDICE
+
+5.7
+
+5.10
+
+Pathway would often manually rectify the data in order that it could be used for testing and
+
+development purposes.
+
+The first test Reference Data was received by Pathway in about September 1996. This was at a
+me when the AIS was in early draft form. The data was created manually; there was little data
+
+for Pathway to test and Pathway's comments were therefore limited,
+
+The first format “drop" of Reference Data was received by Pathway on 6 January 1997, Pathway
+had difficulty loading this data which, when analysed, was found, in many ways, not to comply
+with the AIS. A further drop was provided by POCL on 27 January 1997. Although improved,
+there were still problems with this data which did not conform to the AIS and was of poor quality
+
+in terms of product and outlet data
+
+By February 1997, the lack of Reference Data was beginning to have a scrious effect on
+
+Pathway's project plan. By letter to the PDA dated 5 February 1997 Pathway recorded that
+
+without suitable Reference Data.
+
+“[w]e estimate that only 50% of the APS system/integration testing is possible and we simply
+
+cannot start EPOSS system testing which is wholly dependent on this data".
+
+Pathway provided further explanation of its dependency on test data in its letter to the PDA dated
+
+13 February 1997,
+
+The first system generated Reference Data was provided to Pathway on 17 February 1997
+Pathway analysed this data, and given that it appeared to be adequate, agrced that the related
+CARs should be signed off on the proviso that daily updates would be supplied to Pathway to
+reflect the latest POCL position. The CAR control form was signed off on 20 March 1997.
+
+POCL did not provide daily updates of Reference Data. Although a number of further drops of
+data showing incremental improvement were delivered over the months aftcr 20 March 1997, a
+drop of Reference Data of sufficient quality for retease I¢ to 0 live was only received on 2) July
+1997. This should have been available in February 1997. The most recent drop of Reference
+Data (received by Pathway on 31 March 1998) conforms with the AIS, but, based on past
+experience, Pathway has little confidence (and has no way of validating) that the Reference Data
+
+content is fit for busincss use. Issues in this respect and in relation to management of change of
+
+Reference Data arc ongoing. .
+DWP00000204
+Dwpo0000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY, WITHOUT PREJUDICE
+
+6. Conflict between the Authorities and criticism of the PDA
+
+Issues and Summary
+
+The PA Consulting Report of 1 October 1997 commissioned by the Authorities and Pathway
+illustrates problems that have arisen as 2 result of conflict between BA and POCL. The
+report criticises the PDA's handling of the project and identifies different business
+objectives and tension between the Authorities. The conflict between the Authorities has
+lead to delay and confusion over the means of implementing certain contractual and
+changed requirements, and has adversely affected the resolution of agreements to agree and
+
+the proper functioning of the change control mechanism. These difficulties continuc to date.
+
+Factual Background
+
+ét IL ts general knowledge that there has been conflict between the Authorities (not always visible to
+Pathway) which itself, and when combined with the lack of empowerment of the PDA, has Icad
+to delay. The PA Consulting Report dated 1 October 1997 serves to illustrate this point. PA
+Consulting was commissioned by the Authorities and Pathway to provide an independent view of,
+
+inter alia, current weaknesses and risks in the Programme. In its Report, PA Consulting made a
+
+number of findings including the following:
+
+GL “Agendas in conflict
+
+The BA is a major customer of POCL and it is inevitable that the different commercial
+objectives of the each organisation make it difficult for them to act in total harmony as
+
+Joint Programme sponsors. We note this has the following impacts:
+* an adversarial approach between senior managers in BA and POCL
+
+* decision making structures ave cumbersume and the people in them do not feet
+particularly empowered This is evidenced in the extensive and only partially
+productive brokering work of PDA staff and the many pre-meetings required to
+support the PDA Board and the Programme Steering Committee” (patagraph
+
+M41),
+DWP00000204
+
+DWwP00000204
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+612“. recommended actions which focus on improving the delivery capability of the
+
+Programme ...are set in the context of the need for a new, executive-style PDA
+empowered to make decisions on behalf of the sponsors and given direction by a PDA
+
+board which provides strategic advice and which gets involved to resolve the big issues”
+
+(paragraph M6);
+
+6.4.3“ [he current joint sponsorship arrangements are leading to a lack of clarity in
+responsibilities and to difficulty and delay in brokering resolutions to
+
+problems... exacerbated by the significant commercial tensions between the sponsors”
+
+(paragraph M7.3),
+
+6.14 “fiJn the PDA, we found an organisation... .. which seemed to be hampered by its size
+it sets out to broker decisions between the
+
+and lack of empowerment
+and to manage the joint contractual relationship with Pathway” (paragraph
+
+Sponsors.
+
+3.4)
+
+645 “fin secking to move the PDA towards new responsibilities} ..she PDA will still face a
+
+number of problems
+
+¢ the sponsors have different business objectives and would prefer tx keep their
+options open for as long as possible while developing their own programmes of
+work,
+
+¢ the PDA is not fully empowered to take decisions itself.
+
+.
+
+These factors will, in our view, continue to impede the efforts of the PDA to expedite the
+
+Programme, and will make it difficult to recover lost ume” (paragraph 3.4.1),
+
+6.1.6 “[tis approach ...{i.¢, having 3 top management forums, including the PDA board]
+
+have contribute fo the slow decision making that has been a source of delay on the
+
+Programme” (paragraph 3.4.2), and
+
+6.1.7 “..we observe that (tension and distrust between the sponsors appear to] have had and
+continue to have a negative effect on the Programme....they result in slower brokering
+of resolutions to problems or proposed changes... {and}. {tJhe resulting pressures make
+the mandate of the PDA, as a jointly sponsored entity, difficult to sustain ...... there are
+
+foo many conflicting agendas” (paragraph 3.5.4)
+
+29%
+DWP00000204
+
+DWwP00000204
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE.
+2 Pathway has felt the effects of conflict between the Authorities mainly through the PDA. It is
+
+reflected in delays associated with change control (for example CCN117 and CCN83 referred to
+in paragraphs 9.1 and 9.3 below) and slow resolution of agreements to agree, such as the
+requirements for EVP functionality referred to above. Further examples include the means of
+dealing with unmatched encashments (described in more detail in paragraph 9.2 below) and the
+positioning of service boundaries.
+
+63 The service boundary issue has arisen over which party, BA or POCL, is to be potentially liable
+for unencashed, but authorised payments, residing in the system in the event that Pathway went
+inte liquidation or ceased to be liable. The issue is described in more detail in Pathway’s Ietter
+to the PDA dated 10 December 1997. Pathway has positioned the service boundary between the
+Payment Authorisation Service ("PAS") (a DSS service) and BES (a POCL service) in
+accordance with contractual requirements and should not be affected by the issue either way.
+
+But it has still been caught up in protracted and ume consuming correspondence and meetings
+
+10 try to resolve the issue.
+
+4 Drop Down Period
+
+The Authoritics presented Pathway with extensive changes to contractual requirements
+
+during the drop down period. Pathway had no choice but to examine the significance of
+each change and categorise them accordingly. This involved Pathway, outside its
+contractual obligations, in extensive analysis work and consequent discussion and
+
+correspondence with the Authorities, which has caused increased cost and delay.
+
+Factual Background
+
+Pe During the early part of the drop down period Pathway was presented with hundreds of redrafted
+requirements. Pathway expressed surprise at the large scale change to many requirements and
+explained that analysing the significance of each change was difficult as the intended purpose of
+the Authorities in making the change was not stated. Pathway assigned a 5 man team to review
+the changes and provide Pathway's initial response. The results of this review were fed back to
+the PDA in three tranches under cover of letters dated 13, 20 and 21 June 1996. Broadly, the
+
+changes fell into 4 categories (as described in Pathway’s letter of 7 Junc 1996) as follows:
+
+~30
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE,
+
+* — changes which affected Pathways obligations
+* changes intended to provide clarification, which in fact created ambiguities
+
+* — rewritten requirements - difficult to assess
+* changes which could be accepted without further comment.
+
+7.2 Specific examples selected form the three tranches of comments provided by Pathway include the
+
+following: .
+Changed Requirement Pathway comment
+Number:
+900 “Para 5.1 suggests a new categorisation of OBCS {Order
+
+Book Control Service] Transaction where the bar-code
+read is invalid and requires the transaction to be recorded
+
+ina ‘summary’ of non bar-coded order books."
+
+768 "We now have to review Casual Agent procedures from
+
+fame to time."
+
+788 “1. additional requirement for PAS to reject non-genuine
+cards."
+740 "The requirement to have the capability to provide
+
+certification has been changed into a requirement for
+
+certification to be provided."
+
+TE “The requirement to provide the capability to be up date
+the security procedures has been turned into an obligation
+to do so when required by DSS. Specific requests may be
+
+impossible to meet and could affect security and risk."
+DWP00000204
+
+DWwP00000204
+EXAMPLES OF PROBLEMS FACED BY PATHWAY. WITHOUT PREJUDICE
+480 “Para 1- The qualifying phrase that “in extremis" the TMS
+
+service could be separately procured has been removed
+although this form of words was carefully negotiated prior
+
+to contract and is consistent with the wording of the
+
+Solution.”
+
+478 “Para 5.3 - additional requirements to consolidate “as
+many Data Files as required by POCL" and to generate
+"as many Data Files as required by POCL" creates a new
+
+and unquantified obligation on Pathway."
+
+477 “The requirement has been extended from the OPS (Office
+Platform Service] fo include the entire Service
+
+Infrastructure."
+
+469 “L.The 2nd sentence could be taken to extend the
+requirement beyond the Contracted OPS but the meaning
+ts obscure.
+2.The procurement has been extend from “applications” to
+
+"applications services" - is this a difference without a
+
+distinction?"
+952 “New requirement for a "key management system”*
+906 “Testing” by the Contractor as part of installation has
+
+become “POCL Acceptance Testing” and this may imply
+
+new and onerous obligations for Pathway.”
+560 "The requirement conflicts with the contracted solution."
+908 “New obligation. ‘Specifically this shall include a counter
+clerk identifier, the date and time of the transaction and
+
+the Outlet identifier’. Whilst I don't think this is a problem
+
+for Pathway, it was not included in SPRI9."
+
+32
+DWP00000204
+
+DWwP00000204
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+R2E "Point c} now states that modifying products only allowed
+using reference data supplied by POCL.“
+it “Para 5 states that Reference Data provided can only be
+
+accessed under suitable security levels - this is an
+additional requirement to SPR9 which stated ‘allowable
+stock products can be accessed’. This switches the
+
+emphasis from the product ' to a security system'."
+
+&. Contradictory and misleading requirements
+
+Issues and Summary
+
+A number of the Authorities’ contractual requirements contradict other contractual
+requirements, or do not accurately describe what the Authorities have subsequently
+articulated to be their requirements. For example, requirement 934/3 states that when a
+customer is no longer to be supported by the Card Management Service ("CMS"), an ‘end
+of interest’ notice will be sent to Pathway by the DSS. Pathway must react to this notice by
+implementing a permanent card stop for that customer. This potentially causes conflict
+with requirement 954 which requires that an old card be re-used when personal details are
+sent to Pathway for a customer against whom there has been a previous card stop.
+Requirement 934/3 also potentially conflicts with requirement 716 and the Service Interface
+Definition dated 9 February 1996. A further example of conflict is the requirements
+relating to summarised reccipts. In cach case, the conflicting requirements cause Pathway's
+work programe (o be delayed and disrupted whilst the requirements arc analysed and the
+position clarified with the PDA and the Authorities. The difficulty is exacerbated by the
+
+PDA's and the Authorities‘ lack of appreciation of the consequences of attempting to apply,
+ing paper based system
+
+often ill-defined, operational rules and procedures used in the exi:
+
+to the new automated system.
+
+Factual Background
+
+al CMS End of Interest
+
+Sb There are three requirements associated with CMS “cnd of interest" ("EOL") notification
+
+which have potential conflicts bewween them and with other "baselined" documents.
+
+“Fhe
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY. WITHOUT PREJUDICE.
+
+8.1.2 Requirement 934/3 (DSS Agreement, schedule A15) relates to CMS EOL. It states that:
+
+“when DSS no longer wishes a Customer to be able to use CMS supported facilities,
+
+it will send an ‘end of interest’ Transactio!
+
+8.1.3. If Pathway receives an EOI transaction (notice) it is required.to prevent the persen
+identified in the notice from carrying out certain business transactions (which are net
+clearly defined). Pathway originally proposed to do this using a card suspension
+process, however Pathway was informed by the PDA in meetings that (his was not a
+requirement. If a card cannot be temporarily suspended, the only alternative means of
+preventing transactions after an EOI notice must be a permanent card stop or “Card
+Termination” as defined in the Authorities Agreement, schedule AOI. The definiticn
+states that a terminated card can no longer be used to support benefit payments ie. it 1s
+irreversible. Card termination invalidates the active card, any card on order or awaiting
+
+collection and also prevents the card from being used by a casual agent
+
+8.1.4 Requirement 954 (DSS Agreement, schedule A15) states that
+
+“°If, before expiry of an existing Card and after CAPS has sent a notification that an
+
+Authorised Person no longer requires a card (ie. an EQI notice}, CAPS sends new
+personal details for that person, the CONTRACTOR shail use the existing Card
+
+rather than issuing a new Card”.
+
+This potentially conflicts with requirement 934. If Pathway applied a Card Termination
+
+after receiving an EOI notice, the card cannot be reused.
+
+8.1.5 There is also potential conflict with requirement 716 (DSS Agreement, schedule A153)
+This states that when Pathway (CMS) is notified that an Authorised Person no longer
+requires a card (i.c. an EOI notice is sent) it shall remove details of that Authorised
+Person from the CMS operational database. The problem arises because a card is
+required to have a life expectancy of three years (DSS Agreement, schedule A15,
+requirement 708) as recognised in the Service Architecture Design Document ("SADD")
+which is a basclined document. Pathway could be required to re-use an existing card,
+before it expired at the end of three years, in circumstances where the details of the
+
+person authorised to use that card no longer existed within CMS. Even if the card stop
+DWP00000204
+Dwpo0000204
+
+EXAMPLES OF PROALEMS FACED BY PATHWAY, WITHOUT PREJUDICE
+
+(which would have been applied) was reversible, the information necessary to reactivate
+
+the card would no longer be contained in the CMS operational database
+
+8.1.6 Requirement 954/1 is at odds with the BA/POCL Service Interface Definition (V1, dated
+9 February 1996) ("SIDD"). This states that a person held within CMS (but removed by
+the DSS) will subsequently be notified to Pathway as a new customer (as opposed to
+somehow reactivating old customer details and re-using the old card). Requirement
+
+954/1 is also at odds with CAPS which will instruct Pathway to issue a new card in
+
+these circumstances
+
+8.4.7 — The solution to these conflicts is to remove requirement 954/1 or to change it such that
+any replacement card is issued with the next issue number in sequence, as if the card
+had been replaced or renewed in the normal manner. CCN 204a has been raised, which
+
+provides a method of resolving the conflict and which awaits approval
+
+SUS
+
+8.2.1 Requirement 909 (POCL Agreement, schedule 15) states that BES shall enable an
+Authorised Person, or an Authorised Person's casual or permanent agent to encash
+benefits on behalf of people living in nursing/residential/retirement homes with a single
+signature on a summarised receipt. This conflicts with requirement 789 (DSS
+Agreement, schedule 15) which states that if an Authorised Person is collecting
+payments for more than one person, PAS shail enforce 2 separate handover of payment
+
+for cach Authorised Person supported by a separate receipt for each such payment.
+
+8.2.2 Pathway has engaged in negotiations with (he PDA relating to the need (or otherwise)
+for summarised receipts. The obvious conflict referred to above was explained by the
+PDA on the basis that requirement 909 purportedly added to existing requirements and
+
+was “clearly dominant" as it was specific as to conditions of use.
+
+82.3 The facility intended by requirement 909, to allow casual agents to collect benefits for
+“30 or more" persons, is also rendered impractical by other requirements, the solutions
+to which may be adversely affected. Requirement 841, for example, requires that EVP
+be carried out for each encashment by a casual agent i.c. potentially 30 or more times
+
+(which could potentially affect the 8% EVP encashment limit referred to above).
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATIIWAY WITHOUT PREJUDICE
+
+Multiple casual agent transactions could also potentially affect the irregular transaction
+
+patterns to be reported by Pathway under requirement 895.
+
+8.2.4 Notwithstanding the conflict and difficulties surrounding the implementation of
+requirement 909, Pathway is required to produce a compliant solution. However, it is
+
+likely that some amendment to the requirements will be necessary.
+
+9. Change Control Issues (including delay, work in anticipation of formally approved change
+
+and subsequent re-work)
+
+Issues
+
+The conduct of the Authorities and the PDA in dealing with a number of change control
+issues has often created significant problems for Pathway. The Authorities‘ lack of
+knowledge of their own real requirements; conflict between the Authorities and their
+requirements; an inconsistent approach by the Authorities to Pathway; the PDA's failure to
+properly manage the change control process; and prolonged negotiations between Pathway
+and the PDA over change control time, cost and requirement issues have adversely affected
+
+Pathway's ability to develop the solution. Pathway has been faced with extensive delay,
+
+increased costs, abortive work aad re-work.
+
+Summary
+
+CCN117 relating to on-line functionality, temporary tokens and casual agent encashment is
+
+of such problems. The first discussions around the subject matter of CCN117
+
+indics
+began in October/November 1996. Workshops continued in February 1997 to review the
+changes and acgotiations over the costs associated with CCN117 continued in April 1997.
+Pathway commenced work in relation to CCN117 on the basis of informal written
+instructions received in April 1997. After a long delay during which Pathway expected (on
+the PDA's assurance) that CCN117 would be signed off, Pathway received a letter from the
+PDA in November 1997 indicating that it wished to significantly revise CCN117. CCN117 is
+still not signed off to date, A factor contributing to the delay is the disagreement between
+POCL and BA over the requirements relating to uncardcd casual agents. Changes
+associated with unmatched encashments and continuation receipts have and will continuc to
+
+cause similar difficulties for Pathway.
+
+“ie
+DWP00000204
+DwP00000204
+
+. EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+Factual Background
+
+MAL On-line functionality, temporary tokens and casual agent encashment mules (CCN 117)
+
+914 The first discussions between Pathway and the PDA relating to new requirements for
+‘on-line (as opposed to batch) facilities, and the use of temporary tokens, took place in
+about October/November 1996. Work had been due to start in about
+November/December 1996 but an audit of the PDA delayed the process. In January
+1997, discussions were resumed to try to ascertain changes that would need to be
+
+id implemented before the necessary change request was raised by the PDA
+
+9.1.2 On 25 February 1997, following a two day workshop with Pathway, the PDA raised
+change request ("CR") Pl6a to implement oneline functionality: urgent payments,
+urgent stops; enquiries; temporary tokens, and casual agents. This change request
+sought to introduce generic functionality which was outside the scope of Pathway's
+previous discussions with the PDA. Pathway provided indicative costings and a revised
+change request, P16b, was raised on 12 March 1997, This split the change request into
+three parts and removed some of the items which had been included in Pi6a on the basis
+
+that the potential business gain assoctated with these items did not justify the cost of
+
+their development.
+
+91.3. Pathway spent approximately three weeks developing CCNI17 and supporting
+documentation in response to CRP16b. This involved discussions with the PDA and the
+relevant Authorities and necessitated considerable changes to the requirements, the
+solutions. service definitions, service levels and the scorecard. Pathway submitted
+CCN117 ata meeting of the Change Control Board on 8 April 1997 for consideration by
+the PDA and the Authorities.
+
+9.1.4 By memorandum dated 17 April 1997 the PDA stated that
+"There is no disagreement about the feasibility of the solution {proposed in
+CCNII7], and the change can therefore proceed, pending agreement on the issues
+
+of cost and liability, and a further view being taken of the contractual implications”.
+
+94.5 — In terms of cost, the PDA was concerned that charging should reftect the savings to be
+
+had by Pathway if the change could be demonstrated to be of mutual benefit.
+DWP00000204
+DwP00000204
+
+. EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+Negotiations in relation to this and other issues continued through Apnil 1997. Having
+reached verbal agreement, and to facilitate inclusion of on-line functionality within (old)
+release 2, Pathway was sent a letter by the PDA dated 30 April 1997 agreeing to the
+implementation of CCN117. The letter stated that the Authorities had agreed (on
+certain conditions stated in the letter) to reflect the costs associated with development
+and implementation of the change to temporary tokens and on-line facilities by
+amending the scorecard. This was a further instruction to Pathway (following the memo
+of 17 April 1997) to proceed with CCN117, although it had fot been formally signed-
+off.
+
+9.1.6 After a 6 week delay, a scorecard change worth approximately £360,000 for CCN117
+was agreed. However this did not conclude the matter. An issue arose, which was
+raised at CNT meetings on 9 and 23 July 1997, relating to the number of temporary
+tokens which would be provided free of charge by Pathway. This issue was resolved
+upon receipt by Pathway of the PDA’s letter dated 1 August 1997 confirming that, from
+the BA's standpoint, temporary token issue would be kept to a minimum. Pathway
+
+subsequently confirmed that CCN117 could be signed-off.
+
+9.1.7 Two months later, at the CNT meeting on I October 1997, Pat Kelsey reported that
+CCNII? was with George MeCorkell for signing By letter dated 16 October 1997
+Pathway wrote to the PDA stating that CCN117 was amongst many in the category “zor
+wet signed, not withdrawn, expired, action on Authorities” and that Pathway was still
+having to rely upon the PDA's letter of 30 April 1997. At the CNT meeting on 15
+October 1997, Pat Kelscy reported that CCNI17 had becn signed by George McCerkell
+and was with POCL for signature, and that all parties had agreed to sign it. Despite
+these assurances, and after a 12 month delay since the original negotiations, Pathway
+received a letter from the PDA dated 24 November 1997 {attaching a new version of
+CCNII7 for comment by Pathway) which stated that revised wording needed to be
+
+agreed for CCN117 to be signed off.
+
+9.1.8 The amendments proposed to CCN117 are significant and, as explained in Pathway's
+letter of 23 December 1997, not all are acceptable to Pathway. The Authorities have
+still not signed off CCN117 and issues remain outstanding (described in detail in
+Pathway's letter of 2 February 1998) which relate to: the definition of "Card" in the
+Related Agreements (and whether this includes Temporary Tokens), the definition of
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY, WITHOUT PREJUDICE
+
+“Temporary Agents" (and differences with casual agents); and service levels associated
+
+with composite transactions.
+
+9.1.9 The changes during definition of requirements associated with certain CCN117
+functionality serves to illustrate some of the conflict and tension between the Authorities
+which have caused difficulty for Pathway. CCNI17 introduces the facility for an
+uncarded casual agent (i.e. a casual agent not in possession of a benefit card) to collect
+payment on behalf of a beneficiary using a temporary token. It was originally intended
+(as described in Schedule DOI of the POCL Agreement) that if a casual agent did not
+have a card in his/her own right, he/she could present some other form of acceptable
+identification to collect payments for a beneficiary, However, the parties agreed that this
+facility would be removed at release 1C as reflected in PDA change request P39,
+CCNI60 and related correspondence. When the PDA amended CCNII7 in November
+1997, it sought to remove the facility for casual agent encashment with identification
+
+papers altogether. Pathway has no difficulty with this amendment.
+
+9.1.10 However, on 12 February 1998 a further change request, numbered P76, was raised by
+the PDA. This proposes the introduction of an addivonal facility for third party
+encashment that does not require the issue of a temporary token for use by an uncarded
+casual agent. In other words, P76 proposes that a facility very similar to that originally
+envisaged in the Related Agreements be reinstated. It 1s intended that this additional
+
+facility will be “padlocked” until the functionality “should need to be invoked” post New
+
+Relcasc 2.
+
+9.1.11 The reason for this “padlock” is that there is conflict between the Authoritics as to
+whether this facility should be invoked. POCL want the facility, but the BA does not
+want it because it is not possible to invoke EVP against an uncarded casual agent in this
+situation. A letter from Peter Crahan to Mena Rego dated 30 October 1997, a copy of
+
+which was provided to Pathway, shows the tension between the Authorities. It states
+
+that:
+
+“DSS Ministers gave a clear signal of their requirements regarding uncarded
+casual agents. These have now been factored into Pathway's schedule for Release
+? associated design documentation. BA has no plans to re-open this question.
+Should POCL wish to agree with Pathway to incorporate an alternative approach,
+
+the BA would not seek to prevent them from doing so provided it was not
+
+396
+DWwP00000204
+Dwpo0000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+prejudicial to delivery dates and any costs were met by POCL. I must stress,
+however, that this functionality would have to be “padlocked” and could only be
+
+activated by agreement with the BA”.
+
+Such conflict has been the cause of much of the delay associated with signing off
+CCNI17. By letter dated 24 April 1998 Pathway explained that more than 5 days effort
+was required to fully impact and cost CRP76; that the indications were that the impact
+of the change would be well in excess of £1m; and expressing concern that Pathway may
+
+be required to expend key resources on investigation and implementation of a facility
+
+that may never be required.
+
+9.2 Unmatched Encashments
+
+9.2.4 The following applies to Pathway New Release 2, CAPS version 3 using CAPS to
+PAS/CMS Data Interface Definition and Validation Rules version 6 04 (@DIDVR")
+
+92.2 The DSS pays POCL for matched encashments: that is cncashments where payments
+authorised by PAS, and paid at the post office counter, match the Authorised Payments
+(as defined in the Related Agreements) received by PAS from CAPS. Matched
+encashments are notified to CAPS via the PAS/CAPS interface and recorded as such in
+the Common Basis of Settlement (“CBOS”). However, if payments authorised by PAS
+do not match Authorised Payments, CAPS cannot be notified because it has no means of
+accepting an unmatched record from the PAS interface (unless Pathway was to alter the
+
+payment amounts artificially to create a match). Unmatched encashments are reported
+
+in the CBOS only,
+
+9.2.3 Requirement 89.1 (Schedule BO4, Authorities Agreement) deals with service to service
+
+and solution level reconciliation. Paragraph 1.117. 14 states:
+
+“The CONTRACTOR shall identify and resolve any differences between entitlement
+information passed by CAPS to PAS and encashment information as received by PAS
+from BES, on an individual item basis (by “Authorised Payment ID" supplied by
+CAPS). The Contractor shall in so doing: .._..(b) inform CAPS of actual pavment
+
+amounts encashed where there are any unresolved errors...{underlining 10 add
+
+emphasis].
+
+“40+
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+9.2.4 The fact that unmatched encashments cannot be notified to CAPS, because CAPS lacks
+the required functionality, means that Pathway currently cannot fully meet requirement
+891. If an encashment file sent to CAPS contained an unmatched encashment, CAPS
+would reject the entire file and would not retain the matched encashments. This would
+delay settlement between DSS and POCL with potentially adverse consequences for
+POCL. This possibility has caused tension because the DSS and POCL have conflicting
+interests. The DSS is concerned that CAPS should be developed as swifily as possible,
+whereas POCL is concerned that it should not suffer as a consequence of any interim
+arrangement. Pathway is caught in the middle, trying to find a solution, which satisfies
+the DSS and POCL, and which enables the project to progress.
+
+925 The problem arises because the DIDVR does not specify how encashments should be
+notified to CAPS in the case of unresolved errors. Pathway recognised this deficiency,
+but has had te accept the DIDVR as it stands so as to avoid project delay, in particular,
+delays to the development of CAPS release 3. To provide functionality in New Release
+2 equivalent to that which should have been provided by CAPS, Pathway has been
+forced to implement change within its own systems (Pathway CP957). Essentially,
+Pathway must carry out tests which should be performed by CAPS in order to avoid the
+
+deleterious effects (described above) of whole file rejection.
+
+92.6 Ultimately, requirement 891 and/or the DIDVR will have to be amended by way of
+change control. When this change is implemented, some or all of the work carried out
+under CP957 is likely to be aborted and further work will be necessary. Pathway has
+been ferced to bear the risk that it will not recover substantial wasted costs
+
+wation Receipts (CCN83
+
+9.3.1 The required content of BPS transaction receipts is detailed in requirement 764 (DSS
+Agreement, schedule AIS). The requirement states, inter alia, that the space for
+signalurc on the receipt must be clearly identifiable. Pathway indicated that its solution
+would comply with this requirement, noting that, duc to the amount of detail required,
+the size of the receipt had become very large. An issue arose between Pathway and the
+PDA relating to signatures required where the receipt ran to more than one page. The
+original Pathway response to the requirement, was to have one signature box on the last
+page of the receipt. However, this approach was rejected by ihe DSS as being
+
+unacceptable duc to potential fraudulent misuse of a receipt that ran to a number of
+
+dle
+DWP00000204
+DwP00000204
+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY WITHOUT PREJUDICE
+
+pages with only one signature. By memorandum dated 17 October 1996, the PDA
+specified that Pathway should develop its solution to produce a signature box on cach
+
+page of a continuation receipt.
+
+9.3.2 POCL, with different concerns to those of the DSS, was concerned that the need for a
+counter clerk to obtain a signature on each page of a receipt would adversely affect
+
+counter transaction times. This led to Change Request CRBSa dated 13 December 1996
+
+being raised by the PDA, which requested a revision to requirement 764. The revision
+was intended to reduce the information required on a receipt with the result that
+
+continuation receipts would not be needed
+
+9.3.3 In response to CRBSa, Pathway produced CCN83 dated 30 January 1997 which
+explained that the scope of CRBSa was far greater than the simple requirement change
+would suggest. The effect would not just be felt at post office counters, but also within
+various agents (interfaces) and within PAS. The change would affect Pathway's ability
+to handle multiple beneficiaries and multiple benefit types. Pathway indicated that
+further review of the effects of the change would be necessary. The cost of
+implementing the change was estimated to be in the order of £500,000 to £760,000 and,
+because the benefit to cost ratio appeared unjustified, Pathway recommended thai the
+
+change request be withdrawn. CCN83 was not signed off and effectively expired
+
+9.3.4 The tssue was raised again by the PDA by letter dated 12 August 1997 which suggested
+that it might be possible to cancel the signature box on all but the last page of the
+receipt. This would mean that only one signature would be required and it would not
+leave unsigned reccipts which were open to abuse. In its reply dated 4 September 1997
+Pathway pointed out that canceling the signature box on all but the last receipt was
+equivalent to the original Pathway proposal that had been judged unacceptable, and that
+the solution had progressed to its current implementation at the PDA's request. Pathway
+suggested that, although CCN83 could be revisited, changing back to the original
+approach would have cost and development timescale consequences which were unlikely
+
+to be acceptable to the Authorities.
+
+93.5 Ata “financial and commercial" meeting on 10 September 1997, Stuart Riley of the
+PDA agreed that the way forward in refation to this issue was for the PDA to raise a new
+change request for Pathway to impact against a future release. However at a mecting of
+
+the same forum one month later Stuart Rilcy expressed the Authorities’ view that as the
+
+“42+
+EXAMPLES OF PROBLEMS FACED BY PATHWAY.
+
+DWP00000204
+DwP00000204
+
+WITHOUT PREJUDICE.
+
+10.1
+
+current requirement (i.e. cancelling the signature box on all but the last page) no longer
+represented a change from the original proposed solution, a change request was not
+needed. After Pathway made clear that it had spent a substantial amount of time on the
+change and that the costs involved were not trivial, it was agreed to find a way forward
+
+by, unter alia, looking for ways to combine development with other issues and by "BA
+
+reviewing] the issue ofa CR".
+
+9.3.6 The PDA raised CRBSb on 4 November 1997 to replace CRBSA. It proposes that all the
+signature boxes should be hatched out apart from the one on the last page. Whilst
+CRBSb acknowledges that Pathway developed its solution on the strength of the
+memorandum dated 17 October 1996, it states this agreement was incomplete. The
+PDA Is likely therefore to resist any attempt by Pathway to recover the abortive costs
+associated with implementing the original change and the wasted costs of carrying out
+
+the impact assessment on CCN83 which are particularly high given the prolonged
+
+period of deliberation.
+Contracting Authorities Responsibilities
+
+Issues and Summary
+
+There are many instances where the Authorities have failed to perform in accordance with
+
+Contracting Authority Responsibilities. This has causcd Pathway delay, disruption and
+
+increased costs.
+
+Factual Background
+
+The following table identifies CARs the delivery and/or completion of which have been delayed
+by the Authoritics/PDA with adverse consequences (usually delay, disruption and/or incrcased
+costs) for Pathway. The table is not exhaustive, it is intended to provide illustrative examples
+
+only There are many other CARs which have been delayed and many which are ongoing and/or
+
+have yet to be completed.
+
+“ide
+DWP00000204
+Dwpo00000204
+
+Examples of delayed completion of Contracting Authorities Responsibilities
+
+CAR CAR Text Critical I Target I New Target Complete I Slip/ Ongoing? I Service Delay impact summary
+Number CAR?" I Date date date delay
+(Days)
+473.000.004 1. Specify the precise user I Yes 30/9/96 I 31/3/97 17/8197 197 No EPOSS Prolonged process of agreement to
+
+types ‘and permissions Access Control Policy increased
+
+required for post offices. complexity of associated early
+software development work and
+definitive work could not
+
+commence until April 1997 (CAR
+
+signed off retrospectively)
+478,000,006 I 2. Agree the data file. Yes 30/8/96 I 36/8796 29 Yes EPOSS/ Application Interface Specification
+TMS (V3.1) for Transaction Information
+
+Processing system (TIP) agreed late
+and subsequently revised (V5.0
+dated 21/3/97) causing delay and
+increased complexity of associated
+
+software development work
+
+4a
+
+WITHOUT PREJUDICE
+DWP00000204
+
+Dwpo00000204
+CAR CAR Text Critical I Target I New Target I Complete Slip/ Ongoing? (Service Delay impact summary ~
+Number CAR?" I Date date date delay
+(Days)
+543.000.003 Provide the specifications Yes 39/96 I 31/5797 Ne APS POCL required to define business
+
+applicable to cach of the tules and technical specifications for
+
+token types. “smart tokens" (i.e. smart cards and
+smart keys for use in utility meters)
+Delay in provision of adequate
+specifications caused APS smart
+tokens to be moved from R2 to R3,
+and continues to cause delay (see
+
+paragraph 3 above).
+
+543,000,006 I Arrange access to sofiware I Yes 30/9/96 I 3027797 No APS Retated to 543.000.003
+algorithms and drivers
+required to implement
+support for tokens where
+such algorithms are heid
+under IPR arrangements by
+POCL or its agents
+
+WITHOUT PREJUDICE
+DWP00000204
+Dwpo00000204
+
+CAR
+
+Number
+
+CAR Text
+
+Critical
+CAR?"
+
+Target
+Date
+
+New Target
+date
+
+Complete
+
+date
+
+Slip/
+delay
+(Days)
+
+Ongoing?
+
+be.
+Service
+
+Delay impact summary
+
+550.000,003
+
+POCL shall provide access
+to token specifications and
+facilitate access to
+appropriate software
+algorithms in a timely
+manner to facilitate the
+Pathway development (as in
+Req Ref 543) and agree the
+nules defined in the APS
+Generic Rules and Token
+technology specifications
+{as in Req Ref 547).
+
+Yes
+
+30/9/96
+
+SLOG
+
+31/10/96
+
+36
+
+No
+
+APS
+
+Related to 543,000.03. Same
+comments apply.
+
+555.000.009
+
+2. Co-operation in defining
+or agrecing the specific
+cards (magnetic or smart)
+
+to be used in cach service.
+
+Yes
+
+30/9/96
+
+3110/96
+
+BA/LO/96
+
+Ui]
+
+No
+
+Related to 543.000.003. Same
+comments apply,
+
+adhe
+
+WITHOUT PREJUDICE
+DWP00000204
+Dwpo00000204
+
+r
+CAR CAR Text Critical I Target New Target Complete I Stips Ongoing?” Service Delay impact summary
+Number CAR?" I Date date date
+
+delay
+(Days)
+
+555.000011 I 4. Facilitate the provision of Yes 309196 I 317797 No APS Related to 543.000.003. Same
+
+examples of all current comments apply.
+
+magnetic and smart
+cards/keys and all
+associated sofiware such
+that development and
+
+testing can proceed.
+
+730.000.003 1. Define and agree Yes 23/9/96 I 36/11/96 15/4/97 202 No Help Desks
+Operational procedures with
+
+Call enquiry matrix and operational
+Support documents were produced
+Pathway. by Pathway in July 1996 which
+should have facilitated resolution of
+this CAR. However, BA was late
+in confirming its requirements for
+help desks and its first comments, of
+which there were many, were made
+against the Process and Procedures
+Document ("PPD") prepared by
+Pathway in December 1996. The
+PPD for RIB was signed off on
+
+15/4/97 and that for RIC in 11/97,
+
+WITHOUT PREJUDICE
+DWP00000204
+
+Dwpo00000204
+ry
+CAR CAR Text Critical I Target I New Target Complete I Slip/ Ongoing?") Service Delay impact summary 9 ~ I
+Number CAR?" I Date date date delay
+(Days)
+731.000.002 1. To agree methods of Yes 23/9196 I 31/557 1/8/97 308 Yes Help Desk I Related to 730.000.003.
+
+access (c.g. via help desks
+
+direct access cte.).
+
+731.000.010 I 4. To operate appropriate Yes 23/9/96 I 30/11/96 USS 224 Yes Help Desks
+controls and procedures,
+
+Related to 730.000.003.
+
+742.000.004 2. Approve design and Yes 31/7/96 14/97 P4197 257 No CMS
+content for cards, PUN’s
+
+‘The difficulty with this CAR related
+to Welsh language used in Pick-up
+and distribution material. notices ("PUNs") and other related
+CMS items. Although this CAR was
+originally closed on 28/1/97, it was
+subsequently reopened because the
+PDA changed the required PUN
+design. This disrupted the
+production of PUNS, the costs of
+which were absorbed by Pathway.
+
+48.
+
+WITHOUT PREJUDICE.
+DWP00000204
+
+Dwpo00000204
+s roy
+CAR CAR Text Critical I Target New Target I Complete Slip/ Ongoing?’ I Service Delay impact summary . 4
+Number CAR?" I Date date date delay
+(Days)
+776.000.001 The authority will agree a Yes 31/7/96 I 30/11/96 15/4/97 255 Yes Help Desks I Related to 730.000.003,
+
+Process to decide on help
+desk responsibilitics. This
+will be included as part of
+the project plan to be
+agreed and maintained post
+award of contract.1. Agree
+call types and help desk
+tesponsibilitics 2. Agree
+teview periods and change
+
+control...
+
+811.000.006 1. Provide a compicte sct of I Yes 31/12/96 I 31/12/96 80 No EPOSS This CAR relates to Reference Data
+
+("RD") to be provided by POCL (see
+paragraph 5 above). The following
+
+definitions for existing
+products.
+
+comment also applies to
+818.000.004. POCL Reference Data
+is essential for the counter systems
+which cannot function without it,
+Whilst the RD format was
+eventually agreed (sce
+
+WITHOUT PREJUDICE,
+DWP00000204
+Dwpo00000204
+
+CAR CAR Text Critical I Target New Target I Complete Slip/
+
+Ongoing?” Service Delay impact summary
+Number CAR?" I Date date date
+
+delay
+(Days)
+
+T~ 818.000.004 below), POCL was “I
+very late in providing RD which
+conformed to that format which was
+needed by Pathway for testing
+Purposes. Initial RD provided by
+POCL could not be used by Pathway
+and some could only be used by
+adapting the interface.
+
+Pathway overcame this difficulty
+(and prevented project delay) by
+developing functionality using its
+own, internally produced, RD. The
+first occasion upon which POCL
+provided RD of sufficient quality to
+be put through to the counter
+
+systems was 21/7/97.
+
+MUTA ren mises rreaeenee
+DWP00000204
+
+Dwpo00000204
+‘
+CAR CAR Text Critical I Target I New Target I Complete Slip/ Ongoing? I Service Delayimpact summary
+Number CAR?" I Date date date delay
+(Days)
+
+816.000.004 I Specify the scope of an Yes 31/12/96 I 31/12/96 TOIN7 277 No Audit Pathway prepared the Audit Trail
+auditor’s access to facility Functional Specification for
+accounting data comment 17/9/96. Numerous
+
+comments from PDA received over
+time causing 9 month delay in sign
+off. Design and implementation of
+associated software for audit
+functions delayed
+
+818,000,054 Agree the format and Yes 30/8/96 I 308796 29/9/96 29 Yes EPOSS POCL's RD Application Interface
+content of Reference Data (Originally Specification (AIS) containing
+(ransmitted from POCL, “no” but format and content of RD was
+
+tecategorised inadequate for developing EPOSS
+by Pathway. causing delay whilst related POCL
+a5 "ongoing" business operational tasks developed
+by letter in consultation with Pathway
+
+dated ‘i Customer Services Operation - IT
+22198) systems redesigned by Pathway
+
+accordingly. AIS revised 12/5/97
+(V3.1) and 11/12/97 (V3.2). New
+version 3.3 has yct to be produced,
+
+“Sie
+
+WITHOUT PREJUDICE
+DWP00000204
+Dwpo00000204
+
+CAR CAR Text Critical I Target New Target I Complete Slip Ongoing?" Service
+
+Delay impact summary
+Number CAR?" I Date date date
+
+delay
+(Days)
+
+915.000.008 I 1, The AUTHORITY will Yes 31/8/96 I 30/11796 18/6/97
+
+288 Yes Training Related to 531.000.003. Eventually
+give details of the staff to be
+
+signed off on the basis of
+trained. information provided in Pathway's
+
+document "Training for Horizon
+
+release la to le"" (V0.2 3/6/97)
+which will need to be updated for
+New Release 2. Information should
+have been originated by PDA.
+
+944.000.002* I 2. Agree the Post Office Yes 30/8/96 I 30/10/96
+
+No BES Pathway require agreement on
+Counter Procedure for
+
+counter procedures for casual agent
+Casual Agent Encashment. encashment, This has been the
+subject of various change requests,
+Proposals and notices (see
+Paragraph 9.1.9 above). The related
+CAR remains undischarged and is
+
+4 now over 500 days late.
+
+WITHONT por tenine
+DWP00000204
+
+Dwpo00000204
+CAR CAR Text Critical I Target I New Target Complete I Slip/ Ongoing? I Service Delay impact summary I I
+Number CAR?" I Date date date delay
+(Days)
+os
+969.000.003* I Notification to Pathway of I Yes 23/9/96 I 10/10/96 Yes POCL. Information required by Pathway to
+
+unexpected office closures contingency I complete design relating to closure
+
+and agreement, where services of POs i.c. types of closure, the
+
+appropriatc, of an Process of notifying Pathway of such
+
+alternative local office to closures and related action required,
+
+act as a surrogate during Late provision of information is
+
+the period of closure. delaying completion of related
+
+software and definition of
+
+procedures.
+970.000.005 I To inform Pathway at the Yes 30/9/96 I 28/2/97 Yes POCL Related to 969.000.003.
+carlicst opportunity (or to contingency
+agreed timescales) of Post services .
+
+Offices which are due for
+closure on a temporary ora
+permanent basis, to prevent
+
+disruption to the service as’
+
+much as possible
+
+GATECHNOLO\06980\480\PPEGSS.DOC
+
+WITHOUT PREJUDICE

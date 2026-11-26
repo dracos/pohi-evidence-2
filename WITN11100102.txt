@@ -1,0 +1,268 @@
+WITN11100102
+WITN11100102
+
+The Dalmellington Error in Horizon I problemswithpol
+
+problemswithpol
+
+The Unaccountable Face of Post Office Ltd
+
+The Dalmellington Error in Horizon
+
+© November 10,2015April 30,2016 & Tim McCormack
+The Dalmellington Error
+
+Several of my previous blog posts have alluded to an error in the Horizon system that was discovered
+recently. I now need to document in detail what transpired. Last week Computer Weekly ran a
+story highlighting the fact that the CWU Subpostmasters Section were so concerned about this that
+they wrote to all of their members warning them to be vigilant as this error could occur at any time
+and result in unexplainable losses at their branches.
+
+I have written to Paula Vennells on two occasions about this error yet she has failed to respond. This
+is a very sad reflection on her competence to manage a large organization such as POL.
+
+Seemingly unknown to Paula, internal documents I have seen from POL not only acknowledge the
+error but incredibly they admit they will ensure it does not happen again by releasing a software
+patch to Horizon in March of next year! There is more to this admission than meets the eye which I
+will attempt to explain later — but for the moment I would like to point out that in my opinion they
+don’t know what caused the error so how they are going to fix it in March would be extremely
+interesting to know!
+
+Timeline of Events
+
+8/10 Sub postmistress sees that Horizon has replicated the same transaction she has just entered three
+additional times. The value of the transaction was £8k. The result of the 3 replicated transactions
+meant her branch accounts as calculated by HOL had £24k more in cash than actually existed. At
+that moment in time, because of the SPMR contract she had signed, she was liable to POL for £24k.
+£24k that never existed.
+
+8/10 Sub postmistress requests help on a Facebook site from fellow subpostmasters. Advice given is
+to call the help line and report the problem. She does this — note that this is an error of £24k — and
+according to the sub postmistress the help desk advise her that it must be a “system” problem and to
+call the technical support team. It is shocking to think that an SPMR calling in an error of such a
+significant amount is handled by front line help desk support and not immediately passed up the line
+to senior management to check.
+
+8/10 Sub postmistress calls the technical help desk and reports to the Facebook group that they did
+not understand the problem. They state that it will ‘probably’ be rectified remotely.
+
+https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/ 115
+WITN11100102
+WITN11100102
+
+The Dalmellington Error in Horizon I problemswithpol
+
+8/10 The CWU Subpostmasters branch emails the Service Manager at ATOS with details of the
+problem and asks for assistance on behalf of the member.
+
+9/10 Sub postmistress reports to the Facebook group that no one has called back from POL help
+desks. Note that is still an error of £24k — is this such a common occurrence of such a large amount
+that everyone in POL back office ignores it?
+
+9/10 the ATOS service manager replies to the CWU saying that he asked someone to look into it.
+
+12/10 The sub postmistress receives a brief call from ATOS stating that they are looking into it and she
+should receive a call from NBSC. (I’m not sure if she ever did get that call)
+
+13/10 FIVE days after the error occurred and after close of business the sub postmistress advises the
+Facebook group that no one has called back. This results in another member of the FB group
+suggesting that she contact directly a person in the Financial Services Centre (FSC) that has helped
+her with a SIMILAR problem in the past.
+
+Without access to this Facebook group who knows how long it would have taken POL to get back to
+her if at all. It’s £24k for goodness sake. Cash that does not physically exist but the sub postmistress
+remains liable to POL for £24k in Physical cash!
+
+13/10 CWU reminds ATOS that nothing has been done about the error
+
+14/10 an early morning discussion on FB discloses worrying similarities between previous Horizon
+errors that had to be corrected manually by the FSC for other FB subpostmasters.
+
+14/10 later the sub postmistress phones the contact at the FSC and explains the problem (6 DAYS
+AFTER £24k WENT MISSING). The person from the Cash Currency Stock Control Team finds the
+transactions that have caused the error and attempts to ‘fix’ the problem in Chesterfield.
+Unbelievably he explains that he was not able to do this because the branch where the error occurred
+does not have a ‘unique’ number! WOW! He advises the sub postmistress to ‘move’ the missing
+money from the branch where the error occurred to another of the sub postmistress’s branches. He
+would then be able to ‘fix’ the problem centrally.
+
+The sub postmistress quite rightly refuses to do this as it would be a fraudulent transaction.
+
+What is extremely worrying at this stage is the nonchalance of the FSC. They seem unconcerned
+about how the error occurred and even less concerned about the amount involved.
+
+The FSC however allegedly admits in the phone call to the SPMR that he had dealt with a similar case
+only the week previously.
+
+14/10 I send email to Paula Vennells telling her of the problem.
+
+15/10 CWU send a detailed synopsis of what has transpired so far to ATOS and the complete lack of
+action on the part of ATOS to resolve this matter.
+
+19/10 Sub postmistress reports on FB that the matter still has not been resolved. From a financial
+viewpoint I understand this to be down to the need to get a unique code allocated to the branch.
+Quite utterly bizarre that it can take this long to do that.
+
+https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/ 215
+WITN11100102
+WITN11100102
+
+The Dalmellington Error in Horizon I problemswithpol
+
+23/10 CWU receives email from ATOS “explaining” what has happened and how they are going to
+make sure it doesn’t happen in the future. This email is the most damning piece of evidence that I
+have ever seen that confirms these people have no idea what they are talking about and by ‘these
+people’ I refer to POL, ATOS and Fujitsu.
+
+Subsequently to receiving this email we tested exactly the same scenario in another branch which was
+identical in all respects to the one in which the original error occurred. We tried everything we could
+to replicate the error and could not.
+
+The email suggests the ‘root cause’ of the error occurred because of a process that simply could NOT
+HAVE HAPPENED in this branch. It goes on to suggest that they have had the same error in other
+branches so what in effect they are saying is that they have a similar error that they have not fixed but
+they have failed to realize that this is a completely new error. It could not be the same as the one
+they describe because it is not physically possible for it to have happened in the way they describe.
+
+They say they can prevent this happening again by a code fix that they will introduce into Horizon
+next MARCH! This is frankly unbelievable. We tested the same transaction in an identical branch
+without the error occurring. We tested the same transaction in the same branch without the error re-
+occurring. What on earth are they attempting to fix here? How can they fix something that they
+don’t know what causes it to happen?
+
+WHY oh WHY oh WHY does a £24k discrepancy not ring alarm bells and if the code change
+(whatever they are going to fix) is not going to be released until next March WHY oh WHY of WHY
+do they not inform the network (in their own words — across the whole estate) that this error can
+occur and watch out for it.
+
+The Sub postmistress eventually received a transaction correction for the missing £24k and then
+successfully completed a similar transaction to the one that she had noticed the error on. As the Sub
+postmistress commented on Facebook ~ prior to the error she had performed the same transaction
+hundreds of times previously with no error.
+
+There could be no clearer indication that the error that caused this to happen was an intermittent
+error.
+
+Intermittent errors can be caused by many things, including an unlikely sequence of events or even
+faulty hardware. It should be noted that no engineer has visited the branch in question to perform
+checks on the hardware
+
+3/11 CWU Subpostmasters branch after carefully checking and double checking the full facts of this
+case issue a warning email to its members to be on the lookout for such an error.
+
+3/11 I send another email to Paula Vennells pointing out to her that she needs to get personally
+involved in this chain of events.
+
+5/11 Computer Weekly publish a front page article highlighting the memo that the CWU felt
+necessary to send out to their members. Computer Weekly asks POL for comment but POL re-iterate
+there are no errors in Horizon (the POL PR team blissfully unaware that an error is to be fixed next
+March)
+
+Conclusion
+
+There can be no other conclusion here than Fujitsu, ATOS and POL do not have a clue as to what is
+going on in their respective organizations. No doubt POL will respond and say that their internal
+systems would have picked up this error in due course but the fact is that they did not automatically
+https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/ 3/5
+WITN11100102
+WITN11100102
+
+The Dalmeliington Error in Horizon I problemswithpal
+
+do this. It required manual intervention — in this case by the CWU - in order to get to the bottom of
+this matter.
+
+Very importantly, even if POL can show that their internal systems would pick up such an error (they
+can’t but that is another story) this particular event shows a serious delay in that occurring. In this
+case the delay was only a few weeks before the missing amount was credited back to the SPMR but
+during that time the SPMR was liable to POL for the amount in error. Past court cases brought by
+POL against SPMRs for account discrepancies have relied totally on the contract the SPMR has signed
+with POL to show that the SPMR is liable for these unexplained errors.
+
+While the amount in this case is significant and should have rang larger internal alarm bells than
+normal, nevertheless the actual amount could just as easily have been more than £24k or as little as
+£1. The erroneous transactions were entered by the computer system and not the operator. In this
+case there were three duplications but there could have been far more as well as being only one.
+
+The error in this case was easily spotted by the operator but could just as easily have been
+overlooked. The discrepancy in the branch accounts may only have come to the attention of the
+SPMR several weeks later and would have been incredibly difficult to find. The amount of the
+discrepancy would have been a multiple of the original transaction so searching through transaction
+history for the amount of the discrepancy would not have shown anything.
+
+The FSC employee reported that he had dealt with a similar case only the previous week. Just how
+many of these errors are out there? The system did not automatically flag these erroneous
+transactions as causing discrepancies that required manual intervention. How are they located?
+
+The explanation from ATOS is utterly incredible. We noticed immediately that the reason given for
+the error could not have happened in this particular branch. How on earth did Fujitsu and Atos not
+realize this? The explanation also gives cause for concern in that they readily admit it occurs across
+the network and they have seen previous instances of it — nothing at all to do with the error we are
+talking about — so another error exists that SPMRs are unaware of?
+
+Fujitsu believe that they will fix this error in March — yet they have not informed the network that the
+error exists. This is almost criminal given that these errors can give rise to unexplained losses to
+SPMRs that the SPMRs themselves are liable for.
+
+There is no doubt that this error is intermittent. It didn’t happen before when the SPMR entered the
+same transaction on to the system and it did not happen after the event when she repeated the
+transaction. It did not occur in another similar branch when we tested the same set of events.
+
+By their own admission, both from Fujitsu (although they may have been talking about another
+similar error) and the FSC, this error has happened before. They do not know, they cannot know,
+when the error first started as they have not identified the cause properly. It could go back to the
+very start of Horizon in 2000 for all we know.
+
+I wrote to Paula Vennells twice about this error and she failed to respond. What sort of chief
+executive would not investigate such a serious problem — one that totally contradicts the oral
+evidence she provided to parliament on the reliability of the Horizon system.
+
+There are no excuses. This is undeniable evidence of both systemic failure within the software system
+itself but also failure in the internal procedures within the POL organization. Failures that many
+people, including politicians and the media have highlighted for many years.
+
+Are POL truly unaccountable?
+
+https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/ 415
+WITN11100102
+WITN11100102
+
+= The Dalmellington Error in Horizon I problemswithpol
+
+Who can do something about this?
+
+3 thoughts on “The Dalmellington Error
+in Horizon’
+
+1. Fim Tarron (@TrumptonLibDems) says:
+
+November 10,2015 at 1:42 pm
+Suggest you forward this by email to all party leaders, John Sweeney, Andrew Bridgen and James
+Arbuthnot and cc PV, — should get somebodys attention immediately
+
+Reply _(https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/?
+tocom=81#respond),
+2. Fujitsu and the Dalmellington Bug I problemswithpol says:
+
+April 21,2020 at 10:57 am
+
+[...] it played in the recent litigation. If not then I published this blog post in November 2015
+(https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/) which provides the
+details as I knew them at that time. I had tried to inform Paula Vennells [...]
+
+Reply (https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/?
+replytocom=1289#respond),
+
+3. Ministers plan hasty review of the Post Office IT scandal before more facts emerge? I
+Campaign4Change says:
+September 15,2020 at 4:31 am
+[...] In July 2016, the then CEO asked for an investigation into a sub-postmasters’ complaint about
+Horizon being the cause of her losses — as reported by Tim McCormack in his 2015 blog post the
+Dalmellington Error in Horizon. [...]
+
+Reply (https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/?
+teplytocom=1548#respond),
+
+Blog at WordPress.com. (https://wordpress.com/?ref=footer_blog),
+
+https://problemswithpol.wordpress.com/2015/11/10/the-error-in-horizon/ 5/5

@@ -1,0 +1,217 @@
+POL00022842
+POL00022842
+
+Case No: HQ16X01238, HQ17X02637 and HQ17X04248
+
+Neutral Citation Number: [2019] EWHC 3408 (QB)
+
+THE POST OFFICE GROUP LITIGATION
+
+IN THE HIGH COURT OF JUSTICE
+QUEENS BENCH DIVISION
+
+Rolls Buildin:
+Fetter Lane
+
+London, EC4A INL
+
+Date: 16 December 2019
+
+Before :
+
+URABLE MR JUSTICE FRASER
+
+Between :
+Alan Bates and Others Claimant
+- and —
+Post Office Limited Defendant
+Appendix 2
+
+Summary of Bugs, Errors, Defects
+
+Judgment (No.6) “Horizon Issues”
+
+POL-0019321
+POL00022842
+POL00022842
+
+Summary of Bugs, Errors and Defects (Legacy Horizon or Online) and Years
+Experienced
+
+1. Receipts and Payments Mis-match bug.
+
+This is a bug present in Horizon Online
+
+This bug occurred in 2010.
+
+The majority of incidents are recorded as occurring between August and October 2010.
+
+2. Callendar Square/Falkirk bug.
+
+This is a bug present in Legacy Horizon.
+
+It is agreed that this bug occurred between the years of 2000 and 2006, although there is an
+issue about when it stopped. In my judgment, the period when the effects of this occurred are
+2000 to 2010.
+
+3. Suspense Account bug.
+This is a bug present in Horizon Online.
+Its identified years of effect are 2010 to 2013.
+
+4. Dalmellington bug/Branch Outreach Issue.
+This is a bug present in Horizon Online.
+
+Its effects were experienced between 2010 and 2015.
+
+5. Remming In bug.
+This is a bug present in Horizon Online.
+It was present for about five months in 2010 between March and August.
+
+6. Remming Out bug
+
+This is a bug present in Legacy Horizon.
+
+It was split into two in the Bug Table, 6(i) and 6(ii).
+
+Bug 6(i) was identified as February/April 2007, recorded as fixed approx. 2007. Bug 6(ii)
+was in May 2005.
+
+7. Local Suspense Account issue, not the same as 3. Suspense Account bug
+This is a bug present in Horizon Online.
+This was reported in 2010 and recorded as fixed in September 2010.
+
+8. Recovery Issues.
+These are bugs, errors and defects present in Horizon Online.
+With years of effect from 2010 to 2018.
+
+9. Reversals.
+This is a bug present in Legacy Horizon.
+Occurred for a short period in 2003.
+
+10. Data Tree Build Failure discrepancies.
+
+This is a bug present in Legacy Horizon.
+Its identified effect was during 1999 and 2000, running up to 2007.
+
+POL-0019321
+POL00022842
+POL00022842
+
+11. Girobank discrepancies.
+
+This is a bug present in Legacy Horizon.
+
+This is treated as a single bug by the experts in the Bug Table. The Technical Appendix finds
+there was more than one bug, error or defect under this heading.
+
+It occurred between May and September 2000.
+
+12. Counter-replacement issues.
+
+This is a bug, error, or defect present in Legacy Horizon. It also included hardware issues.
+There were two KELs associated with this. The first was created in 2000 and last updated in
+July 2007. The second was created in 2002 and notes occurrences running up to 2009.
+
+13. Withdrawn stock discrepancies.
+This is a bug present in Horizon Online.
+Mentioned in 2010 and 2011.
+
+14. Bureau discrepancies.
+This is a bug present in Horizon Online.
+It arose in 2017.
+
+15. Phantom Transactions.
+
+This is a bug present in Legacy Horizon. This is referable to Horizon issue 4 and not Horizon
+issue 1
+
+It arose in 2001.
+
+16. Reconciliation issues.
+
+This is a bug present in both Legacy Horizon and Horizon Online.
+
+This is not a bug with a potential to cause impact on branch accounts. The underlying PEAKs
+do however demonstrate software faults.
+
+Mentioned in 2000, 2002, 2010 and 2014.
+
+17. Branch Customer discrepancies.
+
+This arises in Legacy Horizon. This is referable to Horizon issue 4 and not Horizon issue 1.
+This is an error, or defect and does not have the potential to cause impact to branch accounts.
+Occurred in March 2008.
+
+18. Concurrent logins.
+This is a bug present in Legacy Horizon.
+This occurred in 1999 and 2000, and the PEAKS run to 2002.
+
+19. Post & Go/TA discrepancies in POLSAP.
+This is a bug present in Horizon Online.
+Occurred in 2012
+
+20. Recovery Failures.
+
+This arises under Horizon Online. This is referable to Horizon issue 4 and not Horizon issue 1.
+Two of the PEAKs show errors and defects, they do not show bugs.
+
+Mentioned in 2010, 2012 and 2015.
+
+POL-0019321
+POL00022842
+POL00022842
+
+21. Transaction Correction Issues.
+
+This arises in Legacy Horizon. This is referable to Horizon issue 4 and not Horizon issue 1.
+Although the Technical Appendix finds it is evidence of a bug, there is no impact on branch
+accounts.
+
+Occurred in 2005 to 2010.
+
+22. Bugs/errors/defects introduced by previously applied PEAK fixes.
+
+This is a bug present in Legacy Horizon. There is no impact on branch accounts and this is
+therefore taken into account under Horizon issue 4 and Horizon issue 1.
+
+Some of the PEAKS are from 2000 and one is from 2004.
+
+23. Bureau de change.
+This is a bug present in both Legacy Horizon and Horizon Online.
+Arose in 2005, 2006 and 2010 onwards.
+
+24. Wrong branch customer change displayed.
+This is a bug present in Legacy Horizon.
+Occurred in 2005.
+
+25. Lyca top up.
+This is a bug present in Horizon Online.
+Occurred in August 2010.
+
+26. TPSC 250 Report.
+This is a bug present in Legacy Horizon.
+The date range is between 2005 and 2009, with the majority of the incidents occurring in 2005
+
+27. TPS.
+This is a bug present in Legacy Horizon.
+Its years of effect are 2006 to 2010
+
+28. Drop and Go.
+
+This is a bug present in Horizon Online.
+
+Occurred in July 2017. The date of the KEL suggests HNG-A, but the KEL is expressly headed
+HNG-X.
+
+29. Network Banking Bug.
+
+This arises under Legacy Horizon.
+
+This did not have financial impact on branch accounts. It is an error, or defect but arises from
+communication failures from outside Horizon, probably from equipment or lines provided by
+BT.
+
+KEL raised in 2004 and updated in 2005, with 12 associated PEAKs in the range 2004 and
+continuing on to 2010 when Legacy Horizon was discontinued.
+
+POL-0019321

@@ -1,0 +1,155 @@
+FUJ00232676
+FUJ00232676
+
+Horizon Support Knowledge Base Review Forum
+
+Terms of Reference
+
+Scope
+
+The scope of this document relates purely to the Horizon Support Knowledge Base (KB), and the
+Knowledge Base Review Forum held weekly with Post Office.
+
+The Knowledge Review Base Forum does not replace the functions of the Business Impact Forum (BIF), or
+the PEAK Targeting Forum (PTF).
+
+Horizon Support Knowledge Base
+
+The Horizon Support Knowledge Base (KB) is the master knowledge base for all incidents being progressed
+through the support chain. The Knowledge Base records support knowledge intended to assist staff in the
+support and understanding of the Horizon system.
+
+Knowledge Base does not contain the history of an incident, this is found in the relevant incident
+management system (PEAK / TFS). A Knowledge Base is a living document that reflects support knowledge
+at a given point in time. Knowledge Bases are not designed to provide a history of a particular symptom or a
+support process, and a particular Knowledge Base cannot be considered the definitive source containing all
+possible information regarding the problem it addresses. It is up to the technician to check other potentially
+relevant Knowledge Base's and information sources (e.g. Support Guides) and use their analytical skills to
+determine the right course of action to take in a given situation.
+
+Knowledge Base entries are generated for a number of reasons:
+
+- to explain system behaviour or messages that originate from central and counter systems
+
+-  torecord symptoms and outcomes from incidents referred by help desks
+
+- to record symptoms and outcomes identified as a result of Fujitsu's reconciliation processes
+- to record information on issues seen in test environments (resolved ahead of release to live).
+
+The Knowledge Base system was developed by the Software Support Centre (SSC), who also maintain the
+server it runs on. The Software Support Centre are the arbiters of the information within the Knowledge
+Base.
+
+The Software Support Centre provide access to the register to all other Fujitsu support units, so that they can
+enter details within their area. All support units are expected to search, create, update and maintain the
+information in the Horizon Support Knowledge Base. The Knowledge Base contains community sourced
+knowledge to assist staff involved in the support of the Horizon solution.
+
+A new Knowledge Base should be generated for any new incident that is raised on the live system. Before
+any new Knowledge Base is generated, it is essential that an extensive search is performed to ensure that a
+duplicate is not being created. All incidents should be referenced to a Knowledge Base. It is not essential to
+populate all fields when generating a new Knowledge Base, a skeleton may be produced when the symptoms
+are known, and then completed when the problem and solution is determined.
+
+A minimum standard for a Knowledge Base would consist of:
+FUJ00232676
+
+FUJ00232676
+
+¢ Title
+e Summary
+e Type
+
+© = Product / Platform
+¢ Incident Reference (PEAK / TFS)
+e Symptoms
+
+The remaining fields are:
+
+Problem
+© Impact
+© Solution
+
+There is a concept to ‘deactivate’ a Knowledge Base, where a successful solution has been implemented.
+The Knowledge Base is removed from the default searches support people use although the user interface
+allows the user to explicitly request a search to include deactivated KELs.
+
+There are multiple Knowledge Base entry types, consisting of:
+
+e  KBF - Fault entry
+¢ KBA - Actionable entry (e.g. workaround)
+© KBI- Information only
+
+Additions have been made to the Horizon Product / Platform list to include:
+
+¢ SPM Financial Impact - Entries which contain information which has a potential for Sub-
+Postmaster financial impact
+
+e SPM Experience - Entries which contain information which has a potential for Sub-Post master
+poor experience impact
+
+Knowledge Base Review Forum
+
+The Forum is held on a weekly basis with Post Office Service Management Team and representatives from
+the Fujitsu Service Management Team and the Software Support Centre.
+
+The purpose of the Forum is to provide Post Office with timely information relating to any new incident. A
+description of the problem is provided to Post Office, along with an impact statement and the proposed
+resolution or resolution options when they are known.
+
+The Knowledge Base Review Forum does not determine or assign an incident to a Release, which is the
+function of the Release Management Business Impact Forum and Peak Targeting Forum.
+
+The Knowledge Base entries that are within scope for the Forum are:
+
+¢ SPM Financial Impact
+e SPM Experience
+e KBF -—Fault Entry
+
+Each Knowledge Base has a RAG status assigned to the progress of the incident:
+
+¢ Red — Issue still to be diagnosed and understood
+¢ Amber — Issue understood / Work-around in place / Under development
+¢ Green — Target date of solution advised (dependent on Release date)
+
+A RAG status is also provided for the Monitoring / Reporting that can be provided to Post Office for the
+incident:
+FUJ00232676
+FUJ00232676
+
+e Red —Unable to Report / Monitor at this current time
+¢ Amber — Possible but needs further detail
+© Green — Possible to Report / Monitor
+
+Each Knowledge Base remains on the Review Forum agenda until a solution has been released to live, along
+with Post Office confirming the incident for closure, at which point the Knowledge Base is a candidate
+deactivated.
+
+An example of information format provided to the Forum is detailed below;
+
+Current ‘No potential for financial impact Current
+
+Potenti Volumes (but could resutt in poor experience to branch) Volumes
+
+for financial impact
+
+Total <n> Total n>
+
+Details of Open KBI’s with Potential for Financial Impact
+
+RAG I Opened Description I Proposed Impact Target/Release Monitoring I KB
+Resolution {in Reference
+branches) RAG
+dd/mm/yyyy I PCOnnnnnn I Text Text n Target Release: Text
+
+POL decision required
+
+No potential for financial impact - but could result in poor experience for branches
+
+RAG I Opened Description I Proposed Impact Target/Release Monitoring I KB
+Resolution (in Reference
+branches) RAG
+dd/mm/yyyy I PCOnnnnnn I Text Text n Target Release: Text
+
+POL decision required
+

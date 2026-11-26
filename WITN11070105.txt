@@ -1,0 +1,4069 @@
+WITN11070105
+
+WITN11070105
+fee) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+Document Title: HNG-xX Architecture - Reference Data
+Document Reference: ARC/APP/ARC/0001
+Release: N/A
+Abstract: This document describes the target solution architecture for
+delivery of reference data for the HNG-X programme.
+Document Status: APPROVED
+Author & Dept: Duncan MacDonald (this version updated by Trish Morris)
+External Distribution:
+Security Risk YES, security risks have been assessed, see section 0.10 for
+
+Assessment Confirmed — tails.
+
+Approval Authorities:
+
+Name Role Signature Date
+Amit Apte HNG-X CTO
+David Court HNG-X Programme Manager
+
+Note. See Post Office Account HNG-X Reviewers/Approvers Role Matrix (PGM/DCM/ION/0001) for guidance.
+
+Documents are uncontrolled if printed or distributed electronically. Please refer to the Document Library
+or to Document Management for the current status of a document.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 1 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+0 Document Control
+
+) DOCUMENT CONTROL.
+
+0.1 Figures and Tables.
+0.2 Document History.
+0.3 Review Details.
+0.4 Acceptance by Document Review.
+0.5 Associated Documents (Internal & External
+0.6 Abbreviations.
+0.7 Glossary...
+0.8 Changes Expected.
+0.9
+
+0.10
+
+2 ARCHITECTURAL DESCRIPTION
+
+2.1 Rationale...
+2.2 Reference Data Overview.
+2.2.1 Reference Data Components.
+2.2.2 Reference Data Flows within HNG-
+2.3 Reference Data Preparation & Deliver
+2.3.1 Mapping of Deliverables to Physical Interfaces.
+2.3.2 Reference Data Preparation Tools.
+2.3.3 Delivery Process Description.
+2.4 HNG-X Reference Data System..
+2.4.1 Overview.......
+2.4.2 RDMC Database.
+2.4.3 RDDS Database.
+2.4.4 RDMC WorkStation.
+2.5 Reference Data Distribution to Counter:
+2.5.1 Reference Data Inventory and Package:
+2.5.2 Reference Data Flows to Counter:
+2.5.3. Reference Data Download to Counter
+2.6 Reference Data at Counters.......
+2.6.1 Processing of Reference Data Files.
+2.6.2 Generation of Working Reference Data.
+2.7 Reference Data Proving / Verification.
+2.7.1. HNG-X RDT Environment
+2.7.2 Access Control
+2.8 Memo Submission..
+2.9 Service Level Targets.
+2.10 Scheduling...
+
+3. PLATFORMS.
+
+3.1. RDMC/ RDDS Databases.
+3.2 RDMC Workstation...
+3.3. RDT Environments.....
+
+4 NETWORKS.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 2 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+4.1 Source Reference Data to RDMC.
+4.44 POL Type A Reference Data & Help Data.
+4.1.2 I Bureau Reference Data..
+4.1.3 Customer Service Supplied Reference Data
+
+4.2 Provision of Reference Data to Other System
+4.2.1 Database Links... cee
+422 Data Warehouse...
+4.2.3 Help Desk (Dispatch 1)..
+
+4.3 Delivery of Reference Data to Counters.
+4.3.1 Branch Database Route..
+4.3.2 System Management Rout
+
+4.4 RDT Requirements.....
+
+5 MANAGEABILITY...
+
+SECURITY.
+6.1. Application.
+
+7 RECOVERY AND RESILIENCE.
+
+8 PERFORMANCE.
+
+9 MIGRATION.
+
+9.1. Data Migration.....
+9.1.1. Common Feeds.
+9.1.2 Dual Feeds...
+9.1.3 Delivery of Reference Data Back to POL RDS
+
+9.2 HNG-X Rollout and Horizon Rollback.
+
+9.3. RDMC Work Station
+
+9.4 RDT System......
+
+10 TESTING AND VALIDATION
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 3 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+0.1 Figures and Tables
+
+Figure 1 — Reference Data Sources.....
+Figure 2 — Reference Data Flows within HNG-X.
+Figure 3 — Deliverables and Physical Interface.
+Figure 4 — Type A Reference Data Delivery...
+Figure 5 — Type B Reference Data Delivery...
+Figure 6 — Postal Services Reference Data Delivery..
+Figure 7 — Reference Data Delivery — Menu Definitions.
+Figure 8 — Reference Data Delivery - ADC Definition:
+Figure 9 — Reference Data Delivery — APOP Service:
+Figure 10 — Other Reference Data Delivery..
+Figure 11 — Reference Data Delivery — PIN Pa
+Figure 12 — Reference Data Delivery — Other Files.
+Figure 13 —- Bureau Rates Reference Data Delivery.
+Figure 14 —Help Data Delivery.
+Figure 16 —- RDMC WorkStation... see
+
+Figure 78 — HNG-X Reference Data Flows to Counters.
+Figure 19 - HNG-X Main Reference Data Download.
+Figure 20 —- HNG-X RDT Environment...
+Figure 21 -RDT Access Control.
+Figure 22 - Memo Submission..
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 4 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+0.2 Document History
+
+VersionNo. Date Summary of Changes and Reason for Issue Associated Change -
+CP/PEAK/PPRR
+Reference
+ot 29/10/2006 First Draft.
+0.2 06/11/2006 Dratt for review
+03 28/11/2006 For Review
+1.0 15/03/2007 For approval
+14 31/03/2008 Draft for submission of comments from group review of V1.0,
+held 05/12/2007
+12 14/01/2008 For Review.
+2.0 15/09/2009 For Approval
+24 05/08/2011 Updated for inclusion of Type G reference data.
+3.0 23/08/2011 Version for approval. Figures 3 and 15 amended to include Type
+G reference data
+
+0.3 Review Details
+
+Review Comments by
+Review Comments to
+Mandatory Review
+
+Role Name
+
+HNG-X Architecture *Duncan Macdonald
+
+CISO lan Howard
+
+Information Governance Bill Membery
+
+Infrastructure Design *Alex Kemp
+
+Service Introduction *Adam Bowe
+
+Capacity & Configuration Manager Mark Brosnan
+
+Role Name _
+
+Security & Risk Team CSPOA Security: oO.
+
+Architect Jason Clark, Tariq Arain, Andy Beardmore
+
+Network Architect Mark Jarosz
+
+Architect — Counter and BAL Andy Thomas
+
+Test Design Sheila Bamber ; Debbie Richardson
+
+Service Network Andrew Hemingway
+
+Head of Service Management Tony Atkinson
+
+LST Manager Mark Ascott
+
+SV&l Manager Chris Maving
+
+POL Test Manager James Brett (POL, JTT)
+
+Testing Manager Debbie Richardson
+
+SSC *Steve Parker
+
+Business Continuity Adam Parker
+
+Head of Service Support Sarah Bull
+
+Integration Team Manager Vijesh Pandya
+
+Programme Manager David Court
+
+Operational Securit Donna Munro
+
+Core Division Ed Ashford
+© Copyright Fujitsu Services Ltd 2011 FUJITSU RESTRICTED - COMMERCIAL IN _ Ref. ARCIAPPIARC/0001
+
+CONFIDENCE Version 3.0
+
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 5 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+Core Division Andrew Gibson
+CTO Amit Apte
+Optional Review
+
+lan Trundell (POL, via RMGA Document Management
+Issued for Information — Please restrict this distribution
+list to a minimum
+Position/Role Name
+‘AMO Manager lan T Turner
+
+(*) = Reviewers that returned comments
+
+0.4 Acceptance by Document Review
+
+The sections in this document that have been identified to POL as comprising evidence to support
+Acceptance by Document review (DR) are listed below for the relevant Requirements:
+
+POL NFR DR Internal FS POL Document Document Section Heading
+
+Acceptance Ref NFRReference Section Number
+
+ARC-475 ARC-450 29 Service Level Targets
+
+SEC-3178 SEC-3290 28 Memo Submission
+
+SEC-3185 SEC-3291 28 Memo Submission
+
+SEC-3187 SEC-3292 28 Memo Submission
+
+SEC-3075 SEC-3262 25.2 Reference Data Flows to Counters (Checksum for data
+integrity)
+
+SEC-3075 SEC-3262 26 Reference Data at Counters (CRC verification)
+
+SER-2208 SER-2182 28 Memo Submission
+
+POS-NFR-291 POS-NFR-291 7 Recovery and Resilience
+
+POS-NFR-203 POS-NFR-315 7 Recovery and Resilience
+
+0.5 Associated Documents (Internal & External)
+
+Reference Versi Date Title Source
+PGM/DCM/TEM/0001 Fujitsu Services Post Office Account I Dimensions
+(D0 NOT REMOVE) HNG-X Document Template
+ARC/GEN/TEM/0001 Fujitsu Services Post Office Account I Dimensions
+(00 NOT REMOVE) tae Document
+ARC/GEN/REP/0001 HNG-X Glossary Dimensions
+ARC/SOL/ARC/0001 HNG-X Solution Architecture Outline I Dimensions
+ARC/MIG/STG/0001 HNG-X Migration Strategy Dimensions
+ARC/PPS/ARC/0001 HNG-X Architecture - Platforms and Dimensions
+Storage
+DES/APP/IFS/0001 HNG-X Architecture - Reference Data I Dimensions
+DES/APP/IFS/0002 HNG-X Architecture - Reference Data I Dimensions
+DES/APP/IFS/0003 HNG-X:RDDS to System Dimensions
+Management - Counters Reference
+Data Interface Specification
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 6 of 72
+WITN11070105
+
+WITN11070105
+(ee) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+DES/APP/IFS/0004 HNG-X Architecture - Reference Data I Dimensions
+DES/APP/MAN/0001 HNG-X Architecture - Reference Data I Dimensions
+DES/APP/MAN/0002 HNG-X Architecture - Reference Data I Dimensions
+DES/APP/AIS/0008 HNG-X Help Data Delivery by Post Dimensions
+Office
+DES/APP/HLD/0004 HNG-X: RDMC Host High Level Dimensions
+Design
+DES/APP/HLD/0005 HNG-X: RDDS Host High Level Dimensions
+Design
+DES/APP/HLD/0019 HNG-X Architecture - Reference Data I Dimensions
+DES/APP/HLD/0045 HNG-X Counter Applications: Dimensions
+Reference Data Subsystem High
+Level Design
+DES/APP/HLD/0097 HNG-X Host Reference Data Dimensions
+Scheduling High Level Design
+DES/APP/SPG/0005, HNG-X Host Reference Data Support I Dimensions
+Guide
+DES/GEN/STD/0001 Host Applications Database Design Dimensions
+and Interface Specifications
+DEV/APP/WKI/0014 HNG-X RDT Platform Guidelines Dimensions
+SVM/SDM/SD/0013 Reference Data Service Dimensions
+Management: Service Description
+BP/IFS/010 Application Interface Specification Pvcs
+Reference Data to Pathway for CSR+
+(including Network Banking changes)
+CS/PRD/030 Process for Operational Business PVCS
+Change - Product
+CS/PRD/050 Process for Operational Business PVCS
+Change — Outlet Reference Data
+DW/IFS/025 RDDS to Data Warehouse — Data Pvcs
+Interface Specification
+NB/IFS/023 RDDS to Transaction Enquiry PVCS
+Service (TES) Interface Specification
+RD/CCL/001 Reference Data Change Catalogue PVCS
+RD/CCL/002 Reference Data Change Catalogue PvcsS
+Appendix — Basic Products (Offline
+Services)
+RD/CCL/003 Reference Data Change Catalogue Pvcs
+Appendix — Branch/Outlet
+RD/CCL/004 Reference Data Change Catalogue PVCS
+Appendix — AP, ADC and APOP
+RD/IFS/018 RDDS — TPS Application Data PVCS
+Interface
+RD/IFS/019 RDDS — APS Application Data Pvcs
+Interface for CSR+
+© Copyright Fujitsu Services Ltd 2011 FUJITSU RESTRICTED - COMMERCIAL IN _ Ref. ARCIAPPIARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+PageNo: 7 of 72
+2
+FUJITSU
+
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+RD/IFS/020
+
+RDMC to Memo Submission — Data PVCS
+Interface Specification
+
+RD/IFS/021
+
+RDDS — LFS Application Data PVCS
+Interface for CSR+
+
+RD/IFS/022
+
+EPOSS Type C to RDMC Interface PVCS
+Specification (Legacy Horizon
+format)
+
+RD/IFS/023
+
+Type B To RDMC Interface PVCS
+Specification
+
+RD/IFS/024
+
+Rollout to RDMC Interface PVCS
+Specification
+
+RD/IFS/025
+
+SYSMAN to RDMC - Data Interface PVCS
+Specification
+
+RD/IFS/026
+
+RDMC to Dispatch 1- Data Interface I PVCS
+Specification
+
+RD/IFS/029
+
+RDMC — Communication Monitoring PVCS
+System Data Interface Specification
+
+RD/IFS/031
+
+RDDS to DRS - Data Interface PVCS
+Specification
+
+RD/IFS/032
+
+RDDS to MTAS — Data Interface Pvcs
+Specification
+
+RD/IFS/033
+
+PO LTD to Fujitsu Services Bureau PVCS
+de Change Rates Interface
+Specification
+
+RD/IFS/037
+
+Post Office Ltd to Fujitsu Services PvcS
+EMV Retail PIN Pad Reference Data
+Interface Specification
+
+RD/IFS/038
+
+Post Office Ltd to Fujitsu Services PVCS
+EMV Banking PIN Pad Reference
+Data Interface Specification
+
+RD/IFS/039.
+
+RDDS to APOP — Data Interface PVCS
+Specification
+
+TD/ION/004
+
+FTMS Configuration for transferring PVCS
+Data between RDMC and POL RDS
+
+TD/ION/040
+
+FTMS Configurations for Bureau de PVCS
+Change
+
+Unless a specific version is referred to above, reference should be made to the current approved
+
+0.6 Abbreviations
+
+versions of the documents.
+
+Abbreviation Definition
+
+AP-ADC. Automated Payment — Advanced Data Capture
+APOP Automated Payment Out-pay
+APS Automated Payments Service
+BTS Branch Trading Statement - each Post Office branch produces a branch
+© Copyright Fujitsu Services Ltd 2011 FUJITSU RESTRICTED - COMMERCIAL IN _ Ref. ARCIAPPIARC/0001
+CONFIDENCE Version 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 8 of 72
+WITN11070105
+
+WITN11070105
+fee) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+trading statement at the end of each accounting period
+
+CRC Cyclic Redundancy Check
+
+CSR+ (Horizon) Core System Release Plus
+
+pcs Debit Card System
+
+DRS Data Reconciliation Service - A new service introduced as part of network banking.
+Its main component is a new database running on the host.
+
+DVLA Driver and Vehicle Licensing Agency
+
+DWH Data Warehouse
+
+EDG External Data Gateway
+
+EPOSS Electronic Point of Sale Service
+
+ETU E-Top-Ups. Ability to credit money to a mobile phone account.
+
+FAD Unique identifier allocated by Post Office to branches
+
+FRTS. First Rate Travel Services is the Post Office partner in the provision of currency and
+traveller's cheque sell and buy services
+
+FTMS File Transfer Management Service; Horizon process that provides configurable file
+
+transfer services between Horizon and Post Office Ltd's Clients. Services available
+include data compression and encryption
+
+HNG-X Horizon Next Generation — Plan X
+
+HRDP Horizon Next generation Reference Data Preparation System
+
+HR SAP Human Resources Standard Accounting Package - the SAP System used by Royal
+mail Group’s Human Resources to pay sub-postmasters
+
+1IN Issuer Identification Number
+
+LFS Logistics Feeder Service
+
+MID Merchant Identifier issued by Streamline Merchant Services to identify the Branch
+from which a transaction originated
+
+Mis Management Information System
+
+MTAS MID / TID Allocation System.
+
+NBS Network Banking Service
+
+NPS Network Persistent Store
+
+OBC Operational Business Change (Reference Data)
+
+PAF Postal Address File. A service to allow post codes and addresses to be looked up.
+
+PAN Primary Account Number
+
+PLU Product Look Up Number — a means of selecting a product to be transacted by
+
+entering the unique product identifier. This facility is restricted to EPOSS products
+PO Post Office
+
+POL Post Office Limited
+POL FS SAP based system providing financial accounting for the branch based business.
+PRDP Pathway (Horizon) Reference Data Preparation Tool
+RDDS Reference Data Distribution System
+RDMC Reference Data Management Centre
+© Copyright Fujitsu Services Ltd 2011 FUJITSU RESTRICTED - COMMERCIAL IN _ Ref. ARCIAPPIARC/0001
+CONFIDENCE Version: .
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 9 of 72
+WITN11070105
+
+WITN11070105
+fe) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+RDS Post Office Reference Data System
+RDT Reference Data Team - the Post Office and Fujitsu Customer Services teams use
+
+the RDT environment to validate and verify the reference data associated with
+business changes.
+
+RMG Royal Mail Group
+
+SAP Integrated suite of applications providing financial accounting and other business
+functions.
+
+SAPADS POL’ s Advanced Distribution System (based on the SAP package) that interfaces
+to LFS
+
+SLA Service Level Agreement
+
+SU Stock Unit
+
+SYSMAN The systems management environment.
+
+TES Transaction Enquiry Service
+
+TID Terminal Identifier issued by Streamline Merchant Services to identify the terminal
+from which a transaction originated
+
+TPS Transaction Processing System
+
+XML Extensible Markup Language
+
+0.7 Glossary
+
+See also DES/APP/MAN/0002.
+
+Term Definition
+
+Accounting Node The standard Post Office reporting requirement is defined through an Accounting
+Node hierarchy. This is a 5-tier hierarchy with level 5 being the top level. Products
+are mapped to accounting nodes at level 1 or level 2 in the hierarchy.
+
+Accounting Period Post Office branches work on 4, 4, 5 week accounting periods with a branch trading
+statement being produced by each branch at the end of the accounting period. POL
+RDS define the accounting period calendar. The actual production of the branch
+trading statement is staggered by each branch having an offset of 0, 1, 2 or 3
+weeks from the end of the accounting period.
+
+Additional Data This is the mechanism by which POL RDS define the step by step flow for complex
+transactions such as AP ADC transactions
+
+AP Token An AP Token defines the data elements of a bar code or magnetic card which is
+used to initiate an AP transaction
+
+Bank Card Bank Card defines the data elements and IIN ranges for magnetic cards which are
+read through a PIN Pad or swiped so as to initiate a banking, retail or ETU
+transaction
+
+Banking Operation Banking Operation is a specific type of service (such as cash withdrawal) which is
+supported for a bank issuer scheme
+
+Branch Post Office outlet identified by a unique Branch Code. Within the HNG model, a
+Branch is a logical entity that can be composed of several physical locations at
+which business is transacted,
+
+Branch Changes Changes to the Post Office branches within the HNG-X estate. This includes
+introduction of new branches, termination of existing branches, changes to existing
+branches such as number of counter positions and network connection. The
+changes are notified by POL under operational business change and applied to the
+Estate Management system within HNG-X. Estate Management then notifies RDMC
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 10 of 72
+fee)
+FUJITSU
+
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+of the changes.
+
+Branch Opening Periods
+
+Branch opening periods are the daily morning and afternoon opening hours for Post
+Office branches
+
+Bureau
+
+Bureau de Change
+
+Bureau Rates
+
+Bureau rates consist of spot rate, margin and commission rates. The data is
+delivered to HNG-X by First Rate Travel Services via POL.
+
+Business Change Release
+Management
+
+The association of all reference data for an operational business change into a
+reference data set and the release of the set of reference data through the various
+RDT verification steps and on to the live HNG-X system.
+
+Business Change
+Verification
+
+The process of confirming that a reference data change has worked correctly and
+achieved the required business effect
+
+Client Account
+
+Client Account is the account to which AP transactions for a specific AP Token are
+allocated
+
+Commission
+
+The commission rate appropriate to a particular bureau de change currency or
+traveller's cheque service
+
+End of Session Prompts
+
+A set of promotional products / services which are presented at the end of a
+customer session with the objective of the customer being encouraged to increase
+their purchases from Post Office
+
+Exclusion List
+
+A list of products which are excluded from a particular activity such as bank card
+settlement
+
+Estate Management
+
+This set of systems manages changes driven by POL Branch change requests. It
+maintains a database of Configuration Items for use in the configuration of end-
+point systems in the Data Centre and the configuration of Branch Router and
+Terminals within the Branch outlets.
+
+Help Data HNG-X counter help data is delivered by Post Office through the HNG-X reference
+data system
+Help Desk The HNG-X help desk. Branch details are supplied to the help desk via the
+
+Despatch-1 system.
+
+HR SAP CTT Number
+
+HR SAP Remuneration Number
+
+HR SAP Schedule HR SAP schedule for delivering aggregate transaction details
+
+Hypercom Hypercom supply HNG-X PIN Pads and software
+
+lIN Range The start and end range of valid issuer identification numbers for a specific bank
+card
+
+Inclusion List A list of products which are included for a particular activity such as bank card
+
+settlement
+
+Issuer Scheme
+
+The financial institution which owns a range of bank cards and banking operations
+
+Margin
+
+The margin rate appropriate to a particular bureau de change currency or traveller's
+cheque service
+
+Memo Submission
+
+HNG-X service that distributes operational messages from the centre to Post Office
+branches
+
+Method of Payment
+(MOP)
+
+A list of settlement products which are valid methods of payment for a specific
+service or set of services
+
+Non-Core Product Links
+
+Certain products are not transactable at all Post offices. These products are classed
+as non-core and their availability at Post Office branches is then controlled through
+non-core links (delivered as Type A reference data) which associate the product
+with the branch.
+
+© Copyright Fujitsu Services Ltd 2011
+
+Uncontrolled if Printed or Distributed
+
+FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Date: 23-Aug-2011
+Page No: 11 of 72
+
+WITN11070105
+
+WITN11070105
+fe) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+Other Reference Data The set of reference data objects which do not fall within Type A, Type B, Postal
+
+Services, Transaction Scripts, PIN Pad, Bureau Rate and Branch Changes
+reference data. The reference data consists of reference data objects and reference
+data files (e.g. bitmap files)
+
+Pick List The grouping of products for the proposes of presentation as a pick list
+
+PIN Pad Reference Data Reference Data which is required specifically to drive the PIN Pad at the counter.
+The data is delivered by the POL reference data team to RDT. RDT convert the
+data into the required format and deliver to RDMC.
+
+POL Client The client institution on behalf of which PO Ltd. provides a service to Customers at
+branches
+
+POL FS Article POL FS term used in SAP to represent a Product
+
+POL FS Account An account within POL FS into which Transactions or Summaries are posted.
+
+POL Reference Data A POL team which is dedicated to delivery of reference data and the verification of
+
+Team operational business change through reference data
+
+Postal Services The set of services associated with mail items (letters, packages and parcels). A
+
+specific set of reference data is delivered by the POL reference data team to
+support Postal Services. POL delivers the data to RDT. RDT manage the delivery of
+the data to RDMC.
+
+Product The basic transactable item — delivered as POL RDS Type A reference data
+PRDP Pathway (Horizon) Reference Data Preparation Tool
+Settlement Concluding of a customer transaction after provision of a service, with the payment
+
+or receipt of all funds due to or due from a customer.
+
+Also used for the settlement between PO Ltd. and Clients
+
+Soft Launch The ability to control the introduction of new functionality at the counters through
+reference data.
+
+Spot Rate The spot rate appropriate to a particular bureau de change currency or travellers
+cheque service
+
+Streamline Merchant Acquirer for DCS.
+
+SYSMAN ‘System Management Solution
+
+Transaction Mode The different ways in which a product can be transacted such as sell, remit in, remit
+out
+
+Transaction Prompt ‘A message which is associated with a product or menu button at the counter and is,
+presented when the product or menu button is selected
+
+Transaction Scripts The reference data that controls how products and services are transacted at the
+
+Reference Data counters. AP ADC reference data is a sub-set of transaction script reference data.
+
+The data is delivered by the POL reference data team and delivered to RDT. RDT
+manage the data delivery to RDMC.
+
+Type A Reference Data _I Post Office supplied Reference Data. It is temporal data which is transmitted
+electronically over an automated interface from the Post Office RDS system, and
+loaded automatically into RDMC. Type A Reference Data supports both the Horizon
+and HNG-X Solution
+
+Type B Reference Data__I Type B reference data consists of the accounting node hierarchy and mapping of
+
+stack icons to products. The data is agreed between RDT and POL and delivered to
+RDMC by RDT. Type B Reference Data supports both the Horizon and HNG-X
+Solution
+
+Type C Reference Data__I Type C reference data is a legacy of the Horizon system where much of the data
+was delivered in attribute grammar format. Under HNG-X, APOP reference data
+continues to be delivered in attribute grammar format. This data is used for Horizon
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 12 of 72
+WITN11070105
+
+WITN11070105
+fee) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+counters only.
+Type F Reference Data Type F reference data is an HNG-X concept when enables the delivery of any
+computer file to the HNG-X counters through the reference data system
+Type G Reference Type G reference data is HNG-X specific reference data which is delivered through
+
+RDMC and RDDS and can then be forwarded to any HNG-X platform via System
+Management, Branch Database or via an RDDS file share.
+
+Type X Reference Data _I Type X reference data is an HNG-X concept which enables the delivery of reference
+data objects which are in XML format to the HNG-X counters through the reference
+data system
+
+0.8 Changes Expected
+
+Response to review comments
+
+0.9 Accuracy
+
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but, whilst every
+effort is made to ensure the accuracy of such information, it accepts no liability for any loss (however caused)
+sustained as a result of any error or omission in the same.
+
+0.10 Security Risk Assessment
+
+Security risks have been assessed and it is considered that there are no security risks relating
+specifically to this document.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 13 of 72
+2
+FUJITSU
+
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+1
+
+Scope
+
+This document describes the architecture for reference data preparation, storage, release and
+distribution within the HNG-X solution.
+
+The document consists of:
+
+A description of the various reference data required by the HNG-X system
+
+Identification of the reference data sources and description of the data preparation activities
+
+A description of the main components of the reference data system (RDMC database, RDDS
+database, RDMC work station and counter processing) which support the storage and distribution
+of HNG-X reference data
+
+A description of how reference data is distributed through the HNG-X domain with particular
+emphasis on distribution to HNG-X counters.
+
+A description of the reference data verification environment
+Non-functional aspects such as service level targets, security, performance etc
+A description of the activities involved in migrating from Horizon to HNG-X.
+
+Coverage of the reference data system support of the Memo View (Memo Submission) solution.
+
+Associated Documents (Internal & External) are referenced at various points in this document.
+
+The document identifies a number of new reference data interfaces - these are included in Section 0.6
+Associated Documents (Internal & External) and referenced at various points in this document.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 14 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2 Architectural Description
+
+2.1 Rationale
+
+Post Office business requirements are changing continually and one of the fundamental requirements
+supported by both Horizon and, more so, by HNG-x is that most of these business requirements can be
+implemented through use of reference data to define new products and services without having to make
+any software changes. This requirement means that pretty well any system behaviour that is visible to
+end users, in particular at Post Office branches, can be altered through reference data. This includes:
+
+1. Menu navigation
+
+All user interface screens
+
+All printed outputs (reports, receipts, vouchers)
+
+The products and services available at each branch
+
+How each product and service is transacted
+
+The prices / rates charged for products and services.
+
+The rules associated with product and service transactions
+
+enon ON
+
+How products and services are accounted for
+
+9. How product and service transactions are notified to and settled with Post Office clients
+10. How branches are remunerated for transacting products and services
+
+11. Help data which supports the transaction processing at Post Office counters
+
+Overall, this reference data, excluding help data, amounts to over 3 million data records and should any
+one record be incorrect then there is likely to be some negative effect on the Post Office business.
+
+On the Horizon system, the realisation that reference data was significant was gradual — usually learnt by
+hard lessons firstly during system testing and implementation and later in the Live system. There were
+instances of Post Office business being severely curtailed or even stopped at certain branches because
+of missing or incorrect reference data. The end result is that Horizon now has an experienced team
+within the Customer Services domain dedicated to successful implementation of business change
+through reference data and they work closely with a corresponding team of Post Office staff who are
+located alongside them, Business change through reference data occurs on a daily basis and the
+Customer Services team and the Post Office team work together to verify that each change achieves its
+business objective prior to release of the reference data to the Live counters. This reference data
+verification activity is quite separate from the software verification, which is carried out by the testing
+teams.
+
+The same Customer Service and Post Office teams will support reference data business change on
+HNG-X and their expectation is that many of the lessons learnt on Horizon have been taken into
+consideration in the architecture and design for HNG-X reference data so that HNG-X business change is
+simpler, carries less risk and can be achieved at lower cost.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 15 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.2 Reference Data Overview
+
+2.2.1 Reference Data Components
+
+2.2.1.1 Reference Data Sources
+The following diagram shows the main reference data sources:
+
+HNG-X Design
+
+First
+/ Development
+
+Transaction Seripts
+ADC Scripts
+M
+
+Other Reference Data
+
+Post Customer
+Office Services
+
+Braneh Ds
+
+Other Reference Data
+
+Figure 1 — Reference Data Sources
+2.2.1.2 Key Players
+2.2.1.2.1 Post Office
+
+POL delivers the bulk of the HNG-X reference data, in particular, the data that is most subject to change.
+The POL role is divided into two main areas:
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 16 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+e The staff associated with the operations of the automated POL reference data system (RDS) at
+Chesterfield
+
+e The POL reference data team based on Fujitsu Services premises at Bracknell, who are
+responsible for co-ordination of POL reference data delivery and the verification and acceptance
+of operational business change through reference data.
+
+2.2.1.2.2 First Rate
+
+First Rate Travel Services are POL’s business partner in supplying currency and traveller's cheque buy
+and sell services at branch counters. First Rate delivers bureau exchange rates to POL who then pass.
+the data on to Fujitsu Services.
+
+2.2.1.2.3 Customer Services
+
+The Customer Services reference data team (RDT) within Fujitsu Services is responsible for the overall
+management of operational business change through reference data. They manage the day-to-day
+operations associated with agreement to business change, the preparation and delivery of reference
+data, the verification of the business change and the release of the business change to the live domain.
+
+2.2.1.2.4 HNG-X Development Team
+
+The HNG-X Development Team is responsible for delivery of certain types of reference data which is
+outside the scope of operational business change — a particular example might be reference data to
+support the soft launch of new functionality.
+
+2.2.1.3 Deliverables Description
+
+2.2.1.3.1 Bureau Rates
+
+Bureau spot rates, margin rates and commission rates are produced by First Rate Travel Services and
+delivered to POL who sends them on directly to HNG-X. Spot rates are liable to change on a daily basis
+whereas margin and commission rates change less frequently.
+
+2.2.1.3.2 Branch Data
+
+Branch data consists of branch name and address details, branch opening periods and branch
+availability of non-core products.
+
+2.2.1.3.3 Product Data
+
+Product data contains the rules associated with the transaction of products such as the product price,
+maximum and minimum values, product name for receipts etc, the modes in which the product can be
+transacted, product to product relationships and the mapping of products to the accounting node
+hierarchy.
+
+2.2.1.3.4 Accounting Calendar
+
+Accounting Calendar defines the accounting periods for each financial year. Accounting periods are
+always 4 or 5 weeks and follow a 4 week, 4 week, 5 week sequence.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 17 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.2.1.3.5 Automated Payment Clients and Client Accounts
+
+POL client data includes details such as identifiers and name for all business clients for which POL
+provide services at Post Office counters. Client Account data applies to automated payment clients only
+— it defines the accounts that the client transactions are allocated to.
+
+2.2.1.3.6 AP Tokens
+
+AP Tokens data defines the full set of AP tokens which are recognised by HNG-X. Tokens can be either
+bar codes or magnetic cards.
+
+2.2.1.3.7 Banking Schemes
+
+Banking Schemes Data defines all financial schemes for Banking transactions, bank card session
+settlement and ETU transactions. The data consists of card definition (PAN and IIN ranges) and
+definition of permitted services (e.g. cash withdrawal).
+
+2.2.1.3.8 POL FS Mappings
+
+POL FS Mappings define how HNG-X transactions are mapped to the POL FS system. The mapping is
+done by product and transaction mode to POL FS articles and accounts.
+
+2.2.1.3.9 HR SAP Mappings
+
+HR SAP Mappings define which HNG-X transactions are mapping to the HR SAP system. The mapping
+is done by product and transaction mode to HR SAP CTT numbers.
+
+2.2.1.3.10HR SAP Schedule
+HR SAP schedule defines the reporting periods that are required by the HR SAP system
+
+2.2.1.3.11End of Session Prompts
+
+End of Session Prompts Data defines a set of products and services which are the subject of sales
+promotions.
+
+2.2.1.3.12Transaction Prompts
+
+Transaction prompts data defines sales promotion and operational messages and their association with
+products (in specific modes) and menu buttons.
+
+2.2.1.3.13Help Data
+
+Help data consists of images and HTML text which supports the HNG-X counter processing.
+
+2.2.1.3.14Postal Services
+
+Postal Services data defines the mails services and add-on services which are supported for each of the
+mail service providers and for mails carriers who collect or deliver mail through Post Office counters.
+Postal Services data supports service variation by country. The data also includes postal service
+administration reference data which supports services such as track and trace, mails despatch, local
+collect and priority mail.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 18 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.2.1.3.15Transaction Scripts
+
+Transaction scripts data define the sequence of activities involved in each different HNG-X transaction.
+This data does not include ADC scripts. Transaction script changes are outside the scope of operational
+business change.
+
+2.2.1.3.16ADC Scripts
+
+ADC Transaction scripts data define the sequence of activities involved in each different HNG-X AP
+additional data transaction and EPOSS additional data transaction. This data is classed separately from
+other transaction scripts as ADC scripts can be changed as part of the reference data business change
+process.
+
+2.2.1.3.17Menu Definition
+
+Menu Definitions specify the HNG-X menu hierarchy including the navigation to HNG-X product and
+service transactions. The data also includes user role access rules.
+
+2.2.1.3.18PIN Pad Reference Data
+
+PIN Pad reference data defines the reference data that is required to drive the PIN Pad at the counters.
+Two PIN Pad reference data sets exist —- one for Banking and one for Retail.
+
+2.2.1.3.19Accounting Nodes
+
+Accounting nodes form a five tier reporting hierarchy which is used for all standard counter reports. Each
+node has a unique identifier and name.
+
+2.2.1.3.20APOP Service Definition
+
+AP Out-Pay (APOP) Service Definition reference data is required when an AP service is authorised
+through the APOP database service. The data defines the authorisation transactions including input,
+validation, audit requirements and return data.
+
+2.2.1.3.210ther Reference Data
+
+Other Reference Data is a bucket container for any reference data which is not included elsewhere. It
+can be seen as two distinct types: - individual reference data objects and reference data files. An
+example of an object might be a message text definition whereas a file might be a bitmap for an icon or
+logo.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 19 of 72
+WITN11070105
+WITN11070105
+
+fee) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.2.2 Reference Data Flows within HNG-X
+
+Reference Data is distributed from the HNG-X Reference Data System to Branch counters and to many
+of the HNG-X host systems as shown in the diagram below:
+
+Postal Sexvices Bess Dua
+Transaction Scripts "roduct Data
+_—  — » Accounting Calendar ater
+. “ : AP Tokens
+TPS POLF r Banking
+" SNAPP and of n Prompts
+HR SAP Schedule i 7
+as Ce?)
+MTAS
+a I Branch DB
+HING-X Reference Data System
+— L.
+DWh
+Beanph Date Accountin POL Cifents POL ¢
+-_— &Chi
+
+APT
+
+TES
+
+Branfl: Data
+
+HELP DESK Bl Fi
+LES DRS
+
+APS MEMO Apor
+Submission
+Figure 2 — Reference Data Flows within HNG-X
+© Copyright Fujitsu Services Ltd 2011 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARCIAPPIARCIO001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 20 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+fee)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3 Reference Data Preparation & Delivery
+
+2.3.1. Mapping of Deliverables to Physical Interfaces
+
+The following diagram shows the flow of reference data deliverables to the HNG-X reference data
+system:
+
+Help Data Tools
+
+Typed
+
+Seketiea Post Office Customer Service
+— G
+Su /
+Senees Ret Data Took TING: x Counter
+Dats Development
+a7 -
+SS } Ref Data Tooks
+DataEntry ‘Other
+wet Data
+RDS:
+
+Help Data
+
+First Rate
+
+Buren Rates
+
+—l
+
+Bureau Rates
+
+Estate Management
+
+Reference Data
+
+HNG-X Systems
+
+Figure 3 - Deliverables and Physical Interface
+
+For the purposes of delivery to the HNG-X reference data system, the data is classified as follows:
+
+Type A Reference Data: - Type A reference data is delivered from the POL RDS system which is the
+main source of HNG-X reference data. The reference data consists of
+
+Branch Data
+
+Product Data
+
+Accounting Calendar
+
+POL Clients and Client Accounts
+AP Tokens
+
+Banking Schemes
+
+POL FS Mappings
+
+HR SAP Mappings
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+Page No: 21 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+HR SAP Schedule
+End of Session Prompts
+Transaction Prompts
+
+The data interface specification is defined in Application Interface Specification Reference Data to
+Pathway for CSR+ (BP/IFS/010), which also describes the data files delivered to the HNG-X reference
+data system via an FTMS link.
+
+Type B Reference Data: - Type B reference data consists of accounting nodes. The data is delivered in
+the format as defined in Type B to RDMC Interface Specification (RD/IFS/023) and delivered as HNG-X
+reference data.
+
+Type C Reference Data: - Type C is reference data delivered in Horizon attribute grammar format.
+APOP service definitions continue to be delivered as Type C reference data. The data is delivered in the
+format as defined in EPOSS Type C to RDMC Interface Specification (RD/IFS/022) and delivered as
+HNG-X reference data.
+
+Type X Reference Data: - Type X is reference data delivered in XML object format as defined in HNG-X
+Specific Reference Data to RDMC Application Interface Specification (DES/APP/IFS/0004) and delivered
+as HNG-X reference data. Type X reference data consists of
+
+Postal Services
+Transaction Scripts
+ADC Scripts
+Menu Definitions
+Various Other Reference Data Objects
+Including Message Definitions
+Postal Service Tokens
+Postal Service Administration Processes
+
+Type F Reference Data: - Type F is reference data delivered as files with the reference data delivery
+system having no knowledge of the content or structure of the files. Type F is defined in HNG-X Specific
+Reference Data to RDMC Application Interface Specification (DES/APP/IFS/0004) and delivered as HNG-
+X reference data. Type F reference data consists of
+
+Pin Pad Reference data
+Various Logos and bitmaps
+
+Type G Reference Data: - Type G is reference data delivered as files to any HNG-X platform with the
+system having no understanding of the file content. There are no restrictions on the content of a Type G
+reference data file (within normal constraints). This supports BAU deliverables such as encryption
+certificates and Generic Web Service definitions. Type G is defined in HNG-X Specific Reference Data
+to RDMC Application Interface Specification (DES/APP/IFS/0004).
+
+Help Data: - Help data is maintained by POL and delivered as full baselines to Fujitsu Services. The
+interface is defined in HNG-X Help Data Delivery by Post Office (DES/APP/AIS/0008).
+
+Bureau Reference Data: - Bureau rates are produced by First Rate Travel Services and delivered to the
+HNG-X reference data system via POL. The reference data consists of Bureau Spot Rates, Margin
+Rates and Commission Rates. The data interface specification is defined in PO Ltd to Fujitsu Services
+Bureau de Change Interface Specification (RD/IFS/033). Data files are delivered to the HNG-X reference
+data system via an FTMS link.
+
+Estate Changes: - Changes to the HNG-X branch estate are agreed with POL and implemented outside
+the scope of the HNG-X reference data system. The data consists of additions and deletions to POL
+branches within the HNG-X estate and changes to branches such as number of counter positions and
+network connections. Changes are delivered to the HNG-X reference data system by the HNG-X Estate
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 22 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+Management systems via the Branch Database system. Interfaces are defined in HNG-X RDMC /
+RDDS to Branch Database Application Interface Specification (DES/APP/IFS/0001).
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 23 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.2 Reference Data Preparation Tools
+
+2.3.2.1. HNG-X Reference Data Preparation Tool (HRDP)
+
+PRDP was developed within the Horizon system to support data preparation of reference data by
+Customer Services RDT. The tool consisted of a Microsoft Access database supported by a number of
+Visual Basic applications. PRDP has been enhanced into HRDP for HNG-X to support the data
+preparation and delivery of Type F, Type G and Type X reference data in addition to supporting the
+Horizon delivery requirements. This is a single user tool, so multiple instances may be in use at any
+point in time. Each version of the tool is synchronised regularly by importing the master version of the
+reference data from the live HNG-X reference data system.
+
+The tool carries forward the main concepts within PRDP such as:
+
+File import and export capability
+
+Generation of delta files
+
+Data maintenance and export by business change
+Object effective date control
+
+Object cloning
+
+eee ee
+
+2.3.2.2. APOP Excel Spreadsheet
+
+On introduction of APOP within Horizon, RDT developed a Microsoft Excel spreadsheet interface
+between the POL data delivery and the PRDP tool. This Excel spreadsheet interface continues to be
+used for delivery of APOP Service Definitions to HNG-X. This is a single user tool, so multiple instances
+may be in use at any point in time.
+
+2.3.2.3. PIN Pad Data Preparation Tool (PPPT)
+
+APIN Pad reference data preparation tool was developed within the Horizon system to support the
+preparation of PIN Pad reference data. The tool consisted of a Microsoft Access database supported by
+a number of Visual Basic applications. This tool is enhanced to generate HNG-X output format to support
+the preparation of PIN Pad reference data for HNG-X. Note that PPPT will become redundant once the
+last Hypercom PIN Pad has been replaced by an Ingenico PIN Pad.
+
+2.3.2.4 HNG-X Postal Services Data Preparation Tool
+
+This is a new reference data preparation tool at HNG-X. The tool receives as input an Excel workbook
+which defines the HNG-X Postal Services data (about 28 spreadsheets). It converts the data into XML
+format suitable for import into the HRDP tool (see 2.3.2.1).
+
+2.3.2.5 I HNG-X Menu Preparation Tool
+
+This is a new reference data preparation tool at HNG-X. The tool receives as input an Excel workbook
+which defines the HNG-X menus. It converts the data in XML format suitable for import into the HRDP
+tool (see 2.3.2.1).
+
+2.3.2.6 HNG-X ADC Preparation Tool
+
+This is an HNG-X enhanced version of the Horizon ADC data preparation tool. The tool receives as
+input a set of Excel workbooks which defines the HNG-X ADC scripts. It converts the data into XML
+format suitable for import into the HRDP tool (see 2.3.2.1).
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 24 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.2.7. Various Other Data Preparation Tool
+
+There is a general focus within the RDT team to automate as much as possible of the reference data
+formatting processes. Consequently, a number of further tools have been developed (mainly using
+Microsoft Excel) to support the conversion of reference data from standard source tables to the XMIL
+format supported by HRDP (see 2.3.2.1).
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 25 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3 Delivery Process Description
+
+2.3.3.1 Type A Reference Data
+The following diagram shows the delivery process flows:
+
+Post
+Office
+
+® &
+
+Accounting Nodes
+
+Typea
+Reference Data Files
+
+Figure 4 - Type A Reference Data Delivery
+
+Type A reference data is keyed by POL staff into the POL RDS reference data system and delivered via
+an automated process to HNG-X as reference data files conforming to Application Interface Specification
+Reference Data to Pathway for CSR+ (BP/IFS/010). Delivery is automated using FTMS as specified in
+FTMS Configuration for transferring Data between RDMC and POL RDS (TD/ION/004), and the data is
+loaded directly into the HNG-X reference data system. Each file is for a specific operational business
+change.
+
+Details of accounting nodes are returned to POL RDS through a semi automated RDT process to support
+foreign key relationships within the RDS reference data. This return flow is operated and maintained by
+RDT staff. The AIS format is defined in Application Interface Specification Reference Data to Pathway
+for CSR+ (BP/IFS/010).
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 26 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.2 Type B Reference Data
+The following diagram shows the delivery process flows:
+
+Customer Services (RDT)
+
+>, Communications
+Post
+
+Office Define [type B
+
+referenpe data
+
+= I
+
+HRDP Tool
+
+Extract Himport
+
+v q
+Type B Reference
+Data Files
+
+Import I Extract
+
+Figure 5 —- Type B Reference Data Delivery
+
+The HNG-x reference data preparation tool (HRDP) maintains details of all Type B reference data. The
+tool resides within the Customer Services (RDT) domain. RDT staff agree changes to Type B reference
+data with POL and apply the changes by updating the reference data within HRDP. The changed data is
+then extracted and delivered into the HNG-X reference data system in Type B AIS format —- see Type B
+To RDMC Interface Specification (RD/IFS/023). Each file is for a specific operational business change.
+
+An extract and import capability is also provided so that the HRDP data preparation tool can be aligned
+with the live reference data.
+
+Details of accounting nodes are returned to POL RDS to support foreign key relationships within the RDS
+reference data. This return flow is operated and maintained by RDT staff utilising existing FTMS
+capabilities. The AIS format is defined in Application Interface Specification Reference Data to Pathway
+for CSR+ (BP/IFS/010).
+
+All delivery activities are run by RDT staff using a mixture of manual and semi automated processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 27 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.3 Postal Services Reference Data
+The following diagram shows the delivery process flows:
+
+Postal Services Customer Services (RDT)
+
+Data
+
+Post > > " Convert
+— tract
+Office @S Impot ae
+
+Postal Services Tool
+
+I Transfer
+
++—\_ Eatract
+
+HRDP Tool
+
+Figure 6 — Postal Services Reference Data Delivery
+
+Postal Services reference data is based on the reference data which supports the Royal Mail and Parcel
+Force web services — supplied by a company called Selectica. This data is delivered to Post Office
+where it is enriched to include specific data required for support of Post Office services. Reference data
+baselines are then delivered to Fujitsu Services in an Excel workbook as defined in HNG-X Postal
+Service Reference Data Definition (DES/APP/MAN/0002). The Excel workbook is converted by an HNG-
+X Postal Services tool into XML format suitable for import to the HRDP data preparation tool. The HRDP
+import process generates a delta of changed data only within HRDP. This changed data is then
+extracted to file and delivered to the HNG-X Reference Data System.
+
+The reference data Type X files are delivered in HNG-X Specific Reference Data to RDMC Application
+Interface Specification (DES/APP/IFS/0004). Each file is for a specific business change.
+
+An extract and import capability is also provided so that the HRDP data preparation tool can be aligned
+with the live reference data.
+
+All delivery activities are run by RDT staff using a mixture of manual and semi automated processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 28 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.4 Menu Defi
+The following diagram shows the delivery process flows:
+
+jon
+
+Men Customer Services (RDT)
+
+Definition
+
+Post I__, _I I . a
+Office om Import Extract
+
+Menu Tool
+
+[m«
+
+HRDP Tool
+
+ft smpor
++t
+impor exact
+
+Figure 7 — Reference Data Delivery — Menu Definitions
+
+POL deliver menu definitions to RDT either in document form or in Excel spreadsheet form. RDT then
+process menu definitions through a dedicated menu data preparation tool which converts it into XML
+format suitable for import to the HRDP data preparation tool. The HRDP import process generates a
+delta of changed data only within HRDP. This changed data is then extracted to file and delivered to the
+HNG-X Reference Data System.
+
+The reference data Type X files are delivered in HNG-X Specific Reference Data to RDMC Application
+Interface Specification (DES/APP/IFS/0004). Each file is for a specific business change.
+
+An extract and import capability is also provided so that the HRDP data preparation tool can be aligned
+with the live reference data.
+
+All delivery activities are run by RDT staff using a mixture of manual and semi automated processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 29 of 72
+WITN11070105
+WITN11070105
+
+fee) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.5 ADC Script Definitions
+The following diagram shows the delivery process flows:
+
+anc Customer Services (RDT)
+Post — : Convert
+Office Gi Import Extract
+
+ADC Tool
+
+[ms
+
+HRDP Tool
+
+Figure 8 — Reference Data Delivery —- ADC Definitions
+
+POL deliver ADC script definitions to RDT either in document form or in Excel spreadsheet form. RDT
+then process menu definitions through a dedicated ADC data preparation tool which converts it into XML
+format suitable for import to the HRDP data preparation tool. The HRDP import process generates a
+delta of changed data only within HRDP. This changed data is then extracted to file and delivered to the
+HNG-X Reference Data System.
+
+The reference data Type X files are delivered in HNG-X Specific Reference Data to RDMC Application
+Interface Specification (DES/APP/IFS/0004). Each file is for a specific business change.
+
+An extract and import capability is also provided so that the HRDP data preparation tool can be aligned
+with the live reference data.
+
+All delivery activities are run by RDT staff using a mixture of manual and semi automated processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 30 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.6 APOP Service Definition
+The following diagram shows the delivery process flows:
+
+Customer Services (RDT)
+
+APOP Service
+Data
+
+Post . — : Convert
+- — extract
+Office & Import mes
+
+APOP Tool
+
+I Trans
+
+HRDP Tool
+
+t Import
+¥ I
+POPI Servichs
+Retfrence Data files
+Import Extract
+
+Figure 9 — Reference Data Delivery - APOP Services
+
+POL deliver changes to APOP services to Customer Services (RDT) either in document form or in Excel
+spreadsheet form as defined in APOP Authorisation Service Reference Manual (AP/MAN/004) and
+APOP User Guide (AP/MAN/005). RDT enter the data into an APOP Service Preparation Tool. A
+separate instance of this tool exists for each APOP Service. On completion of the data changes, a full
+extract of the APOP Service Definition is generated and imported into the Reference Data Preparation
+tool (HRDP). The HRDP import process generates a delta of changed data only within HRDP. This
+changed data is then extracted to file and delivered to the HNG-X Reference Data System.
+
+The reference data Type C files are delivered in Type C Reference Data format (RD/IFS/022). Each file
+is for a specific operational business change.
+
+An extract and import capability is also provided so that the HRDP data preparation tool can be aligned
+with the live reference data.
+
+All delivery activities are run by RDT staff using a mixture of manual and semi automated processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 31 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.7. Other Reference Data Objects
+The following diagram shows the delivery process flows:
+
+Post Pasa s Customer Services (RDT)
+Office _
+
+Define Other Heference Data
+
+HNG-X Design I _peineoiter a
+
+Reference Data 1
+/Development I “"""" HRDP Too
+
+Figure 10 — Other Reference Data Delivery
+
+It is not cost justifiable to create dedicated tools for all reference data object maintenance and, ina
+number of cases, it is sufficient to use the file level capabilities built into the HRDP tool to import,
+generate deltas and export and the object level capabilities to create, update or delete XML objects. In
+other cases, ad-hoc tooling (usually in Microsoft Excel) is used to generate the HRDP input.
+
+Source files may be delivered from Post Office or from the HNG-X Counter design / development area.
+
+The output reference data Type X files are delivered as defined in the HNG-X Specific Reference Data
+to RDMC Application Interface Specification (DES/APP/IFS/0004). Each file is for a specific business.
+
+An extract and import capability is also provided so that the HRDP data preparation tool can be aligned
+with the live reference data.
+
+All delivery activities are run by RDT staff using a mixture of manual and semi automated processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 32 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.8 PIN Pad Reference Data
+The following diagram shows the delivery process flows:
+
+Customer Services (RDT)
+
+Pin Pad Reference
+Data F
+
+Post I @—- Pat Pa Pal +
+Office
+
+PPPT Tool
+
+I Extract,
+
++
+
+we
+
+Import
+
+Figure 11 — Reference Data Delivery — PIN Pad
+
+POL deliver changes to PIN Pad Reference Data to Customer Services (RDT) in document form as
+defined in Post Office Ltd to Fujitsu Services EMV Retail PIN Pad Reference Data Interface Specification
+(RD/IFS/037) and Post Office Ltd to Fujitsu Services EMV Banking PIN Pad Reference Data Interface
+Specification (RD/IFS/038). RDT enter the data into the PIN Pad Preparation Tool, which has been
+updated to generate output in HNG-X format.
+
+The reference data output Type F files are delivered in HNG-X Specific Reference Data to RDMC.
+Application Interface Specification format (DES/APP/IFS/0004). Each file is for a specific business
+change.
+
+All delivery activities are run by RDT staff using a mixture of manual and semi automated processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 33 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.9 I Miscellaneous Files
+The following diagram shows the delivery process flows:
+
+Customer Services (RDT)
+
+Deliver miscellaneous Manage deliveries
+files
+
+Post (ie) _l,
+Office lene
+
+HNG-X Design Ge) Kl
+/ Development Miscetlneous
+
+Files
+
+HRDP Tool
+
+I
+Miscellaneous
+Files
+
+Figure 12 - Reference Data Delivery — Other Files
+
+The HNG-X reference data system has the capability to accept and store reference data files which
+contain other than XML documents:
+
+e Delivery of reference data as Type F files instead of as objects is necessary to support
+deliverables such as logo bitmaps.
+
+e Delivery of reference data as Type G files is necessary to support deliverables of any type such
+as encryption certificates or Generic Web Service definitions.
+
+The HNG-X reference data interface specification is defined in HNG-X Specific Reference Data to
+RDMC Application Interface Specification format (DES/APP/IFS/0004).
+
+Each file is for a specific operational business change.
+All delivery activities are run by RDT staff using a mixture of manual and semi automated processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 34 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.10 Bureau Reference Data
+The following diagram shows the delivery process flows:
+
+First ; Cy Post
+Rate spore Office
+
+Figure 13 — Bureau Rates Reference Data Delivery
+
+Bureau Reference Data is supplied by First Rate Travel Services to POL from where the data files are
+transferred directly into the HNG-X Reference Data System using FTMS. The data interface is described
+in PO LTD to Fujitsu Services Bureau de Change Rates Interface Specification (RD/IFS/033) and the
+FTMS interface is described in FTMS Configurations for Bureau de Change (TD/ION/040).
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 35 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.3.3.11 Help Data
+The following diagram shows the delivery process flows:
+
+Post
+Office
+
+Help Tata Files
+
+Help Tata Files
+
+Figure 14 —Help Data Delivery
+
+Help data is maintained by Post Office and delivered as zipped baseline file via an automated interface
+to HNG-X as reference data files conforming to HNG-X Help Data Delivery By Post Office Application
+Interface Specification (DES/APP/AIS/0008). Delivery is automated using FTMS as specified in FTMS
+Configuration for transferring Data between RDMC and POL RDS (TD/ION/004), and the data is loaded
+directly into the HNG-X reference data system. Each file is for a specific operational business change.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 36 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.4 HNG-X Reference Data System
+
+2.4.1 Overview
+
+The following diagram introduces three of the main components of the HNG-X reference data system,
+the RDMC database, the RDDS database and the RDMC workstations, and shows the flows of reference
+data to and from these systems:
+
+MTAS
+
+Margins TPS
+
+‘ El bw
+Bae
+Estate Teper APS
+Tons
+RDMC Database RDDS Database DRS:
+Be fre wee
+type
+hye Yea
+rofer Ager ape
+
+Tipe B
+
+Spof Rate
+Mafgins
+
+SYSMAN  HNG-X Counters. Branch DB TES
+
+MEMO
+Submission
+
+Figure 15 - HNG-X Reference Data Delivery
+
+The HNG-X reference data system is responsible for receipt and distribution of reference data across the
+HNG-X domain. The system consists of two databases:
+
+« RDMC is an Oracle database resident on a Solaris platform. It is primarily a batch processing
+system which receives reference data files from a number of sources and stores the data in
+database tables which generally reflect the input structure of the data. RDMC supports the
+concept of operational business change with each received file being associated with a specific
+business change. Through a number of RDMC work stations, RDT staff manage the association
+of files with business changes, the prioritising of business changes, and the release of the
+reference data for a business change to the rest of the HNG-X domain. Three HNG-X systems
+are exceptions to the release process - Memo Submission, Help Desk and SYSMAN have
+access to the RDMC branch data as soon as it is received within RDMC.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 37 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+e RDDS is another Oracle database resident on a Solaris platform. RDDS has access to the
+reference data within RDMC only when RDT staff release the associated business change to the
+live domain. At that point, the RDDS batch processing copies the released reference data from
+RDMC to equivalent database tables in RDDS and then distributes the data to the rest of the
+HNG-X domain. This distribution process is a mixture of dedicated ‘push’ batch processes
+where RDDS prepares the reference data in the format required by the target system and a
+number of ‘pull’ processes where the target system copies the data it requires from RDDS.
+
+Branch reference data only is delivered from RDMC to a subset of host systems rather than from RDDS,
+so this means that it is made available prior to verification by POL. This is because the verification
+activity can often lead to delays and it is considered better to make the data available on time —
+accepting that there may be occasional corrections.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 38 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.4.2 I RDMC Database
+
+2.4.2.1. Design Principles
+RDMC is the repository for all HNG-X reference data.
+
+The HNG-X system is configurable to support new services, products and outlets by use of reference
+data. The system is able to respond to changing POL requirements and enables much of the operation
+of the system to be managed by reference data — delivered either from POL of from within Fujitsu
+Services
+
+Fujitsu Services provide services to POL to implement operational changes to their business through
+reference data, without necessitating POL to raise a contractual change request each time. The
+Reference Data Change Catalogues, Process for Operational Business Change — Product (CS/PRD/030)
+and Process for Operational Business Change — Outlet Reference Data (CS/PRD/050) define the
+product and outlet changes which are supported by this business change.
+
+The business change process requires Fujitsu Services to support:
+
+e receipt, validation, correction and storage of reference data from POL to implement the business
+change
+
+preparation, validation, correction and storage of any supporting Fujitsu Services reference data
+e verification that the supplied reference data implements the change correctly
+
+e POL verification and authorisation of the change
+
+e Fujitsu Service release of the business change reference data to the Live domain
+
+RDMC has the concept of release environments to which reference data can be released and proved. In
+all, there are 4 environments:
+
+RDDT - RDT testing counters
+RDDIV - RDT verification counters
+RDDOV - POL verification counters
+RDDS - Live environment
+
+See Reference Data Proving / Verification (section 2.7) for further details on how these different
+environments support reference data verification, proving and release.
+
+When a business change occurs, reference data may be received from various different sources to fully
+implement the business change. All this reference data is received into RDMC where it must be
+associated with the business change and all the reference data must then be released together to the
+rest of the HNG-X domain so that the business change is implemented fully and at the same time.
+
+RDMC development and implementation is based on an Oracle 10g database.
+RDMNC software is developed using Unix scripting, Pro*C and PL/SQL.
+The RDMC Host system processing consists predominantly of a daily batch schedule.
+
+Online functionality is provided via an RDMC work station on a Windows XP environment to support the
+loading of reference data files, the release of reference data to the HNG-X domain and the production of
+reports on reference data changes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 39 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+FTMS manages the transfer of reference data files from POL to the RDMC Host.
+System exception events are monitored using Oracle Enterprise Manager
+
+2.4.2.2 Input Interfaces
+
+2.4.2.2.1 Type A Reference Data Files
+
+Type A reference data is keyed into the POL RDS reference data system and delivered to RDMC via
+FTMS as reference data files conforming to Application Interface Specification Reference Data to
+Pathway for CSR+ (BP/IFS/010).
+
+2.4.2.2.2 Type B Reference Data Files
+
+Type B reference data is maintained in the HRDP data preparation tool by RDT staff, changes extracted
+and delivered to RDMC in the Type B interface format —- see Type B To RDMC Interface Specification
+(RD/IFS/023).
+
+2.4.2.2.3 Type C Reference Data Files
+
+Type C reference data is maintained in the HRDP data preparation tool by RDT staff, changes extracted
+and delivered to RDMC in the Type C interface format - see EPOSS Type C To RDMC Interface
+Specification (RD/IFS/022).
+
+2.4.2.2.4 Type X Reference Data Files
+
+Type X reference data is maintained in the HRDP data preparation tool by RDT staff, changes extracted
+and delivered to RDMC in the Type X interface format - see HNG-X Specific Reference Data to RDMC
+Application Interface Specification (DES/APP/IFS/0004).
+
+2.4.2.2.5 Type F Reference Data Files
+
+Type F reference data is maintained in the HRDP data preparation tool by RDT staff, changes are
+extracted and delivered to RDMC in the Type F interface format - see HNG-X Specific Reference Data
+to RDMC Application Interface Specification (DES/APP/IFS/0004).
+
+2.4.2.2.6 Type G Reference Data Files
+
+Type G reference data is maintained in the HRDP data preparation tool by RDT staff, changes are
+extracted and delivered to RDMC in the Type G interface format - see HNG-X Specific Reference Data
+to RDMC Application Interface Specification (DES/APP/IFS/0004).
+
+2.4.2.2.7 Help Data Files
+
+Help data is maintained by POL and delivered to RDMC via FTMS as reference data files conforming
+HNG-X Help Data Delivery by Post Office (DES/APP/AIS/0008).
+
+POL always deliver help data as a complete new baseline in compressed form.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 40 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.4.2.2.8 Bureau Reference Data
+
+Bureau Reference Data is supplied by First Rate Travel Services to POL from where the data files are
+transferred directly into the HNG-X Reference Data System using FTMS. The data interface is described
+at PO LTD to Fujitsu Services Bureau de Change Rates Interface Specification (RD/IFS/033).
+
+2.4.2.3 Output Interfaces
+
+2.4.2.3.1 Memo Submission Interface
+
+RDMC makes POL branch details available to the Memo Submission system by providing three views of
+the RDMC branch data (see RDMC to Memo Submission - Data Interface Specification (RD/IFS/020)).
+These views contain:
+
+e Alist of POL branch types
+
+e  Alist of POL regions
+
+e Branch to region and branch type mapping.
+
+2.4.2.3.2 SYSMAN Interface
+RDMC makes POL branch details available to SYSMAN by providing SYSMAN with four views of the
+RDMC branch data (see ROMC - Communication Monitoring System Data Interface Specification
+(RD/IFS/029)). These views contain:
+
+e Branch identifiers, name, address, office open status and daily opening hours
+
+e Bank holiday regions
+
+e Bank holidays for each region
+
+e Branches in each bank holiday region.
+SYSMAN accesses RDMC using database to database links and copies the data views as required.
+
+2.4.2.3.3, Help Desk Interface
+RDMC provides details to Help Desk of changes to branch reference data which affect
+
+The interface consists of a daily delta file (see RDMC to Dispatch 1 — Data Interface Specification
+(RD/IFS/026)), which is made available on a file store share to the Dispatch 1.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 41 of 72
+WITN11070105
+
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.4.3 RDDS Database
+
+2.4.3.1. Design Principles
+
+RDDS is the repository for all HNG-X reference data that has been verified and released to the RDDS
+environment through the RDMC business change management processes.
+
+RDDS accesses the reference data in RDMC using database to database links.
+RDMC controls the release of reference data to RDDS
+
+Development and implementation is based on an Oracle 10g database
+
+RDDS software is developed using UNIX scripting, Pro*C and PL/SQL.
+
+The RDDS Host system processing consists of a regular batch schedule.
+
+System exception events are monitored using Oracle Enterprise Manager.
+
+2.4.3.2 Input Interfaces
+
+RDDS has only one input interface — from RDMC via database to database links. When reference data
+is released by RDMC to the RDDS environment, an RDDS process copies the released data into
+corresponding tables within RDDS. The RDDS tables mirror the RDMC tables from which the data is
+copied. The reference data is then converted into the required output formats and available for
+distribution across the HNG-X domain.
+
+2.4.3.3 Output Interfaces
+
+2.4.3.3.1 Counter Deliverables
+
+RDDS breaks the reference data to be delivered to counters into six reference data delivery types with
+each type being delivered separately:
+
+« Common Reference Data: - This contains of all POL Type A reference data (except branch
+specific data), Type B reference data and all Type X reference data. The delivery consists of
+baseline files and delta files. Each file contains reference data objects in XML document format.
+This delivery type is common to all POL branches. RDDS compresses the reference data files
+so as to reduce network overheads in delivering the files.
+
+e Branch Specific Data: - This contains branch specific reference data only. The delivery consists
+of baseline files only. Each file contains reference data objects in XML document format. This
+delivery type is branch specific and a new branch baseline is produced only when there is a
+change to the branch specific reference data. RDDS compresses the reference data files so as
+to reduce network overheads in delivering the files. .
+
+e Bureau Spot Rates: - This contains bureau spot rates only. The delivery consists of baseline
+files only. Each file contains reference data objects in XML document format. This delivery type
+is common to all branches. RDDS compresses the reference data files so as to reduce network
+overheads in delivering the files.
+
+e Bureau Margins: This contains bureau margin and commission rates only. The delivery consists
+of baseline files and delta files. Each file contains reference data objects in XML document
+format. This delivery type is common to all branches. RDDS compresses the reference data files
+so as to reduce network overheads in delivering the files.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 42 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+e Type Reference Data Files (Non-XML): This contains reference data files containing data not
+in XML format. The concept of baselines and deltas does not apply to this delivery type - each
+file delivery is seen as independent. This delivery type is common to all branches. RDDS
+compresses the reference data files so as to reduce network overheads in delivering the files.
+
+e Help Reference Data (Non-XML): RDDS breaks help data down by business area (about 10). It
+unpacks help data baselines and identifies business areas where help data has changed as
+compared with the previous delivery. New help data packages are then generated for the
+changed business areas only. Each business area is further broken down by sub-area with actual
+new baseline files generated only for the sub-areas that have changed.
+
+Distribution of reference data to Counters is either via the Branch Database or via System Management.
+For further details of reference data delivery to Counters, see Reference Data Distribution to Counters
+(section 2.5).
+
+2.4.3.3.2 Branch Database Interface
+
+RDDS makes POL branch, product and accounting node details available to the Branch Database
+system by providing three views of the RDDS reference data (see HNG-X RDMC / RDDS to Branch
+Database Reference Data Interface Specification (DES/APP/IFS/0001)). These views contain:
+
+e Branch identifiers mapping — fad code / org unit id
+
+e Branch addresses and opening times
+
+e Product identifiers, names and accounting node mapping
+e Accounting node identifiers, names and hierarchy
+
+The Branch Database system accesses RDDS using database to database links and copies the data
+views as required.
+
+2.4.3.3.3 TPS Interface
+RDDS makes a number of reference data views available to TPS (see RDDS - TPS Application Data
+Interface (RD/IFS/018)). These views contain:
+¢ Details of all POL branches
+¢ Details of all POL clients
+e Accounting calendar
+« Product and transaction mode data
+e POL FS mappings
+e HR SAP mappings
+« HR SAP schedules
+TPS accesses RDDS using database to database links and copies the data views as required.
+
+2.4.3.3.4 LFS Interface
+
+RDDS makes a view of POL branch reference data available to LFS (see RDDS — LFS Application Data
+Interface for CSR+ (RD/IFS/021)).
+
+LFS accesses RDDS using database to database links and copies the data views as required.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 43 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.4.3.3.5 MTAS Interface
+
+RDDS makes a view of POL branch reference data available to MTAS (see RDDS to MTAS — Data
+Interface Specification (RD/IFS/032). Post Office training branches are not included in this view.
+
+MTAS accesses RDDS using database to database links and copies the data views as required.
+
+2.4.3.3.6 Data Warehouse Interface
+RDDS provides details to Data Warehouse of changes to reference data which affect
+e Branch data
+« Product data
+* Client data
+e Banking Schemes
+« Accounting Calendar
+The interface consists of a daily set of files (see RDDS to Data Warehouse — Data Interface Specification
+(DW/IFS/025)), which is made available on a file store share to the Data Warehouse System
+2.4.3.3.7 APS Interface
+
+RDDS makes a number of reference data views available to APS (see RDDS — APS Application Data
+Interface for CSR+ (RD/IFS/019). These views contain:
+¢ Details of all POL branches
+
+¢ Details of all POL AP clients
+e Details of POL Client Accounts
+¢ Details of POL AP Products
+
+APS accesses RDDS using database to database links and copies the data views as required.
+
+2.4.3.3.8 DRS Interface
+
+RDDS makes a number of reference data views available to DRS (see RDDS to DRS - Data Interface
+Specification (RD/IFS/031). These views contain:
+
+¢ Details of all POL clients
+e Accounting calendar
+DRS accesses RDDS using database to database links and copies the data views as required.
+
+2.4.3.3.9 APOP Interface
+
+RDDS makes details of APOP service definitions available to APOP (see RDDS to APOP — Data
+Interface Specification (RD/IFS/039)).
+
+APOP accesses RDDS using database to database links and copies the data views as required.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 44 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.4.3.3.10TES Interface
+
+RDDS makes a number of reference data views available to TES (see RDDS to Transaction Enquiry
+Service (TES) Interface Specification (NB/IFS/023)). These views contain:
+
+¢ Details of all POL branches
+¢ Details of all POL clients
+e Details of Banking Schemes
+TES accesses RDDS using database to database links and copies the data views as required.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 45 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.4.4 RDMC WorkStation
+
+2.4.4.1 Overview
+
+The RDMC Workstation is used by RDT to manage the delivery and release of reference data. It is a
+standard networked PC using Windows XP. It runs a number of bespoke VB applications which link to
+the RDMC Oracle database using ODBC over SQL*Net.
+
+User Access
+
+Change
+
+AJ —_——~ Control rd RDMC
+
+Database
+
+RDMC
+
+WorkStation oN Data
+Loading
+Reporting
+
+Figure 16 - RDMC WorkStation
+
+2.4.4.2 User Access
+
+The User Access application manages the set up of users and user privileges. The application supports:
+e Addition of new users and update and deletion of existing users
+e Assignment of passwords to users.
+e Assignment and revocation of roles to users. Roles provide access to the different applications
+
+2.4.4.3 Change Control
+
+Change control is the means of managing the release of reference data to the live HNG-X domain. Each
+file of reference data received into RDMC is delivered to achieve a particular business objective and
+needs to be associated with the business change identifier for that objective. This application supports
+the definition of business changes, the association of reference data files with the business change and
+the release of the business change through a number of verification steps through to the live domain.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 46 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+Customer Services manage the release of reference data to the HNG-X domain. The reference data
+release management process firstly enables data files loaded into the RDMC to be associated with a
+business change request and secondly allows all supporting reference data to be released in a controlled
+fashion.
+
+2.4.4.4 Data Loading
+
+The data loading application supports the uploading of reference data files to the RDMC Unix platform,
+via a networked file share, and then running the standard RDMC batch loading process to load the files
+to RDMC. It is used only for reference data files which are delivered by RDT, i.e. Other Reference Data
+and Type B reference data.
+
+2.4.4.5 Reporting
+
+The reporting application enables the production of reference data reports by business change. The
+report process identifies the differences between the RDMC reference data prior to the change and the
+reference data after application of the change. The report output is in Excel spreadsheet format. Access
+to the generated reports is via a networked file share.
+
+2.4.4.6 Other Capabilities
+
+The RDMC work station has been adopted over the years to support non-reference data services such
+as maintenance of APS client requirements and message submission. Theses requirements continue to
+be supported. In addition, the RDMC work station plays a key part in supporting specific RDT
+requirements such as being the main gateway between the live data centre systems and the RDT
+environments.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 47 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.5 Reference Data Distribution to Counters
+
+2.5.1. Reference Data Inventory and Packages
+
+When a business change is released through reference data then that change may involve introduction
+of a new baseline and / or delta for a number of the reference data delivery types. This creates a
+relationship between the generated versions of the reference data delivery types in that they must all be
+present to guarantee that the business change is fully supported. The relationship is maintained by the
+concept of reference data packages — a reference data package is the full set of reference data delivery
+types that support the business changes released at a specific point. The concept of reference data
+packages applies to only two of the delivery types: - Common Reference Data and Branch Specific Data.
+It does not apply to Bureau Spot Rates and Margin Rates as this data is delivered separately by First
+Rate and becomes effective immediately on receipt. Reference Data Files (Non-XML) contains a set of
+independent deliverables from a delivery viewpoint.
+
+The outline data model for reference data delivery is shown below:
+
+RD Package_Type RD Package
+
+Package_Version**
+Package_Type*
+-—_—_—_ I Creation_Date
+Required_Delivery_Date
+Immediate_Date
+Priority_Date
+
+. Expiry Date
+
+Lo
+
+Package_Type
+
+RD Package Content
+RD Branch
+Package_Version™* —
+Package_Seq_No** —I Branch_Id
+Delivery Seq_No*
+Branch_Id*
+RD Delivery Type
+Delivery_Type**
+Normal_Delivery_Route
+Baselines_Only
+Package_Type*
+RD Delivery
+Delivery_Seq_No** RD Checksum
+L Delivery_Type*
+File Name Branch_ld**
+File_Type Counter_id
+File_Content File_id
+File_Information Checksum
+Delivery_Route
+
+Figure 17 - Reference Data Inventory and Packages
+
+HNG-X reference data is allocated to six delivery types for the purposes of delivery to counters:
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 48 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+COMMON - Common reference data
+SPOTRATE - Bureau Spot Rate reference data
+MARGINS. - Bureau Margins reference data
+BRANCH - Branch Specific reference data
+OTHER - Type F and Type G Reference Data
+HELP - Counter Help Data
+
+Delivery Types are grouped into Package Types — supporting the dependent relationships between
+Delivery Types. There are five Package Types:-
+
+MAIN
+SPOTRATES
+MARGINS
+OTHER
+HELP
+
+Package Types map to Delivery Types as follows:-
+
+Package Type Delivery Type
+
+MAIN COMMON
+BRANCH
+
+SPOTRATES SPOTRATES
+
+MARGINS MARGINS
+
+OTHER OTHER
+
+HELP HELP.
+
+The Package table defines each reference data package which is to be delivered to the counters.
+The Package Content table defines the content of each reference data package.
+The Delivery table defines each reference data deliverable.
+
+The data model enables RDDS to maintain a reference data inventory of deliverables and their
+association to reference data packages.
+
+Expiry date is the date on which the package content can no longer be used at the counters. Superseded
+packages are expired a number of days (metadata setting) after a replacement package is delivered.
+
+Immediate date is also the date that the package should be applied by. It is normally set to the package
+creation date and time so the reference data package will be implemented at the counters at the end of
+the current customer session. However, for spot rate packages it is set to 30 minutes after the package
+creation date and time so as to guarantee that all counters implement the package at the same time.
+
+This RDDS inventory is shared with the Branch Database and is used by counter applications to verify
+their reference data status. The inventory within the Branch database is treated as the master database
+by all the counter processes which manage the download of reference data.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 49 of 72
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+WITN11070105
+WITN11070105
+
+2.5.2 Reference Data Flows to Counters
+The diagram below shows the reference data flow to counters at HNG-X.
+
+RDDS Database
+
+Inventory
+
+Reference Data
+Baselines & Deltas
+
+Branch
+Database
+
+Inventory
+Check
+< Reference Data
+ines & Deltas
+
+Reference Data
+Baselines & Deltas
+
+Counters
+
+Pull Requests
+
+Baselines & Deltas
+
+Reference Data
+
+System
+Management
+
+Figure 78 —- HNG-X Reference Data Flows to Counters
+
+Reference data can be delivered to counters either via the Branch Database or via SYSMAN (System
+Management). The delivery architecture is based on the assumption that both delivery paths will see the
+
+reference data purely as files and will require no awareness of the file contents
+
+The RDDS reference data deliverables to counters consist of six reference data delivery types:
+
+* Common Reference Data
+
+e Branch Specific Reference Data
+
+e Bureau Spot Rates Reference Data
+
+e Bureau Margins Reference Data
+
+e Other Reference Data (Type F and Type G)
+e Help Data
+
+RDDS is configured to define the delivery path to be followed for each reference data delivery type. The
+normal configuration is that the following reference data delivery types are delivered via SYSMAN:
+
+* Common Reference Data Baselines
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref:
+CONFIDENCE Version:
+Uncontrolled if Printed or Distributed Date:
+
+Page No:
+
+ARC/APP/ARC/0001
+3.0
+
+23-Aug-2011
+
+50 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+e Help Data
+and that the following reference data delivery types are delivered via the Branch Database:
+* Common Reference Data Deltas
+e Branch Specific Reference Data
+e Bureau Spot Rates Reference Data
+e Bureau Margins Reference Data
+e Other Reference Data (Type F and Type G)
+
+This is a soft configuration that is defined through RDDS metadata. Certain test environments may not
+include SYSMAN so the configuration will be set to deliver all reference data via the Branch Database.
+
+Various situations may arise in the live HNG-X system where reference data will be required to be
+delivered to counters urgently. Examples are
+
+e Accounter has been switched off overnight and, on powering up and a user logging on, the
+reference data is found to be out of date and an urgent update is required
+
+e At start of day, the reference data at the counters is incorrect and is leading to a significant
+processing problem
+
+To support these situations, the following additional features are provided:
+
+e Anupdate can be made to the reference data in RDMC and the data released to RDDS. An
+emergency RDDS processing schedule then generates new reference data files and delivers this
+data to System Management or the Branch Database. The reference data inventory in the
+Branch Database is also updated with the delivery being marked as priority.
+
+« When a counter is unable to trade because of out-of-date reference data it may send a priority
+‘pull’ request to System Management to request a reference data update. System Management
+must respond to this priority message and deliver the reference data as quickly as possible.
+
+RDDS delivers reference data files and inventory updates to the Branch Database by invoking a Branch
+Database reference data delivery service. The reference data file details contains information which is
+used at the counters to process the file. For example, it will define which baseline a delta is to be applied
+to, it will define the baseline that is generated by applying the delta and it will define the checksum
+validation required by the counter to confirm that the generated baseline content is correct and has not
+been corrupted in any way. The interface is defined is defined in HNG-X RDDS to Branch Database —
+Counter Reference Data and Memo Submission Interface Specification (DES/APP/IFS/0002).
+
+System Management accesses the RDDS database to identify and copy the reference data files which
+are to be delivered through System Management. The interface is defined in HNG-X RDDS to System
+Management - Counter Reference Data Delivery Interface Specification (DES/APP/IFS/0003).
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 51 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+oo
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.5.3. Reference Data Download to Counters
+
+2.5.3.1. Main Reference Data Download (Reference Data Manager)
+
+HNG-X Counter
+
+Branch Database
+
+Counter Inver
+
+Status Repo
+Outstanding Deli
+«Delivery Reaugst__I Reference
+Delivery Downlobd Data
+Package Confimation Download
+Working Day Set Checksum.
+Log On ChecksumICheck
+System Management
+Delivery Delivery y
+Request Download
+Delivery Request
+System Delivery Download
+Agent Unrequested Delivery
+
+Cache Cache
+Retrieval Storage
+iene Do]
+Cache
+
+Figure 19 - HNG-X Main Reference Data Download
+
+A reference data manager application forms part of the HNG-X counter application. This application is
+responsible for responding to all requests for reference data by other counter applications and also for
+ensuring that up-to-date reference data is in place to support these applications. The reference data
+manager is described in HNG-X Counter Applications: Reference data Sub System High Level design
+(DES/APP/HLD/0045).
+
+Two branch access layer services support the reference data manager in downloading reference data
+from the Branch Database:-
+
+e A status query service which runs every 20 minutes (controlled by parameter) which checks the
+Branch database as to whether any reference data downloads are outstanding and, if so, returns
+a list of deliverable identifiers and the delivery route (Branch Database or System Management)
+
+« A file download service which retrieves a reference data file from the Branch database and
+downloads it to the counter.
+
+Asimilar download service supports delivery of reference data files from System Management. The
+reference data manager interacts with a System Management agent process at the counter. This agent
+requests reference data file from System Management and delivers them to the reference data
+management. The agent supports both priority and standard delivery. Priority delivery is requested when
+the reference data file is essential for the counter to trade and results in a near immediate System
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 52 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+Management response. Standard delivery will result in System Management adding the file to its next
+scheduled delivery.
+
+It is important that currency spot rates, used on different counters within a branch and displayed on the
+branch rates board, are kept in step. To support this requirement, the spot rates reference data will be
+delivered with a delayed immediate date which is a few minutes greater than the frequency of the
+counter polling for new reference data.
+
+2.5.3.2 Counter Recording of Reference Data Versions Used
+
+Each time reference data package is implemented at a counter the counter invokes a branch access
+layer service which records the date and time of the package implementation within the Branch
+database.
+
+In addition, reference data package versions will also be included in transaction details written to the
+Branch Database to support SLA measurement and general traceability.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 53 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.6 Reference Data at Counters
+
+2.6.1 Processing of Reference Data Files
+
+Each reference data file is downloaded to the counter either from the Branch Database or through
+System Management. File details within the Branch Database inventory, provides information on:
+
+«The location where the file is placed
+« Whether the file is a baseline or delta
+e Whether the file is downloaded from the Branch Database or from System Management
+
+e If the file is a delta, the baseline version that the delta is to be applied to, the baseline version
+that is to be generated, and the CRC verification required on the generated baseline.
+
+Should a delta update to a baseline fail the counter will request a new baseline. The counter will maintain
+a current baseline file for each of the following delivery types:
+
+* Common Reference Data
+
+« Branch Reference Data
+
+e Bureau Spot Rate
+
+e Bureau Margins
+
+e All Other Reference data Files (Type F and Type G)
+e All Help data files
+
+Reference Data objects are stored in each baseline in ascending object class, object instance and
+effective date order. A delta file is a set of edit instructions which need to be applied to the previous
+baseline so as to generate the new baseline — using a dedicated Diff / Patch concept.
+
+Reference Data Files (Type F) are a set of independent deliverables where the concept of baselines and
+deltas does not apply. Should a file have the same name as an existing file in the same location then it
+will supersede that file.
+
+Help Data baselines are maintained by business area and sub-area with new baselines being applied
+whenever a change takes place to a sub-area.
+
+A set of commands exist to support the downloading of reference data files to counters. These
+commands are define din the HNG-X RDDS High Level Design (DES/APP/HLD/0005).
+
+2.6.2 Generation of Working Reference Data
+
+2.6.2.1 Common Reference Data
+
+The current baseline for Common Reference Data contains both current and future reference data
+changes. Each reference data object is an XML document with an object class, an object instance
+identifier, action and effective date — the counter will generally store and access this reference data
+using these identifiers and dates.
+
+Some Common Reference Data is non-core and its availability is restricted to branches that are enabled
+for the associated non-core functionality — all the non-core reference data objects have a data tag of
+‘ENABLE’ which is set off. Enablement of such reference data is done through receipt of ENABLER
+objects which contain the identifiers of objects that are to be enabled. A further concept of DISABLER
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 54 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+objects is used to disable objects that are enabled by default. These objects will remain enabled unless
+they are disabled by Branch Reference Data. An example of this is transaction mode disablement for a
+product when the ability to transact the product is removed gradually by removing certain transaction
+mode capability.
+
+Reference data objects may also contain embedded rules which define that the object is enabled or
+disabled dependent on whether the rule is true or false. The rule will point to the existence or non-
+existence of another reference data object or a code module.
+
+Stand alone rule objects may also be defined. These support the creation, enablement or disablement of
+other objects based on whether the rule is true or false.
+
+2.6.1.2 Branch Specific Reference Data
+
+The current baseline for Branch Specific Reference Data contains both current and future reference data
+changes. Each reference data object is an XML document with an object class, an object instance
+identifier, action and effective date — the counter will generally store and access this reference data
+using these identifiers and dates.
+
+The branch reference data contains details of which non-core objects are available at each branch. This
+is done by defining ENABLER objects that contain the identifiers of non-core objects to be enabled.
+
+The branch reference data also contains details of objects that are to be disabled when they would
+normally be enabled. This is done by defining DISABLER objects that contain the identifiers of core
+objects to be disabled.
+
+2.6.1.3 Bureau Spot Rate Reference Data
+
+The current baseline for Bureau Spot Rate Reference Data contains current reference data only. Each
+reference data object is an XML document with an object class and an object instance identifier — the
+counter will generally store and access this reference data using these identifiers.
+
+No enablement / disablement rules apply to Bureau Spot Rate reference data.
+
+2.6.1.4 Bureau Margins Reference Data
+
+The current baseline for Bureau Margins Reference Data contains current reference data only. Each
+reference data object is an XML document with an object class and an object instance identifier -— the
+counter will generally store and access this reference data using these identifiers.
+
+No enablement / disablement rules apply to Bureau Margins reference data.
+
+2.6.1.5 Other Reference Data Files (Type F)
+
+Other reference data files do not have effective dates so, where effective date control is required over
+their usage, this must be done through changing the Common reference data objects which reference
+them.
+
+2.6.1.6 Help Data
+
+Help data is implemented at the counters by business area so as to ensure consistency across help links
+within an area. This is achieved by RDDS generating all help data for a business area within the same
+package and the counter implementing the complete package rather than individual files.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 55 of 72
+WITN11070105
+WITN11070105
+
+fe) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.7 Reference Data Proving / Verification
+
+2.7.1 HNG-X RDT Environment
+
+The HNG-X RDT environment is managed and operated by RDT and is used by both RDT and the Post
+Office reference data team at Bracknell to verify business change through reference data.
+
+The RDT architecture has the following properties:
+
+« There are four separate RDT environments. They are all linked to the live RDMC instance.
+RDMC supports the concept of releasing reference data change to different verification
+environments with each environment representing a step in the overall validation / verification
+process. Reference data is progressively released to each environment in turn, although some
+changes are fast tracked straight to Live. Each RDT environment is configured as shown below.
+
+RDT Environment
+
+=
+
+RDMC
+WorkStation Branch Database
+
+APS Database
+
+Release
+
+Management
+al ;
+
+BAL
+Services
+
+RDDS Database
+
+Live HNG-X “ a t
+
+YAOH>CCEMm
+
+Counters
+APOP Database
+
+Figure 20 - HNG-X RDT Environment
+
+« The RDMC workstation provides the interface for releasing reference data based on business
+changes and individual file change identifiers.
+
+¢ The environment contains RDT database instances of the RDDS database, Branch Database,
+APOP Database and APS Database
+
+e Each RDT environment has a number of counters attached to it to support validation /
+
+verification
+© Copyright Fujitsu Services Ltd 2011 FUJITSU RESTRICTED - COMMERCIAL IN _ Ref. ARCIAPPIARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 56 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+e Counters are configured to operate a number of weeks in the future so that temporal reference
+data becomes effective in advance of its true date.
+
+e Counter service emulation is required for some external services.
+
+e Each environment is configured to have about 10 test branches with branches generally
+configured to have all non-core products available. Details of test branches are not known to
+POL RDS.
+
+e Each environment runs a cut down version of the Live processing schedules
+
+*® The RDT environments only have sufficient infrastructure to support the reference data
+validation / verification process and APS CTO activities. In particular, the environments are not
+system managed.
+
+e AsRDT is not system managed all reference data is configured within the RDDS database
+instances to be delivered through Branch Database.
+
+In all, there are four RDT verification environments:
+
+e RDDT: This is the initial RDT validation environment where primary checks are made to confirm
+that all reference data is in place to validate / verify the change. This environment does not
+contain an APS database.
+
+« RDDIV: This is the main RDT validation / verification environment
+« RDDOV: This is the POL Reference Data Team verification environment.
+
+e RDDPL: This is a pseudo live environment where the delivered reference data is the same as on
+Live.
+
+Further details on the RDT environments are contained in HNG-X RDT Platform Guidelines
+(DEV/APP/WKI/0014).
+
+The RDMC work station also supports a number of tools which have been developed by the RDT team
+to assist them in their day to day reference data verification activities.
+
+A number of other counters / PCs exist within RDT to support activities such as
+e AP automated transaction verification
+« AP client take verification
+e AP harvesting
+e Template development
+
+e Postal services development
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: .
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 57 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.7.2. Access Control
+
+Access from the RDT environment is controlled through a number of firewalls as shown in the following
+diagram:-
+
+Corporate Network
+
+LW LW Var I RDT Environment
+
+uy PC RDT PC aN PC or — ' , 7 4
+—
+— RDT Counter RDT Counter RDT Counter
+
+Firewall — Fz y_
+RDMC
+Firewall WorkStation
+APS:
+Database
+APS
+Database
+RDDS: APOP
+RDDS
+. Database
+Live
+Environm * RDMC Firewall
+Database
+ent
+
+Figure 21 -RDT Access Control
+
+RDMC workstations requires access to
+1. The corporate network so as to pull reference data files from PCs within the RDT area.
+
+2. The Live Environment so as to perform the main workstation processing activities both on the
+RDMC database and on the APS database. It also requires read access to the RDDS database.
+
+3. The RDT databases - APS, RDDS, APOP and the Branch database
+RDT counters (located at Bracknell) require access to the RDT databases.
+
+The RDDS databases within the RDT environment require access to the Live RDMC to pull released
+reference data.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 58 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+fee)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+2.8 Memo Submission
+
+Memo submission supports the POL requirement to deliver operational messages from the centre to
+branches — either to the whole branch estate or to specific branches. This requirement was supported
+under Horizon within the RDMC system and much of the same host solution is carried forward into HNG-
+x.
+
+RDMC Environment
+Reference
+Memo ‘4 Data Views
+Submission I<» ae I _
+1 1 RDMC Database
+Application RDMC >
+
+WorkStation
+
+Storage A
+
+Memo Memos
+Monitor
+
+RDDS Environment
+
+Memo Submission
+Monitor
+
+Memo Status
+
+RDDS Database
+
+Memos
+
+Branch Database
+
+Figure 22 - Memo Submission
+Memo Submission is seen as a separate system which, for historical reasons, runs on the RDMC
+environment; it has direct access to RDMC reference data views and stores Memo Submission data
+within the RDMC database. Because Memo Submission is seen as a separate system, all references to it
+in this document other than in this section, treats it in the same way as it treats all other systems that
+RDMC or RDDS interface with. If Memo Submission were to be removed from within RDMC and
+relocated, there would be no change to this document other than to this section.
+
+A Memo Submission application runs on the RDMC WorkStation and supports entry of memos for
+transmission to targeted branches and user roles. The entered memo data is stored in the RDMC.
+database. A Memo Submission Monitor application runs on the RDDS database, has database to
+database links to the memo submission data in RDMC, and monitors for receipt of new memos within
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 59 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+RDMC. On identification of a new memo, the application invokes a Branch Database memo submission
+interface application, which transfers the memo details from the RDMC database to the Branch
+Database. Functionality at the counter polls regularly for the existence of new memos in the Branch
+Database
+
+The Memo Submission application is unchanged from Horizon in the facilities that it offers; specifically it
+restricts the content of the message to exclude active or scripted code within the Memo Submission data
+and does not allow attachments to the Memo.
+
+The Memo Submission application, the RDMC system, the Branch Database and the counter and their
+dependent systems or services are only usable by authorised users from within the HNG-X environment.
+
+2.9 Service Level Targets
+
+The HNG-X counter reference data distribution system maintains version control of reference data
+deliverables so that a consistent version of reference data is used at each counter position. The
+counter will always operate using a complete set of the deliverables for a reference data package.
+
+Each reference data package has an associated ‘Required Delivery Date’ —- see section 2.5.1
+Reference Data Inventory and Packages. This is always set to the day after the set of operational
+business changes, contained in the package, have been released to Live. This data is stored in the
+Branch database and is harvested as the SLA request message.
+
+When a counter implements a reference data package the implementation date and time is written
+to the Branch Database. This is harvested as the SLA acknowledgement message.
+
+Each package contains both currently active and future dated reference data. This means that future
+dated changes are distributed to counters in advance of the effective date. The reference data
+package also contains any previously released reference data that is still active. Each reference data
+package contains one or more file deliverables. As each new Reference Data Package Version is
+created, the HNG-X reference data distribution system automatically allocates an appropriate expiry
+date for earlier reference data package versions.
+
+The counter regularly polls the Branch Database to check for outstanding reference data. Where a
+current reference data package is expired the counter will not be able to trade until an up-to-date
+package is downloaded.
+
+Reference data must be delivered to counters within the agreed service level targets as set out in
+the service description for the Reference Data Management Service — see Reference Data Service
+Management: Service Description (SVM/SDM/SD/0013). This specifies the percentage of counters
+that have received the correct version of the reference data by the start of Post Office Core Day on
+the days following the Agreed Release Date. Agreed Release Date is Required Delivery Date within
+the reference data package definition. Specific targets are set for days B, C, D and J varying from
+96% to 100%.
+
+The service level target reports for HNG-X counters reference data delivery will be HNG-X counters
+only and will not include details on reference data delivery to Horizon counters.
+
+2.10 Scheduling
+
+The reference data schedules are defined in HNG-X Host Reference Data Scheduling High Level Design
+(DES/APP/HLD/0097).
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 60 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+3 = =Platforms
+
+3.1. RDMC / RDDS Databases
+
+This is the existing Horizon RDMC and RDDS Databases migrated to HNG-X. They are to be based on
+an Oracle 10g database in a UNIX environment on a Solaris platform.
+
+3.2. RDMC Workstation
+
+This is the existing Horizon RDMC workstation platform. It is updated to Windows XP platform and to the
+latest versions of Microsoft Office products (Microsoft Access and Excel). The upgraded platform
+continues to support all other existing Customer Services tooling which is located on the workstation.
+The RDMC workstation platform also hosts the APS workstation and the Memo Submission entry
+application.
+
+3.3. RDT Environments
+
+Each of the four RDT environments is upgraded to include an instance of the Branch Database, Branch
+Access Layer and client service emulation.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 61 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+4 Networks
+
+4.1 Source Reference Data to RDMC
+
+4.1.1 POL Type A Reference Data & Help Data
+
+Delivery of Type A reference data and Help data is supported by an FTMS link between the POL
+environment and the RDMC environment
+
+4.1.2 Bureau Reference Data
+
+Delivery of Bureau reference data is supported by an FTMS link between the POL environment and the
+RDMC environment
+
+4.1.3. Customer Service Supplied Reference Data
+
+Delivery of reference data by Customer Service RDT staff continues to be done via the RDMC
+workstation as per Horizon
+
+4.2 Provision of Reference Data to Other Systems
+
+4.2.1. Database Links
+
+Access to RDMC by RDDS so as to replicate released reference data is supported by granting RDDS
+permission to access the required reference data within RDMC via database to database links.
+
+Access to RDMC by the Memo Submission and SYSMAN systems is supported by granting these
+systems permission to access the required reference data within RDMC via database to database links.
+
+Access to RDDS by the TPS, LFS, MTAS, APS, DRS, APOP, TES and Branch Database systems is
+supported by granting these systems permission to access the required reference data within RDDS via
+database to database links.
+
+4.2.2 Data Warehouse
+
+Delivery of reference data to Data Warehouse involves RDDS creating files in a Data Warehouse share
+and Data Warehouse copying these files to its own environment.
+
+4.2.3 Help Desk (Dispatch 1)
+
+Delivery of reference data to the Help Desk involves RDMC creating files in a Dispatch 1 share the
+RDDS environment and Dispatch 1 copying these files to its own environment.
+
+4.3 Delivery of Reference Data to Counters
+
+4.3.1 Branch Database Route
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 62 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+RDDS uses database to database links to support delivery of counter reference data files to the Branch
+database. Files are stored within database tables on the Branch Database. A counter Reference Data
+Manager application then accesses the Branch Database and copies required reference data files down
+to the counter.
+
+4.3.2 System Management Route
+
+RDDS uses database to database links to support delivery of counter reference data files to the System
+Management. System Management accesses the RDDS database and ‘pulls’ reference data files which
+are to be delivered to counters via the System Management route.
+
+4.4 RDT Requirements
+
+RDT staff require full access to all platforms in all of the RDT environments. In addition, a data
+exchange proxy capability is required to support transfer of reference data from the RDT corporate
+domain to the live environment and transfer of reports from the live environment to the RDT corporate
+domain.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 63 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+5 Manageability
+
+All components can produce diagnostic trace and other output such as diagnostic events. Both Data
+Centres will contain all the appropriate management systems to allow for the management of all storage
+platforms from either Data Centre.
+
+All the batch applications will have Host Support Guides which will include details of the schedule and
+action to be taken in the event of stops, e.g. which modules can be re-run, what to do in the event of late
+arrival of data etc.
+
+All of the batch applications have jobs which are controlled by the Tivoli Workload Scheduler. The
+schedule documents for all of these are specified in the HLD for the relevant system.
+
+The RDMC and RDDS databases will be managed within the monitoring framework described in
+ARC/SYM/ARC/0003.
+
+The manageability conformance required will include:
+« Documenting the use of SYSLOG and or diagnostic logs
+
+e Documenting recommendations for forwarding of any information in these logs to the Enterprise
+management system and the subsequent operational action required.
+
+« Documenting the use of the Oracle Enterprise Manager (OEM) Grid Control with the diagnostics
+pack.
+
+e Documenting recommendations for forwarding of any alerts from the OEM to the Enterprise
+management system and the subsequent operational action required.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+PageNo: 64 of 72
+WITN11070105
+WITN11070105
+
+fe) HNG-X Architecture - Reference Data
+FUJITSU FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+6 Security
+
+All host systems will run in the DMZ in the Data Centre. All Batch Host Applications should conform to
+HNG-X Host Applications Database Design and Interface Standards (ARC/PPS/ARC/0001).
+
+6.1 Application
+
+Applications using the Batch Applications Databases connect using an Oracle user configured with the
+minimum privileges necessary to function. Refer to HNG-X Host Applications Database Design and
+Interface Standards (DES/GEN/STD/0001) for more details. Oracle database connectivity and access
+control will be through defined Oracle Users and the Roles granted to those Users would only be those
+that are necessary to run the application.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 65 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+7 Recovery and Resilience
+
+Data for all the host database systems will be replicated via a synchronous link to the second Data
+Centre. This guarantees that no transactions will be lost. Failover will be manually controlled on servers.
+There will be a standby Solaris server at each site that can take over in the event of a failure of the
+Solaris host. Failover to the DR failover site is an all or nothing operation. All the requisite software will
+be in place at the failover site and in the event of failover, Oracle instances for each of the host servers
+will be brought up at the failover site.
+
+Both Data Centres will contain all the appropriate management systems to allow for the management of
+all storage platforms from either Data Centre.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 66 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+8 Performance
+
+The key performance area is the distribution of reference data to counters.
+
+The main issues with Horizon reference data performance were caused by complex relationships
+between source entities and counter object structures causing multiplying factors to be applied in
+determining the impacted counter objects and a consequential large increase in the number of objects
+deemed to have been affected by the data change. This is being overcome by simplifying the
+relationship between source entities and target objects and also by generating deltas which contain only
+changed objects. In addition, all reference data objects will contain an effective date and action indicator
+as against a start and end date as was used on Horizon. Use of start and end date meant that two
+versions of an object always needed to change when a business change was applied whereas use of
+effective date only means a new object version is created but no existing objects are affected.
+
+The above factors reduce the volume of reference data to be distributed to counters as compared to
+Horizon.
+
+All reference data files are compressed for delivery to counters. Data volumes are estimated as follows:-
+
+Delivery Type Baseline Size Delta Size
+Common 2.5 MB 0.2 MB
+Branch 0.1 MB =
+
+Spot Rate 0.1 MB -
+Margins 0.2 MB 0.05 MB
+Other 2MB -
+
+Help 100 MB 5 MB
+
+Help data volumes are the obvious problem. As help data is not essential for counters to trade, delivery
+of help data is being removed from the normal counter ‘pull’ processes and, instead, being supported by
+introduction of dedicated System Management data delivery schedules which will utilise low network
+usage times such as weekend.
+
+The normal delivery of reference data to counters will occur overnight when the overall HNG-X system is
+relatively quite. However, should counters be switched off overnight, they will require to have their
+reference data downloaded during the main working day. System management will control in-day
+downloading of reference data and, where necessary, will restrict it so that it does not have any
+significant impact on the overall HNG-X service.
+
+RDMC Batch processing is always comparatively low volumes and should never cause wider
+performance issues.
+
+The main RDDS Batch schedules are the nightly data extract processes which prepare reference ready
+for delivery to counters. This runs about 20:00 each evening and is expected to complete by 22:00
+normally. The main performance areas on Horizon have been the subsequent agent loader processes
+which have been known to overrun into the next day schedule when a particularly high volume of
+reference data is being delivered. These processes disappear with HNG-X and are replaced by RDDS
+processes which generate reference data files for delivery by SYSMAN or via the Branch Database.
+Here, instances of high levels of change to branch specific reference data is an area where processing
+performance should be monitored. This could involve RDDS having to generate up to 12,000 files and
+then writing the file contents to the Branch Database. However, initial views are that this should not
+cause any problems.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 67 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+Downloading and processing of reference data files at the counters is done as a background activity
+which is designed to have minimal impact on the main counter processing. The main consideration at
+the counter is generation of the ‘working day reference data set’ which contains both the common
+reference data and the branch specific data. Once that data has been processed in background, the
+counter converts to using it via a simple switch mechanism. Downloading of spot rates and margins are
+very low volume. Counter switch over to using new reference data files (Type F, Type G and Help data)
+happens only on counter start-up.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 68 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+9 Migration
+
+RDMC and RDDS are host database applications which run under Solaris in the Horizon system.
+Migration from the two current Horizon data centres at Wigan and Bootle to the two new data centres at
+IRE11 and IRE19 will involve:-
+
+« Copying the databases from the old to the new data centre platform
+
+« Migrating the databases to Oracle 10g
+
+e Upgrading the databases to HNG-X software levels
+
+e Maintaining both the old and new versions of the databases in line using SharePlex capabilities
+* Continuing to run the RDMC and RDDS schedule at the old data centres until ‘Weekend B’
+
+e At ‘Weekend B’, switching of the Horizon schedule and switching on the HNG-X schedule
+
+9.1 Data Migration
+
+9.1.1 Common Feeds
+
+Type A Reference Data is supplied by Post Office Ltd. It is transmitted electronically via an automated
+interface from the Post Office RDS system. It is loaded automatically into the Fujitsu Services RDMC
+system, before being automatically distributed to the branches. Because Horizon and HNG-X branches
+will run in parallel for a period during the migration, the existing Reference Data feed from Post Office
+Ltd will be used for both Horizon and HNG-X branches. The format of the data is already conformant
+with the RDS AIS document, and will not need to change for HNG-X.
+
+Mappings of Products to Accounting Nodes are managed by Post Office Ltd using the Type A
+interface (see above). Fujitsu Services create new Accounting Nodes as requested by Post Office
+Limited. The same data will be used to drive both Horizon and HNG-X, hence only a single source of
+data is required in the branch migration period.
+
+APOP Service Definitions are specific to APOP host, and so the same data will be used for both
+Horizon and HNG-X. Post Office Ltd is responsible for producing this data.
+
+Bureau Spot Rates and Margins Files are received from FRTS and will be automatically distributed to
+both systems during branch migration.
+
+9.1.2 Dual Feeds
+
+All other types of Reference Data will need to be supplied as separate dual feeds to support both Horizon
+and HNG-X:
+
+Postal Services Reference Data will need to be supplied separately from the Mails Reference Data
+used by Horizon branches. The new Reference Data feeds for these Postal Services data will use new
+interfaces into HNG-X specific systems, which will be defined in the detailed design. Post Office Ltd will
+manage this data and are responsible for providing dual feeds.
+
+Reference Data for Smart Post Admin and T&T is relatively static. It is managed by Fujitsu Services
+for Horizon, with direction from Post Office Ltd. Equivalent data for HNG-X will be generated and any
+changes will need to be maintained in parallel in both data sets. .
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 69 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+Menu Hierarchy and Associated Attributes data will differ between Horizon and HNG-X. Horizon data
+is managed by Fujitsu Services with direction from Post Office Ltd. A new data format will be defined by
+Fujitsu for HNG-X, and a dual feed will be required. Fujitsu Services will maintain both data feeds with
+direction from Post Office Ltd during the branch migration period.
+
+Sales Prompts are supplied by Post Office Ltd using the Type A interface, however due to the
+potentially different menu structure format for HNG-X, it may be necessary for Post Office Ltd to supply
+some of the sales prompt Reference Data separately for Horizon and HNG-X.
+
+Bureau Currency Services Reference Data is maintained by Fujitsu Services under direction from Post
+Office Ltd. The data change relatively infrequently — only when new currencies are introduced or old
+ones are removed. The distribution format will be different between Horizon and HNG-X, and a dual
+feed will be required. Fujitsu Services will maintain both data feeds with direction from Post Office Ltd
+during the branch migration period.
+
+Client Specific System and Receipt Text Messages data is maintained by Fujitsu Services under
+direction from Post Office Ltd. The distribution format will be different between Horizon and HNG-X, and
+a dual feed will be required. Fujitsu Services will maintain both data feeds with direction from Post
+Office Ltd during the branch migration period.
+
+PIN Pad Reference Data is maintained by Fujitsu Services with direction from Post Office Ltd. The
+distribution format will be different between Horizon and HNG-X, however Fujitsu will modify the PIN
+Pad Reference Data editing tool to generate both formats, so that both forms can be generated from a
+single source. Fujitsu Services will maintain both data feeds with direction from Post Office Ltd during
+the branch migration period.
+
+XSL Templates define the customised receipt templates for use in bespoke transaction receipts. This
+data will be significantly different between Horizon and HNG-X, and dual feeds of this data will be
+needed for changes during the branch migration period. Fujitsu Services is responsible for this data.
+
+Soft Launch data is application-specific and provides the enabling mechanism for Soft Launch. This
+category does not include the associated Non-Core Trigger Product Reference Data which is delivered
+through the type A interface (see above). Fujitsu Services is responsible for this data.
+
+Application Specific Reference Data will be significantly different between Horizon and HNG-X. Fujitsu
+Services is responsible for this data.
+
+The Help Content for Horizon and HNG-X are separate deliverables from Post Office. They are both
+delivered to RDMC and are delivered to counters via different delivery processes.
+
+Stack Icon Mappings apply specifically to Horizon at this stage.
+
+Estate Management defines the branch status within the Horizon and HNG-X estate. Dual feeds of this
+data are seen as being required during the migration period with the HNG-X feed being an automated
+transfer of data from the Branch database.
+
+Transaction Scripts are required as separate feeds to Horizon and HNG-X.
+
+9.1.3 Delivery of Reference Data Back to POL RDS
+
+RDT deliver regular updates of the menu hierarchy reference data to POL to support the mapping of
+sales and transaction prompts. Following migration to HNG-X, this requirement will disappear as POL
+already have details of HNG-X menus available to them.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 70 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+2
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+9.2 HNG-X Rollout and Horizon Rollback
+
+As HNG-X rolls out to Post Office branches there will be a corresponding rollback of branches within the
+Horizon system. The reference data system must be notified of both the HNG-X and the Horizon
+activities and it must then control the distribution of branch specific reference data within both systems.
+The migration status of Post Office branches is also likely to be of significance to various existing data
+centre system such as TPS, APS, LFS and Data Warehouse.
+
+HNG-x roll out requires that RDDS generates reference data prior to a branch being migrated to HNG-X.
+Horizon rollback requires that branches are rolled out of RDDS at the same time as they are removed
+from the Horizon Agent distribution layer.
+
+9.3. RDMC Work Station
+
+The RDMC work station is migrated to Windows XP for HNG-X.
+
+9.4 RDT System
+
+Under Horizon, the main RDT system is located up at BRAO1 with the disaster recovery system located
+at Lewes. The objective is that both systems will be relocated at Belfast by the time HNG-X is
+introduced with the exception of legacy platforms (agents and correspondence servers) which will remain
+at Bracknell and Lewes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 71 of 72
+WITN11070105
+WITN11070105
+
+HNG-X Architecture - Reference Data
+
+Fe)
+FUJITSU
+
+FUJITSU RESTRICTED - COMMERCIAL IN CONFIDENCE
+
+10 Testing and validation
+
+Testing and validation of reference data involves two main activities:
+
+1. Testing and validation of the reference data processes which receive and distribute reference
+data within HNG-X and confirmation that the HNG-X changes to the reference data systems
+have no regressive impact on the Horizon system. This involves
+
+e Verification of all new RDMC input interfaces
+e Verification of all changes to the RDMC work station
+¢ Verification that business change processing continues to work correctly within RDMC.
+
+e Verification that the reference data release processes continue to work correctly within
+RDMC
+
+e Verification that the distribution of reference data between RDMC and other systems
+continues to work correctly
+
+e Verification that RDDS copies released reference data correctly from RDMC.
+
+e Verification that RDDS does all necessary formatting / enrichment of reference data
+ready for distribution to the HNG-X domain
+
+e Verification that RDDS distributes reference data files correctly to SYSMAN
+
+e Verification that RDDS distributes reference data files and inventory correctly to the
+Branch database
+
+e Verification that RDDS distributes reference data correctly to all other systems
+
+e Verification that the HNG-X counter reference data processes manage the download of
+reference from the Branch Database and SYSMAN to the counter taking account of
+situations such as normal overnight download, Bureau spot rate download, emergency
+reference data download, out of date counter, start up counter etc.
+
+e Verification that the HNG-X counters builds its working set of reference data correctly
+taking account of current and future data, baselines and deltas, branch specific data,
+branch enablement and disablement
+
+e Verification of the end to end Horizon system, in particular, taking account of any areas
+which are changing as a result of the HNG-X migration
+
+2. Verification that the actual HNG-X reference data supports the Post Office business
+requirements. This is likely to mean that tests are required to prove that each individual Post
+Office product (about 4,500) transacts correctly in all its different modes. This is likely to be a
+very onerous activity but POL is likely to insist that it is completed before the first counter
+migration to HNG-X. HNG-X specific reference data preparation is likely to be a drawn out
+activity which will start off in design / development in a prototype form. Once proved, necessary
+documentation will be produced and the responsibility for preparation of the live targeted
+reference data is likely to be a joint design, development and Customer Services RDT activity.
+
+3. Initial testing activities are likely to have to test with sub-sets of the target reference data. If this
+is the case, then it is likely that the onus for defining consistent / complete sub sets will fall on
+the testing teams. In addition, this reference data may need to be prepared and delivered without
+having all supporting reference data systems in place- creating a need to fill processing gaps
+through alternative processes.
+
+‘© Copyright Fujitsu Services Ltd 2017 FUJITSU RESTRICTED - COMMERCIAL IN Ref: ARC/APP/ARC/0001
+CONFIDENCE Version: 3.0
+Uncontrolled if Printed or Distributed Date: 23-Aug-2011
+
+Page No: 72 of 72

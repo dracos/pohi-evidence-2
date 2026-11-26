@@ -1,0 +1,390 @@
+POL00112842
+
+POL00112842
+
+Mr Max Hill QC
+
+Director of Public Prosecutions
+Crown Prosecution Service
+
+9" Floor, Zone A,
+
+102 Petty France,
+
+LONDON
+
+SW1H 9EA
+
+CONFIDENTIAL
+
+Reference to the Director of Public Prosecutions for his consideration
+Evidence of employees of Fujitsu Ltd in court proceedings
+
+Bates and others v Post Office Ltd
+
+Case No: HQ16X01238, HQ17X02637 and HQ17X04248
+
+14 January 2020
+Dear Mr Hill
+
+I write in relation to what I consider to be a serious matter, which I believe merits your
+consideration. On the basis of information that has come to my attention as a result of the Post
+Office group litigation (further explained below) I consider important evidence given both to
+the Crown Court and the High Court on previous occasions in other cases was not true, and
+was known not to be the truth, the whole truth and nothing but the truth, at the time it was
+given.
+
+Introduction
+
+T have been, since 2017, the Managing Judge in High Court group litigation which has been
+proceeding in the Queen’s Bench Division. These proceedings commenced in 2016 and were
+brought by a group of approximately 580 sub-postmasters and sub-postmistresses (“SPMs”)
+against the Post Office in relation to the Horizon computer system. Horizon was introduced
+by the Post Office in 2000 as a computerised point of sale and accounting system, to be used
+by SPMs in the operation of their branch Post Offices. Horizon was developed and operated
+by Fujitsu Ltd on behalf of the Post Office. It became Horizon Online in 2010, but the basic
+functionality of the system was the same. In the litigation, Horizon between 2000 and 2010
+was called Legacy Horizon, and from 2010 onwards was called Horizon Online.
+
+From about 2001 onwards, a small number of SPMs reported discrepancies and shortfalls in
+their branch accounts which they considered were caused by faults in Horizon. The Post
+Office asserted that the shortfalls were caused by dishonesty — and sometimes carelessness —
+on the part of the individual SPMs. Many SPMs had their engagements with the Post Office
+suspended and terminated. Some were convicted of criminal offences, and others pleaded
+guilty to offences, such as fraud, false accounting and theft. All were pursued by the Post
+Office for the shortfalls in question, and the total amount of such losses by the claimants in the
+group litigation was approximately £18 million.
+POL00112842
+
+POL00112842
+
+Throughout the period (and indeed until about 2019) the Post Office asserted that there was
+nothing wrong with the Horizon system. Prior to the group litigation, expert evidence was
+given to the Crown Court by Fujitsu witnesses, and also to the High Court in at least one case,
+that there were no widespread or any bugs, errors or defects in Horizon. The convictions of a
+number of SPMs are currently before the Criminal Cases Review Commission pending
+consideration of my judgments.
+
+I conducted the group litigation as Managing Judge and have handed down six judgments.
+These are all called Alan Bates and others v Post Office Ltd. The bailii references for the
+relevant ones are given below. The most important ones are (No.3) Common Issues and
+(No.6) Horizon Issues. The Common Issues judgment deals with the contractual relationship
+between the parties, although in doing so it considers in detail the experiences of six different
+claimants. The Horizon Issues judgment deals with the technical computer issues, and makes
+findings in respect of the existence of approximately 30 different bugs, errors and defects
+within Horizon during the period 2000 to 2018.
+
+Bates & Ors v Post Office Ltd (No.2) [2018] EWHC 2698 (QB) (17 October 2018)
+Bates & Ors v Post Office Ltd (No.3) Common Issues [2019] EWHC 606 (QB) (15
+March 2019)
+
+Bates & Ors v Post Office Ltd (No 4) [2019] EWHC 871 (QB) (09 April 2019)
+
+Bates & Ors v Post Office Ltd (No.5) [2019] EWHC 1373 (QB) (07 June 2019)
+Bates & Ors v the Post Office Ltd (No 6) Horizon Issues [2019] EWHC 3408 (QB)
+(16 December 2019)
+
+The draft of judgment (No.6) on the Horizon Issues was distributed by me to the parties on 28
+November 2019. The group litigation was settled by the Post Office on 12 December 2019 by
+a payment of £58.5 million to the claimants. Judgment No.6 was handed down by me on 16
+December 2019 and I made a Tomlin Order on the same occasion imposing a stay on the
+group litigation. I also announced that I would be referring this matter to the Director of
+Public Prosecutions.
+
+The reason for the reference to you is because the documents available on disclosure and
+deployed in the Horizon Issues trial clearly show that Fujitsu knew about the existence of
+bugs, errors and defects in Horizon from a very early stage in the life of the system. Appendix
+2 to Judgment (No.6) shows that the earliest bugs occurred and were known about in 1999,
+and these continued throughout the period every year to 2018. The total number of different
+bugs, errors and defects that I found to have existed over the period 2000 to 2018 is 28. The
+two Fujitsu personnel in respect of which I write this letter were centrally involved within
+Fujitsu in the Horizon system, and also in giving evidence to the court (both the High Court
+and the Crown Court) on previous occasions in other cases.
+
+Documents and bugs
+
+The most relevant types of documents used within Fujitsu for reporting, investigation and
+analysis of bugs, errors and defects are called PEAKs and KELs. KEL stands for Known Error
+Logs. They are documents at a higher level than PEAKs. If a SPM phoned the Helpline and
+was directed to a department within Fujitsu called the SSC (run by software specialists whose
+job was to investigate bugs, errors and defects) then an operator in the SSC would create a
+PEAK. Such a document would then record different entries over a number of days and
+weeks, whilst the incident was investigated and eventually resolved in some way. The
+POL00112842
+POL00112842
+
+narrative in different entries would record the operator’s views. Therefore a number of
+different PEAKs may refer to the same KEL.
+
+There are numerous contemporancous entries by different Fujitsu personnel during the whole
+life of Horizon (both Legacy, and Online) discussing the bugs, errors and defects. Both
+PEAKs and KELs are documents that are highly relevant to the existence of bugs, errors and
+defects in Horizon over the years. Fujitsu sought to keep the relevance of these different types
+of documents from both the claimants and the court in the group litigation, although this
+attempt was unsuccessful. The Known Error Log or KELs was said at an interlocutory
+hearing before me in October 2017 not to be relevant to the existence of bugs, errors and
+defects in Horizon, and the existence of PEAKs at all were only discovered by the claimants’
+IT expert when he inspected the KELs in late 2017. I do not believe that either PEAKs or
+KELs were disclosed in any prior litigation or Crown Court cases other than the group
+litigation.
+
+The group litigation used an electronic trial bundle provided by a service called Opus 2. This
+has the Horizon Issues workspace, which is currently being maintained by the parties until at
+least the end of January 2020. There are nearly 2,000 evidential documents in the F folder in
+the Horizon Issues workspace. Due to the search function that is available, and the cross-
+linking within documents, you or a member of your staff would find it far more useful to
+consider the documents in this electronic workspace than by more traditional paper copies of
+documents. Where I give references below, eg F/1000/1, this is a reference to the document
+using the Opus 2 reference. I intend to request the parties to keep this electronic resource
+available for you and your department should you wish this. This resource should in any event
+be maintained until the Criminal Cases Review Commission has decided what to do in terms of
+existing convictions of SPMs, and (if referred by the CCRC) the Court of Appeal Criminal
+Division has dealt with any appeals.
+
+Appendix 2 to Judgment (No.6) is a summary of the bugs (each of which were given a name
+by the parties at the Horizon Issues trial) and their dates of operation. Appendix I is a
+Technical Appendix to the judgment and deals with the detailed evidence in respect of each
+bug separately. It therefore summarises relevant PEAKs and KELs (together with dates)
+which show the contemporaneous knowledge within Fujitsu.
+
+I provide with this letter a table that simply extracts references from Appendix I of Judgment
+No.6 that refer to documents in which Anne Chambers and Gareth Jenkins cither make entries,
+or are referred to. If a KEL were produced, it would be given an identifier based on the name
+of the Fujitsu personnel who created it. KELs produced by Anne Chambers have the identifier
+“acha” within the title. The table with this letter also identifies such KELs.
+
+The Horizon Issues trial before me did not consider the transcripts of evidence in previous
+proceedings (criminal or civil) but two cases were referred to, namely the criminal prosecution
+by the Post Office of Mrs Seema Misra in the Crown Court, and a civil case in the High Court
+called Post Office Ltd v Castleton [2007] EWHC 5 (QB). I am therefore aware of the
+involvement in those two trials of two particular Fujitsu employees. These are Mr Gareth
+Jenkins called for the prosecution in the trial of Mrs Misra; and Mrs Anne Chambers called by
+the Post Office in the Castleton trial. There may of course be other instances of the same type
+in other cases, particularly prosecutions, of which I am unaware.
+POL00112842
+
+POL00112842
+
+Prosecution of Mrs Misra
+
+Mrs Misra was a SPM at West Byfleet in Surrey who was charged both with theft from her
+branch, and also false accounting. The sums in question in her case which formed the subject
+matter of the charges amounted to approximately £74,000. Mrs Misra pleaded not guilty, and
+her defence was that the Horizon system was to blame. She was convicted by a jury after a
+trial in late 2010 at Guildford Crown Court, and was sentenced to a term of imprisonment of
+15 months. Two Fujitsu employees gave evidence for the prosecution, Mr Gareth Jenkins and
+Mr Andy Dunks. Mr Jenkins did not give evidence before me, although most of the Post
+Office/Fujitsu witnesses who did had obtained most of their information from him. He was,
+until his recent retirement, a very senior person involved with the Horizon system and seeks to
+have been the “go to” specialist for all technical matters to do with Horizon. Mr Dunks did
+give evidence before me and this is summarised in Judgment (No.6) at [282] to [296].
+
+Mr Gareth Jenkins
+
+Mr Jenkins’ knowledge of bugs, errors and defects from the year 2000 onwards is identified in
+the accompanying table to this letter. This table identifies all the PEAKs and other documents
+referred to in Appendix 1 to Judgment (No.6) where Mr Jenkins was involved.
+
+Two examples may suffice, in summary, for present purposes in terms of the accuracy of his
+evidence in the Misra trial.
+
+The Callendar Square bug occurred between 2000 and 2006. Fujitsu knew about this bug
+during that period, and in an e mail of 23 February 2006 Anne Chambers (who worked closely
+with Mr Jenkins) stated (at F333.1/3):
+
+“Haven't looked at the recent evidence, but I know in the past this site had hit this Riposte
+lock problem 2 or 3 times within a few weeks. This problem has been around for years and
+
+affects a number of sites most weeks, and finally Escher say they have done something about
+it.”
+
+Mr Jenkins knew about the Callendar Square bug, which was agreed both by the Post Office
+and its IT expert to be a bug. Mr Jenkins did not, so far as I can tell, disclose any knowledge
+about this bug, or its effect, to the court at the trial of Mrs Misra in 2010.
+
+Further, Mr Jenkins knew about another bug, called the Receipts and Mismatch bug, in 2010.
+He was an attendee at a meeting, the notes of which were in the Horizon Issues trial bundle at
+F/1001/1 onwards. This document is called “Issue Notes”. The date of this meeting was
+between 29 September 2010 and 4 October 2010 (this is shown in the transcript of the
+Horizon Issues trial at Day 8/77, during the cross-examination of a Fujitsu witness Mr
+Godeseth). This document was misleadingly dated in the trial bundle as a 2012 document, but
+it plainly is a 2010 document as it goes with another one at F/1000, which is dated on its face
+29 September 2010. That document — called “Correcting Accounts for ‘lost’ Discrepancies” -
+was created by Mr Jenkins. The date can be seen from the footer on the document. It shows
+actual knowledge by Mr Jenkins of the Receipts/Payments Mismatch bug or issue, and its
+potential to impact branch accounts. The Issues Notes document states (extract only) that the
+impact of this bug is as follows:
+
+“When Discrepancies are found during Stock Unit rollover into a new Transaction
+Period, then the User is asked if the discrepancy should be moved to Local Suspense.
+If the branch presses cancel at this point the Discrepancy is zeroed on the Horizon
+System.
+POL00112842
+
+POL00112842
+
+Note at this point nothing into feeds POLSAP and Credence, so in effect the
+POLSAP and Credence shows the discrepancy whereas the Horizon system in
+the branch doesn't. So the branch will then believe they have balanced.
+
+If at the next screen the rollover is completely cancelled, then no harm is done.
+However if the Rollover is re-attempted at this point, the rollover will continue
+without any discrepancy meaning Horizon doesn't match POLSAP or Credence.
+
+This has the following consequences:
+
+* There will be a Receipts and Payment mismatch corresponding to the value of
+Discrepancies that were "lost"
+
+Note the Branch will not get a prompt from the system to say there is Receipts
+and Payment mismatch, therefore the branch will believe they have balanced
+correctly.
+
++ When the Branch begins the new Branch Trading period the discrepancies will show
+at Zero, however the Receipts and Payment mismatch will carry over into the next
+period.
+
+Impact
+
++ The branch has appeared to have balanced, whereas in fact they could have a loss or
+
+a gain.
+
++ Our accounting systems will be out of sync with what is recorded at the branch
+
++ If widely known could cause a loss of confident in the Horizon System by branches
+
++ Potential impact upon ongoing legal cases where branches are disputing the integrity
+
+of Horizon Data
++ It could provide branches ammunition to blame Horizon for future discrepancies.”
+(bold present in original, underlining added by me)
+
+I consider that the knowledge that Mr Jenkins had of both the Callendar Square and Receipts
+and Mismatch Bugs (as well as all the others that the accompanying table shows he knew
+about) should, had he been giving truthful evidence in the Misra trial, have been given to the
+court. Indeed, given the subject matter of the prosecution, I would have thought that this point
+is obvious.
+
+High Court Civil Case Post Office Ltd v Castleton
+
+The Post Office sought recovery of alleged shortfalls from SPMs. One such case is that of Mr
+Castleton in 2007, who was the SPM at South Marine Drive, Bridlington, Yorkshire. The trial
+of the Post Office’s claim took place in December 2006 in the High Court and the judgment of
+HHJ Richard Havery QC is on www.bailiiorg at [2007] EWHC 5 (QB). Mr Castleton
+represented himself. The Post Office was awarded £25,858.95 in those proceedigns and Mr
+Castleton’s counterclaim was dismissed. Mr Castleton’s case was that the discrepancies or
+shortfalls had been generated by Horizon.
+
+Mrs Anne Chambers
+She gave evidence for the Post Office in the Castleton case and her evidence is summarised in
+the judgment at [23] in the judgment:
+
+“{23] I heard evidence from Anne Chambers, a system specialist employed by Fujitsu, the
+company that provides the Horizon service. She has a working knowledge of the Horizon
+POL00112842
+POL00112842
+
+computer system used by the claimant. She said that calls from postmasters relating to
+potential system problems are initially taken and logged by the Horizon system Helpdesk. I
+accept evidence of Mr. Castleton that he contacted the Helpdesk over problems with
+discrepancies in balancing accounts at Marine Drive on a number of occasions. If the
+helpdesks are unable to resolve the problem, calls may be passed to the System Support
+Centre, where Mrs. Chambers works. In this case, her first involvement with Marine Drive
+was on 26" February 2004. Mrs. Chambers examined the questions raised and concluded that
+there was no evidence whatsoever of any problem with the system. She was unable to identify
+any basis upon which the Horizon system could have caused the losses. Mr. Castleton cross-
+examined her about complaints from another branch, which he did not identify. She
+immediately recognized the branch with confidence as being a branch at Callender Square in
+Falkirk. The problem at Callender Square had, she said, arisen from an error in the Horizon
+system, but there was no evidence of such a thing at Mr. Castleton's branch. I found Mrs.
+Chambers to be a clear, knowledgeable and reliable witness, and I accept her evidence.”
+
+This relates to the Callendar Square bug. This evidence led to the conclusion by the judge that
+the Horizon system was not to blame and the losses claimed by the Post Office were caused
+by, and the responsibility of, Mr Castleton.
+
+Mrs Chambers herself in her ¢ mail of 23 February 2006 had written an ¢ mail stating, in
+respect of the Callendar Square bug (which is at F/333.1/3):
+
+“Haven't looked at the recent evidence, but I know in the past this site had hit this Riposte
+lock problem 2 or 3 times within a few weeks. This problem has been around for years and
+affects a number of sites most weeks, and finally Escher say they have done something about
+it.”
+
+The relevant KEL for this bug, given the reference “JSimpkins338Q”, identified that it related
+to problems with the Riposte part of the software and what was sometimes called the Riposte
+lock or unlock problem. This was when an unexpected error occurred in the software while
+attempting to insert a message. The KEL shows it ran from 2002, with other events occurring
+in 2003, 2004 and 2005. The entry in this KEL for September 2005 expressly states that:
+
+“this problem is occurring every week, in one case at the same site on 2 consecutive weeks”.
+
+This did not form any part of the evidence of Mrs Chambers in the Castleton case. Indeed, the
+Callendar Square bug had affected 30 different branches, this number being identified by
+Fujitsu when the bug was investigated in 2005. This information was not provided to the court
+in the Castleton case even though, as her own e mail shows, Mrs Chambers plainly knew
+about it. Nor does there appear to have been any evidence from her during the Castleton case
+that there was a bug that “affects a number of sites most weeks”.
+
+Mrs Chambers also knew about the TPSC 250 Report bug, another bug which does not
+appear to have been mentioned at all by her in her evidence in the Castleton case. This
+occurred during the years 2005 to 2009. Not only the PEAK, but the KEL itself was created
+by her and this defect required a software upgrade. The Technical Design Authority for the
+release note, dated 13 October 2005 and accompanying this upgrade, was Gareth Jenkins.
+Additionally, the entry in the table for bug 6, the remming out bug, shows that this occurred in
+2007 and Mrs Chambers herself created the KEL for this.
+
+Her wider involvement in general is shown in the accompanying table, in respect of a great
+many of the bugs, and a number of these predate her evidence in the Castleton trial.
+POL00112842
+
+POL00112842
+
+Summary
+
+The reason that I have drawn this matter to your attention is that I consider that in order to
+give fully truthful evidence to the court in the other previous cases to which I have referred,
+namely the prosecution of Mrs Misra and the civil claim against Mr Castleton, both Mr Jenkins
+and Mrs Chambers respectively should have told the court of the widespread impact of (at the
+very least) the bugs, errors and defects in Horizon that they knew about at the time that they
+gave their evidence and which have been identified, which are contained in Appendix 1 to
+Judgment No.6. In order to assist, I have summarised some both in the body of this letter and
+indeed the table accompanying this letter.
+
+Both these individuals expressly knew about these bugs, and Mr Jenkins had prepared a report
+for, and been at a meeting, in September 2010 when the Receipts and Payments mismatch bug
+was discussed. This records the risk that if this was “widely known [it] could cause a loss of
+confidence in the Horizon System by branches” and that there was a “potential impact upon
+ongoing legal cases where branches are disputing the integrity of Horizon Data”. Yet
+notwithstanding this knowledge that the existence and effect of this bug was directly relevant,
+the existence of this bug was kept secret from the court.
+
+The usual expression when a matter is referred to your office by the judiciary is that “the
+papers are being sent to the DPP”. Due to the volume of these, it would not be feasible to
+send you all the papers, and because of the use of the electronic trial bundle I doubt that you
+would appreciate these in hard copy form in any event. I have hard copy files of a few relevant
+types of documents such as PEAKs, but it may be that electronic access to the Opus 2
+workspace is the more suitable means in any event.
+
+I would suggest, for anyone coming to this matter anew, that the best way to gain an
+understanding of the issues is to read paragraphs I to 567 of Judgment No.3; Judgment No.6
+and Appendix I thereto; and then return to this letter and the accompanying table.
+
+If any further documentation is required, my email address is MrJustice
+and that of my clerk is Angela.Fras
+
+Yours faithfully
+(signed copy by post)
+
+The Hon Mr Justice Fraser
+Managing Judge, Post Office Group Litigation
+
+Enc: table showing references in Appendix 1 to Judgment No.6 to Mr Jenkins and Mrs
+Chambers
+
+cc: Freeths LLP (claimants’ solicitors)
+Womble Bond Dickinson (Post Office’s solicit
+John Phipps, Private Secretary to DPP (email -:
+Lissa Matthews, DPP’s Principal Private Secretary
+

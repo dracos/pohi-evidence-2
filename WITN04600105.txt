@@ -1,0 +1,628 @@
+ICL Pathway Ltd
+
+INTERNAL AUDIT PLAN : 2000
+
+COMMERCIAL IN CONFIDENCE
+
+Ref:
+
+Version:
+
+Date:
+
+WITN04600105
+WITNO04600105
+
+TA/PLA/003
+3.0
+12/07/2001
+
+Document Title:
+
+Document Type:
+
+Release:
+
+Abstract:
+
+Document Status:
+
+Originator & Dept:
+
+Contributors:
+
+Reviewed By:
+
+Comments By:
+Comments To:
+
+Distribution:
+
+Internal Audit Plan : 2000
+
+Plan
+
+N/A
+
+This document provides details of the ICL Pathway Internal
+Audit Plan for 2000 and a resume of how effectively the plan
+
+was executed during the year.
+APPROVED
+
+Jan Holmes (Quality)
+Lorraine Vaughan/Bharat Thakrar
+
+S. Muchow
+
+P. Jeram
+
+Originator
+
+ICL Pathway Document Management
+ICL Pathway SMT
+
+© 2001 ICL Pathway Ltd
+
+SECURITY CLASSIFICATION
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+
+Page: I of 13
+WITNO04600105
+
+WITN04600105
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+0.0 Document Control
+0.1 Document History
+Version No. Date Reason for Issue Associated
+CP/PinICL
+0.1 10/12/99 Initial draft
+0.2 18/01/00 Preliminary Plan plus manday estimates
+1.0 28/01/00 Raised to Issue status ~ minus manday estimates
+Ll 03/05/00 Quarterly update and plan revision for Q2 audits
+1.2 01/06/00 Includes restructuring to Q2 & Q3 planned audits
+1.3 05/07/00 Updated status of audits
+14 29/08/00 Updated status of audits
+2.0 04/01/01 Version 2.0 For Approval
+21 20/06/01 Final update to reflect end of year status
+2.2 05/07/01 Re-Written to conform to document template
+3.0 12/07/01 Version 3.0 for Approval
+0.2. Approval Authorities
+Name : Position Signature Date
+S. Muchow Business Manager
+P. Jeram Programme Director
+0.3. Associated Documents
+Reference Version Date Title Source
+CRIFSP/006 Audit Trail Functional Specification PVCS
+TA/MAN/005 Horizon System Audit Manual (CSR+)_ I PVCS
+TA/MAN/003 Pathway Internal Audit Manual PVCS
+
+Unless a specific version is referred to above, reference should be made to the current
+
+approved versions of the documents.
+0.4 Abbreviations/Definitions
+
+Abbreviation Definition
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+
+Page: 2 of 13
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000
+
+COMMERCIAL IN CONFIDENCE
+
+Ref:
+
+Version:
+
+Date:
+
+WITNO04600105
+WITN04600105
+
+TA/PLA/003
+3.0
+12/07/2001
+
+0.5 Changes in this Version
+
+Version Changes
+
+0.6 Changes Expected
+
+Changes
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+
+Page: 3 of 13
+WITNO04600105
+
+WITN04600105
+ICL Pathway Ltd INTERNAL AUDIT PLAN ; 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+
+0.7. Table of Contents
+
+1.0) INTRODUCTION oo....scccossscessssssssesessesesssnsssstnsestnsentesnssennsneesesetsnsseseseee5
+
+2.0
+
+3.0
+
+40
+
+5.0 AUDIT PLAN RATIONALE...
+5.1 IMPLEMENTATION 11 WEEK PLA}
+5.2 HORIZON SYSTEM HELPDESK.
+5.3 TECHNICAL INTEGRATION
+5.4 QUALITY & RISK MANAG!
+5.5 CUSTOMER SERVICES MANAGEMENT PROCESSES
+5.6 RESOURCE MANAGEMENT/PERSONNEL ......
+5.7 COMMERCIAL & FINANCIAL
+5.8 CSR TO CSR+ MIGRATIO!
+5.9 DATA CENTRES...
+5.10SSC...
+5.11 PFL:=T&M.
+5.12 SUPPLIER MANAGEME?
+5.13 BUSINESS DEVELOPMENT/CUSTOMER REQUIREMENTS
+5.14 EVENT MANAGEMENT
+5.15 RELEASE MANAGEMENT
+5.16 JOINT AUDIT WITH POCL
+
+6.0 2000 RESUME
+6.1 OVERALL..
+6.2 AUDIT PLAN EXECUTIOD
+6.3 CAP CLEARANCE RATE
+
+COD mm DODO IINIAIYIAIIAARAAAD
+
+7.0 ISO9001 COVERAGE BY 2000 AUDIT PROGRAMME...............ccceeece i
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 4 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+WITN04600105
+WITNO04600105
+
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+
+1.0 Introduction
+
+Schedule A03 and Requirement 697 establish a right of audit access to ICL Pathway
+by POCL, their external auditors or other agents operating on their behalf. This could
+entail ICL Pathway being subject to a continual programme of audits by external
+organisations and the potential for disruption in normal operations. Audits carried out
+by these organisations will have their own objectives and any benefit to ICL Pathway
+would be secondary.
+
+The Internal Audit function in ICL Pathway has been established to meet two key
+objectives :
+
+a. To provide the interface between ICL Pathway and POCL in the
+implementation of the requirements of the Audit Trail Functional
+Specification [1].
+
+b. To work with POCL in Joint Audits as described in the Horizon System Audit
+Manual (CSR) [2].
+
+c. To provide an independent audit capability within ICL Pathway, as a service
+to management, and on which POCL Intemal Audit can potentially place their
+reliance.
+
+The ICL Pathway Internal Audit function is described in the Internal Audit Manual
+[3].
+
+2.0 Scope
+
+This document describes a series of planned audits to be executed during 2000 in
+support of the objectives identified above.
+
+The document does not include any sponsor organised audit activity.
+
+3.0 Audit Plan Content
+
+The Plan contains the following information :
+
+a. Identification of audit subject Area/System/Department.
+
+b. Shared Reporting Indicator (SRI). [Y = shared; N = internal]
+c. Planned start date.
+
+d. Actual start date.
+
+e. Completion date. (Defined as date Report issued).
+
+f. Audit Report Reference
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 5 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+WITN04600105
+WITNO04600105
+
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+
+4.0 Maintaining the Plan
+
+The Plan will be updated on a quarterly basis to reflect any changes brought about by
+sponsor request and to firm up on dates left deliberately vague at the beginning of the
+year.
+
+The details of Actual Start, Completion Date and Report Reference will also be
+added.
+
+5.0 Audit Plan Rationale
+5.1. Implementation 11 Week Plan
+
+This is the 11 week review period preceding the re-commencement of NRO
+(24/01/00) during which the organisation and processes of Implementation were
+subject to a major internal review activity. The audit will provide an independent
+assessment of the outcome of the review activity for the Pathway management team.
+
+Basis : Risk.
+
+5.2 Horizon System HelpDesk
+This area has not been subject to any previous audit. Will include site security audit.
+Basis : ISO Coverage/Supplier Mgt/VFM/Risk/Security
+
+5.3 Technical Integration
+
+This area was not audited during the CSR+ Development audit. The Systems Director
+has requested that this area be looked at. Full E2E activity to be considered including
+live support.
+
+Basis : Business Effectiveness.
+5.4 Quality & Risk Management
+
+This area has not been subject to any previous audit.
+
+Basis : ISO Coverage
+
+5.5 Customer Services Management Processes
+Earlier audits of CS have identified significant amounts of detailed procedure but not
+higher level management processes, eg. escalation, management information,
+performance measures, supplier management. This audit aims to identify and assess
+process at this level.
+Basis : ISO Coverage
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 6 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+WITN04600105
+WITNO04600105
+
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+
+nn
+n
+
+Resource Management/Personnel
+
+Pathway consumes a considerable amount of resource and there is a mix of permanent
+and contract staff. The audit will assess the degree to which the selection, allocation
+and management of resource, particularly contract, is managed in the best interests of
+Pathway and ICL. Personnel will also be considered since they have not been subject
+to any previous audit.
+
+Basis : ISO Coverage/Supplier Mgt/VFM
+5.7 Commercial & Financial
+
+This area has not been subject to any previous audit.
+Basis : ISO Coverage
+
+CSR to CSR+ Migration
+
+nn
+i)
+
+This area is identified on all Delivery Manager’s risk registers as high risk. The audit
+will consider how this is being managed. It will consider all aspects of migration, not
+just technical.
+
+Basis : Risk
+5.9 Data Centres
+
+These areas have not been subject to any previous audit. Will include site security
+audit.
+
+Basis : ISO Coverage/Supplier Mgt/VFM/Risk/Security
+5.10 SSC
+
+This is a particularly sensitive area of Customer Services with unprecedented access
+to live systems for support purposes. Previous audits have identified potential control
+weaknesses which management declare have been addressed. The audit will confirm
+the current arrangements and assess the strength of the controls in place. Will include
+a site security audit.
+
+Basis : ISO Coverage/Risk/Security
+5.11 PFI := T&M
+
+The nature of the contract has changed from PFI to T&M. The audit will consider the
+readiness of Pathway’s procedures, management controls and systems for this change.
+
+Basis : Effectiveness/Risk
+5.12 Supplier Management
+
+This audit will draw together the findings of previous audits that have looked at
+individual supplier situations.
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 7 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+WITN04600105
+WITNO04600105
+
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+
+Basis : ISO Coverage/Supplier Mgt/VFM/Effectiveness
+5.13 Business Development/Customer Requirements
+
+Neither of these areas have been subject to previous audit. In addition there is the
+likelihood that new business opportunities will be emerging from the customer in the
+near future. The audit will consider the state of readiness for this and existing controls
+in place.
+
+Basis : ISO Coverage/Effectiveness
+
+5.14 Event Management
+It is by no means clear that an effective regime for the identification, selection,
+monitoring and review of events exists.
+
+Basis : Effectiveness
+
+5.15 Release Management
+
+During 1999 a new core business process, Release Management, was defined for
+Pathway. The audit will consider the deployment of this process and whether any
+benefit is accruing from its implementation.
+
+Basis : Effectiveness
+
+5.16 Joint Audit with POCL
+
+POCL Internal Audit have notified us of their intention to review the process of
+extracting transaction based information from the Data WareHouse for use in
+Invoicing. This they plan to do in September 2000. This work will be conducted under
+the Joint Working Framework, described in the Internal Audit Manual and agreed
+with POCL as part of Acceptance.
+
+6.0 2000 Resume
+6.1 Overall
+
+Up to the middle of the year audits were conducted and reported with relatively little
+slippage against the plan. However, from August onwards the plan was not completed
+due to the departure of the Audit Manager and the Auditor. A replacement Auditor
+was introduced later in the year but was unable to make any inroads against the plan.
+
+6.2 Audit Plan Execution
+
+17 audits were planned for the year. Of the 12 that were completed 7 commenced in
+the planned month, 2 suffered a 1 month slippage and 2 were started on month early.
+The Joint Audit with POCL started 4 months late but this was due to POCL delays.
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 8 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+WITN04600105
+WITNO04600105
+
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+
+5 audits remained uncompleted at the end of the year. Of these the Business
+Development/Customer Requirements audit has been accommodated in the New
+Business Introduction audit carried out during 2001.
+
+6.3 CAP Clearance Rates
+
+In terms of the completed work the rate of CAP clearance is varied.
+
+TA/CAP/010 I Planning 6 3 immediate closure
+1 @ 1 month to close
+1 @ 3 months to close
+
+1 @ 4 months to close
+TA/CAP/014 I Horizon System 10 1 immediate closure
+Helpdesk 2 @ 2 months to close
+
+1 @ 4 months to close
+
+4 @ 8 months to close
+1 @ 10 months to close
+L remains open
+TA/CAP/011 I Technical Integration 8 2 immediate closures
+
+1 @ I month to close
+
+) 3 months to close
+1 @5 months to close
+1 @ 9 months to close
+TA/CAP/012 I QRM 9 1 immediate closure
+
+2 @ 5 months to close
+
+2 @ 6 months to close
+2 @ 8 months to close
+2 @ 10 months to close
+TA/CAP/013_ I Customer Services 9 1 immediate closure
+
+1 @ 4 months to close
+
+1 @ 5 months to close
+1 @ 6 months to close
+5 @ 9 months to close
+
+TA/CAP/016 I Resource Management 0 2 @ 1 month to close
+1 @ 3 months to close
+1 @ 4 months to close
+2 @7 months to close
+4 @ 9 months to close
+TA/CAP/017 I CSR+ Migration 18 3 immediate closures
+
+4 @ I month to close
+
+3. @ 2 months to close
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 9 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+WITNO04600105
+WITN04600105
+
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+
+1 @ 4 months to close
+7. @ 7 months to close
+TA/CAP/018 I Invoicing Process 18 3 immediate closures
+
+2 @ 4 months to close
+2 @ 5 months to close
+
+11 @ 6 months to close
+
+°
+
+2 immediate closures
+1 @ I month to close
+1 @ 2 months to close
+5 @ 4 months to close
+
+TA/CAP/019 I Supplier Management
+
+In all some 96 corrective actions were raised from the Yr2000 audits with the
+following closure rate :
+
+16 Immediate closures 17%
+9 @ 1 month to close 9%
+6 @ 2 months to close 6%
+5 @3 months to close 5%
+12 @ 4 months to close 13%
+6 @ 5 months to close 6%
+14 @ 6 months to close 15%
+9 @7 months to close 9%
+6 @ 8 months to close 6%
+10 @ 9 months to close 10%
+3 @ 10 months to close 3%
+1 open after 10 months 1%
+
+The closure rate is disappointing and is not always attributable to external events.
+Greater management effort should be made to achieve faster closures and to report
+them to Audit rather than Audit having to continually chase/review action owners.
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 10 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+WITN04600105,
+WITNO04600105
+
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+
+4 Management Responsi 1 1 7 3
+42 Quality System 2 5 5 3 1 10 1
+43 Contract Review 1 1 2
+
+44 Design Control 4 1
+
+45 Document and Data Control 3 5 1 2 5 5 1 2 1
+46 Purchasing 1
+
+4.7 Control of Customer Supplied Product 2
+
+48 Product Identification and Traceability 1
+
+4.9 Process Control 1 2 1 2 3 1
+
+4.10 Inspection and Testing
+
+4.11 Catl of Inspt’n, Measuring & Test Eqpt. 1
+4.12 Inspection and Test Status 1 1
+4.13 Control of Non Conforming Product 1
+
+4.14 Corrective and Preventive Action 5 1 4 3 1 1
+
+4.15 Hand’g, Storage, Pkg, Preservation & Del
+
+416 Control of Quality Records 1 1 1 1 1 1 1
+
+4.17 Internal Quality Audits
+
+4.18 Training 1 1 1
+4.19 Servicing 1
+4.20 Statistical Techniques 1
+
+CAPs & BSI Non Cor
+
+mances ‘Total (Open) 6 10 8 10 12 i 18 19 9 6 in 6
+
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 11 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+ICL Pathway Ltd
+
+INTERNAL AUDIT PLAN : 2000 Ref:
+Version:
+COMMERCIAL IN CONFIDENCE Date:
+
+TA/PLA/003
+3.0
+12/07/2001
+
+8.0 Internal Audit Plan : 2000
+
+WITN04600105,
+WITNO04600105
+
+Implementation 11 Week Plan N_ I January 12/01/00 15/02/00 I IA/REP/019 N/A
+3/4/15 Planning Process (Programme Office) N I January 13/01/00 11/02/00 TA/REP/020 TA/CAP/010
+3/4/16 Horizon System HelpDesk N February 16/02/00 28/04/00 TA/REP/022 TA/CAP/014
+3/4/13 Technical Integration N February 02/02/00 31/03/00 TA/REP/O21. TA/CAP/O11
+3/4/17 Quality & Risk Management N= I March 16/02/00 12/04/00 TA/REP/023 TA/CAP/012
+3/4/18 Customer Services Management Processes N March 03/04/00 20/04/00 TA/REP/025 TA/CAP/013
+3/4/19 Resource Mgt/Personnel (Includes Supp Mgt for Resources) N_ I May 06/06/00 09/06/00 I IA/REP/027 TA/CAP/016
+3/4/22 CSR+ Migration N June 19/06/00 12/07/00 TA/REP/028 TA/CAP/017
+3/4/27 Data Centres N_ I July 10/07/00 11/07/00 I IA/REP/026 N/A
+3/4/14 Invoicing Process N July 20/07/00 29/08/00 TA/REP/029 TA/CAP/018
+3/4/21 Supplier Management - Training N August 24/07/00 04/08/00 TA/REP/030 TA/CAP/019
+3/4/20 ssc N August Not done
+3/4/26 Operations Services (Includes Supplier Management for OSD) N tba. Not done
+3/4/28 Invoicing/Data WareHouse [POCL Initiated] Y September
+3/4/23 Business Development/Customer Requirements N Q4 To 2001
+3/4/24 Event Management N Q4 Not done
+3/4/25 Release Management N Q4 Not done
+
+© 2001 ICL Pathway Ltd
+
+SECURITY CLASSIFICATION
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)
+
+Page: 12 of 13
+WITN04600105,
+WITNO04600105
+
+ICL Pathway Ltd INTERNAL AUDIT PLAN : 2000 Ref: TA/PLA/003
+Version: 3.0
+COMMERCIAL IN CONFIDENCE Date: 12/07/2001
+© 2001 ICL Pathway Ltd SECURITY CLASSIFICATION Page: 13 of 13
+
+(CONTRACT CONTROLLED - Leave Blank if Not Applicable)

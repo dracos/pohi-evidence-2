@@ -1,0 +1,741 @@
+FUJ00081868
+FUJ00081868
+
+_ Peak Incident Management System
+Call Reference PC0197797 Call Logger _ Customer Call_ -- EDSC
+
+Release Reported In -- HNG-X 01.00 Top Ref 2240422
+Call Type HNG-X Data Centre Raised Incidents/Defects _ Priority B -- Progress Stopped
+Contact EDSC Call Status Closed -- Fixed at Future Release
+
+Target Date —-18/04/2010 Effort (Man Days) 0
+Summary Several HNGX branches - Local Suspense errors
+All References Type Value
+_TRIOLE for Service (2240422
+Clone Call PCO198077
+DevintRel-Director ' ITU SV&I
+
+Collections Name User Date
+
+PrescanCounter Lorraine Elliott 15-Apr-2010 14:18:19
+Progress Narrative : :
+jDate:15-Apr-2010 14:14:56 User: Customer Call_
+
+[FALL PCO197797 opened
+
+Details entered are:-
+
+summary: Ibrahim @ NBSC has reported... On 14/03/2010 office carri...
+call Type:d
+
+call Priority:B
+
+ffarget Release:HNG-X 01.00
+
+Routed to:EDSC - _Unassigned_
+
+S-ApE-2010 14:14:56 Uscr
+
+Customer Call_
+
+[INCTDENT MANAGEMENT
+bate/Time Raised: Apr 15 2010 2:07PM
+riority: B
+
+ontact Name: Ibrahim @ NBSC
+
+‘contact Phone: {eo}
+riginator: XxXRRXUTESOT
+
+riginator's reference: 2240422
+Product Serial No:
+oduct Site: 351217
+
+Ibrahim @ NBSC has reported...
+
+n 14/03/2010 office carried out Trading Period balance for period 12. The spmr balanced AA and ended up with a discrepancy of
+167.17.
+
+Incident History:
+
+2010-04-15 14:07:56 [ White, Martin]
+
+INIT : create a new request/incident /problem/change/issue
+
+2010-04-15 14:11:16 [ White, Martin]
+neun_en_rmg : Open Notification
+
+b010-04-15 14:11:39 [ White, Martin]
+L0G : Office is on Horizon On Line.
+
+n 14/03/2010 office carried out Trading Period balance for period 12. The spmr balanced AA and ended up with a discrepancy of
+kk167.17. The was cleared from local suspense as normal and the spmr selected to make good cash. At this point the system printed
+ita final balance report for TP12 with the cash figure amended and nil discrepancy. Normally the system would then come up with al
+nessagé to confirm rollover, but instead went back to the screen asking how the discrepancy was going to be made good. Again the
+lspmr selected cash and this time a final balance report showing TP01 was produced, again showing nil discrepancy but the cash
+figure had risen by £167.17. All the rest of the transactions in receipts and payments were still showing. The spmr says that again]
+instead of allowing him to confirm the rollover, it again went back to the screen asking how the discrepancy was to be made good.
+Wain cash was selected and another final balance report produce, this time with the cash figure showing £334.34 more cash than it
+should have done. At this point the spmr managed to get out of the screen (he cannot remember how).
+
+b010-04-15 14:11:48 [ White, Martin]
+
+ILD : FIELD='zcbflag’ OLD="NO' NEW="YES*
+
+b010-04-15 14:11:53 [ White, Martin]
+
+0G : On logging on 15/04/2010 the spmr produced a balance snapshot that showed nil discrepancy and again the inflated cash figure.
+he spmr had logged a couple of incidents with NBSC, and was referred to HSD, reference 2238224.
+
+[fhe spmr was bounced back to NBSC as a balancing error rather than a system problem.
+
+2010-04-15 14:12:48 [ White, Martin]
+Loc : Can this issue by investigated further and the office contacted about dealing with the issue raised. The office is currently
+
+FUJ00081868
+FUJ00081868
+
+fin Trading Period 01, balance period Ol and are open to the public. The Spar is called Robin, and the contact number 15 01572
+lp23301.
+
+2010-04-15 14:13:06 [ White, Martin
+
+LoG : Branch - Uppinghom SPSO
+
+rap = 351217
+
+pate = 14/03/2010
+
+stock unit ~ AA
+
+ser - RBROO2
+
+ode 3
+
+falue £167.17
+
+0010-04-15 14:13:23 [ White, Martin]
+LOG : Can you please investigate this problem? NBSC second line completed their investigation and they cannot find a user error.
+
+2010-04-15 14:13:59 [ White, Martin]
+leneut_en_rmg : Transfer Notification
+
+2010-04-15 14:14:00 [ White, Martin]
+
+FR : Transfer group from ‘' to ‘PEAK
+Date:15-Apr-2010 14:17:58 User: Lorraine Elliott
+
+[fhe call summary has been changed from
+[brahim @ NBSC has reported... On 14/03/2010 office carri..
+fhe call summary is no
+fAD351217 discrepancy of £167.17
+
+ToriS-ApE-2010 14:18:08 User: Lorraine Elliott
+Product EPOSS & DeskTop -- Counter Common (version unspecified) added.
+
+JDate:9-Apr-2010 17:27:46 User:Anne Chambers
+Whe Call record has been assigned to the Team Member: Anne Chambers
+rogress was delivered to Consumer
+
+te:i9-Apr-2010 17:
+[Start of Response]
+It think that the date of the problem was 14th April, not 14th March as recorded above - if it is April, I stand some chance of
+rinding some useful evidence...
+
+[End of Response]
+
+Response code to call type J as Category 40 -- Pending -- Incident Under Investigation
+
+esponse was delivered to Consumer
+
+(0:56 User:Anne Chambers
+
+bate:21-Apr-2010 10:18:57 Uscr:_Customer Call_
+[the date is supposed to be 14/04/10
+
+IBSC has just advised that another office had a similar problem, although the discrepancy has now been sorted out. Details of the
+site and problem are below for information...
+
+ffice - Hucclecote SPSO
+rap - 186523
+
+ate - 15/04/2010
+stock unit - OOH
+fice rolling from
+
+P12 to TPO1
+
+ffice was dealing with the discrepancy in the office following the TP rollover, and selected settle centrally. The office reports
+that nothing happened and they ended up doing this a further 2 times before they could proceed. This has resulted in the office
+settling the loss centrally 3 times. This showed as such as the total on the final balance. The Trading Statement and suspense
+ccount seemed to be correct though. On Monday 19th April the office reported they showed a cash gain of double the original loss
+Ind after further investigation a suspense account was produced that showed 2 clear loss from local suspense entries. We have now
+leared this by clearing gain from local suspense, which should clear the gain in the office.
+
+ate:22-Apr-2010 11:26:12 User:_Customer Call_
+Ihe solution we thought we had for Hucclecote SPSO, FAD 186523, has not resolved the problem, but has actually doubled the
+Hiscrepancy. The original figures in suspense were clear loss from local suspense in OOH su of £998.81 which was the original loss
+lin the for the branch and this shows twice. We have entered a clear gain from local suspense but has doubled the discrepancy that
+as showing on AA su from
+
+1997.62 to £3995.24,
+
+joate:22-Apr-2010 11:27:14 User:_Customer Call_
+fie have now also got a similar issue with Kingsbury Road SPSO, FAD 277201, who also had problems when clearing a gain of £235.5:
+from the trading period balance done on 15/04/2010 in OOH su. They have ended up now with 3 clear gain from local suspense entries
+n the suspense account for £235.52 from 15/04/2010 on OOH su. The office reports again they had problems when pressing the assign
+© nominee icon and ended up pressing it several times to get the rollover complete. The suspense account and Trading Statement
+from the 15/04/2010 show correct. This office reports there does not seem to be any related cash discrepancy in the branch.
+
+[pate:22-Apr-2010 12:31:14 Uscr:Anne Chambers
+[Start of Response]
+wooking first at 351217 Uppingham...14 Apr, counter 3, SU AA. Times UTC
+
+FUJ00081868
+FUJ00081868
+
+h7:08 Print trial balance report. Shows net loss £167.17
+
+h
+
+4 Final balance report
+ash 60834.12
+
+eceipts section:Short Resolved 167.17
+Payments section: Short Transferred 167.17
+
+h7:15 Final balance report
+
+Fash 61001.29
+
+Receipts section:Short Resolved 334.34
+Payments section: Short Transferred 167.17
+
+17:19 Final balance report
+cash 61168.46
+
+eceipts section:Short Resolved 501.51
+payments section: Short Transferred 167.17
+
+Khecking on BRDB, I can see three pairs of ‘Clear loss from IS'/ cash
+
+fhe balance report saved for reprint is the correct one (produced at 17:14).
+he Suspense account and BTS are correct, and only show the single LS clearance.
+
+the cash figure for the next period in the opening balance table is 60834.12 (again as on the correct balance report) - does this
+mean there is no long term effect on the branch figures? I suspect though there will be an effect within POLFS and they may need to
+make some adjustment between the Cleared from LS account and cash.
+
+investigations continue.
+[End of Response]
+
+esponse code to call type J as Category 40 -~ Pending -- Incident Under Investigation
+esponse was delivered to Consumer
+
+jDate:22-Apr-2010 13:05:15 User:Anne Chambers
+
+[Start of Response]
+[fhe two extra LS clearances, and their cash settlement, are in the new TP/BP - so there will be a knock-on effect at the branch.
+
+BSC tried to clear Hucclecote SPSO, FAD 186523, via Housekeeping, which seems sensible, but apparently it hasn't worked as
+xpected. I'l] look at that branch too.
+
+It can't yet see anything obvious in the counter logs to indicate why the system apparently went back to the wrong screen twice and
+forced them to clear LS again.
+
+[End of Response]
+
+esponse code to call type J as Category 40 -- Pending -- Incident Under Investigation
+
+esponse was delivered to Consumer
+
+jbate:22-Apr-2010 14:13:22 User:Anne Chambers
+[Start of Response]
+
+ttm going to clone this call and send the clone to development for investigation of the underlying cause, while keeping the
+viginal call to work out what needs to be done to get the branches straight.
+
+[End of Response]
+
+esponse code to call type J as Category 40 -~ Pending
+lesponse was delivered to Consumer
+
+= Incident Under Investigation
+
+joate:22-Apr-2010 14:13:26 User:Anne Chambers
+all has been cloned to Call:PC0198077 by User:Anne Chambers
+
+Joate:22-Apr-2010 17:36:42 User:Anne Chambers
+[Start of Response]
+
+Pco198077 sent to development.
+
+[End of Response]
+
+response code to call type J as Category 40 -- Pending -~ Incident Under Investigation
+e was delivered to Consumer
+
+espons
+
+te:23-Apr-2010 10:24:27 User:Anne Chambers
+[Start of Response]
+Branches covered so far by this call:
+51217
+hs6523
+b77201
+
+Also branch 203418 - more details on PC0197769
+land I have heard that 164205 is also affected - but no open call at the moment.
+
+jt may try to see if I can spot any others.
+[End of Response]
+
+esponse code to call type J as Category 40 -- Pending =~ Incident Under Investigation
+esponse was delivered to Consumer
+
+[Date:23-Apr-2010 10:26:25 Uscr:Anne Chambers
+
+[Start of Response]
+
+FUJ00081868
+FUJ00081868
+
+Peak for 20s418 18 actually Poorss0Ge.
+[End of Response]
+
+esponse code to call type J as Category 40 -- Pending -~ Incident Under Investigation
+esponse was delivered to Consumer
+
+Date:23-Apr-2010 11:01:44 User:Anne Chambers
+fhe call summary has been changed from:
+faD351217 discrepancy of £167.17
+
+fhe call summary is no
+several HNGX branches - Local Suspense errors
+
+jbate:27-Apr-2010 17:35:29 User:Anne Chambers
+
+[Start of Response]
+
+186523 Hucclecote:
+
+It think the solution applied at this branch should resolve the effects of this problem. In stock unit AA, the Clear Gain from LS,
+hich automatically settled to cash, is causing a discrepancy of +1997.62.
+
+to sort out the effects of the problem fully, when rolling AA into the next TP, move the gain of £1997.62 from AA to local
+suspense. Then when rolling over the final stock unit, Clear loss from LS, settling Assign to Nominee.
+
+his will negate the amount which has already incorrectly been posted to the Assign to Nominee account.
+
+- AA is currently showing a discrepancy of around £3990, not £1997.62. This extra gain first showed on Monday 19th April (or]
+bly Sat 17th?)
+
+hen cash was declared for AA at the end of Saturday 17th trading, there was a gain of just over £1000. They redeclared, reducing
+the declaration by £1000 exactly.
+
+t the end of Monday 19th trading the variance was £1952.32. I can understand why they thought this must be connected with the
+1997.62, but it isn't.
+
+[End of Response]
+sponse code to call type J as Category 40 —- Pending -- Incident Under Investigation
+esponse was delivered to Consumer
+
+[Date:27-Apr-2010 17:41:34 Uscr:Anne Chambers
+[Start of Response]
+
+passing call back to IMT - can you send the update about Hucclecote to Ibrahim please? I have not contacted the branch but they mayI
+eed some help trying to identify the cause of the additional gain. I can't see anything out of the ordinary and it isn't connected
+ith the system problem.
+
+i am still looking at other branches which were affected by the same problem, and will put together a spreadsheet to show the
+jounts etc involved.
+
+i'm happy to discuss with Ibrahim if necessary.
+[End of Response]
+
+esponse code to call type J as Category 95 -- Final -- Advice after Investigation
+outing to Call Logger following Final Progress update.
+
+Service Response was delivered to Consumer
+
+[Date:27-Apr-2010 17:41:34 User:Anne Chambers
+(ALL PC0197797 closed: Category 95 Type J
+
+te:27-Apr-2010 17:41:34 User:Anne Chambers
+updated to 14 =~ Development - Code
+
+jbate:28-Apr-2010 08:13:15 Uscr: Customer Call_
+consumer XXXXXX@TFS01 has acknowledged the call closure
+
+joate:28-Apr-2010 13:43:08 User: Customer Call_
+ALL PCO197797 reopened by Customer Call_
+
+joate:28-Apr-2010 13:43:08 User: Customer Call_
+brahim @ NBSC has reported...
+
+mn 14/03/2010 office carried out Trading Period balance for period 12. The spmr balanced AA and ended up with a discrepancy of
+167.17.
+
+incident History:
+
+0010-04-15 14:07:56 { White, Martin]
+
+NIT : create a new request /incident /problem/change/issue
+
+010-04-15 14:11:16 [ White, Martin]
+
+Jneun_en_rmg : Open Notification
+
+2010-04-15 14:11:39 [ White, Martin]
+
+WOG : Office is on Horizon On Line.
+
+FUJ00081868
+FUJ00081868
+
+i 1470372010 office carried out Trading Period balance for period 12. The spur balanced AA and ended up with a discrepancy of
+k167.17. The was cleared from local suspense as normal and the spmr selected to make good cash, At this point the system printed
+ut a final balance report for TP12 with the cash figure amended and nil discrepancy. Normally the system would then come up with af
+lressage to confirm rollover, but instead went back to the screen asking how the discrepancy was going to be made good. Again the
+Ispmr selected cash and this time a final balance report showing TP01 was produced, again showing nil discrepancy but the cash
+leigure had risen by £167.17. All the rest of the transactions in receipts and payments were still showing. The spmr says that again]
+instead of allowing him to confirm the rollover, it again went back to the screen asking how the discrepancy was to be made good
+Again cash was selected and another final balance report produce, this time with the cash figure showing £334.34 more cash than it
+should have done. At this point the spmr managed to get out of the screen (he cannot remember how).
+
+b010-04-15 14:11:48 [ White, Martin]
+
+zebflag' OLD='NO' NEW="YES"
+
+b010-04-15 14:11:53 [ White, Martin
+
+0G: On logging on 15/04/2010 the spmr produced a balance snapshot that showed nil discrepancy and again the inflated cash figure
+the spmr had logged a couple of incidents with NBSC, and was referred to HSD, reference 2238224.
+
+the spmr was bounced back to NBSC as a balancing error rather than a system problem.
+
+b010-04-15 14:12:48 [ White, Martin
+loc : Can this issue by investigated further and the office contacted about dealing with the issue raised. The office is
+lin Trading Period 01, balance period 01 and are open to the public. The spmr is called Robin, and the contact number is
+
+010-04-15 14:13:06 [ White, Martin
+og : Branch - Uppinghom SPSO
+
+rab - 351217
+
+pate - 14/03/2010
+
+stock unit - AA
+
+ser — RBROOZ
+
+lode 3
+
+jalue £167.17
+
+b010-04-15 14:13:23 [ White, Martin
+toc : Can you please investigate this problem? NBSC second line completed their investigation and they cannot find a user error.
+010-04-15 14:13:59 [ White, Martin]
+lneut_en_rmg : Transfer Notification
+10-04-15 14:14:00 [ White, Martin
+FR : Transfer group from '' to 'PEAK*
+
+b010-04-15 14:15:30 [ White, Martin]
+
+hoc : NBSC ref. 122764154
+
+b010-04-15 14:15:42 [ POWebService, 01]
+
+Jzneun_en_rmg : Open Notification
+
+2010-04-15 14:15:42 [ POWebService, 01
+
+lst : Status changed from ‘New’ to ‘Opent
+
+bo10-04-15 14:15:44 [ OTT
+
+YEIACKINFO : Provider Ref: PC0197797
+
+10-04-19 17:28:39 [ OTT
+
+yTIPSTU : Update by Anne Chambers:Call routed to Team:EDSC Member:Anne Chambers
+
+2010-04-19 17:32:05 [ OTL
+
+TIPSTU : Update by Anne Chambers:Category 40 -- Pending -- Incident Under Investigation:I think that the date of the problem was
+hath April, not 14th March as recorded above - if it is April, I stand some chance of finding some useful evidence..
+
+2010-04-21 10:13:31 [ White, Martin
+[TIADD : The date is supposed to be 14/04/10
+
+IBSC has just advised that another office had a similar problem, although the discrepancy has now been sorted out. Details of the
+site and problem are below for information...
+
+ffice - Hucclecote SPSO
+IFAD - 186523
+
+pate - 15/04/2010
+
+stock unit - OOH
+
+ffice rolling from TP12 to TPO1
+
+ffice was dealing with the discrepancy in the office following the TP rollover, and selected settle centrally. The office reports
+that nothing happened and they ended up doing this a further 2 times before they could proceed. This has resulted in the office
+settling the loss centrally 3 times. This showed as such as the total on the final balance. The Trading Statement and suspense
+laccount seemed to be correct though. On Monday 19th April the office reported they showed a cash gain of double the original loss
+land after further investigation a suspense account was produced that showed 2 clear loss from local suspense entries. We have now
+cleared this by clearing gain from local suspense, which should clear the gain in the office
+
+2010-04-22 11:24:27 [ White, Martin]
+
+PIADD : The solution we thought we had for Hucclecote SPSO, FAD 186523, has not resolved the problem, but has actually doubled thel
+Hhiscrepancy. The original figures in suspense were Clear loss from local suspense in OOH su of £998.81 which was the original loss
+fin the for the branch and this shows twice. We have entered a clear gain from local suspense but has doubled the discrepancy that
+as showing on AA su from
+
+1997.62 to £3995.24.
+
+2010-04-22 11:25:27 [ White, Martin]
+bTIADD : We have now also got a similar issue with Kingsbury Road SPSO, FAD 277201, who also had problems when clearing a gain of
+
+FUJ00081868
+FUJ00081868
+
+F235.52 from the trading period balance done on 15/04/2010 in OOH su. They have ended up now with 3 clear gain from local suspense
+entries on the suspense account for £235.52 from 15/04/2010 on OOH su. The office reports again they had problems when pressing theI
+lkssign to nominee icon and ended up pressing it several times to get the rollover complete. The suspense account and Trading
+statement from the 15/04/2010 show correct. This office reports there does not seem to be any related cash discrepancy in the
+branch.
+
+010-04-22 12:32:18 [ OTT]
+
+bripstu : Update by Anne Chambers:Category 40 -- Pending -- Incident Under Investigatior
+fpr, counter 3, SU AA. Times UTC
+
+ooking first at 351217 Uppingham...14
+
+h7:08 Print trial balance report. Shows net loss £167.17
+
+7:14 Final balance report
+kash 60834.12
+
+eceipts section:Short Resolved 167.17
+ayments section: Short Transferred 167.17
+
+7:15 Final balance report
+kash 61001.29 !
+Receipts section:Short Resolved 334.34 I
+Payments section: Short Transferred 167.17
+
+7:19 Final balance report
+cash 61168.46
+
+Receipts section:Short Resolved 501.51
+ayments section: Short Transferred 167.17
+
+ecking on BRDB, I can see three pairs of ‘Clear loss from LS'/ cash.
+
+[fhe balance report saved for reprint is the correct one (produced at 17:14).
+fhe Suspense account and BTS are correct, and only show the single LS clearance.
+
+Ihe cash figure for the next period in the opening balance table is 60834.12 (again as on the correct balance report) - does this
+ean there is no long term effect on the branch figures? I suspect though there will be an effect within POLFS and they may need to}
+fake some adjustment between the Cleared from LS account and cash.
+
+investigations continue.
+
+010-
+4-22 13:06:03 [ OTT]
+pTIPSTU : Update by Anne Chambers:Category 40 -- Pending -- Incident Under Investigation:The two extra LS clearances, and their
+
+ash settlement, are in the new TP/BP — so there will be a knock-on effect at the branch. NBSC tried to clear Hucclecote SPSO, FAD
+86523, via Housekeeping, which seems sensible, but apparently it hasn't worked as expected. I'll look at that branch too. i
+
+It can't yet see anything obvious in the counter logs to indicate why the system apparently went back to the wrong screen twice and
+forced them to clear LS again.
+
+010-04-22 14:14:22 [ OTT]
+
+TIPSTU : Update by Anne Chambers:Category 40 -- Pending -- Incident Under Investigation:I'm going to clone this call and send the
+l:lone to development for investigation of the underlying cause, while keeping the original call to work out what needs to be done
+Ito get the branches straight.
+
+b010-04-22 17:37:37 [ OTT]
+
+yTIPSTU : Update by Anne Chambers:Category 40 -- Pending -- Incident Under Investigation:PC0198077 sent to development.
+
+0910-04-23 10:25:16 [ OTT]
+YTIPSTU : Update by Anne Chambers:Category 40 -- Pending ~~ Incident Under Investigation:Branches covered so far by this call:
+51217
+hee523
+b77201
+
+Also branch 203418 - more details on PC0197769
+land I have heard that 164205 is also affected - but no open call at the moment.
+
+II may try to see if I can spot any others.
+1010-04-23 10:27:26 [ OTT]
+
+bripstu : Update by Anne Chambers:Category 40 -- Pending -- Incident Under Investigation:Peak for 203418 is actually PC0198066.
+b010-04-27 17:36:07 [ OTT]
+
+bripstu : Update by Anne Chambers:Category 40 -- Pending -- Incident Under Investigation:186523 Hucclecote:
+
+II think the solution applied at this branch should resolve the effects of this problem. In stock unit AA, the Clear Gain from LS,
+Jshich automatically settled to cash, is causing a discrepancy of +1997.62.
+
+ffo sort out the effects of the problem fully, when rolling AA into the next TP, move the gain of £1997.62 from AA to local
+suspense. ‘Then when rolling over the final stock unit, Clear loss from LS, settling Assign to Nominee.
+
+[this will negate the amount which has already incorrectly been posted to the Assign to Nominee account.
+
+UT .... AA is currently showing a discrepancy of around £3990, not £1997.62. This extra gain first showed on Monday 19th April (orI
+possibly Sat 17th?) !
+
+hen cash was declared for AA at the end of Saturday 17th trading, there was a gain of just over £1000. They redeclared, reducing
+the declaration by £1000 exactly.
+
+at the end of Monday 19th trading the variance was £1952.32. I can understand why they thought this must be connected with the
+1997.62, but it isn't.
+
+b010-04-27 17:42:38 [ OTT]
+
+brTRES : Provider Ref: PC0197797
+
+esolution Details: Update by Anne Chambers:Category 95 -- Final -- Advice after Investigation:Passing call back to IMT - can you
+lsend the update about Hucclecote to Ibrahim please? I have not contacted the branch but they may need some help trying to identify
+
+FUJ00081868
+FUJ00081868
+
+he cause of the additional gain. 1 can't see anything out of the ordinary and it dant connected with the system problem.
+
+Ht am still looking at other branches which were affected by the same problem, and will put together a spreadsheet to show the
+
+Jmounts etc involved.
+
+i'm happy to discuss with Ibrahim if necessary.
+2010-04-27 17:42:38 [ PoWebService, 01]
+
+RE: Status changed from ‘Open’ to ‘Resolved!
+B010-04-27 17:42:38 [ PoWebService, 01]
+Jzneur_en_rmg : Resolution Notification
+010-04-28 08:11:56 I Thind, Sukhdeep]
+neut_en_rmg : Transfer Notification
+b010-04-28 08:11:56 [ Thind, Sukhdeep]
+
+IR : Transfer group from 'PEAK' to 'HSD IMT*
+
+2010-04-28 13:42:07 [ White, Martin]
+TR : Transfer group from 'HSD IMT' to "PEAK'
+
+2010-04-28 13:42:07 [ White, Martin]
+lst: Status changed from ‘Resolved' to ‘Work In Progress!
+
+2010-04-28 13:42:07 { White, Martin]
+neut_en_xmg : Transfer Notificat.
+
+on
+
+te:28-Apr-2010 13:43:09 User:_Customer Call_
+Please assign to Anne Chambers as agreed.
+
+28-Apr-2010 14:43:11 Uscr:Lorraine Elliott
+he Call record has been assigned to the Team Member: Anne Chambers
+rogress was delivered to Consumer
+
+jbate:28-Apr-2010 17:39:06 User:Anne Chambers
+[Start of Response]
+
+[here was an intermittent system problem which affected some branches completing TP rollovers between 7th and 15th April. The
+roblem is understood; it is no longer happening and the root cause is being addressed.
+
+en the last stock unit was rolled over, the branch cleared Local Suspense and pressed Confirm to complete the stock unit
+rollover. They were then returned to the screen asking how the discrepancy was to be cleared. If they again selected an option,
+this wrote another transaction pair to clear local suspense (this time in the new Trading Period).
+
+3 branches have been affected by this problem, clearing local suspense between 1 and 4 times in the new period.
+[fhe attached spreadsheet shows the branches, the amounts and the settlement product used for clearance.
+
+In general, if they clear Local Suspense at the end of the current period using the same method (e.g. Assign to Nominee, Cash) as
+they used last period, there will be no lasting effect. The problem will not cause them a discrepancy (though it may look as if it
+has done 40) and the Assign to Nominee etc accounts in POLFS will be correct.
+
+ror branches where it is currently causing a cash discrepancy, where they cleared LS to cash (make good), this could be resolved
+immediately by using the Housekeeping function to clear losses / gains from LS.
+
+here branches chose more than one settlement option while going round the loop (marked in blue on the spreadsheet), they should
+se the Housekeeping function before the next TP rollover, to clear the loss/gain from LS that was settled to cash. Then the
+remainder should be settled to Assign to Nominee or whatever during the TP rollover. If they have a new loss/gain and this is not
+the appropriate settlement product, they may need additional help.
+
+ISU, please pass this information to Post Office with the attached spreadsheet. Please let POL know that NBSC have already been
+involved with some of the branches (certainly those highlighted in yellow) - Ibrahim raised this call in the first place and has
+ready been sent an update about Hucclecote.
+
+[End of Response]
+lkesponse code to call type J as Category 40 -- Pending -- Incident Under Investigation
+esponse was delivered to Consumer
+
+Date: 28-Apr-2010 11
+Evidence Added - Spreadsheet
+
+3 User:Anne Chambers
+of
+
+[Date:28-Apr-2010 18:24:16 Uscr:Anne Chambers
+The Call record has been transferred to the team: MSU-Indt Mgt
+Progress was delivered to Consumer
+
+te:29-Apr-2010 14:
+thanks.
+
+3:51 User:Joanne Ball
+
+Final BIMS issued to POL.
+
+FUJ00081868
+FUJ00081868
+
+turning call to Sse for closurey
+
+Ce:29-Apr-2010 14:34:00 User:Joanne Ball
+Ihe Call record has been transferred to the team: EDSC
+Progress was delivered to Consumer
+
+Jate:30-Apr-2010 09:07:32 User:Anne Chambers
+[fhe Call record has been assigned to the Team Member: Anne Chambers
+progress was delivered to Consumer
+
+bate:30-Apr-2010 09:17:32 Uscr:Anne Chambers
+
+[Start of Response]
+
+information about all branches affected by this problem has been sent to POL via BIMS - I have told them that NBSC have already
+peen involved with some of the branches.
+
+PC0198077 is with development for further investigation / fix (though the root cause is almost certainly a known problem, which is
+no longer happening and which will be fixed at a future release.
+
+[End of Response]
+
+esponse code to call type J as Category 74 -- Final
+outing to Call Logger following Final Progress updat
+
+Fixed at Future Release
+
+service Response was delivered to Consumer
+
+[Date:30-Apr-2010 09:17:32 User:Anne Chambers
+CALL PC0197797 closed: Category 74 Type J
+
+Fe:30-Apr-2010 11:19:17 User:_Customer Call_
+Consumer XXXXXX@TFSO1 has acknowledged the call closure
+
+Root Cause Development - Code
+Logger _Customer Call_ -- EDSC
+Subject Product EPOSS & DeskTop -- Counter Common (version unspecified)
+
+Assignee _Customer Call_ -- EDSC_
+Last Progress 30-Apr-2010 11:19 -- Customer Call _

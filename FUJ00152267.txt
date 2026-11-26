@@ -1,0 +1,1368 @@
+FUJ00152267
+FUJ00152267
+
+me)
+FUJITSU
+
+Fujitsu Services Post Office Account
+
+Service Review Book
+
+December 2006
+
+COMMERCIAL IN CONFIDENCE
+Re)
+FUJITSU
+
+FUJ00152267
+FUJ00152267
+
+SERVICE REVIEW BOOK
+December 2006
+
+Document Control
+
+Title:
+
+Abstract:
+
+Status:
+
+Distribution:
+
+Author:
+
+Approval Authority:
+
+Service Review Book — December 2006
+This document contains a summary of the Monthly Service Performance Statistics
+for the Period 1* to 31 December 2006
+
+Definitive
+
+Service Management Review
+Fujitsu Services, Post Office Account: Head of Service Management
+
+Fujitsu Services, Post Office Account: Customer Service Management Team
+
+Mark Jones & Stephen Taplin, Fujitsu Services, Post Office Account: Service
+Delivery Unit
+
+Naomi Elliott: Fujitsu Services, Post Office Account: Service Director
+
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: TO
+
+Date: 15-Jan-07
+Page No: of 31
+FUJ00152267
+
+FUJ00152267
+
+oO
+
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+CONTENTS
+DOCUMENT CONTROL 2
+CONTENTS 3
+1 MANAGEMENT SUMMARY 4
+2 INCIDENT OVERVIEW 5
+3 BUSINESS CONTINUITY 6
+3.1. Business Continuity Testing 6
+3.2. Forthcoming Testing 6
+3.3. Business Continuity Planning 6
+3.4 Business Continuity Incidents and Issues 6
+4 COMPLAINTS 7
+5 SERVICE SUMMARY 9
+5.1 Horizon Service Desk 9
+5.2 Engineering Service 9
+5.3. Branch Network Services / Central Network 13
+5.4 Operational Branch Change Service 15
+5.5 Service Integration Service 16
+5.6 Data Centre Operations Service / Data File Transfer 17
+5.7 Reconciliation Service 17
+5.8 Reference Data & Message Broadcast Service 17
+5.9 Security Service 18
+6 OCTOBER SERVICE LEVEL PERFORMANCE 20
+6.1 Horizon Service Desk 20
+6.2 Engineering Service 21
+6.3. Branch Network Service 22
+6.4 Central Network Service 23
+6.5 Data Centre Operations Service 24
+6.6 Reference Data Service 30
+6.7 Reconciliation Service 341
+
+Copyright Fujitsu Services Ltd 2006
+
+COMMERCIAL IN CONFIDENCE.
+
+Version:
+Date:
+Page No:
+
+TO
+15-Jan-07
+3of 31
+FUJ00152267
+FUJ00152267
+
+Pe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+1 MANAGEMENT SUMMARY
+
+Summary: Within the Fujitsu Services domain for December 06 there no Major Incidents, one service affecting
+incident within the Fujitsu domain and 2 incidents relating to VIP sites. Details are given in the Incident
+Overview below.
+
+Branch and counter availability continue to remain above target at 99.8% and 99.2% respectively. Despite the
+expected low volumes of OBC activity in the month, with 60 changes delivered, all the OBC targets were
+exceeded with all OLAs met.
+
+Incoming calls to the desk were lower given the shorter working month, and a reduction in inappropriate and
+network related calls. However, hardware calls remain at the same relative level. The incoming call volumes
+continue to exceed the agreed levels and the associated SLTs have been recalculated accordingly.
+
+Counter printer volume was adversely affected by the problem identified with the replacement mails labels, and
+revised instructions to branches were issued to attempt to alleviate this effect towards the end of December.
+The resulting call peaks led to continued issues with Engineering SLTs and work continues to put a sustainable
+recovery plan in place with achievable target dates.
+
+A total of 85 complaints were received, 30 were passed to Fujitsu for information only, and 10 were for
+investigation and comment. Of these, 1 was agreed to be justified and a further 3 are still under investigation.
+
+Executive Dashboard FUJITSU
+
+December 2006
+
+2, Calls answered by HS within 30 seconds
+00%
+
+5. Data delivered to APS Outbound Day 8
+‘00%
+oe
+=
+o%
+
+=
+Sasa I o
+== POR ARAS
+
+== a
+: ae
+: i Re
+:
+: .
+: nn
+a I
+eae
+egecnenerrrren I
+
+Ano” Jae "Aut I Sapte O6108 "Novo Dees
+
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version, 1.0
+Date: 15-Jan-07
+Page No:  4of 31
+FUJ00152267
+FUJ00152267
+
+Fe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+2 Incident Overview
+
+Summary: Within the Fujitsu Services domain for December 2006 there were no Major
+Incidents. There was 1 service affecting incident within the Fujitsu domain.
+
+There were 2 incidents affecting VIP sites.
+
+There was no service affecting incident that was outside of the Fujitsu
+domain.
+
+Major Incidents: None
+
+Other incidents in Fujitsu 9°10" December. POLFS — Weekend work on the 9"/10" for the re-
+
+Services domain: organisation of GLPCA detailed on OCP 14782, overran into Monday,
+causing an outage of the POLFS service all day. Service was resumed by
+start of day Tuesday. Full details can be found under the Data File Transfer
+Section. Fujitsu call E-0612100045 refers.
+
+VIP sites affected this month: 27" December. VIP site Newcastle City Centre 023329, loss of
+communications from 09:20 to 14:58. Engineering visit resolved. Call E-
+0612270213 refers.
+
+28" December. VIP site Doncaster 007311, loss of communications from
+16:05 to 17:00. Site was running on back up ISDN which failed. Re-
+established communications back to ADSL connection. Call E-0612280692
+refers.
+
+Incidents that were outside None
+the Fujitsu Domain:
+
+Details of Incidents / Calls affecting Branch Availability
+
+Average LDs - SLT hours Associated
+lent Counters/Branches Counters / Branches calls to
+Affected HSD
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: TO
+Date: 15-Jan-07
+
+Page No: Sof 31
+FUJ00152267
+FUJ00152267
+
+Pe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+3 Business Continuity
+
+3.1 Business Continuity Testing
+
+During December the Reference Data operational business continuity test was completed successfully. A draft
+2006 test report (CS/PLA/243) was produced and supplied to Post Office Limited. A number of 2006
+observations have been addressed since that report was issued, and it is intended that the final 2006 test report
+is produced and issued for approval by the end of January.
+
+On the 7" of January the operational retest of Bootle CAT switch 1 was successfully conducted (test 6.2).
+
+The 2007 yearly test script (CS/PLA/103), containing short form test scripts, has been returned to PVCS for
+review.
+
+3.2 Forthcoming Testing
+¢ The operational test for the HSD is planned for the 18" of January
+«The operational test for the Correspondence server is planned for the 21° of January
+
+e Test 28.4 the POL-FS Central Host fail-over is planned for the 4" of February.
+
+3.3 Business Continuity Planning
+
+Further progress was made on revising the Business Continuity plans and test scripts for the inclusion of the
+NS&l warrant encashment and MoneyGram services. Version 6.0 of the Horizon Services Business Continuity
+Plan (CS/PLA/079) has now been returned to PVCS for approval. Additionally, version 3.1 of CS/PLA/080 the
+Horizon Support Services Business Continuity Plan has been returned to PVCS for review.
+
+3.4 Business Continuity Incidents and Issues
+
+No Major Business Continuity Incidents were raised during December.
+
+The LEW02 Disaster Recovery site implementation and commissioning is still progressing. Delays have been
+due to platform build complexities, build discrepancies, operational issues and LST resource involvement in
+testing new releases. The LEW02 site will not be ready for operational testing during February and the POA
+BCM will provide a revised date for this operational test.
+
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version, 1.0
+Date: 15-Jan-07
+Page No: 6 of 31
+FUJ00152267
+FUJ00152267
+
+© ™
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+4 Complaints
+
+During December, 98 complaints were logged about Fujitsu Services, with 10 standard complaints passed for
+comment to Fujitsu, and 1 of these considered to be justified, with 3 still awaiting resolution of Incident /
+completion of investigation.
+
+Breakdown of Complaints
+
+@ Excluded as duplicate / not
+complaints
+
+@ Not passed to POL Cust
+relations
+
+G Excluded by POL Customer
+Relations
+
+i Complaints investigated by
+POL Customer Relations
+
+@ Passed to Fujitsu FIO
+
+1 Considered Unjustified by
+Fujitsu
+
+@ Considered Justified by
+Fujitsu
+
+O Still under investigation
+
+POL Ref Branch Code  Category/Reason For Improvement Action
+Cleared And Facia Complaint
+04/12/06 04/12106 I DB/DEC/009 I 221137 Engineering — lead Fujitsu Services are awaiting the delivery of
+; time on PPMB for 500 new PPMBs, which will be sufficient to
+Brightwell Cum mobile kit supply all applicable branches with PPMBs.
+Sotwell Storage ETA for delivery: End of January 2007
+
+Top 3 Areas of complaints
+
+e Engineer complaints (including 11 about response times & 2 about communication) - 20
+e Printer problems - 17 complaints, 7 of which were also complaining about the engineering service.
+e On Line Services being unavailable - 13 complaints —- Reduction of 3 on last month.
+
+45
+40
+35
+30
+25 = (G Equiprent &
+Engineering
+20
+‘a Onine Services,
+15
+10 ‘aFrinter
+5 Problems
+°
+Sept
+{@ Equipment & 2 Ea 15 20
+Engineering
+‘@Onine Services I 29 1" 7 13
+aRinter ProblemsI 12 7 14 7
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: TO
+
+Date: 15-Jan-07
+Page No: of 31
+FUJ00152267
+FUJ00152267
+
+Pe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+Commentary
+
+The number of complaints logged against Fujitsu Services remains constant, with similar numbers of complaints
+passed to the HSD for information / investigation, although complaints against equipment & engineering and
+printers have increased slightly against November.
+
+There has been a slight increase in the number of complaints logged for counter printers which correlates with
+the high number of faults reported at the end of November / beginning of December. The root cause of the
+increase in counter printer faults is believed to be a change in the label specification, which is being investigated
+by Post Office Ltd and Royal Mail Group. Due to these high call volumes, there was a period of 7 days where
+there was a shortage of printers in the spares loop. The HSD were actively contacting branches to enquire if
+they were impacted by the shortage and engineering prioritised single counter branches, however the impact of
+the shortage will be seen in next month’s stats.
+
+December saw solid down comms faults at an all time low, with an average of 7 branches impacted per week
+across the whole network. Focus remains on intermittent faults, where online service can drop out and retum, to
+varying degrees during the day or during the week. Intermittent faults are more difficult to diagnose as they can
+often be caused by environmental issues both within or external to the branch - e.g. interference from a
+neighbour's electrical equipment; an incorrectly filtered alarm or branch non-conformance to specified
+configuration - such as overloading the phone line. Diagnosis of intermittent faults relies on ruling out potential
+causes and engineers or technical experts need to be on site or monitoring at times when the fault occurs which
+is very difficult when occurrence of the problem is random. Diagnosis is also problematic in that it may require
+cooperation from a branch to allow the system to be taken down for a significant period of time in an effort to
+isolate potential problems, which can inconvenience branch ability to serve customers unfortunately, this action
+must be taken to restore service. A great deal of focus and attention is being put on intermittent fault resolution
+processes over the next 3 months in a bid to reduce the resolution times with a joint POL Operations / Fujitsu
+Services action plan being put in place.
+
+Historical Breakdown of Complaints Data
+
+Oct 06 Nov 06 Dec 01
+Total number of complaints logged 87 94 98
+against Fujitsu Services
+Exclusions (duplicate / inappropriate) 12 14 13
+Total number ofactualcomplaints I 75 I 80 I see ee
+Complaints passed to POL Customer
+Relations 64 87 88
+Complaints excluded by POL
+Customer Relations (duplicate / 4 9 4
+chaser)
+Total number of complaints eS oe ‘
+investigated byPOL Customer 60 645
+Relations — eS iat ee ‘ : “
+Number of complaints passed For
+Information Only to Fujitsu 58 38 30
+Number passed to Fujitsu Services for 2 7 10
+formal investigation
+Number considered justified by Fujitsu 2 3 1
+Services
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: TO
+
+Date: 15-Jan-07
+Page No: 8 of 31
+FUJ00152267
+FUJ00152267
+
+Pe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+5 Service Summary
+
+5.1 Horizon Service Desk
+
+The HSD saw a decrease in the number of calls from Post Office Branches logged during December, with
+14,680 calls logged at the desk compared to 17,266 in November. The biggest decreases were seen in
+Inappropriate and Network calls, with both classifications receiving less than 1000 calls for the first time in 12
+months. Software call volumes have returned to normal run rate following the modification of the EMVB launch
+error message. The decrease in every category can be attributed to the shorter trading period due to the
+Christmas Bank Holidays.
+
+18,000
+=
+16,000
+14,000
+12,000 =
+@ PI Fs]
+10,000 x
+$8
+© 8,000
+g
+2
+6,000
+4000 +4 -—+ }—+ -—I +4 oo I-—]
+2,000
+0
+Deco —Jan-06 F606 Mar-06 Apr. May-06 — Jun-06 LOS Aug-0G-—‘Sep-06 Oct 08 (Nov0S. (ec 08
+Month
+GE Change Environmental Hardware inappropriate
+Canesc Referral network (imReference Data Security
+software (other Queries Business Incident One Shot Passwords
+lam Postshops —Monthly Call Limit ——6-month moving average
+Dee] Jan 06] Fab OS I Mar 08 [Apes] Way oe] ES A STS I TL
+Resse 7
+ange: 7 o z
+Pasishops = 3 xz = Eo 7
+Ema ‘ 7 Te 7 7 i 7H “or 7 “3
+Tarawa 1257 I “Tors I “a8 I 5 I 508s — I Toss I ase —I ares I a5 I ras] sane] T0885 I 96
+Taig 1551] 12968 I 108 I 1558 I —1asa tort 1052 I 108 I 1003 I 114 — 126 I 88
+_ == Re 783 ial 71 08 705 72 3 3 708 a % i i
+Tet waa [131 I “tao I a0 I ars Ie i513} 1585] 908 I 08 tert 90857
+Ther Gueres r 237 352 210 752 239 I 00 a7 27 ‘ot 24 337 I 25
+ce Osta a 7 o 2 a 2 i 0 3 2 7 o 2
+Secu T z 7 z 7 cy 7
+Die That Passnoes 72 3 Ez 770 730 5 20 77 DOE 735—I 205 Te 7a
+Sofware Zes2—I 2571 I 2424 [2047 2804 I 3068 I 2077 I 2683 [007 [pane I ars I 3108 I 2981
+“otal Calis ss105_I 13342 I 13039 I 15324 I t4e00 I tvre4 I ts561 I tases I t5e2r I 14763 I 615s I 17266 I 14600
+‘E-month moving average asi0s I 13224 I sate2 I 13703 I 13922 I tase I t4o72 I 15223 I 15020 I 15526 I 5752 I 15600 I 15522
+Monthy Cli Limit 2780 I s2rs0 [12750 I szrso I tars0 I 2750 I rzrs0 I s27s0 I 2750 I 12750 I i270 I v2rs0 I 12750
+Review of HSD SLTs
+
+The calls answered within 30 seconds SLT was missed this month (62.82%), due to extremely high incoming
+call volumes associated with the counter printers and also adverse weather conditions experienced throughout
+December.
+
+The % abandoned SLT was narrowly missed in December, with the Service Desk achieving 5.97% against a
+target of 5% and this can be directly linked to the call trends, with greater than expected peaks at the start of
+day.
+
+Both SLTs have been recalculated in accordance with section 2.3.2.1 of the Service Desk Service Description,
+and the reported figures are
+
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version, 1.0
+Date: 15-Jan-07
+Page No: 9 of 31
+FUJ00152267
+FUJ00152267
+
+Pe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+* Calls answered within 30 seconds SLT: 89.71%
+* % Abandoned SLT: 0.62%
+
+Sense & Respond / Service Improvement Activities
+
+All new HSD analysts have been trained and are now fully operational on the desk. Close monitoring of
+performance will be continued for early 2007 and additional training implemented where needed. All agents on
+the desk will be undergoing refresher training on less utilised processes.
+
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: TO
+Date: 15-Jan-07
+Page No: 10 of 31
+FUJ00152267
+FUJ00152267
+
+© ™
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+5.2 Engineering Service
+
+December saw a return to the number of visits experienced during October. There was a slight decrease in the
+number of printer swaps, both BOH and CP and screen replacements also reduced slightly.
+
+Although the Counter Printer volumes were down on those of November the quantities still remained high, a
+large percentage of these failures have been attributed to an issue with a mail label. It has been identified that
+the backing paper is of a different quality and results in labels becoming un-stuck, thus resulting in
+contamination of the mechanical parts of the printer rendering it in need of repair.
+
+As a result the SLT conformance for December has seen a performance of 64% for A priorities within 4 hours
+and 88% for C priorities. If we remove the Ithaca failures as a result of the new labels then the C priority
+conformance rises to 94% for the month. There are currently workshops underway to review and understand
+the 4 hour call process and improve procedures resulting in a full detailed service improvement plan with clear
+deliverables, action owners and time-scales.
+
+The Epson to Oki and Panasonic to OKI back office printer replacement project is now complete.
+The Royal Mail Group programme continues with phase 1 drawing to a close.
+
+It is now confirmed that we expect the first of the Epson Counter Printers to be rolled into the estate during
+March. It is expected that this will have a positive impact on a required reduction in call volumes going forward.
+
+Engineering Branch Visits
+
+8,000
+7,000 I
+6,000 +
+5,000 -
+> 4,000
+3
+$ 3,000
+2,000
+1,000 I
+°
+Dee0S LenS Feb-0G = Mar5AprOSMay-06 nO HOS A.CS Sep ORO NOOB Dee
+Month
+GiimBar code readers, Base units keyboards [screens
+(Aother items ithaca Printers (EBEpson Printers 0K printers,
+[=Panasonicprinters  GEPin Pads awobile units ——Monthly Call Limit
+Dec05 ] van-06 I Febo6 I Mar06 I Apr06 I May-05] vuno6 I Jur06 I Aug-06 I Sep00 I Oct05 I Nov-0e I Dec0s
+Bar code readers 208 I 225 I 217 I 268 I 201 I 215 I 206 I 105 I 105 I 103 I 217 I 275 I 227
+Base unis ama_I 42 I 45 I 509 I 209 I sos I 00 I 558 I 400 I 540 I 506 I om I 522
+obi units I 2 @ 2 7 I 2 I 4 2 Ey a7 I 2 I
+Keyboards seo_[ es I soe [ om I ara [soe I sea [57 [ oe I sax [soe [I ow [ or
+Ithaca Printers zoir_I 114 I 1752 I 2258 I 2109 I 2766 I 2625 I 2735 I 2007 I 2604 I 2060 I 3261 I s047
+Epson printers 4 I 2 a 6 1 it 8 6 9 » I 6 I 2 3
+‘Oki painters zee I 250 I 26 I si I 2m I 20 I or I 36 I sm I sar I 306 I 770 I si
+Panasonic painters 1 1 5 1 1 1 3 1 2 1 1 3 0
+Pin Pads ws [I 712 I oo I we I om I o70 I 7m I mo I 72 I 739 I om I om I o12
+Screens 505 _[ soo I «+ I so I aes I sor I «er I 570 I ror I 72 I roa I oa I 07
+‘other items oe [Ie I = I o I a 6 6 9 = I « I 3 [I m I 7
+TOTAL eu_[ 4602 I 4008 [5855 I area [5051 [sea [573s I seer I srr I e200 I 7057 I exo
+Epson to Ok exchanges. 39 16 14 12 12 2 9 7 10 to I 37_[ tec
+‘Average Dally Visi Rate 24 I aoe [ise [ae [203 Tosa [ao ee [ar Tate [a0 [20] 00
+Monty Call Lint as75_] 2675 I 2575 I 67s I a575 I 075 J 2075 I 075 J 075 I 2075 I cers I 575 I 75
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version, 1.0
+Date: 15-Jan-07
+
+Page No: 11 of 31
+FUJ00152267
+FUJ00152267
+
+CPOs
+OFFICE
+
+Pe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+Gateway Replacements
+
+300
+
+200
+10
+100
+50 ‘
+° : : :
+
+Dec-05  Jan-06 = Feb-O06 = Mar-06 = Apr-O6 = May-06 = Jun-06 ‘JuLO6 Aug-06 Sep-06 Oct-06 Nov-06 — Dec-06
+(B<24 hours @<48 1-72 <6 120 120 pts I
+Number of Gateways replaced by Engineers following call raised by PO Branch
+Elapsed
+Time of
+callin <24hours <48 i <72 <96 <120 120plus__I Total
+Dec-05 3 26.3% a] 29.9% Te 13.4 Ti] 8.0% 5.8% 2y__ 16.8 137]
+Jan-06 eo __ 42.9 al 28.6 TH 11.0% 5.8% 3.0% 778 754]
+Feb-06, 59{ 36.694 wl 27.3% 213.79 T4_87 Ex 7 EY a]
+Mar-06 639.3% 728.6% 2017.9 Te] __ 8.9% 31.8% Tq _95 76
+Apr-06 Te] 50.0 3208 Ty 7.9% a 5.3% 32.0% 2145 754
+May-06 Be 43.04 32] 23.394 7 8.1% 7 76 3a 3a 14.8% 225)
+Jun-06 3a] 47.6 36] 27.2 2] 10.2% 7 497 ay 3.9% Ta] 6.3% 206)
+Jur06 77 306% ea] 24.6% FiL_t63 279 748% 4015.97 25.
+Aug-06 240% Bo 30.8% 213.3 Te] 82% Ta 72% 397 18.
+‘Sep-06 a 269 372388 37, 15.3% 29.1% Ta__5.0% al 20.2 242)
+Oct-06 4a) 23.6% To] 34.5% 767" 29.9 EEX) 2314.39 203)
+Nov-06 Bi] 225" 7a] __ 34.474 315.99 210.19 744 2912.89 22,
+Dec-06 Sal 24.474 Ba] __27.2%4 212.0 29.2 Ta 65 a_20.79 2
+
+During December, there was an increase in the number of Gateway replacements exceeding 120 hours. Of the
+total 45 calls involved, 27 calls spanned the Christmas holiday period which had an adverse effect on these
+resolution times.
+
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: TO
+Date: 15-Jan-07
+Page No: 12 of 31
+FUJ00152267
+FUJ00152267
+
+Pe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+5.3 Branch Network Services / Central Network
+Branch Network Services
+
+During December the 837 Calls were logged across all Network Types into the Fujitsu Services. This is a
+decrease against the previous 3 months.
+
+The ‘Priority A — 6 hours’ SLT saw 14 failures from a total of 751 calls. Although the target (100%) was missed,
+a result of 98.1% was achieved against 98.3% for November.
+
+The Priority C - 6 hours’ SLT saw 2 failures from 62 calls. Although the target is (100%) was missed, a result of
+96.8 was achieved.
+
+SLA Failure, After investigation into the failures above we have identified that the contributing factors were
+related to the HSD call handling and delays in engineering attendance. Both of these issues are being
+addressed with the appropriate SDU’s.
+
+Other issues in December
+
+We have continued to receive a high number of ADSL/IP service cease notifications being processed by BT due
+to Branch Manager's activity. We are continuing to progress this issue with assistance from POL, C&W and
+internal SDU’s.
+
+Over the past Month there has been an increase in Branches with no Trading/On-Line Services Capability with
+2 Branches being without service for 6 days and 7 being without service for 4 days. This has been partially
+attributed to high call volumes with FMS and is also attributed to Branches where the ADSL service has been
+ceased and no back up Network availability has been available or the PM has declined the use of the PSTN line
+for back service to be applied.
+
+Central Network
+
+In Dec-06 there were a total of 837 network related calls logged at the HSD which is the lowest number since
+before CAPO was fully deployed in May-03. The cause code breakdown shows this result is due to no major or
+significant incidents affecting branch trading inside the Fujitsu or other Post Office supplier domains.
+
+BRANCH & COUNTER NUMBERS at Month End
+
+Live Branches 14,067!
+Live Counters 34,488)
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version, 1.0
+
+Date: 15-Jan-07
+Page No: 13 of 31
+Re)
+FUJITSU
+
+SERVICE REVIEW BOOK
+December 2006
+
+FUJ00152267
+FUJ00152267
+
+Live Branches by Service Type
+15,000
+10,000 = =
+5,000
+ie}
+Aug-06 Sep-06 Oct-06 Nov-06 Dec-06 Jan-07
+@IPStream ODataStream MISDN @VSAT
+Aug-06 Sep-06 Oct-06 Nov-06 I Dec-06 Jan-07
+IPStream _ 4,567. 4,655) 4,829 5,090) 5,197]
+[DataStream 7,297, 7,269] 7,287 7,214! 7,199]
+ISDN 2,130) 2,046} 1,852 1,680 1,578
+IVSAT_ 135 135] 132 113I 96
+TOTALS 14,129 14,105) 14,100) 14,097I 14,070)
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version 0)
+Date: 15-Jan-07
+
+Page No: 14 of 31
+FUJ00152267
+FUJ00152267
+
+Fe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+5.4 Operational Branch Change Service
+December 06 has seen another wholly conformant month against OLA’s.
+
+Jan- Feb- Mar-Apr May- Jun= ‘Aug- I Sep-Oct Nov- Dec-
+
+06 06 06 06 06 06 Jul-06 06 06 06 06 06 Cumulative
+TARGET
+MINUS
+CLOSURES
+(4%) 2.4% I 2.5% I 3.4% I 5.2% I 4.1% I 25% I 8.7% I 3.4% I 1.1% I 09% I 23% I 2.5% 3.1%
+TOTAL
+Veet a ya) 2.2% I 2.2% I 3.9% I 4.6% I 4.1% I 2.0% I 6.0% I 3.0% I 25% I 3.0% I 2.0% I 3.7% 2.9%
+FAILURES
+(number) 45 5 95 z 6 3 8 9 65 4 3 2 69.5
+FAILURES (Ex
+Meemncuone 2.2% I 2.2% I 3.1% I 3.9% I 4.1% I 2.0% I 6.0% I 3.0% I 1.0% I 0.8% I 2.0% I 1.9% 2.4%
+FAILURES (Ex
+Line Plant)
+(number) 45 5 75 6 6 3 8 9 25 1 3 1 57.5
+FAILURES -
+JOINT (%) 0.5% I 0.0% I 0.4% I 0.0% I 0.0% I 0.0% I 0.0% I 0.7% I 0.4% I 0.0% I 0.0% I 0.0% 0.3%
+FAILURES -
+JOINT (number) [i 0 1 0 0 0 0 2 1 0 0 0 7
+NORMAL
+BUSINESS
+INCIDENT 0 0 2 1 1 0 0 0 0 0 0 0 4
+NUMBER OF
+CHANGES
+DELIVERED 224 I 242 I 260 I 164 I 185 I 160 I 140 I 304 I 268 I 142 I 169 I 60 2318
+
+Failures.
+
+Council Car Park - Communications failure due to ISDN line plant issues
+Barford — Software failure; due to corrupted files being downloaded at point of counter configuration.
+Corrective Action:
+
+All previously identified corrective actions continue to be maintained and have the necessary focus applied. This
+is evident in the continued conformance to OLA. During December no new area’s of correction were identified.
+
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version, 1.0
+Date: 15-Jan-07
+Page No: 15 of 31
+Fe)
+
+December 2006
+
+FUJ00152267
+FUJ00152267
+
+FUJITSU SERVICE REVIEW BOOK &
+
+5.5 Service Integration Service
+
+5.5.1. Post Shops
+No issues to report. 100% achieved on both SLTs.
+
+Week1 Week 2 Week 3. Week 4 Week 5
+
+Monthly
+Totals
+
+Month:
+
+December
+Number of calls
+received
+Number of calls
+resolved in 8
+hours
+
+11 18} 17] 5 y 53]
+
+Number of calls
+resolved in next
+day
+
+Number of
+Hardware
+faults
+
+Number of
+software faults
+
+Number of
+outstanding
+calls
+
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version. 1.0
+
+Date: 15-Jan-07
+
+Page No: 16 of 31
+FUJ00152267
+FUJ00152267
+
+FUJITSU SERVICE REVIEW BOOK &
+
+December 2006
+
+5.6 Data Centre Operations Service / Data File Transfer
+
+There were no major incidents in relation to the Data Centre Operations Service within the Data Centre central
+Infrastructure for the month of December 06.
+
+Throughout the month there was a total of 72 operational changes, by Post Office Account ,there were no
+service impacts as a result of those changes being implemented
+
+Following on from last month's summary, the work has now been completed in replacing the UPS batteries in
+both Wigan and Bootle Data Centres with no service impact to the live service during the planned activity.
+
+Currently there are 20 customer facing risks identified in the Data Centre Operations service classified by RAG
+status as 1 red, 1 amber and 18 green risks.
+
+There will be a further requirement to perform additional maintenance activities in the Bootle Data Centre in
+January 07 which will result in the Data Centre running on secondary power (generator) for a period of eight
+hours overnight.
+
+This work is planned to take place from Saturday 13" January 2007 commencing at 23:59 and concluding on
+Sunday 14" January 2007 at 08:00.
+
+OCP 14782 raised for the re-organisation of GLPCA over the weekend of 9” & 10" December overran into
+Monday 11" December, which caused an outage of the POLFS service for the duration of Monday. By start of
+day on Tuesday POL FS service had resumed, and the delayed batch schedules had been started. At 16:30, all
+delayed processing had caught up, which allowed the Tuesday night processing to take place as normal. Fujitsu
+call E-0612100045 refers.
+
+5.6.1. Day J Failures
+
+There were zero no lets this month.
+
+5.7 Reconciliation Service
+
+There were 24 Reconciliation incidents cleared during December. This is 1 incident more than that reported in
+November.
+
+There were no priority incidents to be cleared within the 8 hour response SLT.
+
+All 24 incidents/ BIMS were cleared within the 5 day response SLT.
+
+At 4 of the 61 pilot branches of the now regressed T30_INC1, there were problems causing Payments and
+Receipts mismatch.
+
+Post Office Ltd was made aware of this knock on effect, and detailed analysis was provided showing the effect
+at both the branch and within POLFS.
+
+There was one more issue reported at one of the 4 branches, where the PM was able to reverse the same
+pouch twice. This was a system problem and has been corrected.
+
+5.8 Reference Data & Message Broadcast Service
+
+In the middle of December there was an issue with an alpha-numeric barcode being used with an A&L
+transaction. This was overcome by amending some Post Office ADC Reference Data to ignore a token which
+was causing the problem. The root cause has been identified and a fix is authorised for T40 release In the
+meantime the Reference Data workaround can be used should this situation occur elsewhere (which is
+relatively unlikely).
+
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: TO
+Date: 15-Jan-07
+Page No: 17 of 31
+FUJ00152267
+FUJ00152267
+
+Pe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+
+5.9 Security Service
+
+Automated Key Refresh
+
+An average of 20 branches a day were selected for key refresh while the key refresh algorithm was turned on
+for this month resulting in a total of 621 branches being targeted for refresh. The key refresh algorithm is now
+permanently turned on, and will be continually monitored.
+
+Manual Key Refresh
+There were no manual keys generated this month.
+
+Key Management Administration
+There were no major key management issues this month.
+
+5.9.1 Audit Retrieval Queries (Litigation Support)
+
+Received this month YTD Contract Received YTD Outstanding
+81 540 541 0
+Query Days this month YTD Contract Received YTD
+1487 11250 11175
+
+Banking Record Queries
+
+Received this month YTD Contract Received YTD Outstanding
+28 75 60 0
+Witness statements provided 0 Witness statements YTD 34
+this month
+Days in court this month 0 Days in court YTD 6.5
+Marine Drive not included
+
+5.9.2 Current Month and Forthcoming Court Commitments
+
+Outlet Court location Comments
+Marine Drive (Civil) 11/12 Dec 06 Crown Court (Civil) I Case ongoing
+London
+Aveley 2 11 December 06 Basildon Crown Court Witness not required
+Painters Ash 8 January 07 Maidstone Crown Court Witness not required
+Banbury Road January 07 TBA Awaiting Court
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version TO
+Date: 15-Jan-07
+
+Page No: 18 of 31
+FUJ00152267
+FUJ00152267
+
+Fe)
+FUJITSU SERVICE REVIEW BOOK
+December 2006
+requirements
+N Levenshulme 16 January 07 & 12 Manchester Crown Court I Witness required
+February 07
+
+5.9.3. Updates to Previous Months Prosecutions
+
+I Gaerwen I Defendant pleaded guilty.
+
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version, 1.0
+Date: 15-Jan-07
+Page No: 19 of 31
+Fe)
+FUJITSU
+
+SERVICE REVIEW BOOK
+December 2006
+
+COMMERCIAL IN CONFIDENCE
+
+peer,
+“POST
+FFICE
+
+FUJ00152267
+
+FUJ00152267
+
+>
+
+6 OCTOBER SERVICE LEVEL PERFORMANCE
+
+6.1 Horizon Service Desk
+
+Ref SLT ARL ‘Sdqp06 actos jov0s Pec06 Jano7 Febo7 Mar07 Apro7 May0} Juno Jul Au
+Horizon Service Desk
+80% Calls answered within 30 seconds
+as
+<10.0 Average Time to Answer <10.0 seconds i i i
+<5% Calls not answered Jf I— — + . +
+ta l [ 2 l ox
+hours 100.0 I l Jaz [ 93
+100% Voicemail calls raised next working day r I r
+I I jaz I Qs
+>= 85% First Time Fix I T T
+iI [ 2 iI as
+95% Software incidents resolved by Reboot <=
+minutes i t i aS
+100% Software incidents resolved by Reboot <=: 199.74
+minutes we i i oT i
+OCopyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: 1.0
+Date 14-Dec-06
+Page No: 20 of 31
+
+lo7 ~— Sepo7
+Fe)
+FUJITSU
+
+SERVICE REVIEW BOOK
+
+December 2006
+
+COMMERCIAL IN CONFIDENCE
+
+g
+
+OST
+OFFICE
+
+FUJ00152267
+
+FUJ00152267
+
+6.2 Engineering Service
+
+Ref SLT ARL Sepp6 _Ocf6 _—_NofO6 _Dek06 ~—Ja07__—Fqb07_—_—Maro7. [pr07__lay07 jund7 __[Juio7__[ Augo7
+Branch Infrastructure - Call to Fix
+95% No. I Priority A- 4 hours (flexible structure) x) CS CCS
+1 Ot aT a
+" r r r
+95% I NO I Priority B-8 hours (flexible structure) TAT ir TK i i i
+or aT 7
+100% NO I Priority A -6 hours (flexible structure) i
+a I I I
+100% I NO I Priorty 8 - 10 hours (flexible structure) si T i i
+100% NO Priority C - End of Next Business Day + 2 hours (flexible 4 S5h4 42 Bat
+structure) a1 2
+Postshop Engineer - Call to Fix
+100% I NO I Critical incident within 8 hours
+Qt 2
+100% I NO I Non-crtical incident within 48 hours r r
+La L @ [
+Priority B targets have now ceased as agreed.
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: 1.0
+Date: 14-Deo-06
+Page No: 21 of 31
+
+‘Sep07
+Fe)
+FUJITSU
+
+SERVICE REVIEW BOOK
+
+December 2006
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00152267
+FUJ00152267
+
+Sapa
+POST™
+OFFICE
+
+6.3 Branch Network Service
+
+Ref_ J stt I ARL Sepo6 I Octos I Novos I Decds I Jan07 I Feb07 I Maro7 I Apro7 I MayO7 I Juno? I vulo7 I AugO7 I Sepo7
+Branch Telecom Infrastructure- Gall to Fix
+95% I NO [Priority A-4 hours (flexible structure) 1 973 7A (OTB
+a4 ar Q2 a3
+95% ] NO Priority C-End of Next Business Day (flexible structure) 00.0 © 10009 T [ T
+a4 ar az as
+T T T T
+100% NO [Priority A - 6 hours (flexible structure) 97.4 98.0 I 98.3 98.1 it I it
+a4 ar a2 as
+100% I NO Priority C- End of next business day +2 hours 00.0 100.0 00.0 (RTE
+Branch and Counter Availability
+>99,80%] NO Branch Availability during the Critical Period
+a4 at az as
+>98.53%] NO [Counter Availabilty during the Critical Period I i I i
+a4 Qt az as
+>99.43%I NO [Branch Availability during Post Office Core Day 9980 087 997 908 i i i
+a4 ar az as
+T T T
+>99.13%] LD [counter Availability during Post Office Core Day 3 i i 1
+at az as
+Banking & Related Services Reliability
+99% LD Fixed Connection Reliability 100.0 100.0 100.0
+100.0 ar Q2 ‘as
+r T T
+99% LD JADSL Connection Reliability 100.0 100.0 100.0 100.0 I i
+100.0 ‘at a2 as
+97% LD Dialed Connection Reliability 99.0 100.0 100.0
+98.9 7 z g
+SCopyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: 1.0
+Date: 14-Deo-06
+Page No: 22 of 31
+FUJ00152267
+FUJ00152267
+
+SERVICE REVIEW BOOK
+
+foe)
+FUJITSU December 2006 fost
+
+COMMERCIAL IN CONFIDENCE
+
+6.4 Central Network Service
+
+Ret [sit] Ari ‘Sep06 I octos] Novod Decod Jan0f _Felfo7 __mpro?___Apro7__[tayo?_[Juno? I Julo7 I Augo7  Sepos
+Network Availability
+>=99.95} NO A&L Network Availability 1005 100.0 100.0
+aT 7 3
+tion Agent Availability for Each
+<A NO] Number of PI outages >2 minutes for same bank
+1 °: 3
+<=2 NO Number of PI outages >2 minutes for different banks
+a a2 $3
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: 1.0
+Date: 14-Dec-06
+
+Page No: 23 of 31
+FUJ00152267
+FUJ00152267
+
+SERVICE REVIEW BOOK
+
+(oe)
+FUJITSU December 2006
+
+COMMERCIAL IN CONFIDENCE
+
+6.5 Data Centre Operations Service
+
+6.5.1 Banking Transactions Time & DFD Outbound
+
+Banking & Related Services Transaction Times
+
+=2.5secq LD [Average time for Banking Transactions across Fixed, ADSL & 0. 0 0 0
+[Dialed Connections oO 0 Qi @ @
+
+IDFD Outbound - APS All Clients
+96.5% I LD APStransactions delivered by 23:59hr Day B 99.8 99 99.8
+
+a ai @ @
+97.5% I LD IAPStransactions delivered by Day C 99 998 999
+a4 Qi @ @
+98.5% I LD IPStransactions delivered by Day D 99 99 9
+a Qi @ @
+100% I LD I APStransactions delivered by Day J EE I 1000
+a 9.9 ai @ @
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: 1.0
+Date: 14-Dec-06
+
+Page No: 24 of 31
+Fe)
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+SERVICE REVIEW BOOK
+December 2006
+
+FUJ00152267
+FUJ00152267
+
+OS:
+OFFICE
+
+6.5.2 Data File Delivery - LFS
+
+Re I sit Sep0e I Octos I Novos I Decos Feb07 Juno7 I Juo7 I Augo7 I Sepo7
+IDFD Outbound - LFS
+9% IConfirration of pouch reasived at Branch by 22:00hr Day A
+@
+72% IConfirration of pouch received at Branch by Day B
+@
+100.0% IConfirration of pouch reasived at Branch by Day I
+@
+97% ISAPADS Pouch collected from Branch by 22:00hr Day A
+ey
+7.2% ISAPADS Pouch collected from Branch by Day B
+B
+100.0% ISAPADS Pouch collected from Branch by Day I
+eB
+96.25% Daily Cash on Hand details to SAPADS by 23:59hr Day A
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version 1.0
+Date: 14-Dec-06
+Page No: 25 of 31
+Fe)
+FUJITSU
+
+COMMERCIAL IN CONFIDENCE
+
+SERVICE REVIEW BOOK
+December 2006
+
+FUJ00152267
+FUJ00152267
+
+OS:
+OFFICE
+
+6.5.3 Data Delivery - POL MIS & POLFS
+
+Ref SLT Sep06 I Oct06 I Nov06 I Dec06 Feb07 Jun07 I Jul07 I Aug07 I Sep07
+IDFD Outbound - POL MS
+H% Transaction records to TIP gateway by 03,00hr Day B 20 98 98.9
+4 @
+7% Transaction records to TIP gateway by 03:00hr Day C 99 99 99 99
+4 ) @
+98% Transaction records to TIP gateway by 03:00hr Day D 99 I (9 99 99
+a4 0 @
+100% Transaction records to TIP gateway by 03:00hr Day J Ee I 1000
+a4 9.9 @
+IDFD Outbound - POLFS
+6% Transaction records loaded to configured POLFS by 07:30hr 2.0
+Day B a4 Cy
+7% Transaction records loaded to configured POLFS by 07:0hr 0.9 0.6 =
+Day c 4 9 @
+98% I Transaction records loaded to configured POLFS by 07:30hr 99.9 99.8 es) es)
+Day D ‘4 99 we
+100% I Transaction records loaded to configured POLFS by 07:30hr 99.9 99.9 00.0
+Day J a4
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version 4.0
+Date: 14-Dec-06
+Page No: 26 of 31
+Fe)
+FUJITSU
+
+SERVICE REVIEW BOOK
+December 2006
+
+COMMERCIAL IN CONFIDENCE
+
+Sapa
+POST™
+OFFICE
+
+FUJ00152267
+FUJ00152267
+
+6.5.4 DFD Outbound - Reconciliation, HR SAP, CTS & PO Client Files
+
+Ref [Sut I ARL ‘Sep0s I octos I Novos I Decos I Jano7 I Febo7 I maro7 I Apro7 I Mayo7 I Juno7 I Julo7 I Augo7 I Sepo7
+DFD Outbound- Reconciliation& SettiementReports to TIP}
+Joateway
+NO [elivery by 08:05hr Day 8 00
+0.0 Qt Q2 Q3
+— T T T
+100% I No petivery by 12:00 (atte failure in FS domain) or by 18:00 (after 400.0 I I
+failure of DRSH or TES) 100.0 Qi Q2 Q3
+IDFD Outbound - Reconciliation Files I I
+< NO [Number of failures of REC fle delivered to CAPO daily by 00
+f03:00n" 0.0 ar az Os
+— T T T
+<2 1 NO Humber of fares of RECtie delivered to ARL dally by 03:00hr at l J [
+0.0 ar az cy
+— T T T
+100% I No JREC files delivered to CAPO by 16:00hr on Day 8 400.0 L 1 I
+100.0 ar az cy
+— T T T
+400% I NO REC files deliveredto AaL by 18:00hr on Day 8 400.0 100.0 i I
+100.0 Qi Q2 Q3
+lDFD Outbound - HR SAP
+100% } LD JHR SAP delivered to the POL gateway by 21:30hr on the Friday 100.0 100.0
+preceding the pay run date 400.0 T yi g
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: 1.0
+Date: 14-Dec-06
+
+Page No: 27 of 31
+Fe)
+FUJITSU
+
+SERVICE REVIEW BOOK
+December 2006
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00152267
+FUJ00152267
+
+6.5.5 DFD Inbound —LFS & Transactions Corrections File Delivery
+Ref SLT ARL Sep06 I Oct06 I Nov06 I Dec06 I Jan07 I Feb07 Apr07 I May07 I Jun07 Jul07 I Aug07 I Sep07
+IDFD Inbound - LFS.
+20% NO __JSAPADS Planned Orders delivered by 08:00hr on Day A
+a
+96% ARL_ JSAPADS Planned Orders delivered by 12:00hr on Day A
+@
+Delivery of transaction correction records to Branches
+javailable at 23:59:59hr Day A
+90% LD [Transaction corrections available by 08:00 on Day B
+@
+6% LD [Transaction corrections available by 12:00 on Day B
+@
+400% I LD _ [Transaction corrections available by 23:59:59 on Day J
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version 4.0
+Date: 14-Dec-06
+Page No: 28 of 31
+Fe)
+FUJITSU
+
+SERVICE REVIEW BOOK
+December 2006
+
+COMMERCIAL IN CONFIDENCE
+
+FUJ00152267
+FUJ00152267
+
+OFFICE
+
+6.5.6 Central Systems, POLFS & TES Availability
+Ref [sit [art sepos I octoé I Novos I Decos I Jano7 I Febo7 I maro7 I Apro7 I mayo7 I Juno7 I suio7 I Augo7 I sepo7
+[Central Systems Availability
+<3 NO Joutages in Core Hours where the Core Solution is unavailable
+core hrs Jat >10% of Branches per SLT year ‘ar az as
+<8 NO outages in Core Hours where the Core AND Banking Solutions
+core hrs fare unavailable at >10% of Branches per SLT year ar a2 Qs
+<=14 [NO [outages in Core Hours where the Core Solution AND Other
+core hrs [Services are unavailable at >10% of Branches per SLT year ar Q2 ‘as
+POL FS Availability
+98.5% I NO JPOLFS Availability
+ar a2 as
+>=4 NO JPOLFS shall not be unavailable to users on any single occasionI 42 l I I
+hours lduring the service level management period a4 ‘at a2 as
+[Transaction Enquiry Service
+99.75% I NO [TESQA availability between 07:00hr and 22:00hr for SLT
+Icalendar year ‘ar a2 as
+T T T
+97% I NO [Transaction received in the data centre between 07:00 and I [ l
+120:00 daily will be available within 15 mins on TESQA at a2 as
+T i T
+100% NO if TES fails transaction received between 07:00 and 20:00 will I [ I
+be available within 2 hours on the TESQA ‘ar a2 Qs
+100% NO [Transaction received in the data centre between 20:00 and I I
+}22:00 daily will be available within 40 mins on TESQA ar Q2 ‘as
+T T T
+100% NO ]if TES fails transaction received between 20:00 and 22:00 will [ I iI
+be available within 2 hours on the TESQA ar a2 as
+100% NO [Transaction received in the data centre between 22:00 and I I
+[07:00 daily will be available within 4 hours on TESQA ar az is
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: 1.0
+Date: 14-Deo-06
+Page No: 29 of 31
+FUJ00152267
+FUJ00152267
+
+SERVICE REVIEW BOOK
+
+foe)
+FUJITSU December 2006 fost
+
+COMMERCIAL IN CONFIDENCE
+
+6.6 Reference Data Service
+
+Ref [sit [art Sepoé I Octos I Novos I Decos I Jano7 I Febo7 I Maro7 I Apro7 I Mayo7 I Juno7 [I Juio7 I Augo7 I Sepo7
+IDFD Inbound - APS Tariff data
+
+96% I NO IAPSreference data delivered by Day B
+
+ai @ Os
+97% I NO ]APSreference data delivered by Day C
+
+Qt ‘a2 cg
+98% I NO IAPSreference data delivered by Day D.
+
+Qi @ os
+100% I NO [APSreference data delivered by Day J
+
+Qt a2 a3
+
+IDFD Inbound - Reference Data
+
+96% I NO Reference data delivered by Day B
+
+Qi a2 os
+97% I NO Reference data delivered by Day C I [ I
+
+at a2 Os
+98% I LD Reference data delivered by Day D
+
+ai @ 3
+100% I LD [Reference data delivered by Day J
+
+Qi @ a3
+
+©Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version 1.0
+Date: 14-Dec-06
+
+Page No: 30 of 31
+Fe)
+FUJITSU
+
+SERVICE REVIEW BOOK
+December 2006
+
+COMMERCIAL IN CONFIDENCE
+
+POST™
+OFFICE
+
+FUJ00152267
+
+FUJ00152267
+
+6.7 Reconciliation Service
+
+Ref SLT AR} Segoe Octos jov06. Dec06 Jano7 Feb0: Mar§7 Aqro7 jayO7 Juno7
+Exception / Error Resolution
+95% Nd Banking & Related Services Priority Exceptions reg
+hours or less b n
+95% Nd BIM report issued within 5 working days
+bs a2
+Payment File Delivery to Merchant Acquirer (Deltit Gard)
+by 12: Ld] Payment file delivered to MA on the day following deation «
+of the file fr -
+Copyright Fujitsu Services Ltd 2006 COMMERCIAL IN CONFIDENCE Version: 1.0
+Date: 14-Dec-06
+Page No: 31 of 31
+
+July Augt
+
+a3
+
+a3
+
+a3

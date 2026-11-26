@@ -1,0 +1,1174 @@
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+he)
+FUJITSU Company Restricted
+
+Document Title: Local Security Audit Report - Networks - 2009
+Audit Result Status Amber
+See section 1.1
+Document Reference: LOC/PBU/RMG/SCY/0017
+Document Type: Security Document, Report
+Release: Not Applicable
+Abstract: Audit mainly to ISO 27001 sections A.10.6, A11.4 and A.12.3
+Document Status: APPROVED
+Author & Dept: Nigel Hatcher, RMGA Quality Manager
+
+External Distribution:
+
+jualil iy for storage and linking to from
+
+Frepor
+the CAD.
+
+eing sent to
+
+Security Risk YES. See section 0.10, Security Risk Assessment.
+
+Assessment Confirmed
+
+Approval Authorities:
+
+Na Role Signatu Date
+Nigel Hatcher RMGA Quality Manager
+
+Note: The Reviewers/Approvers Role Matrices (PGM/DCM/ION/0001) & (CMAON/078) do not include this type
+of document.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 1 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+he)
+FUJITSU Company Restricted
+
+0 Document Control
+
+0.1 Table of Contents
+
+0 DOCUMENT CONTROL.
+
+0.1 Table of Contents.
+0.2 Document History.
+0.3 Review Details.
+0.4 Associated Documents (General & to Template
+0.5 Associated Documents (specific to audit).
+0.6 Abbreviations.
+0.7. Glossary...
+0.8 Changes Expected.
+0.9  Accuracy.....
+0.10 Security Risk Assessmen'
+
+an
+
+1 INTRODUCTION
+1.1 Audit Result Status guidance.
+
+2 SCOPE AND CONDUCT OF AUDIT.
+
+3 MANAGEMENT SUMMARY..
+
+4 RESULTS SUMMARY.
+
+5 AUDIT NOTES AND FINDINGS
+
+5.1 Document Reviews...
+RMGA Security Policy.
+
+5.1.1
+
+5.1.2 RMGA Customer Service Incident Management Process Detail: 10
+
+5.1.3 HNG-X Technical Network Architecture. 10
+
+5.1.4 Network Security High Level Design... 10
+
+5.1.5 I HNG-X Reviewers and Approvers Roles Matri: 10
+i
+
+interviews...
+5.2.1. SDM for Networks.............
+5.2.2 Chief Information Security Officer (CISO).
+5.2.3 Operational Security...
+5.2.4 Software Support Centre.
+5.2.5 Project Managers for Networks Design & Development.
+5.2.6 — Architects for Networks.
+5.3 Visit to Data Centre...
+5.3.1 Sweeping for unauthorised connections.
+
+A. ANNEX — ADDITIONAL INFORMATION...
+Al. ISO 27001 - Criteria...
+
+B. ANNEX - INDIVIDUAL “OBSERVATION” FORMS
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 2 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+he)
+FUJITSU Company Restricted
+
+B.1. LOC/PBU/RMG/SCY/017 Sequence No. 1 “Ob1)”.
+B.2. LOC/PBU/RMG/SCY/017 Sequence No. 2 “Ob2)”.
+B.3. LOC/PBU/RMG/SCY/017 Sequence No. 3 “Ob3)”.
+B.4. LOC/PBU/RMG/SCY/017 Sequence No. 4 “Ob4)”.
+B.5. LOC/PBU/RMG/SCY/017 Sequence No. 5 “Ob5)”.
+B.6. LOC/PBU/RMG/SCY/017 Sequence No. 6 “Ob6)”.
+B.7. LOC/PBU/RMG/SCY/017 Sequence No. 7 “Ob7)”.
+
+SOBNDAR
+
+Figures (Sketches) and Tables
+Figure 5-1 Sketch of fit to lefthand side of ‘Classic V Diagram” 14
+
+0.2 Document History
+
+Version No Summary of Changes and Reason for Issue Associated Change -
+CP/PEAK/PPRR
+Reference
+
+V0.1 28-Jul-2009 Initial drafting from local quality audit template. NIA
+
+Nigel Hatcher Insertion of draft notes on Document Reviews and Interviews.
+
+Individual forms populated.
+Circulated to lan Mills and Mark Jarosz for comments on
+interview notes.
+
+vo.2 31-Jul-2009 Corrections to v0.1. Interview notes consolidated to only I N/A
+Nigel Hatcher Observation areas (see v0.1 for ‘dump’ of interview notes)
+V1.0 18-Aug-2009 I Raised to Approved following nil return of comments NA
+
+Nigel Hatcher
+
+0.3 Review Details
+V0.2. by 14-Aug-2009
+nigel.hatcher!~
+
+Review Comments by
+
+Review Comments to
+
+Mandatory Review
+
+Role Name
+RMGA Quality Manager (if not the author)
+Optional Review
+Role Name
+Business Assurance Security Consultant John Wright
+(Auditor)
+RMGA Technical Security Consultant Bill Membery
+(Auditor)
+Penetration Testers Jeff Pridmore
+Mark Havard
+RMGA Operations Director
+(or Nominee) Dave Keeling
+RMGA CISO Howard Pritchard
+RMGA Security Information Governance Brian Pinder and Neneh Lowther
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBUIRMGISCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 3 of 20
+FUJ00080805
+
+FUJ00080805
+(oe) Local Security Audit Report - Networks - 2009
+FUJITSU Company Restricted
+RMGA Security — Project Manager Marion Chave-Jones
+Interviewees (or remote contacts. -
+RMGA Operational Security Manager Peter Sewell
+RMGA Operational Security ‘Andy Dunks
+RMGA SDM for Networks fan Mills
+HNG-X Networks Design, Development & Implementation I Steve Ashlin — Project Manager
+Project Management Chris Credland - Project Leader
+HNG-X — Lead Network Architect Mark Jarosz
+RMGA SSC Steve Parker
+Issued for Information — Please restrict this
+distribution list to a minimum
+Position/Role Name
+(*) = Reviewers that returned comments
+0.4 Associated Documents (General & to Template)
+[Ref] & Doc Reference Version Date Title Source
+PGM/DCM/TEM/0001 RMGA HNG-X Dimensions
+(D0 NOT REMOVE) Generic Document Template
+[ADUG] ” a Fujitsu (UK & Ireland) Café-vik
+Q8&CS/ADB/001 Assessment Database Users Guide.
+b d
+“Database Information” )
+[CAD] nla ae (Corporate) Café-vik
+Assessment Database
+[CARP] _ 1-AB1.5 12 01/06/07 (Corporate) Café-vik
+author: Alan Clapson Assess & Review BMS Process
+id ‘Q
+u and
+Processes”)
+[CART] none apparent I None I Jun 2007 (Corporate) Assessment Report Template I Café-vik
+author: Alan Clapson? (Word Format)
+(can be accessed via ‘Quality Portal’
+Database
+[IAS] ” As version RMGA - Integrated Audit Schedule Dimensions
+PGM/PAS/PLA/0014.
+
+©Copyright Fujitsu Services Ltd 2009
+
+UNCONTROLLED IF PRINTED
+
+Company Restricted
+
+Ref: LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+
+Date: 18-Aug-2009
+
+Page No: 4 of 20
+FUJ00080805
+
+FUJ00080805
+(oe) Local Security Audit Report - Networks - 2009
+FUJITSU Company Restricted
+
+[SCQA] none apparent I 2.0 28 10 05 (Corporate) guide Café-vik
+author: Alan McFall? ’Standard for Conducting Quality Audits’
+
+(can be accessed via ‘Quality Portal’
+
+Irrelevant “Policies and
+
+Processes’ )
+[TLQAR] Local Quality Audit Report template Dimensions
+PGM/PAS/TEM/0004 & = RMGA
+(Do Not Remove) Portal
+
+** Unless a specific version is referred to above, reference should be made to the current
+
+approved versions of the documents.
+
+0.5 Associated Documents (specific to audit)
+
+[Ref] Doc  Versior Date Title Source
+
+Reference
+
+ISO 27001 : 2005 © 18-Oct-I Information security management systems -4T Security
+2005 Requirements on Café-vik
+
+[QUE] 27-Mar-2008? I ISO, ISO/IEC 27001 audit guidance. Iso
+
+none
+
+[LSAP] 1.0 to 1.2 Local Security Audits Plan - 2009 Dimensions
+
+SVM/SEC/PLA/0014
+
+SVM/SEC/POL/0003_ I V4.0 12-Feb-2009 RMGA Information Security Policy Dimensions
+
+& RMGA
+Portal
+SVM/SDM/PRO/0018 I V2.2 14-Apr-2009 RMGA_ Customer Service _ Incident I Dimensions
+Management Process Details
+
+- Appendix A - Security Incident Reporting
+
+SVM/SDM/SD/0012 Central Network Service Description Dimensions
+
+DES/NET/HLD/0016 I V2.0 07-Oct-2008 Network Security High Level Design Dimensions
+
+[HTNA] V0.7 29-Jan-2009 HNG-X Technical Network Architecture Dimensions
+
+ARC/NET/ARC/0001 onwards?
+
+ARC/SEC/ARC/0003 HNG-X Technical Security I Dimensions
+
+Architecture
+Various Various others — mentioned in text
+
+** Unless a specific version is referred to above, reference should be made to the current
+
+0.6 Abbreviations
+
+approved versions of the documents.
+
+©Copyright Fujitsu Services Ltd 2009
+
+UNCONTROLLED IF PRINTED
+
+Company Restricted Ref
+Version:
+Date:
+Page No:
+
+LOC/PBU/RMG/SCY/0017
+
+V1.0 APPROVED
+18-Aug-2009
+5 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+Fe)
+FUJITSU
+
+Company Restricted
+
+Definition
+
+See “Associated Documents” section
+
+Business Management System
+
+Contract Controlled Document
+
+High Level Design
+
+Horizon Next Generation — project X
+
+International Organization for Standardization
+
+LLD Low Level Design
+
+OOH Out Of Hours
+
+RAG Red Amber Green
+
+RMGA Royal Mail Group Account
+
+SRS System Requirements Specifications
+
+0.7 Glossary
+
+Term Definition
+
+0.8 Changes Expected
+
+Corrections after review
+
+0.9 Accuracy
+
+This document is not a Contract Controlled Document (CCD).
+
+Fujitsu (UK & Ireland) endeavours to ensure that the information contained in this document is correct but, whilst
+every effort is made to ensure the accuracy of such information, it accepts no liability for any loss (however
+caused) sustained as a result of any error or omission in the same.
+
+0.10 Security Risk Assessment
+
+Security risks have been assessed and it is considered that there are no security risks relating specifically to this
+document.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 6 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+he)
+FUJITSU Company Restricted
+
+1 Introduction
+
+This Local Security Audit Report presents the outcome of a planned audit of Networks and Cryptographic
+Controls to ISO 27001 in the RMGA and considered:
+a) The compliance of those functions with the Fujitsu (UK & Ireland) Business Management
+System (BMS) and Security Policies and RMGA Policies and Procedures;
+b) The compliance of those functions with relevant aspects of the ISO 27001:2005 standard;
+c) Any areas suitable for promotion as good business practice across the RMGA Account and/or
+Fujitsu (UK & Ireland).
+However ‘trails’ led the auditors to a number of other areas of the standard.
+
+The work was conducted using the principles and process defined in the Corporate Assessment Process
+[ref CARP] and the guide Standard for Conducting Quality Audits [ref SCQA] with reference to the
+questions set out in ISO, ISO/IEC 27001 [ref QUE] audit guidance .
+
+The audit was identified in the Integrated Audit Schedule [ref [AS] V9.0 as being scheduled to have been
+conducted in July 2009 and more detailed planning was set out in Local Security Audits Plan — 2009 [ref
+LSAP] V1.0.
+
+1.1. Audit Result Status guidance
+
+A Red Amber Green (RAG) indication in the ‘Audits Results Status’ field on the report's front sheet takes
+one of the following values:
+
+Red - Urgent Corrective Action is required because Audit results indicate at least one
+risk has been identified which will have a_ serious impact upon
+Account/Programme/Project deliverables or on the integrity of possible ISO
+27001 registration.
+
+Amber - Corrective Action is required because audit results indicate that a risk has been
+identified which will impact upon Account/Programme/Project deliverables or
+which is a non-conformance against ISO 27001.
+
+GBBA- = The audit has not identified any risks and no action is required.
+
+2 Scope and Conduct of Audit
+
+The scope and objectives of the audit were to examine RMGA Security of Networks in regard to the
+requirements of ISO 27001 : 2005.
+
+The audit was conducted by
+
+Nigel Hatcher (NH) — RMGA Quality Manager mainly during the period 6" to 17" July 2009.
+with the assistance of:
+
+John Wright (JW) - Business Assurance Consultant at BRAO1 on 15"" July 2009:
+
+Bill Membery (BM) - RMGA Technical Security Consultant at IRE11 on 17" July 2009
+
+9 members of the RMGA team were interviewed or contacted as part of the audit:
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 7 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+(ee)
+FUJITSU Company Restricted
+
+Andy Dunks — Security Team by email 2" July with reply received on 16" July;
+
+lan Mills - RMGA Networks Service Delivery Manager (SDM) on 7" & 15" July;
+
+Steve Parker - RMGA SSC by email on 9" July;
+
+Peter Sewell - RMGA Operational Security Manager by email on 9" July;
+
+Steve Ashlin — Project Manager )
+
+Chris Credland - Project Leader ) Networks Design, Development & Implementation on 15" July;
+Howard Pritchard — CISO 15" July;
+
+Mark Jarosz — Lead Network Architect on 16" July;
+
+and
+
+in addition the independent auditor, John Wright, interviewed Nigel Hatcher - RMGA Quality Manager.
+
+Documents listed in Section 0.5 - “Associated Documents (specific to audit)” were used or viewed.
+
+Any “Observations” raised are categorised as Non-conformities and Formal Observations in the forms in
+Annex B.
+
+Corrective action plans co-ordinated by the RMGA Security Team are required for all Non-conformities
+and Formal Observations raised and should be recorded within the Corporate Assessment Database
+[CAD].
+
+Note: The assessment was based on random samples and therefore nonconformities may exist which
+have not been identified.
+
+3 Management Summary
+
+This Local Security Audit Report presents the outcome of an audit of security of Networks, mainly to ISO
+27001 sections Annex A.10.6, A.11.4 and A.12.3, in the RMGA although ‘trials’ led the auditors to rasie
+observations in other areas of the standard.
+
+7 Formal Observations were raised and therefore Corrective Actions (plans) are required to be co-
+ordinated by the RMGA Security Team.
+
+4 Results Summary
+
+Major Non-Conformances - none
+Minor Non-Conformances > none
+Formal Observations -7
+
+Summary of Formal Observations:
+
+1) Ob1) To ISO 27001 - A.10.6.1: Little evidence could be found that regular ‘sweeps’ for
+detecting un-authorised Bluetooth or wireless connections, as required by the RMGA
+Security Policy section 10.6.1, have been planned, suitable equipment obtained, scans
+carried out, investigated and records kept.
+
+2) Ob2) To ISO 27001 - A.11.4.1: The Out of Hours (OOH) password changing process
+(RS/PRO/047) will no longer be necessary as access for support will be via the iKey
+authentication. So that document will not be taken forward.
+
+Preparation needs to be made:
+a) to be ready to mark it Withdrawn in PVCS;
+b) amend the reference in the Security Policy.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED,
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 8 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+(ee)
+FUJITSU Company Restricted
+
+3) Ob3) To ISO 27001 - 4.3.3 (Records) & A.11.4.3: No record was found that automatic
+equipment detection had been considered.
+
+4) Ob4) To ISO 27001 — 4.3.2 (Control of Documents): The document “Network Security High
+Level Design” (DES/NET/HLD/0016) appears to have been started before the RMGA
+Security Policy (SDM/SEC/POL/0003) was written and hence in its Section 4.1.1 talks of a
+Security Policy that has no reflection on the policy document.
+
+One or other of the two documents needs to be amended to clarify this.
+
+5) Ob5) To ISO 27001 — 4.3.2 (Control of Documents - Review): The “RMGA HNG-X
+Document Reviewers / Approvers Role Matrix” (PGM/DCM/IOM/0001) was checked at times
+during the audit to clarify if Security was being asked to review documents It became
+
+apparent that they (CSPOA. security” “}) are not on the ‘listing’ for Low Level
+Designs, which it was considered by the auditor that they should at least be amongst
+Optional Reviewers. And hence should be requested to be added to the Matrix.
+
+6) Ob6) To ISO 27001 4.2.1 d) 1) (Identify Assets) & A.7.1.2 (Ownership of Assets): It was
+noted that Limited secure ID log in is authorised by the Networks SDM to Cable & Wireless
+by email. This is Ownership of an Asset and should be recorded.
+
+7) Ob7) To ISO 27001 0.2 a) (Understanding Security Requirements) It is possible that the
+‘detail’ of ISO 27001 may not have been fully addressed in Requirement capture, rather just
+an entry about being compliant. This needs to be clarified.
+
+The audit results status is therefore considered to be:
+
+Ambet- Corrective Action is required by the RMGA Security Management Team
+because audit results indicate that a risk has been identified which will impact
+upon Account/Programme/Project deliverables or which is a non-conformance
+against ISO 27001.
+
+Therefore Corrective action plans, co-ordinated by the RMGA Security Team, from the various RMGA
+staff /teams are required for all Formal Observations raised.
+
+5 Audit Notes and Findings
+
+The criteria that the auditors kept in mind, whilst conducting the audit, is set out in Annex A.
+
+5.1 Document Reviews
+
+As preparation for and follow up to interviews a number of document were reviewed.
+
+5.1.1. RMGA Security Policy
+
+Parts of the “RMGA Security Policy” (SVM/SEC/POL/0003) are set out to mirror the requirements of ISO
+27001 : 2005 Annex A.
+
+10.6 (A.10.6) covers Network Security Management:
+
+Within 10.6.1 the policy states that:
+
+Regular sweeps must be carried out within the Data Centres and Support Centres to detect
+Wireless and Bluetooth devices connected to HNG-X and the results documented.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED,
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 9 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+(ee)
+FUJITSU Company Restricted
+
+But during the period of the audit that could not be confirmed as being in place.
+Formal Observation Ob7) raised.
+
+11.4 (A.11.4) covers Network Access Controls:
+
+Within 11.4.1 there is reference to an Out of Hours password changing process (RS/PRO/047). When
+that was viewed it was discovered to have a classification that is no longer supported at Corporate level.
+Andy Dunks the last author of the Out of Hours (OOH) password changing process (RS/PRO/047) was
+contacted by email regarding the classification of the document. He replied that this process for OOH
+support will no longer be necessary as access for support will be via the ikKey authentication.
+
+So this document will not be taken forward. Therefore reference to it in the Security Policy needs to be
+amended. Formal Observation Ob2) raised.
+
+Within Section 11.4.3 of the policy it has the opened ended statement:
+
+Automatic equipment identification will be considered as a means to authenticate connections
+from all locations and equipment within the RMGA.
+
+But during the period of the audit no record of if this having been done and recorded could be found.
+Formal Observation Ob3) to ISO 27001 - 4.3.3 (Records) & A.11.4.3 raised.
+
+12.3 (A.12.3) covers Cryptographic Controls:
+Within 12.3.1 a policy for cryptographic controls is set out.
+Within 12.3.2 it set out how Key Management will be implemented.
+
+5.1.2 RMGA Customer Service Incident Management Process
+Details.
+
+The document “RMGA Customer Service Incident Management Process Details” (SVM/SDM/PRO/0008)
+Appendix A sets out how Security Incident Reporting should be conducted.
+
+5.1.3 HNG-X Technical Network Architecture
+
+The document “HNG-X Technical Network Architecture” (ARC/NET/ARC/0001), which is at present 150
+pages long, was viewed on line, mainly during the interview with Mark Jarosz (see Architects for
+Networks section).
+
+5.1.4 Network Security High Level Design
+
+The document “Network Security High Level Design” (DES/NET/HLD/0016) provides a High Level
+overview of the network security components and appliances and positioning required to secure the HNG-
+X solution. It is a derivative of the parent documents found within Dimensions, namely HNG-X Technical
+Network Architecture ARC/NET/ARC/0001 (150 pages) and HNG-X Technical Security Architecture
+ARC/SEC/ARC/0003.
+
+This was scanned to see if Automatic Equipment Identification was considered. Nothing was found on
+the subject. See Formal Observation Ob3).
+
+This document was started before the RMGA Security Policy (SDM/SEC/POL/0003) and hence in its
+Section 4.1.1 talks of a Security Policy that has no reflection on the policy document. One or other of the
+two documents needs to be amended to clarify this. Formal Observation Ob4) raised.
+
+5.1.5 I HNG-X Reviewers and Approvers Roles Matrix
+
+This document “RMGA HNG-X Document Reviewers / Approvers Role Matrix” (PGM/DCM/IOM/0001)
+was checked at times during the audit to clarify if Security was being asked to review documents.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 10 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+he)
+FUJITSU Company Restricted
+
+It became apparent that they (CSPOA. security! !) are not on the ‘listing’ for Low Level
+Designs (LLD), which it was considered by the auditor that they should at least be amongst Optional
+Reviewers. And hence should be requested to be added to the Matrix.
+
+Auditor's Notes:
+
+a) For all documents to review, the use of the joint email security team mailbox should be re-enforced
+(awareness cascade) as some documents viewed were being addressed to particular members of the
+security team only and hence might not get reviewed properly.
+
+b) A request should be made to amend the Matrix to list Peter Sewell as the Operational Security
+Manager and not just Security.
+
+Formal Observation Ob5) raised.
+
+5.2 Interviews
+
+During the allotted timeframe of the audit a number of interviews (see Scope and Objectives section)
+were conducted, either face to face or by email correspondence, to check that documented policy and
+processes (procedures, guidelines) were being followed.
+
+Only the points relevant to Observations are recorded.
+
+5.2.1. SDM for Networks
+
+RMGA Security Policy section 10.6.1: Networks monitored for breaches by protection from Intrusion
+Detection System (IDS) and Intrusion Prevention System (IPS).
+
+SDM for Networks, lan Mills had no information as to whether ‘Sweeps’ for Bluetooth and wireless
+connections are being conducted as is stated in the Security Policy. Add to Formal Observation Ob7)
+
+ISO 27001, A.11.4.3
+Has automatic terminal identification been considered?
+The SDM had no knowledge if this had/was being done. (see Ob3))
+
+Limited secure ID log in is authorised by lan to C&W by email
+(this is Ownership of an Asset re A.7.1.2). Formal Observation Ob6) raised
+
+5.2.2 Chief Information Security Officer (CISO)
+
+Howard Pritchard — CISO was briefly interviewed by JW on 15" July.
+The main topics covered were the handling of Assets and Risks.
+
+A further point about Requirements was followed up via email by NH on the 21 July, that it had became
+apparent to the auditor that information on the requirements of the ISO 27001 “Control” areas may not
+have filtered down to staff that might need to consider them.
+
+The ‘detail’ of ISO 27001 may not have been fully addressed in Requirement capture, rather just an
+entry about being compliant.
+
+The CISO replied that it had been requested earlier in the year, but after going through all the
+documentation online, it appears that nothing has happened. Although updates are received from the
+Requirements Team. Formal Observation Ob7) raised.
+
+5.2.3 Operational Security
+
+Andy Dunks the last author of the Out of Hours (OOH) password changing process (RS/PRO/047) was
+contacted by email regarding the classification of the document. He replied that this process for OOH
+support will no longer be necessary as access for support will be via the iKey authentication.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 11 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+(ee)
+FUJITSU Company Restricted
+
+So this document will not be taken forward. See Formal Observation No. Ob2)
+
+Peter Sewell - Operational Security Manager was contacted via email regarding sweeps for un-
+authorised Bluetooth and Wireless connections.
+
+His reply was: “As yet I am not aware of any organised ‘sweeping’ taking place, and I don’t think we
+currently hold a meter, but almost any laptop can actually provide this facility. Need to check with the
+Data Centre as this will need to be carried out on a regular basis for HNGX.”
+
+Added to Formal Observation Ob1)
+
+5.2.4 Software Support Centre
+
+Steve Parker of the SSC on the secure floor at BRAO1 was contacted by email to see if the ‘requirement’
+for sweeps for un-authorised Bluetooth and/or wireless connections was being carried out there.
+
+Steve reported back that it wasn’t to his knowledge and asked how should it be done.
+Added to Formal Observation No. Ob7)
+
+5.2.5 Project Managers for Networks Design & Development.
+
+Steve Ashlin (SA) — Project Manager
+and Chris Credland (CC) — Project Leader
+
+No Observation have been recorded from interviews
+
+5.2.6 Architects for Networks
+Mark Jarosz — Lead Network Architect
+
+Referring to the document “HNG-X Technical Network Architecture” [HTNA] (ARC/NET/ARC/0001), 150
+pages, on line Mark explained the main sections that effect security related items.
+
+It was noted that Bill Membery is listed as a Mandatory Reviewer rather than it being directed to the
+CSPOA.security! i
+Add as Notes to Formal Observation No. Ob5)
+
+A.11.4.3: Has automatic terminal identification been considered?
+This is covered by the document HNG-X Branch Router Topic Architecture (ARC/NET/ARC/0003).
+Add as Notes to Formal Observation No. Ob2)
+
+5.3 Visit to Data Centre
+
+5.3.1 Sweeping for unauthorised connections
+
+Whilst Bill Membery was at the Irish Data Centre IRE11, Jeff Pridmore — Penetration Tester undertook a
+Wireless scan using the tools within Backtrack on a Linux platform nothing internal was detected but
+whilst walking around externally quite a few full signals were detected none of which were connected to
+‘target’ equipment. Mark Havard — Penetration Tester is producing a report,
+
+Information added as Notes to Formal Observation Ob7).
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED,
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 12 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+he)
+FUJITSU Company Restricted
+
+A. Annex — Additional Information
+A.1.1SO 27001 - Criteria
+
+The wording throughout ISO 27001 : 2005 was used as guidance for question especially
+paragraphs A.10.6, A.11.4 and A.12.3
+
+Also used were the suggestions for Audit Criteria from the ISO/IEC 27001 Audit Guidance [ref
+QUE]:
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 13 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+(ee)
+FUJITSU Company Restricted
+
+B. Annex — Individual “Observation” Forms
+
+B.1. LOC/PBU/RMG/SCY/017 Sequence No. 1 “Ob1)”
+
+ei SO 27001-
+Raised Date }28 Jul 09 Category Observation Standard ven 6 I
+PSD -RRMT
+Unit RMGA Location [Various Country (United Kingdom
+Division / IUK Private : ; ; ;
+«4 (Sector Interviewee I Various Interviewee’s Role Ivarious
+Community
+
+A Nigel HatcherI Process Corporate M: Securit
+rea INigel janage Security
+Contact Neneh Assessor Iyichor <1
+one Security Policy
+Lowther Local
+
+Observation details
+
+Little evidence could be found that regular ‘sweeps’ for detecting un-authorised Bluetooth or wireless
+connections, as required by the RMGA Security Policy section 10.6.1, have been planned, suitable
+equipment obtained, scans carried out, investigated and records kept.
+
+Notes
+
+hilst Bill Membery was at the Irish Data Centre IRE11, Jeff Pridmore — Penetration Tester undertook aj
+ireless scan using the tools within Backtrack on a Linux platform nothing internal was detected bu
+hilst walking around externally quite a few full signals were detected none of which were connected to)
+‘target’ equipment. Mark Havard — Penetration Tester is producing a report.
+
+Clearance Details
+
+Corrective Action To Be Taken
+
+Actionee Reviewing Manager
+Forecast Completion Date Date Completed
+Verified By Verified Date
+
+Based on the blank form copied from the Corporate Database in June 2007.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 14 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+(ee)
+FUJITSU Company Restricted
+
+. SO 27001-
+Raised Date}28 Jul 09 Category Observation Standard on 4 i
+PSD — RRMT
+Unit RMGA Location [Various Country (United Kingdom
+- ‘Document
+Division / [UK _ Private ; Review & : ' Operational
+Community Sector Interviewee I I I dy Dunks Interviewee’s Role Security
+(by email)
+Nigel Hatcher Corporate .
+Area Fi a Nigel Process Manage Security
+ssessor
+Contact INench Hatcher Security Policy
+Lowther Local ° .
+
+Observation details
+
+(The Out of Hours (OOH) password changing process (RS/PRO/047) will no longer be necessary as
+laccess for support will be via the iKey authentication. So that document will not be taken forward.
+Preparation needs to be made:
+
+a) to be ready to mark it Withdrawn in PVCS;
+
+'b) amend the wording/reference in the Security Policy (SVM/SEC/POL/0003).
+
+Notes
+
+Clearance Details
+
+Corrective Action To Be Taken
+
+Actionee Reviewing Manager
+Forecast Completion Date Date Completed
+Verified By Verified Date
+
+Based on the blank form copied from the Corporate Database in June 2007.
+
+B3 LOC/PBU/RMG/SCY/017 Sequence No 3 “Ob3)”
+
+“Irrelevant
+‘©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOCIPBUIRMGISCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 15 of 20
+FUJ00080805
+
+FUJ00080805
+(oe) Local Security Audit Report - Networks - 2009
+FUJITSU Company Restricted
+Raised Date [28 Jul 09 Category [Observation Standard ISO 27001-
+4.3.3 & A143
+PSD - RRMT
+Unit RMGA Location Various Country [United Kingdom
+Fig? UK _ Private} Document
+ove Sector Interviewee IReview —&I Interviewee’s Role [Various
+ommunity Interviews
+Nigel Hatch Corporate
+Area ji coanaaell A Nigel Process Porate IManage Security
+Contact Neneh SSESSOF beraicher Security Policy
+Lowther Local
+
+Observation details
+
+No record was found that automatic equipment detection had been considered as required by ISO 27001
+'A.11.4.3. (and Control of Records. 4.3.3)
+
+Notes
+
+This is possibly covered by the document HNG-X Branch Router Topic Architecture
+(ARC/NET/ARC/0003). “presence can be detected through the results obtained from the ‘ATIS’ command
+hat retrieves version details for managed objects in the unit.”
+
+Clearance Details
+
+Corrective Action To Be Taken
+
+Actionee Reviewing Manager
+Forecast Completion Date Date Completed
+Verified By Verified Date
+
+Based on the blank form copied from the Corporate Database in June 2007.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 16 of 20
+2
+FUJITSU
+
+Local Security Audit Report - Networks - 2009
+
+Company Restricted
+
+FUJ00080805
+FUJ00080805
+
+B.4. LOC/PBU/RMG/SCY/017 Sequence No. 4 “Ob4)”
+
+ft 27001-
+Raised DateI28-1u-2009 I Category Observation Standard oem
+PSD —- RRMT
+Unit IRMGA Location IBRAOI Country United Kingdom
+Division / IUK _ Private : 5
+=. [Sector Interviewee I2°"™"' I Interviewee’s Role IN/A
+Community Review
+Nigel HatcherI Corporate
+Area y hescesor Nigel Hate Process Manage Security
+igel Hatcher
+Contact [Neneh Security Policy
+Lowther Local
+
+Observation details
+
+‘The document “Network Security High Level Design” (DES/NET/HLD/0016) appears to have been
+started before the RMGA Security Policy (SDM/SEC/POL/0003) was written and hence in its Section
+4.1.1 talks of a Security Policy that has no reflection on the policy document.
+‘One or other of the two documents needs to be amended to clarify this.
+
+Notes
+
+Clearance Details
+
+Corrective Action To Be Taken
+
+Actionee
+
+Reviewing Manager
+
+Forecast Completion Date
+
+Date Completed
+
+Verified By
+
+Verified Date
+
+Based on the blank form copied from the Corporate Database in June 2007.
+
+B.5. LOC/PBU/RMG/SCY/017 Sequence No. 5 “Ob5)”
+
+©Copyright Fujitsu Services Ltd 2009
+
+UNCONTROLLED IF PRINTED
+
+‘Company Restricted Ref: LOC/PBU/RMG/SCY/0017
+
+Version: V1.0 APPROVED,
+Date: 18-Aug-2009
+Page No: 17 of 20
+FUJ00080805
+
+FUJ00080805
+(oe) Local Security Audit Report - Networks - 2009
+FUJITSU Company Restricted
+Raised DateI2*-Jul-2009 I Category [Observation Standard ISO 27001-
+4.3.2
+PSD — RRMT
+Unit IRMGA Location IBRAO! Country United Kingdom
+eer UK Private!
+eT sccior Interviewee I2°"™""' I Interviewee’s Role IN/A
+Community Review
+Arca Niel HatcherI Procece Corporate I Manage Security
+Assessor Nigel Hatcher Reviewer's
+
+Contact = INeneh
+Lowther Local Matrix
+
+Observation details
+
+IRMGA HNG-X Document Reviewers / Approvers Role Matrix (PGM/DCM/IOM/0001) was checked at
+limes during the audit to clarify if Security was being asked to review documents.
+
+It became apparent that they (CSPOA. security) are not on the ‘listing’ for Low Level
+Designs, which it was considered by the auditor tl id at least be amongst Optional
+Reviewers. And hence should be requested to be added to the Matrix.
+
+Notes
+
+a) For all documents to review, the use of the joint email security team mailbox should be re-enforced
+‘awareness cascade) as some documents viewed were being addressed to particular members of the
+security team only and hence might not get reviewed properly.
+
+'b) A request should be made to amend the Matrix to list Peter Sewell as the Operational Security
+Manager and not just Security.
+
+Clearance Details
+
+Corrective Action To Be Taken
+
+Actionee Reviewing Manager
+Forecast Completion Date Date Completed
+Verified By Verified Date
+
+Based on the blank form copied from the Corporate Database in June 2007.
+
+B.6. LOC/PBU/RMG/SCY/017 Sequence No. 6 “Ob6)”
+
+Raised DateI28-Jul-2009 I Category [Ovservation Standard ISO 27001-
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref: LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 18 of 20
+FUJ00080805
+
+FUJ00080805
+(oe) Local Security Audit Report - Networks - 2009
+FUJITSU Company Restricted
+ATA
+(& 4.2.1 d) 1))
+PSD - RRMT
+Unit IRMGA Location IBRAO! Country United Kingdom
+Fyict UK Private!
+Division 1 Sector Interviewee Ilan Mills Interviewee’s Role INetworks SDM
+Community
+Ata Niel HatcherI Process Corporate I Manage Security
+Contact [Neneh Assessor IJohn Wright Security Asset
+Lowther Local Management
+
+Observation details
+
+It was noted that Limited secure ID log in is authorised by the Networks SDM to Cable & Wireless by
+email. This is Ownership of an Asset (re ISO 27001 4.2.1 d) 1) & A.7.1.2) and should be recorded.
+
+Notes
+
+Clearance Details
+
+Corrective Action To Be Taken
+
+Actionee Reviewing Manager
+Forecast Completion Date Date Completed
+Verified By Verified Date
+
+Based on the blank form copied from the Corporate Database in June 2007.
+
+B.7. LOC/PBU/RMG/SCY/017 Sequence No. 7 “Ob7)”
+
+. Ss 27 -
+Raised DateI28-1u-2009 I Category IObservation Standard Re on
+PSD-RRMT} Location IBRAOI Country United Kingdom
+RMGA
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref: LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 19 of 20
+FUJ00080805
+FUJ00080805
+
+Local Security Audit Report - Networks - 2009
+
+(ee)
+FUJITSU Company Restricted
+
+Unit
+ivici K Private]
+Division / IU : Howard : :
+Community Sector Interviewee I chard Interviewee’s Role IRMGA CISO
+Nigel Hatcl :
+Area / Wet ratcher : Process Corporate I Manage Security
+Contact INeneh Assessor INigel Hatcher Capiare z
+Lowther Local — IRequirements
+
+Observation details
+
+(Understanding Security Requirements) It appeared to the auditor that information on the requirements
+f the ISO 27001 “Control” areas may not have filtered down to staff that might need to consider them.
+It is possible that the ‘detail’ of ISO 27001 may not have been fully addressed in Requirement capture,
+rather just an entry about being compliant.
+
+This needs to be clarified.
+
+Notes
+
+(The CISO reported that it had been requested earlier in the year, but after going through all the
+documentation online, it appears that nothing has happened. Although do get updates from
+Requirements Team.
+
+Clearance Details
+
+Corrective Action To Be Taken
+
+Actionee Reviewing Manager
+Forecast Completion Date Date Completed
+Verified By Verified Date
+
+Based on the blank form copied from the Corporate Database in June 2007.
+
+©Copyright Fujitsu Services Ltd 2009 Company Restricted Ref. LOC/PBU/RMG/SCY/0017
+Version: V1.0 APPROVED
+Date: 18-Aug-2009
+
+UNCONTROLLED IF PRINTED Page No: 20 of 20

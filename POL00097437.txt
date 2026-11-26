@@ -1,0 +1,211 @@
+POL00097437
+POL00097437
+
+Message
+
+From: Helen Rose
+
+Sent: 30/01/2013 12:35:35
+
+To: Angela Van-Den-Bogerdi_
+Subject: FW: AP recoveries
+
+Attachments: image001.gif; image008.png; image017.png; image009.png; image010.png; image011.png; image012.png;
+image013.png; image014.png; image015.png; image016.png
+
+Angela
+
+For info only.. once I receive the ARQ discs then hopefully we should be able to confirm if this transaction was a
+recovered/reversed horizon incident as Gareth says that this should show in the ARQ data.
+
+Helen Rose - Grapevine Analysis & Support team - Security Team
+
+’ Post Office Ltd, Security Team, 3rd Floor, Clippers Quays, Salford, Manchester, MS0 3NW
+
+www. grapevine.co.uk
+
+From: Jenkins Gareth GIi_
+Sent: 28 January 2013 09:
+To: Helen Rose
+
+Subject: RE: AP recoveries
+
+Helen,
+Please see comments below prefixed [GU].
+Hopefully it covers everything.
+
+If it helps i'm happy to talk through any follow up questions with you.
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+Distinguished Engineer
+Business Applications Architect
+Post Office Account
+
+POL-0097020
+POL00097437
+POL00097437
+
+http://uk.fujitsu.com
+
+Fujitsu is proud to partner with Shelter, the housing and homeless charity
+
+Reshaping ICT, Reshaping Business in partnership with FT.com
+
+it really need te print this email?
+
+Sent: 28 January 2013 08:41
+To: Jenkins Gareth GI
+Subject: AP recoveries
+
+Hi Gareth
+
+Thave been copied into a reply by you to Jane Smith in Chesterfield and although I can understand your reply, Jane has
+added comments in her email that have left me confused so I am hoping you could give me a brief explanation on AP
+recoveries please.
+
+My understanding is that when AP’s fail there is a way to recover these on horizon.
+[Gil] Not normally. Most AP transactions are not recoverable. There are some AP-ADC scripts that are recoverable
+such as Postal Order sales / encachments. (As these are all under POL’s control, I can’t give a full list.)
+
+Recoverable transactions are:
+
+1. Online Banking transactions
+
+2. ETop Ups
+
+3. Selected AP ADC scripts {as above}. Note these usually produce immediate receipts rather than waiting for
+them to be printed out at settlement.
+
+4, Plastic payments (though refunds will be calculated where non recoverable transactions are cancelled)
+
+Would the user have to re-boot the system?
+[Gi] Not normally. Really need to consider the type of failure. There are two broad categories:
+1. Where the terminal fails at some point while service a customer
+
+In this case the terminal probably does need to be rebooted as it has failed. Also there is no help from the
+terminai as to exactly what to do for the current customer {as it has failed!}. in simple terms, ali recoverable
+transactions should be assumed to have worked OK while all non-recoverable transactions should be assumed
+to have failed,
+
+2. Where there is a failure to communicate with the Data Centre during the settlement process {ie after
+everything is paid for but before the receipts are printed)
+
+In this case after Cancelling following one or more reties, the system should produce a Disconnected Session
+receipt making it clear which transactions were recoverable and so should be considered to be successful and
+which were not and se should be considered not te have happened. This information should be used in
+communication with the customer. Specifically no AP receipts will be generated at settlement time in this
+scenario,
+
+Would there be an error message on the screen to prompt the AP recovery?
+
+POL-0097020
+POL00097437
+POL00097437
+
+[Gi] Unlike the old Horizon system there is no specific AP recovery when restarting after a failed session.
+
+There may be prompts on the screen as a result of running various recovery scripts and in particular if an AP ADC
+transaction is recoverable, then a special recovery script is run as part of the recovery process.
+
+Would the office be clear that they have had to run AP recovery or would it run automatically without their knowledge?
+[GU] Recovery is always run automatically the next time the terminal is Logged On. NB it must be the same logical
+terminal 9er Node iD}, but if the physical terminal has been replaced Sie a box swap then recovery is still invoke, but
+there may be questions to the class regarding the last successful session {this is held on the hard disk and so not
+available if the box has been swapped)
+
+How long would this take?
+
+[GU] It is pretty quick. It really depends on the recovery script.
+
+How would the transaction show on the system once recovered?
+
+[G13] It would show as a normal transaction for Credence. it is marked in the audit trail as having been recovered.
+Would the horizon create an existing reversal on the system and how would this show on credence/at the office?
+
+[Gi] There is a circumstance under which this can happen. Specifically in the following scenario:
+
+The basket has no recoverable transactions
+
+The settlement information is sent from the counter to the Data Centre
+
+it is successfully recorded in the Data Centre
+
+The response foils to get back to the counter
+
+Subsequent reties fail
+
+The customer is told that the transaction has failed and given their money back
+
+On the next Log On recovery takes place. Recovery will detect that the Basket had been recorded and then
+generate an existing reversal for everything in the basket as the counter should have assumed that it had
+failed.
+
+8. A suitable recovery receipt is produced indicating this.
+
+NOMA Wh
+
+understand that the initial transaction would show against the clerk serving the customer and the AP recovery would
+show against the user running the recovery.
+
+[GU] Correct. Also in BRDB the reversal basket would be marked as a rollback recovery. However in Credence this
+would look like @ normai Existing Reversal. Also it could take place “late”.
+
+We have a very high level issue where a bill has been paid, then reversed out S mins later. The PMr is denying this is his
+fault, but I can’t undersiand how horizon would creaie an existing reversal transaction. I have requested the transaction
+logs, is there anything else I would be best looking at to prove or dis-prove these claims.
+
+[GU] This could be the scenario I have described above. If this has happened in the last 4 weeks we would have access
+to detailed counter logs. If it has happened in the last 90 days our support people could confirm if the existing
+reversals were due to roliback recovery. in ail cases the ARQ data would confirm this.
+
+Many thanks
+
+Helen Rose - Grapevine Analysis & Support team - Security Team
+
+@ Post Office Ltd, Security Teain, 3rd Floor, Clippers Quays, Salford, Manchester, MSQ 3NW
+ai’
+
+@
+
+~~
+
+©
+
+S www.grapevine.co.uk
+
+POL-0097020
+POL00097437
+POL00097437
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient,
+you must not use, disclose, reproduce, copy or distribute the contents of this communication. If you have received this in
+error, please contact the sender by reply email and then delete this email from your system. Any views or opinions
+expressed within this email are solely those of the sender, unless otherwise specifically stated.
+
+POST OFFICE LIMITED is registered in England and Wales no 2154540. Registered Office: 148 OLD STREET,
+LONDON EC1V 9HQ.
+
+Unless otherwise stated, this email has been sent from Fujitsu Services Limited, from Fujitsu (FTS) Limited, or
+from Fujitsu Telecommunications Europe Limited, together "Fujitsu".
+
+This email is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may
+be privileged. Fujitsu does not guarantee that this email has not been intercepted and amended or that it is virus-
+free.
+
+Fujitsu Services Limited, registered in England No 96056, registered office 22 Baker Street, London W1U
+3BW.
+
+Fujitsu (FTS) Limited, registered in England No 03808613, registered office 22 Baker Street, London W1U
+3BW.
+
+PFU Imaging Solutions Europe Limited, registered in England No 1578652, registered office Hayes Park
+Central, Hayes End Road, Hayes, Middlesex, UB4 8FE.
+
+Fujitsu Telecommunications Europe Limited, registered in England No 2548187, registered office Solihull
+Parkway, Birmingham Business Park, Birmingham, B37 7YU.
+
+POL-0097020

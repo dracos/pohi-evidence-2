@@ -1,0 +1,3687 @@
+FUJ00152251
+FUJ00152251
+
+FUJITSU SERVICES
+POST OFFICE ACCOUNT
+
+SERVICE REVIEW
+
+NOVEMBER 2005
+
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1,0
+Title: SERVICE REVIEW - NOVEMBER 2005
+Abstract: This document contains a summary of the Monthly Service Performance Statistics for the Period
+1* to 31 November 2005.
+Status: Definitive
+Distribution: Service Management Forum
+Fujitsu Services, Post Office Account: Head of Service Management
+Fujitsu Services, Post Office Account: Customer Service Management Team
+Fujitsu Services, Post Office Account: Customer Service Intranet
+Fujitsu Services, Post Office Account: Library
+Author: Mark Jones & Stephen Taplin, Fujitsu Services, Post Office Account: Management Support Unit
+Approval Authority: — Carl Marx: Fujitsu Services, Post Office Account: Head of Service Management
+Signature: Date:
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 1
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+O CONTENTS. .....cccccssecssecssscsesceecseeceecsuscuecaesaesseecaecseesssesseuscensceusesuscseeeseeeeeeeesseeseeeseneee ccauseauscaueesesesesesaesaesaneoas 2
+
+1 DOCUMENT CONTROL.
+
+1.1 DOCUMENT HISTORY
+1.2 ASSOCIATED DOCUMENTS
+1.3. ABBREVIATIONS...
+1.4 GLOSSARY...
+1.5 CHANGES IN THIS VERSION...
+2 NOVEMBER REVIEW OF SERVICE..
+2.1 MANAGEMENT SUMMARY ...ssssscssssssssesssssssnseeesssssnseesssssssneeessussontecesussnnteseueussnneessinssnnsessiin_sannaeeseunisanneenausesanseensassaneenesasnaneessuasanneennunsnaseeeesie 7
+3 NOVEMBER VOLUMETRICS
+3.1 VITAL STATISTICS
+3.2 HORIZON SERVICE DESK - LOGGED CALL PROFILES FROM LIVE BRANCHES
+3.3.1 ENGINEER ON - SITE VISITS se
+4 NOVEMBER REVIEW OF PROBLEM MANAGEMENT ......s:ccsccssesssesestsssessseecseceeeeseeeseeceesseeseesseeseseseseseseseaeseniee eoasenes
+4.1 PROBLEM MANAGEMENT CROSS DOMAIN PROBLEMS — SUMMARY ..
+43 KEY CROSS DOMAIN PROBLEM UPDATE os
+5 SCORECARD ACTION PLAN — from November 2005 ......csscsscsssescssscseesessresessrssesssseesssscseesesenssessessessesenssesensen seeeesesees 48
+6 NOVEMBER REVIEW OF RELEASE MANAGEMENT :
+6.1 HIGH LEVEL TIMETABLE... 54
+6.2 RELEASES COMPLETED DURING THIS PERIOD.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 2
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW
+
+Ref: CS / PER / 050
+
+Date: 15/12/05,
+
+7 NOVEMBER SERVICE LEVEL PERFORMANCE.
+7.1 HORIZON SERVICE DESK.
+7.2 ENGINEER SERVICES ..
+7.3 DATA DELIVERY SERVICES
+7.4 LF SERVICE
+7.5 NETWORK BANKING SERVICES
+7.6 SAP HOSTING
+7.7 MISCELLANEOUS SERVICES
+7.8 RECONCILIATION / SETTLEMENT REPORT DELIVERY
+7.9 PI AVAILABILITY
+7.10  TESQA....
+7.11 I POSTSHOPS
+7.12 DEBIT CARD SERVICES
+7.13 ELECTRONIC TOP-UPS
+
+8 BRANCH TRADING CAPABILITIES
+8.1 NBS TRABSCATION TIME!
+8.2 COUNTER AVAILABILTY..
+8.3. BRANCHES WITH ONLINE SERVICES AFFECTED
+
+Version: 1.0
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 3
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+1 DOCUMENT CONTROL
+
+1.1 DOCUMENT HISTORY
+
+Version
+
+Date
+
+Reason
+
+1.0
+
+15/12/05
+
+Service Review Book for November 2005 performance — SLT Data.
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 4
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+1.2 ASSOCIATED DOCUMENTS
+
+Version
+
+Date Title
+
+1.3 ABBREVIATIONS
+
+ARL Additional Remedy Level MTBF Mean Time Between Failure
+ARQ Audit Retrieval Query MTFR Mean Time For Repair
+AZMK Acquirer Zone Master Key NRI Network Reinvention
+CAPO Card Account at Post Office osP One Shot Password
+C&W Cable & Wireless PAT Portable Appliance Test
+CAW Certificate Authority Workstation PB Problem Branch
+FIO For information only PI Processor Interface
+FS Fujitsu Services PM Post Master
+HSD Horizon Service Desk SIP Service Improvement Plan
+IMT Incident Management Team SLT Service Level Target
+KMA Key Management Application/Administration TBA To be advised
+MBCI Major Business Continuity Incident YTD Year to Date
+MIS Management Information Service
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE
+
+Page 5
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+1.4 GLOSSARY
+
+Business Incidents
+
+Environmental
+Hardware
+Inappropriate Helpdesk
+Network
+
+NBSC Referral
+
+Other
+
+Reference Data
+Software
+Security
+
+‘A’ Priority
+
+‘B’ Priority
+
+Calls received and apparently related to a specific business issue which at the time is unknown
+— later re-classified to appropriate category
+
+Calls to register an environmental problem
+
+Calls diagnosed as relating to a system hardware fault
+
+Calls received at the HSD that are inappropriate and will be dealt with by the NBSC
+
+Calls diagnosed as relating to a system network fault
+
+Calls received at the HSD that have been referred by the NBSC
+
+Calls relating to PO closures, reference data changes, miscellaneous environmental issues and
+failed verification calls
+
+Calls diagnosed as relating to a reference data fault
+
+Calls diagnosed as relating to a system or application software fault
+
+Calls relating to security breaches or for the requirement of one shot passwords
+
+Logged calls that reflect a fault, which has “resulted in substantial impact on all
+
+automated counter positions in the Branch”
+
+Logged calls that reflect a fault, which has “resulted in substantial impact on an automated
+counter position, but not all automated counter positions in the Branch”
+
+1.5 CHANGES IN THIS VERSION
+
+7.3.1 I Inbound New SLT's added
+7.3.3. I Outbound New SLT's added
+7.6 I SAP Hosting New measures added
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 6
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+2 NOVEMBER REVIEW OF SERVICE
+
+2.1 MANAGEMENT SUMMARY
+
+November resulted another good month for Horizon service provision by Fujitsu will very Service Level Target being met with the
+exception of Average Downtime Call to fix which achieved 25.7% against a target of 24.5%. This was due to a seasonal increase in
+hardware fault calls of 12%. Despite this significant increase, all engineering and service desk service levels have been met and exceeded.
+
+However, although the SLT performance is creditable, there have been 4 major incidents during November, all affecting on line service
+provision. Three major incidents were attributed to the ADSL service infrastructure and the other major incident affected core network
+connectivity for a period of 4 minutes affecting all on line network traffic. All these incidents have been fully investigated and corrective
+preventative actions put in place.
+
+OBC performance continued a positive performance with all OLA targets achieved. In addition, the rollout status of ADSL connected
+branches has increased to over 10,600 branches, and the Postshop rollout has progressed to 165 branches.
+
+Of particular note is the marked increase in the volume of incidents which have been logged with the Horizon Service Desk (an increase
+from an average of 13,500 incidents per month to just under 17,000). This is attributed to two main reasons: 1) a seasonal increase in
+hardware incident volumes which is in line with the previous year increase 2) an increase in system or software related incidents as a
+result of Branch Trading introduction. Despite these considerable increases, all service desk service levels have been achieved.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 7
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+
+Executive Dashboard FUJITSU
+
+December 2005
+2. Calls answered by HSD within 30 second: 3. Break Fix -return to service
+100% on maa! ee a ees
+ial et 80% I I
+60% I 96.0% I
+40% I
+I 94.0%
+20% I
+0% ce
+SIC a 8 at CS Na i Jon-05 __WuhO5—_Aug-O5—Sep-05 Oct-05 Nov-05
+fm Actual SLT achieved C= Recalcuiated SLT —target I TEE Break Fx A MMMM Break FxB ——target 9:
+4. Number of Incidents attracting penalties 5. Data delivered to TIP Day B 6. Branch Availability Profile
+< - I 100% — = 100% {weekdays only)
+I I
+150 I baler 98%
+I
+100 I
+I 6% I ok
+50 } I
+I I
+0 7 . . 94%
+Jun0S LOS Aug Sep-05 O05 Nov-05 u05SWMKOS—Aug-OSSap-0$ O2t05_Nov-05 97% OE nies ae
+ovwos ” o4vos ” o8rwvos ” wartwos ” tewos  a2ros ” esrv0s
+7. Complaints 8, Success Rates of combined Online Transactions ioox = vice elapsed time ofcalie
+100% SEU Aes)
+a ea I 20%
+99% : I 80%
+70% I
+98% } I
+ie : I 60% !
+Q : : a I n- 0S Aug-05 ict-05 _No
+Jun-05 —Jubo: Al iS Sep-05 Oct-05 Nov-05 97% <24 hours 48 hours @<72 hours
+
+Page 8
+
+© 2005 Fujitsu Services COMMERCIAL-!
+FUJ00152251
+
+FUJ00152251
+0
+FujiteeRervices SERVICE REVIEW Ref: aren 050
+pate: T1205 Version: 1,0
+40)
+2.14, Excess Call Volumes based upon >30% MTBF Degradation of Counter Hardware
+= 4000
+240 <= - 7a a I
+Z I : ; ; i ~~ a0
+ao I I? : I . 2 a a
+Oo] 1 fo H coo oo SU
+160 ~
+0. : 2000
+12
+100
+
+WobilPCSON 4 14 t it a i 10. zn] 6 t 16 6
+[ep tscreerr o o o o o o o o o
+Dewlirkeyooerd AS Dal a 6 4 LD. a 24 4
+TREREPPITET Te a0 ara rs) rn <2)
+y T Tv v ov v T Tv v v v
+© 2005 ARIE vices 2 B& & 8 % GOMMPRCIAL-IN-CONFIDENCE 7% Page 9
+Tota mM 7 & BW M BW WM BH WM HH
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+2.1.1 Excess Call Volumes (Cont'd)
+
+13000 - :
+12000
+11000
+10000
+9000
+8000
+7000
+6000
+5000
+4000
+3000
+2000
+1000
+i‘)
+2006/07 2007/08
+I Single Counter Gateway Base Unit @ Multi [Counter GatewayBase Unit
+© Slave Counter Base Unit © Mobile PC I; SDN
+m CTX Flatscreen @ Devlin Keybo
+a fthaca Fr Printer © Welch Allyn Pe tode Reader
+m Pinpads @ OKI Printer
+Product 2006/07 2007/08 poosios 2009/10.
+‘Single Counter GatewayBase Unit 123 186 253 320
+I_IMulti Counter Gateway Base Unit 440 570 23 88
+lave Counter Base [Init 164 3 602 55
+46:
+[-Devirrseyboarct Ser ‘Cot 85
+THaCaPHTET es ASST 35I5 08
+‘Welch Allyn Barcode Reader 0 iy z 0
+Pinpads 0 0 0 29
+‘OKI Printer 983 1416 1235
+Total excessswaps 5835 7837 10131 13025
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 10
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+2.1.2 Availability and Problem Management
+
+Summary: Within the Fujitsu Services domain for November 2005 there were 4 Major Incidents.
+There were a further 2 service affecting incidents within the Fujitsu domain and 2 incidents outside the Fujitsu domain.
+
+Major Incidents:
+
+Monday 7th November.
+
+Major Incident: An incident on the BAS Router GB_TELHS1-R1-003 occurred at 09:25. There were 325 branches connected via this BAS
+Router and at the time of this failure it caused 241 branches (74%) to lose their on-line services. Between 09:40 and 09:52 all branches
+were without On-Line Services whilst C&W (Cable & Wireless) reloaded the router. All On-Line Services were restored by 10:45. A Major
+Incident report was produced under call number: E-0511070282. Problem Management calls PM0000688 and P10001628 refer to this
+incident.
+
+Monday 14th November.
+
+Major Incident: An incident occurred on the Network between 10:43 and 10:47 which affected several circuits including the IP Select
+circuits to EPAY (Kelting House & Southfields) and the circuits to the A&L (Carlton Park & Bootle). These circuits were only affected for the
+four minute period. The incident also affected a total of 244 ADSL and ISDN branches connecting via Watford & Kearsley routers, resulting
+in a loss of On-Line Services. Calls to the HSD increased due to the loss of On-Line Services from these branches at 10:55, but had
+subsided by 11:27. The fault was due to a Cable & Wireless engineer applying an access control change to routers within the core C&W
+network. This change was considered by C&W to be very low risk, and so it was internally authorized, without prior POA approval.
+Unfortunately the engineer made a human error whilst applying the change and accidentally configured a router incorrectly. This was the
+cause of the failure and was quickly corrected by the engineer restricting the failure to the four minute outage. All On-Line Services were
+restored to branches by 11:22. A Major Incident report was produced reference E-0511140442 and there were 3 other calls associated
+with this incident; E-0511140479, E-0511140546 and E-0511140564. The Problem Management calls are PM0000690 & P10001638 have
+been updated and agreement with POL PM to close the incident.
+
+Tuesday 15th November.
+
+Major Incident: Several ADSL branches connecting via Watford BAS Router GB_WAHP03-R10-007 displayed intermittent transaction
+timeouts across all On-Line services. The incident started at 13:33 and continued until 17:12. Initial investigations pointed to Broadband
+work being undertaken by BT at this time, but was then discounted as BT were adamant that the errors they were seeing were from the
+C&W domain. C&W took some corrective actions overnight to diagnose/eliminate possible failing components. The 2 co-axial cables
+connecting the ATM to the Multiplexor were replaced, after which the ATM STM1 card P3.3.1 was replaced. C&W has continued to monitor
+and to date no more failures have been identified. A Major Incident report has been produced, call number E-0510240983 refers. Problem
+Management calls PM0000689 and P10001632 refer and are on monitor. The cables tested ok, so STM1 card has been sent back to Alcatel
+for fault evaluation, time scale for a response is 60 days.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 11
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+Tuesday 29th November
+
+Major Incident: There was an incident affecting All On-Line services to 910 outlets, connected to BAS Router GB_KEARO2-R10-001.
+
+At 12.10 hrs, C&W advised that there was a memory leakage on the affected BAS router that had become critical. Through a cross domain
+conference call it was agreed that the safest activity would be to reload the affected router. The reload took place at 12.30 hrs, and by
+12.45 approximately 30% of the affected outlets had returned to normal service. Normal service was restored to all outlets by 13:08. Calls
+E-0511290577 and E-0511290779 refer.
+
+Other incidents in Fujitsu Services domain:
+
+Tuesday 8th November.
+
+The Start of Day tests indicated that Watford BAS router 003 had 5.2% (15 branches) of its connected branches without On-Line Services.
+This was due to overnight weather conditions and reboots at the start of the next business day restored service. E-0511071129 refers.
+
+In addition the “Ping” scripts indicated a 29 of the VSAT branches without connectivity. Investigations showed that although some had
+been affected by overnight weather conditions and came back in at start of day, several were closed and only 3 branches required a call
+logged.
+
+Wednesday 16th November.
+
+An overnight failure to the BT links feeding the VSAT router at Docklands (Planned outage by BT but not communicated to C&W) occurred
+from 22:00 till 03:00 meant that the normal overnight Reference data drop to the VSAT counters at 02:00 was missed and this download
+took place at 07:00 on the next available window. This had an affect to the VSAT bandwidth available at the start of the business day
+resulting in a loss of On-Line Services to 38 Branches. Call E-0511170545 refers. The availability of the bandwidth increased during the
+day with service returning to branches. Intervention by the SSC was required to clear out stale messages from the BT outage to ensure all
+the bandwidth was available to the VSAT network. Full service was restored 18:53. Call E-0511160910 refers.
+
+There were no VIP sites affected this month.
+
+Incidents Outside the Fujitsu Domain:
+
+Friday 25th November.
+
+An incident between Link and the Co-Op bank between 13:00 and 13:36 caused 1322 transactions to be declined. The service returned to
+normal at 13:36.
+
+Monday 28th November.
+
+A re-occurrence of the Co-Op banking incident between 13:00 and 13:40 resulted in a total loss of service from Link to Co-op & Smile
+banking system. There 1571 transactions declined to the Co-op bank, and 246 transactions to the Smile banking system. Normal service
+was resumed at 13:40.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 12
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+
+2.1.3 OBC Branch Change Service Summary
+
+November 2005 was a very productive month and showing that the failure rate was the best result for the reporting year, a very
+successful month. A total of 277 OBC changes were received during the month of November, with 20 changes being cancelled. A total of
+257 change requests were completed, with Fujitsu being responsible for 11 change requests not being completed on the target date. For
+Fujitsu this represents a failure rate of 4.28% against the 5% target rate. As there were 2 line plant failures this represents a failure rate
+of 3.50% against the 4% target. This is a difference, compared to the October calculations of 1.32% against the 5% target rate and
+0.6% against the 4% target rate. Post Office were responsible for 4 change requests not being completed on the target date, which
+represents 1.56% against the 4% target, which is a difference against the October calculations of 2.92%.
+
+Fujitsu’s direct failures comprised of 2 process, 1 hardware, 4 software and 4 communications.
+
+Post Office Limited direct failures comprised of 3 process and 1 access.
+
+Corrective Actions
+
+Investigations continue into the compression of message store data to speed up file transfer over ISDN communications. Fujitsu has
+however established that configuration times can be decreased on “Relocations” by ensuring slaves are in “Riposte” position before
+Gateway configuration takes place. This is communicated to all Fujitsu Engineers at the time of attending a Relocation change.
+
+Recently two failures have been as a direct result of ‘unfamiliar’ OBC Engineers attending changes. Assurances have been given by Fujitsu
+Engineering that these were isolated incidentsss&ohmgimeering are currently investigating the viability of a dedicated OBC engineering
+resource. These assessments are expected to conclude early in the New Year. Potential benefits are that all OBC work would always be
+undertaken by the same engineers and thus familiarity would be commonplace.
+
+B
+
+[va of Felved
+on Ro oo es
+
+De04 —Jan05Feb-05 Ma-05 Apr05 May-05 kn05 05 Alg05 Sep05 C05 NovO5,
+Marth
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 13
+FUJ00152251
+
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+2.1.4 ADSL Migration
+
+We are continuing with the migration of ISDN to ADSL and at the end of October 10392 branches were using ADSL comms.
+The migration has achieved a total of 625 outlets migrated this month.
+
+The Rollout programme is now nearing the end with a total of 802 left to migrate. Along side this Fujitsu will undertake a programme to
+remigrate all branches that had reverted or opened onto to ISDN comms as part of an Operational Business Change.
+
+2.1.5 Icon Service
+
+Icon Batch 2005_02 has been put on one of the RDDT validation counters for checking.
+This batch is due to be released with S90 Counter code.
+
+2.1.6 Business Continuity
+
+During November the Business Continuity Team successfully completed an operational test for the Generic Agent server and an
+operational retest of the KMS server.
+
+Operational re-testing of the Network Banking Client interfaces and the data-centre catalyst switch was also performed. This
+testing identified new network incidents which are currently being investigated.
+
+Business Continuity Procedural walk-throughs were successfully conducted for the Database Server, System Management Centre and the
+AP Client and EDG gateways.
+
+Work is progressing in publishing revised business continuity plans which include new S90 and S92 infrastructure and services.
+
+2.1.7 Message Broadcast
+
+27 Message Broadcasts were processed in November.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 14
+FUJ00152251
+
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1,0
+2.1.8 Horizon Service Desk and Complaints
+The HSD achieved all SLT's in November.
+The inappropriate calls decreased in November around 10%, this is a good sign and shows the callers are correctly selecting the right
+options. This is now again at the expected levels, Fujitsu will monitor the situation to identify any new trends or issues.
+21 complaints logged with Fujitsu this month have again focused on Online Services. 28 were received in all. Within the 28 logged
+complaints 12 are marked as justified, 1 50/50 and 15 as unjustified. The table below shows details of the individual complaints.
+Facia/ I Complaint Justified/ Not Reason for unjustified Corrective action
+Fad Type Justified
+Kelbrook __ I System issues — slow Under investigation with BIM.
+209407 running
+Shepton Online services — Justified BT has now identified this problem and resolution and will use
+Beauchamp I lengthy resolution this knowledge to resolve any further instances in a timely and
+211549 efficient manner.
+Stockton Online Services — justified Not applicable BT were very busy and were experiencing a shortage of
+424246 lengthy timescales engincers in that area, this is not the norm and they have
+
+to resolve apologised for this lengthy wait.
+Lewisham I Engineer attendance I justified Not applicable All Advisors have been reminded of the need for accurate call
+018007 — slow turnaround coding and escalations
+Whiteley I Online Services— I justified Not applicable AILHSD advisors reminded of the need to keep postmasters as
+Village lengthy timescales up to date as possible of the progress on calls.
+127023 to resolve.
+Pennybont I Excessive Hardware I justified Not applicable This has been designated as a problem site and at some point in
+225644 issues and outages the near future the PM is to get a joint visit from POL/ Fujitsu,
+
+1 do not know the exact date
+
+Havercroft I Online services — justified Not applicable The time to arrange the joint visit was too long this will be discussed with
+445323 lengthy time to Energis, the BT engineer cancellation was unacceptable and this will be fed back
+
+resolve and unclear fpr
+
+resolver
+Crookfur I Online services — justified Not applicable Services restored but Ongoing investigation of key refresh issue
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 15
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+353832 lengthy timescales
+to resolve
+Dolphinhol I Online Services — justified Not applicable This was an unfortunate mistake and a case of miscommunication, the advisors
+me lengthy timescales concerned have been asked to take care to ensure all actions are documented
+, a clearly and carefully.
+172418 to resolve ; -
+Lower Online Services justified Not applicable ‘A genuine mistake by the agent. On the proactive call he was awaiting guidance
+> times from Service Management which was late in coming. I have addressed the issue
+Juney lengthy eseales with the agent and the Service Management area.
+esolve
+Bowmore I Lengthy resolution _ I justified Not applicable ‘The Pinpad failure rates are being investigated with the suppliers Hypercom by
+161858 time for pinpad the Engineers Service Delivery Manager.
+replacement
+Kingshurst I Online services — justified Not applicable Feedback has been provided to the engineering service regarding the checks
+one} A carried out and reiterating that cables are always part of the necessary checks.
+282201 lengthy resolution BI/ Cable and Wireless have also been reminded to provide all details of faults
+timescales they identify in the course of the investigation.
+Langdale Online services — justified Not applicable The resolution time was very long; however the job itself was
+Road lengthy resolution very complex and did involve a number of contractors. At all
+119134 timescales times, Fujitsu were, through Cable and Wireless constantly
+chasing for updates and a speedy resolution.
+Thave asked C&W to use this as a valuable experience to
+discuss with BT how the timescales can be improved for this
+type of online outage problem.
+Triangle Online services — ‘Justified — timescales I Not applicable BT have learned some valuable lessons from this exercise and will ensure that
+329320 lengthy timescales I Unjustified - support knowledge will be used to deal with future calls of this nature.
+to resolve and lack I and updates
+of support
+Kelbrook Hardware/System Not justified System is working as normal and all Not applicable
+209407 of the PM's concerns have been
+thoroughly investigated both by the
+HSD, the Fujitsu engineers and the
+BIM's.
+Wakefield I Online services — Not justified Fujitsu did not contribute to the Not applicable
+Road lengthy resolution resolution, all actions were with BT
+265306 Southampton and repair call was
+actually logged by the PM himself.
+Milton on Engineer late Not justified The correct procedures were followed I Not applicable
+Stour attendance time at all times
+336542
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 16
+Fujitsu Services
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+Milton on Online Services — Not justified The fault was not in the Fujitsu Not applicable
+Stour lengthy resolution domain at all, it was only a BT
+336542 timescales Southampton fault
+Seafield Online Services - Not justified Fujitsu actions were all carried out Not applicable
+137807 lengthy resolution correctly the fault was in the BT
+timescales Southampton domain
+Coppull Online services — BT I Not justified The fault was caused by BT Not applicable
+296427 charges excessive Southampton work and resolved by
+BT Southampton
+North Road I Online services — Not justified All actions carried out correctly to Not applicable.
+318422 lengthy timescales resolve a major issue
+to resolve
+Livingstone I Online Servic Not justified The actual fault was in the BT Southampton I Not applicable
+‘Avenue lengthy timescales domain not the Fujitsu domain.
+198311 to resolve.
+Blackfen Online Services — Not justified The actual fault was a PSTN fault and this was I Not applicable
+157014 lengthy timescales repaired in a very good turnaround time. I can
+, also not fault the call management or any
+to resolve actions carried out by the Fujitsu parties
+Norwood ‘Online services — Not justified ‘Allactions have been carried out correctly to
+Green lengthy timescales resolve this problem in a timely manner
+216020 to resolve
+Summerfiel I Engineers - caused Not justified All actions by the Fujitsu engineers Not applicable
+d online outage. were correct in this case, the Fujitsu
+377201 engineers do not need to touch the
+ADSL cable in order to replace
+keyboards.
+Penybont I Online services — kit I Not justified Allactions carried out correctly to resolve given I Not applicable
+225644 keeps crashing, the nature of the problems
+Great Online services — Not justified All Fujitsu actions to resolve the Not applicable
+Somerford I lengthy resolution offline services have been carried out
+296548 timescales correctly — POL action identified.
+Charlton Online services — Not justified There are no online outages of more Not applicable
+Church frequent outages than 30 mins, very low call volumes.
+Lane
+096007
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 17
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+2.1.8 Horizon Service Desk and Complaints (Cont'd)
+
+18
+16
+12
+2
+q 10
+s . < Soe aS ese
+8 8
+k-)
+gs 6
+2
+4 =
+2 He EEE .
+; I i
+Justified I Unjustified Justified _Unjustified Justified — Unjustiied Justified! unste Justified I Unjustified I Justified  Unjustified Justified wid weal ‘Unjust
+Jun-05 Jun-05 JuL05, Jw-05 ‘Aug-05 — Aug-05— Sep-05— Sep-05I Oct-05 Oct-05 Nov-05 ——Nov-05 ct05 Oct Nov. Nov.
+I Fujitsu personnelrelated © Service fails to meet contractual requirements
+@ Fujitsu personnel related tw Service meets contractual requirements
+@ Outside contractualrequirements
+‘Jun-05 I Jul-05 fug-05 $ep-05 Odt-05 Nov-05
+Justified
+Fujitsu personnelrelated 1 6
+Service fails to meet contractualrequirements 10 3 3 8 1
+Unj d
+Fujitsu personnelrelated 2 1 1 ie}
+Service meets contractualrequirements 3 7 10 12 wi Vv
+Outside contractualrequirements 4 1 1 0
+Total Complaints 20 18 17 20 16 2B
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 18
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+2.1.9 Business Incident Management
+
+There were 56 BIM incidents raised during November, 3 less than October.
+
+Of these incidents raised 31 were within the 8 hour response SLT (predominantly relating to the ‘Network Banking State 4’ exception
+state) and 25 were within the 5 day response SLT.
+
+2.1.10 Engineer Services — Site Visits By Engineer
+
+There were 5344 break-fix site visits in November , compared to 5115 in October , and the overall performance of the engineering
+service continued to be delivered around our SLT.
+
+Service Improvements
+
+FJS are now consistently delivering conformant Break-Fix SLTs and will continue monitoring this service on day-to-day basis, to minimise
+any business impact to Post Office Limited.
+
+In January, we will be introducing a new mobility box and power supply unit for the mobile counters. One expected benefit from this will
+be increased reliability of the mobile counter. FJS are working on a programme aimed at reducing the numbers of engineering visits
+required; FJS have also proposed a number of initiatives in which Post Office Ltd could assist in this area.
+
+Remedies
+
+In November , there were 142 remedial calls, which is higher than in October (90 ). Actual penalties are also higher , totalling
+£12,018.35. I Conformance was again maintained across all Service Level Targets (except Time to Repair, which was measured at
+25.6% ).
+
+2.1.11 Security Services
+
+Automated Key Refresh
+
+An average of 27 branches a day were selected for key refresh while the key refresh algorithm was turned on for this month resulting in a
+total of 843 branches being targeted for refresh. The key refresh algorithm is now permanently turned on, and will be continually
+monitored.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 19
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1,0
+Manual Key Refresh
+
+There were no manual keys generated this month.
+
+Key Management Administration
+There were no major key management issues this month.
+
+Prosecution Support
+
+1. 70 ARQ's were received this month, making a total YTD of 480. All have been completed and returned.
+2. No witness statements were requested this month, therefore the YTD total remains at 31.
+
+3. There was no court attendance this month.
+
+2.1.12 PostShops
+
+The PostShop rollout is still progressing well. As at 30 November there are 165 live Branches, increasing by approximately 5 Branches per
+week. The call volumes are a little higher than expected in November, the calls include a small number of questions which are business
+issues for NBSC, and these issues will be discussed with NBSC. The rollout will continue up to March 2006 bringing the total estate to 300
+terminals in 200 Branches.
+
+Main issues this month are around missing data which had not arrived at the PM’s counter, this is due to the branches switching off
+overnight, and this issue will also be discussed with POL to agree a form of communication to the PM's. This is not visible to the PM and
+does not stop normal business transactions. All issues logged are being reviewed and analysed to identify any trends. The table below
+represents all issues logged by the PostShops Servicedesk.
+
+Week 13 I Week 14 I Week 15__I Week 16 [Monthly Totals
+Number of calls received 18 14 21 36 89
+Number of calls resolved in 8 16 14 19 35 84.
+hours
+Number of calls resolved in next I 2 0 2 1 5
+day
+Number of Hardware faults 6 5 10 16 B7
+Number of software faults 12 9 11 20 52
+Number of outstanding calls 0 0 0 1 cleared 2/12
+
+There were 5 calls to fix failures this month; these have all been addressed with Geller.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 20
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3 NOVEMBER VOLUMETRICS
+3.0 OPERATIONAL BRANCH & COUNTER VOLUMES
+
+Please note that forecast figures have been updated and are likely to change for future months.
+
+39,000
+36,000
+33,000
+30,000
+° (Actual Live Branches
+$ 27,000 (a Actual Live Counters
+5 f
+8 24,000 Forecast Live Branches
+3 ——Forecast Live Counters
+2 21,000
+2
+5
+& 18,000
+)
+3 15,000
+8
+€
+2 12,000
+9,000
+6,000
+3,000
+0
+Jan-05 Feb-05 Mar-05 Apr-05 May-05 — Jun-05 Jul-05 Aug-05 ——-Sep-05 Oct-05 Nov-05 Dec-05
+vJan-05 [ Feb-o5 [ Mar-o5 [I Apr-o5 [I May-05 I Jun-os [ Jui-o5 I Aug-05 I Sep-o5 I Oct-05 I Nov-05 I Dec-05 I Jan-06
+[Actual Live Branches 14752_I 14619 I 14528 I 14492 I 14465 I 14427 14400_I 14378 14347_ I 14317_I 14303
+Actual Live Counters 35770_I 35575 I 35405 I 35354 I 35334 I 35271 35245 I 35258 I 35204 I 35188 I 35195
+Forecast Live Branches t4995_[_ 14895 [14795 [14695 14595 14495 14412 14397 14412 14397 14382 14372 I 14357
+Forecast Live Counters 3e0s9_[ 3ssso_[as7i9 I 3ssa9 [35379 [35209 [35254 [35237 _[ 35108 [ 35093 [I sso7e [I 35068 [ 35053
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 21
+Fujitsu Services
+
+D:
+
++ 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.1 VITAL STATISTICS
+
+3.1.1 Vital Statistics — Network Banking
+
+November 05 To Date
+Balance Enquiries 2,104,818 46,618,151
+Cash Deposit Transactions 597,426 11,052,046
+
+Cash Deposit Total Value
+
+£263,956,342
+
+£2,938,906,648
+
+Cheque Deposit Transactions 46,441 777,630
+Cheque Deposit Total Value £20,193,382 £311,878,114
+Cash Withdrawal Transactions 11,231,943 198,124,503
+
+Cash Withdrawal Total Value
+
+£1,196,357,368
+
+£18,719,092,710
+
+Withdrawal to Limit Transactions
+
+10,097,474
+
+129,223,861
+
+Withdrawal to Limit Total Value
+
+£1,568,814,858
+
+£15,483,263,524
+
+DCP Refund Transactions 484 16,640
+DCP Refund Total Value £66,335 £3,083,005
+DCP Payment Transactions 2,609,583 42,587,413
+DCP Payment Total Value £157,369,602 £2,651,473,934
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 22
+Fujitsu Services
+
+D:
+
++ 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.1.2 VITAL STATISTICS — NETWORK BANKING TRANSACTIONS BY BANK (CURRENT MONTH)
+
+Transaction
+
+Bank Volume Transaction Value
+Alliance & Leicester pic 1,571,977 £341,211,163
+Card account at Post Office 19,264,204 £2,458,280,223
+Streamline (Online Debit Card) 2,610,067 £157,435,937
+LINK
+
+Abbey National PLC 60,656 £3,143,061
+Bank of Ireland 22,959 £2,336,321
+Barclays Bank Plc 867,391 £64,243,115
+Clydesdale Bank Plc 93,438 £7,111,377
+First Trust Bank 777 £64,263
+HBoS. 76,220 £4,692,912
+HSBC Bank Plc 26,440 £1,884,613
+Lloyds TSB 1,233,746 £79,433,554
+Nationwide Building Society 124,525 £6,714,956
+NatWest 116,622 £5,508,697
+Northern Bank Ltd 7,477 £380,597
+NS&I 259,612 £41,930,070
+Royal Bank of Scotland 37,881 £1,889,475
+Smile 29,489 £4,295,305
+The Co-operative Bank 205,922 £21,158,995
+Ulster Bank Ltd 653 £57,780
+Yorkshire Bank Plc 90,492 £4,985,473
+LINK TOTAL 3,254,300 £249,830,565
+GRAND TOTAL 26,700,548 £3,206,757,888
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE
+
+Page 23
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.1.3 Vital Statistics — ETU Transactions
+
+Summary Nov-05 Totals to Date
+Transaction Volume 1,544,262 £34,186,639
+Transaction Value 12,860,407 £281,875,832
+
+Details by Issuer Scheme
+
+Transaction Volume
+
+Transaction Value
+
+3G UK Ltd Everything Add-On 11,164 £135,560
+3G UK Ltd Text Add On 11,104 £63,805
+3G UK Ltd Video Talk & Text 5,056 £125,100
+Carphone Warehouse MobileWorld 3,523 £24,510
+Fresh Mobile E-Voucher 3,341 £59,235
+Napster Tracks Music Voucher 3,454 £33,720
+Napster Unlimited MusicVoucher 1,657 £14,515
+02 PAY & GO 44,971 £481,290
+O2 Top-Up Voucher 17,176 £146,595
+Orange E-Voucher 347,761 £2,639,210
+Orange pay-as-you-go 35 £255
+Post Office Rechargeable Card 14 £85
+Talk Talk Mobile E-Voucher 29 £220
+talkXtra 3,104 £27,727
+Tesco Mobile Pay as you Go 11,707 £128,125
+Tesco Mobile Top-up Voucher 1,331 £14,755
+T-Mobile Pay as you go 240,657 £2,020,985
+T-Mobile Top-Up Voucher 49,750 £369,255
+Virgin Mobile Airtime Voucher 35,095 £242,470
+Virgin Mobile Pay As You Go 117,818 £816,240
+Vodafone Pay as you talk 337,125 £2,530,735
+Vodafone UK PAYT TopUp Voucher 87,427 £637,185
+Vodafone UK Text Pack Voucher 419 £3,145
+Vodafone UK Voice Pack Voucher 44 £800
+Totals 1,544,262 £12,860,407
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 24
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.1.4 Vital Statistics — General Transactions
+
+transactions by I APSGeneric I °° Vaiableto I DataFile ; All Network
+source jutbound DWP systems Delivery to TIP Debit Cards Banking ETU (epay)
+
+November 2004 29,643,495 16,627,311 222,914,381 1,639,116 17,018,468 1,444,573
+December 2004 26,251,608 12,011,200 242,450,439 2,104,412 18,661,814 1,415,727
+January 2005 26,695,470 8,152,115 186,172,451 1,553,954 18,406,269 1,344,626
+February 2005 22,940,870 4,151,736 165,721,492 1,617,718 19,140,250 1,349,223
+March 2005 26,699,858 328,016 196,937,035 1,886,499 23,510,405 1,425,490
+April 2005 27,429,551 17,572 192,589,186 1,988,602 23,253,854 1,423,031
+May 2005 26,167,158 2,798 185,685,955 1,951,179 23,270,905 1,388,395
+June 2005 25,976,266 1 190,009,058 2,078,448 23,279,596 1,474,354
+July 2005 25,022,191 N/A 182,589,632 2,069,931 22,226,471 1,468,755
+August 2005 26,705,444 N/A 193,006,661 2,174,677 24,638,540 1,597,895
+September 2005 25,976,618 N/A 186,567,173 2,278,662 22,970,773 1,565,092
+October 2005 26,497,868 N/A 186,838,982 2,426,611 23,225,056 1,528,801
+November 2005 26,423,868 N/A 195,520,416 2,610,067 24,090,481 1,544,262
+
+Other Network Banking Transactions include: Balance Enquiries, Change PIN, Deposits (Cash & Cheque) and Withdrawals (Cash & “to Limit”).
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 25
+FUJ00152251
+
+FUJ00152251
+itsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Nersion: 1.0
+3.2 HG@RIZON SERVICE DESK - LOGGED CALL PROFILES FROM LIVE BRANCHES
+16,000.
+14,000
+as : I
+10,000 I
+I -_ f ff = = as I #8 I «= & eer —
+& 3,000 i I
+% : I
+3 6,000 I is] bo I
+I I 1
+4,000 I I
+2,000 I I
+I I
+(Le ee ee : I : tk
+Nov-04 Dec-04 —Jan-05—Feb-05 = Mar-05—Apr-05 May-05Jun-05— Jub0S.Aug-05— Sep-05 —Oct05.—Nov-05
+Month
+mamma Change lms Environmental I Hardware mmm Inappropriate
+cemss NBSCReferral mm Network mam ReferenceData mama Security
+(= Software (== Other Queries mma BusinessIncident mamas One Shot Passwords
+MonthlyCall Limit 6-monthmovingaverage
+Nov-04 [Dec OF Wer Feros] Ve YS] an 05 urs A G05] Sep ports Ns, 7
+incident 4 lo
+ge ZI 7 7 T z o 7
+Envir ntl RES iy 19f 454 437 170 181 4 188) 454 130 18:
+poroprate its st i 89 6 fe A et
+125 iat 20 a1 10; 83 4 1 133 470
++ a i mi a) z 5 T ost a) A
+163 421 139 i 4 130 119 126 108. 52 4 132. 13
+46 I 2068 T2203 5 6. 665 zs mm 368 ba 2048.
+TotalCalls a5eaa I 15090 hsoa7 adr aan sazaal s2n7a I sasna I sonar ee’. <T 45247
+veri 303 364 ag — 40000
+MonthlyCall Limit THOT T3000 3000 T TION T2750 T2750 T2750 T2750 0 T T2750 T2750
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 26
+Fujitsu Services
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+3.2 HORIZON SERVICE DESK - LOGGED CALL PROFILES FROM LIVE BRANCHES (CONT'D)
+Nov-04 I Dec-04 I Jan-05I Feb-05] Mar-05] Apr-05] May-09 Jun-05} Jul-05 Aug-0! Sep-0} Oct-0} Nov-g5
+
+Business Incident p i?) 0 1 ie) 0 10
+Change 2 3 0 0 2 0 1
+Environmental 14 107 197 19 1 1 1 2p4 163 88 54 39 83
+Hardware 819 793 7574 706 724 71 66 74B3 6848 6907 7410 7412 8p8s
+Inappropriate helpdesk 184: 143p 145p 157 14 15 10: 14p6 1160 1946 1417 1910 1745
+NBSC Referral 12 ov 129 g 1 V4 0 71 75 33 70
+Network 215: 224 1778 169 16( 18 21 21B4 1959 21409 2420 1480 1665
+(Other queries 15: 11 127 17 14q 1 1 1B7 m1 81 98 16 R67
+Reference Data ft 6 2 1 0 1 21 1
+Security u 1 9 6 2 0 2
+IOne Shot Passwords 16: 12 139 19 1 1 1 1p6 1p8 452 56 37 37
+Software 284 296} 3828 287 26: 261 25: 27P1 2368 2407 2428 2468 3048
+System outage calls (not included 12! 94] 162 4 1 0 ) 0 49 0 #79
+Total Calls 1563: 1502P 15237 = 1377 134! 137. 128 145p1 12867 «13968 = 13463 13616 = 15217
+(6-month moving average 1563: 1532} 15298 1491 146: 144! 140) 13987 13542 13474 13470 = 13449 13839
+Average Daily Call Rate 66! 65) 6 i 64 6! 5 6p4 WS 957 61 79 34,
+Working days per month 237 2I aR q q p4 20% 24 24 BY 24
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 27
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.2 HORIZON SERVICE DESK - LOGGED CALL PROFILES FROM LIVE BRANCHES (CONT'D)
+
+Explanation of Calls removed from Call Volume totals due to System Outages.
+
+Month I description of issue / system outage [date [call type __calls identified
+Dec-04 ADSL service & Internal Estate - Network calls between 13:00 and 15:00 07/12/2004 N 118
+3 major outages at 09:07-09:17 ; 12:45-14:00 ; and 15:00-17:00 20/12/2004 N 540
+CAPO faults between 08:00 and 10:00 21/12/2004 N 118)
+BAS router failure between 08:45 and 11:30 31/12/2004 N 185]
+TOTAL for DECO4 941
+Jan-05 etwork calls raised between 09:02 and 17:30 on 24th January 24/01/2005 N 142
+Feb-05 I ATM switch failure : loss of service to 1,600 ADSL Branches between Saturday 12/02/2005 N (ADSL) 246
+12th and Monday 14th 14/02/2005 N (ADSL) 193
+Mar-05 I No calls have been removed this month 0
+Apr-05 I No calls have been removed this month 0
+NDO4+-calle-raiced-by ADSL-sit It of BAS Router fault-bot 08-34 NDO4
+May-05 I and 09:32 ref CS/REP/221 24/05/2005 (ADSL) 199
+Jun-05 I No calls have been removed this month 0
+Jul-05 I No calls have been removed this month 0
+Aug-05 }Ne-eatle-heve-b th: 7m 0
+Sep-05 I_ From 13:19 to 14:34 and from 15:34 to 16:41. CAT 1 Switch Wigan Failure 08/09/2005 incident 132
+From 09:03 - 10:15. WAN Router 1 Wigan 27/09/2005 417
+TOTAL for SEPO5 549
+Oct-05 I No calls have been removed this month 0
+Nov-05 I_09:25 to 10:45 BAS Router GR_TFLHS1-R1-003_ Incident 07/14/2005 _N&, 126
+10:43 to 11:27 Access contral change on C&W Network 14/11/2005 _N&S 147
+13:33 to [I7:12 BAS Router GB_WAHP03-R10-007_ Incident 15/11/2005 N&S 198
+12:30 to 13:08 BAS Router GB_KEAR02-R10-001 Incident 29/11/2005 N&S 8
+TOTAL for NOVOS 449
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE
+
+Page 28
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.2.1 LOGGED CALL PROFILES — INCREASED CALL VOLUME ANALYSIS
+
+The number of calls increased by 976 or
+
+12% from October to November 2005.
+For the same period in 2004 the increase
+was 718 calls or 9%, therefore confirming
+a similar trend. This aligns to a 9.745 M
+increase in transactions from October to
+
+Hardware Calls by Problem Type
+9,000 oe i November 2005.
+§:000
+ge
+‘S,000
+$ 000
+4,000
+3,000
+2,000
+1,000
+° s :
+Nov-o4 oec-04 an.05 Feb.0s pros May-os un-08 Jut0s Aug-o8 Sep-05 ots
+OProcessor fault Reader fault counter printer fault HBack office printer fault
+keyboard fault Monitor fault PIN Pad fault Mother fault
+Nov-04 Deqo4 Jsan-05 Feb-q5 jar-05 Apr-05] Maf-05 Jun-05 sul gs ug-05 Sep-05 Oct-08
+Processor fault 3TE BET 536 307 580 O25 a 308 32 571 629 572
+Reader fault 350 344 442
+Counter printer fault 2549 2ako 2415 213 284 2465 2}o1 2428 2248 2254 2428 2497
+Back office printer fault 1438 Tals 1320 119 328 1071 Thee 1342 1246 4477 1133 887
+Keyboard fault : * 7 77 7 7 a 705 746 812
+Monitor fault 883 L 80 20 4 0 19 813 863 895
+PIN Pad fault 1198 143 1479 114 042 940 0 1020 92 1015 1041 973
+other fault 7 3 1 T 22 26 34
+TOTAL x 4 2182 2 6907 7210 7112
+
+Nov-08
+
+Nov-05
+675
+399
+
+2939
+931
+988
+1090
+1042
+
+8088
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 29
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+3.2.1 LOGGED CALL PROFILES — INCREASED CALL VOLUME ANALYSIS (CONT'D)
+
+The number of calls increased by 759 from
+October to November 2005. Of these
+System Freeze/Busy and System
+Slow/Delay calls account for 464 calls or
+SOs oe — oe 61 % of the increase in calls. By design
+the system elements underpinning the
+production of the Branch Trading
+Statement dictate that this action will take
+up to 5 times as long as producing the
+Weekly Cash Account it superseded. It
+needs to be noted that the BTS is
+produced only ones per month and the
+WCA once per week. Therefore the net
+affect should be minimal.
+In addition there was an increase of 133
+‘I I I Key refresh calls logged. The key refresh
+Novel Deco dandS—= Feb = «Mars Apo May-8 uns MOS .-<algorithm was, turned off from July to Sept
+whilst the outstanding calls were
+“investigated and closed. The key refresh
+process was turned back on during
+
+Software Calls by Problem Type
+
+5,000 I
+
+$80
+
+2,000
+
+1,000
+
+No. gf Calls,
+
+[system treeze/ "System bus{ISqutgm error messliftue scree[iKey refresh - Update securiff MALO Suppdsystem slow / system MAeported software pri
+
+Nov-04] Decha Jdn-05  Ireb-o5] Mars  Aq-o5  [iay-05] Juno}  vullos  Augo05 I sGeptember andvastandard message would
+
+System error message 400 I 48 a2 I arr I ar4 pee [set sp Per I tien hayé start to be sent to the
+
+Blue screen + : 17 a - - - -
+
+Key refresh - Update security data at A 44 404 a 4 4 4 a4 2 Caunters,fequesting the users to do a
+
+System freeze/ “System busy" msg sse7I__tadz iso aiza I ti. ther [1062 [1260] sips 1ca_I peboot toenablethe refresh process to
+
+POLO Support 315 33 52 355 29q 5 345 396 348 347 4 9, a
+
+System slow / system delay re} — st —fr tt toa op I Bimpletf, If thig.and subsequent similar
+
+Reported software error paessages are ignored the KMA door for
+
+TOTAL 2050 I 29 loa I 2075 I 263: abos__I25a7_I 27911 ase 407 I 988 resh2tloséePAnd also tells the user to
+
+contact the Service Delp desk to get the
+KMA door reopened.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 30
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+1400
+
+1200
+
+1000
+
+800
+
+600
+
+400
+
+200
+
+3.2.1 LOGGED CALL PROFILES — INCREASED CALL VOLUME ANALYSIS (CONT'D)
+
+System Freezes Fixed by Reboot - Cause analysis
+
+t
+
+Nov-04 Dec-04 Jan-05 Feb-05 Mar-05 Apr-05, May-05 Jun-05 Jul-05 Aug-05 Sep-05,
+Receipt / label printing GReport printing BReport previewing
+Transaction processing BRiposte login OIPOLO process
+Admin / cash account BTivoli event Reboot not required
+System Freezes v-04 Dec-04 Jan-0: Febps Mar-05 pr-05 May-05I Jun-O} Julpos: Agg-05
+Receipt / label printing 48 54 47 Si 8 60 51 70 5] 149°
+Report printing 7 7 oT By z rr
+Report previewing
+Transaction processing co - ~ “4 pe fe a 2
+Riposte login 152 135, 427, 44 9 91 91 152 143 178,
+POLO process 145 131 147 10} 04 89 94 131 141 23
+Admin / cash account 88 138 59 9 103 106 94 104] 8] 42
+Tivoli event 7 T T 7 7 7
+REBOOT sub-total 4
+Reboot not required 156 408 121 a 2 2 2 a 4
+TOTAL 184 1187 1139. 44 ipod 1161 1062 1257 4172 162
+
+The volume of system freezes reported in
+November was above average, and the
+majority occurred during the processing of
+transactions, which is accounted for by
+high system usage conducted during
+
+November.
+Oct05 —_Nov-05
+ep-05 Oct-05 Nov-05
+70 79 88
+47 37 53
+64 81 76
+512 491 724
+55 63 43
+93 100 53
+29 60 110
+3 2 3
+873 913 1147
+120 103 142
+993 1016 1289
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 31
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+3.2.2 ONLINE NETWORK SERVICES
+
+During November the HSD received a total of 1865 reported incidents with 1243 related to ADSL network faults. The major incidents on
+the 07", 15th and 29th were responsible for the main increase above the October volumes. Fujitsu have continued to apply pressure on
+C&W and they have now tightened their change process to reduce the number of changes that are applied during trading hours.
+Additional scripting has now been deployed to reduce the risk of human error while applying standard changes to BAS routers.
+
+The sudden frost and cold conditions caused an increased branch incident volume affecting the PSTN lines and ISDN lines. The MTFR
+suffered as BT field engineering were insufficiently resourced to service all these calls. BT’s seasonal engineering problem continues to
+cause an irregular service characteristic across the year. The matter has again been raised through carrier relations for the attention of BT
+Wholesale. In addition we have asked C&W to instigate a service improvement plan for branch fault resolution time on ISDN and VSAT.
+
+An ADSL enhanced care trial began at 1000 large branches on the 1st and will run for two calendar months. At the end of the two months
+the data will be analysed to measure the percentage of actual enhanced care incidents achieving the SLA and the improvement in MTBF
+achieved at these branches.
+
+Online transaction call volumes also decreased to 199 with most actual faults relating to the incidents within the Link and Co-Op domain.
+Enhanced Care Update
+
+During November there were 3 actual faults at the 1000 branches covered by Enhanced Care. Only 1 of these faults contributed to BT-
+Broadband's SLA criteria and we had a 100% success rate. The service has cost £9,719/month and the December metrics will be reported
+next month. The service is scheduled to revert back to Standard Care on 31/12/05.
+
+FAD 005539 (E-0511010278) was resolved within 2hr 15min of it being reported.
+
+The other 2 faults FAD 247227 (E-0510290061) & FAD 157014 (E-0511050267) were fixed on non-BT-Broadband maintained wiring on
+site. As these faults were on the PSTN line they BT do not count them towards their Enhanced Care SLA. The first was resolved in 33
+clock hours (delayed by the BT being denied access by the PM on 2 occasions). The second was resolved in 16 clock hours.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 32
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+D: 5/12/05 Nersion: 1.0
+3.2.2 ONLINE NETWORK SERVICES (CONT'D)
+*The new CEM was started on the 01/07/05
+Network Calls by "ND" Problem Type
+3,300
+2,750
+o :
+2.200 I -
+) ates
+i} I mm
+6 1,650 I =
+z bs f
+1,100 I ne
+550
+Nov-04 Dec-04 Jan-05 Feb.05 Mar-05 ‘Apr-05 May-05 Jun-05 Jutos, Aug-05 Sep-05 Oct-05 Nov-0
+Withdrawn old ND codes HADSL online services unavailable (NDO‘JISDN online services unavailable (NDO2)
+HVSAT online services unavailable (ND10) Disconnected Node (NDO6) MOnline transaction unavailable (ND14
+ND CALLS by Problem Type Nov-04 I Dec-0. Jan-5__Fet05 —_Mpr-05 pr-05 I May-05 I _Jun-o: Jul- Aug-05 — Spp-05 —Oct-0£
+Withdrawn old ND codes 1552] 1945 1870 699 1267 1439 1871] 1590
+ADSL online services unavailable (NDO1) OF TF 137 832
+ISDN online services unavailable (NDO2) = 47 132
+VSAT online services unavailable (ND10) 3 39 73
+Disconnected Node (ND068) 4 445 53 160
+Online transaction unavailable (ND14) 52g 204 193 283
+TOTAL 1552 1985 137 16p9 [267 1439 1871 1590 195 21p9 769 1480
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 33
+Fujitsu Services
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+3.2.2 ONLINE NETWORK SERVICES (CONT'D)
+[ADSL Online Services Calls - Cause Analysis Wov-04 ffec-04 Jpn-05Fgb05  Mpros  Ag-0S  Maj-os Junjos  Jurps Augps Sepqs Oct Nov
+JADSL service fault (C34) 9 69 55 45 46
+JADSL major incident (C37) 2 58 415: 37 277
+Software error / reboot (C36) 37 41 394 287I 337.
+Undetermined fault (CG4) 18} 47 26; 189) 268
+Subtotal ist i 87° 558) 228.
+PSTN line fault (C35) 4! 3 2 34 40
+INo fault found / user error (CR4) 4 4 1.4 a
+Duplicate-call-oroth 2 2 6 43
+Tora a o o o lo b od sg 43 aol 44
+ISDN Online Services Calls - Cause Analysis Ae a od. of
+ISDN service fault (C31)
+Major incident (C38) +
+Software error / reboot (C36) HK +
+[Undeternmedraur{cGay— 7H = 7 387
+TOYOTA T 15 0 1 T
+INo fault found / user error (CR4) 3 oF TS T
+Duplicate call or other causes. TH TT 1 1S
+TOTAL Ly 0 Ly 0 ly 2 02 24 132 T
+\VSAT Online Services Calls - Cause Analysis lov-04 jec-04 — Jhn-05 Feb-05 = M@r-05 = Apy-05 May-05 = Jun}05 Jul-PS Aug-P5 — Sep-@5 Oct- Nov-O}
+\VSAT service fault (CG5) 2 3 3 0 5
+Major incident (C39) 4 ) 25] 68 43
+Software error / reboot (C36) 1 1 4 1 8
+Undetermined fault (CX8) 9 0 3 2 8
+Subtotal 6 4 35) ral 69
+INo fault found / user error (CR4) 4 2 4 2 7
+[Duplicate call or other cause: U) 2 2 2.
+TOTAL 0) Q O o 0 6 39 L ts
+ND44 Online Transaction Cause Anal 04 4 05 Fhb.05 bes —aphos —Mab05 —Junlos ju a 45 Oct Nowa
+4626) 3 3 44 9.
+i
+TOTAL 0 0 0 0 0 0 0 0 525 221 1193283 199
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE
+
+Page 34
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.2.2 ONLINE NETWORK SERVICES (CONT'D)
+
+0 C&W Network ADSL MTBF 1 C&W Network ISON2 MTBF 6 C&W Network VSAT MTBF
+80 ai “ K
+a 6
+10
+0 _— A 4 hey
+ie EavE i PET L
+fo = 4 4 * pees Pi
+20
+2 aan w_ 2 ‘
+° ; : ¢
+° ° °
+Now Deer daw” Fab- Mare” Apr” May” Jnr NOE Auge Sepe Oct Now Now Dec” dam Fete Mars Ape May ee LOS Auge Sap ce Now Now Dec Jone Fabs Mar pre Migr Jans uk Ange Sap-” Oct-Nov
+oe oe 05 OS OS ° 0 oo 404 0§ 05 050s 0s OSS 05 Fos OF
+Se ADSLITEF (years) ] a s
+fe ing Aver ( == SON2 MTBF (years) -VSAT MTBF (years) ~
++5 Honih Halng Average af ADSL MIF (years) I =F tionth Roling Average of ISON2 MTBF (years) ] I —+=3 Month Roling Average of VSAT MTBF (years)
+ss. C&W Network ADSL MTFR s C&W Network ISDN2 MTFR C&W Network VSAT MTFR
+‘0 B.
+7 20
+as
+#20 ot
+i, —- i =]
+= 10
+°
+5
+5
+° ° °
+Nor” Dec” ne Fabs” Mare Apr Mp du WhOS Auge Sup Oct Nowe Nor ec dan Fabs" Mur Apes Mie duns” ah “Auge Gaps” Oct” Nowe Dawe Fabe Mare Apee Mi Jr dab Ange” Sepr" Oct” Nowe
+ae Ge 08 0s OF SOS os oF oF os oF 0S 0s OS OF oO OOF OS Os
+Se aS TER tows 7 a= VEATTFR (hours)
+== 2 iionth Roling Average of ADSL MTFR (hours) TSI STRATES) or con wreR mau) [ EY Fehit Rotng a Shage of VSAT MTFR (hours)
+Wovoa I becds I vands I rebos I Mmaros I Apros I Mayos [suns I suros I Augos [Senos I octos) I Novos
+ADSL MTBF (years) 73.88 62.78 26.45 22.98 67.67 23.73 2471 38.55 26.84 29.86
+23 Month Roling Average of ADSL MTBF (years) @ S 0 8 Si oe 30 2
+'SON2 MTBF (years) 567 6.19 372 6.46 622 5.44 4.86 3.98 4.08 5.21 498 4% 4.03
+Month Roling Average of ISON2 MTBF (years) a 5 5 5 a 6 5 4 r 5 5 5
+\VSAT MTBF (years) 3.40 1358 168 267 442 638 12.42 12.42 621 at 4.08 337
+3 Month Roling Average of VSAT MTBF (years) a Gi 3 4 B 0 10 a 5 3
+ADSL TR (hours) 15.01 16.06 22.05 2226 3228 287 1358 1687 3063
+ionth Roling Average of ADSL MTFR (hours) % 20 Fa Fd Fl zz
+ISON2 MTFR (hours) 1856 14.87 18.15 19.92 1452 11.08 12.28 14.63 14.56 1623 15.31 17.26
+Month Roling Average of ISON2 MTFR (hours) is 6 % i & 3 EH rE = = @
+VSAT MTFR (hours) 21.98 21.40 18.81 37.08 8.83 $.25 650 25.30 24.00 16.97 21.33
+‘Tilonth Roling Average of VSAT MTFR (hours) Fl 2 z 7 7 2 2 Z rE
+© 2005 Fujitsu Services COMMERCIAL-! Page 35
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+D:
+
+5/12/05 Version: 1.0
+
+3.2.2 ONLINE NETWORK SERVICES (CONT'D)
+
+C&W - WAN ADSL Fault Causes
+140 3%
+120 2% »
+= 8
+2
+2 100 u : 2% B
+3 yy é
+£ =
+3 80 a 1% %
+2 3
+& 2
+: 3
+3 60 1%2
+3S 2
+3 e
+— a
+2 40 — - 0% 4
+g
+2
+20 1%
+ole a olla OWE tho doll ool Lot moll.
+Nov-04 Dec-04 —Jan-05-——Feb-0S = Mar-05 = Apr-05 = May-05 = Jun-05 JuL0S —Aug-05 = Sep-05—Oct-05-——Nov-05
+GEEBIADSL service (general) (ADSL high order failure GEEBADSL last mile
+C=JADSL exchange EEE ADSL engineering = PSTN line
+JCeneral maintenance =Acustomer equipment GEE No fault found
+Se Actual faults as % of ADSL POs Total incidents logged as % of ADSL POs === Rolling Average of Total all Faults
+Novod [I Deco4 [ van05 I Feb-05 I Mars I Apros I May-05 I vuno5 I vuros J Aug05 I Sepo5 I Octos I Novos
+ADSL service (general) 2 1 7 8 8 25
+ADSL high order failure 72 2 a 3 8 tt 2
+‘ADSL last mile 4 2 14 1 4 5 70
+ADSL exchange 13 6 7 10 8 15 9
+ADSL engineering 3 7 0 2 7 1 1
+‘Actual faults at ADSL POs total 2 7 7 a 8 25 32 1 32 32 21 32 29
+‘Actual faults as % of ADSL POs. o1% I 0.02% I 011% I 0.11% I 0.10% I 0.20% I 036% I o12% I 035% I 034% I 0.22% I 031% I 028%
+PSTN line o 2 o 5 1 4 15 15 4 7 é 4 6
+General maintenance 0 0 0 0 0 0 0 0 0 0 0 0 0
+Customer equipment 3 a7 38 26 23 15 3 7 27 23 35 20 13
+No fault found 3 28 34 49 60 74 99 65 90 75 84 47 72
+Total all Faults 79 76 20 26 702 16 49 8 755 37 146 703 720
+Rolling Average of Total all Faults 19 49 59 66 73 a a 2 8 102 106 114 118
+Total incidents logged as % of ADSLPOs I 1.04% I 1.60% I 1.25% I 124% I 128% I 1.36% I 1.60% I 1.10% I 160% I 144% I 150% I 1.00% I 1.15%
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 36
+Fujitsu Services
+
+5/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.2.2 ONLINE NETWORK SERVICES (CONT'D)
+
+C&W - WAN ISDN2 Fault Causes
+
+4%
+
+350
+300
+2
+3%
+2 250 3
+Ss a
+£ 200 2
+3 =
+2 2% 5
+2 150 ry
+3 8
+. £
+3g Fj
+2 100 1%
+5
+z Fa
+: in dtd o1 hd hd be Od J .
+F thd fh tha bd od oo Od,
+Nov-04 ___Dec-04 __Jan-05 __Feb-05 __Mar-05 __Apr-05_May-05 __Jun-05. JuLOS __Aug-05____Sep-05 __Oct-05__Nov-05
+({@EEBCaller ID not enabled GEE Not in Closed User Group cottware
+[Exchange fault [External wiring Premises
+Line ceased (General maintenance [customer equipment
+GBB No fault found/Right when tested St Actual faults as % of ISDN2 POs Total incidents logged as % of ISDN2 POs
+Rolling Average of Total all Faults
+Nov-04 I Dec-04 I Jan-05 I Feb-05 I Mar-O5 I Apr05 I May-05 I Jun-05 I Jul05 I Aug-05 I Sep-05 I Oct0s I Nov-05
+Caller ID not enabled 0 0 0 0 0 0 0 0 0 0 0 o 0
+Not in Closed User Group 0 0 0 0 1 0 0 0 1 0 0 0 0
+Software 0 0 0 0 0 0 0 Q 0 0 0 1 2
+Exchange fault 57 44 70 27 28 35 33 44 45 7 27 20 30
+External wiring 106 86 95 57 4 37 a7 48 44 50 38 32 35
+Premises 29) 8 19 i 16 7 14 20 19 9 10 12 1
+Line ceased 0 0 0 0 0 0 0 0 0 0 0 0 0
+Actual faults at ISDN2 POs total 192 143 184 5 86 ED 94 112 106 76 75 65 78
+Actual faults as % of ISDN2 POs 147% I 1.35% I 224% I 1.29% I 1.34% I 153% I 1.71% I 210% I 206% I 1.60% I 1.67% I 1.68% I 2.07%
+General maintenance 0 0 0 0 0 0 0 0 0 0 0 0 0
+‘Customer equipment 24 19 18 7 7 é 4 9 16 11 7 7
+No fault found/Right when tested 114 74 7 51 60 52 48 48 23 37 53 26 43
+Total all Faults 330 236 299 163 163 147 146 169 145 124 135 98 128
+Rolling Average of Total all Faults 330 283 288 257, 238 223, 212 207, 200 192 187 166 156
+Total incidents logged as % of ISDN2POs I 2.53% I 222% I 364% I 221% I 254% I 253% I 266% I 316% I 262% I 261% I 301% I 254% I 3.40%
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 37
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.2.2 ONLINE NETWORK SERVICES (CONT'D)
+
+C&W - WAN VSAT Fault Causes
+18 18%
+17
+16 16%
+15 9
+14 14% 8
+£8 1m ©
+z 12 <
+& Ps
+gi 10% 2
+5 10 °
+$9 8%
+3
+38 2
+. ow
+B? 2
+E 6 -
+5
+25 4% g
+4 2%
+3
+2 0%
+1
+to) -2%
+Nov-04 Dec-04 Jan-05 Feb-05 Mar-05 Apr-05 May-05 Jun-05 Jul-05 Aug-05, Sep-05. Oct-05 Nov-05
+(=Personal earth station Dish aa Hub
+(General maintenance (Customer equipment No fault found
+Se Actual faults as % of VSAT POs Total incidents logged as % of VSAT POs __—=l=Rolling Average of Total all Faults
+Nov-04 I Dec-04 I Jan-05 I Feb-05 I Mar-O5 I Apros I May-05 I Jun-05 I vur05 I Aug-05 I Sep-05 I Oct05 I Nov-05
+Personal earth station 2 ) 4 2 3 1 1 1 4 2 2 O 2
+Dish 2 1 4 3 0 1 oO 0 1 1 1 ) oO
+Hub oO ) 0 oO CY) 0 oO 0 0 oO 0 oO 1
+Actual faults at VSAT POs total 4 1 8 5 3 2 i 1 2 3 3 0 By
+‘Actual faults as % of VSAT POs 245% I 061% I 4.94% I 3.13% I 1.89% I 1.31% I 0.67% I 067% I 1.34% I 203% I 2.04% I 0.00% I 2.10%
+General maintenance 0 0 0 0 0 0 0 0 0 0 0 0 0
+Customer equipment oO 1 1 3 2 11 3 1 1 0 2 0 2
+No fault found 3 4 4 17 2 7 16 2 4 0 1 0 2
+Total all Faults ra é 3 25 7 20 20 4 7 3 6 0 7
+Rolling Average of Total all Faults 7 7 9 B 12 3 14 3 12 4 14 10 10
+Total incidents logged as % of VSAT POs 4.29% 3.68% 8.02% 15.63% 4.40% 13.07% 13.42% 2.68% 4.70% 2.03% 4.08% 0.00% 4.90%
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 38
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+
+3.2.2 ONLINE NETWORK SERVICES (CONT'D)
+
+These graphs show how C&W ADSL customers are outperforming the BT Wholesale ADSL average for the Ofcom key performance indicators.
+The data provided by BT Wholesale covers all C&W ADSL customers although Post Office is the largest customer. The data is offset by 1 month due to
+BT Wholesale reporting timescales.
+
+ADSL Actual Faults cleared within 40 hours ADSL Actual Faults cleared within 40 hours
+(excluding parked time) (including parked time)
+100% 4—————$ $$ - - 00% ¢¥—————$
+80% 80%
+60% 80% fl *
+40% 40% < <== ~
+20% 20%
+0% 0%
+May Jun Jul ‘Aug Sep Oct May Jun Jul Aug Sep Oct
+—+— C&W Customers — = BT Wholesale Average —« TargetI [ ——caw Customers =— BT Wholesale Average I
+May _[Jun___[Jul Aug ___[Sep___]Oct May [Jun [uur Aug __ISep___]Oct
+CSW Customers InI 66.98%I 60.28%I 67 26%I 58.39%I 74.67%I 83.52% [CRW Customers $4.38%I 47.52%I 51.12%] 46.31%I 62.80%I 59.34%
+BT Wholesale 57.70%I 54.81%I 57.62%I 55.67%I 62.07%I 81.69%] BT Wholesale Averagd 44 40%I 43.70%] 48.41%] 46.40%I 48.02%I 52.78%
+Target “T 84% 84%] 84%] 84%] 84% 84% I
+ADSL Early Life Failures ADSL Repeat Visits
+6% -———_________ — ae 20% $$$
+18% ao
+4% 14%
+12%
+3% oe = 10% =.
+2% 8%
+Sa 6%
+1% 4%
+0% 2%
+May Jun Jul Aug Sep Oct ore
+May Jun Jut Aug Sep Oct
+[_—+caw customers = BT Wholesale Average —+— Target I [caw Customers —=— BT Wholesale Average —a— Target
+May [Jun Jul Aug __ISep___]Oct May [Jun Juul Aug __ISep___]Oct
+C&W Customers 0.93%I 1.79%I 267%I 1.76%I 270%I 5 26%IC&NW Customer! 11.31%I 14.97%] 13.39%I 13.38%I 15.60%I 12.09%
+BT Wholesale Averaged 4.57%I 4.77%I 4.70%I 4.64%I 4 .84%I 4 59%IBT Wholesale Averagd 16 54%I 16.96%I 18.36%I 19.00%I 18.58%I 17.21%
+Target R I 460%I 4.60%I 4.60%] 4.60%] 4.60%] 4.60%ITarget [ 1s%I 15% 15%] 15%] 15%] —*15%
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 39
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+3.2!9’ONLINE NETWORK SERVICES (CONT'D)
+
+Onliké’Service Unavailable Calls (From 1/7/05 = ND01+ND02+ND10+ND14).
+Actuglelapsed time of calls in hours = difference between Call Open date and Call Close date.
+
+20% The measurement for this chart has
+changed due to the monitoring of
+20% calls to improve the service. This
+means that the calls will generally
+10% be open longer.
+0%
+Nov-04 Dec-04  Jan-05 Feb-05—Mar-05  Apr-05) May-05  Jun-05 JulKOS = Aug 0S Sep-(05 Oct-05 Nov05
+I t= <24hours ma <48hours 1 <72hours © <6hours mi <120hours w 120hoursplus
+I Actualblapsediir
+callinhours. TOTAL
+Nov-04 60.0% St 3.3% 614.0% 43-28% 493.2% 108 7.1'% 1562
+Dec-04 4.5% 361 17.7% 106 55% 8) 45% 120 60% 1985
+67 €2 2 144. )
+Feu 4% 64753. B 0% 167488.3e7, S282. Hoyo 1305/7. Lin 164339
+MangB05 in 67889. WI A712. AVB%, 6P/_ 19171. Fer 94837. Va% 1261871
+JurOS 83-61% 47-32% 12? 4.8% —119--8.1% 4474
+AOS 288 10.0% 140 20%) 08% 105 48% 1174
+Sep-05, 366 4.0% 311.2% 281.1% 79._5,0% 2316
+Ca-05 1S 84 48> 3.0% 33-25% 444.4% 745.6% 4320
+Nove 1173 700% 174 104% 108 64% 2 15% 4 62% 6/7
+
+* Online service unavailable calls are being kept open for longer in order to track intermittent faults.
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 40
+Fujitsu Services
+
+Date: 15/12/05,
+
+FUJ00152251
+FUJ00152251
+
+SERVICE REVIEW Ref: CS / PER / 050
+
+Version: 1.0
+
+3.2.2 ONLINE NETWORK SERVICES (CONT'D)
+
+C&W backbone network outages
+
+Jan-05 Feb-05 Ma Apr-08 ay-05 Bs Jul-05 Aug- [e} ee Nov-05
+kee ii ae a st ee
+HBT Silent Failure BT Circuit ©BT Core  OATMFault M§BBPE (BAS) [Core PE Human Error
+Nov-04 Dec-04 Jan- Fel}-05 jar-05 ‘Apr-05 May-05 Jun-05 Jul-ds Adg-05 Bep-05 Oct-05 fy
+BT Silent Failure oO co) oO oO oO oO oO oO oO
+BT Circuit iy 0 ly iy Ly ly 0 Ly 0
+BT Core wv vw wv wv wv wv wv wv 1
+1
+BRDE (pas) 0 4 a 0 0 a 4 °
+Core PE 0 0 0 0 0 0 0 4 0
+Human Error 0 4 0 0 1 0 0 0 0
+TOTAL 0 2 1 3 1 2 2 2 2
+
+> 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE Page 41
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+Ref: CS / PER
+
+Version: 1.0
+
+FUJ00152251
+FUJ00152251
+
+050
+
+3.3.1 ENGINEER ON - SITE VISITS
+
+5,000
+a
+_ = i)
+Has Ne
+® I —
+i I I . . .
+6 I 1
+. I I
+§ 2,000 I I
+Zz i I —
+0 : a eee eee asic} I ae ony Py Pi)
+Nov — Deo04 = Jan-05— Feb-05 = Mar05 = Apr05 — May-05 = Jun.05 uO. Aug-05 = Sep-05 Oct. Nov-05
+Month
+mums Bar code readers lms Base units Keyboards
+tama other items (== Ithaca Printers amma Epson Printers OK printers
+fm Panasonicprinters (mmm Pin Pads Monthly Call Limit
+Nov-04 [Dec-04 Apr Juno5 I Juros p05 Ps Nov.
+Bar code readers 246 249 242 226 17 195 189 195 200 180 81 292 219
+Base unit 558 415 473 As 465) AG EXE 495 453 84
+Keybearde 508. 666 405. 6 644 46% 52: 4 498 29 5 4
+tthacaPrinter tet t855 1596 t 17 t79g- 1736 t83t tH +706 BAS t Gi
+Epson printers Tes TSS ) i TH v, Br BT 77 Bz Et a
+OKI printers 421 359 384 45 39} 330 377 468 424 427 306 345 334
+Panasonicprinters. 2 5 3 1 1 5 3 0 0 3 4 1
+Pin Pack 586 60: 6 ‘5 534 530 596 524 613 $21 54 58
+59g _I_ 50g. 53 564 464 434 487 544 24. ody 4
+othertterns: 6S 67 68 45 St tH t tS + t t
+TOTAL Bz _IABIT 77 AG C7 a B0_53T
+TuerenjeaiiGiaxchanges 119 SS 385§114 3850 f8 3850 3875 3875 76875 3f75 55 38% 40 3875P4 3875 TB 3875 59)
+erageDaily Visit Rate 09 1 4 14 4 198 19 187 4 495 199 4
+
+2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 42
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 2502/05 Version: 1.0
+3.3.2 GATEWAY REPLACEMENTS
+200
+150
+100
+50
+ie} 5 —# i, — r
+Dec-04 Jan-05 Feb-05 Mar-05 Apr-05 May05 Jun05 Ju-05 Aug05 Sep05 Oct-05 Nov05
+[m<24hours mm <48 m<72 m<96 m<120 m120plus I
+[____ Numberof Gatewaysreplacedby Engineers followingcall raisedby POBranch
+ActualElapsedTimeof
+I___calllin hours <p4 hours <2 <06 <120 4P0plus.
+Des-04 39 46. 4g, 44 49 47.
+Jarr0s 47 at Ss tt S ts
+Feb-05 SS] aq ils] TS 9 16
+Mer-05. 70. vel 16 12. 5 vel
+Aer-O6- 63. 25. 4 49, 2 47.
+May-05 Tt 37 tS tS 6 tS
+Jun-05 93 55 22 3 70 30
+Jul-05. 65 4A 3 16 8 25
+Avie-O5, 49 40. Lz z z 97
+Atig-O5- “46- +7 7 7 27
+—Sepr0s 6S Kio} 28 TT TT TS
+Oct-05 67 4 17 14 9 12
+© 2005 FujNose@Bes 64 57. COMMERQOIAL-IN-CONFIENCE 8 16 Page 43
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+4 NOVEMBER REVIEW OF PROBLEM MANAGEMENT
+
+4.1 PROBLEM MANAGEMENT CROSS DOMAIN PROBLEMS — SUMMARY
+
+FS Status _ INum_ I Post Office Ltd INum —
+Status
+Open 15 Open 15
+
+Monitor 2 Monitor 2
+
+4.1.1 SUMMARY
+
+e As at 30.11.05 there were 17 open problems, of which 0 are Problem Branches.
+e 3 new problems were opened in November none of which were Problem Branches.
+
+4.2 PROBLEM MANAGEMENT CROSS DOMAIN PROBLEMS — ON ALERT
+- There are no cross domain problems on alert for November.
+4.3 KEY CROSS DOMAIN PROBLEM UPDATE
+
+The new RAG status for the key cross domain problems are based on the criteria —
+Business Impact BI score Root Cause RC score
+
+High (H) >20 outlets affected 3 Root cause unknown, no progress or no workaround in place 3
+
+Medium (M) >1 <20 outlets affected 2 Root cause determined, implementation agreed/needs to be agreed 2
+or workaround in place
+
+Low (L) <1 outlet affected 1 Fix implemented and problem being monitored 1
+
+RAG status = BI score x RC score = (RED = 6-9) (AMBER = 3-6) (GREEN = 1-2)
+
+The differentiator to be applied between a RED & AMBER RAG status score of 6 depends on whether the RC is known and whether a
+workaround is in place i.e. if a the score of 6 is derived by a “Root cause unknown, no progress or no workaround in place = RC score of
+3” then the RAG will be red.
+
+If the RC score was derived by “Root cause determined, implementation agreed/needs to be agreed or a workaround in place = RC score
+of 2 then the RAG will be amber.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 44
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+
+4.3 KEY CROSS DOMAIN PROBLEM UPDATE Cont’d
+
+ill be chasing Peter Thompson for an update on the Corrective action H 3 9
+jplan, as I stated before there is a Network audit currently underway.
+
+Module5 Hardware Failure in Wigan
+
+PM0000683 Catalyst Switch Mike Stewart I Shaun White
+[There is a full audit plan in place being undertaken by Network teams H 3 9
+(CFM3 in the data centres which is currently underway. The A&L issue
+Time outs experienced across the as in the A&L domain and with their Firewalls with issues around the
+
+PM0000684 Mike Stewart I Shaun White
+
+NBX On-Line Services IEscurity and the generation of the "Magic Numbers". This has been
+
+corrected and the call I believe should now be closed.
+
+(The SRDF upgrades have been completed; we now have a phased L 2 4
+program towards not splitting the SRDF for Monday mornings. Will
+
+pmooon6as Oracle Log File Switching Incident 20th wike stewart I Gary Blackburn check with Peter Thompson for a completion date to stop splitting the
+
+December SRDF link on a Monday.
+Suspect problem with BCR buffer, ; . oe M 2 I 4
+M0000659 unknown quantity of instances thoughI Dean Felix I Andrew Price Full update provided to POL via Emil
+presumed extremely low
+
+ik Peach received a file from Epay and responded on the 19th H 1 3
+
+EPAY Exceptions, arising from September asking EPAY if possible to supply more details in the
+
+PM0000678 — System/Network issues on 9th May I Mike Stewart I David Wright reversed transaction list supplied. David W has supplied details to
+
+and 27th June IEPAY and we are awaiting their response.
+
+Major Incident - BANK ADSL Power
+
+PM0000680 Failure Incident Mike Stewart I Shaun White
+rs ~ I Ait need to check with Liz Evans-Jones on updates from the action 7 H 1 3
+Major Incident — WAN router 1 at the} ,,, plan
+PM0000685 Wigan module failure Mike Stewart I Shaun White
+i ike Woolgar has written a MIR CS/REP/236 and is awaiting a POL H 2 6
+pMo0000686 Satellite Outages caused by I ike WoolgarI Shaun White PM number for this call.
+
+bandwidth congestion
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 45
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+
+4.3 KEY CROSS DOMAIN PROBLEM UPDATE Cont’d
+
+IThe SRDF upgrades have been completed: we now have a phased program L 2 2
+owards not splitting the SRDF for Monday mornings. Will check with
+
+Slow ATM Link across IC Link a
+
+PM0000640 I difference of 6 MS compared with the} Mike Stewart Gary [Peter Thompson for a completion date to stop splitting the SRDF link ona
+, Blackburn
+other Linkv londay.
+IThe SRDF upgrades have been completed; we now have a phased program L 2 2
+
+owards not splitting the SRDF for Monday mornings. Will check with
+
+PMO000650 EMC Disc failure 20th December I Mike Stewart Path m [Peter Thompson for a completion date to stop splitting the SRDF link on a
+londay.
+Correspondence Servers - high Gary —_IMIR update required and move to Version 1 for approval. 7 2 I 2
+
+PM0000670 I numbers of Reversals and transactionI Mike Stewart
+
+Time Outs across service Blackburn
+
+Major Incident BAS Router failure I ,,. ..., Requires update to MIR before closure L 2 2
+Tuesday 24th May Mike Stewart I Shaun White
+
+PM0000672
+
+loving to monitor status until David Gray, Paul Warbricks replacement, L 2 2
+
+SDAs being generated on the Gary
+
+PM0000674 I swe/NBX Service on some of the Fis I MIKE Stewart I piscinurm Supplies update as future requirement for FIs as regards SDA's.
+ill now close the call L 1 1
+Slow Printing at VIP Site Trafalgar 1 Gary
+Pm0000687 Square since S80 Mike Stewart Blackburn
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 46
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+
+4.3 KEY CROSS DOMAIN PROBLEM UPDATE Cont’d
+
+uring a major incident there is a balance between restoring service
+
+juickly and spending incident time doing detailed interrogation of the
+latform exhibiting the fault, The recent Telehouse MI occurred at
+9:25 on a Monday moming and affected 325 branches connected to
+his router. An experienced IP engineer retrieved the log file and
+rformed initial online diagnostics. The industry standard Cisco tools
+ere unable to quickly determine the root cause. On this basis a
+lecision was taken to reload the router and 27mins after the incident
+egan the router began successfully accepting incoming connections.
+fier service was restored, the configuration and log files of the
+ffected router and other infrastructure components were collected by
+'&W and logged as a fault against Cisco's support service. Cisco spent
+everal days comparing the log file with their known errors but was.
+Failure at Telehouse GB_TELHS1- nable to identify if the incident was caused by a software or hardware
+R10-003 BAS Router. Service 7 fault. Cisco even attempted to recreate the conditions on a test platform
+PMOO0068S I péfecting from 09:25 to 09:52 (All I Mike Stewart I Gary Balckburn 1 uct detailed online diagnostics that would have delayed incident
+Branches 10:45) ‘solution if they had been performed during the incident. Since
+receiving this result we have had discussions with C&W and Cisco
+bout preventative work to replace the hardware or upgrade the
+oftware but their view is that the introduction of new configuration
+items holds greater service risk than maintaining the existing
+onfiguration. In accordance with the agreed process the MIR
+locument was issued the day after the incident and as the RCA was not
+immediately available an action was included in the MIR to "review the
+ror logs with the report from Cisco" with the objective of identifying
+he root cause. These actions are then tracked as problems between Post
+ffice SCT and our Online Service Managers. In this case it is
+regrettable that despite resource investment and conformance to best
+ractice it was not possible to determine the RCA for this incident.
+
+Several ADSL branches connecting
+via Watford BAS Router
+PM0000689 GB_WAHP03-R10-007 showed Mike Stewart I David Wright
+intermittent failures with transaction
+timeouts across all on-line services
+
+PI A .
+he cables have been tested and proven as OK so the STM1 card has
+een sent back to Alcatel for fault evaluation, expected response in 60
+lays. Being monitored on the C/A list for all MI process.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 47
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+4.3 KEY CROSS DOMAIN PROBLEM UPDATE Cont'd
+¢ have reviewed the action with C&W as regards their Change L t 1
+
+\Control system. Following the incident on Monday 14th November
+hen a routine administrative change activity impacted service during
+Post Office trading hours, our IP & Data Product Platform Leader,
+[Debbie Best, has reviewed the procedures of her department. She has
+jcommitted that no changes will be made to the IP or ATM platforms
+londay to Friday between 09:00 and 18:00, unless in response to a
+fault. Business as usual provisioning activities will continue to be
+
+Several ADSL and ISDN branches
+connecting via Watford & Kearsley
+routers. IP Select circuits to EPAY
+
+PM0000690 (Kelting House & Southfields) and Mike Stewart I Mark Haldane rome’ during the working day under strict controls. we ae f
+circuits to the A & L (Carlton Park & ndertaking an exercise to contact our clients to find a preferred change
+Bootle) indow in the 24 hour day which best matches their requirements. This
+
+jis not an easy task as our clients (¢.g. retailers, ISPs and newspaper
+
+publishers) have business-critical activities around the clock. For Post
+
+\Office Account I understand that your preferred window for change is
+
+[21:00 to 06:00 and we will endeavour to take this into consideration
+hen planning changes.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 48
+FUJ00152251
+
+FUJ00152251
+itsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Nersion: 1.0
+5 SCORECARD ACTION PLAN - from November 2005
+Service Post Office Ltd suggestions for improvement from Fujitsu Services Response
+previous scorecard
+Business Continuity Issues: None
+Tony Wicks
+Comments:
+The only issue this month has been a late change notification POA accept that the notice given to POL in relation to this particular
+affecting EDS. OCP, didn’t give POL sufficient time to approve the activity and
+
+cascade accordingly internally.
+
+However, in this particular instance an opportunity in the forward
+schedule of change presented itself allowing POA to perform an
+investigation into why BC LAN retest failed on the 6" November. This
+was the only free time available in the schedule for the remainder of
+the year due to weekends already allocated to other work activities
+namely EMC disk upgrades and the forthcoming change freeze.
+
+POA Business Continuity feel that in this instance that the scorecard
+doesn't reflect the initiative in attempting to progress the investigation
+for the benefit of the customer.
+
+Have arranged to discuss the scorecard rating with POL at the next
+Business Continuity review between Tony Wicks and Tim Vause.
+
+Release Management Issues: None
+Graham Welsh
+Comments: No issues We have jointly recognised some areas that need improvement in
+terms of information flow and have agreed the method to achieve this.
+
+Management I
+and Service Rev
+
+Issues: None
+
+Pete Thompson Comments:
+
+No problem with service provided. No Comments to provide.
+Capacity Management Issues: None
+Mik Peach
+
+Comments: No Comments to provide.
+
+All files supplied on time.
+
+Data Delivery Issues: None No Comments to provide.
+Tan Daniel Comments: None Provided
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 49
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+Service
+
+Post Office Ltd suggestions for improvement from
+previous scorecard
+
+Fujitsu Services Response
+
+Operational Business
+Change: Reference data
+David Wilcox
+
+Issues: None
+
+Comments:
+Thank you for continuing to provide an exceptional service against a
+background of extreme change
+
+Once again I wish to acknowledge that we are only able to provide this
+level of service because of the close co-operation between the two
+Reference Data teams.
+
+Operational Business
+Change: Branch
+Tan Venables
+
+Issues:
+
+POL is pleased to note improved sharpness from Fujitsu in mid-
+November, in dealing with POL’s concerns in a faster and more pro-
+active manner. It is important that this level of performance is sustained
+
+Comments:
+
+Fujitsu achieved their OBC Branch OLA Target of 4% (excluding BT
+Line Plant) in October, with a 3.73% failure rate. POL is pleased to
+acknowledge that this is the second successive month that Fujitsu have
+achieved this Target. As mentioned at the OBC BORF on 15
+November, there were however, some POL concerns during October
+over Energis/BT errors in the processing of OBC Branch orders and
+over the delay in dealing with some POL escalations and
+communications
+
+Fujitsu continues to endeavour to deal with all escalation and
+communications in from POL in a more timely fashion. Fujitsu has
+requested that where a deadline is pertinent then this is
+communicated through from POL.
+
+Fujitsu continues to work closely with Cable & Wireless, (formerly
+Energis) to ensure OBC branch orders are processed quickly,
+effectively and without detriment to the OBC service. Escalation routes
+into Cable & Wireless have been reviewed and amended in order for
+unresolved escalations to be dealt with in a more timely fashion at a
+more senior level within Cable & Wireless.
+
+HSH/Engineers
+Julie Welsh
+
+Issues: None
+
+Comments:
+
+Positive - Fujitsu Services have a proactive approach to reviewing the
+interface document. Negative - Complaints. Fujitsu Services need to be
+more proactive with comments for the top 3 complaints report. We
+understand Fujitsu Services do not receive real time visibility, however
+this will be corrected. It was disappointing that the requested
+management information was not available for the ORF. Fujitsu need to
+ensure that an MI pack is produced in a timely manner for future ORF's.
+
+These issues have been discussed with the POL representatives at
+the monthly Interface meeting, Fujitsu have now been provided with
+clear guidelines and understanding of the requirements in both areas
+and will endeavour to provide the required information in a timely
+manner.
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 50
+
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+Service
+
+Post Office Ltd suggestions for improvement from previous
+scorecard
+
+Fujitsu Services Response
+
+Problem Management
+Mike Stewart
+
+Issues: None
+
+Comments:
+Efforts in improving POLFS performance for end users have been very
+much appreciated (5)
+
+We have certainly been focusing on the end users/customers to solve
+any major operational level issues. Have assisted and had 3” line
+EDSC correct problems at specific branches as highlighted by the
+POL PM team. We have been ensuring the on-line branch issues are
+being addressed quicker. We have also been focusing on the issues
+of change ensuring our system owners and suppliers are respectful of
+the operational day and changes are scheduled outside these hours.
+
+Reconciliation
+Pete Thompson
+
+Issues: None
+
+Comments:
+Due to sick absence this work has not been undertaken this month so
+last months score has been carried forward
+
+No comments to provide.
+
+Security
+Brian Pinder
+
+Issues: None
+
+Comments:
+
+Minor irritations with requests for replacement TES users and time
+taken in obtaining information on avalaibility/costings for additional
+licences.
+
+Further meetings with PO Security team to establish SLA's.
+
+These details are incorrect and need to be revised at the next
+meeting.
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 51
+
+FUJ00152251
+
+FUJ00152251
+itsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Nersion: 1.0
+Service Post Office Ltd suggestions for improvement from previous Fujitsu Services Response
+scorecard
+
+Networks Issues: None
+
+Alex Kemp During a major incident there is a balance between restoring service
+Comments: quickly and spending incident time doing detailed interrogation of the
+Confused messages around telehouse incident (software/hardware?). _I Platform exhibiting the fault.
+
+No RCA received to date.
+The recent Telehouse MI occurred at 09:25 on a Monday morning and
+affected 325 branches connected to this router. An experienced IP
+engineer retrieved the log file and performed initial online diagnostics.
+The industry standard Cisco tools were unable to quickly determine
+the root cause. On this basis a decision was taken to reload the router
+and 27mins after the incident began the router began successfully
+accepting incoming connections.
+
+After service was restored, the configuration and log files of the
+affected router and other infrastructure components were collected by
+C&W and logged as a fault against Cisco’s support service. Cisco
+spent several days comparing the log file with their known errors but
+was unable to identify if the incident was caused by a software or
+hardware fault. Cisco even attempted to recreate the conditions on a
+test platform to conduct detailed online diagnostics that would have
+delayed incident resolution if they had been performed during the
+incident.
+
+Since receiving this result we have had discussions with C&W and
+Cisco about preventative work to replace the hardware or upgrade the
+software but their view is that the introduction of new configuration
+items holds greater service risk than maintaining the existing
+configuration.
+
+In accordance with the agreed process the MIR document was issued
+the day after the incident and as the RCA was not immediately
+available an action was included in the MIR to “review the error logs
+with the report from Cisco” with the objective of identifying the root
+cause. These actions are then tracked as problems between Post
+Office SCT and our Online Service Managers. In this case it is
+regrettable that despite resource investment and conformance to best
+practice it was not possible to determine the RCA for this incident
+
+The scorecard rating will be discussed at the next ORF review
+between Nikki Hawkins and Adam Martin.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 52
+Fujitsu Services
+
+Date: 15/12/05
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+Service
+
+Post Office Ltd suggestions for improvement from previous
+scorecard
+
+Fujitsu Services Response
+
+Service I
+All
+
+mprovement
+
+Issues: None
+
+Comments:
+
+Gaps in the reconciliation process and a loss of confidence were
+highlight by P&BA during the introduction of $80. Richard Brunskill met
+with the relevant parties and accepted responsibility for the current
+state. He agreed to update the document set to reflect the process as at
+$80 which were longer timescales than we had hoped but he delivered
+to those timescales. He then ran an interactive session with the team
+where he agreed to deliver what the team in Chesterfield needed even
+though it had been excluded from the release requirements. The output
+was a document set that went to out for sign off and reduced the usually
+lengthy and painful document review process. Now that this is baselined
+he has instigated the operational areas developing the processes
+further.
+
+All
+
+Communication
+
+Issues: None
+
+Comments:
+Incident management (telehouse) - open & honest communication
+
+All
+
+Working Together
+
+Issues: None
+
+Comments:
+Problem Management Working Group - Good.
+
+All
+
+Respect and
+Commitment
+
+Issues: None
+
+Comments:
+Very good.
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 53
+Fujitsu Services
+
+Date: 15/12/05
+
+FUJ00152251
+FUJ00152251
+
+SERVICE REVIEW Ref: CS / PER / 050
+
+Version: 1.0
+
+6 NOVEMBER REVIEW OF RELEASE MANAGEMENT
+
+HIGH LEVEL TIMETABLE
+
+RELEASE APPROX DATE CONTENT/COMMENTS
+ADSL Switch April 2004 —- TBA The 10,000 Branch milestone was successfully achieved. The current number is 10,392 Branches.
+s80 S81 Data Centre 22"? August Full implementation of SAP Financial Package (POLFS).
+$82 Data Centre 4° November I Branch Trading Statement to be rolled out in 4 tranches - November to November 2005
+Smartpost Track and Trace
+Counters: Sales prompts (+1)
+Implementation of AKB encryption to support TDES
+Rollout 20th July to 28th August
+All branches have now produced their first Branch Trading Statement successfully. A small number of
+concerns have been voiced from Post Masters regarding the length of time it takes to carry out the
+Branch Trading Statement processing. These concerns are currently being monitored and investigated as
+branches move into their second periods.
+$80 Counter 26" November 2005 S80 Spare delivered 19th as scheduled. S80 OBC Spare issued as planned.
+Spare
+$90 $90 DataCentre 28"/29" Jan 06 I Confirmed products for S90 are:
+
+Counters:
+
+Calthorpe House Prove 3” April
+Pilot 100 4" April
+
+Volume Pilot 6" April
+
+Main rollout 7 April — 26"" May
+
+Pinpads:
+
+100 Odds 4" April
+
+100 Evens 5" April
+
+Volume Pilot Odds 7* April
+Volume Pilot Evens 10" April
+Main rollout 11" April — 29"
+May
+
+Credit Card Acceptance
+Bureau Credit/Debit Card Acceptance
+Bureau Auto Remittances (Replacing Foreign currency through Auto Remittance)
+
+Other potential candidates are:
+Postal Order printing
+AP out payment
+AP-ADC e
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE Page 54
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+6.2 RELEASES COMPLETED DURING THIS PERIOD
+
+¢ None to report
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 55
+Fujitsu Services
+
+D:
+
++ 15/12/05
+
+FUJ00152251
+
+FUJ00152251
+
+SERVICE REVIEW Ref: CS / PER / 050
+
+Version: 1.0
+
+7 NOVEMBER SERVICE LEVEL PERFORMANCE
+
+7.1. HORIZON SERVICE DESK
+
+7.2 ENGINEER SERVICES...
+
+7.3, DATA DELIVERY SERVICES
+
+7.4 LE SERVICE .....ccccsccsccsesseescesesseescesesscesesassessaesessassaesessessacsessecsessessassessessecsassessesssssessesass seesesausaecsecaasereeecaseaecaesaacaecaesassaeeaeeateas 64
+
+7.5 NETWORK BANKING SERVICES ....ccsccssesseeeseeseeseseeeseeesseeseeeesseeeeeeeeneeeeseesseeeeeeseeeeseeseeeeeeseeseeseese Gaeceeeeeeaeeeeeaecaseneeassaseneenseneees 67
+
+7.6 SAP HOSTING
+
+7.7 MISCELLANEOUS SERVICES
+
+7.8 RECONCILIATION / SETTLEMENT REPORT DELIVERY ......:cssssccssssseseesessecseceesessscesesesseesaesessecsessesseccessessesease saeesessecsecsesaueaeenesaaes 72
+
+7.9 PL AVAILABILITY.......cescsssssessesseseessesecseessesecsecsecsussecsecsusaecsecausaeceecaesaeceecaucaecaecascaeeaecaseaees suassaesassessaesaesessassessessessesesseesesessgees 73
+
+7.10
+
+7.11 POSTSHOPS ..
+
+7.12 DEBIT CARD SERVICES ..
+
+7.13 ELECTRONIC TOP-UPS ....ccccccsccsssseestesceseeseeseeseeseesesseeseesesseeseesesseeseeseeseeseeseeeeceeesesseeseeseaeeaees Gaeeaeeaecaesaecaeaecaecaecaeenecaeeaeeaeeneeeen 77
+8 BRANCH TRADING CAPABILITIES ........ccsceeesteeseseeeeeneeeeeneeeseneeeseeeeeneeseneeeeenneeeseneneseeeeenaeeeeneesenieee suaeeeeneeseninesene 78
+
+8.1 NBS TRANACTION TIMES ......csccssssssssssesscssessessceesseseeceessessecsesssesessessesssssessassessesseseeesseseessessess seessessussessesaesnessesseesessessesersensees 79
+
+8.2 COUNTER AVAILABILITY
+
+8.3. BRANCHES WITH ONLINE SERVICES AFFECTE!
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 56
+FUJ00152251
+
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+7.1 HORIZON SERVICE DESK
+7.1.1 TELEPHONY
+
+Ref SLT ARL fovea Poecoa uanos 7 Febos [I maros [ Aprof Mays Juhos —Juios_ ~—fugos —Bepos —Joctos §~— Novos.
+
+Horizon Service Desk
+A141 80% Calls answered within 30 seconds
+H12 I <5.0 Call to Answer Time <5.0 seconds
+secs
+H13 <5% Calls not answered
+H3.3 100% Voicemail available outside HSD standar
+hours.
+
+H3.4 100% Voicemail calls raised next working day
+The above table shows the ACTUAL SLT achieved by the HSD. Due to high call volumes in excess of the 12,875 contractual monthly
+maximum, the SLT achievement has been recalculated by Fujitsu and Post Office Ltd, in accordance with Schedule 15 paragraph 4.1.1.
+The following results are therefore the contractual achievement against the target:
+
+Ref su RL I ]_ Novas D}cos J$nos I rebos I mapos I Aprog ——Mayos unos Julos = Augos
+
+Horizon Service Desk
+H1.1 80' Calls answered within 30 secq
+Q3
+H1.3 <5) Calls not answered
+
+REVIEW OF TELEPHONY SLT ACHIEVEMENT
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 57
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+7.1.2 CALL TO RESOLUTION LEVEL 1 & 2 & REBOOTS
+Ref SLT ARLI Ngvo4 — ecod panos —_Febos Paros J Apros J Mayos} — Junop —_Julgs Aug SefoS —_Odto5 = Novos
+Horizon Service Desk
+H21 J 95% Level 1 Calls resolved within 5 mins
+H2.2 I <3min Average Time to resolve Level 1 calls
+3.2 J <tomini Average Time to resolve all Level 2 Calls
+minutes ee nace nace nen9
+H31 J 95% Level 2 Calls resolved within 30 mins
+19.3 98.6 98.9 995
+Reboot Incidents
+Hat I <1.0 HSD Authorised Reboot Incidents per Coufter
+Position
+
+REVIEW OF CALL TO RESOLUTION LEVEL 1 & 2 & REBOOTS
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 58
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+7.2 ENGINEER SERVICES
+7.2.1 ENGINEER SERVICES
+
+Ref ‘SLT ARL Novoa T Deco [ Janos [ Febos [ maros I Apros [ mayos [ Junos [ Juios [ Augos [ sepos [ octos [Novos
+[Call to Resolution (Local)
+e11 I 95%  ardware/Network Priority A- 4 hours Non-Remedial os] 01s I 008 I ozs I 047 DRM READ cc Dn nr
+92.2 ar 932 ‘2 96.5 cg 95.2
+21 I 95% Haraware/Network Priority 6 - 8 hours Non-Remedial 96.0 BEEN 075 95. o77«878«OTA THEA BZ
+95.2 Qt 96.9 Q2 97.4 a3, 95.9
+call to Resolution (Intermediate)
+£12 I 95% Hardware/Network Priority A - 6 hours Non-Remedial 100.0 100.0 100.0 100.0 © 100.0 100.0 100.0 © 100.0 100.0 100.0 = 100.0 100.0 100.0
+100.0 100.0 100.0 100.
+£22 I 95% HHardware/Network Priority 8 - 10 hours Non-Remedial 100.0 97.5 100.0 966 ~—— 100.0 100.0 100.0 100.0 1000 100.0 100.0 + 100.0
+99.0 98.2 100.0 100.0
+[call to Resolution (Remote)
+E13 I 95%  Hardware/Network Priority A - 8 hours Non-Remedial ETRMH 1000 970 «9986 MEER 955 © 964 © 965 1000 100.0 100.0 1000» 95.2
+97.2 Qt 95.8 a2 96.3 Qs 100.0
+£23 I 95% Hardware/Network Priority 8 - 12 hours Non-Remedial 100.0 1000 974 97.0
+lEngineerVisits
+41 I 50.01% 120 minute On-site Repair
+JAverage Downtime (Time to Repair)
+31 I 2450 iCal to Fix 252] 254 I 258
+25.4
+
+REVIEW OF ENGINEER SERVICES
+
+November has seen exceptionally high call volumes increasing from 7100 in October to over 8000 in November. This is due to the
+increased level of business activity in branches. Despite this, all SLTs for A and B priority calls have been met. The average downtime
+figure has not been met this month due to the high volumes of calls and visits. In addition the weather had an impact on travelling
+
+conditions.
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 59
+Fujitsu Services SERVICE REVIEW
+
+Date: 15/12/05,
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+7.3 DATA DELIVERY SERVICES
+
+7.3.1 INBOUND
+
+Ref ‘SLT ARL I Proves Recor Janos’ [ 3 ‘pros fT Te aE Hg ‘Novis
+fone Reference Data
+pi4.1 I 96% ata Delivery - Day B
+pi4.2 I 97% fata Delivery - Day C
+DI43 I 98% fata Delivery - Day D 9974 99.79 1977 979 91.82
+aa Re 7a
+pi4.4 I 100% ata Delivery - Day J non 4yan —4inan 4tnnn anion —_tninn 4nnan —_annon —_4nnnn nn mannii
+BCS Data
+pitt I 96% BCS Stop List - Day B A
+pi1.2 I 97% BCS Stop List - Day C A
+pi1.3 I 98% BCS Stop List - Day D 4
+pi1.4 I 100% BCS Stop List - Day J
+ranscations Corrections File Delivery T T T T
+90% ile Delivery - Day A by 08:00 I
+96% ile Delivery - Day A by 12:00
+
+7001 Transaction Corrections File Delivery:-
+Transaction corrections are received form POL (Chesterfield for processing down to the counters).
+
+REVIEW OF DATA SERVICES INBOUND SLT ACHIEVEMENT
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE
+
+Page 60
+Fujitsu Services
+
+Date: 15/12/05,
+
+Ref: CS
+
+PER
+
+Version: 1.0
+
+FUJ00152251
+FUJ00152251
+
+050
+
+7.3.2 APS - GENERIC
+
+Ref SLT I Nov04 ] Deco4 J Janos I Feb0S J Mar05 I Apros I MayOS J Jund05 I Julos I Augos I Sep0s J OctoS I Novos
+inbound APS
+
+Dis1 I 96% Data Delivery - Day B 9950 9937 99.00 9938 9963 9964 9961 9961 9660 9963 9962 99.61
+99.33 99.33 99.58 98.59
+
+Dis2 I 97% Data Delivery - Day C 9965 9956 9951 9967 99.74 99.76 9979 99.74 9968 9976 9974 9974 99.73
+99.55 99.57 99.72 99.67
+
+Di3.3 I 98% Data Delivery - Day D 9973 9966 9967 9977 99.79 9983 9985 9981 9978 9982 9981 9981 99.80
+99.64 99.68 99.75
+
+Di3.4 I 100% Data Delivery - Day J 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00 100.00
+
+400.00
+loutbound APS
+Dor I 96.5% Data Delivery - Day B 99.87 99.82 99.89 99.88 99.90 99.83 99.01
+99.86
+
+D012 I 97.5% Data Delivery - Day C 99.96 99.95 99.95 99.92 99.96 99.94 99.97 99.94 99.95 99.94 = 99.94 = 99.65 99.93
+99.48 99.94 99.94
+
+D013 I 98.5% Data Delivery - Day D 99.98 99.98 © 99.98 99.96 = 99.98) 99.97 99.99 99.97 99.98 += 99.97 99.98 += 99.97 99.97
+
+HN s(99.97 99.97 99.97 Q3
+
+D014 I 100% Data Delivery - Day J 100.00 100.00 100.00 EXE 100.00
+
+100.00 99.99 Q3
+REVIEW OF APS GENERIC
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-I
+
+'-CONFIDENCE
+
+Page 61
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services Ref: CS / PER / 050
+Date: 15/12/05. Version: 1.0
+7.3.3 OUTBOUND
+Ref ‘SLT "ARL Novo} _Dec04] Jan05 I Feb0S I Mar05 [pros Nfpy0s Jup0s Jul§>  AugOf Sep0s] OctOs I Novos I T
+‘TPB TransactionData File Delivery
+to Mis
+002.1 96% Fil Delivery- Day B
+D022 I 97% Fil Delivery- Day C
+D023 I 98% Fil Delivery- Day D
+po24 I 100% Fil Delivery- Day J
+OHS Data 1
+D031 96% Fil Delivery- Day B
+1
+003.2 97% Fil@ Delivery- Day C T
+D033 I 98% Fil Delivery- Day D T
+Delivery- Day J I
+‘TPB HR SAP Delivery Contract
+6% Fil Delivery - Day B T T T a
+100% File Delivery - Day J
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 62
+
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+7.3.3, OUTBOUND (CONT'D)
+
+Ref_[_sut_]_ARL Novos [ Decos J Jands J Feb0s I Maros J Apros I Mayos I Junds I Julos I Augos J sep0s I Octos I Novos
+ITPS HR SAP Delivery Normal
+100% File Delivery II I I
+Ref SLT ARL Nov04 ] Dec04 J] Jan05 I Feb0S I Mar05 I Apros I May0S I Junos [I Julo5 I AugdS I Sepos I Octos ff Novos
+[TPS POL FS File Delivery
+96% File Delivery - Day 8 I I I 98,98
+97% File Delivery - Day C I I aE Ea
+98% File Delivery - Day D I I I
+100% File Delivery - Day J II I I
+
+TPS HR SAP Delivery Contract:-
+
+SLT target is that the file containing data for HR SAP is delivered to the Huthwaite remote gateway by 21:30 on Friday preceding weekend
+of pay run, provided that the date has been notified at least 2 weeks in advance.
+
+SAP HR Delivery contract HSR1 is delivered to support branches under a separate contract (i.e. Tescos)
+
+TPS HR SAP Delivery Normal:-
+
+SLT target is that the file containing data for HR SAP is delivered to the Huthwaite remote gateway by 21:30 on Friday preceding weekend
+of pay run, provided that the date has been notified at least 2 weeks in advance.
+
+SAP HR Delivery Normal HSR2 is delivered in support of normal branches.
+
+TPS POL FS File Delivery:-
+These are the number of records successfully harvested by TPS and passes to POLFS for loading each day. Various SLT’s,typically 96% by
+03:00 day B.
+
+REVIEW OF DATA SERVICES OUTBOUND SLT ACHIEVEMENT
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 63
+
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+7.4 LF SERVICE
+7.4.1 BRANCH TO SAPADS
+
+re A CTY) TSO PETS TT CT I ays dunes
+Outlt to BAPADA Date Teaneter
+
+pos. o7 bx Confirmation of Pouch Received at Outpt
+
+post 10% Confirmation of Pouch Received at Out
+
+pos.2. 04% Details of SAPADS Pouch Collected fro]
+
+pos.2 97 p% Details of SAPADS Pouch Collected fro]
+
+04.2 10% Details of SAPADS Pouch Collected fro]
+
+poss.) 96.45% Daily Cash on Hand Details - Day A
+
+© 2005 Fujitsu Services COMMERCIAL-I
+
+'-CONFIDENCE Page 64
+FUJ00152251
+
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+
+7.4.1 BRANCH TO SAPADS (Cont'd)
+
+ner] sl] a T T [veh ofeos J oanos] roofs foros [aves] wafosJounos sus. auc
+
+Outlet to SAPADS Data Transfer
+
+boss] 08 Weekly Stamps /Stock on Hand and Invent NIA "
+Wednesday Target i az_I as
+
+bowed 07 Weekly Stamps /Stock on Hand and Inventqy Nia "
+Thoreday Target ; ; as
+
+bored 06 Weekly Stamps /Stock on Hand and invent Nim "
+Taraet 2 as
+
+po4.4.4 10 Weekly Stamps / Stock on Hand and Inventd I i NIA N
+Thursday Target as
+
+The figures are shown as N/A due the removal of these targets.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 65
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+7.4.2 SAPADS TO BRANCH
+rer] sft Jane I I [vovod pfcos I sanos] repos [arcs] apfos Imayos — Junos
+SAPADS to Outlets Data Transfer
+piesa odve Delivery of SAPADS Planned Orders
+piesa] od Delivery of SAPADS Planned Orders td Outlets rarget
+pies} ofr Delivery of SAPADS Advice Notes to 0
+REVIEW OF LFS PERFORMANCE
+All SLT’s within target.
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 66
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+7.5 NETWORK BANKING SERVICES
+7.5.1 REQUEST & AUTHORISATION TIMES
+
+Ref SLT AqL II Novos [oecos I Janos] Febop —_mafos Prayos [sunos [sus] aughs = sepos—octos
+Dialed Connections
+FIO Average time in secs to receive Counter Authorisations ‘ALR RENAE SiN) Gia NGA) Oak ENRNGS) GARMNNDE aM) LSI BGS MRS UB J 3.03 3.20
+FiO Average time in secs to receive Agents Authorisations ( r ~ aI 7 T ~ —s 0.38 0.33
+ADSL Connections I ENT I ED PE
+FiO Average time in secs to receive Counter Authorisations [T1) 44 410 9.88. 4.00 9.94 9.90 2.97, 4.04 4.04 9 0.93 0.79
+F0 Average time In secs to receWve Agents Authorisatons (pj bose Lat oad ) PE PPR LPO MPEG AN Se
+Fixed Connections T T T T T T T T T T T T
+FIO Average time in secs to receive Counter Authorisations PF ror i rr Tze ray a ™ i v= 7 1.20 1.06
+FiO Average time in secs to receive Agents Authorisations (2) P22 po I o] 024 Of5 Fe [oz 7 oz I oz] 02 0.31 0.28
+SLT's
+pia I <=4 ses Average Transaction Time using Fixed Connections (Tipp PY
+at a2 a3
+B12] <=5 seds Average Transaction Time using ADSL Connections (T
+B13] <=8 se Average Transaction Time using Dialed Connections (TI
+B14] 95% Percentage Transactions (T) not exceeding Lower Thredaaam
+
+seconds (fixed)
+
+B15] 95% Percentage Transactions (T) not exceeding Lower Thre:
+seconds (ADSL)
+
+sre] 95% Percentage Transactions (T) not exceeding Lower Thre
+seconds (dialed)
+
+B17 99% Percentage Transactions (T) not exceeding Higher Thi
+seconds (fixed)
+
+Bis] 99% Percentage Transactions (T) not exceeding Higher Thi
+seconds (ADSL)
+
+Bis] 99% Percentage Transactions (T) not exceeding Higher Thi
+seconds (dialed)
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 67
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1,0
+7.5.2 NBS RELIABILITY MEASURES
+rer] su] ape I [novod bechs nos Jrevos I marcs] app qyos Juncs [sus] Augos  sepos
+Congestion measure
+FIO) Number of Days the Congestion Measure exceeded [TO 0 0
+Enao-tnd, Relay SEED SN CEES PTET OTE) TT (TT CE TTD RT AT
+FI Fixed Connections Wooo eo sos sas as! ©1000 © 100.0
+Fi0I ADSL Connections I un 100.0 100.0
+
+FIO Dialed Connections I 400.0] sb I EC I TT I to ooo Pto00} 1000 © 100.0
+
+aor] 906 fined Connectons (EGOS ETRVEY EERE CLEA AU LUM SEEN SATIN LEER TN RA CE
+
+at
+
+B32 99%) ADSL Connections
+
+83.3 97%) Dialed Connections GES]
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 68
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+7.5.3 CENTRAL SYSTEMS & NETWORK AVAILABILITY
+
+rr Ts ee I I
+Central Systems Avaitabitty
+
+e22f <= Number of Core NB System Faults causing NBq
+in more than 20% of all Branches during NB Col
+
+Nova __ofeoa Joanos I revo] wafos [ores [uayos] sun) aos avgo] sepos oto
+
+82.24 <=2 Number of Core NB System Faults causing NBq
+in more than 20% of all Branches during Non N
+
+822) 85 hdies Availability Period aggregate Average
+
+Branch Outage during NB Core Hours
+
+82.2.4) <=2 Availability Period aggregate Average
+
+hour Branch Outage during Non NB Core Hours
+Network Availability
+22.4.1) 99.95 Central Network Availability
+82.4.2) 99.05, NBE Network Availability NIA NIA
+NIA
+
+REVIEW OF NETWORK BANKING PERFORMANCE
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 69
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05
+7.6 SAP HOSTING
+Transaction Performapce ov-04 Dec-04] Jan-ps Fpb-05 Mar-d5 Aug-05 pr-0Sep}05 May-pst-05 Jundosv-05 Jul-05
+F.02 GL feCount Posting Te 7a TOT By oT uD ToT oT = os rs oT 58.0
+F-03 Clehr GL Account z 0.0
+F-04 Podt with Clearing S55 474.0 I PF PO PY I sobzo Liszuo I tice shee Viel izzhs peor 1962.0
+FB02 Ch}nge Document 125.6 70.0 340 7 EC EE I SEE ECS MELO ME I Es SY LE WEL I aa 157.0
+FBO9 Chdnge Line items L T L i 0.0
+Enter Gf. Account Document J ! ! I ! I ! I I ! I J I 179.0
+370 EnterICustomer Invoice T T T T T T T T T T T T T 208.0
+22N Chanbe Purchase Order 4525.0
+J I SL I I ] I I I TE I I
+I ESTES! BIST ESTEE GTRI I i I I FESS I I SEI (ELSE EE I
+J J ! ! ! ! ! J J ! ! J !
+Ref ‘SLT ARL Nowps —_Defos —sapos —Ffbos foros pros ayos——uunos —[suios Taugos J sepos T octos] Novos
+SAP Hosting
+CSIOLAso49 I 98.50% Service Availability (7.30am to 7.30pm) 35) Ll a SO aS 35 700.0] 1000 J 1000] 1000 J see I 1000
+oT 00 T Es 7 7000
+FIO Service Outages > 10hrs OF T \ aa ov al TI ae Bale wr aa Mad 0.0
+7; T ro oT
+FIO Data Loading by 7.30am r = a or rT oe or oT: wo0 r 100.0
+i a ey I
+
+REVIEW OF SAP HOSTING PERFORMANCE
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 70
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+7.7 MISCELLANEOUS SERVICES
+7.7.1 BUSINESS INCIDENT MANAGEMENT & DATA RECONCILIATION
+Ref LT ARL Novo4 Dqcoa Jano ebos Maqos Apros Mayos
+Business Incidents
+pet 5% Report issued within
+a2
+Data Reconciliation
+Baa P% Priority Exceptions
+a2
+
+REVIEW OF BUSINESS INCIDENT & DATA RECONCILIATION
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 71
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+7.8 RECONCILIATION / SETTLEMENT REPORT DELIVERY
+me [se I I LiveGe_ofeos [oanos I rev} ufos Janos ]_wayof safes ]uios —augos
+cos} I DeWery by 08:05 (LREC recened by 23:68:59)
+
+Reconciliation Files delivered to TIP by 12:00 on Day B receI
+
+Dost} 00 failure of ORSH
+
+pose] i100 Reconcilaton Files delwered to TIP by 18:00 on Day B rece
+
+006.1 <a CAPO File delivery by 03:00
+
+006.3, < ABL File delivery by 03:00
+
+D065} — 100 CAPO Rec file delivery by 16:00
+
+poss] 100 ABL Rec file delivery by 18:00
+
+D067 Py CAPO &ABL Rec files dispatched by 00:10 100
+
+DO5.1. Refers to the first calendar year & permits <=4 failures for the year.
+If the LREC file is received by 23:59:59 on day A, Fujitsu will ensure delivery of the reconciliation report, including the LREC data, by 08:05 on day B.
+(If the LREC file is received by 01:59:59 on day B, Fujitsu will ensure delivery of the reconciliation report, including the LREC data, by 12:00 on day B.)
+
+DOS.7. If the LREC file is received by 21:59:59 on day B, Fujitsu will ensure delivery of the reconciliation report, not including the LREC data by 12:00
+on day B.
+
+DOS.8. If the LREC file is received by 21:59:59 on day B, and an overnight failure of the DRS has occurred, Fujitsu will ensure delivery of the
+reconciliation report, not including the LREC data by 18:00 on day B.
+
+REVIEW OF RECONCILIATION / SETTLEMENT REPORT DELIVERY
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 72
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+7.9 PI AVAILABILITY
+rer] T [e]oe feces] tenodrefus ines] anoqwafos unos [vu] ugos sep
+
+PI Outages
+
+Number of Pl outages >2mins ((QeERrnemeer as
+
+B53 P Number of Pl outages >1mins (Lame _badks) 0 0 0 0 o °
+bal a3 0
+B54 Pt Number of PI outages >1mins (fa I ol PES] BSI ° A ° °
+Qt 0 Q2 0 Q3 0
+
+B5.1 The number of instances in which any of those connections are unavailable for two minutes or more in any calendar month of each
+SLT Calendar Year shall not exceed one, in respect of each NB Authorisation Agent to PI connection relating to the same Bank which are
+available in that month. Therefore Fujitsu are permitted one failure per month for each of the connections/lines above (4 for Link/A&L, and
+8 for Capo as long as it is not the same one twice for the given month).
+
+B5.2 The number of instances in which any of those connections are unavailable for two minutes or more in any calendar month of each
+SLT Calendar Year shall not exceed two, in respect of each NB Authorisation Agent to PI connection relating to the different Banks which
+are available in that month. If one interprets this as a max of any two PI failures in one month, it would not align to B5.1.
+
+B5.3 & 5.4 are as above, with the exception that they restrict the failures in Q to one minute, and are performance metrics and not SLTs.
+
+REVIEW OF PI AVAILABILITY
+
+All SLT’s within target.
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 73
+Fujitsu Services
+
+Date: 15/12/05,
+
+SERVICE REVIEW
+
+Ref: CS / PER
+
+Version: 1.0
+
+FUJ00152251
+FUJ00152251
+
+050
+
+7.10 TESQA
+
+Tra sactions
+20:40
+
+Trasactions
+22:40
+
+Traf sactions
+22:40
+
+Tra sactions
+
+Ref SL
+tia I <=13.5hrs
+T1.2 97
+
+availabl
+
+availabl
+
+availabl
+
+avaitabl
+
+RL
+
+JQuery ime constimad quelesbetweer07.00 and 1800(Stown]
+
+TESQA
+Availability between 07:00 and 22:00
+
+Transactions available in the data centre begreer—or
+
+20:00
+
+(15min
+the data centre between 07:00 and
+
+(hours
+the data centre between 20:00 and
+
+(40min
+the data centre between 20:00 and
+
+(hour
+the data centre between 22:00 and
+
+(hours
+
+las % of=20sec
+
+aS TT CC CON TT I
+
+Fefos
+
+Jens
+
+Lives]
+
+Top
+
+Troe
+
+Julos
+
+00:110
+
+100.0
+
+REVIEW OF TESQA
+
+All SLT’s within target.
+
+Augos —- Sepos
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 74
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+7.11 POSTSHOPS
+
+— ————=_=_—=_—=_=—=—==
+
+There have been 5 instances throughout November when the file delivery has been late. In the first 9 weeks of polling (from Aug1) we
+had no issues. However, as the number of sites increased, the frequency on late polls increased.
+
+A number of actions have been identified to resolve this problem:
+
+Implementation of parallel polling to cut down the session time. We have currently moved from 1 to 2 polling machines with a split of
+about 80 /70 and by Christmas we will move to 4 polling machines with about 40 sites on each machine which will take us into a safe zone
+for session lengths. The effects of this change will only just be cutting into the performance.
+
+There will be other issues that cause late polls and has each one occurs we will investigate and put a corrective action in place. An
+example of this is the late polls of the last couple of days:-
+
+On the 21% Nov we did not late poll but 57 sites failed to respond to polling (we expect an average of 4 or 5)
+
+On the 22" there was a late poll as one of the polling machines stopped at one particular branch and kept retrying
+
+On the 23 the same machine again stopped as at the same Branch (this was down to a corrupt data base file, now corrected).
+Every new problem will be treated in the same way — determining the cause and correcting the issue
+
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 75
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services Ref: CS / PER / 050
+
+Date: 15/12/05, Version: 1.0
+
+7.12 DEBIT CARD SERVICES
+
+a RL ToD fa Pecos] vonas] rends ufos Jars] uios — Augos
+
+Dialed Connections
+Fixed Connections I ETE SECS LEIS ET TE I I Ta I
+Average time in secs to receive Counter Authorisafions (11) 1.60 4.75 1.62 1.6: 1.59 1.66 1.6: 1.56 1.69 1.70
+Average time in secs to receive Agents Authorisati ul ] L ] I an ! an I d I a I I i 0.94 0.93
+SLT's
+
+0.81 a1 0.72 Q2 0.72 Q3
+
+2.67 Qi 44 f? 2.27 Q3
+Percentage Transactions (T) not exceeding Lowes =™iteSm _ T = - a = - " 100.0 100.0
+seconds (fixed) ooo fos I 4 a3
+Percentage Transactions (T) not exceeding Lowel — ~ le 99.9 99.8
+seconds (dialed) ao Ee aTno a3
+Percentage Transactions (T) not exceeding Highef Thresh@id 100.0 100.0 100.0 100. 190.0 100.0 100. 100.0 100.0 100.0
+seconds (fixed) - - - a3
+Percentage Transactions (T) not exceeding HigheI Threshgd 99.9 v9.0 I 99, bs I 100.0 99. 100.0 100.0
+seconds (dialed) 99.9 OT Ky 99.9 a3
+
+© 2005 Fujitsu Services COMMERCIAL-I
+
+'-CONFIDENCE Page 76
+FUJ00152251
+
+FUJ00152251
+Fujitsu Services Ref: CS / PER / 050
+Date: 15/12/05 Version: 1.0
+Ref ‘SLT T ARL Novof Deco —“Janof__Feb0f _MardB Apr May§5__ Jun Jul Audp5 —_Seyp5___Ocp5__No}os.
+
+Dialed Connections
+
+‘Average time in secs to receive Counter Authorisations (T1) FEY] MEE WEES) EES GEES GEE OEE EY) SE SE 3}
+
+‘Average time in secs to receive Agents Authorisations (T2) Ey ES a CT CS I 051 op op.
+
+Fixed Connections
+
+Average time in secs to receive Counter Authorsatins (11) Oy aa
+
+Average time in secs to receive Agents Authorisations (72) [ey oy oy ry ry yy
+
+sts
+
+Average Transaction Time using Fixed Connections (T ) O67 O75 I To oY T T i Up
+
+O70 ur v7 bos
+
+Average Dialed T (11-12) = a 5 A 2
+
+Percentage Transactions (T) not exceeding Lower Threshold <=8 THY ay Te n Top ToT
+
+seconds (fixed) ToT 00}
+
+Percentage Transactions (T) not exceeding Lower Threshold <=12 WIT Te 37 3 a Dd 3) i a
+
+seconds (ale) ‘! A
+
+Percentage Transactions (T) not exceeding Higher Threshold <=15 TOOT oO 7 7 OT DINE mr
+
+seconds (fixed) a if sk
+
+Percentage Transactions (T) not exceeding Higher Threshold <=20 rr a rs rs
+
+seconds (dialed) I 4 J on if
+© 2005 Fujitsu Services COMMERCIAL-IN-CONFIDENCE Page 77
+
+Fujitsu Services
+
+Date: 15/12/05,
+
+FUJ00152251
+FUJ00152251
+
+SERVICE REVIEW Ref: CS / PER / 050
+
+Version: 1.0
+
+8 Branch Trading Capabilities
+
+Ref
+
+OLA
+
+Novps Depa vafos — Fdpos —mfaros. pros fayos unos Jsuios [augos I sepos [I octos
+
+Novos
+
+99%
+
+99%
+
+<20
+<20
+
+<10
+<10
+
+Horizon NBS transaction time
+
+No. of transactions >2.5 seconds as % off
+total transcations
+
+100%
+
+100%
+
+Counter Avatapmnty
+
+% Counter Availability
+
+TE ee Pee eee eee
+
+99.2%
+
+Branches with Online Services affecte:
+
+>5 Days All Branches
+
+28
+
+>5 Days Excluding issues in POL domain
+
+34
+
+>10 Days All Branches
+
+>10 Days Excluding issues in POL somal
+
+Horizon NBS Transaction Time. — This OLA is calculated by taking the total number of transactions over the month and calculating the
+percentage that are under the 2.5 second threshold. The OLA target is set at 99%
+
+Counter Availability - This OLA is calculated against the ability for PM’s to have full functionality on their counters. The percentage is
+calculated daily from calls logged and is reported in the daily report. The monthly OLA is an average taken across the month. The OLA
+target is set at 99%.
+
+Branches with Online Services affected — This OLA is calculated by taking the total amount of days to fix by branch from the daily online
+tracker (POL Daily Status Report) over the month.
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 78
+FUJ00152251
+FUJ00152251
+
+Fujitsu Services SERVICE REVIEW Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+
+8.1 NBS Transaction Times
+
+[Trading Date Sucbesses Ag Fujitsu At
+NBS Online Performance De eddy ise
+03-Nov-05 Thursda 879776
+x ais x = as x 04-Nov-05 I Friday 591506
+' 06-Nav.0: a Aa
++ a $_ImmmAvg Fujitsu Auth 07-Nov-05 Monday 1762278
+i i + Successes UE-Nov-05 1 pesday TOTES!
+/ T1-Nov-05 I Friday O14827
+1800000
+1a.Nov.05 Sund 40
+1600001 14-Nov-05 Monday 1620232
+TS=NOV-US TESTE TTZZAT:
+1400000 ome on Waa 798202
+17-Nov-05_ Thursday 963087.
+4200001 18-Nov-05 I Friday 634470
+0-Nov-05 funda 30)
+1000000 21-Nov-05 Monday 1813633
+800000 i adocd 201303
+24-Nov-05 Thursday 950809
+600000 -Nov-05 I Friday BOITTE
+27-Nov-05 unday 2973
+400000 28-Nov-05 Monday 7789680
+200000 Ad.Nov.05 Weddesda a1a700
+oO
+a Pe hee Ree ee eR ee Ree RR eH DH RH SH ee >
+PBRETRERETRES SETTER ER TETTETE HT TER SETTER TES
+SSeS ET TST ST TS SST TT SS ESB TESS ESBS SE
+a D = 5 €¢ € H ® = 56€¢€ ® ® = 5 € € OR HES EEC H GD
+$3ee e553 eS S55 ee SF SSS SELECT SESE ESD
+SesHBURBHSSEPBG6G BASSE Z 46 BHASSEZB Hb BGHSSE
+FUEOC HOH EF ZTESGCHH EF TECH BHOEF DEC HR HLEE TD
+ese SRS SEE ET ES SESE TESS SSE TES SES
+PSEFSLTSEST ESS Ts ST ESS TP ss TES SI EELS
+3 A 2 3 8S g 3 3 2 3 3
+$2szsz2z2398 F822939 38 5822398 FS 22328
+FESS T GOR TEST RH ETESLC ESE TE SAEKR GES
+52g 8°°S 29 ST Te ezeE SNNNZye ANNA
+a 2 é 2 3
+8 8 2 & 8
+COMMERCIAL-IN-CONFIDENCE Page 79
+
+© 2005 Fujitsu Services
+SERVICE REV
+
+FUJ00152251
+
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Date: 15/12/05 Version: 1.0
+8.2 Counter Availability
+
+Day Date Availabift Target
+
+Counter Avaliability Tue 01/11/2005 99.30% 99.0%
+
+ed 02/11/2005 99.47% 99.0%
+
+THT USTTTTIT TAS 99.0%
+
+99.0%
+
+’ at 5/1 1/20! 29,704 99.0%
+
+ry 4 Mon 07/11/2p05 98.94% 99.0%
+
+\ \ \ Tue 0871 1/205 99.17% 99.0%
+
+4 \ a0 STITT ToT 99.0%
+
++ ¢ \ y 99.0%
+
+’ \ Gee ie ; fl 41/11/2005 99.399 99.0%
+
+I I sat 12/11/05 99.63% 99.0%
+
+¢ ’ I \ on Tart 1205 39.07% 99.0%
+
+\ I ¢ rT Tort soe 99.0%
+
+\ 4 + avaitadiiy byog 4 99.06%, 99.0%
+
+fit tt ‘ ttt t te he tee tee ed 4 Li Dreger) ftnw a7 i208 98.06% 99.0%
+
+ry Fri 18/11/2085 98.79% 99.0%
+
+ry ¥ ¢ Sat TSTTTTNOS 39.06% 99.0%
+
+itor aa 7 99.0%
+
+bc stibo op p44 99.0%
+
+2 < - Ss SoS . ed 23/11/2105. 99.41% 99.0%
+
+Thu 24/1 1/205 99.36% 99.0%
+
+7 TTA W536 99.0%
+
+- 99.0%
+
+hu also: 9912! 99.0%
+
+Tue 29/11/2)05 98.94% 99.0%
+2 0 oY oo wo) wo) wo wo oY oY oY) oY © wo I wo wo] wo) Ww) WY) wy) Ww) wo ©
+
+SadgagggoCADaAOoG oD AAA DODO AA A OADOSo SG ‘ed 30/11/2005 99.31% 99.0%
+eseaqogdccagititaaoaggdaotg gdh Go agaagqgas
+yygagygaggyygyggyayqagqagqgygyggqaggqaqgqasa
+SPAABPSNAASHAVWHS SR AAC AA MHS SASRS
+acd gag ID OaT eH SH HHS SK HAN AANA AN NN
+
+Tud we Thu Fel Isat} [Mon I tue, wea tau Fri sat onI tue] Wed the sat
+
+© 2005 Fujitsu Services
+
+COMMERCIAL-IN-CONFIDENCE
+
+Page 80
+Fujitsu Services SERVICE REVIEW
+
+FUJ00152251
+FUJ00152251
+
+Ref: CS / PER / 050
+
+Version: 1.0
+
+Date: 15/12/05
+
+8.3 Branches with Online Services Affected
+
+Excluding issueh in
+POL domain] All Branches
+a 10 +s
+o _ 06 } 6 4
+£ mw Excluding issues gone sp 22 I’
+r= in POL domain Nov-05 al 28 31
+° @ All Branches - i i
+>
+&
+fa)
+>10 >5 >10 >5 >10
+<10 <10 <10
+Sep- I Sep- Oct-05)Oct-05  Nov- I Nov-
+05 05 05 05
+Page 81
+
+COMMERCIAL-IN-CONFIDENCE
+
+© 2005 Fujitsu Services

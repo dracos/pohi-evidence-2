@@ -1,0 +1,298 @@
+WITN11100103
+WITN11100103
+
+Open Date: 2008-04-02 116574 ie) RMGA.M System Management
+Centre.MGO01 Tivoli event.C20 Known error - Tivoli or Base unit event Close Date: 02-Apr-
+2008 09:44:41 AM West Byfleet Critical event received for node H12602300101 on the 02-
+04-08 @ 03:47:29. Classification = NT_Error, Source = Disk, NTID = 7. Event text reads,
+'The device, \Device\HarddiskO\Partition1, has a bad block'.' Open Date: 02-Apr-2008
+06:05:04 AM
+
+Open Date: 2008-04-02 116574 1 action_desc 2006432 create a
+new request/incident/problem/change/issue ** 02-Apr-2008 06:05:04 AM
+
+Open Date: 2008-04-02 116574 2 action_desc 2006435 Open
+Notification ** 02-Apr-2008 06:06:26 AM
+
+Open Date: 2008-04-02 116574 3 action_desc 2006436 research
+problem PCARROLL2917J 02-Apr-2008 06:06:34 AM
+
+Open Date: 2008-04-02 116574 4 action_desc 2006457 log a user
+comment Ctr has been remote rebooted, please monitor events. 02-Apr-2008 06:16:34 AM
+Open Date: 2008-04-02 116574 5 action_desc 2006458 Transfer
+‘group' from 'DMN First Line’ to 'HSD Events’ ** 02-Apr-2008 06:17:09 AM
+
+Open Date: 2008-04-02 116574 6 action_desc 2009766 log a user
+comment B Base Unit call raised - 116835 02-Apr-2008 09:43:34 AM
+
+Open Date: 2008-04-02 116574 7 action_desc 2009774 resolve
+
+request/incident/problem/change/issue B Base Unit call raised - 116835 02-Apr-2008
+09:44:07 AM
+Open Date: 2008-04-02 116574 8 action_desc 2009788
+Resolution Notification ** 02-Apr-2008 09:44:26 AM
+Open Date: 2008-04-02 116574 9 action_desc 2009789 The
+Service Type(s) on a ticket were delayed ** 02-Apr-2008 09:44:26 AM
+Open Date: 2008-04-02 116574 10 action_desc 2009790
+FIELD='zCloseCategory' OLD=" NEW='RMGA.M System Management
+Centre.MG01 Tivoli event.C20 Known error - Tivoli or Base unit event'FIELD='zinrescode'
+OLD=" NEW='RSO6 HSD resolved' ** 02-Apr-2008 09:44:26 AM
+Open Date: 2008-04-02 116574 1 action_desc 2009799 close
+request/incident/problem/change/issue B Base Unit call raised - 116835 02-Apr-2008
+09:44:35 AM
+Open Date: 2008-04-02 116574 12 action_desc 2009805 Closure
+Notification ** 02-Apr-2008 09:44:42 AM
+
+Open Date: 2008-04-02 116835 0 RMGA.H Hardware.HD01 Base unit
+fault.CO1 Unit Faulty.X03 Over 2 Counters.L01 Online Services unavailable Close Date:
+02-Apr-2008 04:56:55 PM West Byfleet p/m states he has error message pwwdctr Open
+Date: 02-Apr-2008 09:37:05 AM
+
+Open Date: 2008-04-02 116835 1 action_desc 2009482 create a
+new request/incident/problem/change/issue ** 02-Apr-2008 09:37:05 AM
+
+Open Date: 2008-04-02 116835 2 action_desc 2009557 Open
+Notification ** 02-Apr-2008 09:38:44 AM
+
+Open Date: 2008-04-02 116835 3 action_desc 2009573 log a user
+comment critical event call raised - 116574 for bad block 02-Apr-2008 09:39:06 AM
+
+Open Date: 2008-04-02 116835 4 action_desc 2009597 log a user
+comment advised a99 sla and ref given 02-Apr-2008 09:39:30 AM
+
+Open Date: 2008-04-02 116835 5 action_desc 2009613 log a user
+comment ****engr to check/swap BU**** 02-Apr-2008 09:39:50 AM
+
+Open Date: 2008-04-02 116835 6 action_desc 2009679 Transfer
+‘group’ from 'HSH5' to 'D1'_ ** 02-Apr-2008 09:41:22 AM
+
+Open Date: 2008-04-02 116835 7 action_desc 2009742 log a user
+comment voiced sarah @ MAC - due to a99 severity 02-Apr-2008 09:42:59 AM
+
+Open Date: 2008-04-02 116835 8 action_desc 2009754 OTI ACK
+
+Message Provider Ref: WI02040099 02-Apr-2008 09:41:17 AM
+Open Date: 2008-04-02 116835 9 action_desc 2009757 OTI STU
+WITN11100103
+
+WITN11100103
+Message Detail:D1 Calculated SLA is 04/02/08 at 12:37 02-Apr-2008 09:41:19 AM
+Open Date: 2008-04-02 116835 10 action_desc 2009921 log a user
+comment Voiced to Sam with sla of 1241 4th 02-Apr-2008 09:46:03 AM
+Open Date: 2008-04-02 116835 1 action_desc 2009980 OTI STU
+
+Message _Detail:Call Accepted by Provider: Ref 358106 Scheduled Visit: Engineer:
+ETA: 2008-02-04 12:07:00 02-Apr-2008 09:47:10 AM
+
+Open Date: 2008-04-02 116835 12 action_desc 2010579 OTI STU
+Message Detail: UpdateFrom Touch: Schedule Updated Update Details: Schedule
+Changed to: 04/02/2008 12:45:00 SLA Changed to: 04/02/2008 12:45:00 Call Being
+Progressed Scheduled Visit: Engineer: ETA: 2008-02-04 12:07:00 02-Apr-2008
+10:04:34 AM
+
+Open Date: 2008-04-02 116835 13 action_desc 2011689 OTI STU
+Message Detail:Job Assigned with ETA Eng: 001018 ETA: Call Being Progressed
+Scheduled Visit: Engineer: 001018 ETA: 2008-02-04 12:07:00 02-Apr-2008 10:34:34 AM
+
+Open Date: 2008-04-02 116835 14 action_desc 2012705 OTI STU
+Message Detail:** [No Remark entered.] Scheduled Visit: Engineer: 001018 ETA:
+2008-02-04 12:42:00 02-Apr-2008 11:02:12 AM
+
+Open Date: 2008-04-02 116835 15 action_desc 2013173 OTI STU
+Message _Detail:** [Engineer 082415 allocated]. Scheduled Visit: Engineer: 082415
+ETA: 2008-02-04 13:00:00 02-Apr-2008 11:13:13 AM
+
+Open Date: 2008-04-02 116835 16 action_desc 2015751 OTI STU
+Message _Detail:** [Engineer 082415 Logged On.] Scheduled Visit: Engineer: 082415
+ETA: 2008-02-04 13:00:00 Actual Visit: Engineer: 082415 Arrival: 2008-02-04 11:35:00
+Handed Back: 02-Apr-2008 12:18:21 PM
+
+Open Date: 2008-04-02 116835 17 action_desc 2016496 End User
+Update engineer called for a KMA. opened by mark brown 02-Apr-2008 12:39:48 PM
+
+Open Date: 2008-04-02 116835 18 action_desc 2017842 End User
+Update ENG has called in as he is having a problem with the base unti build. 02-Apr-2008
+01:25:21 PM
+
+Open Date: 2008-04-02 116835 19 action_desc 2017930 log a user
+comment ENG had called as he cannot get to CMT gave him the number and advised him
+to attmept contact again. 02-Apr-2008 01:28:31 PM
+
+Open Date: 2008-04-02 116835 20 action_desc 2018183 log a user
+comment engr advises the buyild iss failing at 1%, the modem attempts to dial out but is
+not successsful attempted to check events but tivoli has crashed! 02-Apr-2008 01:37:22
+PM
+
+Open Date: 2008-04-02 116835 21 action_desc 2018206 log a user
+comment engr advises there are no extensions attached to the line the phoneline is ok,
+can make/received calls _ there is no call barring/ddial 9 prefix advised to attach a
+redcare filter if site have this or a dongle filter and call back if unsuccessful 02-Apr-2008
+01:38:04 PM
+
+Open Date: 2008-04-02 116835 22 action_desc 2018292 log an
+event occurrence sla expired. event 'RMGA SLA Resolution Violation’ triggered by
+condition 'Req. Not Resolved’. 02-Apr-2008 01:38:45 PM
+
+Open Date: 2008-04-02 116835 23 action_desc 2018434 log a user
+comment engr advises he has attached a filter but now it is not dialling at all checked
+events which are now coming through which shows it is building on a number other than
+the pstn. Advised engineer that the counter appears to be attempting to build on another
+line, probably anISDN advised to disconnect blue cable and retry. If unsuccessful will
+neeed to raise cli call 02-Apr-2008 01:45:59 PM
+
+Open Date: 2008-04-02 116835 24 action_desc 2018636 log a user
+comment engr has disconnected isdn cable but site still failing at 1% raising cli call
+
+engrs mobile number 07867 835180 02-Apr-2008 01:52:59 PM
+
+Open Date: 2008-04-02 116835 25 action_desc 2018990 log a user
+comment the cli call come back so engineer to retry build now 02-Apr-2008 02:05:13 PM
+WITN11100103
+
+WITN11100103
+Open Date: 2008-04-02 116835 26 action_desc 2021386 log a user
+comment checked counter events. rollout was successful 02-Apr-2008 03:20:44 PM
+Open Date: 2008-04-02 116835 27 action_desc 2021394 End User
+
+Update engr called for health check. health checkedx2 both successful 02-Apr-2008
+03:20:58 PM
+
+Open Date: 2008-04-02 116835 28 action_desc 2021801 OTI STU
+Message Detail:Work completed Scheduled Visit: Engineer: 082415 ETA: 2008-02-04
+13:00:00 Actual Visit: Engineer: 082415 Arrival: 2008-02-04 11:35:00 Handed Back:
+02-Apr-2008 03:32:05 PM
+
+Open Date: 2008-04-02 116835 29 action_desc 2021817 OTI STU
+Message Detail:replace b base Scheduled Visit: Engineer: 082415 ETA: 2008-02-04
+13:00:00 Actual Visit: Engineer: 082415 Arrival: 2008-02-04 11:35:00 Handed Back:
+2008-02-04 15:20:00 02-Apr-2008 03:32:52 PM
+
+Open Date: 2008-04-02 116835 30 action_desc 2024215 OTI SRS
+Message Provider Ref: WI02040099 Resolution Details: ** [No Remark entered.]
+Spares Usage: Old Model Type: PATICLX365/400B Old Serial No: ybsh013423 New
+Model Type: PATICLX365/400B New Serial No: ybsh011567 Actual Visit: Engineer:
+082415 Arrival: 2008-02-04 11:35:00 Handed Back: 2008-02-04 15:20:00 02-Apr-2008
+04:51:06 PM
+
+Open Date: 2008-04-02 116835 31 action_desc 2024216 Status
+changed from 'New' to 'Resolved' ** 02-Apr-2008 04:51:06 PM
+Open Date: 2008-04-02 116835 32 action_desc 2024217
+
+Resolution Notification ** 02-Apr-2008 04:51:06 PM
+Open Date: 2008-04-02 116835 33 action_desc 2024218 The
+Service Type(s) on a ticket were delayed ** 02-Apr-2008 04:51:06 PM
+Open Date: 2008-04-02 116835 34 action_desc 2024315 close
+request/incident/problem/change/issue Replaced b base unit. 02-Apr-2008 04:56:00 PM
+Open Date: 2008-04-02 116835 35 action_desc 2024327 Closure
+Notification ** 02-Apr-2008 04:56:55 PM
+Open Date: 2008-04-02 116835 36 cancel_time 571420 SLA 02-
+Apr-2008 09:38:45 AM
+Open Date: 2008-04-02 116835 37 cancel_time 571421 SLA 02-
+Apr-2008 09:38:45 AM
+Open Date: 2008-04-02 116835 38 cancel_time 571422 SLA 02-
+Apr-2008 09:38:45 AM
+Open Date: 2008-04-02 116835 39 cancel_time 571423 SLA 02-
+Apr-2008 09:38:45 AM
+Open Date: 2008-04-02 116835 40 cancel_time 571424
+
+02/04/2008 16:56:55 SLA 02-Apr-2008 09:38:45 AM
+Open Date: 2008-04-02 116835 at act_delay 458194 349 02-
+
+Apr-2008 04:51:06 PM
+
+Open Date: 2008-04-02 117569 () RMGA.X Inappropriate Helpdesk.XI06
+POL issue.CM2 Training or advice required Close Date: 02-Apr-2008 01:37:00 PM West
+Byfleet PM wanted help with a transaction. Open Date: 02-Apr-2008 01:32:39 PM
+
+Open Date: 2008-04-02 117569 1 action_desc 2018039 create a
+new request/incident/problem/change/issue ** 02-Apr-2008 01:32:39 PM
+
+Open Date: 2008-04-02 117569 2 action_desc 2018056 Open
+Notification ** 02-Apr-2008 01:33:25 PM
+
+Open Date: 2008-04-02 117569 3 action_desc 2018058 log a user
+
+comment Transffered to NBSC as the pm states she did not press and option.... just came
+to us. 02-Apr-2008 01:33:29 PM
+
+Open Date: 2008-04-02 117569 4 action_desc 2018072 resolve
+request/incident/problem/change/issue PM called in for transaciton help, i have done
+checks and transfferred to NBSC. 02-Apr-2008 01:33:53 PM
+WITN11100103
+WITN11100103
+
+Open Date: 2008-04-02 117569 5 action_desc 2018098
+Resolution Notification ** 02-Apr-2008 01:34:50 PM
+Open Date: 2008-04-02 117569 6 action_desc 2018099 The
+Service Type(s) on a ticket were delayed ** 02-Apr-2008 01:34:50 PM
+Open Date: 2008-04-02 117569 7 action_desc 2018100
+FIELD='zCloseCategory' OLD=" NEW='RMGA.X Inappropriate Helpdesk.Xl06 POL.
+issue.CM2 Training or advice required'FIELD='zinrescode' OLD=" NEW='RS06 HSD
+resolved' ** 02-Apr-2008 01:34:50 PM
+Open Date: 2008-04-02 117569 8 action_desc 2018161 close
+request/incident/problem/change/issue PM called in for transaciton help, i have done
+checks and transfferred to NBSC. 02-Apr-2008 01:36:21 PM
+Open Date: 2008-04-02 117569 9 action_desc 2018178 Closure
+Notification ** 02-Apr-2008 01:37:00 PM
+
+Open Date: 2008-04-02 117613 ie) RMGA.O Operational.OP02 Central
+Systems Software failure Close Date: 02-Apr-2008 05:29:47 PM West Byfleet Can CLI be
+removed from this site to enable authentication Open Date: 02-Apr-2008 01:53:46 PM
+
+Open Date: 2008-04-02 117613 1 action_desc 2018652 create a
+new request/incident/problem/change/issue ** 02-Apr-2008 01:53:46 PM
+
+Open Date: 2008-04-02 117613 2 action_desc 2018692 Open
+Notification ** 02-Apr-2008 01:55:12 PM
+
+Open Date: 2008-04-02 117613 3 action_desc 2018693 log a user
+comment Can CLI be removed from this site to enable authentication 02-Apr-2008
+01:55:16 PM
+
+Open Date: 2008-04-02 117613 4 action_desc 2018714 log a user
+comment voivced paul NT duty manager 02-Apr-2008 01:56:34 PM
+
+Open Date: 2008-04-02 117613 5 action_desc 2018820 log a user
+comment CLI removed 02-Apr-2008 01:59:58 PM
+
+Open Date: 2008-04-02 117613 6 action_desc 2018825
+
+Generated from ESC screen Transfer group from 'RMGA NT' to ‘Desk Comms' 02-
+Apr-2008 02:00:10 PM
+Open Date: 2008-04-02 117613 7 action_desc 2018887
+
+Generated from ESC screen Transfer assignee from " to 'Tidman, Erica’ Transfer
+group from 'Desk Comms' to'' 02-Apr-2008 02:02:31 PM
+
+Open Date: 2008-04-02 117613 8 action_desc 2021397 log a user
+comment can cli be re-enabled, roll-out successful 02-Apr-2008 03:21:05 PM
+Open Date: 2008-04-02 117613 9 action_desc 2021426 Transfer
+
+‘assignee’ from 'Tidman, Erica’ to" Transfer ‘group’ from " to 'RMGA NT’ ** 02-Apr-2008
+03:22:00 PM
+Open Date: 2008-04-02 117613 10 action_desc 2023970
+
+Generated from ESC screen CLI re-enabled, close call. 02-Apr-2008 04:43:46 PM
+
+Open Date: 2008-04-02 117613 11 action_desc 2024335 Transfer
+‘assignee’ from " to 'Tidman, Erica’ ** 02-Apr-2008 04:59:24 PM
+Open Date: 2008-04-02 117613 12 action_desc 2024755 resolve
+request/incident/problem/change/issue cli re-enabled 02-Apr-2008 05:25:09 PM
+Open Date: 2008-04-02 117613 13 action_desc 2024827
+Resolution Notification ** 02-Apr-2008 05:28:42 PM
+Open Date: 2008-04-02 117613 14 action_desc 2024828 The
+Service Type(s) on a ticket were delayed ** 02-Apr-2008 05:28:43 PM
+Open Date: 2008-04-02 117613 15 action_desc 2024829 Transfer
+‘assignee’ from 'Tidman, Erica’ to" ** 02-Apr-2008 05:28:43 PM
+Open Date: 2008-04-02 117613 16 action_desc 2024830
+FIELD='zCloseCategory' OLD=" NEW='RMGA.O Operational.OP02 Central
+Systems Software failure'FIELD='zinrescode' OLD=" NEW='RS09 HSD ? Comms Team
+resolved' ** 02-Apr-2008 05:28:43 PM
+Open Date: 2008-04-02 117613 17 action_desc 2024841 close
+WITN11100103
+WITN11100103
+
+request/incident/problem/change/issue cli re-enabled 02-Apr-2008 05:29:06 PM
+
+Open Date: 2008-04-02 117613 18 action_desc 2024854 Closure
+Notification ** 02-Apr-2008 05:29:48 PM

@@ -1,0 +1,103 @@
+FUJ00152280
+FUJ00152280
+
+From: Gardner Paul A[/O=EXCHANGE/OU=ADMINGROUP1/CN=RECIPIENTS/CN=GARDNERPA]
+Sent: Thur 31/01/2008 10:11:46 PM (UTC)
+
+To: Robinson Helenf
+Subject: FW: HSD - UPdate on Telephony Failure
+
+FYI,
+Mail to the customer re our Tfs outage (even though they thought it was telephony!...)
+
+PG
+
+From: Gardner Paul A
+
+Sent: 31 January 2008 22:11
+To: 'nicola.x.price’
+Cc: Casey John; Wiggett Shaun
+
+Subject: FW: HSD - UPdate on Telephony Failure
+
+Hi Nicola,
+
+I'm not sure if there is some confusion around our two main systems. The failure on Friday was Triole for Service
+which is our call management system and had no effect on the telephony system (Commander). We reverted to
+manual call logging which had no effect on the live service as the outage was short. I believe that the issue was due to
+the Apache Tomcat web service stopping. This was restarted without a re-boot to the server.
+
+This issue has been escalated to Computer Associates for investigation. While the outage was minimal, we have seen
+some glitches with the Apache Tomcat service and the application is on amber alert. (l.e. we are taking any outage
+seriously!).
+
+Recently more Triole servers have been added to the estate to improve performance further.
+
+With regards to telephony, we have an upgrade to the system this Saturday (after desk close) to enable “multimode”
+function. This effectively adds even more resilience than we have now and means that if our main server fails on the
+Stevenage site, the system will seamlessly switch over to a server on another site. (We have multiple sites on
+Commander).
+
+All systems can have failures, and both Commander and Triole are relatively new in the business. We are committed
+however to providing a world class infrastructure solution to our clients and continue to work towards this with ongoing
+improvements.
+
+I hope this allays some of your concerns.
+Many Thanks,
+
+Paul Gardner
+
+Operations Manager
+
+Customer Services (Horizon Service Desk, Camelot, Royal Mail Group)
+FUJITSU SERVICES
+
+Web: services. fujitsu.com
+Fujitsu Services Limited, Registered in England no 96056, Registered Office 22 Baker Street, London, W1U 3BW
+
+This e-mail is only for the use of its intended recipient. Its contents are confidential and may be privileged. Fujitsu Services does not guarantee that this e-mail
+has not been intercepted and amended or that it is virus-free.
+FUJ00152280
+FUJ00152280
+
+From: nicola.x.price(_
+Sent: 31 January 200:
+To: Casey John
+
+Subject: Fw: HSD - UPdate on Telephony Failure
+
+Sorry John forgot to say, can you remind the Team Managers any impact on GoS needs to be reported to the LSD
+(even if a busy message isn't used), including Saturdays.
+
+Thanks
+
+Nicola Price
+Client Relationship Manager
+Group Shared Services - Royal Mail
+
+Mobile:
+
+~~ Forwarded by Nicola X Price/e/POS'
+
+Nicola X Price To: ‘Casey John" <John.Casey!
+
+31/01/2008 11:34 ce:
+Subject: HSD - UPdate on Telephony Failure Link
+
+Hi John,
+
+Can you please set expectations around when a response is likely to be received from the Telecoms Manger regarding
+the Telephony failure.
+
+Thanks
+
+Triole Failure: 15 minute failure on Friday — calls logged manually once resolved. This is a growing trend and a
+report is required to understand issues and resolution of Triole Call Logging System. The telecoms manger has raised
+this as a high escalation as until we know what causes the issue we cannot put any actions in place to reduce the risk
+
+of it happening again.
+
+Nicola Price
+Client Relationship Manager
+Group Shared Services - Royal Mail
+

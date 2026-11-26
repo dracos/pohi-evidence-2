@@ -1,0 +1,50 @@
+FUJ00232798
+FUJ00232798
+
+Drop and Go Weekly Report
+Horizon Known Error - jsim1215Q
+
+Description
+
+Although the Horizon code is working as expected it results an undesirable impact to the Drop & Go session.
+
+If the user has not completed the compliance training adds a compliance product to the session the user receives a message stating that
+the training is not done and the script is exited.
+
+This leaves the other products still in the basket but when they try to settle these they get an error message advising the Drop&Go card
+is locked.
+
+The Solution options outlined are as follows:
+
+1. Start Transaction to return an error rather than throwing an exception if we try to transact an EUM barred product. 60 code paths
+which call this function are impacted. Needs design to consider how to handle this particular error and code changes in each impacted
+path.
+
+Actions Investigation - Significant Counter regression testing required
+
+2. New AP-ADC data type(s) to provide script access to EUM training curriculum data. This would stop the clerk before he got too far
+down the DRGO journey. Actions Investigation - Require possible complex AP-ADC script changes to utilise.
+
+3. Check EUM training curriculum data within counter AP-ADC implementation before Start transaction is called. Handle error locally.
+May still require AP-ADC updates. Actions Investigation - Needs AP-ADC regression testing
+
+There are a number of ways a AP-ADC script can cause a product to be added into the basket including:
+
+- In the case described in the Peak the DRGO script is using the Chain() datatype with an AddProduct action.
+
+- Product() datatype with MAKECUR option to make the product the current product will also fail in the same way. If you don’t
+specify MAKECUR (i.e. just get info on the product) it works. Need to determine if the latter case should return an error also.
+
+- AssociatePart (& possibly PSAssociatePart though I haven't checked that one) will allow you to add in an otherwise EUM barred
+product as an add-on to the primary product. Though this is unlikely to become an issue in practice I would question whether this
+should be allowed to sneak through.
+
+- Chain into PS-12 and trying to transact a barred product from within PS-12 will fail in the same way.
+
+4. Should Abandon Exception be killing AP-ADC chaining? Abandon Exception is relatively low down the Exception pecking order.
+Actions Investigation - May need to change existing code that returns Abandon Exception to return some other exception.
+
+5. Somehow treat DRGO scripts differently to other scripts, possibly via an option to an existing datatype - the counter pp does not know
+it is running a DRGO script just that it's an AP-ADC script. Investigation required.
+
+Page 1 of 1

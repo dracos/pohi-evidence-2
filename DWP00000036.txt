@@ -1,0 +1,322 @@
+DWP00000036
+DwP00000036
+
+Restricted - Commercial lo
+aala
+
+To: Programme Evaluation Team From: Mary Reade
+Hamish Sandison, Bird & Bird
+Tony Johnson
+Michael Berg
+
+Date: 3 August 1995
+
+Service Provider Risk Register
+
+Thank you for your comments on the service provider risk register. I have attached a
+Word copy of the amendments that I intend making to the register because time is short
+and I can E-mail this. A new hard copy of the register will be with you as soon as I have
+amended it, copied and mailed it. I will sort this one by risk register number but I can
+easily produce prints sorted by other codes if required.
+
+I would like to point out that the format of the prints you have are the paper saving
+versions and that the output that goes to service providers will be closer to that given in
+the working paper. I will also produce a brief description of the codes used and the
+process based on the working paper to go to service providers with the register. The
+names of the risk originators will not be included on the service providers copies.
+
+The three shortlisted service providers are coming to Terminal House for initial planning
+meetings on the 8,9 and 10 of August and I would like to release at least the major risks
+to them then, providing the Programme solicitor agrees. Jeremy, Torstein and Naresh are
+meeting to discuss the major technical risks tomorrow afternoon and so I will issue any
+amendments as quickly as I can after this. If you have any further comments that you
+think would prevent this release please contact me as soon as possible.
+
+I am very aware of this extremely tight timescale and appreciate the problems that this is
+causes, and that some of you are away on holiday. Again may I plead for you to reply to
+me as soon possible.
+
+Thanks
+
+8/4/95 2 SPRRO308.Doc
+DWP00000036
+
+Restricted - Commercial
+
+AMENDMENTS TO THE SERVICE PROVIDER RISK REGISTER
+
+Performance Bonds/Guarantees - major failure of system
+
+need to define financial resources available to service providers to recover
+from risks accepted by the service provider. [DN includes IBM only if it tries
+to set up a new Ltd company for BA/POCL]
+
+Risk Ref Proposed Amendment Proposed By I SPRR Team Response
+ALL Service I NEW RISK Ken T recommend that this is not
+Providers Severity code A/B1, Probability 4, Subject - Customer verification Davenport included as ] have spoken to
+Definition Gareth about this, his
+procedures rely solely on signature to prevent impersonation. Why, for comments follow:
+example, no printed code on card (or within mag stripe) to tell gender and age - he is concerned that we
+at date of issue of card - could be disguised if embossed e.g. A63 - 36 year would be suggesting a solution
+old male, B36 = 63 year old female. not just stating the requirement
+to the service providers.
+- all the proposals do not
+solely rely on signatures but
+include options for other
+methods of customer
+verification such as passwords,
+mother maiden names etc.
+- an independent review of the
+card is being commissioned
+All Service NEW RISK Ken Agreed
+Providers Severity code - B1, Probability 5, Subject - CIS Davenport
+Definition
+More details needed on transaction times at the post office counter. In
+particular for normal encashments, third party encashments and foreign
+encashments.
+All Service NEW RISK Ken This is not a risk yet but is
+Providers Severity code - A, Probability 5, subject - Commercial Davenport part of the negotiation process.
+Definition If the contract negotiation team
+
+are not satisfied with the
+details given to them then it
+will become a risk.
+
+e/
+
+1 SPRRO308.Doc
+
+DWP00000036
+DWP00000036
+
+Restricted - Commercial
+
+All Service NEW RISK Torstein This risk was proposed as an
+Providers Severity code Q, Probability 0, Subject - Service Architecture Godseth essential requirement that
+Definition software updates are distributed
+Please explain fully how software updates are distributed and carried out in a across the WAN. This was not
+realistic timescale using your proposed configuration and bearing in mind the in the SSR and is therefore a
+likely volumes of data. Are they distributed from the central system (TMS) requirements creep. Would
+across the WAN and installed remotely, and how are they controlled? other options prove to be
+acceptable?
+CL00000T Typing error in last line change “working week” to “working day”. Ken Agreed
+Davenport
+CL000004 & I These risks are about the same matter and should be amalgamated. Ken Remove CL000006
+CL000006 Davenport
+CL000005 Severity code need to be reclassified to A. There is no chance of DSS Ken Agreed
+delivering a comprehensive set of benefit packages to CAPS in the timescales I Davenport
+envisaged in the proposals.
+CL000007 Add at end “ - This is unacceptable.” Ken Agreed
+Davenport
+CL000019 Amend script to read “The production capacity was not demonstrated.” As Ken Agreed
+Thorn security/Barclays clearly have the capacity to produce cards. Davenport
+CL000024 Add at end “, provide realistic timescales for accommodation upgrade of Ken Agreed
+counters or mobilisation of resources/activity which only begins after the main I Davenport
+contract has been awarded.”
+CL000025 Delete “ There is no recognition of the constraints on this.” Insert “Offers to Ken Comments please.
+progress other IT projects are outwith the scope of requested proposals and are I Davenport
+not considered helpful to general delivery of the Automation project. DSS
+benefits will be converted to the new automated systems within timescales yet
+to be determined.”
+CL000030 Amend “ position in “ to read “long term relationship with “. Add at end “NB: I Ken Agreed
+Proposal only refers to Barclays commitment to this procurement programme.” I Davenport
+CL000032 Change “ a very arrogant approach” to “a very unrealistic approach.” Ken Agreed
+Davenport
+
+8/5
+
+2 SPRRO308.Doc
+
+DWP00000036
+DWP00000036
+
+Restricted - Commercial
+
+CL000033 Remove “and there may be penalties against the Programme”. This sort of Ken Agreed
+comment is inappropriate to copy to service providers. Davenport
+
+CL000039 After “Triumph system” add“, still under development,”. Ken Agreed
+
+Davenport
+
+CL000040 Amend last sentence to read “Issue of whether this type of offer is PFI Ken Agreed
+compliant.” Davenport
+
+CL000043 NEW RISK Ken Comments please. Does this
+Severity code A, Probability 4, Subject category - Service Architecture Davenport only apply to Cardlink?
+Definition
+CMS, PAS & TMS are proposed on the same platform, but on two sites. If
+one of the major elements fails does this require a complete switch to one site
+for all elements? How does this increase the frequency risk for operations to
+be using hot standby facilities. Why can’t the two sites be configured with
+TMS on one site and PAS/CMS on another as shown in the SSR (but with hot
+standby) and thus reducing risk for one site only mode?
+
+EDS000005 Chris can’t remember raising this risk. Chris Clayton I This risk was anonymous. I
+
+guess the handwriting was
+Chris’s but I must have got it
+wrong.
+
+TBM000003 Ts this an indirect comment on Watermark cards which now seem to be flavour I Ken Disagree. This is not because
+of the month. If so I suggest you remove this risk from the register (or repeat I Davenport of the Watermark but because
+it for Cardlink). the reader is bespoke.
+
+M000008 Add at end “and cost. Ken We have no references to cost
+Davenport in this register. I have assumed
+that the service providers know
+that economically advantageous
+tenders are required.
+TBM000021 Add this risk onto the other service providers. Chris Clayton I Agreed
+TBM000036 Amend severity code to A/B1 Ken Change to BI
+Davenport
+1TBM000060 Insert “IT” after “the low”. Ken Agreed
+Davenport
+
+e/ Ss
+
+3 SPRRO308.Doc
+
+DWP00000036
+DWP00000036
+
+Restricted - Commercial
+
+TBM000066 What does this risk mean? Ken See new risk for all service
+Davenport providers.
+
+PWAY000001 I New definition: Mary Agreed
+The consortium has proposed a superficial understanding of the current Reade/Torstei
+accounting mechanisms operating within a post office and have proposed a n Godseth
+development to EPOS which may not meet the requirements. There is also a
+related concern that because of the significant development necessary the
+timescales of quarter 1 1996 may not be achievable.
+
+PWAY000002 I New definition: Mary Agreed
+The team are concerned that the proposal is totally dependant on Escher, for Reade/Torstei
+the Riposte software, and that it is a relatively small USA based company. n Godseth
+More information is required on the size and stability of the company.
+
+PWAY000003 I Change severity code to “A”, probability code to “4”. Ken
+
+Davenport
+
+PWAY000003 I New definition: Mary Reade Agreed
+
+This concern is linked to the weak card authentication (PWAY000012).
+Pathway in their commercial proposal do not accept the fraud risk associated
+with losses due to fraudulent copying and counterfeiting of the card. They are
+prepared to provide a more fraud resistant card, at a higher cost , which is still
+
+likely to be at BA’s risk .
+
+PWAY000004 I New definition: Mary Reade Ts this requirements creep? If
+The BA/POCL Programme would prefer to use products that are ARTS so should it be a query ?
+compliant.
+
+PWAY000005 I New definition Mary Reade Agreed
+The five generic functions requested in the SSR have been re-cast towards
+broad client groupings, rather than a functional approach (e.g. an example is
+the Girobank Transcash product compared with POCL’s preferred generic In-
+pay). The team are concerned that this could potentially create obstacles to
+future POCL developments.
+
+ef 8 4 SPRRO308.Doc
+
+DWP00000036
+DWP00000036
+
+Restricted - Commercial
+
+PWAY000007 I New definition: Mary Agreed
+The Riposte software package provides a significant component of the Reade/Torstei
+solution. This potentially locks the BA/POCL Programme into this package n Godseth
+and may cause problems in the future with, for example the speed of future
+developments and the ability to transfer the contract.
+PWAY000011 I Suggestion that this is changed to: Torstein Comments please.
+“The standard keyboard proposed will result in increased transaction times at Godseth
+the counter.”
+(DN: I assume that this then become a risk not a query?]
+PWAY000012 I this is a duplication of PWAY000003 and its status is Q so is it not required. I Ken They are different. One is the
+Davenport transfer of risk , the other the
+card itself.
+PWAY000012 I New Definition: Mary Reade Agreed
+The cardholder verification is signature-based, and is therefore only at the
+level of current standards in use in the credit card industry.
+PWAY000013 I New definition Mary Reade Agreed
+The phased approach to the acceptance of products (because of the need for
+development work) and to roll-out would result in PAS and CMS not being
+proven by the end of the operational trial.
+PWAY000016 I This risk has been included twice Chris Clayton I Agreed. Problems with the risk
+register entry.
+PWAY000018 I New definition Mary Reade Agreed
+As a result of the phased approach to the acceptance of products (see
+PWAY000013) the roll-out is proposed to start in November 1996, six months
+later than requested in the SSR.
+PWAY000020 I New definition: Mary Reade Agreed
+PAS & TMS use the same distributed systems, which could make it difficult
+to separately provision these services later.
+PWAY000021 I New definition: Mary Reade Agreed
+
+The distributed architecture proposed contains a considerable degree of
+innovation. The team are concerned that there may be more potential for data
+corruption and fraud because of the replication of data .
+
+s SPRRO308 Doc
+
+DWP00000036
+DWP00000036
+
+Restricted - Commercial
+
+PWAY000034 I New definition: Mary Agreed
+There is a risk that when a system failure has occurred resulting in a Reade/Torstei
+communications failure to an outlet then a double payment could be made (one I n Godseth
+at ‘home’ and one at a ‘foreign’ office). This may encourage organised fraud.
+PWAY000046 I NEW RISK Mary Agreed
+Severity B1, probability 5, Subject - SA Reade/Torstei
+Concerns that the Riposte software is unproven to us. Main concerns are that: I n Godseth
+© the reliability is unknown;
+¢ that the performance may be inadequate in the largest offices because of the
+data being duplicated between workstations. Currently no office exceeds 25
+workstations but larger offices may be formed in the future;
+
+© Riposte may be very difficult to manage when 30+ correspondence servers
+are implemented, and such number will be necessary to support 40000
+counter positions.
+
+PWAY000047 I NEW RISK Torstein Agreed
+Severity B2, probability 4, Subject - SA Godseth
+Significant development is needed in the Payment Management Service and
+Operational Support Services by Girobank. Other services are needed from
+Alliance and Leicester. The risk is that as software development and service
+provision are not the core activities for these organisations there may be
+conflict with their internal priorities.
+
+PWAY000048 I NEW RISK Torstein Agreed
+Severity B2, Probability 3, Subject - CMS Godseth
+Definition
+Concerns that through DeLaRue’s involvement in the consortium the
+BA/POCL Programme will be tried into the card security mechanisms
+marketed by them and excluded from potentially superior offerings from their
+competitors.
+
+PWAY000049 I NEW RISK Torstein Agreed
+Severity B3, probability 5, subject CIS Godseth
+
+Data held at the post office will offer the opportunity to the clerk to identify
+payments which are on the point of expiry. This information could be an
+opportunity for fraud.
+
+6/ 3S
+
+6 SPRRO308.Doc
+
+DWP00000036
+DwP00000036
+
+Restricted - Commercial
+
+SPRRO308 Doc
+
+DWP00000036

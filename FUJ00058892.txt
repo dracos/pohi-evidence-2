@@ -1,0 +1,44 @@
+FUJ00058892
+FUJ00058892
+
+HORIZON KEL PSteed145J (Version 1)
+
+Type: Information
+Status: Authorised
+
+Title: Items appearing on stack without being selected
+Summary: Items appearing on stack without being selected
+Raised: by Paul Steed on 07/01/2000
+
+Last updated: by Paul Steed on 06/01/2004
+
+Release: CSR
+
+System product: Counter
+
+Status: Authorised
+
+Visibility: Medium
+
+Symptoms
+
+There have been several calls over the last few months where post masters have reported phantom sales. Items appear by themselves for
+which the PM has not pressed an icon. These may be individual items or several of the same item. Sometimes when no-one has been near the
+screen items may appear
+
+Problem
+
+Since the system cannot put items on the stack without being told to, the desktop must be receiving specific requests to sell the items in
+question. In the cases I have looked at I could only conclude that either the screen or the keyboard has been generating key sequences. A
+more recent case revealed that the cable between the screen and the base unit was the root cause.
+
+Solution - Helpdesk
+
+In the first instance send an engineer with a recommendation to replace both the keyboard and the screen. (Also check whether there is a
+problem with the screen cable.)
+
+Evidence
+
+If an engineer visit has not solved the problem then see KEL PCarroll1235R<br>which has detailed instructions on how to deal with
+environmental issues.
+

@@ -1,0 +1,220 @@
+FUJ00152279
+
+FUJ00152279
+
+From: Gardner Paul A[/O=EXCHANGE/OU=ADMINGROUP1/CN=RECIPIENTS/CN=GARDNERPA]
+Sent: Tue 22/01/2008 10:53:54 AM (UTC)
+To: Amber Alerts[/
+Ce: Nathwani
+
+Robinson Helenf. 5
+
+Baker John[i
+
+lachin Leighto!
+
+Subject: RE: Amber Alert Ref 998 - Various T4S Customers - UPDATE REPORT
+
+Please be aware that we have already provided examples of calls where the fix has not been successful. These calls
+were logged yesterday after the fix had been applied.
+Many Thanks,
+
+Paul Gardner
+
+Operations Manager
+
+Customer Services (Horizon Service Desk, Camelot, Royal Mail Group)
+FUJITSU SERVICES
+
+E-mail: paul.a.gardne'
+
+Web: services. fujitsu.com
+
+Fujitsu Services Limited, Registered in England no 96056, Registered Office 22 Baker Street, London, W1U 3BW.
+This e-mail is only for the use of its intended recipient. Its contents are confidential and may be privileged. Fujitsu Services does not guarantee that this e-mail
+has not been intercepted and amended or that it is virus-free.
+
+From: Amber Alerts
+
+Sent: 22 January 2008 10:41
+
+To: Baldwin Dave; Brunskill Richard; Bull Rachel; Burnet Alex; Cooley Ian; Crow Nick; Dunmore Phil; Elliott Naomi;
+Everett Steve J; Foster Patrick; Gardner Paul A; Garton Sarah; Hallett Simon; Hamilton Jeph; Holloway Paul (PBU
+Operations); Holmes Jan R; Hunt David; Ironside Stephen; Jessop Paul; Jones Rachel; Kemp Alex; Lane Richard;
+McKeown Kevin; McKinnon Ian; Mears Andrew; Melrose Liz; Miller Denise; Mills Ged; Mills Ian; Roberts Simon C;
+Scappaticci Serge; Scott Matthew; Simpson Bill; Smith John JJ; Snuggs Toby; Spence Kevin; Stewart Mike; Sujith
+Pooja; Sutton Stacey; Terblanche Ian; Thompson Peter; Thorens Philippe; Tushingham Sharon; Venables Ian; Welsh
+Graham; Whittington Philippa; Wicks Tony; Woolgar Mike; Abrahall Jenny; Adams Audrey; Adamson Ken; Amber
+Alerts; Aston Kevin J; Atkins Jackie; Bailey Neil; Baker John; Barnes Chris; Bishop Tim; Booth Nigel RNC; Brewer
+Keith; Brushett Simone; Bull Richard; Bullen Sheila; Butterworth Brian; Charlton Sean; Clark Brenton; Cleary Nicky;
+Cochrane Vince; Collett Jules; Cooke Andy; Deane Ed; Deare Michael; Dorans Maureen; Eagle Jayne; Ebdon Stuart;
+Ellams Tony; Ellis Martin; Fiske Robert A; Fowler Jason; Fuller David; Goldsmith Steve; Goodridge Stephen; Goswell
+Alan; Hawkridge Aleana; Hipperson Jane; Hook Pete PT; Hopper Gail L; Hussain Norin; Hutchings Peter; Imberg Petri
+(STNO2); Johnston Douglas; Jones Caroline; Keyte Clive; Lamb Ian; Lea Warwick; Madgwick Mike; Makin John; Martin
+Keith H; Massey Graham; Mcguire Paul; Morbin Jane; Mynard David; Palmer Louise A; Payne Andrew; Pietosi
+Umberto; Price Lucy; Provoost Martin; Pryde Stephen J; Rahimi Ellie; Rawlinson Peter; Reeves David A; RESMNGT;
+Ribbon Mark E; Robinson Helen; Robinson Karyn; Rogers Craig; Sandell Roger; Scales Mark; Scott Christopher; Shiller
+Stephen; Siddall Malc; Silvester Marc; Simmonds Roy; Singh Jim; Slack Caron; Smith David M (Solutions Group);
+Spencer Janine; Stevenson Neil; Stoddart Ben; Stones Chris; Thomas Owen; Thorpe Roger; Tillotson Clive; Walker
+Robert (MAN34); Walton Emma; Warwicker Steve J; Webb Glenn; Westfield Paul; Whitfield David; Whitmore Les;
+Wilkinson Dave; Williams David (Solutions Group); Wood Graham J
+
+Subject: Amber Alert Ref 998 - Various T4S Customers - UPDATE REPORT
+
+This e-mail is only for the use of its intended recipient. Its contents are confidential and may be privileged. Fujitsu Services does not guarantee that this e-
+mail has not been intercepted and amended nor that it is virus-free.
+
+Amber Alert
+FUJ00152279
+FUJ00152279
+
+Awork around fix has been applied to ensure a field within TfS (RMGA Block 4) is automatically updated. If this field is
+not populated, the application does not call the CA connector and hence does not send the call to the OT! server. In
+addition a code change has been made which will allow diagnostics to be gathered if the issue recurs.
+
+Monitoring will determine whether the change has been successful. The desk reported missing reference numbers on
+Monday 21st Jan, which is believed to be from calls that were logged before the fix was applied
+
+No further slow response times have been reported by the FSA Desk, despite a request for logs to be recorded when
+slow responses are experienced
+
+Next Action: Situation to be monitored for any call references not returned from D1 to TfS.
+
+Customer's current perception: There is a continued risk to achieving the SLA and an impact on resource due to the
+manually checking of calls that are assigned to D1
+
+Update Report for Event 998
+
+Reference No: 998 Status: Amber Alert
+Update no: * Date: 2008-01-22
+Date opened: 2007-12-13 Class: Support Process
+X-ref: . Stage: live operation
+Client: Various T4S Customers
+Address:
+Contacts
+Alert Manager: Ben Stoddart. work phone:
+
+mobile:
+Account Manager: mobile:
+
+Division(s) owning Core Services Division owning
+
+resolution: problem: Core Services
+
+1 Problem Details:
+
+OTI Link down between T4S and D1, impacting RMGA Service Desk. This problem initially occurred on
+Monday 3rd Dec, and re-occurred on Monday 10th Dec. It was initially thought that a change over the
+weekend was responsible for causing the link to be down. The problem was intermittent for 3 days until
+Wednesday 12/12/07 and was reported to be resolved. The root cause needs to be identified, and performance
+reporting implemented In addition: FSA have been reporting intermittent slow response times. Suspected
+firewall issue. Reuters UAT has reported data integrity issues and reporting data issues to be investigated
+
+2 Commercial Situation:
+
+If problem is not resolved there will be an impact on the Service Desks abilities to manage calls over OTI, and
+achieve SLA
+FUJ00152279
+FUJ00152279
+
+3 Closure Criteria:
+
+Performance and Capacity reports for OTI server to be produced on monthly basis
+Confirmation form RMGA Service Desk, FSA Service Desk and Reuters Service Desk that performance on
+TAS is acceptable. (Response times less that 5 seconds)
+
+4 Forecast Closure: 2008-02-15.
+
+5 Progress/Current Actions:
+
+2008-01-22
+
+A work around fix has been applied to ensure a field within TfS (RMGA Block 4) is automatically updated. If
+this field is not populated, the application does not call the CA connector and hence does not send the call to
+the OTI server. In addition a code change has been made which will allow diagnostics to be gathered if the
+issue recurs.
+
+Monitoring will determine whether the change has been successful. The desk reported missing reference
+numbers on Monday 21st Jan, which is believed to be from calls that were logged before the fix was applied
+
+No further slow response times have been reported by the FSA Desk, despite a request for logs to be recorded
+when slow responses are experienced
+
+Next Action: Situation to be monitored for any call references not returned from D1 to TfS.
+
+Customer’s current perception: There is a continued risk to achieving the SLA and an impact on resource due
+to the manually checking of calls that are assigned to D1
+
+2008-01-15
+
+A fix to the OTI Server has been identified and was applied on Friday 11th Jan. Feedback from the RMGA
+Desk has stated that there is still a problem. This is now pointing to a T4S issue.
+
+Response times at the FSA Desk were reported to be intermittently slow on Monday 14th. A further request
+was made to formally capture when this happens to aid investigation as no logs have been received from the
+desk yet.
+
+Next Action:
+
+A fix needs to be identified for the T4S, where calls are not reaching the OTI Server.
+AS are currently investigating the information obtained Monday 14th January
+
+Customer’s current perception:
+
+The OTI issue still may have an impact on SLA’s due the additional time needed to monitor calls that are
+assigned to D1.
+
+2008-01-08
+
+OTI Server is stable — although there are still intermittent problems with calls being passed to D1. Currently
+there are 23 open calls which have to be managed manually. Response times better, although this week may
+degrade due to an increase in Corporate Network traffic.
+
+Next Actions:
+AS continuing to investigate OTI application. RMGA to report to AS when the next issue occurs so server logs
+can be investigated.
+FUJ00152279
+FUJ00152279
+
+Customer's Current Perception:
+
+The seriousness of this issue is becoming Service and SLA affecting.
+
+2008-01-02
+
+OTI server now stable and calls are being passed through the link. RMGA are reporting that there is an
+intermittent failure for some calls going from T4S to D1 and PEAK. AS have investigated D1 and PEAK,
+which appear to be ok. Focus is now on OTI server, specifically looking at timing issues within the application.
+
+Response times were reported to be good by FSA and RMGA. This may be due to a reduction in corporate
+network usage over the Christmas period
+
+Application has been installed on FSA Service Desk desktop to monitor response times
+Next Action: Resolve timing issues with OTI server
+
+Customer’s current perception: The RMGA team are having to do daily checks to search for missing call
+reference numbers, and re-assigning calls if required
+
+2007-12-17
+
+RCA has established that the original problem reported on Monday 10th Dec was due to a code change that
+was implemented over the week end. This was regressed Monday evening. T4S re-started and one process
+failed, causing failure of calls being passed over the OTI link form T4S to DI with RMGA desk the following
+day. The process was restarted with resolved the OTI issue.
+
+Tuesday 11 pm Wed 12 am there was an OTI problem for all accounts. OTI server re-started which resolved
+the problem
+
+Changes made to FSA network/firewall access to T4S has improved response times, measurements from other
+Fujitsu Services locations ongoing to build up a picture of response times
+
+Next Actions
+Network monitoring to be put in place and response time measurements to continue.
+RMGA calls being passed to D1 have intermittent problems. D1 to be investigated.
+
+Customer Perception.
+
+RMGA account still have some issues but have recognised overall improvement .
+FSA account have reported an improvement to response times (OTI n/a).
+
+Reuters do not use OTI and the account is investigation ISQ/Peregrine link problems

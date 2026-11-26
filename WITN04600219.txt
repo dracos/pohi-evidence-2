@@ -1,0 +1,104 @@
+WITNO04600219
+WITNO04600219
+
+Witness Statement
+CJ Act 1967, s.9: MC Act 1980, ss.5A(3)(a) and 5B: MC Rules 1981,r.70)
+Statement of: Jan Holmes
+Age ifunder 18:_Over 18 _ (if over 18 insert ‘Over 18’)
+
+Occupation: Audit Manager
+
+This statement (consisting of 3 pages, each signed by me) is true to the best of my knowledge and belief and I
+make it knowing that, if it is tendered in evidence, I shall be liable to prosecution if I have wilfully stated in it
+anything I know to be false or do not believe to be true.
+
+Datedthe 10th dayof April 2003
+
+Signature:
+
+T have been employed by Fujitsu Services, for 6 years and 7 months as Audit Manager for Post
+Office Account. I have working knowledge of the computer system known as Horizon, which is a
+computerised accounting system used by Post Office Ltd and I am authorised by Fujitsu Services
+
+to obtain information regarding system transaction information processed on the Horizon system.
+
+I have been asked to explain the audit archive system used by Horizon and the process for
+deleting data from the system. I have also been asked to refer to specific requests for archived
+
+data relating to a number of Post Office outlets.
+
+When audit data is written to the archive it has a deletion date associated with it. This deletion
+date is derived from a data retention period specified in the contract with Post Office Ltd. Similar
+types of data files are collected into ‘Savesets’ prior to being written to tape, ‘Saveset’ being the
+term used by the Legato archiving software to describe this collection. Each ‘Saveset’ has a
+deletion date associated with it equal to the last data file to be collected in it. ‘Savesets’ are
+written to the Digital Linear Tape (DLT) until such time as the tape is full, at which point a new
+tape is loaded. Legato maintains a database of data files, ‘Savesets’ and DLT numbers such that it
+
+is able to track a single data file to the DLT to which it has been written.
+
+Once a Saveset’s specified deletion date has been reached it is marked by Legato as ‘Recyclable’.
+At this point the data files in the Saveset are inaccessible. Once all Savesets on a DLT have been
+marked as ‘Recyclable’ the DLT is itself marked by Legato as available for re-use. All elements
+
+of this process are automated.
+
+Signature Signature witnessed b:
+
+WITNO04600219
+WITNO04600219
+
+Continuation sheet No.__of__.
+
+Continuation of Statement of:__Jan Holmes
+
+Under Fujitsu Services’ contract with Post Office Ltd, data can be retained beyond the deletion
+
+date if Fujitsu Services are requested to secure it before the deletion date occurs.
+
+As a result of the contractual retention period and no request having been received to retain this
+data beyond its normal deletion date, I can confirm that Fujitsu Services no longer has archived
+media stored or held at our facility relating to the following Post Office outlets and specific dates.
+Consequently Fujitsu Services is no longer able to provide transaction data in respect of these
+
+offices for the time period specified as this data is more than 18 months old.
+
+Broad Park Road Post Office, Coventry (165 205) relating to transactions on 6" March 2001
+Smith Street Post Office, Warwick (464 246) relating to transactions on 21‘ May 2001
+Smith Street Post Office, Warwick (464 246) relating to transactions on 31‘ May 2001.
+Longford Post Office, Coventry (210 205) relating to transactions on 13" June 2001
+Longford Post Office, Coventry (210 205) relating to transactions on 14" June 2001
+Longford Post Office, Coventry (210 205) relating to transactions on 20" June 2001
+Longford Post Office, Coventry (210 205) relating to transactions on 26" June 2001
+Longford Post Office, Coventry (210 205) relating to transactions on 3" July 2001
+Humber Road Post Office, Coventry (197 205) relating to transactions on 17" July 2001
+Longford Post Office, Coventry (210 205) relating to transactions on 31“ July 2001
+
+I have also been asked to explain the availability of historical data held by Fujitsu Services in
+relation to Horizon User information for various offices in the Coventry area between the period
+of 2000 to 2002 as listed above.
+
+The User information requested (User Id) is associated with individual transactions and cannot be
+provided for the reasons explained earlier in this statement. However, information is available
+that shows when a User is first enabled to access Horizon, via an authorised Login, to when that
+Login is disabled. This information identifies a period of time during which an authorised Login
+
+could have accessed Horizon were the Login exercised. What this information will not provide
+
+Signature.......... ... Signature witnessed by.........
+
+WITNO04600219
+WITNO04600219
+
+Continuation sheet No.__of__.
+
+Continuation of Statement of:__Jan Holmes
+
+are the specific dates that the authorised Login was in use. In addition, this information will not
+specifically identify an individual, merely the User Id code assigned to an individual, nor will it
+confirm that when the Login was being exercised it was being exercised by the individual to
+
+whom the User Id was originally allocated.
+
+Signature.......... ... Signature witnessed by.........
+

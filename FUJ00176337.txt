@@ -1,0 +1,179 @@
+FUJ00176337
+FUJ00176337
+
+Peak Incident Management System
+
+Call Reference PC0290357 Call Logger Tfran Khan -- Default team
+Release Reported In -- HNG-X Rel. Ind. Top Ref WI2214R
+Call Type Live Incidents Priority B -- Business restricted
+Contact Tfran Khan Call Status Closed -- Advice and guidance given
+Target Date 13/09/2020 Effort (Man Days) 0
+Summary ARQ - HSS354/POIA5807B and POIAS884W FAD:159026
+All References Type Value
+
+Call reference PC0197553
+
+SSCKEL KEL gbar355K
+
+SSCKEL KEL gbar355K
+
+Work Instruction WI2214R
+Progress Narrative
+
+ate:10-Sep-2020 15:21:03 User:ifran Khan
+
+CALL PC0290357 opened
+
+Details entered are:~
+
+lsummary:ARQ - HSS354/POIA5807B and POIA5884W FAD:159026
+call Type:
+
+call Priority:B
+
+lfarget Release: HNG-X Rel. Ind.
+
+kouted to:Security Ops - Ifran Khan
+
+[Date:10-Sep-2020 15:21:03 Usor:ifran Khan
+[Start of Response]
+could you please check the attached ARQ as their are two Gaps.
+
+n the advice of Gerald Barnes this ARQ was run on both Arc's. Both “Filtering Failed".
+Screenshots and Query Handler log are attached.
+
+[End of Response]
+Response code to call Live Incidents/Defects(L) as Incident Under Investigation (40)
+
+joate:10-Sep-2020 15:22:21 User:ifran Khan
+evidence Added - Query ia
+
+lbate:10-Sep-2020 15:22:57 User:Ifran Khan
+evidence Added Filtering Failed
+
+JDate:10-Sep-2020 15:23:05 User:ifran Khan
+Jnvidence Added - Screenst
+
+[Dat¢:10-Sep-2020 15:24:03 Uscr:ifran Khan
+Defect cause updated to 40: General — User
+
+[Date:10-Sep-2020 15:25:34 User:ifran Khan
+the Call record has been transferred to the team: Audit-Dev
+[fhe Call record has been assigned to the Team Member: Gerald Barnes
+
+Date:10-Sep-2020 16:20:33 User:Gerald Barnes
+
+[Start of Response]
+
+[there have been other reports of gaps at about this time because of a fault in the HNGx counter software - see for example
+Pc0198009 and PC0196949. So most likely this is a problem now fixed in the HNGx counter software.
+
+[End of Response]
+
+response code to call type L as Category 40
+tours spent since call received: 1 hours
+
+Pending
+
+Incident Under Investigation
+
+Oate:16-Sep-2020 13:20:37 User:Gerald Barnes
+
+[Start of Response]
+
+It checked all the retrieved BRDB AUD files manually and found indeed that the gaps were genuine and that the transaction either
+side of the gap was there. So the Query Manager service was working perfectly.
+
+I attach the complete list of all the BRDB AUD files retrieved.
+
+It notice that AUDIT20100330117001 is missing, Files AUDIT20100329117001 and AUDIT20100331117001 are there and indeed the
+transactions just before the gap are in the first and just after are in the second.
+
+FUJ00176337
+FUJ00176337
+
+It looks to me that AUDIT20100330117001 was never produced. I checked the audit logs for 10 days after the relevant date and
+there was no mention of this file but there was the other two.
+
+[End of Response]
+
+Ikesponse code to call type L as Category 40 -- Pending -- Incident Under Investigation
+
+Hours spent since call received: 5 hours
+
+jbate:16-Sep-2020 13:21:14 Uscr:Gerald Barnes
+Evidence Added - List of all the
+
+the query.
+
+Dat
+Reference Added: Call reference PCI
+
+6-Sep-2020 16:46:58 Uscr:Gerald Barnes
+
+Jbate:16-Sep-2020 16:50:08 Uscr:Gerald Barnes
+[Start of Response]
+
+You can see from PC0197553 that there was a problem with the gathering of AUDIT 20100330 117 001.aud.gz.
+{End of Response]
+
+Response code to call type L as Category 40 -- Pending =- Incident Under Investigation
+
+[Date 18-Sep-2020 10:34:40 Use
+[Start of Response]
+
+fhe missing tracks for the 30th March 2010 (30/03/2010) were added to the system some time in April 2010. When the query was
+repeated with a range from 1st March 2010 to 30th April 2010 no gaps were reported.
+
+[End of Response]
+
+Response code to call type L as Category 38 -- Pending -- Potential Problem Identified
+
+fours spent since call received: 1 hours
+
+Gerald Barnes
+
+Date:18-Sep-2020 10:40:49 User:Gerald Barnes
+[Start of Response]
+
+I have created KEL gbar355K for this problem.
+
+[End of Response]
+
+esponse code to call type L as Category 94 -- Final -- Advice and guidance given
+Routing to Call Logger following Final Progress update.
+
+8-Sep-2020 10:53:39 Uscr:Mike Croshaw
+r359K authorised
+
+gh:
+
+Date:21-Sep-2020 09:47:53 User:ifran Khan
+{Start of Response]
+
+las per the above advice has worked and data is now available for the date range. I will be closing this peak.
+{End of Response]
+
+Response code to call type L as Category 94 -- Final -- Advice and guidance given
+
+touting to Call Logger following Final Progress update.
+
+Date:21-Sep-2020 09:48:47 User:ifran Khan
+[Start of Response]
+IAs per the above advice has worked and data is now available for the date range. I will be closing this peak.
+
+[End of Response]
+lkesponse code to call type L as Category 94 -- Final -- Advice and guidance given
+Routing to Call Logger following Final Progress update.
+
+jbate:21-Sep-2020 09:48:59 User:Ifran Khan
+CALL PC0290357 closed: Category 94 Type L
+
+Root Cause General - User
+
+Logger Tfran Khan -- Default team
+
+Subject Product General/Other/Misc -- ACE (version unspecified)
+Assignee Ifran Khan -- Default team
+
+Last Progress 21-Sep-2020 09:48 -- Ifran Khan

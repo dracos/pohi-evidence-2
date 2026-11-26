@@ -1,0 +1,177 @@
+POL00447749
+POL00447749
+
+@
+
+PEAK and KEL Process Document
+
+Authors/Contributors: Monika Chmiel, Nina Trueman, (Paul I Smith - original process
+
+map)
+Version: 1.0
+Date 12 June 2020
+
+2 Summary
+In 2019 the process implemented by Post Office and Fujitsu to address issues
+with Horizon was mapped. This supporting document sets out each step for
+ease of review, and the process map has been updated to include step numbers
+for cross-referencing. A PDF version and an editable Visio version are also
+embedded for ease of reference.
+
+Please note the Branch Resilience Manager referred to is a new role in
+recruitment. The process is being managed temporarily until the new post is
+filled, with an anticipated start date in early August.
+
+2 Process
+
+Ref Process Referto Notes Current Document
+No Owner
+PDF Version Branch Resilience Branch by
+Manager role sits in Resilience KELs Process Map
+Operations within the Manager updated lunar)
+Branch Operations
+Engagement Team
+(BOET)
+Visio Version Editable in Visio Branch iv}
+Resilience peaBand fe.
+Manager process Swimlanes..
+1.0 Branch report an issue with Horizon that BSC is Branch Support BSC
+could be a bug Centre formerly known
+as NBSC
+11 Is there an existing case for this issue? Y-1.2 BSC
+N-1.3
+1.2 Update added to existing case held on BSC
+operations team
+1.3 Case raised on Dynamics and assigned BSC
+to Operations Team
+1.4 Branch informed to raise the case with BSC
+IT service Desk, and that a case has
+been raised to monitor and manage the
+issue
+2.0 Case received from Branch Support Branch
+indicating a potential Horizon Bug Resilience
+Manager
+2.1 Existing KEL? Y-2.2 KEL is Known Error Log Branch
+N-2.4 Resilience
+Manager
+2.2 (Yes) BSC Informed of existing KEL and Branch
+request that branch contacted to confirm Resilience
+Manager
+2.3 Case updated to add further branch if Branch
+necessary Resilience
+Manager
+CONFIDENTIAL 1 June 2020 V1.0
+
+POL-BSFF-105-0000002
+POL00447749
+
+POL00447749
+PEAK and KEL Process Document
+Ref Process Refer to Notes Current Document
+No Owner
+2.4 (No)Issue raised with IT Retail to Branch
+escalate investigation/resolution and Resilience
+request details on potential impact Manager
+across network
+2.5 Request for further details on ALL KELS TT Retail/
+and escalate with Fujitsu Branch
+Resilience
+Manager
+2.6 Request received and details provided to Fujitsu
+TT Retail
+az Details received and passed to Branch TT Retail/
+Resilience Manager Branch
+Resilience
+Manager
+2.8 Case updated with network list and Branch
+details of issue Resilience
+Manager
+2.9 BSC informed of new KEL case Branch
+Resilience
+Manager
+2.10 Draft Comms put together detailing the Branch
+incident/symptoms and what to do if Resilience
+found in branch - Passed to BOET and Manager
+Comms to review with network list
+2.11 Inform relevant internal parties of the Virtual team set up to Branch =
+issue/update (piggyback virtual team) respond quickly with Resilience [w
+comms about branch Manager 20200103 Branch
+impacting issues (This Incident Manageme
+is not the Business
+Continuity Process -
+BCP)
+2.12 Is the issue resolved Y¥ - 2.13 Branch
+N- 2.41 Resilience
+Manager
+2.13 (Yes) Dynamics case closed and all Branch
+parties informed Resilience
+Manager
+2.16 Branch impacting Horizon issue draft BOET/
+comms received for review Comms
+2.17 I Make changes as necessary and feed BOET/
+back to Branch Resilience Manager Comms
+2.18 Agree changes and if appropriate Branch
+request it is sent to the network of Resilience
+affected branches. Manager
+2.19 Send Message BOET/
+Comms
+3.0 IT Retail informs Branch Resilience 4.0 Start of IT process from _ IT Retail/
+Manager of the KEL 4.0 start of Fujitsu Branch
+process Resilience
+Manager
+CONFIDENTIAL 2 June 2020 V1.0
+
+POL-BSFF-105-0000002_0001
+POL00447749
+
+POL00447749
+PEAK and KEL Process Document
+Ref Process Refer to Notes Current Document
+No Owner
+3.1 IT Retail informs Ops Transformation BA Redundant - Ops
+of the KEL Transformation closed
+3.2 Case logged on Dynamics of the branch Branch
+impacting KEL/BUG Resilience
+Manager
+3.3 IT Retail engaged to fully understand 2.5 Branch
+impact and Network List of potential Resilience
+affected branches Manager
+4.0 Fujitsu detect branch impacting KEL and 3.0 Fujitsu
+Inform Post Office
+4.1 Operational activity to investigate and Fujitsu
+resolve the KEL if identified as fix
+required
+4.2 Are incidents P1 or P2? Fujitsu
+4.3 Provide Monthly update on progress and Fujitsu
+status of KELs
+4.4 Provide daily/weekly update on progress Fujitsu
+and status of KELs
+4.5 Update Branch Resilience Manager on TT Retail/
+progress of ALL KELs Branch
+Resilience
+Manager
+4.6 Update received and case updated Branch
+Resilience
+Manager
+4.7 Is further comms required to network? Y-48 Branch
+N- 2.12 Resilience
+Manager
+4.8 (Yes) Comms drafted and added to case Branch
+Resilience
+Manager
+
+cS Glossary
+
+BOET Branch Operations Engagement Team (formerly Network Gateway)
+
+BSC Branch Support Centre (formerly NBSC)
+
+KEL Known Error Log (Horizon)
+
+PEAK Product Enhancement ... (Horizon) - Problem Record
+
+CONFIDENTIAL
+
+June 2020 V1.0
+
+POL-BSFF-105-0000002_0002

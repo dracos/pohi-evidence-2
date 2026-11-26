@@ -1,0 +1,461 @@
+WITN10500112
+
+WITN10500112
+
+Counsel's Comments on Report Plan
+
+I make two general points before addressing specific comments:
+
+1. The litigator's concern to cover all the bases for their client may not align perfectly with the
+
+expert's concern to investigate and report in a balanced manner in the timescale. This is not
+a problem, provided we are aware of how it affects us, early.
+2. Launching a rocket to the moon, you use small thruster rockets to make mid-course
+
+corrections, and later do more corrections when you get into the moon's gravity. Coyne's
+report is the moon. These are the mid-course corrections.
+
+Comment
+
+Response
+
+1. We like the first part of Robert's overview section and we particularly like his,
+positioning of robustness as the critical issue.
+
+However, we all need to be clear that for the client, the key objective is to satisfy
+the court that, when faced with any discrepancy in any branch's accounts, the
+chances are very small indeed that this deficiency is caused by Horizon, still less
+by any of the specific matters identified by Coyne.
+
+That the Horizon system is well designed / built is highly relevant to and helpful
+on that key question, but it is not the key question. We want to win even if (as
+seems to be suggested in some of the reports and other documents referred in
+the outline claim document) parts of Horizon were not perfectly designed / built
+for some or all of the time.
+
+The client's key objective may not be fully met, and you need to understand the
+reason.
+
+You may recall that the claimants suffered shortfalls at an average rate of £360
+per month. But about 1/5 of them had shortfalls less than £50 per month,
+averaged over their tenure.
+
+I.am finding it hard to show that if a branch has small shortfalls, of say £25 per
+month, some part of them - say £10 per month - is not caused by undetected
+mini-bugs in Horizon, which cause mini-shortfalls which no SPM ever complains
+about, and which never get investigated.
+
+So, my statement under issue 1 of the JS (written by a lawyer and accepted by
+me) needs to be qualified with some phrase like ‘not pennies, or just a few
+pounds' of the kind nearly all SPMs would accept as 'in the noise’. The statement
+was a preliminary view, which gives me room for movement.
+
+Data on non-claimant branches (Credence) would be a real help here - but, even
+then, I may not be able to eliminate the unknown mini-bugs.
+
+You may need to ensure that, for the next trial after the Horizon trial, the
+claimants do not pick a set of low-shortfall lead claimants, to score this point.
+‘The sample of lead claimants needs to be unbiased - to have typical average
+monthly shortfalls.
+
+2. When we say “caused by Horizon”, we mean caused by a bug or caused by any
+of the other issues raised by the common issues and/or by the outline claim
+document and/or by Coyne’s report. At the risk of stating the obvious, Robert
+needs to ensure that he does not focus exclusively on bugs.
+
+We note that the outline claim document also makes complaints about “error
+repellency” and about the ability of Horizon to alert SPMRs to bugs (Issue 2); the
+adequacy of controls (Issue 4 and Issue 6); and the general process of
+reconciliation (Issue 5). Does Robert need an additional section or sections
+somewhere addressing the other issues?
+
+‘There are sections in the report to address each Horizon issue, covering all these
+other points, and I plan to address them all. We have been told not to focus on
+the common issues.
+
+Error repellency, issue 4 and issue 6 are all aspects of robustness, and I intend to
+make those links. In my current draft, issues 4 and 6 are addressed only very
+briefly after issue 3 (which includes them}, but they will doubtless expand - if
+only in response to Coyne’s report.
+
+3. In this context, it is worth adding that Robert should not simply focus on the
+specific criticisms which Coyne makes.
+
+We know that there are likely to be strong responses to them, but we also know
+that Coyne’s approach is to throw as much mud in the hope that some sticks so
+he is likely to shift ground onto the more amorphous criticisms if he feels he
+needs to.
+
+The point is that the consideration of robustness and countermeasures needs to
+cover all this as well.
+
+I think you are asking me here to address Coyne's ‘amorphous criticisms’.
+
+So far, he has taken a point approach, of dragging out specific smoking guns, as
+he sees them.
+
+In our meetings I have got little sense of any more amorphous criticisms. I may
+only know about these when I see his report. The impact of countermeasures on
+amorphous points will be addressed.
+
+WITN10500112
+
+WITN10500112
+
+4. While on the subject of robustness and countermeasures (and thus the
+chances of Horizon causing discrepancies in branch accounts}, to what extent
+will Robert be addressing the business processes surrounding the operation of
+the Horizon system, in addition to the countermeasures that are built into
+Horizon itself?
+
+If those processes are operated properly, branches should (for example) do cash
+balances on a daily basis. If these are done, it seems to us that the chances of an
+error going undetected and becoming impossible to resolve, reduce toa
+vanishingly small probability
+
+‘The Horizon issues should not be approached as if the system is entirely
+automatic i.e. not affected by human interaction. An essential part of the
+system is how itis used by its users. To take an extreme example, if a user
+(negligently or fraudulently) persistently enters £20 as having been deposited
+when £200 was in fact deposited, and then fails to carry out any checks or
+worse, puts misleading entries in, there is little Horizon can do about it.
+
+All this is obvious but we wonder if there is scope for Robert to address the
+proper use and human operation of Horizon i.e. that part of the robustness of
+the system comes with users following proper procedures on a regular basis.
+
+This certainly would not be a principal line of attack, not least because we
+suspect that a significant number of postmasters may have recorded false
+balances in Horizon in order to conceal shortfalls. But we would like the judge
+to get a feel for the point and would be interested to know Robert's views on
+whether and how it can properly and usefully be included in his analysis of
+robustness etc.
+
+I think that by business processes, you are referring to both the processes in the
+branch, and PO back office processes.
+
+Ihave no intention of approaching Horizon as if it was entirely automatic, or as if
+its robustness countermeasures were all fully automatic. You will already see in
+the JS a reference to automated robustness versus manual robustness (now
+countermeasures). Processes will be discussed in many places.
+
+BTW many of these are processes around POLSAP - and Credence, which you
+might also want out of scope. They, and the processes around them, add to the
+robustness of Horizon. They crop up ina lot of KELs.
+
+So, under issue 3, and in the chapters brought forward from the Foundation
+report, there is a lot about manual countermeasures ~ e.g. redundant copies of
+data, humans eyeballing data in lots of different ways, bug investigation
+processes.
+
+lam not sure about ‘part of the robustness of the system comes with users
+following proper procedures on a regular basis' which might get us into a
+semantic trap. Robustness is all about continuing to operate correctly even
+when users do not entirely follow proper procedures. If we say robustness
+depends entirely on users following proper procedures, that is no longer
+robustness. If some users screw up sometimes, they or other users may repair it
+later; or Horizon may handle it automatically.
+
+We need to tackle this one with care, but I certainly have it in mind. It will evolve
+with drafts and in response to Coyne.
+
+5. As regards the second part of his overview section:
+
+a. Yes, robustness and countermeasures should be placed up front, but as
+indicated in para 1 above, this is a stepping stone to the key question,
+which should be clearly identified.
+
+I can identify the question but see my comments above about what I can deliver
+in the answer.
+
+b. Asto the proper scope of the robustness question and what should be Scope includes robustness through processes.
+treated as countermeasures, see para 4 above
+. Are Robert's views on the high level of robustness consistent with all the I The KELs are a gold mine of information about robustness working well in
+KELs referred to in paras 1.4, 1.4 and 4.1-4.3 of the outline claim document I Horizon. Iam glad I have sampled 80 of them looking for impact on branch
+and the contemporaneous reports referred to in para 3.2(f) of that accounts; I am now sampling the same set, and other important KELs, to show
+document? He needs to deal thoroughly with points such as this—as we are I NOW countermeasures worked
+sure he is aware. ‘One problem that I face is that I promised to be balanced, and I am finding it
+hard to do that given the weakness of the Claimants’ case. If I can find a few KELs
+for which to say: robustness worked, but it might have worked better - then that,
+will add balance.
+4. Second and third bullet points ~in the joint statement, Robert and Coyne I Yes, thisis a small change of structure, but no big volte face and I explain itin
+
+both classed issues 1, 3, 4 and 6 together, but Worden now puts issue 1
+after issues 3, 4 and 6. We are not sure that matters very much and, in any
+event, we think his way of looking at issues 3, 4 and 6 means that he sees
+them as stepping stones and subsidiary to issue 1, which raises the key
+question identified in para 1 above. If that is right, we like it. However, he
+will need to explain why he has taken this slightly different structure
+
+the report.
+
+If we need to completely avoid surprises, I can notify Coyne openly, once I have
+finalised my structure (in case any other small changes seem appropriate as
+well).
+
+WITN10500112
+
+WITN10500112
+
+@. We do not like the way Robert approaches issue 1 - starting with the
+relevant KELs then going quantitative (see also para 8 of the summary
+section at the end of his essay plan).
+
+Where does he include his analysis on the key point that undetected bugs
+were very unlikely to be the cause of permanent shortfalls in a branch’s
+accounts (the point he repeatedly makes in the joint statement, in relation
+both to issue 1 and to issues 4 and 6)? This is much more important than
+and logically prior to the quantitative approach.
+
+It should accommodate his analysis of the relevant KELs (or at least the KELs
+referred to in para 1.3 of the outline claim document), including his analysis
+of how long it took to identify them etc. Hopefully, those KELs could be
+used as strong support for his conclusion, depending on things such as (1)
+how long it took to detect those KELs, (2) which features of those KELs
+resulted in their arising and not being detected until they were in fact
+detected, and (3) whether there are reasons for thinking it very unlikely
+that other bugs with similar features would have arisen. See further para 7
+below.
+
+The key point - undetected bugs - is hard. As described above under point (1), I
+may not be able to deliver all the client wants. This, too, may enhance my
+balance.
+
+I tackle undetected bugs by:
+‘© Analysis of claimant data - that gives the 8% figure, but does not help you
+for the very low loss claimants
+‘* Analysis of competent postmasters - still waiting for data to start this
+(Credence data I hope)
+© Anew analysis, presented graphically, that you won't like at first (what
+lawyer likes a picture?) but is powerful. I hope we can agree how to present
+it.
+
+See above - my view in the first sentence of issue 1 of the JS needs a little
+qualification for mini-bugs, which there is room for. Under issues 4 and 6, I say
+‘very unlikely’; but, again, I may need to exclude mini-bugs with impact of
+pennies or a few pounds - which might have happened, for all I know.
+
+This may not get you all of what you want. On undetected bugs, I am still
+thinking (as on other topics!)
+
+Your last points (1) - (3) are in my thoughts but are work in progress.
+
+Ordering of points on issue 1 is up for grabs. I had intended to put the strong
+points first.
+
+£ Asto the quantitative upper limits approaches Robert refers to:
+
+i. We welcome the fact that he recognises the desirability of treating
+them as backups (in case he is wrong on the key question).
+
+ii, Wealso welcome that he recognises the need to explain the
+approaches and their logic in simple language in the body of the report,
+leaving any fancy calculations to an appendix.
+
+We are unclear about which approaches he will be adopting and the
+order in which he will be presenting them. Can he clarify on a single piece
+of paper?
+
+The current table of contents reflects my current approach, but is subject to
+change. Its really quite fluid depending on your feedback later.
+
+iv. Willhe be doing different calculations for different periods, before
+and after significant changes in Horizon ~ e.g. pre and post 2010? Does the
+logic of his approach suggest that he ought to do a separate calculation for
+each update/iteration of Horizon? Ifso, is this a problem for his approach?
+
+Tam looking at time dependence and will say what I can about it. There is a
+tradeoff - the finer the time slice, the less evidence there is. So the margin of
+error goes up.
+
+Italso depends on what Coyne says about it.
+
+WITN10500112
+
+WITN10500112
+
+v. Four big questions occur to us, some or all of which may be stupid:
+
+(1) _ First, is it possible for him to do a calculation of the chances of a bug
+affecting a branch's accounts, before he calculates the maximum likely
+impact of such a bug on a branch's accounts? If this is possible, we see
+this as extremely desirable.
+
+(2) Second, is there any possible tension between his conclusion that the
+chances of that happening are very low and his calculation of the
+maximum likely impact when it does happen?
+
+(3) Third, I have looked at Gareth Jenkins’ note on the payments
+mismatch bug dated 29/09/10 and I see that para 6 says that it had so far
+been identified that the bug had caused one discrepancy of £30k, one of
+£4,800 and others of less than £350. Does this pattern of losses call any
+
+/e methodologies into question? If not, why not?
+
+or all of his quanti
+
+(4) Fourth, as we discussed at our con in August, we wonder whether
+there is a point worth making in this context about the (im}probability of
+the patterns of losses alleged by the Claimants ~ which we think may be
+no or small losses for month after month, then much bigger losses in a
+few months (we may be wrong, of course). Might this be undermined or
+called into question by the Jenkins note and/or by the fact that Claimants
+may have accumulated small losses over a long period and concealed
+them by false accounting until it was no longer possible to do so? We
+‘would be interested to know what Robert thinks about this.
+
+Not stupid at all.
+
+(1) For Horizon issue 1, I have two measures (a) number of occurrences
+of a bug, and (2b) net financial impact. Both can be presented on a per-
+branch basis.
+
+(2) Mynew analysis is systematic about numbers of occurrences and
+financial impact of each occurrence. I don't see tension, but clarity is
+continuing to emerge.
+
+(3) Inall my analyses, individual occurrences of a bug can have a range
+of variation in financial impact. Mean financial impact is one way to
+encompass this - or if the sign can change, RMS (root mean square) impact.
+lam thinking in this way for all my analyses, at the risk of baffling the court.
+
+(4) Lagree that claimants may well have been hiding their heads in the
+sand for many months on end. I have done two analyses of claimant losses -
+one of them time-independent, and the other time-dependent. Only the
+latter is affected by delay reporting loss. I am thinking what to say about it -
+but it has no effect on the main time-independent conclusion,
+
+By talking about reporting delays, we get near to accusing those claimants of
+false accounting - which I am wary of doing. Maybe you can.
+
+8. Fifth bullet point — do we have the chapters he refers to, or the most up to
+date version of those chapters?
+
+You don't have a draft - we could send one any time. Obviously, itis in flux and
+we'd like to agree progress points for you to read rather than snapshots. I'd
+rather not get into a review cycle this early unless you have major comments.
+
+6. The first part of this section makes points that seem sensible. However, we
+have two queries:
+
+a. Isita problem that some contemporaneous reports appear to suggest that
+there were some serious deficiencies in Horizon (see para 3.2(f) of the
+outline claim document)?
+
+s
+
+Robert will ideally be addressing the position when Horizon was first rolled
+out —will he be able to do so? More generally, will he be able to deal
+adequately with the position pre-Horizon online in 2010?
+
+a, Ihave addressed 3.2(f) in the current draft. The documents cited are hardly
+about Horizon at all - very weak points.
+
+b. Time dependence is a big issue for us, not just the Horizon to HNG change.
+We will be trying to give the picture of the major changes. There is no
+shortage of written evidence about pre-2010. Horizon was designed and
+built to high standards from the start; it has also been well maintained and
+continually enhanced over the years (not just for 2010). Horizon has been
+robust throughout.
+
+When I plot claimants’ shortfalls against time, there is for instance no big
+peak in the early days of Horizon, or on the change to HNG. So, there is no
+evidence for bugs causing shortfalls just after releases.
+
+I'd like to histogram KELs v time to see if there was any peak in bugs early
+or just after 2010 - to make a general point that bugs do not imply
+shortfalls. But it adds to the workload, and may need to be deferred,
+
+7. As regards the second part of this section (the table):
+
+WITN10500112
+
+WITN10500112
+
+a. Do these points allow an assessment to be made of the (very low) likelihood
+of undetected bugs being the cause of permanent shortfalls in a branch’s
+accounts? If so, how? Which of the countermeasures had that effect? Did
+any other features that are not countermeasures also contribute to that
+effect (e.g. reconciliation, facilities for subpostmasters, facilities to Post
+Office etc)? If so, where are they taken into account?
+
+See above - undetected bugs can only really be those that cause shortfalls less
+than £300 per occurrence (all others get reported and investigated and fixed),
+but bugs with small financial impact which are undetected (because they are not
+noticed) are a bit of a problem. Overall, they would have to occur with huge
+frequency to affect the claimants’ overall shortfall - but for individual low-
+shortfall claimants, they are still a problem.
+
+b. Areall of the points made in the table (e.g. good support processes):
+i. safe to say?
+
+ji, true for the whole of the period 2000 to 2018?
+
+ili, consistent with the existence/duration/history of (1) the three bugs
+referred to in para 1.3 of the outline claim document (we would love to
+know how quickly they were identified) and (2) the other bugs referred to
+elsewhere in the outline claim document?
+
+iv. consistent with the para 3.2(f) reports referred to above?
+
+i.safe to say - yes. The table describes common practice. I have to assess how
+well Horizon does for each one.
+
+i true always - I need to assess (balance). Broadly I think it was,
+
+ii consistent with the 3 bugs - yes. 3 bugs with impact on branch
+accounts in 18 years is good going. As to your other questions - we don't yet
+have evidence to address Calendar Square. The suspense account bug lasted 2
+years which was exceptional, because it only occurred once a year to
+branches where it occurred - and PO did not tell FJ about it, first time round.
+So, measured in recurrences, it was not bad.
+
+iv, yes- they are hardly relevant.
+
+. Re- item 12 in the table, will this item include the business processes
+discussed in para 4 above? If not, where will those processes be covered?
+
+12 and 13 cover processes
+
+On any view, some careful reasoning/deft footwork will be needed to deal with
+these points
+
+Tam sure you will be checking my footwork all the way.
+
+8. We are not sure how and where issue 2 (alerting subpostmasters to bugs etc),
+or issues 7, 10, 11, 12 and 13 (remote access), or issue 15 will be addressed?
+
+There are sections of the report for all issues. We could send a table of contents
+togive you a flavour.
+
+9. Para 4— is there sufficient available material to allow Horizon pre 2010 to be
+addressed adequately? And what about the possibility that Horizon was terrible
+when first rolled out? Also, should all Robert's calculations (of the low
+probability of Horizon causing losses, of the likely maximum amount of such
+losses etc) be different for the period up to 2010 and the period after it? See
+para 3.e.iv above.
+
+See above. There is no shortage of written evidence pre-2010, including
+documents, KELs and Peaks. What is short is people who remember it - but we
+can't talk to them in any case.
+
+Horizon was not terrible when first rolled out, at least as measured by claimants!
+shortfalls.
+
+1am addressing time dependence when I have evidence to do it. Time
+dependence of claimants’ shortfalls shows nothing in particular.
+
+10. Para 8 ~see our points above. The most important point is that we would
+like a calculation/assessment of the probability of an undetected bug (and other
+Horizon issues such as error repellency?) causing losses in branch accounts,
+before any calculation/assessment of the maximum likely losses caused thereby.
+
+See above for what I can and cannot do.
+
+Error repellency is a part of robustness, not a cause of losses. Horizon was OK.
+
+11. Para 9 ~ does issue 10 go with issue 5?
+
+No. 5 and 15 are a group. This was just a typo in the report plan, which says that
+section 9 covers Expert Issues 5 and 10 (rather than 5 and 15).
+

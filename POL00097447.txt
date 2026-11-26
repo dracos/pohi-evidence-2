@@ -1,0 +1,406 @@
+POL00097447
+POL00097447
+
+Message
+
+From: Elaine Spencer! _ GRO __
+on behalf of
+Sent:
+
+To: Dave Pardoe
+Subject: FW: transaction log
+
+Dave
+Please see email below. No intervention from you is required (well I least I don’t believe so)
+
+Just wanted you to have visibility of this issue to avoid any awkward corridor conversations that you might be exposed
+to.
+
+Cheers E
+
+Elaine Spencer I Security Programme Manager
+Grapevine Analysis & Support Team
+
+@ Future Walk, Chesterfield. $49 IPF
+
+From: Angela Van-Den-Bogerd
+Sent: 30 January 2013 20:08
+
+To: Helen Rose; Gareth.Jenking_
+Cc: Elaine Spencer
+
+Subject: RE: transaction log
+
+Gareth,
+
+Thanks for looking at this but this doesn’t give me a complete explanation. What we don’t have visibility of is the session
+in between the transaction and the reversal 537804 -- can we see what went through the system against this number? Also
+isn’t there a log somewhere of what did actually fail - so ifa break in Comms link isn’t this recorded somewhere?
+
+The Spmr is convinced that there is a problem with Horizon as he completed the transaction at the time and other than the
+system not printing a receipt for the customer he believed all was well with the transaction until several weeks later he
+learnt the customer’s phone had been cut off for non-payment. The Spmr did not show a corresponding surplus on the day
+of the reversal which he should have as he had taken the money but the bill wasn’t subsequently processed. We need to be
+able to explain exactly what’s happened here and at the moment I’m unable te do this. Can you help me with this
+explanation? If not could you suggest someone who can.
+
+Thanks for your help.
+
+Angela
+
+POL-0097030
+POL00097447
+POL00097447
+
+Angela Van Den Bogerd I Head of Partnerships
+
+@ L V 9H
+©
+
+© Post Office stories
+
+©
+
+Confidential Information:
+
+This email message is for the sole use of the intended recipient(s) and may contain confidential and privileged information. Any
+unauthorised review, use, disclosure or distribution is prohibited. If you are not the intended recipient please contact me by reply
+email and destroy all copies of the original message.
+
+From: Helen Rose
+
+Sent: 30 January 2013 16:55
+To: Angela Van-Den-Bogerd
+Cc: Elaine Spencer
+
+Subject: FW: transaction log
+
+Angela
+For info
+
+Helen Rose - Grapevine Analysis & Support team - Security Team,
+
+ccurity Team, 3rd Floor, Clippers Quays, Salford, Manchester, MS¢ 3NW
+
+From: Jenkins Gareth G
+Sent: 30 January 2013 16:27
+To: Helen Rose
+
+Subject: RE: transaction log
+
+Helen,
+
+Attached are the transactions and events for 4** October 2012 from 09:30 to 09:40 GMT (ie 10:30 to 10:40 BST).
+
+POL-0097030
+POL00097447
+POL00097447
+
+This shows that Session 537803 was successfully saved to the BRDB, but when the user JAROO1 Logged On again
+Recovery reversed the session in session 537805.
+
+It isn’t clear what failed, but if it was a comms error, then the system would have printed a disconnected session receipt
+and the Clerk should have given the customer £80 and told him his Bill was unpaid. The fact that there is no indication
+of such a receipt in the events table suggests the counter may have been rebooted and so perhaps may have crashed in
+which case the clerk may not have been told exactly what to do.
+
+The reversal was due to recovery (Counter Mode Id = 118} so this was not an explicit reversal by the clerk.
+
+This scenario is fairly rare so it is certainly quite easy for the clerk to have made a mistake and either he or the customer
+could be in pocket / out of pocket (depending on exactly what happened).
+
+The systern is behaving as it should.
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+
+Distinguished Engineer
+Business Applications Architect
+Post Office Account
+
+FURTSY
+ovelace Road, Bi
+
+Fujitsu is proud to partner with , the housing and homeless charity
+
+Reshaping ICT, Reshaping Business in partnership with FT.com
+
+ws Please consider the environment - do you really need to print this emit?
+
+From: Helen Rose
+Sent: 30 January 2013 15:49
+To: Jenkins Gareth GI
+
+Subject: RE: transaction log
+
+British
+
+Lloyds
+TSB
+i Py) Cash >
+191320 04/10/2012 10:33:01 JAROO1 537803 0 I 5055 __withdrwl _ 4462720000003046 1 80.00
+
+191320 04/10/2012 10:33:33 JAROO1 537803 0 Cash : 1, 391
+British
+
+POL-0097030
+POL00097447
+POL00097447
+
+thanks
+
+Helen Rose - Grapevine Analysis & Support team - Security Team
+
+@ Post Office Ltd, Security Team, 3rd Floor, Clippers Quays, Salford, Manchester, M50 3NW
+©
+e® www. grapevine.co.nk
+
+From: Jenkins Gareth GI {,
+Sent: 30 January 2013 15:37
+To: Helen Rose
+
+Subject: RE: transaction log
+
+Helen,
+
+Can you give me a more precise Date and Time (say with 10 mins) for the problem? I can look at data up to 6 months.
+old and October 2012 is within that 6 month window. {I don’t want to try and trawl through a month’s worth of data!)
+Regards
+
+Gareth
+
+Gareth Jenkins
+
+Distinguished Engineer
+Business Applications Architect
+Post Office Account
+
+Fujitsu is proud to partner with Shelter, the housing and homeless charity
+
+Reshaping ICT, Reshaping Business in partnership with FT.com
+
+wa Please con:
+
+Fint this emait?
+
+really ni
+
+the environment - do yi
+
+From Helen Rose
+Sent: 30 January 2013 13:35
+
+POL-0097030
+POL00097447
+POL00097447
+
+To: Jenkins Gareth GI
+Subject: RE: transaction log
+
+Thanks Gareth, that sounds great.
+
+From the credence data it just looks like an AP transaction and 5 minutes later a reversal, however the banking withdrawal
+went through for £80 and was debited from the customers account. PMR did a banking withdrawal rather than payment
+by debit card. From the data I can see, I would have just said that this was a reversal at the counter,
+
+He denies transacting the reversal and has involved a forensic accountant to prove horizon fault.
+
+{ would have expected the office to be £76 up due to the reversal but it wasn’t. (Customer was give the change for £3.61
+for the difference from the withdrawal and the BT bill)
+
+Helen Rose - Grapevine Analysis & Support team - Security Team
+
+e Post Office Lid, Security ‘Team, 3rd Floor, Clippers Quays, Salford, Manchester, M50 3NW
+
+www.grapevine.co.uk
+
+From: Jenkins Gareth GI!
+Sent: 30 January 2013 13:27
+To: Helen Rose
+
+Subject: RE: transaction log
+
+Helen,
+
+i've tracked it down and it has been received here but not processed. I’ve asked if the raw lag can be returned as well as
+the normal stuff so that I can confirm exactly what happened.
+
+if you can show what you need from the normal extract then fine. If not I can probably help you find the info in the raw
+log.
+
+Regards
+
+Gareth
+
+Gareth Jenkins
+Distinguished Engineer
+Business Applications Architect
+Post Office Account
+
+ATSU
+ace Road, Bracknell, Berkshire, RG1Z 8SN.
+
+POL-0097030
+POL00097447
+POL00097447
+
+ing
+
+Fujitsu is proud to partner with Shelter, the housing and homeless charity
+
+Reshaping ICT, Reshaping Business in partnership with ET.com
+
+need to prirt ¢
+
+i Please consider the envi
+
+From: Helen Rose
+Sent: 30 January 2013 13:22
+To: Jenkins Gareth GI
+
+Subject: FW: transaction log
+
+Gareth
+This is the ARQ request I logged last week.
+
+Helen Rose - Grapevine Analysis & Support team - Security Team
+
+} Post Office Lid, Security Team, 3rd Floor, Clippers Quays, Salford, Manchester, MQ 3NW
+
+®
+\ee
+
+WWW. grapevine.co.uk
+
+Sent: 25 January 2013 14:44
+
+To: Post Office Security
+
+Cc: Andrew Winn; Angela Van-Den-Bogerd; Elaine Spencer:
+Subject: transaction log
+
+Hi
+
+Could I please order the fujitsu wansaction log for Lepton 191320 for 4" October 2012 to 25" October 2012. (please let
+me know if these dates fall outside one disc)
+
+Could we please request that all session numbers are included not just sales and transactions - including any reason for
+those not showing in sales, i.e. background comments, error messages, receipt printed or receipt not printed ete
+
+POL-0097030
+POL00097447
+POL00097447
+
+POS, could you please let me know roughly the timescales on ordering these (as you know it’s a long time since I needed
+one).
+
+Many thanks
+
+Helen Rose - Grapevine Analysis & Support team - Security Team
+
+& Post Office Ltd, Security Team, 3rd Floor, Clippers Quays, Salford, Manchester, M3Q 3NW
+
+&
+@
+
+@
+
+Www. grapevine.co.uk
+
+JSS SO IOI ISO III IOI OKO II IIASA O ISI DIDI OID ADI A
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient,
+you must not use, disclose, reproduce, copy or distribute the contents of this communication. If you have received this in
+error, please contact the sender by reply email and then delete this email from your system. Any views or opinions
+expressed within this email are solely those of the sender, unless otherwise specifically stated.
+
+POST OFFICE LIMITED is registered in England and Wales no 2154540. Registered Office: 148 OLD STREET,
+LONDON EC1V 9HQ.
+
+Unless otherwise stated, this email has been sent from Fujitsu Services Limited, from Fujitsu (FTS) Limited, or
+from Fujitsu Telecommunications Europe Limited, together "Fujitsu".
+
+This email is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may
+be privileged. Fujitsu does not guarantee that this email has not been intercepted and amended or that it is virus-
+free.
+
+Fujitsu Services Limited, registered in England No 96056, registered office 22 Baker Street, London W1U
+3BW.
+
+Fujitsu (FTS) Limited, registered in England No 03808613, registered office 22 Baker Street, London W1U
+3BW.
+
+PFU Imaging Solutions Europe Limited, registered in England No 1578652, registered office Hayes Park
+Central, Hayes End Road, Hayes, Middlesex, UB4 8FE.
+
+Fujitsu Telecommunications Europe Limited, registered in England No 2548187, registered office Solihull
+Parkway, Birmingham Business Park, Birmingham, B37 7YU.
+
+POL-0097030
+POL00097447
+POL00097447
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient,
+you must not use, disclose, reproduce, copy or distribute the contents of this communication. If you have received this in
+error, please contact the sender by reply email and then delete this email from your system. Any views or opinions
+expressed within this email are solely those of the sender, unless otherwise specifically stated.
+
+POST OFFICE LIMITED is registered in England and Wales no 2154540. Registered Office: 148 OLD STREET,
+LONDON EC1V 9HQ.
+
+Unless otherwise stated, this email has been sent from Fujitsu Services Limited, from Fujitsu (FTS) Limited, or
+from Fujitsu Telecommunications Europe Limited, together "Fujitsu".
+
+This email is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may
+be privileged. Fujitsu does not guarantee that this email has not been intercepted and amended or that it is virus-
+free.
+
+Fujitsu Services Limited, registered in England No 96056, registered office 22 Baker Street, London W1U.
+3BW.
+
+Fujitsu (FTS) Limited, registered in England No 03808613, registered office 22 Baker Street, London W1U
+3BW.
+
+PFU Imaging Solutions Europe Limited, registered in England No 1578652, registered office Hayes Park
+Central, Hayes End Road, Hayes, Middlesex, UB4 8FE.
+
+Fujitsu Telecommunications Europe Limited, registered in England No 2548187, registered office Solihull
+Parkway, Birmingham Business Park, Birmingham, B37 7YU.
+
+ota iobiiodinbiioiibiontdiidiininoidntiodinbieiniiioniniioioii indie initiate
+
+This email and any attachments are confidential and intended for the addressee only. If you are not the named recipient,
+you must not use, disclose, reproduce, copy or distribute the contents of this communication. If you have received this in
+error, please contact the sender by reply email and then delete this email from your system. Any views or opinions
+expressed within this email are solely those of the sender, unless otherwise specifically stated.
+
+POST OFFICE LIMITED is registered in England and Wales no 2154540. Registered Office: 148 OLD STREET,
+LONDON EC1V SHQ.
+
+Unless otherwise stated, this email has been sent from Fujitsu Services Limited, from Fujitsu (FTS) Limited, or
+from Fujitsu Telecommunications Europe Limited, together "Fujitsu".
+
+This email is only for the use of its intended recipient. Its contents are subject to a duty of confidence and may
+be privileged. Fujitsu does not guarantee that this email has not been intercepted and amended or that it is virus-
+free.
+
+Fujitsu Services Limited, registered in England No 96056, registered office 22 Baker Street, London W1U
+3BW.
+
+Fujitsu (FTS) Limited, registered in England No 03808613, registered office 22 Baker Street, London W1U.
+3BW.
+
+POL-0097030
+POL00097447
+POL00097447
+
+PFU Imaging Solutions Europe Limited, registered in England No 1578652, registered office Hayes Park
+Central, Hayes End Road, Hayes, Middlesex, UB4 8FE.
+
+Fujitsu Telecommunications Europe Limited, registered in England No 2548187, registered office Solihull
+Parkway, Birmingham Business Park, Birmingham, B37 7YU.
+
+POL-0097030

@@ -1,0 +1,2241 @@
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+
+re)
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+
+CONFIDENCE)
+
+Document Title:
+
+Document Reference:
+
+Document Type:
+
+Release:
+
+Abstract:
+
+Document Status:
+
+Author & Dept:
+
+Internal Distribution:
+
+External Distribution:
+
+Approval Authorities:
+
+HNG-X Security Business Continuity Plan
+
+SVM/SDM/PLA/0031
+
+CONTINGENCY PLAN
+
+As applicable
+
+This Security business continuity plan has been produced to meet
+the requirements of ISO 27001 and should be used in conjunction
+with the HNG-X Services, Support Services and Engineering
+Services business continuity plans.
+
+This document details the planned actions which can be taken to
+minimise the risk of one or more components of the HNG-X
+Service or Support Services not being available due to security
+violations.
+
+DRAF
+
+Changdev Pawashe POA Business Continuity Manager
+
+Rebecca Barker, Business Continuity Manager, Post Office
+Limited. APPROVED Versions only
+
+Name Role Date
+Alex Kemp Post Office Account Senior
+
+Operations Manager
+Keith Smith Post Office Account Chief
+
+Information Security Officer
+
+Note. See Post Office Account HNG-X Reviewers/Approvers Role Matrix (PGM/DCM/ON/0001) for
+
+guidance.
+
+©Copyright Fujitsu Services Ltd 2014
+
+Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date 22-SE e008
+(COMMERCIAL IN CONFIDENCE) 9 PaeNo tof tort
+WITN11070110
+
+WITN11070110
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+0 Document Control
+
+0.1 Table of Contents
+
+0 DOCUMENT CONTROL. 2
+0.1 Table of Contents.
+
+0.2 Document History. 4
+0.3 Review Details.. 4
+0.4 Associated Documents (Internal & External). 5
+0.5 Abbreviations. 6
+0.6 Glossary...
+
+0.7 Changes Expecte:
+
+0.8 Accuracy........
+
+1 INTRODUCTION .......ccssssssessessssesstsesstsesstsnssnsseressesesaeeassncassntencerensareessceaseeesenseseesees 8
+
+2 SCOPE.
+
+3 OWNERSHIP AND OPERATION.
+
+SERVICE FUNCTIONALITY.........csccsssssssssssesssssecscssessssssseeeseenecsesererececessssenenecasenes 9
+41 Services Overview........... on)
+5 SECURITY SERVICE.........ccscsssssssesesessssesesessssssessssssseeseeeasecseseesenensenecensaeeeeeasacaenee 1
+6 TESTING STRATEGY.....cccscsssssesscsssssssesssnssssssssssesenseesseersnensseenecsesseneneesasaneenseasos 11
+
+6.1 Initial Testing............
+6.2 Ongoing Test Strategy.
+
+7 PREVENTATIVE MEASUREG..........scscscsssssessssessesesereesensssetenensatecesseseseensecassneeee 12
+
+7.1. Network Security Controls......
+7.2 Infrastructure Security Controls.
+7.3. Application Security Controls.....
+
+8 PREPAREDNESS MEASUREG..........scsssssssesssssssssssseseseeesesesensensessnecesesessseeseeenee 21
+
+8.1 Testing. seeeeeeeees
+8.2 Service Management & Delivery.
+8.3 Risk Analysis...........:0000«
+
+9 CONTINGENCY MEASUREG.........ccccesssssssssssesessescsssestsessesensseeeeeseseasasacseeensee 21
+
+9.1 Recognition... eee
+9.1.1 System Management Recognition.
+9.1.2 Security Violation Recognition.
+9.2 Activation..........sen
+
+©copyright Fuyjtsu Services Ltd 2014 Ref. SVM/SDMIPLA/0031
+
+Version: 200.1
+FUJITSU RESTRICTED Date: 22-GBiReRO04
+
+(COMMERCIAL IN CONFIDENCE) 9 PaeNo 2 off 41
+WITN11070110
+
+WITN11070110
+foe) HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+9.3 Incident Management.
+9.4 Initiation of Recovery
+
+ju
+
+10 RECOVERY OF NORMAL SERVICE....
+
+10.1 Recovery Time Objectives and Recovery Point Objectives............
+
+11 IMPACT & RISK ASSESSMENT.........
+11.1 Risks Identified Against the Horizon Service:
+
+11.2 Risks......
+12 PLAN ACTIVATION........cscssssssesssesersessssesnensssscsssssesnensseaeseestscassearacestesueseesseseeenees 37
+13.0 CONTACT LIST......cccsesessssssssesesessscnssssssnsnserssessssesesesscasseentseasarenscesssseneessenenerees 38
+
+13.1 Normal Processes...
+13.2 Escalation Processe:
+
+©copyright Fuyjtsu Services Ltd 2014 Ref. SVM/SDMIPLAO031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SBReROOA
+
+(COMMERCIAL IN CONFIDENCE) PaeNo Soff 41
+WITN11070110
+WITN11070110
+
+foe) HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+0.2 Document History
+
+Version Summary of Changes and Reason for Issue Associated Change -
+
+No. CP/PEAK/PPRR
+Reference
+
+0.1 15/07/2008 First draft for HNG-X None
+
+1.0 12/08/09 Incorporated section 10.1 for RTO and RPO None
+
+requirements.
+
+1.1 24/04/09 To reflect organisational changes None
+Minor update to Figure One.
+
+Incorporated new internet access preventative
+measures N20, N21 and 131
+
+1.2 12/05/09 Added Jim Sweeting, Vince Cochrane and Adam_ I None
+Parker to the Reviewer lists.
+
+1.3 14/07/2014 Updated document to send for review to None
+Reviewers.
+
+Included- MAC team details, Edited contact
+details of ‘Normal Processes & Escalation
+
+Process.
+
+1.4 22/09/2014 Updated reviewer comments. Issuing for an None
+approval
+
+2.0 23-Sep-2014 Approval version
+
+0.3 Review Details
+
+Review Comments by
+
+Review Comments to Changdev Pawashe &
+
+PostOfficeAccountDocumentManagement{ ~~
+
+Mandatory Review
+
+Role Name
+
+Infrastructure Operations Manager Andy Hemingway
+Post Office Account, Senior Operations Alex Kemp
+
+Manager
+
+HNG-X System Owner (DR and Continuity) Ed Ashford
+
+Post Office Account Chief Information Keith Smith
+
+Security Officer
+
+Post Office Account Security Operations Kumudu Amaratunga
+Manager
+
+Post Office Account Security Architect Dave Haywood
+
+Optional Review
+Role Name
+
+Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date 22-SE e004
+(COMMERCIAL IN CONFIDENCE) 9 PaeNo 4 0f40f 41
+
+©Copyright Fujitsu Services Ltd 2014
+WITN11070110
+
+WITN11070110
+co HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+Network Delivery Manager Roger Stearn
+Post Office AccountService Delivery Manager I Sandie Bothick
+MAC Team
+Post Office Account Service Technical Fiona Lennox
+Manager Unix Team
+Post Office Account Service Problem Steve Bansal; Tony Wicks
+Management
+HNG-X System Owner Paul Stewart
+Fujitsu Services Core Services System Andrew Gibson
+Owner and Operations Manager
+Principal Customer Solution Architect Jason Clark
+Systems Management & Global Cloud Catherine Obeng
+SMC Team Manager Jacob Cherian
+Quality and Compliance Manager Bill Membery
+Application SDM and Risk Manager Yannis Symvoulidis
+for Information — Please restrict this
+ion list to a minimum
+Position/Role Name
+(*) = Reviewers that returned comments
+0.4 Associated Documents (Internal & External)
+Reference Version Date Title Source
+PGM/DCM/TEM/0001 2.0 16-Apr-07 POA HNG-X Generic Master Dimensions
+(DO NOT REMOVE) Document Template
+SVM/SDM/SIP/0001 HNG-X Business Continuity Dimensions
+Framework
+SVM/SDM/PLA/0001 HNG-X Support Services Business Dimensions
+Continuity Plan
+SVM/SDM/PLA/0002 HNG-X Services Business Continuity I Dimensions
+Plan
+SVM/SDM/PLA/0030 HNG-X Engineering Business Dimensions
+Continuity Plan
+SVM/SDM/PLA/0003 HNG-X Business Continuity Test Dimensions
+Plan
+SVM/SDM/PRO/0028 Fujitsu Services Post Office Account I Dimensions
+HNG-X Business Continuity
+Management Process
+SVM/SDM/PRO/0001 POA (POA) Customer Service Major I Dimensions
+Incident Process
+SVM/SEC/PLA/0009 PCI Incident Management Plan Dimensions
+©Copyright Fujitsu Services Ltd 2014 Ref. SVM/SDM/PLA/0031
+Version: 200.4
+Date: 22-SBifte2OOF
+FUJITSU RESTRICTED Page No Soaerd
+
+(COMMERCIAL IN CONFIDENCE)
+WITN11070110
+
+WITN11070110
+co HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+CS/MAN/012 Post Office Account Crisis Pvcs
+Management Quick Reference Guide
+SU/MAN/018 Operations Procedures Manual Index I PVCS
+
+Unless a specific version is referred to above, reference should be made to the current
+
+approved versions of the documents.
+
+0.5 Abbreviations
+
+Abbreviation Di ion
+ACL Access Control List
+AV Anti-virus
+BIOS Basic Input/Output System
+BCM Business Continuity Manager
+BRAO1 Bracknell01
+CA Computer Associates
+CHAP Challenge-Handshake Authentication Protocol
+CMT Crisis Management Team (POA)
+Des Debit Card System
+DMZ De-Militarised Zone
+DSA Digital Signature Algorithm
+DVLA Department of Vehicle Licensing Authority — Post Office MOT Enquiry
+FTP File Transfer Protocol
+HSD Horizon Service Desk
+HSM Hardware Security Module
+HTTP. Hypertext Transfer Protocol
+IDS Intruder Detection System
+IMT Incident Management Team
+IPSEC IP Security
+Iso International Standards Organization
+LAN Local Area Network
+MAC. Major Account Controllers.
+MBCI Major Business Continuity Incident
+NDC National Distribution Centre
+NEU National Exchange Unit
+OOH Out Of Hours
+Os Operating System
+OTl Open Transport Interface
+PAN Primary Account Number
+©Copyright Fujitsu Services Ltd 2014 Ref. SVM/SDM/PLA/0031
+Version: 200.4
+FUJITSU RESTRICTED Date: 22-SBReROOA
+
+(COMMERCIAL IN CONFIDENCE) 9 PaeNo 8 of oF 41
+WITN11070110
+WITN11070110
+
+co HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+PCI Payment Card Industry
+PIN Personal Identification Number
+POL Post Office Limited
+POA Post Office Account
+RPO Recovery Point Objectives
+RSA A public-key-encryption technology developed by RSA Data Security, Inc.
+The acronym stands for Rivest, Shamir, and Adelman, the inventors of the
+technique.
+RTO Recovery Time Objectives
+SDM Service Delivery Manager
+SMC System Management Centre
+SSC Support Service Centre (Third Line Support)
+TIS Triole for Service
+VLAN Virtual Local Area Network
+VPN Virtual Private Network
+WAN Wide Area Network
+0.6 Glossary
+
+0.7 Changes Expected
+
+Changes
+As an operational document, it is expected this will also be amended for numerous reasons including:
+
+1, new risks are identified;
+2, improved or new contingency actions are identified;
+3, In 7.2 Section: Infrastructure Security Control: In Item 126, Risk need to be addressed & will
+
+need to be updated in the document.
+
+0.8 Accuracy
+
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but,
+whilst every effort is made to ensure the accuracy of such information, it accepts no liability for any
+loss (however caused) sustained as a result of any error or omission in the same.
+
+©copyright Fuyjtsu Services Ltd 2014 Ref. SVM/SDMIPLAO031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SBReROOA
+
+(COMMERCIAL IN CONFIDENCE) 9 PaeNo 7 of or 41
+WITN11070110
+WITN11070110
+
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+1. Introduction
+
+This Security business continuity plan has been produced to meet the requirements of ISO
+27001 and should be used in conjunction with the HNG-X Services, Support Services and
+Engineering Services business continuity plans.
+
+This document details the planned actions which can be taken to minimise the risk of one or
+more components of the HNG-X Service or Support Services not being available due to
+security violations.
+
+Section 11, the Business Impact and Risk assessment lists the perceived potential security
+violations and defines the action to be taken in the event the risk occurs. In many cases this
+calls for the Security Operations Manager to make an initial assessment of the situation and
+report the findings to the POA Crisis Management Controller. For some perceived risks the
+Crisis Management Team should already be informed of the potential incident. CS/MAN/012
+defines the members of the Crisis Management Team and their support teams. As the
+specific action to be taken for each of these risk can be so varied, i.e., ranging from, software
+virus infections, threatened terrorist attacks to an actual terrorist attack, the follow-up actions
+are not defined here but are to be managed through exception management depending upon
+the situation, but in accordance with Fujitsu Services Group/Corporate policies and processes
+defined on Café Vik.
+
+Note: HNG-X operational business continuity, operational security and penetration testing,
+are to be conducted.
+
+2 Scope
+
+The scope of this Security business continuity plan is to define the measures taken to prevent
+security violations in the HNG-X solution and to define the actions to be taken if security
+violations are identified.
+
+This plan does not detail the functionality of the Key Management Service or other security
+function as this are detailed in SVM/SDM/PLA/0001.
+
+©copyright Fuyjtsu Services Ltd 2014 Ref. SVM/SDMIPLAO031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SBReROOA
+
+(COMMERCIAL IN CONFIDENCE) 9 PaeNo 8 of oF 41
+WITN11070110
+WITN11070110
+
+co HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+3 Ownership and Operation
+The POA Business Continuity Manager, who is also responsible for its maintenance and
+operational verification, owns this plan. Contact details are shown below.
+Name Position Office Contact No. Out of hours No.
+
+Changdev Pawashe Fujitsu Services, Post Office
+Post Office Account
+
+Account, Business Continuity
+Manager.
+
+Kumudu Amaratunga Fujitsu Services, Post Office
+
+Account, Security Operations
+Manager.
+
+A copy of this plan Business Continuity plan is available on the Dimensions server for
+reference.
+
+Service Functionality
+
+Services Overview
+
+SVM/SDM/PLA/0002 the HNG-X Services business continuity plan and SVM/SDM/PLA/0001
+the Support Services business continuity plan provide full details on the HNG-X Service and
+the HNG-X Support Services. The operation of the security service is documented within the
+Support Services business continuity plan SVM/SDM/PLA/0001.
+
+This Security business continuity plan has been produced to meet the requirements of ISO
+27001 and should be used in conjunction with the HNG-X Services, Support Services and
+Engineering Services business continuity plans.
+
+This document details the planned actions which can be taken to minimise the risk of one or
+more components of the HNG- Service or Support Services not being available due to
+security violations.
+
+This document specifically covers the preventative measures that have been taken to
+minimise the risk of security violations, see section 7 and the business impact analysis table
+in section 11 defines the actions to be taken in the event a security incident is escalated to
+the POA Duty Managers.
+
+Figure one provides an overview of all the HNG-X Services for which POA has partial or full
+responsibility. The diagram also provides details of the support applications and services
+covered within the HNG-X Support Services Business Continuity Plan SVM/SDM/PLA/0001.
+
+©copyright Fuyjtsu Services Ltd 2014 Ref. SVM/SDMIPLAO031
+
+Version: 2.00.1
+FUJITSU RESTRICTED Date: Ze senot
+(COMMERCIAL IN CONFIDENCE) 9 "2° N° °
+
+WITN11070110
+
+WITN11070110
+ee) HNG-X Security Business Continuity Plan ®
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+HNG-x Services Overview
+
+Data-
+
+@ HNG-x Applicable Services. @ HNGx additional HNG-x additional
+Figure1 Operational sub- ‘Supporting sub-
+services. services.
+
+©Copyright Fujitsu Services Ltd 2014 Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-GBAeRO0F
+
+(COMMERCIAL IN CONFIDENCE) 9 P29°No 10 1G 0f 41
+WITN11070110
+WITN11070110
+
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+5 Security Service
+
+The POA Security Service can be considered to cover a number of functions:
+
+1; Data-centre security, e.g., physical and personnel - See SVM/SDM/PLA/0002
+
+2; HNG-x infrastructure security — individual services - See SVM/SDM/PLA/0002
+
+3; the operation of the HNG-X Key Management Service - See SVM/SDM/PLA/0001
+
+This business continuity plan specifically details the planned actions which can be taken to
+minimise the risk of one or more components of the HNG-X Service or Support Services not
+being available due to a security violation.
+
+6 Testing Strategy
+6.1 Initial Testing
+
+The testing of the security service is documented in SVM/SDM/PLA/0013 and some
+testing is contained within the HNG-X data-centre fail-over test script in
+SVM/SDM/PLA/0005. The testing of security services documented in
+SVM/SDM/PLA0013 & SVM/SDM/PLA/0005 has been tested in 2013.
+
+6.2 Ongoing Test Strategy
+
+This refers to how the contingency measures in place for the Security Service will be
+periodically tested to ensure they are current and reflect the service model for those
+services as they mature.
+
+This is provided by an ongoing series of business continuity tests at a predetermined
+frequency for the duration.
+
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SB ROO
+
+(COMMERCIAL IN CONFIDENCE) P22°No 1 of #0F 41
+WITN11070110
+
+WITN11070110
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+7 Preventative Measures
+
+The following sections define the measures that have been taken to minimise the potential risk of
+security violations.
+
+7.1 Network Security Controls
+
+Risk(s) Addressed Implemented Preventative Measures
+
+N1 Attempted unauthorised access from a Client DMZ Firewalls
+
+client connections (banks, DVLA, HSBC . .
+Merchant Services (HMS), e-pay) es) for HSBC Merchant Services (HMS)
+
+N2 Attempted unauthorised access from the Data centre DMZ Firewalls
+
+internet A DNZZ is provisioned that provides network
+
+separation, data isolation and content inspection of
+traffic going to and from the Internet. This is
+achieved through a combination of tight firewall
+controls and proxy services for interactive access
+and for content inspection.
+
+The proxy service is a Secure Computing
+Webwasher appliance configured to inspect http,
+https and ftp traffic, depending on the requirements
+of the service.
+
+This service will initially only be used to support
+outbound HTTPS connections for the Moneygram
+Test Web Service and for the Kahala/Telecoms
+Broadband Service.
+
+All services requiring access to or from the Internet
+will use this service.
+
+Third party penetration testing
+
+N3 General attempted unauthorised access Network Segmentation.
+
+Within each Data Centre, the HNG-X network is
+segmented in accordance with a Security Domain
+model. This ensures that the flow of data around
+the network is controlled using the principle of
+Least Privilege Access Control.
+
+The network segmentation is achieved using a
+combination of physical and virtual controls.
+Dependent on the Security Domain and any
+specific contractual agreements with third parties,
+the network segmentation is enforced using VLANs,
+Stateful Inspection Firewalls, ACLs and physical
+separation.
+
+Each different network media type is authenticated
+using a dedicated RADIUS server for network
+
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+
+FUJITSU RESTRICTED Date: 2aseytano
+(COMMERCIAL IN CONFIDENCE) °° N° 9
+WITN11070110
+WITN11070110
+
+oe) HNG-X Security Business Continuity Plan
+
+FUJITSU
+
+FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+device access, with the Branch Router using
+different CHAP credentials per interface, and each
+human support user accessing a network device is
+authenticated using the Identity and Access
+Management Service.
+
+N4 Attempted unauthorised access from a
+wireless LAN
+
+No wireless LAN access (Wi-Fi) allowed in solution
+
+N5_ I Attempted unauthorised access from the
+Royal Mail intranet network.
+
+Post Office DMZ Firewalls
+
+N6 I Attempted unauthorised access from the
+branch network.
+
+VPN Security layer implemented.
+
+Active logging of Intrusion Detection
+
+Alerting and reporting mechanism configured.
+Update mechanism to be implemented.
+
+N7 Exposure to non-counter staff/kit. Limits
+number of end points that can attack the
+solution.
+
+Closed user Group on branch network
+Make properly closed for Dialled access.
+
+N8& Exposure to non-counter staff/kit. Network
+end point requires valid username and
+password to attach to network
+
+Strong CHAP Password for branch network
+authentication
+
+Ng I Attempted unauthorised access from
+branch network.
+
+The Branch Router to be configured with access
+lists to restrict traffic flows to the Data centre.
+
+Branch router configured with layer 2 MAC filters to
+limit which devices can connect and pass traffic to
+the Router.
+
+A high availability pair of Firewalls configured at
+each Data centre to manage traffic flows from the
+service provider network to HNG-X edge Routers.
+
+N10 I Unauthorised devices being plugged into HNG-X branch router to be configured with the
+branch LAN trying to gain access into the appropriate access lists to further restrict traffic flow
+HNG-X Data centre. from the branch to the Data Centre.
+
+N11 I Attempted unauthorised access from the At each Data Centre create a Support DMZ with
+Fujitsu support community. appropriate support DMZ Firewalls
+
+N12 I Confidentiality and integrity of data while Network encryption to banks and e-pay
+in transit.
+
+N13 I Confidentiality and integrity of data while Network encryption to support sites updated to use
+in transit. IPSEC
+
+N14 I Confidentiality and integrity of data while Network encryption to Royal Mail sites
+in transit.
+
+N15 I Confidentiality and integrity of bulk data MPPE (Microsoft Point to Point Encryption)
+while in transit to/from HSBC Merchant protection of files to/from streamline
+Services (HMS).
+
+N16 _I Access to management functions from Separate management LAN and ‘live’ traffic in data
+
+©Copyright Fujitsu Services Ltd 2014
+
+FUJITSU RESTRICTED
+(COMMERCIAL IN CONFIDENCE)
+
+Ref: © SVM/SDM/PLA/0031
+
+Version: 2.001
+Date: 22-GEReLOOA
+Page No: 13 of 2f 41
+
+WITN11070110
+WITN11070110
+
+oe) HNG-X Security Business Continuity Plan
+FU ITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+exposed networks. centre for server console and routers wherever
+possible.
+N17 I Detection of unauthorised access attacks Intrusion Detection implemented on the central
+that breach inner firewalls. Data-centre network
+N18 I Security breach of one network type could I Radius servers segregated by logical network type
+compromise other network types.
+N19 I Limit risk of unauthorised access. Uses Private IP addresses which are not exposed
+across the system boundary
+N20 I Limit risk of from unauthorised Internet The Internet access design provides for a single
+access. non-resilient Internet access in each of the IRE11
+and IRE19 data centres. Although non-resilient,
+redundancy of access between sites is provided
+and services can be manually restored between
+sites.
+There are two layers of firewall protection for
+Internet access. DMZ LANs are to be established
+on the inner firewall tier for the Internet Services
+Hub, Hosting DMZ and for the Webwasher/DXI
+proxy servers.
+N21 I Limit risk of from unauthorised Internet A DN is to be established on the outer firewall tier
+access from EMC via Remote Support. specifically for the EMC Remote Services Gateway
+(RSG). This will prevent EMC initiated connections
+through the inner tier firewall which will then only
+accept incoming traffic from the RSG platform.
+
+7.2. Infrastructure Security Controls
+
+Risk(s) Addressed
+
+Control Name
+
+Prevent alien code being loaded.
+
+No plug and play, floppy disk, CD etc in counter
+
+Intrusion by non-authorised staff
+
+Physical Controls on data centre access
+
+General Intrusion Prevention by non-
+authorised staff
+
+Platform foundation builds used for HNG-X have
+been hardened through the use of specialist scripts
+and build instructions. This hardening reduces the
+‘surface area’ for attack and thereby reduces the
+level of vulnerability of each individual system.
+
+This hardening removes unnecessary services and
+software as well as applying a base set of platform
+file permissions.
+
+Intrusion Prevention and Detection -
+vulnerability management
+
+The McAfee Foundstone vulnerability scanning
+appliance has been deployed into each Data
+Centre. This appliance is configured to scan all
+systems, (including network devices), on a regular
+basis.
+
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SB ROO
+UJTSU RESTRIC PageNo: 14 of 40°41
+
+(COMMERCIAL IN CONFIDENCE)
+
+eo
+FUJITSU
+
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+The scanner has been configured to run non-
+destructive scans, with appropriate credentials, on
+the scanned platform, to enable in-depth Operating
+System scanning.
+
+Reports are produced from the vulnerability
+scanning server as input to the audit process and
+for analysis by the CS Security Team.
+
+Intrusion Prevention and Detection
+
+Network-Based Intrusion Prevention is deployed in
+the HNG-x infrastructure at the interface between
+the Branch Network and the Data Centre network.
+This is to prevent malicious traffic from the Branch
+estate from entering the Data Centre and to provide
+notification of any occurrence to the Security Event
+and Information Management service.
+
+Network-based intrusion detection is also deployed
+throughout the HNG-X Data Centre infrastructure.
+This provides notification of an attempted
+compromise of systems within the Data Centre,
+through malicious activity or malicious code.
+
+In addition to raising alerts of malicious activity, the
+IDS sensors will send feed event logs into the
+secure event management service, to provide an
+audit trail and to enable additional event correlation
+with Firewall, Router and other network device logs.
+
+Exposure of system to non-authorised
+users
+
+Access controls for support/operational staff —
+Secure Access Servers, secure logon etc.
+
+Unauthorised access or programme drops
+from counters into the data centre
+
+Counter and Branch router locked down (no access
+by branch staff to underlying OS)
+
+Stop sensitive data being exposed
+
+Implement clear security policy and procedures,
+e.g., for support teams etc.
+
+Degauss disks /tapes before leaving the Data
+centre
+
+Unauthorised access or programme drops
+attempts on local LAN. Limit spread of
+machine to machine viruses
+
+Counter firewall
+
+110
+
+Risk of virus infection with Data-centres
+
+Anti Virus for all data centre platforms, i.e., Ensure
+the systems are hardened and patched
+appropriately.
+
+Configure AV on those systems that will support it
+or protect via an inline AV appliance.
+
+Current AV solution only been deployed to limited
+number of servers (Only PCI platforms ).
+
+4
+
+Reduce implications of Unauthorised
+access or programme drops attacks.
+
+Create secure build standard and secure builds for
+servers.
+
+©Copyright Fujitsu Services Ltd 2014
+
+Ref: © SVM/SDM/PLA/0031
+
+Version: 2.00.1
+Dati 22-SBpReRO0%
+FUJITSU RESTRICTED Page No beaters
+
+(COMMERCIAL IN CONFIDENCE)
+
+eo
+FUJITSU
+
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+CONFIDENCE)
+Tum off unused features. Remove
+unwanted/unused services.
+Ensure access controls correct, implement
+minimum setting permissions for users,
+applications and file system.
+2 Access to keys by non-authorised staff Physical Controls on access to key management
+functions and key handling
+113 I Access to full keys by Fujitsu staff Two-person controls on access to key material
+114 I Address vulnerabilities in OS to stop Patching of Data centre platform operating systems
+unauthorised access or programme A .
+dropsiviruses Physical Controls on access to support workstations
+In conjunction with the configuration management
+system, implement a system to receive notification
+of vulnerability alerts.
+Patch systems using change control
+Test patches for latest vulnerabilities in test
+environment.
+15 Prevent system being booted into a BIOS is locked down and only bootable from
+uncontrolled operating system primary storage on counter
+116 Fraud by Fujitsu staff Auditing of all support staff actions related to
+change of business data
+17 Limit any data from being retained in the I Clear page file on shut down at counter
+counter hard disk.
+118 Prevent unauthorised code from being Code signing
+installed
+119 Prevent unauthorised changing of ref data I Ref data signing
+120 Address vulnerabilities in operating Patching of counter OS
+system to stop unauthorised code and
+viruses
+121 Access by non-authorised staff to support I Physical Controls on access to support workstations
+functions
+122 Stop machine to machine viruses, limit Server firewalls
+access to servers from unexpected
+sources.
+123 Ensure if an application is bypassed in Counter Application are run in non-privileged user
+someway, the user hasn't got sufficient mode.
+privilege to perform unauthorised actions
+or changes to the machine.
+124 I Stop unauthorised counters being added I Counters have to be centrally configured before
+they can be used by the application
+125 Stop users spoofing a branch to access its I Counters are configured to only allow login to a
+accounts from remote location. given branch
+
+©Copyright Fujitsu Services Ltd 2014
+
+FUJITSU RESTRICTED
+(COMMERCIAL IN CONFIDENCE)
+
+Ref: © SVM/SDM/PLA/0031
+Version: 2.001
+
+Date: 22-GEReLO0A
+Page No: 16 of 6 Of 41
+
+eo
+FUJITSU
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+WITN11070110
+WITN11070110
+
+126 VPN upgraded to 128bit Key + POLO Process +
+Disk Encryption to protect keys in pagefile
+127 Information exposure. Loss of Encryption
+
+confidentiality or integrity.
+
+128 I Information exposure. Loss of integrity.
+
+strength.
+
+Update DSA public/private keys to RSA + increase
+
+129 General attempted unauthorised access
+from a client, PO, Branch or support
+connections
+
+further details.)
+
+Four separate DMZs have been implemented in the
+HNG-X Data Centre. (See SVM/SDM/PLA/0002 for
+
+130 I General attempted unauthorised access
+into HNG-X general servers
+
+A three tier security model with 11 separate
+security domains has been implemented for HNG-
+X. (See SVM/SDM/PLA/0002 for further details.)
+
+131 Malware delivered via the internet access
+or suspicious activities
+
+suspicious activity.
+
+that goes through the DXI.
+
+The Webwasher (DX!) appliance shall act as a
+proxy for HTTP, HTTPS, FTP, SMTP protocols and
+inspects these protocols for malware and
+
+The external (Internet facing) IP address is seen as
+the source IP address by the Internet for all traffic
+
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SB RRO
+
+(COMMERCIAL IN CONFIDENCE)
+
+Page No: 17 of bf 41
+WITN11070110
+
+WITN11070110
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+7.3 Application Security Controls
+
+# Risk(s) Addressed Control Name
+
+Al Application Vulnerabilities A vulnerability management service ensures
+security patches and updates are maintained at the
+appropriate level.
+
+The service provides secure platform builds that
+have been hardened to reduce the vulnerability of
+the standard platform.
+
+The service provides protection against malware in
+the form of Viruses, Trojans, and Worms etc. and
+detects and prevents malicious code and malicious
+activity on the network.
+
+This service supplies the assurance that possible
+platform and application vulnerabilities have been
+reduced to a minimum.
+
+The following facilities are supplied by the service;
+
+e Provides system hardening.
+
+e Provides vulnerability management.
+e Provides patch management.
+
+e Provides malware management.
+
+¢ Controls vulnerabilities within HNG-X.
+The vulnerability management service consists of a
+number of components that work together to
+identify and reduce vulnerabilities in HNG-X. This
+includes vulnerabilities caused by configuration
+errors as well as software bugs.
+
+A2 Application Vulnerabilities HNG-X uses the ESET anti-virus product. current
+AV protection is provided by ESET AV.
+
+Updates of virus signatures and of the anti-virus
+engine are obtained using the Patch Management
+Server. The signatures and updates are put through
+LST testing to ensure their integrity and are applied
+using the Tivoli software distribution system rather
+than the ESET management tools, thereby
+ensuring consistency of delivery to system-
+managed platforms.
+
+Only PCI platforms got AV running not all servers
+
+A3 I Application Vulnerabilities To reduce vulnerability to exploitation and to
+ensure that all systems within the HNG-X
+environment have the relevant and appropriate
+Microsoft Products, Solaris 10, Red Hat Linux 4.x
+
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SB RRO
+
+(COMMERCIAL IN CONFIDENCE) 9 Pa2°No 18 18 0f 41
+eo
+FUJITSU
+
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+and Oracle. patches applied within a reasonable
+timeframe, a patch management system has been
+implemented.
+
+This system provide mechanisms for;
+
+Gathering patches and updates to major operating
+systems and applications,
+
+Evaluating and filtering the patches and updates
+Testing the patches and updates
+Deploying the patches and updates.
+
+A patch management server is deployed within the
+HNG-X infrastructure, which obtains patches and
+updates from the relevant Vendors, using the
+Internet as a transport medium, and store them in
+an appropriate location.
+
+The CS Security Team is responsible, along with
+platform owners, for establishing the relevance and
+priority of each patch or update.
+
+The filtered patches are LST tested and are
+distributed to the target platforms using the Tivoli
+software distribution mechanism. Data integrity of
+each patch or update, (and of software distribution
+in general), is assured using a file hashing
+mechanism.
+
+(e.g. Track 2)
+
+A4 Prevent exposure of PAN PAN not printed in full on receipts
+AS Fraud — used for litigation support, FSA I Auditing of branch staff transactions and events
+requirement.
+AG Exposure of customer's Personal Hardware encryption of PIN at counter and data
+Identification Numbers (PIN). centre, using Pinpads and Atalla HSMs
+PINs are held encrypted except when within tamper-
+resistant physical devices
+AT Exposure of system to unauthorised Logon/Logoff of branch staff to application
+users
+A8& Authentication of transactions to/from Authentication of transactions to/from counter
+counter
+AQ Prevent wide scale exposure of Deleting Sensitive Authentication Data (see
+Sensitive Authentication Data definitions) from audit and diagnostic records
+before written
+A10 I Confidentiality of such data in transit Encryption of Sensitive data between counter and
+
+data centre.
+(VPN to make 128bit)
+
+©Copyright Fujitsu Services Ltd 2014
+
+Ref: © SVM/SDM/PLA/0031
+
+Version: 2.00.1
+Dati 22-SBpReROO%
+FUJITSU RESTRICTED Page No praia
+
+(COMMERCIAL IN CONFIDENCE)
+
+Fe)
+FUJITSU
+
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+A11_ I Minimise risk of malware. No email access for branch staff
+A12_ I Minimise risk of malware. No internet browsing capability for branch staff
+A13 I Exposure of system to non-authorised CA for certifying counter/app server keys
+users Update key length — move from DSA to RSA
+A14_ I Replay of banking transactions MAC of banking transactions
+Add MAC to deposit transactions
+A15_ I Proof of data in case of dispute or fraud I Auditing of data passed across interfaces to
+investigations. external systems (e.g. banks)
+A16 I Higher privilege functions not provided Users of Branch application are allocated role(s) to
+to low privilege users. determine the functions to which they have access.
+A17 I Allows staff to lock screen while away Branch Application provides facility to “lock screen”
+from the counter to stop unauthorised
+users from using the application.
+A18 I Allows staff to logout quickly if Branch Application provides facility for user to
+
+threatened
+
+quickly and simply logout in a clean manner.
+
+©Copyright Fujitsu Services Ltd 2014
+
+Ref: © SVM/SDM/PLA/0031
+
+Version: 2.00.1
+Dat 22-SB ROOT
+FUJITSU RESTRICTED Page Noo 30 oon
+
+(COMMERCIAL IN CONFIDENCE)
+
+WITN11070110
+
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+
+oO
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+
+CONFIDENCE)
+
+8.1
+
+8.2
+
+8.3
+
+Preparedness Measures
+
+Preparedness may be defined as, those measures taken to ensure the technical solution
+and business processes supporting that solution deliver the service that they are
+designed to deliver, in such a way as to meet and exceed the service level.
+
+Testing
+
+From a technical standing, functionality is proven by testing the solution at a unit, system
+and business integration level.
+
+This functional testing has been complemented by performance and security testing to
+ensure that the solution is both scalable and secure. HNG-X infrastructure has also been
+subjected to third party security penetration testing
+
+Additionally, the Security Service for HNG-X has been the subject of operational
+business continuity tests.
+
+Service Management & Delivery
+
+From a business perspective, this process starts by establishing very exacting and
+specific security requirements. The POA Customer Services Security Team is
+specifically responsible for the operational security relating to HNG-X infrastructure,
+network, applications and physical facilities.
+
+This business continuity plan instructs the POA Duty Managers of the process to be
+followed in the event a security violation is identified. This document is further supported
+by operational documentation for all aspects of the HNG-X service delivery.
+
+Risk Analysis
+
+The business impact analysis table in section 11 details the Risk Analysis undertaken at
+a Business Continuity level for HNG-X and it defines the actions to be taken in the event
+a security incident is escalated to the POA Duty Managers.
+
+This BIA table identifies potential risks to the service, the assessed probability of that risk
+occurring, the impact of that risk becoming a reality and the contingency activity or plans
+necessary to contain such an occurrence with minimum impact to HNG-X service
+overall.
+
+Contingency Measures
+
+Contingency measures are defined as the actions to be performed in the event of a
+service break, in this case a security violation, to manage the impact to the HNG-X
+service and the business operations.
+
+Contingency measures will include the recognition, activation, incident management and
+initiation of recovery procedures.
+
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SB ROOF
+
+(COMMERCIAL IN CONFIDENCE) 9 P22°No 21 oP 0f 41
+WITN11070110
+
+WITN11070110
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+9.1 Recognition
+
+9.1.1 System Management Recognition
+
+The HNG-X solution includes a Systems management capability to monitor and report on
+events that occur upon all the platforms involved in the service delivery and counters.
+
+The process of monitoring and managing the Network components and Routers is
+performed by a combination of the products HP OpenView and CISCO works.
+
+TWS (Tivoli Work Scheduler) provides scheduling facilities for the Host and Agent
+processes.
+
+Tivoli ITM is used to manage and monitor the Sun Solaris Servers, UNIX and Windows
+NT platforms directly to provide a comprehensive management view of the entire
+solution at any time. Tivoli ITM covers all of the functionality.
+
+9.1.2 Security Violation Recognition
+
+Within the overall HNG-X solution a number of different security monitoring and
+reporting facilities have been implemented. These include the following:
+
+Close Circuit TV and recording of Data-centres, operational Security facilities, and
+Fujitsu Services and suppliers buildings.
+
+Recognition and recording on door access systems.
+
+Infrastructure intruder detection software
+
+Anti-virus software
+
+Secure Access System audit logs
+
+Transaction audit logs and data.
+
+External sources, e.g., detection within Post Office Limited systems.
+
+9.2 Activation
+
+Once a security violation event has recognised, detected, or reported a TfS incident will
+be raised with the SMC/MAC (Major Account Controllers) teams. (For security reasons it
+is imperative that only the minimum information is provided and this is treated with
+
+discretion).
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SB ROOF
+
+(COMMERCIAL IN CONFIDENCE) 9 P22°No 22 oP of 41
+WITN11070110
+
+WITN11070110
+
+oe) HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+9.3 Incident Management
+
+9.4
+
+10
+
+Personnel at the MAC (Major Account Controllers) will carry this out. If the incident
+cannot be resolved by the MAC at the time of the call it will be routed to the appropriate
+support unit for resolution. At the same time if the incident meets the MAC escalation
+criteria, it will be escalated to the Fujitsu Services POA Duty Manager.
+
+If the criteria for Cross-Domain Business Continuity Management are satisfied the Duty
+Manager will escalate the problem to the POA Business Continuity Manager who will
+own the problem as a Business Continuity event.
+
+The POA Duty Managers and the POA Business Continuity Manager will inform the POA
+Security Operations Manager of all incidents reported to then as potential security
+violations or events.
+
+Note: Post Office Limited may also escalate Business Continuity events, including
+security related incidents, directly to the POA Duty Manager.
+
+Initiation of Recovery Procedures
+
+Where this is a POA only incident, this would usually be instigated by the support team
+charged with supporting the equipment upon which the failure has occurred, as soon as
+possible, and certainly with intent to resolve the incident within the relevant Service
+Level Agreement.
+
+Depending on the severity of the incident, there may be some dialogue between the Duty
+Manager and the support function to agree on the most appropriate course of action.
+
+Wherever there is a Cross Domain incident, the resolution would be instigated at the
+time when all parties affected had agreed the course of action:
+
+In the case of a Business Continuity incident, this would be after the Business Continuity
+Team had agreed a plan of action, see Section 11, Plan Activation.
+
+Recovery of Normal Service
+
+An Operations Procedures Manual containing the operational and recovery processes
+and procedures for all possible failures in the end to end HNG-X Service.
+
+Thus in its simplest form, normal service could be resumed by the Duty or Problem
+Manager liaising with the support team, agreeing when the recovery action should be
+Tun, and then carrying that activity out.
+
+Where the recovery action is dependent upon a third party the support dialogue would
+take place between the support teams, and the problem management dialogue would
+take place between the appropriate management.
+
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SB ROA
+
+(COMMERCIAL IN CONFIDENCE) 9 P28°No 28 04 0f 41
+WITN11070110
+
+WITN11070110
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+10.1 Recovery Time Objectives and Recovery Point
+Objectives
+
+As detailed in section 2 Scope, this plan does not detail the functionality of the Key Management
+Service or other security function as this is detailed in SVM/SDM/PLA/0001. The Recovery Time
+Objectives and Recovery Point Objectives for the Key Management Service are detailed within
+that plan. The Recovery Time Objectives and Recovery Point Objectives for the loss of the Data-
+centre or Data-centre fail-over, if required, due to a forensic investigation is detailed within
+SVM/SDM/PLA/0002.
+
+©Copyright Fujitsu Services Ltd 2014 Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SBteROOA
+
+(COMMERCIAL IN CONFIDENCE) Pao 4cn40ri
+WITN11070110
+
+WITN11070110
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+11 Impact & Risk Assessment
+
+11.1 Risks Identified Against the Horizon Services
+
+The matrix below details the identified risks and impacts of security violations to the
+HNG-X Service.
+
+As a matter of normal operational practice, an incident would be placed with the Service
+Desk if any of the identified risks materialised.
+
+The intention is that the list identified can act as a guide to personnel assessing and
+managing any incident affecting the Engineering service.
+
+The matrix contains a column identified as probability with a range of 0 to 4. These
+estimate the probable risk of the define security violation. It must be emphasised that
+these are not percentages and should be considered simple weighting factors.
+
+As a guideline the following occurrence ratings have been allocated:
+
+Rating
+
+0 Less than one violation is predicted per year
+
+4 One violation is predicted per year
+
+2 Two violations are predicted per year
+
+3 Approximately three violations are predicted per year
+4 Approximately four violations are predicted per year
+
+Ref: © SVM/SDM/PLA/0031
+Version: 2.001
+FUJITSU RESTRICTED Date 22-G2yRea00%
+(COMMERCIAL IN CONFIDENCE) 8X0 8 0R8 041
+
+©Copyright Fujitsu Services Ltd 2014
+Fe)
+FUJITSU
+
+CONFIDENCE)
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+11.2 Risks
+
+The risk assessment identifies the Critical Time Factors for activation of contingency measures for the potential security risks.
+
+No Area of Risk or
+Incident Type
+
+Probability
+
+Critical
+Time
+Factor
+
+WITN11070110
+WITN11070110
+
+Action
+
+1. Data-centre Security I The IRE11 or IRE19 computer 1 immediate No Impact Incident to be passed to
+room has been penetrated by Security Operations Manager.
+unauthorised access — no
+indications of tampering of
+systems.
+
+2. The IRE11 or IRE19 computer 0 immediate Incident to be passed to Treat as MBCI
+room has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate inform EMT Controller and
+evidence of physical tampering investigation of the Team 9
+of systems. infrastructure which has been
+
+tampered and report findings. CMT to use report to decide
+. " which subsystems, if any,
+Potentia a eea Impact should be shutdown.
+Retain all evidence
+
+3. The IRE11 or IRE19 computer 0 immediate Incident to be passed to Treat as MBCI
+room has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate inform EMT Controller and
+evidence of unauthorised investigation into the sub- Team 9
+equipment, including monitoring systems which have been
+devices, connected to the HNG- penetrated. CMT to use report to decide
+X infrastructure. ‘ 5 which subsystems, if any,
+
+Potentia asiees Impact should be shutdown.
+
+©Copyright Fujitsu Services Ltd 2014
+
+FUJITSU RESTRICTED
+
+(COMMERCIAL IN CONFIDENCE)
+
+Ref: = SVM/SDM/PLA/0031
+
+Version:
+Date:
+Page No’
+
+2.00.1
+22-GBiteROOF
+26 086 df 41
+
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+
+Re}
+FUJITSU
+
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+CONFIDENCE)
+Retain all evidence
+4. The IRE11 or IRE19 computer 0 immediate Incident to be passed to Treat as MBCI
+room has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate inform ee Controller and
+evidence of unauthorised investigation into the sub- inv ‘Team g
+intrusion into the HNG-X systems which have been
+infrastructure/service. penetrated. CMT to use report to decide
+. 7 which subsystems, if any,
+Potentia a sea Impact should be shutdown.
+Retain all evidence
+5. Operations Faci! IRE11 or IRE19 SOS operations 1 immediate No Impact Incident to be passed to
+Security room penetrated by unauthorised Security Operations Manager.
+access — no indications of
+tampering of systems
+6. IRE11 or IRE19 SOS operations 0 immediate Incident to be passed to Treat as MBCI
+room has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate inform CMT Controller and
+evidence of physical tampering investigation of the Team 9
+of systems infrastructure which has been
+tampered and report findings. CMT to use report to decide
+7 7 which subsystems, if any,
+Potential Busivess Impact should be shutdown.
+Retain all evidence
+7. IRE11 or IRE19 SOS operations 0 immediate Incident to be passed to Treat as MBCI
+room has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate into Cee onolter and
+evidence of unauthorised investigation into the sub- Team 9
+equipment, including monitoring systems which have been
+devices, connected to the HNG- penetrated. CMT to use report to decide
+X infrastructure. Potential Business Impact which subsystems, i any,
+POL POA .
+©Copyright Fujitsu Services Ltd 2014 Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+Date: 22-GByfte2O0%
+FUJITSU RESTRICTED Pape No Sr abort
+
+(COMMERCIAL IN CONFIDENCE)
+
+Fe)
+FUJITSU
+
+HNG-X Security Business Continuity Plan
+
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+WITN11070110
+WITN11070110
+
+CONFIDENCE)
+Retain all evidence
+8. IRE11 or IRE19 SOS operations 0 immediate Incident to be passed to Treat as MBCI
+room has been penetrated by Security Operations Manager.
+unauthorised access there is Undertake an immediate inform ee Controller and
+evidence of unauthorised investigation into the sub- inv ‘Team g
+intrusion into the HNG-X systems which have been
+infrastructure/service. penetrated. CMT to use report to decide
+5 . which subsystems, if any,
+Potentia a sea Impact should be shutdown.
+Retain all evidence
+9. BRA0O1 or LEW02 SSC Room 1 immediate No Impact Incident to be passed to
+Security has been penetrated by Security Operations Manager.
+unauthorised access — no
+indications of tampering of
+systems.
+10. BRAO1 or LEW02 SSC Room 0 immediate Incident to be passed to Treat as MBCI
+has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate Inform GMT Controller and
+evidence of physical tampering investigation of the Team 9
+of systems. infrastructure which has been
+tampered and report findings. CMT to use report to decide
+7 + which subsystems, if any,
+Potential’ pusivess Impact should be shutdown.
+Retain all evidence
+11. BRAO1 or LEW02 SSC Room 0 immediate Incident to be passed to Treat as MBCI
+has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate into Cee pnarolter and
+evidence of unauthorised investigation into the sub- Team 9
+equipment, including monitoring systems which have been
+devices, connected to the HNG- penetrated. CMT to use report to decide
+X infrastructure. Potential Business Impact which subsystems, if any,
+©Copyright Fujitsu Services Ltd 2014 Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+Date: 22-SB4fteR00%
+FUJITSU RESTRICTED Pape No eae ort
+
+(COMMERCIAL IN CONFIDENCE)
+
+WITN11070110
+
+WITN11070110
+(oe) HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+POL POA should be shutdown.
+Retain all evidence
+12. BRAO1 or LEW02 SSC Room 0 immediate Incident to be passed to Treat as MBCI
+has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate tnform GMT Controller and
+evidence of unauthorised investigation into the sub- Team 9
+intrusion into the HNG-X systems which have been
+infrastructure/service. penetrated. CMT to use report to decide
+., ‘, which subsystems, if any,
+Potentiat Buses Impact should be shutdown.
+Retain all evidence
+13. I POA Security BRAO1 or LEWO2 Security 1 immediate No Impact Incident to be passed to
+Facilities. Room has been penetrated by Security Operations Manager.
+unauthorised access —there is no
+evidence of physical tampering
+of systems
+14. BRAO1 or LEWO2 Security 0 immediate Incident to be passed to Treat as MBCI
+Room has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate intom eee onroner and
+evidence of unauthorised investigation of the Team 9
+equipment, including monitoring infrastructure which has been
+devices, connected to the HNG- tampered with and report CMT to use report to decide
+X infrastructure. findings. which subsystems, if any,
+Potential Business Impact should be shutdown.
+POL POA Retain all evidence
+LE! -
+Room has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate inform MT Controller and
+evidence of unauthorised investigation into the sub- Team 9
+intrusion into the HNG-X systems which have been
+infrastructure/service. penetrated. CMT to use report to decide
+©copyright Fujitsu Services Ltd 2014 Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Dats: 22-SeRetOO%
+
+(COMMERCIAL IN CONFIDENCE) P%°Xo 28028 0F 41
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+
+Re}
+FUJITSU
+
+CONFIDENCE)
+
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+Potential Business Impact which subsystems, if any,
+POL POA should be shutdown.
+Retain all evidence I
+16. BRAO1 or LEWO2 Security 0 immediate Incident to be passed to Treat as MBCI I
+Room has been penetrated by Security Operations Manager.
+unauthorised access —there is Undertake an immediate {nform GMT Controller and
+evidence of physical tampering investigation into the sub- Team 9
+of systems. systems which have been
+penetrated. CMT to use report to decide
+‘ . which subsystems, if any
+Potential Business Impact should be shutdown.
+Retain all evidence
+17. I SMC Facilities SMC IND49 Room has been 0 immediate Incident to be passed to Treat as MBCI
+Security penetrated by unauthorised Security Operations Manager. I
+access —there is evidence of Undertake an immediate inform MT Controller and
+unauthorised intrusion into the investigation into the sub- Team 9
+HNG-X infrastructure/service. systems which have been
+penetrated. CMT to use report to decide
+i‘ 5 which subsystems, if any,
+Potentia aun Impact should be shutdown.
+Retain all evidence
+18. I SOS Operations Out I Unauthorised HNG-X 0 I immediate I Incidenttobepassedto I I ‘TreatasMBCI —I
+Of Hours laptop. infrastructure/service intrusion Security Operations Manager.
+via an SOS Operations Out Of Undertake an immediate inform MT Controller and I
+Hours laptop. investigation into the sub- Team 9
+systems which have been
+penetrated. CMT to use report to decide I
+- . which subsystems, if any,
+Potential Business Impact should be shutdown.
+Retain all evidence
+
+©Copyright Fujitsu Services Ltd 2014
+
+Ref: = SVM/SDM/PLA/0031
+
+Version: 2.00.1
+Date: 22-GE,ReROOA
+FUJITSU RESTRICTED Pave Noo 30 aide
+
+(COMMERCIAL IN CONFIDENCE)
+Re}
+FUJITSU
+
+CONFIDENCE)
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+WITN11070110
+WITN11070110
+
+Unauthorised HNG-X
+infrastructure/service intrusion
+via an SSC Operations Out Of
+
+"I Post Office Limited report a
+
+minor PCI incident affecting
+HNG-x. (I.e., less than n cards
+
+Incident to be passed to
+Security Operations Manager.
+Undertake an immediate
+investigation into the sub-
+systems which have been
+penetrated.
+
+Potential Business Impact
+POL POA
+
+"Incident to be passed to
+
+Security Operations Manager.
+
+Potential Business Impact
+POL POA
+
+~ Potential MBCI and Inform —
+
+Treat as MBCI
+
+Inform CMT Controller and
+invoke Crisis Management
+Team
+
+CMT to use report to decide
+which subsystems, if any,
+should be shutdown.
+
+Retain all evidence
+
+CMT Controller
+
+CMT Controller to use report
+to decide which subsystems if
+any should be shutdown.
+
+Retain all evidence
+
+Post Office Limited report a
+Major PCI incident affecting
+HNG-x. (I.e., greater than n
+
+19. I SSC Operations Out
+Of Hours laptop.
+Hours laptop.
+20. I Payment Card
+Industry Incident
+affected).
+21.
+cards affected).
+t+ aa
+
+PCI incident on HNG-X. (l.e.,
+less than n cards affected)
+
+Incident to be passed to Chief
+Information Security Officer.
+Undertake an immediate
+investigation into the sub-
+systems which have been
+penetrated.
+
+Potential Business Impact
+POL POA
+
+Incident to be passed to
+Security Operations Manager.
+
+Potential Business Impact
+POL POA
+
+Treat as MBCI
+
+Inform CMT Controller and
+invoke Crisis Management
+Team
+
+CMT to use report to decide
+which subsystems, if any, I
+should be shutdown.
+
+Retain all evidence
+~ Potential MBCI and Inform
+CMT Controller
+CMT Controller to use report
+
+to decide which subsystems, if
+any, should be shutdown.
+
+Retain all evidence
+
+©Copyright Fujitsu Services Ltd 2014
+
+FUJITSU RESTRICTED
+
+(COMMERCIAL IN CONFIDENCE)
+
+0 immediate
+‘I immediate
+
+0 immediate
+
+I 0 I: immediate I
+Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+Date: 22-GB,ReRO0%
+Page No: 31 o8 #041
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+
+Re}
+FUJITSU
+
+CONFIDENCE)
+
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+(COMMERCIAL IN CONFIDENCE)
+
+23. Fujitsu Services detect a major 0 immediate I Incident to be passed to Chief Treat as MBCI I
+PCI incident on HNG-X. (l.e., Information Security Officer. Inform CMT Controller and I
+greater than n cards affected) Undertake an immediate invoke Crisis Management
+
+investigation into the sub- Team 9
+systems which have been
+penetrated. CMT to use report to decide
+., A which subsystems if any
+Potentia ean Impact should be shutdown.
+Retain all evidence
+"24. I Infrastructure I Evidence of attended system “<5 I immediate I === NoImpact. =—I_Incidenttobepassedto
+Intruder Detected intrusion, i.e., abnormal Security Operations Manager.
+processes, port access, etc. I
+No evidence of actual system
+penetration.
+
+25. Evidence of attended system 0 immediate I Incident to be passed to Chief Treat as MBCI
+intrusion, i.e., abnormal Information Security Officer.
+processes, port access, etc. Undertake an immediate inform MT Controller and
+Evidence of actual system investigation into the sub- Team 8
+
+enetration, systems which have been
+Pp . penetrated. CMT to use report to decide
+.. A which subsystems, if any,
+Potentia aerea Impact should be shutdown.
+Retain all evidence
+26. I Malicious Virus detected which can be 0 immediate Incident to be passed to To be treated as normal
+Programme/Software I cleaned by existing anti-virus Security Operations Manager. security incident process.
+WNVirus Detection software Copies of virus to be sent for I
+specialist analysis
+Potential Business Impact
+POL POA
+27. Virus detected which cannot be 0 immediate Incident to be passed to Treat as MBCI I
+©Copyright Fujitsu Services Ltd 2014 Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+Date: 22-GB4fteR00%
+FUJITSU RESTRICTED Pape No eos rat
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+
+Re}
+FUJITSU
+
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+CONFIDENCE)
+cleaned by existing anti-virus Security Operations Manager. I Inform CMT Controller and
+software ‘ aan invoke Crisis Management
+Virus specialist company to be Te
+‘ eam
+employed to conduct analysis.
+. 7 CMT to use report to decide
+Potentia asees Impact which subsystems, if any,
+should be shutdown.
+Retain all evidence
+28. Malicious Programme adversely 0 immediate Incident to be passed to Treat as MBCI
+affecting HNG-X infrastructure Security Operations Manager. Inform CMT Controller and
+performance. Undertake an immediate invoke Crisis Management
+investigation into the sub- Team 9
+systems which have been I
+penetrated. CMT to use report to decide
+. which subsystems, if any,
+Potential Business Impact
+POL POA should be shutdown. I
+Retain all evidence
+PI 22. I = ~~—~—~——«*S Malicious Programme adversely I 0 I immediate I Incidenttobepassedto I I TreatasMBCI
+affecting network infrastructure Security Operations Manager. Inform CMT Controller and
+performance. Undertake an immediate invoke Crisis Management
+investigation into the network Team 9
+which is adversely affected; I
+involve Vodafone, Core ISP as CMT to use report to decide
+applicable. which subsystems, if any,
+Potential Business Impact should be shutdown.
+POL POA Retain all evidence
+30. I Unavailability of Unavailability or loss of Audit 0 immediate Incident to be passed to Treat as Potential MBCI
+Audit Data Data (System) Security Operations Manager.
+Undertake an immediate inform ee Controller and
+investigation into the loss of invoke ne lanagemen'
+audit data. eam
+CMT to use report to decide I
+©Copyright Fujitsu Services Ltd 2014 Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+Date: 22-GB4fteRO0%
+FUJITSU RESTRICTED Pape No Sosa rat
+
+(COMMERCIAL IN CONFIDENCE)
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+Fe)
+FUJITSU
+
+Potential Business Impact which subsystems, if any,
+POL POA should be shutdown.
+Retain all evidence
+31. Unavailability or loss of Audit 0 immediate Incident to be passed to Treat as Potential MBCI
+Data for Support access Security Operations Manager.
+Undertake an immediate {nform GMT Controller and
+investigation into the loss of Team 9
+audit data.
+‘ . CMT to use report to decide
+Potentiat Buses Impact which subsystems, if any,
+should be shutdown.
+Retain all evidence
+32. I Loss of Restricted, Loss of Restricted, Confidential 0 immediate Incident to be passed to Treat as Potential MBCI
+Gonridential or or Personal Data computer files Security Operations Manager. Inform CMT Controller
+Potential Business Impact
+POL POA
+33. Loss of Restricted, Confidential t'} immediate Incident to be passed to Treat as Potential MBCI
+or Personal Data hard copies Security Operations Manager. Inform CMT Controller
+Potential Business Impact
+POL POA
+34. Loss of Personal Computers, t'} immediate Incident to be passed to To be treated as normal
+i.e., SOS and SSC OOH Security Operations Manager. security incident process
+Laptops Potential Business Impact initially.
+POL POA
+35. I Terrorist Activity Threatened or actual terrorist 0 immediate I Incident to be passed to Crisis Treat as MBCI
+attack (Data-centres, IRE11, Management Team, and FJS
+Inform CMT Controller and
+IRE19, SDC01, TCY01, TCY02) Corporate Management. invoke Crisis Management
+Potential Business Impact Team
+POL POA
+©Copyright Fujitsu Services Ltd 2014 Ref: SVM/SDM/PLA/0031
+Version: 2.00.1
+Date: 22-GBReROOA
+FUJITSU RESTRICTED Pape No ad ose rat
+
+(COMMERCIAL IN CONFIDENCE)
+WITN11070110
+WITN11070110
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+
+Fe)
+FUJITSU
+
+CONFIDENCE)
+
+36.
+
+Terrorist Attack (Utility
+Infrastructure — i.e. Power)
+
+immediate
+
+Incident to be passed to Crisis
+Management Team, and FJS
+Corporate Management.
+
+Potential Business Impact
+POL POA
+
+Treat as MBCI
+
+Inform CMT Controller and
+invoke Crisis Management
+Team
+
+37.
+
+Terrorist Attack (WAN fibre
+infrastructure)
+
+immediate
+
+Incident to be passed to Crisis
+Management Team, and FJS
+Corporate Management.
+
+Potential Business Impact
+POL POA
+
+Treat as MBCI
+
+Inform CMT Controller and
+invoke Crisis Management
+Team
+
+38.
+
+Suspect Parcels (potential mail
+bombs)
+
+immediate
+
+Incident to be passed to
+Security Operations Manager.
+
+Potential Business Impact
+POL POA
+
+Treat as MBCI
+
+Inform CMT Controller and
+invoke Crisis Management
+Team
+
+Ref: = SVM/SDM/PLA/0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-00%
+(COMMERCIAL IN CONFIDENCE) P#°No 5.088041
+
+©Copyright Fujitsu Services Ltd 2014
+WITN11070110
+WITN11070110
+
+oO HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+12 Plan Activation
+
+This plan is activated by the Major Account Controllers (MAC) personnel raising a ‘P1’ priority
+incident with the POA Duty Manager and providing them with sufficient detail of the incident to
+compare the event with the risks defined in section 11.
+
+In the event that the incident is to be treated under the normal security incident process they
+should contact and inform the POA CS Security Operations Manager using the contact details
+defined in section 13.
+
+In the event that the incident is defined as a Potential MBCI or Major Business Continuity
+Incident the POA Duty Manager is to inform the POA BCM of the incident. The POA Business
+Continuity Manager is to ensure that where applicable the POA CS Chief Information Security
+Officer or the Security Operations Manager is made aware of the incident for initial investigation
+and escalated to the Crisis Management Team Controller using the contact details defined in
+section 13.
+
+If the Joint BCM processes are invoked, the next steps will be to agree who from the BCMT
+owns the MBCI.
+
+The BCMT will then agree a plan of action and agree upon the recovery and contingency
+activities to be carried out. Again, this will be done in conjunction with Senior Managers, relevant
+Business Units and Expert Domains as appropriate.
+
+The agreed plan will then be monitored and reviewed until such time as the MBCI impacting the
+HNG-X has been resolved, and the MBCI closed.
+
+It should be noted that in the event the Crisis Management Team process is invoked it is
+potentially likely that the incident will be jointly managed by the POA CMT and POL Business
+Protect Team.
+
+©copyright Fuyjtsu Services Ltd 2014 Ref. SVM/SDMIPLAO031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SBReROOA
+
+(COMMERCIAL IN CONFIDENCE) 9 PaeNo 36.088 8F 41
+WITN11070110
+WITN11070110
+
+foe) HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+13.0Contact List
+13.1 Normal Processes
+
+Organisation Contacts Telephone Number
+
+Duty Manager Pager: T
+FUJITSU SERVICES Or Office Hours applicable Service Delivery 1
+POA Manager I
+
+GRO
+
+CS Security Operations Manager Mobile
+Kumudu Amaratunga
+
+Chief Information Security Officer Mobile
+Keith Smith L
+Operations Director (CMT Controller) Mobile
+(MBCI Contacts) Business Continuity Manager Office:
+Changdev Pawashe Mobile:
+FS Core Services Network Manager Office:
+Roger Stearn Mobile:
+Networks Fujitsu Network Operations centre: Office:
+
+FS Core Services ‘SOS NT and UNIX Manager Office:
+
+System Ops Service Andrew Gibson Mobile:
+
+Technical Support Manager Office:
+
+Fiona Lennox Mobile:
+
+FS Core Services ‘SMC Manager Office:
+
+Systems Mgt Centre I Jacob Cherian Mobile
+FS Core Services MACICMT (STE04) Operations Manager
+
+MACICMT. Sandie Bothick Mobile:
+
+Business Stream Manager
+Sandie Bothick Mobile:
+
+Post Office Limited ATOS IT Service Continuity management
+
+©copyright Fujitsu Services Ltd 2014 Ref. SVMISDMIPLA0031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SBReROOF
+
+(COMMERCIAL IN CONFIDENCE) PaeNo S708 oF 41
+WITN11070110
+
+WITN11070110
+co HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+ATOS IT Service Continuity management
+©Copyright Fujitsu Services Ltd 2014 Ref: SVM/SDMIPLA/0031
+Version: 200.4
+FUJITSU RESTRICTED Date: 22-SBteROOF
+
+(COMMERCIAL IN CONFIDENCE) 9 °20°N® 38 088 0f 41
+Re)
+FUJITSU
+
+HNG-X Security Business Continuity Plan
+FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+
+WITN11070110
+WITN11070110
+
+13.2 Escalation Processes
+
+Escalation I Level 1 Level 2 Level 3 Level 4
+Level
+Fujitsu Duty Manager Problem Manager I CS Security Operations I Customer Service
+Services POA P. (Assigned by Duty Manager. Operations Director.
+ager Manager) Peter Thompson
+Kumudu Amaratunga Pp
+Or Office Hours Business
+applicable Day Time Man inuty Mobile:
+POA Duty Manager I“ *"@9°
+Via MAC team. Changdev Chief Information
+Pawashe Security Officer.
+FS Core
+Services Data Networking Support
+Manager
+Networks Network Manager POA Networks Duty
+Roger Stearn
+SOS NT and NT&UNIX Manager Technical Support
+UNIX Manager
+Andrew Gibson
+a Fiona Lennox
+Mobile:
+SMC Manager
+SMC
+Jacob Cherian
+MAC Ops Manager rapa
+mac Office:I GRO 3
+Sandie Bothick
+Post Office Business Continuity Network Support Service
+Limited Manager Manager.
+©Copyright Fujitsu Services Ltd 2014 Ref. SVM/SDM/PLA/0031
+Version: 200.4
+Date: 22-SByfte2OOH
+FUJITSU RESTRICTED PayeNo:  soneer4t
+
+(COMMERCIAL IN CONFIDENCE)
+WITN11070110
+
+WITN11070110
+co HNG-X Security Business Continuity Plan
+FUJITSU FUJITSU RESTRICTED (COMMERCIAL IN
+CONFIDENCE)
+ATOS IT Service ATOS IT Service
+
+Continuity management I Continuity management
+
+©copyright Fuyjtsu Services Ltd 2014 Ref. SVM/SDMIPLAO031
+Version: 2.00.1
+FUJITSU RESTRICTED Date: 22-SBReROOA
+
+(COMMERCIAL IN CONFIDENCE) 9 PaeNo 40 of oF 41

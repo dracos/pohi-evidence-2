@@ -1,0 +1,1599 @@
+FUJ00058422
+
+FUJ00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date: 6/1/99
+Project
+Document Title: Release 2 Model Office Rehearsal 3 Closure Report
+Document Type: Test Report
+Abstract: This document summarises the findings and conclusions
+achieved as a result of the Model Office Rehearsal 3 test phase.
+Status:
+Distribution: Horizon ICL Pathway
+J. Meagher T. Austin
+S. Rilot G. Chatten
+C.Young M. Coombs
+P. Jeram
+C. Wannell
+G. Jackson
+Authors: P. Lywood
+J. Brett
+Comments to: P. Lywood
+Comments by:
+COMMERCIAL IN CONFIDENCE Page 1 of 31
+
+© 1998 ICL Pathway Ltd
+FUJ00058422
+
+Fus00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doe Ref: CS/REP/032
+ersion: 1.0
+
+Horizon Closure Report Date: 6/1/99
+Project
+0 Document control
+0.1 Document history
+
+Version I Date Reason
+
+01 20/11/98 I First Draft
+
+1.0 /1/99 Issue 1.0
+0.2 Approval authorities
+
+Name Position Signature Date
+
+None
+0.3 Associated documents
+
+Reference Vers I Date Title Source
+
+0.4 Abbreviations
+
+APS I Automated Payment Service
+
+BPS I Benefit Payment Service
+
+CAPS I Customer Accounting and Payments Strategy
+EPOSS I Electronic Point Of Sale Service
+
+ESNS I Electronic Stop Notice System
+
+HAPS I Host Automated Payments System
+MORI I Model Office Rehearsal 1
+
+MOR2 I Model Office Rehearsal 2
+
+MOR3 I Model Office Rehearsal 3
+
+OBCS I Order Book Control System
+
+R2 I Release 2 (Horizon system)
+
+COMMERCIAL IN CONFIDENCE Page 2 of 31
+FUJ00058422
+FUJ00058422
+
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+Closure Report Version: 1.0
+
+Horizon Date: 6/1/99
+
+Project
+
+TIP I Transaction Information Processing
+
+0.5 Changes in this version
+
+Changes in sections 4 and 5.
+
+0.6 Table of content
+
+sees Introduction
+
+Qoccecececsectesneseeseeseeeseeteneereetsneseenssnesesreeresssieeeeneressssseseaereseeeeeee SCOPE and Objectives
+Boccecesecseesesseseeseeseesesueeeeseneesesueeessneneesesreeeesnereeseeneeeesnereetesnesestereeteseeeeeee System under test
+Bo Diceeec tes eee tenes nee teen eeseeeneesneeniernnnnneenienneenenesieneneeiemeeeeeeees Environment
+
+BQaeceeccesseesseesseesnseseensesseessnesnessssnessnssseesnsesietinssneeeesnessiseseseensseeeneenneeneeeeennees Software
+
+Ans BRB
+
+occ cece eeeeeeesseeeneeesseesnieersneeerseeenieesnsnensistessessnnsessesrnneesnenseineesneessneeeonessee Test Conduct
+AD ecc cece tece cece teeeesnee nese teen eessesneenessnseneesesstssientneseeeiassteresstsreeseeseeeees LOSt Phases
+4D cocec cece eee eeeteeneeeneeenesneesiesneeenereesneesneennesimenesreeseserneseesseeeees 1 OStS Performed
+IB occ teste eeneteeeneer essere Desting Incidents
+S voces reeseeessieeteeeetseerinnsennesnenernnennentrnensnnnenietsnneninetiennninttetsnnntseseesseee CONCLUSION
+
+S Dooce eececeeeeeeeeeeeeeneeeeeeeeeeeeneeeeenseneeeneeeseneeeeeneeetesnertentaneeneaneeeeeeeeeeneeeseees SUMMALY
+
+Coord Aw
+
+SQoeeceecteceecs ees neenneeneeneeseesneenesneenenneesieennsenenesmenneaneneneeaeereeeee AChievements,
+
+5.3.0... see Issues 10
+
+Ooececeseeseeseeeseeseeseeseseeseestsresesstesesseeseeeese Appendix 1- Model Office Test Environment 12
+Vovcccsces ecco ees eeeeseetesseeeeneneesnsnteesnsiesinsteeteseseseseeeseeese Appendix 2 — Incident summary 14
+
+COMMERCIAL IN CONFIDENCE Page 3 of 31
+FUJ00058422
+
+Fus00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date. 6/1/99
+Project
+
+1 Introduction
+
+This is a summary report addressed to ICL Pathway and Horizon management to comment on
+the conduct of the Model Office Rehearsal 3 phase of ICL Pathway’s Release 2 testing. It
+focuses on the testing environment, the testing activities performed, the results of these, and
+the conclusions drawn.
+
+2 Scope and Objectives
+
+MOR3 was the last of three planned Model Office Rehearsals. It’s major objectives were to
+prove:
+
+the final draft of the operating processes and procedures across all domains
+ICL Pathway’s target solution for architecture, network and connectivity
+ICL Pathway’s supporting infrastructure
+
+and reiterate the migration process from Release Ic to R2
+
+that supporting and reporting processes and routes are in place
+
+Tt was not a purpose of MOR3 to perform R2 functionality proving although note was taken,
+and incidents raised, in response to errors found. It was expected that all available counter
+tests would be executed to some degree.
+
+The format of the testing was identical to that used both previous rehearsal cycles.
+
+The MOR3 cycle continued to use the Model Office site based in Borough High Street and
+was supported by ICL Pathway operations at the R2 target live operational environment in the
+Bootle data centre.
+
+3. System under test
+
+3.1. Environment
+
+The test environment within the ICL Pathway domain comprised two data centres, one at
+release 1c and the other the target R2 go live solution, with links to all external systems. Full
+details of these are given in Appendix A.
+
+The test environment within the Horizon domain comprised seven Post Offices; three of these
+offices were migrated from release 1c to R2; four new offices were introduced into the R2
+system, two from ECCO and two that were previously manual. A new addition for this pass
+was the introduction of the Pentium II 400mhz processors.
+
+Gateway PC’s, for the transmission of data to remote sites, were located at Farnborough,
+Huthwaite and De La Rue, Tewkesbury.
+
+COMMERCIAL IN CONFIDENCE Page 4 of 31
+FUJ00058422
+
+Fus00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date. 6/1/99
+Project
+
+3.2 Software
+
+The following applications formed part of the testing baseline:
+@ BPS
+@ EPOSS
+@ APS
+@ OBCS
+
+The software build for MOR3 is referenced in the ICL Pathway change control system as 9f
+increment 5.1.
+
+4 Test Conduct
+
+4.1 Test Phases
+
+The testing was performed by Horizon test staff and Post Office counter staff over the period
+22" October to 12" November inclusive, the stages being:
+
+m 22° _ 24' October, phase 1 of migration, moving three outlets
+from release 1c to R2, with the data centre at release 1c. The start
+of MOR3 was delayed by 1 day due to a time synchronisation
+problem across all domains.
+
+m 25"~ 26" October, data centre migration to R2.
+
+@ 27° October - 12 November, full R2 operation and the
+introduction of new R2 outlets. The day lost at the beginning of the
+cycle was not recovered using planned contingency. This resulted
+in test execution completing 1 day behind the original schedule
+
+All relevant data suppliers and receivers participated in this phase of testing i.e. TIP, CAPS.
+
+4.2
+
+COMMERCIAL IN CONFIDENCE Page 5 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Closure Report
+
+Release 2 Model Office Rehearsal 3
+
+FUJ00058422
+FUJ00058422
+
+Doc Ref: CS/REP/032
+
+Tests Performed
+
+The following test statistics were achieved:
+
+@ number of planned scripts:
+
+number of test steps :
+
+a
+™@ test steps not run :
+®@ total test steps run :
+
+Of the test steps run :
+
+@ number of test steps passed :
+
+@ number of test steps failed :
+
+Version: 1.0
+Date: 6/1/99
+5236
+24335
+1456 5.98%
+22879 94.02%
+22345 97.66%
+534 2.34%
+
+total: 22879
+
+The tests described above can be broken down into the following test conditions;
+
+Area Pass # Pass % Fail# I Fail % I Not Run# I Not Run % I Total
+ACUA 938 94.46% 8 0.81% 47 4.73% 993
+APS 622 96.88% 1 0.16% 19 2.96% 642
+BES 861 83.43% 35 3.39% 136 13.18% 1032
+EPOSS 8217 92.34% 119 1.34% 563 6.33% 8899
+Int. 178 91.75% 0 0 16 8.25% 194
+Services
+
+Migration 49 98.00% 0 0 1 2.00% 50
+OBCS 185 96.86% 6 3.14% 0 0 191
+POLO 7 100.00% 0 0 0 0 7
+Total 11057 92.08% 169 1.41% 782 6.51% 12008
+
+The test conditions that have failed or were not run are summarised below;
+
+IArea \Process Attempted I Failed/
+Not Run
+IACUA One-shot password (external user) 2 2
+IACUA One-shot password (forgotten password) 4 4
+IACUA Temporary Lock 2 2
+IEPOSS Cash Declaration/Individual Stock Unit Balance 466 34
+IEPOSS, ‘Complete Cash Account - final account 2 2
+EPOSS ‘Customer Request to Send Mail Item 531 73
+
+COMMERCIAL IN CONFIDENCE
+
+Page 6 of 31
+FUJ00058422
+FUJ00058422
+
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+Horizon Closure Report Version: i 1 ‘99
+
+Project
+
+\Area Process Attempted I Failed/
+
+Not Run
+
+POSS Discounts 4 4
+IEPOSS, ONCH report - outlet 2 2
+IEPOSS Ref. Data updates - with revaluation 1 1
+IEPOSS Ref. Data updates - without revaluation 7 5
+IEPOSS Reversals Process 23 5
+EPOSS [Summaries - Daily/Weekly by individual Stock Unit 510 62
+IEPOSS, Summaries - Daily/Weekly by shared Stock Unit 513 209
+IEPOSS, Summaries - Office Daily/Weekly 51 12
+IEPOSS System enforced log out 1 1
+IEPOSS Transaction Log - use of 92 17
+IEPOSS View Stock Unit Details 7 7
+BES Benefit payment encashment - Casual Agent 7 7
+IBES Benefit payment encashment - Foreign encashment 42 13
+IBES Benefit payment encashment - Standard encashment 113 16
+IBES Extended Verification Procedure 81 14
+OBCS Receive OBCS Book 21 4
+
+4.3 Testing Incidents
+
+Throughout the test cycle a number of incidents were raised. These are summarised as
+follows:
+
+Total Incidents raised in MOR3 397
+Incidents Closed 373
+no fix required 191
+
+fix applied for MOT 92
+
+duplicate of existing PinICL 90
+
+Incidents still open
+
+24
+
+COMMERCIAL IN CONFIDENCE
+
+Page 7 of 31
+FUJ00058422
+FUJ00058422
+
+ICL Pathway Release 2 Model Office Rehearsal 3 Doe Ref: CS/REP/O32
+
+ersion: 1
+Horizon Closure Report Date. 6/1/99
+Project
+
+Remaining open incidents, and any ‘fixed’ incidents will be carried forward until
+re-tested in MOT. Full details of the incidents as at 21 December 1998 can be found
+in Appendix 2.
+
+COMMERCIAL IN CONFIDENCE Page 8 of 31
+FUJ00058422
+
+FUJ00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doe Ref: CS/REP/O32
+ersion: 1
+Horizon Closure Report Date. 6/1/99
+Project
+Conclusion
+5.1. Summary
+
+MOR3 proved most of the test phase objectives.
+
+Of the 12 limitations marked as cleared in the MOR3 Release Notice;
+e Seven were successfully tested, confirming clearance
+
+e Three were not covered by the MO test plan
+
+e Two limitations remained;
+
+e APS - production of receipt following printer fault. The noted limitation was still in
+evidence
+
+e Training Mode - Although the new processors should have resolved the difficulties
+regarding this area, training mode was not available during MOR3.
+
+The content of the counter procedures has stabilised somewhat since the first cycle. The
+presentation remained at draft standard (full production standard procedures are not expected
+until MOT).
+
+ICL Pathway’s architecture, networks, connectivity and supporting infrastructure moved
+closer to the target solution.
+
+There are a number of outstanding incidents. Details of these, as at 21‘' December 1998, can
+be found in Appendix 2.
+
+5.2 Achievements
+
+The following have been successfully demonstrated:
+Bootle R2 data centre build
+
+networking and communications
+
+data centre security
+
+installation of outlet equipment
+
+auto-configuration of R2 counters
+
+migration of outlets from Release 1c to R2
+
+use of MiMan migration tool and draft HFSO procedures
+use of MiECCO migration tool
+
+data centre migration from Release 1c to R2
+
+links to ESNS (OBCS), Farnborough (HAPS) and Huthwaite (TIP)
+link to De La Rue
+
+PAS/CMS Help Desk operation
+
+COMMERCIAL IN CONFIDENCE Page 9 of 31
+FUJ00058422
+
+FUJ00058422
+
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Horizon Closure Report Version: i 1 ‘99
+Project
+
+@ Horizon Help Desk operation
+
+@ ICL Pathway support procedures
+
+@ operation of the four main application areas
+
+@ operation of the Data Warehouse
+
+@ application of planned changes to Reference Data
+
+@ availability of local reference data items
+
+@ benefit encashment at Rel Ic, Rel 2.0 and via PCHL
+
+@ BES activity at a Northern Ireland Outlet
+
+@ user training
+5.3 Issues
+
+The following issues were identified:
+
+@ The initial set up of the TPS system caused a number of problems
+with the dates of the files being sent to TIP.
+
+@ The initial set up of the CAPS data caused some initial problems
+with payments.
+
+™@ On the first day of testing the date was set incorrectly on the
+counters. This caused a one day delay in the testing.
+
+@ In general, the migration tools performed well, however some
+minor problems were identified. These will be addressed by
+software and reference data changes in parallel to MOT testing.
+
+@ Most of the printed output of the system was factually incorrect,
+not produced or did not conform to specification.
+
+@ Of the 19 cash accounts produced, only one balanced account was
+achieved (which contained a single days transactions)
+
+@ Although all of the planned changes to reference data were applied
+successfully at the counter, 3 of the 6 planned changes created a
+imbalance in subsequent Cash Accounts
+
+Training mode was unavailable
+Carded Casual Agent functionality remained unavailable
+
+A foreign encashment could not be made on a Rel 2 counter if the
+customers nominated office was previously set as Rel Ic
+
+@ The foreign encashment count proved unreliable during the
+migration period
+
+@ A duplicate encashment was allowed via the HSHD (it should be
+noted that the original transaction was performed on a Rel Ic
+counter)
+
+COMMERCIAL IN CONFIDENCE Page 10 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Late in the cycle, amendment of the Back-Office printer settings
+resulted in a vast improvement in production quality and times. To
+improve this instance, the affected printers should be correctly
+configured during the installation process.
+
+ITM discrepancies occurred between Pathway & TIP due to
+Pathway deriving their ITMs from the Menu Hierarchy & TIP
+deriving theirs from ITMs held on POCL Reference Data, resulting
+in file rejections. This issue is being addressed, in the short term,
+by TIP removing this part of their file validation.
+
+TIP reject files containing ITM errors on the first ITM error found
+and Pathway are not notified of any other errors or further
+occurrences of the error until the file is re-sent
+
+Organisational Unit Version numbers differed between TIP &
+Pathway due to the timing of the incremental reference data drops,
+resulting in file rejections. This issue is being addressed by TIP
+removing this part of their file validation.
+
+FTMS was not used for the automatic transfer of files to remote
+sites.
+
+COMMERCIAL IN CONFIDENCE Page 11 of 31
+
+FUJ00058422
+
+FUJ00058422
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Closure Report Version: 1.0
+Date: 6/1/99
+FUJ00058422
+FUJ00058422
+
+ICL Pathway Release 2 Model Office Rehearsal 3 Doe Ref: CS/REP/O32
+
+ersion: 1.
+Horizon Closure Report Date. 6/1/99
+Project
+
+6 Appendix 1- Model Office Test Environment
+
+wasingon [ae cars ] Uni
+
+Release 1C/2 Model Office nn
+Bootle Data Centre ase)
+MOR1
+
+Whose SE30
+@-MoRI)
+
+Host
+$£70(2)
+
+[-~ I r
+HAPS De La Rue cM
+
+1
+Mode! Office Past Offices Farnborough Tewkesbury Belfast
+&FCCO laptop '
+
+(Borough High Street) '
+
+COMMERCIAL IN CONFIDENCE Page 12 of 31
+FUJ00058422
+
+Fus00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date. 6/1/99
+Project
+
+COMMERCIAL IN CONFIDENCE Page 13 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+1 re Version: 1.0
+Closure Report Date: 6/1/99
+
+FUJ00058422
+FUJ00058422
+
+7. Appendix 2 - Incident summary
+
+The monitoring of the remaining open incidents from MOR3 has been transferred to the Horizon owned list. The details below were taken at 21“ December
+
+1998.
+
+Total number of incidents 397
+Number Open 24
+Number Closed 373
+
+Open Incidents
+
+(Call Number [Problem Description P_ [Site ID PinICL_[Owner Progress
+1__[E-9808130057_IMORI, BES Date: 13/11/97, Counters-1, Day Number:9. Batch reconciliation count not incremented. B_ [0026808 [14376 _ [Design For KPRI
+2 -9808190079_ IMORI, COUNTER, Screen locks after initial logon. Enter username, password, select continue, enter IB [0020389 [14664 [Private 3rd___ [Needs retest in
+through waning message, and then enter through last logon message, press F1 twice straightaway and MOT
+system freezes,
+3. 809290034 _IMOR2, HELPDESK, Alt space bar crashes Oracle helpdesk application. ic 16466 IT&I BPS
+4 810010109 _IMOR2, EPOSS, MIECCO MIGRATION. Samp book greeting B_ [2001500 [16595 [T&Idesktop _ [WP2490
+5 -9810020045_IMOR2, EPOSS, Reprint screen no icons work (Icons work now but report format incorrect ) B_ [0065609 [16628 [EPOSS-rel___ [WP2578
+6. [F-9810120116 _[MOR2, TIP, CAC records not written by migration (Related to 18093 ?) B_ IPath900 16946 __[T&I desktop _ [WP2422
+7. IE-9810130047_ [MOR2, TIP, file W_329003 contains the transaction records for ORG unit 23572 (Office A). The B IPath900 16963 IEPOSS-rel [CP 1600- KPR
+transactions are dated for the 24/11/97 and 25/11/97, there should be an end of day marker for the for LT Part fix in
+24/11/97 records, and also both days should be in separate subfiles. WP2576, 2577
+land 2618
+8. [E-9810230031_ IMOR3, EPOSS, no reports for giro deposits or withdrawals B [0065609 17372 IEDSC Needs retest in
+[pre proving
+
+COMMERCIAL IN CONFIDENCE Page 14 of 31
+FUJ00058422
+
+FUJ00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date: 6/1/99
+Project
+9. JE-9810240008_[MOR3, EPOSS, icon trans cash local icon B [0020389 _[17467__ [T&L desktop _ [WP2490
+10. [E-9810270121_IMOR3, EPOSS, on selecting stock balance report system says outstanding reports. (Mandatory report [B_ [0020389 [17610 [EPOSS-rel I WP2578 Dup
+lwith nothing on which to report ) -18793
+in 810280024 _IMOR3, AP, wrong scheme on AP receipt B_[0065609 [17638 [T&T desktop I WP2490
+12. 810280074 _IMOR3, BES, Unable to perform carded casual agent B_ [0065609 [17654 IDesign
+13._[F-9810300047_IMOR3, BES, 3" encashment allowed B_ [0026808 [17832 IKPR
+14. [E-9810300112 [MOR3, EPOSS, Transfer in slip produced by system varies from design spec example. Additional Ic [5102618 [17846 [EDSC Documentation -
+information on the system report transfer out ID is added between line 5 and 6 RRES
+15. 810300114 IMOR3, EPOSS, non accounting data identical icons [0028800 [17848 [Escher-dev___ICP1631 - icons
+16. [F-9811020024_IMOR3, OPS, Critical Eventing error when counters do auto reload (Operational issue only ) B 17904 IKPR
+17. IE-9811040053 IMOR3, BES, impound of payment card IC [0065609 18028 [Escher rel KPRLT fix
+delivered
+18. [E-9811050038 IMOR3, EPOSS, BES reports have CAP -1 B [2001500 [18100 IKPR [Needs ETI
+delivery
+19. [F-9811070052 IMOR3, BES, No payment available for collection B [0057703 [18228 IKPR [Closure
+recommendation
+20._IE-9811100069_IMOR3, EPOSS, Incorrect information on Datapost inland icon. [5102618 [18303 [KPR [CP 1631 - icons
+21. ]B-9811100071_IMOR3, FIMS, They are not using the FTMS and Maestro software IB [Path900 18306 [Live supp. test [With CS -
+loperational issue
+22. [E-9811130049_IMOR3, FTMS, When running the PCS monitor process the FTP responses from the gateway pe differ [B_ [Path900 18526 [Design
+from those expected by the monitor process, so the process fails. the interface specification needs
+clarification to specify which FTP responses to expect
+23. [E-9811190075 [MOR3, BES encashment performed at org unit 23575 (Omagh) on 14/11/97 (‘transaction references: IB IPath000 18743 [TSC-dev Fix available
+1005 770/99/00003169 and 005770/99/00003172) for £11.05 and £40.10 respectively received by tip in
+file W_321019 contain cash account week number _ 33.
+24, _[E-9811270026 [The NR2 report — lost and stolen cards B 19131 __ [CEM support
+
+Closed Incidents
+
+A&G
+NFF
+Build
+
+fix
+
+Unresolved
+
+= Advice and guidance
+= No fault found
+= Fault in the build script
+
+= Either a one-off that cannot be recreated or insufficient evidence to investigate problem
+
+COMMERCIAL IN CONFIDENCE Page 15 of 31
+FUJ00058422
+
+FUJ00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref. CS/REP/032
+. Closure Report Version: 1.0
+Horizon Ps Date: 6/1/99
+Project
+Withdrawn = Withdrawn by the customer
+Dup = Duplicate of an existing problem know and being worked on by ICL Pathway
+Test call = A test call raised from a Horizon test script
+Software = Software fix identified
+MOR3 ¢ = Fix applied in MOR3
+Ops = Operational issue
+[Call Number {Short Text P ISite ID PinIC IClosure ‘Comments
+IL. ‘Type
+T___[B-9810230045_IMOR3, EPOSS. Trying to adjust stock B :
+2 9810230123 _IMOR3, HARDWARE, Having problems with keyboard on slave counter B_ [0020389 I - [Hardware
+3.__ IE-9810240006_[MOR3, BES, No payments available for collection. B_ [0065609 I - [Software
+4. E-9810270033 IMOR3, TEST, PM is rebooting workstation an has got PMMC card but doesn’t have a PIN number. It is a one]A  ]002680 8 -  IOperational
+
+Icounter site.
+
+5 MOR3, COUNTER, Log on, counter procedures not aligned with system. B [0020389 I - [Documentation
+6 MOR3, NETWORK, There are two ISDN lines down, affecting 510261 8 and 005770 3. They tested the linesIC_[510261 8 I - [Inappropriate
+lwith the ISDN phones.
+7.__IE-9810270085_[MOR3, NETWORK, ISDN line is not responding, (C_I510261 8 I _IInappropriate
+8. IE-9810280039_[MOR3, TEST, PM has a customer who has come to collect payment card. B_{0020389 I - [Operational
+9. 9810280057 ST, Caller would like to order a cleaning kit D_[0020389 I - _ IInappropriate
+10. [F-9810290067 , MO script test on procedures on how to cash an OBCS book. The PM wanted to know what/C [5102618 [= [A&G
+page of the PO user guide the nules for OBCS are on.
+TI. [E-9810290096 IMOR3, MIGRATION, Sio has called for info on the ECCO Office Migration. He would like the migration[B- [2001500 [~~ _ [Network
+{group number and the IP address
+12. [E-9810290133 IMOR3, OPS, Gateway PC at Huthwaite lost connection during polling. Message: Foreign host did not respondIB_ [Path900 > [Network
+lwithin open timeout
+13,_[E-9810300132 T, Wanted to order mor tally rolls D Inappropriate
+14._[E-9811030027_IMOR3, TEST, PM wants to change till roll. iC_foo26s08 [= [A&G
+15._[E-9811030085 3. TEST. PM has lost procedures C_[o06s609 [ - [A&G
+16. [F-9811030096_IMOR3, BES, Encashment of benefit. ic_foo203s9 [= [A&G
+17._[B-9811040030_IMOR3, OBCS, Caller was trying to redirect a book from Arsenal to Portsmouth iC fooss609 [= [A&G
+18. 9811050044 _IMOR3, TEST, PM wanted to know how to do an encashment. IC [006560 9 - A&G
+19.__IE-9811050047_IMOR3, TEST, PM cannot log on to system. iC_[o0s7703_ [~~ [A&G
+20._[E-9811050101_[MOR3, Problem with the Pathway file regarding the PO. B_IPath900 = [Operational
+
+COMMERCIAL IN CONFIDENCE Page 16 of 31
+ICL Pathway
+
+Horizon
+Project
+
+FUJ00058422
+FUJ00058422
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Closure Report Date: 6/1/99
+21._[E-9811060004_[MOR3, TEST, Caller cancelled the call. D_[002680 8 = [A&G
+22. IMOR3, TEST, PM wanted advise on how to encash a benefit, C_fooss609 [I - [A&G
+23 IMOR3, OTP, This site needs a one shot password, as the manager has changed himself to supervisor, and theIB [0028800 I - [Software
+lother manager has forgotten his password.
+24. IE-9811110016_[MOR3, HARDWARE, PM has no PMMC card and system won't reload A Hardware
+25,_IF-9811110026_[MOR3, TEST, Want to order scratch cards ic Inappropriate
+26. [E-9811130027_IMOR3, APS, No file received for day 22 B_[Path900 = [Operational
+27. IE-9808080022 [MORI EPOSS, test day 2 script number 789. Remittance of £3 phonecard has no effect, £699 of £3/B [0026808 [14139 [Software WPI213
+Iphonecards were remmed in from another PO. Rem in slip produced. £0 pounds displayed on \adjust stock} WP 1282
+screen, (P1615
+failed)
+28. IE-9808130056 IMORI, BES, Report Date:13/11/97, Counters-3, Day Number:7, Script No;0781. BES Report produced buiIB_ [0020389 [14375 ISoftware WP1933
+{failed to give manual or print report option. Selecting report option, BES reports icon, Daily Encashment icon, WP 1934
+the date shown was accepted,
+29. IF-9808130060 MORI, EPOSS, Date:13/11/97, Day No:7, Counters:3, Script NO: 791 and 792. Declared cash and declaredIB [0020389 [14379 ISoftware WP 1935
+stamp screens are both frozen. WP2027
+30. IE-9808140086 IMORI, BES, Payments unavailable No payments have been made available due to an lack on comms betweenIB [0020389 I 14440 [Network
+lcounters and correspondence server. This is symptomatic of fault raised on 13/8/98 which stated no messages
+being received which was due to router death
+31, IE-9808150009 [MORI, EPOSS, Counter weekly POs encashed report incorrect ic 14456 [Software WP1933
+WP 1934
+32. [E-9808150010 MORI, OBCS, Stock unit P& A weekly summary not reporting transactions performed correctly. Does not{B_ [002680 8 [14457 IRef data WPI6I6
+show P &A group I and also does not show P & A group 4
+33. IE-9808170022 [MORI, EPOSS, Customer query screen not user friendly, customer query screen which appears when sameIC [0065609 [14473 [Software WP 1933
+Iproduct is selected more than once is not necessary and time consuming. Can time limits on query be
+increased?
+34. IE-9808170036 IMORI, BES, reports FAD code not complete on BES daily and weekly summary when report is printed FADIC [006560 9 [14486 ISoftware WP1593
+Icode is incomplete on all other daily summaries the complete FAD code is shown. WP 1819
+35. [B-9808170049 [MORI, EPOSS, Sys date: 14/11/97 Day Number: 10 - Number of Counter positions: 1 Green giro summaryIB [002680 8 [14493 [Software WP1788
+shows Milk Tokens issued when none.
+36. IE-9808170048 [MORI BES REPORT , NO CAP showing on counters rev weekly summary. CAP number is not correct IC [0026808 [14496 [Software WP1933
+WP1934
+37. IE-9808180031_IMORI, EPOSS, Touching previous icon on daily reports returns to desktop. Instead of returning to the reportsIC_ [002680 8 [14573 [Software WP 1933
+screen it jumps to desktop. Sys date 14/11/97 Day:10 Scrip Num:0625. WP 1934
+38. [E-9808180045 IMORI, BES, reports, Date 18/11/97, Day 14, Script 0784, CAP-I displayed on BES reports, On all BesIB [0065609 [14583 [Software WP 1593
+Ireports CAP = -1 on all other reports CAP = 33
+39. [E-9808200090_[MORI, EPOSS Discrepancies in cheque listing report, Taking the Path desktop, to reports to counter daily to[C_ [002880 0_[14759_ISofiware [WP2080
+
+COMMERCIAL IN CONFIDENCE Page 17 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+1 re Version: 1.0
+Closure Report Date: 6/1/99
+
+FUJ00058422
+FUJ00058422
+
+[check listing when this report is produced there is an amount in the value column but 0 in the volume column.
+
+40, IE-9808250067 [MORI, TIP, file W_317003 received by Tip has mandatory fields that are not populated. records concernedIB_ IPATH900 I 15006 [Unresolved
+Ihave item number 768 and transaction mode I.mandatory fields not populated are stock unit identifier and
+stock unit balance
+
+41_[E-9808270067_IMORI, BES, Migration CBOS report problem B 15127 ISonware
+
+42._IF-9809020083_[MORI, OBCS, Sequence number of transactions received by OBCS progress by 20 rather than Tatatime IB 15311 [Sofware wP1525
+
+43. [E-9809170062 [MOR2, EPOSS, Font too large in modify user screen.. The font is too large and text is hidden by messageIC [002038 9 I 15992 [Software WP1801
+boxes WP1617
+
+44. IE-9809180067 [MOR2, EPOSS, Registered service not available, Taking the path other products to scales. No option to sendIB [0063609 I16014 [Software WP1933
+lcustomers package by registered post, there should be an option to send by registered post. WP1934
+
+45. IF-9809180130 [MOR2, EPOSS, no additional services. Taking the path from serve customer to other products to scales to[B {002038 9 [16041 [NFF
+inland parcel, to additional services. When tying to apply additional services to inland parcel, to addI (Procedures?)
+lcompensation fee, screen shows no additional
+
+46. IE-9809180131 [MOR2, APS, MAGNETIC CARD TRANSACTION. Taking the path from serve customer to swipe card.[B [0065609 I 16042 Software WP1559
+ISwiped AP card successfully through reader but system did nothing, we expected AP transaction to completedI WP1562
+successfully. AP card used was AP MOTO22.
+
+47.__IE-9809180129 _[MOR2, BUILD, Unix log ons for SSC have no permissions G 16046 [Withdrawn [Not MOR3.
+
+48. I£-9809220009 [MOR2, EPOSS, Cash account discrepancies table not populated, Cash account report following mimanIB [002680 8 I 16143 Software WPi615
+Imigration where discrepancies was entered as £346.42 short. WwP1614
+
+49. [B-9809230043 [MOR2, HELPDESK, When accessing HLPF102 to make an encashment we are getting the error messageIA IPATII900 I 16215 [Software WP1760
+FRM40505 unable to perform query. The version of form is 203.049
+
+50. IE-9809230058 IMOR2, EPOSS Special delivery unavailable, Taking the path desktop to serve customer to other products to[B [0020389 I 16231 [Sofware WP1933
+scales, there is no icon for special delivery unable to perform transaction for customer. WwP1934
+
+ST. IE-9809230077 [MOR2, BES, bes report could not be produced. taken the path from reports to bes reports t0 weekly[B [0020389 I 16240 [Software WPisi3
+lencashment. the weekly bes encashment report could not be produced because it would not accept any date as
+la valid end of cash account week date.
+
+52. IB-9809240064 [MOR2, EPOSS, build object incomplete. The rollout of the PO's Omagh, Celtic, and Wolves has not{BBI005770 3_ I 16271 [Sofware WPi9iI
+lcompleted successfully. Originally only the license object was in the message store for each office. Some Wwp1912
+messages have been inserted into the correspondence server WwP1913
+
+WP1914
+
+53. IE-9809240081 IMOR2, BES, Incorrect screen message. Following the activation of the customers card, the system displays a[B [002680 8 I 16282 [Sofware WP1820
+message box prompting the user to press continue to return to desktop and swipe card to encash any benelits.
+
+34. [B-9809240116 IMOR2, HELPDESK, On the encashment screen HLPF102, when hovering over the nominated or specifiedIB_[PATH900 I 16306 [Software WP1829
+loffice field the details of the office appear on the screen and remain. This then means that the system cannot be
+used
+
+35. [E-9809250058 IMOR2, TIP, files W_312010, W_312017, W_316004, and W_316015 sent to TIP, date of transaction is an[B 16331 [NEF
+
+lout of date range.
+
+COMMERCIAL IN CONFIDENCE Page 18 of 31
+FUJ00058422
+
+FUJ00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date: 6/1/99
+Project
+56. _]E-9809250062_[MOR2, TIP, BARSF for 12/11/97 expected with TIP files B 16333 [Administrative
+57._IE-9809260007_[MOR2, TIP, Files W_316009, W_316006, W_313003, W_312006 B 16370 [Unresolved
+58. IE-9809260009_[MOR2, TIP, Two files received for system date 13/11/97 B 16372 [Administrative
+59. _IE-9809260020_[MOR2, BES. Unexpected impound message B 16387 [Software WP1819
+(60._IE-9809270002_[MOR2, TIP, two otran subfiles and end of day markers re B 16395 [Administrative
+61. IE-9809270006 IMOR2, EPOSS, No information on transaction log - Dup 11618 & 14534? B 16396 [Software WP2241,
+2257, 2067,
+2066
+62._IE-9809280043_[MOR2, EPOSS, not all reports can be selected under icon B_ [2001500 [16419 [Software WP2514/16
+63. [F-9809280067_IMOR2, APS, wrong addition on total at end of summary B 16429 [Software WP1933
+WP1934
+(64. _IE-9809280066_[MOR2, BES, unexpected screen message B_I510261 8 [16430 [Unresolved
+65._IE-9809280133, TIP, files W_319002, W_319014, W_319015, W_3 B 16451 [Administrative
+(66.__IE-9809290037 OSS, Handover plus cash transactions are being re B 16467 [Software WP1929
+(67._IE-9809290106 _[MOR2, EPOSS. international advise of delivery. B 16479 [NFF
+(68. _IE-9809300030_[MOR2, OBCS, Issuing a OBCS book with a stop notice B 16519 [Withdrawn
+69. IE-9809300050_MOR2, OBCS, receiving an OBCS book B 16526 [Software Waiting
+PC16519
+70. 2, EPOSS. unexpected message, rolling over stock unit B 16533 [Software WP1933
+7 TIP, the following files were rejected; W_323001 B 16590 [Administrative
+72 MOR2, BES. 3 foreign encashment allowed B 16594 [Unresolved
+3 MOR2, OTP One Time password - PM is trying to log on terminal but has forgotten his password. B_ [0028800 [16596 IBuild Fix
+74 MOR2, EPOSS, Unable to specily group B 16629 [Duplicate 11618
+(Software) (WP1933,
+1934)
+75._IE-9810020096_[MOR2, TIP, contact for this incident is Ian Senior B 16642 [Administrative
+76,_IF-9810050128_[MOR2, TIP, files rejected B 16698 [Administrative
+77._IE-9810060058_[MOR2, MIGRATION, MIECCO not populating quantitries B 16709 [Software WP1892
+78._IE-9810060107_[MOR2, BES, no prompt to impound card B 16724 [Duplicate 16259
+79._IE-9810060124 [MOR2, TIP, TIP files B 16730 [Administrative
+80. IE-9810070049 [MOR2, TIP, follow on from call ref e-9809300115, file W_322016 was resent and passed validation,IB_ IPATH900 I 16750 [Administrative
+lhowever it failed during processing due to an invalid item transaction mode (item = 211, tmsaction mode =
+15). The file will need correcting and resending.
+81,_IE-9810070094_[MOR2, BES, BES card fallback. Daily report B_[002680 8 16767 _ISoftware WP2066
+82. IF-9810080050 TIP, Files. B_Ipath900__ I 16807 [Administrative
+83. IE-9810080122 TP, The following files have been rejected which relate to system date 26/11/97 - W_330001,IB 16834 [Duplicate 17027
+W_330015, W_330016.
+
+COMMERCIAL IN CONFIDENCE Page 19 of 31
+ICL Pathway
+
+Horizon
+Project
+
+FUJ00058422
+FUJ00058422
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Closure Report Date: 6/1/99
+84. [E-9810090064_[MOR2, TIP, files previously rejected B 16861 [Administrative
+85._[E-9810120013_[MOR2, BES, Help icon button not displaying correct... ic 16897 [Software WP1790
+86. _[F-9810070090 EPOSS, Failure to navigate back to transactions Screen due to No Entry on Riposte Logo. B_I510261 8 I 17005 [Unresolved
+87. [E-9810140170 3, TIP, duplicate records appear in TPS files to TIP B 17027 [Unresolved
+88. [F-9810200063_[MOR3, NETWORK, OSI link between Pathway and CAPS B 17227 [Network with CFM
+89. [B-9810220047_IMOR3, BES, No payments available for collection B Workaround
+[90,_[E-9810220052_I[MOR3, OBCS, receive in book B Duplicate 15919)
+91. _IE-9810230028 _IMOR3, EPOSS, view stock unit had locked B Duplicate 16268
+92. IE-9810230044_IMOR3, EPOSS, cash and stock declaration on individual discrepane B_[0065609 [17386 [Software WP2080
+93. IE-9810230065_IMOR3, BES, stop not yet confirmed. The stop confirmation. B 17392 INFF
+94. IE-9810230067_IMOR3, BES, stop not yet confirmed. The stop conformation... B 17393 [NFF
+95. [E-9810230073_IMOR3, BES, encashment file not received B 17394_[NFF
+96. IE-9810230079_[MOR3, EPOSS, balancing B 17399 [Software
+97, [E-9810230082_[MOR3, MIGRATION, missing product on migration tool B 17400 [NFF
+98. IE-9810230083_[MOR3, MIGRATION, Migration, missing product on migration tool B_ [0065609 [17401 [Unresolved
+99. IE-9810230078_IMOR3, COUNTER, The training mode has been selected by mistake B 17403 [Software
+100. [E-9810230086_IMOR3, EPOSS, adjusting stock on hand figure. B 17406 [Workaround
+101. [E-9810230096_IMOR3, EPOSS, home key needs repositioning on keyboard B 17415 [NFF
+102. [E-9810230101 IMOR3, BES, encashment file does not show encashment B 17416 [Software
+103. [F-9810240002 sh account prevented ic 17442 [Duplicate 16255
+104, IB-9810240003 cash account final report displays wrong, B 17443 [Duplicate 16258
+105. [F-9810240004_IMOR3, BES. no payments available for collection B 17444 [Duplicate 17326
+106. [E-9810240007 POSS, sun alliance insurance icon ic 17466 [NFF
+107. [E-9810240005_IMOR3, BES, No payments available for collection B 17506 [Duplicate 17326
+108. [E-9810260037_IMOR3, EPOSS, Procedural, transfer in procedures. B 17517 [Documentation
+109. IE-9810260046_IMOR3, OBCS, we have not received a file for logical B 17521 [Unresolved
+110. [F-9810260117 . BES, No encashment details on CAPS POCT. confirm B 17543 INFF
+TH, [B-9810260140 discrepancy between PMSR100 and pmst102 B 17548 [Known Error [CP924(1e)
+112. IE-9810270036 ashment not showing B 17572 [Software
+113. [F-9810270038_IMOR3, OBCS, cannot receive book using barcode B 17574 [Network
+114. [E-9810270055_IMOR3, MIGRATION, Remigration BES encashment file for ABEND. B 17580 INFF
+115. [E-9810270064 _IMOR3, BES, unexpected screen message when attempting... A 17587 [Software
+116. IB-9810270069_IMOR3, EPOSS, Procedural, selling stock items B 17588 [Procedures
+117. [E-9810270070_IMOR3, EPOSS, Procedural, cashing other banks cheques B 17589 [Procedures
+118. [E-9810270071_ IMOR3, EPOSS, unable to enter fee on gas/transcash B 17590 [NFF
+119. [F-9810270073_IMOR3, EPOSS, entering account number for Girobank ic 17592 [Software
+
+COMMERCIAL IN CONFIDENCE
+
+Page 20 of 31
+FUJ00058422
+
+FUJ00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date: 6/1/99
+Project
+120. JE-9810270105 scanning bar code on order. B 17599 [Procedures
+9810270108  EPOSS, NEW REVERSALS, Procedure missing descriptive... ic 17601 [Procedures
+9810270106 _IMOR3, EPOSS, Procedural, Issuing milk tokens when, B 17603 [NFF
+9810270124 _IMOR3, OBCS, procedural, OBCS procedures incorrect ic 17611 [Documentation
+9810270133 PMRS105 for the benefits agency dated 9/11/97 B_IPath900__[17614_ISoftware WP2497/99
+f-9810270135 S. Negative figures shown on daily NSB withdrawal summary B 17622_ [Software WP2066
+9810270160 Invalid multiple or PSB B 17624 [NFF
+39810280009 _IMOR3, APS, We are expecting an APS transaction file... B 17629 [Software WP2041
+128. [F-9810280016 _IMOR3, OPS, Problem with Tivoli patch download A 17632 [Software
+129. [E-9810280036_IMOR3, TIP, Files expected by TIP for system date 10/11/97 A 17640 [NFF
+130. [E-9810280048_IMOR3. BES, Unexpected impound message of PUN B 17642 [Setup issue
+131. [F-9810280052_IMOR3, BES, Card impound when customer should be re. B 17643 [Software
+132. [E-9810280059_[MOR3, BES, Unexpected system message. B 17645 [Duplicate 17587
+133. [E-9810280072_IMOR3, OBCS receiving in OBCS books. B 17651 [Unresolved routed CFM
+134. [E-9810280073_IMOR3, BES. Unexpected PUN impound message B 17653 [Duplicate 17587
+135, [F-9810280084 Producing weekly summaries B 17659 [Duplicate 15204
+136. [F-9810280085, . EPOSS, Producing daily summaries for APS transactions B_I0020389 I17660_ISoftware WP2080
+137. [F-9810280086_IMOR3, EPOSS, procedural, no existing procedures for.. ic 17661 [Procedures
+138. [E-9810280087 _IMOR3, BES, Unexpected system message B 17662 [Duplicate 17587
+139. [E-9810280088_IMOR3, BES, Procedural, procedures incorrect for BES ic 17663 [Documentation
+140. [F-9810280089) . BES, procedural, the procedures for BES non-automated office wrong (C_[5025605 [17664 [Procedures
+141. [E-9810280092 _ daily counter summaries incorrect procedure... ic 17679 [Procedures
+142. [F-9810280093 dural, summaries weekly counters... ic 17680 [Documentation
+143. [F-9810280094 3SS CONTROL, procedural, modifying user's B 17681 [Documentation
+144. [E-9810270129 EPOSS, cash account report (Snapshot tria... ic 17684 [Duplicate 16538
+145. [E-9810280103 . EPOSS, daily summary of encashment receipts wrong B__I0057703 [17686 _ISottware
+146. [E-9810280104  EPOSS, withdrawal summary NSB showing minus B 17689 [Duplicate 17622
+147, [E-9810280105 _[MOR3, EPOSS, balance snapshot G 17690 [Duplicate 13611
+148. [E-9810280106 _IMOR3, EPOSS, Counter daily Giro deposit summary... B 17692 [Duplicate 10790
+149. [F-9810280107_IMOR3, APS, AP transaction done and no receipt produced, B 17693_IDuplicate 16493
+150. [E-9810290023_IMOR3, EPOSS, procedural, Reversals ic 17694 [Documentation
+151. [E-9810290025_IMOR3, EPOSS, Pension and allowances report ic 17695 [Duplicate 11464
+152. [F-9810290026 _IMOR3, EPOSS, (this should be Arsnal Post Office) EPOS, ic 17696 [Documentation
+153. [E-9810290027_IMOR3, EPOSS, (this should be Arsnal) EPOSS, during stock declaration unrequested receipt printed ic 17698 [NEF
+154. [F-9810290036_IMOR3, MIGRATION, unable to enter suspense account B 17706 [Software WP1946
+155. [F-9810290050_[MOR3, EPOSS, printing customer receipt ic 17720 [Duplicate 17267,
+
+COMMERCIAL IN CONFIDENCE Page 21 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+Version: 1.0
+
+1 re
+Closure Report Date: 6/1/99
+
+FUJ00058422
+FUJ00058422
+
+156. IE-9810290048 _IMOR3, BES, icon overlaying text IC 17721 _ISoftware WP2224
+
+157. IMOR3. T, PM has had a power failure and is still not... B 17722 IWithdrawn
+
+158. IMOR3, BES, Payment by helpdesk - payment allowed when previously encashed. B_I502560 5 I17723_ INFF
+
+159. IMOR3, EPOSS, daily counter summaries B 17724 [Duplicate 14759.
+
+160. 9810290063 _IMOR3, EPOSS, procedural, pre-purchase transactions B 17725 [Procedures
+
+161. IE-9810290065__IMOR3, EPOSS, receipt preview screen B 17726_IDuplicate 16493
+
+162. 9810290066_IMOR3, EPOSS, letters pre-paid transaction ic 17729 INFF
+
+163. [E-9810290052_IMOR3, EPOSS, procedural, swiping AP card from des... IC 17730 _IDocumentation_
+
+164. IE-9810290068_IMOR3, CAPS, Caller is part of the ESNS at Lytham. B 17731_INFF.
+
+165. IE-9810290055__IMOR3, EPOSS, Celtic EPOSS counter summaries for daily giro report B 17732 _ISoftware WP 2066,
+
+166. IE-9810290070 IMOR3, EPOSS, UKPA product not available IC 10028800 I17733 IRef Data WP2055
+IWP2080,
+
+167. _IE-9810290071_IMOR3, EPOSS, Moneygram product not available IC_ 002880 0 I17734_ [Ref Data IWP2055,
+
+168. IE-9810290099__IMOR3. EPOSS, transaction log B 17753 [Duplicate 11618
+
+169. IE-9810290100_IMOR3, BES, no payments available for collection B 17755 [Duplicate 17587
+
+170. 9810290102 _IMOR3, BES, procedural error for recovering BES transactions IC 17756 IDocumentation
+
+171. IE-9810290103 _IMOR3, BES, expected payment not available for collection. B 17757 [Network
+
+172. 9810290104 _IMOR3, EPOSS, missing information on receipts. B 17759 [Software
+
+173. IE-9810290112_ IMOR3, APS. AP recover B 17777 {Software WP2063,
+
+174. 9810290113 ral, information requirement. iC 17779 INFF.
+
+175. 9810290116 recovering BES transaction B 17780_IProcedures
+
+176. IE-9810290117_IMOR3, EPOSS, procedural, smart card procedures B 17781 IProcedures
+
+177. 9810290118 _IMOR3, EPOSS, CAP on weekly summaries B 17782 [Duplicate 101483
+
+178. IE-9810290119 _IMOR3, BES, recovery, IC 17784 [Duplicate 17784
+
+179. 9810290123 IMOR3, TIP, File W_314013 failed validation and was rejected B 17785 IAdministrative
+
+180. IE-9810290125 P, File W_314057 which is subtile type CASHS co... B. 17786 [Administrative
+
+181. [F-9810290128 _[MOR3, OPS, Correspondence server BBOCOR029 (cluster 2) A_[Path900___I 17787 [Build fix?
+
+182. IE-9810290127_IMOR3, TIP, File W_314045 was rejected because of an inc... B 17788 IAdministrative
+
+183. IE-9810290129 _IMOR3, TIP, File W_313066 failed validation because it. B 17789
+
+184. 9810290130. TIP, File W_314066 failed validation and was rejected B 17790
+
+185. IE-9810290131 TIP, File W_315066 failed validation and was rejected B 17791 [Administrative
+
+186. IE-9810290126 spense account B 17792 IDuplicate 16634
+
+187. IE-9810290132 3, EPOSS, Transactions performed on Day A are not being... B. 17793 INFF
+
+188. 9810290121 3, EPOSS, NSB deposit reports IC_ {510261 8 _I17803 [Software IWP2080
+
+189. IE-9810290124 3, EPOSS, Procedural, Bulk Input IC 17807 IProcedures
+
+190. 9810290122 IMOR3, EPOSS, procedural, daily BES encashment report iC 17808 [Documentation
+
+COMMERCIAL IN CONFIDENCE Page 22 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+1 re Version: 1.0
+Closure Report Date: 6/1/99
+
+FUJ00058422
+FUJ00058422
+
+191. JE-9810290120_[MOR3, BES, Procedure incorrect G 17809 [Documentation
+192. IE-9810300022 SERVER, cluster 1, PBOCORO28 A 17818 IDuplicate 17787
+193. [F-9810300045_IMOR3, EPOSS, producing a manual session receipt ic 17831 [Duplicate 17693
+194, [E-9810300049_IMOR3. BES. payment allowed when GRI applied B_[0057703_[17833_INFF
+195. E-9810300052_[MOR3, EPOSS, printing counters revenue report printer reports error to desktop B 17834 Duplicate 16193,
+16493
+196. IE-9810300103 IMOR3, HELPDESK, on HLPF102_ two beneficiaries are shown, but.. 17837 IBuild ix WP2140,
+2144
+197. [£-9810300104 _IMOR3, HELPDESK, for CALLER ID on the post office screen, HPF 404 B 17838 [Procedures
+198. 9810300007_IMOR3, APS, Files delivered with the wrong date stamp. B 17845 [Withdrawn
+199. [E-9810300113_IMOR3., EPOSS, producing an office report Ic 17847 [Duplicate 16254
+200. [E-9810300115_IMOR3, EPOSS, non accounting data ic 17849 IDuplicate 14230
+201. IE-9810300118 POSS, cash account week number wrong on reports B 17850 [Duplicate 12411
+202. [E-9810300120 POSS, cash account snap shot report B 17853 [Duplicate 11724
+203. IE-9810300116 [MOR3,_EPOSS, procedural, producing an office report B 17854 [Procedures
+204. [B-9810300121 _[MOR3. EPOSS, rem out_other postage to supplies devi... B 17855 [NEF
+205. [E-9810300123_IMOR3, OBCS, unable to contact HQ message B 17857 [Withdrawn
+206. [F-9810300125 IMOR3, BES, procedural, to receive a batch of benef B 17858 [Procedures
+307. [E-9810300135 IMOR3, MIGRATION, postal order fee discrepancy following migration B 17860 [NFF [Operations
+error
+208. [E-9810300136 _ EPOSS, unable to access adjust stock and MOP - Watford B 17861 [Software WP2066
+. [E-9810300138 tunable to print stock unit balance - Watford B 17862_[Duplicate 17861
+9810300143 missing phonecard icons B 17864 [Ref data WP2055
+E-9810300144 S, daily counter reports - daily giro deposit summary B 17865 [Unresolved
+9810300145 EPOSS, end of day summaries BES daily encashment report FAD incomplete G 17866 [Software WP2066
+9810300147 TIP, file W_316055 failed validation because it... - Transaction mode B 17867 [Workaround
+E-9810300148 TIP, file W_317066 rejected because file contents.. B 17868 [NEF
+9810300149 TIP, file W_317067 has been rejected because the. B 17869 [NFF
+9810310007 TEST, Post office closing due to robbery B 17872 [NFF
+9810310009 3, BES, No payment available for collection B 17874 INFF
+9810290106 3. EPOSS, Cash flow report, wrong info printed ic 17875 [Duplicate 12966
+9810290114 OSS, Receipts do not match payments on sto... B 17876 IDuplicate 15836
+E-9810310012 APS, AP transaction reversal Ic 17877 [Duplicate 16925
+E-9810310013 3, EPOSS, Existing reversal allows reversal ofa... G 17878 [Duplicate 10146
+9810310015 . EPOSS, reference number on report printout B 17879 [Software
+*-9810310016 [MOR3, POSS, Transaction reference not completely displayed on receipt ic 17880_ [NEF
+
+COMMERCIAL IN CONFIDENCE Page 23 of 31
+FUJ00058422
+
+FUJ00058422
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date: 6/1/99
+Project
+[E-9810310014_[MOR3, EPOSS, Reboot afler previewing report B 17881 [Duplicate 16493
+F-9811020052 IMOR3, EPOSS, Re-valued product list duplicating in... B 17916 [Duplicate 17402
+17996
+226. IF-9811020053_IMOR3, EPOSS, Office weekly transfer totals and rec B 17917 [Duplicate 11952
+11954
+9811020035_IMOR3, BES, file type 10 was received from pathway cont B 17919 [NFF
+9811020057_[MOR3, EPOSS. in active stock roll over B 17920 [Procedures
+9811020084 _[MOR3, BES, description of benefit on receipt. B 17926_INFF
+9811020100_IMOR3, TEST, PM cant remember the password B 17929 [Duplicate 17968
+9811020116 _IMOR3, TIP, Files W_319066 and W_318066 have both been. B 17934 [NFF
+E-9811020115_[MOR3, TIP, Files W_318067 and W_319067 have been re. B 17936 [NEF
+F-9811020114_[MOR3, BES, tsa ref 981031369, CAPS contact Tan ic 17937 [Withdrawn
+9811020117_IMOR3, BES, batch receipt B 17938 [Setup
+. [E-9811020119_IMOR3, EPOSS, office weekly re-deemed stamps B 17940 [Duplicate 12073
+F-9811020120_IMOR3, EPOSS, office weekly P and A summary B 17941 [Duplicate 12411
+9811020124 _IMOR3, EPOSS, office weekly green giro summar B 17942 [Duplicate 12072
+9811020125 _IMOR3, EPOSS, office weekly postal orders encashment B 17943 [Duplicate 12095
+9811020113 _IMOR3, BES, ITSA ref 981033391 CAPS contact nam Tan ic 17944 [Duplicate 17723
+9811020136 _[MOR3, Cardiff 12, test day 9, expected results B 17948 [Duplicate 17416
+79811020134 _IMOR3, BES, refers Arsenal case 3, a successful urgent stop sent B 17950 [Withdrawn
+°-9811030003 IMOR3, APS, APS file P316001 which was delivered yesterday... B 17964 [Unresolved routed to
+CFM
+243. [E-9811030020 _[MOR3, COUNTER, Manager is trying to log on to the main gate. A 17968 [Duplicate 16596,
+E-9811030064 _IMOR3, BES, unable to encash benefits as card is no... B 17980 [NFF
+9811030067_IMOR3, MIGRATION, discrepancies found between last ecco balance and stock unit snapshot. B_[2001500 [17983 [Software
+9811030095_[MOR3, OPS, crcl evn received from host H00577000101 B 17987 [Duplicate 17457
+247. IE-9811030106_[MOR3, BES. incorrect screen message B 17989 [Duplicate 17990
+248. IE-9811030108_[MOR3, BES, incorrect screen message ic 17990 [Software
+MOR3, AP, summary of APS transaction - report in wrong order (C_[0057703_ [17993 _ISoftware WP2080
+MOR3, EPOSS, AP, magnetic card transaction ic 17994 [Duplicate 2
+MOR3, EPOSS, revaluation list produced by system when not expected B 17996 [Software WP2066
+IMOR3, BES, no payment available for collection B 17997 [Software
+253. IE-9811020091 [MOR3, APS, two APS files received... ic 18018 [Unresolved routed 0}
+CFM
+254, IE-9811040051_[MOR3, EPOSS, suspense / discrepancy handling - stock unit balance wrong B 18027 [NEF
+255. [F-9811040057_[MOR3,_EPOSS, PM is trying to reverse a re-evaluation tranaction G 18031 [Workaround
+
+COMMERCIAL IN CONFIDENCE Page 24 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+1 re Version: 1.0
+Closure Report Date: 6/1/99
+
+FUJ00058422
+FUJ00058422
+
+256. E-9811040069_[MOR3, BES, incorrect receipt message [200150018035 _[NFF
+MOR3, EPOSS, Incorrect revaluation accepted by system, B 18038 [Duplicate 17639,
+MOR3, BES, third foreign encashment allowed B 18039 [Duplicate 17926
+(17832)
+259. IE-9811040079_[MOR3, APS, Cardiff AP summary total incorrect B 18040 [Duplicate 16429
+260. [£-9811040104_[MOR3, EPOSS, Counter weekly summaries showing no in... B 18060 [Duplicate 17659
+261. [E-9811040105_[MOR3., EPOSS, counter weekly PO paid summary incorrect B 18061 [Duplicate 12095
+262. IE-9811040106_[MOR3, EPOSS, no indication of error notices on bal B 18063 [NEF
+263. [E-9811020082_ [MOR3, RECONCILLTATION, BSU report supr101 lists seven post offices B 18067 [Software WP2115
+IWP2037
+E-9811040107_IMOR3, EPOSS, counter weekly DVLA V10/V1I reports wrong [0020389 [18071 [Software WP2080
+. [E-9811040108_IMOR3, EPOSS. Counter weekly P&A summery incorrect ic 18072 [Duplicate 17652
+9811050018 IMOR3, OPS, critical eventing error on model office tec server B 18091
+9811050051 [MOR2, BES, Request was received to change customers no... B 18102
+F-9811050060_IMOR3, OPS, Critical event rec from host H 510262004 B 18104
+9811050064 _IMOR3, BES. Wrong payment receipt advised by PCHL ic 18106 [NFF
+9811050078 _[MOR3, EPOSS, stock unit balance B 18111 [NEF
+9811050080 stock unit balancing B 18112 [Duplicate 18030
+9811050084 _[MOR3, AP. unable to get further copies of AP receipts ic 18113_ [Software WP2:
+39811050101 _IMOR3, BES, Problem with Pathway file regarding the PO B 18128 [NFF
+9811050102_[MOR3, BES, Job BHBES1159010783, job agent 2/bes 2 abend... B 18129 [Duplicate 18148
+9811050109_[MOR3, EPOSS, P&A gip 1, transaction not displa B 18136 [Unresolved
+9811050111 3. EPOSS, product not mapping to cash account report B 18137_[Software WP2055
+9811050117 _[MOR3, EPOSS, cash account balance brought forward wrong B 18142 [Software WP????
+9811050118 _IMOR3, EPOSS, Migration figures multiplied on cash... B 18143 [Duplicate 17542
+E-9811050124 _[MOR3, OPS, Harvester job has been abended and. B 18148 [Unresolved [with CPM
+9811060021 _IMOR3, TIP, file W_312001 has been rejected - invalid org B 18165 [Workaround
+9811060023_[MOR3, TIP, File W_316055 was expected to be correct, B 18166 [Duplicate 17867,
+9811060025_IMOR3, TIP, File W_314057 has been rejected B 18168 [Duplicate 17786
+9811060026 . TIP, File W_314013 has been rejected B 18169 [Duplicate 17785
+F-9811060029_[MOR3, TIP, file W_321036 has been rejected - invalid item id B 18171 [NFF
+9811060030 . TIP, File W_321066 has been rejected B 18172 [Administrative
+9811060038 IMOR3, BES, unexpected message card not activated B 18175 [Software
+E-9811060040_IMOR3, EPOSS, counter weekly MVL V!!/V10 summary wrong ic 18176 [Duplicate 18071
+. [E-9811060047_IMOR3, BES payment collected incorrectly B_[0020389 [18178 [Software WP2447
+F-9811060051_[MOR3, EPOSS, transaction log incorrect ic 18179 [Duplicate 11618
+
+COMMERCIAL IN CONFIDENCE Page 25 of 31
+ICL Pathway
+Horizon
+
+Project
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+1 re Version: 1.0
+Closure Report Date: 6/1/99
+
+FUJ00058422
+FUJ00058422
+
+290. [E-9811060055_[MOR3, TIP, file rejected W_321002 - invalid org and missing transaction mode B 18180_[Duplicate 18165
+291. [E-9811060058_[MOR3, TIP, file rejected W_322035 - invalid org B 18181 [Duplicate 18165
+292. IF-9811060057_[MOR3, TIP, files rejected W_321003, W_321019 - missing transaction mode B 18182 [Workaround
+293. IE-9811060066_I[MOR3, OPS, Critical event received from host bbobbo046 B 18184 [Withdrawn
+294. [F-9811060074_IMOR3., F cash account displays time IC_[006560 9 [18189 [Software WwP2422
+295. [F-9811060076 [MOR3, BES, DSS limit functionality B_[0065609 [18192 [Duplicate 18178
+296. IE-9811060080IMOR3, OPS, DWH, BES upload has abended. A 18195 [Duplicate 18159
+13103
+297. [F-9811060092_[MOR3, EPOSS, cash account not reporting correct figures B 18196 [Duplicate 17516
+298. IE-9811060093_[MOR3, EPOSS, inland parcel service B 18197 [NFF
+299. [E-9811060094_[MOR3, ACCESS CONTROL, temporary lock after 15 mins not implemented B 18198 [NEF
+300. [F-9811060095_[MOR3, EPOSS, stock unit rollover did not print a final balance ic 18199 INFF
+301. [F-9811060096_[MOR3, EPOSS, Procedural, to post a rem discrepancy into suspense ic 18201 [Procedures
+302. [E-9811060120_IMOR3, TIP, File rejected W_323034 - invalid item transaction mode B 18210 [NFF
+303. [F-9811060119_[MOR3, TIP, file W_316966 has been rejected B 18211 [NFF
+304. [F-9811070039_[MOR3, TEST, PM is having difficulty printing receipt for B 18220 [Duplicate 16493
+305. [E-9811070041_IMOR3, BES, procedural, wrong icon shown in procedures ic 18221 [Procedures
+306. [F-9811070045_[MOR3, BES, no payment B 18222 [NFF
+307. [E-9811070050_IMOR3, BES, CAB failure: Encashment made on day 14 al... B 18226 [Workaround
+308. [F-9811070054_[MOR3, BES, Foreign encashment failures B_[Path900 [18229 [Software
+309. [F-9811070055_IMOR3, BES, A 3" foreign encashment was allowed... B 18230 [NFF
+310. [F-9811070051_[MOR3, NETWORK, Unable to communicate with Wolves counter. B 18233 INFF
+311. [E-9811090032 [MOR3, OPS, File P323001 was delivered at 7.42am 6/11/98 B 18246 [Unresolved routed to
+CFM.
+E-9811090143 _IMOR3, BES, Procedural, Incorrect receipt used ic 18271 [Procedures
+E-9811100067_[MOR3, EPOSS, Citibank money order icon not working B 18302 [Duplicate 16522
+9811100070 _IMOR3, APS, Clerk would like to reverse an AP transaction B 18305 INFF
+9811100074 _IMOR3, OPS, Critical event received from host B 18308 [NFF
+9811100079 _IMOR3, TEST, Caller had a power cut during a BES transaction B 18310 [Withdrawn
+9811100081 _IMOR3, 7 PM has a customer who would like to encash a... B 18312 [NFF
+E-9811100112_IMOR3, BES, recovering incomplete BES transactions B 18334_[NEF
+9811100113 _IMOR3, EPOSS, Supervisor level access denied by sys ic 18335 [Duplicate 7261
+9811100116 IMOR3, TIP, The following CLFSF files did not contain data. B 18336 INFF
+E-9811100147_IMOR3, OPS, Critical error on rel2 MO Tivoli machine B 18371 [Software
+E-9811110049_IMOR3, APS, tranactions for 10/11/97 are notified... B 18378 [Unresolved
+E-9811110051_[MOR3, APS, transactions 10/11/97 expected by TIP. B 18379 [Duplicate 18378.
+
+COMMERCIAL IN CONFIDENCE Page 26 of 31
+FUJ00058422
+FUJ00058422
+
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date: 6/1/99
+Project
+324. JE-9811110054_[MOR3, EPOSS, APS daily report B 18383 [Duplicate 17660
+325. [E-9811110055_MOR3, BES, Encashments for day 17 B 18386 [NFF [Operator
+error
+9811110057_[MOR3, BES, Encashment missing B 18388 [NEF
+9811110056 _IMOR3, TEST, Serve customer, printing receipt B 18389 [Duplicate 2227?
+F-9811110059_IMOR3, BES, SUPRIOI dated the 24/11/97 reports I PO which... B 18392 [Duplicate 18067
+E-9811110060_IMOR3, EPOSS, Unable to use a discount value ic 18396_[NFF
+9811110062_[MOR3, EPOSS, Daily reports B 18397 [NEF
+9811110063_IMOR3, EPOSS, Transfer reversal B 18399 [Software
+9811110068 [MOR3, EPOSS, Intemational reply coupons B 18403 [Duplicate 14519.
+9811110070_[MOR3, PROCEDURAL, Changing PIN on swipe card G 18405 [Procedures
+39811120022 _IMOR3, BES, Non-receipt of replacement card B 18434_[NFF
+9811120023 [MOR3, EPOSS, reboot trying to produce a report B 18435 [Duplicate 16493
+9811120052_IMOR3, BES, Non-receipt of batch of cards B 18449_[NFF
+9811120055_[MOR3, APS, Incorrect summary B 18450_[NFF
+9811120076 _IMOR3, OBCS transactions for 24/11/97 received on. B 18458_[NFF
+E-9811120095_[MOR3, TIP, File W_328036 received by TIP contains 2 subfiles. B 18488 [Software [CP1600
+9811130002 _[MOR3, TIP, File W_329001 was rejected because a. B 18508 [Duplicate 18546
+9811130004 _IMOR3, TIP, File W_328002 has been rejected because... B 18510 [Software CP 1637
+9811130005_IMOR3, TIP, File W_324044 was rejected because... B 18511 [NEF
+MOR3, TIP, File W_326003 contains an end of day marker for org unit 23579 (Southampton) which is/B- IPath900 [18512 [Unresolved
+non-automated. These are not expected by TIP.
+MOR3. TIP, File W_330001 has been rejected... B 18546 [Duplicate 14519
+IMOR3, TIP, File rejected due to invalid item B 18547 [NFF
+IMOR3, Day 22 encashments file has not come in... B 18590_INFF
+MOR3, BES, 30 minute delay when collecting payments. B 18610_ [Procedures
+MOR3, TIP, File W_322005 has been rejected... B 18615_[NFF
+MOR3, TIP, File W_330001 has been resent B 18637 [Withdrawn
+9811170059_IMOR3, APS, Unable to get APR reports off. ic 18679 [Unresolved
+351. [E-9811180125_IMOR3, TIP, reconciliation issue B 18704 [Duplicate 17516
+352. [E-9811060077_I(ITSA REF: 981107525) Pathway problem relating to batch output. Batch received day 14 shows the cardIB [Path900__ [18729 [Software WP2i41
+request issued from CAPS in respect of customers alternative payee has been rejected. ‘The alternative payeeI
+is Mr Paul Davies, NINO: NZ001201C._On line
+353. [E-9811190078__[MOR3, APS reconciliation report error B_IPath900__ I 18746 [Software WP2403
+354, [E-9811190080_[MOR3, APS reconciliation national totals report error B_IPath900__ I 18747 [Software WP2535
+355. [E-9811190081_[MOR3, APS reconciliation national totals report error B_IPath900__ [18748 [Software WP2403
+
+COMMERCIAL IN CONFIDENCE Page 27 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+
+1 re Version: 1.0
+Closure Report Date: 6/1/99
+
+FUJ00058422
+FUJ00058422
+
+356. ]E-9811190097_IMOR3, BES, Encashment performed at org unit 23576 (Wolves) on 19/11/97 (transaction referen B Patho00 I 18755 [NEF
+1510261/03/00001437) for £44.20 not received by TIP.
+357. [E-9811190067_IMOR3, BES, Encashment performed at org unit 23579 (Southampton) on 12/11/97 (transaction re: B [Path900 [18768 [NEF
+1502560/99/00003152) for £44.20 not received by tip.
+358. [£-9811190071_IMOR3, TIP, Bes encashment performed at AUG unit 23579 ( Southampton ) on 13/11/97, transaction B IPath900 [18769 [NEF
+reference $02560/99/0000/3164 for £11.05, not received by TIP. NINO AB476345
+359. [E-9811240116 IMOR3, BES encashment performed at AUG unit 23573 (Cardifl) on the 24/11/97 for £152.20 (transaction ref IB [Path900 _ I 18931 [Software cP1637
+1002680/99/00003205) not received by TIP. This encashment appears to be included within the total
+lencashments for 24/11/97 as reported on the PMSR 101
+360. [E-9811250063_IMOR3, AP transactions received by TIP 13/11/97 = £17320.53. Transactions on CLSSF for 13/11/97 sentin IB [Path900 [18971 [Workaround
+lotran file W_321067=£20400.56. There is a difference of £3080.03. AP transactions received by TIP
+14/11/97=£6109.90 transactions on CLSSF for 14/11/97...
+361. [E-9811250087 IMOR3, TIP, CAC records for org unit 23575 week 34. The value on lines(B IPath900__I 18985 [Duplicate 10552
+19086-9087-9088-9089-9092-9093-9094 and 9095. (table 12 parcel traffic ) are zero. otx records received by
+[TIP for this week included item 691 (inland parcel stamped) quantity 24...
+362. IE-9811250088 IMOR3, the following CAC value for AUG unit 23573 (Cardiff) for week number 34 was found to be in eror[B [Path900 _ I 18986 [Sofware wp2404
+lwhen compared with OTX records; line 1062; OTX value = £2200,00, CAC value = 2619.37. OTX values
+lreceived making up this are both Item ID 840, TXM mode
+363. [E-9811250089 _[MOR3, TIP, The following value for AUG unit B 18987 [Duplicate 18986
+364. [E-9811250090 IMOR3, Following CAC value for AUG unit 23573 (Cardiff) for week number 34 was found to be in error[B [Path900 _ I 18988 [Software wP2404
+lwhen compared with OTX records;line 1066; CAC value = £638.54; OTX value = £842.32, a difference ofI
+£203.78. Is attributable to file transactions for item L
+365. [E-9811250091 IMOR3, CAC value for line 0701 for AUG unit 23573 ( Cardiff) for week number 34 contained a negativeIB [Path900 [18989 [Duplicate 18464
+lvalue (minus 8102.40) the only cash account line which can appear negative is line 2074 (uncharged receipts).
+366. [E-9811250092 IMOR3, Entries appear on hard copy cash accounts produced by Horizon Test Team for line No. 3091 for week[B [Path900 _ I 18990 [Duplicate 18456
+34 for Arsenal (23574) and Cardiff (23573) values 2 and 1 respectively. Corresponding entries within CACI
+records show values against line No. 9998
+367. [E-9811270087_IMOR3, TIP, CAC record for Arsenal (23574) for week 35 B 19075 [Duplicate 17516
+368. IE-9811270088_IMOR3, TIP, CAC record for Arsenal (23574) for week 35. B 19076 [Withdrawn
+369. -9811300090 IMOR3, CAC record for Arsenal (23574) B 19107 INFF Invalid char
+transmission:
+error
+370. IF-9811300094 IMOR3, CAC record for Arsenal (23574) B 19109 [NEF Invalid char
+transmission:
+error
+371. IE-9812010011 IMOR3, CAC record for Arsenal (23574) B 19118 [NFF
+372. [E-9812010059_IMOR3, CAC record for Arsenal (23574) B 19122 [Duplicate 14519
+
+COMMERCIAL IN CONFIDENCE Page 28 of 31
+ICL Pathway
+
+Horizon
+Project
+
+Release 2 Model Office Rehearsal 3 Doc Ref:
+
+Closure Report
+
+CS/REP/032
+
+Version: 1.0
+Date: 6/1/99
+
+FUJ00058422
+FUJ00058422
+
+373.
+
+E-98 12030048
+
+IMOR3, On many instances in this test phase - Horizon test
+
+team ha
+
+carried out sell transactions valued at}
+
+£93.41 with an item ID of 447 (British Gas barcode bill). TIP has not received any OTX records relating to
+
+these transactions.
+
+19270
+
+NEFF
+
+Duplicated PinICLs referenced during MOR3
+
+avaene
+
+2
+
+9.
+
+10.
+
+I
+12.
+13.
+14,
+15,
+16.
+
+17.
+
+18.
+19.
+
+20.
+
+21
+
+22.
+
+23
+m4,
+25,
+
+26.
+27.
+
+PinICL.
+9504
+9700,
+10790
+11241
+11464
+11534
+11592
+
+11599
+11724
+11890
+11952
+11954
+12072
+12073
+12095
+12627
+12891
+12966
+13063
+13096
+13103
+13611
+14181
+14325
+14365
+14681
+15139
+
+Owner Target
+T&L c
+Tal D — MOR3«
+T&L c
+Tal c
+Tal c
+T& bus int —C
+T&L c
+EPOSS c
+T&l D
+Tal c
+Tal c
+Tel c
+Tal c
+Tal c
+T&L c
+EPOSS c
+EPOSS B  MOR3¢
+T&l c
+Tal c
+T&l B
+Tal B
+Tel B
+Devintrel B  MOR3c
+Privat 3rd B
+TSC B
+ref data c
+T&L Cc MOR3¢
+
+Status
+Closed
+Closed
+Closed
+Closed
+Closed
+Closed
+Closed
+
+Closed
+Closed
+Closed
+Closed
+Closed
+Closed
+Closed
+Closed.
+Closed
+Closed
+Closed
+Closed
+Closed.
+Closed
+Closed
+Closed
+Closed
+Closed
+Closed
+Closed
+
+Comment
+
+Stack entry help facility - need to modify the message displayed WP1785
+
+WP1619, WP1779
+
+WP2514, WP2515 - MOT
+
+Report -
+WP1929-S
+
+unter weekly transfer summary WP 1934
+WP1933-MOT
+
+Report - Office daily rem in by day WP1934 / 1933
+
+Report - Office weekly rem in by day WP2066 / 2067 / 2241 / 2257 - MOT,
+
+Awaiting WP2422
+
+Report - Office daily UKPA WP1786.
+
+WP2066
+
+Report - daily giro deposit & giro withdrawals WP2422
+
+EPOSS - Office weekly transfer total report empty WP 2080 / 2422
+e weekly transfer recn report empty WP2080
+
+EPOSS - Off
+
+WP1929-ST WP1933-MOT
+Report - Weekly redeemed stamps WP2514
+
+WP2066
+
+Receipt - WP1551 - part fix, WP1609 9Finc6
+
+14413 raised for complete fix for MOR2, WP 1068, WP1125, WP 1344, WP1345 - Check
+
+Office weekly cash flow error WP2066
+Revaluation slip wrong format, WP2422
+
+Report - stock on hand = WP242:
+
+WP1528, WP2100-MOT(FT), WP2251-MOT, WP2182-MOR3
+Report - stock unit & office balance WP2080
+
+WP1743
+BPS - CP
+WP1727 final response
+Product 121
+Helpdesk WP1564
+
+COMMERCIAL IN CONFIDENCE
+
+Page 29 of 31
+FUJ00058422
+FUJ00058422
+
+ICL Pathway Release 2 Model Office Rehearsal 3 Doc Ref: CS/REP/032
+Version: 1.0
+Horizon Closure Report Date: 6/1/99
+Project
+28 15315 TS B Closed Report - cash account part fix PC16528 for rest of fi
+29. «15836 EPOSS-dev BB Closed _ EPOSS - SU + Offices bal report/missing info Duplicate 12153
+30. 16254 T&E c Closed CP1641, WP2066-MOT
+31 16255 T&d B Closed WP1933-MOT
+32. 16493 T&l c Closed WP1790, Escher fix available
+33. 16634. Dev-int-rel A Closed WP1933/1934-MOT
+34. 16868 T&l B Closed
+35. 16925. APS-ctrdev CC Closed = N
+36. 17027 B Closed Fixed in MOR3 - no fox identified
+37. 17402 D Closed WP2029
+38. «17454 D Closed WP1966-S'T, WP2063-MOT
+39. 17516 B Closed WP2055(FT)
+40. 17542 B Closed WP2066/2067/2241/2257-MOT
+41 17639 c Closed Incorrect documentation of PAS/CMS error codes, WP2514
+42. 17652 c Closed WP2066/2067/2241/2257-MOT
+43 18456 B Closed WP2080
+44. 18464 T&l B Closed WP2080
+45 7261 EPOSS-dev B Progress WP2081-MOT, WP2516
+46. 7853 PIAT c Progress WP1576 failed
+47. 9112 B  MOR3c Progress Counter WP 2076 / 2077
+48. 10146 c Progress EPOSS - Handling of PO fees as stock items
+49. 10552 B Progress Report - Cash account - WP 2028 / 2095 / 2170
+50. 11618 EPOSS dev B Progress Transaction logs, WP2576 / 2687 - MOT
+51 11874 T&d Cc MOR3¢ Progress WP1438, WP1434, WP2404 / 2405 / 2510. Retest with WP2576 / 2577
+52. 12411 T&L c Progress Report - Weekly P2311MA, WP2514
+53. 14519 EPOSS- B Progress EPOSS - to enable transaction modes
+54, 16162 T&I Bus c Progress WP1969
+55. 16193 Ref data c CP1641
+56. 16522 POCLref iB See gl - fix to cash/ace
+data
+57. 16528 T&L Progress WP1933/ 1934 / 1609
+
+COMMERCIAL IN CONFIDENCE
+
+Page 30 of 31

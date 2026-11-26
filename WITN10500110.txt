@@ -1,0 +1,680 @@
+WITN10500110
+WITN10500110
+
+1. INTRODUCTION
+
+1 This
+
+s added to get the section numbers right in section 2.
+
+2. EXPERT ISSUES AND SUMMARY OF OPINIONS
+
+2 In this summary and in the body of our report we have grouped the 15 Horizon issues into
+four groups of related issues, so that our opinions can be expressed as concisely as possible.
+‘The groups have minor overlaps with each other and therefore require some cross-referencing,
+between groups. In what follows, for each group, we will first state the Horizon issues, and
+then give a summary of our opinions. In section 2.5 we summarise where our opinions differ
+
+from Mr Coyne's opinions, as expressed in his report.
+
+2.1. Bugs in Horizon
+
+w
+
+‘The first group of issues includes the Horizon issues 1, 3, 4, and 6. These issues concern bugs
+
+in Horizon which might have had an impact on branch accounts. The issues are:
+
+4 Issue 1: To what extent was it possible or likely for bugs, errors or defects of the nature alleged
+at §§23 and 24 of the GPOC and referred to in §§ 49 to 56 of the Generic Defence to have the
+potential to (a) cause apparent or alleged discrepancies or shortfalls relating to Subpostmasters’
+branch accounts or transactions, or (b) undermine the reliability of Horizon accurately to
+process and to record transactions as alleged at §24.1 GPOC?
+
+5 Issue 3: To what extent and in what respects is the Horizon System “robust” and extremely
+unlikely to be the cause of shortfalls in branches?
+
+6 Issue 4: To what extent has there been potential for errors in data recorded within Horizon to
+arise in (a) data entry, (b) transfer or (c) processing of data in Horizon?
+
+7 Issue 6: To what extent did measures and/or controls that existed in Horizon prevent, detect,
+identify, report or reduce to an extremely low level the risk of the following:
+
+a) data entry errors;
+
+b) data packet or system level errors (including data processing, effecting, and recording the
+same);
+
+©) a failure to detect, correct and remedy software coding errors or bugs;
+
+d) errors in the transmission, replication and storage of transaction record data; and
+
+e) the data stored in the central data centre not being an accurate record of transactions
+entered on branch terminals?
+
+8 Issues 1 and 3 are restricted in scope to those errors which might have an impact on branch
+
+accounts, whereas issues 4 and 6 are not explicitly restricted to that scope. We have chosen to
+
+interpret issues 4 and 6 generally - in the sense of asking what general measures are built into
+Horizon - while at the same time focussing them largely on the scope of issues 1 and 3 -
+
+addressing mainly those effects with possible impact on branch accounts. Issues 4 and 6 then
+WITN10500110
+WITN10500110
+
+ask about specific dimensions of those effects. The overall question - of how much effect bugs
+in Horizon might have had on the claimant's branch accounts - remains as stated in issue 1.
+2.1.1. Robustness of Horizon
+
+9 We first summarise our opinion on Issue 3, the robustness of Horizon. In our opinion the
+design, implementation and support of Horizon achieved a very high degree of robustness. It is
+necessary to spell out in more specific terms what that means.
+
+10 Horizon's main purpose is to support the financial transactions and management of PO branch
+accounts - through from the point of sale in the branches, to PO's annual financial accounts
+(although aspects of his are outside the scope of the Horizon trial). To meet this requirement,
+Horizon and related systems must provide a very high degree of confidence to subpostmasters
+and to PO management that the resulting accounts are robust against:
+
+a) Failures in Horizon hardware, software, or communications
+b) Errors in business processes made outside Horizon
+c) User errors made on Horizon in the branches
+
+d) Deliberate errors of any kind - i.e. fraud
+
+11 To be robust against all these kinds of errors is a very demanding requirement. Large parts of
+our report are devoted to describing how Horizon, its supporting hardware and software, and
+
+surrounding IT’ systems have been designed to achieve this - and to what extent those design
+
+objectives were achieved [the last requires additions to the Foundation report, summarising test
+results}. We conclude that the resulting system has had a high degree of robustness against all
+four categories of effect, at all stages of its service life.
+
+12 In this summary we focus particularly on the corrective measures built into Horizon, to ensure
+that errors in categories (b) - (4) would not have any permanent effect on branch accounts.
+‘These measures rely on the fact that for every business transaction entered into Horizon,
+Horizon itself is not the only record of what happened. Other records include the physical cash
+and stock within each branch, and the electronic records of the PO clients on whose behalf PO
+branches carry out customer transactions. It is possible to compare the record on Horizon with
+these other records, and if there is any discrepancy, to correct the record on Horizon. This
+
+comparison and correction of Horizon is frequently done, in:
+@ Periodic checks of physical cash and stock in the branches
+Periodic checks of PO records against the electronic records of clients
+
+13 The result of these checks is that for nearly all errors in categories (b) (c) and (d), while they
+may produce a temporary anomaly in branch accounts on Horizon, any such anomaly will be
+corrected after a period of weeks or occasionally months, depending on PO clients’ business
+
+processes.
+14
+
+2.1.2
+
+17
+
+18
+
+19
+
+20
+
+WITN10500110
+WITN10500110
+
+There are large classes of errors of type (a), arising from software bugs in Horizon, whose only
+effect is to mimic, or possibly to increase the chances of, some error in types (b) - (d). So while
+these software bugs may produce temporary anomalies in branch accounts, the same correction
+processes will remove those errors before long, and there will be no permanent effect on
+
+branch accounts..
+
+‘This is the most important way in which, in our opinion, Horizon is robust. A clear
+understanding of these robust error correction processes will enable the court to understand,
+
+for any bug in Horizon, whether or not it can have any permanent effect on branch accounts.
+
+Horizon also has built into it a large number of fairly standard measures to achieve robustness
+against hardware errors, communication failures, and failures of the supporting software. In our
+opinion, these robustness measures have been professionally designed, implemented and tested.
+Macro Analysis of Bugs in Horizon
+In addressing Horizon issue 1, we have taken several different approaches. The first of these,
+which we have called the Macro analysis, does not rely on information about individual parts of
+Horizon, or specific bugs in Horizon. It enables us to make an overall estimate of the impact
+of all Horizon bugs, detected or undetected, on the accounts of a typical branch - and
+
+therefore, to estimate the net financial impact of bugs on all claimants’ branch
+
+The problem of estimating the net effect of all bugs in Horizon, on a typical set of branch
+accounts, is a problem of engineering measurement. We need to estimate a signal (the net effect
+of all bugs in Horizon), in the presence of a noise (the effects of human errors and business
+
+process errors in the branches
+
+In order to measure any signal in the presence of noise, the accepted engineering approach is to
+
+measure the signal plus the noise, using a sample which has the lowest possible level of noise -
+thus to produce an upper limit on the size of the signal. The choice of a sample with the
+smallest noise produces the tightest possible upper limit on the signal. We can reasonably
+assume that the level of the signal (effects of bugs and back-office errors) is uniformly
+distributed across all branches, and for each branch is approximately proportional to its number
+of stock units; or for the smaller branches, its monthly revenue. Therefore it is valid to measure
+the signal on a set of branches with an expected low level of noise (ie. those which are well
+run and produce the most reliable accounts), and then to use that measure of the level of the
+signal for any branch, including those managed by the claimants.
+
+Our Macro approach is to do this. For any branch, the branch discrepancy at the end of any
+trading period is the sum of three terms: (a) the discrepancy in cash and stock found by manual
+checking; (b) the sum of transaction corrections from errors discovered in reconciliation; and
+(© an amount caused by bugs in Horizon (which will usually consist of amounts not
+
+understood by the SPM).
+WITN10500110
+WITN10500110
+
+21 The main comparison we wish to make it to compare the typical levels of branch discrepancy at
+a group of well managed branches, with the levels of discrepancy claimed by the claimants. As
+the well run branches were equally prone to bugs in Horizon as the claimant's branches, the
+well run branches give an estimate of the impact of Horizon bugs on the claimant's branches.
+As we shall see, this estimate is very much smaller than the net discrepancy claimed by the
+claimants - showing that no significant part of the discrepancy could have been caused by
+
+Horizon bugs.
+
+22 This broad conclusion will be evident from the figures. However, we wish to establish this
+
+conclusion with a high degree of confidence, and to show that it cannot be cast into doubt by
+
+any possible random effects between branches , or between different factors which can affect
+
+branch accounts. To do this, some elementary statistics will be required. These will be fully
+
+explained in the relevant chapters of the report; here we summarise the approach:
+
+@ We assume that certain types of effect on branch accounts (such as manual errors in a
+branch, and bugs in Horizon) are statistically uncorrelated with one another - that is, the
+occurrence of one effect ina branch and trading period does not affect the probability of
+the other effect occurring; and furthermore, that they may occur with different signs,
+positive and negative.
+
+@ The correct statistical way to account for such uncorrelated additive components is to
+calculate a root mean square (RMS) of their sum over a long enough period. This provides
+an upper limit on the effect of any component, such as bugs in Horizon, with a
+computable statistical accuracy.
+
+@ We further assume that the impact of Horizon bugs is on average the same for well
+
+managed branches as for the claimants’ branches.
+
+@ We use standard statistical methods to estimate what sample size of well run branches and
+trading periods is necessary to get a reliable upper limit on the impact of Horizon bugs on
+claimants’ branches
+
+@ We test all our assumptions by trying to devise counter-
+
+xxamples to them
+
+23 If we assume that the three terms (a) (cash and stock discrepancies) (b) (errors found in
+reconciliation) and (6) (effects of Horizon bugs) are statistically uncorrelated, we can show
+mathematically that for any set of branches and trading periods, the sum of squares of the
+
+branch discrepancies (d?
+
+(a + b + ©) is an upper limit on the sum of squares of term (©)
+
+(that caused by bugs in Horizon)- which , we can assume, is independent of branches. We can
+measure an upper limit on term (c) using any set of branches we choose, using a large enough
+sample to get a statistically reliable answer. To get the tightest possible upper limit, we need to
+
+choose the best run branches. For instance, for a perfectly run branch, with no manual errors in
+24
+
+26
+
+28
+
+29
+
+WITN10500110
+WITN10500110
+
+checking stock or in customer transactions, the terms (a) and (b) will be zero, and the branch
+discrepancies would be an accurate measure of term (c). For a well run branch, it will be a tight
+upper limit on (c).
+
+[Nearly all the figures which follow are illustrative guesses. We urgently need to replace them
+by real measured figures.]
+
+We have done this for a selection of 50 branches, which on the basis of their monthly branch
+discrepancies appear to be well run branches, over a period of 24 months for each branch -
+with the periods randomly distributed over the period of the dispute, approximately matching
+the distribution of periods where the claimants suffered discrepancies [we need to measure this
+distribution] For those branches, we may expect the sums of terms (a) and (b) to be the
+smallest, so to give the tightest upper limit on term (c). We can show statistically that this is a
+large enough sample to give an answer accurate to within better than 10%.
+
+From this calculation, we find that an upper limit on the root mean square monthly correction
+to any branch accounts caused by any bugs in Horizon is £X per month per stock unit. As a
+first guess, X = £80? [We urgently need to measure this figure for 50 good branches] Since
+Horizon bugs are expected to affect all branches equally, we can apply this figure to all
+
+branches, including the claimants’ branches.
+
+[to avert the criticism that , by choosing the branches with low branch discrepancy, we have
+chosen just those branches which 'got lucky’ in being subject to few Horizon bugs, whereas the
+
+claimants were less lucky, I intend to take two approaches: (a) statistical analysis to show that
+
+this lucky fluke has very low probability of occurring, and (b) do the same analysis not using,
+
+the best branches, but using a randomly chosen set of branches}
+There are 560 claimants, with approximately 1000 stock units between them [may not be
+possible to count?], and the number of months over which they were in post, in which
+discrepancies could have arisen from Horizon bugs is 10,000 stock unit months [need to
+count}. Applying the upper limit (c) to this set, the upper limit on the amount of discrepancy
+which could have been caused by bugs in Horizon is £ZM - compared with a total claimed
+discrepancy over those branches of £13M. So we find that the total effect of all Horizon bugs
+
+cannot have been more than U% of the claimed discrepancy.
+{ WBD/PO/ Fujitsu could prepare a spreadsheet of the raw information - claimants" branches,
+number of SUs, and their discrepancy for each month where they declare any. We can then compute.
+
+For the calculation of 'good" branches, we need a spreadsheet analogous to the claimants' spreadsheet -
+
+50 good branches, their numbers of SUs, and monthly balancing amounts for 12-month periods.)
+
+However, this figure is only an upper limit on the amount arising from Horizon bugs. In
+practice, when a postmaster with a well-run branch discovers at the end of a Trading Period
+
+that he has a branch discrepancy - particularly when it is a large one - he usually investigates its
+32
+
+33
+
+we
+a
+
+WITN10500110
+WITN10500110
+
+causes to try to understand them. In this way he may understand a large part of the discrepancy
+as arising from some errors by himself or his staff. It is only the remaining amount, which the
+SPM cannot understand, which could possibly have arisen from Horizon bugs.
+
+[This needs to be done] PO have conducted a number of interviews with the SPMs of well run
+
+branches, to discover what proportion of their larger branch discrepancies they
+
+ypically do not
+
+understand after investigation. It appears that this proportion is approximately Z%. [we need
+the real figure]. Although detailed factual information pertaining to individual SPMs is out of
+scope for the Horizon trial, WBD [will] have submitted a witness statement confirming the
+overall average figure.
+
+Using this figure, the root mean square monthly discrepancy arising in branch accounts from
+bugs in Horizon cannot be more than £X per SU per month. Applying this figure to the
+
+claimant's branches, the total discrepancy arising from Horizon bugs cannot be more than Y%
+
+of the total claimed discrepancy.
+
+‘This result shows that bugs in Horizon cannot possibly have given rise to a large proportion of
+the financial discrepancies claimed. This is in effect the central question to be answered in the
+Horizon trial, and the macro analysis provides the answer. This answer stands, independent of
+
+any analysis or discussion of specific parts of Horizon, or of specific bugs observed in
+
+Horizon.
+
+Statistical Micro Analysis
+We have made a second analysis, which is independent of the macro analysis above, but which
+only estimates the effect on branch accounts of Horizon bugs which were detected in live use
+
+and recorded in the KEL and Peak systems.
+
+The Peak system (and its predecessor, the PinICL system) is used, among other things, to
+
+record all issues found in Horizon either in test or live use, which require corrective action.
+
+Those Peak entries which arise in test and are corrected before live use have no impact on
+branch accounts. All Peaks which arise in live use, or have not been not corrected before live
+use, and which are judged to have any possible effect on operations in the branches (including
+branch accounts), and so may give rise to the need for some instructions or workarounds in the
+branches, should be used to create or update an entry in the KEL system, so that the Help desk
+
+is able to provide the required support to SPMs.
+
+Therefore any Horizon bug, which is discovered in live use and which has potential impact on
+branch accounts, should give rise toa KEL. It is then possible , by analysing all the KELs, to
+estimate the net effect on branch accounts of all such Horizon bugs. For the great majority of
+KELs, it is possible to establish fairly easily, from the content of the KEL and any related
+
+Peaks, that there is no possible permanent impact on branch accounts.
+37
+
+38
+
+40
+
+41
+
+42
+
+WITN10500110
+WITN10500110
+
+There are approximately 8000 KELs, and it is not possible within the constraints of the
+Horizon trial to analyse all of them. However, it is possible to take a statistical approach, using
+only a random sample of KELs, provided we ensure that the sample size is large enough to
+give a reliable answer. In this way, it is possible to estimate both the number of discovered
+bugs in Horizon which could have had any impact on branch accounts, and their expected net
+financial impact on claimants’ branches. The latter figure is the more important one for the
+purposes of the Horizon trial - because a bug which might have a financial impact, but an
+impact measured only in pennies, would not be significant.
+We have analysed a sample of 200 randomly selected KELs. We present the analysis of all
+these ina table in the Appendix. For the great majority of these KELs, either there is no
+underlying bug in Horizon, or it is possible to establish by further investigation that any
+underlying bug can have no impact on branch accounts. For these, we have included in a table
+a brief summary of the investigation by which we established this.
+For the remaining 20 KELs, there is an underlying bug in Horizon, with some possible impact
+on branch accounts. For these, we need to establish quantitatively the scale of the possible
+impact. For this, there are a variety of possible sources of information, including:
+
+a) The length of the time period between when the bug was introduced in Horizon, and
+
+when it was corrected
+
+b) The types of transaction which could be affected by the bug, and the typical monthly
+
+volume of those transactions and their typical monetary amounts
+c) The circumstances in which the bug might occur, leading to an approximate estimate of
+the probability with which it might occur, for each transaction of the affected type
+d) For some bugs, there is other more direct evidence about the branches affected and the
+monetary amounts involved
+From these sources of information, it is possible to estimate, for each such bug in Horizon, the
+order of magnitude of its likely effect on the branch accounts of the 560 claimants. Because of
+the approximate nature of some of the sources of information, this estimate usually has a large
+uncertainty , relative to its magnitude. However, in most or all cases, the expected magnitude of
+the effect is so small, that even large relative errors in the number are not important.
+We then scale up the magnitude of the net effect of all bugs, to account for the fact that we
+have actually analysed only 200 KELs out of the full set of 8000. We have also estimated
+statistically the range of errors in the scaled up result. This range of errors arises as a sampling
+error, from taking only a limited sample, and we have used the established statistical techniques
+for estimating sampling errors.
+[The following numbers are only placeholders, and we need to replace them by the results of
+
+calculations when we can]
+44
+
+46
+
+47
+
+2.2
+
+49
+
+WITN10500110
+WITN10500110
+
+The total amount of all discrepancies in their branch accounts, claimed by all the claimants, is a
+figure of £13M. [this figure is now real].
+
+For the 20 KELs we found that might have an effect on claimants’ branch accounts, the typical
+scale of the their possible impact on all claimants is in the region of £500 or less - or £10,000
+for all 20 KELs with any impact taken together. For each KEL, the estimate is made to be a
+fairly conservative upper bound on the effect of the bug. The figure is as small as it is because
+there are only 560 claimant branches out of 11,000 branches in total, and any bug in Horizon is
+expected to affect all branches equally.
+
+Scaling this up from 200 KELs to 8000 KELs (ie. by a factor 40) leads to an overall impact of
+£800,000, with a statistical uncertainty of approximately 20% - i.e. not more than £ZM, out of
+
+the total claimed discrepancy of £13M.
+
+We therefore find that the total expected impact of all detected bugs in Horizon, on the branch
+
+accounts of all claimants, is not more than X% of their total claimed discrepancy.
+Because this figure is a conservative upper bound on the effects of detected bugs, it is
+consistent with the figure for the total effects of all bugs, detected and undetected, coming out
+
+of the macro analysis. The analyses agree with one another, and they both show independently
+
+that bugs in Horizon cannot account for any significant part of the claimed discrepancy.
+
+Reconciliation and Transaction Corrections
+‘The second group of issues includes the Horizon issues 5 and 15, concerning the related
+topics of reconciliation with external parties, and transaction corrections (which often arise
+from reconciliation). These have been treated as a group because they belong so closely
+together. However, as they are an important part of the way Horizon is made robust against a
+variety of user errors, they relate to issue 3 in the first group. The issues are:
+Issue 5: How, if at all, does the Horizon system itself compare transaction data recorded by
+
+Horizon against transaction data from sources outside of Horizon?
+
+Issue 15: How did Horizon process and/or record Transaction Corrections?
+
+‘These are both fairly descriptive issues, being 'how" questions and requiring a detailed 'how'
+
+answer. In bare summary, our opinion on issue 5 is:
+
+@ For eve
+
+y client organisation which uses PO branches as agents for its financial
+transactions, both the PO and the client organisation keep an electronic record of every
+transaction
+
+@ These records are periodically compared, or reconciled, to check that they match, down to
+
+the level of individual transactions.
+
+This reconciliation process is done by a range of IT systems, some of which are part of
+
+Horizon, and some of which are not.
+WITN10500110
+WITN10500110
+
+@ Whenever a mismatch is discovered, the contract between PO and the client organisation
+defines how it is to be investigated and handled.
+
+© Ifit is decided that PO are responsible for the discrepancy (which happens in the majority
+of cases, because PO branches do manual processes, whereas client IT systems are
+generally fully automated) then PO makes up the difference, and this leads to an entry in
+PO accounts on POLSAP.
+
+52 Our opinion on issue 15 (transaction corrections) can be summarised:
+
+¢ IE, following a new accounting entry in POLSAP resulting from a reconciliation
+discrepancy, PO believes that the branch was responsible for an error, a Transaction
+Correction (IC) is created on POLSAP.
+
+@ The TC is passed to BRDB, but does not at that point affect the branch accounts.
+
+@ From BRDB, information about the transaction correction is passed overnight to the
+branch, so the SPM sees it the next morning.
+
+@ If, at that point , the SPM accepts that the correction arose from an error in his branch, he
+accepts the TC, and it then affects his branch accounts. Usually this correction makes the
+accounts correct, after an error.
+
+If the SPM does not accept this, there are processes for investigating the possible cause of
+
+the TC.
+
+wn
+Oo
+
+The two issues relate to points raised in the claim and defence in the sense that, provided
+Horizon and the systems it interacts with perform reconciliation and transaction corrections
+accurately, and in a way that sub-postmasters can understand, there is no detrimental impact on
+branch accounts; but if those functions are not accurate, there may be unintended effects on
+
+branch accounts.
+54 Our analysis of reconciliation and transaction corrections is that they are carried out accurately,
+
+and the results communicated correctly to sub-postmasters; so that they are not responsible for
+
+shortfalls in branch accounts.
+
+55 [We have seen overall statistics on the number of TCs - about 1 per branch per month. We
+need to find out what proportion of these TCs are contested by the SPM, for what reasons,
+how they are investigated, and what proportion of the contested TCs are resolved in favour of
+
+the SPM].
+
+2.3 Facilities available to Subpostmasters
+
+56 ‘The third group of issues includes the Horizon issues 2, 9, and 14, because these all relate to
+
+the Horizon facilities available to sub-postmasters when running their branches. The issues are:
+
+57
+
+58
+
+60
+
+61
+
+63
+
+2.4
+64
+
+WITN10500110
+WITN10500110
+
+Issue 2: Did the Horizon IT system itself alert Subpostmasters of such bugs, errors or defects
+as described in (1) above and if so how
+
+Issue 9: At all material times, what transaction data and reporting functions (if any) were
+available through Horizon to Subpostmasters for:
+
+a) identifying apparent or alleged discrepancies and shortfalls and/or the causes of the same;
+and
+
+b) accessing and identifying transactions recorded on Horizon?
+
+Issue 14: How (if at all) does the Horizon system and its functionality:
+
+a) enable Subpostmasters to compare the stock and cash in a branch against the stock and
+cash indicated on Horizon?
+
+b) enable or require Subpostmasters to decide how to deal with, dispute, accept or make
+good an alleged discrepancy by (i) providing his or her own personal funds or (ii) settling
+centrally?
+
+©) record and reflect the consequence of raising a dispute on an alleged discrepancy, on
+Horizon Branch account data and, in particular:
+
+i. does raising a dispute with the Helpline cause a block to be placed on the value of
+an alleged shortfall; and
+ii. is that recorded on the Horizon system as a debt due to Post Office?
+
+d) enable Subpostmasters to produce (i) Cash Account before 2005 and (ii) Branch Trading
+Statement after 2005?
+
+e) enable or require Subpostmasters to continue to trade if they did not complete a Branch
+‘Trading Statement; and, if so, on what basis and with what consequences on the Horizon
+system?
+
+‘These issues are addressed as a group because they all relate to facilities available to
+subpostmasters, so our opinions all follow from a description of those facilities.
+These are all descriptive issues - 'how' and 'what' questions - so the answer to each question
+emerges from a detailed description of the Horizon facilities, and cannot be easily summarised
+here.
+‘They are related in several ways to allegations in the pleadings, and we summarise our opinions
+on those relations:
+TBD.
+
+Facilities available to Post Office
+The fourth group of issues includes the Horizon issues 7, 8, 10, 11, 12, and 13, which all relate
+to facilities available to the Post Office centrally or to Fujitsu, rather than to subpostmasters.
+
+‘The issues are:
+WITN10500110
+
+WITN10500110
+65 Issue 7: Were Post Office and/or Fujitsu able to access transaction data recorded by Horizon
+remotely (i.e. not from within a branch)?
+66 Issue 8: What transaction data and reporting functions were available through Horizon to Post
+
+Office for identifying the occurrence of alleged shortfalls and the causes of alleged shortfalls in
+branches, including whether they were caused by bugs, errors and/or defects in the Horizon
+system?
+
+67 Issue 10: Whether the Defendant and/or Fujitsu have had the ability/facility to: () insert,
+inject, edit or delete transaction data or data in branch accounts; (ii) implement fixes in Horizon
+
+that had the potential to affect transaction data or data in branch accounts; or (iii) rebuild
+
+branch transaction data:
+a) at all;
+b) without the knowledge of the Subpostmaster in question; and
+c) without the consent of the Subpostmaster in question.
+
+68 Issue 11: if they did, did the Horizon system have any permission controls upon the use of the
+
+above facility, and did the system maintain a log of such actions and such permission controls?
+
+69 Issue 12: If the Defendant and/or Fujitsu did have such ability, how often was that used, if at
+all?
+70 Issue 13: To what extent did use of any such facility have the potential to affect the reliability
+
+of Branches’ accounting positions?
+
+71 In issue 7, if the word ‘access' is interpreted as ‘access to read’ (a common interpretation in IT),
+
+then the answer is trivial; both PO and Fujitsu regularly needed to access the data to read it. If
+
+‘access’ is interpreted as 'change or update’ the answer is also yes, but under tightly controlled
+
+conditions which will not be described in this summary. In our opinion, these conditions were
+so tightly controlled that adverse effects on the accounts of a branch were very unlikely.
+
+72 Issues 8, 10 and 11 are descriptive questions with detailed answers (including 9 parts, in the
+answer to issue 10), which will not be summarised here. Issue 12 is a factual question, and we
+have been advised that the ability was used on only one occasion, which we describe in chapter
+
+X of this report.
+
+“1
+
+Issue 13 draws out the impact of issues 8 and 10 on branch accounts. In our opinion, any such
+effect was either zero or very small indeed, and could only account for at most about 0.01% of
+
+the discrepancies alleged by the claimants.
+2.5 Mr Coyne's opinions
+74 Ir will probably not be possible briefly to summarise all our responses to Mr Coyne's opinions,
+
+and we will not attempt to do so. Most responses will be in the body of our report.
+75
+
+76
+
+77
+
+WITN10500110
+WITN10500110
+
+One response will be summarised here. JC will probably list a number of bugs in Horizon,
+derived largely from Peaks and KELs. In response, we intend to show that some of them can
+have had no effect on branch accounts; and for the rest, to estimate quantitatively the likely
+
+effect on the accounts of the claimants, using the same methods for each bug as we used for
+
+our statistical micro analysis - presenting the results in a table (not in this summary, which will
+
+only have the summed number).
+
+In this way we intend to show that the net effect on the branch accounts of the claimants, of all
+
+bugs listed by Mr Coyne, is very small compared to thei total claimed discrepancy, and
+therefore cannot account for it. We will also compare this figure with the results of our macro
+
+and micro analyses.
+
+Other aspects of Mr Coyne's report cannot yet be anticipated.

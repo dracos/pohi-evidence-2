@@ -1,0 +1,5247 @@
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Document Title: XML Message Audit between Counter and BAL/OSR
+Document Reference: DES/APPIIFS/0018
+
+Document Type: Interface Specification
+
+Release: Release Independent
+
+Abstract: This document contains all of the unique messages sent between
+
+the counter and the BAL/OSR.
+
+Document Status: FOR REVIEW
+Author & Dept: Jon Hulme et al
+
+External Distribution:
+
+Approval Authorities:
+
+Name Role Signature Date
+Graham Allen Development
+
+Note: See Royal Mail Group Account HNG-X Reviewers/Approvers Role Matrix (PGM/DCM/ON/0001) for
+guidance.
+
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0018
+Version: vid
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 1 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+0 Document Control
+
+0.1 Table of Contents
+
+0 DOCUMENT CONTROL...
+
+0.1 Table of Contents
+0.2 Document History
+0.3 Review Details ..
+0.4 Associated Documents (Internal & External
+0.5 Abbrev
+0.6 Glossary
+0.7. Changes Expected
+0.8 Accuracy...
+0.9 Security Risk Assessment Confirmed
+
+INTRODUCTION
+
+1 Examples Messages .
+.2 Identifying unique messages from a test run ..
+
+AUDITED MESSAGES.
+
+GenericBRDBModificationSe:
+InsertLastPostIndicator
+InsertMemoRead..
+InsertTTTransaction
+PostFailedTC ....
+PostPlannedOrderStatus
+UpdateCounterPersisten
+2.2 AddValidPouchesToCollGroupSvc.
+2.2.1 Request..
+2.2.2 Response
+2.3 AttachUserToStockUnitService
+2.3.1 Request...
+2.3.2 Response
+2.4 Banking......
+24.1 Request..
+24.2 Response.......
+2.5 BasketSettlementService
+2.5.1 Request......
+2.5.2 PSAccountingLine.
+2.5.3 PS2AccountingLine..
+2.5.4 Response...
+2.6 ChangeUserOptionsServic:
+2.6.1 Request...
+2.6.2 Response
+2.7 ChangeUserRoleService .
+2.7.1 Request..
+2.7.2 Response
+2.8 CloseBranchUserAccountService.
+2.8.1 Request
+
+yvoN
+
+NNNNNN=
+
+A,
+oP
+ae
+aE
+ar
+1
+
+ono
+
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 20f74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+2.8.2 Response...
+2.9 ConcurrentLogon
+2.9.1 Request..
+2.9.2 Response
+2.10 CreateBranchUser.
+2.10.1 Request.
+2.10.2 Response
+2.11 CutOffDespatchReportServic:
+2.11.1 Request.........
+2.11.2 Response....... .
+2.12 CutOffReportService 37
+2.12.1 Request...
+2.12.2 Response
+2.13 FirstLogon
+2.13.1 Request.
+
+2.14 LabelEventService.
+2.14.1 Request...
+2.14.2 Response
+
+2.15 LockBranchServic
+2.15.1 Request...
+2.15.2 Response
+
+2.16 LockStockUnitServ
+2.16.1 Request.
+2.16.2 Response
+
+217 LogoffServic
+2.17.1 Request
+2.17.2 Response
+
+2.18 ReconcileB;
+2.18.1 Request...
+2.18.2 Response
+
+2.19 RecordStockDeclarations
+2.19.1 Request...
+2.19.2 Respons¢
+
+2.20 RecoveryService
+2.20.1 Request......
+2.20.2 Request with RecoveryDataSet
+2.20.3. Response
+
+2.21 RolloverBranchService.
+2.21.1 Request...
+2.21.2 Response
+
+2.22 SecondLogo!
+2.22.1 Request.
+2.22.2 Response
+
+2.23 SecureExistingReversalService.
+2.23.1 Request...
+2.23.2 Response
+
+2.24 SetPasswor
+2.24.1 Request...
+2.24.2 Response
+
+2.25 SetPasswordOtherUser
+2.25.1 Request.
+2.25.2 Response
+
+2.26 StockUnitManagement.
+
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0018
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 3 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+2.26.1 CreateStockUnitService.
+2.26.2 DeleteStockUnitService .
+2.27 StockUnitRolloverBPService..
+2.27.1 Request.
+2.27.2 Response
+2.28 StockUnitRollover
+2.28.1 Request...
+2.28.2 Response
+2.29 UnlockBranchService
+2.29.1 Request...
+2.29.2 Response
+2.30 UnlockStockUnitService ..
+2.30.1 Request.
+2.30.2 Response
+2.31 UpdateCutOffRep
+2.31.1 Request...
+2.31.2 Response
+2.32 UpdatePSBarcodesStateServ'
+2.32.1
+
+Example Request..
+1 Example Response...
+3.2 AddNewOffic
+3.2.1 Request...
+3.2.2 Response......
+3.3. CounterPersistenceRetrievalService .. 62
+3.3.1 Request...
+3.3.2 Response
+3.4 FirstCredentialCheck
+3.5 GenericOnlineServi
+3.5.1 Request..
+3.5.2 Response
+3.5.3 DVLA
+
+3.5.4 PAF.
+3.5.5 Generit
+
+3.6 GetOutstandingDeclarations . 68
+3.6.1 Request... 68
+
+3.6.2 Response
+3.7 GetValidationCharacter
+3.7.1 Request.
+3.7.2 Response
+3.8
+3.8.1
+3.8.2
+3.9  PollingServic«
+3.9.1 Request!
+3.9.2 Response
+3.10 RefdataSLAService.
+3.10.1 Request.
+
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 40f 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+3.10.2 Response...
+3.11 ReportingServi
+3.11.1 Request.
+3.11.2 Responses
+3.12 ResetTrainingData
+Request..
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: Sof 74
+WITN11070104
+
+WITN11070104
+(oe) XML Message Audit between Counter and BAL/OSR
+FUJITSU Commercial in Confidence fPOSI®
+OFFICE
+
+0.2 Document History
+
+Version No. Date Summary of Changes and Reason for Issue Associated Change -
+CP/PEAK/PPRR
+Reference
+0.1 03-Ap-2009 New document. NIA
+0.2 06-Jul-2009 Draft saved to dimensions.
+03 01-Oct-2009 Draft saved to dimensions.
+04 30-Oct-2009 Major rewrite covering all messages identified from testing and
+code analysis and contributions from Susan Brindley and
+Philippa Main
+1.0 11-Nov-2009 Updated with minor comments and issued for approval.
+141 23-Jun-2010 Updated for Release 2 changes: CP0396.
+0.1 Review Details
+Review Comments by 42" July 2010
+Review Comments to : Clare. Keane@ & RMGADocumentManagement@—
+Mandatory Review
+Role Name
+Solution Design Steve Evans
+SSC Steve Parker
+Business Continuity Adam Parker
+LST Manager Sheila Bamber
+SV&l Manager Chris Maving
+Role Name
+Solution Design Jon Hulme
+Architecture Andy Thomas
+Security & Risk Team CSPOA Securit,
+Applications Architecture Pete Jobson
+Service Director Gaetan van Achte
+Head of Service Operations Tony Atkinson
+Service Network lan Mills
+Business Continuity Adam Parker
+CS Reference Data Introduction Kevin McKeown
+POL Test Manager James Brett
+Core Division Ed Ashford
+opyright Fujitsu Services Ltd 2010 Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: Vi4
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 6 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Optional ReI
+
+Core Division Andrew Gibson
+
+Development Graham Allen
+
+iatior
+distribution list to a minimum
+
+Position/Role Name
+
+Reviewer list compiled from PGM/DCM/ION/0001 V60.0
+(*) = Reviewers that returned comments
+
+0.2 Associated Documents (Internal & External)
+
+Reference Version Date Title Source
+
+DES/APP/IFS/0012 I 2.0 03-April-2009 BAL Service Interface Specification I Dimensions
+
+(DO NOT REMOVE)
+
+DES/APP/HLD/0123 HNG-X HLD - Settlement Functions I Dimensions
+
+DES/APP/HLD/0047 HNG-X Counter Application High Dimensions
+Level Design
+
+Unless a specific version is referred to above, reference should be made to the current approved
+versions of the documents.
+
+0.3. Abbreviations
+
+Abbreviation Definition
+
+APOP Automated Payment Out Pay
+
+BAL Branch Access Layer
+
+BP Balance Period
+
+BRDB Branch Database
+
+cs Customer Services
+
+cTo Counter Training Office
+
+DCT Dictionary Term (in use case requirements)
+
+DTO Data Transfer Object
+
+DVLA Driver and Vehicle Licensing Agency
+
+HNG-X Horizon Next Generation — Plan X
+
+HTTP HyperText Transfer Protocol
+
+JDBC Java DataBase Connectivity
+
+JMX Java Management eXtensions
+
+JSN Journal Sequence Number
+
+OSR Online Service Router
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+
+Version: V4.1
+Date 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 7 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Abbreviation Definition
+
+Pcl Payment Card Industry — in this context refers to a set of standards for protection of sensitive
+financial data
+PCI-Horizon A project to make existing Horizon counters PCI compliant
+POAML Post Office Account Markup Language (used to define data for printing)
+POL Post Office Limited
+RMGA Royal Mail Group Account
+RV Reversal
+SOAP. Simple Object Access Protocol
+ssc System Support Centre
+SU Stock Unit
+TP Trading Period
+uTC Coordinated Universal Time (http://en.wikipedia.ora/wiki/Coordinated Universal Time)
+XML eXtensible Markup Language
+0.4 Glossary
+
+0.5 Changes Expected
+
+None.
+
+0.6 Accuracy
+
+Fujitsu Services endeavours to ensure that the information contained in this document is correct but, whilst every
+effort is made to ensure the accuracy of such information, it accepts no liability for any loss (however caused)
+sustained as a result of any error or omission in the same.
+
+0.7 Security Risk Assessment Confirmed
+
+Security risks have been assessed and it is considered that there are no security risks relating specifically to this
+document
+
+Obfuscation of sensitive data is performed by the component that sends the message and is covered by security
+considerations in the HLD for that component. For a list of the component HLDs see DES/APP/HLD/0047.
+
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 8 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+1 Introduction
+
+This document details the messages exchanged between the Counter and the BAL. The messages are
+categorised as audited or non-audited, and then by the BAL service the messages interact with, and then
+by request and response.
+
+An audited request message is assigned a Journal Sequence Number by the counter, and is saved by
+the BAL to the BRDB message journal table. In general, all request messages from the counter that
+update the BRDB are audited. Exceptions are recovery messages, and certain reference data and logon
+messages (see DES/APP/IFS/0012).
+
+Note: Do not confuse the term “audited messages” (described above) with “audit data” that can be carried
+by audited messages. This “audit data” refers to event data that is sent to the BAL and saved in BRDB
+event tables.
+
+Anon-audited request message is in general a passive request to the BAL that performs a read-only
+operation on the database.
+
+See DES/APP/IFS/0012 for details of:
+
+«The physical services that comprise the BAL and how the counter interact with them.
+
+e The XML message structure, including the contents of the message request header and response.
+e The carrying of audit and stats data on audited request messages.
+
+«Message routing, auditing and logging
+
+1.1 Examples Messages
+
+The messages specified in this document have been identified by a combination of code inspection
+followed by individual tests to produce the messages, and analysis of messages captured during an
+automated test run.
+
+Examples of all Release 1 messages are embedded into the following zip file.
+
+a
+
+XMMessages.zip
+
+Release 2 changes are captured in the interface definitions in the following sections but are not reflected
+here.
+
+1.2 Identifying unique messages from a test run
+
+Messages were captured during a regression test cycle completed on a counter machine via the
+message log, with compression disabled on the counter and BAL (see counter source file
+RegressionTest.java). New line characters within the message have been removed during the capture
+process.
+
+The messages have been deemed unique with regards to their structure rather than their data content.
+Unique xml messages were found by finding the XPath path to each field within the message; the set of
+paths generated for each message was then compared against all other sets to find ones which were
+unique. This is performed via a bespoke analysis tool MessageGenerator (see counter source file
+MessageGenerator.java).
+
+Note that some messages are manipulated as they flow through the system, e.g. the BAL changes the
+second logon message, and adds extra HTTP headers when writing the audit files.
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 9 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence &
+
+The build for the Counter and BAL used for the regression test was CTRO14. Subsequent individual tests
+to generate additional messages were run on CTRO23.
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0018
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 10 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+2 Audited Messages
+
+This section contains all messages which are audited.
+Attributes in the standard headers are not included. See DES/APP/IFS/0012.
+
+2.1 GenericBRDBModificationService
+
+This service is similar to the GenericBRDBModificationService (see section 3.1 for general information of
+input parameter types and how the service works). The difference is that the SQL this service updates
+the database, and in the success case returns no data back to the counter other than a simple success
+response.
+
+2.1.1 InsertLastPostindicator
+
+Usage Cross Reference Description
+PS-5404 Notify Branch Mails I DES/APP/HLD/0128 I inserts the last post indicator for the relevant nodes and
+Despatch carriers.
+
+2.1.1.1. Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+carrierCode RM String The carrier code, if all carriers
+not used.
+
+nodeld 1 Integer The node of the counter, if a
+
+specific counter is selected
+
+2.1.1.2 I Response
+
+Tag/Attribute Name Example Constraints Applied Description
+NIA Empty response indicates
+success.
+
+2.1.2 InsertMemoRead
+
+Usage Cross Reference Description
+
+BSC-70 Receive Messags and DES/APP/HLD/0061 Updates the status of a memo as read
+Notifications
+
+2.1.2.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+memold 3300 Integer The memo id
+counterReadTimestamp 2009-10- Date The date/time the counter read
+16T09:49:06.323Z the memo
+brdbReceivedTimestamp 2009-10- Date The date/time the BRDB
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 11 of 74
+Fe)
+FUJITSU
+
+WITN11070104
+
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+Commercial in Confidence
+
+10T09:00:00.000Z
+
+received the memo I
+
+2.1.2.2 I Response
+Tag/Attribute Name Example Constraints Applied Description
+NIA Empty response indicates
+success.
+2.1.3. InsertTTTransaction
+Usage Cross Reference Description
+PS-5404 Notify Banch Mails DES/APP/HLD/0128 Inserts a Track and Trace transaction in the BRDB
+Despatch
+2.1.3.1 Request
+Tag/Attribute I Example Constraints I Description
+Name Applied
+horizonTxid 00-5923-1-18 String Transactions id of the form
+“00-“ + branch accounting
+code + “-" + counter id +
+“+ usn
+ttMessage <?xml version="1.0" encoding="UTF-8"?> String Track and trace XML as
+<Message> CDATA
+<Groupld>005923</Groupld>
+<Date>16-Oct-2009</Date>
+<Time>10:39:04</Time>
+<TxnData>
+<Start>
+<Date>16-Oct-2009</Date>
+<Time>10:39:04</Time>
+</Start>
+<End>
+<Date>16-Oct-2009</Date>
+<Time>10:39:04</Time>
+</End>
+</TxnData>
+<Data>
+<TandT>
+<Control>
+<Source>
+<Name>Coddenham</Name>
+<Add1>Village Stores</Add1>
+<Postcode>IIP6 9PY</Postcode>
+</Source>
+</Control>
+<MData>
+<EV>I500</EV>
+<FT>POLP</FT>
+<Type>A</Type>
+</MData>
+</TandT>
+<Mitem>
+<VBC>PB000000005002</VBC>
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 12 of 74
+Fe)
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+<FT>POLP</FT>
+<VLDT>Y</VLDT>
+</Mitem>
+</Data>
+</Message>
+2.1.3.2 Response
+Tag/Attribute Name Example Constraints Applied Description
+NIA Empty response indicates
+success.
+2.1.4 PostFailedTC
+Usage Cross Reference Description
+BAC-158 Manage Transaction DES/APP/HLD/0059 Records a failed transaction correction
+Corrections
+2.1.4.1. Request
+Tag/Attribute Name Example Constraints Applied I Description
+iterationFlag E String The iteration flag of the
+transaction correction
+sapReferenceld DCBA678DGA5634281Z I String The SAP reference id of the
+transaction correction
+2.1.4.2 Response
+Tag/Attribute Name Example Constraints Applied I Description
+N/A Empty response indicates
+success.
+2.1.5 PostPlannedOrderStatus
+Usage Cross Reference Description
+CSM-684 Review Planned DES/APP/HLD/0063 Changes the planned order status to processed
+Orders
+2.1.5.1 Request
+Tag/Attribute Name Example Constraints Applied I Description
+ploinpSeq 7 Integer This number together with the
+IfsReceivedTimesamp identify
+a planned order in the BRDB.
+IfsReceivedTimestamp 2009-10- Date See above
+16T00:00:00.000Z
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No:
+
+13 of 74
+Fe)
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+2.1.5.2 Response
+
+Tag/Attribute Name Example Constraints Applied Description
+
+NIA Empty response indicates
+success.
+
+2.1.6 UpdateCounterPersistence
+
+This contains a single field cpClobData containing XML as CDATA. This XML has the following fields:
+
+Usage Cross Reference Description
+
+Used to save configuration info I DES/APP/HLD/0047 Saves the counter persistence data from
+
+to the BRDB CounterDataStoreBDO to the BRDB CLOB
+
+2.1.6.1.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+cpClobData
+
+See section 3.2
+
+String of CDATA XML
+
+This XML has the same format
+as described in the Couter
+Persistence Retrieval Service
+(see section 3.2)
+
+2.1.6.1.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+NIA Empty response indicates
+success.
+
+2.2 AddValidPouchesToCollGroupSvc
+
+Usage
+
+Cross Reference
+
+Description
+
+CSM-488 Record Preparation I DES/APP/HLD/0063 Matches the barcodes with “rem out’s and associates
+Of Pouches For Collection BLO the pouches with a collection group
+
+2.2.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+
+barcodes 326146435507 List of String List of barcodes
+
+2.2.2 Response
+
+TagiAttribute Name Example Constraints Applied I Description
+
+N/A Empty response indicates
+
+success.
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+Ref, DES/APP/IFS/0016
+Version: via
+
+Date: 23-Jun-10
+
+Page No: 14 of 74
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+2.3 AttachUserToStockUnitService
+
+Usage Cross Reference Description
+
+BAD-123 Attach User to Stock DES/APP/HLD/0041 Attaches a user to a stock unit
+
+Unit
+
+2.3.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+
+attachUserld SMOKES String The user id to be attached to
+the stock unit
+
+stockUnitld Sut String The stock unit to be attached
+to
+
+currentAttachedUserld JON123 String The user currently attached to
+the stock unit being attached
+to
+
+2.3.2 Response
+
+TagiAttribute Name Example Constraints Applied I Description
+
+attachUserld J String The user attached to the stock
+unit
+
+stockUnitld Sut String The stock unit
+
+appServerNodeName AppServer String The BAL server used
+
+brdbinstance 1 String The DB connection used
+
+currentTradingPeriod 70 integer The current trading period of
+
+the Stock Unit
+
+currentBalancePeriod
+
+Integer The current balance period of
+the Stock Unit
+
+2.4 Banking
+
+This section describes the interfaces between the BAL and the Counter for communication with Banking
+Authorisation Agents for online authorisation of transactions in the Network Banking, Debit Card and
+
+Electronic Top-up.
+
+Usage
+
+Cross Reference
+
+Description
+
+Banking barrel
+
+DES/APP/HLD/0112
+DES/APP/IFS/0006
+
+Carry out Network Banking, Debit Card and Electronic
+Top-up transactions.
+
+2.4.1 Request
+
+The interfaces are basically the same for all three banking services: authorisation, reversal and recovery.
+There are many different types of authorisation, reversal and recovery transactions and some or all of the
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence Ref, DES/APP/IFS/0018
+Version: via
+Date: 23-Jun-10
+
+Page No: 15 of 74
+Fe)
+
+FUJITSU
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+Commercial in Confidence
+
+fields described below are populated for each transaction request. Which fields are used for each type of
+request are documented in spreadsheets embedded in DES/APP/IFS/0006.
+
+Tagi/Attribute I Example Constraints I Description
+
+Name Applied
+
+Application NBA String The banking application to be
+used. One of “DCA” (for Debit
+Card), “ETA” (for Electronic Top-
+up) or “NBA” (for Network
+Banking).
+
+AgtHash 3 integer The banking agent hash. All
+messages from the same Branch
+have the same value. Used
+together with the routing gateway
+ID to send the request to the
+correct agent.
+
+Clientid 24238 Integer Client ID. Identifies a client of Post
+Office Ltd. i.e. the end bank (card
+issuer) for a transaction
+
+RingGwy 24447 String The routing gateway ID. Identifies
+the system where the
+authorisation for a transaction
+should be sought. Used together
+with the banking agent hash to
+send the request to the correct
+agent.
+
+LelDte 2009-10-29T 13:04:11.520Z Date Receipt transaction date.
+
+For reversal, this is the date of the
+original transaction.
+
+MsgType Rt String Message type =
+“R1” for authorisation
+“T1" for recovery
+“CO” for reversal
+
+MsgVer 6 String Message version. = "6" for HNG-X
+Counters.
+
+‘Appver INT? String Counter application version
+
+Payload (formatted example) String Request data sent to banking
+agent. Details of contents are in
+
+<![CDATA[ DES/APP/IFS/0006.
+<AgtTmOut>18000</AgtTmOut>
+<LelDte>20091028</LclDte>
+<LelTme>115400</LelTme>
+<HTxnNum>00-25003-1-2296-1</HTxnNum>
+<ICCData/>
+<PAN>633641****9012</PAN>
+<CurrCd>GBP</CurrCd>
+<TranType>64</TranType>
+<RegAmt>5000</ReqAmt>
+<IssSchld>11</IssSchid>
+<Add1>35 Broadgate Circle</Add1>
+<Add4>London</Add4>
+<CPAN>63364 1****9012</CPAN>
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No: 16 of 74
+Fe)
+FUJITSU
+
+XML Message Audit between Counter and BALIOSR
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+i
+
+<ExpDte/>
+<EfctDte/>
+
+<PIN1/>
+<T2>633641****9012=****</T2>
+<EtyMde>3</EtyMde>
+
+2.4.2 Response
+
+2.4.2.1
+
+Authorisation and Recovery
+
+TagiAttribute Name
+
+Example
+
+Constraints
+Applied
+
+Description
+
+BankResponsePayload
+
+(formatted example)
+
+<I[CDATAL
+<AgtRsp>
+<MsgTime>20091028114533</MsgTime>
+<MsgType>A3</MsgType>
+<MsgVer>4</MsgVer>
+<Application>NBA</Application>
+<AppVer>10.1.125XTrace</AppVer>
+<HTxnNum>00-25003-1-2296-
+1</HTxnNum>
+<STAN>830019</STAN>
+<AuthAmt>000000005000</AuthAmt>
+<CurrCd>GBP</CurrCd>
+<RespCd>01</RespCd>
+<AuthCd>000001</AuthCd>
+<Balce>
+<Bal>
+<Type>01</Type>
+<Amt>C000000010101</Amt>
+</Bal><Bal>
+<Type>02</Type>
+<Amt>C000000010199</Amt>
+</Bal>
+</Balce>
+<IssResp>00</IssResp>
+<SettDte>20091028</SettDte>
+<EPAN
+>NjMzNjQxMDAwMDAWOTAxMnwxMDEy<
+/EPAN>
+<ICCData/>
+<AgtSLA>20</AgtSLA>
+</AgtRsp>
+I
+
+String
+
+Response data
+received from banking
+agent. Details of
+contents are in
+DES/APP/IFS/0006.
+
+2.4.2.2
+
+Reversal
+
+Tag/Attribute Name
+
+Example
+
+Constraints
+Applied
+
+Description
+
+error
+
+BANKING_NULL_RESPONSE
+
+String
+
+This error response is
+always returned from
+Reversal requests.
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+‘Commercial in Confidence
+
+UNCONTROLLED IF PRINTED
+
+Ref,
+Version:
+Date:
+
+Page No:
+
+DES/APP/IFS/0018
+vid
+
+23-Jun-10
+
+17 of 74
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+2.5 BasketSettlementService
+
+Usage Cross Reference Description
+GLB-270 Transact Customer DES/APP/HLD/0123 Records the basket transactions in the BRDB.
+Basket
+
+The mode parameters reference data specifies some
+additional “meta data” based on the counter mode. This
+follows the “BasketSettlementSerice/” in the service
+identifier, and identifies any additional processing
+required after recording the transactions in the
+transaction tables (e.g. to update transfer tables).
+
+This additional meta data is one of:
+
+/Settle
+
+/SettlePouchDelivery
+/SettleRemOut
+/SettleRemOutAutoDespatch
+/SettleReverseTransfer
+/SettleTransactionCorrection
+/SettleTransferin
+
+/SettleTransferOut
+/SettleTransactionAcknowledgement
+
+Note: Amount fields when serialised to XML are serialised inside ProductFeeTotals, and Quantiy fields
+inside OpeningBalance.Quantity. This is really a bug in the serialiser, but does not matter as the
+amounts are deserialised correctly at the other end. See PEAK PC0189906.
+
+2.5.1. Request
+Tag/Attribute Name Example Constraints Applied
+basketHeader Contains the basket header.
+See following sections.
+‘accountingLine List of all accounting lines
+2.5.1.1 BasketHeader
+Tag/Attribute Name Example Constraints Description
+Applied
+txnMode 1 Integer The transaction mode the
+basket was in (1=Serve
+Customer, etc)
+counterMode 1 Integer The counter mode the
+basket was in (1=Serve
+Customer, etc). See
+ModeParameters
+reference data
+basketStructureVersion 1 String The back structure version
+stockUnitld SU1 String The stock unit
+stockUnitTradingPeriod 1 Integer The stock unit TP
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No: 18 of 74
+
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+stockUnitBalancePeriod 1 Integer The stock unit BP’
+Ssn 3052 Tong The session sequence
+number
+optionalData OptionalData Only present if optional
+data is required for the
+basket
+OptionalData.reversalSessionld 1913 Long The session id of the tn
+being reversed
+OptionalData.reversalNodeld 1 Integer The node id of the txn
+being reversed
+‘OptionalData.targetStockUnitid SH1 String The target stock unit id of
+the txn being reversed
+‘OptionalData pouchData List of PouchData_I Only present ifa pouch is
+associated with the basket
+OptionalData.pouchData.pouchid 301983690210 Pouch Id
+OptionalData.pouchData.pouchType Cash String Pouch type
+OptionalData pouchData.remType Manual Rem String Remittance type
+OptionalData.Ifs Timestamp 2009-09- Date The Ifs timestamp, used to
+287 12:52:38.606Z record a pouch late entry
+date
+OptionalData.stockTransferld 3044 Long The source session id.
+
+Only present for transfer
+in
+
+OptionalData.stockTransferNodeld 1 Integer The source counter id.
+Only present for transfer
+in
+
+OptionalData.targetStockUnitld SH2 String The destination stock unit.
+Only present for transfers
+
+2.5.1.2. APAccountingLine
+
+Used for an Automated Payment transaction.
+
+Tag/Attribute Name Example Constraints Description
+Applied
+transactionModeVersionNo 4 Long The version of the mode from
+product mode reference data
+className APAccountingLine String The class name of the accounting
+line
+dummy 0 Integer lormal transaction
+1=Dummy transaction for existing
+reversal
+2=Dummy transaction for recovery
+productid 3162 String The product id
+price 20.00 iMoney The unit price
+quantity 1 [Quantity The sale quantity
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 19 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+amount 20.00 IMoney The sale amount
+
+entryMethod 0 Integer Method by which the transaction
+was started, typically only present
+for banking and postal services
+transactions
+
+0 Swipe
+1 Manual
+
+2 External Swipe
+3 EMV
+
+4 Fallback
+
+5 Weigh Scales
+
+apRecordType 32 Integer 31 Magnetic Card
+32 Bar code
+
+clientAccountCode 2007 Integer Client account code
+
+clientCode 51 Integer Client code
+
+clientServiceCode 9003 Integer Client service code
+
+customerReference 26900322007629007 I String Customer reference
+
+paymentCode 1 Integer 1=Cash
+
+heque or Cheque/Cash
+savings stamps included
+4=Debit/Credit card
+
+serviceGroup GS String Service group
+
+tokenid 1551 Integer Token id
+
+additionalData <PaymentCode>1 XML String ‘Additional data to be written to the
+</PaymentCode> BRDB transaction tables
+
+ADDITIONAL_DATA column. For a
+list of XML elements that can make
+up additionalData see
+DES/APP/HLD/0123.
+
+transactionStartDate 2009-10- Date The date and time the transaction
+227 15:41:28.780Z was started (i.e. the time the PDL
+script invoked by the button or
+scanner)
+
+transactionid 1 Integer ‘The id of the transaction within the
+basket; starts are 1 and rises
+sequentially
+
+wholeSeqid 1,1,1 String The location of the transaction
+within the basket: Basket entry
+number, Receipt line number,
+
+Accounting line number
+
+transactionEndDate 2009-10- Date The date and time the transaction
+22715:43:21.605Z was added to the basket
+
+reportAdditionalData <Labelld>1234 XML String Used to hold data to be written to
+</Labelld> BRDB_RX_REP_SESSION_DATA.
+
+REPORT_XML. For a list of XML.
+elements that can make up
+reportAdditionalData see
+
+DES/APP/HLD/0123.
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+
+Version: via
+
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 20 of 74
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+2.5.1.3. BankingAccountingLine
+
+Used for a Network Banking transaction. For more details see DES/APP/IFS/0006.
+
+Tag/Attribute Name Example Constraints Description
+Applied
+
+transactionModeVersionNo 2 Long The version of the
+
+mode from product
+
+mode reference data
+className BankingAccountingLine String The class name of
+
+the accounting line
+productld 4908 String The product id
+price 50.00 iMoney The unit price
+quantity 4 TQuantity The sale quantity
+amount -50.00 Money The sale amount
+cnimNetworkType Not Connected String CNIM network type
+HNGXTxnNum 00-5923-1-17-41 String Transaction number
+receiptTransactionDate 2009-10-23T09:53:54.188Z Date Transaction receipt
+
+date
+issuerSchemeld 56 Integer Issuer Scheme Id
+txnType 71 Integer Transaction type
+transactionResultCode 1 Integer Transaction result
+
+code
+amountRequested 50.00 iMoney ‘Amount requested
+currency GBP String Currency code
+clientid 24283 Integer Client id
+ToutingGateway 24239 Integer Routing Gateway
+entryMethod 1 Integer Method by which the
+
+transaction was
+
+started, typically only
+
+present for banking
+
+and postal services
+
+transactions:
+
+0 Swipe
+
+1 Manual
+
+2 External Swipe
+
+3 EMV
+
+4 Fallback
+
+5 Weigh Scales
+HNGXResponseCode 7 Integer Reponse code
+CounterSLAInfo 1873 Long Counter SLA (ms)
+AgentSLAinfo 100 Integer Agent SLA (ms)
+AgentHash i) Integer Agent hash
+fee IMoney Fee
+settlementDate 2009-10-26T00:00:00.000Z Date Settlement Date
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 21 of 74
+Fe)
+FUJITSU
+
+Commercial in Confidence
+
+XML Message Audit between Counter and BALIOSR
+
+WITN11070104
+WITN11070104
+
+usn 17 Long Unique Sequence
+Number
+‘applicationType 0 Integer ‘Application Type
+BdC false Boolean Bureau De Change
+MchNum 99234031 Long Merchant Number
+TransNum 55 Integer Transaction Number
+PAN 560374xQEfdt9015 String Hashed PAN
+EPAN NTYwiizcOODAWMDA4OTAXNXwwOTey I String Encrypted PAN
+issuerResponse 00 String Issuer response
+offline true Boolean true if offline
+authCode String Authorisation code
+bankingTransactionid 220008 String Banking transaction
+id
+cardimpounded Integer 1 if clerk impounded
+card, else omitted
+iccDetail <directive:Entry Name= ‘iccDetail'> XML ICC Detail
+<Dyno> Serialised
+<directive:Entry Name= 'X5F2A'> dyno
+<String>0826</String>
+</directive:Entry>
+<directive:Entry Name= 'X82'>
+<String>1c00</String>
+</directive:Entry>
+<directive:Entry Name= 'SR'/>
+</Dyno>
+</directive:Entry>
+type 7 Integer Basket entry type,
+O=retail (default if
+omitted),
+1=settlement
+transactionStartDate 2009-09-28T12:51:02.234Z Date The date and time
+the transaction was
+started (i.e. the time
+the PDL script
+invoked by the
+button or scanner)
+transactionld 1 Integer The id of the
+transaction within the
+basket; starts are 1
+and rises
+sequentially
+wholeSeqid 1,1,1 String The location of the
+transaction within the
+basket: Basket entry
+number, Receipt line
+number, Accounting
+line number
+transactionEndDate 2009-09-28T 12:51:02.234Z Date The date and time
+the transaction was
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 22 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+added to the basket
+
+additionalData XML String Additional data to be
+written to the BRDB
+transaction tables
+ADDITIONAL_DATA
+column. For a list of
+
+XML elements that
+can make up
+additionalData see
+DES/APP/HLD/0123.
+2.5.1.4 DCSAccountingLine
+Used for a Debit Card transaction. For more details see DES/APP/IFS/0006.
+Tag/Attribute Name Example Constraints I Description
+Applied
+transactionModeVersionNo 2 Long The version of the mode from
+product mode reference data
+className DCSAccountingLine String The class name of the accounting
+line
+productld 7243 String The product id
+price 0.39 iMoney The unit price
+quantity a TQuantity The sale quantity
+amount -0.39 iMoney The sale amount
+cnimNetworkType Not Connected String CNIM network type
+HNGXTxnNum 00-5923-1-17-1 String Transaction number
+receiptTransactionDate 2009-10-23T09:53:54.188Z Date Transaction receipt date
+issuerSchemeld 56 Integer Issuer Scheme Id
+‘nT ype 71 Integer Transaction type
+transactionResultCode 1 Integer Transaction result code
+amountRequested 0.39 TMoney ‘Amount requested
+currency GBP ‘String Currency code
+clientid 24283 Integer Client id
+ToutingGateway 24239 Integer Routing Gateway
+entryMethod 1 Integer Method by which the transaction
+was started, typically only present
+for banking and postal services
+transactions.
+0 Swipe
+1 Manual
+2 External Swipe
+3 EMV
+4 Fallback
+5 Weigh Scales
+HNGXResponseCode 1 Integer Reponse code
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 23 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+CounterSLAInfo 1873 Long Counter SLA (ms)
+AgentSLAinfo 700 Integer ‘Agent SLA (ms)
+‘AgentHash 0 Integer ‘Agent hash
+fee 0.35 iMoney Fee
+settlementDate Date Settlement Date
+usn 7 Long Unique Sequence Number
+applicationType 7 Integer ‘Application Type
+BdC false Boolean Bureau De Change
+MchNum 99234031 Long Merchant Number
+TransNum 55 Integer Transaction Number
+PAN 560374xQEfdt9015 String Hashed PAN
+EPAN NTYwMzcOODAWMD: String Encrypted PAN
+
+A40TAXNXwwOTEy
+issuerResponse 00 ‘String Issuer response
+offline true Boolean true if offline
+authCode 968688 String Authorisation code
+terminalld 98547101 String Terminal id
+cardimpounded 1 Integer 1 if clerk impounded card, else
+
+omitted
+
+iccDetail <directive:Entry Name= XML ICC Detail
+
+‘iccDetail'> Serialised
+
+<Dyno> dyno
+<directive:Entry Name=
+'XSF2A'>
+<String>0826</String>
+
+</directive:Entry>
+<directive:Entry Name=
+"82>
+<String>1c00</String>
+</directive:Entry>
+
+<directive:Entry Name=
+
+'SR/>
+</Dyno>
+</directive:Entry>
+type 7 Integer Basket entry type, O=retail (default
+if omitted), 1=settlement
+transactionStartDate 2009-09-28T 12:51:02.234Z Date The date and time the transaction
+was started (i.e. the time the PDL
+script invoked by the button or
+scanner)
+transactionld 1 Integer ‘The id of the transaction within the
+basket; starts are 1 and rises
+sequentially
+wholeSeqid 11,1 String The location of the transaction
+within the basket: Basket entry
+number, Receipt line number,
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 24 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Accounting line number
+
+transactionEndDate 2009-09-28T 12:51:02.234Z Date The date and time the transaction
+was added to the basket
+additionalData <OriginalCardNotUsed/> XML String Additional data to be written to the
+
+BRDB transaction tables
+ADDITIONAL_DATA column. For a
+list of XML elements that can make
+up additionalData see
+
+DES/APP/HLD/0123.
+
+2.5.1.5 EpossAccountingLine
+
+Used for an EPOSS transaction.
+
+Tag/Attribute Name Example Constraints Description
+
+Applied
+
+transactionModeVersionNo 12 Long The version of the mode from
+product mode reference data
+
+className EpossAccountingLine I String The class name of the accounting
+line
+
+productid 19 String The product id
+
+price 100.00 \Money The unit price
+
+quantity 70 TQuantity The sale quantity
+
+amount 1000.00 Money The sale amount
+
+type 7 integer Basket entry type, O=retail (default
+if omitted), 1=settlement
+
+transactionStartDate 2009-09- Date The date and time the transaction
+
+28712:51:02.234Z was started (i.e. the time the PDL
+
+script invoked by the button or
+scanner)
+
+transactionld 1 Integer The id of the transaction within the
+basket; starts are 1 and rises
+sequentially
+
+wholeSeqid 11,1 String The location of the transaction
+within the basket: Basket entry
+number, Receipt line number,
+Accounting line number
+
+mandatoryAssocTotal 2.40 IMoney The amount of the associated
+manadatory product transaction.
+Only where the transacted product
+has a mandatory associated
+product specified in ref data
+
+transactionEndDate 2009-09- Date The date and time the transaction
+
+28712:51:02.234Z was added to the basket
+
+entryMethod 1 Integer Method by which the transaction
+was started, typically only present
+for banking and postal services
+transactions:
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 25 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+0 Swipe
+
+1 Manual
+
+2 External Swipe
+3 EMV
+
+4 Fallback
+
+5 Weigh Scales
+
+reversal 1 Integer TF, this txn is a reversal. Only
+present for a reversal.
+
+reversalTransactionld 1 Integer The transaction id of the txn being
+reversed. Only present for a
+reversal
+
+pouchid 301983690210 String Used on some transactions to hold
+the pouch id
+
+tcReference String Used on some transactions e.g. to
+hold the SAP reference on a
+transaction correction
+
+clientReference String Used on some transactions, e.g. to
+hold the client reference id on a
+transaction correction
+
+additionalData <AdjustReason>1 XML String Additional data to be written to the
+</AdjustReason> BRDB transaction tables
+ADDITIONAL_DATA column. For a
+list of XML elements that can make
+up additionalData see
+
+DES/APP/HLD/0123.
+reportAdditionalData <Labelld>1234 XML String Used to hold data to be written to
+</Labelld> BRDB_RX_REP_SESSION_DATA.
+
+REPORT_XML. For a list of XML
+elements that can make up
+reportAdditionalData see
+DES/APP/HLD/0123.
+
+externalSystem String Used on Transaction
+Acknowledgements
+
+Name of external system
+generating TAs eg “Camelot”
+
+terminallD String Used on Transaction
+Acknowledgements
+
+Identifier of terminal for external
+system.
+
+reference String Used on Transaction
+Acknowlwdgements:
+
+Matching Reference to be returned
+to POL FS
+From TA record field <11>
+
+2.5.1.6 ForexAccountingLine
+Used for a Foreign Exchange (Bureau De Change) transaction.
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 26 of 74
+WITN11070104
+
+WITN11070104
+foe) XML Message Audit between Counter and BALIOSR
+FUJITSU Commercial in Confidence &
+Tag/Attribute Name Example Constraints Description
+Applied
+transactionModeVersionNo 12 Long The version of the mode
+from product mode
+reference data
+className ForExAccountingLine I String The class name of the
+accounting line
+productid 5143 String The product id
+price 0.00 iMoney The unit price
+quantity 700 TQuantity The quanity (amount in
+the foreign currency, e.g.
+100 for 100 euros)
+amount 63.75 iMoney The amount (in sterling)
+exchangeRate 0.65 Double The spot rate for the
+transaction
+effectiveExchangeRate 0.63 Double The effective rate for the
+transaction — taking into
+account the margin
+purchasedValue 63.89 \Money The price paid by the
+customer, includes
+margin and comission
+bureauCurrency EUR String The currency code
+transactionStartDate 2009-09- Date The date and time the
+28712:51:02.234Z transaction was started
+(i.e. the time the PDL
+script invoked by the
+button or scanner)
+transactionid 1 Integer The id of the transaction
+within the basket; starts
+are 1 and rises
+sequentially
+wholeSeqid 1,11 String The location of the
+transaction within the
+basket: Basket entry
+number, Receipt line
+number, Accounting line
+number
+transactionEndDate 2009-09- Date The date and time the
+28712:51:02.234Z transaction was added to
+the basket
+pouchlid 301983690210 String Used on some
+transactions to hold the
+pouch id
+additionalData <AdjustReason>1 XML String Additional data to be
+<\AdjustReason> written to the BRDB.
+
+transaction tables
+ADDITIONAL_DATA
+column. For a list of XML.
+elements that can make
+up additionalData see
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+Ref.
+Version:
+Date:
+Page No:
+
+DES/APP/IFS/0016
+via
+
+23-Jun-10
+
+27 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+I DES/APP/HLD/0123.
+
+2.5.2 I PSAccountingLine
+
+Used for a Postal Service transaction. See DES/APP/HLD/0128 for more details.
+
+Tag/Attribute Name Example Constraints Description
+
+Applied
+
+transactionModeVersionNo 12 Long The version of the mode
+from product mode
+reference data
+
+className PSAccountingLine String The class name of the
+accounting line
+
+productid 30169 String The product id
+
+price 076 IMoney The unit price
+
+quantity 1 [Quantity The sale quantity
+
+amount 0.76 IMoney The sale amount
+
+serviceld 62 String The service id
+
+ServiceName 2nd Class String The service name
+
+weight 101.0 Double The weight (g)
+
+destination UK (EU) String The destination
+
+pipFormat 2 String See DES/APP/HLD/0128
+
+intemational France String Country id
+
+preferences Franked,Signed For _I List of String List of preference ids
+
+copissued false boolean true if Certificate Of
+Postage issued
+
+isFranked false boolean true if franked
+
+carrier RM String Carrier
+
+currentState LCIn String Current state
+
+newState Mailin String New state
+
+afterLastDespatch false boolean true if after last despatch
+
+transactionStartDate 2009-09- Date The date and time the
+
+28712:51:02.234Z transaction was started
+
+(ie. the time the PDL
+script invoked by the
+button or scanner)
+
+transactionld 1 Integer The id of the transaction
+within the basket; starts
+are 1 and rises
+sequentially
+
+wholeSeqid Ti String The location of the
+transaction within the
+basket: Basket entry
+number, Receipt line
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 28 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+number, Accounting line
+number
+
+mandatoryAssocTotal 2.40 IMoney The amount of the
+associated manadatory
+product transaction. Only
+where the transacted
+product has a mandatory
+associated product
+specified in ref data
+
+transactionEndDate 2009-09- Date The date and time the
+28712:51:02.234Z transaction was added to
+the basket
+entryMethod 1 Integer Method by which the
+
+transaction was started,
+typically only present for
+banking and postal
+services transactions:
+
+0 Swipe
+
+1 Manual
+
+2 External Swipe
+3 EMV
+
+4 Fallback
+
+5 Weigh Scales
+
+reversal 1 Integer If 1, this txn is a reversal.
+Only present for a
+reversal.
+
+reversalTransactionid 1 Integer The transaction id of the
+txn being reversed. Only
+present for a reversal
+
+pouchid 301983690210 String Used on some
+transactions to hold the
+pouch id
+
+toReference String Used on some
+
+transactions e.g. to hold
+the SAP reference on a
+transaction correction
+
+clientReference String Used on some
+transactions, e.g. to hold
+the client reference id on
+a transaction correction
+
+additionalData XML String Additional data to be
+written to the BRDB
+transaction tables
+ADDITIONAL_DATA
+column. For a list of XML
+elements that can make
+up additionalData see
+DES/APP/HLD/0123.
+
+2.5.3 PS2AccountingLine
+e.g. Used for a prepaid Postal Services transaction. See DES/APP/HLD/0128 for more details.
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0018
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 29 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Tag/Attribute Name Example Constraints Description
+Applied
+transactionModeVersionNo 12 Long The version of the mode
+
+from product mode
+reference data
+
+className PS2ndaryAccountingLine I String The class name of the
+accounting line
+
+productid 8007 ‘String The product id
+
+price 0.36 IMoney The unit price
+
+quantity a TQuantity The sale quantity
+
+amount -0.36 iMoney The sale amount
+
+prePaidLine True boolean true for pre paid
+
+transactionStartDate 2009-09- Date The date and time the
+28712:51:02.234Z transaction was started
+
+(i.e. the time the PDL
+script invoked by the
+button or scanner)
+
+transactionld 1 Integer The id of the transaction
+within the basket; starts
+are 1 and rises
+sequentially
+
+wholeSeqid 1,1,1 String The location of the
+transaction within the
+basket: Basket entry
+number, Receipt line
+number, Accounting line
+
+number
+transactionEndDate 2009-09- Date The date and time the
+28712:51:02.234Z transaction was added to
+the basket
+additionalData String Additional data to be
+
+written to the BRDB
+transaction tables
+ADDITIONAL_DATA.
+column. For a list of XML
+elements that can make
+up additionalData see
+
+DES/APP/HLD/0123.
+2.5.4 Response
+Tag/Attribute Name Example Constraints Applied Description
+NA Empty response indicates
+success.
+2.6 ChangeUserOptionsService
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 30 of 74
+Fe)
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+Usage Cross Reference Description
+
+BAD-540 Maintain Branch User I DES/APP/HLD/0060 Changes a user's options
+
+Account
+
+2.6.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+branchAccountingCode 5923 String The branch accounting code
+
+branchUser JON102 String The user being changed
+
+enableUser false Boolean true if the account is being
+enabled. May be omitted if
+option not offered to user
+
+unlockUser Boolean true if the account is being
+unlocked. May be omitted if
+option not offered to user
+
+mustChangePassword Boolean true if the account is being
+changed to force a change
+password on next login. May
+be omitted if option not offered
+to user
+
+existingEnableUser true Boolean true if the user account is
+enabled
+
+existingUnlockUser true Boolean true if the user account is
+unlocked
+
+existingMustChangePassword I true Boolean true if the user account's
+password has expired
+
+2.6.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+NA Empty response indicates
+
+success.
+
+2.7 ChangeUserRoleService
+
+Usage Cross Reference Description
+
+BAD-540 Maintain Branch User I DES/APP/HLD/0060 Changes a user's role (aka group)
+
+Account
+
+2.7.1. Request
+
+Tag/Attribute Name Example Constraints Applied Description
+branchUser JON101 String The user being changed
+branchUserRole MANAGERS String The new user role
+managerRole MANAGERS String The DCT role name of a
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+Ref, DES/APP/IFS/0018
+Version: via
+
+Date: 23-Jun-10
+
+Page No: 31 of 74
+
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+l manager
+2.7.2. Response
+Tag/Attribute Name Example Constraints Applied Description
+N/A Empty response indicates
+success.
+
+2.8 CloseBranchUserAccountService
+
+Usage Cross Reference Description
+
+BAD-526: Close Branch User DES/APP/HLD/0060 Closes a branch user account within a branch
+Account
+
+2.8.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+branchUser COUNTI String The branch user
+managerRole MANAGERS String The manager role name
+defaultStockUnit DEF String The default stock unit name
+
+2.8.2 Response
+
+Tag/Attribute Name Example Constraints Applied Description
+N/A Empty response indicates
+success
+
+2.9 ConcurrentLogon
+
+Usage Cross Reference Description
+
+BAD-11 Log On to System DES/APP/HLD/0060 I BAD-11 covers the primary scenario of logging onto the
+HNG-X system, and covers several variations
+‘surrounding this. The use case also contains variations
+that could be considered as use cases in their own right,
+for example the post login checks, recovery, shutdown
+and restart etc. Login uses specific DTO’s for requests
+and responses, and one request may have many
+different types of responses
+
+2.9.1 Request
+
+The ConcurrentLogon URI uses the ConcurrentLogonRequestDTO. If the SecondLogonResponseDTO
+has indicated that the user is already logged on at another counter, the user is required to decide whether
+to continue with the current logon or abandon it. This object is used to relay the user's choice to the BAL.
+
+Tag/Attribute Name l Example Constraints I Description
+
+©Copyright Fujitsu Services Ltd 2010 Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: Vvi4
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 32 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+Applied
+
+ContinueLoggingOn true
+
+boolean Provides the users choice
+when prompted that they are
+already logged in at another
+counter. A value of true
+indicates that the user has
+opted to continue with the
+login: false that they have
+cancelled.
+
+2.9.2 Response
+
+The following objects can be returned in response to the ConcurrentLogonRequestDTO request:
+
+ResponseDTO
+ConcurrentLogonResponseDTO
+
+SecondLogonResponseDTO
+
+Description
+
+If the user chooses to abandon a concurrent login attempt, then this response
+is returned
+
+Response object returned in response to a SecondLogoninteractionDTO,
+indicating that the users credentials are valid.
+
+If this is a concurrent login attempt the the “isUserAlreadyLoggedOn’ attribute
+has a value of “true”
+
+For a successful login various beans are populated with data needed to
+perform post login checks and subsequent use cases.
+
+This object is also retuned during a concurrent login request, where the user
+has opted to continue with the login. In this case this object indicates that the
+user is now successfully logged in at this counter, and that their previous
+session has been terminated.
+
+These are described in the following sections.
+
+2.9.2.1 ConcurrentLogonResponseDTO
+
+TagiAttribute Example Constraints
+
+Name Applied
+
+NIA Empty response indicates that
+the processing to abandon the
+concurrent login at the BAL
+(i.e. change session state from
+NEW to INVALIDATE etc.)
+was successful
+
+2.9.2.2 I SecondLogonResponseDTO
+
+This is a cutdown version of the response returned during login, and is sent in response to a user opting
+to continue with a concurrent login. The elements marked in red below are not retumed in this response,
+and have to be injected back into this response at the counter, from the initial
+SecondLogonResponseDTO received during authentication.
+
+Tag/Attribute Name Example Constraints I Description
+Applied
+BranchOpen
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No: 33 of 74
+
+Fe)
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+BranchProfile
+
+BranchProfileBean
+
+See section below for contents
+of this bean.
+
+CashDeclarationData
+
+CashDeclarationDataBean
+
+See section below for contents
+of this bean.
+
+ForcePasswordChange false boolean Flag denoting is a password
+change should be forced
+during login.
+
+LastLoginTimeStamp 2009-10-20T11:40:33.017Z Date The timestamp of the last
+successful login for the user.
+
+M2Evidence DO9B79BSE2E2C9D857B6F1 I String The SRP M2 evidence
+
+96EG6F46A4F9DS58D0B5 generated by the BAL. This is
+the evidence that the BAL
+sends to the counter to prove
+that it has generated the
+correct shared secret.
+
+NumberOfUnsuccessfulAttempts I 0. int The number of unsuccessful
+attempts made by this user to
+login.
+
+‘OsrConfigVersionBaseline BAL_SRV_OSR_ROUTING_0 I String OSR Version Numbers
+
+0.90_V037
+
+‘OsrConfigVersionPatchLevel BAL_SRV_OSR_ROUTING_0 I String OSR Version Numbers
+
+0.90_V037_V036
+
+OsrVersionBaseline BAL_SRV_OSR_00.90_V042 I String OSR Version Numbers
+
+OsrVersionPatchLevel BAL_SRV_OSR_00.90_V042- I String OSR Version Numbers
+
+041
+
+PanHashSeed 6UrAzT+JRPSFBSbEWg/pR+ I String Encoded pan hash seed
+
+hNgsDFHeos
+
+ProfilesBean UserProfilesBean
+See section below for contents
+of this bean.
+
+StockUnitProfile StockUnitProfileBean
+See section below for contents
+of this bean.
+
+‘SystemRecoveryRequired false boolean Is system recovery required or
+not?
+
+TransactionCorrectionData TransactionCorrectionDataBea
+n
+See section below for contents
+of this bean.
+
+UserAlreadyLoggedOn false boolean Flag indicating if this user is
+already logged in at another
+counter. A value of true
+indicates a concurrent login.
+
+UserRole MANAGERS: String The role of this user.
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+Ref, DES/APP/IFS/0018
+Version: via
+
+Date: 23-Jun-10
+
+Page No: 34 of 74
+
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+VpnPin VPNBean
+
+See section below for contents
+of this bean.
+
+2.10 CreateBranchUser
+
+Usage Cross Reference Description
+
+BAD-417 Create a Branch User I DES/APP/HLD/0060 Creates a user account within a branch
+Account
+
+2.10.1 Request
+
+Tagi/Attribute Name Example Constraints Applied I Description
+
+branchUser COUNT1 String Login Id of the new branch
+user
+
+Password RL+cm3QyKNA= String The encoded password for the
+new user
+
+firstName JON String First name of the new user
+
+lastName HULME String Last name of the new user
+
+userRole MANAGERS String Role of the new user — one of
+MANAGERS,
+SUPERVISORS, CLERKS.
+
+stockUnit DEF String Stock Unit to which the user is
+being attached.
+
+2.10.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+NIA Empty response indicates
+success
+
+2.11 CutOffDespatchReportService
+
+Usage Cross Reference Description
+BAC-270 Produce Cut-off DES/APP/HLD/0059 Cuts off the postal services despatch report
+Report DES/APP/HLD/0109
+
+DES/APP/HLD/0053
+
+2.11.1 Request
+
+Tag/Attribute Name I Example Constraints Description
+Applied
+LowerCutOffMarker <LowerCutoffMarker> CutOffMarker The last cut-off marker,
+<Bp>1</Bp> identifying the point in
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 35 of 74
+Fe)
+FUJITSU
+
+XML Message Audit between Counter and BALIOSR
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+<Reportld>
+<Reportid>2018</Reportid>
+
+</Reportid>
+
+<ReportType>
+
+<Name>PostalServicesCutOff</Name>
+
+</ReportType>
+
+<StockUnit>3N5</StockUnit>
+
+time after which data
+was sent to the counter
+for the report.
+
+For this service, the
+marker does not
+contain nodes and
+
+<SystemCutoff>false</SystemCutoff> Jsns
+<Tp>50</Tp> See
+</LowerCutoffMarker> DES/APP/HLD/0109
+and
+DES/APP/HLD/0053
+for details.
+MailsitemList <MailsitemList> List of String List of barcodes
+<String>XA259083297GB</String>
+</MailsitemList>
+NewCutoffMarker <NewCutoffMarker> CutOffMarker The new cut-off marker
+<Bp>1</Bp> identifying the cut-off
+<CutoffTimestamp>2009 -09- point in time.
+28712:54:31.119Z</Cutofffimestamp>
+<MarkerDate>2009-09-
+28712:54:31.119Z</MarkerDate>
+<Reportid>
+<Reportld>2018</Reportld>
+</Reportld>
+<ReportType>
+<Name>PostalServicesCutOff</Name>
+</ReportType>
+<StockUnit>3N5</StockUnit>
+<Tp>50</Tp>
+</NewCutoffMarker>
+OfficeTP: 10 Integer The office TP
+Reportid 2018 Integer The report id
+ReprintData <ReprintData> ReprintData Reprint information
+
+<KeepDays>60</KeepDays>
+<PrintTimeStamp>2009-10-
+14713:32:24.745Z</PrintTimeStamp>
+<ReportData>
+<![CDATA
+<para>
+
+*** END OF REPORT ***
+<nl/>
+</para>
+IP
+</ReportData>
+</ReprintData>
+
+including the report
+POAML. See
+DES/APP/HLD/0109
+
+2.11.2 Response
+
+Tag/Attribute Name
+
+Example
+
+Constraints Applied
+
+Description
+
+N/A
+
+Empty response indicates
+success
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: Vi4
+Date: 23-Jun-10
+Page No: 36 of 74
+Fe)
+FUJITSU
+
+XML Message Audit between Counter and BALIOSR
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+2.12 CutOffReportService
+
+Usage Cross Reference Description
+BAC-270 Produce Cut-off DES/APP/HLD/0059 Cuts off the report using the new cut off marker
+Report DES/APP/HLD/0109
+DES/APP/HLD/0053
+2.12.1 Request
+TagiAttribute Name I Example Constraints Description
+Applied
+LowerCutOffMarker <CutoffCutofffimestamp>2009-09- CutOffMarker The last cut-off marker,
+287 12:51:25.4992</CutoffTimestamp> identifying the point in
+<MarkerDate>2009-09- time after which data
+287 12:51:25.499Z</MarkerDate> was sent to the counter
+<NodeJSNs> for the report.
+<NodeJSN> See
+Previa pei DES/APP/HLD/0109
+</NodeJSN> and
+</NodeJSNs> Ses PHLDIO0SS for
+<Reportld> etalls.
+<Reportid>118</Reportid>
+</Reportld>
+<ReportType>
+<Name>OfficeCutOff</Name>
+</ReportType>
+<StockUnit>3N5</StockUnit>
+<SystemCutoff>false</SystemCutoff>
+<Tp>50</Tp>
+NewCutoffMarker Similar to above CutOffMarker The new cut-off marker
+identifying the cut-off
+point in time.
+OfficeTP: 10 Integer The office TP
+Reportid 200 integer The report Id of the
+report being cutoff
+StockUnit Sut String The SU the user is
+currently attached to.
+StockUnitBP 1 Integer The BP of the SU the
+user is currently
+attached to.
+stockUnitTP 10 Integer The BP of the SU the
+user is currently
+attached to.
+summaryTotals <SummaryTotals> List of objects of type I Summary records
+<ProductFeeTotal> ProductFee Total. written when cutting off
+<Amount> May be omitted. a SU report that wil
+<Amount>-5.00</Amount> appear on the
+</Amount> associated office report.
+<Productld>5956</Productld>
+<Quantity>
+<Value>-1</Value>
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 37 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence &
+
+</Quantity>
+</ProductFeeTotal>
+</SummaryTotals>
+
+eventTotals <EventTotals> List of objects of type I Giro EVNT mode
+<ProductTotal> ProductTotal. May ‘summary information.
+<Amount> be omitted. See
+<Amount>120.00</Amount> DEV/APP/LLD/0179.
+</Amount> Only present if the
+<Productld>9271</Productld> report produces EVNT
+<Quantity> data
+<Value>1</Value>
+</Quantity>
+</ProductTotal>
+<ProductTotal>
+<Amount>
+<Amount>2.40</Amount>
+</Amount>
+<Productld>9272</Productld>
+<Quantity>
+<Value>1</Value>
+</Quantity>
+</ProductTotal>
+<ProductTotal>
+<Amount>
+<Amount>0.00</Amount>
+</Amount>
+<Productld>9376</Productld>
+<Quantity>
+<Value>0</Value>
+</Quantity>
+</ProductTotal>
+<ProductTotal>
+<Amount>
+<Amount>0.00</Amount>
+</Amount>
+<Productld>9377</Productld>
+<Quantity>
+<Value>0</Value>
+</Quantity>
+</ProductTotal>
+<ProductTotal>
+<Amount>
+<Amount>-
+122.40</Amount>
+</Amount>
+<Productld>9379</Productld>
+<Quantity>
+<Value>-2</Value>
+</Quantity>
+</ProductTotal>
+</EventTotals>
+
+weekNumber 50 Integer. May be The week number as
+omitted. printed on Counter Dialy
+Giro reports. Used to
+check the week number
+has not changed from
+obtaining the data to
+cutting off the report
+Only present if the
+report uses the week
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0018
+Version: via
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 38 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+number.
+reprintData <ReportData> String POAML. May I Reprint information
+<![CDATA[ be omitted. including the POAML of
+<para> the report that is being
+<space x="0"/>Coddenham cut-off. Only present if
+<space x="31"/>FAD: the report is configured
+<space x="36"/>6913051 for reprints. See
+<ni> DES/APP/HLD/0109.
+</para>
+IP
+</ReportData>
+</ReprintData>
+tradingDate 2009-10-14711:26:26.776Z String date. May be I The trading date when
+omitted. the data was requested
+from the BAL. Only
+present if week number
+checking required. See
+DES/APP/HLD/0109.
+2.12.2 Response
+Tag/Attribute Name Example Constraints Applied Description
+
+N/A
+
+Empty response indicates
+success
+
+2.13 FirstLogon
+
+Usage Cross Reference
+
+Description
+
+BAD-11 Log On to System DES/APP/HLD/0060
+
+BAD-11 covers the primary scenario of logging onto the
+HNG-X system, and covers several variations
+surrounding this. The use case also contains variations
+that could be considered as use cases in their own right,
+for example the post login checks, recovery, shutdown
+and restart etc. Login uses specific DTO’s for requests
+and responses, and one request may have many
+different types of responses.
+
+2.13.1 Request
+
+The FirstLogon URI uses the FirstLogoninteractionDTO. This is the first request object that is sent from
+
+the Counter to the BAL to initiate the logon process.
+
+Sends through the userlD of the user attempting to logon as well as the ephemeral public key A
+generated by the Counter as part of the SRP authentication process.
+
+Tag/Attribute Example Constraints I Description
+Name Applied
+‘SrpA cPqUd4cNiP2QauONmYPUNSSWMBm/yynDpé I String ‘SRP A - ephemeral public
+5vfZVFypyNaSueZWDZ2MNbxNicReMTe9OM key, Base64 encoded.
+k+683Vza\nIfLKvKbErA==
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 39 of 74
+
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+Userld SMITHJ
+
+String The username of the user that
+is attempting to login
+
+2.13.2 Response
+
+The following objects can be returned in response to the FirstLogonInteractionDTO request:
+
+ResponseDTO
+FirstLogonResponseDTO
+
+InvalidUserResponseDTO.
+
+InvalidCounterResponseDTO
+
+Description
+
+Success response returned for a FirstLogoninteractionDTO request. This
+response indicates that the userlD was found in the database. It contains the
+branch accounting code for the branch code supplied in the initial request; the
+value of the salt associated with the users password verifier, an ephemeral
+public key B generated by the BAL which constitutes evidence in the SRP
+authentication process.
+
+Response returned to a FirstLogonInteractionDTO, indicating that the userlD
+is invalid — i.e. cannot be found in the database.
+
+Returned in response to the FirstLogoninteractionDTO if the counter does not
+exist, or the IP address validation for the counter fails or the training mode
+checks fail
+
+These are described in the following sections.
+
+2.13.2.1 FirstLlogonResponseDTO
+
+Tag/Attribute Example Constraints I Description
+Name Applied
+BranchAccountin 1234 Integer The branch accounting code
+gCode that the user belongs to.
+EncryptedToken T1edb5f7ac13723a006245a45ca829c0 String Token used as the user
+session ID.
+FadHash 89 int The fad hash
+‘SrpB OmZ20}+fY 1}+bt2ZJYXBOSWhxneSmTHOS/PF I String ‘SRP B — ephemeral public
+n4ZmvqoYZuM/vEGMCdwg6g6/EI6Y4kGr1x+ key, Base64 encoded.
+SjRSO\nXJZVFXFm4+3iISMo8dSIMZQFYmSqh
+BZa7LME
+UserSalt BGLVPIq6wA== String User salt used in SRP
+authentication, Base64
+encoded
+
+2.13.2.2 InvalidUserResponseDTO
+
+Tag/Attribute Example Constraints I Description
+Name Applied
+NIA Empty response indicates that
+this is an invalid user (ie. the
+user validation at the BAL
+failed)
+©Copyright Fujitsu Services Ltd 2010 Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: vi4
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No: 40 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+2.13.2.3 InvalidCounterResponseDTO
+
+Tag/Attribute Example Constraints I Description
+Name Applied
+
+I
+
+ReasonForFailure Integer Integer providing a reason
+code for failure to login. Values
+should be assigned from the
+set of constants contained
+
+within this response DTO.
+These are currently:
+-1=Invalid Counter
+
+-2=Branch not in Training
+Mode
+
+-3=Training Data Reset
+Required
+
+2.14 LabelEventService
+
+Usage Cross Reference Description
+
+PS-12 Accept Posting Request I DES/APP/HLD/0128 Saves the postage label event to the BRDB
+
+2.14.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+dummyData data String Dummy data, as no data
+needed for this service
+
+2.14.2 Response
+
+Tag/Attribute Name Example Constraints Applied Description
+
+resultset success Boolean true indicates success
+
+2.15 LockBranchService
+
+Usage Cross Reference Description
+
+BAC-130 Balance Branch DES/APP/HLD/0059 Locks the branch during Branch Balancing
+DES/APP/HLD/0126
+DES/APP/HLD/0127
+
+2.15.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+N/A There are no attributes to this
+service
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 41 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+2.15.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+NIA Empty response indicates
+success
+
+2.16 LockStockUnitService
+
+Usage Cross Reference Description
+
+BAC-11 Balance Stock Unit DES/APP/HLD/0059 Locks the stock unit during Stock Unit Balancing
+DES/APP/HLD/0126
+DES/APP/HLD/0127
+
+2.16.1 Request
+
+TagiAttribute Name Example Constraints Applied I Description
+
+StockUnitID SuU1 The stockUnit to be locked
+
+2.16.2 Response
+
+Tag/Attribute Name Example Constraints Applied Description
+NIA Empty response indicates
+success
+
+2.17 LogoffService
+
+Usage Cross Reference Description
+
+BAD-39 Log Off from System DES/APP/HLD/0060 Logs off
+
+2.17.1 Request
+
+TagiAttribute Name Example Constraints Applied I Description
+
+usn 1116 Long The counter’s unique serial
+number at the point of logoff
+
+2.17.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+NA Empty response indicates
+success
+
+2.18 ReconcileBarCodesService
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 42 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Usage Cross Reference Description
+PS-5404 Notify Branch Mails DES/APP/HLD/0128 I Records confirmed discrepancies in despatched
+Despatch barcodes to the BRDB
+
+2.18.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+
+checkedBarCodes XA259083297GB List of String List of barcodes
+
+missingBarCodes K1100001278GB, List of String List of barcodes
+
+XA259083283GB
+
+nodeld 7 Integer Counter id, if a specific node is
+selected
+
+carrierCode RM String The carrier code, if all carriers
+not used
+
+reportData See section 2.12.1 XML String Report reprint data
+
+2.18.2 Response
+
+Tag/Attribute Name Example Constraints Applied Description
+NIA Empty response indicates
+success
+
+2.19 RecordStockDeclarations
+
+Usage Cross Reference Description
+
+‘CSM-208 Declare Cash Holding I DES/APP/HLD/0063 I Records a declaration of cash, stock, travellers
+CSM-236 Declare Stock cheques, currency, or stamps
+
+Holding
+
+2.19.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+stockUnitld SUT String The stock unit for which the
+declaration is being done
+
+tillld 19 Integer The till id from where the
+
+declaration is being done
+
+Type cash String The type of declaration being
+done — one of cash, stock,
+travchq, currency, stamps
+
+tradingPeriod 710 Integer The trading period of the stock
+unit.
+balancePeriod 10 Integer The balance period of the
+stock unit.
+calledFromLogin N String Param indicating whether this.
+is during login.
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 43 of 74
+Fe)
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+I declarationProducts l 10,20,30 Dyno of Integer List of product id's
+2.19.2 Response
+Tag/Attribute Name Example Constraints Applied Description
+
+N/A
+
+Empty response indicates
+success.
+
+2.20 RecoveryService
+
+Usage
+
+Cross Reference
+
+Description
+
+‘A number of use case (6.9
+banking use cases) mention
+saving data for recovery, and
+BAD-11 Log On to System
+refers to recovering incomplete
+transactions.
+
+DES/APP/HLD/0083
+DES/APP/HLD/0123
+
+When transactions are generated and added to the
+basket, recovery data can be sent to the
+RecoveryService so that if the counter crashes, the
+correct status of these transactions can be recovered.
+
+Recovery is open-ended to allow for future recovery
+transaction types, but is currently used for recovery of
+Banking, Reversals, AP and AP-ADC transactions.
+
+Recovery data is not audited in the sense that it does
+not write to the BRDB message journal, but it is audited
+in the sense that the request has a jsn, audit data can
+be piggy backed on the message, and the recovery data
+is saved to the BRDB recovery transactions table.
+
+A recovery process is invoked on the counter during
+logon to recover transactions using the recovery data
+saved by this service.
+
+2.20.1 Request
+
+This message saves recovery data, which can be
+
+Banking and AP recovery.
+
+used later to recover transactions. It is used by
+
+Tag/Attribute Name Example Constraints Applied Description
+recoveryMode none String This is the only attribute in the
+GenericRequestDTO Dyno
+attribute
+The status is none (rather than
+complete or failed).
+RecoveryData This contains the data to be
+saved, with the following fields.
+newRecoveryData false Boolean
+recoveryTokenld String Recovery token id, may be
+omitted or empty
+TecoveryUsn 2347 Long Recovery USN
+recoveryScript String String The script to be used if
+recovery is invoked
+recoveryData Dyno The recovery data, which is
+specific to the transaction type.
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 44 of 74
+
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+txnStartTime 2009-10- Date Transaciton start time
+28711:54:00.323Z
+recoverySsn 3121 Long Recovery session sequence
+number
+stockUnit sut1 String Stock unit on which recovery is
+being done
+counterMode 1 Integer The mode in which the
+
+transaction is being executed
+
+2.20.2 Request with RecoveryDataSet
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+recoveryMode none String This is the only attribute in the
+GenericRequestDTO Dyno
+attribute.
+The status is none (rather than
+complete or failed).
+
+RecoveryData This contains the data to be
+saved, with the following fields.
+
+newRecoveryData false Boolean
+
+recoveryDataSetFlag false Boolean true if recoveryDataSet is
+used, in which case
+
+TecoveryDataSet The recovery data, which is
+specific to the transaction type.
+
+recoverySsn 3121 Long Recovery session sequence
+number
+
+stockUnit sut1 String Stock unit on which recovery is
+being done
+
+counterMode 1 Integer The mode in which the
+transaction is being executed
+
+2.20.3 Response
+
+Tag/Attribute Name Example Constraints Applied Description
+
+N/A
+
+Empty response indicates
+success
+
+2.21 RolloverBranchService
+
+Usage Cross Reference Description
+BAC-130 Balance Branch DES/APP/HLD/0059__I Performs the branch rollover
+DES/APP/HLD/0126
+DES/APP/HLD/0127
+©Copyright Fujitsu Services Ltd 2010 Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: Vi4
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No: 45 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+2.21.1 Request
+Tag/Attribute Name Example Constraints Description
+Applied
+NewTP 2 Integer New office TP
+NewYearld 2009 Integer New finamcial year id
+NextTP 3 Integer Next office TP
+NextYearld 2009 Integer Financial year id of
+next office TP
+OpeningSuspenseBalance <OpeningSuspenseBalance> List of The opening balances
+<OpeningBalance> OpeningBalance for the new TP
+<Amount>
+<Amount>0.00</Amount>
+</Amount>
+<Productld>1</Productld>
+<Quantity>
+<Value>0</Value>
+</Quantity>
+</OpeningBalance>
+</OpeningSuspenseBalance>
+Reportid 285 integer Reportid of the Branch
+Trading Statement
+(BTS)
+Reprint See section 2.12.1 XML String Report reprint data for
+the BTS
+2.21.2 Response
+Tag/Attribute Name Example Constraints Applied Description
+
+N/A
+
+Empty response indicates
+success
+
+2.22 SecondLogon
+
+Usage Cross Reference
+
+Description
+
+BAD-11 Log On to System DES/APP/HLD/0060
+
+BAD-11 covers the primary Scenario of logging onto the
+HNG-X system, and covers several variations
+surrounding this. The use case also contains variations
+that could be considered as use cases in their own right,
+for example the post login checks, recovery, shutdown
+and restart etc. Login uses specific DTO’s for requests
+and responses, and one request may have many
+different types of responses.
+
+2.22.1 Request
+
+The SecondLogon URI uses the SecondLogoninteractionDTO. This is a request object sent by the
+Counter to the BAL containing M1 evidence used in proving that the password supplied by the user at the
+counter matches that held in the BAL. This is part of the SRP protocol. The request also supplies the
+public key that is used to sign each subsequent message.
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 46 of 74
+
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Tag/Attribute I Example Constraints
+Name Applied
+M1Evidence A04C978E8B4858E4BCD924FFBC9363BCE1F87 I String The SRP M1 evidence
+B6C generated by the counter.
+This is the evidence that the
+counter sends to the BAL to
+prove that it has generated
+the correct shared secret.
+Publickey MIGfMAOGCSqGSIb3DQEBAQUAA4GNADCBIQK I String The public key that is used in
+BgQC5Vdhg2JYfReHy4IFmYVZzHXDUtgrkKgACpim message authentication (ie.
+Uc8BsMYDI67FX40e8NFXFINMBJKSIKEXXVE6fgJF checking that the request
+hwOfFURsSxOz+AheLwihF ttv4PLQg9QNEXI3sI1H messages sent from the
+2kCa2KkyYPLBoUSJ3qZNZsc7vMUABNW+wOR2 counter and signed by the
+OX5j3ZSRWAOELTeMtPzMdQIDAQAB counters private key have
+not been tampered with).
+
+2.22.2 Response
+
+The following objects can be returned in response to the SecondLogoniInteractionDTO request:
+
+ResponseDTO Description
+
+SecondLogonResponseDTO Response object returned in response to a
+SecondLogoninteractionDTO, indicating that the users credentials
+are valid.
+
+If this is a concurrent login attempt the the
+“isUserAlreadyLoggedOn” attribute has a value of “true”.
+
+For a successful login various beans are populated with data
+needed to perform post login checks and subsequent use cases.
+
+This object is also retuned during a concurrent login request,
+where the user has opted to continue with the login. In this case
+this object indicates that the user is now successfully logged in at
+this counter, and that their previous session has been terminated.
+
+DisabledAccountResponseDTO Response returned to a SecondLogoninteractionDTO, indicating
+that the user’s account is disabled.
+
+InvalidTokenResponseDTO Response returned to a SecondLogoninteractionDTO, indicating
+that the token in the request (i.e. the user session ID) does not
+match the token held in the user session within the database.
+
+LockedAccountResponseDTO Response returned to a SecondLogoninteractionDTO, indicating
+that the user’s account is locked.
+
+BalancingInProgressResponseDTO Returned by the BAL when the user attempts to log on, but the
+stock unit that they are attached to is currently in the process of
+balancing, and the balance process has been initiated by a
+different user.
+
+InvalidM1EvidenceResponseDTO. Response returned to a SecondLogoninteractionDTO if the BAL
+has been unable to correctly verify the M1 evidence supplied by
+the counter.
+
+InvalidUserResponseDTO Response returned to a SecondLogoninteractionDTO when the
+user account has been deleted between the first and second login
+requests or the user is not allowed to login to the branch because
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 47 of 74
+Fe)
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+its role is not in the permitted list of roles.
+
+These are described in the following sections.
+
+2.22.2.1 SecondLogonResponseDTO
+
+Tag/Attribute Name Example Constraints I Description
+Applied
+BranchOpen
+BranchProfile BranchProfileBean
+See section below for contents
+of this bean.
+CashDeclarationData CashDeclarationDataBean
+See section below for contents
+of this bean.
+ForcePasswordChange false boolean Flag denoting is a password
+change should be forced
+during login.
+LastLoginTimeStamp 2009-10-20T11:40:33.017Z Date The timestamp of the last
+successful login for the user.
+M2Evidence DO9B79BSE2E2C9D857B6F1 I String The SRP M2 evidence
+96E6F46A4F9D58D0B5 generated by the BAL. This is
+the evidence that the BAL
+sends to the counter to prove
+that it has generated the
+correct shared secret.
+NumberOfUnsuccessfulAttempts I 0 int The number of unsuccessful
+attempts made by this user to
+login.
+‘OsrConfigVersionBaseline BAL_SRV_OSR_ROUTING_0 I String ‘OSR Version Numbers
+0.90_V037
+‘OsrConfigVersionPatchLevel BAL_SRV_OSR_ROUTING_0 I String ‘OSR Version Numbers
+0.90_V037_V036
+OsrVersionBaseline BAL_SRV_OSR_00.90_V042 I String OSR Version Numbers
+OsrVersionPatchLevel BAL_SRV_OSR_00.90_V042- I String OSR Version Numbers
+041
+PanHashSeed GUrAZT+JRPSFBSbEWg7pR* I String Encoded pan hash seed
+hNgsDFHeos
+ProfilesBean UserProfilesBean
+See section below for contents
+of this bean.
+StockUnitProfile StockUnitProfileBean
+See section below for contents
+of this bean.
+‘SystemRecoveryRequired false boolean Is system recovery required or
+
+not?
+
+TransactionCorrectionData
+
+TransactionCorrectionDataBea
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+Ref, DES/APP/IFS/0016
+Version: via
+
+Date: 23-Jun-10
+
+Page No: 48 of 74
+
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+n
+
+See section below for contents
+of this bean.
+
+UserAlreadyLoggedOn false boolean Flag indicating if this user is
+already logged in at another
+counter. A value of true
+
+indicates a concurrent login.
+
+UserRole MANAGERS: String The role of this user.
+
+VpnPin VPNBean
+See section below for contents
+of this bean.
+
+2.22.2.1.1BranchProfileBean
+
+Tag/Attribute Name Example Constraints I Description
+Applied
+BranchStatus Open String The status of the branch
+
+(e.g. Open, Closed,
+Migrating, New etc.)
+
+CurrentBranchTradingPeriod 5 int The current branch trading
+period.
+
+CurrentBranchTradingPeriodyear I 2000 int The current branch trading
+period year.
+
+‘StockUnitTradingPeriodRolioverDate I 2008-12-03T00:00:00.000Z I Date The stock unit trading
+
+period rollover date
+
+2.22.2.1.2CashDeclarationDataBean
+
+Tag/Attribute Name Example Constraints I Description
+Applied
+CashDeclarationOutstanding false boolean Defines whether a cash
+
+declaration exists and is
+outstanding
+
+2.22.2.1.3UserProfilesBean
+
+Tagi/Attribute Name Example Constraints I Description
+Applied
+Jsn 3851 Long The current JSN for this
+counter.
+Usn 22 Long The current USN for this
+counter.
+
+2.22.2.1.4StockUnitProfileBean
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 49 of 74
+Fe)
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+Tag/Attribute Name Example Constraints I Description
+Applied
+CurrentBalancePeriod 1 int The cirrent stock unit
+balance period.
+CurrentStockUnitTradingPeriod 5 int The current stock unit
+trading period.
+CurrentStockUnitTradingPeriodYear I 2009 int The current stock unit
+trading period year.
+StockUnitCreationDate 2009-07-10T14:28:00.489Z Date The date that the stock unit
+was created on.
+StockUnitName SB3 String The name of the stock unit.
+StockUnitType Ss String The type of the stock unit. S
+= Shared, I = Individual.
+2.22.2.1.5TransactionCorrectionDataBean
+Tag/Attribute Name Example Constraints I Description
+Applied
+TransactionCorrectionCount 0 int The number of outstanding
+transactions.
+TransactionCorrectionsOutstanding I false boolean Flag indicating if there are
+transaction corrections
+outstanding
+2.22.2.1.6VPNBean
+TagiAttribute Name Example Constraints I Description
+Applied
+VpnkKey NiRgZqvmEbyStaQéu+luqoKBOcWipJ I bytel] Byte array containing an
+g9k9rgGnQYTkP1t3Fgc3N22a7ruybOS encrypted VPN key value.
+BFEt6vsOfY B6yY=
+VpnPin fLXMGVOelLjcCOKtAWOXIC/Q2Q4sY0 I byte[] Byte array containing an
+nsviFyY+NcFyzLDgA6Zs7spONXD7Sw encrypted VPN filename
+AJCI value
+2.22.2.2 DisabledAccountResponseDTO
+Tag/Attribute Example Constraints I Description
+Name Applied
+NA Empty response indicates that
+this user account is disabled.
+
+2.22.2.3 InvalidTokenResponseDTO
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+Ref. DES/APP/IFS/0018
+Version: vi4
+
+Date: 23-Jun-10
+
+Page No: 50 of 74
+
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Tag/Attribute Example Constraints
+
+Name Applied
+
+NIA Empty response indicates that
+the user session token is
+invalid.
+
+2.22.2.4 LockedAccountResponseDTO
+
+Tag/Attribute Example Constraints I Description
+
+Name Applied
+
+LockReason 1 int Provides the reason that the
+
+account has been locked.
+Values should be set using the
+constants contained within this
+DTO. The current values are:
+
+0 = Account is already in a
+locked state.
+
+1 = The account has just been
+locked because the max
+number of allowed attempts to
+supply a valid password has
+been exceeded.
+
+2.22.2.5 BalancinginProgressResponseDTO
+
+Tag/Attribute Name Example Constraints I Description
+Applied
+StockUnitBeingBalanced I SB3 String The name of the stock unit
+currently being balanced.
+
+2.22.2.6 InvalidM1EvidenceResponseDTO
+
+Tag/Attribute Example Constraints I Description
+
+Name Applied
+
+NA Empty response indicates that
+the counter supplied invalid
+M1 evidence.
+
+2.22.2.7  InvalidUserResponseDTO
+
+Tag/Attribute Example Constraints I Description
+Name Applied
+N/A Empty response indicates that
+
+this is an invalid user (ie
+users password is incorrect).
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 51 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+2.23 SecureExistingReversalService
+
+Usage Cross Reference Description
+GLB-270 Transact Customer DES/APP/HLD/0068 Secures the basket by writing recovery data to the
+Basket DES/APPMHLD/0083 I BROB
+
+2.23.1 Request
+
+Tag/Attribute Name Example Constraints Description
+Applied
+reversalNodeld 1 Integer The node id of the counter
+reversalSessionId 3101 Long The basket session id
+reversalAccountingLines MessageList List of reversal accounting
+lines
+reversalAccountingLines.reversalTxnid I 1 Integer Transaction id
+reversalAccountingLines.isAP true Boolean True if AP
+2.23.2 Response
+Tag/Attribute Name Example Constraints Applied Description
+NIA Empty response indicates
+success
+2.24 SetPasswordOnline
+Usage Cross Reference Description
+BAD-541 Change Password DES/APP/HLD/0060 Changes the current user's password
+2.24.1 Request
+Tag/Attribute Name Example Constraints Description
+Applied
+Username CIUN1 String The currently logon on
+username
+newEncryptedPassword JwSXhWJkO2dBrhyDNGRBSw== I String The new encrypted
+password
+bypass TimeSetCheck true Boolean If true, bypass the check
+
+that the password has not
+been changed in 24 hours
+
+2.24.2 Response
+
+Tag/Attribute Name l Example Constraints Applied I Description
+
+©Copyright Fujitsu Services Ltd 2010 Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: Vi4
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 52 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+N/A Empty response indicates
+success
+
+2.25 SetPasswordOtherUser
+
+Usage Cross Reference Description
+
+BAD-540 Maintain Branch User I DES/APP/HLD/0060 Changes the password of the specified user
+Account
+
+2.25.1 Request
+
+Tag/Attribute Name Example Constraints Description
+Applied
+username JON101 String User whose password is
+being changed
+newEncryptedPassword Vyk6asMOKpDiLSoyjWoTt String New password
+branchAccountingcode 5923 Integer Branch Accouting Code
+2.25.2 Response
+Tag/Attribute Name Example Constraints Applied I Description
+N/A Empty response indicates
+success
+2.26 StockUnitManagement
+2.26.1 CreateStockUnitService
+Usage Cross Reference Description
+BAD-151 Create Stock Unit DES/APP/HLD/0060 Creates a stock unit
+2.26.1.1 Request
+Tag/Attribute Name Example Constraints Applied I Description
+stockUnit JH3 String The stock unit being created
+‘stockUnitT ype s String ‘S(Shared) or (Individual)
+deleteTimeoutDays 200 Integer The number of days to keep
+the stock unit logically deleted
+before it can be reused for re-
+creation.
+2.26.1.2 Response
+Tag/Attribute Name Example Constraints Applied Description
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 53 of 74
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+N/A
+
+Empty response indicates
+success
+
+2.26.2 DeleteStockUnitService
+
+Usage Cross Reference Description
+
+BAD-207 Delete Stock Unit DES/APP/HLD/0060 _I Deletes the stock unit
+
+2.26.2.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+stockUnit JH2 String The stock unit to be deleted
+
+2.26.2.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+NIA Empty response indicates
+success
+
+2.27 StockUnitRolloverBPService
+
+Usage
+
+Cross Reference
+
+Description
+
+BAC-11 Balance Stock Unit
+
+DES/APP/HLD/0059
+DES/APP/HLD/0126
+DES/APP/HLD/0127
+
+Rolls over a stock unit into the next BP
+
+2.27.1. Request
+
+Tag/Attribute Name I Example Constraints Description
+Applied
+BTSData <BTSData> List of BTSTotal Data saved to the BTS
+<BTSTotal> data table. Later used by
+<Amt> the Branch Trading
+<Amount>-1000.00</Amount> Statement
+</Amt>
+
+<Nox
+
+<Movement>false</Movement>
+
+\deld>3003</Nodeld>
+
+</BTSTotal>
+<BTSTotal>
+<Amt>
+<Amount>-1000.00</Amount>
+</Amt>
+<Movement>false</Movement>
+
+<Nodeld>1001</Nodeld>
+</BTSTotal>
+</BTSData>
+OpeningBalance <OpeningBalance> List of Date saved to the stock
+<OpeningBalance> unit opening balances
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No: 54 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+<Amount> OpeningBalance table.
+<Amount>-1000.00</Amount>
+</Amount>
+<Productid>1</Productld>
+<Quantity>
+<Value>-1</Value>
+</Quantity>
+</OpeningBalance>
+</OpeningBalance>
+
+Period 2 Integer The new BP
+
+Reportid 79 Integer The report id of the stock
+unit Balance Report
+
+Reprint ‘See section 2.12.1 XML String Reprint information
+
+StockUnitld JH1 String The stock unit
+
+2.27.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+NIA Empty response indicates
+success
+
+2.28 StockUnitRolloverTPService
+
+Usage Cross Reference Description
+BAC-11 Balance Stock Unit DES/APP/HLD/0059__ I Rolls overa stock unit into the next BP
+DES/APP/HLD/0126
+DES/APP/HLD/0127
+
+2.28.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+
+BTSData See section 2.27.1 List of BTSTotal Data saved to the BTS data
+table. Later used by the
+Branch Trading Statement
+
+OpeningBalance See section 2.27.1 List of Date saved to the stock unit
+OpeningBalance opening balances table.
+Period 2 Integer The new TP
+Reportid 79 Integer The report id of the stock unit
+Balance Report
+Reprint See section 2.12.1 XML String Reprint Information
+‘StockUnitid Ji String The stock unit
+
+2.28.2 Response
+
+Tag/Attribute Name l Example Constraints Applied Description
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 55 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+N/A Empty response indicates
+success
+
+2.29 UnlockBranchService
+
+Usage Cross Reference Description
+BAC-130 Balance Branch DES/APP/HLD/0059__I Unlocks the branch at the end of Branch Balancing
+DES/APP/HLD/0126
+DES/APP/HLD/0127
+
+2.29.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+N/A There are no attributes to this
+service
+
+2.29.2 Response
+
+TagiAttribute Name Example Constraints Applied I Description
+
+N/A Empty response _ indicates
+success
+
+2.30 UnlockStockUnitService
+
+Usage Cross Reference Description
+
+BAC-11 Balance Stock Unit DES/APP/HLD/0059 Unlocks the stock unit when the use case is complete.
+DES/APP/HLD/0126
+DES/APP/HLD/0127
+
+2.30.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+StockUnitld SU1 String The stockUnit that needs to be
+locked
+
+2.30.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+NA Empty response indicates
+success
+
+2.31 UpdateCutOffReportService
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 56 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Usage Cross Reference Description
+BAC-270 Produce Cut-off DES/APP/HLD/0059 I Updates the cut-off due to finding no data up to this,
+Report DES/APPHLD/0109 _I Paintin time
+
+DES/APP/HLD/0053
+
+2.31.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+cutoffMarkerList See marker example I List of CutOfiMarker I List of cutoff markers for the
+for reports being updated (may be
+CutoffReportService. more than one if part of a
+
+report group)
+
+office TP 10 Integer The office Trading Period
+
+‘StockUnit SUT String The stockunit for the report
+
+StockUnitP 1 integer The balance period of the SU
+
+stockUnitTP 70 integer The trading period of the SU
+
+2.31.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+NA Empty response indicates
+success:
+
+2.32 UpdatePSBarcodesStateService
+
+Usage Cross Reference Description
+PS-5404 Notify Branch Mails I DES/APP/HLD/0128 Updates the state of the postal services barcodes to
+Despatch record the items as depatched
+
+2.32.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+
+collectionState Despatched String The despatched status of
+barcodes
+
+barCodeList XA259083297GB List of barcodes.
+
+2.32.2 Response
+
+Tag/Attribute Name Example Constraints Applied Description
+success true Boolean true indicates success
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 57 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+3 Non Audited Messages
+
+This section contains all messages which are not audited.
+See DES/APP/IFS/0012 for details of the standard header and response.
+
+3.1 GenericBRDBRetrievalService
+
+This service reads data from the BRDB using a SQL query stored by name
+BRDB_BAL_SQL_DEFINTIONS.
+
+The request message comprises a number of named attributes in the request dyno which are passed as
+parameters to the SQL query, as defined by the BRDB_BAL_SQL_DEFINITIONS column “in_params”.
+
+The successful response message contains in the respone dyno a “resultset” attribute which is a list of
+dynos, one per row read from the BRDB. This list may be empty if no rows are returned. Each field in
+the row dynos is represented by a named attribute as specified by BRDB_BAL_SQL_DEFINITIONS
+column “out_params”.
+
+The Java types used for in and out params are shown below, and may be null.
+
+in table
+
+Type string Type Serialised example
+
+BigDecimal Signed decimal number with arbitrary I <BigDecimal>0.39</BigDecimal>
+precision
+
+Boolean Boolean with values true, false <Boolean>true</Boolean>
+
+Date oe with zero time component, serialised as I <Date>2009-10-28T00:00:00.000Z</Date>
+
+DateTime Date and time to second precision, serialised I <Date>2009-10-28T11:54:10.000Z</Date>
+as UTC
+
+Double Signed floating point number (64 bit) <Double>-112060.42</Double>
+
+Float Signed floating point number (32 bit) <Float>0.0</Float>
+
+int Signed integer (32 bit) <Integer>50</integer>
+
+integer Signed integer (32 bit) <Integer>50</integer>
+
+iMoney ‘Object for accounting value of money <Amount>4.00</Amount>*
+
+Quantity Object for accounting quantities <Quantityt>4</Quantity>*
+
+Long Long (64 bit signed) <Long>129</Long>
+
+Short Signed integer (16 bit) <Short>-1</Short>
+
+String String <String>ABC123</String>
+
+Time Time only serialised as UTC, with the date I <Date>1970-01-01T11:54:10.000Z</Date>
+part set to 0 hence 1 Jan 1970
+
+Timestamp Date and time to millisecond precision, I <Date>2009-10-28T11:54:10.123Z</Date>
+serialised as UTC
+
+*See PEAK PC0189906 - More verbose and misleading tags are currently used instead of these.
+
+3.1.1. Named SQL Queries
+
+©Copyright Fujitsu Services Ltd 2010 Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: Vi4
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No: 58 of 74
+
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+The following embedded spreadsheet gives the complete list of named queries executed by the counter.
+
+8
+
+Package
+
+The spreadsheet was produced by running the SQL “select sql_name, sql_description, in_params,
+out_params from brdb_bal_sql_definitions order by sql_name asc”, exporting as a spreadsheet, and then
+only keeping rows that relate to queries executed by the counter via the GenericBRDBRetreivalService
+(determined by code inspection).
+
+The list of query names and associated use cases is:
+
+Query Name Use Case
+DeterminelfSUIsInactive BAC-11 Balance Stock Unit
+DeterminelfSessionsSuspended BAC-11 Balance Stock Unit
+DeterminelfTransactionCorrectionOutstanding2_I BAC-11 Balance Stock Unit
+GetAllUsersForRole BAD-540 Maintain Branch User Account
+GetBalance CSM-152 Identify Cash Variance
+GetBranchNodes PS-5404 Notify Branch Mails Despatch Details
+GetBranchStockUnitList Various: Used to display a list of stock units for user selection
+GetBranchStockUnitListincludingLocked Various: Used to display a list of stock units for user selection
+GetBranchStockUnitListTransferOut CSM-264 Initiate Transfer
+GetBranchTradingPeriod Various: Used to read the current office TP and details
+GetBranchUsersandStockUnits BAD-179 View Stock Units and User Attachments
+
+CSM-152 Identify Cash Variance
+
+CSM-208 Declare Cash Holding
+GetDeclarationHeaders CSM-236 Declare Stock Holding
+GetDeclarations CSM-152 Identify Cash Variance
+
+CSM-208 Declare Cash Holding
+GetDeclarationsByld CSM-236 Declare Stock Holding
+GetDeclarationsforTP. BAC-242 Identify Discrepancies
+GetDestinationPendingTransfer CSM-124 Accept Transfer
+GetExistingTransactions GLB-74 Add Reversal Product to Basket
+GetInactiveSU BAC-102 Rollover Inactive Stock Units
+GetinPouchStatus CSM-544 Record Pouch Delivery
+
+PS-4749 Accept Speed Bulk Mail
+GetLastPostindicator PS-5150 Accept Local Collect Mail
+GetLastSUsForTP BAC-11 Balance Stock Unit
+GetListOfDeclarations BAC-3079 Display Declarations Made
+GetListOfStockUnits BAD-179 View Stock Units and User Attachments
+GetLoggedOnSessionDetailsForSU BAC-11 Balance Stock Unit
+GetNextBranchTP. BAC-11 Balance Stock Unit
+
+BAC-11 Balance Stock Unit
+GetNextTradingPeriod BAC-130 Balance Branch
+GetNumberOfCounters BAC-298 Produce Transaction Listing Report
+GetOutstandingTransactionCorrections BAC-158 Manage Transaction Corrections
+GetOutstandingTransfers BAC-11 Balance Stock Unit
+GetOutstandingUserMemos BSC-70 Receive Messages and Notifications
+
+PS-5157 Release Local Collect Mail
+GetPSBarCodeltem PS-5163 Return Local Collect Mail
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 59 of 74
+Fe)
+
+XML Message Audit between Counter and BALIOSR
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+FUJITSU
+
+GetPSBarCodeltemsByState
+
+PS-5404 Notify Branch Mails Despatch Details
+
+GetPendingTransfer
+
+CSM-96 Reverse Transfer
+
+GetPendingTransferDetails
+
+CSM-96 Reverse Transfer
+CSM-124 Accept Transfer
+CSM-264 Initiate Transfer
+
+GetPlannedOrders CSM-684 Review Planned Orders.
+
+GetPouchStatus CSM-516 Record Reversal of a Pouch
+
+GetReportReprintData BAC-2926 Report Reprint
+
+GetSUReportReprintList BAC-2926 Report Reprint
+
+GetSUsforTP_ BAC-130 Balance Branch
+
+GetStockUnitTP BAC-102 Rollover Inactive Stock Units
+BAC-326 Produce Event Listing Report
+
+GetTPBPForStockUnit BAC-298 Produce Transaction Listing Report
+
+GetUserMemos BSC-70 Receive Messages and Notifications
+
+GetUsersDetails
+
+Various: Used to display a list of users for user selection
+
+\sBranchLocked
+
+BAC-130 Balance Branch
+
+IsUserLoggedin
+
+BAD-540 Maintain Branch User Account
+
+RetrieveInPouchDetails
+
+CSM-544 Record Pouch Delivery
+
+RetrievePouchDetails
+
+CSM-516 Record Reversal of a Pouch
+
+RetrieveSuspendedCustomerSessionsForSU_
+
+GLB-5697 Resume Suspended Customer Session
+
+eg.
+
+SQL query “GetBranchStockUnitList’ reads the list of stock units present in a given branch.
+
+The in_params string is:
+“header.BranchAccountingCode[Int],he:
+The out_params string is:
+
+“stockUnit[String],stockUnitType[String],
+
+ader.FadHash[Int]’
+
+,tradingPeriod[Int],balancePeriod[Int],tradingPeriodYear[Int]’
+
+The request and response parameters are show in the following two sections.
+
+3.1.2. Example Request
+
+The request has no parameters passed
+items in the generic header via “header.”.
+
+in the request dyno, since the in_params string only refers to
+
+3.1.3 Example Response
+
+Result set containing zero or more rows dynos with the following attributes:
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+stockUnit JAI String ‘out_params
+stockUnit[String]
+
+stockUnitType 5 String out_params:
+stockUnitType[String]
+
+tradingPeriod 1 Integer ‘out_params:
+tradingPeriod[int]
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: vi4
+Date: 23-Jun-10
+Page No: 60 of 74
+
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+balancePeriod 1 Integer out_params:
+balancePeriod{int]
+
+tradingPeriodYear 2009 Integer out_params:
+tradingPeriodYear[Int]
+
+3.2 AddNewOffice
+
+Although this message updates the database, it is a direct synchronous call to the BAL and is therefore
+not journalised.
+
+Usage Cross Reference Description
+
+BAD-11 Log On to System DES/APP/HLD/0060 BAD-11 covers the primary scenario of logging onto the
+HNG-X system, and covers several variations
+surrounding this. The use case also contains variations
+that could be considered as use cases in their own right,
+for example the post login checks, recovery, shutdown
+and restart etc. Login uses specific DTO’s for requests
+and responses, and one request may have many
+different types of responses.
+
+3.2.1. Request
+
+The AddNewOffice URI uses the AddNewOfficeRequestDTO, which is used to request that an office is
+either opened or migrated.
+
+Tag/Attribute Name Example Constraints I Description
+Applied
+CurrentFinancialvear I 2000 integer The current financial year for
+
+the branch. Calculated at the
+counter using reference data,
+and provided when opening a
+‘New branch.
+
+CurrentTP 5 Integer The current trading period for
+the branch. Calculated at the
+counter using reference data,
+and provided when opening a
+‘New branch.
+
+ExistingBranchState I New String The existing branch state —
+either ‘New or ‘Migrating’
+
+NextFinancialYear 2009 Integer The next financial year for the
+branch. Calculated at the
+counter using reference data,
+and provided when opening a
+‘New branch.
+
+NexttP 6 Integer The next trading period for the
+branch. Calculated at the
+
+counter using reference data,
+and provided when opening a
+
+‘New’ branch.
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 61 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+3.2.2. Response
+
+The AddNewOfficeResponseDTO is returned in response to a request to open or migrate a branch. If the
+action was successful, then the openBranch flag will be set to “true”; otherwise this flag will be set to
+“false” to indicate a failure and allow the counter to take appropriate action.
+
+Tag/Attribute Example Constraints I Description
+Name Applied
+BranchOpen true Boolean Flag indicating whether the
+
+branch was opened
+successfully or not.
+
+UserAbleToLogin I 1 int Flag indicating whether the
+ToBranchResonC user attempting to login is able
+ode to login to an unopened
+
+branch or not. Values for this
+are assigned from the fixed set
+of contstants contained within
+this DTO.
+
+1 = Login allowed — branch is
+‘Open’
+
+2= Login denied — invalid
+branch state
+
+3 = User is allowed to login to
+unopened branch
+
+4 = User is not allowed to login
+to unopened branch
+
+3.3. CounterPersistenceRetrievalService
+
+Usage Cross Reference Description
+
+Used to read data for various DES/APP/HLD/0047 Reads the counter persistence data from the BRDB
+other uses cases e.g. pinpad CLOB and saves it to the CounterDataStoreBDO
+configuration, rate board
+configuration, end of session
+prompt usage.
+
+3.3.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+NIA ‘Only the standard request
+header is used for this service.
+
+3.3.2. Response
+
+The response has an attribute “cpClobData” which holds a CDATA string of XML with the following
+attributes:
+
+Tagi Example Const- I Description
+Attribute raints
+Name Applied
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 62 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+Commercial in Confidence
+
+FUJITSU
+
+Sensitive false String Specifies whether there is
+any sensitive information,
+if true prevents logging of
+the dyno via toString
+
+PINPad <directive:Entry Name= 'PINPad’> XML Contains the PINPad
+
+<Dyno> configuration.
+“arectve-Entry Name= 'Sensitive'> Holds the following:
+<directive:Entry Name= '_value'> DeviceType
+<String>false</String>
+</directive:Entry> OpenLoaderIDAndVersion
+</Dyno> SecurityLoaderIDAndVersi
+</directive:Entry> on
+<directive:Entry Name= ‘DeviceType'>
+<String>HFT117</String> SerialNumber
+</directive:Entry> ge
+<directive:Entry Name= 'OpenLoaderlDAndVersion'> BECApplicationIOAndVers
+<String>FU986022</String>
+<idrective-Enty . bAndv. OTAKernellDAndVersion
+<directive:Entry Name= 'SecurityLoaderIDAndVersion’>
+<string> 15 Ore string> "y! SAMApplicationIDAndVer
+</directive:Entry> sion
+<directive:Entry Name= 'SerialNumber’> SSCRApplicationIDAndVe
+<String>0000000003000124</String> sion
+</directive:Entry>
+<directive:Entry Name= 'SECApplicationIDAndVersion'> TRSApplicationIDAndVers
+<String>FL-14110151230</String> ion
+</directive:Entry> “ct
+<directive-Entry Name= 'OTAKemellDAndVersion’> DTAApplicationIDAndvers
+<String>FU612035</String>
+</directive:Entry> BatteryStatus
+<directive:Entry Name= 'SAMApplicationIDAndVersion'>
+<String>FU044044</String>
+</directive:Entry>
+<directive:Entry Name= 'SSCRApplicationIIDAndVersion'>
+<String>FU043048</String>
+</directive:Entry>
+<directive:Entry Name= 'TRSApplicationIDAndVersion’>
+<String>F100000000596</String>
+</directive:Entry>
+<directive:Entry Name= 'OTAApplicationIDAndVersion'>
+<String>F046080000012</String>
+</directive:Entry>
+<directive:Entry Name= 'BatteryStatus'>
+<String>1</String>
+</directive:Entry>
+</Dyno>
+</directive:Entry>
+
+EosFlag I false Boolean I Iftrue, End Of Session
+prompts are enabled
+
+RateBoard I <directive:Entry Name= 'RateBoard’> XML Contains the Rateboard
+
+<HashMap> configuration.
+<Eoeecoetiee CurrencyCodes'> Holds the following:
+<String>AUD</String> CurrencyCodes: Which
+<String>CAD</String> codes to show on which
+<String>CHF</String> rows of the rates board.
+<String>EUR</String>
+<String>USD</String> CommOpt: Boolean, true if
+‘©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ret DESIAPPIIFSIO016
+Version: V1.1
+Date 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 63 of 74
+Fe)
+
+FUJITSU
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+Commercial in Confidence
+
+<String></String> commission rows should
+<String></String> be shown
+Sunes NumRows: The number of
+<String></String> rows on the ratesboard
+</MessageList> PrintOpt: Boolean, true if
+
+</directive:Entry>
+<directive:Entry Name= 'CommOpt'>
+<Boolean>true</Boolean>
+
+the rates report should be
+printed automatically when
+new ref data rates arrive
+
+</directive:Entry>
+<directive:Entry Name= 'NumRows'>
+<Integer>12</Integer>
+</directive:Entry>
+<directive:Entry Name= 'PrintOpt’>
+<Boolean>false</Boolean>
+</directive:Entry>
+</HashMap>
+</directive:Entry>
+
+3.4 FirstCredentialCheck
+
+This uses the same DTOs as First Logon (see section 2.13), although the service is FirstCredentialCheck
+rather than FirstLogon, and the request is not an audited message.
+
+3.5 GenericOnlineService
+
+Usage Cross Reference Description
+1OP-11 Obtain Online Data I DES/APP/HLD/0114 Used for handling online data requests using remote web
+services. Services so far configured are dvla, paf, mgrm,
+eeare yeiraee I Bond, bkac, apop and pgdd. dvia and paf are handled
+State D: Sta Mona! I separately and all other services are handled as generic
+‘als Dal services.
+3.5.1 Request
+Tag/Attribute Name Example Constraints Description
+Applied
+request DVLA and PAF ‘String A CDATA string of XML Data passed to
+web services have the Web Service Request Handler for
+their own message transmission to the Web Service. This
+formats described can contain any data required by the
+below. All other service
+services use the
+Generic message
+formats also
+described below.
+3.5.2 Response
+Tag/Attribute Name Example Constraints Description
+Applied
+response DVLA and PAF String A CDATA string of the XML response
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 64 of 74
+Fe)
+FUJITSU
+
+XML Message Audit between Counter and BALIOSR
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+web services have returned from the Web Service and the
+their own message Web Service Response Handler.
+<web service statistics formats deseribed ‘See DES/APP/IFS/0012 section on
+attribute> services use the Additional Stats Data.
+Generic message
+formats also
+described below.
+3.5.3 DVLA
+Usage Cross Reference Description
+IOP-11 Obtain Online Data I DES/APP/HLD/0065 Go online to check DVLA licence renewal and obtain price.
+DVLAOnline (APADC Data I DES/GEN/MAN/0002
+Type) Dw/IFS/001
+3.5.3.1 Request
+Tag/Attribute Example Constraints I Description
+Name Applied
+request <I[CDATAT String A CDATA string of XML Data
+<DVLA_MSG> passed to the DVLA Web
+<VER>1.1</VER> Service Request Handler for
+<SERVICE>PO_RELICENSING</SERVICE> transmission to the DVLA
+<CTRL> Web Service.
+<FAD>3026</FAD>
+<CTR>1</CTR>
+</CTRL>
+<TXN>
+<TYPE>2</TYPE>
+<TOKEN>826909010097408639381712</
+TOKEN>
+<VRM_ID>Y904XFV</VRM_ID>
+<LICENCE_REF_NUM>09061024041330<
+/LICENCE_REF_NUM>
+<tag1>value1</tag1>
+</TXN>
+</DVLA_MSG>
+IP
+3.5.3.2 Response
+Tag/Attribute Example Constraints I Description
+Name Applied
+response <![CDATA String ACDATA string of the XML
+<?xml version="1.0" encoding="UTF-8"?> response returned from the
+<DVLA_MSG> DVLA Web Service and the
+<VER>1.1</VER> DVLA Web Service
+<SERVICE>PO_RELICENSING</SERVICE Response Handler.
+>
+<TXN>
+<RESP_CD>1</RESP_CD>
+<VED>
+<PAYABLE_AMT>125.00</PAYABLE_A
+MT>
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 65 of 74
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+<CURR_CD>GBP</CURR_CD>
+<NED>
+</TXN>
+</DVLA_MSG>
+IP
+DVLAServiceStats_ I See DES/APP/IFS/0012 section on Additional Stats Data
+3.5.4 PAF
+Usage Cross Reference Description
+TOP-913 Acquire Address I DES/APP/HLD/0065 I Go online to look up addresses
+Details DES/GEN/MAN/0002
+PAF1, PAF2 (APADC Data
+Types)
+3.5.4.1 Request
+Tag/Attribute I Example Constraints I Description
+Name Applied
+request <ICDATAT String ACDATA string of XML Data
+<SEARCH> passed to the PAF Web
+<VERSION>1.0</VERSION> Service Request Handler for
+<PREMISES>FUJITSU</PREMISES> transmission to the PAF Web
+<POSTCODE>CW16ZQ</POSTCODE> Service.
+<MASK>4095</MASK>
+<DATASET>English</DATASET>
+<TIMEOUT>40000</TIMEOUT>
+</SEARCH>]]>
+3.5.4.2 Response
+Tag/Attribute I Example Constraints I Description
+Name Applied
+response <I[CDATAT String ACDATA string of the XML
+<RESPONSE> response returned from the
+<RESULT_SET> PAF Web Service and the PAF
+<VERSION>1.0</VERSION> Web Service Response
+<DURATION>10</DURATION> Handler
+<RESULT>
+<ORG>Fujitsu Services</ORG>
+<BUILDNAME> Infinity
+House</BUILDNAME>
+<THORO>Mallard Way</THORO>
+<TOWN>Crewe</TOWN>
+<COUNTY>Cheshire</COUNTY>
+<POSTCODE>CW1 6ZQ</POSTCODE>
+<QUAL>100</QUAL>
+</RESULT>
+</RESULT_SET>
+</RESPONSE>
+IP
+PAFServiceStats I See DES/APP/IFS/0012 section on Additional Stats Data
+©Copyright Fujitsu Services Ltd 2010 Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: Vi4
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED
+
+Page No: 66 of 74
+Fe)
+FUJITSU
+
+WITN11070104
+
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+Commercial in Confidence
+
+3.5.5 Generic
+
+Usage
+
+Cross Reference
+
+Description
+
+1OP-11 Obtain Online Data
+
+GenericOnline (APADC Data
+Type)
+
+DES/APP/HLD/0065,
+DES/GEN/MAN/0002
+
+Communicates with associated Host systems.
+
+3.5.5.1 Request
+
+TagiAttribute
+Name
+
+Example
+
+Constraints
+Applied
+
+Description
+
+request
+
+<![CDATAL
+<APOP_MSG>
+<VER>1.1</VER>
+<TXN>
+<SVC>PGDD</SVC>
+<VID>0</VID>
+<TTYP>1</TTYP>
+
+<CTR>1</CTR>
+<TDATE>20091028 13:40:
+<FAD>003026</FAD>
+
+<CTRY>US</CTRY>
+<DPCD>90210</DPCD>
+<DTE>07/11/2009</DTE>
+</TXN>
+</APOP_MSG>
+Ie
+
+This is an example from a pgdd service
+
+<TREF>003026-1-1</TREF>
+:00</TDATE>
+
+<STAFF>35660Z</STAFF>
+<OPCD>IP6 9PY</OPCD>
+
+String
+
+A CDATA string of XML Data
+passed to the Generic Web Service
+Request Handler for transmission to.
+the Web Service. Generic web
+services include MGRM, BBND,
+BKAC, APOP and PGDD.
+
+3.5.5.2 Response
+
+Tag/Attribute Name I Example
+
+Constraints
+Applied
+
+Description
+
+response
+
+<APOP_RESP>
+<VER>1.1</VER>
+<RESULT>
+
+</RESULT>
+
+<APOP_MSG>
+<VER>1.1</VER>
+<TXN>
+
+<VID>0</VID>
+
+<CTR>1</CTR>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RCODE>0</RCODE>
+
+<SVC>PGDD</SVC>
+
+<TTYP>1</TTYP>
+<TREF>003026-1-1</TREF>
+
+<TDATE>20091028 13:40:00</TDATE>
+<FAD>003026</FAD>
+
+String
+
+<STAFF>35660Z</STAFF>
+<OPCD>IP6 9PY</OPCD>
+<CTRY>US</CTRY>
+<DPCD>90210</DPCD>
+
+ACDATA string of the XML
+response returned from the
+Generic Web Service and
+the Web Service Response
+Handler. Generic web
+services include MGRM,
+BBND, BKAC, APOP and
+PGDD.
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+DES/APP/IFS/0016
+via
+
+23-Jun-10
+
+67 of 74
+
+Ref.
+Version:
+Date:
+Page No:
+Fe)
+FUJITSU
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+
+Commercial in Confidence
+
+<DTE>07/11/2009</DTE>
+</TXN>
+</APOP_MSG>
+<APOP_RETURN>
+<EDD>14/11/2009</EDD>
+<GIND>Y</GIND>
+<DSTE>CALIFORNIA</DSTE>
+<DCTY>BEVERLY HILLS</DCTY>
+<DPCD>90210</DPCD>
+<DCTRY>UNITED STATES</DCTRY>
+</APOP_RETURN>
+</APOP_RESP>
+>
+
+GenericServiceStats
+
+See DES/APP/IFS/0012 section on Additional Stats Data
+
+3.6 GetOutstandingDeclarations
+
+Usage Cross Reference Description
+
+BAC-214 Identify Outstanding DES/APP/HLD/0059 Identifies which declarations are outstanding.
+
+Declarations DES/APP/HLD/0126
+
+DES/APP/HLD/0127
+
+3.6.1 Request
+
+Tag/Attribute Example Constraints I Description
+
+Name Applied
+
+stockUnitld Sut String The stock unit id
+
+stockUnit Sut String The stock unit
+
+tradingPeriod 70 Integer The trading period of the
+Stock unit
+
+balancePeriod 10 Integer The balance period of the
+stock unit
+
+stockProductsList I 2, 4, 5, 16, 18, 19, 22 ... 30500 List of string I The product ids that are part
+
+product ids of product group 21316
+
+(products that can be part of
+a stock declaration)
+
+3.6.2
+
+Response
+
+Tag/Attribute Name
+
+Example
+
+Constraints Applied
+
+Description
+
+Resultset
+
+cash, stamps
+
+List of String
+
+A list of strings specifying
+which declarations are
+outstanding (zero or more of
+cash, stamps, currency,
+travchqs, stock,
+
+3.7 GetValidationCharacter
+
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref, DES/APP/IFS/0016
+Version: via
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 68 of 74
+WITN11070104
+WITN11070104
+
+oO XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+Usage Cross Reference Description
+
+DVLAVRM (APADC Data Type) I DES/APP/HLD/0065 I Calculates a validation character for a Vehicle
+Registration Mark
+
+3.7.1. Request
+
+Tag/Attribute Name Example Constraints Applied Description
+vm X975UPU String A Vehicle Registration Mark
+(VRM)
+
+3.7.2. Response
+
+Tag/Attribute Name Example Constraints Description
+Applied
+validationChar 0 String The validation character
+
+3.8 IsVRMValid
+
+Usage Cross Reference I Description
+
+DVLAVRM (APADC Data DES/APP/HLD/0065 I Performs Vehicle Registration Mark validation
+Type)
+
+3.8.1. Request
+
+Tag/Attribute Name Example Constraints Description
+Applied
+vim XO75UPU String A Vehicle Registration Mark (VRM)
+
+3.8.2. Response
+
+Tag/Attribute Name Example Constraints Description
+Applied
+IsVRMValid True Boolean true if the VRM is valid, false otherwise
+
+3.9 PollingService
+
+Usage Cross Reference Description
+
+Retained functionality / no use DES/APP/HLD/0045 Polls BAL for ref data and memos, multiplexing requests
+case in a single mssage
+
+3.9.1 Request
+
+Tag/Attribute Name Example Constraints Applied I Description
+MessageList List of DTOs. Can be
+MemoStatusRequestDTO or
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 69 of 74
+Fe)
+FUJITSU
+
+XML Message Audit between Counter and BALIOSR
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+PackagelnventoryRequestDTO
+
+3.9.1.1 MemoStatusRequestDTO
+Tag/Attribute Name Example Constraints Applied I Description
+BranchUser ABC123 String User id
+LastMemold ) Integer Id of last memo
+Messageld 1 Long Messge id
+3.9.1.2 PackagelnventoryRequestDTO
+Tag/Attribute Name Example Constraints Applied Description
+Messageld 1 Long Messge id
+Packages List of
+PackageStatusRequest
+PackageStatusRequest PackageStatusRequestDTO I Contains the following fields
+HighestPackageSequenceNumber I 1 Long Highest package sequence
+number
+PackageType MAIN String Package type: one of MAIN,
+SPOTRATES, MARGINS,
+OTHER, HELP
+PackageVersion 0 Long Package version from
+package meta data
+PreviousDeltaFailed false Boolean true if the previous delta
+failed and the counter
+cannot trade
+3.9.2 Response
+Tag/Attribute Name Example Constraints Applied I Description
+BALProcessingTIme 42 Long Time in ms
+MessageList List of DTOs. Can be
+MemoStatusResponseDTO or
+PackagelnventoryResponseDTO
+3.9.2.1 MemoStatusResponseDTO
+Tag/Attribute Name I Example Constraints Applied I Description
+BALProcessingTime 145 Long Time in ms
+resultset <Dyno> Dyno with attribute: Result set is a
+<directive:Entry Name= 'memold'> resultset linked list of
+<Integer>1</Integer> Zero or more
+</directive:Entry> dynos, each
+<directive:Entry Name= 'messageld'> representing
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 70 of 74
+WITN11070104
+
+WITN11070104
+oO XML Message Audit between Counter and BAL/OSR
+FUJITSU Commercial in Confidence &
+<String> TEST MEMO FROM GlJ</String> amemo.
+</directive:Entry>
+<directive:Entry Name= 'caption'>
+<String>MSG</String>
+</directive:Entry>
+<directive:Entry Name= ‘authority'>
+<String>POL</String>
+</directive:Entry>
+<directive:Entry Name= 'text'>
+<String> HELLO KISHOR</String>
+</directive:Entry>
+<directive:Entry Name= 'expiry'>
+<Integer>30</Integer>
+</directive:Entry>
+<directive:Entry Name= 'userGroup’>
+<String>ANY</String>
+</directive:Entry>
+<directive:Entry Name=
+‘prdbReceivedTimestamp'>
+<Date>2009-10-22T 14:09:19.528Z</Date>
+</directive:Entry>
+</Dyno>
+Messageld 7 Long Messge id
+3.9.2.2 PackagelnventoryResponseDTO
+Tag/Attribute Example Constraints I Description
+Name Applied
+BALProcessingTime I 0 Long Time in ms
+PackageState NOTRADE String One of OK, TRADE,
+NOTRADE
+PackageType MAIN ‘String Package type: one of
+MAIN, SPOTRATES,
+MARGINS, OTHER,
+HELP
+PackageUpdates List of
+Package
+Update
+PackageUpdate PackageUpdate
+contains the
+following fields
+Deliveries List of
+FileDeliveryInfoDTO.
+FileDeliveryInfoDTO I <BALProcessingTime>0</BALProcessingTime> File Delivery Info
+<DeliveryRoute>BRANCHDB</DeliveryRoute>
+<Delivery Sequence Number>2797</DeliverySequenceNum
+ber>
+<Delivery_type>SPOTRATES</Delivery_type>
+<FileInformation>
+<I[CDATA[<File_Info><Unzip>Yes</Unzip><PostUnzipCks
+um>3544862876</PostUnzipCksum></File_Info>]]>
+</FileInformation>
+<FileName>SPOTRATES_00002797_BASELINE.XML</Fil
+eName>
+<FileType>BASELINE</FileType>
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+UNCONTROLLED IF PRINTED Page No: 71 of 74
+WITN11070104
+WITN11070104
+
+(oe) XML Message Audit between Counter and BAL/OSR
+
+FUJITSU Commercial in Confidence
+
+<immediateDate>2009-10-
+22714:25:43.000Z</ImmediateDate>
+<PackageSequenceNumber>927 1</Package SequenceNu
+mber>
+
+PackageVersion 624 Long Package version
+
+3.10 RefdataSLAService
+
+Usage Cross Reference Description
+Retained functionality / no use DES/APP/HLD/0045 Records SLA information to show that a reference data
+case package has been updated on the counter.
+
+3.10.1 Request
+
+Tag/Attribute Name Example Constraints Applied Description
+Package Type SPOTRATES String Package type
+PackageVersion 620 Long Package version
+
+3.10.2 Response
+
+Tag/Attribute Name Example Constraints Applied I Description
+
+Status false Boolean true is the service was
+successfully invoked
+
+3.11 ReportingService
+
+Usage Cross Reference Description
+
+Used by most of the reporting I DES/APP/HLD/0059__I Obtains data for the report or report group.
+uses (BAC-186, BAC-270, BAC-
+
+39, BAC-298, BAC-326) and DES/APP/HLD/0109
+
+others. DES/APP/HLD/0053
+
+3.11.1. Request
+
+TagiAttribute I Example Constraints Description
+
+Name Applied
+
+Criteria <Criteria> May be omitted. I Dyno containing user
+<directive:Entry Name= ‘dateFrom’> criteria. See
+
+<Date>2009-10-01T11:00:00.000Z</Date> DES/APP/HLD/0109.
+
+</directive:Entry>
+<directive:Entry Name= ‘dateTo'>
+
+<Date>2009-10-05T11:00:00.000Z</Date>
+</directive:Entry>
+
+</Criteria>
+‘QueryNames <QueryNames> List of String List of Query Names to
+<String>CounterDailyChequesListing</String> be executed.
+</QueryNames>
+Reports <ReportRequestinfo> List of Information about the
+<AccNodes> ReportRequestl_I report being requested,
+©Copyright Fujitsu Services Ltd 2010 ‘Commercial in Confidence Ref. DES/APP/IFS/0018
+Version: V4.1
+Date: 23-Jun-10
+
+UNCONTROLLED IF PRINTED Page No: 72 of 74
+Fe)
+FUJITSU
+
+XML Message Audit between Counter and BALIOSR
+
+Commercial in Confidence
+
+WITN11070104
+WITN11070104
+
+<AccNode> nfo see
+<AccLevel>1</AccLevel> DES/APP/HLD/0109.
+<AccNodeld>1002</AccNodeld>
+</AccNode>
+</AccNodes>
+<Reportld>
+<Reportld>111</Reportld>
+</Reportld>
+<ReportType>
+<Name>SUCutOff</Name>
+</ReportType>
+</ReportRequestinfo>
+StockUnit Sut String Current Stock Unit
+StockUnitBP 1 Integer Current Stock Unit tP-
+StockUnitTP 10 Integer Current Stock Unit BP
+3.11.2 Response
+Tag/Attribute Name Example Constraints Description
+Applied
+
+CutoffinfoList
+
+List of CutOffinfo
+
+Contains the last cutoff
+for the report if it is a cut-
+off report (or in a group,
+for each cut-off report in
+the group).
+
+EarliestSURolloverDate
+
+2009-09-15T00:00:00.000Z
+
+Date with zero
+
+The earliest date that a
+
+time stock unit rolled into the
+current TP
+OfficeFinancialYear 2009 Integer The current financial year
+
+id
+
+OfficeRolloverDate
+
+2009-10-13T00:00:00.000Z
+
+Date with zero
+
+The data the office rolled
+
+time into the current TP
+OfficeTP 70 Tnteger The current office TP
+ReportData <ReportData> ReportData The report id (for a group,
+<Reportid> the group id), result set
+<Reportid>121</Reportld> for each query executed,
+</Reportld> and “now’ timestamp.
+<ResultSet> 7
+<directive:Entry Name= ms may be megabytes
+\ , of data. See
+OfficevVeckySalesReport_v2> DES/APP/HLD/0109
+... Dyno for each row of data...
+</LinkedList>
+</directive:Entry>
+</ResultSet>
+<TimeStamp>2009-10-
+14714:25:08.104Z</TimeStamp>
+</ReportData>
+Reportid 121 Tnteger The report id (for a group,
+the group id)
+SeniceHandlerTimeTaken I 16 Tong The total time in
+
+Millis
+
+milliseconds that the
+service handler took to
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+Ref.
+Version:
+Date:
+Page No:
+
+DES/APP/IFS/0016
+via
+
+23-Jun-10
+
+73 of 74
+Fe)
+FUJITSU
+
+WITN11070104
+WITN11070104
+
+XML Message Audit between Counter and BALIOSR
+Commercial in Confidence
+
+execute the request
+SqlTimeTakenMillis 1 Long The sum total in
+milliseconds of the time
+the various SQL queries
+took to execute
+TradingDate 009-10-14T14:45:17.831Z Date The current trading date
+3.12 ResetTrainingData
+Usage Cross Reference Description
+BSC-1240 Reset Training Data I DES/APP/HLD/0061 Used by a TRAINER to reset the data in a training
+branch to pre-defined values.
+3.12.1 Request
+Tag/Attribute Name Example Constraints Description
+Applied
+currentTradingPeriod 7 Integer The current trading period calculated
+from reference data.
+nextTradingPeriod 8 integer The next trading period calculated
+from reference data.
+currentTPFinancialYearld 2009 Integer The current trading period financial
+year calculated from reference data.
+next? PFinancialvearid 2009 Integer The next trading period financial year
+calculated from reference data.
+3.12.2 Response
+Tag/Attribute Name Example Constraints Description
+Applied
+NA Empty response indicates success.
+
+3.13 SecondCredentialCheck
+
+This uses the same DTOs as Second Logon
+
+(see
+
+section 2.22), although the service
+
+is
+
+SecondCredentialCheck rather than SecondLogon, and the request is not an audited message.
+
+‘©Copyright Fujitsu Services Ltd 2010
+
+UNCONTROLLED IF PRINTED
+
+‘Commercial in Confidence
+
+Ref, DES/APP/IFS/0016
+Version: via
+
+Date: 23-Jun-10
+
+Page No: 74 of 74
+
